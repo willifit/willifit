@@ -30,7 +30,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <!-- Security: Content Security Policy. Whitelist matches known resource origins. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.mapillary.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com; font-src 'self' data:; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org; frame-src 'self' https://www.mapillary.com https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.mapillary.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org; frame-src 'self' https://www.mapillary.com https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -468,9 +468,11 @@
     display: grid; place-items: center; z-index: 2;
   }
   .detail-close:hover { background: var(--bad); border-color: var(--bad); }
-  .detail-hero { height: 180px; background: var(--bg); position: relative; overflow: hidden; flex-shrink: 0; cursor: pointer; }
+  .detail-hero { height: 260px; background: var(--bg); position: relative; overflow: hidden; flex-shrink: 0; }
   .detail-hero iframe { width: 100%; height: 100%; border: 0; display: block; }
   .detail-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .detail-hero-pano { width: 100%; height: 100%; }
+  .detail-hero-pano .gm-style-cc { display: none; }  /* hide bottom "Report a problem" clutter on the tiny panel */
   .detail-hero-loading {
     position: absolute; inset: 0; display: grid; place-items: center;
     color: var(--muted); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase;
@@ -481,6 +483,15 @@
     animation: spin 1.1s linear infinite;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
+  .detail-hero-hint {
+    position: absolute; bottom: 10px; right: 12px;
+    background: rgba(0,0,0,0.7);
+    padding: 4px 8px; font-size: 10px;
+    color: #fff; font-family: var(--mono);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    border-radius: 2px;
+    pointer-events: none;
+  }
   .detail-hero-label {
     position: absolute; bottom: 10px; left: 12px;
     background: rgba(0,0,0,0.7);
@@ -2181,18 +2192,41 @@ function selectGarage(id) {
 
 /* Detail-panel hero loader.
 
-   Preferred source: Google Street View Static API (image of the entrance).
-   Fallback:         Mapillary iframe embed.
+   Preferred source: Interactive Google Street View panorama (user can pan,
+                     rotate, zoom, and walk the street to find the garage
+                     entrance — solves the "Bellagio facade" problem where a
+                     single static heading doesn't show the parking ramp).
+   Fallback:         Mapillary iframe embed when Google has no coverage here.
 
    Why the metadata call first?
      Google returns a grey "Sorry, we have no imagery here" placeholder when
-     called on a lat/lng with no coverage.  We don't want that rendered — it
-     looks broken.  The free /streetview/metadata endpoint tells us up-front
-     whether there's imagery, so we only request the paid image when there is.
+     called on a lat/lng with no coverage.  We probe the free
+     /streetview/metadata endpoint up-front so we only mount the interactive
+     panorama when there's imagery to show.
 
-   A concurrent-call guard (heroReq) stops a slow previous render from
+   Maps JS is lazy-loaded on first detail open (saves ~250KB for users who
+   never open a detail panel) and cached for subsequent opens.
+
+   Concurrent-call guard (_heroReq) stops a slow previous render from
    over-writing a newer garage selection mid-flight. */
+
 let _heroReq = 0;
+let _gmapsLoader = null;  // cached Maps JS loader promise
+
+function loadGoogleMapsJs() {
+  if (_gmapsLoader) return _gmapsLoader;
+  if (window.google && window.google.maps) return Promise.resolve();
+  _gmapsLoader = new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}&v=weekly&libraries=&loading=async`;
+    s.async = true;
+    s.onload = () => resolve();
+    s.onerror = (e) => { _gmapsLoader = null; reject(e); };
+    document.head.appendChild(s);
+  });
+  return _gmapsLoader;
+}
+
 async function loadDetailHero(hero, g, urls) {
   const myReq = ++_heroReq;
   hero.onclick = null;
@@ -2203,7 +2237,6 @@ async function loadDetailHero(hero, g, urls) {
     hero.innerHTML = `
       <iframe src="${urls.mapillary}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="fullscreen"></iframe>
       <div class="detail-hero-label">Street-level · Mapillary</div>`;
-    hero.onclick = null;  // iframe handles its own interactions
   };
 
   if (!GOOGLE_MAPS_API_KEY || GOOGLE_MAPS_API_KEY.startsWith('PASTE_')) {
@@ -2211,21 +2244,36 @@ async function loadDetailHero(hero, g, urls) {
   }
 
   try {
+    // 1. Free coverage check.
     const metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?location=${g.lat},${g.lng}&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
     const metaRes = await fetch(metaUrl);
-    if (myReq !== _heroReq) return; // newer selection arrived
+    if (myReq !== _heroReq) return;
     const meta = await metaRes.json();
     if (meta.status !== 'OK') return showMapillary();
 
-    // Coverage exists — load the image.  size 640x400 is a good fit for the
-    // 180px-tall hero container with 2x pixel density on retina.
-    const imgUrl = `https://maps.googleapis.com/maps/api/streetview`
-      + `?size=640x400&location=${g.lat},${g.lng}&fov=80&pitch=5`
-      + `&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
-    hero.innerHTML = `
-      <img src="${imgUrl}" alt="Street View near ${escapeHTML(g.name || 'entrance')}" loading="lazy">
-      <div class="detail-hero-label">Google Street View · click to pan</div>`;
-    hero.onclick = () => window.open(urls.svUrl, '_blank', 'noopener,noreferrer');
+    // 2. Lazy-load the Maps JS SDK (first call only — subsequent calls reuse the same promise).
+    await loadGoogleMapsJs();
+    if (myReq !== _heroReq) return;  // user moved on while Maps JS was loading
+
+    // 3. Mount the interactive panorama.
+    hero.innerHTML = `<div class="detail-hero-pano" id="detailHeroPano"></div>
+                      <div class="detail-hero-hint">Drag to pan · scroll to zoom</div>`;
+    const panoEl = document.getElementById('detailHeroPano');
+    new google.maps.StreetViewPanorama(panoEl, {
+      position: { lat: g.lat, lng: g.lng },
+      // Prefer the panorama the metadata API resolved to (usually best imagery)
+      pano: meta.pano_id || undefined,
+      pov: { heading: 0, pitch: 0 },
+      zoom: 0,
+      addressControl: false,
+      fullscreenControl: true,
+      linksControl: true,          // arrows let user walk the street to find the garage
+      panControl: true,
+      zoomControl: true,
+      motionTracking: false,
+      motionTrackingControl: false,
+      enableCloseButton: false,
+    });
   } catch (err) {
     console.warn('[hero] Street View failed:', err);
     showMapillary();
