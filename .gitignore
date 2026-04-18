@@ -28,6 +28,9 @@ npm-debug.log*
 # Netlify CLI local state
 .netlify/
 
+# Local Claude Code settings (user-specific tool permissions)
+.claude/settings.local.json
+
 # Build artifacts (none right now, but safety)
 dist/
 build/

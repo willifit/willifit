@@ -468,8 +468,19 @@
     display: grid; place-items: center; z-index: 2;
   }
   .detail-close:hover { background: var(--bad); border-color: var(--bad); }
-  .detail-hero { height: 180px; background: var(--bg); position: relative; overflow: hidden; flex-shrink: 0; }
+  .detail-hero { height: 180px; background: var(--bg); position: relative; overflow: hidden; flex-shrink: 0; cursor: pointer; }
   .detail-hero iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .detail-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .detail-hero-loading {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    color: var(--muted); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase;
+    background: var(--panel);
+  }
+  .detail-hero-loading::before {
+    content: "◌"; display: inline-block; margin-right: 6px;
+    animation: spin 1.1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
   .detail-hero-label {
     position: absolute; bottom: 10px; left: 12px;
     background: rgba(0,0,0,0.7);
@@ -1391,7 +1402,9 @@
    Picker-map (city modal) always uses Leaflet regardless.
    ============================================================ */
 const MAP_PROVIDER = 'osm';
-const GOOGLE_MAPS_API_KEY = 'PASTE_YOUR_GOOGLE_MAPS_API_KEY_HERE';
+// Referrer-restricted: willifit.ai / *.willifit.ai / *.netlify.app only.
+// Safe to commit — the key is locked to these origins in Google Cloud.
+const GOOGLE_MAPS_API_KEY = 'AIzaSyDMqMj-YXoqo2QxIFneRWhEFCXivYHVdts';
 
 // Dark theme matching WillIFit UI — applied when MAP_PROVIDER === 'google'.
 const DARK_MAP_STYLE = [
@@ -2166,6 +2179,59 @@ function selectGarage(id) {
   renderDetail(g);
 }
 
+/* Detail-panel hero loader.
+
+   Preferred source: Google Street View Static API (image of the entrance).
+   Fallback:         Mapillary iframe embed.
+
+   Why the metadata call first?
+     Google returns a grey "Sorry, we have no imagery here" placeholder when
+     called on a lat/lng with no coverage.  We don't want that rendered — it
+     looks broken.  The free /streetview/metadata endpoint tells us up-front
+     whether there's imagery, so we only request the paid image when there is.
+
+   A concurrent-call guard (heroReq) stops a slow previous render from
+   over-writing a newer garage selection mid-flight. */
+let _heroReq = 0;
+async function loadDetailHero(hero, g, urls) {
+  const myReq = ++_heroReq;
+  hero.onclick = null;
+  hero.innerHTML = `<div class="detail-hero-loading">Loading Street View…</div>`;
+
+  const showMapillary = () => {
+    if (myReq !== _heroReq) return;
+    hero.innerHTML = `
+      <iframe src="${urls.mapillary}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="fullscreen"></iframe>
+      <div class="detail-hero-label">Street-level · Mapillary</div>`;
+    hero.onclick = null;  // iframe handles its own interactions
+  };
+
+  if (!GOOGLE_MAPS_API_KEY || GOOGLE_MAPS_API_KEY.startsWith('PASTE_')) {
+    return showMapillary();
+  }
+
+  try {
+    const metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?location=${g.lat},${g.lng}&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
+    const metaRes = await fetch(metaUrl);
+    if (myReq !== _heroReq) return; // newer selection arrived
+    const meta = await metaRes.json();
+    if (meta.status !== 'OK') return showMapillary();
+
+    // Coverage exists — load the image.  size 640x400 is a good fit for the
+    // 180px-tall hero container with 2x pixel density on retina.
+    const imgUrl = `https://maps.googleapis.com/maps/api/streetview`
+      + `?size=640x400&location=${g.lat},${g.lng}&fov=80&pitch=5`
+      + `&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
+    hero.innerHTML = `
+      <img src="${imgUrl}" alt="Street View near ${escapeHTML(g.name || 'entrance')}" loading="lazy">
+      <div class="detail-hero-label">Google Street View · click to pan</div>`;
+    hero.onclick = () => window.open(urls.svUrl, '_blank', 'noopener,noreferrer');
+  } catch (err) {
+    console.warn('[hero] Street View failed:', err);
+    showMapillary();
+  }
+}
+
 function renderDetail(g) {
   const panel = document.getElementById('detail');
   const body = document.getElementById('detailBody');
@@ -2183,9 +2249,7 @@ function renderDetail(g) {
   // Truck-nav apps (clearance-aware routing requires the vehicle profile set in their app)
   const truckerPathUrl = `https://truckerpath.com/maps/?lat=${g.lat}&lng=${g.lng}`;
   const copilotUrl = `https://www.copilotgps.com/en-us/truck/`;
-  hero.innerHTML = `
-    <iframe src="${mapillary}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="fullscreen"></iframe>
-    <div class="detail-hero-label">Street-level · Mapillary</div>`;
+  loadDetailHero(hero, g, { svUrl, mapillary });
   // Data-freshness check — clearances can change with renovations.
   const staleDays = g.verified_on ? Math.floor((Date.now() - new Date(g.verified_on).getTime()) / 86400000) : null;
   const isStale = staleDays != null && staleDays > 730; // 2 years
