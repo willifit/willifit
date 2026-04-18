@@ -1,0 +1,50 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-01-001387",
+      "name": "Low on-bridge clearance: SR 2",
+      "addr": "SR 2",
+      "lat": 34.80308,
+      "lng": -87.2301,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-01-014934",
+      "name": "Low clearance: TOWN CREEK under WASHINGTON ST",
+      "addr": "TOWN CREEK",
+      "lat": 34.80189,
+      "lng": -86.97706,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1989; bridge carries WASHINGTON ST",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-01-017336",
+      "name": "Low clearance: TRICO.BLVD./CREEK under TRICO.BLVD.",
+      "addr": "TRICO.BLVD./CREEK",
+      "lat": 34.6344,
+      "lng": -87.0949,
+      "height_in": 60,
+      "height_label": "5'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1996; bridge carries TRICO.BLVD.",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-01-017337",
+      "name": "Low clearance: BASSETT AVE./CLARK SPGS. under BASSETT AVE.",
+      "addr": "BASSETT AVE./CLARK SPGS.",
+      "lat": 34.57278,
+      "lng": -86.96667,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1996; bridge carries BASSETT AVE.",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

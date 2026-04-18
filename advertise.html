@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<title>Advertise on WillIFit.ai — reach RV &amp; truck drivers at the moment of decision</title>
+<meta name="description" content="WillIFit.ai is the AI-verified clearance-height database used by RV, truck, and oversized-vehicle drivers. Sponsor slots geo-target your ad to drivers making a parking decision in your city right now. From $25/mo.">
+<meta property="og:title" content="Advertise on WillIFit.ai">
+<meta property="og:description" content="AI-verified clearance data + geo-targeted sponsor slots from $25/mo. Reach drivers the moment they're deciding where to park.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/og-image.svg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+  :root {
+    --bg: #0e1116; --panel: #171b23; --panel-2: #1d2330;
+    --text: #e6eaf0; --muted: #8a95a6;
+    --border: #2a3140; --accent: #0ea5e9;
+    --ok: #3ecf8e; --warn: #f5a623; --bad: #e5484d;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         line-height: 1.6; }
+  .page { max-width: 880px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 36px; }
+  h1 { margin: 0 0 12px; font-size: 34px; letter-spacing: -0.02em; line-height: 1.15; }
+  h2 { margin-top: 40px; margin-bottom: 12px; font-size: 22px; letter-spacing: -0.01em; }
+  h3 { margin-top: 24px; margin-bottom: 8px; font-size: 16px; color: var(--text); }
+  p { margin: 10px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .back { display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
+  .back:hover { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .lede { font-size: 17px; color: var(--text); }
+  .hero-sub { color: var(--muted); font-size: 16px; margin-top: 8px; }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin: 24px 0 8px;
+  }
+  .stat {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 16px;
+  }
+  .stat .n { font-size: 28px; font-weight: 700; color: var(--accent); letter-spacing: -0.01em; }
+  .stat .l { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  .audience {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 20px; margin: 20px 0;
+  }
+  .audience ul { padding-left: 22px; }
+  .audience li { margin-bottom: 6px; }
+
+  table.rate-card {
+    width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+    font-size: 14px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden;
+  }
+  table.rate-card th, table.rate-card td {
+    padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--border);
+  }
+  table.rate-card th {
+    background: var(--panel-2); color: var(--muted); font-weight: 600;
+    font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  table.rate-card tr:last-child td { border-bottom: none; }
+  table.rate-card .price { color: var(--accent); font-weight: 700; white-space: nowrap; }
+
+  .pitch-list { list-style: none; padding: 0; margin: 16px 0; }
+  .pitch-list li {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 16px; margin-bottom: 10px;
+  }
+  .pitch-list .who { font-weight: 600; color: var(--text); }
+  .pitch-list .why { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+  .cta-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.08), rgba(14,165,233,0.02));
+    border: 1px solid rgba(14,165,233,0.35); border-radius: 10px;
+    padding: 24px; margin: 32px 0;
+  }
+  .cta-box h2 { margin-top: 0; }
+  form.inq { display: grid; gap: 10px; margin-top: 16px; }
+  form.inq label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 4px; }
+  form.inq input, form.inq textarea, form.inq select {
+    width: 100%; padding: 10px 12px; background: var(--panel);
+    border: 1px solid var(--border); border-radius: 6px;
+    color: var(--text); font: inherit;
+  }
+  form.inq input:focus, form.inq textarea:focus, form.inq select:focus {
+    outline: 2px solid var(--accent); outline-offset: -2px; border-color: transparent;
+  }
+  form.inq textarea { min-height: 80px; resize: vertical; }
+  form.inq button {
+    background: var(--accent); color: #001018; border: none; border-radius: 6px;
+    padding: 12px 20px; font-weight: 700; cursor: pointer; font-size: 14px;
+    margin-top: 4px; justify-self: start;
+  }
+  form.inq button:hover { filter: brightness(1.1); }
+  form.inq .hp { position: absolute; left: -5000px; }
+  form.inq .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 560px) { form.inq .row { grid-template-columns: 1fr; } }
+  .sent {
+    padding: 12px; border-radius: 6px; background: rgba(62,207,142,0.1);
+    border: 1px solid rgba(62,207,142,0.3); color: var(--ok);
+    margin-top: 12px; display: none;
+  }
+
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border);
+           font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--muted); }
+  footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="page">
+  <a href="/" class="back">← Back to WillIFit.ai</a>
+  <header>
+    <h1>Advertise on <span style="color:var(--accent)">WillIFit.ai</span></h1>
+    <p class="hero-sub">
+      WillIFit.ai is the AI-verified clearance-height database for RV, truck, and oversized-vehicle
+      drivers. Every parking-garage, tunnel, and low-bridge entry is cross-checked against Google
+      Street View signage by Claude Vision. Your sponsor slot reaches drivers at the exact moment
+      they're deciding where to park — no wasted impressions.</p>
+  </header>
+
+  <section>
+    <div class="stats">
+      <div class="stat"><div class="n">226</div><div class="l">US cities covered</div></div>
+      <div class="stat"><div class="n">7,400+</div><div class="l">garages, tunnels &amp; bridges</div></div>
+      <div class="stat"><div class="n">AI</div><div class="l">Claude Vision reads every sign</div></div>
+      <div class="stat"><div class="n">1,000+</div><div class="l">FHWA-verified low-clearance bridges</div></div>
+    </div>
+    <p class="muted">Traffic stats available after 30 days live — contact us for a current media kit.</p>
+  </section>
+
+  <h2>Who the audience is</h2>
+  <div class="audience">
+    <p>Every user on WillIFit is solving a specific problem: <b>"will my vehicle fit?"</b>
+       They typically:</p>
+    <ul>
+      <li>Drive a box truck, moving van, RV, cargo van, tow truck, or commercial rig</li>
+      <li>Are mid-trip or mid-move — they're about to spend money on parking, fuel, a tow, an
+          insurance claim, or a windshield</li>
+      <li>Are looking at a specific city, often a city they don't live in, often within the next
+          few hours</li>
+      <li>Have already told us their vehicle height, so we know who to show what</li>
+    </ul>
+    <p>This is the most intent-filtered audience you will ever see for your spend. No guessing
+       at demographics — if a user is on our site, they are your customer.</p>
+  </div>
+
+  <h2>Sponsor slot types &amp; rates</h2>
+  <p>All slots run on 30-day billing cycles. Cancel or change any month. Pricing below is a
+     starting rate card — volume, multi-city, and longer-term discounts available.</p>
+
+  <table class="rate-card">
+    <thead>
+      <tr><th>Slot</th><th>Placement</th><th>Targeting</th><th>Rate (per 30 days)</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Home Hero</b></td>
+        <td>Welcome card (seen by every visitor on first load)</td>
+        <td>Nationwide or a region</td>
+        <td class="price">$400 – $900</td>
+      </tr>
+      <tr>
+        <td><b>Sidebar — City</b></td>
+        <td>Pinned in the sidebar while browsing that city</td>
+        <td>Single city</td>
+        <td class="price">$75 – $200</td>
+      </tr>
+      <tr>
+        <td><b>Detail Panel — City</b></td>
+        <td>Shown inside every garage/bridge detail view in that city</td>
+        <td>Single city</td>
+        <td class="price">$40 – $120</td>
+      </tr>
+      <tr>
+        <td><b>Radius-targeted</b></td>
+        <td>Detail panel, shown within X km of your business coordinates</td>
+        <td>5–50 km radius of a lat/lng</td>
+        <td class="price">$50 – $150</td>
+      </tr>
+      <tr>
+        <td><b>Audience-targeted</b></td>
+        <td>Only served to users whose vehicle height matches your filter
+            (e.g. RVs ≥ 11', commercial &gt; 13'6")</td>
+        <td>Height-range filter</td>
+        <td class="price">+ 25% on top of base</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="muted">Pricing bands reflect city tier. Top-tier cities (LA, NYC, Chicago, Vegas,
+     Miami) price at the top of each band; smaller markets at the bottom. Every slot rotates
+     fairly — we cap at 4 sponsors per slot per city so your impressions are real.</p>
+
+  <h2>Good fits for this audience</h2>
+  <ul class="pitch-list">
+    <li>
+      <div class="who">RV parks &amp; campgrounds</div>
+      <div class="why">Drivers who just discovered their rig won't fit the garage they planned
+        to use are exactly the people looking for a back-up place to park overnight.</div>
+    </li>
+    <li>
+      <div class="who">Truck &amp; moving-van rental franchisees</div>
+      <div class="why">U-Haul, Penske, Budget dealerships — people making this check often are
+        about to rent, not buy. Geo-target your city radius.</div>
+    </li>
+    <li>
+      <div class="who">Heavy-duty towing &amp; recovery</div>
+      <div class="why">When the bridge hits happen, it's a wrecker call. Be the first name they see.</div>
+    </li>
+    <li>
+      <div class="who">RV / truck auto glass, body shops, roof repair</div>
+      <div class="why">Bridge strikes break windshields and tear off AC units. You're the
+        down-the-funnel remediation.</div>
+    </li>
+    <li>
+      <div class="who">Aftermarket: roof racks, antennas, height-gauge tools</div>
+      <div class="why">Flush-mount roof systems, laser clearance sensors, overhead mirrors —
+        users on our site are literally measuring their vehicles.</div>
+    </li>
+    <li>
+      <div class="who">Commercial truck nav apps, freight brokers</div>
+      <div class="why">We already link to Trucker Path and CoPilot Truck from every detail
+        page. Sponsored placement for your app up top.</div>
+    </li>
+    <li>
+      <div class="who">Local hotels with oversized-vehicle parking</div>
+      <div class="why">Users stranded when their planned garage won't work need somewhere
+        to overnight. Radius-targeted, airport-adjacent works great.</div>
+    </li>
+    <li>
+      <div class="who">Reservation platforms, parking marketplaces</div>
+      <div class="why">SpotHero, ParkWhiz, ParkMobile affiliates. Detail panel slot with a
+        deep-link to "reserve a spot that fits your height".</div>
+    </li>
+  </ul>
+
+  <h2>What we measure and report</h2>
+  <p>Every sponsor gets a monthly report including:</p>
+  <ul>
+    <li>Impressions (times the slot rendered)</li>
+    <li>Click-through rate</li>
+    <li>Geographic breakdown (which cities drove your clicks)</li>
+    <li>Vehicle-height distribution of clickers (who actually clicked)</li>
+  </ul>
+  <p>All traffic stats are aggregated and anonymized. We never sell or share user-level data —
+     see <a href="/privacy.html">our privacy policy</a>.</p>
+
+  <div class="cta-box">
+    <h2>Get in touch</h2>
+    <p>Tell us which cities matter to you and what you sell. We'll send a tailored quote
+       within one business day.</p>
+
+    <!-- Netlify Forms discovery form — mirrors the main app's pattern -->
+    <form class="inq" name="advertiser-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/advertise-thanks.html">
+      <input type="hidden" name="form-name" value="advertiser-inquiry">
+      <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <div class="row">
+        <div>
+          <label for="adv-name">Your name</label>
+          <input id="adv-name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div>
+          <label for="adv-company">Company</label>
+          <input id="adv-company" name="company" type="text" required autocomplete="organization">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="adv-email">Email</label>
+          <input id="adv-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="adv-phone">Phone (optional)</label>
+          <input id="adv-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div>
+        <label for="adv-slot">Interested in</label>
+        <select id="adv-slot" name="slot">
+          <option value="">—</option>
+          <option>Home Hero (nationwide / regional)</option>
+          <option>Sidebar — Single city</option>
+          <option>Sidebar — Multiple cities</option>
+          <option>Detail panel — Single city</option>
+          <option>Radius-targeted</option>
+          <option>Not sure — recommend what fits</option>
+        </select>
+      </div>
+      <div>
+        <label for="adv-cities">Cities or region you want to reach</label>
+        <input id="adv-cities" name="cities" type="text" placeholder="e.g. Las Vegas, Phoenix, or 'I-40 corridor'">
+      </div>
+      <div>
+        <label for="adv-msg">Anything we should know</label>
+        <textarea id="adv-msg" name="message" placeholder="Your business, your target customer, budget range, timing…"></textarea>
+      </div>
+      <button type="submit">Send inquiry</button>
+      <div class="sent" id="advSent">Thanks — we'll be in touch within one business day.</div>
+    </form>
+  </div>
+
+  <footer>
+    <div>
+      © <span id="y"></span> WillIFit — clearance data for oversized vehicles.
+    </div>
+    <div>
+      <a href="/">Home</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // Progressive enhancement — if JS is available, submit the form via fetch so
+  // the user stays on this page and sees an inline success. Falls back to
+  // the native POST → /advertise-thanks.html redirect if JS is off.
+  const form = document.querySelector('form.inq');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type=submit]');
+      const sent = document.getElementById('advSent');
+      btn.disabled = true; btn.textContent = 'Sending…';
+      try {
+        const body = new URLSearchParams(new FormData(form)).toString();
+        const r = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        });
+        if (!r.ok) throw new Error('submit ' + r.status);
+        sent.style.display = 'block';
+        form.querySelectorAll('input, select, textarea').forEach(i => { i.value = ''; });
+      } catch (err) {
+        // Fall through — trigger native submit
+        form.removeEventListener('submit', arguments.callee);
+        form.submit();
+      } finally {
+        btn.disabled = false; btn.textContent = 'Send inquiry';
+      }
+    });
+  }
+</script>
+</body>
+</html>

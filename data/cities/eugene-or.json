@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-41-0664800000043",
+      "name": "Low on-bridge clearance: COBURG ROAD",
+      "addr": "COBURG ROAD",
+      "lat": 44.05806,
+      "lng": -123.08388,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1950",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-41-39C174197500357",
+      "name": "Low on-bridge clearance: WENDLING RD",
+      "addr": "WENDLING RD",
+      "lat": 44.19129,
+      "lng": -122.79879,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-41-39C409408200011",
+      "name": "Low on-bridge clearance: BATTLE CREEK RD",
+      "addr": "BATTLE CREEK RD",
+      "lat": 43.96976,
+      "lng": -123.31889,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1922",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-41-39C643610700001",
+      "name": "Low on-bridge clearance: PARVIN ROAD",
+      "addr": "PARVIN ROAD",
+      "lat": 43.89947,
+      "lng": -122.82297,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1921",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-41-C39004",
+      "name": "Low on-bridge clearance: PLACE  RD.",
+      "addr": "PLACE  RD.",
+      "lat": 43.96602,
+      "lng": -122.84532,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1938",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

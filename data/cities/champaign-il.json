@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-17-010438400000000",
+      "name": "Low on-bridge clearance: TR 159",
+      "addr": "TR 159",
+      "lat": 40.14952,
+      "lng": -88.03406,
+      "height_in": 155,
+      "height_label": "12'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1992",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-17-010990000000000",
+      "name": "Low on-bridge clearance: TR 950",
+      "addr": "TR 950",
+      "lat": 40.20408,
+      "lng": -88.38763,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1965",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

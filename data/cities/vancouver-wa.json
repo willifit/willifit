@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-41-17107001C30731",
+      "name": "Low clearance: Bikepath under Hwy 001 Conn",
+      "addr": "Bikepath",
+      "lat": 45.60387,
+      "lng": -122.68125,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1992; bridge carries Hwy 001 Conn",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

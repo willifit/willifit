@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-51-000000000020339",
+      "name": "Low on-bridge clearance: IS 64 EBL N Appr",
+      "addr": "IS 64 EBL N Appr",
+      "lat": 37.01148,
+      "lng": -76.32303,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1974",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-000000000021797",
+      "name": "Low on-bridge clearance: CENTERVILLE TURNPK",
+      "addr": "CENTERVILLE TURNPK",
+      "lat": 36.72336,
+      "lng": -76.18634,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1955",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

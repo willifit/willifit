@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-23-2588",
+      "name": "Low clearance: GREAT WORKS RIVER under HIGH ST",
+      "addr": "GREAT WORKS RIVER",
+      "lat": 43.31754,
+      "lng": -70.73902,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1964; bridge carries HIGH ST",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-5172",
+      "name": "Low clearance: GREAT WORKS RIVER under MADISON ST",
+      "addr": "GREAT WORKS RIVER",
+      "lat": 43.30137,
+      "lng": -70.73778,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1963; bridge carries MADISON ST",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-A070092YADOTNBI",
+      "name": "Low on-bridge clearance: HWY   MAIN ST",
+      "addr": "HWY   MAIN ST",
+      "lat": 42.84141,
+      "lng": -70.92509,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-A070142Y8DOTNBI",
+      "name": "Low on-bridge clearance: HWY   MAIN ST",
+      "addr": "HWY   MAIN ST",
+      "lat": 42.83375,
+      "lng": -70.90675,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1909",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-A07026BPADOTNBI",
+      "name": "Low clearance: TR    AMESBURY RIVERWALK under I 495 NB",
+      "addr": "TR    AMESBURY RIVERWALK",
+      "lat": 42.84778,
+      "lng": -70.917,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2016; bridge carries I 495 NB",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

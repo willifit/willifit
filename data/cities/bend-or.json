@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-41-1685337200193",
+      "name": "Low on-bridge clearance: Colorado  Ave",
+      "addr": "Colorado  Ave",
+      "lat": 44.04906,
+      "lng": -121.32161,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1983",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

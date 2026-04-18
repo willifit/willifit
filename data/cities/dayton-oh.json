@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-39-2934965",
+      "name": "Low clearance: MASSIES CREEK under CHARLETON MILL",
+      "addr": "MASSIES CREEK",
+      "lat": 39.72927,
+      "lng": -83.87069,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2013; bridge carries CHARLETON MILL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-5746426",
+      "name": "Low clearance: Trib. to Holes Creek under Lyons Road C0150",
+      "addr": "Trib. to Holes Creek",
+      "lat": 39.62666,
+      "lng": -84.20963,
+      "height_in": 60,
+      "height_label": "5'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1986; bridge carries Lyons Road C0150",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-5762200",
+      "name": "Low clearance: PEDESTRIAN & BIKE PATH under N PATTERSON BLVD",
+      "addr": "PEDESTRIAN & BIKE PATH",
+      "lat": 39.76538,
+      "lng": -84.18818,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1959; bridge carries N PATTERSON BLVD",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-6833861",
+      "name": "Low on-bridge clearance: PYRMONT RD",
+      "addr": "PYRMONT RD",
+      "lat": 39.80256,
+      "lng": -84.53052,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-8360707",
+      "name": "Low clearance: CLEAR CREEK under RILEY BLVD",
+      "addr": "CLEAR CREEK",
+      "lat": 39.54992,
+      "lng": -84.31262,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1960; bridge carries RILEY BLVD",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

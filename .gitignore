@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────
+# WillIFit.ai — .gitignore
+# ─────────────────────────────────────────────────────────────
+
+# OS cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Python (import scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Node (none at the moment, but safety)
+node_modules/
+npm-debug.log*
+
+# Netlify CLI local state
+.netlify/
+
+# Build artifacts (none right now, but safety)
+dist/
+build/
+
+# ─────────────────────────────────────────────────────────────
+# LARGE DATA — NOT in git, regenerable via scripts
+# ─────────────────────────────────────────────────────────────
+# 244 MB of FHWA NBI state ASCII files.
+# Re-download any time with:  python3 scripts/nbi_import.py --download-only --all-states
+data/nbi_cache/
+
+# Script-generated logs
+data/streetview_verify.log
+
+# Local scratch / temp
+*.log
+/tmp/
+scratch/
+
+# ─────────────────────────────────────────────────────────────
+# SECRETS — never commit
+# ─────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+*.pem
+*.key

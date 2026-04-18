@@ -1,0 +1,83 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-36-000000003302200",
+      "name": "Low on-bridge clearance: RIVER STREET",
+      "addr": "RIVER STREET",
+      "lat": 44.50093,
+      "lng": -73.48543,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1878",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100404002704041",
+      "name": "Low on-bridge clearance: C3009",
+      "addr": "C3009",
+      "lat": 44.33303,
+      "lng": -73.28231,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1898",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100404002804041",
+      "name": "Low on-bridge clearance: C3039",
+      "addr": "C3039",
+      "lat": 44.28901,
+      "lng": -73.15018,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1849",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100404002904041",
+      "name": "Low on-bridge clearance: C3036",
+      "addr": "C3036",
+      "lat": 44.27631,
+      "lng": -73.18381,
+      "height_in": 127,
+      "height_label": "10'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1849",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100604002506041",
+      "name": "Low on-bridge clearance: C3035",
+      "addr": "C3035",
+      "lat": 44.66359,
+      "lng": -73.01041,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1865",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100604002706041",
+      "name": "Low on-bridge clearance: C3051",
+      "addr": "C3051",
+      "lat": 44.6501,
+      "lng": -72.98848,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1930",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-20008951-304012",
+      "name": "Low on-bridge clearance: I 00089 ML",
+      "addr": "I 00089 ML",
+      "lat": 44.38082,
+      "lng": -72.9167,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1964",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

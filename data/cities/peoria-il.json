@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-17-072500800000000",
+      "name": "Low on-bridge clearance: FORD ROAD - TR 224",
+      "addr": "FORD ROAD - TR 224",
+      "lat": 40.79389,
+      "lng": -89.71754,
+      "height_in": 101,
+      "height_label": "8'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1982",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-17-090008700000000",
+      "name": "Low on-bridge clearance: OLD ILL 121",
+      "addr": "OLD ILL 121",
+      "lat": 40.44038,
+      "lng": -89.46846,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1932",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

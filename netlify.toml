@@ -1,0 +1,64 @@
+# WillIFit — Netlify deploy config
+# Drop-in static deploy. No build step required.
+
+[build]
+  publish = "."
+  # No command — we're pure static. Netlify still needs the field declared.
+  command = "echo 'no build step required'"
+
+# "/" serves /index.html by default (Netlify static convention).
+# /willifit.html still works as a legacy alias for shared bookmarks.
+
+# SEO-friendly deep links like /city/las-vegas-nv → app with hash pre-loaded.
+# Disabled by default; uncomment once the app reads a path-style slug.
+# [[redirects]]
+#   from = "/city/:slug"
+#   to   = "/#:slug"
+#   status = 200
+
+# -----------------------------------------------------------------------------
+# Security headers — set site-wide.  These match the CSP declared in the HTML
+# but also apply to .json endpoints, images, etc.
+# -----------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options        = "DENY"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "geolocation=(self), microphone=(), camera=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Long-cache static assets (favicon, images)
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+# City data — short cache so map updates propagate within a day
+[[headers]]
+  for = "/data/cities/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/data/index.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# Never cache the service worker — you always want the new one picked up.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# Prevent crawlers from hitting huge NBI caches
+[[headers]]
+  for = "/data/nbi_cache/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

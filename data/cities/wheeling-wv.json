@@ -1,0 +1,105 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000018346",
+      "name": "Low on-bridge clearance: SR 3001",
+      "addr": "SR 3001",
+      "lat": 39.96199,
+      "lng": -80.51673,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1901",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000035275",
+      "name": "Low on-bridge clearance: PLANTS BRIDGE T408",
+      "addr": "PLANTS BRIDGE T408",
+      "lat": 40.02113,
+      "lng": -80.41613,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1887",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000035277",
+      "name": "Low on-bridge clearance: SPROWLS BRIDGET450",
+      "addr": "SPROWLS BRIDGET450",
+      "lat": 40.01081,
+      "lng": -80.40681,
+      "height_in": 130,
+      "height_label": "10'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000035348",
+      "name": "Low on-bridge clearance: CRAWFORD BRIDGE",
+      "addr": "CRAWFORD BRIDGE",
+      "lat": 39.99904,
+      "lng": -80.47263,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1887",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000035353",
+      "name": "Low on-bridge clearance: T-414",
+      "addr": "T-414",
+      "lat": 39.97791,
+      "lng": -80.44618,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1887",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000035354",
+      "name": "Low on-bridge clearance: DANLEY BRIDGE T379",
+      "addr": "DANLEY BRIDGE T379",
+      "lat": 40.05511,
+      "lng": -80.4395,
+      "height_in": 113,
+      "height_label": "9'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1887",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000035A063",
+      "name": "Low on-bridge clearance: Interstate 70 WB",
+      "addr": "Interstate 70 WB",
+      "lat": 40.07349,
+      "lng": -80.71477,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1966",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000035A090",
+      "name": "Low on-bridge clearance: WV Route 251",
+      "addr": "WV Route 251",
+      "lat": 40.07022,
+      "lng": -80.72673,
+      "height_in": 90,
+      "height_label": "7'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1849",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000035A095",
+      "name": "Low on-bridge clearance: Interstate 70 EB",
+      "addr": "Interstate 70 EB",
+      "lat": 40.0735,
+      "lng": -80.71271,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1966",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

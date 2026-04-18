@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-40-249620000000000",
+      "name": "Low on-bridge clearance: E. BOOMER ST.",
+      "addr": "E. BOOMER ST.",
+      "lat": 35.0128,
+      "lng": -97.33376,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1995",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-26-000000000010851",
+      "name": "Low on-bridge clearance: US-12 M/W TRI LVL",
+      "addr": "US-12 M/W TRI LVL",
+      "lat": 42.24251,
+      "lng": -83.56595,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1942",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-26-000000000010853",
+      "name": "Low on-bridge clearance: US-12 (M/E TRI LVL",
+      "addr": "US-12 (M/E TRI LVL",
+      "lat": 42.24762,
+      "lng": -83.55238,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1942",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-26-000000000010913",
+      "name": "Low on-bridge clearance: US-23 ENT RAMP B",
+      "addr": "US-23 ENT RAMP B",
+      "lat": 42.32261,
+      "lng": -83.69012,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1964",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-26-000000000011029",
+      "name": "Low on-bridge clearance: EAST DELHI ROAD",
+      "addr": "EAST DELHI ROAD",
+      "lat": 42.33392,
+      "lng": -83.80916,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-26-000000000011030",
+      "name": "Low on-bridge clearance: MAPLE ROAD",
+      "addr": "MAPLE ROAD",
+      "lat": 42.31693,
+      "lng": -83.77811,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1876",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

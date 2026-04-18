@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-09-03754",
+      "name": "Low clearance: FARMINGTON CANAL GREENWA under TEMPLE STREET",
+      "addr": "FARMINGTON CANAL GREENWA",
+      "lat": 41.31202,
+      "lng": -72.92307,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1900; bridge carries TEMPLE STREET",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-03788",
+      "name": "Low on-bridge clearance: DEPOT STREET",
+      "addr": "DEPOT STREET",
+      "lat": 41.44216,
+      "lng": -73.06269,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1935",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-03997",
+      "name": "Low clearance: FARMINGTON CANAL GREENWA under PROSPECT STREET",
+      "addr": "FARMINGTON CANAL GREENWA",
+      "lat": 41.3138,
+      "lng": -72.92504,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1929; bridge carries PROSPECT STREET",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-04026",
+      "name": "Low clearance: FARMINGTON CANAL GREENWA under HILLHOUSE AVENUE",
+      "addr": "FARMINGTON CANAL GREENWA",
+      "lat": 41.31276,
+      "lng": -72.92388,
+      "height_in": 116,
+      "height_label": "9'8\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1910; bridge carries HILLHOUSE AVENUE",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-06534",
+      "name": "Low on-bridge clearance: GEORGE STREET",
+      "addr": "GEORGE STREET",
+      "lat": 41.30407,
+      "lng": -72.92803,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1963",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-06581",
+      "name": "Low on-bridge clearance: CHURCH ST SOUTH #2",
+      "addr": "CHURCH ST SOUTH #2",
+      "lat": 41.29494,
+      "lng": -72.92657,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2003",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

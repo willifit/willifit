@@ -1,0 +1,94 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-29-12291",
+      "name": "Low on-bridge clearance: MUD CREEK RD",
+      "addr": "MUD CREEK RD",
+      "lat": 38.67856,
+      "lng": -92.38792,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1993",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-12954",
+      "name": "Low on-bridge clearance: IMHOFF RD",
+      "addr": "IMHOFF RD",
+      "lat": 38.94626,
+      "lng": -92.94832,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1907",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-13450",
+      "name": "Low on-bridge clearance: ROCK HOUSE RD",
+      "addr": "ROCK HOUSE RD",
+      "lat": 38.53956,
+      "lng": -92.45754,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1994",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-15178",
+      "name": "Low on-bridge clearance: ALGOA RD",
+      "addr": "ALGOA RD",
+      "lat": 38.55501,
+      "lng": -92.09446,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1992",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-16114",
+      "name": "Low on-bridge clearance: OAK DALE RD",
+      "addr": "OAK DALE RD",
+      "lat": 38.59744,
+      "lng": -92.71175,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1930",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-19066",
+      "name": "Low on-bridge clearance: COUNTY RD 857",
+      "addr": "COUNTY RD 857",
+      "lat": 39.43603,
+      "lng": -92.05003,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1910",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-19671",
+      "name": "Low on-bridge clearance: HEMSTREET RD",
+      "addr": "HEMSTREET RD",
+      "lat": 38.53565,
+      "lng": -92.31893,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1930",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-6345",
+      "name": "Low on-bridge clearance: US 54 W",
+      "addr": "US 54 W",
+      "lat": 38.58961,
+      "lng": -92.17683,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1955",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

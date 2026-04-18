@@ -1,0 +1,116 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-36-000000001021920",
+      "name": "Low on-bridge clearance: RTE 48",
+      "addr": "RTE 48",
+      "lat": 43.15714,
+      "lng": -76.33234,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1937",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001050780",
+      "name": "Low on-bridge clearance: RAMP BB",
+      "addr": "RAMP BB",
+      "lat": 43.05439,
+      "lng": -76.15808,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1968",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001051062",
+      "name": "Low on-bridge clearance: RTE I690",
+      "addr": "RTE I690",
+      "lat": 43.05146,
+      "lng": -76.14211,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1968",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001051159",
+      "name": "Low on-bridge clearance: RTE I690",
+      "addr": "RTE I690",
+      "lat": 43.05477,
+      "lng": -76.11559,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1968",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000002208570",
+      "name": "Low on-bridge clearance: PLUM STREET",
+      "addr": "PLUM STREET",
+      "lat": 43.05559,
+      "lng": -76.15968,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1907",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004027420",
+      "name": "Low on-bridge clearance: COUNTY ROUTE 57",
+      "addr": "COUNTY ROUTE 57",
+      "lat": 43.20182,
+      "lng": -76.27795,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1940",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004431020",
+      "name": "Low on-bridge clearance: BONTA BRIDGE ROAD",
+      "addr": "BONTA BRIDGE ROAD",
+      "lat": 43.07648,
+      "lng": -76.51402,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1912",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004433030",
+      "name": "Low on-bridge clearance: BLACK CREEK ROAD",
+      "addr": "BLACK CREEK ROAD",
+      "lat": 43.23627,
+      "lng": -76.20304,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1908",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004433130",
+      "name": "Low on-bridge clearance: PLAINVILLE ROAD",
+      "addr": "PLAINVILLE ROAD",
+      "lat": 43.11313,
+      "lng": -76.43922,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2005",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004434070",
+      "name": "Low on-bridge clearance: COUNTY RD 46",
+      "addr": "COUNTY RD 46",
+      "lat": 43.24789,
+      "lng": -76.35176,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1915",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

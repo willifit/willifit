@@ -1,0 +1,105 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-25-D09014BKPMUNNBI",
+      "name": "Low on-bridge clearance: HWY   HEMLOCK ST",
+      "addr": "HWY   HEMLOCK ST",
+      "lat": 42.01697,
+      "lng": -71.72073,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2014",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-S300274MXDOTNBI",
+      "name": "Low on-bridge clearance: HWY   CEDAR ST",
+      "addr": "HWY   CEDAR ST",
+      "lat": 42.13533,
+      "lng": -72.09606,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1957",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-U010101HYMUNNBI",
+      "name": "Low on-bridge clearance: HWY   FOWLER ST",
+      "addr": "HWY   FOWLER ST",
+      "lat": 42.18275,
+      "lng": -71.628,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1956",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W440121E2MUNNBI",
+      "name": "Low on-bridge clearance: HWY   SOUTHBRDG ST",
+      "addr": "HWY   SOUTHBRDG ST",
+      "lat": 42.24122,
+      "lng": -71.8124,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1956",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W44074B99MUNNBI",
+      "name": "Low on-bridge clearance: HWY   CITY TUNNEL",
+      "addr": "HWY   CITY TUNNEL",
+      "lat": 42.27169,
+      "lng": -71.79925,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1954",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W44078239DOT634",
+      "name": "Low on-bridge clearance: RR    P&W/B&M/TNL",
+      "addr": "RR    P&W/B&M/TNL",
+      "lat": 42.27022,
+      "lng": -71.79693,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1953",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W44152AKVDOTNBI",
+      "name": "Low clearance: OTHER BIKEWAY under ST146 NB OFF RAMP",
+      "addr": "OTHER BIKEWAY",
+      "lat": 42.24538,
+      "lng": -71.80224,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2006; bridge carries ST146 NB OFF RAMP",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W44156ANPDOTNBI",
+      "name": "Low clearance: WATER BLACKSTONE RIVER under HWY   BLKSTN RVR R",
+      "addr": "WATER BLACKSTONE RIVER",
+      "lat": 42.22787,
+      "lng": -71.7876,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2001; bridge carries HWY   BLKSTN RVR R",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W44159ATDDOTNBI",
+      "name": "Low clearance: COMB  BLKSTNE RIV / BKWY under HWY   MCKEON RD",
+      "addr": "COMB  BLKSTNE RIV / BKWY",
+      "lat": 42.23589,
+      "lng": -71.79472,
+      "height_in": 116,
+      "height_label": "9'8\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2005; bridge carries HWY   MCKEON RD",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

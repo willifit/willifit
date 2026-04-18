@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-54-00000000020A269",
+      "name": "Low on-bridge clearance: CR 83/3",
+      "addr": "CR 83/3",
+      "lat": 38.17317,
+      "lng": -81.40104,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1921",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000020A337",
+      "name": "Low on-bridge clearance: CR 25/47",
+      "addr": "CR 25/47",
+      "lat": 38.35543,
+      "lng": -81.73676,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1953",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000020A404",
+      "name": "Low clearance: CITY PARKING LOT under I-64 WB",
+      "addr": "CITY PARKING LOT",
+      "lat": 38.35807,
+      "lng": -81.64357,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1975; bridge carries I-64 WB",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000020A861",
+      "name": "Low on-bridge clearance: CR 79/4",
+      "addr": "CR 79/4",
+      "lat": 38.16788,
+      "lng": -81.44732,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2013",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000020A904",
+      "name": "Low clearance: COLUMBIA AVE & ELK RIVER under QUARRIER STREET",
+      "addr": "COLUMBIA AVE & ELK RIVER",
+      "lat": 38.35651,
+      "lng": -81.64304,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1955; bridge carries QUARRIER STREET",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-30-000000202007006",
+      "name": "Low on-bridge clearance: N RUSSEL STREET",
+      "addr": "N RUSSEL STREET",
+      "lat": 46.8761,
+      "lng": -114.01861,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2020",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-30-I00090105+06332",
+      "name": "Low on-bridge clearance: I 90 WB",
+      "addr": "I 90 WB",
+      "lat": 46.87053,
+      "lng": -113.98121,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1964",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-30-L32101000+01001",
+      "name": "Low on-bridge clearance: NORTH AVE W",
+      "addr": "NORTH AVE W",
+      "lat": 46.85313,
+      "lng": -114.0979,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1935",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

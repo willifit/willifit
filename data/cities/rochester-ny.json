@@ -1,0 +1,138 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-36-000000001023000",
+      "name": "Low on-bridge clearance: RTE 33",
+      "addr": "RTE 33",
+      "lat": 43.0919,
+      "lng": -77.92104,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1939",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001025811",
+      "name": "Low on-bridge clearance: RTE I490",
+      "addr": "RTE I490",
+      "lat": 43.15837,
+      "lng": -77.68218,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1961",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001062471",
+      "name": "Low on-bridge clearance: RTE 104",
+      "addr": "RTE 104",
+      "lat": 43.20676,
+      "lng": -77.67617,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2005",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001070940",
+      "name": "Low on-bridge clearance: RTE I390",
+      "addr": "RTE I390",
+      "lat": 43.11052,
+      "lng": -77.60023,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1981",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001093810",
+      "name": "Low on-bridge clearance: RTE I490",
+      "addr": "RTE I490",
+      "lat": 43.15599,
+      "lng": -77.6206,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1974",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000002256060",
+      "name": "Low on-bridge clearance: RTE 31",
+      "addr": "RTE 31",
+      "lat": 43.1557,
+      "lng": -77.62228,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1922",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004443060",
+      "name": "Low on-bridge clearance: MARSH ROAD",
+      "addr": "MARSH ROAD",
+      "lat": 43.06249,
+      "lng": -77.47756,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1912",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004443070",
+      "name": "Low on-bridge clearance: MITCHELL ROAD",
+      "addr": "MITCHELL ROAD",
+      "lat": 43.08306,
+      "lng": -77.50627,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1912",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004443140",
+      "name": "Low on-bridge clearance: GILLETT ROAD",
+      "addr": "GILLETT ROAD",
+      "lat": 43.1907,
+      "lng": -77.77358,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1909",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004443150",
+      "name": "Low on-bridge clearance: MARTHA STREET",
+      "addr": "MARTHA STREET",
+      "lat": 43.19499,
+      "lng": -77.80339,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1908",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004443160",
+      "name": "Low on-bridge clearance: TRIMMER ROAD",
+      "addr": "TRIMMER ROAD",
+      "lat": 43.19586,
+      "lng": -77.82348,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1909",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004443180",
+      "name": "Low on-bridge clearance: GALLUP RD",
+      "addr": "GALLUP RD",
+      "lat": 43.20271,
+      "lng": -77.87267,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1908",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

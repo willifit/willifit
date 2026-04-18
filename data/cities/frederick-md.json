@@ -1,0 +1,116 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-24-100000100017010",
+      "name": "Low on-bridge clearance: US 15",
+      "addr": "US 15",
+      "lat": 39.27428,
+      "lng": -77.54261,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1939",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000100018010",
+      "name": "Low on-bridge clearance: MD 17",
+      "addr": "MD 17",
+      "lat": 39.42828,
+      "lng": -77.556,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1934",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000100025014",
+      "name": "Low on-bridge clearance: MD 26",
+      "addr": "MD 26",
+      "lat": 39.45284,
+      "lng": -77.37001,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1932",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000100029010",
+      "name": "Low on-bridge clearance: MD 28",
+      "addr": "MD 28",
+      "lat": 39.24381,
+      "lng": -77.43958,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1931",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000100055010",
+      "name": "Low on-bridge clearance: ROCKY RIDGE ROAD (",
+      "addr": "ROCKY RIDGE ROAD (",
+      "lat": 39.60346,
+      "lng": -77.29351,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1932",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000100059010",
+      "name": "Low on-bridge clearance: MD 80",
+      "addr": "MD 80",
+      "lat": 39.32569,
+      "lng": -77.4145,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1973",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000100085010",
+      "name": "Low on-bridge clearance: MD 355",
+      "addr": "MD 355",
+      "lat": 39.36954,
+      "lng": -77.39054,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1930",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-100000150099010",
+      "name": "Low on-bridge clearance: MD 109",
+      "addr": "MD 109",
+      "lat": 39.27784,
+      "lng": -77.32322,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1951",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-200000F-0407010",
+      "name": "Low on-bridge clearance: STEVENS ROAD",
+      "addr": "STEVENS ROAD",
+      "lat": 39.56004,
+      "lng": -77.38444,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-24-3100003P0000000",
+      "name": "Low clearance: C&O CANAL under POINT OF ROCKS ROA",
+      "addr": "C&O CANAL",
+      "lat": 39.27344,
+      "lng": -77.53986,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1890; bridge carries POINT OF ROCKS ROA",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

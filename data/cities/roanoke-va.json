@@ -1,0 +1,215 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-51-000000000005556",
+      "name": "Low on-bridge clearance: ROUTE 0692",
+      "addr": "ROUTE 0692",
+      "lat": 37.41696,
+      "lng": -80.14868,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1925",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-000000000021603",
+      "name": "Low on-bridge clearance: 10TH STREET",
+      "addr": "10TH STREET",
+      "lat": 37.27524,
+      "lng": -79.95771,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1973",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-000000000021624",
+      "name": "Low on-bridge clearance: JEFFERSON ST",
+      "addr": "JEFFERSON ST",
+      "lat": 37.25172,
+      "lng": -79.94342,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1978",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-000000000021750",
+      "name": "Low clearance: TAZEWELL AVENUE under ROUTE 0581",
+      "addr": "TAZEWELL AVENUE",
+      "lat": 37.27,
+      "lng": -79.93633,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1968; bridge carries ROUTE 0581",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140021P0000000",
+      "name": "Low clearance: VA ROUTE 657 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 657",
+      "lat": 37.37033,
+      "lng": -79.83925,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1946; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140024P0000000",
+      "name": "Low clearance: VA ROUTE 604 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 604",
+      "lat": 37.32372,
+      "lng": -79.85781,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1963; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140025P0000000",
+      "name": "Low clearance: VA ROUTE 651 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 651",
+      "lat": 37.29331,
+      "lng": -79.85683,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1955; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140026P0000000",
+      "name": "Low clearance: VA ROUTE 24 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 24",
+      "lat": 37.28436,
+      "lng": -79.85228,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1962; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140029P0000000",
+      "name": "Low clearance: HIGHLAND ROAD (VA ROUTE under BLUE RIDGE PARKWAY",
+      "addr": "HIGHLAND ROAD (VA ROUTE",
+      "lat": 37.24678,
+      "lng": -79.87469,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1964; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140030P0000000",
+      "name": "Low clearance: RUTROUGH RD (VA RTE 658) under BLUE RIDGE PARKWAY",
+      "addr": "RUTROUGH RD (VA RTE 658)",
+      "lat": 37.24014,
+      "lng": -79.886,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1964; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140031P0000000",
+      "name": "Low clearance: BLUE RIDGE PARKWAY under VA ROUTE 617",
+      "addr": "BLUE RIDGE PARKWAY",
+      "lat": 37.23611,
+      "lng": -79.89906,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1964; bridge carries VA ROUTE 617",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140032P0000000",
+      "name": "Low clearance: VA ROUTE 116 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 116",
+      "lat": 37.23019,
+      "lng": -79.90544,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1964; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140033P0000000",
+      "name": "Low clearance: BLUE RIDGE PARKWAY under VA ROUTE 666",
+      "addr": "BLUE RIDGE PARKWAY",
+      "lat": 37.22664,
+      "lng": -79.92039,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1962; bridge carries VA ROUTE 666",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140038P0000000",
+      "name": "Low clearance: VA ROUTE 679 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 679",
+      "lat": 37.20169,
+      "lng": -79.97025,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1959; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140041P0000000",
+      "name": "Low clearance: VA ROUTE 688 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 688",
+      "lat": 37.19547,
+      "lng": -80.02811,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1960; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140042P0000000",
+      "name": "Low clearance: VA ROUTE 691 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 691",
+      "lat": 37.18192,
+      "lng": -80.04622,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1950; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140045P0000000",
+      "name": "Low clearance: VA ROUTE 690 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 690",
+      "lat": 37.17119,
+      "lng": -80.08642,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1958; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140046P0000000",
+      "name": "Low clearance: VA ROUTE 612 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 612",
+      "lat": 37.15267,
+      "lng": -80.09025,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1958; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140047P0000000",
+      "name": "Low clearance: VA ROUTE 602 under BLUE RIDGE PARKWAY",
+      "addr": "VA ROUTE 602",
+      "lat": 37.12503,
+      "lng": -80.12636,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1958; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

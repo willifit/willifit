@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-17-058005000000000",
+      "name": "Low on-bridge clearance: FAP 320(IL 121 & 4",
+      "addr": "FAP 320(IL 121 & 4",
+      "lat": 39.87645,
+      "lng": -88.96096,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1971",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-17-058602300000000",
+      "name": "Low on-bridge clearance: FAU 7431",
+      "addr": "FAU 7431",
+      "lat": 39.93379,
+      "lng": -88.97868,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2011",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-17-065000200000000",
+      "name": "Low on-bridge clearance: ILL 97",
+      "addr": "ILL 97",
+      "lat": 40.12385,
+      "lng": -89.9845,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1938",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

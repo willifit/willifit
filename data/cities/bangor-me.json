@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-23-1003",
+      "name": "Low on-bridge clearance: COVERED BRIDGE RD",
+      "addr": "COVERED BRIDGE RD",
+      "lat": 44.94341,
+      "lng": -68.96858,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1876",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-3587",
+      "name": "Low clearance: BEACH BRIDGE BROOK under MAIN RD",
+      "addr": "BEACH BRIDGE BROOK",
+      "lat": 45.05267,
+      "lng": -68.65646,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1938; bridge carries MAIN RD",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

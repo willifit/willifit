@@ -1,0 +1,94 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-56-BBB",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.86742,
+      "lng": -106.99279,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1959; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-BBD",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.85766,
+      "lng": -106.99004,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1959; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-BBF",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.84355,
+      "lng": -106.98229,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1959; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-BBT",
+      "name": "Low on-bridge clearance: I-90 EBL",
+      "addr": "I-90 EBL",
+      "lat": 44.79918,
+      "lng": -106.93688,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1961",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-BBX",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.78522,
+      "lng": -106.93679,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1961; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-BCL",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.61375,
+      "lng": -106.847,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1968; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-EAB",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.9181,
+      "lng": -107.11163,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1982; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-56-EUI",
+      "name": "Low clearance: Machinery Pass under I-90 EBL",
+      "addr": "Machinery Pass",
+      "lat": 44.95851,
+      "lng": -107.24709,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1983; bridge carries I-90 EBL",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

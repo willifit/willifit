@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-12-550071",
+      "name": "Low on-bridge clearance: I10 SR8",
+      "addr": "I10 SR8",
+      "lat": 30.48485,
+      "lng": -84.30074,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1974",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-12-550171",
+      "name": "Low clearance: St. Marks Trail under SR373",
+      "addr": "St. Marks Trail",
+      "lat": 30.41253,
+      "lng": -84.29869,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2014; bridge carries SR373",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-12-559004",
+      "name": "Low on-bridge clearance: Ped.&Veh.Overpass",
+      "addr": "Ped.&Veh.Overpass",
+      "lat": 30.43729,
+      "lng": -84.28436,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1970",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

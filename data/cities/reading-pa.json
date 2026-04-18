@@ -1,0 +1,83 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000005022",
+      "name": "Low on-bridge clearance: COVERED BRIDGE RD",
+      "addr": "COVERED BRIDGE RD",
+      "lat": 40.3792,
+      "lng": -75.73876,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1852",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000005035",
+      "name": "Low on-bridge clearance: SR 2005 (LR 148)",
+      "addr": "SR 2005 (LR 148)",
+      "lat": 40.32615,
+      "lng": -75.93233,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1920",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021851",
+      "name": "Low on-bridge clearance: WEAVERLAND RD",
+      "addr": "WEAVERLAND RD",
+      "lat": 40.1412,
+      "lng": -75.99791,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1878",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021893",
+      "name": "Low on-bridge clearance: COCALICO CREEK RD",
+      "addr": "COCALICO CREEK RD",
+      "lat": 40.20801,
+      "lng": -76.13472,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1891",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022763",
+      "name": "Low on-bridge clearance: SR 2014 FURNACE RD",
+      "addr": "SR 2014 FURNACE RD",
+      "lat": 40.35838,
+      "lng": -76.22708,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000047921",
+      "name": "Low on-bridge clearance: PA 183  (LR310)",
+      "addr": "PA 183  (LR310)",
+      "lat": 40.3821,
+      "lng": -75.98472,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2013",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000054701",
+      "name": "Low on-bridge clearance: T848 Cnstga Crk Rd",
+      "addr": "T848 Cnstga Crk Rd",
+      "lat": 40.14038,
+      "lng": -76.04093,
+      "height_in": 94,
+      "height_label": "7'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2017",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

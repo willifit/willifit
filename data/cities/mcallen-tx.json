@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-48-212450032710223",
+      "name": "Low clearance: WILDLIFE CROSSING under US 77NBML",
+      "addr": "WILDLIFE CROSSING",
+      "lat": 26.53501,
+      "lng": -97.77475,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2020; bridge carries US 77NBML",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-56-AWX",
+      "name": "Low clearance: Machinery Pass under I-80 EBL",
+      "addr": "Machinery Pass",
+      "lat": 41.368,
+      "lng": -105.78615,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1969; bridge carries I-80 EBL",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

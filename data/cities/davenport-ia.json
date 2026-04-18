@@ -1,0 +1,50 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-17-000000000819903",
+      "name": "Low on-bridge clearance: FT ARMSTRNG AV  RR",
+      "addr": "FT ARMSTRNG AV  RR",
+      "lat": 41.51944,
+      "lng": -90.56722,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1896",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-17-081003800000000",
+      "name": "Low on-bridge clearance: US RT 67",
+      "addr": "US RT 67",
+      "lat": 41.46066,
+      "lng": -90.57766,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1948",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-17-081004000000000",
+      "name": "Low on-bridge clearance: US RT 67",
+      "addr": "US RT 67",
+      "lat": 41.45449,
+      "lng": -90.57338,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1948",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000047030",
+      "name": "Low on-bridge clearance: ARSENAL ISL RD",
+      "addr": "ARSENAL ISL RD",
+      "lat": 41.52097,
+      "lng": -90.56814,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1942",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

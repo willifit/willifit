@@ -1,0 +1,50 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-05-000000000011039",
+      "name": "Low on-bridge clearance: Clark CR 8 Z-G",
+      "addr": "Clark CR 8 Z-G",
+      "lat": 33.99476,
+      "lng": -93.13552,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-05-000000000011042",
+      "name": "Low on-bridge clearance: Clark CR 8 Z-G",
+      "addr": "Clark CR 8 Z-G",
+      "lat": 33.98441,
+      "lng": -93.13675,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-05-000000000015731",
+      "name": "Low on-bridge clearance: Wallace Bridge Rd",
+      "addr": "Wallace Bridge Rd",
+      "lat": 34.93685,
+      "lng": -93.05539,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1909",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-05-000000000017693",
+      "name": "Low on-bridge clearance: CR8/Duck Pond Rd",
+      "addr": "CR8/Duck Pond Rd",
+      "lat": 34.9444,
+      "lng": -93.32775,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1905",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

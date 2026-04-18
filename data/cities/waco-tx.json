@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-48-091610001501733",
+      "name": "Low clearance: BRAZOS RIVER under IH 35 SBML",
+      "addr": "BRAZOS RIVER",
+      "lat": 31.55798,
+      "lng": -97.11933,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2021; bridge carries IH 35 SBML",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-48-091610025809067",
+      "name": "Low clearance: LAKE WACO under SH 6 NB",
+      "addr": "LAKE WACO",
+      "lat": 31.52722,
+      "lng": -97.22759,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1963; bridge carries SH 6 NB",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

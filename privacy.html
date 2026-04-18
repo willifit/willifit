@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy — WillIFit</title>
+<meta name="description" content="How WillIFit handles your data. We store your city preference and vehicle height locally in your browser. We do not sell personal data.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+  :root {
+    --bg: #0e1116; --panel: #171b23; --text: #e6eaf0;
+    --muted: #8a95a6; --border: #2a3140;
+    --ok: #3ecf8e; --warn: #f5a623; --bad: #e5484d;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; }
+  .page { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 32px; }
+  h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+  h2 { margin-top: 32px; font-size: 18px; }
+  a { color: var(--ok); }
+  a:hover { color: var(--warn); }
+  .back { display: inline-block; margin-bottom: 8px; font-size: 13px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--ok); }
+  .muted { color: var(--muted); font-size: 13px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  code { background: var(--panel); padding: 2px 6px; border-radius: 3px; font-family: 'Menlo', monospace; font-size: 13px; color: var(--warn); }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <a href="/" class="back">← Back to WillIFit</a>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: <time datetime="2026-04-17">April 17, 2026</time></p>
+  </header>
+
+  <p>This policy explains what data WillIFit collects, how it's used, and your choices.</p>
+
+  <h2>Short version</h2>
+  <ul>
+    <li>We do <b>not</b> sell your personal data</li>
+    <li>Most of what WillIFit "knows" about you (last city, vehicle height, pending reports) lives in your own browser's localStorage — not our servers</li>
+    <li>If you submit a clearance report with contact info, we store it so we can reply</li>
+    <li>We use privacy-respecting analytics to count visits; no cross-site tracking</li>
+    <li>Map tiles and embeds are served by third parties who have their own policies</li>
+  </ul>
+
+  <h2>What we store locally in your browser</h2>
+  <p>These keys are written to <code>localStorage</code> on your device. They never leave your browser unless you explicitly submit a report:</p>
+  <ul>
+    <li><code>willifit_last_city</code> — slug of the last city you viewed (for convenience on return visits)</li>
+    <li><code>willifit_vehicle_height_in</code> — your entered vehicle height, in inches, if you set one</li>
+    <li><code>willifit_report_queue</code> — clearance reports you've submitted (queued locally so nothing is lost if the network fails)</li>
+    <li><code>willifit_ad_impression</code> / <code>willifit_ad_click</code> — anonymous counters for which sponsored cards you've seen/clicked (used to rotate ads fairly)</li>
+  </ul>
+  <p>You can clear all of it anytime by clearing your browser's site data for WillIFit.</p>
+
+  <h2>Geolocation</h2>
+  <p>If you allow it, your browser shares your approximate location with WillIFit so we can open the nearest covered city. We use it once to pick a city and do not store it. You can deny the permission and manually pick a city instead — no difference in functionality.</p>
+
+  <h2>Clearance reports you submit</h2>
+  <p>When you use the "Report clearance" form:</p>
+  <ul>
+    <li>The report data (garage ID, your measurements, notes, optional email) is submitted to our backend for review</li>
+    <li>Your email (if provided) is used only to reply with follow-up questions or to notify you if we update the data based on your report</li>
+    <li>We never sell or share your email with third parties</li>
+    <li>Your user agent string and submission timestamp are captured for anti-abuse purposes</li>
+    <li>Submissions may be retained indefinitely as part of our data-quality audit trail</li>
+  </ul>
+
+  <h2>Analytics</h2>
+  <p>We use a privacy-respecting analytics service (such as Plausible or Fathom) that counts page views and basic interactions without cookies, fingerprinting, or cross-site tracking. Individual users are not identified.</p>
+
+  <h2>Third parties</h2>
+  <p>WillIFit loads resources and makes requests to:</p>
+  <ul>
+    <li><b>OpenStreetMap</b> — map tiles (their <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">privacy policy</a>)</li>
+    <li><b>Mapillary</b> — street-level imagery embedded in garage detail views (their <a href="https://www.mapillary.com/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
+    <li><b>Google Maps / Apple Maps / Waze</b> — if you click a "Directions" link, we hand you off to them for turn-by-turn navigation. What you do there is governed by their policies</li>
+    <li><b>Google Maps JavaScript API</b> — only if the site operator has enabled it (defaults to OpenStreetMap)</li>
+    <li><b>Sponsors</b> — if you click a sponsored card, you leave WillIFit and enter the sponsor's site, which has its own policy</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>WillIFit is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has submitted a report, contact us and we will delete it.</p>
+
+  <h2>Your rights (California, EU, etc.)</h2>
+  <p>Depending on your jurisdiction you may have the right to access, correct, or delete personal data we hold about you, and to opt out of "sales" of personal data (we do not sell data). Email <a href="mailto:privacy@willifit.ai">privacy@willifit.ai</a> to make a request.</p>
+
+  <h2>Changes</h2>
+  <p>Material changes to this policy will be indicated by an updated "Last updated" date. Please check periodically.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:privacy@willifit.ai">privacy@willifit.ai</a></p>
+
+  <footer>
+    <p>WillIFit · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a></p>
+  </footer>
+</div>
+</body>
+</html>

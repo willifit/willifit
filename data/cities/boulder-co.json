@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-08-D-15-CC",
+      "name": "Low clearance: SKUNK CREEK / PED PATH under SH 93 ML",
+      "addr": "SKUNK CREEK / PED PATH",
+      "lat": 39.99792,
+      "lng": -105.26191,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2014; bridge carries SH 93 ML",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

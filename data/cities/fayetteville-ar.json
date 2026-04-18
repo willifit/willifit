@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-05-000000000017349",
+      "name": "Low on-bridge clearance: Orr Road",
+      "addr": "Orr Road",
+      "lat": 35.9525,
+      "lng": -94.25014,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1924",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-05-000000000017807",
+      "name": "Low on-bridge clearance: CR 98 Benton Co.",
+      "addr": "CR 98 Benton Co.",
+      "lat": 36.26777,
+      "lng": -93.94382,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1907",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

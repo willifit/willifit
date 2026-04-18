@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-22-040800010300001",
+      "name": "Low on-bridge clearance: US0080",
+      "addr": "US0080",
+      "lat": 32.51529,
+      "lng": -93.74636,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1934",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-22-040804510201431",
+      "name": "Low on-bridge clearance: I0020",
+      "addr": "I0020",
+      "lat": 32.51316,
+      "lng": -93.7159,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1966",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

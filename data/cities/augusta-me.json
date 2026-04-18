@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-23-0537",
+      "name": "Low on-bridge clearance: I-95",
+      "addr": "I-95",
+      "lat": 44.15592,
+      "lng": -69.89914,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1956",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-3341",
+      "name": "Low on-bridge clearance: PATTERSON RD",
+      "addr": "PATTERSON RD",
+      "lat": 44.08396,
+      "lng": -69.74814,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-5002",
+      "name": "Low on-bridge clearance: ROUTE 106",
+      "addr": "ROUTE 106",
+      "lat": 44.31821,
+      "lng": -70.12171,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1922",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

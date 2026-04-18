@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-06-29C0037",
+      "name": "Low on-bridge clearance: PELTIER ROAD",
+      "addr": "PELTIER ROAD",
+      "lat": 38.18912,
+      "lng": -121.32222,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1947",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-06-29C0219",
+      "name": "Low on-bridge clearance: EIGHT MILE ROAD",
+      "addr": "EIGHT MILE ROAD",
+      "lat": 38.05934,
+      "lng": -121.46001,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

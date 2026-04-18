@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /data/nbi_cache/
+
+Sitemap: https://willifit.ai/sitemap.xml

@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-33-016101880009200",
+      "name": "Low on-bridge clearance: GOFFS FALLS ROAD",
+      "addr": "GOFFS FALLS ROAD",
+      "lat": 42.94911,
+      "lng": -71.44044,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2021",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-016800450017100",
+      "name": "Low on-bridge clearance: STOWELL ROAD",
+      "addr": "STOWELL ROAD",
+      "lat": 42.89624,
+      "lng": -71.56358,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1990",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

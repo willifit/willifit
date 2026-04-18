@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-09-00507",
+      "name": "Low on-bridge clearance: SR 816 (GLEN RD)",
+      "addr": "SR 816 (GLEN RD)",
+      "lat": 41.43701,
+      "lng": -73.2654,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-04936",
+      "name": "Low on-bridge clearance: BROCK STREET",
+      "addr": "BROCK STREET",
+      "lat": 41.2405,
+      "lng": -73.18625,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1979",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-05256",
+      "name": "Low on-bridge clearance: ROUTE 15 NB",
+      "addr": "ROUTE 15 NB",
+      "lat": 41.23708,
+      "lng": -73.153,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1983",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

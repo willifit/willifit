@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-33-012000970010100",
+      "name": "Low on-bridge clearance: PATTERSON HILL RD",
+      "addr": "PATTERSON HILL RD",
+      "lat": 43.16801,
+      "lng": -71.84159,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1915",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-012001230010600",
+      "name": "Low on-bridge clearance: RAMSDELL ROAD",
+      "addr": "RAMSDELL ROAD",
+      "lat": 43.17394,
+      "lng": -71.81712,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1937",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-012900550011200",
+      "name": "Low on-bridge clearance: W HOPKINTON ROAD",
+      "addr": "W HOPKINTON ROAD",
+      "lat": 43.19269,
+      "lng": -71.74878,
+      "height_in": 128,
+      "height_label": "10'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1853",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-020600510008100",
+      "name": "Low on-bridge clearance: I-393 US  4 US202E",
+      "addr": "I-393 US  4 US202E",
+      "lat": 43.23712,
+      "lng": -71.45977,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1988",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-026301570008700",
+      "name": "Low on-bridge clearance: NEW MARKET ROAD",
+      "addr": "NEW MARKET ROAD",
+      "lat": 43.28815,
+      "lng": -71.85614,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1840",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-026301910012200",
+      "name": "Low on-bridge clearance: JOPPA ROAD WEST",
+      "addr": "JOPPA ROAD WEST",
+      "lat": 43.27683,
+      "lng": -71.81134,
+      "height_in": 131,
+      "height_label": "10'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1853",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

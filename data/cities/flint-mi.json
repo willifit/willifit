@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-26-000000000002657",
+      "name": "Low on-bridge clearance: I-69 WB",
+      "addr": "I-69 WB",
+      "lat": 43.01047,
+      "lng": -83.67938,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1970",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-26-000000000002683",
+      "name": "Low on-bridge clearance: I-475 RMP TO I-75",
+      "addr": "I-475 RMP TO I-75",
+      "lat": 43.09776,
+      "lng": -83.76301,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1971",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

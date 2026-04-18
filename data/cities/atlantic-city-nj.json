@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-34-0511155",
+      "name": "Low on-bridge clearance: NJ 52 Ramp",
+      "addr": "NJ 52 Ramp",
+      "lat": 39.28833,
+      "lng": -74.58317,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2013",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3100002",
+      "name": "Low on-bridge clearance: OCEAN DRIVE CR 619",
+      "addr": "OCEAN DRIVE CR 619",
+      "lat": 39.20126,
+      "lng": -74.65489,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1948",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

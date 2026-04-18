@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-30-L16494000+05001",
+      "name": "Low on-bridge clearance: AXTELL ANCENY RD",
+      "addr": "AXTELL ANCENY RD",
+      "lat": 45.62313,
+      "lng": -111.20534,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1919",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

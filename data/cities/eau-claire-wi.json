@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-55-B09049700000000",
+      "name": "Low on-bridge clearance: CTH K",
+      "addr": "CTH K",
+      "lat": 44.95281,
+      "lng": -91.26708,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1942",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-55-P09071500000000",
+      "name": "Low on-bridge clearance: LRD CENTRAL STREET",
+      "addr": "LRD CENTRAL STREET",
+      "lat": 44.93697,
+      "lng": -91.39128,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1934",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

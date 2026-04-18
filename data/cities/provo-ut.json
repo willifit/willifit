@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-49-1F823",
+      "name": "Low clearance: PROVO RIVER under I-15NB  (SR-15)",
+      "addr": "PROVO RIVER",
+      "lat": 40.23907,
+      "lng": -111.68971,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2011; bridge carries I-15NB  (SR-15)",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-49-049118E",
+      "name": "Low clearance: Waste Ditch Canal under N 2375 W in Lehi",
+      "addr": "Waste Ditch Canal",
+      "lat": 40.39222,
+      "lng": -111.8875,
+      "height_in": 60,
+      "height_label": "5'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2022; bridge carries N 2375 W in Lehi",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-40-014550000000000",
+      "name": "Low clearance: CREEK under 1622C",
+      "addr": "CREEK",
+      "lat": 34.62385,
+      "lng": -98.59121,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1925; bridge carries 1622C",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-18-1700004",
+      "name": "Low on-bridge clearance: MILL STREET",
+      "addr": "MILL STREET",
+      "lat": 41.2814,
+      "lng": -84.91461,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1873",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-3500074",
+      "name": "Low on-bridge clearance: STATION ROAD",
+      "addr": "STATION ROAD",
+      "lat": 40.95634,
+      "lng": -85.36855,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1915",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

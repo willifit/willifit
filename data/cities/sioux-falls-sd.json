@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-19-000000000229340",
+      "name": "Low on-bridge clearance: 220TH ST",
+      "addr": "220TH ST",
+      "lat": 43.3241,
+      "lng": -96.52882,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1925",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-46-000000050307110",
+      "name": "Low on-bridge clearance: STATE PARK RD",
+      "addr": "STATE PARK RD",
+      "lat": 43.68897,
+      "lng": -96.51835,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1908",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

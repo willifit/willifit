@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-01-004427",
+      "name": "Low on-bridge clearance: Lee Road 379",
+      "addr": "Lee Road 379",
+      "lat": 32.56562,
+      "lng": -85.12001,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1952",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-01-004428",
+      "name": "Low on-bridge clearance: Lee Road 379",
+      "addr": "Lee Road 379",
+      "lat": 32.59739,
+      "lng": -85.11793,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1952",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-01-004430",
+      "name": "Low on-bridge clearance: Lee Road 379",
+      "addr": "Lee Road 379",
+      "lat": 32.6526,
+      "lng": -85.14858,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1952",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-25-C1301213RDOT634",
+      "name": "Low on-bridge clearance: ST116 ST141/CABOT",
+      "addr": "ST116 ST141/CABOT",
+      "lat": 42.19506,
+      "lng": -72.6013,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1891",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-E05008140DOT634",
+      "name": "Low clearance: OTHER MANHAN RAIL TRAIL under HWY   PARK ST",
+      "addr": "OTHER MANHAN RAIL TRAIL",
+      "lat": 42.2621,
+      "lng": -72.67725,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1900; bridge carries HWY   PARK ST",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-H270060DHDOT634",
+      "name": "Low on-bridge clearance: ST112 EAST MAIN ST",
+      "addr": "ST112 EAST MAIN ST",
+      "lat": 42.23441,
+      "lng": -72.87832,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1938",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-L160030M6MUNNBI",
+      "name": "Low on-bridge clearance: HWY   MILLER ST",
+      "addr": "HWY   MILLER ST",
+      "lat": 42.1569,
+      "lng": -72.42343,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1939",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-L160160M7MUNNBI",
+      "name": "Low on-bridge clearance: HWY   WEST ST",
+      "addr": "HWY   WEST ST",
+      "lat": 42.16054,
+      "lng": -72.51056,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1939",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-P010454MPDOTNBI",
+      "name": "Low on-bridge clearance: HWY   CALKINS RD",
+      "addr": "HWY   CALKINS RD",
+      "lat": 42.16752,
+      "lng": -72.35338,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1957",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-S24049121DOTNBI",
+      "name": "Low on-bridge clearance: ST 83 SB RAMP Y",
+      "addr": "ST 83 SB RAMP Y",
+      "lat": 42.07767,
+      "lng": -72.58006,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1958",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W210244K9DOTNBI",
+      "name": "Low on-bridge clearance: HWY   BIRNIE AVE",
+      "addr": "HWY   BIRNIE AVE",
+      "lat": 42.1533,
+      "lng": -72.65369,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1957",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W250100V8DOTNBI",
+      "name": "Low on-bridge clearance: US202 ST10/ELM SB",
+      "addr": "US202 ST10/ELM SB",
+      "lat": 42.1289,
+      "lng": -72.74622,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1938",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

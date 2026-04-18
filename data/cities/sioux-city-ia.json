@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-19-000000000251360",
+      "name": "Low on-bridge clearance: FM",
+      "addr": "FM",
+      "lat": 42.19864,
+      "lng": -95.94089,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1925",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000274210",
+      "name": "Low on-bridge clearance: POLK AVE",
+      "addr": "POLK AVE",
+      "lat": 42.81852,
+      "lng": -96.01651,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1958",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000276670",
+      "name": "Low on-bridge clearance: 120TH ST",
+      "addr": "120TH ST",
+      "lat": 42.88047,
+      "lng": -96.19601,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1941",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000276680",
+      "name": "Low on-bridge clearance: 130TH ST",
+      "addr": "130TH ST",
+      "lat": 42.86592,
+      "lng": -96.19768,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000350910",
+      "name": "Low on-bridge clearance: LOCAL",
+      "addr": "LOCAL",
+      "lat": 42.28876,
+      "lng": -96.03873,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1950",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

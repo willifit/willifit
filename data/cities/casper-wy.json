@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-56-AHL",
+      "name": "Low clearance: Machinery Pass under I-25 NBL",
+      "addr": "Machinery Pass",
+      "lat": 42.83789,
+      "lng": -106.0143,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1966; bridge carries I-25 NBL",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

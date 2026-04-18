@@ -1,0 +1,138 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-34-10XX233",
+      "name": "Low on-bridge clearance: CIDER MILL ROAD",
+      "addr": "CIDER MILL ROAD",
+      "lat": 40.46596,
+      "lng": -74.79267,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-1100034",
+      "name": "Low on-bridge clearance: WARD STREET",
+      "addr": "WARD STREET",
+      "lat": 40.26686,
+      "lng": -74.52165,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1896",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-1100072",
+      "name": "Low on-bridge clearance: MINE ROAD",
+      "addr": "MINE ROAD",
+      "lat": 40.37398,
+      "lng": -74.794,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1885",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-1149162",
+      "name": "Low on-bridge clearance: SOUTH CLINTON AVE",
+      "addr": "SOUTH CLINTON AVE",
+      "lat": 40.21765,
+      "lng": -74.75469,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-1300U53",
+      "name": "Low on-bridge clearance: PROVINCE LINE ROAD",
+      "addr": "PROVINCE LINE ROAD",
+      "lat": 40.13912,
+      "lng": -74.58742,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1891",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3300060",
+      "name": "Low on-bridge clearance: NJ 29 to PA 32",
+      "addr": "NJ 29 to PA 32",
+      "lat": 40.21971,
+      "lng": -74.77834,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1884",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3300100",
+      "name": "Low on-bridge clearance: Pennington Road",
+      "addr": "Pennington Road",
+      "lat": 40.29525,
+      "lng": -74.86827,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3300120",
+      "name": "Low on-bridge clearance: Bridge St",
+      "addr": "Bridge St",
+      "lat": 40.365,
+      "lng": -74.94666,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3300160",
+      "name": "Low on-bridge clearance: CONNECT PA263&NJ29",
+      "addr": "CONNECT PA263&NJ29",
+      "lat": 40.40312,
+      "lng": -74.97939,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1926",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000006776",
+      "name": "Low on-bridge clearance: TRAFFIC ROUTE 13",
+      "addr": "TRAFFIC ROUTE 13",
+      "lat": 40.19662,
+      "lng": -74.80198,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1954",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000007536",
+      "name": "Low on-bridge clearance: COVERED BRIDGE RD",
+      "addr": "COVERED BRIDGE RD",
+      "lat": 40.327,
+      "lng": -74.9578,
+      "height_in": 124,
+      "height_label": "10'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1875",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000007690",
+      "name": "Low on-bridge clearance: PA 179 (SR 0179)",
+      "addr": "PA 179 (SR 0179)",
+      "lat": 40.36491,
+      "lng": -74.94881,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

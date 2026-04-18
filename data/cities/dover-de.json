@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-10-2021A021",
+      "name": "Low on-bridge clearance: REHOBOTH BLVD.",
+      "addr": "REHOBOTH BLVD.",
+      "lat": 38.91727,
+      "lng": -75.41764,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1929",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

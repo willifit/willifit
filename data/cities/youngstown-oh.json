@@ -1,0 +1,83 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-39-5002621",
+      "name": "Low clearance: OVER WATER MAIN R/W MVSD under IR 80 EB",
+      "addr": "OVER WATER MAIN R/W MVSD",
+      "lat": 41.1289,
+      "lng": -80.74494,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2015; bridge carries IR 80 EB",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-5004438",
+      "name": "Low on-bridge clearance: SR 193",
+      "addr": "SR 193",
+      "lat": 41.10553,
+      "lng": -80.67679,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2005",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-5050103",
+      "name": "Low on-bridge clearance: MAHONING AVE.",
+      "addr": "MAHONING AVE.",
+      "lat": 41.09449,
+      "lng": -80.97943,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1915",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-5059941",
+      "name": "Low on-bridge clearance: VALLEY DRIVE 122",
+      "addr": "VALLEY DRIVE 122",
+      "lat": 41.07321,
+      "lng": -80.68888,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7829914",
+      "name": "Low on-bridge clearance: TOWNLINE RD",
+      "addr": "TOWNLINE RD",
+      "lat": 41.15748,
+      "lng": -80.90032,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1954",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7830165",
+      "name": "Low on-bridge clearance: ARLINGTON BLVD",
+      "addr": "ARLINGTON BLVD",
+      "lat": 41.18805,
+      "lng": -80.97157,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1831",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7835590",
+      "name": "Low on-bridge clearance: WARREN SHARON ROAD",
+      "addr": "WARREN SHARON ROAD",
+      "lat": 41.23768,
+      "lng": -80.75669,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2004",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-18-028420",
+      "name": "Low on-bridge clearance: SR 163",
+      "addr": "SR 163",
+      "lat": 39.66538,
+      "lng": -87.49876,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1932",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-1100105",
+      "name": "Low on-bridge clearance: CR 200S",
+      "addr": "CR 200S",
+      "lat": 39.35828,
+      "lng": -87.14226,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1910",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-6100028",
+      "name": "Low on-bridge clearance: CR 130E",
+      "addr": "CR 130E",
+      "lat": 39.6847,
+      "lng": -87.2123,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1920",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-6100042",
+      "name": "Low on-bridge clearance: CR 325W",
+      "addr": "CR 325W",
+      "lat": 39.6524,
+      "lng": -87.29369,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1910",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-6100050",
+      "name": "Low on-bridge clearance: CR 325W",
+      "addr": "CR 325W",
+      "lat": 39.66212,
+      "lng": -87.29449,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1908",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-6100051",
+      "name": "Low on-bridge clearance: TICKRIDGE Rd",
+      "addr": "TICKRIDGE Rd",
+      "lat": 39.69513,
+      "lng": -87.286,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1908",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

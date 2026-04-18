@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000005962",
+      "name": "Low on-bridge clearance: T512 Irish Flats L",
+      "addr": "T512 Irish Flats L",
+      "lat": 40.6491,
+      "lng": -78.19898,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1898",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

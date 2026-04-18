@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-19-000000000070000",
+      "name": "Low clearance: BR MUD CREEK under LOCAL",
+      "addr": "BR MUD CREEK",
+      "lat": 41.93431,
+      "lng": -91.93325,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1958; bridge carries LOCAL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000220430",
+      "name": "Low on-bridge clearance: OLD BR.RD.",
+      "addr": "OLD BR.RD.",
+      "lat": 41.92299,
+      "lng": -91.73042,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1906",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000220750",
+      "name": "Low on-bridge clearance: ROSEDALE RD",
+      "addr": "ROSEDALE RD",
+      "lat": 41.98762,
+      "lng": -91.57867,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000220850",
+      "name": "Low on-bridge clearance: BERTRAM RD",
+      "addr": "BERTRAM RD",
+      "lat": 41.97298,
+      "lng": -91.5804,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1876",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000220880",
+      "name": "Low on-bridge clearance: BIG CREEK RD.",
+      "addr": "BIG CREEK RD.",
+      "lat": 41.95625,
+      "lng": -91.52679,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1929",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000223450",
+      "name": "Low on-bridge clearance: DUROW RD",
+      "addr": "DUROW RD",
+      "lat": 42.21913,
+      "lng": -91.82366,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1951",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

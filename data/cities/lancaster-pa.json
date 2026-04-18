@@ -1,0 +1,215 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000021396",
+      "name": "Low on-bridge clearance: SR1013 CiderMillRd",
+      "addr": "SR1013 CiderMillRd",
+      "lat": 40.14045,
+      "lng": -76.15193,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1846",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021430",
+      "name": "Low on-bridge clearance: HUNSECKER RD.",
+      "addr": "HUNSECKER RD.",
+      "lat": 40.0874,
+      "lng": -76.2477,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1974",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021831",
+      "name": "Low on-bridge clearance: MT PLEASANT RD",
+      "addr": "MT PLEASANT RD",
+      "lat": 39.89674,
+      "lng": -76.08016,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1878",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021927",
+      "name": "Low on-bridge clearance: SHREINER STATIONRD",
+      "addr": "SHREINER STATIONRD",
+      "lat": 40.06854,
+      "lng": -76.34502,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1873",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021971",
+      "name": "Low on-bridge clearance: ACADEMY RD",
+      "addr": "ACADEMY RD",
+      "lat": 39.8247,
+      "lng": -76.09,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1847",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000021984",
+      "name": "Low on-bridge clearance: FOX HOLLOW RD",
+      "addr": "FOX HOLLOW RD",
+      "lat": 39.89888,
+      "lng": -76.3421,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1878",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022004",
+      "name": "Low on-bridge clearance: BELMONT RD",
+      "addr": "BELMONT RD",
+      "lat": 40.01229,
+      "lng": -76.10798,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1893",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022018",
+      "name": "Low on-bridge clearance: BYERLAND CHURCH RD",
+      "addr": "BYERLAND CHURCH RD",
+      "lat": 39.93064,
+      "lng": -76.29524,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1860",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022039",
+      "name": "Low on-bridge clearance: SIEGRIST RD",
+      "addr": "SIEGRIST RD",
+      "lat": 40.07606,
+      "lng": -76.47098,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1885",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022040",
+      "name": "Low on-bridge clearance: BRIDGE VALLEY RD",
+      "addr": "BRIDGE VALLEY RD",
+      "lat": 40.06643,
+      "lng": -76.47819,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022045",
+      "name": "Low on-bridge clearance: ERISMAN  RD",
+      "addr": "ERISMAN  RD",
+      "lat": 40.11565,
+      "lng": -76.42513,
+      "height_in": 125,
+      "height_label": "10'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1855",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022058",
+      "name": "Low on-bridge clearance: SUN HILL RD",
+      "addr": "SUN HILL RD",
+      "lat": 40.14822,
+      "lng": -76.40994,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022099",
+      "name": "Low on-bridge clearance: BRIDGE RD",
+      "addr": "BRIDGE RD",
+      "lat": 40.10565,
+      "lng": -76.24827,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1867",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022107",
+      "name": "Low on-bridge clearance: ERBS BRIDGE RD",
+      "addr": "ERBS BRIDGE RD",
+      "lat": 40.16771,
+      "lng": -76.24396,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1887",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022108",
+      "name": "Low on-bridge clearance: LOG CABIN RD",
+      "addr": "LOG CABIN RD",
+      "lat": 40.1303,
+      "lng": -76.2313,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1849",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022127",
+      "name": "Low on-bridge clearance: BRENEMAN RD",
+      "addr": "BRENEMAN RD",
+      "lat": 39.96063,
+      "lng": -76.23493,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1871",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022130",
+      "name": "Low on-bridge clearance: PENN GRANT RD",
+      "addr": "PENN GRANT RD",
+      "lat": 39.97864,
+      "lng": -76.2258,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1875",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000022132",
+      "name": "Low on-bridge clearance: KIWANIS RD",
+      "addr": "KIWANIS RD",
+      "lat": 40.01516,
+      "lng": -76.28224,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1876",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000046303",
+      "name": "Low on-bridge clearance: MIDDLE CREEK ROAD",
+      "addr": "MIDDLE CREEK ROAD",
+      "lat": 40.16415,
+      "lng": -76.23244,
+      "height_in": 119,
+      "height_label": "9'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2010",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-06-54C0099",
+      "name": "Low on-bridge clearance: MINERAL ROAD",
+      "addr": "MINERAL ROAD",
+      "lat": 34.53346,
+      "lng": -117.28799,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-25-B160074EGDOTNBI",
+      "name": "Low on-bridge clearance: ST  2 BROOKLINE ST",
+      "addr": "ST  2 BROOKLINE ST",
+      "lat": 42.35262,
+      "lng": -71.11064,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-B160554T0DOTNBI",
+      "name": "Low on-bridge clearance: US 20 COMM AV/MBTA",
+      "addr": "US 20 COMM AV/MBTA",
+      "lat": 42.3506,
+      "lng": -71.11127,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1965",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-B1606638DMUNNBI",
+      "name": "Low on-bridge clearance: HWY   CAMBRIDGE ST",
+      "addr": "HWY   CAMBRIDGE ST",
+      "lat": 42.38303,
+      "lng": -71.07711,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1880",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-C010314DRDOTNBI",
+      "name": "Low clearance: TR    RED LINE under US  3 /ST2&16/ALWF",
+      "addr": "TR    RED LINE",
+      "lat": 42.39622,
+      "lng": -71.14072,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1983; bridge carries US  3 /ST2&16/ALWF",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-F070554PDDOTNBI",
+      "name": "Low on-bridge clearance: HWY   GROVE ST",
+      "addr": "HWY   GROVE ST",
+      "lat": 42.30655,
+      "lng": -71.44287,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1957",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-L100012N1DOT634",
+      "name": "Low clearance: OTHER MINUTEMAN BIKE PTH under ST  2 A/MAPLE ST",
+      "addr": "OTHER MINUTEMAN BIKE PTH",
+      "lat": 42.4357,
+      "lng": -71.20897,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1919; bridge carries ST  2 A/MAPLE ST",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-M010054UTMBTNBI",
+      "name": "Low on-bridge clearance: HWY   MOUNTAIN AVE",
+      "addr": "HWY   MOUNTAIN AVE",
+      "lat": 42.42987,
+      "lng": -71.07307,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-N120274QWDOTNBI",
+      "name": "Low on-bridge clearance: ST 16 WB/WSHGTN ST",
+      "addr": "ST 16 WB/WSHGTN ST",
+      "lat": 42.34764,
+      "lng": -71.23206,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1964",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-N120604D6DOTNBI",
+      "name": "Low clearance: TR    GREEN LINE D under HWY   HAMMOND PD",
+      "addr": "TR    GREEN LINE D",
+      "lat": 42.32889,
+      "lng": -71.17813,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1933; bridge carries HWY   HAMMOND PD",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-S170224E2DOTNBI",
+      "name": "Low on-bridge clearance: ST 28 MCGRATH HWY",
+      "addr": "ST 28 MCGRATH HWY",
+      "lat": 42.38438,
+      "lng": -71.09139,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1926",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-S17025BDWDOTNBI",
+      "name": "Low on-bridge clearance: ST 28 MCGRATH HWY",
+      "addr": "ST 28 MCGRATH HWY",
+      "lat": 42.38517,
+      "lng": -71.09101,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2016",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W290404Q1DOTNBI",
+      "name": "Low on-bridge clearance: HWY   WINTER ST",
+      "addr": "HWY   WINTER ST",
+      "lat": 42.33483,
+      "lng": -71.31431,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1957",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W290434Q5DOTNBI",
+      "name": "Low on-bridge clearance: HWY   OAK ST",
+      "addr": "HWY   OAK ST",
+      "lat": 42.33734,
+      "lng": -71.28984,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1957",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W290534Q9DOTNBI",
+      "name": "Low on-bridge clearance: I  90 RAMP J",
+      "addr": "I  90 RAMP J",
+      "lat": 42.33894,
+      "lng": -71.27264,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1962",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W290544QCDOTNBI",
+      "name": "Low on-bridge clearance: HWY   PARK RD",
+      "addr": "HWY   PARK RD",
+      "lat": 42.33888,
+      "lng": -71.26839,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1962",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-25-W290584QGDOTNBI",
+      "name": "Low on-bridge clearance: I  90 RAMP G",
+      "addr": "I  90 RAMP G",
+      "lat": 42.3411,
+      "lng": -71.26602,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1962",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

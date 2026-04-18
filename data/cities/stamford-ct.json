@@ -1,0 +1,116 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-09-00702",
+      "name": "Low on-bridge clearance: RIVER BANK ROAD",
+      "addr": "RIVER BANK ROAD",
+      "lat": 41.1006,
+      "lng": -73.58222,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1937",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-01349",
+      "name": "Low on-bridge clearance: ROUTE 136",
+      "addr": "ROUTE 136",
+      "lat": 41.12276,
+      "lng": -73.3691,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1870",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-09-05985",
+      "name": "Low on-bridge clearance: FIELD POINT ROAD",
+      "addr": "FIELD POINT ROAD",
+      "lat": 41.0202,
+      "lng": -73.63241,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1894",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001091360",
+      "name": "Low on-bridge clearance: RTE 100",
+      "addr": "RTE 100",
+      "lat": 41.04059,
+      "lng": -73.78729,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1958",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000002262070",
+      "name": "Low on-bridge clearance: BET. NY 129 & ARCA",
+      "addr": "BET. NY 129 & ARCA",
+      "lat": 41.23353,
+      "lng": -73.80244,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000003364970",
+      "name": "Low on-bridge clearance: STONE HILL ROAD",
+      "addr": "STONE HILL ROAD",
+      "lat": 41.26029,
+      "lng": -73.60198,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2020",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000005500870",
+      "name": "Low on-bridge clearance: RTE 987D",
+      "addr": "RTE 987D",
+      "lat": 41.13132,
+      "lng": -73.79512,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2016",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000005500890",
+      "name": "Low on-bridge clearance: RTE 987D",
+      "addr": "RTE 987D",
+      "lat": 41.1329,
+      "lng": -73.79616,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2016",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000005513910",
+      "name": "Low on-bridge clearance: RTE 987D",
+      "addr": "RTE 987D",
+      "lat": 41.04365,
+      "lng": -73.83549,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1953",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000007712770",
+      "name": "Low on-bridge clearance: PRISON ROAD",
+      "addr": "PRISON ROAD",
+      "lat": 41.14976,
+      "lng": -73.86873,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2014",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

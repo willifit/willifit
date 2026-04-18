@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-29-20153",
+      "name": "Low on-bridge clearance: SMYRNA RD",
+      "addr": "SMYRNA RD",
+      "lat": 37.03709,
+      "lng": -93.17123,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1912",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-29-21884",
+      "name": "Low on-bridge clearance: MCCRACKEN RD",
+      "addr": "MCCRACKEN RD",
+      "lat": 37.02721,
+      "lng": -93.2073,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

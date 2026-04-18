@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000016449",
+      "name": "Low on-bridge clearance: T-636 DEWEY ROAD",
+      "addr": "T-636 DEWEY ROAD",
+      "lat": 41.89424,
+      "lng": -79.92138,
+      "height_in": 125,
+      "height_label": "10'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1889",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000016497",
+      "name": "Low on-bridge clearance: T-463 NIEMEYER RD",
+      "addr": "T-463 NIEMEYER RD",
+      "lat": 41.9411,
+      "lng": -79.96336,
+      "height_in": 107,
+      "height_label": "8'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1875",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

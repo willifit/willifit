@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-26-000000000005183",
+      "name": "Low on-bridge clearance: COVERED BRIDGE RD",
+      "addr": "COVERED BRIDGE RD",
+      "lat": 42.98044,
+      "lng": -85.32664,
+      "height_in": 119,
+      "height_label": "9'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1871",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

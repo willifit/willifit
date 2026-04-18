@@ -1,0 +1,50 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-21-010B00040N",
+      "name": "Low on-bridge clearance: US-23S",
+      "addr": "US-23S",
+      "lat": 38.48417,
+      "lng": -82.64139,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1930",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-4400992",
+      "name": "Low on-bridge clearance: SR 652 / KY US-23S",
+      "addr": "SR 652 / KY US-23S",
+      "lat": 38.48565,
+      "lng": -82.63979,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1930",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000050A127",
+      "name": "Low on-bridge clearance: CR 52/49",
+      "addr": "CR 52/49",
+      "lat": 38.18115,
+      "lng": -82.47575,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1922",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000050A204",
+      "name": "Low on-bridge clearance: COUNTY ROUTE 24/5",
+      "addr": "COUNTY ROUTE 24/5",
+      "lat": 38.23947,
+      "lng": -82.37154,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2004",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

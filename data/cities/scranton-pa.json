@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000020839",
+      "name": "Low on-bridge clearance: SR 4032",
+      "addr": "SR 4032",
+      "lat": 41.47377,
+      "lng": -75.68516,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

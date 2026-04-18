@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-28-310002602006520",
+      "name": "Low on-bridge clearance: SR 26",
+      "addr": "SR 26",
+      "lat": 30.87791,
+      "lng": -88.77505,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1948",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-28-310002606605640",
+      "name": "Low on-bridge clearance: SR 26",
+      "addr": "SR 26",
+      "lat": 30.85342,
+      "lng": -88.91564,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1948",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

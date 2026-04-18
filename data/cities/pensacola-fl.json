@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-12-480290",
+      "name": "Low clearance: Pensacola Bay under US98 SR30 WB",
+      "addr": "Pensacola Bay",
+      "lat": 30.3945,
+      "lng": -87.18501,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2023; bridge carries US98 SR30 WB",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

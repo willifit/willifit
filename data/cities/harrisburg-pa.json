@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000014020",
+      "name": "Low on-bridge clearance: T-571",
+      "addr": "T-571",
+      "lat": 40.21688,
+      "lng": -77.08809,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1949",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000014041",
+      "name": "Low on-bridge clearance: GREENLANE DRIVE",
+      "addr": "GREENLANE DRIVE",
+      "lat": 40.22463,
+      "lng": -76.89811,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1889",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000014048",
+      "name": "Low on-bridge clearance: BISHOP ROAD T-612",
+      "addr": "BISHOP ROAD T-612",
+      "lat": 40.15892,
+      "lng": -76.97678,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1898",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000029759",
+      "name": "Low on-bridge clearance: COVERED BRIDGE LN.",
+      "addr": "COVERED BRIDGE LN.",
+      "lat": 40.36356,
+      "lng": -77.11644,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1810",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000037988",
+      "name": "Low on-bridge clearance: Sheep Bridge Road",
+      "addr": "Sheep Bridge Road",
+      "lat": 40.11024,
+      "lng": -76.79789,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1889",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000038118",
+      "name": "Low on-bridge clearance: T968 ; SHEEPFORD R",
+      "addr": "T968 ; SHEEPFORD R",
+      "lat": 40.18491,
+      "lng": -76.91191,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1887",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

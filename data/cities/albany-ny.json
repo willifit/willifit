@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-36-000000001029040",
+      "name": "Low on-bridge clearance: RTE 66",
+      "addr": "RTE 66",
+      "lat": 42.41836,
+      "lng": -73.61437,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1927",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000001092512",
+      "name": "Low on-bridge clearance: US 9 SB TO I90 EB",
+      "addr": "US 9 SB TO I90 EB",
+      "lat": 42.66953,
+      "lng": -73.74867,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1972",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-00000000109298A",
+      "name": "Low on-bridge clearance: RTE 20",
+      "addr": "RTE 20",
+      "lat": 42.64548,
+      "lng": -73.75221,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1970",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-00000000109298D",
+      "name": "Low on-bridge clearance: RTE 9",
+      "addr": "RTE 9",
+      "lat": 42.64457,
+      "lng": -73.75169,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1969",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000004415150",
+      "name": "Low on-bridge clearance: RTE 67",
+      "addr": "RTE 67",
+      "lat": 42.9057,
+      "lng": -73.6833,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1946",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

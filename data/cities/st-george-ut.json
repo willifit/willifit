@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-49-053073E",
+      "name": "Low clearance: DIXIE DRIVE under PATHWAY-STORM DRN.",
+      "addr": "DIXIE DRIVE",
+      "lat": 37.07527,
+      "lng": -113.5858,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2012; bridge carries PATHWAY-STORM DRN.",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-53-085011000000000",
+      "name": "Low on-bridge clearance: Fish War Mem X-ing",
+      "addr": "Fish War Mem X-ing",
+      "lat": 47.24319,
+      "lng": -122.40516,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1925",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-53-086562000000000",
+      "name": "Low on-bridge clearance: Fish War Mem X-ing",
+      "addr": "Fish War Mem X-ing",
+      "lat": 47.24327,
+      "lng": -122.40325,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1925",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

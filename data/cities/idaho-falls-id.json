@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-16-000000000023120",
+      "name": "Low on-bridge clearance: SMA 7611;W. BRIDGE",
+      "addr": "SMA 7611;W. BRIDGE",
+      "lat": 43.19822,
+      "lng": -112.37058,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

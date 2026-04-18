@@ -1,0 +1,204 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-33-005500640010800",
+      "name": "Low on-bridge clearance: CORNISH TOLL BR RD",
+      "addr": "CORNISH TOLL BR RD",
+      "lat": 43.4737,
+      "lng": -72.38391,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1866",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-005500710016800",
+      "name": "Low on-bridge clearance: SQUAG CITY ROAD",
+      "addr": "SQUAG CITY ROAD",
+      "lat": 43.51748,
+      "lng": -72.37439,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1877",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-005500810009500",
+      "name": "Low on-bridge clearance: ROOT HILL ROAD",
+      "addr": "ROOT HILL ROAD",
+      "lat": 43.4644,
+      "lng": -72.36928,
+      "height_in": 99,
+      "height_label": "8'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1883",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-014401540011300",
+      "name": "Low on-bridge clearance: RIVERSIDE DRIVE",
+      "addr": "RIVERSIDE DRIVE",
+      "lat": 43.63874,
+      "lng": -72.22244,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1991",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-015700690019000",
+      "name": "Low on-bridge clearance: RIVER ROAD",
+      "addr": "RIVER ROAD",
+      "lat": 43.86784,
+      "lng": -72.16469,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1885",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-019201030013600",
+      "name": "Low on-bridge clearance: OAK STREET",
+      "addr": "OAK STREET",
+      "lat": 43.38657,
+      "lng": -72.20728,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2019",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-019201160014200",
+      "name": "Low on-bridge clearance: CORBIN BRIDGE ROAD",
+      "addr": "CORBIN BRIDGE ROAD",
+      "lat": 43.39107,
+      "lng": -72.19534,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1845",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-33-021301570012100",
+      "name": "Low on-bridge clearance: COLBY HILL ROAD",
+      "addr": "COLBY HILL ROAD",
+      "lat": 43.55343,
+      "lng": -72.2658,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1880",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100911000709111",
+      "name": "Low on-bridge clearance: C2003",
+      "addr": "C2003",
+      "lat": 43.78869,
+      "lng": -72.25414,
+      "height_in": 124,
+      "height_label": "10'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1867",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-100911002709111",
+      "name": "Low on-bridge clearance: C2006",
+      "addr": "C2006",
+      "lat": 43.83208,
+      "lng": -72.25279,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1836",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101409002114091",
+      "name": "Low on-bridge clearance: C3015",
+      "addr": "C3015",
+      "lat": 43.59363,
+      "lng": -72.35011,
+      "height_in": 155,
+      "height_label": "12'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2001",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101409002314091",
+      "name": "Low on-bridge clearance: C3046",
+      "addr": "C3046",
+      "lat": 43.53242,
+      "lng": -72.39601,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1881",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101422003314221",
+      "name": "Low on-bridge clearance: C3030",
+      "addr": "C3030",
+      "lat": 43.46133,
+      "lng": -72.49075,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1895",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101422003414221",
+      "name": "Low on-bridge clearance: C3037",
+      "addr": "C3037",
+      "lat": 43.45515,
+      "lng": -72.51632,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101424002514241",
+      "name": "Low on-bridge clearance: C3035",
+      "addr": "C3035",
+      "lat": 43.60056,
+      "lng": -72.56899,
+      "height_in": 128,
+      "height_label": "10'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1865",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101424004514241",
+      "name": "Low on-bridge clearance: C2002",
+      "addr": "C2002",
+      "lat": 43.63082,
+      "lng": -72.46791,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1836",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-101424007314241",
+      "name": "Low on-bridge clearance: C3UN1",
+      "addr": "C3UN1",
+      "lat": 43.62464,
+      "lng": -72.5204,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1968",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-50-200177001514172",
+      "name": "Low on-bridge clearance: TR 03  FAS 177",
+      "addr": "TR 03  FAS 177",
+      "lat": 43.78222,
+      "lng": -72.45969,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

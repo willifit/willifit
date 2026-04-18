@@ -1,0 +1,50 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-28-310002801506460",
+      "name": "Low on-bridge clearance: SR 28",
+      "addr": "SR 28",
+      "lat": 31.87524,
+      "lng": -90.13915,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1940",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-28-310002806407360",
+      "name": "Low on-bridge clearance: SR 28",
+      "addr": "SR 28",
+      "lat": 31.88636,
+      "lng": -89.9942,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1943",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-28-5570193P0000000",
+      "name": "Low on-bridge clearance: MS ROUTE 27",
+      "addr": "MS ROUTE 27",
+      "lat": 32.18258,
+      "lng": -90.63922,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1961",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-28-5570208P0000000",
+      "name": "Low on-bridge clearance: ROCKS ROAD",
+      "addr": "ROCKS ROAD",
+      "lat": 32.57103,
+      "lng": -89.88883,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1962",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

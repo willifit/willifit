@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-01-000928",
+      "name": "Low on-bridge clearance: AL.212",
+      "addr": "AL.212",
+      "lat": 32.53833,
+      "lng": -86.20667,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1931",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-01-005001",
+      "name": "Low on-bridge clearance: W FAIRVIEW AVE",
+      "addr": "W FAIRVIEW AVE",
+      "lat": 32.35134,
+      "lng": -86.33088,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1934",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

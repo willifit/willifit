@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-26-000000000002022",
+      "name": "Low on-bridge clearance: LOWELL ROAD",
+      "addr": "LOWELL ROAD",
+      "lat": 42.81803,
+      "lng": -84.6419,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2006",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-26-000000000003896",
+      "name": "Low clearance: DEER CREEK under COLUMBIA ROAD",
+      "addr": "DEER CREEK",
+      "lat": 42.58471,
+      "lng": -84.33859,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2002; bridge carries COLUMBIA ROAD",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

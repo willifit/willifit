@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-18-8700123",
+      "name": "Low on-bridge clearance: YANKEETOWN ROAD",
+      "addr": "YANKEETOWN ROAD",
+      "lat": 37.91018,
+      "lng": -87.29559,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1885",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-8700124",
+      "name": "Low on-bridge clearance: BONER ROAD",
+      "addr": "BONER ROAD",
+      "lat": 37.94217,
+      "lng": -87.25185,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1869",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-8700170",
+      "name": "Low on-bridge clearance: OLD US 66",
+      "addr": "OLD US 66",
+      "lat": 37.91045,
+      "lng": -87.27145,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1928",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

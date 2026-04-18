@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-48-120850AA0709001",
+      "name": "Low clearance: SAN LUIS PASS under BLUEWATER HWY",
+      "addr": "SAN LUIS PASS",
+      "lat": 29.07792,
+      "lng": -95.12638,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1966; bridge carries BLUEWATER HWY",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-12-860011",
+      "name": "Low clearance: Hillsboro Inlet under SR-A1A",
+      "addr": "Hillsboro Inlet",
+      "lat": 26.26144,
+      "lng": -80.08317,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1966; bridge carries SR-A1A",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-12-860146",
+      "name": "Low clearance: Intracoastal Waterway under Hillsboro Blvd.",
+      "addr": "Intracoastal Waterway",
+      "lat": 26.3144,
+      "lng": -80.0809,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1957; bridge carries Hillsboro Blvd.",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-12-865200",
+      "name": "Low on-bridge clearance: NW 95TH AVE.",
+      "addr": "NW 95TH AVE.",
+      "lat": 26.28597,
+      "lng": -80.25322,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1964",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

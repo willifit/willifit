@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-16-000000000030510",
+      "name": "Low on-bridge clearance: S ANDERSON LAKE RD",
+      "addr": "S ANDERSON LAKE RD",
+      "lat": 47.47847,
+      "lng": -116.733,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1955",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-16-000000000037000",
+      "name": "Low clearance: CDA PARKING GARAGE under FRONT AVENUE",
+      "addr": "CDA PARKING GARAGE",
+      "lat": 47.67261,
+      "lng": -116.78186,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2014; bridge carries FRONT AVENUE",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-42-000000000018511",
+      "name": "Low on-bridge clearance: TOWNSHIP ROAD 604",
+      "addr": "TOWNSHIP ROAD 604",
+      "lat": 39.80652,
+      "lng": -80.06085,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1900",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000031A007",
+      "name": "Low on-bridge clearance: WV ROUTE 7",
+      "addr": "WV ROUTE 7",
+      "lat": 39.72002,
+      "lng": -80.20813,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1933",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000039A033",
+      "name": "Low on-bridge clearance: PRESTON CO RT 8/4",
+      "addr": "PRESTON CO RT 8/4",
+      "lat": 39.67289,
+      "lng": -79.62541,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1884",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-54-00000000039A040",
+      "name": "Low on-bridge clearance: PRESTON CO RT 14",
+      "addr": "PRESTON CO RT 14",
+      "lat": 39.62163,
+      "lng": -79.70468,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1893",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

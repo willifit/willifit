@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-30-L56303000+08001",
+      "name": "Low on-bridge clearance: BYAM RD",
+      "addr": "BYAM RD",
+      "lat": 45.62483,
+      "lng": -108.76493,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1997",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

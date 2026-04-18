@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-36-000000001030480",
+      "name": "Low on-bridge clearance: RTE 79",
+      "addr": "RTE 79",
+      "lat": 42.24403,
+      "lng": -75.83769,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000002218760",
+      "name": "Low on-bridge clearance: MAIN STREET",
+      "addr": "MAIN STREET",
+      "lat": 42.06229,
+      "lng": -76.14881,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1929",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000002271360",
+      "name": "Low on-bridge clearance: GORMAN ROAD",
+      "addr": "GORMAN ROAD",
+      "lat": 42.01614,
+      "lng": -75.77179,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1958",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000003335150",
+      "name": "Low on-bridge clearance: WEST CREEK ROAD",
+      "addr": "WEST CREEK ROAD",
+      "lat": 42.1682,
+      "lng": -76.24647,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000003349850",
+      "name": "Low on-bridge clearance: CR 48",
+      "addr": "CR 48",
+      "lat": 42.09139,
+      "lng": -76.05476,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1935",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000003349960",
+      "name": "Low on-bridge clearance: COUNTY ROAD 28",
+      "addr": "COUNTY ROAD 28",
+      "lat": 42.07389,
+      "lng": -75.63623,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1935",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

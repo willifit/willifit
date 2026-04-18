@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-55-B16075500000000",
+      "name": "Low on-bridge clearance: STH 105-UNION ST",
+      "addr": "STH 105-UNION ST",
+      "lat": 46.65638,
+      "lng": -92.20778,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1910",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

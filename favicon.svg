@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="WillIFit truck">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  <!-- Truck silhouette -->
+  <g fill="#fff">
+    <!-- cab + box -->
+    <rect x="8" y="20" width="28" height="22" rx="2"/>
+    <rect x="36" y="26" width="16" height="16" rx="2"/>
+    <!-- cab window -->
+    <rect x="38" y="28" width="8" height="6" rx="1" fill="#0ea5e9"/>
+    <!-- wheels -->
+    <circle cx="18" cy="46" r="5" fill="#0f172a"/>
+    <circle cx="18" cy="46" r="2" fill="#fff"/>
+    <circle cx="44" cy="46" r="5" fill="#0f172a"/>
+    <circle cx="44" cy="46" r="2" fill="#fff"/>
+    <!-- clearance arrow above -->
+    <path d="M6 14 L58 14" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M8 10 L4 14 L8 18 Z"/>
+    <path d="M56 10 L60 14 L56 18 Z"/>
+  </g>
+</svg>

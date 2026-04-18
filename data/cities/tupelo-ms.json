@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-28-310017802910270",
+      "name": "Low on-bridge clearance: SR 178",
+      "addr": "SR 178",
+      "lat": 34.25261,
+      "lng": -88.47686,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1949",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-39-1829971",
+      "name": "Low on-bridge clearance: BARR RD",
+      "addr": "BARR RD",
+      "lat": 41.28008,
+      "lng": -81.64891,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1954",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7605145",
+      "name": "Low clearance: TUSCARAWAS RIVER under SR 93  CHERRY ST.",
+      "addr": "TUSCARAWAS RIVER",
+      "lat": 40.88862,
+      "lng": -81.59924,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1998; bridge carries SR 93  CHERRY ST.",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7660065",
+      "name": "Low clearance: W BR NIMISHILLEN CREEK under GUILFORD RD NW",
+      "addr": "W BR NIMISHILLEN CREEK",
+      "lat": 40.8395,
+      "lng": -81.40614,
+      "height_in": 90,
+      "height_label": "7'6\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2011; bridge carries GUILFORD RD NW",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7760221",
+      "name": "Low clearance: BEATRICE DR (143) under HOME AVE.",
+      "addr": "BEATRICE DR (143)",
+      "lat": 41.10302,
+      "lng": -81.48834,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1968; bridge carries HOME AVE.",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7761074",
+      "name": "Low clearance: 162 KELLY AVE O/ LCR under KELLY AVE",
+      "addr": "162 KELLY AVE O/ LCR",
+      "lat": 41.06333,
+      "lng": -81.48056,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2012; bridge carries KELLY AVE",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-39-7761112",
+      "name": "Low clearance: HALEY DITCH (243) under SEIBERLING WAY",
+      "addr": "HALEY DITCH (243)",
+      "lat": 41.05432,
+      "lng": -81.46396,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2013; bridge carries SEIBERLING WAY",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

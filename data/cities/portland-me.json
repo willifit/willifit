@@ -1,0 +1,61 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-23-0363",
+      "name": "Low clearance: LAMBERT ST/FALMOUTH SPUR under I-495",
+      "addr": "LAMBERT ST/FALMOUTH SPUR",
+      "lat": 43.72299,
+      "lng": -70.30078,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1956; bridge carries I-495",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-1009",
+      "name": "Low on-bridge clearance: COVERED BRIDGE R",
+      "addr": "COVERED BRIDGE R",
+      "lat": 43.76605,
+      "lng": -70.44791,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1976",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-3340",
+      "name": "Low on-bridge clearance: BUXTON ROAD",
+      "addr": "BUXTON ROAD",
+      "lat": 43.66628,
+      "lng": -70.603,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1936",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-3467",
+      "name": "Low clearance: MILL BROOK under BRIDGTON RD",
+      "addr": "MILL BROOK",
+      "lat": 43.74161,
+      "lng": -70.35316,
+      "height_in": 72,
+      "height_label": "6'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2011; bridge carries BRIDGTON RD",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-23-6348",
+      "name": "Low on-bridge clearance: WELCH ST",
+      "addr": "WELCH ST",
+      "lat": 43.65541,
+      "lng": -70.19986,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1993",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

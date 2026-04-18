@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-51-000000000030142",
+      "name": "Low clearance: PEDESTRIAN UNDERPASS under ROUTE 20 / 9TH ST",
+      "addr": "PEDESTRIAN UNDERPASS",
+      "lat": 38.0291,
+      "lng": -78.4761,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2001; bridge carries ROUTE 20 / 9TH ST",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

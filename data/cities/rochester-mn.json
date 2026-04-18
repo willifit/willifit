@@ -1,0 +1,17 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-27-L6322",
+      "name": "Low on-bridge clearance: CR 121",
+      "addr": "CR 121",
+      "lat": 44.12965,
+      "lng": -92.46251,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1895",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

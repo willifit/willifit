@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-19-000000000101760",
+      "name": "Low on-bridge clearance: MUSCATINE RD",
+      "addr": "MUSCATINE RD",
+      "lat": 41.63951,
+      "lng": -91.06212,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1935",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-19-000000000336611",
+      "name": "Low on-bridge clearance: G 38",
+      "addr": "G 38",
+      "lat": 41.29343,
+      "lng": -91.72542,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2011",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-34-10XXH64",
+      "name": "Low on-bridge clearance: MOUNT JOY ROAD",
+      "addr": "MOUNT JOY ROAD",
+      "lat": 40.60572,
+      "lng": -75.1706,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1890",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-2160166",
+      "name": "Low on-bridge clearance: SOUTH MAIN STREET",
+      "addr": "SOUTH MAIN STREET",
+      "lat": 40.68792,
+      "lng": -75.19775,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1914",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3300260",
+      "name": "Low on-bridge clearance: CR 627",
+      "addr": "CR 627",
+      "lat": 40.59427,
+      "lng": -75.19073,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1904",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-34-3300280",
+      "name": "Low on-bridge clearance: Northampton Street",
+      "addr": "Northampton Street",
+      "lat": 40.69147,
+      "lng": -75.20421,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1896",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000007470",
+      "name": "Low on-bridge clearance: COVERED BRIDGE RD.",
+      "addr": "COVERED BRIDGE RD.",
+      "lat": 40.45478,
+      "lng": -75.27814,
+      "height_in": 149,
+      "height_label": "12'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1873",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000007496",
+      "name": "Low on-bridge clearance: NURSERY ROAD",
+      "addr": "NURSERY ROAD",
+      "lat": 40.39299,
+      "lng": -75.41659,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1891",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000007554",
+      "name": "Low on-bridge clearance: KNECHT BRIDGE RD",
+      "addr": "KNECHT BRIDGE RD",
+      "lat": 40.5382,
+      "lng": -75.278,
+      "height_in": 113,
+      "height_label": "9'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1873",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000007583",
+      "name": "Low on-bridge clearance: BRIDGE STREET",
+      "addr": "BRIDGE STREET",
+      "lat": 40.5161,
+      "lng": -75.29236,
+      "height_in": 78,
+      "height_label": "6'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1882",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000009122",
+      "name": "Low on-bridge clearance: COVER BRIDGE RD",
+      "addr": "COVER BRIDGE RD",
+      "lat": 40.83138,
+      "lng": -75.52245,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1880",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000023179",
+      "name": "Low on-bridge clearance: SR 329(LR 175)",
+      "addr": "SR 329(LR 175)",
+      "lat": 40.69019,
+      "lng": -75.50372,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1933",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000023356",
+      "name": "Low on-bridge clearance: SR 4003 (LR 39048)",
+      "addr": "SR 4003 (LR 39048)",
+      "lat": 40.63313,
+      "lng": -75.60207,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1929",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000023435",
+      "name": "Low on-bridge clearance: WEHRS COVERED",
+      "addr": "WEHRS COVERED",
+      "lat": 40.62859,
+      "lng": -75.56962,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1841",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000023436",
+      "name": "Low on-bridge clearance: LAPP RD.",
+      "addr": "LAPP RD.",
+      "lat": 40.62958,
+      "lng": -75.55336,
+      "height_in": 118,
+      "height_label": "9'10\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1858",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000023469",
+      "name": "Low on-bridge clearance: JORDAN ROAD",
+      "addr": "JORDAN ROAD",
+      "lat": 40.6349,
+      "lng": -75.6127,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1858",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000023471",
+      "name": "Low on-bridge clearance: OLD PACKHOUSE ROAD",
+      "addr": "OLD PACKHOUSE ROAD",
+      "lat": 40.64644,
+      "lng": -75.62349,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1860",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000027927",
+      "name": "Low on-bridge clearance: PEEVY ROAD",
+      "addr": "PEEVY ROAD",
+      "lat": 40.41458,
+      "lng": -75.52369,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1880",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000027928",
+      "name": "Low on-bridge clearance: FRUITVILLE ROAD",
+      "addr": "FRUITVILLE ROAD",
+      "lat": 40.40771,
+      "lng": -75.52226,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1905",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000028912",
+      "name": "Low on-bridge clearance: GLENDON HILL ROAD",
+      "addr": "GLENDON HILL ROAD",
+      "lat": 40.6699,
+      "lng": -75.237,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1905",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-42-000000000048663",
+      "name": "Low on-bridge clearance: SR 4007 (LR39058)",
+      "addr": "SR 4007 (LR39058)",
+      "lat": 40.6617,
+      "lng": -75.62673,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2014",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-40-322140000000000",
+      "name": "Low clearance: CAMP CREEK under E1100",
+      "addr": "CAMP CREEK",
+      "lat": 35.41988,
+      "lng": -94.56824,
+      "height_in": 60,
+      "height_label": "5'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2017; bridge carries E1100",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-40-325240000000000",
+      "name": "Low clearance: CREEK under E1100",
+      "addr": "CREEK",
+      "lat": 35.41959,
+      "lng": -94.46032,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 2018; bridge carries E1100",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

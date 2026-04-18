@@ -1,0 +1,39 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-48-041880027501171",
+      "name": "Low on-bridge clearance: IH 40 WBML",
+      "addr": "IH 40 WBML",
+      "lat": 35.19263,
+      "lng": -101.82657,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2018",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-48-041880027501172",
+      "name": "Low on-bridge clearance: IH 40 EBML",
+      "addr": "IH 40 EBML",
+      "lat": 35.19227,
+      "lng": -101.82744,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2018",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-48-041880027501173",
+      "name": "Low on-bridge clearance: IH 40 WB",
+      "addr": "IH 40 WB",
+      "lat": 35.19251,
+      "lng": -101.81807,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2018",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

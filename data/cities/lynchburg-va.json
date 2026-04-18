@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-51-000000000020550",
+      "name": "Low clearance: Rt 670 Candlers Mtn Rd under Route 128 EBL",
+      "addr": "Rt 670 Candlers Mtn Rd",
+      "lat": 37.36341,
+      "lng": -79.16932,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1976; bridge carries Route 128 EBL",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-51-5140017P0000000",
+      "name": "Low clearance: PETERS CREEK ROAD (VA RO under BLUE RIDGE PARKWAY",
+      "addr": "PETERS CREEK ROAD (VA RO",
+      "lat": 37.55281,
+      "lng": -79.38908,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "FHWA NBI; under-bridge clearance; built 1960; bridge carries BLUE RIDGE PARKWAY",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

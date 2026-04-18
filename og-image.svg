@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="WillIFit — will my vehicle fit?">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#0e1116"/>
+    </linearGradient>
+    <linearGradient id="truck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.3">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M100 0 V630 M200 0 V630 M300 0 V630 M400 0 V630 M500 0 V630 M600 0 V630 M700 0 V630 M800 0 V630 M900 0 V630 M1000 0 V630 M1100 0 V630"/>
+  </g>
+
+  <!-- overpass bar -->
+  <rect x="60" y="280" width="1080" height="36" fill="#64748b" rx="6"/>
+  <text x="600" y="304" font-family="ui-sans-serif, system-ui" font-size="20" fill="#f8fafc" text-anchor="middle" font-weight="700">⚠  CLEARANCE  11' 6"</text>
+
+  <!-- truck -->
+  <g transform="translate(80,340)">
+    <rect x="0" y="0" width="320" height="160" rx="10" fill="url(#truck)"/>
+    <rect x="320" y="40" width="140" height="120" rx="10" fill="url(#truck)"/>
+    <rect x="336" y="60" width="70" height="44" rx="4" fill="#0b1120"/>
+    <circle cx="60"  cy="190" r="30" fill="#0f172a"/>
+    <circle cx="60"  cy="190" r="12" fill="#e2e8f0"/>
+    <circle cx="400" cy="190" r="30" fill="#0f172a"/>
+    <circle cx="400" cy="190" r="12" fill="#e2e8f0"/>
+  </g>
+
+  <!-- AI pill -->
+  <g transform="translate(560, 100)">
+    <rect x="0" y="0" width="150" height="32" rx="16" fill="rgba(14,165,233,0.2)" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="75" y="22" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="700"
+          letter-spacing="2" fill="#22d3ee" text-anchor="middle">AI-VERIFIED</text>
+  </g>
+
+  <!-- headline -->
+  <text x="560" y="185" font-family="ui-sans-serif, system-ui" font-size="88" font-weight="800" fill="#f8fafc">Will I Fit<tspan fill="#22d3ee">.ai</tspan></text>
+  <text x="560" y="235" font-family="ui-sans-serif, system-ui" font-size="30" fill="#cbd5e1">Clearance heights read straight from Street View signs</text>
+  <text x="560" y="268" font-family="ui-sans-serif, system-ui" font-size="22" fill="#94a3b8">226 US cities · 7,400+ garages, tunnels &amp; low bridges</text>
+</svg>

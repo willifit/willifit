@@ -1,0 +1,72 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-18-060310",
+      "name": "Low on-bridge clearance: PARK ROAD",
+      "addr": "PARK ROAD",
+      "lat": 39.19547,
+      "lng": -86.21649,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1838",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-0700036",
+      "name": "Low on-bridge clearance: COVERED BRIDGE RD.",
+      "addr": "COVERED BRIDGE RD.",
+      "lat": 39.26088,
+      "lng": -86.25526,
+      "height_in": 137,
+      "height_label": "11'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1880",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-5300179",
+      "name": "Low on-bridge clearance: OLD MAPLE GROVE RD",
+      "addr": "OLD MAPLE GROVE RD",
+      "lat": 39.26639,
+      "lng": -86.56889,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2019",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-5500121",
+      "name": "Low on-bridge clearance: OLD SR 67",
+      "addr": "OLD SR 67",
+      "lat": 39.42402,
+      "lng": -86.4753,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1893",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-6000001",
+      "name": "Low on-bridge clearance: ROMONA RD",
+      "addr": "ROMONA RD",
+      "lat": 39.3292,
+      "lng": -86.72906,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1910",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-18-6000071",
+      "name": "Low on-bridge clearance: FREEDOM RD",
+      "addr": "FREEDOM RD",
+      "lat": 39.20542,
+      "lng": -86.86602,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 2001",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}

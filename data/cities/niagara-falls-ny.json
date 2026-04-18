@@ -1,0 +1,28 @@
+{
+  "garages": [],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "nbi-36-000000003368020",
+      "name": "Low on-bridge clearance: COUNTRY CLB TRAIL",
+      "addr": "COUNTRY CLB TRAIL",
+      "lat": 43.15806,
+      "lng": -79.0233,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1989",
+      "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "nbi-36-000000005039547",
+      "name": "Low on-bridge clearance: RTE 955",
+      "addr": "RTE 955",
+      "lat": 43.10931,
+      "lng": -79.05766,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "FHWA NBI; on-bridge clearance; built 1897",
+      "source": "FHWA National Bridge Inventory"
+    }
+  ]
+}
