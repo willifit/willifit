@@ -3,8 +3,21 @@
 
 [build]
   publish = "."
-  # No command — we're pure static. Netlify still needs the field declared.
-  command = "echo 'no build step required'"
+  # The only build step we run is secret injection.  The __GOOGLE_MAPS_API_KEY__
+  # placeholder in willifit.html / index.html gets replaced with the real key
+  # from the Netlify environment variable of the same name.  This keeps the
+  # real key out of git while still ending up in the served HTML (required
+  # because Google Maps JS enforces HTTP-referrer restrictions in the browser,
+  # not via server-side auth).  If the env var is not set, the app falls back
+  # to Mapillary for street-level imagery.
+  command = """
+    if [ -n "$GOOGLE_MAPS_API_KEY" ]; then
+      sed -i "s|__GOOGLE_MAPS_API_KEY__|$GOOGLE_MAPS_API_KEY|g" willifit.html index.html
+      echo "Injected GOOGLE_MAPS_API_KEY into willifit.html + index.html"
+    else
+      echo "WARN: GOOGLE_MAPS_API_KEY env var not set. Street View will fall back to Mapillary."
+    fi
+  """
 
 # "/" serves /index.html by default (Netlify static convention).
 # /willifit.html still works as a legacy alias for shared bookmarks.
