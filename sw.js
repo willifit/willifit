@@ -10,7 +10,7 @@
 // Bump CACHE_VERSION when you ship a breaking HTML change so returning users
 // pick up the new shell.
 
-const CACHE_VERSION = "willifit-v1";
+const CACHE_VERSION = "willifit-v2";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 

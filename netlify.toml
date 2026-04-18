@@ -1,5 +1,13 @@
 # WillIFit — Netlify deploy config
-# Drop-in static deploy. No build step required.
+# Drop-in static deploy with a tiny build step that injects the Google Maps
+# API key from Netlify env vars into the HTML at deploy time.
+
+# Tell Netlify's secrets scanner that GOOGLE_MAPS_API_KEY is intentionally
+# present in the deployed HTML — Maps JS keys are designed for frontend use
+# and are protected by HTTP-referrer restrictions in Google Cloud, not by
+# secrecy.  Without this flag, the build fails with "Exposed secrets detected".
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "GOOGLE_MAPS_API_KEY"
 
 [build]
   publish = "."
