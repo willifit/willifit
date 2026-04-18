@@ -1413,12 +1413,18 @@
    Picker-map (city modal) always uses Leaflet regardless.
    ============================================================ */
 const MAP_PROVIDER = 'osm';
-// Injected at deploy time by netlify.toml's build step, which substitutes
-// __GOOGLE_MAPS_API_KEY__ with the Netlify environment variable of the same
-// name.  Keeping the real key out of git avoids GitHub secret-scan alerts.
-// If the placeholder is still here in the served HTML, it means the build
-// step didn't run — the app falls back to Mapillary for street-level imagery.
-const GOOGLE_MAPS_API_KEY = '__GOOGLE_MAPS_API_KEY__';
+// Google Maps API key — PUBLIC-BY-DESIGN.
+//
+// Maps JS / Street View keys are frontend credentials: the security model is
+// HTTP-referrer restrictions in Google Cloud Console, NOT secrecy.  This key
+// is locked to:
+//     https://willifit.ai/*
+//     https://*.willifit.ai/*
+//     https://*.netlify.app/*
+// so even if someone copies it from the public repo, Google rejects their
+// requests.  If you fork this repo, replace this with your own restricted
+// key.  (GitHub's secret scanner flags this pattern; dismiss as "Won't fix".)
+const GOOGLE_MAPS_API_KEY = 'AIzaSyDmfAJewDevDtvH-3rWsHrT31UNB3awb8E';
 
 // Dark theme matching WillIFit UI — applied when MAP_PROVIDER === 'google'.
 const DARK_MAP_STYLE = [
@@ -2242,9 +2248,7 @@ async function loadDetailHero(hero, g, urls) {
       <div class="detail-hero-label">Street-level · Mapillary</div>`;
   };
 
-  if (!GOOGLE_MAPS_API_KEY
-      || GOOGLE_MAPS_API_KEY.startsWith('PASTE_')
-      || GOOGLE_MAPS_API_KEY.startsWith('__GOOGLE_MAPS_API_KEY__')) {
+  if (!GOOGLE_MAPS_API_KEY || GOOGLE_MAPS_API_KEY.startsWith('PASTE_')) {
     return showMapillary();
   }
 

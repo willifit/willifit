@@ -1,37 +1,10 @@
 # WillIFit — Netlify deploy config
-# Drop-in static deploy with a tiny build step that injects the Google Maps
-# API key from Netlify env vars into the HTML at deploy time.
-
-# Netlify's secret scanner not only fails builds but POST-PROCESSES deployed
-# files and replaces detected secret values with the env var's name (so the
-# HTML ends up with e.g. "GOOGLE_MAPS_API_KEY" instead of "AIzaSy...").
-# That breaks Google Maps JS at runtime.
-#
-# Google Maps API keys are designed for frontend use — the security model is
-# HTTP-referrer restrictions in Google Cloud Console, not secrecy — so we
-# turn the scanner OFF entirely for this site.  If you add a genuinely
-# sensitive secret later (Stripe, AWS, etc.), either scope it to server-side
-# only (a Netlify Function, not client HTML) or re-enable this scanner.
-[build.environment]
-  SECRETS_SCAN_ENABLED = "false"
+# Pure static deploy. Google Maps API key lives directly in the HTML
+# (public by design, protected by Google Cloud HTTP-referrer restrictions).
 
 [build]
   publish = "."
-  # The only build step we run is secret injection.  The __GOOGLE_MAPS_API_KEY__
-  # placeholder in willifit.html / index.html gets replaced with the real key
-  # from the Netlify environment variable of the same name.  This keeps the
-  # real key out of git while still ending up in the served HTML (required
-  # because Google Maps JS enforces HTTP-referrer restrictions in the browser,
-  # not via server-side auth).  If the env var is not set, the app falls back
-  # to Mapillary for street-level imagery.
-  command = """
-    if [ -n "$GOOGLE_MAPS_API_KEY" ]; then
-      sed -i "s|__GOOGLE_MAPS_API_KEY__|$GOOGLE_MAPS_API_KEY|g" willifit.html index.html
-      echo "Injected GOOGLE_MAPS_API_KEY into willifit.html + index.html"
-    else
-      echo "WARN: GOOGLE_MAPS_API_KEY env var not set. Street View will fall back to Mapillary."
-    fi
-  """
+  command = "echo 'pure static — no build step'"
 
 # "/" serves /index.html by default (Netlify static convention).
 # /willifit.html still works as a legacy alias for shared bookmarks.
