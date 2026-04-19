@@ -890,6 +890,12 @@
     border-radius: 4px;
   }
   .sponsor-card.compact { padding: 10px 12px; margin: 10px 0; }
+  /* House ads look different — dashed border + "your ad here" vibe — so real
+     sponsors don't think we're greenwashing our own inventory. */
+  .sponsor-card.house {
+    border-left: 3px dashed var(--accent);
+    background: linear-gradient(180deg, rgba(14,165,233,0.05), transparent 80%);
+  }
   .sponsor-label {
     font-family: var(--mono); font-size: 9px;
     text-transform: uppercase; letter-spacing: 0.1em;
@@ -1556,12 +1562,18 @@ function renderSponsor(slot, ctx, opts) {
   if (!s) return '';
   recordAdEvent('impression', s.id, slot);
   const compact = opts && opts.compact;
+  const isHouse = (s.id || '').startsWith('house-');
+  // House ads are relative paths; real sponsors get target=_blank.
+  const isExternal = /^https?:\/\//.test(s.url);
+  const linkAttrs = isExternal
+    ? `href="${s.url}" target="_blank" rel="noopener sponsored"`
+    : `href="${s.url}"`;
   return `
-    <div class="sponsor-card ${compact ? 'compact' : ''}" data-slot="${slot}" data-id="${s.id}">
-      <div class="sponsor-label">${s.label || 'Sponsored'}</div>
-      <div class="sponsor-title">${s.title}</div>
-      ${compact ? '' : `<div class="sponsor-desc">${s.desc}</div>`}
-      <a class="sponsor-cta" href="${s.url}" target="_blank" rel="noopener sponsored" onclick="recordAdEvent('click','${s.id}','${slot}')">${s.cta}</a>
+    <div class="sponsor-card ${compact ? 'compact' : ''} ${isHouse ? 'house' : ''}" data-slot="${slot}" data-id="${s.id}">
+      <div class="sponsor-label">${escapeHTML(s.label || 'Sponsored')}</div>
+      <div class="sponsor-title">${escapeHTML(s.title)}</div>
+      ${compact ? '' : `<div class="sponsor-desc">${escapeHTML(s.desc)}</div>`}
+      <a class="sponsor-cta" ${linkAttrs} onclick="recordAdEvent('click','${escapeHTML(s.id)}','${escapeHTML(slot)}')">${escapeHTML(s.cta)}</a>
     </div>`;
 }
 

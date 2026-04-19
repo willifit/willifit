@@ -1,18 +1,18 @@
 [
   {
-    "id": "national-spothero",
+    "id": "affiliate-spothero",
     "title": "Reserve parking with SpotHero",
-    "desc": "Oversized-friendly garages across 300+ US cities. Reserve before you drive.",
+    "desc": "Oversized-friendly garages in 300+ US cities. Reserve before you drive.",
     "cta": "Find a spot →",
     "url": "https://spothero.com/?ref=willifit",
-    "tier": ["home", "sidebar", "detail"],
+    "tier": ["sidebar", "detail"],
     "scope": { "cities": ["*"] },
     "audience": {},
     "weight": 2,
-    "label": "Sponsored · Affiliate"
+    "label": "Affiliate"
   },
   {
-    "id": "national-rvshare",
+    "id": "affiliate-rvshare",
     "title": "Rent an RV for your next trip",
     "desc": "RVshare — the Airbnb of motorhomes. 100k+ listings nationwide.",
     "cta": "Browse RVs →",
@@ -21,141 +21,66 @@
     "scope": { "cities": ["*"] },
     "audience": { "oversized_only": true },
     "weight": 2,
-    "label": "Sponsored · Affiliate"
+    "label": "Affiliate"
   },
   {
-    "id": "national-uberxl",
+    "id": "affiliate-uberxl",
     "title": "Skip the garage — take an Uber XL",
-    "desc": "Leave the rig. 6 seats. Fits luggage. Everywhere WillIFit works.",
+    "desc": "Leave the rig. 6 seats. Fits luggage. Available in every city we cover.",
     "cta": "Get the app →",
     "url": "https://uber.com/go/xl",
     "tier": ["home", "sidebar"],
     "scope": { "cities": ["*"] },
     "audience": {},
     "weight": 1,
-    "label": "Sponsored"
+    "label": "Affiliate"
   },
   {
-    "id": "vegas-oasis-rv",
-    "title": "Oasis Las Vegas RV Resort",
-    "desc": "Full hookups. Pool. Shuttle to Strip. Official Allegiant Stadium RV partner.",
-    "cta": "Book a night →",
-    "url": "https://example.com/oasis-lv",
-    "tier": ["detail", "sidebar", "map"],
-    "scope": {
-      "cities": ["las-vegas-nv"],
-      "near": { "lat": 36.0532, "lng": -115.1788, "radius_mi": 15 }
-    },
-    "audience": { "oversized_only": true },
-    "weight": 3,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "vegas-heavy-tow",
-    "title": "Vegas Heavy-Duty Towing — 24/7",
-    "desc": "RV & oversized-vehicle dispatch. Local drivers. No dispatch fee.",
-    "cta": "Call dispatcher →",
-    "url": "tel:+17025550199",
-    "tier": ["detail"],
-    "scope": { "cities": ["las-vegas-nv"] },
-    "audience": {},
-    "weight": 2,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "la-dockweiler-rv",
-    "title": "Dockweiler Beach RV Park",
-    "desc": "Ocean-view RV spots 15 minutes from LAX. Full hookups. $70/night.",
-    "cta": "Check availability →",
-    "url": "https://example.com/dockweiler",
-    "tier": ["detail", "sidebar", "map"],
-    "scope": {
-      "cities": ["los-angeles-ca"],
-      "near": { "lat": 33.9366, "lng": -118.4380, "radius_mi": 20 }
-    },
-    "audience": { "oversized_only": true },
-    "weight": 3,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "nyc-liberty-harbor-rv",
-    "title": "Liberty Harbor RV Park (Jersey City)",
-    "desc": "The only RV park within sight of Manhattan. Ferry to WTC.",
-    "cta": "Reserve →",
-    "url": "https://example.com/liberty-harbor",
-    "tier": ["detail", "sidebar", "map"],
-    "scope": {
-      "cities": ["new-york-ny"],
-      "near": { "lat": 40.7160, "lng": -74.0493, "radius_mi": 12 }
-    },
-    "audience": { "oversized_only": true },
-    "weight": 3,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "nyc-heavy-tow",
-    "title": "5-Boro Heavy-Duty Towing",
-    "desc": "Stuck in a garage? We unstick RVs, box trucks, oversized SUVs.",
-    "cta": "Call 24/7 →",
-    "url": "tel:+17185550134",
-    "tier": ["detail"],
-    "scope": { "cities": ["new-york-ny"] },
-    "audience": {},
-    "weight": 2,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "chi-mccormick-rv",
-    "title": "McCormick Place RV Lot",
-    "desc": "Chicago's only downtown oversized parking. Walk to the Loop, Grant Park.",
-    "cta": "Learn more →",
-    "url": "https://example.com/mccormick-rv",
-    "tier": ["detail", "sidebar", "map"],
-    "scope": {
-      "cities": ["chicago-il"],
-      "near": { "lat": 41.8515, "lng": -87.6150, "radius_mi": 10 }
-    },
-    "audience": { "oversized_only": true },
-    "weight": 3,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "hou-kingwood-rv",
-    "title": "Houston East RV Resort",
-    "desc": "30 minutes to downtown. 45 min to NRG Stadium. Pull-through sites.",
-    "cta": "Book →",
-    "url": "https://example.com/houston-east-rv",
-    "tier": ["detail", "sidebar", "map"],
-    "scope": {
-      "cities": ["houston-tx"],
-      "near": { "lat": 29.9500, "lng": -95.1800, "radius_mi": 25 }
-    },
-    "audience": { "oversized_only": true },
-    "weight": 2,
-    "label": "Sponsored · Local"
-  },
-  {
-    "id": "national-rack-replace",
-    "title": "Replace your roof rack — save 2 inches",
-    "desc": "Flush-mount systems from the shop that measures. Free install by appt.",
-    "cta": "Get a quote →",
-    "url": "https://example.com/flush-racks",
-    "tier": ["detail", "sidebar"],
+    "id": "house-home-hero",
+    "title": "Sponsor the home page",
+    "desc": "Your ad is shown to every visitor on page load. Geo-target a city, a radius, or the nation.",
+    "cta": "Get pricing →",
+    "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=home_hero",
+    "tier": ["home"],
     "scope": { "cities": ["*"] },
     "audience": {},
-    "weight": 1,
-    "label": "Sponsored"
+    "weight": 3,
+    "label": "House ad"
   },
   {
-    "id": "national-mobile-inspect",
-    "title": "Mobile RV Height Inspection",
-    "desc": "Certified techs measure & document your actual clearance. $49 flat.",
-    "cta": "Book visit →",
-    "url": "https://example.com/mobile-inspect",
+    "id": "house-sidebar-city",
+    "title": "Reach drivers in this city",
+    "desc": "Your ad stays pinned in the sidebar while drivers browse this city's garages. From $75/mo.",
+    "cta": "Advertise here →",
+    "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=sidebar_city",
+    "tier": ["sidebar"],
+    "scope": { "cities": ["*"] },
+    "audience": {},
+    "weight": 3,
+    "label": "House ad"
+  },
+  {
+    "id": "house-detail-local",
+    "title": "Local RV park? Tow shop? Auto glass?",
+    "desc": "You're exactly who our drivers need. Radius-targeted sponsor slots from $50/mo.",
+    "cta": "Claim a slot →",
+    "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=detail_local",
+    "tier": ["detail"],
+    "scope": { "cities": ["*"] },
+    "audience": {},
+    "weight": 3,
+    "label": "House ad"
+  },
+  {
+    "id": "house-detail-oversized",
+    "title": "Advertise to RV &amp; truck drivers",
+    "desc": "The user viewing this garage set their vehicle height. You're reaching real intent.",
+    "cta": "See rate card →",
+    "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=detail_oversized",
     "tier": ["detail"],
     "scope": { "cities": ["*"] },
     "audience": { "oversized_only": true },
-    "weight": 1,
-    "label": "Sponsored"
+    "weight": 2,
+    "label": "House ad"
   }
 ]
