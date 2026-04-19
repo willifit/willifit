@@ -1003,8 +1003,18 @@
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
       max-height: none;
-      padding-bottom: env(safe-area-inset-bottom);
+      /* Let the whole sidebar scroll on mobile — the filters block
+         (search + slider + chips + 2 toggles) is taller than the 40%
+         viewport slice, so the toggles / list were being clipped by the
+         base overflow:hidden. Extra bottom padding keeps the last button
+         clear of Safari's floating bottom toolbar. */
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
     }
+    /* When the sidebar itself scrolls, .list doesn't need to — let it
+       flow naturally so all rows are reachable via the parent scroll. */
+    .sidebar .list { overflow-y: visible; flex: 0 0 auto; }
     .filters { padding: 10px 12px; }
     .filter-label { font-size: 10px; }
 
