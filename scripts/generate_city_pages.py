@@ -173,6 +173,13 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-vw06rzB0tQ574fL9diwDM.js"></script>
+<script>
+  window.plausible=window.plausible||function(){{(plausible.q=plausible.q||[]).push(arguments)}},plausible.init=plausible.init||function(i){{plausible.o=i||{{}}}};
+  plausible.init()
+</script>
+
 <script type="application/ld+json">{jsonld}</script>
 
 <style>
