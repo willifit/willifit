@@ -1012,8 +1012,13 @@
     .search-box input, #citySearchInput, #rfHeightFt, #rfHeightIn,
     #rfContact, #rfNotes { font-size: 16px; }
 
-    /* Detail panel → full-width bottom sheet with safe-area bottom padding */
+    /* Detail panel → full-width bottom sheet with safe-area bottom padding.
+       position: fixed (not absolute) so it escapes .map-container's
+       overflow:hidden — otherwise the top of the sheet (close button +
+       drag handle) gets clipped since map-container is only ~60% of the
+       viewport on mobile while the sheet is 85vh tall. */
     .detail-panel {
+      position: fixed;
       top: auto !important;
       left: 0; right: 0; bottom: 0;
       width: 100%;
@@ -1021,6 +1026,7 @@
       border-radius: 16px 16px 0 0;
       transform: translateY(100%);
       padding-bottom: env(safe-area-inset-bottom);
+      z-index: 1500;
     }
     .detail-panel.open { transform: translateY(0); }
     /* Show the iOS-style drag handle at the top of the sheet */
