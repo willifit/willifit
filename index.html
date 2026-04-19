@@ -56,14 +56,32 @@
     --mono: 'JetBrains Mono', 'Menlo', 'Consolas', monospace;
     --sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
-  * { box-sizing: border-box; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html, body {
     margin: 0; padding: 0; height: 100%;
     background: var(--bg); color: var(--text);
     font-family: var(--sans); font-size: 14px;
     overflow: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
-  .app { display: grid; grid-template-rows: 56px 1fr 28px; height: 100vh; }
+  /* 100vh is broken on iOS Safari (doesn't shrink for URL bar).
+     100dvh is the "dynamic" viewport height — respects chrome.
+     We fall back to 100vh for older browsers. */
+  .app {
+    display: grid;
+    grid-template-rows: 56px 1fr 28px;
+    height: 100vh;
+    height: 100dvh;
+    /* Honor iPhone notch + home indicator */
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  /* Ensure tap targets on any interactive element are at least 44x44 (Apple HIG) */
+  button, a.btn, .btn, [role="button"], input[type="checkbox"], input[type="radio"] {
+    touch-action: manipulation;
+  }
   .site-footer {
     background: var(--panel);
     border-top: 1px solid var(--border);
@@ -920,80 +938,155 @@
      Breakpoint: 900px. At phone width we become a vertical single-column
      with the map on top and the list as a bottom drawer.
      ============================================================ */
+  /* ============================================================
+     TABLET / NARROW DESKTOP (≤ 900px)
+     - Topbar wraps, sidebar becomes bottom pane, detail → bottom sheet
+     ============================================================ */
   @media (max-width: 900px) {
+    .app {
+      grid-template-rows: auto 1fr 0;  /* kill footer row on mobile — saves vertical space */
+    }
+    .site-footer { display: none; }   /* footer links moved to city-picker in mobile */
+
     .topbar {
       flex-wrap: wrap;
-      padding: 8px 12px; gap: 10px;
+      padding: 8px 12px calc(8px + env(safe-area-inset-top, 0px));
+      gap: 8px 10px;
       min-height: auto;
     }
     .tagline { display: none; }
     .brand { font-size: 15px; }
+    .brand-word { font-size: 16px; }
+
+    /* Vehicle height gets its own full row below the topbar top line */
     .vehicle-height {
       margin: 0 !important;
-      padding: 4px 10px;
+      padding: 4px 8px;
       order: 3; flex-basis: 100%;
       justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 6px; margin-top: 2px !important;
     }
-    .vh-inputs input[type="number"] { width: 48px; font-size: 16px; }
+    /* font-size: 16px on inputs prevents iOS Safari's zoom-on-focus behavior */
+    .vh-inputs input[type="number"] { width: 52px; font-size: 16px; padding: 6px 4px; }
     .current-city {
       order: 2; margin-left: auto;
-      padding-left: 10px; padding-right: 10px;
+      padding: 6px 10px; min-height: 36px;
     }
     .current-city .label { display: none; }
 
+    /* Main area becomes vertical — map on top, sidebar on bottom.
+       Grid order (row-position) overrides DOM order. */
     .main {
       grid-template-columns: 1fr;
-      grid-template-rows: 55vh 1fr;
+      grid-template-rows: 60% 40%;
     }
+    .map-container { grid-row: 1; }
     .sidebar {
+      grid-row: 2;
       border-right: none;
       border-top: 1px solid var(--border);
-      max-height: 45vh;
+      border-bottom: 1px solid var(--border);
+      max-height: none;
+      padding-bottom: env(safe-area-inset-bottom);
     }
-    .filters { padding: 12px; }
+    .filters { padding: 10px 12px; }
     .filter-label { font-size: 10px; }
 
-    /* Detail panel becomes a bottom sheet */
+    /* Search/filter inputs ≥16px so iOS doesn't zoom on focus */
+    .search-box input, #citySearchInput, #rfHeightFt, #rfHeightIn,
+    #rfContact, #rfNotes { font-size: 16px; }
+
+    /* Detail panel → full-width bottom sheet with safe-area bottom padding */
     .detail-panel {
       top: auto !important;
       left: 0; right: 0; bottom: 0;
       width: 100%;
-      height: 80vh;
-      border-radius: 12px 12px 0 0;
+      height: 85dvh; height: 85vh;
+      border-radius: 16px 16px 0 0;
       transform: translateY(100%);
+      padding-bottom: env(safe-area-inset-bottom);
     }
     .detail-panel.open { transform: translateY(0); }
-    .detail-close { top: 10px; right: 10px; }
+    .detail-close { top: 10px; right: 10px; width: 36px; height: 36px; }
+    .detail-hero { height: 220px; }  /* tiny bit shorter on mobile to leave room below */
 
-    /* Filter chips wrap better on narrow screens */
-    .type-chips { flex-wrap: wrap; }
-    .toggle { font-size: 11px; }
+    /* Chips wrap better, touch targets larger */
+    .type-chips { flex-wrap: wrap; gap: 6px; }
+    .type-chip { padding: 8px 12px; font-size: 12px; min-height: 36px; }
+    .toggle { font-size: 12px; padding: 8px 12px; min-height: 36px; }
 
-    /* Modals full-width on mobile */
-    .modal { width: 95vw; max-width: 95vw; max-height: 90vh; }
-    .report-modal { max-width: 95vw; }
-    .report-form { padding: 16px 18px 20px; }
+    /* Modals respect safe areas + take comfortable mobile width.
+       Snap to bottom edge (iOS action-sheet pattern) rather than centered. */
+    .modal-overlay {
+      padding: 0;
+      align-items: flex-end;  /* snap content to bottom */
+    }
+    .modal {
+      width: 100%; max-width: 100%;
+      height: auto;
+      max-height: 92dvh; max-height: 92vh;  /* leave top gap for tap-to-dismiss */
+      border-radius: 16px 16px 0 0;
+    }
+    .modal-header { padding: 14px 18px; }
+    .modal-close { width: 36px; height: 36px; }
+    .report-modal { max-width: 100%; }
+    .report-form { padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); }
 
-    /* Search-this-area button — bigger touch target */
-    .search-area-btn, .search-area-clear { top: 10px; padding: 10px 14px; font-size: 12px; }
+    .search-area-btn, .search-area-clear {
+      top: 12px; padding: 10px 14px; font-size: 13px; min-height: 40px;
+    }
 
-    /* Welcome card scales down */
-    .welcome-card { padding: 28px 24px; max-width: 92vw; }
-    .welcome-title { font-size: 22px; }
+    .welcome-card { padding: 28px 22px; max-width: 92vw; }
+    .welcome-title { font-size: 26px; }
+    .welcome-sub { font-size: 14px; }
+    #skipGeo { min-height: 44px; padding: 10px 22px; }
 
-    /* City picker tabs horizontal scroll if needed */
-    .tabs { overflow-x: auto; }
-    .tab { white-space: nowrap; }
+    .tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .tab { white-space: nowrap; min-height: 40px; padding: 10px 16px; }
+    .city-row { padding: 14px 20px; min-height: 52px; }
+
+    /* Report-btn (open the report modal) — bigger on mobile */
+    .report-btn { padding: 14px; }
+
+    /* Legend overlay shrinks on narrow map */
+    .legend { font-size: 10px; padding: 6px 8px; }
   }
 
-  /* Very small phones */
-  @media (max-width: 420px) {
-    .vehicle-height { flex-wrap: wrap; gap: 6px; padding: 4px 8px; }
-    .vh-label { flex-basis: 100%; margin-bottom: 2px; }
+  /* ============================================================
+     PHONE (≤ 560px) — iPhone SE, 12 mini, 13, 14, 15, etc.
+     ============================================================ */
+  @media (max-width: 560px) {
+    .vehicle-height .vh-label { font-size: 10px; }
+    .main { grid-template-rows: 55% 45%; }
+    .detail-hero { height: 200px; }
+    .modal-title { font-size: 15px; }
+
+    /* Legend can collapse or reposition — put it at top-left, very small */
+    .legend {
+      position: absolute; top: 8px; left: 8px; right: auto; bottom: auto;
+      max-width: 180px;
+    }
+
+    .welcome-title { font-size: 24px; }
+    .welcome-card { padding: 22px 18px; }
+    .brand-word { font-size: 15px; }
+
+    /* Search-area button — compact on tiny screens */
+    .search-area-btn { padding: 8px 12px; font-size: 12px; }
+  }
+
+  /* ============================================================
+     VERY NARROW (≤ 380px) — older iPhone SE 1st gen, etc.
+     ============================================================ */
+  @media (max-width: 380px) {
     .brand-mark { width: 24px; height: 24px; }
     .brand { font-size: 14px; gap: 6px; }
-    .main { grid-template-rows: 50vh 1fr; }
-    .detail-panel { height: 85vh; }
+    .current-city { padding: 4px 8px; }
+    .current-city .name { font-size: 12px; }
+    .vh-label { font-size: 9px; }
+    .type-chip { padding: 6px 10px; font-size: 11px; }
+    .filter-label { font-size: 9px; }
   }
   .verification-banner b { color: var(--text); }
 
