@@ -134,18 +134,32 @@ def _http_get(url: str, timeout: int = 30) -> tuple[int, bytes, dict]:
         return e.code, e.read(), dict(e.headers or {})
 
 
-def streetview_has_imagery(lat: float, lng: float) -> bool:
-    """Free metadata check — returns True if Google has imagery at this point.
-    Avoids paying for images that would return a grey 'no imagery' placeholder."""
+def streetview_has_imagery(lat: float, lng: float) -> dict:
+    """Free metadata check. Returns a dict with keys {ok: bool, reason: str,
+    copyright: str, pano_id: str}.  `ok=True` only for real Google-captured
+    panoramas — we skip user-contributed photos because they're often indoor
+    or unrelated-to-street (wasting Claude calls that'll say 'no sign')."""
     q = parse.urlencode({"location": f"{lat},{lng}", "key": GOOGLE_KEY})
     status, body, _ = _http_get(f"{SV_META}?{q}", timeout=10)
     if status != 200:
-        return False
+        return {"ok": False, "reason": "http-error"}
     try:
         data = json.loads(body)
-        return data.get("status") == "OK"
     except Exception:
-        return False
+        return {"ok": False, "reason": "bad-json"}
+
+    if data.get("status") != "OK":
+        return {"ok": False, "reason": "no-imagery"}
+
+    cr = (data.get("copyright") or "").lower()
+    pano_id = data.get("pano_id", "")
+    # User-contributed panoramas have arbitrary copyright strings like
+    # "© Some Photographer" — Google official ones contain "google".
+    if "google" not in cr:
+        return {"ok": False, "reason": "non-google-pano",
+                "copyright": data.get("copyright", ""), "pano_id": pano_id}
+    return {"ok": True, "reason": "ok",
+            "copyright": data.get("copyright", ""), "pano_id": pano_id}
 
 
 def fetch_streetview_image(lat: float, lng: float, heading: int) -> Optional[bytes]:
@@ -253,9 +267,13 @@ def verify_garage(g: dict, model: str) -> Optional[dict]:
     if lat is None or lng is None:
         return None
 
-    # Free metadata check first so we don't burn budget on lat/lngs with no imagery
-    if not streetview_has_imagery(lat, lng):
-        return {"sv_status": "no-imagery"}
+    # Free metadata check first so we don't burn budget on lat/lngs with no
+    # Google-captured imagery.  User-contributed panoramas (indoor shots etc.)
+    # are filtered out — they almost never contain a relevant clearance sign.
+    meta = streetview_has_imagery(lat, lng)
+    if not meta.get("ok"):
+        return {"sv_status": meta.get("reason", "no-imagery"),
+                "copyright": meta.get("copyright", "")}
 
     images = []
     for h in HEADINGS:
@@ -330,6 +348,13 @@ def process_city(
             no_imagery += 1
             print("no Street View imagery")
             _log(f"{date.today()} {slug} {g['id']} NO-IMAGERY")
+            continue
+
+        if res.get("sv_status") == "non-google-pano":
+            no_imagery += 1
+            copyright = (res.get("copyright") or "")[:40]
+            print(f"no Google SV (user pano: {copyright})")
+            _log(f"{date.today()} {slug} {g['id']} NON-GOOGLE-PANO {copyright}")
             continue
 
         if res.get("sv_status") != "ok":

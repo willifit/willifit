@@ -1380,7 +1380,6 @@
       <label class="report-label" for="rfContact">Your email (optional — only if you want a reply)</label>
       <input type="email" id="rfContact" placeholder="you@example.com">
       <div class="report-actions">
-        <button type="button" class="btn-secondary" id="rfExportBtn" title="Download all your pending reports as JSON">Export pending reports</button>
         <button type="submit" class="btn-primary" id="rfSubmitBtn">Submit report</button>
       </div>
       <div class="report-status" id="rfStatus"></div>
@@ -2784,7 +2783,6 @@ document.getElementById('reportModal').addEventListener('click', (e) => {
   if (e.target.id === 'reportModal') closeReportModal();
 });
 document.getElementById('reportForm').addEventListener('submit', submitReport);
-document.getElementById('rfExportBtn').addEventListener('click', exportReportQueue);
 document.getElementById('currentCityBtn').addEventListener('click', openCityPicker);
 document.getElementById('currentCityBtn').addEventListener('keydown', (e) => {
   if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCityPicker(); }
