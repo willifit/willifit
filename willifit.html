@@ -2422,11 +2422,18 @@ async function loadDetailHero(hero, g, urls) {
     await loadGoogleMapsJs();
     if (myReq !== _heroReq) return;  // user moved on while Maps JS was loading
 
+    // 2b. With loading=async, constructors are no longer exposed directly on
+    //     google.maps — they must be pulled via importLibrary().  Accessing
+    //     google.maps.StreetViewPanorama directly now throws "is not a
+    //     constructor".  See: developers.google.com/maps/documentation/javascript/load-maps-js-api#dynamic-library-import
+    const { StreetViewPanorama } = await google.maps.importLibrary('streetView');
+    if (myReq !== _heroReq) return;
+
     // 3. Mount the interactive panorama.
     hero.innerHTML = `<div class="detail-hero-pano" id="detailHeroPano"></div>
                       <div class="detail-hero-hint">Drag to pan · scroll to zoom</div>`;
     const panoEl = document.getElementById('detailHeroPano');
-    new google.maps.StreetViewPanorama(panoEl, {
+    new StreetViewPanorama(panoEl, {
       position: { lat: g.lat, lng: g.lng },
       // Prefer the panorama the metadata API resolved to (usually best imagery)
       pano: meta.pano_id || undefined,
