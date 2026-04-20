@@ -210,20 +210,26 @@
   .current-city {
     margin-left: auto;
     display: flex; align-items: center; gap: 8px;
-    background: var(--panel-2);
-    border: 1px solid var(--border);
-    padding: 6px 12px; border-radius: 4px;
+    background: rgba(245,166,35,0.12);
+    border: 1.5px solid var(--accent);
+    padding: 7px 14px; border-radius: 4px;
     cursor: pointer; font-size: 12px;
     transition: all 0.15s;
+    box-shadow: 0 0 0 0 rgba(245,166,35,0.0);
   }
-  .current-city:hover { border-color: var(--accent); }
+  .current-city:hover {
+    background: var(--accent); color: #0e1116;
+    box-shadow: 0 2px 12px rgba(245,166,35,0.35);
+  }
+  .current-city:hover .label,
+  .current-city:hover .chev { color: #0e1116; }
   .current-city .label {
-    font-size: 10px; color: var(--muted);
+    font-size: 10px; color: var(--accent);
     text-transform: uppercase; letter-spacing: 0.1em;
     font-family: var(--mono);
   }
-  .current-city .name { font-weight: 600; display: flex; align-items: center; gap: 6px; }
-  .current-city .chev { font-size: 10px; color: var(--muted); margin-left: 4px; }
+  .current-city .name { font-weight: 700; display: flex; align-items: center; gap: 6px; }
+  .current-city .chev { font-size: 11px; color: var(--accent); margin-left: 4px; font-weight: 700; }
   .garage-count-pill {
     background: var(--bg); border: 1px solid var(--border);
     color: var(--muted); font-family: var(--mono);
