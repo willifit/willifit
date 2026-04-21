@@ -1,15 +1,29 @@
 #!/usr/bin/env python3
 """
-WillIFit — Street View clearance-sign verifier.
+Willifit — Street View clearance-sign verifier (v2: targeted-bearing + nearby-pano search).
 
 For every parking garage in our DB that has NO posted clearance (height_in is
 null), this script:
-  1. Checks whether Google Street View has imagery for that lat/lng (free call).
-  2. Fetches 4 Street View images at different headings (N/E/S/W).
-  3. Sends all 4 images + a structured prompt to Claude Vision.
+  1. Finds the best Google-captured Street View pano near the garage
+     (primary lat/lng first, then ±10m offsets N/S/E/W as fallback).
+  2. Computes the bearing from the pano to the garage and shoots a tight
+     3-image cone (bearing ±30°) plus one up-tilted frame to catch signs
+     mounted above the entrance.
+  3. Sends all images + a structured prompt to Claude Vision.
   4. Parses Claude's JSON reply.
   5. If confidence is high enough, writes the new height_in / height_label /
      verified_on / source fields back to the city JSON.
+
+Improvements over v1 (the original N/E/S/W approach):
+  - source=outdoor filter skips indoor + non-Google panos automatically.
+  - Targeted bearing: the sign is in ONE direction from the pano, not all
+    four — so we stop sending Claude 75% useless imagery.
+  - Narrower FOV (60° vs 90°) makes distant signs sharper / more readable.
+  - Nearby-pano fallback rescues garages whose recorded lat/lng falls on a
+    pano-less spot (roof, interior, awning, etc.) but where the street out
+    front has coverage.
+  - Skips garages where the closest usable pano is >30m from the target —
+    beyond that distance even a clearance sign is too small to read.
 
 Why 4 images in a single call?
   One API call is cheaper and lets Claude reason across views (the entrance
@@ -49,6 +63,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import math
 import os
 import re
 import sys
@@ -68,9 +83,12 @@ ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 DEFAULT_MODEL = "claude-haiku-4-5"   # cheap + fast; upgrade to sonnet for tougher signs
 IMG_SIZE = "640x640"                 # max size on free Static tier
-HEADINGS = [0, 90, 180, 270]         # N, E, S, W — 4 cardinal angles
-PITCH = 10                           # slight upward tilt to catch signage above entrance
-FOV = 90                             # wide enough to see signage + entrance
+FOV = 60                             # tighter than v1's 90° — sharper distant-sign reads
+PITCH_LEVEL = 10                     # slight upward tilt to catch signage above entrance
+PITCH_HIGH = 25                      # steeper shot for signs mounted high on the awning
+HEADING_CONE_DEG = 30                # three shots at bearing-30, bearing, bearing+30
+MAX_PANO_DISTANCE_M = 30.0           # beyond this, signs are unreadable
+OFFSET_SEARCH_M = 10.0               # Tier 2: nearby-offset probe radius
 
 SV_STATIC = "https://maps.googleapis.com/maps/api/streetview"
 SV_META   = "https://maps.googleapis.com/maps/api/streetview/metadata"
@@ -134,47 +152,130 @@ def _http_get(url: str, timeout: int = 30) -> tuple[int, bytes, dict]:
         return e.code, e.read(), dict(e.headers or {})
 
 
-def streetview_has_imagery(lat: float, lng: float) -> dict:
-    """Free metadata check. Returns a dict with keys {ok: bool, reason: str,
-    copyright: str, pano_id: str}.  `ok=True` only for real Google-captured
-    panoramas — we skip user-contributed photos because they're often indoor
-    or unrelated-to-street (wasting Claude calls that'll say 'no sign')."""
-    q = parse.urlencode({"location": f"{lat},{lng}", "key": GOOGLE_KEY})
+# ---------------------------------------------------------------------------
+# Geometry helpers (no API calls — pure math)
+# ---------------------------------------------------------------------------
+
+def haversine_m(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    """Great-circle distance in meters."""
+    R = 6371000.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp = math.radians(lat2 - lat1)
+    dl = math.radians(lng2 - lng1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(a))
+
+
+def bearing_deg(from_lat: float, from_lng: float, to_lat: float, to_lng: float) -> float:
+    """Forward bearing (compass degrees 0-360) from point 1 to point 2."""
+    p1, p2 = math.radians(from_lat), math.radians(to_lat)
+    dl = math.radians(to_lng - from_lng)
+    y = math.sin(dl) * math.cos(p2)
+    x = math.cos(p1) * math.sin(p2) - math.sin(p1) * math.cos(p2) * math.cos(dl)
+    return (math.degrees(math.atan2(y, x)) + 360) % 360
+
+
+# ---------------------------------------------------------------------------
+# Pano discovery
+# ---------------------------------------------------------------------------
+
+def _streetview_meta(lat: float, lng: float, **extra) -> dict:
+    """Raw metadata call. Caller interprets status + copyright."""
+    q = parse.urlencode({"location": f"{lat},{lng}", "key": GOOGLE_KEY, **extra})
     status, body, _ = _http_get(f"{SV_META}?{q}", timeout=10)
     if status != 200:
-        return {"ok": False, "reason": "http-error"}
+        return {"status": "http-error"}
     try:
-        data = json.loads(body)
+        return json.loads(body)
     except Exception:
-        return {"ok": False, "reason": "bad-json"}
-
-    if data.get("status") != "OK":
-        return {"ok": False, "reason": "no-imagery"}
-
-    cr = (data.get("copyright") or "").lower()
-    pano_id = data.get("pano_id", "")
-    # User-contributed panoramas have arbitrary copyright strings like
-    # "© Some Photographer" — Google official ones contain "google".
-    if "google" not in cr:
-        return {"ok": False, "reason": "non-google-pano",
-                "copyright": data.get("copyright", ""), "pano_id": pano_id}
-    return {"ok": True, "reason": "ok",
-            "copyright": data.get("copyright", ""), "pano_id": pano_id}
+        return {"status": "bad-json"}
 
 
-def fetch_streetview_image(lat: float, lng: float, heading: int) -> Optional[bytes]:
-    """Pull one Street View Static image. Returns raw JPEG bytes or None on error."""
+def find_best_pano(lat: float, lng: float) -> dict:
+    """Locate the best Google-captured outdoor pano near (lat, lng).
+
+    Strategy:
+      1. Query metadata at the primary point with source=outdoor (filters out
+         indoor + user-contributed panos in one shot).
+      2. If that fails or returns a pano farther than MAX_PANO_DISTANCE_M,
+         probe 4 offset points (±OFFSET_SEARCH_M N/S/E/W) and pick the
+         Google-official pano closest to the target.
+
+    Returns:
+      {ok: True, pano_id, pano_lat, pano_lng, distance_m, bearing_to_target,
+       copyright, tier}
+      or {ok: False, reason: str}
+    """
+    deg_per_m_lat = 1.0 / 111320.0
+    deg_per_m_lng = 1.0 / (111320.0 * max(0.01, math.cos(math.radians(lat))))
+    d = OFFSET_SEARCH_M
+
+    # Primary first, then offsets. We check primary separately so we can tag
+    # the result with tier=1 (primary) vs tier=2 (fallback offset).
+    probes = [
+        ("primary", lat, lng),
+        ("offset-N", lat + d * deg_per_m_lat, lng),
+        ("offset-S", lat - d * deg_per_m_lat, lng),
+        ("offset-E", lat, lng + d * deg_per_m_lng),
+        ("offset-W", lat, lng - d * deg_per_m_lng),
+    ]
+
+    best = None  # (distance_m, info_dict)
+    seen_panos = set()
+    for label, plat, plng in probes:
+        m = _streetview_meta(plat, plng, source="outdoor")
+        if m.get("status") != "OK":
+            continue
+        pano_id = m.get("pano_id") or ""
+        if not pano_id or pano_id in seen_panos:
+            continue
+        seen_panos.add(pano_id)
+        cr = (m.get("copyright") or "").lower()
+        if "google" not in cr:
+            continue  # skip user panos (indoor uploads etc.)
+        ploc = m.get("location") or {}
+        plat2, plng2 = ploc.get("lat"), ploc.get("lng")
+        if plat2 is None:
+            continue
+        dist = haversine_m(plat2, plng2, lat, lng)
+        if dist > MAX_PANO_DISTANCE_M:
+            continue
+        info = {
+            "pano_id": pano_id,
+            "pano_lat": plat2,
+            "pano_lng": plng2,
+            "distance_m": dist,
+            "bearing_to_target": bearing_deg(plat2, plng2, lat, lng),
+            "copyright": m.get("copyright") or "",
+            "tier": 1 if label == "primary" else 2,
+            "probe": label,
+        }
+        if best is None or dist < best[0]:
+            best = (dist, info)
+
+    if best is None:
+        return {"ok": False, "reason": "no-pano-within-range"}
+    return {"ok": True, **best[1]}
+
+
+def fetch_streetview_image_by_pano(
+    pano_id: str, heading: float, pitch: float = PITCH_LEVEL, fov: int = FOV
+) -> Optional[bytes]:
+    """Pull a Street View Static image for a specific pano_id at a given heading.
+    Using pano_id (rather than lat/lng) guarantees we shoot the same pano the
+    metadata call resolved — otherwise Google occasionally returns a different
+    nearby pano for the image endpoint."""
     q = parse.urlencode({
         "size": IMG_SIZE,
-        "location": f"{lat},{lng}",
-        "heading": heading,
-        "pitch": PITCH,
-        "fov": FOV,
+        "pano": pano_id,
+        "heading": round(heading % 360, 2),
+        "pitch": pitch,
+        "fov": fov,
         "key": GOOGLE_KEY,
-        "return_error_code": "true",  # so we see 4xx instead of a grey placeholder
+        "return_error_code": "true",
     })
     status, body, _ = _http_get(f"{SV_STATIC}?{q}", timeout=20)
-    if status == 200 and body.startswith(b"\xff\xd8"):  # JPEG magic
+    if status == 200 and body.startswith(b"\xff\xd8"):
         return body
     return None
 
@@ -267,17 +368,25 @@ def verify_garage(g: dict, model: str) -> Optional[dict]:
     if lat is None or lng is None:
         return None
 
-    # Free metadata check first so we don't burn budget on lat/lngs with no
-    # Google-captured imagery.  User-contributed panoramas (indoor shots etc.)
-    # are filtered out — they almost never contain a relevant clearance sign.
-    meta = streetview_has_imagery(lat, lng)
-    if not meta.get("ok"):
-        return {"sv_status": meta.get("reason", "no-imagery"),
-                "copyright": meta.get("copyright", "")}
+    # 1. Locate the best Google-outdoor pano near the garage. Free metadata
+    #    calls only — no image bytes yet, no Claude call yet.
+    pano = find_best_pano(lat, lng)
+    if not pano.get("ok"):
+        return {"sv_status": pano.get("reason", "no-pano-within-range")}
+
+    # 2. Compute a tight heading cone aimed AT the garage from the pano
+    #    location, plus one up-tilted shot for high-mounted entrance signs.
+    b = pano["bearing_to_target"]
+    shots = [
+        (b - HEADING_CONE_DEG, PITCH_LEVEL),   # left of bearing
+        (b,                    PITCH_LEVEL),   # straight at entrance
+        (b + HEADING_CONE_DEG, PITCH_LEVEL),   # right of bearing
+        (b,                    PITCH_HIGH),    # same heading, higher pitch for awning-mounted signs
+    ]
 
     images = []
-    for h in HEADINGS:
-        img = fetch_streetview_image(lat, lng, h)
+    for h, p in shots:
+        img = fetch_streetview_image_by_pano(pano["pano_id"], h, pitch=p)
         if img:
             images.append(img)
 
@@ -290,6 +399,10 @@ def verify_garage(g: dict, model: str) -> Optional[dict]:
 
     result["sv_status"] = "ok"
     result["images_used"] = len(images)
+    result["pano_id"] = pano["pano_id"]
+    result["pano_distance_m"] = round(pano["distance_m"], 1)
+    result["pano_tier"] = pano["tier"]        # 1=primary, 2=offset-search fallback
+    result["pano_probe"] = pano["probe"]      # primary / offset-N / offset-S / offset-E / offset-W
     return result
 
 
@@ -344,17 +457,10 @@ def process_city(
             print("SKIP (bad coords)")
             continue
 
-        if res.get("sv_status") == "no-imagery":
+        if res.get("sv_status") == "no-pano-within-range":
             no_imagery += 1
-            print("no Street View imagery")
-            _log(f"{date.today()} {slug} {g['id']} NO-IMAGERY")
-            continue
-
-        if res.get("sv_status") == "non-google-pano":
-            no_imagery += 1
-            copyright = (res.get("copyright") or "")[:40]
-            print(f"no Google SV (user pano: {copyright})")
-            _log(f"{date.today()} {slug} {g['id']} NON-GOOGLE-PANO {copyright}")
+            print("no usable SV pano (none within 30m of target)")
+            _log(f"{date.today()} {slug} {g['id']} NO-PANO-IN-RANGE")
             continue
 
         if res.get("sv_status") != "ok":
@@ -368,16 +474,22 @@ def process_city(
         raw = (res.get("raw_text") or "")[:80]
         notes = (res.get("notes") or "")[:200]
 
+        pano_info = (
+            f"tier={res.get('pano_tier','?')} "
+            f"probe={res.get('pano_probe','?')} "
+            f"d={res.get('pano_distance_m','?')}m"
+        )
+
         if not found or height_in is None:
             no_sign += 1
-            print(f"no sign ({conf})")
-            _log(f"{date.today()} {slug} {g['id']} NO-SIGN conf={conf} notes={notes!r}")
+            print(f"no sign ({conf}) [{pano_info}]")
+            _log(f"{date.today()} {slug} {g['id']} NO-SIGN conf={conf} {pano_info} notes={notes!r}")
             continue
 
         if CONF_RANK.get(conf, -1) < CONF_RANK[min_conf]:
             low_conf += 1
-            print(f"low confidence: {conf} — {height_in}in {raw!r}")
-            _log(f"{date.today()} {slug} {g['id']} LOW-CONF conf={conf} h={height_in} raw={raw!r}")
+            print(f"low confidence: {conf} — {height_in}in {raw!r} [{pano_info}]")
+            _log(f"{date.today()} {slug} {g['id']} LOW-CONF conf={conf} h={height_in} {pano_info} raw={raw!r}")
             continue
 
         # Sanity bound
@@ -386,7 +498,10 @@ def process_city(
             _log(f"{date.today()} {slug} {g['id']} IMPLAUSIBLE h={height_in}")
             continue
 
-        # Record the verified reading
+        # Record the verified reading.  The "AI-verified (Street View + Claude
+        # Vision)" source string is what the frontend pattern-matches on to
+        # render the green "AI-verified" badge in both the sidebar list and
+        # the detail panel (see willifit.html: `source.includes('AI-verified')`).
         if not dry_run:
             g["height_in"] = int(height_in)
             g["height_label"] = inches_to_label(int(height_in))
@@ -394,15 +509,19 @@ def process_city(
             prev_src = g.get("source", "")
             if "AI-verified" not in prev_src:
                 g["source"] = f"AI-verified (Street View + Claude Vision) — was: {prev_src}".strip(" -")
-            # Append to notes (keep existing)
+            # Append to notes (keep existing) — include pano diagnostics so a
+            # human reviewer can reproduce the shot that produced this reading.
             prior_notes = g.get("notes", "")
-            stamp = f'Verified {date.today().isoformat()} from sign reading: "{raw}"'
+            stamp = (
+                f'Verified {date.today().isoformat()} from sign reading: "{raw}" '
+                f'(pano {res.get("pano_id","?")}, {pano_info})'
+            )
             g["notes"] = (prior_notes + "\n" + stamp).strip() if prior_notes else stamp
 
         updated += 1
         action = "[DRY] would set" if dry_run else "UPDATED"
-        print(f"{action}: {height_in}in ({inches_to_label(int(height_in))}) conf={conf}")
-        _log(f"{date.today()} {slug} {g['id']} VERIFIED h={height_in} conf={conf} raw={raw!r}")
+        print(f"{action}: {height_in}in ({inches_to_label(int(height_in))}) conf={conf} [{pano_info}]")
+        _log(f"{date.today()} {slug} {g['id']} VERIFIED h={height_in} conf={conf} {pano_info} raw={raw!r}")
 
     if updated and not dry_run:
         city_path.write_text(json.dumps(data, indent=2) + "\n")
