@@ -2403,13 +2403,21 @@ function loadGoogleMapsJs() {
     s.dataset.gmapsLoader = '1';
     s.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}&v=weekly&libraries=&loading=async`;
     s.async = true;
-    s.onload = () => {
-      // A 200 response doesn't guarantee the SDK hooked itself up —
-      // verify importLibrary exists before claiming success.  Rejecting
-      // here lets the caller's retry path re-inject a fresh <script>.
+    s.onload = async () => {
+      // Google's loading=async bootstrap populates google.maps.importLibrary
+      // a few ticks AFTER the script's own onload fires (the outer script is
+      // just a tiny bootstrap; it kicks off the real SDK load asynchronously).
+      // So checking gmapsReady() synchronously at onload frequently returns
+      // false on the very first click even though it works on subsequent
+      // clicks (by which time the bootstrap has finished).  Poll for up to
+      // 2 seconds before giving up.
+      const deadline = Date.now() + 2000;
+      while (Date.now() < deadline && !gmapsReady()) {
+        await new Promise(r => setTimeout(r, 40));
+      }
       if (!gmapsReady()) {
         _gmapsLoader = null;
-        reject(new Error('Maps JS loaded but google.maps.importLibrary missing'));
+        reject(new Error('Maps JS loaded but google.maps.importLibrary missing after 2s poll'));
         return;
       }
       resolve();
