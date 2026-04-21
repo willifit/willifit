@@ -143,6 +143,18 @@ def _streetview_meta(lat, lng, **extra):
         return {"status": "bad-json"}
 
 
+def _streetview_meta_by_pano(pano_id):
+    """Lookup pano metadata by ID (to recover its lat/lng for recorded panos)."""
+    q = parse.urlencode({"pano": pano_id, "key": GOOGLE_KEY})
+    status, body = _http_get(f"{SV_META}?{q}", timeout=10)
+    if status != 200:
+        return {"status": "http-error"}
+    try:
+        return json.loads(body)
+    except Exception:
+        return {"status": "bad-json"}
+
+
 def find_candidate_panos(lat, lng, max_panos=MAX_PANOS_PER_GARAGE):
     """Return up to max_panos Google-outdoor panos within MAX_PANO_DISTANCE_M
     of the target, sorted by distance."""
@@ -216,40 +228,47 @@ spaced 45° apart.  Each image is labeled with its heading in degrees (0°=N,
 
 The camera is near a parking garage / structure / tunnel / bridge entrance.
 Your job is to find a posted VEHICLE-HEIGHT CLEARANCE sign in any of the 8
-images and report:
-
-  * which heading has the clearest view of the sign
-  * what the posted clearance number is (converted to inches)
-  * how confident you are
+images and report it STRICTLY.
 
 What counts as a clearance sign:
-  * Height in feet-inches ("11'6\"", "13 FT 6 IN", "CLEARANCE 11' 6\"")
-  * Ceiling-mounted clearance bar with a height number
-  * Yellow-diamond or orange LOW CLEARANCE warning with a height
-  * "MAX HEIGHT" / "VEHICLE HEIGHT LIMIT" markers
+  * A sign showing a vehicle height in feet-inches: "11'6\"", "13 FT 6 IN",
+    "CLEARANCE 11' 6\"", "MAX HEIGHT 7'0""
+  * A ceiling-mounted clearance bar with a posted height number
+  * A yellow-diamond or orange LOW CLEARANCE warning with a height number
+  * The sign must SHOW DIGITS representing a height
 
-What does NOT count:
-  * Speed limit, street name, parking rates, business signs, weight limits
-  * Structural elements without a posted number
+What does NOT count (do not make things up from these):
+  * "SHORT TERM PARKING" / "LONG TERM" / "VALET" / "RESERVED" / "EXIT"
+  * Speed limit, street name, parking rate, business, weight limit signs
+  * Building addresses, suite numbers, floor numbers
+  * Any sign without an explicit height-in-feet-or-inches number
 
-Rules:
-  * If the sign appears in multiple images, report the heading with the
-    clearest/most readable view.
-  * Convert the reading to inches (11'6" = 138, 13'0" = 156, 7'0" = 84).
-  * If the sign is present but the number is ambiguous/blurry, use
-    height_in=null and confidence=low.
-  * If no clearance sign is visible in any of the 8 images, found_sign=false.
-  * Do NOT guess based on structure type.  You must SEE a sign to report
-    a number.
+CRITICAL ANTI-HALLUCINATION RULES:
+  * raw_text MUST be the EXACT text you read on the clearance sign,
+    character-for-character.  If you cannot quote the height from the
+    sign verbatim, set found_sign=false.
+  * The height digits in raw_text MUST match height_in.  If raw_text
+    says "7'0\"" then height_in must be 84.  If there is no height
+    number in raw_text, set found_sign=false.
+  * If the only "sign" you see is something like "SHORT TERM PARKING"
+    or a building name, that is NOT a clearance sign.  Set
+    found_sign=false.
+
+Conversion examples:  7'0" = 84,  7'6" = 90,  11'6" = 138,  13'0" = 156.
+
+If the sign is present but the number is blurry/ambiguous, use
+height_in=null and confidence=low.
+
+Keep "notes" to a single short sentence (<200 characters).
 
 Return ONLY a JSON object (no prose, no markdown fences):
 
 {{
   "found_sign": boolean,
-  "best_heading": number | null,   // which heading showed the sign, or null
+  "best_heading": number | null,
   "height_in": integer | null,
   "confidence": "low" | "medium" | "high",
-  "raw_text": string,              // exactly what text appears on the sign
+  "raw_text": string,
   "notes": string
 }}
 """
@@ -288,7 +307,7 @@ def scan_pano_with_claude(pano_id, images_by_heading, model):
     try:
         resp = client.messages.create(
             model=model,
-            max_tokens=500,
+            max_tokens=1500,  # 500 was truncating JSON mid-response on long notes
             messages=[{"role": "user", "content": content}],
         )
     except Exception as e:
@@ -335,6 +354,24 @@ def _log(line):
         f.write(line + "\n")
 
 
+def _height_matches_raw(height_in, raw_text):
+    """Defense against Claude hallucinating a height when raw_text has none.
+    We require raw_text to contain DIGITS that plausibly encode the stated
+    height.  Accepts either feet-inches form ("7'0"", "13 FT 6 IN") or a
+    bare inch number.  Returns True if plausible, False if the model
+    invented digits."""
+    if not raw_text or height_in is None:
+        return False
+    digits = re.findall(r"\d+", raw_text)
+    if not digits:
+        return False
+    ft = height_in // 12
+    rem = height_in % 12
+    # Any of these numeric combos is a plausible match:
+    candidates = {str(ft), str(rem), str(height_in), f"{ft}{rem:02d}"}
+    return any(d in candidates for d in digits)
+
+
 def verify_garage(g, model):
     """Multi-pano scan.  Returns dict with keys:
         status: "verified" | "no-sign" | "no-pano" | "error"
@@ -346,6 +383,33 @@ def verify_garage(g, model):
         return {"status": "error", "reason": "no-coords", "claude_calls": 0}
 
     panos = find_candidate_panos(lat, lng, max_panos=MAX_PANOS_PER_GARAGE)
+
+    # If the garage record has a previously-recorded pano_id (either from a
+    # prior auto_verify run or from human verification), ALWAYS scan it first
+    # -- even if it wasn't one of the candidates our probe found.  This lets
+    # us benefit from human-provided "known good" vantages without locking
+    # into them (we'll still try other candidates in case a better one exists).
+    recorded = g.get("pano_id")
+    if recorded and not any(p["pano_id"] == recorded for p in panos):
+        m = _streetview_meta(lat, lng, source="outdoor")
+        # We need the actual location of the recorded pano to compute distance.
+        # Query metadata specifically by pano_id:
+        rec_meta = _streetview_meta_by_pano(recorded)
+        if rec_meta and rec_meta.get("status") == "OK":
+            rloc = rec_meta.get("location") or {}
+            if rloc.get("lat") is not None:
+                panos.insert(0, {
+                    "pano_id": recorded,
+                    "pano_lat": rloc["lat"],
+                    "pano_lng": rloc["lng"],
+                    "distance_m": haversine_m(rloc["lat"], rloc["lng"], lat, lng),
+                    "bearing_to_target": bearing_deg(rloc["lat"], rloc["lng"], lat, lng),
+                    "copyright": rec_meta.get("copyright") or "",
+                    "via_probe": "recorded",
+                })
+                # Trim to budget
+                panos = panos[:MAX_PANOS_PER_GARAGE]
+
     if not panos:
         return {"status": "no-pano", "claude_calls": 0}
 
@@ -371,18 +435,30 @@ def verify_garage(g, model):
         if result.get("found_sign") and result.get("height_in") is not None:
             height_in = result["height_in"]
             conf = (result.get("confidence") or "low").lower()
-            # Sanity bound
-            if 48 <= int(height_in) <= 240:
-                candidates.append({
-                    "pano_id": p["pano_id"],
-                    "pano_distance_m": p["distance_m"],
-                    "pano_heading": result.get("best_heading", p["bearing_to_target"]),
-                    "height_in": int(height_in),
-                    "confidence": conf,
-                    "conf_rank": CONF_RANK.get(conf, -1),
-                    "raw_text": result.get("raw_text", "") or "",
-                    "notes": result.get("notes", "") or "",
-                })
+            raw_text = result.get("raw_text", "") or ""
+            # Sanity bound (plausible clearance range)
+            if not (48 <= int(height_in) <= 240):
+                print(f"    ⚠ rejecting implausible height {height_in}in (raw={raw_text!r})")
+                _log(f"{date.today()} {g.get('id')} REJECT-IMPLAUSIBLE pano={p['pano_id']} h={height_in}")
+                continue
+            # Anti-hallucination: height must be reconstructible from raw_text digits.
+            # Catches cases like raw_text="SHORT TERM GARAGE" with height_in=84.
+            if not _height_matches_raw(int(height_in), raw_text):
+                print(f"    ⚠ rejecting hallucinated height — raw_text={raw_text!r} "
+                      f"doesn't contain digits matching {height_in}in")
+                _log(f"{date.today()} {g.get('id')} REJECT-HALLUCINATION pano={p['pano_id']} "
+                     f"h={height_in} raw={raw_text!r}")
+                continue
+            candidates.append({
+                "pano_id": p["pano_id"],
+                "pano_distance_m": p["distance_m"],
+                "pano_heading": result.get("best_heading", p["bearing_to_target"]),
+                "height_in": int(height_in),
+                "confidence": conf,
+                "conf_rank": CONF_RANK.get(conf, -1),
+                "raw_text": raw_text,
+                "notes": result.get("notes", "") or "",
+            })
 
     if not candidates:
         return {"status": "no-sign", "claude_calls": claude_calls}
