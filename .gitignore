@@ -44,6 +44,13 @@ data/nbi_cache/
 
 # Script-generated logs
 data/streetview_verify.log
+data/auto_verify.log
+
+# Debug helper output — raw JPGs saved for visual inspection
+scripts/debug-images/
+
+# Per-user Claude Code session state (separate from settings.local.json)
+.claude/
 
 # Local scratch / temp
 *.log

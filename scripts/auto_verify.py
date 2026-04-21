@@ -259,7 +259,9 @@ Conversion examples:  7'0" = 84,  7'6" = 90,  11'6" = 138,  13'0" = 156.
 If the sign is present but the number is blurry/ambiguous, use
 height_in=null and confidence=low.
 
-Keep "notes" to a single short sentence (<200 characters).
+Keep "notes" to a SHORT fragment (<=20 words).  Do not write paragraphs --
+we have the image and the raw_text for audit; notes is just a quick tag.
+The JSON output MUST fit well under 500 tokens total.
 
 Return ONLY a JSON object (no prose, no markdown fences):
 
@@ -307,7 +309,7 @@ def scan_pano_with_claude(pano_id, images_by_heading, model):
     try:
         resp = client.messages.create(
             model=model,
-            max_tokens=1500,  # 500 was truncating JSON mid-response on long notes
+            max_tokens=2500,  # generous; actual JSON is <300 tokens, buffer is for model reasoning
             messages=[{"role": "user", "content": content}],
         )
     except Exception as e:
@@ -323,17 +325,56 @@ def scan_pano_with_claude(pano_id, images_by_heading, model):
     # Strip markdown fences if present
     text = re.sub(r"^\s*```(?:json)?\s*|\s*```\s*$", "", text.strip())
 
+    # Happy path: the response is complete and parses as JSON.
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        m = re.search(r"\{.*\}", text, flags=re.DOTALL)
+        pass
+    m = re.search(r"\{.*\}", text, flags=re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group(0))
+        except json.JSONDecodeError:
+            pass
+
+    # Fallback: the response got truncated mid-JSON (max_tokens cap, or the
+    # model decided to stop early with a long trailing "notes" field).
+    # All the fields we care about appear BEFORE notes in the schema, so
+    # even a response that dies halfway through "notes" usually has enough
+    # structured data to reconstruct by regex.
+    partial = _extract_partial_fields(text)
+    if partial.get("found_sign") is not None:
+        stop_reason = getattr(resp, "stop_reason", "?")
+        print(f"    (Claude response truncated [stop_reason={stop_reason}], "
+              f"recovered fields by regex)", file=sys.stderr)
+        return partial
+
+    print(f"    Claude replied non-JSON: {text[:200]!r}", file=sys.stderr)
+    return None
+
+
+def _extract_partial_fields(text):
+    """Recover the fields of interest from a truncated or malformed JSON
+    response.  Used when the model stops mid-object (typically during a
+    long `notes` value).  Missing fields default to sensible values."""
+    result = {}
+    patterns = {
+        "found_sign":   (r'"found_sign"\s*:\s*(true|false)',         lambda v: v == "true"),
+        "best_heading": (r'"best_heading"\s*:\s*(-?\d+(?:\.\d+)?|null)',
+                                                                      lambda v: None if v == "null" else float(v)),
+        "height_in":    (r'"height_in"\s*:\s*(-?\d+|null)',           lambda v: None if v == "null" else int(v)),
+        "confidence":   (r'"confidence"\s*:\s*"(low|medium|high)"',   lambda v: v),
+        "raw_text":     (r'"raw_text"\s*:\s*"((?:[^"\\]|\\.)*)"',     lambda v: v),
+        "notes":        (r'"notes"\s*:\s*"((?:[^"\\]|\\.)*)"',        lambda v: v),
+    }
+    for key, (patt, coerce) in patterns.items():
+        m = re.search(patt, text)
         if m:
             try:
-                return json.loads(m.group(0))
-            except json.JSONDecodeError:
+                result[key] = coerce(m.group(1))
+            except (ValueError, TypeError):
                 pass
-        print(f"    Claude replied non-JSON: {text[:200]!r}", file=sys.stderr)
-        return None
+    return result
 
 
 # ---------------------------------------------------------------------------
