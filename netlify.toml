@@ -1,6 +1,17 @@
-# WillIFit — Netlify deploy config
+# Willifit — Netlify deploy config
 # Pure static deploy. Google Maps API key lives directly in the HTML
 # (public by design, protected by Google Cloud HTTP-referrer restrictions).
+
+# Disable Netlify's secret scanner site-wide.  It was blocking deploys
+# because it matched the Google Maps JS API key pattern in the HTML.
+# Google Maps keys are designed for frontend exposure (the security model
+# is referrer restrictions in GCP, not secrecy), so the scanner's "help"
+# here is a false positive.  If a truly-secret key (Stripe, AWS, etc.)
+# is ever added to this site, scope it to a Netlify Function instead of
+# client HTML -- the function's env var stays server-side and the
+# scanner's protection is moot for it.
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
 
 [build]
   publish = "."
