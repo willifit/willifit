@@ -2467,7 +2467,18 @@ async function loadDetailHero(hero, g, urls) {
 
   try {
     // 1. Free coverage check.
-    const metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?location=${g.lat},${g.lng}&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
+    //   - Prefer a pre-recorded pano_id (human-verified to show the entrance
+    //     sign from a readable angle) over letting Google's metadata API
+    //     pick whatever pano is closest.  Without this, the API often
+    //     returns an indoor / user-contributed / wrong-side-of-the-sign pano.
+    //   - source=outdoor filters out user-contributed indoor uploads on the
+    //     fallback path.
+    let metaUrl;
+    if (g.pano_id) {
+      metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?pano=${encodeURIComponent(g.pano_id)}&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
+    } else {
+      metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?location=${g.lat},${g.lng}&source=outdoor&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
+    }
     const metaRes = await fetch(metaUrl);
     if (myReq !== _heroReq) return;
     const meta = await metaRes.json();
@@ -2500,15 +2511,22 @@ async function loadDetailHero(hero, g, urls) {
     hero.innerHTML = `<div class="detail-hero-pano" id="detailHeroPano"></div>
                       <div class="detail-hero-hint">Drag to pan · scroll to zoom</div>`;
     const panoEl = document.getElementById('detailHeroPano');
-    // Auto-aim the camera AT the garage entrance, not arbitrary north.
-    // meta.location is the actual pano camera lat/lng (may be up to 30m from
-    // our recorded garage coord); bearing from pano -> garage is exactly the
-    // direction you'd turn to look at the entrance.  Without this, users
-    // landed looking at whatever random thing is at heading 0 from the pano.
+    // Auto-aim the camera AT the garage entrance.
+    //   - If the record has an explicit pano_heading (human-verified to make
+    //     the sign face visible), use that.  Some signs face perpendicular
+    //     to the "garage center" bearing -- geometric heading would show
+    //     the back of the sign.
+    //   - Otherwise compute bearing from the pano's actual camera location
+    //     to our recorded garage coord.
     const panoLoc = meta.location || {};
-    const initialHeading = (typeof panoLoc.lat === 'number' && typeof panoLoc.lng === 'number')
-      ? _bearingToGarage(panoLoc.lat, panoLoc.lng, g.lat, g.lng)
-      : 0;
+    let initialHeading;
+    if (typeof g.pano_heading === 'number') {
+      initialHeading = g.pano_heading;
+    } else if (typeof panoLoc.lat === 'number' && typeof panoLoc.lng === 'number') {
+      initialHeading = _bearingToGarage(panoLoc.lat, panoLoc.lng, g.lat, g.lng);
+    } else {
+      initialHeading = 0;
+    }
     new StreetViewPanorama(panoEl, {
       position: { lat: g.lat, lng: g.lng },
       // Prefer the panorama the metadata API resolved to (usually best imagery)

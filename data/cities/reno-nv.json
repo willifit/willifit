@@ -21,6 +21,8 @@
       "height_in": 84,
       "height_label": "7'0\"",
       "oversized": false,
+      "pano_id": "YVlpt2PWLn4l6cRpWFqlng",
+      "pano_heading": 161.7,
       "notes": "Downtown civic garage. Clearance 7'0\" posted at entrance (verified manually via Google Street View pano YVlpt2PWLn4l6cRpWFqlng, 2026-04-20). Coords corrected from imported source (was 136m off).",
       "source": "Manually verified from Google Street View",
       "verified_on": "2026-04-20"
@@ -157,7 +159,9 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "UNR visitor parking. Coords corrected from Google Maps 'Whalen Parking Garage' place record (2026-04-21).",
+      "pano_id": "hjqMfmW3tJln1ZcOzqUpOA",
+      "pano_heading": 52.79,
+      "notes": "UNR visitor parking. Coords + human-verified pano (hjqMfmW3tJln1ZcOzqUpOA @ 52.79°) from Google Maps 'Whalen Parking Garage' place record (2026-04-21).",
       "source": "unr.edu"
     },
     {
@@ -218,7 +222,9 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "Terminal-adjacent covered garage. Coords corrected manually from Google Maps Street View of the entrance (2026-04-21).",
+      "pano_id": "ror5pQgsf-97JaFx0dIWOw",
+      "pano_heading": 329.24,
+      "notes": "Terminal-adjacent covered garage. Human-verified pano (ror5pQgsf-97JaFx0dIWOw @ 329°) from Google Maps Street View of the entrance (2026-04-21).",
       "source": "renoairport.com"
     },
     {
