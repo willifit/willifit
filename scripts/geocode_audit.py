@@ -99,13 +99,20 @@ def geocode(address: str) -> Optional[dict]:
     q = parse.urlencode({"address": address, "key": GOOGLE_KEY})
     status, body = _http_get(f"{GEOCODE_URL}?{q}")
     if status != 200:
-        return None
+        # Surface HTTP errors clearly -- most common cause here is the
+        # Geocoding API not being enabled on the project (403).
+        try:
+            err = json.loads(body).get("error_message", body[:120].decode("utf-8", "replace"))
+        except Exception:
+            err = f"HTTP {status}"
+        return {"_status": f"HTTP-{status}", "_error": str(err)[:200]}
     try:
         data = json.loads(body)
     except Exception:
-        return None
+        return {"_status": "bad-json"}
     if data.get("status") != "OK" or not data.get("results"):
-        return {"_status": data.get("status", "ZERO_RESULTS")}
+        return {"_status": data.get("status", "ZERO_RESULTS"),
+                "_error": data.get("error_message", "")}
     r = data["results"][0]
     loc = r.get("geometry", {}).get("location", {})
     return {
@@ -221,6 +228,11 @@ def audit_city(slug: str, emit_suggestions: bool, sleep: float, skip_place_detai
     print(f"{'id':<35}{'dist':<8}{'coord':<8}{'facility':<14}{'google name':<42}{'notes':<25}")
     print("-" * 135)
 
+    # Bail early if the Geocoding API isn't enabled at all — no point
+    # hammering the endpoint 19 times just to see the same error.
+    consecutive_failures = 0
+    FAIL_ABORT_THRESHOLD = 3
+
     for g in garages:
         addr = (g.get("addr") or "").strip()
         if not addr:
@@ -237,11 +249,24 @@ def audit_city(slug: str, emit_suggestions: bool, sleep: float, skip_place_detai
 
         gc = geocode(full_addr)
         if not gc or gc.get("_status"):
+            fail_status = (gc or {}).get("_status", "unknown")
+            fail_err = (gc or {}).get("_error", "")[:60]
             rows.append({"id": g.get("id"), "status": "geocode-failed",
-                         "geocode_status": (gc or {}).get("_status")})
-            print(f"{g.get('id','?')[:34]:<35}{'-':<8}{'FAIL':<8}")
+                         "geocode_status": fail_status, "geocode_error": fail_err})
+            print(f"{g.get('id','?')[:34]:<35}{'-':<8}{'FAIL':<8}  {fail_status}  {fail_err}")
+            consecutive_failures += 1
+            if consecutive_failures >= FAIL_ABORT_THRESHOLD:
+                print()
+                print(f"[{slug}] {consecutive_failures} consecutive failures — aborting city pass.")
+                print(f"       First failure message: {fail_err!r}")
+                print(f"       Most common cause: the Geocoding API isn't enabled on")
+                print(f"       this Google Cloud project.  Enable it here:")
+                print(f"         https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com")
+                print(f"       Then re-run this script.")
+                break
             time.sleep(sleep)
             continue
+        consecutive_failures = 0
 
         cur_lat, cur_lng = g.get("lat"), g.get("lng")
         new_lat, new_lng = gc["lat"], gc["lng"]
@@ -340,7 +365,9 @@ def audit_city(slug: str, emit_suggestions: bool, sleep: float, skip_place_detai
                                    "suggestions": suggestions}, indent=2) + "\n")
         print(f"[{slug}] wrote {len(suggestions)} suggestions → {out}")
 
-    return {"slug": slug, "counts": counts, "rows": rows, "suggestions": suggestions}
+    return {"slug": slug, "coord_counts": coord_counts,
+            "facility_counts": facility_counts, "rows": rows,
+            "suggestions": suggestions}
 
 
 def main():
