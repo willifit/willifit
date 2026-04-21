@@ -412,6 +412,78 @@ def _log(line: str):
         f.write(line + "\n")
 
 
+# ---------------------------------------------------------------------------
+# Structure-type pre-filter (free — no API calls)
+# ---------------------------------------------------------------------------
+
+# Words that, when present in name OR notes, confirm the entry is a real
+# parking STRUCTURE (multi-level, covered).  These override surface-lot
+# signals below — e.g. "National Bowling Stadium Garage" contains both
+# "Stadium" (surface signal) and "Garage" (structural signal) — the
+# structural signal wins because you can't have "garage" as a lot.
+STRUCTURAL_MARKERS = (
+    "garage", "parking structure", "parking deck", "multi-level",
+    "multi-story", "multistory", "parking ramp",
+)
+
+# Words that strongly indicate an open-air / surface lot (no overhead
+# clearance to measure).  Checked in name + notes.
+SURFACE_PHRASE_MARKERS = (
+    "surface lot", "surface lots",
+    "open-air", "open air",
+    "uncovered",
+    "rv-friendly lot", "rv-friendly surface", "rv friendly lot",
+)
+
+# Name-only patterns — whole-word match in the name field.  "Park" alone
+# is excluded (too ambiguous — "Park Place Garage" is a real structure).
+# We only match when these appear as standalone tokens in the name.
+SURFACE_NAME_WORDS = re.compile(
+    r"\b(lot|lots|stadium|ballpark|field|economy)\b",
+    re.IGNORECASE,
+)
+
+
+def classify_structure(g: dict) -> Optional[str]:
+    """Free heuristic: classify a parking entry as a structure, a surface lot,
+    or unknown based ONLY on existing name/notes/oversized fields.
+
+    Returns:
+        "surface_lot"  — confident it's a flat / open-air lot, skip verification
+        "structure"    — confident it's a multi-level garage, attempt verification
+        None           — ambiguous, attempt verification anyway
+
+    Ordering matters: structural markers trump everything else (explicit is
+    best), so "National Bowling Stadium Garage" is a structure even though
+    the name contains "Stadium".
+    """
+    name = (g.get("name") or "").lower()
+    notes = (g.get("notes") or "").lower()
+    blob = f"{name} {notes}"
+
+    # 1. Explicit structural keyword anywhere -> structure
+    if any(m in blob for m in STRUCTURAL_MARKERS):
+        return "structure"
+
+    # 2. Explicit surface-lot phrase -> surface lot
+    if any(m in blob for m in SURFACE_PHRASE_MARKERS):
+        return "surface_lot"
+
+    # 3. oversized=True + height_in=None is a strong surface-lot signal.
+    #    Real height-limited garages get oversized=True only when they have
+    #    a tall (≥8') clearance, which means height_in should be populated.
+    #    Claiming "oversized-friendly" without a height on file almost
+    #    always means it's a flat lot.
+    if g.get("oversized") is True and g.get("height_in") is None:
+        return "surface_lot"
+
+    # 4. Name alone strongly suggests outdoor venue
+    if SURFACE_NAME_WORDS.search(name):
+        return "surface_lot"
+
+    return None
+
+
 def process_city(
     slug: str,
     limit: Optional[int],
@@ -419,6 +491,7 @@ def process_city(
     model: str,
     dry_run: bool,
     overwrite: bool,
+    force_lots: bool = False,
 ) -> dict:
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
@@ -436,7 +509,37 @@ def process_city(
         print(f"[{slug}] no unverified garages")
         return {"slug": slug, "checked": 0, "updated": 0}
 
-    print(f"[{slug}] {len(candidates)} candidates (limit={limit})")
+    # Free pre-filter: classify each candidate as structure / surface_lot /
+    # unknown based on existing name/notes/oversized fields.  Surface lots
+    # get stamped as such and skipped — no Claude call, no Street View
+    # fetch.  --force-lots bypasses this (useful when you suspect the
+    # heuristic is misclassifying a real garage).
+    skipped_lots = 0
+    filtered_candidates = []
+    lot_writes_pending = False
+    for g in candidates:
+        kind = classify_structure(g)
+        if kind == "surface_lot" and not force_lots:
+            # Stamp it in the JSON so next run doesn't reconsider it, and so
+            # the app can render "open-air parking" instead of "unverified".
+            if g.get("structure_type") != "surface_lot":
+                if not dry_run:
+                    g["structure_type"] = "surface_lot"
+                    lot_writes_pending = True
+            skipped_lots += 1
+            print(f"  {g.get('id','?'):<28} {g.get('name','?')[:40]:<40} SKIP surface_lot (heuristic)")
+            _log(f"{date.today()} {slug} {g['id']} SKIP-SURFACE-LOT name={g.get('name','')!r} notes={(g.get('notes') or '')[:80]!r}")
+            continue
+        filtered_candidates.append(g)
+
+    # Persist surface-lot stamps immediately, even if the pipeline is interrupted later.
+    if lot_writes_pending and not dry_run:
+        city_path.write_text(json.dumps(data, indent=2) + "\n")
+
+    print(f"[{slug}] {len(filtered_candidates)} candidates after lot filter "
+          f"(skipped {skipped_lots} surface lots), limit={limit}")
+
+    candidates = filtered_candidates
 
     checked = 0
     updated = 0
@@ -527,10 +630,12 @@ def process_city(
         city_path.write_text(json.dumps(data, indent=2) + "\n")
 
     print(f"  {slug}: checked={checked} updated={updated} "
-          f"no-imagery={no_imagery} no-sign={no_sign} low-conf={low_conf}")
+          f"no-imagery={no_imagery} no-sign={no_sign} low-conf={low_conf} "
+          f"lots-skipped={skipped_lots}")
     return {
         "slug": slug, "checked": checked, "updated": updated,
         "no_imagery": no_imagery, "no_sign": no_sign, "low_conf": low_conf,
+        "skipped_lots": skipped_lots,
     }
 
 
@@ -553,6 +658,10 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="Don't write to city files")
     ap.add_argument("--sleep", type=float, default=0.5,
                     help="Seconds between garages (rate-limit pad)")
+    ap.add_argument("--force-lots", action="store_true",
+                    help="Skip the free surface-lot pre-filter and attempt verification "
+                         "on every candidate, including ones our heuristic flags as flat lots. "
+                         "Use if you suspect the heuristic is wrong about a specific city.")
     args = ap.parse_args()
 
     if not (args.slug or args.slugs or args.all):
@@ -574,7 +683,8 @@ def main():
     for slug in targets:
         try:
             r = process_city(slug, args.limit, args.confidence, args.model,
-                             args.dry_run, args.overwrite)
+                             args.dry_run, args.overwrite,
+                             force_lots=args.force_lots)
             summary.append(r)
         except KeyboardInterrupt:
             print("\nInterrupted.")
@@ -587,14 +697,16 @@ def main():
     total_no_img  = sum(s.get("no_imagery", 0) for s in summary)
     total_no_sign = sum(s.get("no_sign", 0) for s in summary)
     total_low     = sum(s.get("low_conf", 0) for s in summary)
+    total_lots    = sum(s.get("skipped_lots", 0) for s in summary)
 
     print("\n=== SUMMARY ===")
-    print(f"Cities processed:   {len(summary)}")
-    print(f"Garages checked:    {total_checked}")
-    print(f"Updated:            {total_updated}")
-    print(f"No Street View:     {total_no_img}")
-    print(f"No clearance sign:  {total_no_sign}")
-    print(f"Low confidence:     {total_low}")
+    print(f"Cities processed:    {len(summary)}")
+    print(f"Garages checked:     {total_checked}")
+    print(f"Updated:             {total_updated}")
+    print(f"No Street View:      {total_no_img}")
+    print(f"No clearance sign:   {total_no_sign}")
+    print(f"Low confidence:      {total_low}")
+    print(f"Surface-lots skipped:{total_lots}  (saved ~${total_lots * 0.012:.2f} in Claude fees)")
     if args.dry_run:
         print("(DRY-RUN — no files written.)")
 
