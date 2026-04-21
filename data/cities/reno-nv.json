@@ -18,11 +18,12 @@
       "addr": "300 N Center St",
       "lat": 39.5291,
       "lng": -119.812,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown civic garage.",
-      "source": "visitrenotahoe.com"
+      "notes": "Downtown civic garage. Clearance 7'0\" posted at entrance (verified manually via Google Street View 2026-04-20).",
+      "source": "Manually verified from Google Street View",
+      "verified_on": "2026-04-20"
     },
     {
       "id": "rno-citycenter-garage",
@@ -67,9 +68,10 @@
       "lat": 39.4995,
       "lng": -119.7957,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Connected to convention center via skyway.",
+      "height_label": "No limit (open-air)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Open-air surface parking. Connected to convention center via skyway.",
       "source": "atlantiscasino.com"
     },
     {
