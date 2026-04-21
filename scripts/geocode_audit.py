@@ -258,11 +258,27 @@ def audit_city(slug: str, emit_suggestions: bool, sleep: float, skip_place_detai
             if consecutive_failures >= FAIL_ABORT_THRESHOLD:
                 print()
                 print(f"[{slug}] {consecutive_failures} consecutive failures — aborting city pass.")
-                print(f"       First failure message: {fail_err!r}")
-                print(f"       Most common cause: the Geocoding API isn't enabled on")
-                print(f"       this Google Cloud project.  Enable it here:")
-                print(f"         https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com")
-                print(f"       Then re-run this script.")
+                print(f"       Error message: {fail_err!r}")
+                print()
+                low_err = (fail_err or "").lower()
+                if "referer" in low_err or "referrer" in low_err:
+                    print(f"       Cause: your API key has HTTP referrer restrictions.")
+                    print(f"       Geocoding is a server-side API and won't accept")
+                    print(f"       referrer-restricted keys (Google's design).")
+                    print()
+                    print(f"       Fix: create a second unrestricted key for CLI use.")
+                    print(f"       Console: https://console.cloud.google.com/apis/credentials")
+                    print(f"         1. Create Credentials -> API Key")
+                    print(f"         2. Application restrictions: None")
+                    print(f"         3. API restrictions: Geocoding + Places + Street View")
+                    print(f"         4. Copy the new key; export GOOGLE_MAPS_API_KEY=<new>")
+                    print(f"         5. Do NOT commit the new key -- unrestricted keys")
+                    print(f"            must live in env vars only, never in the repo.")
+                elif "not been used" in low_err or "api has not been enabled" in low_err:
+                    print(f"       Cause: the Geocoding API isn't enabled on this project.")
+                    print(f"       Enable: https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com")
+                else:
+                    print(f"       Not a pattern I recognize. Check the raw error above.")
                 break
             time.sleep(sleep)
             continue
