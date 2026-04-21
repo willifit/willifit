@@ -2382,18 +2382,51 @@ function selectGarage(id) {
 let _heroReq = 0;
 let _gmapsLoader = null;  // cached Maps JS loader promise
 
+// Is the SDK actually usable right now?  We need this check in two places
+// because `_gmapsLoader` being resolved isn't sufficient — edge cases
+// (200-with-empty-response, idle-tab GC, bfcache restoration) can leave us
+// with a "resolved" promise and no `window.google` at all.  See diagnosis:
+// https://github.com/willifit/willifit/commit/…  user reported
+// `_gmapsLoader: object` + `window.google: undefined` after long idle.
+function gmapsReady() {
+  return !!(window.google && window.google.maps && window.google.maps.importLibrary);
+}
+
 function loadGoogleMapsJs() {
+  if (gmapsReady()) return Promise.resolve();
   if (_gmapsLoader) return _gmapsLoader;
-  if (window.google && window.google.maps) return Promise.resolve();
   _gmapsLoader = new Promise((resolve, reject) => {
+    // Clean up any orphaned <script> from a prior failed attempt so we
+    // don't accumulate dead tags in <head> on repeated retries.
+    document.querySelectorAll('script[data-gmaps-loader]').forEach(s => s.remove());
     const s = document.createElement('script');
+    s.dataset.gmapsLoader = '1';
     s.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}&v=weekly&libraries=&loading=async`;
     s.async = true;
-    s.onload = () => resolve();
+    s.onload = () => {
+      // A 200 response doesn't guarantee the SDK hooked itself up —
+      // verify importLibrary exists before claiming success.  Rejecting
+      // here lets the caller's retry path re-inject a fresh <script>.
+      if (!gmapsReady()) {
+        _gmapsLoader = null;
+        reject(new Error('Maps JS loaded but google.maps.importLibrary missing'));
+        return;
+      }
+      resolve();
+    };
     s.onerror = (e) => { _gmapsLoader = null; reject(e); };
     document.head.appendChild(s);
   });
   return _gmapsLoader;
+}
+
+// Call this when you have a cached loader promise that resolved but the
+// SDK is no longer actually usable (idle-tab GC, page re-activation from
+// bfcache, Google CDN hiccup on first load).  Forces the next
+// loadGoogleMapsJs() to inject a fresh <script>.
+function resetGoogleMapsJs() {
+  _gmapsLoader = null;
+  document.querySelectorAll('script[data-gmaps-loader]').forEach(s => s.remove());
 }
 
 async function loadDetailHero(hero, g, urls) {
@@ -2423,6 +2456,18 @@ async function loadDetailHero(hero, g, urls) {
     // 2. Lazy-load the Maps JS SDK (first call only — subsequent calls reuse the same promise).
     await loadGoogleMapsJs();
     if (myReq !== _heroReq) return;  // user moved on while Maps JS was loading
+
+    // 2a. Defensive: if our cached loader resolved but the SDK isn't usable
+    //     (idle-tab edge case — cached promise reports success but
+    //     window.google was never populated, or got wiped), throw away the
+    //     stale cache and retry once with a fresh <script> injection.
+    //     Without this, every click after the initial dud falls back to
+    //     Mapillary until the user hard-refreshes.
+    if (!gmapsReady()) {
+      resetGoogleMapsJs();
+      await loadGoogleMapsJs();
+      if (myReq !== _heroReq) return;
+    }
 
     // 2b. With loading=async, constructors are no longer exposed directly on
     //     google.maps — they must be pulled via importLibrary().  Accessing

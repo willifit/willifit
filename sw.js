@@ -1,16 +1,20 @@
-// WillIFit service worker — minimal offline shell cache.
+// Willifit service worker — minimal offline shell cache.
 //
 // Strategy:
-//   - Precache the app shell (HTML + index.json + favicon) on install
+//   - Precache the app shell on install (for offline-first cold starts)
+//   - For HTML: NETWORK-FIRST with cache fallback.  This means users always
+//     get the latest deploy on each visit (no more "stuck on old HTML until
+//     hard refresh" bugs), while still loading offline from cache when the
+//     network is unreachable.  Previous versions used cache-first here,
+//     which caused returning users to run stale JS for days.
 //   - For city JSON: stale-while-revalidate (use cache immediately, refresh
 //     in the background so data stays fresh without blocking the UI)
 //   - For map tiles and third-party CDNs: network-first, fall back to cache
 //   - Nothing else is intercepted
 //
-// Bump CACHE_VERSION when you ship a breaking HTML change so returning users
-// pick up the new shell.
+// Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-const CACHE_VERSION = "willifit-v2";
+const CACHE_VERSION = "willifit-v3";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
@@ -64,7 +68,17 @@ self.addEventListener("fetch", (event) => {
       event.respondWith(staleWhileRevalidate(req, DATA_CACHE));
       return;
     }
-    // App shell (HTML, manifest, favicon) → cache-first
+    // HTML navigations → network-first (cache fallback for offline)
+    const isHtml =
+      req.mode === "navigate" ||
+      url.pathname === "/" ||
+      url.pathname.endsWith(".html");
+    if (isHtml) {
+      event.respondWith(networkFirst(req, SHELL_CACHE));
+      return;
+    }
+    // Everything else same-origin (favicon, manifest, /data/index.json,
+    // /data/sponsors.json, etc.) → cache-first for speed
     event.respondWith(cacheFirst(req, SHELL_CACHE));
     return;
   }
