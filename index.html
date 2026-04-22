@@ -399,6 +399,54 @@
     background: #0a0d12 !important;
     font-family: var(--sans) !important;
   }
+
+  /* Dark-theme styling for the Leaflet layer switcher (top-right of map).
+     Default Leaflet CSS renders a light panel with barely-visible radio
+     dots — against our dark UI it looks backwards (unselected items look
+     "highlighted" because the circle outline is brighter than the filled
+     one). Fix: explicit dark panel, accent color on the selected label. */
+  .leaflet-control-layers {
+    background: var(--panel) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 4px !important;
+    color: var(--text);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5) !important;
+  }
+  .leaflet-control-layers-toggle {
+    background-color: var(--panel) !important;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e6eaf0' stroke-width='2'><polygon points='12 2 2 7 12 12 22 7'/><polyline points='2 17 12 22 22 17'/><polyline points='2 12 12 17 22 12'/></svg>") !important;
+    background-size: 22px 22px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 34px !important; height: 34px !important;
+  }
+  .leaflet-control-layers-expanded {
+    padding: 8px 12px !important;
+    min-width: 120px;
+  }
+  .leaflet-control-layers label {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--muted);
+    transition: color 0.15s;
+  }
+  .leaflet-control-layers label:hover { color: var(--text); }
+  .leaflet-control-layers label:has(input[type="radio"]:checked) {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .leaflet-control-layers-selector {
+    accent-color: var(--accent);
+  }
+  .leaflet-control-attribution {
+    background: rgba(23, 27, 35, 0.85) !important;
+    color: var(--muted) !important;
+  }
+  .leaflet-control-attribution a { color: var(--ok) !important; }
   .garage-marker {
     width: 34px; height: 34px;
     border-radius: 50% 50% 50% 0;
@@ -602,6 +650,41 @@
   .fact-value { font-size: 13px; font-weight: 600; }
   .fact-value.yes { color: var(--ok); }
   .fact-value.no { color: var(--bad); }
+  /* Multi-section clearance list (e.g. airports with short-term + long-term
+     gates posting different heights).  Each row is a compact strip with
+     the lane label, the posted height (in the same green/orange/red band
+     color heightClass() returns for the main reading), and the inch count. */
+  .sections-list {
+    display: flex; flex-direction: column; gap: 6px;
+    margin-bottom: 8px;
+  }
+  .section-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px; align-items: center;
+    padding: 10px 12px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+  .section-row-label {
+    font-size: 12px; font-weight: 600; color: var(--text);
+  }
+  .section-row-height {
+    font-family: var(--mono); font-size: 16px; font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .section-row-height.ok { color: var(--ok); }
+  .section-row-height.warn { color: var(--warn); }
+  .section-row-height.bad { color: var(--bad); }
+  .section-row-height.unknown { color: var(--muted); }
+  .section-row-meta {
+    font-family: var(--mono); font-size: 10px; color: var(--muted);
+  }
+  .sections-note {
+    font-size: 11px; color: var(--muted); font-style: italic;
+    margin-bottom: 8px; padding: 0 2px;
+  }
   .detail-section-title {
     font-size: 10px; color: var(--muted);
     text-transform: uppercase; letter-spacing: 0.15em;
@@ -2263,17 +2346,22 @@ function initMapOSM() {
     }
   );
 
-  const saved = localStorage.getItem('willifit_map_layer') || 'street';
+  // Labels are "Map" and "Satellite" — we used to say "Street" here but that
+  // overlapped confusingly with the Google Street View hero in the detail
+  // panel.  localStorage key still accepts legacy "street" values for
+  // visitors who saved a preference before the rename.
+  const saved = localStorage.getItem('willifit_map_layer');
   (saved === 'satellite' ? satelliteLayer : streetLayer).addTo(state.map);
 
   L.control.layers(
-    { 'Street': streetLayer, 'Satellite': satelliteLayer },
+    { 'Map': streetLayer, 'Satellite': satelliteLayer },
     null,
     { position: 'topright', collapsed: true }
   ).addTo(state.map);
 
   state.map.on('baselayerchange', (e) => {
-    try { localStorage.setItem('willifit_map_layer', e.name.toLowerCase()); } catch (_) {}
+    const key = e.name.toLowerCase() === 'satellite' ? 'satellite' : 'map';
+    try { localStorage.setItem('willifit_map_layer', key); } catch (_) {}
   });
 
   state.markerLayer = L.layerGroup().addTo(state.map);
@@ -2573,6 +2661,32 @@ async function loadDetailHero(hero, g, urls) {
   }
 }
 
+// Render the multi-section clearance list if a garage has `sections`.
+// Sections represent different lanes / gates at one physical facility
+// (e.g. RNO short-term 8'2" vs long-term 7'7"); the main height_in is
+// always the strictest (lowest) so map-color + will-I-fit logic default
+// to the safest interpretation. The list gives users the full picture.
+function renderSectionsList(g) {
+  if (!Array.isArray(g.sections) || g.sections.length === 0) return '';
+  const rows = g.sections.map((s) => {
+    const hc = heightClass(s.height_in);
+    const label = escapeHTML(s.label || 'Section');
+    const heightTxt = s.height_label ? escapeHTML(s.height_label) : 'Unknown';
+    const meta = s.height_in ? (s.height_in | 0) + '"' : '';
+    return `
+      <div class="section-row">
+        <div class="section-row-label">${label}</div>
+        <div class="section-row-height value ${hc}">${heightTxt}</div>
+        <div class="section-row-meta">${meta}</div>
+      </div>`;
+  }).join('');
+  return `
+    <div class="detail-section-title">Posted Clearances By Lane</div>
+    <div class="sections-list">${rows}</div>
+    <div class="sections-note">The strictest number above is shown in the main reading — use it if you're not sure which lane you'll enter.</div>
+  `;
+}
+
 function renderDetail(g) {
   const panel = document.getElementById('detail');
   const body = document.getElementById('detailBody');
@@ -2638,11 +2752,12 @@ function renderDetail(g) {
     ${unverifiedBanner}
     <div class="detail-hero-display">
       <div class="height-display">
-        <div class="label">Max Clearance</div>
+        <div class="label">${Array.isArray(g.sections) && g.sections.length ? 'Lowest Posted Clearance' : 'Max Clearance'}</div>
         <div class="value ${hc}">${escapeHTML(g.height_label || 'Unverified')}</div>
         <div class="meta">${g.height_in ? (g.height_in|0) + ' inches' : 'Needs field verification'}</div>
       </div>
     </div>
+    ${renderSectionsList(g)}
     <div class="detail-facts">
       <div class="fact">
         <div class="fact-label">Oversized</div>
