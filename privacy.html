@@ -63,6 +63,7 @@
     <li><code>willifit_vehicle_height_in</code> — your entered vehicle height, in inches, if you set one</li>
     <li><code>willifit_report_queue</code> — clearance reports you've submitted (queued locally so nothing is lost if the network fails)</li>
     <li><code>willifit_ad_impression</code> / <code>willifit_ad_click</code> — anonymous counters for which sponsored cards you've seen/clicked (used to rotate ads fairly)</li>
+    <li><code>willifit_map_layer</code> — whether you picked the street or satellite base layer on the map (so we open in your preferred view on return visits)</li>
   </ul>
   <p>You can clear all of it anytime by clearing your browser's site data for Willifit.</p>
 
@@ -85,7 +86,8 @@
   <h2>Third parties</h2>
   <p>Willifit loads resources and makes requests to:</p>
   <ul>
-    <li><b>OpenStreetMap</b> — map tiles (their <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">privacy policy</a>)</li>
+    <li><b>OpenStreetMap</b> — street-layer map tiles (their <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">privacy policy</a>)</li>
+    <li><b>Esri World Imagery</b> — satellite-layer map tiles when you toggle to satellite view (their <a href="https://www.esri.com/en-us/privacy/overview" target="_blank" rel="noopener">privacy policy</a>)</li>
     <li><b>Mapillary</b> — street-level imagery embedded in garage detail views (their <a href="https://www.mapillary.com/privacy" target="_blank" rel="noopener">privacy policy</a>)</li>
     <li><b>Google Maps / Apple Maps / Waze</b> — if you click a "Directions" link, we hand you off to them for turn-by-turn navigation. What you do there is governed by their policies</li>
     <li><b>Google Maps JavaScript API</b> — only if the site operator has enabled it (defaults to OpenStreetMap)</li>

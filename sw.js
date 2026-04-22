@@ -14,7 +14,7 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-const CACHE_VERSION = "willifit-v3";
+const CACHE_VERSION = "willifit-v4";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
@@ -86,6 +86,7 @@ self.addEventListener("fetch", (event) => {
   // Third-party tiles / CDNs → network-first, cache fallback
   if (
     url.hostname.endsWith("tile.openstreetmap.org") ||
+    url.hostname === "server.arcgisonline.com" ||  // Esri World Imagery (satellite layer)
     url.hostname === "unpkg.com"
   ) {
     event.respondWith(networkFirst(req, DATA_CACHE));

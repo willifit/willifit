@@ -30,7 +30,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <!-- Security: Content Security Policy. Whitelist matches known resource origins. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com https://plausible.io; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.mapillary.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://plausible.io; frame-src 'self' https://www.mapillary.com https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com https://plausible.io; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.mapillary.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://plausible.io; frame-src 'self' https://www.mapillary.com https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -2247,10 +2247,35 @@ function _inBounds(g, b) {
 /* ---------- OSM (Leaflet) ---------- */
 function initMapOSM() {
   state.map = L.map('map', { zoomControl: true, preferCanvas: true }).setView([36.1147, -115.1728], 12);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+  // Two base layers — users toggle via the layer control (top-right of the
+  // map).  Street is default; satellite uses Esri World Imagery (free,
+  // public, no API key, but requires the attribution string below).
+  const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '© OpenStreetMap | WillIFit beta',
-  }).addTo(state.map);
+    attribution: '© OpenStreetMap | Willifit beta',
+  });
+  const satelliteLayer = L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    {
+      maxZoom: 19,
+      attribution: 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, and the GIS User Community',
+    }
+  );
+
+  const saved = localStorage.getItem('willifit_map_layer') || 'street';
+  (saved === 'satellite' ? satelliteLayer : streetLayer).addTo(state.map);
+
+  L.control.layers(
+    { 'Street': streetLayer, 'Satellite': satelliteLayer },
+    null,
+    { position: 'topright', collapsed: true }
+  ).addTo(state.map);
+
+  state.map.on('baselayerchange', (e) => {
+    try { localStorage.setItem('willifit_map_layer', e.name.toLowerCase()); } catch (_) {}
+  });
+
   state.markerLayer = L.layerGroup().addTo(state.map);
   state.map.on('moveend', onMapMoved);
   state.map.on('zoomend', onZoomChanged);
