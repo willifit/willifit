@@ -224,8 +224,8 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "rno-airport-garage",
-      "name": "Reno-Tahoe (RNO) \u2014 Parking Garage",
+      "id": "rno-airport-short-term",
+      "name": "Reno-Tahoe (RNO) \u2014 Short-Term Garage",
       "addr": "2001 E Plumb Ln",
       "lat": 39.5043,
       "lng": -119.7767,
@@ -234,9 +234,21 @@
       "oversized": false,
       "pano_id": "ror5pQgsf-97JaFx0dIWOw",
       "pano_heading": 270,
-      "notes": "Terminal-adjacent covered garage. Human-verified pano (ror5pQgsf-97JaFx0dIWOw @ 329\u00b0) from Google Maps Street View of the entrance (2026-04-21).\nVerified 2026-04-21 from sign reading \"8'2\" CLEARANCE\" (pano ror5pQgsf-97JaFx0dIWOw, heading 270\u00b0, Claude confidence high)",
+      "notes": "Terminal-adjacent covered short-term parking. AI-verified clearance 8'2\" at the entrance sign (pano ror5pQgsf-97JaFx0dIWOw @ 270\u00b0, Claude confidence high).",
       "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: renoairport.com",
       "verified_on": "2026-04-21"
+    },
+    {
+      "id": "rno-airport-long-term",
+      "name": "Reno-Tahoe (RNO) \u2014 Long-Term Garage",
+      "addr": "2001 E Plumb Ln",
+      "lat": 39.5045,
+      "lng": -119.7772,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Separate long-term covered parking structure at RNO, distinct from short-term (which is 8'2\"). Coords are approximate; needs auto-verify or manual pano URL to pin the entrance.",
+      "source": "renoairport.com"
     },
     {
       "id": "rno-airport-economy",
