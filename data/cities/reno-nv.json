@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Main convention center. Surface lots.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.4908,-119.7946, 592m off).",
-      "source": "renotahoeusa.com"
+      "source": "renotahoeusa.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-national-bowling-stadium",
@@ -61,7 +62,7 @@
       "height_label": "No limit (open-air)",
       "oversized": true,
       "structure_type": "surface_lot",
-      "notes": "Open-air surface parking only — no parking structure at this property (manually verified on Google Maps 2026-04-21).",
+      "notes": "Open-air surface parking only \u2014 no parking structure at this property (manually verified on Google Maps 2026-04-21).",
       "source": "peppermillreno.com"
     },
     {
@@ -87,7 +88,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Large casino. RV-friendly surface lots.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5231,-119.7773, 203m off).",
-      "source": "grandsierraresort.com"
+      "source": "grandsierraresort.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-legends-sparks",
@@ -99,7 +101,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "legendsatsparks.com"
+      "source": "legendsatsparks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-nugget",
@@ -111,7 +114,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Casino. RV-friendly lot.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5364,-119.7494, 881m off).",
-      "source": "nuggetcasinoresort.com"
+      "source": "nuggetcasinoresort.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-greater-nevada-field",
@@ -123,7 +127,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "AAA ballpark.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-amtrak-depot",
@@ -135,7 +140,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rail station.",
-      "source": "amtrak.com"
+      "source": "amtrak.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-meadowood-mall",
@@ -147,7 +153,7 @@
       "height_label": "No limit (open-air)",
       "oversized": true,
       "structure_type": "surface_lot",
-      "notes": "Enclosed mall. Open-air surface parking only — no parking structure (manually verified on Google Maps 2026-04-21).\nCoords corrected via Google Geocoding 2026-04-21 (was 39.482,-119.809, 2431m off).",
+      "notes": "Enclosed mall. Open-air surface parking only \u2014 no parking structure (manually verified on Google Maps 2026-04-21).\nCoords corrected via Google Geocoding 2026-04-21 (was 39.482,-119.809, 2431m off).",
       "source": "simon.com"
     },
     {
@@ -156,13 +162,14 @@
       "addr": "1664 N Virginia St",
       "lat": 39.543028,
       "lng": -119.81707,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 138,
+      "height_label": "11'6\"",
       "oversized": false,
-      "pano_id": "hjqMfmW3tJln1ZcOzqUpOA",
-      "pano_heading": 52.79,
-      "notes": "UNR visitor parking. Coords + human-verified pano (hjqMfmW3tJln1ZcOzqUpOA @ 52.79°) from Google Maps 'Whalen Parking Garage' place record (2026-04-21).",
-      "source": "unr.edu"
+      "pano_id": "6RTeI_ij85n0Kx-JpXgHEQ",
+      "pano_heading": 90,
+      "notes": "UNR visitor parking. Coords + human-verified pano (hjqMfmW3tJln1ZcOzqUpOA @ 52.79\u00b0) from Google Maps 'Whalen Parking Garage' place record (2026-04-21).\nVerified 2026-04-21 from sign reading \"11'6\"\" (pano 6RTeI_ij85n0Kx-JpXgHEQ, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: unr.edu",
+      "verified_on": "2026-04-21"
     },
     {
       "id": "rno-mackay-stadium",
@@ -174,7 +181,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Wolf Pack football.",
-      "source": "nevadawolfpack.com"
+      "source": "nevadawolfpack.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-truckee-meadows-community",
@@ -186,7 +194,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "North Reno community college.",
-      "source": "tmcc.edu"
+      "source": "tmcc.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-scheels",
@@ -198,7 +207,7 @@
       "height_label": "No limit (open-air)",
       "oversized": true,
       "structure_type": "surface_lot",
-      "notes": "Open-air surface parking only — no parking structure at this property (manually verified on Google Maps 2026-04-21).",
+      "notes": "Open-air surface parking only \u2014 no parking structure at this property (manually verified on Google Maps 2026-04-21).",
       "source": "scheels.com"
     },
     {
@@ -211,7 +220,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "City park along Truckee.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5244,-119.8334, 578m off).",
-      "source": "reno.gov"
+      "source": "reno.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rno-airport-garage",
@@ -219,13 +229,14 @@
       "addr": "2001 E Plumb Ln",
       "lat": 39.5043,
       "lng": -119.7767,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
       "pano_id": "ror5pQgsf-97JaFx0dIWOw",
-      "pano_heading": 329.24,
-      "notes": "Terminal-adjacent covered garage. Human-verified pano (ror5pQgsf-97JaFx0dIWOw @ 329°) from Google Maps Street View of the entrance (2026-04-21).",
-      "source": "renoairport.com"
+      "pano_heading": 270,
+      "notes": "Terminal-adjacent covered garage. Human-verified pano (ror5pQgsf-97JaFx0dIWOw @ 329\u00b0) from Google Maps Street View of the entrance (2026-04-21).\nVerified 2026-04-21 from sign reading \"8'2\" CLEARANCE\" (pano ror5pQgsf-97JaFx0dIWOw, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: renoairport.com",
+      "verified_on": "2026-04-21"
     },
     {
       "id": "rno-airport-economy",
@@ -237,7 +248,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "renoairport.com"
+      "source": "renoairport.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [
