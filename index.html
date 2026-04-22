@@ -2644,11 +2644,16 @@ async function loadDetailHero(hero, g) {
   }
 
   try {
+    // If entrance_lat/lng is set (from find_entrances.py's OSM lookup), use
+    // that -- entrance coords are where Street View has actual coverage of
+    // the drive-up.  Otherwise fall back to the record's main lat/lng.
+    const targetLat = (typeof g.entrance_lat === 'number') ? g.entrance_lat : g.lat;
+    const targetLng = (typeof g.entrance_lng === 'number') ? g.entrance_lng : g.lng;
     let metaUrl;
     if (g.pano_id) {
       metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?pano=${encodeURIComponent(g.pano_id)}&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
     } else {
-      metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?location=${g.lat},${g.lng}&source=outdoor&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
+      metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?location=${targetLat},${targetLng}&source=outdoor&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
     }
     const metaRes = await fetch(metaUrl);
     if (myReq !== _heroReq) return;
@@ -2694,12 +2699,13 @@ async function loadDetailHero(hero, g) {
     if (typeof g.pano_heading === 'number') {
       initialHeading = g.pano_heading;
     } else if (typeof panoLoc.lat === 'number' && typeof panoLoc.lng === 'number') {
-      initialHeading = _bearingToGarage(panoLoc.lat, panoLoc.lng, g.lat, g.lng);
+      // Aim at the entrance (if known) or the garage center.
+      initialHeading = _bearingToGarage(panoLoc.lat, panoLoc.lng, targetLat, targetLng);
     } else {
       initialHeading = 0;
     }
     new StreetViewPanorama(panoEl, {
-      position: { lat: g.lat, lng: g.lng },
+      position: { lat: targetLat, lng: targetLng },
       // Prefer the panorama the metadata API resolved to (usually best imagery)
       pano: meta.pano_id || undefined,
       pov: { heading: initialHeading, pitch: 0 },

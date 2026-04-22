@@ -493,7 +493,12 @@ def verify_garage(g, model):
                       omitted when only one distinct height was found)
         }
     """
-    lat, lng = g.get("lat"), g.get("lng")
+    # Prefer the OSM-derived driveway entrance if we have it — addresses
+    # geocode to building centers which Street View often can't reach.
+    # find_entrances.py populates entrance_lat/entrance_lng from
+    # amenity=parking_entrance nodes.
+    lat = g.get("entrance_lat") if g.get("entrance_lat") is not None else g.get("lat")
+    lng = g.get("entrance_lng") if g.get("entrance_lng") is not None else g.get("lng")
     if lat is None:
         return {"status": "error", "reason": "no-coords", "claude_calls": 0}
 
