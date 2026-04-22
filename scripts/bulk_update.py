@@ -156,6 +156,7 @@ def parse_height_field(s: str) -> dict:
     """Parse the TSV 'height' column.  Returns one of:
       {"kind": "skip"}
       {"kind": "surface"}
+      {"kind": "remove"}                                (DELETE the entry)
       {"kind": "single", "height_in": N}
       {"kind": "sections", "sections": [{"height_in": N, "label": ""} ...]}
       {"kind": "error", "message": "..."}
@@ -163,6 +164,11 @@ def parse_height_field(s: str) -> dict:
     s = s.strip()
     if not s or s.lower() == "skip":
         return {"kind": "skip"}
+    # Remove the whole entry — there is no parking at this location, the
+    # business closed, the import was wrong, or similar.  Destructive;
+    # user can git-revert if they change their mind.
+    if s.lower() in ("remove", "delete", "no-parking", "no parking", "closed", "none"):
+        return {"kind": "remove"}
     if s.lower() in ("surface", "surface_lot", "open-air", "uncovered"):
         return {"kind": "surface"}
     # Multi-section support: "7'7"/8'2"" or "7'7\" / 8'2\""
@@ -393,6 +399,27 @@ def apply_row(row: dict, dry_run: bool, verify_ai: bool) -> dict:
         if not dry_run:
             city_path.write_text(json.dumps(data, indent=2) + "\n")
         return {"status": "applied", "kind": "surface", "city_path": city_path}
+
+    # Remove case — delete the entry entirely.  Used when the location
+    # has no parking at all (business closed, import was wrong, pin
+    # in the wrong spot, etc.).  Git history preserves the data.
+    if parsed["kind"] == "remove":
+        removed = False
+        for arr_name in ("garages", "tunnels", "bridges"):
+            arr = data.get(arr_name, [])
+            before = len(arr)
+            data[arr_name] = [x for x in arr if x.get("id") != gid]
+            if len(data[arr_name]) < before:
+                removed = True
+                break
+        if removed:
+            print(f"{prefix} REMOVED (no parking at this location)")
+            if not dry_run:
+                city_path.write_text(json.dumps(data, indent=2) + "\n")
+            return {"status": "applied", "kind": "remove", "city_path": city_path}
+        else:
+            print(f"{prefix} ERROR: couldn't remove — id not found")
+            return {"status": "error", "reason": "remove-id-not-found"}
 
     # Height cases — require URL
     if not url:

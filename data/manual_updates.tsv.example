@@ -16,6 +16,10 @@
 # Special values for the "height" column:
 #   skip        — leave this row alone (useful when iterating)
 #   surface     — mark the garage as surface_lot (no clearance to read)
+#                 Also accepted: open-air, uncovered, surface_lot
+#   remove      — delete this entry entirely (no parking at this location,
+#                 business closed, wrong pin, etc.).  No URL needed.
+#                 Also accepted: delete, no-parking, closed, none
 #   7'7"/8'2"   — two or more sections in one record (slash-separated)
 #                 The lowest becomes the primary; all get listed in the
 #                 detail-panel sections breakdown.
