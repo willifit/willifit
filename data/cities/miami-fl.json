@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Miami Heat arena.",
-      "source": "kaseyacenter.com"
+      "source": "kaseyacenter.com",
+      "entrance_lat": 25.7806889,
+      "entrance_lng": -80.1875718,
+      "entrance_source": "OSM parking_entrance node 4587381527"
     },
     {
       "id": "mia-bayside",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Tourist shopping + boat docks.",
-      "source": "baysidemarketplace.com"
+      "source": "baysidemarketplace.com",
+      "entrance_lat": 25.7785803,
+      "entrance_lng": -80.1876593,
+      "entrance_source": "OSM parking_entrance node 1738845583"
     },
     {
       "id": "mia-convention-ctr",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Closest to Lincoln Road Mall + Convention Ctr.",
-      "source": "miamibeachfl.gov"
+      "source": "miamibeachfl.gov",
+      "entrance_lat": 25.7926703,
+      "entrance_lng": -80.1414616,
+      "entrance_source": "OSM parking_entrance node 12272464957"
     },
     {
       "id": "mia-ocean-drive",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Ocean Drive / Collins Ave access.",
-      "source": "miamibeachfl.gov"
+      "source": "miamibeachfl.gov",
+      "entrance_lat": 25.7769293,
+      "entrance_lng": -80.132902,
+      "entrance_source": "OSM parking_entrance node 7179546562"
     },
     {
       "id": "mia-brickell-city-centre",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mixed-use luxury.",
-      "source": "brickellcitycentre.com"
+      "source": "brickellcitycentre.com",
+      "entrance_lat": 25.7665873,
+      "entrance_lng": -80.192342,
+      "entrance_source": "OSM parking_entrance node 7638757324"
     },
     {
       "id": "mia-mary-brickell",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Brickell shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 25.7647525,
+      "entrance_lng": -80.1915558,
+      "entrance_source": "OSM parking_entrance node 11505574665"
     },
     {
       "id": "mia-loandepot-park",
@@ -94,7 +112,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Marlins MLB garage.",
-      "source": "mlb.com/marlins"
+      "source": "mlb.com/marlins",
+      "entrance_lat": 25.776834,
+      "entrance_lng": -80.2196591,
+      "entrance_source": "OSM parking_entrance node 5034536384"
     },
     {
       "id": "mia-hard-rock-stadium",
@@ -130,7 +151,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage.",
-      "source": "frostscience.org"
+      "source": "frostscience.org",
+      "entrance_lat": 25.7858872,
+      "entrance_lng": -80.1870239,
+      "entrance_source": "OSM parking_entrance node 4773377977"
     },
     {
       "id": "mia-perez-art",
@@ -142,7 +166,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "PAMM museum garage.",
-      "source": "pamm.org"
+      "source": "pamm.org",
+      "entrance_lat": 25.7858872,
+      "entrance_lng": -80.1870239,
+      "entrance_source": "OSM parking_entrance node 4773377977"
     },
     {
       "id": "mia-dolphin-mall",
@@ -226,7 +253,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface cruise lots. Oversized OK.",
-      "source": "portmiami.biz"
+      "source": "portmiami.biz",
+      "entrance_lat": 25.7742362,
+      "entrance_lng": -80.168059,
+      "entrance_source": "OSM parking_entrance node 1326303404"
     },
     {
       "id": "mia-airport-dolphin",
@@ -238,7 +268,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "miami-airport.com"
+      "source": "miami-airport.com",
+      "entrance_lat": 25.795745,
+      "entrance_lng": -80.2779631,
+      "entrance_source": "OSM parking_entrance node 10886016099"
     },
     {
       "id": "mia-airport-flamingo",

@@ -34,7 +34,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New convention center + Rupp complex.",
-      "source": "centralbankcenter.com"
+      "source": "centralbankcenter.com",
+      "entrance_lat": 38.0425427,
+      "entrance_lng": -84.501676,
+      "entrance_source": "OSM parking_entrance node 12633166324"
     },
     {
       "id": "lex-victorian-sq",
@@ -46,7 +49,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.0470799,
+      "entrance_lng": -84.4990661,
+      "entrance_source": "OSM parking_entrance node 4162419456"
     },
     {
       "id": "lex-park-plaza",
@@ -58,7 +64,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown bus transfer station.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.0446,
+      "entrance_lng": -84.4952579,
+      "entrance_source": "OSM parking_entrance node 4129008264"
     },
     {
       "id": "lex-hyatt-regency",
@@ -154,7 +163,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UK visitor garage.",
-      "source": "uky.edu/transportation"
+      "source": "uky.edu/transportation",
+      "entrance_lat": 38.0335194,
+      "entrance_lng": -84.5038963,
+      "entrance_source": "OSM parking_entrance node 2445179083"
     },
     {
       "id": "lex-uk-medical-ctr",

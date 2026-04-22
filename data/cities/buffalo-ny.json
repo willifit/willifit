@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Sabres arena.",
-      "source": "keybankcenter.com"
+      "source": "keybankcenter.com",
+      "entrance_lat": 42.8761145,
+      "entrance_lng": -78.8764638,
+      "entrance_source": "OSM parking_entrance node 9840424645"
     },
     {
       "id": "buf-canalside",
@@ -22,7 +25,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Waterfront entertainment district.",
-      "source": "canalsidebuffalo.com"
+      "source": "canalsidebuffalo.com",
+      "entrance_lat": 42.8761228,
+      "entrance_lng": -78.877027,
+      "entrance_source": "OSM parking_entrance node 9840424648"
     },
     {
       "id": "buf-buffalo-conv-ctr",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Casino garage.",
-      "source": "senecabuffalocreekcasino.com"
+      "source": "senecabuffalocreekcasino.com",
+      "entrance_lat": 42.8768007,
+      "entrance_lng": -78.8762466,
+      "entrance_source": "OSM parking_entrance node 11159772475"
     },
     {
       "id": "buf-sahlen-field",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "AAA ballpark. Shared Sabres lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 42.8789646,
+      "entrance_lng": -78.874367,
+      "entrance_source": "OSM parking_entrance node 11157600501"
     },
     {
       "id": "buf-highmark-stadium",
@@ -82,7 +94,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic tower garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.8850743,
+      "entrance_lng": -78.8759223,
+      "entrance_source": "OSM parking_entrance node 11041777570"
     },
     {
       "id": "buf-city-hall",
@@ -94,7 +109,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Civic center lots.",
-      "source": "buffalony.gov"
+      "source": "buffalony.gov",
+      "entrance_lat": 42.8852723,
+      "entrance_lng": -78.879685,
+      "entrance_source": "OSM parking_entrance node 11205994139"
     },
     {
       "id": "buf-darwin-martin",
@@ -130,7 +148,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Olmsted park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.938232,
+      "entrance_lng": -78.8664936,
+      "entrance_source": "OSM parking_entrance node 12230243135"
     },
     {
       "id": "buf-buffalo-zoo",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Penguins arena + concerts.",
-      "source": "ppgpaintsarena.com"
+      "source": "ppgpaintsarena.com",
+      "entrance_lat": 40.4399827,
+      "entrance_lng": -79.9884462,
+      "entrance_source": "OSM parking_entrance node 1436093585"
     },
     {
       "id": "pit-convention-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "LEED-platinum convention center.",
-      "source": "pittsburghcc.com"
+      "source": "pittsburghcc.com",
+      "entrance_lat": 40.4438553,
+      "entrance_lng": -79.9950577,
+      "entrance_source": "OSM parking_entrance node 6219305268"
     },
     {
       "id": "pit-pnc-park",
@@ -58,7 +64,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rivers Casino garage.",
-      "source": "riverscasino.com"
+      "source": "riverscasino.com",
+      "entrance_lat": 40.4475842,
+      "entrance_lng": -80.0214078,
+      "entrance_source": "OSM parking_entrance node 5421653790"
     },
     {
       "id": "pit-sci-center",
@@ -82,7 +91,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Cultural District garage.",
-      "source": "pittsburghparking.com"
+      "source": "pittsburghparking.com",
+      "entrance_lat": 40.4438553,
+      "entrance_lng": -79.9950577,
+      "entrance_source": "OSM parking_entrance node 6219305268"
     },
     {
       "id": "pit-third-forbes",
@@ -94,7 +106,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Pittsburgh Parking Authority downtown.",
-      "source": "pittsburghparking.com"
+      "source": "pittsburghparking.com",
+      "entrance_lat": 40.4386063,
+      "entrance_lng": -79.9986052,
+      "entrance_source": "OSM parking_entrance node 2133358876"
     },
     {
       "id": "pit-mellon-sq",
@@ -106,7 +121,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Mellon Square park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.4428164,
+      "entrance_lng": -79.9980041,
+      "entrance_source": "OSM parking_entrance node 4804778861"
     },
     {
       "id": "pit-market-square",
@@ -118,7 +136,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.4428164,
+      "entrance_lng": -79.9980041,
+      "entrance_source": "OSM parking_entrance node 4804778861"
     },
     {
       "id": "pit-strip-district",
@@ -142,7 +163,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Parking Authority.",
-      "source": "pittsburghparking.com"
+      "source": "pittsburghparking.com",
+      "entrance_lat": 40.4350636,
+      "entrance_lng": -79.9955571,
+      "entrance_source": "OSM parking_entrance node 11098531744"
     },
     {
       "id": "pit-carnegie-music-hall",
@@ -154,7 +178,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Oakland cultural district.",
-      "source": "pittsburgh.carnegiemuseums.org"
+      "source": "pittsburgh.carnegiemuseums.org",
+      "entrance_lat": 40.4426932,
+      "entrance_lng": -79.9488919,
+      "entrance_source": "OSM parking_entrance node 11110609420"
     },
     {
       "id": "pit-pitt-panther",
@@ -166,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "University of Pittsburgh visitor.",
-      "source": "pts.pitt.edu"
+      "source": "pts.pitt.edu",
+      "entrance_lat": 40.443723,
+      "entrance_lng": -79.9602964,
+      "entrance_source": "OSM parking_entrance node 8934181465"
     },
     {
       "id": "pit-phipps-conservatory",
@@ -214,7 +244,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shopping/dining on south Mon side. Inclines adjacent.",
-      "source": "stationsquare.com"
+      "source": "stationsquare.com",
+      "entrance_lat": 40.4319922,
+      "entrance_lng": -80.0009908,
+      "entrance_source": "OSM parking_entrance node 7808291270"
     },
     {
       "id": "pit-mt-washington",
@@ -238,7 +271,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.4420045,
+      "entrance_lng": -80.0006161,
+      "entrance_source": "OSM parking_entrance node 8860727970"
     },
     {
       "id": "pit-airport-short",

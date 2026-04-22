@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention Center + Abraham Chavez Theatre.",
-      "source": "destinationelpaso.com"
+      "source": "destinationelpaso.com",
+      "entrance_lat": 31.7611966,
+      "entrance_lng": -106.4916325,
+      "entrance_source": "OSM parking_entrance node 10718827774"
     },
     {
       "id": "elp-san-jacinto",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown plaza garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 31.7609162,
+      "entrance_lng": -106.4888419,
+      "entrance_source": "OSM parking_entrance node 13703026436"
     },
     {
       "id": "elp-plaza-theatre",
@@ -46,7 +52,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Chihuahuas AAA ballpark.",
-      "source": "elpasochihuahuas.com"
+      "source": "elpasochihuahuas.com",
+      "entrance_lat": 31.7580335,
+      "entrance_lng": -106.4906962,
+      "entrance_source": "OSM parking_entrance node 10282577907"
     },
     {
       "id": "elp-city-hall",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "elpasotexas.gov"
+      "source": "elpasotexas.gov",
+      "entrance_lat": 31.7610039,
+      "entrance_lng": -106.4865699,
+      "entrance_source": "OSM parking_entrance node 11786626807"
     },
     {
       "id": "elp-mills-plaza",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic downtown tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 31.7610748,
+      "entrance_lng": -106.4869476,
+      "entrance_source": "OSM parking_entrance node 11786626809"
     },
     {
       "id": "elp-outlet-shoppes",

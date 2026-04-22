@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "1 block from ICC, 0.03mi north of Lucas Oil. $30 event. $30 spend in mall = normal rates.",
-      "source": "downtownindy.org"
+      "source": "downtownindy.org",
+      "entrance_lat": 39.7670016,
+      "entrance_lng": -86.1591815,
+      "entrance_source": "OSM parking_entrance node 3637770856"
     },
     {
       "id": "ind-pnc-center",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Hyatt Regency. 0.5 block east of Circle Centre.",
-      "source": "denisonparking.com"
+      "source": "denisonparking.com",
+      "entrance_lat": 39.767299,
+      "entrance_lng": -86.1607933,
+      "entrance_source": "OSM parking_entrance node 12470664633"
     },
     {
       "id": "ind-plaza-park",
@@ -58,7 +64,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "EV charging. Monument Circle adjacent.",
-      "source": "denisonparking.com"
+      "source": "denisonparking.com",
+      "entrance_lat": 39.7670016,
+      "entrance_lng": -86.1591815,
+      "entrance_source": "OSM parking_entrance node 3637770856"
     },
     {
       "id": "ind-lucas-oil-blue",
@@ -106,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic City Market + food hall.",
-      "source": "indycm.com"
+      "source": "indycm.com",
+      "entrance_lat": 39.7679814,
+      "entrance_lng": -86.1550448,
+      "entrance_source": "OSM parking_entrance node 4006902001"
     },
     {
       "id": "ind-monument-circle",
@@ -118,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown signature garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.7689961,
+      "entrance_lng": -86.1565747,
+      "entrance_source": "OSM parking_entrance node 8905209298"
     },
     {
       "id": "ind-state-capitol",
@@ -130,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground state garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.7681963,
+      "entrance_lng": -86.161523,
+      "entrance_source": "OSM parking_entrance node 12189105023"
     },
     {
       "id": "ind-ims",
@@ -178,7 +196,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "White River State Park surface lots.",
-      "source": "eiteljorg.org"
+      "source": "eiteljorg.org",
+      "entrance_lat": 39.7677441,
+      "entrance_lng": -86.16896,
+      "entrance_source": "OSM parking_entrance node 1283198586"
     },
     {
       "id": "ind-childrens-museum",
@@ -214,7 +235,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.8711829,
+      "entrance_lng": -86.1449386,
+      "entrance_source": "OSM parking_entrance node 6561555665"
     },
     {
       "id": "ind-mass-ave",
@@ -250,7 +274,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mall garage.",
-      "source": "circlecentre.com"
+      "source": "circlecentre.com",
+      "entrance_lat": 39.7670016,
+      "entrance_lng": -86.1591815,
+      "entrance_source": "OSM parking_entrance node 3637770856"
     },
     {
       "id": "ind-ind-airport-garage",

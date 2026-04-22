@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Devils arena + concerts.",
-      "source": "prucenter.com"
+      "source": "prucenter.com",
+      "entrance_lat": 40.7330414,
+      "entrance_lng": -74.172624,
+      "entrance_source": "OSM parking_entrance node 10612803953"
     },
     {
       "id": "nwk-njpac",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts + attached garage.",
-      "source": "njpac.org"
+      "source": "njpac.org",
+      "entrance_lat": 40.7368663,
+      "entrance_lng": -74.1691782,
+      "entrance_source": "OSM parking_entrance node 12483862403"
     },
     {
       "id": "nwk-gateway-center",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office + rail station access.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7365962,
+      "entrance_lng": -74.1693782,
+      "entrance_source": "OSM parking_entrance node 12483862405"
     },
     {
       "id": "nwk-penn-station-main",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak + NJ Transit + PATH hub.",
-      "source": "njtransit.com"
+      "source": "njtransit.com",
+      "entrance_lat": 40.7357315,
+      "entrance_lng": -74.1638255,
+      "entrance_source": "OSM parking_entrance node 5005392487"
     },
     {
       "id": "nwk-broad-st-station",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground Military Park garage.",
-      "source": "militarypark.nj"
+      "source": "militarypark.nj",
+      "entrance_lat": 40.7402895,
+      "entrance_lng": -74.1709391,
+      "entrance_source": "OSM parking_entrance node 11738079727"
     },
     {
       "id": "nwk-raymond-plaza",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Central downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7344302,
+      "entrance_lng": -74.1685185,
+      "entrance_source": "OSM parking_entrance node 12211201933"
     },
     {
       "id": "nwk-rutgers-newark",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New Jersey Institute of Technology.",
-      "source": "njit.edu"
+      "source": "njit.edu",
+      "entrance_lat": 40.7424141,
+      "entrance_lng": -74.1772859,
+      "entrance_source": "OSM parking_entrance node 2084111668"
     },
     {
       "id": "nwk-university-hosp",
@@ -118,7 +139,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main state teaching hospital.",
-      "source": "uhnj.org"
+      "source": "uhnj.org",
+      "entrance_lat": 40.7396102,
+      "entrance_lng": -74.1921111,
+      "entrance_source": "OSM parking_entrance node 9023900274"
     },
     {
       "id": "nwk-bears-stadium",
@@ -178,7 +202,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage.",
-      "source": "newarkmuseumart.org"
+      "source": "newarkmuseumart.org",
+      "entrance_lat": 40.7402895,
+      "entrance_lng": -74.1709391,
+      "entrance_source": "OSM parking_entrance node 11738079727"
     },
     {
       "id": "nwk-ironbound",
@@ -226,7 +253,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Audible HQ building.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7344302,
+      "entrance_lng": -74.1685185,
+      "entrance_source": "OSM parking_entrance node 12211201933"
     },
     {
       "id": "ewr-p1-garage",
@@ -321,7 +351,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 40.6397533,
+      "entrance_lng": -74.0766241,
+      "entrance_source": "OSM parking_entrance node 4409340616"
     },
     {
       "id": "osm-w1236418921",

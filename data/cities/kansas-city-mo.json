@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Multiple Entertainment district ramps.",
-      "source": "powerandlightdistrict.com"
+      "source": "powerandlightdistrict.com",
+      "entrance_lat": 39.1016575,
+      "entrance_lng": -94.5841361,
+      "entrance_source": "OSM parking_entrance node 9934921950"
     },
     {
       "id": "kc-t-mobile-center",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Sporting KC / concerts arena.",
-      "source": "t-mobilecenter.com"
+      "source": "t-mobilecenter.com",
+      "entrance_lat": 39.0979694,
+      "entrance_lng": -94.5831355,
+      "entrance_source": "OSM parking_entrance node 9896540115"
     },
     {
       "id": "kc-convention-bartle",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground convention center.",
-      "source": "kcconvention.com"
+      "source": "kcconvention.com",
+      "entrance_lat": 39.0990221,
+      "entrance_lng": -94.5893203,
+      "entrance_source": "OSM parking_entrance node 5219086322"
     },
     {
       "id": "kc-crown-center",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hallmark HQ + shopping + Sea Life.",
-      "source": "crowncenter.com"
+      "source": "crowncenter.com",
+      "entrance_lat": 39.0837428,
+      "entrance_lng": -94.5825337,
+      "entrance_source": "OSM parking_entrance node 1527768156"
     },
     {
       "id": "kc-union-station",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic station + Science City.",
-      "source": "unionstation.org"
+      "source": "unionstation.org",
+      "entrance_lat": 39.0847269,
+      "entrance_lng": -94.5871063,
+      "entrance_source": "OSM parking_entrance node 7267119927"
     },
     {
       "id": "kc-wwi-museum",
@@ -70,7 +85,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Liberty Memorial surface lot.",
-      "source": "theworldwar.org"
+      "source": "theworldwar.org",
+      "entrance_lat": 39.0813757,
+      "entrance_lng": -94.5834849,
+      "entrance_source": "OSM parking_entrance node 13419023025"
     },
     {
       "id": "kc-country-club-plaza",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic open-air shopping plaza garages.",
-      "source": "countryclubplaza.com"
+      "source": "countryclubplaza.com",
+      "entrance_lat": 39.041604,
+      "entrance_lng": -94.5888708,
+      "entrance_source": "OSM parking_entrance node 12468355573"
     },
     {
       "id": "kc-river-market",
@@ -118,7 +139,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Attached underground garage.",
-      "source": "kauffmancenter.org"
+      "source": "kauffmancenter.org",
+      "entrance_lat": 39.0931228,
+      "entrance_lng": -94.587163,
+      "entrance_source": "OSM parking_entrance node 6389321668"
     },
     {
       "id": "kc-negro-leagues",
@@ -238,7 +262,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flykci.com"
+      "source": "flykci.com",
+      "entrance_lat": 39.294186,
+      "entrance_lng": -94.713756,
+      "entrance_source": "OSM parking_entrance node 6793547205"
     },
     {
       "id": "osm-w132571409",
@@ -250,7 +277,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.1004111,
+      "entrance_lng": -94.5786419,
+      "entrance_source": "OSM parking_entrance node 9892147598"
     },
     {
       "id": "osm-w170989886",
@@ -262,7 +292,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.0990976,
+      "entrance_lng": -94.5811758,
+      "entrance_source": "OSM parking_entrance node 9893687663"
     },
     {
       "id": "osm-w256809109",
@@ -274,7 +307,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.0926503,
+      "entrance_lng": -94.5836937,
+      "entrance_source": "OSM parking_entrance node 10220499579"
     },
     {
       "id": "osm-w340311466",
@@ -286,7 +322,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.1015921,
+      "entrance_lng": -94.5841391,
+      "entrance_source": "OSM parking_entrance node 9934921943"
     },
     {
       "id": "osm-w439241350",
@@ -298,7 +337,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "166 spaces [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.0946342,
+      "entrance_lng": -94.5839359,
+      "entrance_source": "OSM parking_entrance node 10215861364"
     },
     {
       "id": "osm-w466819062",
@@ -310,7 +352,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.1002005,
+      "entrance_lng": -94.5878866,
+      "entrance_source": "OSM parking_entrance node 12385499469"
     },
     {
       "id": "osm-w620723588",

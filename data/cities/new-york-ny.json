@@ -22,7 +22,10 @@
       "height_label": "6'8\"",
       "oversized": true,
       "notes": "Near Empire State Building, Bryant Park. Accepts oversized with +$12.67 surcharge.",
-      "source": "ParkRoll partner list"
+      "source": "ParkRoll partner list",
+      "entrance_lat": 40.746057,
+      "entrance_lng": -73.9801221,
+      "entrance_source": "OSM parking_entrance node 6347916314"
     },
     {
       "id": "nyc-midtowneast-apts",
@@ -34,7 +37,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Icon Parking operator. Standard midtown clearance.",
-      "source": "ParkMobile/Icon"
+      "source": "ParkMobile/Icon",
+      "entrance_lat": 40.7593425,
+      "entrance_lng": -73.9644641,
+      "entrance_source": "OSM parking_entrance node 10836437298"
     },
     {
       "id": "nyc-herald-sq",
@@ -46,7 +52,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Icon Parking. Taller than most midtown garages. Exact street address needs verification.",
-      "source": "ParkMobile/Icon"
+      "source": "ParkMobile/Icon",
+      "entrance_lat": 40.7481781,
+      "entrance_lng": -73.9896246,
+      "entrance_source": "OSM parking_entrance node 8567327076"
     },
     {
       "id": "nyc-1633bway",
@@ -58,7 +67,10 @@
       "height_label": "6'8\"",
       "oversized": true,
       "notes": "Commercial-vehicle friendly. Accepts trucks, delivery vans, work vehicles. Near Times Square. +$10 oversized surcharge.",
-      "source": "ParkRoll partner list"
+      "source": "ParkRoll partner list",
+      "entrance_lat": 40.7612553,
+      "entrance_lng": -73.9853675,
+      "entrance_source": "OSM parking_entrance node 8704367787"
     },
     {
       "id": "nyc-landon-520w43",
@@ -70,7 +82,10 @@
       "height_label": "9'0\"",
       "oversized": true,
       "notes": "Hell's Kitchen. One of the highest-clearance Manhattan garages \u2014 accommodates large trucks/RVs.",
-      "source": "ParkMobile/Icon"
+      "source": "ParkMobile/Icon",
+      "entrance_lat": 40.7590999,
+      "entrance_lng": -73.9938474,
+      "entrance_source": "OSM parking_entrance node 8393241418"
     },
     {
       "id": "nyc-advance-w43",
@@ -82,7 +97,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Exact address on W 43rd needs verification.",
-      "source": "ParkMobile/Icon"
+      "source": "ParkMobile/Icon",
+      "entrance_lat": 40.7575941,
+      "entrance_lng": -73.9883345,
+      "entrance_source": "OSM parking_entrance node 8669764314"
     },
     {
       "id": "nyc-161w36",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Official Madison Square Garden event garage. 1,500 spaces. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7495332,
+      "entrance_lng": -73.9932857,
+      "entrance_source": "OSM parking_entrance node 8567304865"
     },
     {
       "id": "nyc-penn1",
@@ -118,7 +139,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Penn 1 office tower. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7516064,
+      "entrance_lng": -73.9928867,
+      "entrance_source": "OSM parking_entrance node 4599496701"
     },
     {
       "id": "nyc-port-auth",
@@ -130,7 +154,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rooftop garage above bus terminal. ~600 spaces. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7575941,
+      "entrance_lng": -73.9883345,
+      "entrance_source": "OSM parking_entrance node 8669764314"
     },
     {
       "id": "nyc-20166-67th",
@@ -142,7 +169,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Accepts oversized vehicles per operator policy page. Clearance needs verification.",
-      "source": "20166parking.com"
+      "source": "20166parking.com",
+      "entrance_lat": 40.7669319,
+      "entrance_lng": -73.9616371,
+      "entrance_source": "OSM parking_entrance node 5373598784"
     },
     {
       "id": "nyc-lincoln-ctr",
@@ -154,7 +184,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Public garage serving Lincoln Center. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7734299,
+      "entrance_lng": -73.9838425,
+      "entrance_source": "OSM parking_entrance node 10211295974"
     },
     {
       "id": "nyc-metnorth",
@@ -178,7 +211,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Large Financial District garage under LAZ Parking. Clearance needs verification.",
-      "source": "LAZ Parking"
+      "source": "LAZ Parking",
+      "entrance_lat": 40.7036961,
+      "entrance_lng": -74.0139059,
+      "entrance_source": "OSM parking_entrance node 7687295648"
     },
     {
       "id": "nyc-1west",
@@ -190,7 +226,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "24/7 attended indoor garage. Manhattan Cruise Terminal access. Clearance needs verification.",
-      "source": "parkright.com"
+      "source": "parkright.com",
+      "entrance_lat": 40.7036961,
+      "entrance_lng": -74.0139059,
+      "entrance_source": "OSM parking_entrance node 7687295648"
     },
     {
       "id": "nyc-trinity",
@@ -202,7 +241,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown FiDi. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7071915,
+      "entrance_lng": -74.0140577,
+      "entrance_source": "OSM parking_entrance node 4149936244"
     },
     {
       "id": "nyc-wtc",
@@ -214,7 +256,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Brookfield Place / WTC area. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7129268,
+      "entrance_lng": -74.0122919,
+      "entrance_source": "OSM parking_entrance node 11301575812"
     },
     {
       "id": "nyc-14th8th",
@@ -226,7 +271,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Icon Parking. West Village access.",
-      "source": "ParkMobile/Icon"
+      "source": "ParkMobile/Icon",
+      "entrance_lat": 40.7411854,
+      "entrance_lng": -74.0020296,
+      "entrance_source": "OSM parking_entrance node 12357848377"
     },
     {
       "id": "nyc-proud",
@@ -238,7 +286,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Icon Parking. Exact address needs verification.",
-      "source": "ParkMobile/Icon"
+      "source": "ParkMobile/Icon",
+      "entrance_lat": 40.7405215,
+      "entrance_lng": -73.9888423,
+      "entrance_source": "OSM parking_entrance node 10177726902"
     },
     {
       "id": "nyc-jfk-t1",
@@ -250,7 +301,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent. Standard terminal garage clearance needs verification.",
-      "source": "Port Authority NY/NJ"
+      "source": "Port Authority NY/NJ",
+      "entrance_lat": 40.6452868,
+      "entrance_lng": -73.7819569,
+      "entrance_source": "OSM parking_entrance node 10572129960"
     },
     {
       "id": "nyc-jfk-t4",
@@ -346,7 +400,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hudson Yards / Javits Center area. Walk to High Line. Clearance needs verification.",
-      "source": "Icon Parking"
+      "source": "Icon Parking",
+      "entrance_lat": 40.7523037,
+      "entrance_lng": -74.0017531,
+      "entrance_source": "OSM parking_entrance node 11327602968"
     },
     {
       "id": "nyc-hy-jds-41st",
@@ -358,7 +415,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Between 10th & 11th Ave. Open 24/7. Near Javits, Hudson Yards, Port Authority.",
-      "source": "Icon Parking"
+      "source": "Icon Parking",
+      "entrance_lat": 40.7574007,
+      "entrance_lng": -73.9982716,
+      "entrance_source": "OSM parking_entrance node 8318644138"
     },
     {
       "id": "nyc-hy-mall",
@@ -370,7 +430,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves The Shops at Hudson Yards, The Vessel, The Shed. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.753999,
+      "entrance_lng": -73.9987478,
+      "entrance_source": "OSM parking_entrance node 11144700432"
     },
     {
       "id": "nyc-chelsea-mkt",
@@ -382,7 +445,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Food hall + tourist destination. Nearby garages via 9th Ave.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7419884,
+      "entrance_lng": -74.0039469,
+      "entrance_source": "OSM parking_entrance node 12357848373"
     },
     {
       "id": "nyc-barclays-atlantic",
@@ -418,7 +484,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Event-only garage under Barclays Center.",
-      "source": "barclayscenter.com"
+      "source": "barclayscenter.com",
+      "entrance_lat": 40.6818344,
+      "entrance_lng": -73.9745807,
+      "entrance_source": "OSM parking_entrance node 13701020426"
     },
     {
       "id": "nyc-yankee-gerard",
@@ -478,7 +547,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Javits has no on-site parking \u2014 multiple off-site garages within walking distance.",
-      "source": "javitscenter.com"
+      "source": "javitscenter.com",
+      "entrance_lat": 40.756995,
+      "entrance_lng": -74.0042199,
+      "entrance_source": "OSM parking_entrance node 8261122870"
     },
     {
       "id": "nyc-brooklyn-navy",
@@ -514,7 +586,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New Amtrak hall west side of Penn.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7538172,
+      "entrance_lng": -73.9969471,
+      "entrance_source": "OSM parking_entrance node 10089242335"
     },
     {
       "id": "nyc-rock-plaza",
@@ -538,7 +613,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under the mall \u2014 Deutsche Bank Center. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7693482,
+      "entrance_lng": -73.9815382,
+      "entrance_source": "OSM parking_entrance node 10187602682"
     }
   ],
   "tunnels": [

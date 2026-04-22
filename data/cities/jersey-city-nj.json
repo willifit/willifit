@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hudson River mall + PATH station.",
-      "source": "newportnj.com"
+      "source": "newportnj.com",
+      "entrance_lat": 40.7273361,
+      "entrance_lng": -74.0358764,
+      "entrance_source": "OSM parking_entrance node 10723062054"
     },
     {
       "id": "jc-journal-square-path",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "PATH hub. Largest transportation center in NJ.",
-      "source": "panynj.gov"
+      "source": "panynj.gov",
+      "entrance_lat": 40.7327082,
+      "entrance_lng": -74.0613541,
+      "entrance_source": "OSM parking_entrance node 12313769354"
     },
     {
       "id": "jc-grove-st-path",
@@ -34,7 +40,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown JC restaurant district. Street + small lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.719522,
+      "entrance_lng": -74.0418592,
+      "entrance_source": "OSM parking_entrance node 6579266830"
     },
     {
       "id": "jc-liberty-state-park",
@@ -82,7 +91,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Waterfront entertainment.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7273361,
+      "entrance_lng": -74.0358764,
+      "entrance_source": "OSM parking_entrance node 10723062054"
     },
     {
       "id": "jc-metro-plaza",
@@ -94,7 +106,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Journal Square office/residential.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7327082,
+      "entrance_lng": -74.0613541,
+      "entrance_source": "OSM parking_entrance node 12313769354"
     },
     {
       "id": "jc-port-liberte",
@@ -190,7 +205,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Campus parking.",
-      "source": "saintpeters.edu"
+      "source": "saintpeters.edu",
+      "entrance_lat": 40.7258086,
+      "entrance_lng": -74.0660012,
+      "entrance_source": "OSM parking_entrance node 12381750712"
     },
     {
       "id": "jc-edison-pkwy",
@@ -202,7 +220,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Private operator.",
-      "source": "parkfast.com"
+      "source": "parkfast.com",
+      "entrance_lat": 40.7327082,
+      "entrance_lng": -74.0613541,
+      "entrance_source": "OSM parking_entrance node 12313769354"
     },
     {
       "id": "jc-hudson-river-waterfront",
@@ -238,7 +259,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rail + ferry hub.",
-      "source": "njtransit.com"
+      "source": "njtransit.com",
+      "entrance_lat": 40.7370551,
+      "entrance_lng": -74.0281221,
+      "entrance_source": "OSM parking_entrance node 12148898922"
     },
     {
       "id": "jc-secaucus-junction",
@@ -298,7 +322,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Busy Hudson County commercial strip.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7738214,
+      "entrance_lng": -74.0248519,
+      "entrance_source": "OSM parking_entrance node 7338907697"
     },
     {
       "id": "jc-newark-penn-station",
@@ -310,7 +337,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Newark rail hub adjacent (separate city).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7357315,
+      "entrance_lng": -74.1638255,
+      "entrance_source": "OSM parking_entrance node 5005392487"
     }
   ],
   "tunnels": [

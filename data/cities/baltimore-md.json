@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Inner Harbor central garage.",
-      "source": "baltimore.org"
+      "source": "baltimore.org",
+      "entrance_lat": 39.2855823,
+      "entrance_lng": -76.6143668,
+      "entrance_source": "OSM parking_entrance node 2083185319"
     },
     {
       "id": "bal-convention-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under convention center.",
-      "source": "bccenter.org"
+      "source": "bccenter.org",
+      "entrance_lat": 39.2874055,
+      "entrance_lng": -76.6119995,
+      "entrance_source": "OSM parking_entrance node 4470280423"
     },
     {
       "id": "bal-aquarium-lockwood",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Closest aquarium-adjacent garage.",
-      "source": "aqua.org"
+      "source": "aqua.org",
+      "entrance_lat": 39.28746,
+      "entrance_lng": -76.6070244,
+      "entrance_source": "OSM parking_entrance node 1886926579"
     },
     {
       "id": "bal-aquarium-pier-6",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium + amphitheater.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.285751,
+      "entrance_lng": -76.6050462,
+      "entrance_source": "OSM parking_entrance node 1886924656"
     },
     {
       "id": "bal-camden-yards",
@@ -58,7 +70,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Orioles stadium surface lots.",
-      "source": "mlb.com/orioles"
+      "source": "mlb.com/orioles",
+      "entrance_lat": 39.2855482,
+      "entrance_lng": -76.6218644,
+      "entrance_source": "OSM parking_entrance node 8999123982"
     },
     {
       "id": "bal-mt-royal",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Inner Harbor office area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.2891692,
+      "entrance_lng": -76.6103069,
+      "entrance_source": "OSM parking_entrance node 13082853029"
     },
     {
       "id": "bal-ravens-stadium",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Harbor East mixed-use.",
-      "source": "harboreast.com"
+      "source": "harboreast.com",
+      "entrance_lat": 39.2837894,
+      "entrance_lng": -76.6003703,
+      "entrance_source": "OSM parking_entrance node 2414964046"
     },
     {
       "id": "bal-fells-point",
@@ -130,7 +151,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak/MARC.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.3068624,
+      "entrance_lng": -76.6153807,
+      "entrance_source": "OSM parking_entrance node 832288780"
     },
     {
       "id": "bal-mount-vernon",
@@ -154,7 +178,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Suburban mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 39.4000117,
+      "entrance_lng": -76.6042304,
+      "entrance_source": "OSM parking_entrance node 9767617275"
     },
     {
       "id": "bal-horseshoe-casino",
@@ -178,7 +205,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "hopkinsmedicine.org"
+      "source": "hopkinsmedicine.org",
+      "entrance_lat": 39.2962265,
+      "entrance_lng": -76.5929416,
+      "entrance_source": "OSM parking_entrance node 7406370855"
     },
     {
       "id": "bal-science-center",
@@ -250,7 +280,10 @@
       "height_label": "7'8\"",
       "oversized": false,
       "notes": "887 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.4000312,
+      "entrance_lng": -76.603724,
+      "entrance_source": "OSM parking_entrance node 9765086903"
     },
     {
       "id": "osm-w111740404",
@@ -262,7 +295,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid; hrs: 24/7 [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.3988365,
+      "entrance_lng": -76.6069261,
+      "entrance_source": "OSM parking_entrance node 11951145170"
     },
     {
       "id": "osm-w178328345",
@@ -274,7 +310,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2877419,
+      "entrance_lng": -76.6075397,
+      "entrance_source": "OSM parking_entrance node 1886926689"
     },
     {
       "id": "osm-w178328582",
@@ -286,7 +325,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2873564,
+      "entrance_lng": -76.6088709,
+      "entrance_source": "OSM parking_entrance node 8058625267"
     },
     {
       "id": "osm-w336299270",
@@ -298,7 +340,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2994235,
+      "entrance_lng": -76.5919641,
+      "entrance_source": "OSM parking_entrance node 7406421852"
     },
     {
       "id": "osm-w336309045",
@@ -310,7 +355,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2970573,
+      "entrance_lng": -76.5965833,
+      "entrance_source": "OSM parking_entrance node 7406373084"
     },
     {
       "id": "osm-w336312351",
@@ -322,7 +370,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2973333,
+      "entrance_lng": -76.5964634,
+      "entrance_source": "OSM parking_entrance node 7406379318"
     },
     {
       "id": "osm-w336341570",
@@ -334,7 +385,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2884873,
+      "entrance_lng": -76.6065856,
+      "entrance_source": "OSM parking_entrance node 2504064469"
     },
     {
       "id": "osm-w336347909",
@@ -358,7 +412,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2891692,
+      "entrance_lng": -76.6103069,
+      "entrance_source": "OSM parking_entrance node 13082853029"
     },
     {
       "id": "osm-w336383735",
@@ -370,7 +427,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "400 spaces; paid; hrs: Mo-Fr 07:00-19:00",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2920983,
+      "entrance_lng": -76.6226062,
+      "entrance_source": "OSM parking_entrance node 12159287674"
     },
     {
       "id": "osm-w338038171",
@@ -382,7 +442,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.3009985,
+      "entrance_lng": -76.5898807,
+      "entrance_source": "OSM parking_entrance node 12853490810"
     },
     {
       "id": "osm-w338084081",
@@ -406,7 +469,10 @@
       "height_label": "6'9\"",
       "oversized": false,
       "notes": "989 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2896664,
+      "entrance_lng": -76.6221639,
+      "entrance_source": "OSM parking_entrance node 3978182825"
     },
     {
       "id": "osm-w507830907",
@@ -418,7 +484,10 @@
       "height_label": "7'1\"",
       "oversized": false,
       "notes": "739 spaces; paid; hrs: Mo-Fr 05:30-23:30",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2914468,
+      "entrance_lng": -76.6265017,
+      "entrance_source": "OSM parking_entrance node 4972583185"
     },
     {
       "id": "osm-w736701630",
@@ -430,7 +499,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 39.2951002,
+      "entrance_lng": -76.5921798,
+      "entrance_source": "OSM parking_entrance node 982863577"
     }
   ],
   "tunnels": [

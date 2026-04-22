@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned, serves Riverfront + The Landing area.",
-      "source": "jacksonville.gov"
+      "source": "jacksonville.gov",
+      "entrance_lat": 30.3262073,
+      "entrance_lng": -81.6585227,
+      "entrance_source": "OSM parking_entrance node 5644416417"
     },
     {
       "id": "jax-ed-ball",
@@ -58,7 +61,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "County garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 30.3289305,
+      "entrance_lng": -81.665896,
+      "entrance_source": "OSM parking_entrance node 13417593389"
     },
     {
       "id": "jax-cityplace",
@@ -82,7 +88,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Riverwalk surface lots. Accommodates larger vehicles.",
-      "source": "dtjax.com"
+      "source": "dtjax.com",
+      "entrance_lat": 30.3262073,
+      "entrance_lng": -81.6585227,
+      "entrance_source": "OSM parking_entrance node 5644416417"
     },
     {
       "id": "jax-prime-osborn",
@@ -94,7 +103,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large surface lots, former Union Terminal.",
-      "source": "visitjacksonville.com"
+      "source": "visitjacksonville.com",
+      "entrance_lat": 30.3227685,
+      "entrance_lng": -81.6730324,
+      "entrance_source": "OSM parking_entrance node 10287940896"
     },
     {
       "id": "jax-everbank-lots",

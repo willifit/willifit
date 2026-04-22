@@ -130,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Treasure museum.",
-      "source": "melfisher.org"
+      "source": "melfisher.org",
+      "entrance_lat": 24.5575742,
+      "entrance_lng": -81.8067373,
+      "entrance_source": "OSM parking_entrance node 8170719751"
     },
     {
       "id": "kw-conch-republic-waterfront",
@@ -154,7 +157,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic home museum.",
-      "source": "audubonhouse.org"
+      "source": "audubonhouse.org",
+      "entrance_lat": 24.5575742,
+      "entrance_lng": -81.8067373,
+      "entrance_source": "OSM parking_entrance node 8170719751"
     },
     {
       "id": "kw-ft-martello",

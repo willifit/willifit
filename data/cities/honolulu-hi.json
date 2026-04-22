@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest open-air mall in world. Multi-level garages.",
-      "source": "alamoanacenter.com"
+      "source": "alamoanacenter.com",
+      "entrance_lat": 21.2903129,
+      "entrance_lng": -157.8444946,
+      "entrance_source": "OSM parking_entrance node 11568831372"
     },
     {
       "id": "hnl-international-mkt",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Waikiki shopping center. Underground garage.",
-      "source": "shopinternationalmarketplace.com"
+      "source": "shopinternationalmarketplace.com",
+      "entrance_lat": 21.2786958,
+      "entrance_lng": -157.8300108,
+      "entrance_source": "OSM parking_entrance node 9861415823"
     },
     {
       "id": "hnl-royal-hawaiian-center",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Waikiki shopping + dining.",
-      "source": "royalhawaiiancenter.com"
+      "source": "royalhawaiiancenter.com",
+      "entrance_lat": 21.2800258,
+      "entrance_lng": -157.8288878,
+      "entrance_source": "OSM parking_entrance node 7777172968"
     },
     {
       "id": "hnl-hawaii-conv-ctr",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main convention center.",
-      "source": "hawaiiconvention.com"
+      "source": "hawaiiconvention.com",
+      "entrance_lat": 21.2910469,
+      "entrance_lng": -157.8388867,
+      "entrance_source": "OSM parking_entrance node 11510751361"
     },
     {
       "id": "hnl-sheraton-waikiki",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major Waikiki hotel.",
-      "source": "marriott.com"
+      "source": "marriott.com",
+      "entrance_lat": 21.2786958,
+      "entrance_lng": -157.8300108,
+      "entrance_source": "OSM parking_entrance node 9861415823"
     },
     {
       "id": "hnl-hilton-hawaiian-village",
@@ -142,7 +157,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage.",
-      "source": "honolulumuseum.org"
+      "source": "honolulumuseum.org",
+      "entrance_lat": 21.3037517,
+      "entrance_lng": -157.8510105,
+      "entrance_source": "OSM parking_entrance node 12599445704"
     },
     {
       "id": "hnl-bishop-museum",
@@ -202,7 +220,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Boat harbor + Fisherman's Wharf area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 21.2929002,
+      "entrance_lng": -157.8526325,
+      "entrance_source": "OSM parking_entrance node 3663403487"
     },
     {
       "id": "hnl-uh-manoa",
@@ -238,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Chinatown district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 21.3137372,
+      "entrance_lng": -157.8608625,
+      "entrance_source": "OSM parking_entrance node 10794035051"
     },
     {
       "id": "hnl-dole-plantation",

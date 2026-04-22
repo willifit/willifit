@@ -10,7 +10,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Premium for Smithsonian access. Max 7'0\".",
-      "source": "rrbitc.com"
+      "source": "rrbitc.com",
+      "entrance_lat": 38.8956122,
+      "entrance_lng": -77.0272244,
+      "entrance_source": "OSM parking_entrance node 13194611438"
     },
     {
       "id": "dc-capital-one-arena",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Concerts only. Not open to public for Caps/Wizards games.",
-      "source": "capitalonearena.com"
+      "source": "capitalonearena.com",
+      "entrance_lat": 38.8972189,
+      "entrance_lng": -77.021173,
+      "entrance_source": "OSM parking_entrance node 12451835493"
     },
     {
       "id": "dc-union-station",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center underground.",
-      "source": "events.dc.gov"
+      "source": "events.dc.gov",
+      "entrance_lat": 38.904046,
+      "entrance_lng": -77.021014,
+      "entrance_source": "OSM parking_entrance node 13250739630"
     },
     {
       "id": "dc-smithsonian-mall-lot",
@@ -94,7 +103,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Nats ballpark garages.",
-      "source": "mlb.com/nationals"
+      "source": "mlb.com/nationals",
+      "entrance_lat": 38.8737636,
+      "entrance_lng": -77.0063092,
+      "entrance_source": "OSM parking_entrance node 11053779367"
     },
     {
       "id": "dc-gallery-place",
@@ -106,7 +118,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Chinatown / Capital One Arena adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.8990044,
+      "entrance_lng": -77.0227698,
+      "entrance_source": "OSM parking_entrance node 13194697662"
     },
     {
       "id": "dc-cityctr",
@@ -118,7 +133,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale downtown retail garage.",
-      "source": "citycenterdc.com"
+      "source": "citycenterdc.com",
+      "entrance_lat": 38.9001791,
+      "entrance_lng": -77.0241051,
+      "entrance_source": "OSM parking_entrance node 13250739638"
     },
     {
       "id": "dc-washington-hilton",
@@ -130,7 +148,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel + event garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.9161268,
+      "entrance_lng": -77.0436907,
+      "entrance_source": "OSM parking_entrance node 12423436311"
     },
     {
       "id": "dc-dupont",
@@ -142,7 +163,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Multiple small downtown garages.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.9051327,
+      "entrance_lng": -77.0415295,
+      "entrance_source": "OSM parking_entrance node 9672573881"
     },
     {
       "id": "dc-georgetown",
@@ -154,7 +178,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Georgetown shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.9044341,
+      "entrance_lng": -77.065142,
+      "entrance_source": "OSM parking_entrance node 9140635545"
     },
     {
       "id": "dc-kennedy-ctr",
@@ -166,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic performing arts venue underground.",
-      "source": "kennedy-center.org"
+      "source": "kennedy-center.org",
+      "entrance_lat": 38.8949702,
+      "entrance_lng": -77.0547669,
+      "entrance_source": "OSM parking_entrance node 6867720120"
     },
     {
       "id": "dc-the-wharf",
@@ -214,7 +244,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "George Washington Univ. visitor garage.",
-      "source": "gwu.edu"
+      "source": "gwu.edu",
+      "entrance_lat": 38.8997017,
+      "entrance_lng": -77.0474703,
+      "entrance_source": "OSM parking_entrance node 3382119818"
     },
     {
       "id": "dc-tysons-corner",
@@ -226,7 +259,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major VA mall just outside DC.",
-      "source": "tysonscornercenter.com"
+      "source": "tysonscornercenter.com",
+      "entrance_lat": 38.9172782,
+      "entrance_lng": -77.2209041,
+      "entrance_source": "OSM parking_entrance node 11815478650"
     },
     {
       "id": "dc-pentagon-city",
@@ -238,7 +274,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mall garage.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 38.8627321,
+      "entrance_lng": -77.0583442,
+      "entrance_source": "OSM parking_entrance node 9146864675"
     },
     {
       "id": "dca-daily-garage-a",
@@ -274,7 +313,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Dulles terminal garage.",
-      "source": "flydulles.com"
+      "source": "flydulles.com",
+      "entrance_lat": 38.9532467,
+      "entrance_lng": -77.4528708,
+      "entrance_source": "OSM parking_entrance node 9504074093"
     },
     {
       "id": "iad-economy",
@@ -310,7 +352,10 @@
       "height_label": "6'6\"",
       "oversized": false,
       "notes": "paid; hrs: Mo-Fr 06:00-24:00; Sa-Su 09:00-24:00",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.895252,
+      "entrance_lng": -77.0228181,
+      "entrance_source": "OSM parking_entrance node 12451835490"
     },
     {
       "id": "osm-w23502759",
@@ -322,7 +367,10 @@
       "height_label": "14'10\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9916671,
+      "entrance_lng": -76.9478234,
+      "entrance_source": "OSM parking_entrance node 3732371554"
     },
     {
       "id": "osm-w23502762",
@@ -334,7 +382,10 @@
       "height_label": "16'3\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9952079,
+      "entrance_lng": -76.9441343,
+      "entrance_source": "OSM parking_entrance node 6550214815"
     },
     {
       "id": "osm-w24305863",
@@ -346,7 +397,10 @@
       "height_label": "12'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9873489,
+      "entrance_lng": -76.9542066,
+      "entrance_source": "OSM parking_entrance node 6559039538"
     },
     {
       "id": "osm-w153515337",
@@ -358,7 +412,10 @@
       "height_label": "16'5\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.8812008,
+      "entrance_lng": -77.117824,
+      "entrance_source": "OSM parking_entrance node 6164809978"
     },
     {
       "id": "osm-w176731206",
@@ -382,7 +439,10 @@
       "height_label": "14'5\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9698714,
+      "entrance_lng": -76.9509195,
+      "entrance_source": "OSM parking_entrance node 4308257771"
     },
     {
       "id": "osm-w184640039",
@@ -406,7 +466,10 @@
       "height_label": "15'7\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9715311,
+      "entrance_lng": -76.9234114,
+      "entrance_source": "OSM parking_entrance node 6558916365"
     },
     {
       "id": "osm-w245392958",
@@ -418,7 +481,10 @@
       "height_label": "14'2\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9803482,
+      "entrance_lng": -76.9368833,
+      "entrance_source": "OSM parking_entrance node 6575605239"
     },
     {
       "id": "osm-w248766712",
@@ -430,7 +496,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9659313,
+      "entrance_lng": -76.9567909,
+      "entrance_source": "OSM parking_entrance node 4308255532"
     },
     {
       "id": "osm-w612764465",
@@ -442,7 +511,10 @@
       "height_label": "17'8\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9997245,
+      "entrance_lng": -76.9596703,
+      "entrance_source": "OSM parking_entrance node 9712617396"
     },
     {
       "id": "osm-w615364279",
@@ -454,7 +526,10 @@
       "height_label": "14'5\"",
       "oversized": false,
       "notes": "1124 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9656056,
+      "entrance_lng": -76.9565948,
+      "entrance_source": "OSM parking_entrance node 3780360071"
     },
     {
       "id": "osm-w686332533",
@@ -466,7 +541,10 @@
       "height_label": "15'3\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9702998,
+      "entrance_lng": -76.9358669,
+      "entrance_source": "OSM parking_entrance node 6534451161"
     },
     {
       "id": "osm-w1421282483",
@@ -478,7 +556,10 @@
       "height_label": "11'9\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.9759914,
+      "entrance_lng": -76.9285233,
+      "entrance_source": "OSM parking_entrance node 2292011493"
     }
   ],
   "tunnels": [

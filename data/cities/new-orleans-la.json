@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Saints stadium. Multiple adjacent garages.",
-      "source": "caesarssuperdome.com"
+      "source": "caesarssuperdome.com",
+      "entrance_lat": 29.9504384,
+      "entrance_lng": -90.0829358,
+      "entrance_source": "OSM parking_entrance node 10903996935"
     },
     {
       "id": "nola-smoothie-king-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Pelicans arena. Shares Superdome complex.",
-      "source": "smoothiekingcenter.com"
+      "source": "smoothiekingcenter.com",
+      "entrance_lat": 29.9494678,
+      "entrance_lng": -90.0803571,
+      "entrance_source": "OSM parking_entrance node 10903996920"
     },
     {
       "id": "nola-convention-ctr",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "mccno.com"
+      "source": "mccno.com",
+      "entrance_lat": 29.9422929,
+      "entrance_lng": -90.0700164,
+      "entrance_source": "OSM parking_entrance node 11222409790"
     },
     {
       "id": "nola-harrahs",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Casino + Caesars now.",
-      "source": "caesars.com"
+      "source": "caesars.com",
+      "entrance_lat": 29.9477839,
+      "entrance_lng": -90.0648995,
+      "entrance_source": "OSM parking_entrance node 4751332222"
     },
     {
       "id": "nola-st-louis-1",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Edge of French Quarter.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.9547245,
+      "entrance_lng": -90.0672204,
+      "entrance_source": "OSM parking_entrance node 2188362091"
     },
     {
       "id": "nola-jax-brewery",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "French Quarter riverfront.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.9566677,
+      "entrance_lng": -90.0622967,
+      "entrance_source": "OSM parking_entrance node 3356907892"
     },
     {
       "id": "nola-premium-canal",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core.",
-      "source": "premiumparking.com"
+      "source": "premiumparking.com",
+      "entrance_lat": 29.95152,
+      "entrance_lng": -90.0681387,
+      "entrance_source": "OSM parking_entrance node 3067445345"
     },
     {
       "id": "nola-aquarium",
@@ -106,7 +127,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shopping + cruise terminal access.",
-      "source": "riverwalkneworleans.com"
+      "source": "riverwalkneworleans.com",
+      "entrance_lat": 29.9477839,
+      "entrance_lng": -90.0648995,
+      "entrance_source": "OSM parking_entrance node 4751332222"
     },
     {
       "id": "nola-poydras",
@@ -118,7 +142,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "CBD office district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.9497167,
+      "entrance_lng": -90.0763887,
+      "entrance_source": "OSM parking_entrance node 10841609491"
     },
     {
       "id": "nola-fulton-street",
@@ -274,7 +301,10 @@
       "height_label": "17'7\"",
       "oversized": false,
       "notes": "0 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 29.9464763,
+      "entrance_lng": -90.064856,
+      "entrance_source": "OSM parking_entrance node 4751311826"
     }
   ],
   "tunnels": [],

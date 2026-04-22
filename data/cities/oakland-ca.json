@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Waterfront district.",
-      "source": "jacklondonsquare.com"
+      "source": "jacklondonsquare.com",
+      "entrance_lat": 37.7946915,
+      "entrance_lng": -122.275872,
+      "entrance_source": "OSM parking_entrance node 6290507420"
     },
     {
       "id": "oak-ferry-building",
@@ -34,7 +37,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ferry terminal surface lot.",
-      "source": "sanfranciscobayferry.com"
+      "source": "sanfranciscobayferry.com",
+      "entrance_lat": 37.7950384,
+      "entrance_lng": -122.276766,
+      "entrance_source": "OSM parking_entrance node 430547785"
     },
     {
       "id": "oak-city-center",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Oakland.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.8030777,
+      "entrance_lng": -122.2698571,
+      "entrance_source": "OSM parking_entrance node 12716765804"
     },
     {
       "id": "oak-rotunda",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City Hall adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.8045306,
+      "entrance_lng": -122.273025,
+      "entrance_source": "OSM parking_entrance node 1428447626"
     },
     {
       "id": "oak-lake-merritt",
@@ -130,7 +142,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic Art Deco theater.",
-      "source": "paramounttheatre.com"
+      "source": "paramounttheatre.com",
+      "entrance_lat": 37.8093897,
+      "entrance_lng": -122.267494,
+      "entrance_source": "OSM parking_entrance node 5061028530"
     },
     {
       "id": "oak-montclair",
@@ -178,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Uptown Oakland district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.8069065,
+      "entrance_lng": -122.2712682,
+      "entrance_source": "OSM parking_entrance node 12776593263"
     },
     {
       "id": "oak-kaiser-arena",
@@ -202,7 +220,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air retail + food hall. Emeryville adjacent.",
-      "source": "baystreetemeryville.com"
+      "source": "baystreetemeryville.com",
+      "entrance_lat": 37.8398769,
+      "entrance_lng": -122.2944377,
+      "entrance_source": "OSM parking_entrance node 4923455179"
     },
     {
       "id": "oak-oakland-chinatown-lot",
@@ -250,7 +271,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Victorian-era preserved park.",
-      "source": "preservationpark.com"
+      "source": "preservationpark.com",
+      "entrance_lat": 37.8046761,
+      "entrance_lng": -122.273111,
+      "entrance_source": "OSM parking_entrance node 4109997013"
     },
     {
       "id": "oak-mills-college",
@@ -310,7 +334,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "BART station + shopping.",
-      "source": "bart.gov"
+      "source": "bart.gov",
+      "entrance_lat": 37.8432975,
+      "entrance_lng": -122.2523578,
+      "entrance_source": "OSM parking_entrance node 7059221470"
     }
   ],
   "tunnels": [

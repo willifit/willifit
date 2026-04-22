@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground garage at park. Entrances off Pearl St or St. Paul St. Clearance needs verification.",
-      "source": "klydewarrenpark.org"
+      "source": "klydewarrenpark.org",
+      "entrance_lat": 32.7899075,
+      "entrance_lng": -96.8018552,
+      "entrance_source": "OSM parking_entrance node 5851710037"
     },
     {
       "id": "dal-parkfast-1925pearl",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "150+ space covered garage next to Klyde Warren Park. Arts District access.",
-      "source": "dallasartsdistrict.org"
+      "source": "dallasartsdistrict.org",
+      "entrance_lat": 32.7892931,
+      "entrance_lng": -96.7995182,
+      "entrance_source": "OSM parking_entrance node 10899170025"
     },
     {
       "id": "dal-perot-museum",
@@ -34,7 +40,10 @@
       "height_label": "8'2\"",
       "oversized": false,
       "notes": "Underground museum garage. 8'2\" clearance typical.",
-      "source": "perotmuseum.org"
+      "source": "perotmuseum.org",
+      "entrance_lat": 32.785487,
+      "entrance_lng": -96.8066909,
+      "entrance_source": "OSM parking_entrance node 11595635509"
     },
     {
       "id": "dal-aT-t-performing",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Winspear Opera, Wyly Theatre. Underground.",
-      "source": "attpac.org"
+      "source": "attpac.org",
+      "entrance_lat": 32.7889646,
+      "entrance_lng": -96.7980732,
+      "entrance_source": "OSM parking_entrance node 10725113256"
     },
     {
       "id": "dal-arts-1821pearl",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Arts District parking. Clearance needs verification.",
-      "source": "parkplaceparking.com"
+      "source": "parkplaceparking.com",
+      "entrance_lat": 32.7892931,
+      "entrance_lng": -96.7995182,
+      "entrance_source": "OSM parking_entrance node 10899170025"
     },
     {
       "id": "dal-one-arts-plaza",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Office + residential tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7886771,
+      "entrance_lng": -96.7998508,
+      "entrance_source": "OSM parking_entrance node 10899170028"
     },
     {
       "id": "dal-trammell-crow",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7898294,
+      "entrance_lng": -96.802338,
+      "entrance_source": "OSM parking_entrance node 5851710072"
     },
     {
       "id": "dal-museum-art",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "DMA underground garage.",
-      "source": "dma.org"
+      "source": "dma.org",
+      "entrance_lat": 32.7875704,
+      "entrance_lng": -96.7996815,
+      "entrance_source": "OSM parking_entrance node 9668858113"
     },
     {
       "id": "dal-nasher",
@@ -106,7 +130,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot + valet.",
-      "source": "nashersculpturecenter.org"
+      "source": "nashersculpturecenter.org",
+      "entrance_lat": 32.7885801,
+      "entrance_lng": -96.7997335,
+      "entrance_source": "OSM parking_entrance node 10899170026"
     },
     {
       "id": "dal-west-end",
@@ -118,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near JFK Memorial, Dealey Plaza, Sixth Floor Museum.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7818857,
+      "entrance_lng": -96.8079561,
+      "entrance_source": "OSM parking_entrance node 12474107325"
     },
     {
       "id": "dal-sixth-floor",
@@ -130,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves JFK museum + West End. Ace Parking operator.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7794504,
+      "entrance_lng": -96.8071288,
+      "entrance_source": "OSM parking_entrance node 5706869117"
     },
     {
       "id": "dal-reunion-tower",
@@ -142,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Tower + Hyatt + station complex. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7749156,
+      "entrance_lng": -96.8095032,
+      "entrance_source": "OSM parking_entrance node 5807909394"
     },
     {
       "id": "dal-union-station",
@@ -154,7 +190,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak/DART light rail station.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.775827,
+      "entrance_lng": -96.8089815,
+      "entrance_source": "OSM parking_entrance node 13229153927"
     },
     {
       "id": "dal-jpm-chase",
@@ -166,7 +205,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Tallest downtown tower \u2014 green outline. Underground garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7818239,
+      "entrance_lng": -96.8017475,
+      "entrance_source": "OSM parking_entrance node 13530613427"
     },
     {
       "id": "dal-comerica",
@@ -178,7 +220,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7822657,
+      "entrance_lng": -96.7978053,
+      "entrance_source": "OSM parking_entrance node 13157185648"
     },
     {
       "id": "dal-fountain-pl",
@@ -190,7 +235,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic glass skyscraper.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7859918,
+      "entrance_lng": -96.8032021,
+      "entrance_source": "OSM parking_entrance node 13530603781"
     },
     {
       "id": "dal-galleria",
@@ -202,7 +250,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major mall garage. North Dallas. Indoor ice rink.",
-      "source": "galleriadallas.com"
+      "source": "galleriadallas.com",
+      "entrance_lat": 32.9340081,
+      "entrance_lng": -96.8198674,
+      "entrance_source": "OSM parking_entrance node 13414244096"
     },
     {
       "id": "dal-northpark-ctr",
@@ -214,7 +265,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale mall. Surface lots mostly.",
-      "source": "northparkcenter.com"
+      "source": "northparkcenter.com",
+      "entrance_lat": 32.8694135,
+      "entrance_lng": -96.7752714,
+      "entrance_source": "OSM parking_entrance node 6318828707"
     },
     {
       "id": "dal-aa-center",
@@ -226,7 +280,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Mavs/Stars arena. Surface lots.",
-      "source": "americanairlinescenter.com"
+      "source": "americanairlinescenter.com",
+      "entrance_lat": 32.7916283,
+      "entrance_lng": -96.8100486,
+      "entrance_source": "OSM parking_entrance node 5854410932"
     },
     {
       "id": "dal-cowboys-tex",
@@ -262,7 +319,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Deep Ellum entertainment district garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.785661,
+      "entrance_lng": -96.7824855,
+      "entrance_source": "OSM parking_entrance node 5910339240"
     },
     {
       "id": "dal-bishop-arts",
@@ -286,7 +346,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "KBHCCD. Multiple lots + garage.",
-      "source": "dallasconventioncenter.com"
+      "source": "dallasconventioncenter.com",
+      "entrance_lat": 32.7713828,
+      "entrance_lng": -96.8020262,
+      "entrance_source": "OSM parking_entrance node 5807814863"
     },
     {
       "id": "dal-dart-cityplace",
@@ -322,7 +385,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "dfwairport.com"
+      "source": "dfwairport.com",
+      "entrance_lat": 32.8982812,
+      "entrance_lng": -97.0380094,
+      "entrance_source": "OSM parking_entrance node 4072461450"
     },
     {
       "id": "dfw-terminal-d",
@@ -334,7 +400,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "International terminal garage.",
-      "source": "dfwairport.com"
+      "source": "dfwairport.com",
+      "entrance_lat": 32.8992263,
+      "entrance_lng": -97.0428507,
+      "entrance_source": "OSM parking_entrance node 5363304082"
     },
     {
       "id": "dfw-express-south",
@@ -406,7 +475,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.8759792,
+      "entrance_lng": -96.9454039,
+      "entrance_source": "OSM parking_entrance node 9019960200"
     },
     {
       "id": "osm-w25474935",
@@ -418,7 +490,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "50 spaces; paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9057032,
+      "entrance_lng": -97.0435339,
+      "entrance_source": "OSM parking_entrance node 5363043710"
     },
     {
       "id": "osm-w25474936",
@@ -430,7 +505,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9055349,
+      "entrance_lng": -97.0441201,
+      "entrance_source": "OSM parking_entrance node 5363044282"
     },
     {
       "id": "osm-w25474937",
@@ -442,7 +520,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9028189,
+      "entrance_lng": -97.0421046,
+      "entrance_source": "OSM parking_entrance node 9790106350"
     },
     {
       "id": "osm-w25549995",
@@ -454,7 +535,10 @@
       "height_label": "19'8\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.8898873,
+      "entrance_lng": -97.0375425,
+      "entrance_source": "OSM parking_entrance node 12381236665"
     },
     {
       "id": "osm-w28015768",
@@ -466,7 +550,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7794332,
+      "entrance_lng": -96.7974369,
+      "entrance_source": "OSM parking_entrance node 5846892953"
     },
     {
       "id": "osm-w28015827",
@@ -478,7 +565,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7799719,
+      "entrance_lng": -96.7975407,
+      "entrance_source": "OSM parking_entrance node 5838904514"
     },
     {
       "id": "osm-w28015930",
@@ -490,7 +580,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7788919,
+      "entrance_lng": -96.8044051,
+      "entrance_source": "OSM parking_entrance node 13030742617"
     },
     {
       "id": "osm-w28545009",
@@ -502,7 +595,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7855981,
+      "entrance_lng": -96.7998662,
+      "entrance_source": "OSM parking_entrance node 9534539682"
     },
     {
       "id": "osm-w28545237",
@@ -514,7 +610,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7820018,
+      "entrance_lng": -96.7933956,
+      "entrance_source": "OSM parking_entrance node 5846753963"
     },
     {
       "id": "osm-w30897859",
@@ -526,7 +625,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7793325,
+      "entrance_lng": -96.7953829,
+      "entrance_source": "OSM parking_entrance node 5846892958"
     },
     {
       "id": "osm-w30924376",
@@ -538,7 +640,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7857008,
+      "entrance_lng": -96.7975176,
+      "entrance_source": "OSM parking_entrance node 13532394946"
     },
     {
       "id": "osm-w31265332",
@@ -550,7 +655,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7877306,
+      "entrance_lng": -96.7944243,
+      "entrance_source": "OSM parking_entrance node 13121774488"
     },
     {
       "id": "osm-w61674812",
@@ -562,7 +670,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9275561,
+      "entrance_lng": -96.8196993,
+      "entrance_source": "OSM parking_entrance node 4458474066"
     },
     {
       "id": "osm-w61674923",
@@ -574,7 +685,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9312933,
+      "entrance_lng": -96.8211125,
+      "entrance_source": "OSM parking_entrance node 4458475492"
     },
     {
       "id": "osm-w179241469",
@@ -586,7 +700,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.783881,
+      "entrance_lng": -96.7947651,
+      "entrance_source": "OSM parking_entrance node 13334726143"
     },
     {
       "id": "osm-w221145484",
@@ -598,7 +715,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9217955,
+      "entrance_lng": -96.7669103,
+      "entrance_source": "OSM parking_entrance node 9552388454"
     },
     {
       "id": "osm-w221145499",
@@ -610,7 +730,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9211182,
+      "entrance_lng": -96.7680084,
+      "entrance_source": "OSM parking_entrance node 9552388463"
     },
     {
       "id": "osm-w256097985",
@@ -622,7 +745,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.0197263,
+      "entrance_lng": -96.7687367,
+      "entrance_source": "OSM parking_entrance node 2617928481"
     },
     {
       "id": "osm-w306437755",
@@ -634,7 +760,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9861027,
+      "entrance_lng": -96.7076607,
+      "entrance_source": "OSM parking_entrance node 6312958912"
     },
     {
       "id": "osm-w306437756",
@@ -646,7 +775,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9887794,
+      "entrance_lng": -96.7056663,
+      "entrance_source": "OSM parking_entrance node 6312958901"
     },
     {
       "id": "osm-w421715523",
@@ -658,7 +790,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9684079,
+      "entrance_lng": -96.717445,
+      "entrance_source": "OSM parking_entrance node 10828322261"
     },
     {
       "id": "osm-w448875162",
@@ -670,7 +805,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9281194,
+      "entrance_lng": -96.8184186,
+      "entrance_source": "OSM parking_entrance node 4458474943"
     },
     {
       "id": "osm-w450893370",
@@ -682,7 +820,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7851883,
+      "entrance_lng": -96.8003504,
+      "entrance_source": "OSM parking_entrance node 9534539680"
     },
     {
       "id": "osm-w463994064",
@@ -694,7 +835,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7878895,
+      "entrance_lng": -96.7817978,
+      "entrance_source": "OSM parking_entrance node 5911937209"
     },
     {
       "id": "osm-w463996114",
@@ -706,7 +850,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7912425,
+      "entrance_lng": -96.7769402,
+      "entrance_source": "OSM parking_entrance node 5921557896"
     },
     {
       "id": "osm-w464124860",
@@ -718,7 +865,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9226601,
+      "entrance_lng": -96.769913,
+      "entrance_source": "OSM parking_entrance node 6326484014"
     },
     {
       "id": "osm-w464124879",
@@ -730,7 +880,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9218957,
+      "entrance_lng": -96.7700337,
+      "entrance_source": "OSM parking_entrance node 6326483997"
     },
     {
       "id": "osm-w465042568",
@@ -742,7 +895,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.8089471,
+      "entrance_lng": -96.8493198,
+      "entrance_source": "OSM parking_entrance node 7104821895"
     },
     {
       "id": "osm-w470463076",
@@ -754,7 +910,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "free [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9739339,
+      "entrance_lng": -96.7141886,
+      "entrance_source": "OSM parking_entrance node 6312958919"
     },
     {
       "id": "osm-w470463077",
@@ -790,7 +949,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7916283,
+      "entrance_lng": -96.8100486,
+      "entrance_source": "OSM parking_entrance node 5854410932"
     },
     {
       "id": "osm-w472145890",
@@ -802,7 +964,10 @@
       "height_label": "14'9\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7916432,
+      "entrance_lng": -96.7776698,
+      "entrance_source": "OSM parking_entrance node 11151659839"
     },
     {
       "id": "osm-w486822477",
@@ -814,7 +979,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.0021417,
+      "entrance_lng": -96.6978952,
+      "entrance_source": "OSM parking_entrance node 12405909542"
     },
     {
       "id": "osm-w530724477",
@@ -826,7 +994,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.984138,
+      "entrance_lng": -96.7105731,
+      "entrance_source": "OSM parking_entrance node 12322994108"
     },
     {
       "id": "osm-w530724478",
@@ -838,7 +1009,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9826226,
+      "entrance_lng": -96.7087212,
+      "entrance_source": "OSM parking_entrance node 5253291958"
     },
     {
       "id": "osm-w531858352",
@@ -850,7 +1024,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9836053,
+      "entrance_lng": -96.7078092,
+      "entrance_source": "OSM parking_entrance node 6312958913"
     },
     {
       "id": "osm-w531858353",
@@ -862,7 +1039,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9861027,
+      "entrance_lng": -96.7076607,
+      "entrance_source": "OSM parking_entrance node 6312958912"
     },
     {
       "id": "osm-w536204309",
@@ -874,7 +1054,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.0002482,
+      "entrance_lng": -96.7002279,
+      "entrance_source": "OSM parking_entrance node 10612133841"
     },
     {
       "id": "osm-w536204310",
@@ -886,7 +1069,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.0010428,
+      "entrance_lng": -96.7027247,
+      "entrance_source": "OSM parking_entrance node 3079491744"
     },
     {
       "id": "osm-w576362372",
@@ -910,7 +1096,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9987538,
+      "entrance_lng": -96.7070857,
+      "entrance_source": "OSM parking_entrance node 7423897098"
     },
     {
       "id": "osm-w597876728",
@@ -922,7 +1111,10 @@
       "height_label": "17'1\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9665895,
+      "entrance_lng": -96.7183784,
+      "entrance_source": "OSM parking_entrance node 6312958928"
     },
     {
       "id": "osm-w597894205",
@@ -970,7 +1162,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7908851,
+      "entrance_lng": -96.8041842,
+      "entrance_source": "OSM parking_entrance node 9583222318"
     },
     {
       "id": "osm-w794179078",
@@ -982,7 +1177,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.785913,
+      "entrance_lng": -96.8027026,
+      "entrance_source": "OSM parking_entrance node 13530613406"
     },
     {
       "id": "osm-w1177967604",
@@ -994,7 +1192,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.9996136,
+      "entrance_lng": -96.6983858,
+      "entrance_source": "OSM parking_entrance node 10942915897"
     },
     {
       "id": "osm-w1177967621",
@@ -1006,7 +1207,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.0000203,
+      "entrance_lng": -96.6965773,
+      "entrance_source": "OSM parking_entrance node 10942915938"
     },
     {
       "id": "osm-r8379645",
@@ -1018,7 +1222,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.0028805,
+      "entrance_lng": -96.7008577,
+      "entrance_source": "OSM parking_entrance node 12393069191"
     }
   ],
   "tunnels": [

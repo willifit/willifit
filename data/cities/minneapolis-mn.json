@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Target Center arena ramp.",
-      "source": "targetcenter.com"
+      "source": "targetcenter.com",
+      "entrance_lat": 44.9788916,
+      "entrance_lng": -93.2774798,
+      "entrance_source": "OSM parking_entrance node 2090482427"
     },
     {
       "id": "mpls-us-bank-stadium",
@@ -46,7 +49,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center ramp.",
-      "source": "minneapolisconventioncenter.com"
+      "source": "minneapolisconventioncenter.com",
+      "entrance_lat": 44.9706158,
+      "entrance_lng": -93.2741446,
+      "entrance_source": "OSM parking_entrance node 12896908999"
     },
     {
       "id": "mpls-gateway",
@@ -82,7 +88,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "minneapolisparking.com"
+      "source": "minneapolisparking.com",
+      "entrance_lat": 44.9737701,
+      "entrance_lng": -93.2728737,
+      "entrance_source": "OSM parking_entrance node 13296233516"
     },
     {
       "id": "mpls-7th-st",
@@ -106,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under The Commons park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 44.9752217,
+      "entrance_lng": -93.2605091,
+      "entrance_source": "OSM parking_entrance node 13712967306"
     },
     {
       "id": "mpls-ids-center",
@@ -118,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic skyscraper underground.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 44.9758381,
+      "entrance_lng": -93.2714481,
+      "entrance_source": "OSM parking_entrance node 6684839161"
     },
     {
       "id": "mpls-nicollet-mall",
@@ -130,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Multiple downtown ramps serve Nicollet Mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 44.9775413,
+      "entrance_lng": -93.2740413,
+      "entrance_source": "OSM parking_entrance node 9785301021"
     },
     {
       "id": "mpls-guthrie",
@@ -142,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mill City district.",
-      "source": "guthrietheater.org"
+      "source": "guthrietheater.org",
+      "entrance_lat": 44.9792319,
+      "entrance_lng": -93.2575476,
+      "entrance_source": "OSM parking_entrance node 12911650751"
     },
     {
       "id": "mpls-mall-of-america",
@@ -166,7 +187,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lots by falls.",
-      "source": "minneapolisparks.org"
+      "source": "minneapolisparks.org",
+      "entrance_lat": 44.9801539,
+      "entrance_lng": -93.2601287,
+      "entrance_source": "OSM parking_entrance node 12911650724"
     },
     {
       "id": "mpls-uofm-east-bank",
@@ -178,7 +202,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "University of Minnesota visitor.",
-      "source": "pts.umn.edu"
+      "source": "pts.umn.edu",
+      "entrance_lat": 44.9731594,
+      "entrance_lng": -93.2294955,
+      "entrance_source": "OSM parking_entrance node 7359957272"
     },
     {
       "id": "mpls-allianz-field",
@@ -202,7 +229,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Wild arena + RiverCentre.",
-      "source": "xcelenergycenter.com"
+      "source": "xcelenergycenter.com",
+      "entrance_lat": 44.943623,
+      "entrance_lng": -93.1024276,
+      "entrance_source": "OSM parking_entrance node 13753021107"
     },
     {
       "id": "mpls-cathedral-hill",
@@ -226,7 +256,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Walker underground garage.",
-      "source": "walkerart.org"
+      "source": "walkerart.org",
+      "entrance_lat": 44.9686231,
+      "entrance_lng": -93.2900061,
+      "entrance_source": "OSM parking_entrance node 1385610398"
     },
     {
       "id": "mpls-minnehaha",
@@ -274,7 +307,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Humphrey Terminal garage.",
-      "source": "mspairport.com"
+      "source": "mspairport.com",
+      "entrance_lat": 44.8736109,
+      "entrance_lng": -93.2239153,
+      "entrance_source": "OSM parking_entrance node 10029260271"
     },
     {
       "id": "msp-quickride",
@@ -298,7 +334,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "237 spaces; paid; covered",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 44.9763518,
+      "entrance_lng": -93.2339418,
+      "entrance_source": "OSM parking_entrance node 322722622"
     },
     {
       "id": "osm-w41424573",
@@ -322,7 +361,10 @@
       "height_label": "7'2\"",
       "oversized": false,
       "notes": "223 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 44.9770135,
+      "entrance_lng": -93.2496912,
+      "entrance_source": "OSM parking_entrance node 11117485854"
     },
     {
       "id": "osm-w129338701",
@@ -334,7 +376,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "74 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 44.9763518,
+      "entrance_lng": -93.2339418,
+      "entrance_source": "OSM parking_entrance node 322722622"
     },
     {
       "id": "osm-w153930019",
@@ -346,7 +391,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "695 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 44.969674,
+      "entrance_lng": -93.2427447,
+      "entrance_source": "OSM parking_entrance node 1707103575"
     },
     {
       "id": "osm-w204487685",
@@ -370,7 +418,10 @@
       "height_label": "7'3\"",
       "oversized": false,
       "notes": "120 spaces",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 44.9763518,
+      "entrance_lng": -93.2339418,
+      "entrance_source": "OSM parking_entrance node 322722622"
     },
     {
       "id": "osm-w284697367",
@@ -382,7 +433,10 @@
       "height_label": "8'0\"",
       "oversized": false,
       "notes": "19 spaces",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 44.9763518,
+      "entrance_lng": -93.2339418,
+      "entrance_source": "OSM parking_entrance node 322722622"
     }
   ],
   "tunnels": [

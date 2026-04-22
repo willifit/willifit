@@ -10,7 +10,10 @@
       "height_label": "8'2\"",
       "oversized": false,
       "notes": "650 spaces. East side of Battelle Hall / Convention Center.",
-      "source": "columbusconventions.com"
+      "source": "columbusconventions.com",
+      "entrance_lat": 39.9704998,
+      "entrance_lng": -82.9995955,
+      "entrance_source": "OSM parking_entrance node 7020696146"
     },
     {
       "id": "col-gccc-south",
@@ -22,7 +25,10 @@
       "height_label": "6'3\"",
       "oversized": false,
       "notes": "LOW. Connects to Hyatt Regency via elevator.",
-      "source": "columbusconventions.com"
+      "source": "columbusconventions.com",
+      "entrance_lat": 39.9695247,
+      "entrance_lng": -82.9994017,
+      "entrance_source": "OSM parking_entrance node 12252358596"
     },
     {
       "id": "col-goodale",
@@ -46,7 +52,10 @@
       "height_label": "7'6\"",
       "oversized": false,
       "notes": "24/7. Serves Nationwide Arena, Short North, Convention Center.",
-      "source": "CurbFlip"
+      "source": "CurbFlip",
+      "entrance_lat": 39.9711264,
+      "entrance_lng": -83.0031963,
+      "entrance_source": "OSM parking_entrance node 7158599253"
     },
     {
       "id": "col-nationwide-arena",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Blue Jackets home. Event parking.",
-      "source": "nationwidearena.com"
+      "source": "nationwidearena.com",
+      "entrance_lat": 39.9680883,
+      "entrance_lng": -83.0037354,
+      "entrance_source": "OSM parking_entrance node 370209621"
     },
     {
       "id": "col-high-st-parking",
@@ -94,7 +106,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Ohio Statehouse.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.962075,
+      "entrance_lng": -82.9986272,
+      "entrance_source": "OSM parking_entrance node 2394202047"
     },
     {
       "id": "col-city-hall",
@@ -106,7 +121,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9611547,
+      "entrance_lng": -83.0020962,
+      "entrance_source": "OSM parking_entrance node 5836792861"
     },
     {
       "id": "col-franklin-park",
@@ -154,7 +172,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air mall with multiple garages.",
-      "source": "eastontowncenter.com"
+      "source": "eastontowncenter.com",
+      "entrance_lat": 40.051521,
+      "entrance_lng": -82.9164391,
+      "entrance_source": "OSM parking_entrance node 5745173609"
     },
     {
       "id": "col-polaris",
@@ -178,7 +199,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Ohio State campus visitor parking.",
-      "source": "osu.edu"
+      "source": "osu.edu",
+      "entrance_lat": 40.0005087,
+      "entrance_lng": -83.007061,
+      "entrance_source": "OSM parking_entrance node 13334875716"
     },
     {
       "id": "col-lane-ave-garage",
@@ -202,7 +226,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9631725,
+      "entrance_lng": -82.99843,
+      "entrance_source": "OSM parking_entrance node 8515558764"
     },
     {
       "id": "col-brewery-district",
@@ -214,7 +241,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.954611,
+      "entrance_lng": -82.9981863,
+      "entrance_source": "OSM parking_entrance node 5789055748"
     },
     {
       "id": "col-cmh-airport",

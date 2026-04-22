@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "1,140 spaces. Connects to Hilton + Marriott. $25-30 daily max.",
-      "source": "parksj.org"
+      "source": "parksj.org",
+      "entrance_lat": 37.3293683,
+      "entrance_lng": -121.8902247,
+      "entrance_source": "OSM parking_entrance node 7159880762"
     },
     {
       "id": "sjc-sap-center",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned. Clearance needs verification.",
-      "source": "sanjoseca.gov"
+      "source": "sanjoseca.gov",
+      "entrance_lat": 37.3376418,
+      "entrance_lng": -121.8851627,
+      "entrance_source": "OSM parking_entrance node 3622788317"
     },
     {
       "id": "sjc-2nd-san-carlos",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown garage.",
-      "source": "sanjoseca.gov"
+      "source": "sanjoseca.gov",
+      "entrance_lat": 37.3303638,
+      "entrance_lng": -121.8880628,
+      "entrance_source": "OSM parking_entrance node 10731733793"
     },
     {
       "id": "sjc-3rd-san-fernando",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core.",
-      "source": "sanjoseca.gov"
+      "source": "sanjoseca.gov",
+      "entrance_lat": 37.3364307,
+      "entrance_lng": -121.8858104,
+      "entrance_source": "OSM parking_entrance node 5681157302"
     },
     {
       "id": "sjc-market-san-pedro",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "San Pedro Square Market adjacent.",
-      "source": "sanjoseca.gov"
+      "source": "sanjoseca.gov",
+      "entrance_lat": 37.3392034,
+      "entrance_lng": -121.8938565,
+      "entrance_source": "OSM parking_entrance node 13105246399"
     },
     {
       "id": "sjc-4th-san-fernando",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage, SJSU adjacent.",
-      "source": "sanjoseca.gov"
+      "source": "sanjoseca.gov",
+      "entrance_lat": 37.3364307,
+      "entrance_lng": -121.8858104,
+      "entrance_source": "OSM parking_entrance node 5681157302"
     },
     {
       "id": "sjc-sjsu-north",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "SJSU south side.",
-      "source": "sjsu.edu"
+      "source": "sjsu.edu",
+      "entrance_lat": 37.3329788,
+      "entrance_lng": -121.8816031,
+      "entrance_source": "OSM parking_entrance node 9760782984"
     },
     {
       "id": "sjc-tech-museum",
@@ -142,7 +163,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "49ers stadium. Surface lots. Oversized OK.",
-      "source": "levisstadium.com"
+      "source": "levisstadium.com",
+      "entrance_lat": 37.4044672,
+      "entrance_lng": -121.9717383,
+      "entrance_source": "OSM parking_entrance node 9980691886"
     },
     {
       "id": "sjc-levi-rv",
@@ -154,7 +178,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated RV lot on game days.",
-      "source": "levisstadium.com"
+      "source": "levisstadium.com",
+      "entrance_lat": 37.4053715,
+      "entrance_lng": -121.9720528,
+      "entrance_source": "OSM parking_entrance node 519642939"
     },
     {
       "id": "sjc-santana-row",
@@ -166,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale shopping + residential. Multiple garages.",
-      "source": "santanarow.com"
+      "source": "santanarow.com",
+      "entrance_lat": 37.3204653,
+      "entrance_lng": -121.9485442,
+      "entrance_source": "OSM parking_entrance node 8716241865"
     },
     {
       "id": "sjc-valley-fair",
@@ -178,7 +208,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major mall garage.",
-      "source": "westfield.com"
+      "source": "westfield.com",
+      "entrance_lat": 37.3227827,
+      "entrance_lng": -121.9460086,
+      "entrance_source": "OSM parking_entrance node 13082522974"
     },
     {
       "id": "sjc-eastridge",
@@ -250,7 +283,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Small public lot. Apple Campus visitor center.",
-      "source": "Apple"
+      "source": "Apple",
+      "entrance_lat": 37.3329456,
+      "entrance_lng": -122.0103342,
+      "entrance_source": "OSM parking_entrance node 5055063508"
     },
     {
       "id": "sjc-airport-garage-a",
@@ -262,7 +298,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "SJC terminal-adjacent. Clearance needs verification.",
-      "source": "flysanjose.com"
+      "source": "flysanjose.com",
+      "entrance_lat": 37.3656159,
+      "entrance_lng": -121.9240064,
+      "entrance_source": "OSM parking_entrance node 6777845875"
     },
     {
       "id": "sjc-airport-garage-b",
@@ -286,7 +325,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flysanjose.com"
+      "source": "flysanjose.com",
+      "entrance_lat": 37.3673172,
+      "entrance_lng": -121.9204288,
+      "entrance_source": "OSM parking_entrance node 6775906927"
     }
   ],
   "tunnels": [

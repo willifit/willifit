@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic Antlers Hotel downtown. Underground.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.8350249,
+      "entrance_lng": -104.8213963,
+      "entrance_source": "OSM parking_entrance node 12102838827"
     },
     {
       "id": "cos-downtown-city-hall",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Municipal garage.",
-      "source": "coloradosprings.gov"
+      "source": "coloradosprings.gov",
+      "entrance_lat": 38.8350249,
+      "entrance_lng": -104.8213963,
+      "entrance_source": "OSM parking_entrance node 12102838827"
     },
     {
       "id": "cos-downtown-plaza",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office + retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.8317677,
+      "entrance_lng": -104.8220651,
+      "entrance_source": "OSM parking_entrance node 3164115197"
     },
     {
       "id": "cos-1-north-cascade",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.8351643,
+      "entrance_lng": -104.822393,
+      "entrance_source": "OSM parking_entrance node 12212717924"
     },
     {
       "id": "cos-colorado-ft-carson",
@@ -154,7 +166,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "2020 museum garage.",
-      "source": "usopm.org"
+      "source": "usopm.org",
+      "entrance_lat": 38.8305249,
+      "entrance_lng": -104.827194,
+      "entrance_source": "OSM parking_entrance node 7787938935"
     },
     {
       "id": "cos-colorado-college",
@@ -226,7 +241,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Multiple surface lots for monthly art walk.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.8351085,
+      "entrance_lng": -104.820832,
+      "entrance_source": "OSM parking_entrance node 12102838825"
     },
     {
       "id": "cos-citadel-mall",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "fresnoconventioncenter.com"
+      "source": "fresnoconventioncenter.com",
+      "entrance_lat": 36.7333937,
+      "entrance_lng": -119.7910881,
+      "entrance_source": "OSM parking_entrance node 12042045682"
     },
     {
       "id": "fre-chukchansi-park",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "AAA ballpark.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 36.7367145,
+      "entrance_lng": -119.7881232,
+      "entrance_source": "OSM parking_entrance node 11914344161"
     },
     {
       "id": "fre-save-mart-center",
@@ -94,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown civic garage.",
-      "source": "fresno.gov"
+      "source": "fresno.gov",
+      "entrance_lat": 36.7371516,
+      "entrance_lng": -119.7886012,
+      "entrance_source": "OSM parking_entrance node 9873878053"
     },
     {
       "id": "fre-fulton-mall",
@@ -298,7 +307,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Part of convention center complex.",
-      "source": "fresnoconventioncenter.com"
+      "source": "fresnoconventioncenter.com",
+      "entrance_lat": 36.733368,
+      "entrance_lng": -119.7911202,
+      "entrance_source": "OSM parking_entrance node 12042045680"
     },
     {
       "id": "fre-st-agnes-hospital",

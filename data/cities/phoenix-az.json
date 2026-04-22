@@ -10,7 +10,10 @@
       "height_label": "6'4\"",
       "oversized": false,
       "notes": "Low clearance. Near Herberger Theater, Convention Center.",
-      "source": "BestParking"
+      "source": "BestParking",
+      "entrance_lat": 33.4490164,
+      "entrance_lng": -112.0753242,
+      "entrance_source": "OSM parking_entrance node 1604510861"
     },
     {
       "id": "collier",
@@ -22,7 +25,10 @@
       "height_label": "8'2\"",
       "oversized": true,
       "notes": "Bank of America Tower garage. 1,200 spots. EV charging.",
-      "source": "BestParking"
+      "source": "BestParking",
+      "entrance_lat": 33.4480568,
+      "entrance_lng": -112.072003,
+      "entrance_source": "OSM parking_entrance node 10972324632"
     },
     {
       "id": "cityscape",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground, up to 2,000 cars. 24/7 security. Needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4490164,
+      "entrance_lng": -112.0753242,
+      "entrance_source": "OSM parking_entrance node 1604510861"
     },
     {
       "id": "jefferson",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "1,000+ spaces. Near State Capitol, Convention Center, Chase Field.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4480381,
+      "entrance_lng": -112.0781455,
+      "entrance_source": "OSM parking_entrance node 12320080181"
     },
     {
       "id": "arizonactr",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent to Arizona Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4524968,
+      "entrance_lng": -112.0701143,
+      "entrance_source": "OSM parking_entrance node 12265858402"
     },
     {
       "id": "heritage",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Heritage Square, Science Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4507086,
+      "entrance_lng": -112.067855,
+      "entrance_source": "OSM parking_entrance node 10905880503"
     },
     {
       "id": "centralarts",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Multiple entries off Central Ave.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4667027,
+      "entrance_lng": -112.0745961,
+      "entrance_source": "OSM parking_entrance node 9378342926"
     },
     {
       "id": "hyatt-regency",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel garage, public parking available.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4480568,
+      "entrance_lng": -112.072003,
+      "entrance_source": "OSM parking_entrance node 10972324632"
     },
     {
       "id": "renaissance",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Renaissance Square office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4489264,
+      "entrance_lng": -112.0753232,
+      "entrance_source": "OSM parking_entrance node 1604510852"
     },
     {
       "id": "convctr-west",
@@ -118,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Phoenix Convention Center West.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4473502,
+      "entrance_lng": -112.070093,
+      "entrance_source": "OSM parking_entrance node 12497512529"
     },
     {
       "id": "convctr-east",
@@ -130,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Phoenix Convention Center East.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4507086,
+      "entrance_lng": -112.067855,
+      "entrance_source": "OSM parking_entrance node 10905880503"
     },
     {
       "id": "freeport",
@@ -142,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Office tower garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4519942,
+      "entrance_lng": -112.073206,
+      "entrance_source": "OSM parking_entrance node 10065142928"
     },
     {
       "id": "roosevelt-point",
@@ -178,7 +214,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent. $30/day max.",
-      "source": "Sky Harbor"
+      "source": "Sky Harbor",
+      "entrance_lat": 33.4351837,
+      "entrance_lng": -112.0078494,
+      "entrance_source": "OSM parking_entrance node 9287293857"
     },
     {
       "id": "phx-economy-a",
@@ -190,7 +229,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Economy garage, $16/day.",
-      "source": "Sky Harbor"
+      "source": "Sky Harbor",
+      "entrance_lat": 33.4357509,
+      "entrance_lng": -112.0009636,
+      "entrance_source": "OSM parking_entrance node 9899580119"
     },
     {
       "id": "phx-economy-b",
@@ -202,7 +244,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Economy garage, $16/day.",
-      "source": "Sky Harbor"
+      "source": "Sky Harbor",
+      "entrance_lat": 33.4352422,
+      "entrance_lng": -112.0005966,
+      "entrance_source": "OSM parking_entrance node 8825180547"
     },
     {
       "id": "phx-oversized",
@@ -214,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "OVERSIZED PARKING \u2014 designated area east of Terminal 4 for RVs, trucks, trailers.",
-      "source": "Sky Harbor"
+      "source": "Sky Harbor",
+      "entrance_lat": 33.4351718,
+      "entrance_lng": -112.0062584,
+      "entrance_source": "OSM parking_entrance node 9287293736"
     },
     {
       "id": "phx-westeconomy",
@@ -262,7 +310,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Footprint Center (Suns arena).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4467169,
+      "entrance_lng": -112.0705443,
+      "entrance_source": "OSM parking_entrance node 11975211100"
     },
     {
       "id": "chase-field-garage",
@@ -274,7 +325,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Chase Field (D-backs).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4439739,
+      "entrance_lng": -112.0675256,
+      "entrance_source": "OSM parking_entrance node 2980250897"
     },
     {
       "id": "phx-biltmore-fashion",
@@ -286,7 +340,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Free parking in 4-level garage (north/west sides). South/east premium first 2 hrs complimentary. Valet $6.",
-      "source": "reddevelopment.com"
+      "source": "reddevelopment.com",
+      "entrance_lat": 33.5088042,
+      "entrance_lng": -112.026486,
+      "entrance_source": "OSM parking_entrance node 13419139627"
     },
     {
       "id": "phx-biltmore-surface",
@@ -298,7 +355,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots on north and west sides. Free. Accommodates oversized.",
-      "source": "reddevelopment.com"
+      "source": "reddevelopment.com",
+      "entrance_lat": 33.5088042,
+      "entrance_lng": -112.026486,
+      "entrance_source": "OSM parking_entrance node 13419139627"
     },
     {
       "id": "phx-desert-ridge",
@@ -370,7 +430,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown arts district. Event parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4505974,
+      "entrance_lng": -112.0714273,
+      "entrance_source": "OSM parking_entrance node 9958293600"
     },
     {
       "id": "phx-burton-barr",
@@ -394,7 +457,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Small underground garage. Clearance needs verification.",
-      "source": "phxart.org"
+      "source": "phxart.org",
+      "entrance_lat": 33.4687566,
+      "entrance_lng": -112.075046,
+      "entrance_source": "OSM parking_entrance node 1576443125"
     },
     {
       "id": "phx-childrens-museum",
@@ -406,7 +472,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Monroe School. Street + surface parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4507086,
+      "entrance_lng": -112.067855,
+      "entrance_source": "OSM parking_entrance node 10905880503"
     },
     {
       "id": "phx-churchill",
@@ -442,7 +511,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Office/hotel/shopping complex garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.5088042,
+      "entrance_lng": -112.026486,
+      "entrance_source": "OSM parking_entrance node 13419139627"
     },
     {
       "id": "phx-scottsdale-quarter",
@@ -466,7 +538,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Scottsdale open-air shopping. Surface lot + garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.6264945,
+      "entrance_lng": -111.926486,
+      "entrance_source": "OSM parking_entrance node 10185759641"
     },
     {
       "id": "phx-sky-train-44th",
@@ -490,7 +565,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "ASU Downtown Phoenix campus.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4501708,
+      "entrance_lng": -112.0665053,
+      "entrance_source": "OSM parking_entrance node 8770469545"
     },
     {
       "id": "osm-w37057915",
@@ -502,7 +580,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.4476582,
+      "entrance_lng": -112.074976,
+      "entrance_source": "OSM parking_entrance node 1300941451"
     },
     {
       "id": "osm-w100227494",
@@ -514,7 +595,10 @@
       "height_label": "19'0\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.4439739,
+      "entrance_lng": -112.0675256,
+      "entrance_source": "OSM parking_entrance node 2980250897"
     },
     {
       "id": "osm-w109924630",
@@ -526,7 +610,10 @@
       "height_label": "8'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.4509236,
+      "entrance_lng": -112.0943432,
+      "entrance_source": "OSM parking_entrance node 4243816908"
     },
     {
       "id": "osm-w175944787",
@@ -538,7 +625,10 @@
       "height_label": "20'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.4354412,
+      "entrance_lng": -111.9961243,
+      "entrance_source": "OSM parking_entrance node 6472058149"
     }
   ],
   "tunnels": [

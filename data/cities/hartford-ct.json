@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UConn basketball + AHL + concerts.",
-      "source": "xlcenter.com"
+      "source": "xlcenter.com",
+      "entrance_lat": 41.7642194,
+      "entrance_lng": -72.67335,
+      "entrance_source": "OSM parking_entrance node 13239928975"
     },
     {
       "id": "hrt-convention-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Riverfront convention center.",
-      "source": "ctconventions.com"
+      "source": "ctconventions.com",
+      "entrance_lat": 41.7598817,
+      "entrance_lng": -72.6741214,
+      "entrance_source": "OSM parking_entrance node 13420801854"
     },
     {
       "id": "hrt-morgan-st-garage",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Travelers Tower area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.7642194,
+      "entrance_lng": -72.67335,
+      "entrance_source": "OSM parking_entrance node 13239928975"
     },
     {
       "id": "hrt-dunkin-park",
@@ -58,7 +67,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AA Yard Goats ballpark. Surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 41.7743617,
+      "entrance_lng": -72.6749739,
+      "entrance_source": "OSM parking_entrance node 12997753477"
     },
     {
       "id": "hrt-bushnell",
@@ -82,7 +94,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Legislative office building area.",
-      "source": "cga.ct.gov"
+      "source": "cga.ct.gov",
+      "entrance_lat": 41.7649229,
+      "entrance_lng": -72.684188,
+      "entrance_source": "OSM parking_entrance node 749238046"
     },
     {
       "id": "hrt-wadsworth-museum",
@@ -94,7 +109,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Oldest public art museum in US.",
-      "source": "thewadsworth.org"
+      "source": "thewadsworth.org",
+      "entrance_lat": 41.7638523,
+      "entrance_lng": -72.6716693,
+      "entrance_source": "OSM parking_entrance node 13239919360"
     },
     {
       "id": "hrt-union-station",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak + CT Rail station.",
-      "source": "hartford.gov"
+      "source": "hartford.gov",
+      "entrance_lat": 41.7681443,
+      "entrance_lng": -72.6820367,
+      "entrance_source": "OSM parking_entrance node 6340836647"
     },
     {
       "id": "hrt-mark-twain-house",
@@ -130,7 +151,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale downtown.",
-      "source": "blueback-square.com"
+      "source": "blueback-square.com",
+      "entrance_lat": 41.7612082,
+      "entrance_lng": -72.74061,
+      "entrance_source": "OSM parking_entrance node 8739439663"
     },
     {
       "id": "hrt-blue-back-square",
@@ -142,7 +166,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mixed-use shopping district.",
-      "source": "blueback-square.com"
+      "source": "blueback-square.com",
+      "entrance_lat": 41.7612082,
+      "entrance_lng": -72.74061,
+      "entrance_source": "OSM parking_entrance node 8739439663"
     },
     {
       "id": "hrt-westfarms",
@@ -178,7 +205,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown riverfront museum.",
-      "source": "ctsciencecenter.org"
+      "source": "ctsciencecenter.org",
+      "entrance_lat": 41.7633682,
+      "entrance_lng": -72.6717343,
+      "entrance_source": "OSM parking_entrance node 13239928972"
     },
     {
       "id": "hrt-bushnell-park-garage",
@@ -202,7 +232,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "River-front park surface lots.",
-      "source": "riverfront.org"
+      "source": "riverfront.org",
+      "entrance_lat": 41.7632145,
+      "entrance_lng": -72.6714263,
+      "entrance_source": "OSM parking_entrance node 8691936542"
     },
     {
       "id": "hrt-foxwoods-casino",
@@ -214,7 +247,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Huge casino resort ~45mi SE. RV-friendly.",
-      "source": "foxwoods.com"
+      "source": "foxwoods.com",
+      "entrance_lat": 41.4747798,
+      "entrance_lng": -71.9576155,
+      "entrance_source": "OSM parking_entrance node 569028508"
     },
     {
       "id": "hrt-mohegan-sun",
@@ -226,7 +262,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Second major CT casino.",
-      "source": "mohegansun.com"
+      "source": "mohegansun.com",
+      "entrance_lat": 41.4903171,
+      "entrance_lng": -72.0921408,
+      "entrance_source": "OSM parking_entrance node 568828874"
     },
     {
       "id": "hrt-uconn-health",

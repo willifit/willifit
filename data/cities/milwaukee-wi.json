@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Bucks arena + Deer District.",
-      "source": "fiservforum.com"
+      "source": "fiservforum.com",
+      "entrance_lat": 43.0442454,
+      "entrance_lng": -87.918205,
+      "entrance_source": "OSM parking_entrance node 4016697291"
     },
     {
       "id": "mke-am-family-field",
@@ -22,7 +25,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Brewers. Surface lots + RV tailgating.",
-      "source": "mlb.com/brewers"
+      "source": "mlb.com/brewers",
+      "entrance_lat": 43.0269917,
+      "entrance_lng": -87.970932,
+      "entrance_source": "OSM parking_entrance node 6842493935"
     },
     {
       "id": "mke-grand-avenue",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mixed-use.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0378039,
+      "entrance_lng": -87.9161807,
+      "entrance_source": "OSM parking_entrance node 5071986648"
     },
     {
       "id": "mke-wisconsin-ctr",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center.",
-      "source": "wisconsincenterdistrict.com"
+      "source": "wisconsincenterdistrict.com",
+      "entrance_lat": 43.0379218,
+      "entrance_lng": -87.9173764,
+      "entrance_source": "OSM parking_entrance node 3999827605"
     },
     {
       "id": "mke-downtown-transit",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown MCTS.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0416993,
+      "entrance_lng": -87.9104466,
+      "entrance_source": "OSM parking_entrance node 3971992781"
     },
     {
       "id": "mke-couture",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New mixed-use tower + transit concourse.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.039552,
+      "entrance_lng": -87.8992356,
+      "entrance_source": "OSM parking_entrance node 6580418276"
     },
     {
       "id": "mke-park-east",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0419231,
+      "entrance_lng": -87.9110682,
+      "entrance_source": "OSM parking_entrance node 5659732116"
     },
     {
       "id": "mke-historic-third-ward",
@@ -94,7 +115,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Warehouse district surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0315758,
+      "entrance_lng": -87.909035,
+      "entrance_source": "OSM parking_entrance node 5494517662"
     },
     {
       "id": "mke-riverwalk",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown East Town.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0417883,
+      "entrance_lng": -87.9072229,
+      "entrance_source": "OSM parking_entrance node 5662023463"
     },
     {
       "id": "mke-public-market",
@@ -118,7 +145,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot for market.",
-      "source": "milwaukeepublicmarket.org"
+      "source": "milwaukeepublicmarket.org",
+      "entrance_lat": 43.0341999,
+      "entrance_lng": -87.907911,
+      "entrance_source": "OSM parking_entrance node 5567788463"
     },
     {
       "id": "mke-art-museum",
@@ -130,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic Calatrava museum. Garage + surface.",
-      "source": "mam.org"
+      "source": "mam.org",
+      "entrance_lat": 43.039826,
+      "entrance_lng": -87.898627,
+      "entrance_source": "OSM parking_entrance node 6577831711"
     },
     {
       "id": "mke-summerfest",

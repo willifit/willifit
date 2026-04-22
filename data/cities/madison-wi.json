@@ -10,7 +10,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Square area \u2014 mostly street + small lots.",
-      "source": "doa.wi.gov"
+      "source": "doa.wi.gov",
+      "entrance_lat": 43.0735514,
+      "entrance_lng": -89.3823281,
+      "entrance_source": "OSM parking_entrance node 13527853206"
     },
     {
       "id": "mad-overture-center",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts complex.",
-      "source": "overture.org"
+      "source": "overture.org",
+      "entrance_lat": 43.0732237,
+      "entrance_lng": -89.3846426,
+      "entrance_source": "OSM parking_entrance node 12984415586"
     },
     {
       "id": "mad-monona-terrace",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Frank Lloyd Wright convention center + garage.",
-      "source": "mononaterrace.com"
+      "source": "mononaterrace.com",
+      "entrance_lat": 43.0711233,
+      "entrance_lng": -89.3819167,
+      "entrance_source": "OSM parking_entrance node 3254265979"
     },
     {
       "id": "mad-state-st",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "cityofmadison.com/parking"
+      "source": "cityofmadison.com/parking",
+      "entrance_lat": 43.0755643,
+      "entrance_lng": -89.3877319,
+      "entrance_source": "OSM parking_entrance node 362586822"
     },
     {
       "id": "mad-overture-garage",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage.",
-      "source": "cityofmadison.com/parking"
+      "source": "cityofmadison.com/parking",
+      "entrance_lat": 43.0731453,
+      "entrance_lng": -89.387635,
+      "entrance_source": "OSM parking_entrance node 13325010377"
     },
     {
       "id": "mad-lot-60",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UW campus edge.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0745217,
+      "entrance_lng": -89.3975254,
+      "entrance_source": "OSM parking_entrance node 13148771499"
     },
     {
       "id": "mad-university-bay",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UW visitor garage.",
-      "source": "transportation.wisc.edu"
+      "source": "transportation.wisc.edu",
+      "entrance_lat": 43.0724582,
+      "entrance_lng": -89.403396,
+      "entrance_source": "OSM parking_entrance node 9557137926"
     },
     {
       "id": "mad-kohl-center",
@@ -106,7 +127,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Badgers football. Surface lots + RV tailgating.",
-      "source": "uwbadgers.com"
+      "source": "uwbadgers.com",
+      "entrance_lat": 43.0714896,
+      "entrance_lng": -89.4120492,
+      "entrance_source": "OSM parking_entrance node 2990318024"
     },
     {
       "id": "mad-botanical-gardens",
@@ -118,7 +142,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Gardens surface lot.",
-      "source": "olbrich.org"
+      "source": "olbrich.org",
+      "entrance_lat": 43.0969236,
+      "entrance_lng": -89.3380509,
+      "entrance_source": "OSM parking_entrance node 12635378043"
     },
     {
       "id": "mad-vilas-zoo",
@@ -154,7 +181,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic lakeside terrace.",
-      "source": "union.wisc.edu"
+      "source": "union.wisc.edu",
+      "entrance_lat": 43.0765849,
+      "entrance_lng": -89.4007686,
+      "entrance_source": "OSM parking_entrance node 1857894261"
     },
     {
       "id": "mad-east-towne-mall",
@@ -214,7 +244,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic 1925 athletic field.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.0823458,
+      "entrance_lng": -89.3750723,
+      "entrance_source": "OSM parking_entrance node 5631141340"
     },
     {
       "id": "mad-uw-hospital",
@@ -226,7 +259,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "uwhealth.org"
+      "source": "uwhealth.org",
+      "entrance_lat": 43.0774335,
+      "entrance_lng": -89.4332472,
+      "entrance_source": "OSM parking_entrance node 8109848398"
     },
     {
       "id": "mad-farmer-market-surrounds",
@@ -238,7 +274,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Saturday market surroundings street.",
-      "source": "dcfm.org"
+      "source": "dcfm.org",
+      "entrance_lat": 43.0732237,
+      "entrance_lng": -89.3846426,
+      "entrance_source": "OSM parking_entrance node 12984415586"
     },
     {
       "id": "mad-middleton-outlet",
@@ -286,7 +325,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "608 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 43.0735386,
+      "entrance_lng": -89.3890114,
+      "entrance_source": "OSM parking_entrance node 3098152719"
     },
     {
       "id": "osm-w32264310",
@@ -298,7 +340,10 @@
       "height_label": "7'2\"",
       "oversized": false,
       "notes": "612 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 43.0778094,
+      "entrance_lng": -89.3828386,
+      "entrance_source": "OSM parking_entrance node 1183426986"
     },
     {
       "id": "osm-w107463322",
@@ -310,7 +355,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "2187 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 43.0768117,
+      "entrance_lng": -89.4298396,
+      "entrance_source": "OSM parking_entrance node 8109848415"
     }
   ],
   "tunnels": [],

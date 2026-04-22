@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown convention center.",
-      "source": "richmondcenter.com"
+      "source": "richmondcenter.com",
+      "entrance_lat": 37.5441275,
+      "entrance_lng": -77.4354048,
+      "entrance_source": "OSM parking_entrance node 3281110420"
     },
     {
       "id": "rva-altria-theater",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic theater + performing arts.",
-      "source": "altriatheater.com"
+      "source": "altriatheater.com",
+      "entrance_lat": 37.5451884,
+      "entrance_lng": -77.4518427,
+      "entrance_source": "OSM parking_entrance node 7682290637"
     },
     {
       "id": "rva-diamond",
@@ -46,7 +52,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Square area.",
-      "source": "virginiacapitol.gov"
+      "source": "virginiacapitol.gov",
+      "entrance_lat": 37.5372346,
+      "entrance_lng": -77.4330942,
+      "entrance_source": "OSM parking_entrance node 9789085696"
     },
     {
       "id": "rva-7th-st-garage",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near former Coliseum.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.5463014,
+      "entrance_lng": -77.4352541,
+      "entrance_source": "OSM parking_entrance node 9789206901"
     },
     {
       "id": "rva-gsk-garage",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.5377041,
+      "entrance_lng": -77.4366785,
+      "entrance_source": "OSM parking_entrance node 9435252272"
     },
     {
       "id": "rva-canal-walk",
@@ -82,7 +97,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverfront walking trail.",
-      "source": "venturerichmond.com"
+      "source": "venturerichmond.com",
+      "entrance_lat": 37.536423,
+      "entrance_lng": -77.4342388,
+      "entrance_source": "OSM parking_entrance node 13397284612"
     },
     {
       "id": "rva-17th-st-farmers",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital complex.",
-      "source": "vcuhealth.org"
+      "source": "vcuhealth.org",
+      "entrance_lat": 37.5404717,
+      "entrance_lng": -77.4285798,
+      "entrance_source": "OSM parking_entrance node 7682639018"
     },
     {
       "id": "rva-vcu-monroe-park",
@@ -130,7 +151,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "VMFA underground garage. Free museum admission.",
-      "source": "vmfa.museum"
+      "source": "vmfa.museum",
+      "entrance_lat": 37.5537401,
+      "entrance_lng": -77.4735677,
+      "entrance_source": "OSM parking_entrance node 9434215873"
     },
     {
       "id": "rva-science-museum",

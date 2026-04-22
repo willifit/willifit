@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "SC Aquarium + Fort Sumter Tours.",
-      "source": "charleston-sc.gov"
+      "source": "charleston-sc.gov",
+      "entrance_lat": 32.7892703,
+      "entrance_lng": -79.9254906,
+      "entrance_source": "OSM parking_entrance node 12745136944"
     },
     {
       "id": "chs-sc-aquarium",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium + USS Yorktown tours.",
-      "source": "scaquarium.org"
+      "source": "scaquarium.org",
+      "entrance_lat": 32.7892703,
+      "entrance_lng": -79.9254906,
+      "entrance_source": "OSM parking_entrance node 12745136944"
     },
     {
       "id": "chs-visitor-center",
@@ -34,7 +40,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic former train shed. Tour bus + RV friendly.",
-      "source": "charlestoncvb.com"
+      "source": "charlestoncvb.com",
+      "entrance_lat": 32.7901255,
+      "entrance_lng": -79.9379181,
+      "entrance_source": "OSM parking_entrance node 12994968792"
     },
     {
       "id": "chs-cumberland-garage",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned historic district.",
-      "source": "charleston-sc.gov"
+      "source": "charleston-sc.gov",
+      "entrance_lat": 32.7815455,
+      "entrance_lng": -79.9306397,
+      "entrance_source": "OSM parking_entrance node 13265507469"
     },
     {
       "id": "chs-marion-square",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Charleston Museum area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7882514,
+      "entrance_lng": -79.9364369,
+      "entrance_source": "OSM parking_entrance node 12960023383"
     },
     {
       "id": "chs-queen-st-garage",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "charleston-sc.gov"
+      "source": "charleston-sc.gov",
+      "entrance_lat": 32.7772775,
+      "entrance_lng": -79.9321874,
+      "entrance_source": "OSM parking_entrance node 12821038677"
     },
     {
       "id": "chs-hutson-st",
@@ -94,7 +112,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "College of Charleston adjacent.",
-      "source": "charleston-sc.gov"
+      "source": "charleston-sc.gov",
+      "entrance_lat": 32.7859972,
+      "entrance_lng": -79.9383351,
+      "entrance_source": "OSM parking_entrance node 12876009338"
     },
     {
       "id": "chs-tradd-garage",
@@ -118,7 +139,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "CofC visitor parking.",
-      "source": "cofc.edu"
+      "source": "cofc.edu",
+      "entrance_lat": 32.783207,
+      "entrance_lng": -79.9362529,
+      "entrance_source": "OSM parking_entrance node 12717115019"
     },
     {
       "id": "chs-citadel",
@@ -154,7 +178,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Pineapple Fountain park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7774838,
+      "entrance_lng": -79.9262568,
+      "entrance_source": "OSM parking_entrance node 12824742212"
     },
     {
       "id": "chs-patriots-point",
@@ -262,7 +289,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel + shops.",
-      "source": "belmond.com"
+      "source": "belmond.com",
+      "entrance_lat": 32.7819934,
+      "entrance_lng": -79.9321719,
+      "entrance_source": "OSM parking_entrance node 13274855385"
     },
     {
       "id": "chs-citadel-mall",
@@ -322,7 +352,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7875973,
+      "entrance_lng": -79.9302447,
+      "entrance_source": "OSM parking_entrance node 12750491019"
     },
     {
       "id": "osm-w38092089",
@@ -334,7 +367,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "1090 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7897211,
+      "entrance_lng": -79.9278133,
+      "entrance_source": "OSM parking_entrance node 12790248472"
     },
     {
       "id": "osm-w114185198",
@@ -346,7 +382,10 @@
       "height_label": "20'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7833299,
+      "entrance_lng": -79.9484499,
+      "entrance_source": "OSM parking_entrance node 12824130515"
     },
     {
       "id": "osm-w114396254",
@@ -358,7 +397,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "390 spaces; paid; covered; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7818757,
+      "entrance_lng": -79.9321546,
+      "entrance_source": "OSM parking_entrance node 13274855387"
     },
     {
       "id": "osm-w189070188",
@@ -370,7 +412,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "990 spaces; paid; covered; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7796775,
+      "entrance_lng": -79.9302738,
+      "entrance_source": "OSM parking_entrance node 12624557931"
     },
     {
       "id": "osm-w189102140",
@@ -382,7 +427,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "280 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.788237,
+      "entrance_lng": -79.9364684,
+      "entrance_source": "OSM parking_entrance node 12960023385"
     },
     {
       "id": "osm-w189118323",
@@ -394,7 +442,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "625 spaces; paid; covered",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7799879,
+      "entrance_lng": -79.9262353,
+      "entrance_source": "OSM parking_entrance node 12621077292"
     },
     {
       "id": "osm-w189118327",
@@ -406,7 +457,10 @@
       "height_label": "20'0\"",
       "oversized": false,
       "notes": "360 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7777731,
+      "entrance_lng": -79.932275,
+      "entrance_source": "OSM parking_entrance node 12604564194"
     },
     {
       "id": "osm-w189118332",
@@ -418,7 +472,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "320 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7776023,
+      "entrance_lng": -79.9337621,
+      "entrance_source": "OSM parking_entrance node 12605072069"
     },
     {
       "id": "osm-w223966394",
@@ -430,7 +487,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "412 spaces; paid; covered; hrs: Mo-Tu 09:00-21:00; We 09:00-22:00; Th 09",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7827042,
+      "entrance_lng": -79.9324476,
+      "entrance_source": "OSM parking_entrance node 12670328256"
     },
     {
       "id": "osm-w301007166",
@@ -442,7 +502,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7870463,
+      "entrance_lng": -79.9504937,
+      "entrance_source": "OSM parking_entrance node 12806370913"
     },
     {
       "id": "osm-w313576433",
@@ -454,7 +517,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "477 spaces; paid; covered; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7801969,
+      "entrance_lng": -79.9347722,
+      "entrance_source": "OSM parking_entrance node 12639388788"
     },
     {
       "id": "osm-w1380338368",
@@ -466,7 +532,10 @@
       "height_label": "19'8\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.783173,
+      "entrance_lng": -79.9540138,
+      "entrance_source": "OSM parking_entrance node 12779117781"
     },
     {
       "id": "osm-r19163014",
@@ -478,7 +547,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "316 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7865142,
+      "entrance_lng": -79.9368661,
+      "entrance_source": "OSM parking_entrance node 12856281266"
     },
     {
       "id": "osm-r19345278",
@@ -490,7 +562,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "870 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7904473,
+      "entrance_lng": -79.9377839,
+      "entrance_source": "OSM parking_entrance node 12994979106"
     },
     {
       "id": "osm-r19383048",
@@ -502,7 +577,10 @@
       "height_label": "19'8\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.7921548,
+      "entrance_lng": -79.9385089,
+      "entrance_source": "OSM parking_entrance node 13020122131"
     }
   ],
   "tunnels": [],

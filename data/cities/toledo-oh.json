@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown convention center.",
-      "source": "seagateconvention.com"
+      "source": "seagateconvention.com",
+      "entrance_lat": 41.6492533,
+      "entrance_lng": -83.5358049,
+      "entrance_source": "OSM parking_entrance node 8195414872"
     },
     {
       "id": "tol-huntington-arena",
@@ -82,7 +85,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Riverfront park + event space.",
-      "source": "toledo.oh.gov"
+      "source": "toledo.oh.gov",
+      "entrance_lat": 41.6492533,
+      "entrance_lng": -83.5358049,
+      "entrance_source": "OSM parking_entrance node 8195414872"
     },
     {
       "id": "tol-toledo-museum-art",
@@ -118,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed upscale mall.",
-      "source": "shopfranklinpark.com"
+      "source": "shopfranklinpark.com",
+      "entrance_lat": 41.6956733,
+      "entrance_lng": -83.6422338,
+      "entrance_source": "OSM parking_entrance node 13640169215"
     },
     {
       "id": "tol-levis-commons",
@@ -154,7 +163,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adaptive-reuse historic steam plant.",
-      "source": "promedica.org"
+      "source": "promedica.org",
+      "entrance_lat": 41.6492533,
+      "entrance_lng": -83.5358049,
+      "entrance_source": "OSM parking_entrance node 8195414872"
     },
     {
       "id": "tol-university-of-toledo",
@@ -274,7 +286,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic glass maker \u2014 'Glass City' origin.",
-      "source": "libbey.com"
+      "source": "libbey.com",
+      "entrance_lat": 41.6492533,
+      "entrance_lng": -83.5358049,
+      "entrance_source": "OSM parking_entrance node 8195414872"
     },
     {
       "id": "tol-airport-tol",

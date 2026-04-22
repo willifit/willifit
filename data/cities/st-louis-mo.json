@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Cardinals BPV entertainment district.",
-      "source": "stlballparkvillage.com"
+      "source": "stlballparkvillage.com",
+      "entrance_lat": 38.6275159,
+      "entrance_lng": -90.2030471,
+      "entrance_source": "OSM parking_entrance node 12297117679"
     },
     {
       "id": "stl-busch-stadium",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Stadium-adjacent garages.",
-      "source": "mlb.com/cardinals"
+      "source": "mlb.com/cardinals",
+      "entrance_lat": 38.623443,
+      "entrance_lng": -90.1909701,
+      "entrance_source": "OSM parking_entrance node 12228143726"
     },
     {
       "id": "stl-enterprise-center",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Blues arena.",
-      "source": "enterprisecenter.com"
+      "source": "enterprisecenter.com",
+      "entrance_lat": 38.6275159,
+      "entrance_lng": -90.2030471,
+      "entrance_source": "OSM parking_entrance node 12297117679"
     },
     {
       "id": "stl-america-s-center",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center + former Rams Dome.",
-      "source": "explorestlouis.com"
+      "source": "explorestlouis.com",
+      "entrance_lat": 38.6343978,
+      "entrance_lng": -90.1940069,
+      "entrance_source": "OSM parking_entrance node 12535225487"
     },
     {
       "id": "stl-kiener-plaza",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.6267215,
+      "entrance_lng": -90.1930488,
+      "entrance_source": "OSM parking_entrance node 12053395716"
     },
     {
       "id": "stl-city-foundry",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adaptive-reuse food hall.",
-      "source": "cityfoundrystl.com"
+      "source": "cityfoundrystl.com",
+      "entrance_lat": 38.6400355,
+      "entrance_lng": -90.2326636,
+      "entrance_source": "OSM parking_entrance node 12810839110"
     },
     {
       "id": "stl-arch-garage",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground garage at Arch. Closest to Arch + Old Courthouse.",
-      "source": "gatewayarch.com"
+      "source": "gatewayarch.com",
+      "entrance_lat": 38.6264464,
+      "entrance_lng": -90.1875108,
+      "entrance_source": "OSM parking_entrance node 12456359256"
     },
     {
       "id": "stl-union-station",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic station + Aquarium + Wheel + Hotel.",
-      "source": "stlouisunionstation.com"
+      "source": "stlouisunionstation.com",
+      "entrance_lat": 38.6279516,
+      "entrance_lng": -90.2105635,
+      "entrance_source": "OSM parking_entrance node 12329597082"
     },
     {
       "id": "stl-forest-park",
@@ -154,7 +178,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Barnes-Jewish hospital + CWE district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.634645,
+      "entrance_lng": -90.2649891,
+      "entrance_source": "OSM parking_entrance node 2780348325"
     },
     {
       "id": "stl-delmar-loop",
@@ -202,7 +229,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown sculpture park + surrounding lots.",
-      "source": "citygarden.com"
+      "source": "citygarden.com",
+      "entrance_lat": 38.6281517,
+      "entrance_lng": -90.1974024,
+      "entrance_source": "OSM parking_entrance node 12363646016"
     },
     {
       "id": "stl-galleria",
@@ -214,7 +244,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall garage.",
-      "source": "saintlouisgalleria.com"
+      "source": "saintlouisgalleria.com",
+      "entrance_lat": 38.6367564,
+      "entrance_lng": -90.3488006,
+      "entrance_source": "OSM parking_entrance node 2775865239"
     },
     {
       "id": "stl-clayton-plaza-frontenac",
@@ -250,7 +283,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New MLS stadium (opened 2023).",
-      "source": "stlcitysc.com"
+      "source": "stlcitysc.com",
+      "entrance_lat": 38.6320968,
+      "entrance_lng": -90.2154014,
+      "entrance_source": "OSM parking_entrance node 13115532952"
     },
     {
       "id": "stl-airport-short",

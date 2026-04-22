@@ -10,7 +10,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Downtown Gaslamp garage. Low at 4th Ave entrance.",
-      "source": "ABM Parking"
+      "source": "ABM Parking",
+      "entrance_lat": 32.7128298,
+      "entrance_lng": -117.1620501,
+      "entrance_source": "OSM parking_entrance node 11141695663"
     },
     {
       "id": "sd-horton-l3",
@@ -22,7 +25,10 @@
       "height_label": "8'1\"",
       "oversized": false,
       "notes": "Taller clearance on L3 via 3rd & G Street entrance.",
-      "source": "ABM Parking"
+      "source": "ABM Parking",
+      "entrance_lat": 32.7128298,
+      "entrance_lng": -117.1620501,
+      "entrance_source": "OSM parking_entrance node 11141695663"
     },
     {
       "id": "sd-ace-6th",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Gaslamp + Petco Park area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7117536,
+      "entrance_lng": -117.1584536,
+      "entrance_source": "OSM parking_entrance node 2526075978"
     },
     {
       "id": "sd-petco-park",
@@ -82,7 +91,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Port of SD. Cruise terminal parking.",
-      "source": "portofsandiego.org"
+      "source": "portofsandiego.org",
+      "entrance_lat": 32.7148701,
+      "entrance_lng": -117.1725418,
+      "entrance_source": "OSM parking_entrance node 12219355793"
     },
     {
       "id": "sd-convention-ctr",
@@ -94,7 +106,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Multiple lots/garages serving the convention center + SDCC / Comic-Con.",
-      "source": "visitsandiego.com"
+      "source": "visitsandiego.com",
+      "entrance_lat": 32.7060617,
+      "entrance_lng": -117.1623052,
+      "entrance_source": "OSM parking_entrance node 12988997545"
     },
     {
       "id": "sd-hilton-bayfront",
@@ -106,7 +121,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel + Convention Center adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7043785,
+      "entrance_lng": -117.157912,
+      "entrance_source": "OSM parking_entrance node 2965376719"
     },
     {
       "id": "sd-marriott-marquis",
@@ -118,7 +136,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel garage near Convention Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7083818,
+      "entrance_lng": -117.1646934,
+      "entrance_source": "OSM parking_entrance node 9882085096"
     },
     {
       "id": "sd-balboa-park",
@@ -130,7 +151,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Massive surface lots. Free. Handles RVs & buses. Tram to museums.",
-      "source": "balboapark.org"
+      "source": "balboapark.org",
+      "entrance_lat": 32.7261437,
+      "entrance_lng": -117.1438461,
+      "entrance_source": "OSM parking_entrance node 2657026383"
     },
     {
       "id": "sd-balboa-museum",
@@ -178,7 +202,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot + small garage.",
-      "source": "fashionvalley.com"
+      "source": "fashionvalley.com",
+      "entrance_lat": 32.7688799,
+      "entrance_lng": -117.1690262,
+      "entrance_source": "OSM parking_entrance node 12284993620"
     },
     {
       "id": "sd-westfield-utc",
@@ -190,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall garage near UCSD.",
-      "source": "westfield.com"
+      "source": "westfield.com",
+      "entrance_lat": 32.871906,
+      "entrance_lng": -117.2108479,
+      "entrance_source": "OSM parking_entrance node 13246801237"
     },
     {
       "id": "sd-la-jolla-cove",
@@ -226,7 +256,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UCSD visitor garage.",
-      "source": "transportation.ucsd.edu"
+      "source": "transportation.ucsd.edu",
+      "entrance_lat": 32.877931,
+      "entrance_lng": -117.233943,
+      "entrance_source": "OSM parking_entrance node 9429180958"
     },
     {
       "id": "sd-qualcomm-stadium",
@@ -262,7 +295,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Little Italy district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7213349,
+      "entrance_lng": -117.1694461,
+      "entrance_source": "OSM parking_entrance node 9900108097"
     },
     {
       "id": "sd-liberty-station",
@@ -334,7 +370,10 @@
       "height_label": "7'10\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.639379,
+      "entrance_lng": -117.0803521,
+      "entrance_source": "OSM parking_entrance node 5870510972"
     },
     {
       "id": "osm-w709699657",

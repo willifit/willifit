@@ -46,7 +46,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main downtown mall.",
-      "source": "riverparksquare.com"
+      "source": "riverparksquare.com",
+      "entrance_lat": 47.6589417,
+      "entrance_lng": -117.420177,
+      "entrance_source": "OSM parking_entrance node 8165909116"
     },
     {
       "id": "spk-parking-3rd-main",
@@ -70,7 +73,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Many downtown garages operated by Diamond.",
-      "source": "diamondparking.com"
+      "source": "diamondparking.com",
+      "entrance_lat": 47.6588876,
+      "entrance_lng": -117.4196902,
+      "entrance_source": "OSM parking_entrance node 8165910720"
     },
     {
       "id": "spk-avista-stadium",
@@ -202,7 +208,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic venue + surrounding street.",
-      "source": "bingcrosbytheater.com"
+      "source": "bingcrosbytheater.com",
+      "entrance_lat": 47.6584045,
+      "entrance_lng": -117.424881,
+      "entrance_source": "OSM parking_entrance node 11440064430"
     },
     {
       "id": "spk-airport-daily",

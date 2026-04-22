@@ -214,7 +214,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "bannerhealth.com"
+      "source": "bannerhealth.com",
+      "entrance_lat": 33.3887485,
+      "entrance_lng": -111.8766371,
+      "entrance_source": "OSM parking_entrance node 9576945662"
     },
     {
       "id": "mes-community-college",

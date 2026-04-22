@@ -10,7 +10,10 @@
       "height_label": "6'9\"",
       "oversized": false,
       "notes": "City-owned downtown garage. Entrance 6'9\".",
-      "source": "portland.gov"
+      "source": "portland.gov",
+      "entrance_lat": 45.51619,
+      "entrance_lng": -122.6738944,
+      "entrance_source": "OSM parking_entrance node 3313553962"
     },
     {
       "id": "pdx-smartpark-4th-yamhill",
@@ -22,7 +25,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "SmartPark downtown. 6'8\" with low-emission + ADA.",
-      "source": "portland.gov"
+      "source": "portland.gov",
+      "entrance_lat": 45.5191521,
+      "entrance_lng": -122.6757246,
+      "entrance_source": "OSM parking_entrance node 3947003095"
     },
     {
       "id": "pdx-smartpark-10th-yamhill",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "SmartPark downtown.",
-      "source": "portland.gov"
+      "source": "portland.gov",
+      "entrance_lat": 45.5195889,
+      "entrance_lng": -122.682171,
+      "entrance_source": "OSM parking_entrance node 4186815342"
     },
     {
       "id": "pdx-smartpark-naito-davis",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "SmartPark near Old Town.",
-      "source": "portland.gov"
+      "source": "portland.gov",
+      "entrance_lat": 45.5224118,
+      "entrance_lng": -122.674644,
+      "entrance_source": "OSM parking_entrance node 11367118155"
     },
     {
       "id": "pdx-smartpark-pearl",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Pearl District SmartPark.",
-      "source": "portland.gov"
+      "source": "portland.gov",
+      "entrance_lat": 45.5028894,
+      "entrance_lng": -122.682288,
+      "entrance_source": "OSM parking_entrance node 718707963"
     },
     {
       "id": "pdx-pioneer-place",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mall garage.",
-      "source": "pioneerplace.com"
+      "source": "pioneerplace.com",
+      "entrance_lat": 45.5176465,
+      "entrance_lng": -122.6786594,
+      "entrance_source": "OSM parking_entrance node 661311307"
     },
     {
       "id": "pdx-moda-garages",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Trail Blazers arena. 4 garages + 2 lots (2,500+ spaces).",
-      "source": "modaportland.com"
+      "source": "modaportland.com",
+      "entrance_lat": 45.5319277,
+      "entrance_lng": -122.6683418,
+      "entrance_source": "OSM parking_entrance node 1588761782"
     },
     {
       "id": "pdx-moda-benton-lot",
@@ -122,8 +143,11 @@
       "pano_id": "JQd0xcE7UZWxMZnyNcYi7Q",
       "pano_heading": 85.5,
       "verified_on": "2026-04-22",
-      "notes": "OCC garages. Entrance sign reads \"CLEARANCE 9'-0\\\"\" (read directly from pano JQd0xcE7UZWxMZnyNcYi7Q @ 85.5° on 2026-04-22). Coords corrected to actual garage entrance (was 165m north at the building center).",
-      "source": "Manually verified from Google Street View \u2014 was: oregoncc.org"
+      "notes": "OCC garages. Entrance sign reads \"CLEARANCE 9'-0\\\"\" (read directly from pano JQd0xcE7UZWxMZnyNcYi7Q @ 85.5\u00b0 on 2026-04-22). Coords corrected to actual garage entrance (was 165m north at the building center).",
+      "source": "Manually verified from Google Street View \u2014 was: oregoncc.org",
+      "entrance_lat": 45.5274353,
+      "entrance_lng": -122.6642685,
+      "entrance_source": "OSM parking_entrance node 3879453135"
     },
     {
       "id": "pdx-psu-1",
@@ -135,7 +159,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Portland State Univ.",
-      "source": "pdx.edu"
+      "source": "pdx.edu",
+      "entrance_lat": 45.5079533,
+      "entrance_lng": -122.6826423,
+      "entrance_source": "OSM parking_entrance node 3706097850"
     },
     {
       "id": "pdx-omsi",
@@ -186,7 +213,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mall garage + surface.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 45.5335107,
+      "entrance_lng": -122.655581,
+      "entrance_source": "OSM parking_entrance node 1474540639"
     },
     {
       "id": "pdx-woodburn-outlets",
@@ -210,7 +240,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Validated bookstore parking.",
-      "source": "powells.com"
+      "source": "powells.com",
+      "entrance_lat": 45.5232471,
+      "entrance_lng": -122.6820257,
+      "entrance_source": "OSM parking_entrance node 3498112772"
     },
     {
       "id": "pdx-portland-saturday",
@@ -273,7 +306,10 @@
       "height_label": "13'1\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 45.4505057,
+      "entrance_lng": -122.783332,
+      "entrance_source": "OSM parking_entrance node 1291622560"
     },
     {
       "id": "osm-w152294655",
@@ -285,7 +321,10 @@
       "height_label": "20'0\"",
       "oversized": false,
       "notes": "paid; hrs: Mo-Th 07:00-23:00; Fr,Sa 07:00-01:00, Su",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 45.5167898,
+      "entrance_lng": -122.6800291,
+      "entrance_source": "OSM parking_entrance node 4005935331"
     },
     {
       "id": "osm-w352717682",
@@ -309,7 +348,10 @@
       "height_label": "15'0\"",
       "oversized": false,
       "notes": "paid; hrs: Mo-Th 06:00-24:00, Fr 06:00-02:00, Sa 07",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 45.5169921,
+      "entrance_lng": -122.6790646,
+      "entrance_source": "OSM parking_entrance node 6510952253"
     },
     {
       "id": "osm-w361835582",
@@ -321,7 +363,10 @@
       "height_label": "9'4\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 45.5478062,
+      "entrance_lng": -122.6806426,
+      "entrance_source": "OSM parking_entrance node 1803204668"
     },
     {
       "id": "osm-w367690595",
@@ -333,7 +378,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 45.5444617,
+      "entrance_lng": -122.6691265,
+      "entrance_source": "OSM parking_entrance node 13483186596"
     },
     {
       "id": "osm-w369031536",
@@ -345,7 +393,10 @@
       "height_label": "12'8\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 45.4318011,
+      "entrance_lng": -122.7485141,
+      "entrance_source": "OSM parking_entrance node 13726171236"
     }
   ],
   "tunnels": [

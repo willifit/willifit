@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Resort strip garage.",
-      "source": "vbgov.com"
+      "source": "vbgov.com",
+      "entrance_lat": 36.8514623,
+      "entrance_lng": -75.9757787,
+      "entrance_source": "OSM parking_entrance node 13602482297"
     },
     {
       "id": "vb-oceanfront-4th",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "South resort strip.",
-      "source": "vbgov.com"
+      "source": "vbgov.com",
+      "entrance_lat": 36.8470666,
+      "entrance_lng": -75.9745785,
+      "entrance_source": "OSM parking_entrance node 9733319577"
     },
     {
       "id": "vb-oceanfront-19th",
@@ -46,7 +52,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Near Norwegian Lady.",
-      "source": "vbgov.com"
+      "source": "vbgov.com",
+      "entrance_lat": 36.8515638,
+      "entrance_lng": -75.9758062,
+      "entrance_source": "OSM parking_entrance node 13602482295"
     },
     {
       "id": "vb-town-center",
@@ -226,7 +235,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Norfolk riverside entertainment.",
-      "source": "watersidedistrict.com"
+      "source": "watersidedistrict.com",
+      "entrance_lat": 36.8470971,
+      "entrance_lng": -76.2913821,
+      "entrance_source": "OSM parking_entrance node 5800138386"
     },
     {
       "id": "vb-chrysler-museum",
@@ -250,7 +262,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Norfolk mall.",
-      "source": "shopmacarthur.com"
+      "source": "shopmacarthur.com",
+      "entrance_lat": 36.8507018,
+      "entrance_lng": -76.2880236,
+      "entrance_source": "OSM parking_entrance node 4099916661"
     },
     {
       "id": "vb-virginia-zoo",
@@ -298,7 +313,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Many small lots along resort strip.",
-      "source": "visitvirginiabeach.com"
+      "source": "visitvirginiabeach.com",
+      "entrance_lat": 36.8514623,
+      "entrance_lng": -75.9757787,
+      "entrance_source": "OSM parking_entrance node 13602482297"
     },
     {
       "id": "vb-resort-parking-34th",
@@ -310,7 +328,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "North resort strip.",
-      "source": "vbgov.com"
+      "source": "vbgov.com",
+      "entrance_lat": 36.8570118,
+      "entrance_lng": -75.978018,
+      "entrance_source": "OSM parking_entrance node 12305488722"
     },
     {
       "id": "vb-mt-trashmore",
@@ -358,7 +379,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.863023,
+      "entrance_lng": -75.9796877,
+      "entrance_source": "OSM parking_entrance node 4053927151"
     },
     {
       "id": "osm-w402400559",
@@ -370,7 +394,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.8368546,
+      "entrance_lng": -75.9721407,
+      "entrance_source": "OSM parking_entrance node 12305488705"
     },
     {
       "id": "osm-w402400761",
@@ -382,7 +409,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.8335904,
+      "entrance_lng": -75.9715799,
+      "entrance_source": "OSM parking_entrance node 12305488702"
     },
     {
       "id": "osm-w402413116",
@@ -406,7 +436,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.8153037,
+      "entrance_lng": -76.069393,
+      "entrance_source": "OSM parking_entrance node 2062731541"
     }
   ],
   "tunnels": [

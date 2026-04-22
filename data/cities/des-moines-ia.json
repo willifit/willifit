@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Arena + convention center garage.",
-      "source": "iowaeventscenter.com"
+      "source": "iowaeventscenter.com",
+      "entrance_lat": 41.5835092,
+      "entrance_lng": -93.6208831,
+      "entrance_source": "OSM parking_entrance node 3848432781"
     },
     {
       "id": "dsm-hy-vee-hall",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention hall adjacent to arena.",
-      "source": "iowaeventscenter.com"
+      "source": "iowaeventscenter.com",
+      "entrance_lat": 41.5835092,
+      "entrance_lng": -93.6208831,
+      "entrance_source": "OSM parking_entrance node 3848432781"
     },
     {
       "id": "dsm-principal-park",
@@ -34,7 +40,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AAA ballpark. Surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 41.5788274,
+      "entrance_lng": -93.6272647,
+      "entrance_source": "OSM parking_entrance node 9698023616"
     },
     {
       "id": "dsm-civic-center",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts center. Parking ramp adjacent.",
-      "source": "desmoinesperformingarts.org"
+      "source": "desmoinesperformingarts.org",
+      "entrance_lat": 41.5849288,
+      "entrance_lng": -93.6254586,
+      "entrance_source": "OSM parking_entrance node 8931261417"
     },
     {
       "id": "dsm-cowles-commons",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground ramp.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.5849352,
+      "entrance_lng": -93.6250175,
+      "entrance_source": "OSM parking_entrance node 8931261326"
     },
     {
       "id": "dsm-iowa-state-capitol",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum + IMAX.",
-      "source": "sciowa.org"
+      "source": "sciowa.org",
+      "entrance_lat": 41.5823373,
+      "entrance_lng": -93.6325372,
+      "entrance_source": "OSM parking_entrance node 2852325364"
     },
     {
       "id": "dsm-art-ctr",
@@ -250,7 +268,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "HQ garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.5875949,
+      "entrance_lng": -93.6316332,
+      "entrance_source": "OSM parking_entrance node 3899241794"
     },
     {
       "id": "dsm-airport-garage",

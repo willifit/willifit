@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Nebraska basketball + concerts.",
-      "source": "pinnaclebankarena.com"
+      "source": "pinnaclebankarena.com",
+      "entrance_lat": 40.8155711,
+      "entrance_lng": -96.7053135,
+      "entrance_source": "OSM parking_entrance node 7217850456"
     },
     {
       "id": "lin-haymarket-park",
@@ -46,7 +49,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Art deco 400' tower capitol.",
-      "source": "capitol.nebraska.gov"
+      "source": "capitol.nebraska.gov",
+      "entrance_lat": 40.8109012,
+      "entrance_lng": -96.6989373,
+      "entrance_source": "OSM parking_entrance node 9955497717"
     },
     {
       "id": "lin-haymarket-garages",
@@ -70,7 +76,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "lincoln.ne.gov"
+      "source": "lincoln.ne.gov",
+      "entrance_lat": 40.8153511,
+      "entrance_lng": -96.7042377,
+      "entrance_source": "OSM parking_entrance node 7217846197"
     },
     {
       "id": "lin-university-sq",
@@ -82,7 +91,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage.",
-      "source": "lincoln.ne.gov"
+      "source": "lincoln.ne.gov",
+      "entrance_lat": 40.8153511,
+      "entrance_lng": -96.7042377,
+      "entrance_source": "OSM parking_entrance node 7217846197"
     },
     {
       "id": "lin-larson-motors-mall",
@@ -94,7 +106,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mall garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.811922,
+      "entrance_lng": -96.7038842,
+      "entrance_source": "OSM parking_entrance node 13428627684"
     },
     {
       "id": "lin-unl-student-union",
@@ -166,7 +181,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "State history museum.",
-      "source": "history.nebraska.gov"
+      "source": "history.nebraska.gov",
+      "entrance_lat": 40.8112642,
+      "entrance_lng": -96.7037161,
+      "entrance_source": "OSM parking_entrance node 13428627696"
     },
     {
       "id": "lin-morrill-hall",

@@ -10,7 +10,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Max height 6'8\". Separate oversized lot at same address for taller vehicles.",
-      "source": "pikeplacemarket.org"
+      "source": "pikeplacemarket.org",
+      "entrance_lat": 47.6088323,
+      "entrance_lng": -122.3423201,
+      "entrance_source": "OSM parking_entrance node 2484460268"
     },
     {
       "id": "sea-pike-place-oversized",
@@ -22,7 +25,10 @@
       "height_label": "No limit (surface)",
       "oversized": true,
       "notes": "Dedicated oversized surface lot adjacent to main garage.",
-      "source": "pikeplacemarket.org"
+      "source": "pikeplacemarket.org",
+      "entrance_lat": 47.608504,
+      "entrance_lng": -122.3422866,
+      "entrance_source": "OSM parking_entrance node 11688147018"
     },
     {
       "id": "sea-convention-ctr",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "WSCC underground.",
-      "source": "wsccarch.com"
+      "source": "wsccarch.com",
+      "entrance_lat": 47.6115775,
+      "entrance_lng": -122.3317325,
+      "entrance_source": "OSM parking_entrance node 7090155912"
     },
     {
       "id": "sea-pacific-place",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mall garage.",
-      "source": "pacificplaceseattle.com"
+      "source": "pacificplaceseattle.com",
+      "entrance_lat": 47.6128249,
+      "entrance_lng": -122.3361738,
+      "entrance_source": "OSM parking_entrance node 4326500636"
     },
     {
       "id": "sea-macys-1st",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major downtown retail garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 47.6123315,
+      "entrance_lng": -122.337833,
+      "entrance_source": "OSM parking_entrance node 11721909388"
     },
     {
       "id": "sea-pioneer-sq",
@@ -70,7 +85,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic district surface lots.",
-      "source": "pioneersquare.org"
+      "source": "pioneersquare.org",
+      "entrance_lat": 47.6021994,
+      "entrance_lng": -122.3330268,
+      "entrance_source": "OSM parking_entrance node 4760566171"
     },
     {
       "id": "sea-seattle-ctr",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Space Needle + Climate Pledge Arena access.",
-      "source": "seattlecenter.com"
+      "source": "seattlecenter.com",
+      "entrance_lat": 47.6231166,
+      "entrance_lng": -122.3470993,
+      "entrance_source": "OSM parking_entrance node 540175073"
     },
     {
       "id": "sea-climate-arena",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Kraken/Storm arena. Event garages + surface.",
-      "source": "climatepledgearena.com"
+      "source": "climatepledgearena.com",
+      "entrance_lat": 47.6211204,
+      "entrance_lng": -122.3537162,
+      "entrance_source": "OSM parking_entrance node 10765288741"
     },
     {
       "id": "sea-lumen-field",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Seahawks/Sounders. Event garage.",
-      "source": "lumenfield.com"
+      "source": "lumenfield.com",
+      "entrance_lat": 47.5961692,
+      "entrance_lng": -122.3339219,
+      "entrance_source": "OSM parking_entrance node 10740258901"
     },
     {
       "id": "sea-t-mobile-park",
@@ -118,7 +145,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Stadium surface lots. Oversized OK on game days.",
-      "source": "mlb.com/mariners"
+      "source": "mlb.com/mariners",
+      "entrance_lat": 47.5926475,
+      "entrance_lng": -122.3315065,
+      "entrance_source": "OSM parking_entrance node 1189880698"
     },
     {
       "id": "sea-westlake",
@@ -130,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Monorail station + mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 47.6123315,
+      "entrance_lng": -122.337833,
+      "entrance_source": "OSM parking_entrance node 11721909388"
     },
     {
       "id": "sea-harbor-steps",
@@ -142,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near SAM + Seattle Art Museum.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 47.6081389,
+      "entrance_lng": -122.3376446,
+      "entrance_source": "OSM parking_entrance node 4639109934"
     },
     {
       "id": "sea-colman-dock",
@@ -178,7 +214,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall garage. Bellevue is separate city.",
-      "source": "bellevuesquare.com"
+      "source": "bellevuesquare.com",
+      "entrance_lat": 47.61629,
+      "entrance_lng": -122.202866,
+      "entrance_source": "OSM parking_entrance node 6113553078"
     },
     {
       "id": "sea-university-village",
@@ -190,7 +229,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping center.",
-      "source": "uvillage.com"
+      "source": "uvillage.com",
+      "entrance_lat": 47.6643521,
+      "entrance_lng": -122.2975401,
+      "entrance_source": "OSM parking_entrance node 3869988392"
     },
     {
       "id": "sea-seattle-aquarium",
@@ -202,7 +244,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Waterfront surface + garages.",
-      "source": "seattleaquarium.org"
+      "source": "seattleaquarium.org",
+      "entrance_lat": 47.6076537,
+      "entrance_lng": -122.3413024,
+      "entrance_source": "OSM parking_entrance node 4137555560"
     },
     {
       "id": "sea-mohai",

@@ -34,7 +34,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic cobblestone district street + lots.",
-      "source": "oldmarket.com"
+      "source": "oldmarket.com",
+      "entrance_lat": 41.2566576,
+      "entrance_lng": -95.9311899,
+      "entrance_source": "OSM parking_entrance node 2528443471"
     },
     {
       "id": "oma-park-one",
@@ -70,7 +73,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown riverfront park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.2604883,
+      "entrance_lng": -95.9324317,
+      "entrance_source": "OSM parking_entrance node 10015267528"
     },
     {
       "id": "oma-joslyn-art",
@@ -82,7 +88,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Museum surface.",
-      "source": "joslyn.org"
+      "source": "joslyn.org",
+      "entrance_lat": 41.2639304,
+      "entrance_lng": -95.942901,
+      "entrance_source": "OSM parking_entrance node 6127359028"
     },
     {
       "id": "oma-omaha-union",
@@ -130,7 +139,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic mixed-use district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.2574248,
+      "entrance_lng": -95.9689077,
+      "entrance_source": "OSM parking_entrance node 13167012542"
     },
     {
       "id": "oma-airport-garage",
@@ -190,7 +202,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Creighton campus.",
-      "source": "creighton.edu"
+      "source": "creighton.edu",
+      "entrance_lat": 41.2684494,
+      "entrance_lng": -95.9451264,
+      "entrance_source": "OSM parking_entrance node 4285204521"
     },
     {
       "id": "oma-millwork-commons",
@@ -202,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Tech/retail redevelopment district.",
-      "source": "millworkcommons.com"
+      "source": "millworkcommons.com",
+      "entrance_lat": 41.2604883,
+      "entrance_lng": -95.9324317,
+      "entrance_source": "OSM parking_entrance node 10015267528"
     },
     {
       "id": "oma-little-bohemia",
@@ -238,7 +256,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UNMC medical center.",
-      "source": "nebraskamed.com"
+      "source": "nebraskamed.com",
+      "entrance_lat": 41.2557187,
+      "entrance_lng": -95.978541,
+      "entrance_source": "OSM parking_entrance node 13166947397"
     },
     {
       "id": "oma-west-dodge-station",
@@ -286,7 +307,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Downtown riverfront park \u2014 recently redeveloped (2023).",
-      "source": "thericketthouse.com"
+      "source": "thericketthouse.com",
+      "entrance_lat": 41.2577095,
+      "entrance_lng": -95.9278713,
+      "entrance_source": "OSM parking_entrance node 10017521403"
     },
     {
       "id": "oma-tdameritrade-lot",

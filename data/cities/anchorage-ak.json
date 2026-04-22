@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mall parking. Validates.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 61.218402,
+      "entrance_lng": -149.9021768,
+      "entrance_source": "OSM parking_entrance node 4806225238"
     },
     {
       "id": "anc-dena-ina-conv",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main downtown convention center.",
-      "source": "anchorageconventions.com"
+      "source": "anchorageconventions.com",
+      "entrance_lat": 61.2161754,
+      "entrance_lng": -149.8973271,
+      "entrance_source": "OSM parking_entrance node 3709779828"
     },
     {
       "id": "anc-carr-gottstein",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention + exhibit hall.",
-      "source": "anchorageconventions.com"
+      "source": "anchorageconventions.com",
+      "entrance_lat": 61.2177011,
+      "entrance_lng": -149.9021105,
+      "entrance_source": "OSM parking_entrance node 4806225240"
     },
     {
       "id": "anc-performing-arts",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown performing arts.",
-      "source": "myalaskacenter.com"
+      "source": "myalaskacenter.com",
+      "entrance_lat": 61.2177011,
+      "entrance_lng": -149.9021105,
+      "entrance_source": "OSM parking_entrance node 4806225240"
     },
     {
       "id": "anc-anchorage-museum",
@@ -310,7 +322,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 61.2184023,
+      "entrance_lng": -149.8863344,
+      "entrance_source": "OSM parking_entrance node 12872473923"
     },
     {
       "id": "osm-w28587820",
@@ -322,7 +337,10 @@
       "height_label": "6'7\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 61.2159562,
+      "entrance_lng": -149.8916714,
+      "entrance_source": "OSM parking_entrance node 4806111239"
     },
     {
       "id": "osm-w259558001",
@@ -334,7 +352,10 @@
       "height_label": "6'9\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 61.2161754,
+      "entrance_lng": -149.8973271,
+      "entrance_source": "OSM parking_entrance node 3709779828"
     }
   ],
   "tunnels": [

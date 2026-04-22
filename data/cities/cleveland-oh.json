@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Cavaliers/Monsters arena.",
-      "source": "rocketmortgagefieldhouse.com"
+      "source": "rocketmortgagefieldhouse.com",
+      "entrance_lat": 41.4971152,
+      "entrance_lng": -81.6909936,
+      "entrance_source": "OSM parking_entrance node 3437817608"
     },
     {
       "id": "cle-progressive-field",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Guardians ballpark. Multiple adjacent garages + lots.",
-      "source": "mlb.com/guardians"
+      "source": "mlb.com/guardians",
+      "entrance_lat": 41.4969855,
+      "entrance_lng": -81.6864019,
+      "entrance_source": "OSM parking_entrance node 3743100288"
     },
     {
       "id": "cle-cleveland-browns",
@@ -46,7 +52,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Legendary Muni Lot. RVs, tailgaters. Gates open early.",
-      "source": "clevelandbrowns.com"
+      "source": "clevelandbrowns.com",
+      "entrance_lat": 41.5074269,
+      "entrance_lng": -81.6927844,
+      "entrance_source": "OSM parking_entrance node 3406477120"
     },
     {
       "id": "cle-huntington-garage",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Huntington Convention Center.",
-      "source": "clevelandconventions.com"
+      "source": "clevelandconventions.com",
+      "entrance_lat": 41.4980939,
+      "entrance_lng": -81.6999406,
+      "entrance_source": "OSM parking_entrance node 4097827030"
     },
     {
       "id": "cle-convention-ctr",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention + Global Center for Health Innovation.",
-      "source": "clevelandconventions.com"
+      "source": "clevelandconventions.com",
+      "entrance_lat": 41.5039575,
+      "entrance_lng": -81.6972649,
+      "entrance_source": "OSM parking_entrance node 11403228266"
     },
     {
       "id": "cle-tower-city",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic Terminal Tower + retail.",
-      "source": "towercitycenter.com"
+      "source": "towercitycenter.com",
+      "entrance_lat": 41.4986132,
+      "entrance_lng": -81.6953055,
+      "entrance_source": "OSM parking_entrance node 4097827033"
     },
     {
       "id": "cle-warehouse-dist",
@@ -106,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Restaurant district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.4979078,
+      "entrance_lng": -81.6873907,
+      "entrance_source": "OSM parking_entrance node 3437817609"
     },
     {
       "id": "cle-playhouse-sq",
@@ -118,7 +139,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Theater district garage.",
-      "source": "playhousesquare.org"
+      "source": "playhousesquare.org",
+      "entrance_lat": 41.5025682,
+      "entrance_lng": -81.6817153,
+      "entrance_source": "OSM parking_entrance node 4556321843"
     },
     {
       "id": "cle-rock-hall",
@@ -154,7 +178,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic market street + lots.",
-      "source": "westsidemarket.org"
+      "source": "westsidemarket.org",
+      "entrance_lat": 41.4841421,
+      "entrance_lng": -81.7047852,
+      "entrance_source": "OSM parking_entrance node 5706500569"
     },
     {
       "id": "cle-tremont",
@@ -190,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Free museum! Underground garage.",
-      "source": "clevelandart.org"
+      "source": "clevelandart.org",
+      "entrance_lat": 41.5094594,
+      "entrance_lng": -81.6132922,
+      "entrance_source": "OSM parking_entrance node 4110034692"
     },
     {
       "id": "cle-severance-hall",
@@ -202,7 +232,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "University Circle arts.",
-      "source": "clevelandorchestra.com"
+      "source": "clevelandorchestra.com",
+      "entrance_lat": 41.5077911,
+      "entrance_lng": -81.6086644,
+      "entrance_source": "OSM parking_entrance node 9091501426"
     },
     {
       "id": "cle-case-western",
@@ -214,7 +247,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "University visitor parking.",
-      "source": "case.edu"
+      "source": "case.edu",
+      "entrance_lat": 41.5065939,
+      "entrance_lng": -81.6089706,
+      "entrance_source": "OSM parking_entrance node 9094806376"
     },
     {
       "id": "cle-lakewood-beck",
@@ -286,7 +322,10 @@
       "height_label": "15'0\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 41.4113581,
+      "entrance_lng": -81.8357028,
+      "entrance_source": "OSM parking_entrance node 3578756169"
     },
     {
       "id": "osm-w202861542",
@@ -298,7 +337,10 @@
       "height_label": "7'2\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 41.5094594,
+      "entrance_lng": -81.6132922,
+      "entrance_source": "OSM parking_entrance node 4110034692"
     }
   ],
   "tunnels": [],

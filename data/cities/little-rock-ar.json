@@ -70,7 +70,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Square.",
-      "source": "sos.arkansas.gov"
+      "source": "sos.arkansas.gov",
+      "entrance_lat": 34.7459759,
+      "entrance_lng": -92.2866618,
+      "entrance_source": "OSM parking_entrance node 5263886041"
     },
     {
       "id": "lit-old-statehouse",
@@ -178,7 +181,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "shopparkplaza.com"
+      "source": "shopparkplaza.com",
+      "entrance_lat": 34.7510588,
+      "entrance_lng": -92.3424434,
+      "entrance_source": "OSM parking_entrance node 4058987526"
     },
     {
       "id": "lit-summit-mall",

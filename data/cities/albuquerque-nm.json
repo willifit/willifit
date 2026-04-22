@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown civic + convention area.",
-      "source": "cabq.gov"
+      "source": "cabq.gov",
+      "entrance_lat": 35.0867201,
+      "entrance_lng": -106.650916,
+      "entrance_source": "OSM parking_entrance node 6167251723"
     },
     {
       "id": "abq-conv-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center.",
-      "source": "albuquerquecc.com"
+      "source": "albuquerquecc.com",
+      "entrance_lat": 35.0880575,
+      "entrance_lng": -106.650654,
+      "entrance_source": "OSM parking_entrance node 2444021608"
     },
     {
       "id": "abq-old-town",
@@ -214,7 +220,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown Route 66 area lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.0829342,
+      "entrance_lng": -106.6518278,
+      "entrance_source": "OSM parking_entrance node 10583689855"
     },
     {
       "id": "abq-hispanic-cultural",
@@ -274,7 +283,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UNM visitor.",
-      "source": "pats.unm.edu"
+      "source": "pats.unm.edu",
+      "entrance_lat": 35.0818032,
+      "entrance_lng": -106.618806,
+      "entrance_source": "OSM parking_entrance node 4657000210"
     },
     {
       "id": "abq-isleta-resort",
@@ -322,7 +334,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic theater garage.",
-      "source": "kimotickets.com"
+      "source": "kimotickets.com",
+      "entrance_lat": 35.0850168,
+      "entrance_lng": -106.647809,
+      "entrance_source": "OSM parking_entrance node 9808044843"
     },
     {
       "id": "abq-abq-rapid-transit",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Grizzlies arena / University of Memphis basketball.",
-      "source": "fedexforum.com"
+      "source": "fedexforum.com",
+      "entrance_lat": 35.1402244,
+      "entrance_lng": -90.0500489,
+      "entrance_source": "OSM parking_entrance node 8899025068"
     },
     {
       "id": "mem-beale-st-lot",
@@ -166,7 +169,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Lorraine Motel museum surface lot.",
-      "source": "civilrightsmuseum.org"
+      "source": "civilrightsmuseum.org",
+      "entrance_lat": 35.1362392,
+      "entrance_lng": -90.0562976,
+      "entrance_source": "OSM parking_entrance node 13386387209"
     },
     {
       "id": "mem-stax-museum",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown garage.",
-      "source": "okc.gov"
+      "source": "okc.gov",
+      "entrance_lat": 35.4675408,
+      "entrance_lng": -97.5193557,
+      "entrance_source": "OSM parking_entrance node 13125292126"
     },
     {
       "id": "okc-century-center",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mixed-use garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.4675259,
+      "entrance_lng": -97.5178446,
+      "entrance_source": "OSM parking_entrance node 13125292375"
     },
     {
       "id": "okc-cox-conv-ctr",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Thunder arena + event garage.",
-      "source": "paycomcenter.com"
+      "source": "paycomcenter.com",
+      "entrance_lat": 35.462734,
+      "entrance_lng": -97.5149903,
+      "entrance_source": "OSM parking_entrance node 10803229905"
     },
     {
       "id": "okc-bricktown-mickey",
@@ -70,7 +79,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple surface lots. Handles oversized.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.4662958,
+      "entrance_lng": -97.5084105,
+      "entrance_source": "OSM parking_entrance node 13124251018"
     },
     {
       "id": "okc-chickasaw-ballpark",
@@ -94,7 +106,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Municipal Building / Bicentennial Park area.",
-      "source": "okcciviccenter.com"
+      "source": "okcciviccenter.com",
+      "entrance_lat": 35.4707167,
+      "entrance_lng": -97.5222593,
+      "entrance_source": "OSM parking_entrance node 8994431234"
     },
     {
       "id": "okc-myriad-gardens",
@@ -130,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor parking.",
-      "source": "ouhsc.edu"
+      "source": "ouhsc.edu",
+      "entrance_lat": 35.479164,
+      "entrance_lng": -97.4985059,
+      "entrance_source": "OSM parking_entrance node 5995789763"
     },
     {
       "id": "okc-zoo",
@@ -250,7 +268,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.462734,
+      "entrance_lng": -97.5149903,
+      "entrance_source": "OSM parking_entrance node 10803229905"
     },
     {
       "id": "osm-w1161540516",
@@ -262,7 +283,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.462734,
+      "entrance_lng": -97.5149903,
+      "entrance_source": "OSM parking_entrance node 10803229905"
     }
   ],
   "tunnels": [],

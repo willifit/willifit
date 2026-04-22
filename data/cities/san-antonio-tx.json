@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "No oversized vehicles, toppers, or trailers per hotel policy.",
-      "source": "Hyatt"
+      "source": "Hyatt",
+      "entrance_lat": 29.4249611,
+      "entrance_lng": -98.4857654,
+      "entrance_source": "OSM parking_entrance node 13190864772"
     },
     {
       "id": "sat-hyatt-regency",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "No oversized per policy. $8 premium for oversized vehicles.",
-      "source": "Hyatt"
+      "source": "Hyatt",
+      "entrance_lat": 29.4259379,
+      "entrance_lng": -98.4900592,
+      "entrance_source": "OSM parking_entrance node 9566226791"
     },
     {
       "id": "sat-houston-st",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned. Near The Alamo, Riverwalk.",
-      "source": "sapark.sanantonio.gov"
+      "source": "sapark.sanantonio.gov",
+      "entrance_lat": 29.4259391,
+      "entrance_lng": -98.490314,
+      "entrance_source": "OSM parking_entrance node 9566226796"
     },
     {
       "id": "sat-market-sq",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned. Serves El Mercado, historic market.",
-      "source": "sapark.sanantonio.gov"
+      "source": "sapark.sanantonio.gov",
+      "entrance_lat": 29.425631,
+      "entrance_lng": -98.4978751,
+      "entrance_source": "OSM parking_entrance node 3607958090"
     },
     {
       "id": "sat-convention-ctr",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Henry B. Gonzalez Convention Center.",
-      "source": "sapark.sanantonio.gov"
+      "source": "sapark.sanantonio.gov",
+      "entrance_lat": 29.4233701,
+      "entrance_lng": -98.4856193,
+      "entrance_source": "OSM parking_entrance node 12464215928"
     },
     {
       "id": "sat-st-marys",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core.",
-      "source": "sapark.sanantonio.gov"
+      "source": "sapark.sanantonio.gov",
+      "entrance_lat": 29.4280339,
+      "entrance_lng": -98.493173,
+      "entrance_source": "OSM parking_entrance node 1663731431"
     },
     {
       "id": "sat-rivercenter",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major Riverwalk mall garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.4249611,
+      "entrance_lng": -98.4857654,
+      "entrance_source": "OSM parking_entrance node 13190864772"
     },
     {
       "id": "sat-alamodome",
@@ -118,7 +139,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Pearl District mixed-use.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.4430708,
+      "entrance_lng": -98.4775804,
+      "entrance_source": "OSM parking_entrance node 10246074206"
     },
     {
       "id": "sat-utsa-bauerle",
@@ -130,7 +154,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UTSA Main Campus.",
-      "source": "utsa.edu"
+      "source": "utsa.edu",
+      "entrance_lat": 29.5823442,
+      "entrance_lng": -98.6195039,
+      "entrance_source": "OSM parking_entrance node 2552018192"
     },
     {
       "id": "sat-sat-airport",
@@ -190,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Closest garage to The Alamo. City-owned.",
-      "source": "sapark.sanantonio.gov"
+      "source": "sapark.sanantonio.gov",
+      "entrance_lat": 29.4249611,
+      "entrance_lng": -98.4857654,
+      "entrance_source": "OSM parking_entrance node 13190864772"
     },
     {
       "id": "sat-navarro",
@@ -202,7 +232,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Riverwalk-adjacent city garage.",
-      "source": "sapark.sanantonio.gov"
+      "source": "sapark.sanantonio.gov",
+      "entrance_lat": 29.4246434,
+      "entrance_lng": -98.4923635,
+      "entrance_source": "OSM parking_entrance node 10957109771"
     },
     {
       "id": "sat-tower-of-amer",
@@ -238,7 +271,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Convention Center, Alamodome.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.4218702,
+      "entrance_lng": -98.4834846,
+      "entrance_source": "OSM parking_entrance node 937360044"
     },
     {
       "id": "sat-shops-la-cantera",
@@ -274,7 +310,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lots. Free parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.5354517,
+      "entrance_lng": -98.4932605,
+      "entrance_source": "OSM parking_entrance node 10586700219"
     },
     {
       "id": "sat-pearl-plaza",
@@ -298,7 +337,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Second Pearl District garage.",
-      "source": "atpearl.com"
+      "source": "atpearl.com",
+      "entrance_lat": 29.4430708,
+      "entrance_lng": -98.4775804,
+      "entrance_source": "OSM parking_entrance node 10246074206"
     },
     {
       "id": "sat-mcallister",
@@ -322,7 +364,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic market square surface parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.425631,
+      "entrance_lng": -98.4978751,
+      "entrance_source": "OSM parking_entrance node 3607958090"
     },
     {
       "id": "sat-missions-garage",
@@ -382,7 +427,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo surface lot. Oversized accommodated.",
-      "source": "sazoo.org"
+      "source": "sazoo.org",
+      "entrance_lat": 29.4640758,
+      "entrance_lng": -98.4762071,
+      "entrance_source": "OSM parking_entrance node 11778150469"
     }
   ],
   "tunnels": [],

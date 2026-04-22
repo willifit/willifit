@@ -10,7 +10,10 @@
       "height_label": "6'6\"",
       "oversized": false,
       "notes": "Surface level of Blue Express Garage.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7403996,
+      "entrance_lng": -95.4619937,
+      "entrance_source": "OSM parking_entrance node 9017460293"
     },
     {
       "id": "hou-gallry-blue-l1",
@@ -22,7 +25,10 @@
       "height_label": "6'5\"",
       "oversized": false,
       "notes": "Lower level 1.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7403996,
+      "entrance_lng": -95.4619937,
+      "entrance_source": "OSM parking_entrance node 9017460293"
     },
     {
       "id": "hou-gallry-blue-l2",
@@ -34,7 +40,10 @@
       "height_label": "6'3\"",
       "oversized": false,
       "notes": "Lowest Blue level \u2014 very tight.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7403996,
+      "entrance_lng": -95.4619937,
+      "entrance_source": "OSM parking_entrance node 9017460293"
     },
     {
       "id": "hou-gallry-yellow",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Clearance needs verification.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7400526,
+      "entrance_lng": -95.4632503,
+      "entrance_source": "OSM parking_entrance node 9017460289"
     },
     {
       "id": "hou-gallry-orange",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Clearance needs verification.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7381183,
+      "entrance_lng": -95.4628513,
+      "entrance_source": "OSM parking_entrance node 8320566945"
     },
     {
       "id": "hou-gallry-red",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Clearance needs verification.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7389223,
+      "entrance_lng": -95.4603801,
+      "entrance_source": "OSM parking_entrance node 8320566940"
     },
     {
       "id": "hou-avenida-main",
@@ -154,7 +172,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Tranquillity Park.",
-      "source": "houstontx.gov"
+      "source": "houstontx.gov",
+      "entrance_lat": 29.7611705,
+      "entrance_lng": -95.3709357,
+      "entrance_source": "OSM parking_entrance node 12210072861"
     },
     {
       "id": "hou-main-st-sq",
@@ -166,7 +187,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core, Metro Rail adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7577131,
+      "entrance_lng": -95.3663944,
+      "entrance_source": "OSM parking_entrance node 9833562149"
     },
     {
       "id": "hou-jpm-chase",
@@ -178,7 +202,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.75866,
+      "entrance_lng": -95.3643178,
+      "entrance_source": "OSM parking_entrance node 10142823584"
     },
     {
       "id": "hou-wells-fargo",
@@ -190,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7569103,
+      "entrance_lng": -95.3660776,
+      "entrance_source": "OSM parking_entrance node 10091758199"
     },
     {
       "id": "hou-memorial-city",
@@ -202,7 +232,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Large suburban mall garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7830616,
+      "entrance_lng": -95.5449931,
+      "entrance_source": "OSM parking_entrance node 6680455960"
     },
     {
       "id": "hou-tmc2",
@@ -214,7 +247,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "TMC visitor garage. Clearance needs verification.",
-      "source": "Parkopedia"
+      "source": "Parkopedia",
+      "entrance_lat": 29.7111136,
+      "entrance_lng": -95.4001312,
+      "entrance_source": "OSM parking_entrance node 10199152962"
     },
     {
       "id": "hou-tmc-garage6",
@@ -226,7 +262,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major TMC visitor garage.",
-      "source": "tmc.edu"
+      "source": "tmc.edu",
+      "entrance_lat": 29.709108,
+      "entrance_lng": -95.400635,
+      "entrance_source": "OSM parking_entrance node 569251535"
     },
     {
       "id": "hou-nrg-lots",
@@ -262,7 +301,10 @@
       "height_label": "6'7\"",
       "oversized": false,
       "notes": "All IAH terminal garages limited to 6'7\". Larger vehicles use ecopark.",
-      "source": "fly2houston.com"
+      "source": "fly2houston.com",
+      "entrance_lat": 29.9852029,
+      "entrance_lng": -95.3419701,
+      "entrance_source": "OSM parking_entrance node 8478452736"
     },
     {
       "id": "hou-iah-ecopark2",
@@ -322,7 +364,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "2 hours free. Entrance on Kelvin Dr. Rooftop lot also available. Clearance needs verification.",
-      "source": "ricevillage.org"
+      "source": "ricevillage.org",
+      "entrance_lat": 29.7164075,
+      "entrance_lng": -95.4148031,
+      "entrance_source": "OSM parking_entrance node 8473858477"
     },
     {
       "id": "hou-rice-univ",
@@ -394,7 +439,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adaptive-reuse food hall + rooftop. Underground garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7626868,
+      "entrance_lng": -95.3612545,
+      "entrance_source": "OSM parking_entrance node 10570640068"
     },
     {
       "id": "hou-shell-plaza",
@@ -406,7 +454,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7577131,
+      "entrance_lng": -95.3663944,
+      "entrance_source": "OSM parking_entrance node 9833562149"
     },
     {
       "id": "hou-center-allen",
@@ -418,7 +469,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office complex (One, Two, Three Allen Center).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7581323,
+      "entrance_lng": -95.3710527,
+      "entrance_source": "OSM parking_entrance node 10255544672"
     },
     {
       "id": "hou-green-st",
@@ -430,7 +484,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mixed-use downtown block. House of Blues.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7574875,
+      "entrance_lng": -95.3630519,
+      "entrance_source": "OSM parking_entrance node 10097281334"
     },
     {
       "id": "hou-pavilions-shopping",
@@ -442,7 +499,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Other Galleria lots beyond Blue Express. Needs verification per color-coded lot.",
-      "source": "Denison Parking"
+      "source": "Denison Parking",
+      "entrance_lat": 29.7389223,
+      "entrance_lng": -95.4603801,
+      "entrance_source": "OSM parking_entrance node 8320566940"
     },
     {
       "id": "hou-museum-hmns",
@@ -478,7 +538,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "MLS Houston Dynamo \u2014 surface lots around stadium.",
-      "source": "houstondynamofc.com"
+      "source": "houstondynamofc.com",
+      "entrance_lat": 29.7511114,
+      "entrance_lng": -95.351277,
+      "entrance_source": "OSM parking_entrance node 10962862465"
     },
     {
       "id": "hou-downtown-tunnel",
@@ -490,7 +553,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Market Square + Pierce Junction Tunnel system entrance.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7625721,
+      "entrance_lng": -95.3688997,
+      "entrance_source": "OSM parking_entrance node 12045419331"
     },
     {
       "id": "hou-the-shops-houston-center",
@@ -502,7 +568,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown food court / retail garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7574875,
+      "entrance_lng": -95.3630519,
+      "entrance_source": "OSM parking_entrance node 10097281334"
     },
     {
       "id": "hou-midtown-kirby",
@@ -514,7 +583,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Midtown entertainment/dining district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 29.7453546,
+      "entrance_lng": -95.3774299,
+      "entrance_source": "OSM parking_entrance node 9609223777"
     }
   ],
   "tunnels": [

@@ -34,7 +34,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Sundance Sq garage under City Center.",
-      "source": "sundancesquare.com"
+      "source": "sundancesquare.com",
+      "entrance_lat": 32.7540117,
+      "entrance_lng": -97.329016,
+      "entrance_source": "OSM parking_entrance node 9545836810"
     },
     {
       "id": "ftw-fw-center-garage",
@@ -46,7 +49,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention Center + Will Rogers events.",
-      "source": "fortworth.com"
+      "source": "fortworth.com",
+      "entrance_lat": 32.751398,
+      "entrance_lng": -97.3302692,
+      "entrance_source": "OSM parking_entrance node 9901661117"
     },
     {
       "id": "ftw-water-gardens",
@@ -58,7 +64,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent to Fort Worth Water Gardens.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.7488643,
+      "entrance_lng": -97.3260562,
+      "entrance_source": "OSM parking_entrance node 6138269368"
     },
     {
       "id": "ftw-intermodal",
@@ -82,7 +91,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum district underground garage.",
-      "source": "kimbellart.org"
+      "source": "kimbellart.org",
+      "entrance_lat": 32.7477569,
+      "entrance_lng": -97.3649841,
+      "entrance_source": "OSM parking_entrance node 6563721595"
     },
     {
       "id": "ftw-modern",
@@ -94,7 +106,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot.",
-      "source": "themodern.org"
+      "source": "themodern.org",
+      "entrance_lat": 32.7498118,
+      "entrance_lng": -97.3603557,
+      "entrance_source": "OSM parking_entrance node 13057549083"
     },
     {
       "id": "ftw-amon-carter",
@@ -214,7 +229,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Sundance Sq adjacent.",
-      "source": "basshall.com"
+      "source": "basshall.com",
+      "entrance_lat": 32.7540117,
+      "entrance_lng": -97.329016,
+      "entrance_source": "OSM parking_entrance node 9545836810"
     },
     {
       "id": "ftw-tcu-airport",

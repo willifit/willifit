@@ -22,7 +22,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Former UP station + museum + events.",
-      "source": "cheyennedepotmuseum.org"
+      "source": "cheyennedepotmuseum.org",
+      "entrance_lat": 41.1352799,
+      "entrance_lng": -104.8208209,
+      "entrance_source": "OSM parking_entrance node 9324843795"
     },
     {
       "id": "chy-frontier-days-park",
@@ -70,7 +73,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic depot + model railroad.",
-      "source": "cheyennedepotmuseum.org"
+      "source": "cheyennedepotmuseum.org",
+      "entrance_lat": 41.1352799,
+      "entrance_lng": -104.8208209,
+      "entrance_source": "OSM parking_entrance node 9324843795"
     },
     {
       "id": "chy-botanic-gardens",
@@ -118,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic 1911 hotel.",
-      "source": "theplainshotel.com"
+      "source": "theplainshotel.com",
+      "entrance_lat": 41.1360389,
+      "entrance_lng": -104.8208039,
+      "entrance_source": "OSM parking_entrance node 9324843800"
     },
     {
       "id": "chy-terry-bison",

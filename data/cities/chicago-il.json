@@ -10,7 +10,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "2,126 spaces under Millennium Park / Jay Pritzker Pavilion. No oversized.",
-      "source": "millenniumgarages.com"
+      "source": "millenniumgarages.com",
+      "entrance_lat": 41.8830118,
+      "entrance_lng": -87.6197332,
+      "entrance_source": "OSM parking_entrance node 7139284211"
     },
     {
       "id": "chi-mp-lakeside",
@@ -22,7 +25,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "3,850 spaces. Entrance off Columbus. No oversized.",
-      "source": "millenniumgarages.com"
+      "source": "millenniumgarages.com",
+      "entrance_lat": 41.8817799,
+      "entrance_lng": -87.6184292,
+      "entrance_source": "OSM parking_entrance node 7131957916"
     },
     {
       "id": "chi-grant-n",
@@ -34,7 +40,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Serves Loop north, Millennium Park. Under Grant Park.",
-      "source": "millenniumgarages.com"
+      "source": "millenniumgarages.com",
+      "entrance_lat": 41.8869928,
+      "entrance_lng": -87.6239725,
+      "entrance_source": "OSM parking_entrance node 8250999803"
     },
     {
       "id": "chi-grant-s",
@@ -46,7 +55,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Serves Loop south, Art Institute.",
-      "source": "millenniumgarages.com"
+      "source": "millenniumgarages.com",
+      "entrance_lat": 41.8779154,
+      "entrance_lng": -87.6243194,
+      "entrance_source": "OSM parking_entrance node 2423698851"
     },
     {
       "id": "chi-navy-pier-east",
@@ -58,7 +70,10 @@
       "height_label": "7'9\"",
       "oversized": true,
       "notes": "Higher clearance than West Garage. Recommended for oversized trucks/vans.",
-      "source": "navypier.org"
+      "source": "navypier.org",
+      "entrance_lat": 41.8920274,
+      "entrance_lng": -87.6080588,
+      "entrance_source": "OSM parking_entrance node 6939664326"
     },
     {
       "id": "chi-navy-pier-west",
@@ -70,7 +85,10 @@
       "height_label": "6'3\"",
       "oversized": false,
       "notes": "Low clearance \u2014 small vehicles only. Use East Garage if taller.",
-      "source": "navypier.org"
+      "source": "navypier.org",
+      "entrance_lat": 41.8927871,
+      "entrance_lng": -87.6153109,
+      "entrance_source": "OSM parking_entrance node 10069976526"
     },
     {
       "id": "chi-cityfront-place",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "River North, near Navy Pier. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8894245,
+      "entrance_lng": -87.6189517,
+      "entrance_source": "OSM parking_entrance node 11792258803"
     },
     {
       "id": "chi-water-tower-pl",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Magnificent Mile shopping. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8993152,
+      "entrance_lng": -87.6246972,
+      "entrance_source": "OSM parking_entrance node 11905449454"
     },
     {
       "id": "chi-900-mich",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Bloomingdale's + Four Seasons tower. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8993152,
+      "entrance_lng": -87.6246972,
+      "entrance_source": "OSM parking_entrance node 11905449454"
     },
     {
       "id": "chi-john-hancock",
@@ -118,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Former John Hancock Center. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8986654,
+      "entrance_lng": -87.6225945,
+      "entrance_source": "OSM parking_entrance node 11899379815"
     },
     {
       "id": "chi-auditorium",
@@ -130,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Auditorium Theatre, Loop south. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8756217,
+      "entrance_lng": -87.6253554,
+      "entrance_source": "OSM parking_entrance node 12056312574"
     },
     {
       "id": "chi-franklin-lasalle",
@@ -142,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Loop office district. Multiple operators.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8853799,
+      "entrance_lng": -87.6308317,
+      "entrance_source": "OSM parking_entrance node 8013475694"
     },
     {
       "id": "chi-union-station",
@@ -154,7 +190,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak/Metra station. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8774282,
+      "entrance_lng": -87.6408972,
+      "entrance_source": "OSM parking_entrance node 13142787922"
     },
     {
       "id": "chi-willis",
@@ -166,7 +205,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Willis (Sears) Tower. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8788628,
+      "entrance_lng": -87.6350994,
+      "entrance_source": "OSM parking_entrance node 10974049462"
     },
     {
       "id": "chi-riverwalk-east",
@@ -178,7 +220,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Loop/Chicago Riverwalk area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8875938,
+      "entrance_lng": -87.6256881,
+      "entrance_source": "OSM parking_entrance node 9378228733"
     },
     {
       "id": "chi-mccormick-mrshl",
@@ -214,7 +259,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Soldier Field, Field Museum, Shedd, Adler.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8634345,
+      "entrance_lng": -87.6155955,
+      "entrance_source": "OSM parking_entrance node 7161326790"
     },
     {
       "id": "chi-shedd",
@@ -262,7 +310,10 @@
       "height_label": "6'6\"",
       "oversized": false,
       "notes": "Very tight clearance. Most SUVs with racks won't fit.",
-      "source": "flychicago.com"
+      "source": "flychicago.com",
+      "entrance_lat": 41.9785067,
+      "entrance_lng": -87.9035259,
+      "entrance_source": "OSM parking_entrance node 6377720652"
     },
     {
       "id": "ord-b",
@@ -382,7 +433,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground MSI garage. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.7917025,
+      "entrance_lng": -87.5841951,
+      "entrance_source": "OSM parking_entrance node 12760785662"
     },
     {
       "id": "chi-lincoln-park-zoo",
@@ -406,7 +460,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Self-park + valet, entrance on Dearborn between Washington & Randolph. Standard Parking 312-658-0862.",
-      "source": "blockthirtyseven.com"
+      "source": "blockthirtyseven.com",
+      "entrance_lat": 41.8846081,
+      "entrance_lng": -87.6270648,
+      "entrance_source": "OSM parking_entrance node 10933386895"
     },
     {
       "id": "chi-poetry-garage",
@@ -418,7 +475,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "East Loop near Millennium Park. Owner-operated. Clearance needs verification.",
-      "source": "thepoetrygarage.com"
+      "source": "thepoetrygarage.com",
+      "entrance_lat": 41.8857765,
+      "entrance_lng": -87.621917,
+      "entrance_source": "OSM parking_entrance node 10731481975"
     },
     {
       "id": "chi-200w-monroe",
@@ -430,7 +490,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Loop office garage. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8818246,
+      "entrance_lng": -87.6346788,
+      "entrance_source": "OSM parking_entrance node 10925526169"
     },
     {
       "id": "chi-225n-mich",
@@ -442,7 +505,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Illinois Center \u2014 under office towers near Prudential Plaza.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8869932,
+      "entrance_lng": -87.6239127,
+      "entrance_source": "OSM parking_entrance node 8250999805"
     },
     {
       "id": "chi-marina-city",
@@ -454,7 +520,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic 'corn cob' building self-park spiral. Low clearance.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8880628,
+      "entrance_lng": -87.6289471,
+      "entrance_source": "OSM parking_entrance node 2885273879"
     },
     {
       "id": "chi-hancock-deck",
@@ -466,7 +535,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Former John Hancock Center deck. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8986654,
+      "entrance_lng": -87.6225945,
+      "entrance_source": "OSM parking_entrance node 11899379815"
     },
     {
       "id": "chi-chinatown",
@@ -478,7 +550,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Chinatown Square shopping lot. Surface parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8523437,
+      "entrance_lng": -87.6344783,
+      "entrance_source": "OSM parking_entrance node 12772593639"
     },
     {
       "id": "chi-lincoln-yards",
@@ -490,7 +565,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "North/Clybourn shopping corridor.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.9090772,
+      "entrance_lng": -87.6535126,
+      "entrance_source": "OSM parking_entrance node 2168537839"
     },
     {
       "id": "chi-theatre-dist",
@@ -502,7 +580,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Theatre District.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8853119,
+      "entrance_lng": -87.6293504,
+      "entrance_source": "OSM parking_entrance node 9424758522"
     },
     {
       "id": "chi-mccormick-hyatt",
@@ -514,7 +595,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel garage adjacent to McCormick Place.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8523619,
+      "entrance_lng": -87.6186525,
+      "entrance_source": "OSM parking_entrance node 11936032953"
     },
     {
       "id": "chi-guaranteed-rate",
@@ -538,7 +622,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Aon Center tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8857765,
+      "entrance_lng": -87.621917,
+      "entrance_source": "OSM parking_entrance node 10731481975"
     },
     {
       "id": "chi-river-east",
@@ -550,7 +637,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Navy Pier, AMC River East. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8897753,
+      "entrance_lng": -87.6146488,
+      "entrance_source": "OSM parking_entrance node 12608231336"
     },
     {
       "id": "chi-ohare-intl-terminal",

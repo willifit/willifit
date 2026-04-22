@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest upscale mall in Southwest. Multiple garages.",
-      "source": "fashionsquare.com"
+      "source": "fashionsquare.com",
+      "entrance_lat": 33.503245,
+      "entrance_lng": -111.9301046,
+      "entrance_source": "OSM parking_entrance node 11230544268"
     },
     {
       "id": "sco-old-town-garage",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts + museum adjacent.",
-      "source": "scottsdaleaz.gov"
+      "source": "scottsdaleaz.gov",
+      "entrance_lat": 33.4962084,
+      "entrance_lng": -111.9251956,
+      "entrance_source": "OSM parking_entrance node 10901460248"
     },
     {
       "id": "sco-quarter-garage",
@@ -58,7 +64,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air upscale shopping. Multiple structured lots.",
-      "source": "kierlandcommons.com"
+      "source": "kierlandcommons.com",
+      "entrance_lat": 33.6248272,
+      "entrance_lng": -111.9279502,
+      "entrance_source": "OSM parking_entrance node 13750982221"
     },
     {
       "id": "sco-scottsdale-quarter",
@@ -118,7 +127,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Civic Center Mall adjacent.",
-      "source": "smoca.org"
+      "source": "smoca.org",
+      "entrance_lat": 33.4962084,
+      "entrance_lng": -111.9251956,
+      "entrance_source": "OSM parking_entrance node 10901460248"
     },
     {
       "id": "sco-taliesin-west",
@@ -202,7 +214,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Giants spring training. Old Town adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.4926753,
+      "entrance_lng": -111.9237288,
+      "entrance_source": "OSM parking_entrance node 8754762395"
     },
     {
       "id": "sco-mayo-clinic-scottsdale",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest + cheapest downtown garage. Reach from Storrow, I-93, Mass Pike.",
-      "source": "boston-discovery-guide.com"
+      "source": "boston-discovery-guide.com",
+      "entrance_lat": 42.3543669,
+      "entrance_lng": -71.0682829,
+      "entrance_source": "OSM parking_entrance node 12149852602"
     },
     {
       "id": "bos-government-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Steps from TD Garden, Faneuil Hall, Quincy Market, North End.",
-      "source": "governmentcentergarage.com"
+      "source": "governmentcentergarage.com",
+      "entrance_lat": 42.3604024,
+      "entrance_lng": -71.0615538,
+      "entrance_source": "OSM parking_entrance node 7838542851"
     },
     {
       "id": "bos-haymarket-garage",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near North End, Faneuil Hall, West End.",
-      "source": "pilgrimparking.com"
+      "source": "pilgrimparking.com",
+      "entrance_lat": 42.3602506,
+      "entrance_lng": -71.0574816,
+      "entrance_source": "OSM parking_entrance node 5212687623"
     },
     {
       "id": "bos-folio",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Financial District.",
-      "source": "pilgrimparking.com"
+      "source": "pilgrimparking.com",
+      "entrance_lat": 42.35951,
+      "entrance_lng": -71.0560214,
+      "entrance_source": "OSM parking_entrance node 7288598125"
     },
     {
       "id": "bos-td-garden",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Celtics/Bruins arena garage.",
-      "source": "tdgarden.com"
+      "source": "tdgarden.com",
+      "entrance_lat": 42.3656866,
+      "entrance_lng": -71.0634455,
+      "entrance_source": "OSM parking_entrance node 7745736292"
     },
     {
       "id": "bos-fenway-garage",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Red Sox game parking.",
-      "source": "mlb.com/redsox"
+      "source": "mlb.com/redsox",
+      "entrance_lat": 42.3472337,
+      "entrance_lng": -71.0993608,
+      "entrance_source": "OSM parking_entrance node 7604008450"
     },
     {
       "id": "bos-back-bay",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Prudential Center / Copley Place.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.3470262,
+      "entrance_lng": -71.0801253,
+      "entrance_source": "OSM parking_entrance node 7725901173"
     },
     {
       "id": "bos-copley",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shopping + hotel access.",
-      "source": "copleyplace.com"
+      "source": "copleyplace.com",
+      "entrance_lat": 42.3484349,
+      "entrance_lng": -71.0805961,
+      "entrance_source": "OSM parking_entrance node 7487912479"
     },
     {
       "id": "bos-bcec",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Seaport convention center. Large garage.",
-      "source": "signatureboston.com"
+      "source": "signatureboston.com",
+      "entrance_lat": 42.345716,
+      "entrance_lng": -71.0434331,
+      "entrance_source": "OSM parking_entrance node 7761310770"
     },
     {
       "id": "bos-seaport-wtc",
@@ -130,7 +157,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Pru mall + tower.",
-      "source": "prudentialcenter.com"
+      "source": "prudentialcenter.com",
+      "entrance_lat": 42.348628,
+      "entrance_lng": -71.0823097,
+      "entrance_source": "OSM parking_entrance node 7774760063"
     },
     {
       "id": "bos-south-station",
@@ -154,7 +184,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Norman B. Leventhal Park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.356221,
+      "entrance_lng": -71.0552892,
+      "entrance_source": "OSM parking_entrance node 1326658609"
     },
     {
       "id": "bos-aquarium-garage",
@@ -166,7 +199,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Waterfront garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.3587789,
+      "entrance_lng": -71.0510575,
+      "entrance_source": "OSM parking_entrance node 11397772648"
     },
     {
       "id": "bos-fan-pier",
@@ -202,7 +238,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent Charles River.",
-      "source": "mos.org"
+      "source": "mos.org",
+      "entrance_lat": 42.3682044,
+      "entrance_lng": -71.0719732,
+      "entrance_source": "OSM parking_entrance node 1164496775"
     },
     {
       "id": "bos-assembly-row",
@@ -214,7 +253,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air retail + offices.",
-      "source": "assemblyrow.com"
+      "source": "assemblyrow.com",
+      "entrance_lat": 42.3937583,
+      "entrance_lng": -71.0776351,
+      "entrance_source": "OSM parking_entrance node 8850686313"
     },
     {
       "id": "bos-quincy-market",
@@ -226,7 +268,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Limited \u2014 use Government Center instead.",
-      "source": "faneuilhallmarketplace.com"
+      "source": "faneuilhallmarketplace.com",
+      "entrance_lat": 42.3608153,
+      "entrance_lng": -71.0542684,
+      "entrance_source": "OSM parking_entrance node 7306583963"
     },
     {
       "id": "bos-kendall-cambridge",
@@ -238,7 +283,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "MIT / Kendall tech district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.3651609,
+      "entrance_lng": -71.085919,
+      "entrance_source": "OSM parking_entrance node 11678430105"
     },
     {
       "id": "bos-harvard-sq",
@@ -250,7 +298,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "University-area garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.3718948,
+      "entrance_lng": -71.1214007,
+      "entrance_source": "OSM parking_entrance node 13025683118"
     },
     {
       "id": "bos-logan-central",
@@ -262,7 +313,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "massport.com"
+      "source": "massport.com",
+      "entrance_lat": 42.3651484,
+      "entrance_lng": -71.0196832,
+      "entrance_source": "OSM parking_entrance node 8044254981"
     },
     {
       "id": "bos-logan-economy",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Boise.",
-      "source": "cityofboise.org"
+      "source": "cityofboise.org",
+      "entrance_lat": 43.6152093,
+      "entrance_lng": -116.2048255,
+      "entrance_source": "OSM parking_entrance node 11626062087"
     },
     {
       "id": "boi-convention-ctr",
@@ -34,7 +37,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "State capitol street + surface lots.",
-      "source": "accessidaho.org"
+      "source": "accessidaho.org",
+      "entrance_lat": 43.6177161,
+      "entrance_lng": -116.1977058,
+      "entrance_source": "OSM parking_entrance node 8987039935"
     },
     {
       "id": "boi-bodo",
@@ -58,7 +64,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown historic district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 43.6152093,
+      "entrance_lng": -116.2048255,
+      "entrance_source": "OSM parking_entrance node 11626062087"
     },
     {
       "id": "boi-zoo-boise",
@@ -166,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "stlukesonline.org"
+      "source": "stlukesonline.org",
+      "entrance_lat": 43.6189269,
+      "entrance_lng": -116.1976101,
+      "entrance_source": "OSM parking_entrance node 8987039970"
     },
     {
       "id": "boi-8th-idaho",

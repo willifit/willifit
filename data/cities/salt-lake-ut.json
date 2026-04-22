@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Jazz arena. Arena Plaza garage attached.",
-      "source": "utahjazz.com"
+      "source": "utahjazz.com",
+      "entrance_lat": 40.7682053,
+      "entrance_lng": -111.8994476,
+      "entrance_source": "OSM parking_entrance node 12396402796"
     },
     {
       "id": "slc-convention-salt-palace",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Salt Palace convention.",
-      "source": "saltpalace.com"
+      "source": "saltpalace.com",
+      "entrance_lat": 40.765342,
+      "entrance_lng": -111.8947624,
+      "entrance_source": "OSM parking_entrance node 12215031479"
     },
     {
       "id": "slc-city-creek-center",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale downtown mall.",
-      "source": "shopcitycreekcenter.com"
+      "source": "shopcitycreekcenter.com",
+      "entrance_lat": 40.7671807,
+      "entrance_lng": -111.89007,
+      "entrance_source": "OSM parking_entrance node 2155586662"
     },
     {
       "id": "slc-gateway",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air mixed-use retail.",
-      "source": "shopthegateway.com"
+      "source": "shopthegateway.com",
+      "entrance_lat": 40.7673271,
+      "entrance_lng": -111.9033445,
+      "entrance_source": "OSM parking_entrance node 10147928309"
     },
     {
       "id": "slc-temple-square",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Conference Center. LDS Temple Square access.",
-      "source": "templesquare.com"
+      "source": "templesquare.com",
+      "entrance_lat": 40.7711667,
+      "entrance_lng": -111.8911656,
+      "entrance_source": "OSM parking_entrance node 11238107890"
     },
     {
       "id": "slc-utah-state-capitol",
@@ -70,7 +85,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Hill surface lots.",
-      "source": "utahstatecapitol.utah.gov"
+      "source": "utahstatecapitol.utah.gov",
+      "entrance_lat": 40.7776838,
+      "entrance_lng": -111.8866511,
+      "entrance_source": "OSM parking_entrance node 3684285215"
     },
     {
       "id": "slc-smiths-ballpark",
@@ -178,7 +196,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.7266263,
+      "entrance_lng": -111.8574239,
+      "entrance_source": "OSM parking_entrance node 10187641751"
     },
     {
       "id": "slc-station-park",
@@ -238,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski resort base area. Park City is separate city.",
-      "source": "parkcitymountain.com"
+      "source": "parkcitymountain.com",
+      "entrance_lat": 40.6517045,
+      "entrance_lng": -111.5067102,
+      "entrance_source": "OSM parking_entrance node 13720566545"
     },
     {
       "id": "slc-airport-short",

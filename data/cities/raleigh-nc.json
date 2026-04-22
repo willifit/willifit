@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "RCC underground.",
-      "source": "raleighconvention.com"
+      "source": "raleighconvention.com",
+      "entrance_lat": 35.7723615,
+      "entrance_lng": -78.6419155,
+      "entrance_source": "OSM parking_entrance node 6573073971"
     },
     {
       "id": "rdu-city-moore-sq",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown deck.",
-      "source": "raleighnc.gov"
+      "source": "raleighnc.gov",
+      "entrance_lat": 35.7763087,
+      "entrance_lng": -78.6368017,
+      "entrance_source": "OSM parking_entrance node 3360555947"
     },
     {
       "id": "rdu-city-blount-st",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "raleighnc.gov"
+      "source": "raleighnc.gov",
+      "entrance_lat": 35.7750422,
+      "entrance_lng": -78.6382907,
+      "entrance_source": "OSM parking_entrance node 11643650821"
     },
     {
       "id": "rdu-perf-arts",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts garage.",
-      "source": "dukeenergycenterraleigh.com"
+      "source": "dukeenergycenterraleigh.com",
+      "entrance_lat": 35.7728787,
+      "entrance_lng": -78.6411138,
+      "entrance_source": "OSM parking_entrance node 6573073980"
     },
     {
       "id": "rdu-mccrae-park",
@@ -106,7 +118,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "crabtreevalleymall.com"
+      "source": "crabtreevalleymall.com",
+      "entrance_lat": 35.8410971,
+      "entrance_lng": -78.6789481,
+      "entrance_source": "OSM parking_entrance node 5835218890"
     },
     {
       "id": "rdu-nc-state-coliseum",
@@ -118,7 +133,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Football stadium. Adjacent PNC Arena lots.",
-      "source": "gopack.com"
+      "source": "gopack.com",
+      "entrance_lat": 35.8013514,
+      "entrance_lng": -78.7207323,
+      "entrance_source": "OSM parking_entrance node 11518803273"
     },
     {
       "id": "rdu-museum-natural-sciences",
@@ -130,7 +148,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown museum.",
-      "source": "naturalsciences.org"
+      "source": "naturalsciences.org",
+      "entrance_lat": 35.7820373,
+      "entrance_lng": -78.6401558,
+      "entrance_source": "OSM parking_entrance node 11841870890"
     },
     {
       "id": "rdu-airport-garage-1",
@@ -154,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal 2 garage.",
-      "source": "rdu.com"
+      "source": "rdu.com",
+      "entrance_lat": 35.877508,
+      "entrance_lng": -78.7907952,
+      "entrance_source": "OSM parking_entrance node 1388096573"
     },
     {
       "id": "rdu-airport-economy",
@@ -178,7 +202,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Formerly Duke Energy Center. Renovated.",
-      "source": "dukeenergycenterraleigh.com"
+      "source": "dukeenergycenterraleigh.com",
+      "entrance_lat": 35.7728981,
+      "entrance_lng": -78.6418786,
+      "entrance_source": "OSM parking_entrance node 6573073981"
     },
     {
       "id": "rdu-marbles-kids",
@@ -190,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Children's museum.",
-      "source": "marbleskidsmuseum.org"
+      "source": "marbleskidsmuseum.org",
+      "entrance_lat": 35.7788279,
+      "entrance_lng": -78.6376282,
+      "entrance_source": "OSM parking_entrance node 3360555956"
     },
     {
       "id": "rdu-ncma-park",
@@ -214,7 +244,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic amusement park / family park.",
-      "source": "raleighnc.gov"
+      "source": "raleighnc.gov",
+      "entrance_lat": 35.7829558,
+      "entrance_lng": -78.6672346,
+      "entrance_source": "OSM parking_entrance node 8567663945"
     },
     {
       "id": "rdu-umstead-state-park",
@@ -262,7 +295,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Restored warehouse entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.7781647,
+      "entrance_lng": -78.6452193,
+      "entrance_source": "OSM parking_entrance node 11384964284"
     },
     {
       "id": "rdu-five-points",
@@ -298,7 +334,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Outdoor amphitheater adjacent to Convention Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.7728981,
+      "entrance_lng": -78.6418786,
+      "entrance_source": "OSM parking_entrance node 6573073981"
     },
     {
       "id": "rdu-state-fairgrounds",
@@ -334,7 +373,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Durham campus \u2014 historic tobacco adaptive reuse. Triangle area.",
-      "source": "americantobaccocampus.com"
+      "source": "americantobaccocampus.com",
+      "entrance_lat": 35.9926373,
+      "entrance_lng": -78.9028594,
+      "entrance_source": "OSM parking_entrance node 9992904421"
     },
     {
       "id": "osm-w764491791",
@@ -346,7 +388,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "free [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.8357686,
+      "entrance_lng": -78.6392237,
+      "entrance_source": "OSM parking_entrance node 13417323219"
     }
   ],
   "tunnels": [],

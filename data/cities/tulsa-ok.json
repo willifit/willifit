@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main event arena.",
-      "source": "bokcenter.com"
+      "source": "bokcenter.com",
+      "entrance_lat": 36.1506828,
+      "entrance_lng": -95.9949697,
+      "entrance_source": "OSM parking_entrance node 6604005950"
     },
     {
       "id": "tul-convention-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "coxcentertulsa.com"
+      "source": "coxcentertulsa.com",
+      "entrance_lat": 36.1535569,
+      "entrance_lng": -95.9924151,
+      "entrance_source": "OSM parking_entrance node 12848369319"
     },
     {
       "id": "tul-tulsa-performing",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Civic center adjacent.",
-      "source": "tulsapac.com"
+      "source": "tulsapac.com",
+      "entrance_lat": 36.1536513,
+      "entrance_lng": -95.9922372,
+      "entrance_source": "OSM parking_entrance node 12848369324"
     },
     {
       "id": "tul-williams-ctr",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.1563475,
+      "entrance_lng": -95.9894834,
+      "entrance_source": "OSM parking_entrance node 3221197059"
     },
     {
       "id": "tul-oneok-field",
@@ -82,7 +94,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.1602192,
+      "entrance_lng": -95.9910629,
+      "entrance_source": "OSM parking_entrance node 11846588854"
     },
     {
       "id": "tul-philbrook",
@@ -214,7 +229,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic district bars + restaurants.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.153786,
+      "entrance_lng": -95.9883403,
+      "entrance_source": "OSM parking_entrance node 8581500041"
     },
     {
       "id": "tul-vision-industrial",

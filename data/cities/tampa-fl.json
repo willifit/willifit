@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Lightning arena. Adjacent + valet.",
-      "source": "amaliearena.com"
+      "source": "amaliearena.com",
+      "entrance_lat": 27.9418533,
+      "entrance_lng": -82.4530063,
+      "entrance_source": "OSM parking_entrance node 9622046730"
     },
     {
       "id": "tpa-convention-ctr",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "tampaconventioncenter.com"
+      "source": "tampaconventioncenter.com",
+      "entrance_lat": 27.9422621,
+      "entrance_lng": -82.4553591,
+      "entrance_source": "OSM parking_entrance node 8419008721"
     },
     {
       "id": "tpa-whiting-st",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "tampa.gov"
+      "source": "tampa.gov",
+      "entrance_lat": 27.9457316,
+      "entrance_lng": -82.457842,
+      "entrance_source": "OSM parking_entrance node 8451580120"
     },
     {
       "id": "tpa-poe-garage",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "tampa.gov"
+      "source": "tampa.gov",
+      "entrance_lat": 27.9476038,
+      "entrance_lng": -82.4589661,
+      "entrance_source": "OSM parking_entrance node 11911622414"
     },
     {
       "id": "tpa-centro-ybor",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic Ybor City.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 27.9631159,
+      "entrance_lng": -82.4370479,
+      "entrance_source": "OSM parking_entrance node 1048628995"
     },
     {
       "id": "tpa-hyde-park-village",
@@ -94,7 +109,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Water Street + Sparkman Wharf district.",
-      "source": "sparkmanwharf.com"
+      "source": "sparkmanwharf.com",
+      "entrance_lat": 27.9443761,
+      "entrance_lng": -82.4469424,
+      "entrance_source": "OSM parking_entrance node 9604430421"
     },
     {
       "id": "tpa-raymond-james",
@@ -154,7 +172,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Science museum surface.",
-      "source": "mosi.org"
+      "source": "mosi.org",
+      "entrance_lat": 28.0583416,
+      "entrance_lng": -82.4167181,
+      "entrance_source": "OSM parking_entrance node 538662920"
     },
     {
       "id": "tpa-florida-aquarium",
@@ -178,7 +199,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall.",
-      "source": "shopinternationalplaza.com"
+      "source": "shopinternationalplaza.com",
+      "entrance_lat": 27.9572611,
+      "entrance_lng": -82.5222218,
+      "entrance_source": "OSM parking_entrance node 11233797379"
     },
     {
       "id": "tpa-usf-tampa",
@@ -202,7 +226,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic theater.",
-      "source": "tampatheatre.org"
+      "source": "tampatheatre.org",
+      "entrance_lat": 27.9476038,
+      "entrance_lng": -82.4589661,
+      "entrance_source": "OSM parking_entrance node 11911622414"
     },
     {
       "id": "tpa-hrda-water-street",
@@ -214,7 +241,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New Water Street development.",
-      "source": "waterstreettampa.com"
+      "source": "waterstreettampa.com",
+      "entrance_lat": 27.9426788,
+      "entrance_lng": -82.4495874,
+      "entrance_source": "OSM parking_entrance node 9839905302"
     },
     {
       "id": "tpa-tampa-riverwalk",
@@ -226,7 +256,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverwalk surface lots.",
-      "source": "thetampariverwalk.com"
+      "source": "thetampariverwalk.com",
+      "entrance_lat": 27.948075,
+      "entrance_lng": -82.461533,
+      "entrance_source": "OSM parking_entrance node 1952469320"
     },
     {
       "id": "tpa-westshore-plaza",
@@ -238,7 +271,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mall garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 27.9513691,
+      "entrance_lng": -82.5259279,
+      "entrance_source": "OSM parking_entrance node 11215633861"
     },
     {
       "id": "tpa-port-cruise",
@@ -262,7 +298,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "tampaairport.com"
+      "source": "tampaairport.com",
+      "entrance_lat": 27.9768005,
+      "entrance_lng": -82.534215,
+      "entrance_source": "OSM parking_entrance node 10224836008"
     },
     {
       "id": "tpa-airport-economy",

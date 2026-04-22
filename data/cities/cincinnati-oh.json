@@ -10,7 +10,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Bengals. Surface lots + RV tailgating.",
-      "source": "bengals.com"
+      "source": "bengals.com",
+      "entrance_lat": 39.0949539,
+      "entrance_lng": -84.517496,
+      "entrance_source": "OSM parking_entrance node 10289154726"
     },
     {
       "id": "cin-gabp",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Reds ballpark. Surrounding riverfront garages.",
-      "source": "mlb.com/reds"
+      "source": "mlb.com/reds",
+      "entrance_lat": 39.096975,
+      "entrance_lng": -84.5087079,
+      "entrance_source": "OSM parking_entrance node 9774529546"
     },
     {
       "id": "cin-banks-garage",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under The Banks mixed-use. Serves Reds + Bengals + entertainment.",
-      "source": "thebankscincy.com"
+      "source": "thebankscincy.com",
+      "entrance_lat": 39.0987725,
+      "entrance_lng": -84.5126761,
+      "entrance_source": "OSM parking_entrance node 13364054622"
     },
     {
       "id": "cin-convention-ctr",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "duke-energycenter.com"
+      "source": "duke-energycenter.com",
+      "entrance_lat": 39.1020253,
+      "entrance_lng": -84.5155456,
+      "entrance_source": "OSM parking_entrance node 9216445502"
     },
     {
       "id": "cin-findlay-market",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Washington Park / Music Hall.",
-      "source": "3cdc.org"
+      "source": "3cdc.org",
+      "entrance_lat": 39.1095599,
+      "entrance_lng": -84.517005,
+      "entrance_source": "OSM parking_entrance node 2119477801"
     },
     {
       "id": "cin-music-hall",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic Cincy Symphony hall.",
-      "source": "cincinnatiarts.org"
+      "source": "cincinnatiarts.org",
+      "entrance_lat": 39.1095599,
+      "entrance_lng": -84.517005,
+      "entrance_source": "OSM parking_entrance node 2119477801"
     },
     {
       "id": "cin-fifth-third-center",
@@ -94,7 +112,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Fountain Square downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.1017199,
+      "entrance_lng": -84.5129342,
+      "entrance_source": "OSM parking_entrance node 1250209402"
     },
     {
       "id": "cin-mercantile-center",
@@ -106,7 +127,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.1019041,
+      "entrance_lng": -84.5117275,
+      "entrance_source": "OSM parking_entrance node 2195187297"
     },
     {
       "id": "cin-cincy-art-museum",
@@ -118,7 +142,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Eden Park museum. Free parking + free museum.",
-      "source": "cincinnatiartmuseum.org"
+      "source": "cincinnatiartmuseum.org",
+      "entrance_lat": 39.1132203,
+      "entrance_lng": -84.4994187,
+      "entrance_source": "OSM parking_entrance node 2465663508"
     },
     {
       "id": "cin-zoo",
@@ -166,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Former US Bank Arena. Renovating.",
-      "source": "heritagebankcenter.com"
+      "source": "heritagebankcenter.com",
+      "entrance_lat": 39.0982884,
+      "entrance_lng": -84.5056551,
+      "entrance_source": "OSM parking_entrance node 5464268375"
     },
     {
       "id": "cin-national-underground",
@@ -178,7 +208,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum. Shares Banks garages.",
-      "source": "freedomcenter.org"
+      "source": "freedomcenter.org",
+      "entrance_lat": 39.0968368,
+      "entrance_lng": -84.5100712,
+      "entrance_source": "OSM parking_entrance node 5464268587"
     },
     {
       "id": "cin-uc-main",
@@ -190,7 +223,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UC campus visitor.",
-      "source": "uc.edu"
+      "source": "uc.edu",
+      "entrance_lat": 39.1339068,
+      "entrance_lng": -84.5176949,
+      "entrance_source": "OSM parking_entrance node 2470133084"
     },
     {
       "id": "cin-nippert-stadium",
@@ -202,7 +238,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Bearcats football. Campus lots.",
-      "source": "gobearcats.com"
+      "source": "gobearcats.com",
+      "entrance_lat": 39.1306274,
+      "entrance_lng": -84.5178528,
+      "entrance_source": "OSM parking_entrance node 6546639894"
     },
     {
       "id": "cin-kenwood-towne-center",
@@ -214,7 +253,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall.",
-      "source": "kenwoodtownecentre.com"
+      "source": "kenwoodtownecentre.com",
+      "entrance_lat": 39.2057563,
+      "entrance_lng": -84.3737454,
+      "entrance_source": "OSM parking_entrance node 6818680239"
     },
     {
       "id": "cin-eden-park",
@@ -226,7 +268,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic park surface lots.",
-      "source": "cincinnatiparks.com"
+      "source": "cincinnatiparks.com",
+      "entrance_lat": 39.1112911,
+      "entrance_lng": -84.4964458,
+      "entrance_source": "OSM parking_entrance node 1057313802"
     },
     {
       "id": "cin-mt-adams",

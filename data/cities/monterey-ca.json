@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage.",
-      "source": "canneryrow.com"
+      "source": "canneryrow.com",
+      "entrance_lat": 36.6160073,
+      "entrance_lng": -121.901322,
+      "entrance_source": "OSM parking_entrance node 6481829932"
     },
     {
       "id": "mry-aquarium-lot",
@@ -46,7 +49,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center + Portola Hotel.",
-      "source": "montereyconferencecenter.com"
+      "source": "montereyconferencecenter.com",
+      "entrance_lat": 36.6012157,
+      "entrance_lng": -121.893727,
+      "entrance_source": "OSM parking_entrance node 1660040003"
     },
     {
       "id": "mry-custom-house-plaza",

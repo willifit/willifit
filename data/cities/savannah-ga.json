@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage downtown.",
-      "source": "savannahga.gov"
+      "source": "savannahga.gov",
+      "entrance_lat": 32.0807994,
+      "entrance_lng": -81.0925648,
+      "entrance_source": "OSM parking_entrance node 11448949187"
     },
     {
       "id": "sav-liberty-st-garage",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage.",
-      "source": "savannahga.gov"
+      "source": "savannahga.gov",
+      "entrance_lat": 32.0754087,
+      "entrance_lng": -81.0971952,
+      "entrance_source": "OSM parking_entrance node 9108306482"
     },
     {
       "id": "sav-state-st-garage",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage near Chippewa Square.",
-      "source": "savannahga.gov"
+      "source": "savannahga.gov",
+      "entrance_lat": 32.0792752,
+      "entrance_lng": -81.0919512,
+      "entrance_source": "OSM parking_entrance node 2186774397"
     },
     {
       "id": "sav-robinson-garage",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "savannahga.gov"
+      "source": "savannahga.gov",
+      "entrance_lat": 32.0787275,
+      "entrance_lng": -81.095851,
+      "entrance_source": "OSM parking_entrance node 10236573114"
     },
     {
       "id": "sav-whitaker-garage",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Visitor Information Center.",
-      "source": "savannahga.gov"
+      "source": "savannahga.gov",
+      "entrance_lat": 32.0813819,
+      "entrance_lng": -81.0946228,
+      "entrance_source": "OSM parking_entrance node 10236200384"
     },
     {
       "id": "sav-visitor-ctr",
@@ -70,7 +85,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Restored 1930 train station. RV + tour bus OK.",
-      "source": "visitsavannah.com"
+      "source": "visitsavannah.com",
+      "entrance_lat": 32.079843,
+      "entrance_lng": -81.0972005,
+      "entrance_source": "OSM parking_entrance node 2187588369"
     },
     {
       "id": "sav-city-market",
@@ -82,7 +100,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district.",
-      "source": "savannahcitymarket.com"
+      "source": "savannahcitymarket.com",
+      "entrance_lat": 32.0813819,
+      "entrance_lng": -81.0946228,
+      "entrance_source": "OSM parking_entrance node 10236200384"
     },
     {
       "id": "sav-river-street",
@@ -94,7 +115,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverfront cobblestone district.",
-      "source": "riverstreetsavannah.com"
+      "source": "riverstreetsavannah.com",
+      "entrance_lat": 32.0817731,
+      "entrance_lng": -81.0927215,
+      "entrance_source": "OSM parking_entrance node 11991379153"
     },
     {
       "id": "sav-plant-riverside",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New mixed-use riverfront.",
-      "source": "plantriverside.com"
+      "source": "plantriverside.com",
+      "entrance_lat": 32.0836996,
+      "entrance_lng": -81.096407,
+      "entrance_source": "OSM parking_entrance node 12427955425"
     },
     {
       "id": "sav-forsyth-park",
@@ -130,7 +157,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Art museum.",
-      "source": "telfair.org"
+      "source": "telfair.org",
+      "entrance_lat": 32.0787275,
+      "entrance_lng": -81.095851,
+      "entrance_source": "OSM parking_entrance node 10236573114"
     },
     {
       "id": "sav-scad-gallery",
@@ -154,7 +184,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "SCAD-owned historic theater.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.0790851,
+      "entrance_lng": -81.0905883,
+      "entrance_source": "OSM parking_entrance node 10251127937"
     },
     {
       "id": "sav-tybee-north-beach",
@@ -310,7 +343,10 @@
       "height_label": "8'2\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 32.0754655,
+      "entrance_lng": -81.0973984,
+      "entrance_source": "OSM parking_entrance node 9108306479"
     }
   ],
   "tunnels": [],

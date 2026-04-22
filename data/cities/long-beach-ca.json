@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown outlet mall.",
-      "source": "thepikeoutlets.com"
+      "source": "thepikeoutlets.com",
+      "entrance_lat": 33.7649996,
+      "entrance_lng": -118.1920353,
+      "entrance_source": "OSM parking_entrance node 12416488173"
     },
     {
       "id": "lb-convention",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center + Arena.",
-      "source": "longbeachcc.com"
+      "source": "longbeachcc.com",
+      "entrance_lat": 33.7650724,
+      "entrance_lng": -118.1865748,
+      "entrance_source": "OSM parking_entrance node 7200208716"
     },
     {
       "id": "lb-aquarium",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium structured + surface.",
-      "source": "aquariumofpacific.org"
+      "source": "aquariumofpacific.org",
+      "entrance_lat": 33.7634728,
+      "entrance_lng": -118.1967049,
+      "entrance_source": "OSM parking_entrance node 9969303012"
     },
     {
       "id": "lb-queen-mary",
@@ -46,7 +55,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic ocean liner + surface lots.",
-      "source": "queenmary.com"
+      "source": "queenmary.com",
+      "entrance_lat": 33.7508725,
+      "entrance_lng": -118.1902288,
+      "entrance_source": "OSM parking_entrance node 12588637405"
     },
     {
       "id": "lb-shoreline-village",
@@ -82,7 +94,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "April race paddock + RV camping.",
-      "source": "gplb.com"
+      "source": "gplb.com",
+      "entrance_lat": 33.7650724,
+      "entrance_lng": -118.1865748,
+      "entrance_source": "OSM parking_entrance node 7200208716"
     },
     {
       "id": "lb-lgb-airport",
@@ -130,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Long Beach.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.7673924,
+      "entrance_lng": -118.1919785,
+      "entrance_source": "OSM parking_entrance node 13150064297"
     },
     {
       "id": "lb-port-parking",
@@ -154,7 +172,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center theater complex.",
-      "source": "longbeachcc.com"
+      "source": "longbeachcc.com",
+      "entrance_lat": 33.7650724,
+      "entrance_lng": -118.1865748,
+      "entrance_source": "OSM parking_entrance node 7200208716"
     },
     {
       "id": "lb-blvd-cats",
@@ -178,7 +199,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "longbeach.gov"
+      "source": "longbeach.gov",
+      "entrance_lat": 33.7684093,
+      "entrance_lng": -118.1941668,
+      "entrance_source": "OSM parking_entrance node 9694318230"
     },
     {
       "id": "lb-mola-museum",
@@ -298,7 +322,10 @@
       "height_label": "13'1\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.817443,
+      "entrance_lng": -118.1430464,
+      "entrance_source": "OSM parking_entrance node 1844621525"
     },
     {
       "id": "osm-w27275385",
@@ -310,7 +337,10 @@
       "height_label": "10'10\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7730423,
+      "entrance_lng": -118.1917978,
+      "entrance_source": "OSM parking_entrance node 7200334004"
     },
     {
       "id": "osm-w146635494",
@@ -322,7 +352,10 @@
       "height_label": "9'7\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.9029373,
+      "entrance_lng": -118.1320702,
+      "entrance_source": "OSM parking_entrance node 12859253705"
     },
     {
       "id": "osm-w177530654",
@@ -334,7 +367,10 @@
       "height_label": "17'11\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7874436,
+      "entrance_lng": -118.109829,
+      "entrance_source": "OSM parking_entrance node 6848933496"
     },
     {
       "id": "osm-w303268434",
@@ -346,7 +382,10 @@
       "height_label": "17'1\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8071405,
+      "entrance_lng": -118.1472228,
+      "entrance_source": "OSM parking_entrance node 9468701203"
     },
     {
       "id": "osm-w351202573",
@@ -358,7 +397,10 @@
       "height_label": "16'2\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7684093,
+      "entrance_lng": -118.1941668,
+      "entrance_source": "OSM parking_entrance node 9694318230"
     },
     {
       "id": "osm-w403831629",
@@ -370,7 +412,10 @@
       "height_label": "17'11\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8693595,
+      "entrance_lng": -118.062099,
+      "entrance_source": "OSM parking_entrance node 10012205151"
     },
     {
       "id": "osm-w407732230",
@@ -382,7 +427,10 @@
       "height_label": "7'4\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7589043,
+      "entrance_lng": -118.288728,
+      "entrance_source": "OSM parking_entrance node 8073402466"
     },
     {
       "id": "osm-w407763028",
@@ -394,7 +442,10 @@
       "height_label": "14'7\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7900678,
+      "entrance_lng": -118.2934482,
+      "entrance_source": "OSM parking_entrance node 5546983559"
     },
     {
       "id": "osm-w408502402",
@@ -418,7 +469,10 @@
       "height_label": "11'9\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7707596,
+      "entrance_lng": -118.1916518,
+      "entrance_source": "OSM parking_entrance node 11580298939"
     },
     {
       "id": "osm-w441279921",
@@ -442,7 +496,10 @@
       "height_label": "10'10\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7871406,
+      "entrance_lng": -118.140813,
+      "entrance_source": "OSM parking_entrance node 3726701658"
     },
     {
       "id": "osm-w441333504",
@@ -478,7 +535,10 @@
       "height_label": "19'5\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8071043,
+      "entrance_lng": -118.1880654,
+      "entrance_source": "OSM parking_entrance node 7200447368"
     },
     {
       "id": "osm-w441464328",
@@ -490,7 +550,10 @@
       "height_label": "14'6\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8089791,
+      "entrance_lng": -118.1361446,
+      "entrance_source": "OSM parking_entrance node 7200979389"
     },
     {
       "id": "osm-w441490509",
@@ -514,7 +577,10 @@
       "height_label": "10'6\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7691719,
+      "entrance_lng": -118.1953796,
+      "entrance_source": "OSM parking_entrance node 9499214761"
     },
     {
       "id": "osm-w441496838",
@@ -526,7 +592,10 @@
       "height_label": "12'0\"",
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7685205,
+      "entrance_lng": -118.1993881,
+      "entrance_source": "OSM parking_entrance node 299049895"
     },
     {
       "id": "osm-w441500184",
@@ -538,7 +607,10 @@
       "height_label": "17'11\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.786169,
+      "entrance_lng": -118.108951,
+      "entrance_source": "OSM parking_entrance node 6251875475"
     },
     {
       "id": "osm-w442301061",
@@ -550,7 +622,10 @@
       "height_label": "8'2\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7914811,
+      "entrance_lng": -118.3315506,
+      "entrance_source": "OSM parking_entrance node 10728833092"
     },
     {
       "id": "osm-w442301364",
@@ -562,7 +637,10 @@
       "height_label": "12'2\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.7915348,
+      "entrance_lng": -118.3287684,
+      "entrance_source": "OSM parking_entrance node 8902948833"
     },
     {
       "id": "osm-w442301492",
@@ -574,7 +652,10 @@
       "height_label": "19'5\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8114004,
+      "entrance_lng": -118.3434265,
+      "entrance_source": "OSM parking_entrance node 4873018652"
     },
     {
       "id": "osm-w442302212",
@@ -586,7 +667,10 @@
       "height_label": "16'9\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8910358,
+      "entrance_lng": -118.3095248,
+      "entrance_source": "OSM parking_entrance node 5881000509"
     },
     {
       "id": "osm-w450456860",
@@ -598,7 +682,10 @@
       "height_label": "10'8\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.8928104,
+      "entrance_lng": -118.226048,
+      "entrance_source": "OSM parking_entrance node 12157193513"
     },
     {
       "id": "osm-w450854085",
@@ -610,7 +697,10 @@
       "height_label": "7'10\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.9159365,
+      "entrance_lng": -118.0608093,
+      "entrance_source": "OSM parking_entrance node 12845034009"
     },
     {
       "id": "osm-w451199700",
@@ -622,7 +712,10 @@
       "height_label": "11'2\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.9152511,
+      "entrance_lng": -118.0700086,
+      "entrance_source": "OSM parking_entrance node 9351604606"
     },
     {
       "id": "osm-w455800744",
@@ -658,7 +751,10 @@
       "height_label": "13'11\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.9174118,
+      "entrance_lng": -118.1274431,
+      "entrance_source": "OSM parking_entrance node 11593599445"
     }
   ],
   "tunnels": [

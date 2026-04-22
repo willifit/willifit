@@ -46,7 +46,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Observation wheel. Boardwalk adjacent.",
-      "source": "skywheel.com"
+      "source": "skywheel.com",
+      "entrance_lat": 33.6883724,
+      "entrance_lng": -78.88442,
+      "entrance_source": "OSM parking_entrance node 11751315696"
     },
     {
       "id": "mbs-boardwalk-pier-14",
@@ -58,7 +61,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple beachfront street + surface lots.",
-      "source": "visitmyrtlebeach.com"
+      "source": "visitmyrtlebeach.com",
+      "entrance_lat": 33.6889127,
+      "entrance_lng": -78.8852396,
+      "entrance_source": "OSM parking_entrance node 11751315698"
     },
     {
       "id": "mbs-myrtle-beach-state-park",

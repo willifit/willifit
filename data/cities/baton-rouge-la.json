@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Arena + theater + exhibition hall.",
-      "source": "brrivercenter.com"
+      "source": "brrivercenter.com",
+      "entrance_lat": 30.4397885,
+      "entrance_lng": -91.1896838,
+      "entrance_source": "OSM parking_entrance node 1822095613"
     },
     {
       "id": "btr-state-capitol",
@@ -94,7 +97,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "LSU basketball + gymnastics.",
-      "source": "lsusports.net"
+      "source": "lsusports.net",
+      "entrance_lat": 30.4135999,
+      "entrance_lng": -91.1885592,
+      "entrance_source": "OSM parking_entrance node 12057011029"
     },
     {
       "id": "btr-lsu-union-sq",
@@ -250,7 +256,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "LA history museum.",
-      "source": "louisianastatemuseum.org"
+      "source": "louisianastatemuseum.org",
+      "entrance_lat": 30.4516283,
+      "entrance_lng": -91.185526,
+      "entrance_source": "OSM parking_entrance node 9143244431"
     },
     {
       "id": "btr-baton-rouge-farmers",
@@ -262,7 +271,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Saturday market.",
-      "source": "redstickfm.com"
+      "source": "redstickfm.com",
+      "entrance_lat": 30.4483372,
+      "entrance_lng": -91.1885561,
+      "entrance_source": "OSM parking_entrance node 9143244442"
     },
     {
       "id": "btr-mid-city-district",

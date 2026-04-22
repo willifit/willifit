@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under GM Renaissance Center. 6'8\" typical.",
-      "source": "gmrencen.com"
+      "source": "gmrencen.com",
+      "entrance_lat": 42.3282847,
+      "entrance_lng": -83.0407845,
+      "entrance_source": "OSM parking_entrance node 12925825650"
     },
     {
       "id": "det-ford-field",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Lions stadium garage.",
-      "source": "fordfield.com"
+      "source": "fordfield.com",
+      "entrance_lat": 42.3399749,
+      "entrance_lng": -83.0432854,
+      "entrance_source": "OSM parking_entrance node 1262302882"
     },
     {
       "id": "det-comerica",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Red Wings/Pistons arena.",
-      "source": "313presents.com"
+      "source": "313presents.com",
+      "entrance_lat": 42.3395793,
+      "entrance_lng": -83.0551977,
+      "entrance_source": "OSM parking_entrance node 6148476713"
     },
     {
       "id": "det-cobo-tcf",
@@ -82,7 +91,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Casino garage.",
-      "source": "mgmgranddetroit.com"
+      "source": "mgmgranddetroit.com",
+      "entrance_lat": 42.3325568,
+      "entrance_lng": -83.0611786,
+      "entrance_source": "OSM parking_entrance node 1213955074"
     },
     {
       "id": "det-motor-city-casino",
@@ -94,7 +106,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Casino garage.",
-      "source": "motorcitycasino.com"
+      "source": "motorcitycasino.com",
+      "entrance_lat": 42.3382745,
+      "entrance_lng": -83.0677207,
+      "entrance_source": "OSM parking_entrance node 8361287111"
     },
     {
       "id": "det-west-campus",
@@ -118,7 +133,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Saturday market. Large surface lots.",
-      "source": "easternmarket.org"
+      "source": "easternmarket.org",
+      "entrance_lat": 42.3481102,
+      "entrance_lng": -83.0398897,
+      "entrance_source": "OSM parking_entrance node 9753156031"
     },
     {
       "id": "det-campus-martius",
@@ -130,7 +148,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown core park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.330879,
+      "entrance_lng": -83.0446958,
+      "entrance_source": "OSM parking_entrance node 7102018516"
     },
     {
       "id": "det-dia",
@@ -190,7 +211,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "henryford.com"
+      "source": "henryford.com",
+      "entrance_lat": 42.3664093,
+      "entrance_lng": -83.084451,
+      "entrance_source": "OSM parking_entrance node 6903869850"
     },
     {
       "id": "det-somerset",

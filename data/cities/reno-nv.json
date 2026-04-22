@@ -38,7 +38,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Reno.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5267,-119.8141, 120m off).",
-      "source": "reno.gov"
+      "source": "reno.gov",
+      "entrance_lat": 39.5254451,
+      "entrance_lng": -119.8137897,
+      "entrance_source": "OSM parking_entrance node 6296539875"
     },
     {
       "id": "rno-eldorado-silver-legacy-circus",
@@ -235,12 +238,23 @@
       "pano_id": "ror5pQgsf-97JaFx0dIWOw",
       "pano_heading": 270,
       "sections": [
-        { "label": "Long-term",  "height_in": 91, "height_label": "7'7\"" },
-        { "label": "Short-term", "height_in": 98, "height_label": "8'2\"" }
+        {
+          "label": "Long-term",
+          "height_in": 91,
+          "height_label": "7'7\""
+        },
+        {
+          "label": "Short-term",
+          "height_in": 98,
+          "height_label": "8'2\""
+        }
       ],
       "notes": "Terminal-adjacent covered garage with two gates visible from the same entrance approach. Long-term lane is 7'7\" (strictest), short-term lane is 8'2\". Primary height shown = lowest of the two for safety (manual + AI verification via pano ror5pQgsf-97JaFx0dIWOw @ 270\u00b0).",
       "source": "AI-verified + manual \u2014 was: renoairport.com",
-      "verified_on": "2026-04-21"
+      "verified_on": "2026-04-21",
+      "entrance_lat": 39.5044376,
+      "entrance_lng": -119.7769663,
+      "entrance_source": "OSM parking_entrance node 9533952653"
     },
     {
       "id": "rno-airport-economy",

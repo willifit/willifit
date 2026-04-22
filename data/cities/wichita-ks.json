@@ -34,7 +34,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment/dining district surface lots.",
-      "source": "oldtownwichita.com"
+      "source": "oldtownwichita.com",
+      "entrance_lat": 37.6899067,
+      "entrance_lng": -97.3298892,
+      "entrance_source": "OSM parking_entrance node 11271480463"
     },
     {
       "id": "wic-exploration-place",
@@ -46,7 +49,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Science museum riverside.",
-      "source": "exploration.org"
+      "source": "exploration.org",
+      "entrance_lat": 37.6872952,
+      "entrance_lng": -97.3461701,
+      "entrance_source": "OSM parking_entrance node 12035297000"
     },
     {
       "id": "wic-botanica",

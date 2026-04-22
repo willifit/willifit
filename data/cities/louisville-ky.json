@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Louisville basketball arena.",
-      "source": "kfcyumcenter.com"
+      "source": "kfcyumcenter.com",
+      "entrance_lat": 38.256935,
+      "entrance_lng": -85.7547264,
+      "entrance_source": "OSM parking_entrance node 9075086469"
     },
     {
       "id": "lou-4th-st-live",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown entertainment block.",
-      "source": "4thstlive.com"
+      "source": "4thstlive.com",
+      "entrance_lat": 38.255755,
+      "entrance_lng": -85.7569098,
+      "entrance_source": "OSM parking_entrance node 3516268515"
     },
     {
       "id": "lou-convention",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "KICC garage.",
-      "source": "kyconvention.com"
+      "source": "kyconvention.com",
+      "entrance_lat": 38.2574168,
+      "entrance_lng": -85.7568341,
+      "entrance_source": "OSM parking_entrance node 3516420148"
     },
     {
       "id": "lou-slugger-garage",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Bats AAA ballpark.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 38.2545411,
+      "entrance_lng": -85.7453127,
+      "entrance_source": "OSM parking_entrance node 3560960843"
     },
     {
       "id": "lou-preston-main",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.2568937,
+      "entrance_lng": -85.7481188,
+      "entrance_source": "OSM parking_entrance node 3560961424"
     },
     {
       "id": "lou-galt-house",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hotel + conference garage.",
-      "source": "galthouse.com"
+      "source": "galthouse.com",
+      "entrance_lat": 38.2583792,
+      "entrance_lng": -85.7594307,
+      "entrance_source": "OSM parking_entrance node 2316985096"
     },
     {
       "id": "lou-palace-theatre",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.2511703,
+      "entrance_lng": -85.7584288,
+      "entrance_source": "OSM parking_entrance node 12072889177"
     },
     {
       "id": "lou-slugger-museum",
@@ -118,7 +139,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ohio riverfront surface lots.",
-      "source": "ourwaterfront.org"
+      "source": "ourwaterfront.org",
+      "entrance_lat": 38.2569875,
+      "entrance_lng": -85.7480097,
+      "entrance_source": "OSM parking_entrance node 3560961437"
     },
     {
       "id": "lou-churchill-downs",

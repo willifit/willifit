@@ -244,7 +244,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Underground, 4 levels. No on-site oversized. Venetian shared oversized lot has 6'8\" to 8'3\" range.",
-      "source": "Venetian/Palazzo"
+      "source": "Venetian/Palazzo",
+      "entrance_lat": 36.1236656,
+      "entrance_lng": -115.1694685,
+      "entrance_source": "OSM parking_entrance node 6195949818"
     },
     {
       "id": "paris",
@@ -301,7 +304,10 @@
       "height_label": "8'2\"",
       "oversized": true,
       "notes": "Opened 2021. First-hand data: designated oversized parking. Tall clearance on main levels.",
-      "source": "First-hand"
+      "source": "First-hand",
+      "entrance_lat": 36.1350565,
+      "entrance_lng": -115.1649324,
+      "entrance_source": "OSM parking_entrance node 11274283800"
     },
     {
       "id": "stratosphere",

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic underground Union Square garage. First underground in US. Clearance needs verification.",
-      "source": "sfmta.com"
+      "source": "sfmta.com",
+      "entrance_lat": 37.788188,
+      "entrance_lng": -122.407397,
+      "entrance_source": "OSM parking_entrance node 386885888"
     },
     {
       "id": "sf-moma-minna",
@@ -22,7 +25,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Lower clearance Minna entrance.",
-      "source": "sftourismtips.com"
+      "source": "sftourismtips.com",
+      "entrance_lat": 37.7863738,
+      "entrance_lng": -122.4010361,
+      "entrance_source": "OSM parking_entrance node 12452571763"
     },
     {
       "id": "sf-moma-mission",
@@ -34,7 +40,10 @@
       "height_label": "7'2\"",
       "oversized": false,
       "notes": "Higher entrance off Mission.",
-      "source": "sftourismtips.com"
+      "source": "sftourismtips.com",
+      "entrance_lat": 37.7863738,
+      "entrance_lng": -122.4010361,
+      "entrance_source": "OSM parking_entrance node 12452571763"
     },
     {
       "id": "sf-moscone",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "SFMTA. Serves Moscone Convention Center.",
-      "source": "sfmta.com"
+      "source": "sfmta.com",
+      "entrance_lat": 37.7849283,
+      "entrance_lng": -122.4045881,
+      "entrance_source": "OSM parking_entrance node 8992831062"
     },
     {
       "id": "sf-embarcadero-1",
@@ -94,7 +106,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Oversized OK.",
-      "source": "sftourismtips.com"
+      "source": "sftourismtips.com",
+      "entrance_lat": 37.7843694,
+      "entrance_lng": -122.3893634,
+      "entrance_source": "OSM parking_entrance node 10874913915"
     },
     {
       "id": "sf-ellis-ofarrell",
@@ -106,7 +121,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Union Square adjacent.",
-      "source": "sfmta.com"
+      "source": "sfmta.com",
+      "entrance_lat": 37.7864953,
+      "entrance_lng": -122.4098766,
+      "entrance_source": "OSM parking_entrance node 1901927744"
     },
     {
       "id": "sf-sutter-stockton",
@@ -118,7 +136,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Union Square district.",
-      "source": "sfmta.com"
+      "source": "sfmta.com",
+      "entrance_lat": 37.7897665,
+      "entrance_lng": -122.4069272,
+      "entrance_source": "OSM parking_entrance node 3406622908"
     },
     {
       "id": "sf-5th-mission",
@@ -130,7 +151,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown SFMTA.",
-      "source": "sfmta.com"
+      "source": "sfmta.com",
+      "entrance_lat": 37.7848906,
+      "entrance_lng": -122.4053705,
+      "entrance_source": "OSM parking_entrance node 8707750988"
     },
     {
       "id": "sf-pier-39",
@@ -154,7 +178,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Fisherman's Wharf.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.8073205,
+      "entrance_lng": -122.4137074,
+      "entrance_source": "OSM parking_entrance node 5844557613"
     },
     {
       "id": "sf-ghirardelli",
@@ -166,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic chocolate factory + shops.",
-      "source": "ghirardellisq.com"
+      "source": "ghirardellisq.com",
+      "entrance_lat": 37.8059917,
+      "entrance_lng": -122.422253,
+      "entrance_source": "OSM parking_entrance node 8703162164"
     },
     {
       "id": "sf-japan-ctr",
@@ -178,7 +208,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Japantown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.7844597,
+      "entrance_lng": -122.4294665,
+      "entrance_source": "OSM parking_entrance node 5287405706"
     },
     {
       "id": "sf-stonestown",
@@ -190,7 +223,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mall garage.",
-      "source": "stonestowngalleria.com"
+      "source": "stonestowngalleria.com",
+      "entrance_lat": 37.7282615,
+      "entrance_lng": -122.4762727,
+      "entrance_source": "OSM parking_entrance node 1606222774"
     },
     {
       "id": "sf-westfield-centre",
@@ -202,7 +238,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown mall garage (status reportedly changing).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.7848906,
+      "entrance_lng": -122.4053705,
+      "entrance_source": "OSM parking_entrance node 8707750988"
     },
     {
       "id": "sf-afc-lot",
@@ -226,7 +265,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Warriors arena + Mission Bay.",
-      "source": "chasecenter.com"
+      "source": "chasecenter.com",
+      "entrance_lat": 37.7671686,
+      "entrance_lng": -122.3881766,
+      "entrance_source": "OSM parking_entrance node 9247776194"
     },
     {
       "id": "sf-gg-park-music",
@@ -238,7 +280,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground garage under music concourse. de Young + Academy of Sciences.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 37.770976,
+      "entrance_lng": -122.468025,
+      "entrance_source": "OSM parking_entrance node 6468818539"
     },
     {
       "id": "sf-presidio-main",
@@ -262,7 +307,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flysfo.com"
+      "source": "flysfo.com",
+      "entrance_lat": 37.6159421,
+      "entrance_lng": -122.3918143,
+      "entrance_source": "OSM parking_entrance node 2299432634"
     },
     {
       "id": "sf-sfo-domestic-g",
@@ -274,7 +322,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Domestic garage.",
-      "source": "flysfo.com"
+      "source": "flysfo.com",
+      "entrance_lat": 37.6140262,
+      "entrance_lng": -122.3912088,
+      "entrance_source": "OSM parking_entrance node 9073075687"
     },
     {
       "id": "sf-sfo-long-term",
@@ -286,7 +337,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK. AirTrain to terminals.",
-      "source": "flysfo.com"
+      "source": "flysfo.com",
+      "entrance_lat": 37.6233218,
+      "entrance_lng": -122.3943785,
+      "entrance_source": "OSM parking_entrance node 12537511367"
     }
   ],
   "tunnels": [

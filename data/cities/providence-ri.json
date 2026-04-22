@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main downtown mall.",
-      "source": "providenceplace.com"
+      "source": "providenceplace.com",
+      "entrance_lat": 41.8269553,
+      "entrance_lng": -71.4156784,
+      "entrance_source": "OSM parking_entrance node 8994212125"
     },
     {
       "id": "pvd-rhode-island-conv",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Connected to Amica Mutual Pavilion (Dunkin Donuts Ctr).",
-      "source": "riconvention.com"
+      "source": "riconvention.com",
+      "entrance_lat": 41.8240892,
+      "entrance_lng": -71.4174531,
+      "entrance_source": "OSM parking_entrance node 13085682084"
     },
     {
       "id": "pvd-amica-pavilion",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Formerly Dunkin Donuts Center.",
-      "source": "amicamutualpavilion.com"
+      "source": "amicamutualpavilion.com",
+      "entrance_lat": 41.823374,
+      "entrance_lng": -71.4192479,
+      "entrance_source": "OSM parking_entrance node 11941557287"
     },
     {
       "id": "pvd-mcoy-stadium",
@@ -70,7 +79,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown transit + plaza.",
-      "source": "providenceri.gov"
+      "source": "providenceri.gov",
+      "entrance_lat": 41.8248458,
+      "entrance_lng": -71.4111437,
+      "entrance_source": "OSM parking_entrance node 8998976882"
     },
     {
       "id": "pvd-waterplace-park",
@@ -82,7 +94,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "WaterFire installation art events.",
-      "source": "waterfire.org"
+      "source": "waterfire.org",
+      "entrance_lat": 41.8269553,
+      "entrance_lng": -71.4156784,
+      "entrance_source": "OSM parking_entrance node 8994212125"
     },
     {
       "id": "pvd-brown-power-st",
@@ -154,7 +169,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic PPAC. Downtown theater.",
-      "source": "ppacri.org"
+      "source": "ppacri.org",
+      "entrance_lat": 41.8205256,
+      "entrance_lng": -71.4149149,
+      "entrance_source": "OSM parking_entrance node 7143617003"
     },
     {
       "id": "pvd-providence-children",
@@ -250,7 +268,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak + MBTA Commuter Rail.",
-      "source": "amtrak.com"
+      "source": "amtrak.com",
+      "entrance_lat": 41.8291835,
+      "entrance_lng": -71.416761,
+      "entrance_source": "OSM parking_entrance node 9023329017"
     },
     {
       "id": "pvd-airport-garage",
@@ -262,7 +283,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "PVD (Warwick). Terminal-adjacent.",
-      "source": "flyri.com"
+      "source": "flyri.com",
+      "entrance_lat": 41.7271585,
+      "entrance_lng": -71.4356144,
+      "entrance_source": "OSM parking_entrance node 2099033346"
     },
     {
       "id": "pvd-airport-economy",

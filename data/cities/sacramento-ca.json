@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Kings arena + DOCO (Downtown Commons).",
-      "source": "golden1center.com"
+      "source": "golden1center.com",
+      "entrance_lat": 38.581567,
+      "entrance_lng": -121.4988757,
+      "entrance_source": "OSM parking_entrance node 9790476253"
     },
     {
       "id": "sac-capitol-mall",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "State Capitol adjacent.",
-      "source": "sacramento.gov"
+      "source": "sacramento.gov",
+      "entrance_lat": 38.5783785,
+      "entrance_lng": -121.4941709,
+      "entrance_source": "OSM parking_entrance node 3605907671"
     },
     {
       "id": "sac-convention-ctr",
@@ -70,7 +76,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "State-owned.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.5780237,
+      "entrance_lng": -121.4931306,
+      "entrance_source": "OSM parking_entrance node 3605907673"
     },
     {
       "id": "sac-sutter-medical",
@@ -166,7 +175,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic park street + lot.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "entrance_lat": 38.5717034,
+      "entrance_lng": -121.4696827,
+      "entrance_source": "OSM parking_entrance node 13072199299"
     },
     {
       "id": "sac-csus-parking",
@@ -202,7 +214,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "sacramento.aero"
+      "source": "sacramento.aero",
+      "entrance_lat": 38.6910097,
+      "entrance_lng": -121.5890804,
+      "entrance_source": "OSM parking_entrance node 442588909"
     },
     {
       "id": "smf-terminal-a",

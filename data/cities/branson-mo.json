@@ -202,7 +202,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic train excursions.",
-      "source": "bransontrain.com"
+      "source": "bransontrain.com",
+      "entrance_lat": 36.6433372,
+      "entrance_lng": -93.2158592,
+      "entrance_source": "OSM parking_entrance node 13682325522"
     },
     {
       "id": "bra-butterfly-palace",

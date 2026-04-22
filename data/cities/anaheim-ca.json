@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest Disney parking structure (10,200 spaces). Tram to esplanade.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "entrance_lat": 33.8129236,
+      "entrance_lng": -117.9257982,
+      "entrance_source": "OSM parking_entrance node 6554580407"
     },
     {
       "id": "ana-pixar-pals",
@@ -34,7 +37,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated oversized vehicle + RV + bus lot. Shuttle to parks.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "entrance_lat": 33.803826,
+      "entrance_lng": -117.9121913,
+      "entrance_source": "OSM parking_entrance node 4643834400"
     },
     {
       "id": "ana-downtown-disney",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "2-hour free parking with validation. Limited.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "entrance_lat": 33.8088324,
+      "entrance_lng": -117.9237482,
+      "entrance_source": "OSM parking_entrance node 2001253842"
     },
     {
       "id": "ana-simba-self-park",
@@ -70,7 +79,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest on West Coast. Connected to ACC.",
-      "source": "anaheimconventioncenter.com"
+      "source": "anaheimconventioncenter.com",
+      "entrance_lat": 33.8013772,
+      "entrance_lng": -117.9232287,
+      "entrance_source": "OSM parking_entrance node 5485690701"
     },
     {
       "id": "ana-honda-center",
@@ -106,7 +118,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Anaheim GardenWalk mixed-use.",
-      "source": "anaheimgardenwalk.com"
+      "source": "anaheimgardenwalk.com",
+      "entrance_lat": 33.8055421,
+      "entrance_lng": -117.9125327,
+      "entrance_source": "OSM parking_entrance node 1836058757"
     },
     {
       "id": "ana-hilton-anaheim",
@@ -118,7 +133,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention Center adjacent hotel.",
-      "source": "hilton.com"
+      "source": "hilton.com",
+      "entrance_lat": 33.8020587,
+      "entrance_lng": -117.9176932,
+      "entrance_source": "OSM parking_entrance node 5166434104"
     },
     {
       "id": "ana-marriott-ana",
@@ -130,7 +148,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention hotel.",
-      "source": "marriott.com"
+      "source": "marriott.com",
+      "entrance_lat": 33.8020587,
+      "entrance_lng": -117.9176932,
+      "entrance_source": "OSM parking_entrance node 5166434104"
     },
     {
       "id": "ana-disneyland-hotel",
@@ -142,7 +163,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Disney resort hotel.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "entrance_lat": 33.8088324,
+      "entrance_lng": -117.9237482,
+      "entrance_source": "OSM parking_entrance node 2001253842"
     },
     {
       "id": "ana-grand-californian",
@@ -154,7 +178,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Disney deluxe hotel.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "entrance_lat": 33.8067679,
+      "entrance_lng": -117.9233578,
+      "entrance_source": "OSM parking_entrance node 1291058380"
     },
     {
       "id": "ana-outlets-orange",
@@ -190,7 +217,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Nearby regional mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 33.9167823,
+      "entrance_lng": -117.885399,
+      "entrance_source": "OSM parking_entrance node 1385263835"
     },
     {
       "id": "ana-main-place-santa",
@@ -262,7 +292,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "ART shuttle hub.",
-      "source": "rideart.org"
+      "source": "rideart.org",
+      "entrance_lat": 33.8346669,
+      "entrance_lng": -117.9146281,
+      "entrance_source": "OSM parking_entrance node 8462809128"
     },
     {
       "id": "ana-arm-convention-way",
@@ -286,7 +319,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Chapman University campus.",
-      "source": "chapman.edu"
+      "source": "chapman.edu",
+      "entrance_lat": 33.7948531,
+      "entrance_lng": -117.851555,
+      "entrance_source": "OSM parking_entrance node 1933610845"
     }
   ],
   "tunnels": [],

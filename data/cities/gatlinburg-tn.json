@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown garage. Center of strip.",
-      "source": "gatlinburg.com"
+      "source": "gatlinburg.com",
+      "entrance_lat": 35.7136947,
+      "entrance_lng": -83.5100791,
+      "entrance_source": "OSM parking_entrance node 7995831866"
     },
     {
       "id": "gat-ripley-aquarium",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Observation tower + arcade.",
-      "source": "gatlinburgspaceneedle.com"
+      "source": "gatlinburgspaceneedle.com",
+      "entrance_lat": 35.7136947,
+      "entrance_lng": -83.5100791,
+      "entrance_source": "OSM parking_entrance node 7995831866"
     },
     {
       "id": "gat-arts-crafts-loop",

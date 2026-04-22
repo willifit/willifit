@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Uptown. Entrances on S Mint, MLK Jr Blvd, S Graham. Pivot Parking.",
-      "source": "pivotparking.com"
+      "source": "pivotparking.com",
+      "entrance_lat": 35.2253109,
+      "entrance_lng": -80.8447539,
+      "entrance_source": "OSM parking_entrance node 11035897817"
     },
     {
       "id": "cht-bank-of-america-stadium",
@@ -34,7 +37,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hornets arena. Multiple adjacent garages.",
-      "source": "spectrumcentercharlotte.com"
+      "source": "spectrumcentercharlotte.com",
+      "entrance_lat": 35.2243234,
+      "entrance_lng": -80.8387765,
+      "entrance_source": "OSM parking_entrance node 9103883863"
     },
     {
       "id": "cht-green-deck",
@@ -46,7 +52,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Uptown office/event parking.",
-      "source": "centercitygreen.com"
+      "source": "centercitygreen.com",
+      "entrance_lat": 35.2260937,
+      "entrance_lng": -80.8433489,
+      "entrance_source": "OSM parking_entrance node 9111862609"
     },
     {
       "id": "cht-7th-st-station",
@@ -58,7 +67,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Food hall + garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.2305981,
+      "entrance_lng": -80.839285,
+      "entrance_source": "OSM parking_entrance node 12363254606"
     },
     {
       "id": "cht-epicentre",
@@ -70,7 +82,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Former EpiCentre entertainment + office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.2262223,
+      "entrance_lng": -80.8400841,
+      "entrance_source": "OSM parking_entrance node 11020919397"
     },
     {
       "id": "cht-convention-ctr",
@@ -82,7 +97,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Convention Center.",
-      "source": "charlotteconventionctr.com"
+      "source": "charlotteconventionctr.com",
+      "entrance_lat": 35.2234793,
+      "entrance_lng": -80.8392818,
+      "entrance_source": "OSM parking_entrance node 11015149232"
     },
     {
       "id": "cht-gantt-ctr",
@@ -94,7 +112,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum + Bechtler + Mint area garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.2245382,
+      "entrance_lng": -80.8441545,
+      "entrance_source": "OSM parking_entrance node 11018304557"
     },
     {
       "id": "cht-south-end-light-rail",
@@ -106,7 +127,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "South End light rail station lots.",
-      "source": "ridetransit.org"
+      "source": "ridetransit.org",
+      "entrance_lat": 35.2115093,
+      "entrance_lng": -80.8588982,
+      "entrance_source": "OSM parking_entrance node 12128918660"
     },
     {
       "id": "cht-nc-music-factory",
@@ -118,7 +142,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Entertainment venue. Surface lots.",
-      "source": "avidxchangemusicfactory.com"
+      "source": "avidxchangemusicfactory.com",
+      "entrance_lat": 35.2332852,
+      "entrance_lng": -80.8482269,
+      "entrance_source": "OSM parking_entrance node 12812400367"
     },
     {
       "id": "cht-truist-field",
@@ -130,7 +157,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "MiLB ballpark surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 35.2253608,
+      "entrance_lng": -80.8478843,
+      "entrance_source": "OSM parking_entrance node 9634125391"
     },
     {
       "id": "cht-southpark",
@@ -142,7 +172,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale indoor mall with garages.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 35.1499098,
+      "entrance_lng": -80.8280728,
+      "entrance_source": "OSM parking_entrance node 3297977048"
     },
     {
       "id": "cht-metrolina",
@@ -166,7 +199,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "UNCC campus.",
-      "source": "parking.uncc.edu"
+      "source": "parking.uncc.edu",
+      "entrance_lat": 35.3089486,
+      "entrance_lng": -80.7347561,
+      "entrance_source": "OSM parking_entrance node 9666274526"
     },
     {
       "id": "cht-discovery-place",
@@ -178,7 +214,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage adjacent.",
-      "source": "discoveryplace.org"
+      "source": "discoveryplace.org",
+      "entrance_lat": 35.2300911,
+      "entrance_lng": -80.8421636,
+      "entrance_source": "OSM parking_entrance node 11028889358"
     },
     {
       "id": "cht-nascar-hall",
@@ -190,7 +229,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Attached Hall of Fame garage.",
-      "source": "nascarhall.com"
+      "source": "nascarhall.com",
+      "entrance_lat": 35.2229944,
+      "entrance_lng": -80.8398902,
+      "entrance_source": "OSM parking_entrance node 11015149231"
     },
     {
       "id": "cht-speedway",
@@ -214,7 +256,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Eclectic neighborhood street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.2198482,
+      "entrance_lng": -80.8151243,
+      "entrance_source": "OSM parking_entrance node 12787478191"
     },
     {
       "id": "cht-noda",
@@ -226,7 +271,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Arts district surface parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 35.2474259,
+      "entrance_lng": -80.8034329,
+      "entrance_source": "OSM parking_entrance node 4334121428"
     },
     {
       "id": "clt-airport-hourly",
@@ -274,7 +322,10 @@
       "height_label": "10'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.1452991,
+      "entrance_lng": -80.9173829,
+      "entrance_source": "OSM parking_entrance node 5043541938"
     },
     {
       "id": "osm-w545542731",
@@ -286,7 +337,10 @@
       "height_label": "15'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2142845,
+      "entrance_lng": -80.8348525,
+      "entrance_source": "OSM parking_entrance node 7490725200"
     },
     {
       "id": "osm-w785966396",
@@ -298,7 +352,10 @@
       "height_label": "9'10\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2152063,
+      "entrance_lng": -80.8239224,
+      "entrance_source": "OSM parking_entrance node 9856211335"
     },
     {
       "id": "osm-w835871835",
@@ -310,7 +367,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2189478,
+      "entrance_lng": -80.8177623,
+      "entrance_source": "OSM parking_entrance node 9874540915"
     },
     {
       "id": "osm-w835871836",
@@ -322,7 +382,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2205846,
+      "entrance_lng": -80.8182349,
+      "entrance_source": "OSM parking_entrance node 9874540911"
     },
     {
       "id": "osm-w835871842",
@@ -334,7 +397,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2213627,
+      "entrance_lng": -80.8161362,
+      "entrance_source": "OSM parking_entrance node 9874540909"
     },
     {
       "id": "osm-w835871848",
@@ -346,7 +412,10 @@
       "height_label": "15'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2224181,
+      "entrance_lng": -80.8177658,
+      "entrance_source": "OSM parking_entrance node 11627463540"
     },
     {
       "id": "osm-w835903237",
@@ -358,7 +427,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2138891,
+      "entrance_lng": -80.8328901,
+      "entrance_source": "OSM parking_entrance node 11098134308"
     },
     {
       "id": "osm-w837208992",
@@ -370,7 +442,10 @@
       "height_label": "19'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2098597,
+      "entrance_lng": -80.8620019,
+      "entrance_source": "OSM parking_entrance node 9873418156"
     },
     {
       "id": "osm-w837208994",
@@ -382,7 +457,10 @@
       "height_label": "19'0\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2072139,
+      "entrance_lng": -80.8611225,
+      "entrance_source": "OSM parking_entrance node 9873281672"
     },
     {
       "id": "osm-w837220097",
@@ -394,7 +472,10 @@
       "height_label": "20'0\"",
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2039655,
+      "entrance_lng": -80.8642718,
+      "entrance_source": "OSM parking_entrance node 12221964596"
     },
     {
       "id": "osm-w849315315",
@@ -406,7 +487,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2181516,
+      "entrance_lng": -80.8530802,
+      "entrance_source": "OSM parking_entrance node 9873301478"
     },
     {
       "id": "osm-w866712131",
@@ -418,7 +502,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2399555,
+      "entrance_lng": -80.8179718,
+      "entrance_source": "OSM parking_entrance node 11386035291"
     },
     {
       "id": "osm-w993660194",
@@ -430,7 +517,10 @@
       "height_label": "19'10\"",
       "oversized": false,
       "notes": "606 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2450338,
+      "entrance_lng": -80.8340867,
+      "entrance_source": "OSM parking_entrance node 12299627515"
     },
     {
       "id": "osm-w1003203460",
@@ -442,7 +532,10 @@
       "height_label": "16'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2118785,
+      "entrance_lng": -80.8349056,
+      "entrance_source": "OSM parking_entrance node 9257998428"
     },
     {
       "id": "osm-w1018784558",
@@ -454,7 +547,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2366191,
+      "entrance_lng": -80.8215684,
+      "entrance_source": "OSM parking_entrance node 9396778088"
     },
     {
       "id": "osm-w1059950829",
@@ -466,7 +562,10 @@
       "height_label": "17'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.19254,
+      "entrance_lng": -80.8752995,
+      "entrance_source": "OSM parking_entrance node 9879841810"
     },
     {
       "id": "osm-w1121516907",
@@ -490,7 +589,10 @@
       "height_label": "20'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2523781,
+      "entrance_lng": -80.8087204,
+      "entrance_source": "OSM parking_entrance node 13271660696"
     },
     {
       "id": "osm-w1221610331",
@@ -514,7 +616,10 @@
       "height_label": "19'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.1672487,
+      "entrance_lng": -80.8486673,
+      "entrance_source": "OSM parking_entrance node 11001064466"
     },
     {
       "id": "osm-w1343842930",
@@ -526,7 +631,10 @@
       "height_label": "18'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.1665701,
+      "entrance_lng": -80.8497446,
+      "entrance_source": "OSM parking_entrance node 12434097815"
     },
     {
       "id": "osm-w1343842932",
@@ -538,7 +646,10 @@
       "height_label": "19'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.1674666,
+      "entrance_lng": -80.8478488,
+      "entrance_source": "OSM parking_entrance node 13347952245"
     },
     {
       "id": "osm-w1351490868",
@@ -550,7 +661,10 @@
       "height_label": "16'5\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2207636,
+      "entrance_lng": -80.8475764,
+      "entrance_source": "OSM parking_entrance node 11047517156"
     },
     {
       "id": "osm-w1429881035",
@@ -562,7 +676,10 @@
       "height_label": "6'7\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2077168,
+      "entrance_lng": -80.8251498,
+      "entrance_source": "OSM parking_entrance node 13143814407"
     },
     {
       "id": "osm-r16059605",
@@ -574,7 +691,10 @@
       "height_label": "11'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2300911,
+      "entrance_lng": -80.8421636,
+      "entrance_source": "OSM parking_entrance node 11028889358"
     }
   ],
   "tunnels": [],

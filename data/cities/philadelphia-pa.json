@@ -10,7 +10,10 @@
       "height_label": "6'6\"",
       "oversized": false,
       "notes": "PPA garage. Serves Independence Hall, Liberty Bell, National Constitution Center.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "entrance_lat": 39.9516325,
+      "entrance_lng": -75.1488687,
+      "entrance_source": "OSM parking_entrance node 3429163972"
     },
     {
       "id": "phl-gateway",
@@ -22,7 +25,10 @@
       "height_label": "6'10\"",
       "oversized": false,
       "notes": "Entrances on Spring & 16th. Convention Center / Chinatown access.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "entrance_lat": 39.9571187,
+      "entrance_lng": -75.1652272,
+      "entrance_source": "OSM parking_entrance node 7411149987"
     },
     {
       "id": "phl-2nd-chestnut",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Limited oversized spaces on ground level \u2014 first come, first served. Call 215-683-9407.",
-      "source": "Philadelphia Parking Authority"
+      "source": "Philadelphia Parking Authority",
+      "entrance_lat": 39.9488331,
+      "entrance_lng": -75.14389,
+      "entrance_source": "OSM parking_entrance node 3023730689"
     },
     {
       "id": "phl-8th-filbert",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Reading Terminal, Convention Center, Chinatown.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "entrance_lat": 39.9527596,
+      "entrance_lng": -75.1549791,
+      "entrance_source": "OSM parking_entrance node 7411360350"
     },
     {
       "id": "phl-12th-filbert",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Reading Terminal, Fashion District.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "entrance_lat": 39.9531686,
+      "entrance_lng": -75.1608047,
+      "entrance_source": "OSM parking_entrance node 7412644649"
     },
     {
       "id": "phl-family-court",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City Hall / Suburban Station area.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "entrance_lat": 39.9513597,
+      "entrance_lng": -75.165409,
+      "entrance_source": "OSM parking_entrance node 12049600265"
     },
     {
       "id": "phl-comcast-ctr",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9545133,
+      "entrance_lng": -75.169352,
+      "entrance_source": "OSM parking_entrance node 3409796043"
     },
     {
       "id": "phl-liberty-pl",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rittenhouse area shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9518998,
+      "entrance_lng": -75.1671811,
+      "entrance_source": "OSM parking_entrance node 7417069052"
     },
     {
       "id": "phl-fashion-dist",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Former Gallery Mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.950787,
+      "entrance_lng": -75.1569849,
+      "entrance_source": "OSM parking_entrance node 7411802692"
     },
     {
       "id": "phl-art-museum",
@@ -118,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground museum garage.",
-      "source": "philamuseum.org"
+      "source": "philamuseum.org",
+      "entrance_lat": 39.9670868,
+      "entrance_lng": -75.1813506,
+      "entrance_source": "OSM parking_entrance node 7410786789"
     },
     {
       "id": "phl-lincoln-fin",
@@ -166,7 +196,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak + SEPTA regional hub.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9570889,
+      "entrance_lng": -75.1828118,
+      "entrance_source": "OSM parking_entrance node 12159308974"
     },
     {
       "id": "phl-airport-garage-a",
@@ -202,7 +235,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Multi-level, direct elevator to Atrium. $25/vehicle. First-come first-served.",
-      "source": "fi.edu"
+      "source": "fi.edu",
+      "entrance_lat": 39.9584645,
+      "entrance_lng": -75.1737726,
+      "entrance_source": "OSM parking_entrance node 3420657093"
     },
     {
       "id": "phl-penn-walnut",
@@ -226,7 +262,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Penn campus + hospital.",
-      "source": "transportation.upenn.edu"
+      "source": "transportation.upenn.edu",
+      "entrance_lat": 39.9552367,
+      "entrance_lng": -75.1934041,
+      "entrance_source": "OSM parking_entrance node 7412591550"
     },
     {
       "id": "phl-penn-health",
@@ -250,7 +289,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "CHOP visitor garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.948209,
+      "entrance_lng": -75.1951652,
+      "entrance_source": "OSM parking_entrance node 1644860081"
     },
     {
       "id": "phl-drexel-garage",
@@ -286,7 +328,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Center City West office district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9541743,
+      "entrance_lng": -75.1719497,
+      "entrance_source": "OSM parking_entrance node 3471718649"
     },
     {
       "id": "phl-kimmel-ctr",
@@ -322,7 +367,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "South Old City.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9476541,
+      "entrance_lng": -75.1441482,
+      "entrance_source": "OSM parking_entrance node 3022547742"
     },
     {
       "id": "phl-reading-terminal",
@@ -334,7 +382,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Reading Terminal Market + Convention Center.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "entrance_lat": 39.9529211,
+      "entrance_lng": -75.1562861,
+      "entrance_source": "OSM parking_entrance node 7411360353"
     },
     {
       "id": "phl-suburban-sta",
@@ -346,7 +397,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under SEPTA Suburban Station.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.953902,
+      "entrance_lng": -75.1686957,
+      "entrance_source": "OSM parking_entrance node 3691774725"
     },
     {
       "id": "phl-city-hall-muny",
@@ -358,7 +412,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City Hall area garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9518869,
+      "entrance_lng": -75.1665684,
+      "entrance_source": "OSM parking_entrance node 7417069061"
     },
     {
       "id": "phl-temple-garage",
@@ -382,7 +439,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "South Street/Society Hill area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.942191,
+      "entrance_lng": -75.1459306,
+      "entrance_source": "OSM parking_entrance node 2997765873"
     },
     {
       "id": "phl-chinatown-8th",
@@ -394,7 +454,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Chinatown + Convention Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9554647,
+      "entrance_lng": -75.1571187,
+      "entrance_source": "OSM parking_entrance node 7415234581"
     },
     {
       "id": "phl-zoo",
@@ -418,7 +481,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot west of 30th St Station. Overflow airport parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 39.9570889,
+      "entrance_lng": -75.1828118,
+      "entrance_source": "OSM parking_entrance node 12159308974"
     }
   ],
   "tunnels": [

@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Falcons/Atlanta United. Multiple attached decks.",
-      "source": "mercedesbenzstadium.com"
+      "source": "mercedesbenzstadium.com",
+      "entrance_lat": 33.7548626,
+      "entrance_lng": -84.4022761,
+      "entrance_source": "OSM parking_entrance node 6252180171"
     },
     {
       "id": "atl-state-farm-arena",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hawks arena.",
-      "source": "statefarmarena.com"
+      "source": "statefarmarena.com",
+      "entrance_lat": 33.7566431,
+      "entrance_lng": -84.3982086,
+      "entrance_source": "OSM parking_entrance node 8296811839"
     },
     {
       "id": "atl-centennial-olympic",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "COP area \u2014 serves Aquarium, World of Coke, CNN Center.",
-      "source": "centennialparkatlanta.com"
+      "source": "centennialparkatlanta.com",
+      "entrance_lat": 33.7595048,
+      "entrance_lng": -84.3948617,
+      "entrance_source": "OSM parking_entrance node 7483005060"
     },
     {
       "id": "atl-aquarium",
@@ -46,7 +55,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Attached to Aquarium.",
-      "source": "georgiaaquarium.org"
+      "source": "georgiaaquarium.org",
+      "entrance_lat": 33.7635924,
+      "entrance_lng": -84.3959789,
+      "entrance_source": "OSM parking_entrance node 3523447159"
     },
     {
       "id": "atl-cnn",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Former CNN HQ. Central downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.7586986,
+      "entrance_lng": -84.3943771,
+      "entrance_source": "OSM parking_entrance node 13675764690"
     },
     {
       "id": "atl-ponce-city",
@@ -70,7 +85,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adaptive-reuse food + shopping hall. Free with validation.",
-      "source": "poncecitymarket.com"
+      "source": "poncecitymarket.com",
+      "entrance_lat": 33.7721524,
+      "entrance_lng": -84.3669532,
+      "entrance_source": "OSM parking_entrance node 3416374751"
     },
     {
       "id": "atl-atlantic-station",
@@ -82,7 +100,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mixed-use + retail.",
-      "source": "atlanticstation.com"
+      "source": "atlanticstation.com",
+      "entrance_lat": 33.7914131,
+      "entrance_lng": -84.4004448,
+      "entrance_source": "OSM parking_entrance node 9822107030"
     },
     {
       "id": "atl-phipps-plaza",
@@ -94,7 +115,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale Buckhead mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 33.847828,
+      "entrance_lng": -84.3655994,
+      "entrance_source": "OSM parking_entrance node 6444930378"
     },
     {
       "id": "atl-lenox-square",
@@ -106,7 +130,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major Buckhead mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 33.8465592,
+      "entrance_lng": -84.3615309,
+      "entrance_source": "OSM parking_entrance node 8205835715"
     },
     {
       "id": "atl-truist-park",
@@ -118,7 +145,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Braves ballpark + retail. Cobb County.",
-      "source": "mlb.com/braves"
+      "source": "mlb.com/braves",
+      "entrance_lat": 33.8912882,
+      "entrance_lng": -84.4691853,
+      "entrance_source": "OSM parking_entrance node 4763062590"
     },
     {
       "id": "atl-world-of-coke",
@@ -130,7 +160,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Attached to Coke museum.",
-      "source": "worldofcoca-cola.com"
+      "source": "worldofcoca-cola.com",
+      "entrance_lat": 33.7641847,
+      "entrance_lng": -84.3938242,
+      "entrance_source": "OSM parking_entrance node 2036951742"
     },
     {
       "id": "atl-center-civil-rights",
@@ -142,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shares COP-area parking.",
-      "source": "civilandhumanrights.org"
+      "source": "civilandhumanrights.org",
+      "entrance_lat": 33.7641847,
+      "entrance_lng": -84.3938242,
+      "entrance_source": "OSM parking_entrance node 2036951742"
     },
     {
       "id": "atl-georgia-dome-site",
@@ -178,7 +214,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "North Terminal garage.",
-      "source": "atl.com"
+      "source": "atl.com",
+      "entrance_lat": 33.6397776,
+      "entrance_lng": -84.4459616,
+      "entrance_source": "OSM parking_entrance node 5515174780"
     },
     {
       "id": "atl-airport-economy",
@@ -202,7 +241,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "atl.com"
+      "source": "atl.com",
+      "entrance_lat": 33.6375735,
+      "entrance_lng": -84.4432858,
+      "entrance_source": "OSM parking_entrance node 5375575643"
     },
     {
       "id": "atl-zoo",

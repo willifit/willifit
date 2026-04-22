@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Official Predators arena garage. Corner 6th Ave S & Demonbreun.",
-      "source": "nashvilledowntown.com"
+      "source": "nashvilledowntown.com",
+      "entrance_lat": 36.1593999,
+      "entrance_lng": -86.776517,
+      "entrance_source": "OSM parking_entrance node 10173307457"
     },
     {
       "id": "nsh-music-city-center",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest covered downtown garage. Entrances at 7th/Demonbreun, 6th between Demonbreun & KVB.",
-      "source": "nashvillemcc.com"
+      "source": "nashvillemcc.com",
+      "entrance_lat": 36.1593498,
+      "entrance_lng": -86.7764834,
+      "entrance_source": "OSM parking_entrance node 10173307459"
     },
     {
       "id": "nsh-5th-broadway",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "New mixed-use on Lower Broad.",
-      "source": "fifthandb.com"
+      "source": "fifthandb.com",
+      "entrance_lat": 36.1604159,
+      "entrance_lng": -86.7802608,
+      "entrance_source": "OSM parking_entrance node 10020201268"
     },
     {
       "id": "nsh-library",
@@ -70,7 +79,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Metro.",
-      "source": "nashville.gov"
+      "source": "nashville.gov",
+      "entrance_lat": 36.1621399,
+      "entrance_lng": -86.7761667,
+      "entrance_source": "OSM parking_entrance node 8993204118"
     },
     {
       "id": "nsh-1st-ave-surface",
@@ -94,7 +106,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mother Church of Country Music.",
-      "source": "ryman.com"
+      "source": "ryman.com",
+      "entrance_lat": 36.1619588,
+      "entrance_lng": -86.7780181,
+      "entrance_source": "OSM parking_entrance node 10154258344"
     },
     {
       "id": "nsh-gulch",
@@ -106,7 +121,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Gulch entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.1538643,
+      "entrance_lng": -86.7838734,
+      "entrance_source": "OSM parking_entrance node 7396412310"
     },
     {
       "id": "nsh-nissan-stadium",
@@ -142,7 +160,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "MLS stadium surface lots.",
-      "source": "nashvillesc.com"
+      "source": "nashvillesc.com",
+      "entrance_lat": 36.1300473,
+      "entrance_lng": -86.7642139,
+      "entrance_source": "OSM parking_entrance node 12827606076"
     },
     {
       "id": "nsh-hall-of-fame",
@@ -154,7 +175,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage.",
-      "source": "countrymusichalloffame.org"
+      "source": "countrymusichalloffame.org",
+      "entrance_lat": 36.1593498,
+      "entrance_lng": -86.7764834,
+      "entrance_source": "OSM parking_entrance node 10173307459"
     },
     {
       "id": "nsh-opryland",
@@ -202,7 +226,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Fifth + Broadway.",
-      "source": "nmaam.org"
+      "source": "nmaam.org",
+      "entrance_lat": 36.1604159,
+      "entrance_lng": -86.7802608,
+      "entrance_source": "OSM parking_entrance node 10020201268"
     },
     {
       "id": "nsh-green-hills-mall",
@@ -214,7 +241,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall garage.",
-      "source": "shopgreenhills.com"
+      "source": "shopgreenhills.com",
+      "entrance_lat": 36.1054889,
+      "entrance_lng": -86.812334,
+      "entrance_source": "OSM parking_entrance node 13249356333"
     },
     {
       "id": "nsh-centennial-park",
@@ -238,7 +268,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Vanderbilt visitor garage.",
-      "source": "vanderbilt.edu"
+      "source": "vanderbilt.edu",
+      "entrance_lat": 36.1483637,
+      "entrance_lng": -86.7989506,
+      "entrance_source": "OSM parking_entrance node 13296452216"
     },
     {
       "id": "bna-short-term",

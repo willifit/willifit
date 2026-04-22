@@ -10,7 +10,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Tucson.",
-      "source": "parktucson.org"
+      "source": "parktucson.org",
+      "entrance_lat": 32.2224726,
+      "entrance_lng": -110.969783,
+      "entrance_source": "OSM parking_entrance node 9563763612"
     },
     {
       "id": "tus-congress-pennington",
@@ -22,7 +25,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage downtown.",
-      "source": "parktucson.org"
+      "source": "parktucson.org",
+      "entrance_lat": 32.2223591,
+      "entrance_lng": -110.9723623,
+      "entrance_source": "OSM parking_entrance node 12030051206"
     },
     {
       "id": "tus-tucson-conv-ctr",
@@ -34,7 +40,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "TCC surface + garage.",
-      "source": "tucsonconventioncenter.com"
+      "source": "tucsonconventioncenter.com",
+      "entrance_lat": 32.2178087,
+      "entrance_lng": -110.9726179,
+      "entrance_source": "OSM parking_entrance node 10255028053"
     },
     {
       "id": "tus-arena-main",
@@ -46,7 +55,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Roadrunners hockey + events.",
-      "source": "tucsonconventioncenter.com"
+      "source": "tucsonconventioncenter.com",
+      "entrance_lat": 32.2178087,
+      "entrance_lng": -110.9726179,
+      "entrance_source": "OSM parking_entrance node 10255028053"
     },
     {
       "id": "tus-depot-garage",
@@ -58,7 +70,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near 4th Ave + train depot.",
-      "source": "parktucson.org"
+      "source": "parktucson.org",
+      "entrance_lat": 32.2273207,
+      "entrance_lng": -110.966987,
+      "entrance_source": "OSM parking_entrance node 13325496304"
     },
     {
       "id": "tus-4th-ave",
@@ -70,7 +85,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Hip shopping district.",
-      "source": "fourthavenue.org"
+      "source": "fourthavenue.org",
+      "entrance_lat": 32.2273207,
+      "entrance_lng": -110.966987,
+      "entrance_source": "OSM parking_entrance node 13325496304"
     },
     {
       "id": "tus-ua-tyndall",
@@ -106,7 +124,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Wildcats football. Surface lots.",
-      "source": "arizonawildcats.com"
+      "source": "arizonawildcats.com",
+      "entrance_lat": 32.2300671,
+      "entrance_lng": -110.947994,
+      "entrance_source": "OSM parking_entrance node 6108507239"
     },
     {
       "id": "tus-park-mall",
@@ -118,7 +139,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "East side mall.",
-      "source": "parkplacemall.com"
+      "source": "parkplacemall.com",
+      "entrance_lat": 32.2206322,
+      "entrance_lng": -110.8801932,
+      "entrance_source": "OSM parking_entrance node 7495502444"
     },
     {
       "id": "tus-la-encantada",
@@ -298,7 +322,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "bannerhealth.com"
+      "source": "bannerhealth.com",
+      "entrance_lat": 32.2393516,
+      "entrance_lng": -110.9451755,
+      "entrance_source": "OSM parking_entrance node 392665257"
     },
     {
       "id": "tus-reid-park",
