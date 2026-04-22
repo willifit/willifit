@@ -147,7 +147,6 @@ exceed ~28k images/month on the free $200 credit.
 All pulled from CDN in the HTML head — no npm install.
 - [Leaflet](https://leafletjs.com/) 1.9.4 — map rendering
 - [OpenStreetMap](https://www.openstreetmap.org) tiles — map data
-- [Mapillary](https://www.mapillary.com/) embed — street-level iframe
 - Google Maps/Street View deep-link buttons — no API key needed
 - Python standard library only (no extra installs) for import scripts
 

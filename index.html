@@ -30,7 +30,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <!-- Security: Content Security Policy. Whitelist matches known resource origins. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com https://plausible.io; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.mapillary.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://plausible.io; frame-src 'self' https://www.mapillary.com https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com https://plausible.io; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://plausible.io; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -593,6 +593,43 @@
     font-family: var(--mono);
     text-transform: uppercase; letter-spacing: 0.08em;
     border-radius: 2px;
+  }
+  /* Clean empty-state for when Street View has no coverage.  Replaces the
+     old Mapillary iframe fallback -- better to show nothing honestly than
+     to show a confusing, unrelated, slow-loading photo. */
+  .detail-hero-empty {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background: var(--panel);
+    padding: 20px; gap: 4px; text-align: center;
+  }
+  .detail-hero-empty-icon {
+    font-size: 42px; color: var(--border); line-height: 1;
+    margin-bottom: 8px;
+  }
+  .detail-hero-empty-title {
+    font-size: 13px; color: var(--text); font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .detail-hero-empty-sub {
+    font-size: 11px; color: var(--muted);
+    max-width: 280px; line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .detail-hero-empty-link {
+    display: inline-block;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    color: var(--ok);
+    padding: 6px 12px; font-size: 11px;
+    font-family: var(--mono); letter-spacing: 0.05em;
+    text-decoration: none; text-transform: uppercase;
+    border-radius: 2px;
+  }
+  .detail-hero-empty-link:hover {
+    border-color: var(--ok);
+    background: rgba(62,207,142,0.08);
   }
   .detail-body { flex: 1; overflow-y: auto; padding: 18px 20px; }
   .detail-body::-webkit-scrollbar { width: 6px; }
@@ -2565,30 +2602,36 @@ function resetGoogleMapsJs() {
   document.querySelectorAll('script[data-gmaps-loader]').forEach(s => s.remove());
 }
 
-async function loadDetailHero(hero, g, urls) {
+async function loadDetailHero(hero, g) {
   const myReq = ++_heroReq;
   hero.onclick = null;
   hero.innerHTML = `<div class="detail-hero-loading">Loading Street View…</div>`;
 
-  const showMapillary = () => {
+  // Clean empty-state when Street View has no coverage or something fails.
+  // Replaces the old Mapillary iframe fallback, which consistently showed
+  // hotel-curated marketing photos instead of the actual garage entrance
+  // and emitted noisy console errors (A-Frame, THREE.js, WebXR) while
+  // loading.  A link out to Google Maps lets motivated users inspect the
+  // location themselves.
+  const showEmpty = (reason) => {
     if (myReq !== _heroReq) return;
+    const mapsLink = `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lng}`;
     hero.innerHTML = `
-      <iframe src="${urls.mapillary}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="fullscreen"></iframe>
-      <div class="detail-hero-label">Street-level · Mapillary</div>`;
+      <div class="detail-hero-empty">
+        <div class="detail-hero-empty-icon" aria-hidden="true">▢</div>
+        <div class="detail-hero-empty-title">No Street View imagery available</div>
+        <div class="detail-hero-empty-sub">${reason || "We couldn't find a usable panorama near this entrance."}</div>
+        <a class="detail-hero-empty-link" href="${mapsLink}" target="_blank" rel="noopener">
+          Open in Google Maps ↗
+        </a>
+      </div>`;
   };
 
   if (!GOOGLE_MAPS_API_KEY || GOOGLE_MAPS_API_KEY.startsWith('PASTE_')) {
-    return showMapillary();
+    return showEmpty('Street View not configured on this build.');
   }
 
   try {
-    // 1. Free coverage check.
-    //   - Prefer a pre-recorded pano_id (human-verified to show the entrance
-    //     sign from a readable angle) over letting Google's metadata API
-    //     pick whatever pano is closest.  Without this, the API often
-    //     returns an indoor / user-contributed / wrong-side-of-the-sign pano.
-    //   - source=outdoor filters out user-contributed indoor uploads on the
-    //     fallback path.
     let metaUrl;
     if (g.pano_id) {
       metaUrl = `https://maps.googleapis.com/maps/api/streetview/metadata?pano=${encodeURIComponent(g.pano_id)}&key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}`;
@@ -2598,7 +2641,7 @@ async function loadDetailHero(hero, g, urls) {
     const metaRes = await fetch(metaUrl);
     if (myReq !== _heroReq) return;
     const meta = await metaRes.json();
-    if (meta.status !== 'OK') return showMapillary();
+    if (meta.status !== 'OK') return showEmpty('No Street View coverage at this location.');
 
     // 2. Lazy-load the Maps JS SDK (first call only — subsequent calls reuse the same promise).
     await loadGoogleMapsJs();
@@ -2660,7 +2703,7 @@ async function loadDetailHero(hero, g, urls) {
     });
   } catch (err) {
     console.warn('[hero] Street View failed:', err);
-    showMapillary();
+    showEmpty('Street View failed to load — try refreshing or opening in Google Maps.');
   }
 }
 
@@ -2696,7 +2739,6 @@ function renderDetail(g) {
   const hero = document.getElementById('detailHero');
   const hc = heightClass(g.height_in);
   const svUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${g.lat},${g.lng}&heading=0&pitch=0&fov=90`;
-  const mapillary = `https://www.mapillary.com/embed?map_style=OpenStreetMap&lat=${g.lat}&lng=${g.lng}&z=17&style=photo`;
   // Directions URLs — consumer nav apps.
   // IMPORTANT: none of these public URL APIs accept a clearance constraint.
   // For true clearance-aware routing a commercial driver should use a truck-nav
@@ -2707,7 +2749,7 @@ function renderDetail(g) {
   // Truck-nav apps (clearance-aware routing requires the vehicle profile set in their app)
   const truckerPathUrl = `https://truckerpath.com/maps/?lat=${g.lat}&lng=${g.lng}`;
   const copilotUrl = `https://www.copilotgps.com/en-us/truck/`;
-  loadDetailHero(hero, g, { svUrl, mapillary });
+  loadDetailHero(hero, g);
   // Data-freshness check — clearances can change with renovations.
   const staleDays = g.verified_on ? Math.floor((Date.now() - new Date(g.verified_on).getTime()) / 86400000) : null;
   const isStale = staleDays != null && staleDays > 730; // 2 years
