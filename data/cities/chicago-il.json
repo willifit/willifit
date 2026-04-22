@@ -96,14 +96,17 @@
       "addr": "400 N McClurg Ct",
       "lat": 41.8903,
       "lng": -87.6175,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "River North, near Navy Pier. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "River North, near Navy Pier. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"MAX HEIGHT 11'\" (pano r4RQa7g8R8rqdaa0uwDSng, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8894245,
       "entrance_lng": -87.6189517,
-      "entrance_source": "OSM parking_entrance node 11792258803"
+      "entrance_source": "OSM parking_entrance node 11792258803",
+      "verified_on": "2026-04-22",
+      "pano_id": "r4RQa7g8R8rqdaa0uwDSng",
+      "pano_heading": 0
     },
     {
       "id": "chi-water-tower-pl",
@@ -111,14 +114,29 @@
       "addr": "845 N Michigan Ave",
       "lat": 41.8987,
       "lng": -87.6244,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Magnificent Mile shopping. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Magnificent Mile shopping. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"7'0\" (pano SWKWOKFiGmo7hs7a9QvjgA, heading 0.0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8993152,
       "entrance_lng": -87.6246972,
-      "entrance_source": "OSM parking_entrance node 11905449454"
+      "entrance_source": "OSM parking_entrance node 11905449454",
+      "verified_on": "2026-04-22",
+      "pano_id": "SWKWOKFiGmo7hs7a9QvjgA",
+      "pano_heading": 0.0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 90,
+          "height_label": "7'6\""
+        }
+      ]
     },
     {
       "id": "chi-900-mich",
@@ -126,14 +144,17 @@
       "addr": "900 N Michigan Ave",
       "lat": 41.8997,
       "lng": -87.6243,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Bloomingdale's + Four Seasons tower. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Bloomingdale's + Four Seasons tower. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"8'0\" (pano SWKWOKFiGmo7hs7a9QvjgA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8993152,
       "entrance_lng": -87.6246972,
-      "entrance_source": "OSM parking_entrance node 11905449454"
+      "entrance_source": "OSM parking_entrance node 11905449454",
+      "verified_on": "2026-04-22",
+      "pano_id": "SWKWOKFiGmo7hs7a9QvjgA",
+      "pano_heading": 0
     },
     {
       "id": "chi-john-hancock",
@@ -141,14 +162,17 @@
       "addr": "875 N Michigan Ave",
       "lat": 41.899,
       "lng": -87.6229,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Former John Hancock Center. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Former John Hancock Center. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"7'0\" (pano emof9IkkR74jUfo5tbpjIw, heading 135.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8986654,
       "entrance_lng": -87.6225945,
-      "entrance_source": "OSM parking_entrance node 11899379815"
+      "entrance_source": "OSM parking_entrance node 11899379815",
+      "verified_on": "2026-04-22",
+      "pano_id": "emof9IkkR74jUfo5tbpjIw",
+      "pano_heading": 135.0
     },
     {
       "id": "chi-auditorium",
@@ -156,14 +180,17 @@
       "addr": "525 S Wabash Ave",
       "lat": 41.8761,
       "lng": -87.6263,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Serves Auditorium Theatre, Loop south. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Serves Auditorium Theatre, Loop south. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"11'0\"\" (pano 7vy2Ew_fWYlRjAc1nZdlHA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8756217,
       "entrance_lng": -87.6253554,
-      "entrance_source": "OSM parking_entrance node 12056312574"
+      "entrance_source": "OSM parking_entrance node 12056312574",
+      "verified_on": "2026-04-22",
+      "pano_id": "7vy2Ew_fWYlRjAc1nZdlHA",
+      "pano_heading": 0
     },
     {
       "id": "chi-franklin-lasalle",
@@ -171,14 +198,29 @@
       "addr": "161 N Clark St",
       "lat": 41.8852,
       "lng": -87.6311,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Loop office district. Multiple operators.",
-      "source": "Needs verification",
+      "notes": "Loop office district. Multiple operators.\nVerified 2026-04-22 from sign reading \"8'-2\" Clearance\" (pano tIjTcgH8_cV7F-5uWu6gZw, heading 90\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8853799,
       "entrance_lng": -87.6308317,
-      "entrance_source": "OSM parking_entrance node 8013475694"
+      "entrance_source": "OSM parking_entrance node 8013475694",
+      "verified_on": "2026-04-22",
+      "pano_id": "tIjTcgH8_cV7F-5uWu6gZw",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 98,
+          "height_label": "8'2\""
+        },
+        {
+          "label": "Public Parking",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "chi-union-station",
@@ -186,14 +228,17 @@
       "addr": "225 S Canal St",
       "lat": 41.8789,
       "lng": -87.64,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Amtrak/Metra station. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Amtrak/Metra station. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano SagSHp7IE-nGKn3-uoUelQ, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8774282,
       "entrance_lng": -87.6408972,
-      "entrance_source": "OSM parking_entrance node 13142787922"
+      "entrance_source": "OSM parking_entrance node 13142787922",
+      "verified_on": "2026-04-22",
+      "pano_id": "SagSHp7IE-nGKn3-uoUelQ",
+      "pano_heading": 90
     },
     {
       "id": "chi-willis",
@@ -201,14 +246,29 @@
       "addr": "233 S Wacker Dr",
       "lat": 41.8789,
       "lng": -87.6359,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Under Willis (Sears) Tower. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Under Willis (Sears) Tower. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"11' 0\"\" (pano R7RgU7HjDkpwVQjhRZDNkA, heading 135\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8788628,
       "entrance_lng": -87.6350994,
-      "entrance_source": "OSM parking_entrance node 10974049462"
+      "entrance_source": "OSM parking_entrance node 10974049462",
+      "verified_on": "2026-04-22",
+      "pano_id": "R7RgU7HjDkpwVQjhRZDNkA",
+      "pano_heading": 135,
+      "sections": [
+        {
+          "label": "Tower Self Park",
+          "height_in": 132,
+          "height_label": "11'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 216,
+          "height_label": "18'0\""
+        }
+      ]
     },
     {
       "id": "chi-riverwalk-east",
@@ -235,7 +295,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots used for convention overflow + oversized/RV. Open-air.",
-      "source": "McCormick Place"
+      "source": "McCormick Place",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-mccormick-north",
@@ -255,14 +316,17 @@
       "addr": "1410 S Museum Campus Dr",
       "lat": 41.8623,
       "lng": -87.6167,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Serves Soldier Field, Field Museum, Shedd, Adler.",
-      "source": "Needs verification",
+      "notes": "Serves Soldier Field, Field Museum, Shedd, Adler.\nVerified 2026-04-22 from sign reading \"10'0\"\" (pano U0XMzfBG331KKCAzhgRBxQ, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8634345,
       "entrance_lng": -87.6155955,
-      "entrance_source": "OSM parking_entrance node 7161326790"
+      "entrance_source": "OSM parking_entrance node 7161326790",
+      "verified_on": "2026-04-22",
+      "pano_id": "U0XMzfBG331KKCAzhgRBxQ",
+      "pano_heading": 90
     },
     {
       "id": "chi-shedd",
@@ -274,7 +338,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Museum Campus surface lot. Can accommodate oversized.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-wrigley",
@@ -286,7 +351,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot, game days.",
-      "source": "Cubs"
+      "source": "Cubs",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-united-center",
@@ -397,7 +463,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Chicago Parks District lot. Oversized day rate $50. Surface lot \u2014 fits RVs, trucks.",
-      "source": "adlerplanetarium.org"
+      "source": "adlerplanetarium.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-field-museum",
@@ -409,7 +476,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Museum Campus surface lot. Oversized OK.",
-      "source": "Park Chicago"
+      "source": "Park Chicago",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-solidarity",
@@ -421,7 +489,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Street parking along Museum Campus drive. Event closures possible.",
-      "source": "Standard Parking"
+      "source": "Standard Parking",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-msi",
@@ -448,7 +517,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot near zoo. Oversized accommodated.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-block37",
@@ -471,14 +541,29 @@
       "addr": "201 N Garland Ct",
       "lat": 41.8859,
       "lng": -87.6223,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "East Loop near Millennium Park. Owner-operated. Clearance needs verification.",
-      "source": "thepoetrygarage.com",
+      "notes": "East Loop near Millennium Park. Owner-operated. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"7' 0\" (pano ijJbRf3uenfTzhJQpkq0Ow, heading 270\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: thepoetrygarage.com",
       "entrance_lat": 41.8857765,
       "entrance_lng": -87.621917,
-      "entrance_source": "OSM parking_entrance node 10731481975"
+      "entrance_source": "OSM parking_entrance node 10731481975",
+      "verified_on": "2026-04-22",
+      "pano_id": "ijJbRf3uenfTzhJQpkq0Ow",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Paid Parking",
+          "height_in": 192,
+          "height_label": "16'0\""
+        }
+      ]
     },
     {
       "id": "chi-200w-monroe",
@@ -486,14 +571,17 @@
       "addr": "200 W Monroe St",
       "lat": 41.8816,
       "lng": -87.6347,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Loop office garage. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Loop office garage. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano useGJ42fzcu2V1CIv5yc2A, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8818246,
       "entrance_lng": -87.6346788,
-      "entrance_source": "OSM parking_entrance node 10925526169"
+      "entrance_source": "OSM parking_entrance node 10925526169",
+      "verified_on": "2026-04-22",
+      "pano_id": "useGJ42fzcu2V1CIv5yc2A",
+      "pano_heading": 180
     },
     {
       "id": "chi-225n-mich",
@@ -501,14 +589,17 @@
       "addr": "225 N Michigan Ave",
       "lat": 41.8864,
       "lng": -87.6239,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Illinois Center \u2014 under office towers near Prudential Plaza.",
-      "source": "Needs verification",
+      "notes": "Illinois Center \u2014 under office towers near Prudential Plaza.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano vAKOLfJITvlsi74g4WhMZg, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8869932,
       "entrance_lng": -87.6239127,
-      "entrance_source": "OSM parking_entrance node 8250999805"
+      "entrance_source": "OSM parking_entrance node 8250999805",
+      "verified_on": "2026-04-22",
+      "pano_id": "vAKOLfJITvlsi74g4WhMZg",
+      "pano_heading": 45
     },
     {
       "id": "chi-marina-city",
@@ -531,14 +622,17 @@
       "addr": "875 N Michigan Ave",
       "lat": 41.8988,
       "lng": -87.6229,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Former John Hancock Center deck. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Former John Hancock Center deck. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"7'0\" (pano emof9IkkR74jUfo5tbpjIw, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8986654,
       "entrance_lng": -87.6225945,
-      "entrance_source": "OSM parking_entrance node 11899379815"
+      "entrance_source": "OSM parking_entrance node 11899379815",
+      "verified_on": "2026-04-22",
+      "pano_id": "emof9IkkR74jUfo5tbpjIw",
+      "pano_heading": 135
     },
     {
       "id": "chi-chinatown",
@@ -553,7 +647,8 @@
       "source": "Needs verification",
       "entrance_lat": 41.8523437,
       "entrance_lng": -87.6344783,
-      "entrance_source": "OSM parking_entrance node 12772593639"
+      "entrance_source": "OSM parking_entrance node 12772593639",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-lincoln-yards",
@@ -561,14 +656,17 @@
       "addr": "1100 W North Ave",
       "lat": 41.91,
       "lng": -87.6549,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "North/Clybourn shopping corridor.",
-      "source": "Needs verification",
+      "notes": "North/Clybourn shopping corridor.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano zTvpLcYYqilR5cKwnGnpAQ, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.9090772,
       "entrance_lng": -87.6535126,
-      "entrance_source": "OSM parking_entrance node 2168537839"
+      "entrance_source": "OSM parking_entrance node 2168537839",
+      "verified_on": "2026-04-22",
+      "pano_id": "zTvpLcYYqilR5cKwnGnpAQ",
+      "pano_heading": 180
     },
     {
       "id": "chi-theatre-dist",
@@ -576,14 +674,17 @@
       "addr": "170 N Dearborn St",
       "lat": 41.8857,
       "lng": -87.6296,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Downtown Theatre District.",
-      "source": "Needs verification",
+      "notes": "Downtown Theatre District.\nVerified 2026-04-22 from sign reading \"10'0\"\" (pano we66Htxcfai42H22y_KXNg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8853119,
       "entrance_lng": -87.6293504,
-      "entrance_source": "OSM parking_entrance node 9424758522"
+      "entrance_source": "OSM parking_entrance node 9424758522",
+      "verified_on": "2026-04-22",
+      "pano_id": "we66Htxcfai42H22y_KXNg",
+      "pano_heading": 0
     },
     {
       "id": "chi-mccormick-hyatt",
@@ -591,14 +692,29 @@
       "addr": "2233 S Martin Luther King Dr",
       "lat": 41.8523,
       "lng": -87.619,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Hotel garage adjacent to McCormick Place.",
-      "source": "Needs verification",
+      "notes": "Hotel garage adjacent to McCormick Place.\nVerified 2026-04-22 from sign reading \"7'0\" (pano 7-vlSArH8gzEZBTn579Hog, heading 135.0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8523619,
       "entrance_lng": -87.6186525,
-      "entrance_source": "OSM parking_entrance node 11936032953"
+      "entrance_source": "OSM parking_entrance node 11936032953",
+      "verified_on": "2026-04-22",
+      "pano_id": "7-vlSArH8gzEZBTn579Hog",
+      "pano_heading": 135.0,
+      "sections": [
+        {
+          "label": "Garage",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Parking Garage",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "chi-guaranteed-rate",
@@ -610,7 +726,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "White Sox stadium surface lots + RV area on game days.",
-      "source": "White Sox"
+      "source": "White Sox",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chi-aon-center",
@@ -618,14 +735,29 @@
       "addr": "200 E Randolph St",
       "lat": 41.8855,
       "lng": -87.6216,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 108,
+      "height_label": "9'0\"",
       "oversized": false,
-      "notes": "Under Aon Center tower.",
-      "source": "Needs verification",
+      "notes": "Under Aon Center tower.\nVerified 2026-04-22 from sign reading \"9'0\" (pano ijJbRf3uenfTzhJQpkq0Ow, heading 270\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8857765,
       "entrance_lng": -87.621917,
-      "entrance_source": "OSM parking_entrance node 10731481975"
+      "entrance_source": "OSM parking_entrance node 10731481975",
+      "verified_on": "2026-04-22",
+      "pano_id": "ijJbRf3uenfTzhJQpkq0Ow",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 108,
+          "height_label": "9'0\""
+        },
+        {
+          "label": "Exit Only",
+          "height_in": 192,
+          "height_label": "16'0\""
+        }
+      ]
     },
     {
       "id": "chi-river-east",
@@ -633,14 +765,17 @@
       "addr": "300 E Illinois St",
       "lat": 41.8906,
       "lng": -87.6163,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Near Navy Pier, AMC River East. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Near Navy Pier, AMC River East. Clearance needs verification.\nVerified 2026-04-22 from sign reading \"11'0\"\" (pano p50xT3L-DyQMKoYb4R7h2Q, heading 225\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 41.8897753,
       "entrance_lng": -87.6146488,
-      "entrance_source": "OSM parking_entrance node 12608231336"
+      "entrance_source": "OSM parking_entrance node 12608231336",
+      "verified_on": "2026-04-22",
+      "pano_id": "p50xT3L-DyQMKoYb4R7h2Q",
+      "pano_heading": 225
     },
     {
       "id": "chi-ohare-intl-terminal",
@@ -652,7 +787,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Surface ATS-connected lot at Terminal 5.",
-      "source": "flychicago.com"
+      "source": "flychicago.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [

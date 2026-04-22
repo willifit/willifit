@@ -21,14 +21,17 @@
       "addr": "1531 Western Ave",
       "lat": 47.6085,
       "lng": -122.3419,
-      "height_in": null,
-      "height_label": "No limit (surface)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": true,
-      "notes": "Dedicated oversized surface lot adjacent to main garage.",
-      "source": "pikeplacemarket.org",
+      "notes": "Dedicated oversized surface lot adjacent to main garage.\nVerified 2026-04-22 from sign reading \"11' 0\"\" (pano PJhPjxfIYFv4bcR3U1fBOA, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: pikeplacemarket.org",
       "entrance_lat": 47.608504,
       "entrance_lng": -122.3422866,
-      "entrance_source": "OSM parking_entrance node 11688147018"
+      "entrance_source": "OSM parking_entrance node 11688147018",
+      "verified_on": "2026-04-22",
+      "pano_id": "PJhPjxfIYFv4bcR3U1fBOA",
+      "pano_heading": 45
     },
     {
       "id": "sea-convention-ctr",
@@ -36,14 +39,17 @@
       "addr": "800 Convention Pl",
       "lat": 47.6113,
       "lng": -122.3324,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "WSCC underground.",
-      "source": "wsccarch.com",
+      "notes": "WSCC underground.\nVerified 2026-04-22 from sign reading \"11'0\" (pano v7908u2-dqd0NCmwZxiFiA, heading 45.0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: wsccarch.com",
       "entrance_lat": 47.6115775,
       "entrance_lng": -122.3317325,
-      "entrance_source": "OSM parking_entrance node 7090155912"
+      "entrance_source": "OSM parking_entrance node 7090155912",
+      "verified_on": "2026-04-22",
+      "pano_id": "v7908u2-dqd0NCmwZxiFiA",
+      "pano_heading": 45.0
     },
     {
       "id": "sea-pacific-place",
@@ -51,14 +57,34 @@
       "addr": "600 Pine St",
       "lat": 47.6125,
       "lng": -122.3363,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown mall garage.",
-      "source": "pacificplaceseattle.com",
+      "notes": "Downtown mall garage.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano LRgkEjyxHQrV304B5kNWew, heading 45\u00b0, Claude confidence medium [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: pacificplaceseattle.com",
       "entrance_lat": 47.6128249,
       "entrance_lng": -122.3361738,
-      "entrance_source": "OSM parking_entrance node 4326500636"
+      "entrance_source": "OSM parking_entrance node 4326500636",
+      "verified_on": "2026-04-22",
+      "pano_id": "LRgkEjyxHQrV304B5kNWew",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 120,
+          "height_label": "10'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "sea-macys-1st",
@@ -66,14 +92,17 @@
       "addr": "500 Pine St",
       "lat": 47.6124,
       "lng": -122.338,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Major downtown retail garage.",
-      "source": "Needs verification",
+      "notes": "Major downtown retail garage.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano aZlph3-klq8klttsIcVbGg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 47.6123315,
       "entrance_lng": -122.337833,
-      "entrance_source": "OSM parking_entrance node 11721909388"
+      "entrance_source": "OSM parking_entrance node 11721909388",
+      "verified_on": "2026-04-22",
+      "pano_id": "aZlph3-klq8klttsIcVbGg",
+      "pano_heading": 0
     },
     {
       "id": "sea-pioneer-sq",
@@ -88,7 +117,8 @@
       "source": "pioneersquare.org",
       "entrance_lat": 47.6021994,
       "entrance_lng": -122.3330268,
-      "entrance_source": "OSM parking_entrance node 4760566171"
+      "entrance_source": "OSM parking_entrance node 4760566171",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-seattle-ctr",
@@ -96,14 +126,17 @@
       "addr": "305 Harrison St",
       "lat": 47.6231,
       "lng": -122.3496,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "oversized": false,
-      "notes": "Space Needle + Climate Pledge Arena access.",
-      "source": "seattlecenter.com",
+      "notes": "Space Needle + Climate Pledge Arena access.\nVerified 2026-04-22 from sign reading \"13'0\" (pano qiT_wkO29bdpmsxUvFisgA, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: seattlecenter.com",
       "entrance_lat": 47.6231166,
       "entrance_lng": -122.3470993,
-      "entrance_source": "OSM parking_entrance node 540175073"
+      "entrance_source": "OSM parking_entrance node 540175073",
+      "verified_on": "2026-04-22",
+      "pano_id": "qiT_wkO29bdpmsxUvFisgA",
+      "pano_heading": 180
     },
     {
       "id": "sea-climate-arena",
@@ -126,14 +159,17 @@
       "addr": "800 Occidental Ave S",
       "lat": 47.5953,
       "lng": -122.3318,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "oversized": false,
-      "notes": "Seahawks/Sounders. Event garage.",
-      "source": "lumenfield.com",
+      "notes": "Seahawks/Sounders. Event garage.\nVerified 2026-04-22 from sign reading \"13'0\" (pano -Un_Ta2NtwvzxnqTtSZeDA, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: lumenfield.com",
       "entrance_lat": 47.5961692,
       "entrance_lng": -122.3339219,
-      "entrance_source": "OSM parking_entrance node 10740258901"
+      "entrance_source": "OSM parking_entrance node 10740258901",
+      "verified_on": "2026-04-22",
+      "pano_id": "-Un_Ta2NtwvzxnqTtSZeDA",
+      "pano_heading": 270
     },
     {
       "id": "sea-t-mobile-park",
@@ -148,7 +184,8 @@
       "source": "mlb.com/mariners",
       "entrance_lat": 47.5926475,
       "entrance_lng": -122.3315065,
-      "entrance_source": "OSM parking_entrance node 1189880698"
+      "entrance_source": "OSM parking_entrance node 1189880698",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-westlake",
@@ -156,14 +193,29 @@
       "addr": "400 Pine St",
       "lat": 47.6114,
       "lng": -122.3376,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "Monorail station + mall.",
-      "source": "Needs verification",
+      "notes": "Monorail station + mall.\nVerified 2026-04-22 from sign reading \"8'6\"\" (pano aZlph3-klq8klttsIcVbGg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 47.6123315,
       "entrance_lng": -122.337833,
-      "entrance_source": "OSM parking_entrance node 11721909388"
+      "entrance_source": "OSM parking_entrance node 11721909388",
+      "verified_on": "2026-04-22",
+      "pano_id": "aZlph3-klq8klttsIcVbGg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 102,
+          "height_label": "8'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 108,
+          "height_label": "9'0\""
+        }
+      ]
     },
     {
       "id": "sea-harbor-steps",
@@ -171,14 +223,17 @@
       "addr": "1221 1st Ave",
       "lat": 47.6074,
       "lng": -122.3376,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Near SAM + Seattle Art Museum.",
-      "source": "Needs verification",
+      "notes": "Near SAM + Seattle Art Museum.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano WxycbqoGb_1N5INPnbiFvg, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 47.6081389,
       "entrance_lng": -122.3376446,
-      "entrance_source": "OSM parking_entrance node 4639109934"
+      "entrance_source": "OSM parking_entrance node 4639109934",
+      "verified_on": "2026-04-22",
+      "pano_id": "WxycbqoGb_1N5INPnbiFvg",
+      "pano_heading": 45
     },
     {
       "id": "sea-colman-dock",
@@ -190,7 +245,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "WSF terminal \u2014 vehicle ferry staging area. Handles RVs/trucks.",
-      "source": "wsdot.wa.gov"
+      "source": "wsdot.wa.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-uw-central",
@@ -198,11 +254,14 @@
       "addr": "3900 Montlake Blvd NE",
       "lat": 47.6535,
       "lng": -122.3047,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "University of Washington visitor parking.",
-      "source": "transportation.uw.edu"
+      "notes": "University of Washington visitor parking.\nVerified 2026-04-22 from sign reading \"10\" (pano bltRKyY6APyIV5bMWZfdEg, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: transportation.uw.edu",
+      "verified_on": "2026-04-22",
+      "pano_id": "bltRKyY6APyIV5bMWZfdEg",
+      "pano_heading": 225
     },
     {
       "id": "sea-bellevue-sq",
@@ -210,14 +269,17 @@
       "addr": "575 Bellevue Sq",
       "lat": 47.6166,
       "lng": -122.2041,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Upscale mall garage. Bellevue is separate city.",
-      "source": "bellevuesquare.com",
+      "notes": "Upscale mall garage. Bellevue is separate city.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano WPCD9ZCuQzkiZbdOC62hHg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: bellevuesquare.com",
       "entrance_lat": 47.61629,
       "entrance_lng": -122.202866,
-      "entrance_source": "OSM parking_entrance node 6113553078"
+      "entrance_source": "OSM parking_entrance node 6113553078",
+      "verified_on": "2026-04-22",
+      "pano_id": "WPCD9ZCuQzkiZbdOC62hHg",
+      "pano_heading": 0
     },
     {
       "id": "sea-university-village",
@@ -232,7 +294,8 @@
       "source": "uvillage.com",
       "entrance_lat": 47.6643521,
       "entrance_lng": -122.2975401,
-      "entrance_source": "OSM parking_entrance node 3869988392"
+      "entrance_source": "OSM parking_entrance node 3869988392",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-seattle-aquarium",
@@ -240,14 +303,29 @@
       "addr": "1483 Alaskan Way",
       "lat": 47.6073,
       "lng": -122.3425,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Waterfront surface + garages.",
-      "source": "seattleaquarium.org",
+      "notes": "Waterfront surface + garages.\nVerified 2026-04-22 from sign reading \"7'0\"\" (pano 20dohGsZVe3XkBHA0ePLMQ, heading 45\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: seattleaquarium.org",
       "entrance_lat": 47.6076537,
       "entrance_lng": -122.3413024,
-      "entrance_source": "OSM parking_entrance node 4137555560"
+      "entrance_source": "OSM parking_entrance node 4137555560",
+      "verified_on": "2026-04-22",
+      "pano_id": "20dohGsZVe3XkBHA0ePLMQ",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Parking",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "PARKING",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "sea-mohai",
@@ -259,7 +337,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Lake Union park surface.",
-      "source": "mohai.org"
+      "source": "mohai.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-discovery-park",
@@ -271,7 +350,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Former Fort Lawton. Surface lots.",
-      "source": "seattle.gov/parks"
+      "source": "seattle.gov/parks",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-alki-beach",
@@ -283,7 +363,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "West Seattle waterfront. Surface parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sea-tac-terminal",
@@ -307,7 +388,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Offsite uncovered lot. Oversized OK.",
-      "source": "dougfoxparking.com"
+      "source": "dougfoxparking.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [
