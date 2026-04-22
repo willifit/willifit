@@ -227,8 +227,11 @@ spaced 45° apart.  Each image is labeled with its heading in degrees (0°=N,
 90°=E, 180°=S, 270°=W).
 
 The camera is near a parking garage / structure / tunnel / bridge entrance.
-Your job is to find a posted VEHICLE-HEIGHT CLEARANCE sign in any of the 8
-images and report it STRICTLY.
+Your job is to find EVERY distinct posted vehicle-height CLEARANCE sign
+visible in any of the 8 images.  Some facilities have multiple gates with
+different clearances (airports with short-term + long-term, casinos with
+car + RV lanes, etc.) -- those deserve SEPARATE entries in the "signs"
+array.
 
 What counts as a clearance sign:
   * A sign showing a vehicle height in feet-inches: "11'6\"", "13 FT 6 IN",
@@ -237,42 +240,58 @@ What counts as a clearance sign:
   * A yellow-diamond or orange LOW CLEARANCE warning with a height number
   * The sign must SHOW DIGITS representing a height
 
-What does NOT count (do not make things up from these):
-  * "SHORT TERM PARKING" / "LONG TERM" / "VALET" / "RESERVED" / "EXIT"
+What does NOT count (do not invent heights from these):
+  * "SHORT TERM PARKING" / "LONG TERM" / "VALET" / "RESERVED" / "EXIT" --
+    those identify a lane but are not themselves clearance numbers.  Use
+    them as the "label" field on a nearby clearance sign if the lane
+    context is clear.
   * Speed limit, street name, parking rate, business, weight limit signs
   * Building addresses, suite numbers, floor numbers
   * Any sign without an explicit height-in-feet-or-inches number
 
 CRITICAL ANTI-HALLUCINATION RULES:
-  * raw_text MUST be the EXACT text you read on the clearance sign,
-    character-for-character.  If you cannot quote the height from the
-    sign verbatim, set found_sign=false.
+  * raw_text MUST be the EXACT height text read on the sign,
+    character-for-character.  If you cannot quote the height verbatim,
+    do NOT include that sign in the signs array.
   * The height digits in raw_text MUST match height_in.  If raw_text
-    says "7'0\"" then height_in must be 84.  If there is no height
-    number in raw_text, set found_sign=false.
-  * If the only "sign" you see is something like "SHORT TERM PARKING"
-    or a building name, that is NOT a clearance sign.  Set
-    found_sign=false.
+    says "7'0\"" then height_in must be 84.  If no height number is
+    readable, skip that sign.
+  * If the only "sign" you see is a lane label ("SHORT TERM PARKING")
+    with no height number, that is NOT a clearance sign.  Skip it.
+
+Deduping:
+  * If the SAME clearance sign appears in multiple images, include it
+    ONCE (pick the heading with the clearest view).
+  * If two signs show the same height, treat them as one sign and
+    include once (unless they clearly have different lane labels).
+  * If two signs show DIFFERENT heights, include BOTH as separate
+    entries -- that's a multi-section facility.
 
 Conversion examples:  7'0" = 84,  7'6" = 90,  11'6" = 138,  13'0" = 156.
 
-If the sign is present but the number is blurry/ambiguous, use
-height_in=null and confidence=low.
+Per-sign fields:
+  heading    (number)  which of the 8 headings showed this sign best
+  height_in  (integer) posted clearance in inches
+  label      (string)  lane identifier IF the sign or its context makes
+                       it obvious ("Short-term", "Long-term", "RV",
+                       "Compact") -- otherwise ""
+  confidence "low" | "medium" | "high"
+  raw_text   (string)  exact height text from the sign
 
-Keep "notes" to a SHORT fragment (<=20 words).  Do not write paragraphs --
-we have the image and the raw_text for audit; notes is just a quick tag.
-The JSON output MUST fit well under 500 tokens total.
+Keep "notes" to a SHORT fragment (<=20 words).  The JSON output MUST
+fit well under 500 tokens total.
 
 Return ONLY a JSON object (no prose, no markdown fences):
 
 {{
-  "found_sign": boolean,
-  "best_heading": number | null,
-  "height_in": integer | null,
-  "confidence": "low" | "medium" | "high",
-  "raw_text": string,
+  "signs": [
+    {{ "heading": number, "height_in": integer, "label": string,
+       "confidence": "low" | "medium" | "high", "raw_text": string }}
+  ],
   "notes": string
 }}
+
+If no clearance signs are visible in any image, return {{"signs": [], "notes": "..."}}.
 """
 
 
@@ -337,16 +356,15 @@ def scan_pano_with_claude(pano_id, images_by_heading, model):
         except json.JSONDecodeError:
             pass
 
-    # Fallback: the response got truncated mid-JSON (max_tokens cap, or the
-    # model decided to stop early with a long trailing "notes" field).
-    # All the fields we care about appear BEFORE notes in the schema, so
-    # even a response that dies halfway through "notes" usually has enough
-    # structured data to reconstruct by regex.
+    # Fallback: the response got truncated mid-JSON (max_tokens cap, or
+    # the model decided to stop early with a long trailing notes field).
+    # Walk the signs array by balanced braces and recover whatever
+    # complete sign-objects are in there.
     partial = _extract_partial_fields(text)
-    if partial.get("found_sign") is not None:
+    if partial.get("signs"):
         stop_reason = getattr(resp, "stop_reason", "?")
         print(f"    (Claude response truncated [stop_reason={stop_reason}], "
-              f"recovered fields by regex)", file=sys.stderr)
+              f"recovered {len(partial['signs'])} sign(s) by regex)", file=sys.stderr)
         return partial
 
     print(f"    Claude replied non-JSON: {text[:200]!r}", file=sys.stderr)
@@ -356,25 +374,67 @@ def scan_pano_with_claude(pano_id, images_by_heading, model):
 def _extract_partial_fields(text):
     """Recover the fields of interest from a truncated or malformed JSON
     response.  Used when the model stops mid-object (typically during a
-    long `notes` value).  Missing fields default to sensible values."""
-    result = {}
+    long `notes` value).  Walks each well-formed "{...}" sign object
+    within the "signs": [ ... ] array and returns whatever parses.
+
+    Returns a dict with a `signs` list (possibly empty) and an optional
+    `notes` string, matching the schema the caller expects."""
+    out = {"signs": []}
+
+    # Find the "signs": [ region and walk balanced-brace objects inside
+    signs_match = re.search(r'"signs"\s*:\s*\[', text)
+    if signs_match:
+        tail = text[signs_match.end():]
+        depth = 0
+        start = None
+        for i, ch in enumerate(tail):
+            if ch == "{":
+                if depth == 0:
+                    start = i
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0 and start is not None:
+                    blob = tail[start:i+1]
+                    sign = _parse_one_sign(blob)
+                    if sign:
+                        out["signs"].append(sign)
+                    start = None
+            elif ch == "]" and depth == 0:
+                break
+
+    # Top-level notes field (may also be truncated)
+    nm = re.search(r'"notes"\s*:\s*"((?:[^"\\]|\\.)*)"', text)
+    if nm:
+        out["notes"] = nm.group(1)
+    return out
+
+
+def _parse_one_sign(blob):
+    """Parse a single sign object fragment from a possibly-truncated JSON.
+    Uses the same per-field regex approach as the flat partial-extractor."""
     patterns = {
-        "found_sign":   (r'"found_sign"\s*:\s*(true|false)',         lambda v: v == "true"),
-        "best_heading": (r'"best_heading"\s*:\s*(-?\d+(?:\.\d+)?|null)',
-                                                                      lambda v: None if v == "null" else float(v)),
-        "height_in":    (r'"height_in"\s*:\s*(-?\d+|null)',           lambda v: None if v == "null" else int(v)),
-        "confidence":   (r'"confidence"\s*:\s*"(low|medium|high)"',   lambda v: v),
-        "raw_text":     (r'"raw_text"\s*:\s*"((?:[^"\\]|\\.)*)"',     lambda v: v),
-        "notes":        (r'"notes"\s*:\s*"((?:[^"\\]|\\.)*)"',        lambda v: v),
+        "heading":    (r'"heading"\s*:\s*(-?\d+(?:\.\d+)?|null)',  lambda v: None if v == "null" else float(v)),
+        "height_in":  (r'"height_in"\s*:\s*(-?\d+|null)',          lambda v: None if v == "null" else int(v)),
+        "label":      (r'"label"\s*:\s*"((?:[^"\\]|\\.)*)"',       lambda v: v),
+        "confidence": (r'"confidence"\s*:\s*"(low|medium|high)"',  lambda v: v),
+        "raw_text":   (r'"raw_text"\s*:\s*"((?:[^"\\]|\\.)*)"',    lambda v: v),
     }
+    out = {}
     for key, (patt, coerce) in patterns.items():
-        m = re.search(patt, text)
+        m = re.search(patt, blob)
         if m:
             try:
-                result[key] = coerce(m.group(1))
+                out[key] = coerce(m.group(1))
             except (ValueError, TypeError):
                 pass
-    return result
+    # A sign needs at minimum height_in and raw_text to be useful
+    if "height_in" in out and out["height_in"] is not None and "raw_text" in out:
+        out.setdefault("label", "")
+        out.setdefault("confidence", "low")
+        out.setdefault("heading", None)
+        return out
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -414,10 +474,18 @@ def _height_matches_raw(height_in, raw_text):
 
 
 def verify_garage(g, model):
-    """Multi-pano scan.  Returns dict with keys:
+    """Multi-pano scan.  Aggregates every readable clearance sign found
+    across up to MAX_PANOS_PER_GARAGE panos.  Dedupes by height (within
+    a 1-inch tolerance) and returns:
+
         status: "verified" | "no-sign" | "no-pano" | "error"
-        If verified: pano_id, pano_heading, height_in, confidence, raw_text, notes
-        claude_calls: int  (for cost accounting)
+        claude_calls: int
+        if status==verified: {
+            pano_id, pano_heading, height_in, height_label, confidence,
+            raw_text, notes,
+            sections: list of {label, height_in, height_label}  (2+ only,
+                      omitted when only one distinct height was found)
+        }
     """
     lat, lng = g.get("lat"), g.get("lng")
     if lat is None:
@@ -425,16 +493,9 @@ def verify_garage(g, model):
 
     panos = find_candidate_panos(lat, lng, max_panos=MAX_PANOS_PER_GARAGE)
 
-    # If the garage record has a previously-recorded pano_id (either from a
-    # prior auto_verify run or from human verification), ALWAYS scan it first
-    # -- even if it wasn't one of the candidates our probe found.  This lets
-    # us benefit from human-provided "known good" vantages without locking
-    # into them (we'll still try other candidates in case a better one exists).
+    # Always scan a previously-recorded pano first if the record has one.
     recorded = g.get("pano_id")
     if recorded and not any(p["pano_id"] == recorded for p in panos):
-        m = _streetview_meta(lat, lng, source="outdoor")
-        # We need the actual location of the recorded pano to compute distance.
-        # Query metadata specifically by pano_id:
         rec_meta = _streetview_meta_by_pano(recorded)
         if rec_meta and rec_meta.get("status") == "OK":
             rloc = rec_meta.get("location") or {}
@@ -448,14 +509,13 @@ def verify_garage(g, model):
                     "copyright": rec_meta.get("copyright") or "",
                     "via_probe": "recorded",
                 })
-                # Trim to budget
                 panos = panos[:MAX_PANOS_PER_GARAGE]
 
     if not panos:
         return {"status": "no-pano", "claude_calls": 0}
 
-    # For each pano, shoot 8 images and score with Claude
-    candidates = []
+    # Scan each pano.  Flatten all returned signs across all panos.
+    all_signs = []  # list of dicts, each augmented with pano info
     claude_calls = 0
     for p in panos:
         images_by_heading = []
@@ -473,54 +533,86 @@ def verify_garage(g, model):
         if not result:
             continue
 
-        if result.get("found_sign") and result.get("height_in") is not None:
-            height_in = result["height_in"]
-            conf = (result.get("confidence") or "low").lower()
-            raw_text = result.get("raw_text", "") or ""
-            # Sanity bound (plausible clearance range)
+        for s in (result.get("signs") or []):
+            height_in = s.get("height_in")
+            raw_text = s.get("raw_text", "") or ""
+            conf = (s.get("confidence") or "low").lower()
+            if height_in is None:
+                continue
             if not (48 <= int(height_in) <= 240):
-                print(f"    ⚠ rejecting implausible height {height_in}in (raw={raw_text!r})")
+                print(f"    ⚠ rejecting implausible {height_in}in (raw={raw_text!r})")
                 _log(f"{date.today()} {g.get('id')} REJECT-IMPLAUSIBLE pano={p['pano_id']} h={height_in}")
                 continue
-            # Anti-hallucination: height must be reconstructible from raw_text digits.
-            # Catches cases like raw_text="SHORT TERM GARAGE" with height_in=84.
             if not _height_matches_raw(int(height_in), raw_text):
-                print(f"    ⚠ rejecting hallucinated height — raw_text={raw_text!r} "
-                      f"doesn't contain digits matching {height_in}in")
+                print(f"    ⚠ rejecting hallucinated {height_in}in — raw_text={raw_text!r}")
                 _log(f"{date.today()} {g.get('id')} REJECT-HALLUCINATION pano={p['pano_id']} "
                      f"h={height_in} raw={raw_text!r}")
                 continue
-            candidates.append({
+            all_signs.append({
                 "pano_id": p["pano_id"],
                 "pano_distance_m": p["distance_m"],
-                "pano_heading": result.get("best_heading", p["bearing_to_target"]),
+                "heading": s.get("heading") if s.get("heading") is not None else p["bearing_to_target"],
                 "height_in": int(height_in),
+                "label": s.get("label") or "",
                 "confidence": conf,
                 "conf_rank": CONF_RANK.get(conf, -1),
                 "raw_text": raw_text,
-                "notes": result.get("notes", "") or "",
             })
 
-    if not candidates:
+    if not all_signs:
         return {"status": "no-sign", "claude_calls": claude_calls}
 
-    # Rank: highest confidence first, then closest pano as tiebreaker
-    candidates.sort(key=lambda c: (-c["conf_rank"], c["pano_distance_m"]))
-    winner = candidates[0]
+    # Dedupe by approximate height (within 1 inch = same physical sign).
+    # Within a group, pick the highest-confidence / closest-pano instance.
+    # Preserve the most informative non-empty `label` across duplicates.
+    grouped = {}
+    for s in all_signs:
+        # Bucket key: round to nearest inch
+        key = int(round(s["height_in"]))
+        existing = grouped.get(key)
+        if not existing:
+            grouped[key] = s
+        else:
+            # Prefer higher confidence, break ties by closer pano
+            if (s["conf_rank"], -s["pano_distance_m"]) > (existing["conf_rank"], -existing["pano_distance_m"]):
+                # Keep the better one but inherit a non-empty label
+                if existing.get("label") and not s.get("label"):
+                    s["label"] = existing["label"]
+                grouped[key] = s
+            elif not existing.get("label") and s.get("label"):
+                existing["label"] = s["label"]
 
-    # Cross-check: if any other candidate found a DIFFERENT height with
-    # comparable confidence, demote to medium — discrepancy is a red flag.
-    for c in candidates[1:]:
-        if c["conf_rank"] >= winner["conf_rank"] and abs(c["height_in"] - winner["height_in"]) > 1:
-            if winner["confidence"] == "high":
-                winner["confidence"] = "medium"
-                winner["notes"] = (winner["notes"] + " | DEMOTED: another pano disagreed on height").strip()
-            break
+    distinct = sorted(grouped.values(), key=lambda x: x["height_in"])
+    primary = distinct[0]  # strictest (lowest) height becomes the primary reading
 
-    return {"status": "verified", "claude_calls": claude_calls, **winner}
+    result = {
+        "status": "verified",
+        "claude_calls": claude_calls,
+        "pano_id": primary["pano_id"],
+        "pano_heading": primary["heading"],
+        "pano_distance_m": primary["pano_distance_m"],
+        "height_in": primary["height_in"],
+        "height_label": inches_to_label(primary["height_in"]),
+        "confidence": primary["confidence"],
+        "raw_text": primary["raw_text"],
+        "notes": "",
+    }
+
+    # Multi-section output only when we actually found 2+ distinct heights.
+    if len(distinct) >= 2:
+        result["sections"] = [
+            {
+                "label": d.get("label") or f"Lane {i+1}",
+                "height_in": d["height_in"],
+                "height_label": inches_to_label(d["height_in"]),
+            }
+            for i, d in enumerate(distinct)
+        ]
+
+    return result
 
 
-def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total):
+def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, check_only=False):
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
         return {"slug": slug, "error": "no city file", "cost": 0}
@@ -530,31 +622,36 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total):
     tunnels = data.get("tunnels", [])
     bridges = data.get("bridges", [])
 
-    # Only process entries that:
-    #   - have no recorded height_in, AND
-    #   - aren't already stamped as surface_lot, AND
-    #   - don't classify as surface_lot via heuristic
+    # --check mode inverts the selection: instead of finding unverified
+    # entries, it re-runs the pipeline against entries that ALREADY have
+    # a stored height_in, so we can catch drift or manual entry errors.
+    # Surface lots are skipped in either mode (no clearance to check).
     all_structures = garages + tunnels + bridges
     candidates = []
     skipped_lots = 0
     for g in all_structures:
-        if g.get("height_in") is not None:
-            continue
         if g.get("structure_type") == "surface_lot":
             skipped_lots += 1
             continue
-        if _classify_structure:
-            kind = _classify_structure(g)
-            if kind == "surface_lot":
-                skipped_lots += 1
-                # Also stamp it so it's recorded
-                if not dry_run:
-                    g["structure_type"] = "surface_lot"
-                _log(f"{date.today()} {slug} {g.get('id','?')} SKIP-SURFACE-LOT")
-                continue
+        if check_only:
+            if g.get("height_in") is None:
+                continue  # only re-check entries that have a value to check
+        else:
+            if g.get("height_in") is not None:
+                continue  # only fill entries that need a value
+            if _classify_structure:
+                kind = _classify_structure(g)
+                if kind == "surface_lot":
+                    skipped_lots += 1
+                    if not dry_run:
+                        g["structure_type"] = "surface_lot"
+                    _log(f"{date.today()} {slug} {g.get('id','?')} SKIP-SURFACE-LOT")
+                    continue
         candidates.append(g)
 
-    print(f"[{slug}] {len(candidates)} to verify (skipped {skipped_lots} surface lots)")
+    mode_word = "to re-check" if check_only else "to verify"
+    print(f"[{slug}] {len(candidates)} {mode_word} (skipped {skipped_lots} surface lots)"
+          f"{' [CHECK MODE -- no writes]' if check_only else ''}")
 
     updated = 0
     no_sign = 0
@@ -562,6 +659,7 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total):
     low_conf = 0
     cost_this_city = 0.0
     aborted_for_cost = False
+    mismatches = []  # populated by --check mode when AI disagrees with stored
 
     for g in candidates:
         # Budget gate — will this garage's worst-case Claude spend push us over?
@@ -598,23 +696,77 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total):
             print(f"    → error: {res.get('reason')}")
             continue
 
-        # Verified
+        # Verified — AI has a reading
         conf = res["confidence"]
+        ai_height = int(res["height_in"])
+        ai_sections = res.get("sections")  # list of {label, height_in, height_label} or None
+        sections_tag = f" [+{len(ai_sections)-1} more section(s)]" if ai_sections else ""
+
         if CONF_RANK.get(conf, -1) < CONF_RANK[min_conf]:
             low_conf += 1
-            print(f"    → {res['height_in']}in ({inches_to_label(res['height_in'])}) "
+            print(f"    → {ai_height}in ({inches_to_label(ai_height)}){sections_tag} "
                   f"confidence={conf} — below threshold ({min_conf}), NOT written")
-            _log(f"{date.today()} {slug} {g.get('id')} LOW-CONF h={res['height_in']} conf={conf} "
+            _log(f"{date.today()} {slug} {g.get('id')} LOW-CONF h={ai_height} conf={conf} "
                  f"raw={res['raw_text']!r} cost=${call_cost:.3f}")
             continue
 
-        # Write it
+        # CHECK-MODE: compare AI reading to stored value and REPORT without
+        # touching the JSON.  Flags: exact match, height within 1" drift,
+        # meaningful disagreement (>1"), missing-section discrepancy.
+        if check_only:
+            stored_h = g.get("height_in")
+            stored_sections = g.get("sections")
+            diff_h = ai_height - (stored_h or 0) if stored_h is not None else None
+
+            tag = "OK"
+            color = ""
+            if stored_h is None:
+                tag = "AI-FOUND-NEW"
+                color = "✨"
+            elif abs(ai_height - stored_h) == 0:
+                tag = "MATCH"
+                color = "✓"
+            elif abs(ai_height - stored_h) <= 1:
+                tag = "CLOSE"
+                color = "~"
+            else:
+                tag = "MISMATCH"
+                color = "⚠"
+
+            # Section-level discrepancy
+            sec_tag = ""
+            stored_set = {s.get("height_in") for s in (stored_sections or [])} if isinstance(stored_sections, list) else set()
+            ai_set = {s.get("height_in") for s in (ai_sections or [])} if isinstance(ai_sections, list) else set()
+            if stored_set or ai_set:
+                if stored_set != ai_set:
+                    sec_tag = f" · SECTIONS DIFFER stored={sorted(stored_set)} ai={sorted(ai_set)}"
+
+            print(f"    → {color} {tag}: stored={stored_h}in ai={ai_height}in "
+                  f"(conf={conf}){sections_tag}{sec_tag} raw={res['raw_text']!r} "
+                  f"(cost=${call_cost:.3f})")
+            _log(f"{date.today()} {slug} {g.get('id')} CHECK-{tag} "
+                 f"stored={stored_h} ai={ai_height} conf={conf} raw={res['raw_text']!r}"
+                 f"{sec_tag} cost=${call_cost:.3f}")
+
+            if tag == "MISMATCH":
+                mismatches.append({
+                    "id": g.get("id"), "name": g.get("name"),
+                    "stored_h": stored_h, "ai_h": ai_height,
+                    "ai_raw": res["raw_text"], "ai_confidence": conf,
+                    "ai_pano_id": res["pano_id"], "ai_pano_heading": res.get("pano_heading"),
+                    "stored_sections": stored_sections, "ai_sections": ai_sections,
+                })
+            continue
+
+        # NORMAL (write) mode
         if not dry_run:
-            g["height_in"] = int(res["height_in"])
-            g["height_label"] = inches_to_label(int(res["height_in"]))
+            g["height_in"] = ai_height
+            g["height_label"] = inches_to_label(ai_height)
             g["verified_on"] = date.today().isoformat()
             g["pano_id"] = res["pano_id"]
             g["pano_heading"] = round(res["pano_heading"], 1) if res.get("pano_heading") is not None else None
+            if ai_sections and len(ai_sections) >= 2:
+                g["sections"] = ai_sections
             prev_src = g.get("source", "")
             if "AI-verified" not in prev_src:
                 g["source"] = f"AI-verified (Street View + Claude Vision — auto-pano) — was: {prev_src}".strip(" -")
@@ -622,25 +774,32 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total):
             stamp = (
                 f'Verified {date.today().isoformat()} from sign reading "{res["raw_text"]}" '
                 f'(pano {res["pano_id"]}, heading {res.get("pano_heading","?")}°, '
-                f'Claude confidence {conf})'
+                f'Claude confidence {conf}{sections_tag})'
             )
             g["notes"] = (prior_notes + "\n" + stamp).strip()
 
         updated += 1
         action = "[DRY] would set" if dry_run else "UPDATED"
-        print(f"    → {action}: {res['height_in']}in ({inches_to_label(res['height_in'])}) "
+        print(f"    → {action}: {ai_height}in ({inches_to_label(ai_height)}){sections_tag} "
               f"conf={conf} pano={res['pano_id'][:12]}… heading={res.get('pano_heading','?')}° "
               f"(cost=${call_cost:.3f})")
-        _log(f"{date.today()} {slug} {g.get('id')} VERIFIED h={res['height_in']} conf={conf} "
+        _log(f"{date.today()} {slug} {g.get('id')} VERIFIED h={ai_height} conf={conf} "
+             f"sections={len(ai_sections) if ai_sections else 1} "
              f"pano={res['pano_id']} heading={res.get('pano_heading','?')} "
              f"raw={res['raw_text']!r} cost=${call_cost:.3f}")
 
-    # Persist
-    if (updated > 0 or skipped_lots > 0) and not dry_run:
+    # Persist — only in normal mode.  --check never writes, even on "new"
+    # findings (those should be re-verified in a separate normal run).
+    if not check_only and (updated > 0 or skipped_lots > 0) and not dry_run:
         city_path.write_text(json.dumps(data, indent=2) + "\n")
 
-    print(f"[{slug}] done: verified={updated} no-sign={no_sign} no-pano={no_pano} "
-          f"low-conf={low_conf} lots-skipped={skipped_lots} cost=${cost_this_city:.2f}")
+    if check_only:
+        print(f"[{slug}] check done: mismatches={len(mismatches)} "
+              f"no-sign={no_sign} no-pano={no_pano} low-conf={low_conf} "
+              f"cost=${cost_this_city:.2f}")
+    else:
+        print(f"[{slug}] done: verified={updated} no-sign={no_sign} no-pano={no_pano} "
+              f"low-conf={low_conf} lots-skipped={skipped_lots} cost=${cost_this_city:.2f}")
 
     return {
         "slug": slug,
@@ -651,6 +810,7 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total):
         "skipped_lots": skipped_lots,
         "cost": cost_this_city,
         "aborted": aborted_for_cost,
+        "mismatches": mismatches,
     }
 
 
@@ -671,6 +831,10 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="Don't write to city files")
     ap.add_argument("--sleep", type=float, default=0.5,
                     help="Seconds between garages")
+    ap.add_argument("--check", action="store_true",
+                    help="Re-verify already-verified entries WITHOUT writing. "
+                         "Reports per-garage MATCH / CLOSE / MISMATCH + section "
+                         "discrepancies so a human can review.")
     args = ap.parse_args()
 
     if not (args.slug or args.slugs or args.all):
@@ -687,8 +851,9 @@ def main():
     else:
         targets = [c["slug"] for c in idx if c.get("status") == "live"]
 
-    print(f"auto_verify: {len(targets)} cities, cost cap ${args.max_cost:.2f}, "
-          f"confidence >={args.confidence}, model={args.model}, dry_run={args.dry_run}")
+    mode = "CHECK" if args.check else ("DRY-RUN" if args.dry_run else "LIVE")
+    print(f"auto_verify [{mode}]: {len(targets)} cities, cost cap ${args.max_cost:.2f}, "
+          f"confidence >={args.confidence}, model={args.model}")
     print()
 
     summaries = []
@@ -696,7 +861,7 @@ def main():
     for slug in targets:
         try:
             r = process_city(slug, args.max_cost, args.confidence, args.model,
-                             args.dry_run, running_total)
+                             args.dry_run, running_total, check_only=args.check)
             summaries.append(r)
             running_total += r.get("cost", 0)
             if r.get("aborted"):
@@ -714,13 +879,32 @@ def main():
     total_no_pano = sum(s.get("no_pano", 0) for s in summaries)
     total_low = sum(s.get("low_conf", 0) for s in summaries)
     total_lots = sum(s.get("skipped_lots", 0) for s in summaries)
-    print(f"Cities processed:      {len(summaries)}")
-    print(f"Verified (written):    {total_updated}")
-    print(f"No sign found:         {total_no_sign}")
-    print(f"No pano within {MAX_PANO_DISTANCE_M:.0f}m:  {total_no_pano}")
-    print(f"Low confidence:        {total_low}")
-    print(f"Surface lots skipped:  {total_lots}")
-    print(f"Total Claude spend:    ${running_total:.2f}  (cap was ${args.max_cost:.2f})")
+    all_mismatches = [m for s in summaries for m in (s.get("mismatches") or [])]
+
+    print(f"Mode:                   {mode}")
+    print(f"Cities processed:       {len(summaries)}")
+    if args.check:
+        print(f"Entries re-checked:     {total_updated + total_no_sign + total_no_pano + total_low + len(all_mismatches)}")
+        print(f"MISMATCHES needing review: {len(all_mismatches)}")
+    else:
+        print(f"Verified (written):     {total_updated}")
+    print(f"No sign found:          {total_no_sign}")
+    print(f"No pano within {MAX_PANO_DISTANCE_M:.0f}m:   {total_no_pano}")
+    print(f"Low confidence:         {total_low}")
+    if not args.check:
+        print(f"Surface lots skipped:   {total_lots}")
+    print(f"Total Claude spend:     ${running_total:.2f}  (cap was ${args.max_cost:.2f})")
+
+    if all_mismatches:
+        print()
+        print("=== MISMATCHES (stored vs AI disagree by >1 inch) ===")
+        for m in all_mismatches:
+            print(f"  {m['id']:<38} stored={m['stored_h']}in  ai={m['ai_h']}in  "
+                  f"conf={m['ai_confidence']}  raw={m['ai_raw']!r}")
+            if m.get("ai_sections"):
+                for s in m["ai_sections"]:
+                    print(f"    • AI saw: {s.get('label','?')} = {s['height_label']}")
+
     if args.dry_run:
         print("(DRY-RUN — no files written.)")
 
