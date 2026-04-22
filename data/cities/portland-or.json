@@ -94,7 +94,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated RV/bus/oversized lot when available. $40 per event.",
-      "source": "modaportland.com"
+      "source": "modaportland.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-providence-park",
@@ -106,7 +107,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "MLS Timbers stadium.",
-      "source": "timbers.com"
+      "source": "timbers.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-conv-ctr",
@@ -145,7 +147,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Science museum surface lot.",
-      "source": "omsi.edu"
+      "source": "omsi.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-waterfront-park",
@@ -157,7 +160,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown riverfront. Limited.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-washington-park",
@@ -169,7 +173,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo + Japanese Garden + Arboretum surface lots.",
-      "source": "explorewashingtonpark.org"
+      "source": "explorewashingtonpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-lloyd-center",
@@ -217,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Weekend open-air market. Surface lots.",
-      "source": "portlandsaturdaymarket.com"
+      "source": "portlandsaturdaymarket.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-nw-23rd",
@@ -229,7 +235,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Trendy shopping district street + small lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pdx-airport-long",
@@ -253,7 +260,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flypdx.com"
+      "source": "flypdx.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w113970042",
