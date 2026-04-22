@@ -538,7 +538,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated oversized vehicle lot. Call 702-967-4481 for availability.",
-      "source": "vegasfoodandfun.com"
+      "source": "vegasfoodandfun.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "palms",
@@ -562,7 +563,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot in front of property. Room for RVs (no hookups).",
-      "source": "vegasfoodandfun.com"
+      "source": "vegasfoodandfun.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "durango",
@@ -646,7 +648,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots at LVCC. Event + self-park for trade shows.",
-      "source": "lvcva.com"
+      "source": "lvcva.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "allegiant-rv",
@@ -658,7 +661,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated RV lot for Raiders games. Up to 200 RVs. Shuttle service to stadium. Vehicles >20' or >8' wide must park here.",
-      "source": "allegiantstadium.com"
+      "source": "allegiantstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "m-resort",
@@ -678,11 +682,14 @@
       "addr": "3400 S Las Vegas Blvd",
       "lat": 36.1215,
       "lng": -115.1739,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "oversized": false,
-      "notes": "Guitar-shaped Hard Rock redevelopment of The Mirage \u2014 scheduled to open. Clearance TBD.",
-      "source": "Property"
+      "notes": "Guitar-shaped Hard Rock redevelopment of The Mirage \u2014 scheduled to open. Clearance TBD.\nVerified 2026-04-21 from sign reading \"MAX CLEARANCE 13'0\"\" (pano wjThirZjP2QyzzFJ7uHYQA, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Property",
+      "verified_on": "2026-04-21",
+      "pano_id": "wjThirZjP2QyzzFJ7uHYQA",
+      "pano_heading": 180
     },
     {
       "id": "osm-w25718288",
@@ -750,11 +757,14 @@
       "addr": "",
       "lat": 36.11003,
       "lng": -115.16816,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-21 from sign reading \"MAX CLEARANCE 7'0\"\" (pano LbPrd2NFGc01JsEJLB5X4w, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-21",
+      "pano_id": "LbPrd2NFGc01JsEJLB5X4w",
+      "pano_heading": 270
     },
     {
       "id": "osm-w132225807",
