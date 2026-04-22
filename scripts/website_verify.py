@@ -227,6 +227,33 @@ def normalize_domain(s: str) -> Optional[str]:
     return s
 
 
+# Domain tokens we ignore when extracting from a source string — they're
+# provenance stamps (our own scripts) rather than operator websites.
+_NON_OPERATOR_DOMAINS = {
+    "google.com", "googlemaps.com", "openstreetmap.org", "fhwa.dot.gov",
+}
+
+
+def extract_source_domain(src: str) -> Optional[str]:
+    """Find an operator domain in the `source` field.  Handles the common
+    'Manually verified ... — was: <domain>' and 'AI-verified ... — was:
+    <domain>' chains our other scripts write, walking right-to-left so the
+    most-original import source wins (that's the operator website, not
+    our own provenance stamp)."""
+    if not src:
+        return None
+    # Split on the em-dash-was / dash-was separator (both variants)
+    parts = re.split(r"\s*[—\-]+\s*was:\s*", src)
+    # Try most-original first (last element); fall back to earlier segments
+    for part in reversed(parts):
+        # A segment may itself contain multiple tokens; test each word-ish chunk
+        for token in re.split(r"[\s,;|]+", part):
+            d = normalize_domain(token)
+            if d and d not in _NON_OPERATOR_DOMAINS:
+                return d
+    return None
+
+
 def collect_site_text(domain: str) -> tuple[str, list[str]]:
     """Fetch the homepage + a few parking-related subpaths, return a combined
     text blob and the list of URLs we successfully fetched."""
@@ -317,7 +344,10 @@ def inches_to_label(inches: Optional[int]) -> Optional[str]:
 
 def verify_garage(g: dict, city: dict, model: str) -> Optional[dict]:
     src = g.get("source") or ""
-    domain = normalize_domain(src)
+    # Preferred: the `source` field itself is a bare domain (original import
+    # format).  Fallback: walk '— was: <domain>' chains to find an operator
+    # domain that our own provenance stamps may have buried.
+    domain = normalize_domain(src) or extract_source_domain(src)
     if not domain:
         return {"status": "no-domain"}
 
@@ -356,6 +386,7 @@ def process_city(
     model: str,
     dry_run: bool,
     overwrite: bool,
+    check_only: bool = False,
 ) -> dict:
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
@@ -366,18 +397,27 @@ def process_city(
     idx = json.loads(INDEX_PATH.read_text())
     city_meta = next((c for c in idx if c["slug"] == slug), {"slug": slug, "name": slug, "state": ""})
 
-    if overwrite:
+    # --check mode inverts the selection: process entries that ALREADY have
+    # a stored height_in, cross-reference against the operator's website,
+    # NEVER write.  Useful as a 3rd independent source (street view + user
+    # eye + operator's own posted spec).
+    if check_only:
+        candidates = [g for g in garages if g.get("height_in") is not None]
+    elif overwrite:
         candidates = list(garages)
     else:
         candidates = [g for g in garages if g.get("height_in") is None]
 
     if not candidates:
-        print(f"[{slug}] no unverified garages")
-        return {"slug": slug, "checked": 0, "updated": 0}
+        print(f"[{slug}] no candidates")
+        return {"slug": slug, "checked": 0, "updated": 0, "mismatches": []}
 
-    print(f"[{slug}] {len(candidates)} candidates (limit={limit})")
+    mode_word = "to re-check" if check_only else "candidates"
+    print(f"[{slug}] {len(candidates)} {mode_word} (limit={limit})"
+          f"{' [CHECK MODE — no writes]' if check_only else ''}")
 
     checked = updated = no_domain = unreachable = no_clearance = low_conf = 0
+    mismatches = []
 
     for g in candidates:
         if limit is not None and checked >= limit:
@@ -389,7 +429,7 @@ def process_city(
         res = verify_garage(g, city_meta, model)
         if res is None or res.get("status") == "no-domain":
             no_domain += 1
-            print("no domain in source")
+            print("no operator domain to cross-ref")
             continue
 
         if res.get("status") == "site-unreachable":
@@ -406,23 +446,58 @@ def process_city(
         height_in = res.get("height_in")
         conf = (res.get("confidence") or "low").lower()
         quote = (res.get("raw_quote") or "")[:80]
+        domain = res.get("domain")
 
         if not found or height_in is None:
             no_clearance += 1
-            print(f"no clearance ({conf}) on {res.get('domain')}")
-            _log(f"{date.today()} {slug} {g['id']} NO-CLEARANCE conf={conf} domain={res.get('domain')}")
+            print(f"no clearance found on {domain}")
+            _log(f"{date.today()} {slug} {g['id']} NO-CLEARANCE conf={conf} domain={domain}")
             continue
 
         if CONF_RANK.get(conf, -1) < CONF_RANK[min_conf]:
             low_conf += 1
-            print(f"low confidence: {conf} — {height_in}in \"{quote}\"")
+            print(f"low conf ({conf}): {height_in}in \"{quote}\" on {domain}")
             _log(f"{date.today()} {slug} {g['id']} LOW-CONF conf={conf} h={height_in} quote={quote!r}")
             continue
 
         if not (MIN_PLAUSIBLE_INCHES <= int(height_in) <= MAX_PLAUSIBLE_INCHES):
-            print(f"implausible height {height_in}in — discarding")
+            print(f"implausible {height_in}in — discarding")
             continue
 
+        # CHECK-MODE: cross-reference against stored value, don't write.
+        if check_only:
+            stored_h = g.get("height_in")
+            if stored_h is None:
+                tag_ = "AI-FOUND-NEW"
+                marker = "✨"
+            elif abs(int(height_in) - stored_h) == 0:
+                tag_ = "MATCH"
+                marker = "✓"
+            elif abs(int(height_in) - stored_h) <= 1:
+                tag_ = "CLOSE"
+                marker = "~"
+            else:
+                tag_ = "MISMATCH"
+                marker = "⚠"
+
+            print(f"{marker} {tag_}: stored={stored_h}in site={height_in}in "
+                  f"({conf}) on {domain} \"{quote[:40]}\"")
+            _log(f"{date.today()} {slug} {g['id']} WEB-{tag_} stored={stored_h} "
+                 f"web={height_in} conf={conf} domain={domain} quote={quote!r}")
+
+            if tag_ == "MISMATCH":
+                mismatches.append({
+                    "id": g.get("id"),
+                    "name": g.get("name"),
+                    "stored_h": stored_h,
+                    "site_h": int(height_in),
+                    "site_raw_quote": quote,
+                    "site_confidence": conf,
+                    "domain": domain,
+                })
+            continue
+
+        # NORMAL mode — commit the reading
         if not dry_run:
             g["height_in"] = int(height_in)
             g["height_label"] = inches_to_label(int(height_in))
@@ -431,7 +506,7 @@ def process_city(
             if "AI-verified" not in prev_src:
                 g["source"] = f"AI-verified (operator website + Claude) — was: {prev_src}".strip(" -")
             prior_notes = g.get("notes", "")
-            stamp = f'Verified {date.today().isoformat()} from {res.get("domain")}: "{quote}"'
+            stamp = f'Verified {date.today().isoformat()} from {domain}: "{quote}"'
             g["notes"] = (prior_notes + "\n" + stamp).strip() if prior_notes else stamp
             if res.get("oversized_ok") is not None:
                 g["oversized"] = bool(res["oversized_ok"])
@@ -439,18 +514,27 @@ def process_city(
         updated += 1
         action = "[DRY] would set" if dry_run else "UPDATED"
         print(f"{action}: {height_in}in ({inches_to_label(int(height_in))}) conf={conf} \"{quote}\"")
-        _log(f"{date.today()} {slug} {g['id']} VERIFIED h={height_in} conf={conf} domain={res.get('domain')} quote={quote!r}")
+        _log(f"{date.today()} {slug} {g['id']} VERIFIED h={height_in} conf={conf} domain={domain} quote={quote!r}")
 
-    if updated and not dry_run:
+    if updated and not dry_run and not check_only:
         city_path.write_text(json.dumps(data, indent=2) + "\n")
 
-    print(f"  {slug}: checked={checked} updated={updated} "
-          f"no-domain={no_domain} unreachable={unreachable} "
-          f"no-clearance={no_clearance} low-conf={low_conf}")
+    summary_parts = [
+        f"checked={checked}",
+        f"matches+writes={updated}" if not check_only else f"findings={updated}",
+        f"no-domain={no_domain}",
+        f"unreachable={unreachable}",
+        f"no-clearance={no_clearance}",
+        f"low-conf={low_conf}",
+    ]
+    if check_only:
+        summary_parts.append(f"mismatches={len(mismatches)}")
+    print(f"  {slug}: " + " ".join(summary_parts))
     return {
         "slug": slug, "checked": checked, "updated": updated,
         "no_domain": no_domain, "unreachable": unreachable,
         "no_clearance": no_clearance, "low_conf": low_conf,
+        "mismatches": mismatches,
     }
 
 
@@ -469,6 +553,11 @@ def main():
     ap.add_argument("--model", default=DEFAULT_MODEL, help=f"Claude model (default: {DEFAULT_MODEL})")
     ap.add_argument("--overwrite", action="store_true", help="Re-verify ALL garages")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--check", action="store_true",
+                    help="Cross-reference already-verified entries against the "
+                         "operator's website WITHOUT writing.  Reports MATCH / "
+                         "CLOSE / MISMATCH for each garage whose source has a "
+                         "reachable domain.")
     ap.add_argument("--sleep", type=float, default=0.5, help="Seconds between garages")
     args = ap.parse_args()
 
@@ -483,11 +572,12 @@ def main():
     else:
         targets = [c["slug"] for c in idx if c.get("status") == "live"]
 
+    mode = "CHECK" if args.check else ("DRY-RUN" if args.dry_run else "LIVE")
     summary = []
     for slug in targets:
         try:
             r = process_city(slug, args.limit, args.confidence, args.model,
-                             args.dry_run, args.overwrite)
+                             args.dry_run, args.overwrite, check_only=args.check)
             summary.append(r)
         except KeyboardInterrupt:
             print("\nInterrupted.")
@@ -496,10 +586,25 @@ def main():
 
     total_checked = sum(s.get("checked", 0) for s in summary)
     total_updated = sum(s.get("updated", 0) for s in summary)
-    print("\n=== SUMMARY ===")
+    all_mismatches = [m for s in summary for m in (s.get("mismatches") or [])]
+
+    print(f"\n=== SUMMARY [{mode}] ===")
     print(f"Cities processed: {len(summary)}")
     print(f"Garages checked:  {total_checked}")
-    print(f"Updated:          {total_updated}")
+    if args.check:
+        print(f"MISMATCHES needing review: {len(all_mismatches)}")
+    else:
+        print(f"Updated:          {total_updated}")
+
+    if all_mismatches:
+        print()
+        print("=== WEBSITE vs STORED MISMATCHES ===")
+        for m in all_mismatches:
+            print(f"  {m['id']:<38} stored={m['stored_h']}in  site={m['site_h']}in  "
+                  f"({m['site_confidence']}) on {m['domain']}")
+            if m.get("site_raw_quote"):
+                print(f"    website said: \"{m['site_raw_quote'][:80]}\"")
+
     if args.dry_run:
         print("(DRY-RUN — no files written.)")
 
