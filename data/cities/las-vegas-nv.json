@@ -519,11 +519,17 @@
       "addr": "4505 S Maryland Pkwy",
       "lat": 36.1105,
       "lng": -115.143,
-      "height_in": null,
-      "height_label": null,
+      "entrance_lat": 36.1109692,
+      "entrance_lng": -115.1394662,
+      "entrance_source": "Manual (Google Maps URL)",
+      "height_in": 89,
+      "height_label": "7'5\"",
       "oversized": false,
-      "notes": "UNLV campus. Needs verification.",
-      "source": "Needs verification"
+      "pano_id": "AP9s8PJ6hcyMvHMi8xaDWg",
+      "pano_heading": 249.38,
+      "verified_on": "2026-04-22",
+      "notes": "UNLV campus. Entrance has a yellow \"7'-5\\\" Clearance\" bar above the drive-up (read directly from pano AP9s8PJ6hcyMvHMi8xaDWg @ 249\u00b0 on 2026-04-22). Entrance coords updated -- OSM parking_entrance was missing, the original lat/lng was the building center.",
+      "source": "Manually verified from Google Street View \u2014 was: Needs verification"
     },
     {
       "id": "townsquare",

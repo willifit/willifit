@@ -1,0 +1,29 @@
+# manual_updates.tsv — format template for scripts/bulk_update.py
+#
+# Copy this to data/manual_updates.tsv and fill in one row per garage you want
+# to update.  Columns are TAB-separated.  Lines starting with # are comments.
+#
+# Columns (required):
+#   city        — city slug (matches the filename in data/cities/<slug>.json)
+#   garage_id   — the "id" field of the garage in that city's JSON
+#   url         — Google Maps Street View URL, pan until the sign is readable
+#                 then copy from the browser address bar
+#   height      — the clearance number you see on the sign
+#
+# Columns (optional):
+#   notes       — extra context that'll be appended to the garage's notes field
+#
+# Special values for the "height" column:
+#   skip        — leave this row alone (useful when iterating)
+#   surface     — mark the garage as surface_lot (no clearance to read)
+#   7'7"/8'2"   — two or more sections in one record (slash-separated)
+#                 The lowest becomes the primary; all get listed in the
+#                 detail-panel sections breakdown.
+#
+# Examples below — delete and replace with your own rows.
+city	garage_id	url	height	notes
+las-vegas-nv	unlv-tropicana	https://www.google.com/maps/@36.1099,-115.1394,3a,...	7'0"	single-level entrance
+las-vegas-nv	mgmgrand	https://www.google.com/maps/@36.1023,-115.1707,3a,...	8'8"
+las-vegas-nv	palms	https://www.google.com/maps/@36.1222,-115.2288,3a,...	surface
+las-vegas-nv	town-square	skip
+reno-nv	rno-citycenter-garage	https://www.google.com/maps/@39.5256,-115.8139,3a,...	7'0"/8'0"	short-term + long-term lanes
