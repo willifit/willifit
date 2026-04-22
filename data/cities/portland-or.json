@@ -112,13 +112,16 @@
       "id": "pdx-conv-ctr",
       "name": "Oregon Convention Center Parking",
       "addr": "777 NE MLK Jr Blvd",
-      "lat": 45.5289,
-      "lng": -122.6636,
-      "height_in": null,
-      "height_label": null,
+      "lat": 45.5274,
+      "lng": -122.6643,
+      "height_in": 108,
+      "height_label": "9'0\"",
       "oversized": false,
-      "notes": "OCC garages.",
-      "source": "oregoncc.org"
+      "pano_id": "JQd0xcE7UZWxMZnyNcYi7Q",
+      "pano_heading": 85.5,
+      "verified_on": "2026-04-22",
+      "notes": "OCC garages. Entrance sign reads \"CLEARANCE 9'-0\\\"\" (read directly from pano JQd0xcE7UZWxMZnyNcYi7Q @ 85.5° on 2026-04-22). Coords corrected to actual garage entrance (was 165m north at the building center).",
+      "source": "Manually verified from Google Street View \u2014 was: oregoncc.org"
     },
     {
       "id": "pdx-psu-1",
