@@ -1,41 +1,5 @@
 [
   {
-    "id": "affiliate-spothero",
-    "title": "Reserve parking with SpotHero",
-    "desc": "Oversized-friendly garages in 300+ US cities. Reserve before you drive.",
-    "cta": "Find a spot →",
-    "url": "https://spothero.com/?ref=willifit",
-    "tier": ["sidebar", "detail"],
-    "scope": { "cities": ["*"] },
-    "audience": {},
-    "weight": 2,
-    "label": "Affiliate"
-  },
-  {
-    "id": "affiliate-rvshare",
-    "title": "Rent an RV for your next trip",
-    "desc": "RVshare — the Airbnb of motorhomes. 100k+ listings nationwide.",
-    "cta": "Browse RVs →",
-    "url": "https://rvshare.com/?ref=willifit",
-    "tier": ["home", "sidebar"],
-    "scope": { "cities": ["*"] },
-    "audience": { "oversized_only": true },
-    "weight": 2,
-    "label": "Affiliate"
-  },
-  {
-    "id": "affiliate-uberxl",
-    "title": "Skip the garage — take an Uber XL",
-    "desc": "Leave the rig. 6 seats. Fits luggage. Available in every city we cover.",
-    "cta": "Get the app →",
-    "url": "https://uber.com/go/xl",
-    "tier": ["home", "sidebar"],
-    "scope": { "cities": ["*"] },
-    "audience": {},
-    "weight": 1,
-    "label": "Affiliate"
-  },
-  {
     "id": "house-home-hero",
     "title": "Sponsor the home page",
     "desc": "Your ad is shown to every visitor on page load. Geo-target a city, a radius, or the nation.",
