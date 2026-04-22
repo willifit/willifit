@@ -162,14 +162,14 @@
       "addr": "1664 N Virginia St",
       "lat": 39.543028,
       "lng": -119.81707,
-      "height_in": 138,
-      "height_label": "11'6\"",
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "pano_id": "6RTeI_ij85n0Kx-JpXgHEQ",
-      "pano_heading": 90,
-      "notes": "UNR visitor parking. Coords + human-verified pano (hjqMfmW3tJln1ZcOzqUpOA @ 52.79\u00b0) from Google Maps 'Whalen Parking Garage' place record (2026-04-21).\nVerified 2026-04-21 from sign reading \"11'6\"\" (pano 6RTeI_ij85n0Kx-JpXgHEQ, heading 90\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: unr.edu",
-      "verified_on": "2026-04-21"
+      "pano_id": "36SuB0REWbjaCoyBLPgdNw",
+      "pano_heading": 280,
+      "verified_on": "2026-04-21",
+      "notes": "UNR visitor parking. Two entrances, BOTH posted at 8'0\" (manually verified 2026-04-21):\n  - Entrance #1: pano 36SuB0REWbjaCoyBLPgdNw @ 280\u00b0 (primary, used by hero)\n  - Entrance #2: pano hjqMfmW3tJln1ZcOzqUpOA @ 52\u00b0\nPrevious auto_verify read 11'6\" at pano 6RTeI_ij85n0Kx-JpXgHEQ -- that was a misread of a different sign at the complex (possibly an internal loading dock or height stanchion that didn't represent the actual vehicle entrance).",
+      "source": "Manually verified from Google Street View \u2014 was: AI-verified (auto-pano)"
     },
     {
       "id": "rno-mackay-stadium",
