@@ -10,7 +10,10 @@
       "height_label": "8'3\"",
       "oversized": false,
       "notes": "Standard MGM self-park. No on-site oversized; MGM directs oversized to Excalibur.",
-      "source": "MGM Resorts"
+      "source": "MGM Resorts",
+      "entrance_lat": 36.107242,
+      "entrance_lng": -115.1754901,
+      "entrance_source": "OSM parking_entrance node 7387211437"
     },
     {
       "id": "bellagio",
@@ -22,7 +25,10 @@
       "height_label": "8'7\"",
       "oversized": false,
       "notes": "One of the taller self-park garages on the Strip. No oversized \u2014 MGM directs to Excalibur.",
-      "source": "MGM confirmed"
+      "source": "MGM confirmed",
+      "entrance_lat": 36.1109415,
+      "entrance_lng": -115.1763901,
+      "entrance_source": "OSM parking_entrance node 280426999"
     },
     {
       "id": "caesars",
@@ -34,7 +40,10 @@
       "height_label": "6'10\"",
       "oversized": false,
       "notes": "Low clearance. Most SUVs with roof racks will scrape.",
-      "source": "Caesars.com"
+      "source": "Caesars.com",
+      "entrance_lat": 36.115835,
+      "entrance_lng": -115.173864,
+      "entrance_source": "OSM parking_entrance node 8553668563"
     },
     {
       "id": "cosmopolitan",
@@ -46,7 +55,10 @@
       "height_label": "6'10\"",
       "oversized": false,
       "notes": "Two parking garages (East and West). Both low-clearance.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.1094414,
+      "entrance_lng": -115.1752547,
+      "entrance_source": "OSM parking_entrance node 7716930040"
     },
     {
       "id": "circuscircus",
@@ -58,7 +70,10 @@
       "height_label": "8'3\"",
       "oversized": true,
       "notes": "Free parking. Adjacent RV park. Ground floor and surface lots accommodate larger vehicles.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.13762,
+      "entrance_lng": -115.1658046,
+      "entrance_source": "OSM parking_entrance node 1487624281"
     },
     {
       "id": "excalibur",
@@ -82,7 +97,10 @@
       "height_label": "7'3\"",
       "oversized": true,
       "notes": "Oversized vehicles can use separate lane to rooftop of 4-story garage. Limited availability.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.129913,
+      "entrance_lng": -115.1655833,
+      "entrance_source": "OSM parking_entrance node 10679966107"
     },
     {
       "id": "flamingo",
@@ -94,7 +112,10 @@
       "height_label": "6'11\"",
       "oversized": false,
       "notes": "Caesars property. Uncovered surface lot on back side may accommodate taller vehicles.",
-      "source": "Community"
+      "source": "Community",
+      "entrance_lat": 36.1152878,
+      "entrance_lng": -115.1701263,
+      "entrance_source": "OSM parking_entrance node 7363317151"
     },
     {
       "id": "fourseasons",
@@ -106,7 +127,10 @@
       "height_label": "7'11\"",
       "oversized": false,
       "notes": "Shares Mandalay Bay parking structure.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.0927892,
+      "entrance_lng": -115.1745656,
+      "entrance_source": "OSM parking_entrance node 4022854303"
     },
     {
       "id": "harrahs",
@@ -118,7 +142,10 @@
       "height_label": "6'11\"",
       "oversized": false,
       "notes": "Caesars property. Strip-facing entrance.",
-      "source": "Caesars.com"
+      "source": "Caesars.com",
+      "entrance_lat": 36.1201824,
+      "entrance_lng": -115.1708552,
+      "entrance_source": "OSM parking_entrance node 3196293388"
     },
     {
       "id": "linq",
@@ -130,7 +157,10 @@
       "height_label": "8'0\"",
       "oversized": false,
       "notes": "Off-Strip entrance off Flamingo Rd/LINQ Lane. Taller than most Caesars garages.",
-      "source": "Caesars.com"
+      "source": "Caesars.com",
+      "entrance_lat": 36.1184206,
+      "entrance_lng": -115.1715189,
+      "entrance_source": "OSM parking_entrance node 8976111378"
     },
     {
       "id": "luxor-upper",
@@ -142,7 +172,10 @@
       "height_label": "8'1\"",
       "oversized": false,
       "notes": "Two separate garages at Luxor. Upper garage has higher clearance.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.0943301,
+      "entrance_lng": -115.1756857,
+      "entrance_source": "OSM parking_entrance node 4021063663"
     },
     {
       "id": "luxor-lower",
@@ -154,7 +187,10 @@
       "height_label": "6'11\"",
       "oversized": false,
       "notes": "Lower garage is tighter \u2014 know which entrance you're using.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.0956375,
+      "entrance_lng": -115.1781654,
+      "entrance_source": "OSM parking_entrance node 12185537737"
     },
     {
       "id": "mgmgrand",
@@ -178,7 +214,10 @@
       "height_label": "6'10\"",
       "oversized": false,
       "notes": "Closed for renovation into Hard Rock \u2014 confirm status before relying.",
-      "source": "Historical"
+      "source": "Historical",
+      "entrance_lat": 36.1226354,
+      "entrance_lng": -115.173345,
+      "entrance_source": "OSM parking_entrance node 6647758923"
     },
     {
       "id": "nynhny",
@@ -190,7 +229,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "One of the lower clearance MGM garages.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.1015457,
+      "entrance_lng": -115.1749994,
+      "entrance_source": "OSM parking_entrance node 4037708359"
     },
     {
       "id": "palazzo",
@@ -214,7 +256,10 @@
       "height_label": "6'10\"",
       "oversized": false,
       "notes": "Shared garage access via Bally's/Horseshoe side.",
-      "source": "Caesars.com"
+      "source": "Caesars.com",
+      "entrance_lat": 36.113335,
+      "entrance_lng": -115.1709857,
+      "entrance_source": "OSM parking_entrance node 9040229112"
     },
     {
       "id": "parkmgm",
@@ -226,7 +271,10 @@
       "height_label": "7'11\"",
       "oversized": false,
       "notes": "Formerly Monte Carlo. Standard MGM clearance.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.1026902,
+      "entrance_lng": -115.1761732,
+      "entrance_source": "OSM parking_entrance node 9412698372"
     },
     {
       "id": "planethw",
@@ -238,7 +286,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Low clearance. Access via Harmon Ave.",
-      "source": "Property"
+      "source": "Property",
+      "entrance_lat": 36.1087224,
+      "entrance_lng": -115.1718888,
+      "entrance_source": "OSM parking_entrance node 8334967201"
     },
     {
       "id": "resortsworld",
@@ -274,7 +325,10 @@
       "height_label": "8'3\"",
       "oversized": true,
       "notes": "Oversized parking on ground level. Heights 6'8\" to 8'3\". First-come, first-served. No RV hookups. No trailers.",
-      "source": "Venetian official"
+      "source": "Venetian official",
+      "entrance_lat": 36.1202262,
+      "entrance_lng": -115.1682235,
+      "entrance_source": "OSM parking_entrance node 8324005485"
     },
     {
       "id": "wynn",
@@ -286,7 +340,10 @@
       "height_label": "7'3\"",
       "oversized": true,
       "notes": "Rooftop level (accessible without going through covered garage) accommodates taller vehicles.",
-      "source": "Property / community"
+      "source": "Property / community",
+      "entrance_lat": 36.1282854,
+      "entrance_lng": -115.1657087,
+      "entrance_source": "OSM parking_entrance node 11617934923"
     },
     {
       "id": "fontainebleau",
@@ -298,7 +355,10 @@
       "height_label": "8'4\"",
       "oversized": true,
       "notes": "First-hand data: tall clearance on main garage levels. Opened 2023.",
-      "source": "First-hand"
+      "source": "First-hand",
+      "entrance_lat": 36.1390706,
+      "entrance_lng": -115.1615731,
+      "entrance_source": "OSM parking_entrance node 11273975180"
     },
     {
       "id": "virgin",
@@ -322,7 +382,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Circa's 8-story art-themed garage. Entrance height needs Street View verification. 982 spaces.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.1691612,
+      "entrance_lng": -115.1452371,
+      "entrance_source": "OSM parking_entrance node 5525425002"
     },
     {
       "id": "freexp",
@@ -334,7 +397,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Max clearance 7' at entry, tapers to ~6'8\" on higher floors. 1,300 spaces.",
-      "source": "Fremont St. Experience"
+      "source": "Fremont St. Experience",
+      "entrance_lat": 36.1689966,
+      "entrance_lng": -115.1421381,
+      "entrance_source": "OSM parking_entrance node 4006489774"
     },
     {
       "id": "goldennugget",
@@ -346,7 +412,10 @@
       "height_label": "6'7\"",
       "oversized": false,
       "notes": "Low \u2014 6'7\". Entrance on 1st Street and Bridger. No oversized.",
-      "source": "Golden Nugget"
+      "source": "Golden Nugget",
+      "entrance_lat": 36.1715042,
+      "entrance_lng": -115.1436938,
+      "entrance_source": "OSM parking_entrance node 7383102292"
     },
     {
       "id": "downtowngrand",
@@ -358,7 +427,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Garage accommodates vehicles up to 7'.",
-      "source": "Downtown Grand"
+      "source": "Downtown Grand",
+      "entrance_lat": 36.1714188,
+      "entrance_lng": -115.1434741,
+      "entrance_source": "OSM parking_entrance node 7383102293"
     },
     {
       "id": "cityhallgarage",
@@ -394,7 +466,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Oversized airport lot available separately.",
-      "source": "LAS airport"
+      "source": "LAS airport",
+      "entrance_lat": 36.0861418,
+      "entrance_lng": -115.1481219,
+      "entrance_source": "OSM parking_entrance node 10108675492"
     },
     {
       "id": "fashionshow",
@@ -406,7 +481,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Free mall parking. Height needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.1280797,
+      "entrance_lng": -115.1696681,
+      "entrance_source": "OSM parking_entrance node 4052071045"
     },
     {
       "id": "tmobile",
@@ -418,7 +496,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Event parking shares MGM garages.",
-      "source": "MGM"
+      "source": "MGM",
+      "entrance_lat": 36.1026713,
+      "entrance_lng": -115.1770177,
+      "entrance_source": "OSM parking_entrance node 9412698373"
     },
     {
       "id": "unlv-tropicana",
@@ -466,7 +547,10 @@
       "height_label": "8'1\"",
       "oversized": false,
       "notes": "Level 2 max clearance. Levels 3+ drop to 6'10\". Strip-side entrance.",
-      "source": "Parkopedia"
+      "source": "Parkopedia",
+      "entrance_lat": 36.1235436,
+      "entrance_lng": -115.1733166,
+      "entrance_source": "OSM parking_entrance node 1912319686"
     },
     {
       "id": "treasure-island-upper",
@@ -478,7 +562,10 @@
       "height_label": "6'10\"",
       "oversized": false,
       "notes": "Upper levels tighter than Level 2.",
-      "source": "Parkopedia"
+      "source": "Parkopedia",
+      "entrance_lat": 36.1235436,
+      "entrance_lng": -115.1733166,
+      "entrance_source": "OSM parking_entrance node 1912319686"
     },
     {
       "id": "sahara-west",
@@ -490,7 +577,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Free self-park. Low clearance.",
-      "source": "vegasalways.com"
+      "source": "vegasalways.com",
+      "entrance_lat": 36.1416775,
+      "entrance_lng": -115.1559922,
+      "entrance_source": "OSM parking_entrance node 9427492140"
     },
     {
       "id": "sahara-east",
@@ -502,7 +592,10 @@
       "height_label": "6'8\"",
       "oversized": false,
       "notes": "Matches West Garage \u2014 6'8\" throughout.",
-      "source": "vegasalways.com"
+      "source": "vegasalways.com",
+      "entrance_lat": 36.1416576,
+      "entrance_lng": -115.1558599,
+      "entrance_source": "OSM parking_entrance node 9427492138"
     },
     {
       "id": "westgate-north",
@@ -514,7 +607,10 @@
       "height_label": "8'0\"",
       "oversized": false,
       "notes": "Off-Strip, near LVCC. 8' clearance.",
-      "source": "Parkopedia"
+      "source": "Parkopedia",
+      "entrance_lat": 36.1346842,
+      "entrance_lng": -115.1500269,
+      "entrance_source": "OSM parking_entrance node 7389628340"
     },
     {
       "id": "horseshoe",
@@ -526,7 +622,10 @@
       "height_label": "7'4\"",
       "oversized": false,
       "notes": "Caesars property. Oversized available in East Lot off Flamingo Rd \u2014 call 702-967-4481.",
-      "source": "vegasfoodandfun.com"
+      "source": "vegasfoodandfun.com",
+      "entrance_lat": 36.1135458,
+      "entrance_lng": -115.1712282,
+      "entrance_source": "OSM parking_entrance node 8696625607"
     },
     {
       "id": "horseshoe-east-lot",
@@ -588,7 +687,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Station Casinos Summerlin. Free parking. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.1570632,
+      "entrance_lng": -115.3352657,
+      "entrance_source": "OSM parking_entrance node 5423459540"
     },
     {
       "id": "green-valley-ranch",
@@ -689,7 +791,10 @@
       "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Property",
       "verified_on": "2026-04-21",
       "pano_id": "wjThirZjP2QyzzFJ7uHYQA",
-      "pano_heading": 180
+      "pano_heading": 180,
+      "entrance_lat": 36.1226354,
+      "entrance_lng": -115.173345,
+      "entrance_source": "OSM parking_entrance node 6647758923"
     },
     {
       "id": "osm-w25718288",
@@ -701,7 +806,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid; hrs: 24/7 [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1109415,
+      "entrance_lng": -115.1763901,
+      "entrance_source": "OSM parking_entrance node 280426999"
     },
     {
       "id": "osm-w33992535",
@@ -713,7 +821,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1238355,
+      "entrance_lng": -115.1716514,
+      "entrance_source": "OSM parking_entrance node 8678992512"
     },
     {
       "id": "osm-w73540518",
@@ -725,7 +836,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1016146,
+      "entrance_lng": -115.1657678,
+      "entrance_source": "OSM parking_entrance node 4037790852"
     },
     {
       "id": "osm-w111339081",
@@ -737,7 +851,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.120107,
+      "entrance_lng": -115.163831,
+      "entrance_source": "OSM parking_entrance node 11412107556"
     },
     {
       "id": "osm-w111367853",
@@ -749,7 +866,10 @@
       "height_label": "6'11\"",
       "oversized": false,
       "notes": "paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1194085,
+      "entrance_lng": -115.1687902,
+      "entrance_source": "OSM parking_entrance node 7399776662"
     },
     {
       "id": "osm-w115670777",
@@ -764,7 +884,10 @@
       "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "verified_on": "2026-04-21",
       "pano_id": "LbPrd2NFGc01JsEJLB5X4w",
-      "pano_heading": 270
+      "pano_heading": 270,
+      "entrance_lat": 36.1099229,
+      "entrance_lng": -115.1677534,
+      "entrance_source": "OSM parking_entrance node 9515600592"
     },
     {
       "id": "osm-w132225807",
@@ -776,7 +899,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1689966,
+      "entrance_lng": -115.1421381,
+      "entrance_source": "OSM parking_entrance node 4006489774"
     },
     {
       "id": "osm-w133773231",
@@ -788,7 +914,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.0615598,
+      "entrance_lng": -115.1638507,
+      "entrance_source": "OSM parking_entrance node 1725403868"
     },
     {
       "id": "osm-w133879585",
@@ -800,7 +929,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1045301,
+      "entrance_lng": -115.177633,
+      "entrance_source": "OSM parking_entrance node 2316070023"
     },
     {
       "id": "osm-w135332960",
@@ -812,7 +944,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1368498,
+      "entrance_lng": -115.1668647,
+      "entrance_source": "OSM parking_entrance node 11273827709"
     },
     {
       "id": "osm-w142900604",
@@ -824,7 +959,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.0881192,
+      "entrance_lng": -115.137017,
+      "entrance_source": "OSM parking_entrance node 3097589087"
     },
     {
       "id": "osm-w495545498",
@@ -836,7 +974,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.1087434,
+      "entrance_lng": -115.1822035,
+      "entrance_source": "OSM parking_entrance node 4874269651"
     },
     {
       "id": "osm-w544016653",
@@ -848,7 +989,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.172169,
+      "entrance_lng": -115.1436512,
+      "entrance_source": "OSM parking_entrance node 13482617266"
     },
     {
       "id": "osm-w544697544",
@@ -860,7 +1004,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "free [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.0589072,
+      "entrance_lng": -115.0421267,
+      "entrance_source": "OSM parking_entrance node 8158192122"
     },
     {
       "id": "osm-w1238384484",
@@ -872,7 +1019,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.0982512,
+      "entrance_lng": -115.1798185,
+      "entrance_source": "OSM parking_entrance node 7399234317"
     }
   ],
   "tunnels": [
