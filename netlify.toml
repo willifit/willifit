@@ -17,6 +17,13 @@
   publish = "."
   command = "echo 'pure static — no build step'"
 
+# Netlify Functions directory (where admin-only endpoints live, like the
+# reports viewer used by /admin.html).  Functions need NETLIFY_FORMS_TOKEN,
+# NETLIFY_SITE_ID, and WILLIFIT_ADMIN_PASSWORD set in the Netlify site
+# dashboard's Environment settings.
+[functions]
+  directory = "netlify/functions"
+
 # "/" serves /index.html by default (Netlify static convention).
 # /willifit.html still works as a legacy alias for shared bookmarks.
 
@@ -73,3 +80,10 @@
   for = "/data/nbi_cache/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+# Keep admin page out of search engines and iframe embeds
+[[headers]]
+  for = "/admin.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, nosnippet, noarchive"
+    Cache-Control = "no-store"

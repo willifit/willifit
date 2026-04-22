@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
 
 Sitemap: https://willifit.ai/sitemap.xml

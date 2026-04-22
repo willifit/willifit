@@ -1038,6 +1038,20 @@
   }
   .report-status.success { display: block; background: rgba(62,207,142,0.1); color: var(--ok); }
   .report-status.error { display: block; background: rgba(229,72,77,0.1); color: var(--bad); }
+  /* Reassurance line shown below the submit button — tells the user
+     their report will be reviewed before going live.  Doubles as an
+     implicit "don't troll us" signal and a quality commitment. */
+  .report-help {
+    margin-top: 14px;
+    padding: 10px 12px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--muted);
+    background: var(--panel-2);
+    border-left: 2px solid var(--ok);
+    border-radius: 3px;
+  }
+  .report-help b { color: var(--text); font-weight: 600; }
 
   /* Sponsor cards — geo-targeted ads */
   .sponsor-card {
@@ -1668,6 +1682,12 @@
       <input type="email" id="rfContact" placeholder="you@example.com">
       <div class="report-actions">
         <button type="submit" class="btn-primary" id="rfSubmitBtn">Submit report</button>
+      </div>
+      <div class="report-help">
+        Every report is <b>reviewed by a human</b> before any data changes.
+        We verify at the source (Street View, operator signage, or in person)
+        before updating the map &mdash; protects you and other drivers from
+        bad-faith edits or mistakes.
       </div>
       <div class="report-status" id="rfStatus"></div>
     </form>
@@ -3550,15 +3570,15 @@ async function submitReport(e) {
 
   if (sent) {
     status.className = 'report-status success';
-    status.textContent = 'Thanks! Report submitted.';
-    setTimeout(closeReportModal, 1500);
+    status.innerHTML = 'Thanks! Your report is queued for review. If confirmed at the source, the data will update within a few days.';
+    setTimeout(closeReportModal, 3000);
   } else {
     // No endpoint / failed → offer mailto + keep in queue
-    const subject = `[WillIFit] Clearance update — ${g.name}`;
+    const subject = `[Willifit] Clearance update — ${g.name}`;
     const body = Object.entries(report).map(([k, v]) => `${k}: ${v}`).join('\n');
     const mailto = `mailto:${WILLIFIT_REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     status.className = 'report-status success';
-    status.innerHTML = `Saved to your device. <a href="${mailto}" style="color:inherit;text-decoration:underline">Send via email now</a> or use Export to send later. Total pending: ${_reportQueueGet().length}.`;
+    status.innerHTML = `Saved locally &mdash; <a href="${mailto}" style="color:inherit;text-decoration:underline">send via email now</a> or Export to send later. Total pending: ${_reportQueueGet().length}. Every report is reviewed by a human before any data changes.`;
   }
 }
 function exportReportQueue() {
