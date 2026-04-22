@@ -2354,10 +2354,13 @@ function initMapOSM() {
   const saved = localStorage.getItem('willifit_map_layer');
   (saved === 'satellite' ? satelliteLayer : streetLayer).addTo(state.map);
 
+  // Bottom-left so the toggle doesn't sit under the detail panel's close-X
+  // (which anchors to the top-right of the panel, overlapping anything
+  // else rendered in the map's top-right corner).
   L.control.layers(
     { 'Map': streetLayer, 'Satellite': satelliteLayer },
     null,
-    { position: 'topright', collapsed: true }
+    { position: 'bottomleft', collapsed: true }
   ).addTo(state.map);
 
   state.map.on('baselayerchange', (e) => {
