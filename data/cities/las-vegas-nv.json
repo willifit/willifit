@@ -531,11 +531,14 @@
       "addr": "6605 S Las Vegas Blvd",
       "lat": 36.0513,
       "lng": -115.1724,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Open-air and garage. Surface lots accommodate oversized.",
-      "source": "Needs verification"
+      "notes": "Open-air and garage. Surface lots accommodate oversized.\nVerified 2026-04-22 from sign reading \"11' 0\"\" (pano 8Tles6c49PKGchrina31wQ, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
+      "verified_on": "2026-04-22",
+      "pano_id": "8Tles6c49PKGchrina31wQ",
+      "pano_heading": 45
     },
     {
       "id": "treasure-island-l2",
