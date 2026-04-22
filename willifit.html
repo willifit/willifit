@@ -1132,9 +1132,21 @@
       border-right: none;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      max-height: none;
+      /* Previously: overflow:hidden (inherited from desktop) meant if the
+         filters block (search + slider + chips + 2 toggles) was taller
+         than the 60% viewport track, the bottom toggles were literally
+         unreachable -- no scroll, just clipped.
+         Fix: enable sidebar-level scrolling, force it to stay within
+         its grid track (height:100%), and drop min-height:auto so grid
+         honours the track size instead of growing to content.  The .list
+         below still has its own overflow-y:auto from the base rule,
+         which keeps its rows scrollable within whatever space remains. */
+      height: 100%;
       min-height: 0;
-      padding-bottom: env(safe-area-inset-bottom);
+      max-height: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: calc(env(safe-area-inset-bottom) + 8px);
     }
     .filters { padding: 10px 12px; }
     .filter-label { font-size: 10px; }
