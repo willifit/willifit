@@ -329,12 +329,15 @@
       "id": "osm-w14390303",
       "name": "Low clearance \u2014 West Frontage Road",
       "addr": "West Frontage Road",
-      "lat": 39.51465,
-      "lng": -119.92602,
-      "height_in": 177,
-      "height_label": "14'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "lat": 39.5151885,
+      "lng": -119.9147308,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "pano_id": "7F3MCaLS7SYFFqN6DoAfTQ",
+      "pano_heading": 149,
+      "verified_on": "2026-04-21",
+      "notes": "Underpass / low clearance.\nManually verified 2026-04-21 at 15'0\" from Google Street View pano 7F3MCaLS7SYFFqN6DoAfTQ @ 149\u00b0. Coords corrected (OSM import had point 970m west of actual sign at 39.51465,-119.92602 with old reading 14'9\"); if a second W Frontage Rd bridge exists at that location it needs a separate entry.",
+      "source": "Manually verified from Google Street View \u2014 was: OpenStreetMap"
     },
     {
       "id": "osm-w14394661",
