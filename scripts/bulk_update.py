@@ -282,19 +282,46 @@ OPTIONAL_COLUMNS = {"notes"}
 
 
 def read_tsv(path: Path) -> list:
+    """Read TSV or CSV.  Auto-detects the delimiter by sampling the first
+    non-comment line for tabs vs commas.  Google Sheets exports CSV by
+    default; the build_verify_spreadsheet.py generator emits CSV too; but
+    TSV is easier to hand-edit in a text editor.  Both work here."""
+    import csv as _csv
+
+    # First pass: find the first non-blank / non-comment line, sniff delimiter
+    sample_line = None
+    with path.open() as f:
+        for line in f:
+            stripped = line.strip()
+            if not stripped or stripped.startswith("#"):
+                continue
+            sample_line = line
+            break
+    if sample_line is None:
+        print(f"ERROR: {path} is empty or all comments", file=sys.stderr)
+        sys.exit(2)
+
+    delimiter = "\t" if sample_line.count("\t") > sample_line.count(",") else ","
+
     rows = []
     with path.open() as f:
+        reader = _csv.reader(f, delimiter=delimiter)
         header = None
-        for lineno, line in enumerate(f, start=1):
-            line = line.rstrip("\n")
-            if not line.strip() or line.lstrip().startswith("#"):
+        for lineno, parts in enumerate(reader, start=1):
+            if not parts:
                 continue
-            parts = [c.strip() for c in line.split("\t")]
+            if all(not p.strip() for p in parts):
+                continue
+            # Skip comment lines (those starting with # in the first column)
+            if parts[0].lstrip().startswith("#"):
+                continue
+            parts = [p.strip() for p in parts]
             if header is None:
                 header = [c.lower() for c in parts]
                 missing = REQUIRED_COLUMNS - set(header)
                 if missing:
-                    print(f"ERROR: TSV missing required columns: {missing}", file=sys.stderr)
+                    print(f"ERROR: input file missing required columns: {missing}",
+                          file=sys.stderr)
                     sys.exit(2)
                 continue
             if len(parts) < len(header):
