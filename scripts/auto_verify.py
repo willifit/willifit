@@ -64,6 +64,12 @@ from pathlib import Path
 from typing import Optional
 from urllib import request, parse, error
 
+# Auto-load .env from repo root so ANTHROPIC_API_KEY / GOOGLE_MAPS_API_KEY
+# don't have to be re-exported in every new shell.  Does nothing if .env
+# isn't present; never overwrites vars the user exported explicitly.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _env  # noqa: F401
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
 CITIES_DIR = REPO_ROOT / "data" / "cities"

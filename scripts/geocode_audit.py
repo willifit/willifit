@@ -50,6 +50,10 @@ from pathlib import Path
 from typing import Optional
 from urllib import request, parse, error
 
+# Auto-load .env — see scripts/_env.py
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _env  # noqa: F401
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
 CITIES_DIR = REPO_ROOT / "data" / "cities"
