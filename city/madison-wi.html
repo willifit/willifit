@@ -109,6 +109,38 @@
             gap: 10px; font-size: 12px; color: var(--muted); }
   footer a { color: var(--muted); } footer a:hover { color: var(--accent); }
   .empty { color: var(--muted); font-style: italic; padding: 16px 0; }
+
+  /* Sponsor card — fed by /js/sponsors.js from /data/sponsors.json.
+     Styling matches the card used in the main app so visitors see one
+     consistent visual language for ad inventory across the site. */
+  .sponsor-slot-city { margin: 20px 0 8px; }
+  .sponsor-card {
+    padding: 14px 16px;
+    background: linear-gradient(180deg, rgba(245,166,35,0.04), rgba(62,207,142,0.04));
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+  }
+  .sponsor-card.house {
+    border-left: 3px dashed var(--accent);
+    background: linear-gradient(180deg, rgba(14,165,233,0.05), transparent 80%);
+  }
+  .sponsor-label {
+    font-family: 'SF Mono', monospace; font-size: 9px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); margin-bottom: 4px;
+  }
+  .sponsor-title { font-weight: 700; font-size: 15px; color: var(--text); margin-bottom: 4px; }
+  .sponsor-desc { font-size: 13px; color: var(--muted); line-height: 1.45; margin-bottom: 8px; }
+  .sponsor-cta {
+    display: inline-block;
+    color: var(--ok);
+    font-family: 'SF Mono', monospace; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    text-decoration: none;
+  }
+  .sponsor-cta:hover { color: var(--accent); text-decoration: underline; }
+
   @media (max-width: 560px) {
     h1 { font-size: 24px; }
     .entry-head { flex-direction: column; gap: 4px; }
@@ -136,6 +168,11 @@
   <div class="cta-row">
     <a class="cta" href="/#madison-wi">Open interactive map →</a>
   </div>
+
+  <!-- City-hero sponsor slot.  Populated by /js/sponsors.js from sponsors.json.
+       Kept above-the-fold so high-intent visitors (someone researching Madison
+       parking) see geo-targeted inventory before they scroll into the list. -->
+  <div id="cityPageSponsor" class="sponsor-slot-city"></div>
 
   <h2>Parking garages (26)</h2><ul class="entries"><li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Wisconsin State Capitol Parking</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-addr">2 E Main St</div><div class="entry-tags"></div><div class="entry-notes">Capitol Square area — mostly street + small lots.</div><div class="entry-source">Source: doa.wi.gov</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Overture Center for the Arts</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">201 State St</div><div class="entry-tags"></div><div class="entry-notes">Performing arts complex.</div><div class="entry-source">Source: overture.org</div></li>
@@ -185,5 +222,16 @@
     </div>
   </footer>
 </div>
+
+<!-- Sponsor renderer.  Shared module used across all per-city pages. -->
+<script src="/js/sponsors.js"></script>
+<script>
+  (function () {
+    var el = document.getElementById('cityPageSponsor');
+    if (el && window.WillIFitSponsors) {
+      window.WillIFitSponsors.renderInto(el, 'city_hero', { city: 'madison-wi' });
+    }
+  })();
+</script>
 </body>
 </html>
