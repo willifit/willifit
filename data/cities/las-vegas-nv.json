@@ -808,10 +808,11 @@
       "lat": 36.1285,
       "lng": -115.0867,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Station Casinos. Free parking.",
-      "source": "Needs verification"
+      "height_label": "Unverified (sign obscured)",
+      "oversized": true,
+      "verified_on": "2026-04-22",
+      "notes": "Station Casinos. Free parking. Posted clearance sign at the garage entrance is blurred in Google Street View, so the exact height can't be AI- or manually verified from imagery. Property has ample oversized vehicle parking on-site (user-observed 2026-04-22), so RVs and box trucks should be accommodated even if the garage itself is low.",
+      "source": "User-observed (oversized available; garage height sign obscured in Street View)"
     },
     {
       "id": "santa-fe-station",
