@@ -46,5 +46,17 @@
     "audience": { "oversized_only": true },
     "weight": 2,
     "label": "House ad"
+  },
+  {
+    "id": "house-city-hero",
+    "title": "Advertise to drivers researching parking here",
+    "desc": "Your ad shows at the top of every visitor on this city's clearance page. Geo-targeted by city slug. From $50/mo.",
+    "cta": "See rates →",
+    "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=city_hero",
+    "tier": ["city_hero"],
+    "scope": { "cities": ["*"] },
+    "audience": {},
+    "weight": 3,
+    "label": "House ad"
   }
 ]
