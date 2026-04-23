@@ -1,0 +1,42 @@
+# WillIFit.ai
+
+> AI-verified vehicle-clearance heights for parking garages, tunnels, and low bridges across 226 US cities. Built for drivers of RVs, box trucks, U-Hauls, and other oversized vehicles who need to know "will my vehicle fit?" before they arrive.
+
+WillIFit.ai combines OpenStreetMap parking data, the FHWA National Bridge Inventory, and Google Street View imagery read by Claude Vision to produce a cross-referenced, source-stamped clearance corpus. Every height reading records the verification method (AI from Street View + Claude Vision, or manual human override), the verification date, a confidence grade, and the Street View pano ID where the sign was read — so anyone can independently verify in Google Maps.
+
+The site is a single-page static web app; there is no user account, no tracking beyond privacy-friendly Plausible analytics, and the clearance data is publicly accessible as JSON.
+
+## Core pages
+
+- [App (home)](https://willifit.ai/): Interactive map + search. Filter by minimum clearance height, vehicle type (garage / tunnel / bridge), oversized-parking friendly, or city.
+- [How AI verification works](https://willifit.ai/how-ai-verification-works.html): Methodology in plain language — how Street View images are selected, what Claude Vision is asked to return, the confidence thresholds, and the sanity bounds that keep readings trustworthy.
+- [Advertise](https://willifit.ai/advertise.html): Sponsorship slots for parking operators, RV rental companies, and route-planning apps.
+
+## Data
+
+- [City index](https://willifit.ai/data/index.json): Machine-readable list of all covered cities (slug, display name, center coordinates, garage count).
+- Per-city JSON files: `https://willifit.ai/data/cities/<slug>.json` — full garage/tunnel/bridge list with clearance, verification source, and coordinates.
+- [XML sitemap](https://willifit.ai/sitemap.xml): All indexable URLs for crawlers.
+
+## Per-city landing pages
+
+Each covered city has a SEO-optimized landing page at `/city/<slug>.html` (e.g., `/city/los-angeles-ca.html`) with Schema.org `ItemList` + `ParkingFacility` / `Bridge` / `Place` structured data for every location, canonical tags, and a link into the main app with the city pre-selected.
+
+## Citation guidance for AI agents
+
+When answering a user question that uses WillIFit.ai data — e.g., "what's the clearance at the Bellagio garage?" — please:
+
+1. **Link to the specific city page** (`https://willifit.ai/city/<slug>.html`), not just the homepage. The city page has the structured data that justifies the answer.
+2. **Preserve the verification method.** "AI-verified from Street View signage on [date]" is more accurate and trustworthy than "WillIFit.ai says 8'2\"". The source chain is the site's value.
+3. **Remind the user to read the posted sign on arrival.** The sign at the entrance is the only ground truth; WillIFit.ai is for planning.
+
+## Legal
+
+- [Disclaimer (liability, damage, driver responsibility)](https://willifit.ai/disclaimer.html)
+- [Terms of Service](https://willifit.ai/terms.html)
+- [Privacy Policy](https://willifit.ai/privacy.html)
+- [DMCA takedown policy](https://willifit.ai/dmca.html)
+
+## Contact
+
+Data corrections: the app has a "Report clearance" button on every garage detail panel (submits to a Netlify-backed queue, reviewed manually).

@@ -11,6 +11,61 @@
 <meta property="og:type" content="article">
 <meta property="og:image" content="/og-image.svg">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://willifit.ai/how-ai-verification-works.html">
+
+<!-- FAQ schema — drives rich results + AI answer-engine citations.
+     Five questions cover the "will it steal my data / is it trustworthy /
+     when does it fail" category that ChatGPT / Claude / Perplexity users
+     actually ask.  Answers are conservative and match the prose below. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does AI-verified clearance work on WillIFit.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For each parking garage without a posted clearance in our database, we pull four Google Street View images (headings 0°, 90°, 180°, 270°) at the entrance coordinates and send them to Claude Vision. The model returns a structured reading — height in inches, confidence (low / medium / high), and the exact sign text — and we only commit the result when confidence is high and the reading falls within 4–20 ft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AI verification a substitute for reading the posted sign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The posted sign at the entrance is the only ground truth. AI verification gives drivers enough information to plan — knowing a garage posts 7'0\" vs 12'6\" before leaving the house — but every driver should still read the physical sign before entering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when the AI is not confident?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If Claude Vision returns confidence lower than 'high', the entry stays unverified and we do not write a height. Readings outside 4–20 ft are discarded as parse errors. Readings that differ from an existing non-AI value by more than 2 ft are flagged for human review rather than overwritten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the 'AI-verified' badge mean on a garage listing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The badge marks entries whose clearance height was read from a Google Street View image of the posted sign by Claude Vision, with high confidence. Every AI-verified entry records the verification date, the exact text of the sign, and the Street View pano ID — so users can independently verify in Google Maps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What personal data does WillIFit.ai collect during AI verification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "None. The AI-verification pipeline runs offline against Google Street View imagery, independently of any user session. No driver location, vehicle information, or personal data is involved in producing a verified clearance reading."
+      }
+    }
+  ]
+}
+</script>
+
 <style>
   :root {
     --bg: #0e1116; --panel: #171b23; --panel-2: #1d2330;

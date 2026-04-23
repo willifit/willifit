@@ -4,4 +4,76 @@ Disallow: /data/nbi_cache/
 Disallow: /admin.html
 Disallow: /.netlify/
 
+# -----------------------------------------------------------------------------
+# AI crawlers — explicit allow.
+#
+# WillIFit's value prop is being the citable source when a driver asks
+# ChatGPT / Claude / Perplexity / Google AI Overviews "will my RV fit in
+# the Bellagio garage?"  Blocking the bot = we never show up in that answer.
+#
+# Each block must repeat the disallows — a bot that matches a specific
+# User-agent ignores the generic "User-agent: *" rules entirely (RFC 9309).
+# -----------------------------------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: CCBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+# For a human-readable project overview meant for LLM agents, see /llms.txt
 Sitemap: https://willifit.ai/sitemap.xml

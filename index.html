@@ -24,6 +24,69 @@
 <meta name="twitter:description" content="AI-verified clearance data for 226 US cities. RV, truck, and oversized-vehicle parking made legible.">
 <meta name="twitter:image" content="/og-image.svg">
 
+<!-- Canonical — single-page app; app-internal city selection uses hash
+     routing (#city-slug), so the bare root is always the canonical form. -->
+<link rel="canonical" href="https://willifit.ai/">
+
+<!-- Structured data for search + answer engines.
+     WebSite: top-level site object (search-box eligibility if we later add
+              server-side ?q= support).
+     Organization: operating entity, for branded knowledge-panel signals.
+     Dataset: the clearance corpus itself, so Google Dataset Search and
+              AI answer engines (ChatGPT / Claude / Perplexity / Google AI
+              Overviews) understand we are a machine-readable data source,
+              not just a directory of pages. -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WillIFit.ai",
+    "alternateName": "WillIFit",
+    "url": "https://willifit.ai/",
+    "description": "AI-verified clearance heights for parking garages, tunnels, and low bridges across 226 US cities — for drivers of RVs, trucks, and oversized vehicles.",
+    "inLanguage": "en-US",
+    "publisher": { "@type": "Organization", "name": "WillIFit.ai", "url": "https://willifit.ai/" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WillIFit.ai",
+    "url": "https://willifit.ai/",
+    "logo": "https://willifit.ai/favicon.svg",
+    "description": "AI-verified clearance data for RVs, trucks, and oversized vehicles.",
+    "sameAs": []
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "WillIFit.ai clearance-height corpus",
+    "description": "AI-verified vehicle clearance heights for parking garages, tunnels, and low-clearance bridges across 226 US cities. Each entry records the posted clearance in inches, a confidence grade, the verification method (AI from Google Street View + Claude Vision, or manual human override), the verification date, and the exact Street View pano ID where the clearance sign was read.",
+    "url": "https://willifit.ai/",
+    "keywords": [
+      "parking clearance",
+      "bridge height",
+      "tunnel clearance",
+      "RV parking",
+      "truck parking",
+      "oversized vehicle",
+      "clearance database"
+    ],
+    "creator": { "@type": "Organization", "name": "WillIFit.ai" },
+    "license": "https://willifit.ai/terms.html",
+    "isAccessibleForFree": true,
+    "spatialCoverage": { "@type": "Place", "name": "United States" },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://willifit.ai/data/index.json"
+      }
+    ]
+  }
+]
+</script>
+
 <!-- Favicon + PWA -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/icon-192.png">
