@@ -3276,10 +3276,36 @@ const _searchInput = document.getElementById('search');
 const _searchSuggestions = document.getElementById('searchSuggestions');
 let _searchKbdIdx = -1;
 
+// Move the dropdown out of the sidebar to the document body so position:fixed
+// is guaranteed to be relative to the viewport (no ancestor transform/overflow
+// quirks on iOS Safari).  Idempotent — only moves once.
+if (_searchSuggestions.parentElement && _searchSuggestions.parentElement.id !== 'app-root-suggestions-host') {
+  document.body.appendChild(_searchSuggestions);
+}
+
 function _positionSearchSuggestions() {
   if (_searchSuggestions.hidden) return;
-  const r = _searchInput.getBoundingClientRect();
-  _searchSuggestions.style.top   = (r.bottom + 4) + 'px';
+  const r  = _searchInput.getBoundingClientRect();
+  const vv = window.visualViewport;
+  // visualViewport tracks the *visible* area excluding the on-screen keyboard
+  // on iOS.  Fall back to window.innerHeight where unavailable.
+  const visTop    = vv ? vv.offsetTop : 0;
+  const visBottom = vv ? (vv.offsetTop + vv.height) : window.innerHeight;
+  const spaceBelow = visBottom - r.bottom;
+  const spaceAbove = r.top - visTop;
+  // Need ~200px to be useful.  If neither side has it, prefer the larger.
+  const placeAbove = spaceBelow < 200 && spaceAbove > spaceBelow;
+  if (placeAbove) {
+    const cap = Math.max(120, spaceAbove - 12);
+    _searchSuggestions.style.top    = 'auto';
+    _searchSuggestions.style.bottom = (window.innerHeight - r.top + 4) + 'px';
+    _searchSuggestions.style.maxHeight = cap + 'px';
+  } else {
+    const cap = Math.max(120, spaceBelow - 12);
+    _searchSuggestions.style.bottom = 'auto';
+    _searchSuggestions.style.top    = (r.bottom + 4) + 'px';
+    _searchSuggestions.style.maxHeight = cap + 'px';
+  }
   _searchSuggestions.style.left  = r.left + 'px';
   _searchSuggestions.style.width = r.width + 'px';
 }
