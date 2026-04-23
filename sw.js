@@ -14,12 +14,12 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-const CACHE_VERSION = "willifit-v4";
+// v5: dropped legacy /willifit.html entry — it's now a 301 redirect to /.
+const CACHE_VERSION = "willifit-v5";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
 const SHELL_FILES = [
-  "/willifit.html",
   "/index.html",
   "/",
   "/favicon.svg",

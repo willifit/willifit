@@ -3,8 +3,11 @@
 Know before you go — parking-garage, tunnel, and low-bridge clearance heights
 for oversized vehicles (RVs, box trucks, moving vans, U-Hauls).
 
-Single-file web app: `willifit.html`.  No build step, deployable anywhere that
+Single-file web app: `index.html`.  No build step, deployable anywhere that
 serves static files (Netlify, Vercel, Cloudflare Pages, S3, GitHub Pages).
+
+(Previously `willifit.html`; that path now 301-redirects to `/` via
+`netlify.toml` for the sake of old bookmarks and PWA installs.)
 
 ## Run locally
 
@@ -13,7 +16,7 @@ You need a tiny static server (geolocation doesn't work from `file://`):
 ```bash
 cd /path/to/WillIFit
 python3 -m http.server 8000
-# open http://localhost:8000/willifit.html
+# open http://localhost:8000/
 ```
 
 Node alternative: `npx serve .`
@@ -21,7 +24,7 @@ Node alternative: `npx serve .`
 ## File structure
 
 ```
-willifit.html                single-page app (HTML + CSS + JS inline)
+index.html                   single-page app (HTML + CSS + JS inline)
 disclaimer.html              safety / damage-liability disclaimer
 terms.html                   terms of service
 privacy.html                 privacy policy
@@ -167,13 +170,9 @@ See `privacy.html` for the full disclosure.
 
 Drop the repo onto any static host. Recommended: Netlify.
 
-```toml
-# netlify.toml
-[[redirects]]
-  from = "/"
-  to   = "/willifit.html"
-  status = 200
-```
+`/` serves `/index.html` automatically (static convention).  `netlify.toml`
+contains one legacy 301 redirect (`/willifit.html → /`) to preserve old
+bookmarks, plus the security headers and cache rules.
 
 Point your domain, done.  No DB, no build, no secrets.
 

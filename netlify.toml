@@ -25,7 +25,16 @@
   directory = "netlify/functions"
 
 # "/" serves /index.html by default (Netlify static convention).
-# /willifit.html still works as a legacy alias for shared bookmarks.
+
+# Legacy: /willifit.html was the original entry before we switched to /index.html.
+# Bookmarks, old PWA installs, and a handful of indexed backlinks still point at
+# it, so redirect them to the canonical root (301 = permanent).  The physical
+# file no longer exists in the repo.
+[[redirects]]
+  from   = "/willifit.html"
+  to     = "/"
+  status = 301
+  force  = true
 
 # SEO-friendly deep links like /city/las-vegas-nv → app with hash pre-loaded.
 # Disabled by default; uncomment once the app reads a path-style slug.

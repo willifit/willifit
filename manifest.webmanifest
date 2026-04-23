@@ -2,7 +2,7 @@
   "name": "WillIFit — Clearance Finder",
   "short_name": "WillIFit",
   "description": "Know if your RV, truck, or oversized vehicle will fit before you drive. Clearance heights for parking garages, tunnels, and low bridges across 100+ US cities.",
-  "start_url": "/willifit.html",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
