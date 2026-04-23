@@ -298,6 +298,13 @@
     max-height: 50dvh; max-height: 50vh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    /* Keep scroll inside the dropdown — without this, an upward swipe at the
+       top of the dropdown chains to the map (Leaflet) underneath and pans it,
+       which then fires a marker click on whatever ends up under the finger. */
+    overscroll-behavior: contain;
+    /* Allow vertical pan (scroll) but block double-tap zoom and the iOS
+       300ms tap delay so taps land on the row the finger lifted from. */
+    touch-action: pan-y;
     z-index: 1400;
   }
   .search-suggestion {
@@ -309,6 +316,7 @@
     justify-content: space-between;
     gap: 10px;
     min-height: 44px;
+    touch-action: pan-y;
   }
   .search-suggestion:last-child { border-bottom: 0; }
   .search-suggestion:hover,
@@ -3334,16 +3342,20 @@ function _renderSearchSuggestions() {
       </div>`;
     }).join('');
     _searchSuggestions.querySelectorAll('.search-suggestion').forEach(el => {
-      // mousedown fires BEFORE the input's blur — using click would race the
-      // blur handler that hides the dropdown and the click would never land.
+      // Desktop: mousedown beats the input's blur so the click reliably lands.
       el.addEventListener('mousedown', (e) => {
         e.preventDefault();
         _pickSuggestion(el.dataset.id);
       });
-      el.addEventListener('touchstart', (e) => {
+      // Mobile: NO touchstart handler — that would fire the moment the finger
+      // lands and pre-empt scroll-via-touch within the dropdown.  Instead we
+      // rely on the synthesized `click` (only fires on a real tap, not on a
+      // drag/scroll) and a longer blur delay below to keep the dropdown alive
+      // through the touchstart→blur→touchend→click sequence on iOS.
+      el.addEventListener('click', (e) => {
         e.preventDefault();
         _pickSuggestion(el.dataset.id);
-      }, { passive: false });
+      });
     });
   }
   _searchSuggestions.hidden = false;
@@ -3373,8 +3385,11 @@ _searchInput.addEventListener('focus', () => {
   if (state.search.trim()) _renderSearchSuggestions();
 });
 _searchInput.addEventListener('blur', () => {
-  // Delay so mousedown/touchstart on a suggestion can register first.
-  setTimeout(_hideSearchSuggestions, 150);
+  // Long enough delay so iOS's touchstart→blur→touchend→click sequence on a
+  // suggestion can complete (the click fires last and needs the dropdown
+  // still in the DOM).  Without this, tapping a suggestion would hide the
+  // dropdown on blur before the click ever lands.
+  setTimeout(_hideSearchSuggestions, 300);
 });
 _searchInput.addEventListener('keydown', (e) => {
   if (_searchSuggestions.hidden) return;
