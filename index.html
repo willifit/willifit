@@ -285,6 +285,61 @@
   .search-clear:hover { background: var(--bad); }
   .search-box.has-value .search-clear { display: flex; }
 
+  /* Floating typeahead dropdown — positioned via JS (position:fixed) so it
+     escapes the sidebar's overflow:auto and floats above the map.  Designed
+     primarily for mobile, where the in-sidebar list gets pushed off-screen
+     by the keyboard; harmless on desktop. */
+  .search-suggestions {
+    position: fixed;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.55);
+    max-height: 50dvh; max-height: 50vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1400;
+  }
+  .search-suggestion {
+    padding: 12px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 44px;
+  }
+  .search-suggestion:last-child { border-bottom: 0; }
+  .search-suggestion:hover,
+  .search-suggestion.kbd-active { background: var(--panel-2); }
+  .search-suggestion-name {
+    flex: 1;
+    font-size: 14px;
+    color: var(--text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .search-suggestion-height {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: var(--mono);
+    flex-shrink: 0;
+  }
+  .search-suggestion mark {
+    background: rgba(245, 166, 35, 0.3);
+    color: inherit;
+    padding: 0;
+    border-radius: 2px;
+  }
+  .search-suggestion-empty {
+    padding: 14px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
   .city-search-wrap { position: relative; }
   .city-search-clear {
     position: absolute;
@@ -1552,8 +1607,10 @@
       <div id="sidebarSponsor" class="sponsor-slot-sidebar"></div>
       <div class="filters">
         <div class="search-box" id="searchBox">
-          <input type="text" id="search" placeholder="Search garage, casino, address...">
+          <input type="text" id="search" placeholder="Search garage, casino, address..."
+                 role="combobox" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false">
           <button class="search-clear" id="searchClear" title="Clear">×</button>
+          <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
         </div>
         <div class="filter-label">Min. Clearance Height</div>
         <div class="height-slider">
@@ -3206,17 +3263,132 @@ function detectLocationAndBoot() {
   );
 }
 
-document.getElementById('search').addEventListener('input', e => {
+/* ============================================================
+   GARAGE SEARCH + FLOATING TYPEAHEAD
+
+   The in-sidebar list is the canonical result view, but on mobile
+   the sidebar is short and the on-screen keyboard pushes the list
+   off-screen entirely.  The floating dropdown (#searchSuggestions)
+   anchors below the input via position:fixed so it escapes the
+   sidebar's overflow:auto and floats over the map.
+   ============================================================ */
+const _searchInput = document.getElementById('search');
+const _searchSuggestions = document.getElementById('searchSuggestions');
+let _searchKbdIdx = -1;
+
+function _positionSearchSuggestions() {
+  if (_searchSuggestions.hidden) return;
+  const r = _searchInput.getBoundingClientRect();
+  _searchSuggestions.style.top   = (r.bottom + 4) + 'px';
+  _searchSuggestions.style.left  = r.left + 'px';
+  _searchSuggestions.style.width = r.width + 'px';
+}
+
+function _hideSearchSuggestions() {
+  _searchSuggestions.hidden = true;
+  _searchInput.setAttribute('aria-expanded', 'false');
+  _searchKbdIdx = -1;
+}
+
+function _renderSearchSuggestions() {
+  const q = state.search.trim();
+  if (!q) { _hideSearchSuggestions(); return; }
+  const items = getFiltered().slice(0, 6);
+  if (!items.length) {
+    _searchSuggestions.innerHTML = '<div class="search-suggestion-empty">No matches</div>';
+  } else {
+    const safeQ = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp('(' + safeQ + ')', 'gi');
+    _searchSuggestions.innerHTML = items.map((g, i) => {
+      const name = escapeHTML(g.name || '').replace(re, '<mark>$1</mark>');
+      const h = escapeHTML(g.height_label || 'Unverified');
+      return `<div class="search-suggestion" role="option" data-id="${escapeHTML(g.id || '')}" data-idx="${i}">
+        <span class="search-suggestion-name">${name}</span>
+        <span class="search-suggestion-height">${h}</span>
+      </div>`;
+    }).join('');
+    _searchSuggestions.querySelectorAll('.search-suggestion').forEach(el => {
+      // mousedown fires BEFORE the input's blur — using click would race the
+      // blur handler that hides the dropdown and the click would never land.
+      el.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        _pickSuggestion(el.dataset.id);
+      });
+      el.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        _pickSuggestion(el.dataset.id);
+      }, { passive: false });
+    });
+  }
+  _searchSuggestions.hidden = false;
+  _searchInput.setAttribute('aria-expanded', 'true');
+  _searchKbdIdx = -1;
+  _positionSearchSuggestions();
+}
+
+function _pickSuggestion(id) {
+  if (!id) return;
+  _searchInput.value = '';
+  state.search = '';
+  document.getElementById('searchBox').classList.remove('has-value');
+  _hideSearchSuggestions();
+  _searchInput.blur();
+  renderList(); renderMarkers();
+  selectGarage(id);
+}
+
+_searchInput.addEventListener('input', e => {
   state.search = e.target.value;
   document.getElementById('searchBox').classList.toggle('has-value', e.target.value.length > 0);
   renderList(); renderMarkers();
+  _renderSearchSuggestions();
 });
+_searchInput.addEventListener('focus', () => {
+  if (state.search.trim()) _renderSearchSuggestions();
+});
+_searchInput.addEventListener('blur', () => {
+  // Delay so mousedown/touchstart on a suggestion can register first.
+  setTimeout(_hideSearchSuggestions, 150);
+});
+_searchInput.addEventListener('keydown', (e) => {
+  if (_searchSuggestions.hidden) return;
+  const opts = _searchSuggestions.querySelectorAll('.search-suggestion');
+  if (!opts.length) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    _searchKbdIdx = (_searchKbdIdx + 1) % opts.length;
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    _searchKbdIdx = (_searchKbdIdx - 1 + opts.length) % opts.length;
+  } else if (e.key === 'Enter') {
+    if (_searchKbdIdx >= 0) {
+      e.preventDefault();
+      _pickSuggestion(opts[_searchKbdIdx].dataset.id);
+    }
+    return;
+  } else if (e.key === 'Escape') {
+    _hideSearchSuggestions();
+    return;
+  } else {
+    return;
+  }
+  opts.forEach((el, i) => el.classList.toggle('kbd-active', i === _searchKbdIdx));
+  if (_searchKbdIdx >= 0) opts[_searchKbdIdx].scrollIntoView({ block: 'nearest' });
+});
+
+window.addEventListener('resize', _positionSearchSuggestions);
+window.addEventListener('scroll', _positionSearchSuggestions, { passive: true });
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', _positionSearchSuggestions);
+  window.visualViewport.addEventListener('scroll', _positionSearchSuggestions);
+}
+
 document.getElementById('searchClear').addEventListener('click', () => {
-  const input = document.getElementById('search');
-  input.value = '';
+  _searchInput.value = '';
   state.search = '';
   document.getElementById('searchBox').classList.remove('has-value');
-  input.focus();
+  _hideSearchSuggestions();
+  _searchInput.focus();
   renderList(); renderMarkers();
 });
 document.getElementById('heightSlider').addEventListener('input', e => {
