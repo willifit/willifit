@@ -1232,6 +1232,51 @@
     transition: box-shadow 0.15s ease, transform 0.15s ease;
   }
 
+  /* Detail-panel sponsor — even more prominent than sidebar.  This slot
+     fires when a user has opened a *specific* garage, so intent is at its
+     peak: they've already decided they care about this location and are
+     reading the details.  Local RV parks, towing, and oversized-parking
+     operators pay premium for this placement (it's the one with radius
+     targeting via `scope.near`).  Rendered directly on .sponsor-card with
+     data-slot="detail" so we don't need a wrapping div. */
+  .sponsor-card[data-slot="detail"] {
+    margin: 24px 0 8px;
+    padding: 20px 22px;
+    background: linear-gradient(180deg, rgba(14,165,233,0.10), rgba(62,207,142,0.04));
+    border: 1px solid rgba(14,165,233,0.35);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
+  }
+  .sponsor-card[data-slot="detail"].house {
+    /* House-ad styling inside the detail slot: keep the dashed tell so
+       real sponsors know this specific high-value slot is open, but use
+       the same larger footprint so the inventory looks real. */
+    border-left: 4px dashed var(--accent);
+    background: linear-gradient(180deg, rgba(14,165,233,0.08), transparent 80%);
+  }
+  .sponsor-card[data-slot="detail"] .sponsor-label { font-size: 10px; margin-bottom: 6px; }
+  .sponsor-card[data-slot="detail"] .sponsor-title { font-size: 17px; line-height: 1.3; margin-bottom: 8px; }
+  .sponsor-card[data-slot="detail"] .sponsor-desc  { font-size: 13.5px; line-height: 1.5; margin-bottom: 14px; }
+  /* CTA styled as an actual button — biggest visual change.  Text-link CTAs
+     (like sidebar / home) under-convert; buttons say "click me." */
+  .sponsor-card[data-slot="detail"] .sponsor-cta {
+    padding: 10px 16px;
+    background: var(--accent);
+    color: #001018;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow: 0 2px 6px rgba(14, 165, 233, 0.25);
+    transition: filter 0.12s ease, transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .sponsor-card[data-slot="detail"] .sponsor-cta:hover {
+    color: #001018;
+    filter: brightness(1.12);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(14, 165, 233, 0.35);
+  }
+
   /* ============================================================
      MOBILE / RESPONSIVE — stack sidebar over map, bottom-sheet details
      Breakpoint: 900px. At phone width we become a vertical single-column
