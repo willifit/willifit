@@ -70,7 +70,9 @@ exports.handler = async (event) => {
   }
 
   try {
-    // 1. Find the clearance-report form id
+    // 1. List all forms on the site, then find the two we care about.
+    //    "clearance-report"    = user corrections to existing entries
+    //    "new-location-report" = user submissions of garages not on the map
     const formsRes = await fetch(
       `https://api.netlify.com/api/v1/sites/${siteId}/forms`,
       { headers: { Authorization: `Bearer ${token}` } }
@@ -82,32 +84,31 @@ exports.handler = async (event) => {
       };
     }
     const forms = await formsRes.json();
-    const form = forms.find((f) => f.name === "clearance-report");
-    if (!form) {
-      return {
-        statusCode: 200,
-        headers: { ...cors, "content-type": "application/json" },
-        body: JSON.stringify({ reports: [], note: "No clearance-report form on this site yet." }),
-      };
+    const clearanceForm = forms.find((f) => f.name === "clearance-report");
+    const newLocationForm = forms.find((f) => f.name === "new-location-report");
+
+    // 2. Fetch submissions for each form that exists.
+    async function fetchSubmissions(form) {
+      if (!form) return [];
+      const res = await fetch(
+        `https://api.netlify.com/api/v1/forms/${form.id}/submissions?per_page=200`,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      if (!res.ok) throw new Error(`netlify submissions failed (${form.name}): ${res.status}`);
+      return res.json();
     }
 
-    // 2. Fetch its submissions
-    const subsRes = await fetch(
-      `https://api.netlify.com/api/v1/forms/${form.id}/submissions?per_page=200`,
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
-    if (!subsRes.ok) {
-      return {
-        statusCode: 502, headers: cors,
-        body: JSON.stringify({ error: "netlify submissions failed", status: subsRes.status }),
-      };
-    }
-    const subs = await subsRes.json();
+    const [clearanceSubs, newLocationSubs] = await Promise.all([
+      fetchSubmissions(clearanceForm),
+      fetchSubmissions(newLocationForm),
+    ]);
 
-    // 3. Massage into a client-friendly shape
-    const reports = subs.map((s) => {
+    // 3. Massage into client-friendly shapes.  `kind` lets the admin UI
+    //    route each submission to the right template without sniffing fields.
+    const reports = clearanceSubs.map((s) => {
       const d = s.data || {};
       return {
+        kind: "clearance-report",
         id: s.id,
         created_at: s.created_at,
         state: s.state, // 'verified' | 'spam' | 'unknown'
@@ -127,10 +128,37 @@ exports.handler = async (event) => {
       };
     });
 
+    const new_locations = newLocationSubs.map((s) => {
+      const d = s.data || {};
+      return {
+        kind: "new-location-report",
+        id: s.id,
+        created_at: s.created_at,
+        state: s.state,
+        city_slug: d.city_slug,
+        city_name: d.city_name,
+        city_state: d.city_state,
+        location_name: d.location_name,
+        location_type: d.location_type,
+        location_addr: d.location_addr,
+        location_lat: d.location_lat || null,
+        location_lng: d.location_lng || null,
+        reported_height_in: numOrNull(d.reported_height_in),
+        no_posted_sign: d.no_posted_sign === "true" || d.no_posted_sign === true,
+        oversized: d.oversized,
+        notes: d.notes,
+        contact: d.contact,
+      };
+    });
+
     return {
       statusCode: 200,
       headers: { ...cors, "content-type": "application/json" },
-      body: JSON.stringify({ reports, total: reports.length }),
+      body: JSON.stringify({
+        reports,
+        new_locations,
+        total: reports.length + new_locations.length,
+      }),
     };
   } catch (err) {
     return {

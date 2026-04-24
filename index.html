@@ -480,6 +480,51 @@
   .list::-webkit-scrollbar-track { background: var(--panel); }
   .list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
+  /* "Add a missing location" CTA — pinned at the bottom of the sidebar,
+     below the list.  Dashed border signals "contribute" vs. "consume",
+     and the accent "+" circle keeps the visual weight appropriate (it's
+     a secondary action next to the primary search/filter flow). */
+  .add-location-btn {
+    margin: 10px 14px calc(env(safe-area-inset-bottom, 0px) + 12px);
+    padding: 11px 14px;
+    background: var(--panel-2);
+    border: 1px dashed var(--accent);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    transition: background 0.12s, border-color 0.12s;
+  }
+  .add-location-btn:hover {
+    background: var(--bg);
+    border-color: var(--ok);
+  }
+  .add-location-btn .add-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; height: 22px; flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #001018;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .add-location-btn .add-sub {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+
   .garage-card {
     padding: 14px 16px;
     border-bottom: 1px solid var(--border);
@@ -1765,6 +1810,14 @@
         <span id="cityText"></span>
       </div>
       <div class="list" id="list" role="list" aria-label="Garages, tunnels, and bridges"></div>
+      <button class="add-location-btn" id="addLocationBtn" type="button"
+              aria-label="Add a garage, tunnel, or low bridge that's missing from the map">
+        <span class="add-icon" aria-hidden="true">+</span>
+        <span>
+          Add a missing location
+          <span class="add-sub">Garage, tunnel, or low bridge not on the map?</span>
+        </span>
+      </button>
     </aside>
 
     <div class="map-container">
@@ -1845,6 +1898,83 @@
 </div>
 
 <!-- Report clearance modal -->
+<!-- Add-missing-location modal.  Distinct from the report-clearance modal
+     (which targets an EXISTING garage): this one asks for everything
+     needed to create a NEW entry after human review. -->
+<div class="modal-overlay" id="newLocationModal">
+  <div class="modal report-modal">
+    <div class="modal-header">
+      <div class="modal-title">Add a missing location</div>
+      <button class="modal-close" id="newLocationModalClose" aria-label="Close">×</button>
+    </div>
+    <form id="newLocationForm" class="report-form">
+      <div class="report-help">
+        Know a garage, tunnel, or low bridge that isn't on our map?
+        Tell us about it here &mdash; every submission is <b>reviewed by a
+        human</b> before the map updates, so protection against bad-faith
+        edits is built in.
+      </div>
+
+      <label class="report-label" for="nlName">Name *</label>
+      <input type="text" id="nlName" maxlength="120" required
+             placeholder="e.g., Bellagio Self Parking Garage">
+
+      <label class="report-label" for="nlType">Type *</label>
+      <select id="nlType" required>
+        <option value="garage">Parking garage (covered)</option>
+        <option value="surface_lot">Surface lot (open-air)</option>
+        <option value="tunnel">Tunnel</option>
+        <option value="bridge">Low bridge</option>
+      </select>
+
+      <label class="report-label" for="nlAddr">Address or cross-streets *</label>
+      <input type="text" id="nlAddr" maxlength="180" required
+             placeholder="3730 S Las Vegas Blvd — or 'E Tropicana Ave &amp; Gym Pkwy'">
+
+      <label class="report-label">Coordinates (optional)</label>
+      <div class="report-height-row" style="flex-wrap: wrap">
+        <input type="number" id="nlLat" min="-90" max="90" step="0.00001" placeholder="lat" style="width: 110px">
+        <input type="number" id="nlLng" min="-180" max="180" step="0.00001" placeholder="lng" style="width: 110px">
+        <button type="button" id="nlUseMapCenter" class="btn-secondary" style="padding: 8px 12px">
+          Use map center
+        </button>
+      </div>
+      <div class="report-help" style="margin-top: 4px; font-size: 11px">
+        Best if you pin the spot in Google Maps first and paste its lat/lng.
+        Skip if unsure &mdash; admin will geocode from the address.
+      </div>
+
+      <label class="report-label" for="nlHeightFt">Posted clearance (if known)</label>
+      <div class="report-height-row">
+        <input type="number" id="nlHeightFt" min="4" max="20" placeholder="ft">
+        <span class="vh-unit">'</span>
+        <input type="number" id="nlHeightIn" min="0" max="11" placeholder="in">
+        <span class="vh-unit">"</span>
+        <label class="report-checkbox"><input type="checkbox" id="nlNoPosted"> No sign / open-air</label>
+      </div>
+
+      <label class="report-label">Oversized-vehicle-friendly?</label>
+      <div class="report-radio-row">
+        <label><input type="radio" name="nl_oversized" value="yes"> Yes</label>
+        <label><input type="radio" name="nl_oversized" value="no"> No</label>
+        <label><input type="radio" name="nl_oversized" value="unknown" checked> Unknown</label>
+      </div>
+
+      <label class="report-label" for="nlNotes">Notes (optional)</label>
+      <textarea id="nlNotes" rows="3" maxlength="1000"
+                placeholder="Anything that helps verify — Street View URL, sign photo, when you parked there, who operates it, etc."></textarea>
+
+      <label class="report-label" for="nlContact">Your email (optional &mdash; only if you want a reply)</label>
+      <input type="email" id="nlContact" maxlength="180" placeholder="you@example.com">
+
+      <div class="report-actions">
+        <button type="submit" class="btn-primary" id="nlSubmitBtn">Submit location</button>
+      </div>
+      <div class="report-status" id="nlStatus"></div>
+    </form>
+  </div>
+</div>
+
 <div class="modal-overlay" id="reportModal">
   <div class="modal report-modal">
     <div class="modal-header">
@@ -3614,6 +3744,25 @@ document.getElementById('reportModal').addEventListener('click', (e) => {
   if (e.target.id === 'reportModal') closeReportModal();
 });
 document.getElementById('reportForm').addEventListener('submit', submitReport);
+
+// New-location modal wiring.  Sidebar button opens, close X + backdrop-click
+// both close, "Use map center" populates lat/lng from state.map.
+document.getElementById('addLocationBtn').addEventListener('click', openNewLocationModal);
+document.getElementById('newLocationModalClose').addEventListener('click', closeNewLocationModal);
+document.getElementById('newLocationModal').addEventListener('click', (e) => {
+  if (e.target.id === 'newLocationModal') closeNewLocationModal();
+});
+document.getElementById('newLocationForm').addEventListener('submit', submitNewLocation);
+document.getElementById('nlUseMapCenter').addEventListener('click', () => {
+  if (!state.map) return;
+  try {
+    const c = (MAP_PROVIDER === 'google')
+      ? { lat: state.map.getCenter().lat(), lng: state.map.getCenter().lng() }
+      : { lat: state.map.getCenter().lat, lng: state.map.getCenter().lng };
+    document.getElementById('nlLat').value = Number(c.lat).toFixed(5);
+    document.getElementById('nlLng').value = Number(c.lng).toFixed(5);
+  } catch (e) {}
+});
 document.getElementById('currentCityBtn').addEventListener('click', openCityPicker);
 document.getElementById('currentCityBtn').addEventListener('keydown', (e) => {
   if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCityPicker(); }
@@ -3932,6 +4081,124 @@ function exportReportQueue() {
   URL.revokeObjectURL(url);
 }
 
+/* ============================================================
+   NEW-LOCATION SUBMISSIONS
+
+   User-facing form to add a garage/tunnel/low-bridge that isn't on
+   the map.  Shape mirrors the REPORT_* pattern above -- same three
+   sinks (Netlify Forms, mailto fallback, localStorage queue), same
+   honeypot protection, same reviewed-by-a-human guarantee.
+   ============================================================ */
+const NEW_LOCATION_FORM_NAME = 'new-location-report';
+const NEW_LOCATION_QUEUE_KEY = 'willifit_new_location_queue';
+
+function _newLocationQueueGet() {
+  try { return JSON.parse(localStorage.getItem(NEW_LOCATION_QUEUE_KEY) || '[]'); }
+  catch (e) { return []; }
+}
+function _newLocationQueuePush(sub) {
+  const q = _newLocationQueueGet();
+  q.push(sub);
+  if (q.length > 200) q.splice(0, q.length - 200);
+  localStorage.setItem(NEW_LOCATION_QUEUE_KEY, JSON.stringify(q));
+}
+
+function openNewLocationModal() {
+  const modal = document.getElementById('newLocationModal');
+  // Pre-fill coordinates from map center (if we have one) so the user
+  // doesn't have to type them.  They can still override.
+  if (state.map) {
+    try {
+      const c = (MAP_PROVIDER === 'google')
+        ? { lat: state.map.getCenter().lat(), lng: state.map.getCenter().lng() }
+        : { lat: state.map.getCenter().lat, lng: state.map.getCenter().lng };
+      document.getElementById('nlLat').value = Number(c.lat).toFixed(5);
+      document.getElementById('nlLng').value = Number(c.lng).toFixed(5);
+    } catch (e) {}
+  }
+  document.getElementById('nlStatus').textContent = '';
+  document.getElementById('nlStatus').className = 'report-status';
+  modal.classList.add('open');
+  // Focus the first field on desktop only (avoids the mobile keyboard
+  // popping before the user has even seen the modal).
+  if (window.matchMedia('(min-width: 900px)').matches) {
+    setTimeout(() => document.getElementById('nlName').focus(), 50);
+  }
+}
+
+function closeNewLocationModal() {
+  document.getElementById('newLocationModal').classList.remove('open');
+}
+
+async function submitNewLocation(e) {
+  e.preventDefault();
+  const status = document.getElementById('nlStatus');
+  const submit = document.getElementById('nlSubmitBtn');
+  submit.disabled = true;
+  status.className = 'report-status sending';
+  status.textContent = 'Submitting…';
+
+  const cityMeta = getCityMeta(state.city) || {};
+  const ft = parseInt(document.getElementById('nlHeightFt').value || '', 10);
+  const inches = parseInt(document.getElementById('nlHeightIn').value || '', 10);
+  const heightIn = Number.isFinite(ft) ? (ft * 12 + (Number.isFinite(inches) ? inches : 0)) : null;
+  const noPosted = document.getElementById('nlNoPosted').checked;
+  const oversizedRadio = document.querySelector('input[name="nl_oversized"]:checked');
+  const oversized = oversizedRadio ? oversizedRadio.value : 'unknown';
+
+  const submission = {
+    submission_id: 'nl-' + Math.random().toString(36).slice(2) + Date.now().toString(36),
+    city_slug: state.city || '',
+    city_name: cityMeta.name || '',
+    city_state: cityMeta.state || '',
+    location_name: document.getElementById('nlName').value.trim(),
+    location_type: document.getElementById('nlType').value,
+    location_addr: document.getElementById('nlAddr').value.trim(),
+    location_lat: document.getElementById('nlLat').value || '',
+    location_lng: document.getElementById('nlLng').value || '',
+    reported_height_in: noPosted ? '' : (heightIn == null ? '' : String(heightIn)),
+    no_posted_sign: noPosted ? 'true' : 'false',
+    oversized: oversized,
+    notes: document.getElementById('nlNotes').value.trim(),
+    contact: document.getElementById('nlContact').value.trim(),
+    submitted_at: new Date().toISOString(),
+    user_agent: navigator.userAgent || '',
+  };
+
+  // Always queue locally first so nothing is lost.
+  _newLocationQueuePush(submission);
+
+  let delivered = false;
+  if (REPORT_ENDPOINT_URL) {
+    try {
+      const body = new URLSearchParams();
+      body.set('form-name', NEW_LOCATION_FORM_NAME);
+      body.set('bot-field', '');
+      Object.entries(submission).forEach(([k, v]) => body.set(k, v == null ? '' : String(v)));
+      const res = await fetch(REPORT_ENDPOINT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+      if (res.ok) delivered = true;
+    } catch (e) { /* network / CORS — fall through to mailto */ }
+  }
+
+  submit.disabled = false;
+  if (delivered) {
+    status.className = 'report-status success';
+    status.innerHTML = 'Submitted! A human reviews every new location before the map updates.';
+    setTimeout(closeNewLocationModal, 2500);
+    e.target.reset();
+  } else {
+    const subject = `[Willifit] New location — ${submission.location_name || '(no name)'}`;
+    const body = Object.entries(submission).map(([k, v]) => `${k}: ${v}`).join('\n');
+    const mailto = `mailto:${WILLIFIT_REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    status.className = 'report-status success';
+    status.innerHTML = `Saved locally &mdash; <a href="${mailto}" style="color:inherit;text-decoration:underline">send via email now</a> or we'll retry. Pending: ${_newLocationQueueGet().length}.`;
+  }
+}
+
 function wireVehicleHeightInput() {
   const feetEl = document.getElementById('vhFeet');
   const inchesEl = document.getElementById('vhInches');
@@ -3987,6 +4254,31 @@ function wireVehicleHeightInput() {
   <input type="hidden" name="reported_height_in">
   <input type="hidden" name="no_posted_sign">
   <input type="hidden" name="oversized_available">
+  <textarea name="notes"></textarea>
+  <input type="email" name="contact">
+  <input type="hidden" name="submitted_at">
+  <input type="hidden" name="user_agent">
+</form>
+
+<!-- Second Netlify-forms stub: user-submitted NEW locations (as opposed to
+     corrections on existing ones).  Same discovery mechanism -- Netlify's
+     build-time scraper provisions the endpoint from this hidden form. -->
+<form name="new-location-report" data-netlify="true" netlify-honeypot="bot-field"
+      style="display:none" hidden aria-hidden="true">
+  <input type="text" name="bot-field">
+  <input type="text" name="form-name" value="new-location-report">
+  <input type="hidden" name="submission_id">
+  <input type="hidden" name="city_slug">
+  <input type="hidden" name="city_name">
+  <input type="hidden" name="city_state">
+  <input type="hidden" name="location_name">
+  <input type="hidden" name="location_type">
+  <input type="hidden" name="location_addr">
+  <input type="hidden" name="location_lat">
+  <input type="hidden" name="location_lng">
+  <input type="hidden" name="reported_height_in">
+  <input type="hidden" name="no_posted_sign">
+  <input type="hidden" name="oversized">
   <textarea name="notes"></textarea>
   <input type="email" name="contact">
   <input type="hidden" name="submitted_at">

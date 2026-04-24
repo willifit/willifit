@@ -212,18 +212,24 @@ async function loadReports() {
 
   const data = await res.json();
   const reports = data.reports || [];
+  const newLocations = data.new_locations || [];
+  const all = [...reports, ...newLocations].sort(
+    (a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0)
+  );
 
-  document.getElementById("total").textContent = `${reports.length} total`;
+  document.getElementById("total").textContent = `${all.length} total`;
   const today = new Date().toISOString().slice(0, 10);
-  const newToday = reports.filter((r) => (r.created_at || "").slice(0, 10) === today).length;
+  const newToday = all.filter((r) => (r.created_at || "").slice(0, 10) === today).length;
   document.getElementById("newToday").textContent = `${newToday} today`;
 
-  if (!reports.length) {
+  if (!all.length) {
     target.innerHTML = '<div class="empty">No pending reports.</div>';
     return;
   }
 
-  target.innerHTML = reports.map(renderReport).join("");
+  target.innerHTML = all.map((r) =>
+    r.kind === "new-location-report" ? renderNewLocation(r) : renderReport(r)
+  ).join("");
 }
 
 function renderReport(r) {
@@ -300,6 +306,86 @@ function renderReport(r) {
         ${escapeHtml(tsvRow)}
         <br><br>
         <button onclick="copyTsv('${r.id}', ${JSON.stringify(tsvRow).replace(/"/g, '&quot;')})">Copy to clipboard</button>
+      </div>
+    </div>
+  `;
+}
+
+// Render a user-submitted NEW location (garage/tunnel/bridge not on the
+// map).  Different template than renderReport: we're creating an entry
+// from scratch, not patching an existing one.
+function renderNewLocation(r) {
+  const when = r.created_at ? new Date(r.created_at).toLocaleString() : "unknown time";
+  const heightLabel = inchesToLabel(r.reported_height_in);
+  const lat = r.location_lat || "";
+  const lng = r.location_lng || "";
+  const coords = (lat && lng) ? `${lat}, ${lng}` : "(not provided — admin will geocode)";
+  const typeLabels = {
+    "garage": "Parking garage (covered)",
+    "surface_lot": "Surface lot (open-air)",
+    "tunnel": "Tunnel",
+    "bridge": "Low bridge",
+  };
+  const typeLabel = typeLabels[r.location_type] || r.location_type || "?";
+
+  const mapsQuery = encodeURIComponent(
+    (r.location_name || "") + " " + (r.location_addr || "") + " " +
+    (r.city_name || "") + " " + (r.city_state || "")
+  );
+  const mapsPin = (lat && lng)
+    ? `https://www.google.com/maps/@${lat},${lng},19z`
+    : `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+
+  const noteBlock = r.notes
+    ? `<div class="report-notes">${escapeHtml(r.notes)}</div>`
+    : "";
+  const contactBlock = r.contact
+    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="mailto:${escapeHtml(r.contact)}">${escapeHtml(r.contact)}</a></div>`
+    : "";
+
+  return `
+    <div class="report" style="border-left: 3px solid var(--accent);">
+      <div class="report-head">
+        <div>
+          <div class="report-name">➕ ${escapeHtml(r.location_name || "(unnamed)")}</div>
+          <div class="muted" style="font-size:12px">
+            <b>NEW LOCATION</b> — ${escapeHtml(typeLabel)}${r.city_name ? " · " + escapeHtml(r.city_name) + ", " + escapeHtml(r.city_state || "") : ""}
+          </div>
+        </div>
+        <div class="report-id">
+          ${escapeHtml(r.id)}<br>
+          <span class="muted">${escapeHtml(when)}</span>
+        </div>
+      </div>
+
+      <div class="report-grid">
+        <div>
+          <div class="grid-label">Address / cross-streets</div>
+          <div class="grid-value">${escapeHtml(r.location_addr || "—")}</div>
+        </div>
+        <div>
+          <div class="grid-label">Coordinates</div>
+          <div class="grid-value" style="font-family:monospace;font-size:12px">${escapeHtml(coords)}</div>
+        </div>
+        <div>
+          <div class="grid-label">Reported clearance</div>
+          <div class="grid-value">
+            ${r.no_posted_sign ? "<i>No sign / open-air</i>" : (escapeHtml(heightLabel || "—"))}
+          </div>
+        </div>
+        <div>
+          <div class="grid-label">Oversized-friendly?</div>
+          <div class="grid-value">${escapeHtml(r.oversized || "unknown")}</div>
+        </div>
+      </div>
+
+      ${noteBlock}
+      ${contactBlock}
+
+      <div class="report-actions">
+        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="${mapsPin}">
+          Verify in Google Maps ↗
+        </a>
       </div>
     </div>
   `;
