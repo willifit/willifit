@@ -562,6 +562,10 @@
   .height-badge.warn { border-color: var(--warn); color: var(--warn); }
   .height-badge.bad { border-color: var(--bad); color: var(--bad); }
   .height-badge.unknown { border-color: var(--muted); color: var(--muted); font-style: italic; }
+  /* Surface-lot / RV-park entries: no overhead, no clearance number to
+     report, but they ARE verified open-air.  Style as confirmed-green
+     (same as .ok) but upright -- NOT italic like the unknown state. */
+  .height-badge.nolimit { border-color: var(--ok); color: var(--ok); }
   .oversized-tag {
     background: rgba(62, 207, 142, 0.15);
     color: var(--ok);
@@ -2396,6 +2400,23 @@ function heightClass(inches) {
   if (inches >= 84) return 'warn';
   return 'bad';
 }
+// Wrapper that knows about surface-lot / "no limit" entries.  RV parks
+// and open-air lots have height_in==null but a non-null height_label
+// ("No limit (uncovered)"); treating those as the 'unknown' gray state
+// is wrong -- they're VERIFIED, just not height-restricted.
+function heightClassForEntry(g) {
+  if (g && g.height_in == null &&
+      (g.structure_type === 'surface_lot' ||
+       (typeof g.height_label === 'string' && /uncovered|no limit/i.test(g.height_label)))) {
+    return 'nolimit';
+  }
+  return heightClass(g && g.height_in);
+}
+function isConfirmedEntry(g) {
+  return g && (g.height_in != null ||
+               g.structure_type === 'surface_lot' ||
+               (typeof g.height_label === 'string' && /uncovered|no limit/i.test(g.height_label)));
+}
 function markerClass(inches) {
   const c = heightClass(inches);
   return 'marker-' + c;
@@ -2546,7 +2567,12 @@ function getFiltered() {
       const type = g.type || 'garage';
       if (!state.showTypes[type]) return false;
       if (state.oversizedOnly && !g.oversized) return false;
-      if (state.verifiedOnly && g.height_in == null) return false;
+      // "Hide unverified" treats surface lots with an explicit label
+       // (RV parks, open-air lots) as verified -- they have no clearance
+       // number because there's no overhead to measure, not because we
+       // haven't checked.  Using isConfirmedEntry() keeps that rule in
+       // one place so the detail panel + list agree.
+      if (state.verifiedOnly && !isConfirmedEntry(g)) return false;
       if (state.minHeight > 60 && g.height_in != null && g.height_in < state.minHeight) return false;
       if (state.searchBounds && !_inBounds(g, state.searchBounds)) return false;
       return true;
@@ -2598,13 +2624,15 @@ function renderList() {
     });
   }
   list.innerHTML = items.map(g => {
-    const hc = heightClass(g.height_in);
+    const hc = heightClassForEntry(g);
     const hlabel = g.height_label || 'Unverified';
     const overTag = g.oversized ? '<span class="oversized-tag">Oversized OK</span>' : '';
     const isAiVerified = typeof g.source === 'string' && g.source.includes('AI-verified');
     const aiBadge = isAiVerified ? '<span class="ai-verified-badge" title="Posted clearance read by Claude Vision from Street View imagery">AI-verified</span>' : '';
     const active = state.selectedId === g.id ? 'active' : '';
-    const unv = g.height_in == null ? 'unverified' : '';
+    // Surface lots / RV parks are confirmed, just height-less; don't
+    // visually dull them out like a true unverified garage.
+    const unv = (g.height_in == null && !isConfirmedEntry(g)) ? 'unverified' : '';
     const nameSafe = escapeHTML(g.name || '');
     const hlabelSafe = escapeHTML(hlabel);
     const idSafe = escapeHTML(g.id || '');
@@ -3164,7 +3192,7 @@ function renderDetail(g) {
   const panel = document.getElementById('detail');
   const body = document.getElementById('detailBody');
   const hero = document.getElementById('detailHero');
-  const hc = heightClass(g.height_in);
+  const hc = heightClassForEntry(g);
   const svUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${g.lat},${g.lng}&heading=0&pitch=0&fov=90`;
   // Directions URLs — consumer nav apps.
   // IMPORTANT: none of these public URL APIs accept a clearance constraint.
@@ -3829,6 +3857,19 @@ document.getElementById('newLocationModal').addEventListener('click', (e) => {
   if (e.target.id === 'newLocationModal') closeNewLocationModal();
 });
 document.getElementById('newLocationForm').addEventListener('submit', submitNewLocation);
+
+// When the user picks "Surface lot (open-air)" as the type, auto-check
+// "Oversized: Yes" and "No sign / open-air" -- an open-air lot with no
+// overhead can't impose a clearance, and by definition accommodates
+// oversized vehicles.  User can still override.
+document.getElementById('nlType').addEventListener('change', (e) => {
+  if (e.target.value === 'surface_lot') {
+    const yes = document.querySelector('input[name="nl_oversized"][value="yes"]');
+    if (yes) yes.checked = true;
+    const noPosted = document.getElementById('nlNoPosted');
+    if (noPosted) noPosted.checked = true;
+  }
+});
 
 // Issue-report modal wiring.  Triggered from the per-location detail panel
 // (detailIssueBtn) -- see renderDetail() -- not from the sidebar.
