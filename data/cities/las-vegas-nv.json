@@ -1154,12 +1154,18 @@
       "addr": "2711 West Windmill Lane",
       "lat": 36.04011,
       "lng": -115.17855,
+      "entrance_lat": 36.0424804,
+      "entrance_lng": -115.1783376,
+      "entrance_source": "Manual (Google Maps URL)",
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "pano_id": "9oxU5cnUQEp6Pf4sgdZSkw",
+      "pano_heading": 102.16,
+      "verified_on": "2026-04-22",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).\nManually verified 2026-04-22 as an open-air RV resort (pano 9oxU5cnUQEp6Pf4sgdZSkw @ 102.16\u00b0). No overhead clearance \u2014 any size vehicle fits.",
+      "source": "Manually verified from Google Street View \u2014 was: OpenStreetMap (surface lot)"
     },
     {
       "id": "osm-w301413582",
