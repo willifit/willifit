@@ -815,6 +815,52 @@
     border-color: var(--ok);
     background: rgba(62,207,142,0.08);
   }
+
+  /* Aerial-map fallback: shown instead of the blank empty-state when
+     Street View has no coverage at the entry's coordinates.  Useful
+     info (building outline, surrounding streets) beats a gray void. */
+  .detail-hero-aerial {
+    display: block; position: relative;
+    width: 100%; height: 100%;
+    text-decoration: none;
+    background: var(--panel);
+  }
+  .detail-hero-aerial img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+  }
+  .detail-hero-aerial-overlay {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 12px 14px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .detail-hero-aerial-badge {
+    font-family: var(--mono);
+    font-size: 10px;
+    background: var(--accent);
+    color: #001018;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  .detail-hero-aerial-reason { flex: 1; opacity: 0.9; }
+  .detail-hero-aerial-link {
+    font-family: var(--mono);
+    font-size: 10px;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+  .detail-hero-aerial:hover .detail-hero-aerial-link { opacity: 1; text-decoration: underline; }
   .detail-body { flex: 1; overflow-y: auto; padding: 18px 20px; }
   .detail-body::-webkit-scrollbar { width: 6px; }
   .detail-body::-webkit-scrollbar-track { background: var(--panel); }
@@ -3056,20 +3102,51 @@ async function loadDetailHero(hero, g) {
   hero.onclick = null;
   hero.innerHTML = `<div class="detail-hero-loading">Loading Street View…</div>`;
 
-  // Clean empty-state when Street View has no coverage or something fails.
-  // Replaces the old Mapillary iframe fallback, which consistently showed
-  // hotel-curated marketing photos instead of the actual garage entrance
-  // and emitted noisy console errors (A-Frame, THREE.js, WebXR) while
-  // loading.  A link out to Google Maps lets motivated users inspect the
-  // location themselves.
+  // Build a Google Static Maps (hybrid=satellite+roads) URL as the
+  // non-Street-View fallback.  7.5% of our entries have no SV coverage
+  // (mostly bridges/tunnels + rooftop-centroid coords) -- showing an
+  // aerial with a marker is dramatically better UX than a gray empty
+  // state.  Static Maps is a separately-billed product (~$2/1000 loads,
+  // still free under 28k/month).  Same API key is valid for both.
+  const staticMapUrl = (lat, lng) => {
+    const marker = `color:0x0ea5e9|${lat},${lng}`;
+    const qs = new URLSearchParams({
+      center: `${lat},${lng}`,
+      zoom: '18',
+      size: '640x360',
+      scale: '2',
+      maptype: 'hybrid',
+      markers: marker,
+      key: GOOGLE_MAPS_API_KEY,
+    });
+    return `https://maps.googleapis.com/maps/api/staticmap?${qs.toString()}`;
+  };
+  const showAerialFallback = (reason) => {
+    if (myReq !== _heroReq) return;
+    const mapsLink = `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lng}`;
+    hero.innerHTML = `
+      <a class="detail-hero-aerial" href="${mapsLink}" target="_blank" rel="noopener"
+         aria-label="Aerial map of ${escapeHTML(g.name || 'this location')}, opens in Google Maps">
+        <img src="${staticMapUrl(g.lat, g.lng)}" alt="Aerial map showing ${escapeHTML(g.name || 'this location')}"
+             onerror="this.style.display='none'">
+        <div class="detail-hero-aerial-overlay">
+          <span class="detail-hero-aerial-badge">AERIAL</span>
+          <span class="detail-hero-aerial-reason">${escapeHTML(reason || "Street View not available — satellite view shown.")}</span>
+          <span class="detail-hero-aerial-link">Open in Google Maps ↗</span>
+        </div>
+      </a>`;
+  };
+  // Legacy bare empty-state — used only when even the aerial API isn't
+  // configured.  The aerial shares GOOGLE_MAPS_API_KEY so it practically
+  // never fires, but kept as a safety net.
   const showEmpty = (reason) => {
     if (myReq !== _heroReq) return;
     const mapsLink = `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lng}`;
     hero.innerHTML = `
       <div class="detail-hero-empty">
         <div class="detail-hero-empty-icon" aria-hidden="true">▢</div>
-        <div class="detail-hero-empty-title">No Street View imagery available</div>
-        <div class="detail-hero-empty-sub">${reason || "We couldn't find a usable panorama near this entrance."}</div>
+        <div class="detail-hero-empty-title">No imagery available</div>
+        <div class="detail-hero-empty-sub">${reason || "We couldn't load a preview for this entrance."}</div>
         <a class="detail-hero-empty-link" href="${mapsLink}" target="_blank" rel="noopener">
           Open in Google Maps ↗
         </a>
@@ -3095,7 +3172,7 @@ async function loadDetailHero(hero, g) {
     const metaRes = await fetch(metaUrl);
     if (myReq !== _heroReq) return;
     const meta = await metaRes.json();
-    if (meta.status !== 'OK') return showEmpty('No Street View coverage at this location.');
+    if (meta.status !== 'OK') return showAerialFallback('No Street View here — aerial view shown.');
 
     // 2. Lazy-load the Maps JS SDK (first call only — subsequent calls reuse the same promise).
     await loadGoogleMapsJs();
@@ -3158,7 +3235,7 @@ async function loadDetailHero(hero, g) {
     });
   } catch (err) {
     console.warn('[hero] Street View failed:', err);
-    showEmpty('Street View failed to load — try refreshing or opening in Google Maps.');
+    showAerialFallback('Street View failed to load — aerial view shown.');
   }
 }
 
