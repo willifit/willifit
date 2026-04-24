@@ -37,6 +37,15 @@
      routing (#city-slug), so the bare root is always the canonical form. -->
 <link rel="canonical" href="https://willifit.ai/">
 
+<!-- Google Search Console verification.  Replace content= with the value
+     GSC gives you when adding https://willifit.ai/ as a property.  Once
+     verified, submit /sitemap.xml in the GSC "Sitemaps" section to kick
+     off indexing of all 226 city pages.
+     Bing Webmaster Tools works the same way with msvalidate.01 — add a
+     second <meta> below if you care about Bing/DuckDuckGo coverage. -->
+<!-- <meta name="google-site-verification" content="PASTE_GSC_TOKEN_HERE"> -->
+<!-- <meta name="msvalidate.01" content="PASTE_BING_TOKEN_HERE"> -->
+
 <!-- Structured data for search + answer engines.
      WebSite: top-level site object (search-box eligibility if we later add
               server-side ?q= support).
@@ -1801,6 +1810,11 @@
 </style>
 </head>
 <body>
+<!-- Visually-hidden H1 for SEO.  The main app is map-first so there's
+     no visible headline -- but every page needs a single H1 for crawlers
+     to understand the primary topic.  .sr-only keeps it in the DOM for
+     search engines + screen readers without affecting the layout. -->
+<h1 class="sr-only">WillIFit.ai — AI-verified parking garage, tunnel, and low-bridge clearance heights for RVs, trucks, and oversized vehicles across 226 US cities</h1>
 <a class="skip-link" href="#list">Skip to garage list</a>
 
 <div class="welcome-overlay" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeTitleA11y">

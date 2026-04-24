@@ -134,7 +134,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list) -> str
             items.append(item)
             rank += 1
 
-    data = {
+    item_list = {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": f"Parking clearance heights in {name}, {state_full}",
@@ -143,7 +143,21 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list) -> str
         "itemListElement": items,
         "numberOfItems": total,
     }
-    return json.dumps(data, separators=(",", ":"))
+    # BreadcrumbList — signals page hierarchy to Google (Home > Cities > <City>),
+    # and is what earns the "> crumb > crumb" format in search results.
+    breadcrumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home",
+             "item": f"{SITE}/"},
+            {"@type": "ListItem", "position": 2, "name": "Cities",
+             "item": f"{SITE}/cities.html"},
+            {"@type": "ListItem", "position": 3, "name": f"{name}, {state_full}",
+             "item": f"{SITE}/city/{city['slug']}.html"},
+        ],
+    }
+    return json.dumps([item_list, breadcrumbs], separators=(",", ":"))
 
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
@@ -302,6 +316,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <div class="page">
   <header>
     <a href="/" class="brand">Will<span class="tld">I</span>Fit<span class="tld">.ai</span></a>
+    <span class="crumb">›</span>
+    <a href="/cities.html" class="crumb">Cities</a>
     <span class="crumb">›</span>
     <a href="/#{slug}" class="crumb">{city}, {state}</a>
   </header>
