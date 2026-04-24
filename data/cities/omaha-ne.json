@@ -175,7 +175,10 @@
       "oversized": true,
       "notes": "Uncovered.",
       "source": "flyoma.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.3007705,
+      "entrance_lng": -95.8998072,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "oma-lauritzen-gardens",
@@ -386,7 +389,10 @@
       "height_in": 161,
       "height_label": "13'5\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1924",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 41.3440278,
+      "entrance_lng": -95.8845542,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-19-000000000290810",

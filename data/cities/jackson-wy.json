@@ -88,7 +88,10 @@
       "oversized": true,
       "notes": "Main Grand Teton visitor center.",
       "source": "nps.gov/grte",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 43.6589676,
+      "entrance_lng": -110.7182826,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jac-grand-teton-jenny-lake",
@@ -114,7 +117,10 @@
       "oversized": true,
       "notes": "Lodge + campground + marina.",
       "source": "signalmountainlodge.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 43.8416722,
+      "entrance_lng": -110.614743,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jac-colter-bay",
@@ -127,7 +133,10 @@
       "oversized": true,
       "notes": "RV park + cabins + visitor center.",
       "source": "nps.gov/grte",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 43.9010242,
+      "entrance_lng": -110.6416788,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jac-yellowstone-south",
@@ -166,7 +175,10 @@
       "oversized": true,
       "notes": "Grand Canyon of Yellowstone. Full services.",
       "source": "nps.gov/yell",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 44.7360348,
+      "entrance_lng": -110.4959971,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jac-mammoth-hot-springs",
@@ -218,7 +230,10 @@
       "oversized": true,
       "notes": "In-town RV park + lodge.",
       "source": "virginianlodge.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 43.4759635,
+      "entrance_lng": -110.7737918,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jac-gros-ventre-campground",
@@ -231,7 +246,10 @@
       "oversized": true,
       "notes": "NPS campground near Moose.",
       "source": "nps.gov/grte",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 43.6193519,
+      "entrance_lng": -110.6717698,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jac-jackson-lake-lodge",
@@ -371,7 +389,10 @@
       "height_in": 147,
       "height_label": "12'3\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1910",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 43.3709801,
+      "entrance_lng": -110.7403134,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ]
 }

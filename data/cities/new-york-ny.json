@@ -335,7 +335,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent. Clearance needs verification.",
-      "source": "Port Authority NY/NJ"
+      "source": "Port Authority NY/NJ",
+      "entrance_lat": 40.6428167,
+      "entrance_lng": -73.7829117,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nyc-jfk-economy",
@@ -583,7 +586,10 @@
       "oversized": true,
       "notes": "Bus/Sprinter/Oversized Parking north of Citi Field. Surface lot.",
       "source": "nymets.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 40.7573721,
+      "entrance_lng": -73.8489807,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nyc-citi-field-main",
@@ -708,7 +714,10 @@
       "height_in": 150,
       "height_label": "12'6\"",
       "notes": "Commercial + passenger traffic OK under height. No hazmat. Three tubes. E-ZPass.",
-      "source": "Port Authority NY/NJ"
+      "source": "Port Authority NY/NJ",
+      "entrance_lat": 40.7617241,
+      "entrance_lng": -74.0081459,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nyc-holland-tunnel",
@@ -741,7 +750,10 @@
       "height_in": 162,
       "height_label": "13'6\"",
       "notes": "Tallest downtown tunnel. No hazmat. MTA.",
-      "source": "MTA Bridges & Tunnels"
+      "source": "MTA Bridges & Tunnels",
+      "entrance_lat": 40.701195,
+      "entrance_lng": -74.0154339,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nyc-park-ave-viaduct",
@@ -1557,7 +1569,10 @@
       "height_in": 156,
       "height_label": "13'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1963",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 40.6425257,
+      "entrance_lng": -73.7892574,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-36-000000005524270",

@@ -828,7 +828,10 @@
       "height_in": 179,
       "height_label": "14'11\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.566502,
+      "entrance_lng": -121.344374,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w966706109",

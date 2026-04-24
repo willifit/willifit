@@ -232,7 +232,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Dane County fairgrounds + event center.",
-      "source": "alliantenergycenter.com"
+      "source": "alliantenergycenter.com",
+      "entrance_lat": 43.0445794,
+      "entrance_lng": -89.3691339,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mad-breese-stevens",
@@ -301,7 +304,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "msnairport.com"
+      "source": "msnairport.com",
+      "entrance_lat": 43.1352525,
+      "entrance_lng": -89.3460916,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mad-airport-long",
@@ -313,7 +319,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "msnairport.com"
+      "source": "msnairport.com",
+      "entrance_lat": 43.1337275,
+      "entrance_lng": -89.3465709,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w32264004",

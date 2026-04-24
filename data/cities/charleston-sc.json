@@ -211,7 +211,10 @@
       "oversized": true,
       "notes": "Folly Beach access. Surface lot.",
       "source": "ccprc.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 32.6812809,
+      "entrance_lng": -79.9562046,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "chs-sullivans-island",
@@ -262,7 +265,10 @@
       "oversized": true,
       "notes": "Historic plantation. Free parking.",
       "source": "magnoliaplantation.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 32.8741948,
+      "entrance_lng": -80.0650376,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "chs-middleton-place",

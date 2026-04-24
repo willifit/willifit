@@ -61,7 +61,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Native + natural history.",
-      "source": "musnaz.org"
+      "source": "musnaz.org",
+      "entrance_lat": 35.2213693,
+      "entrance_lng": -111.6668051,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "flg-arboretum",
@@ -121,7 +124,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski resort. Surface lots. RV-capable.",
-      "source": "snowbowl.ski"
+      "source": "snowbowl.ski",
+      "entrance_lat": 35.3301205,
+      "entrance_lng": -111.7104874,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "flg-grand-canyon-south-visitor",
@@ -157,7 +163,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "~30mi south. Red rock views.",
-      "source": "visitsedona.com"
+      "source": "visitsedona.com",
+      "entrance_lat": 34.8505552,
+      "entrance_lng": -111.7889482,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "flg-sedona-uptown",
@@ -193,7 +202,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Volcanic NM. Part of loop drive.",
-      "source": "nps.gov/sucr"
+      "source": "nps.gov/sucr",
+      "entrance_lat": 35.3639414,
+      "entrance_lng": -111.5172222,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "flg-wupatki",

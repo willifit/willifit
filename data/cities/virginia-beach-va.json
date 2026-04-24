@@ -161,7 +161,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Closest airport \u2014 Norfolk. Not VB proper.",
-      "source": "norfolkairport.com"
+      "source": "norfolkairport.com",
+      "entrance_lat": 36.8974362,
+      "entrance_lng": -76.2043547,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "vb-chicks-beach",
@@ -198,7 +201,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Museum surface.",
-      "source": "virginiamoca.org"
+      "source": "virginiamoca.org",
+      "entrance_lat": 36.8401853,
+      "entrance_lng": -75.990948,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "vb-amphitheater",
@@ -325,7 +331,10 @@
       "oversized": true,
       "notes": "USFWS refuge.",
       "source": "fws.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.6727031,
+      "entrance_lng": -75.9143259,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "vb-boardwalk-main",
@@ -445,7 +454,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 36.874582,
+      "entrance_lng": -76.0307209,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w402508349",
@@ -474,7 +486,10 @@
       "height_in": 180,
       "height_label": "15'0\"",
       "notes": "Bridge-tunnel complex. Norfolk \u2192 Hampton. Expansion in progress.",
-      "source": "VDOT"
+      "source": "VDOT",
+      "entrance_lat": 36.9847084,
+      "entrance_lng": -76.3025587,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "vb-mmbt",
@@ -496,7 +511,10 @@
       "height_in": 168,
       "height_label": "14'0\"",
       "notes": "Norfolk \u2192 Portsmouth. Toll.",
-      "source": "VDOT"
+      "source": "VDOT",
+      "entrance_lat": 36.842271,
+      "entrance_lng": -76.3031142,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "vb-midtown-tunnel",
@@ -507,7 +525,10 @@
       "height_in": 156,
       "height_label": "13'0\"",
       "notes": "Alternative Norfolk/Portsmouth crossing. Toll.",
-      "source": "VDOT"
+      "source": "VDOT",
+      "entrance_lat": 36.8498702,
+      "entrance_lng": -76.3173432,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "bridges": [

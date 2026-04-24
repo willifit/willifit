@@ -109,7 +109,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Long Beach Airport. Uncovered.",
-      "source": "lgb.org"
+      "source": "lgb.org",
+      "entrance_lat": 33.8176739,
+      "entrance_lng": -118.1444483,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lb-lgb-garage",
@@ -121,7 +124,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "lgb.org"
+      "source": "lgb.org",
+      "entrance_lat": 33.8199568,
+      "entrance_lng": -118.1514552,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lb-csulb",
@@ -187,7 +193,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Long Beach Catalina ferry terminal area.",
-      "source": "catalinaexpress.com"
+      "source": "catalinaexpress.com",
+      "entrance_lat": 33.7604436,
+      "entrance_lng": -118.1966721,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lb-mola-museum",
@@ -223,7 +232,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Marina surface parking.",
-      "source": "longbeach.gov"
+      "source": "longbeach.gov",
+      "entrance_lat": 33.7567077,
+      "entrance_lng": -118.1869611,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lb-naples-lots",
@@ -247,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large regional park.",
-      "source": "longbeach.gov"
+      "source": "longbeach.gov",
+      "entrance_lat": 33.8042594,
+      "entrance_lng": -118.0893084,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lb-long-beach-museum-art",
@@ -295,7 +310,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Tourist shopping + dining.",
-      "source": "shorelinevillage.com"
+      "source": "shorelinevillage.com",
+      "entrance_lat": 33.7567077,
+      "entrance_lng": -118.1869611,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w27208801",
@@ -919,7 +937,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Replaced Gerald Desmond Bridge in 2020.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "entrance_lat": 33.7642611,
+      "entrance_lng": -118.2221353,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lb-queensway",
@@ -930,7 +951,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Connects downtown LB to Queen Mary/Catalina.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 33.7534434,
+      "entrance_lng": -118.1911914,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-06-531619E",

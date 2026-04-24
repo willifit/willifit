@@ -298,7 +298,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "mspairport.com"
+      "source": "mspairport.com",
+      "entrance_lat": 44.8665485,
+      "entrance_lng": -93.2400482,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w41424573",

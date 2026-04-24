@@ -24,7 +24,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking. Operator: KOA.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 42.003185,
+      "entrance_lng": -80.1919484,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],

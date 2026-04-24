@@ -286,7 +286,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Cruise terminal garage.",
-      "source": "porttb.com"
+      "source": "porttb.com",
+      "entrance_lat": 27.942584,
+      "entrance_lng": -82.4476217,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tpa-airport-short",
@@ -325,7 +328,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "tampaairport.com"
+      "source": "tampaairport.com",
+      "entrance_lat": 27.9685441,
+      "entrance_lng": -82.5318059,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],

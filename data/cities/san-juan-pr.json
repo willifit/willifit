@@ -157,7 +157,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.4076366,
+      "entrance_lng": -66.0513332,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w72837605",
@@ -508,7 +511,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3671995,
+      "entrance_lng": -66.1439581,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w288319351",
@@ -532,7 +538,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3735897,
+      "entrance_lng": -66.1429859,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w288350166",
@@ -544,7 +553,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3718616,
+      "entrance_lng": -66.1468408,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w288825664",
@@ -631,7 +643,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3892125,
+      "entrance_lng": -66.1023164,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w294718150",
@@ -949,7 +964,10 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3593601,
+      "entrance_lng": -66.1260473,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w308740091",
@@ -1210,7 +1228,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3931934,
+      "entrance_lng": -66.1480785,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w338131767",
@@ -1519,7 +1540,10 @@
       "height_label": "7'2\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.4228025,
+      "entrance_lng": -66.0674533,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w366579009",
@@ -1633,7 +1657,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3715056,
+      "entrance_lng": -66.112685,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w381155929",
@@ -1813,7 +1840,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.3814355,
+      "entrance_lng": -66.0561336,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w440676239",
@@ -2332,7 +2362,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.413572,
+      "entrance_lng": -66.098153,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1079315304",
@@ -2545,7 +2578,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.4363316,
+      "entrance_lng": -66.0455715,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1422633340",
@@ -2797,7 +2833,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.4483853,
+      "entrance_lng": -66.0495121,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1435152371",
@@ -2941,7 +2980,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.448904,
+      "entrance_lng": -66.0449891,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1446634085",
@@ -3001,7 +3043,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.4495962,
+      "entrance_lng": -66.0437851,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1464418586",
@@ -3067,7 +3112,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 18.4087081,
+      "entrance_lng": -66.0686434,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],
@@ -3114,7 +3162,10 @@
       "height_in": 104,
       "height_label": "8'8\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2004",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 18.3925306,
+      "entrance_lng": -66.0786893,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ]
 }

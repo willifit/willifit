@@ -337,7 +337,10 @@
       "height_in": 150,
       "height_label": "12'6\"",
       "notes": "One-way tube (into city). Toll. Hazmat restricted.",
-      "source": "Massport"
+      "source": "Massport",
+      "entrance_lat": 42.3643814,
+      "entrance_lng": -71.0468268,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bos-callahan",
@@ -348,7 +351,10 @@
       "height_in": 150,
       "height_label": "12'6\"",
       "notes": "One-way (out of city). Companion to Sumner.",
-      "source": "Massport"
+      "source": "Massport",
+      "entrance_lat": 42.36692,
+      "entrance_lng": -71.0478183,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bos-ohare-tunnel",

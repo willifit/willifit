@@ -106,7 +106,10 @@
       "oversized": true,
       "notes": "Fishing + train depot area.",
       "source": "Needs verification",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 61.2283355,
+      "entrance_lng": -149.8907322,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "anc-alaska-railroad",
@@ -183,7 +186,10 @@
       "oversized": true,
       "notes": "Ski + trail park. West Anchorage.",
       "source": "muni.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 61.1543027,
+      "entrance_lng": -150.0535629,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "anc-flattop-trailhead",
@@ -196,7 +202,10 @@
       "oversized": true,
       "notes": "Most-climbed peak in AK. Surface lot. Fee.",
       "source": "muni.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 61.1072038,
+      "entrance_lng": -149.7148886,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "anc-earthquake-park",
@@ -298,7 +307,10 @@
       "oversized": true,
       "notes": "General aviation airport.",
       "source": "muni.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 61.2174611,
+      "entrance_lng": -149.8463763,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "anc-lake-hood",
@@ -311,7 +323,10 @@
       "oversized": true,
       "notes": "World's busiest seaplane base. Viewing/parking.",
       "source": "dot.alaska.gov/anc",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 61.1794785,
+      "entrance_lng": -149.9715069,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w28587803",

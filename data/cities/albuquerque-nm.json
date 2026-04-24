@@ -131,7 +131,10 @@
       "oversized": true,
       "notes": "Tramway base. Surface lot.",
       "source": "sandiapeak.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.1843199,
+      "entrance_lng": -106.4811953,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "abq-petroglyph-nm",
@@ -144,7 +147,10 @@
       "oversized": true,
       "notes": "NPS site surface lots.",
       "source": "nps.gov/petr",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.1541532,
+      "entrance_lng": -106.6911941,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "abq-sunport-garage",

@@ -139,7 +139,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Crafts + attractions complex.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.6743825,
+      "entrance_lng": -93.2397259,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bra-table-rock-lake",
@@ -189,7 +192,10 @@
       "oversized": true,
       "notes": "Branson RV park.",
       "source": "abcbranson.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.6146103,
+      "entrance_lng": -93.304673,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bra-koa-branson",
@@ -202,7 +208,10 @@
       "oversized": true,
       "notes": "KOA RV park + campground.",
       "source": "koa.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.622808,
+      "entrance_lng": -93.2273289,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bra-scenic-railroad",
@@ -293,7 +302,10 @@
       "oversized": true,
       "notes": "Private regional airport (limited service). Surface lot.",
       "source": "flybranson.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.5343256,
+      "entrance_lng": -93.1987509,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bra-sgf-airport",
@@ -330,7 +342,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Main N-S highway crossings.",
-      "source": "MoDOT"
+      "source": "MoDOT",
+      "entrance_lat": 36.6641643,
+      "entrance_lng": -93.2089955,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-29-10062",

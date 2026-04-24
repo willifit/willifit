@@ -81,7 +81,10 @@
       "oversized": true,
       "notes": "LSU football. Massive surface lots + RV tailgating ('Pre-game' most iconic tailgate).",
       "source": "lsusports.net",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 30.4111455,
+      "entrance_lng": -91.1831164,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "btr-alex-box-stadium",
@@ -196,7 +199,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Destroyer museum on Mississippi.",
-      "source": "usskidd.com"
+      "source": "usskidd.com",
+      "entrance_lat": 30.4393485,
+      "entrance_lng": -91.1928184,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "btr-louisiana-art-science",
@@ -327,7 +333,10 @@
       "oversized": true,
       "notes": "Uncovered.",
       "source": "flybtr.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 30.5315117,
+      "entrance_lng": -91.1569861,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],
@@ -341,7 +350,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Cantilever truss. Main I-10 crossing.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 30.4398708,
+      "entrance_lng": -91.2049866,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "btr-huey-long",
@@ -352,7 +364,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Historic cantilever bridge (not to be confused with New Orleans' Huey Long).",
-      "source": "ladotd.la.gov"
+      "source": "ladotd.la.gov",
+      "entrance_lat": 30.4639946,
+      "entrance_lng": -91.2035529,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "btr-i-10-atchafalaya-basin",

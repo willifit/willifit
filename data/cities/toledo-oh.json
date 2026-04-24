@@ -74,7 +74,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Science center.",
-      "source": "imaginationstationtoledo.org"
+      "source": "imaginationstationtoledo.org",
+      "entrance_lat": 41.6472627,
+      "entrance_lng": -83.5351956,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tol-owens-arena",
@@ -208,7 +211,10 @@
       "oversized": true,
       "notes": "State park + lodge + campground.",
       "source": "ohiodnr.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.6802414,
+      "entrance_lng": -83.3817807,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tol-pearson-metropark",
@@ -234,7 +240,10 @@
       "oversized": true,
       "notes": "Restored 1812 fort.",
       "source": "fortmeigs.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.5515132,
+      "entrance_lng": -83.6428282,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tol-cedar-point",
@@ -288,7 +297,10 @@
       "oversized": false,
       "notes": "Small regional airport. Surface.",
       "source": "tol.aero",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.5919927,
+      "entrance_lng": -83.8093717,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tol-detroit-alt",
@@ -326,7 +338,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Historic 1931 high-level bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 41.6459506,
+      "entrance_lng": -83.5358712,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tol-veterans-glass",

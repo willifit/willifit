@@ -141,7 +141,10 @@
       "oversized": true,
       "notes": "Statue Cruises ferry lot.",
       "source": "statuecruises.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 40.6908153,
+      "entrance_lng": -74.0452911,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jc-historic-downtown",
@@ -388,7 +391,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Arch bridge to Staten Island. Roadway raised 2017 for Panamax ships.",
-      "source": "panynj.gov"
+      "source": "panynj.gov",
+      "entrance_lat": 40.639012,
+      "entrance_lng": -74.1424672,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jc-pulaski-skyway",
@@ -424,7 +430,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "World's busiest bridge. Double-deck.",
-      "source": "panynj.gov"
+      "source": "panynj.gov",
+      "entrance_lat": 40.8512955,
+      "entrance_lng": -73.9514923,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-34-0253003",

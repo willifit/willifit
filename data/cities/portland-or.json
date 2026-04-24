@@ -281,7 +281,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent garage.",
-      "source": "flypdx.com"
+      "source": "flypdx.com",
+      "entrance_lat": 45.5875467,
+      "entrance_lng": -122.5928698,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "pdx-airport-economy",
@@ -294,7 +297,10 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "flypdx.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 45.5848404,
+      "entrance_lng": -122.6043962,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w113970042",
@@ -576,7 +582,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Double-deck tied-arch bridge.",
-      "source": "ODOT"
+      "source": "ODOT",
+      "entrance_lat": 45.5409733,
+      "entrance_lng": -122.6832485,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "pdx-steel-bridge",

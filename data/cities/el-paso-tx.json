@@ -166,7 +166,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free surface lot. RV-capable.",
-      "source": "elpasozoo.org"
+      "source": "elpasozoo.org",
+      "entrance_lat": 31.7706015,
+      "entrance_lng": -106.4360737,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "elp-wyler-tram",
@@ -178,7 +181,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot at tram base.",
-      "source": "tpwd.texas.gov"
+      "source": "tpwd.texas.gov",
+      "entrance_lat": 31.7953714,
+      "entrance_lng": -106.4809756,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "elp-franklin-mtns",
@@ -190,7 +196,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park lots. Oversized + RV OK.",
-      "source": "tpwd.texas.gov"
+      "source": "tpwd.texas.gov",
+      "entrance_lat": 31.8214819,
+      "entrance_lng": -106.5056328,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "elp-fort-bliss",

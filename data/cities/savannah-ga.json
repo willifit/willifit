@@ -181,7 +181,10 @@
       "oversized": false,
       "notes": "SCAD campus museum.",
       "source": "scadmoa.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 32.0880283,
+      "entrance_lng": -81.0994181,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "sav-trustees-theater",
@@ -261,7 +264,10 @@
       "oversized": true,
       "notes": "State park + campground.",
       "source": "gastateparks.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 31.944994,
+      "entrance_lng": -81.0544534,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "sav-oatland-island",
@@ -376,7 +382,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Cable-stayed bridge to SC. Being replaced.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 32.0857571,
+      "entrance_lng": -81.0997146,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "sav-lazaretto-creek",
@@ -387,7 +396,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Tybee access bridge.",
-      "source": "GDOT"
+      "source": "GDOT",
+      "entrance_lat": 32.0233326,
+      "entrance_lng": -80.8979045,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ]
 }

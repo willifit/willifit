@@ -313,7 +313,10 @@
       "oversized": true,
       "notes": "11-mile scenic loop. Trailhead lots.",
       "source": "nps.gov/grsm",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.6064737,
+      "entrance_lng": -83.7752379,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "knx-airport-tys-main",
@@ -363,7 +366,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Historic 1898 bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 35.9559385,
+      "entrance_lng": -83.9175282,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "knx-i-40-i-275-interchange",

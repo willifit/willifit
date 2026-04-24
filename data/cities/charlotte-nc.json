@@ -286,7 +286,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "cltairport.com"
+      "source": "cltairport.com",
+      "entrance_lat": 35.2125985,
+      "entrance_lng": -80.9384234,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "clt-airport-daily",
@@ -298,7 +301,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Daily parking deck.",
-      "source": "cltairport.com"
+      "source": "cltairport.com",
+      "entrance_lat": 35.210786,
+      "entrance_lng": -80.942184,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "clt-airport-economy",
@@ -310,7 +316,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy. Oversized OK.",
-      "source": "cltairport.com"
+      "source": "cltairport.com",
+      "entrance_lat": 35.206034,
+      "entrance_lng": -80.9451752,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w516686210",
@@ -604,7 +613,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 35.2414799,
+      "entrance_lng": -80.8669442,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1324597525",

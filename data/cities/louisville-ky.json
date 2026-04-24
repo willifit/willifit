@@ -127,7 +127,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum adjacent to Belvedere.",
-      "source": "alicenter.org"
+      "source": "alicenter.org",
+      "entrance_lat": 38.2588752,
+      "entrance_lng": -85.7604096,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lou-waterfront-park",
@@ -238,7 +241,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "University of Louisville visitor parking.",
-      "source": "louisville.edu"
+      "source": "louisville.edu",
+      "entrance_lat": 38.2100916,
+      "entrance_lng": -85.7559451,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "sdf-short-term",
@@ -310,7 +316,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Major interstate bridge.",
-      "source": "KYTC"
+      "source": "KYTC",
+      "entrance_lat": 38.262812,
+      "entrance_lng": -85.751772,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lou-abe-lincoln-bridge",
@@ -321,7 +330,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Companion to Kennedy for northbound traffic.",
-      "source": "KYTC"
+      "source": "KYTC",
+      "entrance_lat": 38.262812,
+      "entrance_lng": -85.751772,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ]
 }

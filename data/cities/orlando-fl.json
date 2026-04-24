@@ -144,7 +144,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "I-Drive entertainment complex.",
-      "source": "pointeorlando.com"
+      "source": "pointeorlando.com",
+      "entrance_lat": 28.430567,
+      "entrance_lng": -81.4647356,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "orl-icon-park",

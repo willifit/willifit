@@ -54,7 +54,10 @@
       "oversized": true,
       "notes": "8-mile loop of artist studios. Multiple surface lots.",
       "source": "gatlinburgcrafts.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.7494546,
+      "entrance_lng": -83.464557,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "gat-convention-ctr",
@@ -143,7 +146,10 @@
       "oversized": true,
       "notes": "Popular 11mi loop drive. Wildlife viewing.",
       "source": "nps.gov/grsm",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.6067671,
+      "entrance_lng": -83.7801243,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "gat-ober-gatlinburg",
@@ -219,7 +225,10 @@
       "oversized": true,
       "notes": "Adjacent water park.",
       "source": "dollywood.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.7934658,
+      "entrance_lng": -83.5390656,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "gat-tanger-outlets-sevierville",
@@ -311,7 +320,10 @@
       "oversized": true,
       "notes": "Casino + hotel. South of park via US-441.",
       "source": "caesars.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.4648104,
+      "entrance_lng": -83.3096964,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "gat-knox-airport",

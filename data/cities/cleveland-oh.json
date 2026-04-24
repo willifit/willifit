@@ -190,7 +190,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic ethnic neighborhood near UC.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.5145766,
+      "entrance_lng": -81.592652,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "cle-cle-museum-art",

@@ -130,7 +130,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic music venue. Surface lot.",
-      "source": "buckowens.com"
+      "source": "buckowens.com",
+      "entrance_lat": 35.3965188,
+      "entrance_lng": -119.0451114,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bak-kern-county-museum",
@@ -202,7 +205,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "meadowsfield.com"
+      "source": "meadowsfield.com",
+      "entrance_lat": 35.4378477,
+      "entrance_lng": -119.0547146,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bak-airport-longterm",
@@ -214,7 +220,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "meadowsfield.com"
+      "source": "meadowsfield.com",
+      "entrance_lat": 35.4280429,
+      "entrance_lng": -119.0583289,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bak-amtrak-station",
@@ -252,7 +261,10 @@
       "height_in": 168,
       "height_label": "14'0\"",
       "notes": "Standard interstate/freeway clearance.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "entrance_lat": 35.4101745,
+      "entrance_lng": -119.052864,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bak-oildale-underpass",
@@ -263,7 +275,10 @@
       "height_in": 138,
       "height_label": "11'6\"",
       "notes": "Rail underpass. Some box trucks may need to detour.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "entrance_lat": 35.4062488,
+      "entrance_lng": -119.01877,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w10379618",

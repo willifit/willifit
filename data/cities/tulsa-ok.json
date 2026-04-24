@@ -244,7 +244,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flytulsa.com"
+      "source": "flytulsa.com",
+      "entrance_lat": 36.2005386,
+      "entrance_lng": -95.887172,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tul-airport-economy",
@@ -256,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flytulsa.com"
+      "source": "flytulsa.com",
+      "entrance_lat": 36.1995681,
+      "entrance_lng": -95.8917765,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tul-river-spirit-casino",
@@ -282,7 +288,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Standard interstate bridge.",
-      "source": "ODOT"
+      "source": "ODOT",
+      "entrance_lat": 36.1409094,
+      "entrance_lng": -95.9977792,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tul-11th-st-bridge",

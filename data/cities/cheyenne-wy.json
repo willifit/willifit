@@ -152,7 +152,10 @@
       "oversized": true,
       "notes": "Working bison ranch + RV park + restaurant.",
       "source": "terrybisonranch.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.0598724,
+      "entrance_lng": -104.8222812,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "chy-little-america",
@@ -165,7 +168,10 @@
       "oversized": true,
       "notes": "Historic plains resort on I-25/I-80.",
       "source": "cheyenne.littleamerica.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.1315422,
+      "entrance_lng": -104.8579896,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "chy-veterans-cemetery",
@@ -203,7 +209,10 @@
       "oversized": true,
       "notes": "Welcome center at I-25/I-80.",
       "source": "wyomingtourism.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 41.1223906,
+      "entrance_lng": -104.7823136,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "chy-terry-parkway",

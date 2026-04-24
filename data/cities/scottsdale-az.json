@@ -256,7 +256,10 @@
       "oversized": true,
       "notes": "Popular trail. Surface lot.",
       "source": "scottsdaleaz.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.7284666,
+      "entrance_lng": -111.8587091,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "sco-mcdowell-sonoran",
@@ -357,7 +360,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "General aviation airport. Limited visitor parking.",
-      "source": "scottsdaleaz.gov/airport"
+      "source": "scottsdaleaz.gov/airport",
+      "entrance_lat": 33.6218139,
+      "entrance_lng": -111.9078011,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],

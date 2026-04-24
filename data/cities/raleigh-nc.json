@@ -364,7 +364,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "wakemed.org"
+      "source": "wakemed.org",
+      "entrance_lat": 35.7730304,
+      "entrance_lng": -78.6004134,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "rdu-duke-energy-progress",
@@ -393,7 +396,10 @@
       "oversized": true,
       "notes": "Annual state fair. Massive surface lots + RV camping.",
       "source": "ncstatefair.org",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.8036894,
+      "entrance_lng": -78.7002871,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "rdu-walnut-creek-amphitheater",

@@ -286,7 +286,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal 2 (B/C).",
-      "source": "flyreagan.com"
+      "source": "flyreagan.com",
+      "entrance_lat": 38.8515098,
+      "entrance_lng": -77.0427023,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "iad-daily-garage",
@@ -313,7 +316,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flydulles.com"
+      "source": "flydulles.com",
+      "entrance_lat": 38.9531246,
+      "entrance_lng": -77.4466729,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "bwi-hourly",
@@ -588,7 +594,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Connects Georgetown to Rosslyn VA.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 38.9027905,
+      "entrance_lng": -77.0695447,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "dc-rock-creek-pkwy-low",

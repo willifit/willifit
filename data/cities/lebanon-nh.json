@@ -22,7 +22,10 @@
       "height_in": 84,
       "height_label": "7'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1877",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 43.5160151,
+      "entrance_lng": -72.3720363,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-33-005500810009500",

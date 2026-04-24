@@ -118,7 +118,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "oaklandairport.com"
+      "source": "oaklandairport.com",
+      "entrance_lat": 37.7204533,
+      "entrance_lng": -122.2200225,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "oak-airport-econ",
@@ -131,7 +134,10 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "oaklandairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 37.7189936,
+      "entrance_lng": -122.2215656,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "oak-chinatown",
@@ -334,7 +340,10 @@
       "oversized": false,
       "notes": "Hills neighborhood parking.",
       "source": "Needs verification",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 37.8046388,
+      "entrance_lng": -122.162802,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "oak-bay-wildlife",

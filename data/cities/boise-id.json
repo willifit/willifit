@@ -223,7 +223,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "iflyboise.com"
+      "source": "iflyboise.com",
+      "entrance_lat": 43.5692638,
+      "entrance_lng": -116.2216228,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "boi-airport-economy",

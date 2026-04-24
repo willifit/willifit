@@ -191,7 +191,10 @@
       "oversized": true,
       "notes": "Parkway overlook + trailhead.",
       "source": "nps.gov/blri",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.699634,
+      "entrance_lng": -82.3797965,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "ash-mt-pisgah",
@@ -228,7 +231,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 35.5759922,
+      "entrance_lng": -82.5090447,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "ash-tanger-outlets",
@@ -240,7 +246,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall.",
-      "source": "tangeroutlet.com"
+      "source": "tangeroutlet.com",
+      "entrance_lat": 35.5203228,
+      "entrance_lng": -82.6112208,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "ash-mcCormick-field",

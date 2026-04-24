@@ -34,7 +34,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + reservoir. Camping.",
-      "source": "cpw.state.co.us"
+      "source": "cpw.state.co.us",
+      "entrance_lat": 39.6413097,
+      "entrance_lng": -104.8498724,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "aur-stanley-marketplace",
@@ -427,7 +430,10 @@
       "height_in": 96,
       "height_label": "8'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1993",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 39.8484717,
+      "entrance_lng": -104.6684627,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-08-D-31-PB-850",

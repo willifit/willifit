@@ -97,7 +97,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "One of largest urban parks. Free surface lots.",
-      "source": "shelbyfarmspark.org"
+      "source": "shelbyfarmspark.org",
+      "entrance_lat": 35.1496369,
+      "entrance_lng": -89.8586455,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mem-graceland",
@@ -258,7 +261,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Iconic 'M' bridge to West Memphis AR.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 35.1531599,
+      "entrance_lng": -90.0771467,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mem-harahan",

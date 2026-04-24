@@ -58,7 +58,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air shopping/dining adjacent to GVR.",
-      "source": "shopthedistrict.com"
+      "source": "shopthedistrict.com",
+      "entrance_lat": 36.0382546,
+      "entrance_lng": -115.0688329,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hen-water-street-district",
@@ -202,7 +205,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Free surface lot.",
-      "source": "clarkcountynv.gov"
+      "source": "clarkcountynv.gov",
+      "entrance_lat": 36.0007196,
+      "entrance_lng": -114.9646417,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hen-sloan-canyon",
@@ -228,7 +234,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Iconic arch bridge bypassing Hoover Dam. 900 ft above Colorado River.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 36.0145542,
+      "entrance_lng": -114.7366497,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hen-i-215-beltway",

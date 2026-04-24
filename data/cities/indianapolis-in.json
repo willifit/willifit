@@ -301,7 +301,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy. Oversized OK.",
-      "source": "ind.com"
+      "source": "ind.com",
+      "entrance_lat": 39.7122956,
+      "entrance_lng": -86.2964537,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w223209957",
@@ -314,7 +317,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (155 spaces). 155 spaces. Free parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 39.8664844,
+      "entrance_lng": -86.2387093,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w234148076",

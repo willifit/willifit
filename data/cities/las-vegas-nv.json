@@ -382,7 +382,10 @@
       "height_label": "7'0\"",
       "oversized": false,
       "notes": "First-hand data. Off-Strip.",
-      "source": "First-hand"
+      "source": "First-hand",
+      "entrance_lat": 36.1008742,
+      "entrance_lng": -115.152662,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "garagemahal",
@@ -1251,7 +1254,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 36.1171995,
+      "entrance_lng": -115.0647433,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1212143075",
@@ -1264,7 +1270,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 36.1216241,
+      "entrance_lng": -115.0626593,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1215628399",

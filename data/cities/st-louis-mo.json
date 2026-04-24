@@ -259,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Largely vacated. Surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 38.759107,
+      "entrance_lng": -90.4474012,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "stl-city-park",
@@ -286,7 +289,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main terminal garage.",
-      "source": "flystl.com"
+      "source": "flystl.com",
+      "entrance_lat": 38.7411371,
+      "entrance_lng": -90.3648895,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "stl-airport-economy",

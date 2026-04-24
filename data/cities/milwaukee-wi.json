@@ -285,7 +285,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Tied-arch bridge. Iconic yellow span.",
-      "source": "WisDOT"
+      "source": "WisDOT",
+      "entrance_lat": 43.024856,
+      "entrance_lng": -87.898717,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mke-kk-kilbourn",

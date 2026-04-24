@@ -22,7 +22,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "AA Arkansas Travelers.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "entrance_lat": 34.7556654,
+      "entrance_lng": -92.2803134,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lit-statehouse-conv-ctr",
@@ -196,7 +199,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 34.8045272,
+      "entrance_lng": -92.4165351,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lit-hillcrest",
@@ -256,7 +262,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "clintonairport.com"
+      "source": "clintonairport.com",
+      "entrance_lat": 34.7278079,
+      "entrance_lng": -92.2239278,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],
@@ -281,7 +290,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Downtown connector to N Little Rock.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "entrance_lat": 34.7493757,
+      "entrance_lng": -92.2720136,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lit-broadway-bridge",

@@ -166,7 +166,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale enclosed mall.",
-      "source": "shopwestfarms.com"
+      "source": "shopwestfarms.com",
+      "entrance_lat": 41.7270725,
+      "entrance_lng": -72.7621824,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hrt-evergreen-walk",
@@ -178,7 +181,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 41.8356857,
+      "entrance_lng": -72.5780731,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hrt-ct-science-ctr",
@@ -274,7 +280,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "BDL terminal garage.",
-      "source": "bradleyairport.com"
+      "source": "bradleyairport.com",
+      "entrance_lat": 41.9306988,
+      "entrance_lng": -72.6867569,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hrt-bradley-economy",
@@ -286,7 +295,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "bradleyairport.com"
+      "source": "bradleyairport.com",
+      "entrance_lat": 41.9306988,
+      "entrance_lng": -72.6867569,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "hrt-bushnell-carillon",

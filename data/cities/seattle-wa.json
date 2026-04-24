@@ -364,7 +364,10 @@
       "oversized": true,
       "notes": "West Seattle waterfront. Surface parking.",
       "source": "Needs verification",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 47.5810568,
+      "entrance_lng": -122.4086235,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "sea-tac-terminal",
@@ -389,7 +392,10 @@
       "oversized": true,
       "notes": "Offsite uncovered lot. Oversized OK.",
       "source": "dougfoxparking.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 47.4551199,
+      "entrance_lng": -122.3026527,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [

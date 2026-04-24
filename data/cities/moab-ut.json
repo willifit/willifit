@@ -115,7 +115,10 @@
       "oversized": true,
       "notes": "Main Canyonlands entrance. RV-friendly.",
       "source": "nps.gov/cany",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 38.4556607,
+      "entrance_lng": -109.8214345,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mab-canyonlands-needles",
@@ -128,7 +131,10 @@
       "oversized": true,
       "notes": "South Canyonlands district. Remote.",
       "source": "nps.gov/cany",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 38.1599983,
+      "entrance_lng": -109.7794814,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mab-dead-horse-point",
@@ -180,7 +186,10 @@
       "oversized": true,
       "notes": "BLM rec area + camping. Hells Revenge trail.",
       "source": "blm.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 38.5825194,
+      "entrance_lng": -109.5050925,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mab-colorado-riverway",
@@ -322,7 +331,10 @@
       "oversized": true,
       "notes": "Closest major airport (~110mi NE).",
       "source": "gjairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 39.121466,
+      "entrance_lng": -108.5283707,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mab-canyonlands-field",

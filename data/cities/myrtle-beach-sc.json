@@ -82,7 +82,10 @@
       "oversized": true,
       "notes": "State park + campground + beach + fishing pier.",
       "source": "southcarolinaparks.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.6517724,
+      "entrance_lng": -78.9335589,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mbs-huntington-beach-state",
@@ -95,7 +98,10 @@
       "oversized": true,
       "notes": "State park + wildlife viewing.",
       "source": "southcarolinaparks.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.5094773,
+      "entrance_lng": -79.0631312,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mbs-pirates-voyage",
@@ -121,7 +127,10 @@
       "oversized": true,
       "notes": "Country music venue.",
       "source": "alabama-theatre.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.8156013,
+      "entrance_lng": -78.6797379,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mbs-barefoot-landing",
@@ -134,7 +143,10 @@
       "oversized": true,
       "notes": "Shopping + dining + House of Blues.",
       "source": "bflanding.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.8156013,
+      "entrance_lng": -78.6797379,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mbs-tanger-501",
@@ -321,7 +333,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flymyrtlebeach.com"
+      "source": "flymyrtlebeach.com",
+      "entrance_lat": 33.6815996,
+      "entrance_lng": -78.9225793,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mbs-airport-economy",

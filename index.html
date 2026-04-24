@@ -3213,8 +3213,13 @@ async function loadDetailHero(hero, g) {
     if (typeof g.pano_heading === 'number') {
       initialHeading = g.pano_heading;
     } else if (typeof panoLoc.lat === 'number' && typeof panoLoc.lng === 'number') {
-      // Aim at the entrance (if known) or the garage center.
-      initialHeading = _bearingToGarage(panoLoc.lat, panoLoc.lng, targetLat, targetLng);
+      // Aim from the pano camera toward the GARAGE (g.lat/g.lng), not
+      // toward the entrance coords.  Using targetLat/targetLng as the
+      // bearing target degenerates to heading=0 when entrance_lat
+      // happens to equal the pano location -- which is exactly what
+      // happens when we auto-set entrance coords to the nearest SV
+      // pano's position.
+      initialHeading = _bearingToGarage(panoLoc.lat, panoLoc.lng, g.lat, g.lng);
     } else {
       initialHeading = 0;
     }

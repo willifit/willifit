@@ -222,7 +222,10 @@
       "oversized": true,
       "notes": "See 7 states. GA side of mountain. Surface lot.",
       "source": "seerockcity.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 34.9714494,
+      "entrance_lng": -85.3488354,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "cha-ruby-falls",
@@ -273,7 +276,10 @@
       "oversized": true,
       "notes": "Multiple TVA lake lots.",
       "source": "tva.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.064732,
+      "entrance_lng": -85.4104236,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "cha-hamilton-place",
@@ -300,7 +306,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "chattairport.com"
+      "source": "chattairport.com",
+      "entrance_lat": 35.0379866,
+      "entrance_lng": -85.206503,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "cha-airport-economy",
@@ -313,7 +322,10 @@
       "oversized": true,
       "notes": "Uncovered.",
       "source": "chattairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 35.0368032,
+      "entrance_lng": -85.2065072,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [

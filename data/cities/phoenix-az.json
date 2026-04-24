@@ -333,7 +333,10 @@
       "oversized": true,
       "notes": "Uncovered economy lot \u2014 accommodates over-height.",
       "source": "Sky Harbor",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.4342874,
+      "entrance_lng": -112.0303627,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "phx-24thst",
@@ -457,7 +460,10 @@
       "oversized": true,
       "notes": "Free. Near Phoenix Zoo, Desert Botanical Garden. Surface lots.",
       "source": "phoenix.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 33.4561202,
+      "entrance_lng": -111.9476196,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "phx-zoo",
@@ -1337,7 +1343,10 @@
       "height_in": 194,
       "height_label": "16'2\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.4388807,
+      "entrance_lng": -111.9796837,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w325755182",

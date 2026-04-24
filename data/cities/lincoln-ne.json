@@ -324,7 +324,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Public municipal golf.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 40.8562006,
+      "entrance_lng": -96.7313023,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lin-lancaster-event-ctr",
@@ -337,7 +340,10 @@
       "oversized": true,
       "notes": "County fairgrounds.",
       "source": "lancastereventcenter.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 40.8570458,
+      "entrance_lng": -96.6129277,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lin-airport-main",
@@ -350,7 +356,10 @@
       "oversized": true,
       "notes": "Small regional airport. Surface lots.",
       "source": "flyLNK.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 40.8486082,
+      "entrance_lng": -96.7577064,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "lin-st-elizabeth-hosp",

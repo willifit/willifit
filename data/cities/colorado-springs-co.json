@@ -127,7 +127,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Shuttle to Manitou Avenue and Incline trailhead.",
-      "source": "manitousprings.org"
+      "source": "manitousprings.org",
+      "entrance_lat": 38.8640933,
+      "entrance_lng": -104.9167956,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "cos-incline-trail",
@@ -178,7 +181,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Mountain-side zoo. Surface lots.",
-      "source": "cmzoo.org"
+      "source": "cmzoo.org",
+      "entrance_lat": 38.7700154,
+      "entrance_lng": -104.854692,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "cos-broadmoor",
@@ -381,7 +387,10 @@
       "height_in": 196,
       "height_label": "16'4\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 38.7800827,
+      "entrance_lng": -104.7859723,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w39076483",

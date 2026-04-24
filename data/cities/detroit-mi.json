@@ -40,7 +40,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots. Oversized OK game days.",
-      "source": "mlb.com/tigers"
+      "source": "mlb.com/tigers",
+      "entrance_lat": 42.3382415,
+      "entrance_lng": -83.0479516,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "det-little-caesars",
@@ -163,7 +166,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park surface lots. Handles RVs.",
-      "source": "belleisleconservancy.org"
+      "source": "belleisleconservancy.org",
+      "entrance_lat": 42.3417697,
+      "entrance_lng": -82.9979177,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "det-hart-plaza",
@@ -226,7 +232,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Major suburban mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 42.3223324,
+      "entrance_lng": -83.2273195,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "dtw-big-blue",
@@ -730,7 +739,10 @@
       "height_in": 156,
       "height_label": "13'0\"",
       "notes": "International crossing to Windsor, ON. Toll. Passenger vehicles only \u2014 NO trucks/commercial/hazmat.",
-      "source": "dwtunnel.com"
+      "source": "dwtunnel.com",
+      "entrance_lat": 42.3267927,
+      "entrance_lng": -83.0425609,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "det-truck-ferry",
@@ -741,7 +753,10 @@
       "height_in": null,
       "height_label": "Ferry (no limit)",
       "notes": "Commercial truck ferry alternative to tunnel/Ambassador Bridge.",
-      "source": "dwtf.com"
+      "source": "dwtf.com",
+      "entrance_lat": 42.3281621,
+      "entrance_lng": -83.0379101,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w8728058",
@@ -853,7 +868,10 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "New cable-stayed bridge. Commercial truck focus.",
-      "source": "gordiehoweinternationalbridge.com"
+      "source": "gordiehoweinternationalbridge.com",
+      "entrance_lat": 42.2998118,
+      "entrance_lng": -83.1031748,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "det-mackinac",

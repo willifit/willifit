@@ -175,7 +175,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Major mall, open-air. Free surface lots.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "entrance_lat": 30.258827,
+      "entrance_lng": -81.5396791,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "jax-avenues-mall",
@@ -295,7 +298,10 @@
       "height_in": 168,
       "height_label": "14'0\"",
       "notes": "Standard rail/approach clearance. Box trucks ok.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "entrance_lat": 30.327281,
+      "entrance_lng": -81.6188807,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-12-720459",

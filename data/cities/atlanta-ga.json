@@ -229,7 +229,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "atl.com"
+      "source": "atl.com",
+      "entrance_lat": 33.6324958,
+      "entrance_lng": -84.4590713,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "atl-airport-park-ride",

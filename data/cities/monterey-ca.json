@@ -148,7 +148,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Army base \u2014 Defense Language Institute.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 36.6043071,
+      "entrance_lng": -121.9176279,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mry-maritime-museum",
@@ -186,7 +189,10 @@
       "oversized": false,
       "notes": "Kayak rental + Del Monte Beach.",
       "source": "montereybaykayaks.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.6003418,
+      "entrance_lng": -121.8872402,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mry-pacific-grove-lighthouse",
@@ -250,7 +256,10 @@
       "oversized": true,
       "notes": "Big Sur state park. ~30mi south.",
       "source": "parks.ca.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.2797018,
+      "entrance_lng": -121.8469412,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mry-bixby-bridge-vista",
@@ -276,7 +285,10 @@
       "oversized": true,
       "notes": "Big Sur state park + campground.",
       "source": "parks.ca.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 36.2526566,
+      "entrance_lng": -121.7833332,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mry-salinas-steinbeck",

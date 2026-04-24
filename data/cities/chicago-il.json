@@ -373,7 +373,10 @@
       "height_label": "8'5\"",
       "oversized": true,
       "notes": "Mid-clearance option.",
-      "source": "flychicago.com"
+      "source": "flychicago.com",
+      "entrance_lat": 41.9775939,
+      "entrance_lng": -87.9061336,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "ord-t5",
@@ -421,7 +424,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "MDW terminal-adjacent. Clearance needs verification.",
-      "source": "flychicago.com"
+      "source": "flychicago.com",
+      "entrance_lat": 41.7929577,
+      "entrance_lng": -87.7482364,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "chi-adler-lot",
@@ -4430,7 +4436,10 @@
       "height_in": 162,
       "height_label": "13'6\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 41.7917972,
+      "entrance_lng": -87.8215602,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w31297350",
@@ -4584,7 +4593,10 @@
       "height_in": 171,
       "height_label": "14'3\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 42.1177103,
+      "entrance_lng": -87.7783358,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w32828226",

@@ -124,7 +124,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Suburban mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 47.6684307,
+      "entrance_lng": -117.2253328,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "spk-gonzaga-mccarthey-center",
@@ -223,7 +226,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "spokaneairports.net"
+      "source": "spokaneairports.net",
+      "entrance_lat": 47.62458,
+      "entrance_lng": -117.5385592,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "spk-airport-economy",

@@ -23,7 +23,10 @@
       "oversized": true,
       "notes": "Gondola to mountain-top.",
       "source": "heavenly.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 38.9584296,
+      "entrance_lng": -119.9407807,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "slt-heavenly-california",
@@ -139,7 +142,10 @@
       "oversized": true,
       "notes": "Historic resort + campground + cabins.",
       "source": "camprichardson.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 38.9404238,
+      "entrance_lng": -120.0392789,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "slt-baldwin-beach",
@@ -245,7 +251,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Boat + shopping marina.",
-      "source": "tahoekeysmarina.com"
+      "source": "tahoekeysmarina.com",
+      "entrance_lat": 38.9369202,
+      "entrance_lng": -119.9894636,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "slt-ski-run-marina",
@@ -308,7 +317,10 @@
       "oversized": true,
       "notes": "Small airport. Private flights + limited charter.",
       "source": "cityofslt.us",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 38.8943464,
+      "entrance_lng": -119.9979194,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "slt-truckee-tahoe-airport",
@@ -349,7 +361,10 @@
       "height_in": null,
       "height_label": "7,382' summit",
       "notes": "Mountain pass. Chains likely in winter.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "entrance_lat": 38.8138187,
+      "entrance_lng": -120.0286081,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "bridges": [
@@ -373,7 +388,10 @@
       "height_in": null,
       "height_label": "7,056' summit",
       "notes": "Main Sierra crossing. Chains required in winter.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "entrance_lat": 39.3138442,
+      "entrance_lng": -120.3381752,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ]
 }

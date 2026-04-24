@@ -66,7 +66,10 @@
       "height_in": 173,
       "height_label": "14'5\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2020",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 41.258554,
+      "entrance_lng": -73.6028823,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-36-000000005500870",
@@ -110,7 +113,10 @@
       "height_in": 132,
       "height_label": "11'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2014",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 41.1491763,
+      "entrance_lng": -73.8674352,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ]
 }

@@ -258,7 +258,10 @@
       "height_in": null,
       "height_label": "Border crossing",
       "notes": "International bridge to Canada. Truck-friendly.",
-      "source": "peacebridge.com"
+      "source": "peacebridge.com",
+      "entrance_lat": 42.8952589,
+      "entrance_lng": -78.9008438,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "buf-rainbow-bridge",
@@ -269,7 +272,10 @@
       "height_in": null,
       "height_label": "Border crossing",
       "notes": "Passenger-only international bridge.",
-      "source": "niagarafallsbridges.com"
+      "source": "niagarafallsbridges.com",
+      "entrance_lat": 43.0909041,
+      "entrance_lng": -79.0703106,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "buf-190-harbor-bridge",
@@ -368,7 +374,10 @@
       "height_in": 168,
       "height_label": "14'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1897",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 43.1100998,
+      "entrance_lng": -79.0567219,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-36-000000005060589",

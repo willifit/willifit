@@ -175,7 +175,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Foothills upscale retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 32.3081697,
+      "entrance_lng": -110.9327895,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tus-desert-museum",
@@ -201,7 +204,10 @@
       "oversized": true,
       "notes": "National park lot. RV-capable.",
       "source": "nps.gov/sagu",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 32.2548826,
+      "entrance_lng": -111.1998352,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tus-airport-main",
@@ -226,7 +232,10 @@
       "oversized": true,
       "notes": "Uncovered.",
       "source": "flytucson.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 32.1094013,
+      "entrance_lng": -110.9441787,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tus-saguaro-east",
@@ -278,7 +287,10 @@
       "oversized": true,
       "notes": "Historic film studio / theme park.",
       "source": "oldtucson.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 32.2266895,
+      "entrance_lng": -111.1383335,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tus-tucson-mall",
@@ -340,7 +352,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "West unit scenic drive. Multiple small trailhead lots.",
-      "source": "nps.gov/sagu"
+      "source": "nps.gov/sagu",
+      "entrance_lat": 32.2472193,
+      "entrance_lng": -111.1826356,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "tus-reid-park",

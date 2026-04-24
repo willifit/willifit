@@ -687,7 +687,10 @@
       "height_in": 132,
       "height_label": "11'0\"",
       "notes": "Only underwater vehicle tunnel in TX. Free. Height strictly enforced \u2014 truck-height signs.",
-      "source": "Harris County"
+      "source": "Harris County",
+      "entrance_lat": 29.7324613,
+      "entrance_lng": -95.2289599,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "bridges": [

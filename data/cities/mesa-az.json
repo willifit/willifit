@@ -94,7 +94,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "East Mesa mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "entrance_lat": 33.3937839,
+      "entrance_lng": -111.7309331,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mes-sloan-park",
@@ -166,7 +169,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Defense/aerospace campus.",
-      "source": "boeing.com"
+      "source": "boeing.com",
+      "entrance_lat": 33.4642547,
+      "entrance_lng": -111.7400737,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mes-usery-mountain",
@@ -178,7 +184,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large Maricopa regional park. RV-friendly.",
-      "source": "maricopacountyparks.net"
+      "source": "maricopacountyparks.net",
+      "entrance_lat": 33.4697142,
+      "entrance_lng": -111.6381331,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "mes-lost-dutchman",
@@ -250,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "General aviation airport.",
-      "source": "falconfieldairport.com"
+      "source": "falconfieldairport.com",
+      "entrance_lat": 33.4574305,
+      "entrance_lng": -111.727417,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [
@@ -485,7 +497,10 @@
       "height_in": 194,
       "height_label": "16'2\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "entrance_lat": 33.4388807,
+      "entrance_lng": -111.9796837,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w391372634",

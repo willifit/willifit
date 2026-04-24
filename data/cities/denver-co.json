@@ -364,7 +364,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "DIA Terminal West garage.",
-      "source": "flydenver.com"
+      "source": "flydenver.com",
+      "entrance_lat": 39.8586887,
+      "entrance_lng": -104.6794296,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "dia-pikes-peak-econ",
@@ -377,7 +380,10 @@
       "oversized": true,
       "notes": "Cheapest lot. Uncovered. Oversized OK.",
       "source": "flydenver.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "entrance_lat": 39.8365021,
+      "entrance_lng": -104.6679685,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w37263005",

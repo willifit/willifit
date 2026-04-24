@@ -196,7 +196,10 @@
       "height_label": null,
       "oversized": false,
       "notes": "Small airport terminal lot.",
-      "source": "eyw.com"
+      "source": "eyw.com",
+      "entrance_lat": 24.5573565,
+      "entrance_lng": -81.762298,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "kw-bahama-village",
@@ -256,7 +259,10 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "First underwater park in US. ~100mi NE of Key West.",
-      "source": "floridastateparks.org"
+      "source": "floridastateparks.org",
+      "entrance_lat": 25.1240686,
+      "entrance_lng": -80.4026969,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "tunnels": [],

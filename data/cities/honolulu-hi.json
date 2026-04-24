@@ -367,7 +367,10 @@
       "height_in": 180,
       "height_label": "15'0\"",
       "notes": "Interstate H-3 twin tunnels. Most expensive US interstate ever built per mile.",
-      "source": "HDOT"
+      "source": "HDOT",
+      "entrance_lat": 21.400567,
+      "entrance_lng": -157.8140644,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
   "bridges": [
@@ -501,7 +504,10 @@
       "height_in": 156,
       "height_label": "13'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1978; bridge carries TERM 2-A  AIRPORT",
-      "source": "FHWA National Bridge Inventory"
+      "source": "FHWA National Bridge Inventory",
+      "entrance_lat": 21.3307652,
+      "entrance_lng": -157.9236875,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "nbi-15-0032110314I0043",
