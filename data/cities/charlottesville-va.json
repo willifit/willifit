@@ -1,5 +1,19 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1043866502",
+      "name": "Bus/RV parking lot",
+      "addr": "",
+      "lat": 38.00521,
+      "lng": -78.45291,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('rv'). Operator: Thomas Jefferson Foundation.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -1,1 +1,84 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-n7569244350",
+      "name": "Las Cruces KOA",
+      "addr": "814 Weinrich Road",
+      "lat": 32.29292,
+      "lng": -106.85921,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w171323987",
+      "name": "Sunny Acres RV Park",
+      "addr": "",
+      "lat": 32.31077,
+      "lng": -106.79847,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w172369586",
+      "name": "Dalmont's RV and Trailer Corral",
+      "addr": "2224 South Valley Drive",
+      "lat": 32.2831,
+      "lng": -106.77304,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w172369588",
+      "name": "Hacienda RV Resort",
+      "addr": "740 Stern Drive",
+      "lat": 32.28572,
+      "lng": -106.78772,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w176295234",
+      "name": "The Coachlight RV Park",
+      "addr": "301 South Motel Boulevard",
+      "lat": 32.2916,
+      "lng": -106.80634,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1321966031",
+      "name": "Siesta RV Park",
+      "addr": "",
+      "lat": 32.28332,
+      "lng": -106.79412,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

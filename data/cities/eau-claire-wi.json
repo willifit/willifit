@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w69538463",
+      "name": "State of Wisconsin",
+      "addr": "",
+      "lat": 44.79455,
+      "lng": -91.50737,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (280 spaces). 280 spaces. Operator: State of Wisconsin.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w173688439",
+      "name": "Chancellor's Hall Parking Lot",
+      "addr": "",
+      "lat": 44.79685,
+      "lng": -91.51189,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

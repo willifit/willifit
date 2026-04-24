@@ -536,6 +536,19 @@
       "entrance_lat": 38.9759914,
       "entrance_lng": -76.9285233,
       "entrance_source": "OSM parking_entrance node 2292011493"
+    },
+    {
+      "id": "osm-w38808216",
+      "name": "Forest Glen Metro Station Parking",
+      "addr": "",
+      "lat": 39.01617,
+      "lng": -77.04595,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (596 spaces). 596 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

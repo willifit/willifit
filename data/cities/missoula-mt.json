@@ -1,5 +1,84 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n7762654006",
+      "name": "Missoula KOA Holiday",
+      "addr": "3450 Tina Avenue",
+      "lat": 46.89663,
+      "lng": -114.04232,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking. Operator: Kampgrounds of America.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w839141112",
+      "name": "36th Avenue Parking",
+      "addr": "",
+      "lat": 46.84682,
+      "lng": -114.06754,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (244 spaces). 244 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w897808778",
+      "name": "Missoula KOA Holiday",
+      "addr": "",
+      "lat": 46.89593,
+      "lng": -114.04343,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1203826812",
+      "name": "Jim & Mary's RV Park",
+      "addr": "9800 US 93",
+      "lat": 46.96392,
+      "lng": -114.12972,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 74 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1203828017",
+      "name": "Granite Peak RV Resort",
+      "addr": "9900 Thoroughbred Lane",
+      "lat": 46.96064,
+      "lng": -114.13652,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1215221503",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 46.98325,
+      "lng": -114.12326,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

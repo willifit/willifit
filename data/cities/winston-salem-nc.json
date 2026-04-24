@@ -1,1 +1,45 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w413716986",
+      "name": "Mount Tabor Bus Parking",
+      "addr": "",
+      "lat": 36.12607,
+      "lng": -80.31297,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w414255146",
+      "name": "Bus Parking",
+      "addr": "",
+      "lat": 36.10657,
+      "lng": -80.30962,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1499332195",
+      "name": "Winston-Salem Fairgrounds RV Campground",
+      "addr": "",
+      "lat": 36.12759,
+      "lng": -80.25147,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

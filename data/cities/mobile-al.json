@@ -1,1 +1,84 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w1290053285",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.7109,
+      "lng": -88.13073,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1291163963",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.65299,
+      "lng": -88.10658,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1291892859",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.60817,
+      "lng": -88.15832,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1292153987",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.57855,
+      "lng": -88.18059,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1292846521",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.56081,
+      "lng": -88.17985,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1363866556",
+      "name": "RV Camping",
+      "addr": "",
+      "lat": 30.77743,
+      "lng": -88.09937,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

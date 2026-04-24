@@ -329,6 +329,45 @@
       "entrance_lat": 41.5094594,
       "entrance_lng": -81.6132922,
       "entrance_source": "OSM parking_entrance node 4110034692"
+    },
+    {
+      "id": "osm-w341040982",
+      "name": "City of Cleveland Heights",
+      "addr": "",
+      "lat": 41.51105,
+      "lng": -81.56881,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Free parking. Operator: City of Cleveland Heights.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w449999961",
+      "name": "CWRU Lot 47 Permit Marking Only",
+      "addr": "",
+      "lat": 41.50248,
+      "lng": -81.60287,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Paid parking. Operator: CWRU Lot 47 Permit Marking Only.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w453550616",
+      "name": "GCRTA",
+      "addr": "",
+      "lat": 41.52422,
+      "lng": -81.59069,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (90 spaces). 90 spaces. Free parking. Operator: GCRTA.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

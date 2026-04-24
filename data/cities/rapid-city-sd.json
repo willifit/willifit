@@ -1,1 +1,110 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-n1257001182",
+      "name": "Mystery Mountain Resort",
+      "addr": "",
+      "lat": 43.97392,
+      "lng": -103.30775,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n2619319300",
+      "name": "Lake Park Campground",
+      "addr": "",
+      "lat": 44.05762,
+      "lng": -103.29467,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n4137772713",
+      "name": "Shadows of Rushmore",
+      "addr": "",
+      "lat": 43.9749,
+      "lng": -103.32691,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n12450670291",
+      "name": "Three Flags RV Park",
+      "addr": "",
+      "lat": 44.17394,
+      "lng": -103.31872,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w713455168",
+      "name": "Happy Holidays RV Resort",
+      "addr": "8990 South Highway 16",
+      "lat": 43.98998,
+      "lng": -103.26801,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 100 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1082217852",
+      "name": "Rapid City South RV Park",
+      "addr": "2200 Fort Hayes Drive",
+      "lat": 44.0026,
+      "lng": -103.25534,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1082601699",
+      "name": "Rapid City RV Park & Campground",
+      "addr": "4110 Mount Rushmore Road",
+      "lat": 44.0436,
+      "lng": -103.24327,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1290318697",
+      "name": "Rapid City - Black Hills KOA Holiday",
+      "addr": "",
+      "lat": 44.06936,
+      "lng": -103.16609,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

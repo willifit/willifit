@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w501470263",
+      "name": "Sunrise Campground",
+      "addr": "",
+      "lat": 45.67313,
+      "lng": -111.00393,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1007850364",
+      "name": "Bear Canyon Campground",
+      "addr": "",
+      "lat": 45.6508,
+      "lng": -110.94499,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

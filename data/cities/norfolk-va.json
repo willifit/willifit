@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1369671716",
+      "name": "Cell Phone Lot",
+      "addr": "",
+      "lat": 36.90104,
+      "lng": -76.20762,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (84 spaces). 84 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1412558301",
+      "name": "Garage D",
+      "addr": "",
+      "lat": 36.89851,
+      "lng": -76.20806,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (3200 spaces). 3200 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

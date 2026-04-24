@@ -269,6 +269,58 @@
       "entrance_lat": 35.1908954,
       "entrance_lng": -111.6390925,
       "entrance_source": "OSM parking_entrance node 10862636329"
+    },
+    {
+      "id": "osm-w111887828",
+      "name": "KOA Holiday - Flagstaff",
+      "addr": "5803 North Highway 89",
+      "lat": 35.23397,
+      "lng": -111.57743,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w361989924",
+      "name": "Woody Mountain Campground",
+      "addr": "2727 West Historic Route 66",
+      "lat": 35.1876,
+      "lng": -111.68899,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w579996619",
+      "name": "Kit Carson RV Park",
+      "addr": "2101 West Historic Route 66",
+      "lat": 35.18615,
+      "lng": -111.68124,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1152823722",
+      "name": "Greer's Pine Shadows RV Park",
+      "addr": "",
+      "lat": 35.24211,
+      "lng": -111.57038,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

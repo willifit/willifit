@@ -1,5 +1,97 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w109162462",
+      "name": "Old 63 Parking Lot",
+      "addr": "",
+      "lat": 38.95148,
+      "lng": -92.31144,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (110 spaces). 110 spaces. Operator: City of Columbia.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w109175797",
+      "name": "Upper Parking Lot",
+      "addr": "",
+      "lat": 38.94955,
+      "lng": -92.30745,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (104 spaces). 104 spaces. Operator: City of Columbia.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w109181450",
+      "name": "Riechmann Parking Lot",
+      "addr": "",
+      "lat": 38.95271,
+      "lng": -92.30414,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (86 spaces). 86 spaces. Operator: City of Columbia.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w133524305",
+      "name": "walmart",
+      "addr": "",
+      "lat": 38.91235,
+      "lng": -92.323,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (300 spaces). 300 spaces. Operator: walmart.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w135290608",
+      "name": "Joe Machens Toyota",
+      "addr": "",
+      "lat": 38.96461,
+      "lng": -92.36611,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (150 spaces). 150 spaces. Operator: Joe Machens Toyota.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w905222394",
+      "name": "Cottonwoods RV Park",
+      "addr": "5170 N. Oakland Gravel Rd",
+      "lat": 39.00664,
+      "lng": -92.30049,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1007067613",
+      "name": "Columbia Parks and Recreation",
+      "addr": "",
+      "lat": 39.00849,
+      "lng": -92.2944,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (274 spaces). 274 spaces. Free parking. Operator: Columbia Parks and Recreation.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -1,1 +1,19 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-n2628670894",
+      "name": "Happy Traveller RV Park",
+      "addr": "",
+      "lat": 33.80805,
+      "lng": -116.54709,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

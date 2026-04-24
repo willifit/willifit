@@ -1,5 +1,97 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w52429246",
+      "name": "Foothills Community Park",
+      "addr": "800 Cherry Avenue",
+      "lat": 40.05728,
+      "lng": -105.28825,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (111 spaces). 111 spaces. Free parking. Operator: City of Boulder, Parks and Recreation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w88716077",
+      "name": "27th Way & Broadway Park-n-Ride",
+      "addr": "500 Broadway",
+      "lat": 39.99724,
+      "lng": -105.26093,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (59 spaces). 59 spaces. Free parking. Operator: RTD.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w121868967",
+      "name": "Smiley Court",
+      "addr": "",
+      "lat": 40.0095,
+      "lng": -105.25307,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (58 spaces). 58 spaces. Operator: Smiley Court.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w152149315",
+      "name": "US 36 / McCaslin Park-n-Ride",
+      "addr": "7931 Marshall Drive",
+      "lat": 39.95789,
+      "lng": -105.1687,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (466 spaces). 466 spaces. Operator: RTD Denver.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w204426312",
+      "name": "US 36 & Flatiron Station Park and Ride",
+      "addr": "398 East Flatiron Crossing Drive",
+      "lat": 39.93382,
+      "lng": -105.12253,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (264 spaces). 264 spaces. Operator: RTD Denver.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w620946173",
+      "name": "City of Louisville",
+      "addr": "",
+      "lat": 39.9802,
+      "lng": -105.12948,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (68 spaces). 68 spaces. Free parking. Operator: City of Louisville.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1364138132",
+      "name": "US 36 & Flatiron Station Park-n-Ride",
+      "addr": "398 East Flatiron Crossing Drive",
+      "lat": 39.93214,
+      "lng": -105.12388,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (264 spaces). 264 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

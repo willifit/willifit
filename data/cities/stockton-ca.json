@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w181211590",
+      "name": "French Camp RV Park & Golf Course",
+      "addr": "",
+      "lat": 37.86797,
+      "lng": -121.22377,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w831191248",
+      "name": "Mariposa Road",
+      "addr": "SE QUAD SR 99 / Mariposa Road",
+      "lat": 37.93238,
+      "lng": -121.23148,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (98 spaces). 98 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -1,1 +1,97 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w52473730",
+      "name": "Victoria Street Park And Ride",
+      "addr": "13850 13850 Victoria Street",
+      "lat": 34.12897,
+      "lng": -117.50322,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (116 spaces). 116 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w104224023",
+      "name": "Orange Street Park And Ride",
+      "addr": "2212 Orange St",
+      "lat": 33.99486,
+      "lng": -117.36314,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (83 spaces). 83 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w104907480",
+      "name": "Pigeon Pass Park And Ride",
+      "addr": "Sr 60 @ Pigeon Pass Road",
+      "lat": 33.94163,
+      "lng": -117.2627,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w104907494",
+      "name": "Country Village Park And Ride",
+      "addr": "10180 Granite Hill Dr",
+      "lat": 34.01996,
+      "lng": -117.50663,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (75 spaces). 75 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w104907577",
+      "name": "Towngate / Moreno Valley Mall Park And Ride",
+      "addr": "22500 Towngate Circle",
+      "lat": 33.93897,
+      "lng": -117.26728,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (74 spaces). 74 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w832144231",
+      "name": "GALERIA",
+      "addr": "1299 GALERIA @ TYLER",
+      "lat": 33.90948,
+      "lng": -117.45526,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (400 spaces). 400 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1306967104",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 34.03986,
+      "lng": -117.32426,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

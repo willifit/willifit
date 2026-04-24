@@ -1,5 +1,71 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w438355153",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 44.06904,
+      "lng": -121.27301,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w505426364",
+      "name": "The Camp",
+      "addr": "305 Northeast Burnside Avenue",
+      "lat": 44.05202,
+      "lng": -121.30168,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w506617749",
+      "name": "Scandia RV Park",
+      "addr": "61415 South Highway 97",
+      "lat": 44.03083,
+      "lng": -121.31226,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1056679160",
+      "name": "Sun Outdoors Bend",
+      "addr": "60801 Southeast Brosterhous Road",
+      "lat": 44.01702,
+      "lng": -121.29606,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1219319679",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 44.07816,
+      "lng": -121.29355,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

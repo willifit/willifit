@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n12382369740",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 34.51396,
+      "lng": -93.01721,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w672975580",
+      "name": "Timbercrest RV & Mobile Home Park",
+      "addr": "3921 Central Avenue",
+      "lat": 34.45808,
+      "lng": -93.05809,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w998153506",
+      "name": "Catherine's Landing",
+      "addr": "",
+      "lat": 34.4423,
+      "lng": -93.0001,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

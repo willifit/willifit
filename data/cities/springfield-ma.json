@@ -1,5 +1,19 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1436598105",
+      "name": "Pride",
+      "addr": "",
+      "lat": 42.14298,
+      "lng": -72.72902,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: HGV-friendly (OSM hgv=yes). Free parking. Operator: Pride.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -313,6 +313,58 @@
       "oversized": false,
       "notes": "~55mi N. Primary air service for Toledo.",
       "source": "metroairport.com"
+    },
+    {
+      "id": "osm-n2942682600",
+      "name": "Covered Wagon Camp Resort",
+      "addr": "5639 Saint Anthony Road",
+      "lat": 41.79722,
+      "lng": -83.68222,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w203542867",
+      "name": "ORYC Parking Lot",
+      "addr": "",
+      "lat": 41.72524,
+      "lng": -83.46797,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w203542893",
+      "name": "RVYC Parking Lot C",
+      "addr": "",
+      "lat": 41.72811,
+      "lng": -83.46565,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w360166716",
+      "name": "KOA",
+      "addr": "",
+      "lat": 41.51149,
+      "lng": -83.49381,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

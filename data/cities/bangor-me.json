@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n3015645777",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 44.75541,
+      "lng": -68.65901,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n3015645886",
+      "name": "Pumpkin Patch RV Park",
+      "addr": "",
+      "lat": 44.81549,
+      "lng": -68.89969,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1095196646",
+      "name": "RSU 34",
+      "addr": "",
+      "lat": 44.93432,
+      "lng": -68.65636,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking. Operator: RSU 34.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1281348977",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 44.76434,
+      "lng": -68.70279,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

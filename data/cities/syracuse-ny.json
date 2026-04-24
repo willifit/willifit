@@ -1,5 +1,84 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w176370534",
+      "name": "National Grid Lot",
+      "addr": "",
+      "lat": 43.05289,
+      "lng": -76.15543,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Paid parking. Operator: Downtown Committee.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w184963703",
+      "name": "Murbro Lot #21",
+      "addr": "",
+      "lat": 43.05263,
+      "lng": -76.15175,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: Murbro.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w184963704",
+      "name": "Smith Lot",
+      "addr": "",
+      "lat": 43.05012,
+      "lng": -76.14438,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (75 spaces). 75 spaces. Operator: Smith Restaurant Supply.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w184963711",
+      "name": "100 Clinton Square",
+      "addr": "",
+      "lat": 43.05181,
+      "lng": -76.15144,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (220 spaces). 220 spaces. Paid parking. Operator: ParkMobile.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w184967332",
+      "name": "One Herald Place Lot",
+      "addr": "",
+      "lat": 43.05361,
+      "lng": -76.15283,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (98 spaces). 98 spaces. Operator: Downtown Committee.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1331738067",
+      "name": "Empire RV Park",
+      "addr": "",
+      "lat": 43.07148,
+      "lng": -76.22265,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w226303769",
+      "name": "Hardy Ford public boat ramp parking",
+      "addr": "",
+      "lat": 37.22026,
+      "lng": -79.80088,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (63 spaces). 63 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w469512026",
+      "name": "Parking Lot T",
+      "addr": "",
+      "lat": 37.27367,
+      "lng": -80.02262,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (229 spaces). 229 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w469515531",
+      "name": "Parking Lot L",
+      "addr": "",
+      "lat": 37.27326,
+      "lng": -80.01715,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (65 spaces). 65 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

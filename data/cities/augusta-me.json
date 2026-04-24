@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w851851126",
+      "name": "City Of Augusta",
+      "addr": "",
+      "lat": 44.32106,
+      "lng": -69.7727,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (82 spaces). 82 spaces. Free parking. Operator: City Of Augusta.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w979454949",
+      "name": "Shaw's",
+      "addr": "",
+      "lat": 44.31217,
+      "lng": -69.7945,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (209 spaces). 209 spaces. Operator: Shaw's.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -263,6 +263,45 @@
       "entrance_lat": 25.1240686,
       "entrance_lng": -80.4026969,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w548442541",
+      "name": "A&B Marina",
+      "addr": "",
+      "lat": 24.56118,
+      "lng": -81.80378,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Paid parking. Operator: A&B Marina.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w597912684",
+      "name": "Come & Go",
+      "addr": "",
+      "lat": 24.55938,
+      "lng": -81.80384,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (68 spaces). 68 spaces. Paid parking. Operator: Come & Go.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1163471175",
+      "name": "Oasis Marina",
+      "addr": "",
+      "lat": 24.56342,
+      "lng": -81.73954,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: Oasis Marina.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

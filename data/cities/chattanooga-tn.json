@@ -326,6 +326,19 @@
       "entrance_lat": 35.0368032,
       "entrance_lng": -85.2065072,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w1162673315",
+      "name": "Holiday Travel Park of Chattanooga",
+      "addr": "",
+      "lat": 34.97906,
+      "lng": -85.21365,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w653440327",
+      "name": "Blackwell Island RV Park",
+      "addr": "800 South Marina Drive",
+      "lat": 47.68217,
+      "lng": -116.80254,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 182 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1097521827",
+      "name": "Bambi RV Park",
+      "addr": "",
+      "lat": 47.70551,
+      "lng": -116.78717,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1098118231",
+      "name": "Tamarack RV Park",
+      "addr": "",
+      "lat": 47.7111,
+      "lng": -116.78513,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1211899027",
+      "name": "River Walk RV Park",
+      "addr": "1214 West Mill Avenue",
+      "lat": 47.69046,
+      "lng": -116.8018,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 55 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

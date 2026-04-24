@@ -458,6 +458,32 @@
       "entrance_lat": 35.8357686,
       "entrance_lng": -78.6392237,
       "entrance_source": "OSM parking_entrance node 13417323219"
+    },
+    {
+      "id": "osm-w732444325",
+      "name": "North Carolina State Fairgrounds Campground",
+      "addr": "",
+      "lat": 35.79264,
+      "lng": -78.71385,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking. Operator: North Carolina Department of Agriculture and Consumer Services.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1273810333",
+      "name": "Bedford Pool Parking",
+      "addr": "",
+      "lat": 35.92503,
+      "lng": -78.56521,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (95 spaces). 95 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

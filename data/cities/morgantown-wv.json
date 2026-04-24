@@ -1,5 +1,19 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1018918681",
+      "name": "ALDI",
+      "addr": "",
+      "lat": 39.62898,
+      "lng": -79.93239,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (71 spaces). 71 spaces. Free parking. Operator: ALDI.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

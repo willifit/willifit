@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n12945049661",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 34.59215,
+      "lng": -98.36004,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w264223957",
+      "name": "Cameron Stadium Parking",
+      "addr": "",
+      "lat": 34.608,
+      "lng": -98.43863,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('stadium').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1079580219",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 34.60291,
+      "lng": -98.42001,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1455231424",
+      "name": "City of Lawton",
+      "addr": "",
+      "lat": 34.61862,
+      "lng": -98.39595,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (56 spaces). 56 spaces. Free parking. Operator: City of Lawton.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -342,6 +342,58 @@
       "notes": "Uncovered.",
       "source": "tys.org",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-w802557779",
+      "name": "SP+",
+      "addr": "",
+      "lat": 35.96938,
+      "lng": -83.91758,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (75 spaces). 75 spaces. Paid parking. Operator: SP+.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w899979281",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 36.10344,
+      "lng": -84.02554,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1012227687",
+      "name": "Raccoon Valley RV Park",
+      "addr": "",
+      "lat": 36.09723,
+      "lng": -84.03309,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1076102935",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 35.87212,
+      "lng": -83.94166,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

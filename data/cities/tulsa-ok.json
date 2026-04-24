@@ -275,6 +275,58 @@
       "oversized": true,
       "notes": "Casino surface lots + RV area.",
       "source": "riverspirittulsa.com"
+    },
+    {
+      "id": "osm-w202210765",
+      "name": "Mingo RV Park",
+      "addr": "",
+      "lat": 36.16714,
+      "lng": -95.86664,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w306474545",
+      "name": "Route 66 RV Park",
+      "addr": "",
+      "lat": 36.02242,
+      "lng": -96.09286,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w335657563",
+      "name": "Cherry Hill Park",
+      "addr": "4808 South Elwood Avenue",
+      "lat": 36.09524,
+      "lng": -95.99715,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1013207173",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 36.13948,
+      "lng": -95.93456,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

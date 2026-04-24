@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w458256321",
+      "name": "Springville / Provo KOA",
+      "addr": "550 North 1750 West Street",
+      "lat": 40.18912,
+      "lng": -111.64045,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking. Operator: KOA.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w540257977",
+      "name": "Lakeside RV Campground",
+      "addr": "4000 West Center Street",
+      "lat": 40.23616,
+      "lng": -111.72796,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1212818178",
+      "name": "Flying J Truck Parking",
+      "addr": "1460 North 1750 West",
+      "lat": 40.18734,
+      "lng": -111.63993,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

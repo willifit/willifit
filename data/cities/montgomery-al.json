@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n12327001029",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 32.45085,
+      "lng": -86.2071,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w862792828",
+      "name": "Nettles Mobile Home Park",
+      "addr": "",
+      "lat": 32.49686,
+      "lng": -86.38408,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w862792829",
+      "name": "Oak Tree Mobile Home Park",
+      "addr": "",
+      "lat": 32.50165,
+      "lng": -86.38417,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w862792830",
+      "name": "Still Creek Mobile Home Park",
+      "addr": "",
+      "lat": 32.49929,
+      "lng": -86.38819,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

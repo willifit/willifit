@@ -1,5 +1,71 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w851620180",
+      "name": "St. George RV Park and Campground",
+      "addr": "2100 East Middleton Drive",
+      "lat": 37.1232,
+      "lng": -113.53767,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1038067177",
+      "name": "Southern Utah RV Resort",
+      "addr": "720 Merit Way",
+      "lat": 37.14219,
+      "lng": -113.4981,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 80 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1176652839",
+      "name": "Truck Parking",
+      "addr": "",
+      "lat": 37.08184,
+      "lng": -113.57623,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1211130618",
+      "name": "Settlers Point Luxury RV Resort",
+      "addr": "1355 East Bluff View Drive",
+      "lat": 37.14168,
+      "lng": -113.4884,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1458402243",
+      "name": "Hillside Palms RV Park",
+      "addr": "17 North 600 East",
+      "lat": 37.11127,
+      "lng": -113.57104,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

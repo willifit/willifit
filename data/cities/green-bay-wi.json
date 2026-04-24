@@ -1,1 +1,19 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w1125639286",
+      "name": "Twin Oaks Golf Course",
+      "addr": "",
+      "lat": 44.40724,
+      "lng": -87.87551,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (103 spaces). 103 spaces. Free parking. Operator: Twin Oaks Golf Course.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

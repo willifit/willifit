@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n12148499093",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.08723,
+      "lng": -92.00383,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w482118355",
+      "name": "Lafayette KOA",
+      "addr": "537 Apollo Road",
+      "lat": 30.24539,
+      "lng": -92.11033,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1344951646",
+      "name": "Parkside RV Park",
+      "addr": "651 St Nazaire Road",
+      "lat": 30.14086,
+      "lng": -91.93215,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1450069649",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.09588,
+      "lng": -91.94291,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

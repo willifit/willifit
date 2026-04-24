@@ -1,5 +1,97 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n3744950742",
+      "name": "Orange RV Parking",
+      "addr": "",
+      "lat": 47.18252,
+      "lng": -122.30163,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n3744970642",
+      "name": "RV Parking",
+      "addr": "",
+      "lat": 47.17852,
+      "lng": -122.30061,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w24657238",
+      "name": "Federal Way/S 320th St Park & Ride",
+      "addr": "",
+      "lat": 47.3123,
+      "lng": -122.30097,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (877 spaces). 877 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w587121640",
+      "name": "Center Street Park & Ride",
+      "addr": "",
+      "lat": 47.23416,
+      "lng": -122.49635,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w635895354",
+      "name": "Valley RV Park",
+      "addr": "",
+      "lat": 47.20651,
+      "lng": -122.32669,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w687687113",
+      "name": "I-5/SR-512 Park & Ride",
+      "addr": "",
+      "lat": 47.16215,
+      "lng": -122.48267,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (493 spaces). 493 spaces. Free parking. Operator: Sound Transit.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1482305342",
+      "name": "South Sound RV Park",
+      "addr": "",
+      "lat": 47.20653,
+      "lng": -122.32426,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

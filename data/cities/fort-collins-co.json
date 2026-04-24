@@ -1,1 +1,97 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w151319830",
+      "name": "South Transit Center Parking",
+      "addr": "",
+      "lat": 40.51897,
+      "lng": -105.07979,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (170 spaces). 170 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w176112029",
+      "name": "City of Fort Collins",
+      "addr": "",
+      "lat": 40.59059,
+      "lng": -105.07593,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking. Operator: City of Fort Collins.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w208456139",
+      "name": "RV Parking",
+      "addr": "",
+      "lat": 40.4465,
+      "lng": -104.98708,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('rv').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w229740285",
+      "name": "Moby Arena Parking",
+      "addr": "",
+      "lat": 40.57554,
+      "lng": -105.09492,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (788 spaces). 788 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w373357147",
+      "name": "Truck/Bus/Camper",
+      "addr": "",
+      "lat": 40.56338,
+      "lng": -105.0081,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). Free parking. Operator: CDOT.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w565964321",
+      "name": "Fort Collins / Lakeside KOA Holiday",
+      "addr": "",
+      "lat": 40.61525,
+      "lng": -105.10733,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Operator: KOA.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1445858948",
+      "name": "Horsetooth Inn & R.V. Park",
+      "addr": "",
+      "lat": 40.5207,
+      "lng": -105.16565,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
+  "tunnels": [],
+  "bridges": []
+}

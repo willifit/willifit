@@ -281,6 +281,32 @@
       "oversized": true,
       "notes": "500 spaces; free",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w174397917",
+      "name": "Kroger Parking Lot",
+      "addr": "2200 Brownsboro Road",
+      "lat": 38.2584,
+      "lng": -85.70419,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w311414567",
+      "name": "Lot F",
+      "addr": "",
+      "lat": 38.20508,
+      "lng": -85.74315,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (300 spaces). 300 spaces. Paid parking. Operator: Kentucky.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

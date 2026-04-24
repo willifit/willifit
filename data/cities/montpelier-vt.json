@@ -1,5 +1,19 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w962323008",
+      "name": "Montpelier Park and Ride",
+      "addr": "20 Dog River Road",
+      "lat": 44.25511,
+      "lng": -72.59487,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (55 spaces). 55 spaces. Free parking. Operator: VTRANS.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

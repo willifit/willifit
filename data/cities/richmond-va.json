@@ -320,6 +320,32 @@
       "notes": "Island concert venue on James.",
       "source": "venturerichmond.com",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-w218612556",
+      "name": "Pony Pasture",
+      "addr": "",
+      "lat": 37.55082,
+      "lng": -77.52045,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w561115748",
+      "name": "Libbie Mill Library",
+      "addr": "",
+      "lat": 37.58969,
+      "lng": -77.49665,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (227 spaces). 227 spaces. Free parking. Operator: Libbie Mill Library.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

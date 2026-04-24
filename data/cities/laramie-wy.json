@@ -1,5 +1,19 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n1436021790",
+      "name": "KOA Kampground",
+      "addr": "",
+      "lat": 41.32365,
+      "lng": -105.61281,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

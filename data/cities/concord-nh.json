@@ -1,5 +1,19 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w444868172",
+      "name": "NH Park and Ride",
+      "addr": "",
+      "lat": 43.17128,
+      "lng": -71.52707,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (62 spaces). 62 spaces. Free parking. Operator: New Hampshire Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

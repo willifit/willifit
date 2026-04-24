@@ -368,6 +368,58 @@
       "entrance_lat": 43.0768117,
       "entrance_lng": -89.4298396,
       "entrance_source": "OSM parking_entrance node 8109848415"
+    },
+    {
+      "id": "osm-w36927627",
+      "name": "Dutch Mill Park & Ride",
+      "addr": "",
+      "lat": 43.04738,
+      "lng": -89.30366,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (347 spaces). 347 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w227502418",
+      "name": "American Center Lot 13-04",
+      "addr": "",
+      "lat": 43.14784,
+      "lng": -89.28629,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (141 spaces). 141 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w320598696",
+      "name": "East Wilson Parking Lot",
+      "addr": "",
+      "lat": 43.07525,
+      "lng": -89.37675,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: City of Madison.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w383091296",
+      "name": "North Transfer Point Park and Ride",
+      "addr": "",
+      "lat": 43.11279,
+      "lng": -89.35829,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (168 spaces). 168 spaces.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

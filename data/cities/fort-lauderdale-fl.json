@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w384170578",
+      "name": "Aztec RV Resort",
+      "addr": "",
+      "lat": 26.22724,
+      "lng": -80.19786,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w384547289",
+      "name": "Semi Parking",
+      "addr": "",
+      "lat": 26.22726,
+      "lng": -80.18201,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('semi').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w961231659",
+      "name": "Chase Stadium Parking Lots",
+      "addr": "",
+      "lat": 26.1935,
+      "lng": -80.1611,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('stadium').",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

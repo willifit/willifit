@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n3804958107",
+      "name": "Lakeside RV Travel Park",
+      "addr": "6401 West Tennessee Street",
+      "lat": 30.45571,
+      "lng": -84.37716,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w464452598",
+      "name": "Big Oak RV Park",
+      "addr": "4024 North Monroe Street",
+      "lat": 30.50818,
+      "lng": -84.33854,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w539308360",
+      "name": "Tallahassee RV Park",
+      "addr": "6504 Mahan Drive",
+      "lat": 30.48308,
+      "lng": -84.17006,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

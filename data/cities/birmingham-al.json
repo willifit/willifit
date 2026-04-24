@@ -273,6 +273,19 @@
       "notes": "Uncovered.",
       "source": "flybirmingham.com",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-w492916797",
+      "name": "Track and Soccer Stadium Parking",
+      "addr": "",
+      "lat": 33.45832,
+      "lng": -86.79506,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('stadium').",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

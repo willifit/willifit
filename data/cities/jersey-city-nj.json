@@ -355,6 +355,71 @@
       "verified_on": "2026-04-23",
       "pano_id": "y68S1js-cDbn6TxW9fVnnQ",
       "pano_heading": 315
+    },
+    {
+      "id": "osm-w193904384",
+      "name": "Truck parking",
+      "addr": "",
+      "lat": 40.769,
+      "lng": -74.06579,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w204540119",
+      "name": "Park and Ride",
+      "addr": "",
+      "lat": 40.82656,
+      "lng": -74.02814,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (1022 spaces). 1022 spaces. Paid parking. Operator: New Jersey Turnpike Authority.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w281218256",
+      "name": "Central Parking System of New York, Inc.",
+      "addr": "",
+      "lat": 40.74296,
+      "lng": -73.93812,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Paid parking. Operator: SP+.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w354408901",
+      "name": "Liberty Harbor RV",
+      "addr": "",
+      "lat": 40.71246,
+      "lng": -74.04438,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 50 spaces. Paid parking. Operator: Liberty Harbor Marina.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1075152242",
+      "name": "Kinder Tower",
+      "addr": "",
+      "lat": 40.80869,
+      "lng": -74.19135,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (57 spaces). 57 spaces. Free parking. Operator: Kinder Tower.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

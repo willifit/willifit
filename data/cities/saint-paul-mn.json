@@ -287,6 +287,45 @@
       "oversized": true,
       "notes": "Historic Dakota burial mounds overlook.",
       "source": "stpaul.gov"
+    },
+    {
+      "id": "osm-w142045375",
+      "name": "Impark",
+      "addr": "177 Exchange Street South",
+      "lat": 44.94337,
+      "lng": -93.10222,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (74 spaces). 74 spaces. Operator: Impark.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w385624011",
+      "name": "St. Anthony Center Parking",
+      "addr": "",
+      "lat": 45.01535,
+      "lng": -93.21942,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w618933059",
+      "name": "City of Oakdale",
+      "addr": "",
+      "lat": 44.97095,
+      "lng": -92.96828,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (75 spaces). 75 spaces. Free parking. Operator: City of Oakdale.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

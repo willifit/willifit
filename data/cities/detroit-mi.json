@@ -727,6 +727,19 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (126 spaces). 126 spaces. Paid parking. Operator: Prime Parking.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w68935704",
+      "name": "Detroit Medical Center",
+      "addr": "91 East Willis Avenue",
+      "lat": 42.35265,
+      "lng": -83.05936,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (107 spaces). 107 spaces. Paid parking. Operator: Detroit Medical Center.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

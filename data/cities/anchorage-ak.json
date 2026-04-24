@@ -372,6 +372,71 @@
       "entrance_lat": 61.2161754,
       "entrance_lng": -149.8973271,
       "entrance_source": "OSM parking_entrance node 3709779828"
+    },
+    {
+      "id": "osm-w28973680",
+      "name": "Kincaid Stadium Parking",
+      "addr": "",
+      "lat": 61.15464,
+      "lng": -150.04937,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('stadium'). Free parking. Operator: municipality of anchorage.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w366063196",
+      "name": "Abbott Loop Comunity Park Parking",
+      "addr": "Elmore Road",
+      "lat": 61.14745,
+      "lng": -149.80267,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w683988724",
+      "name": "Midtown RV/Camper Park",
+      "addr": "",
+      "lat": 61.19606,
+      "lng": -149.87304,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w815093357",
+      "name": "Campbell Heights Trailer Park",
+      "addr": "",
+      "lat": 61.16233,
+      "lng": -149.81185,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1298727020",
+      "name": "Golden Nugget RV Park",
+      "addr": "4100 DeBarr Road",
+      "lat": 61.20866,
+      "lng": -149.80227,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). unknown spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

@@ -735,6 +735,19 @@
       "entrance_lat": 43.9443416,
       "entrance_lng": -92.3484856,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w135488106",
+      "name": "country club",
+      "addr": "",
+      "lat": 43.89716,
+      "lng": -92.37843,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (72 spaces). 72 spaces. Operator: country club.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

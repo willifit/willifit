@@ -1,5 +1,84 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w329358202",
+      "name": "Connecticut Department of Energy and Environmental Protection",
+      "addr": "",
+      "lat": 41.20113,
+      "lng": -73.06931,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Free parking. Operator: Connecticut Department of Energy and Environmental Protection.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w329559152",
+      "name": "City of Milford",
+      "addr": "",
+      "lat": 41.25,
+      "lng": -73.05279,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (70 spaces). 70 spaces. Free parking. Operator: City of Milford.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w425097405",
+      "name": "Bus Parking",
+      "addr": "",
+      "lat": 41.24522,
+      "lng": -73.00904,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus'). 5 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w425097406",
+      "name": "Truck Parking",
+      "addr": "",
+      "lat": 41.24535,
+      "lng": -73.00809,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). 17 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w425097407",
+      "name": "Truck Parking",
+      "addr": "",
+      "lat": 41.2463,
+      "lng": -73.00753,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w963519593",
+      "name": "City of Milford",
+      "addr": "",
+      "lat": 41.25035,
+      "lng": -73.05435,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Operator: City of Milford.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

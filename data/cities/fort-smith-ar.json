@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1286706789",
+      "name": "Fort Smith Riverfront RV Resort",
+      "addr": "1701 Riverfront Drive",
+      "lat": 35.40882,
+      "lng": -94.42125,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1436396983",
+      "name": "Aldi",
+      "addr": "",
+      "lat": 35.47158,
+      "lng": -94.35688,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (77 spaces). 77 spaces. Free parking. Operator: Aldi.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1444735149",
+      "name": "Fort Chaffee RV Park",
+      "addr": "",
+      "lat": 35.29771,
+      "lng": -94.29595,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

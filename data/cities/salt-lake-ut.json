@@ -284,6 +284,45 @@
       "oversized": true,
       "notes": "~2 hours west. BLM land. Free parking for Speed Week.",
       "source": "blm.gov"
+    },
+    {
+      "id": "osm-w40690020",
+      "name": "Meadowbrook Station Park and Ride",
+      "addr": "188 West 3900 South",
+      "lat": 40.68761,
+      "lng": -111.89594,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (181 spaces). 181 spaces. Free parking. Operator: Utah Transit Authority.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w224253422",
+      "name": "Salt Lake City KOA Holiday",
+      "addr": "1400 West North Temple",
+      "lat": 40.77379,
+      "lng": -111.93008,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w566435668",
+      "name": "Pony Express RV Resort",
+      "addr": "1012 Recreation Way",
+      "lat": 40.83148,
+      "lng": -111.94027,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking. Operator: Sun RV Resorts.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1133880633",
+      "name": "US:AR:Springdale",
+      "addr": "",
+      "lat": 36.21281,
+      "lng": -94.21075,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (76 spaces). 76 spaces. Operator: US:AR:Springdale.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1133880672",
+      "name": "US:AR:Springdale",
+      "addr": "",
+      "lat": 36.21488,
+      "lng": -94.21334,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Operator: US:AR:Springdale.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1286438276",
+      "name": "Road Hog RV Park",
+      "addr": "",
+      "lat": 36.04686,
+      "lng": -94.17746,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1320513197",
+      "name": "Southgate RV Park",
+      "addr": "2331 South School Avenue",
+      "lat": 36.03787,
+      "lng": -94.16869,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 50 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

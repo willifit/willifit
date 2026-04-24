@@ -284,6 +284,32 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "flynashville.com"
+    },
+    {
+      "id": "osm-w479377360",
+      "name": "Bohan parking",
+      "addr": "",
+      "lat": 36.15502,
+      "lng": -86.78601,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1036888876",
+      "name": "Nashville RV Resort and Cabins",
+      "addr": "",
+      "lat": 36.23126,
+      "lng": -86.70402,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

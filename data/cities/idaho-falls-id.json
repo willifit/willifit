@@ -1,5 +1,71 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n1453404060",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 43.50935,
+      "lng": -112.05297,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n11015139227",
+      "name": "Idaho Falls Luxury RV Park",
+      "addr": "3000 South Yellowstone Highway",
+      "lat": 43.47046,
+      "lng": -112.05811,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w375106887",
+      "name": "Truck Parking",
+      "addr": "",
+      "lat": 43.44108,
+      "lng": -112.11439,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: HGV-friendly (OSM hgv=yes). 150 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w375324042",
+      "name": "Truck Parking",
+      "addr": "",
+      "lat": 43.43851,
+      "lng": -112.11345,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w951824409",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 43.37389,
+      "lng": -112.16387,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

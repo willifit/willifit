@@ -332,6 +332,19 @@
       "notes": "~25mi west. Distillery tours. Many more on trail.",
       "source": "buffalotracedistillery.com",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-w1482913761",
+      "name": "Illegal Campground",
+      "addr": "2495 Bryan Station Road",
+      "lat": 38.07423,
+      "lng": -84.43175,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

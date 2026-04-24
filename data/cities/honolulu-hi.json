@@ -333,6 +333,19 @@
       "oversized": true,
       "notes": "Uncovered long term.",
       "source": "airports.hawaii.gov"
+    },
+    {
+      "id": "osm-w1181208849",
+      "name": "HMLA-367 Parking Lot",
+      "addr": "",
+      "lat": 21.44187,
+      "lng": -157.75464,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (55 spaces). 55 spaces. Operator: HMLA-367 Parking Lot.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

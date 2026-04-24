@@ -599,6 +599,58 @@
           "height_label": "10'5\""
         }
       ]
+    },
+    {
+      "id": "osm-w55262827",
+      "name": "Maryland Department of Natural Resources Maryland Park Service",
+      "addr": "6196 River Road",
+      "lat": 39.24174,
+      "lng": -76.75109,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (85 spaces). 85 spaces. Paid parking. Operator: Maryland Department of Natural Resources Maryland Park Service.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w96215949",
+      "name": "Dorsey MARC Station Parking",
+      "addr": "",
+      "lat": 39.18089,
+      "lng": -76.74643,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (52 spaces). 52 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w144151126",
+      "name": "Lutherville Park & Ride",
+      "addr": "175 West Ridgely Road",
+      "lat": 39.42828,
+      "lng": -76.62589,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (286 spaces). 286 spaces. Free parking. Operator: MDOT MTA.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w437398508",
+      "name": "Motorcoach Parking Facility at the B&O",
+      "addr": "1100 James Street",
+      "lat": 39.28326,
+      "lng": -76.63475,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (65 spaces). 65 spaces. Paid parking. Operator: Parking Authority of Baltimore City.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

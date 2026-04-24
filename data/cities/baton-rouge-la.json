@@ -337,6 +337,45 @@
       "entrance_lat": 30.5315117,
       "entrance_lng": -91.1569861,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-n13343341774",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.32057,
+      "lng": -91.28437,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1473699599",
+      "name": "Tiger's Trail RV Resort",
+      "addr": "15001 River Road",
+      "lat": 30.34973,
+      "lng": -91.14812,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1483057933",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 30.38672,
+      "lng": -91.20812,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

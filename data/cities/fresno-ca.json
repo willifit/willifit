@@ -303,6 +303,19 @@
       "entrance_lng": -119.7911202,
       "entrance_source": "OSM parking_entrance node 12042045680",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-w61810193",
+      "name": "Temperance Park and Ride",
+      "addr": "Nw Quad Sr 168 & Temperance",
+      "lat": 36.84388,
+      "lng": -119.66547,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (110 spaces). 110 spaces.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

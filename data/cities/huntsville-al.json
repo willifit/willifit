@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w189222652",
+      "name": "Lot P",
+      "addr": "",
+      "lat": 34.73932,
+      "lng": -86.59743,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (241 spaces). 241 spaces. Paid parking. Operator: City of Huntsville.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w404947117",
+      "name": "A Shady Grove RV & Mobile Home",
+      "addr": "",
+      "lat": 34.69246,
+      "lng": -86.60435,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w472677024",
+      "name": "Space Camp RV Park",
+      "addr": "",
+      "lat": 34.71013,
+      "lng": -86.64658,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 27 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w603091771",
+      "name": "Redstone Arsenal RV Park",
+      "addr": "",
+      "lat": 34.69242,
+      "lng": -86.63767,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 42 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

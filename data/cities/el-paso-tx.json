@@ -236,6 +236,32 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "elpasointernationalairport.com"
+    },
+    {
+      "id": "osm-w990199147",
+      "name": "Ft Bliss RV Park",
+      "addr": "4130 Ellerthorpe Avenue",
+      "lat": 31.83993,
+      "lng": -106.44191,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1201741685",
+      "name": "Gaslight Square RV Park",
+      "addr": "500 Talbot Avenue",
+      "lat": 31.90783,
+      "lng": -106.59365,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w482936564",
+      "name": "United Health Services",
+      "addr": "",
+      "lat": 42.10782,
+      "lng": -75.96556,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (109 spaces). 109 spaces. Free parking. Operator: United Health Services.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w492839911",
+      "name": "BAGSAI Parking",
+      "addr": "",
+      "lat": 42.13224,
+      "lng": -75.91376,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -248,6 +248,45 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "flymemphis.com"
+    },
+    {
+      "id": "osm-w1133927457",
+      "name": "Graceland RV Park and Campground",
+      "addr": "3691 Elvis Presley Boulevard",
+      "lat": 35.04856,
+      "lng": -90.02858,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1206946481",
+      "name": "Assure Truck Parking",
+      "addr": "",
+      "lat": 35.01695,
+      "lng": -89.91634,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1228280580",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 35.2384,
+      "lng": -90.0225,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

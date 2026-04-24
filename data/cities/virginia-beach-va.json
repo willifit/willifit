@@ -474,6 +474,45 @@
       "entrance_lng": -76.069393,
       "entrance_source": "OSM parking_entrance node 2062731541",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-w346331135",
+      "name": "Holiday Trav-L-Park",
+      "addr": "1075 General Booth Boulevard",
+      "lat": 36.80549,
+      "lng": -75.99664,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w404559864",
+      "name": "Sea Mist RV Park",
+      "addr": "",
+      "lat": 36.77345,
+      "lng": -75.95601,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w404562474",
+      "name": "Ocean Pines RV Park",
+      "addr": "",
+      "lat": 36.79514,
+      "lng": -76.02585,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

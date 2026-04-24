@@ -344,6 +344,19 @@
       "oversized": false,
       "notes": "Shared airport. Durham access via I-40.",
       "source": "rdu.com"
+    },
+    {
+      "id": "osm-w1324743530",
+      "name": "Burger King",
+      "addr": "",
+      "lat": 35.96641,
+      "lng": -78.96148,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: Burger King.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

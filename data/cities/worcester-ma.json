@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w135892771",
+      "name": "MassDOT",
+      "addr": "",
+      "lat": 42.22965,
+      "lng": -71.72882,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (500 spaces). 500 spaces. Operator: MassDOT.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w582746647",
+      "name": "Millbury Park and Ride",
+      "addr": "519 US-20",
+      "lat": 42.21036,
+      "lng": -71.7871,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (446 spaces). 446 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1086811841",
+      "name": "Auburn Park and Ride",
+      "addr": "44 Midstate Drive",
+      "lat": 42.18812,
+      "lng": -71.85529,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (163 spaces). 163 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1086978586",
+      "name": "Millbury Grafton Road Park and Ride",
+      "addr": "1504 Grafton Road",
+      "lat": 42.22908,
+      "lng": -71.73957,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (122 spaces). 122 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -1,5 +1,45 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w155331164",
+      "name": "Darien YMCA",
+      "addr": "",
+      "lat": 41.05806,
+      "lng": -73.49876,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (140 spaces). 140 spaces. Free parking. Operator: Darien YMCA.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w156273732",
+      "name": "Bus Parking",
+      "addr": "",
+      "lat": 41.08425,
+      "lng": -73.49301,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w183689196",
+      "name": "I-684, Exit 4 @ Route 172 Park & Ride",
+      "addr": "437 South Bedford Road",
+      "lat": 41.19507,
+      "lng": -73.68559,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Free parking. Operator: NYSDOT.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

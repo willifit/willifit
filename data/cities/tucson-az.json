@@ -394,6 +394,58 @@
       "notes": "Sam Hughes neighborhood.",
       "source": "Needs verification",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-n4044893628",
+      "name": "BLM",
+      "addr": "",
+      "lat": 32.15741,
+      "lng": -111.1167,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Free parking. Operator: BLM.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w670637807",
+      "name": "Tucson / Lazydays KOA",
+      "addr": "5151 South Country Club Road",
+      "lat": 32.15735,
+      "lng": -110.92343,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w946123530",
+      "name": "Casino del Sol RV Park",
+      "addr": "",
+      "lat": 32.13184,
+      "lng": -111.0825,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('rv').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1017190159",
+      "name": "Prince of Tucson RV Park",
+      "addr": "3501 North Freeway",
+      "lat": 32.27002,
+      "lng": -111.01051,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

@@ -1,5 +1,97 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w47472488",
+      "name": "Premier RV Resort",
+      "addr": "",
+      "lat": 44.1316,
+      "lng": -123.04937,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w244501997",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 44.13322,
+      "lng": -123.05633,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w502448955",
+      "name": "Springfield Public Schools",
+      "addr": "",
+      "lat": 44.0531,
+      "lng": -123.01752,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (182 spaces). 182 spaces. Free parking. Operator: Springfield Public Schools.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w730938498",
+      "name": "City of Eugene",
+      "addr": "",
+      "lat": 44.05139,
+      "lng": -123.08157,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (64 spaces). 64 spaces. Paid parking. Operator: City of Eugene.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1057797460",
+      "name": "Franz",
+      "addr": "",
+      "lat": 44.03823,
+      "lng": -123.03238,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (53 spaces). 53 spaces. Operator: Franz.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1057797514",
+      "name": "Franz",
+      "addr": "",
+      "lat": 44.03923,
+      "lng": -123.03303,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (78 spaces). 78 spaces. Operator: Franz.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1101668894",
+      "name": "Meadowlark RV Park",
+      "addr": "310 East Oregon Avenue",
+      "lat": 43.91961,
+      "lng": -123.01393,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

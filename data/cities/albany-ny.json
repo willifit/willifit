@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w93282482",
+      "name": "ParkAlbany Quakenbush Lot",
+      "addr": "",
+      "lat": 42.65403,
+      "lng": -73.74683,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (187 spaces). 187 spaces. Paid parking. Operator: Albany Parking Authority.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w105212658",
+      "name": "Field House E Lot",
+      "addr": "",
+      "lat": 42.73128,
+      "lng": -73.66714,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w603189227",
+      "name": "CDTA Park-n-Ride",
+      "addr": "",
+      "lat": 42.60536,
+      "lng": -73.84325,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1007861016",
+      "name": "ParkAlbany Warehouse Lot",
+      "addr": "53 North Ferry Street",
+      "lat": 42.66005,
+      "lng": -73.74355,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (120 spaces). 120 spaces. Paid parking. Operator: Albany Parking Authority.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

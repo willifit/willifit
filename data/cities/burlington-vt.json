@@ -1,5 +1,71 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w25743781",
+      "name": "Main Street Landing Lot",
+      "addr": "",
+      "lat": 44.47626,
+      "lng": -73.21999,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (118 spaces). 118 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w962315160",
+      "name": "Colchester Park and Ride",
+      "addr": "400 U.S. Route 7 South",
+      "lat": 44.59456,
+      "lng": -73.16569,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (106 spaces). 106 spaces. Operator: VTRANS.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w962315162",
+      "name": "VTRANS",
+      "addr": "623 Roosevelt Highway",
+      "lat": 44.51096,
+      "lng": -73.18013,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (114 spaces). 114 spaces. Free parking. Operator: VTRANS.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1039718402",
+      "name": "Shelburne Camping Area",
+      "addr": "",
+      "lat": 44.39333,
+      "lng": -73.21798,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1043591199",
+      "name": "Camp Skyland, LLC",
+      "addr": "",
+      "lat": 44.59684,
+      "lng": -73.3014,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

@@ -424,6 +424,58 @@
       "verified_on": "2026-04-23",
       "pano_id": "7wv-Ju2ugzy7Eu8fWuIc2g",
       "pano_heading": 45
+    },
+    {
+      "id": "osm-n2350887639",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 38.98427,
+      "lng": -94.68103,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n11208025637",
+      "name": "Rivers Bend Park",
+      "addr": "6040 Kansas Avenue",
+      "lat": 39.08825,
+      "lng": -94.71859,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w349868300",
+      "name": "Extra Parking",
+      "addr": "",
+      "lat": 39.01259,
+      "lng": -94.51942,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (192 spaces). 192 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1390816989",
+      "name": "Liberty RV park",
+      "addr": "",
+      "lat": 39.24908,
+      "lng": -94.45048,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

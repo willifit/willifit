@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w165214962",
+      "name": "RV Parking",
+      "addr": "",
+      "lat": 44.80568,
+      "lng": -106.93881,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('rv').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1084537270",
+      "name": "Sheridan KOA",
+      "addr": "",
+      "lat": 44.83596,
+      "lng": -106.96401,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking. Operator: KOA.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1269124454",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 44.80582,
+      "lng": -106.94429,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1269124681",
+      "name": "Peter D's",
+      "addr": "1105 Joe Street",
+      "lat": 44.80948,
+      "lng": -106.94079,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

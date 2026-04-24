@@ -1,5 +1,110 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w47705894",
+      "name": "Wallis Sands Lot",
+      "addr": "",
+      "lat": 43.02803,
+      "lng": -70.72944,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (500 spaces). 500 spaces. Paid parking. Operator: State of New Hampshire.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w217487459",
+      "name": "State of New Hampshire",
+      "addr": "",
+      "lat": 43.04394,
+      "lng": -70.71456,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Paid parking. Operator: State of New Hampshire.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w292027095",
+      "name": "Worth Lot",
+      "addr": "",
+      "lat": 43.07653,
+      "lng": -70.76042,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (70 spaces). 70 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w369320020",
+      "name": "South Mill Pond Lot",
+      "addr": "",
+      "lat": 43.0717,
+      "lng": -70.75617,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (90 spaces). 90 spaces. Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w435462118",
+      "name": "Town of Rye",
+      "addr": "",
+      "lat": 43.00541,
+      "lng": -70.76054,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Free parking. Operator: Town of Rye.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w438818485",
+      "name": "Portsmouth (NH 33) Park & Ride",
+      "addr": "",
+      "lat": 43.05738,
+      "lng": -70.7919,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking. Operator: City of Portsmouth.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w441271478",
+      "name": "Odiorne Boat Launch Lot",
+      "addr": "",
+      "lat": 43.04883,
+      "lng": -70.72728,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Paid parking. Operator: State of New Hampshire.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w441863537",
+      "name": "Bridge Street Lot",
+      "addr": "",
+      "lat": 43.07613,
+      "lng": -70.76127,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

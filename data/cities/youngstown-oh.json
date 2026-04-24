@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w1199579917",
+      "name": "Bus Parking Lot",
+      "addr": "",
+      "lat": 41.0099,
+      "lng": -80.66852,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1199627372",
+      "name": "Bus Parking Lot",
+      "addr": "",
+      "lat": 41.01473,
+      "lng": -80.66931,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1338333263",
+      "name": "Truck World - Truck Parking",
+      "addr": "",
+      "lat": 41.17852,
+      "lng": -80.56533,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). Operator: Truck World Mall.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1348845126",
+      "name": "Love's Truck Parking",
+      "addr": "",
+      "lat": 41.17355,
+      "lng": -80.57183,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: HGV-friendly (OSM hgv=yes). Operator: Love's Truck Parking.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

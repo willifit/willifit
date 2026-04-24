@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w104224023",
+      "name": "Orange Street Park And Ride",
+      "addr": "2212 Orange St",
+      "lat": 33.99486,
+      "lng": -117.36314,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (83 spaces). 83 spaces. Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w915276031",
+      "name": "Metrolink",
+      "addr": "",
+      "lat": 34.05887,
+      "lng": -117.16374,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (97 spaces). 97 spaces. Free parking. Operator: Metrolink.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1046399704",
+      "name": "Skypark Camp + RV Resort",
+      "addr": "",
+      "lat": 34.23098,
+      "lng": -117.16951,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1306967104",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 34.03986,
+      "lng": -117.32426,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

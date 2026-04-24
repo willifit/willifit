@@ -1,5 +1,84 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n1345443280",
+      "name": "Yogi Bear's Camp Jellystone",
+      "addr": "",
+      "lat": 43.61135,
+      "lng": -96.65075,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w761769800",
+      "name": "Red Barn RV Park",
+      "addr": "",
+      "lat": 43.44535,
+      "lng": -96.80455,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w808867362",
+      "name": "Sioux Falls KOA Journey",
+      "addr": "1401 East Robur Drive",
+      "lat": 43.6069,
+      "lng": -96.70662,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1043114206",
+      "name": "Tower Campground",
+      "addr": "4609 West 12th Street",
+      "lat": 43.542,
+      "lng": -96.7826,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1156336212",
+      "name": "City of Crooks",
+      "addr": "",
+      "lat": 43.65715,
+      "lng": -96.81541,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: City of Crooks.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1298993323",
+      "name": "Westwick Motel and Campground",
+      "addr": "5801 West 12th Street",
+      "lat": 43.54339,
+      "lng": -96.79774,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

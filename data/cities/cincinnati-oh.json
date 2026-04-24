@@ -359,6 +359,45 @@
       "notes": "Municipal airport.",
       "source": "cincinnati-oh.gov/aviation",
       "structure_type": "surface_lot"
+    },
+    {
+      "id": "osm-n12046186092",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 39.08259,
+      "lng": -84.43763,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w339095491",
+      "name": "Florence Hub Park & Ride",
+      "addr": "",
+      "lat": 38.98686,
+      "lng": -84.64952,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (150 spaces). 150 spaces. Free parking. Operator: TANK.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w624119200",
+      "name": "Woodland RV Park",
+      "addr": "7631 Daly Road",
+      "lat": 39.21273,
+      "lng": -84.53224,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],
