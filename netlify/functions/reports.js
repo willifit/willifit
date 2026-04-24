@@ -86,6 +86,7 @@ exports.handler = async (event) => {
     const forms = await formsRes.json();
     const clearanceForm = forms.find((f) => f.name === "clearance-report");
     const newLocationForm = forms.find((f) => f.name === "new-location-report");
+    const issueForm = forms.find((f) => f.name === "location-issue-report");
 
     // 2. Fetch submissions for each form that exists.
     async function fetchSubmissions(form) {
@@ -98,9 +99,10 @@ exports.handler = async (event) => {
       return res.json();
     }
 
-    const [clearanceSubs, newLocationSubs] = await Promise.all([
+    const [clearanceSubs, newLocationSubs, issueSubs] = await Promise.all([
       fetchSubmissions(clearanceForm),
       fetchSubmissions(newLocationForm),
+      fetchSubmissions(issueForm),
     ]);
 
     // 3. Massage into client-friendly shapes.  `kind` lets the admin UI
@@ -151,13 +153,34 @@ exports.handler = async (event) => {
       };
     });
 
+    const issues = issueSubs.map((s) => {
+      const d = s.data || {};
+      return {
+        kind: "location-issue-report",
+        id: s.id,
+        created_at: s.created_at,
+        state: s.state,
+        garage_id: d.garage_id,
+        garage_name: d.garage_name,
+        garage_addr: d.garage_addr,
+        city_slug: d.city_slug,
+        city_name: d.city_name,
+        city_state: d.city_state,
+        issue_type: d.issue_type,
+        correction: d.correction,
+        notes: d.notes,
+        contact: d.contact,
+      };
+    });
+
     return {
       statusCode: 200,
       headers: { ...cors, "content-type": "application/json" },
       body: JSON.stringify({
         reports,
         new_locations,
-        total: reports.length + new_locations.length,
+        issues,
+        total: reports.length + new_locations.length + issues.length,
       }),
     };
   } catch (err) {

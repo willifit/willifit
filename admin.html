@@ -213,7 +213,8 @@ async function loadReports() {
   const data = await res.json();
   const reports = data.reports || [];
   const newLocations = data.new_locations || [];
-  const all = [...reports, ...newLocations].sort(
+  const issues = data.issues || [];
+  const all = [...reports, ...newLocations, ...issues].sort(
     (a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0)
   );
 
@@ -227,9 +228,11 @@ async function loadReports() {
     return;
   }
 
-  target.innerHTML = all.map((r) =>
-    r.kind === "new-location-report" ? renderNewLocation(r) : renderReport(r)
-  ).join("");
+  target.innerHTML = all.map((r) => {
+    if (r.kind === "new-location-report") return renderNewLocation(r);
+    if (r.kind === "location-issue-report") return renderIssue(r);
+    return renderReport(r);
+  }).join("");
 }
 
 function renderReport(r) {
@@ -384,6 +387,68 @@ function renderNewLocation(r) {
 
       <div class="report-actions">
         <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="${mapsPin}">
+          Verify in Google Maps ↗
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+// Render a user-reported ISSUE with an existing location (closed, wrong
+// pin, wrong address, duplicate, etc.).  Amber accent to distinguish
+// from green=clearance-correction and blue=new-location.
+function renderIssue(r) {
+  const when = r.created_at ? new Date(r.created_at).toLocaleString() : "unknown time";
+  const cityId = r.city_slug ? `${r.city_slug}:${r.garage_id}` : (r.garage_id || r.id);
+  const issueTypeLabels = {
+    "doesnt_exist": "Location doesn't exist / has closed",
+    "wrong_pin": "Pin is in the wrong place",
+    "wrong_address": "Address is wrong",
+    "wrong_name": "Name is wrong / out of date",
+    "wrong_type": "Wrong type (garage vs surface lot vs bridge)",
+    "wrong_oversized": "Oversized flag is wrong",
+    "duplicate": "Duplicate of another entry",
+    "other": "Other issue",
+  };
+  const issueLabel = issueTypeLabels[r.issue_type] || r.issue_type || "(no issue type)";
+
+  const mapsQuery = encodeURIComponent(
+    (r.garage_name || "") + " " + (r.garage_addr || "") + " " +
+    (r.city_name || "") + " " + (r.city_state || "")
+  );
+
+  const correctionBlock = r.correction
+    ? `<div class="report-notes" style="background:rgba(245,166,35,0.08)"><b>Suggested correction:</b> ${escapeHtml(r.correction)}</div>`
+    : "";
+  const noteBlock = r.notes
+    ? `<div class="report-notes">${escapeHtml(r.notes)}</div>`
+    : "";
+  const contactBlock = r.contact
+    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="mailto:${escapeHtml(r.contact)}">${escapeHtml(r.contact)}</a></div>`
+    : "";
+
+  return `
+    <div class="report" style="border-left: 3px solid var(--warn);">
+      <div class="report-head">
+        <div>
+          <div class="report-name">⚠ ${escapeHtml(r.garage_name || "(unknown)")}</div>
+          <div class="muted" style="font-size:12px">
+            <b>ISSUE</b> — ${escapeHtml(issueLabel)}
+            ${r.city_name ? " · " + escapeHtml(r.city_name) + ", " + escapeHtml(r.city_state || "") : ""}
+          </div>
+        </div>
+        <div class="report-id">
+          ${escapeHtml(cityId)}<br>
+          <span class="muted">${escapeHtml(when)}</span>
+        </div>
+      </div>
+
+      ${correctionBlock}
+      ${noteBlock}
+      ${contactBlock}
+
+      <div class="report-actions">
+        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}">
           Verify in Google Maps ↗
         </a>
       </div>

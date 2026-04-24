@@ -1532,6 +1532,14 @@
     font-size: 9px; letter-spacing: 0.04em; text-transform: none;
     opacity: 0.6;
   }
+  /* Issue-report button -- amber hover instead of green, and a slightly
+     smaller top margin so the two buttons visually pair.  Keeps a clear
+     semantic distinction: green = "I have better data", amber = "this
+     entry has a problem". */
+  .report-btn.issue-variant { margin-top: 8px; }
+  .report-btn.issue-variant:hover {
+    background: var(--warn); border-color: var(--warn); color: #0a0f18;
+  }
 
   /* CITY PICKER MODAL */
   .modal-overlay {
@@ -1971,6 +1979,57 @@
         <button type="submit" class="btn-primary" id="nlSubmitBtn">Submit location</button>
       </div>
       <div class="report-status" id="nlStatus"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Location-issue modal.  Distinct from clearance-report (which patches
+     a single numeric field) and new-location-report (which creates an
+     entry): this one is the freeform "something's wrong with this
+     pin" flow -- closed, wrong address, wrong coords, duplicate, etc. -->
+<div class="modal-overlay" id="issueModal">
+  <div class="modal report-modal">
+    <div class="modal-header">
+      <div class="modal-title">Report an issue</div>
+      <button class="modal-close" id="issueModalClose" aria-label="Close">×</button>
+    </div>
+    <form id="issueForm" class="report-form">
+      <div class="report-target" id="issueTarget"></div>
+
+      <label class="report-label" for="isType">What's wrong? *</label>
+      <select id="isType" required>
+        <option value="">Pick an issue…</option>
+        <option value="doesnt_exist">Location doesn't exist / has closed</option>
+        <option value="wrong_pin">Pin is in the wrong place</option>
+        <option value="wrong_address">Address is wrong</option>
+        <option value="wrong_name">Name is wrong / out of date</option>
+        <option value="wrong_type">Wrong type (garage vs surface lot vs bridge)</option>
+        <option value="wrong_oversized">Oversized flag is wrong</option>
+        <option value="duplicate">Duplicate of another entry</option>
+        <option value="other">Other issue</option>
+      </select>
+
+      <label class="report-label" for="isCorrection">What should it say? (optional)</label>
+      <textarea id="isCorrection" rows="2" maxlength="400"
+                placeholder="If you know the correct value, paste it here. E.g., 'Pin should be at 36.1022,-115.1658 — the garage is on Koval Ln, not the Strip-side valet.'"></textarea>
+
+      <label class="report-label" for="isNotes">Additional notes (optional)</label>
+      <textarea id="isNotes" rows="3" maxlength="1000"
+                placeholder="Anything else we should know — Street View link, when you last parked here, photo URL, etc."></textarea>
+
+      <label class="report-label" for="isContact">Your email (optional — only if you want a reply)</label>
+      <input type="email" id="isContact" maxlength="180" placeholder="you@example.com">
+
+      <div class="report-actions">
+        <button type="submit" class="btn-primary" id="isSubmitBtn">Submit issue</button>
+      </div>
+      <div class="report-help">
+        Every report is <b>reviewed by a human</b> before the map changes.
+        We verify against Street View or the operator before touching
+        data &mdash; protects you and other drivers from bad-faith edits
+        or accidental deletions.
+      </div>
+      <div class="report-status" id="isStatus"></div>
     </form>
   </div>
 </div>
@@ -3190,12 +3249,20 @@ function renderDetail(g) {
       Report clearance for this location
       <span class="subtitle">Quick form — help keep the data accurate</span>
     </button>
+    <button class="report-btn issue-variant" data-gid="${escapeHTML(g.id)}" id="detailIssueBtn">
+      Report an issue with this location
+      <span class="subtitle">Closed, wrong pin, wrong address, duplicate, etc.</span>
+    </button>
     ${renderSponsor('detail', { city: state.city, garage: g, oversized_filter: state.oversizedOnly }) || ''}`;
   panel.classList.add('open');
-  // Wire up the report button safely (no inline onclick with interpolated id)
+  // Wire up the report buttons safely (no inline onclick with interpolated id)
   const reportBtn = document.getElementById('detailReportBtn');
   if (reportBtn) {
     reportBtn.addEventListener('click', () => openReportModal(reportBtn.dataset.gid));
+  }
+  const issueBtn = document.getElementById('detailIssueBtn');
+  if (issueBtn) {
+    issueBtn.addEventListener('click', () => openIssueModal(issueBtn.dataset.gid));
   }
 }
 
@@ -3753,6 +3820,14 @@ document.getElementById('newLocationModal').addEventListener('click', (e) => {
   if (e.target.id === 'newLocationModal') closeNewLocationModal();
 });
 document.getElementById('newLocationForm').addEventListener('submit', submitNewLocation);
+
+// Issue-report modal wiring.  Triggered from the per-location detail panel
+// (detailIssueBtn) -- see renderDetail() -- not from the sidebar.
+document.getElementById('issueModalClose').addEventListener('click', closeIssueModal);
+document.getElementById('issueModal').addEventListener('click', (e) => {
+  if (e.target.id === 'issueModal') closeIssueModal();
+});
+document.getElementById('issueForm').addEventListener('submit', submitIssue);
 document.getElementById('nlUseMapCenter').addEventListener('click', () => {
   if (!state.map) return;
   try {
@@ -4082,6 +4157,117 @@ function exportReportQueue() {
 }
 
 /* ============================================================
+   LOCATION-ISSUE REPORTS
+
+   For problems with an EXISTING entry that aren't about its clearance
+   number: wrong pin, wrong address, duplicate, location has closed, etc.
+   Same three-sink delivery pattern as the other two forms (Netlify +
+   mailto fallback + localStorage queue).
+   ============================================================ */
+const ISSUE_FORM_NAME = 'location-issue-report';
+const ISSUE_QUEUE_KEY = 'willifit_issue_queue';
+
+function _issueQueueGet() {
+  try { return JSON.parse(localStorage.getItem(ISSUE_QUEUE_KEY) || '[]'); }
+  catch (e) { return []; }
+}
+function _issueQueuePush(sub) {
+  const q = _issueQueueGet();
+  q.push(sub);
+  if (q.length > 200) q.splice(0, q.length - 200);
+  localStorage.setItem(ISSUE_QUEUE_KEY, JSON.stringify(q));
+}
+
+function openIssueModal(garageId) {
+  const g = (state.cityData && state.cityData.garages || []).find(x => x.id === garageId)
+         || (state.cityData && state.cityData.tunnels || []).find(x => x.id === garageId)
+         || (state.cityData && state.cityData.bridges || []).find(x => x.id === garageId);
+  if (!g) return;
+  document.getElementById('issueForm').dataset.gid = garageId;
+  document.getElementById('issueTarget').innerHTML = `
+    <div class="target-name">${escapeHTML(g.name || '')}</div>
+    <div class="target-addr">${escapeHTML(g.addr || '')}</div>
+  `;
+  document.getElementById('isType').value = '';
+  document.getElementById('isCorrection').value = '';
+  document.getElementById('isNotes').value = '';
+  document.getElementById('isContact').value = '';
+  document.getElementById('isStatus').textContent = '';
+  document.getElementById('isStatus').className = 'report-status';
+  document.getElementById('issueModal').classList.add('open');
+  if (window.matchMedia('(min-width: 900px)').matches) {
+    setTimeout(() => document.getElementById('isType').focus(), 50);
+  }
+}
+function closeIssueModal() {
+  document.getElementById('issueModal').classList.remove('open');
+}
+
+async function submitIssue(e) {
+  e.preventDefault();
+  const status = document.getElementById('isStatus');
+  const submit = document.getElementById('isSubmitBtn');
+  const gid = e.target.dataset.gid;
+  const g = (state.cityData && state.cityData.garages || []).find(x => x.id === gid)
+         || (state.cityData && state.cityData.tunnels || []).find(x => x.id === gid)
+         || (state.cityData && state.cityData.bridges || []).find(x => x.id === gid);
+  if (!g) { status.textContent = 'Lost the selected location. Close and reopen.'; return; }
+
+  submit.disabled = true;
+  status.className = 'report-status sending';
+  status.textContent = 'Submitting…';
+
+  const cityMeta = getCityMeta(state.city) || {};
+  const submission = {
+    submission_id: 'is-' + Math.random().toString(36).slice(2) + Date.now().toString(36),
+    garage_id: g.id || '',
+    garage_name: g.name || '',
+    garage_addr: g.addr || '',
+    city_slug: state.city || '',
+    city_name: cityMeta.name || '',
+    city_state: cityMeta.state || '',
+    issue_type: document.getElementById('isType').value,
+    correction: document.getElementById('isCorrection').value.trim(),
+    notes: document.getElementById('isNotes').value.trim(),
+    contact: document.getElementById('isContact').value.trim(),
+    submitted_at: new Date().toISOString(),
+    user_agent: navigator.userAgent || '',
+  };
+
+  _issueQueuePush(submission);
+
+  let delivered = false;
+  if (REPORT_ENDPOINT_URL) {
+    try {
+      const body = new URLSearchParams();
+      body.set('form-name', ISSUE_FORM_NAME);
+      body.set('bot-field', '');
+      Object.entries(submission).forEach(([k, v]) => body.set(k, v == null ? '' : String(v)));
+      const res = await fetch(REPORT_ENDPOINT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+      if (res.ok) delivered = true;
+    } catch (e) { /* fall through */ }
+  }
+
+  submit.disabled = false;
+  if (delivered) {
+    status.className = 'report-status success';
+    status.innerHTML = 'Submitted! A human reviews every issue before the map changes.';
+    setTimeout(closeIssueModal, 2500);
+    e.target.reset();
+  } else {
+    const subject = `[Willifit] Issue — ${submission.garage_name || '(unknown)'}`;
+    const body = Object.entries(submission).map(([k, v]) => `${k}: ${v}`).join('\n');
+    const mailto = `mailto:${WILLIFIT_REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    status.className = 'report-status success';
+    status.innerHTML = `Saved locally &mdash; <a href="${mailto}" style="color:inherit;text-decoration:underline">send via email now</a> or we'll retry. Pending: ${_issueQueueGet().length}.`;
+  }
+}
+
+/* ============================================================
    NEW-LOCATION SUBMISSIONS
 
    User-facing form to add a garage/tunnel/low-bridge that isn't on
@@ -4254,6 +4440,29 @@ function wireVehicleHeightInput() {
   <input type="hidden" name="reported_height_in">
   <input type="hidden" name="no_posted_sign">
   <input type="hidden" name="oversized_available">
+  <textarea name="notes"></textarea>
+  <input type="email" name="contact">
+  <input type="hidden" name="submitted_at">
+  <input type="hidden" name="user_agent">
+</form>
+
+<!-- Third Netlify-forms stub: user-reported ISSUES with an existing
+     location (pin in wrong place, closed, duplicate, wrong name, etc.).
+     Separate from clearance-report because the correction isn't always
+     a height -- could be coords, name, type, or "please delete this". -->
+<form name="location-issue-report" data-netlify="true" netlify-honeypot="bot-field"
+      style="display:none" hidden aria-hidden="true">
+  <input type="text" name="bot-field">
+  <input type="text" name="form-name" value="location-issue-report">
+  <input type="hidden" name="submission_id">
+  <input type="hidden" name="garage_id">
+  <input type="hidden" name="garage_name">
+  <input type="hidden" name="garage_addr">
+  <input type="hidden" name="city_slug">
+  <input type="hidden" name="city_name">
+  <input type="hidden" name="city_state">
+  <input type="hidden" name="issue_type">
+  <textarea name="correction"></textarea>
   <textarea name="notes"></textarea>
   <input type="email" name="contact">
   <input type="hidden" name="submitted_at">
