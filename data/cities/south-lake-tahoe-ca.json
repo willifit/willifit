@@ -22,7 +22,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Gondola to mountain-top.",
-      "source": "heavenly.com"
+      "source": "heavenly.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-heavenly-california",
@@ -34,7 +35,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main CA-side ski base.",
-      "source": "heavenly.com"
+      "source": "heavenly.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-stateline-casinos",
@@ -46,7 +48,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "NV-side casinos. Free parking + RV-capable.",
-      "source": "caesars.com"
+      "source": "caesars.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-ed-zback-park",
@@ -58,7 +61,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "West-shore state park + campground.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-emerald-bay-vista",
@@ -82,7 +86,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Trailhead to historic castle on lake.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-dl-bliss",
@@ -94,7 +99,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + campground + Rubicon Trail.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-kiva-beach",
@@ -106,7 +112,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Beach + Tallac historic buildings.",
-      "source": "fs.usda.gov/ltbmu"
+      "source": "fs.usda.gov/ltbmu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-pope-beach",
@@ -118,7 +125,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USFS beach. Fee.",
-      "source": "fs.usda.gov/ltbmu"
+      "source": "fs.usda.gov/ltbmu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-camp-richardson",
@@ -130,7 +138,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic resort + campground + cabins.",
-      "source": "camprichardson.com"
+      "source": "camprichardson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-baldwin-beach",
@@ -142,7 +151,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USFS beach with parking.",
-      "source": "fs.usda.gov/ltbmu"
+      "source": "fs.usda.gov/ltbmu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-zephyr-cove",
@@ -154,7 +164,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NV side. MS Dixie paddle wheeler launch.",
-      "source": "zephyrcove.com"
+      "source": "zephyrcove.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-nevada-beach",
@@ -166,7 +177,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USFS beach + campground.",
-      "source": "fs.usda.gov/ltbmu"
+      "source": "fs.usda.gov/ltbmu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-squaw-palisades",
@@ -178,7 +190,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Major ski resort. 1960 Olympics site.",
-      "source": "palisadestahoe.com"
+      "source": "palisadestahoe.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-northstar-resort",
@@ -193,7 +206,8 @@
       "source": "northstarcalifornia.com",
       "entrance_lat": 39.2745987,
       "entrance_lng": -120.1195229,
-      "entrance_source": "OSM parking_entrance node 2465372871"
+      "entrance_source": "OSM parking_entrance node 2465372871",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-kirkwood",
@@ -205,7 +219,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski resort ~35mi S of SLT.",
-      "source": "kirkwood.com"
+      "source": "kirkwood.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-sierra-at-tahoe",
@@ -217,7 +232,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski resort + surface lots.",
-      "source": "sierraattahoe.com"
+      "source": "sierraattahoe.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-tahoe-keys-marina",
@@ -265,7 +281,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USFS visitor center with Kokanee salmon viewing.",
-      "source": "fs.usda.gov/ltbmu"
+      "source": "fs.usda.gov/ltbmu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-us-50-truckee-meadows",
@@ -277,7 +294,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Gateway to SLT from SF Bay direction.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-lake-tahoe-airport",
@@ -289,7 +307,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Small airport. Private flights + limited charter.",
-      "source": "cityofslt.us"
+      "source": "cityofslt.us",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-truckee-tahoe-airport",
@@ -301,7 +320,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "North shore GA airport.",
-      "source": "truckeetahoeairport.com"
+      "source": "truckeetahoeairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slt-tahoe-shuttle-hub",

@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Downtown visitor info. Handles RVs/buses.",
-      "source": "discovermoab.com"
+      "source": "discovermoab.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-main-st-lots",
@@ -22,7 +23,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple municipal lots along US-191.",
-      "source": "moabcity.org"
+      "source": "moabcity.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-swanny-park",
@@ -34,7 +36,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "City park + event space.",
-      "source": "moabcity.org"
+      "source": "moabcity.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-lions-park",
@@ -46,7 +49,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Colorado River access + trailhead.",
-      "source": "moabcity.org"
+      "source": "moabcity.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-arches-visitor-ctr",
@@ -58,7 +62,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Arches entrance. Timed entry Apr-Oct.",
-      "source": "nps.gov/arch"
+      "source": "nps.gov/arch",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-arches-delicate",
@@ -70,7 +75,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Most-visited lot. Gets full.",
-      "source": "nps.gov/arch"
+      "source": "nps.gov/arch",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-arches-devils-garden",
@@ -82,7 +88,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "End of park road. Multiple arches.",
-      "source": "nps.gov/arch"
+      "source": "nps.gov/arch",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-arches-windows",
@@ -94,7 +101,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple arches in one area.",
-      "source": "nps.gov/arch"
+      "source": "nps.gov/arch",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-canyonlands-island",
@@ -106,7 +114,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main Canyonlands entrance. RV-friendly.",
-      "source": "nps.gov/cany"
+      "source": "nps.gov/cany",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-canyonlands-needles",
@@ -118,7 +127,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "South Canyonlands district. Remote.",
-      "source": "nps.gov/cany"
+      "source": "nps.gov/cany",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-dead-horse-point",
@@ -130,7 +140,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic overlook. Campground on-site.",
-      "source": "stateparks.utah.gov"
+      "source": "stateparks.utah.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-corona-arch",
@@ -142,7 +153,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular BLM trailhead.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-slickrock-bike-trail",
@@ -154,7 +166,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "World-famous slickrock cycling area.",
-      "source": "grandcountyutah.net"
+      "source": "grandcountyutah.net",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-sand-flats-recreation",
@@ -166,7 +179,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "BLM rec area + camping. Hells Revenge trail.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-colorado-riverway",
@@ -178,7 +192,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "BLM river access along scenic UT-128.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-arches-landing-camp",
@@ -190,7 +205,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV park on US-191.",
-      "source": "moabvalleyrv.com"
+      "source": "moabvalleyrv.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-canyonlands-campground",
@@ -202,7 +218,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "In-town RV park.",
-      "source": "canyonlandsrv.com"
+      "source": "canyonlandsrv.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-spanish-trail-rv",
@@ -214,7 +231,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV park south of town.",
-      "source": "spanishtrailrvpark.com"
+      "source": "spanishtrailrvpark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-museum-moab",
@@ -238,7 +256,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Dinner theater + surface lot.",
-      "source": "barmchuckwagon.com"
+      "source": "barmchuckwagon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-hogback",
@@ -250,7 +269,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "MTB area.",
-      "source": "trailforks.com"
+      "source": "trailforks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-scenic-byway-128",
@@ -262,7 +282,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Scenic river byway. Multiple trailheads.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-fisher-towers",
@@ -274,7 +295,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic spires. BLM lot.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-behind-the-rocks",
@@ -286,7 +308,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Off-road/hiking access.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-grand-junction-airport",
@@ -298,7 +321,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Closest major airport (~110mi NE).",
-      "source": "gjairport.com"
+      "source": "gjairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mab-canyonlands-field",
@@ -310,7 +334,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Small regional airport north of Moab.",
-      "source": "moabairport.com"
+      "source": "moabairport.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

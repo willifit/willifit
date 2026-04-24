@@ -79,7 +79,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots along Harbor. Accommodates oversized.",
-      "source": "seaportvillage.com"
+      "source": "seaportvillage.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-embarcadero",
@@ -132,14 +133,29 @@
       "addr": "333 W Harbor Dr",
       "lat": 32.7072,
       "lng": -117.1661,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Hotel garage near Convention Center.",
-      "source": "Needs verification",
+      "notes": "Hotel garage near Convention Center.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'6\"\" (pano 9YvIR8K5Cy7qMpJDK14kjw, heading 135\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 32.7083818,
       "entrance_lng": -117.1646934,
-      "entrance_source": "OSM parking_entrance node 9882085096"
+      "entrance_source": "OSM parking_entrance node 9882085096",
+      "verified_on": "2026-04-23",
+      "pano_id": "9YvIR8K5Cy7qMpJDK14kjw",
+      "pano_heading": 135,
+      "sections": [
+        {
+          "label": "Valet Parking Only",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "sd-balboa-park",
@@ -154,7 +170,8 @@
       "source": "balboapark.org",
       "entrance_lat": 32.7261437,
       "entrance_lng": -117.1438461,
-      "entrance_source": "OSM parking_entrance node 2657026383"
+      "entrance_source": "OSM parking_entrance node 2657026383",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-balboa-museum",
@@ -166,7 +183,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Central Balboa Park surface lot.",
-      "source": "balboapark.org"
+      "source": "balboapark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-zoo-lot",
@@ -178,7 +196,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free zoo parking. Handles RVs + tall vehicles.",
-      "source": "sandiegozoo.org"
+      "source": "sandiegozoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-old-town-state",
@@ -190,7 +209,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free surface lot. Oversized OK.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-fashion-valley",
@@ -198,14 +218,29 @@
       "addr": "7007 Friars Rd",
       "lat": 32.7678,
       "lng": -117.1691,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Surface lot + small garage.",
-      "source": "fashionvalley.com",
+      "notes": "Surface lot + small garage.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'-8\"\" (pano FGo8JVFdDz9ko7UREVgOgw, heading 0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: fashionvalley.com",
       "entrance_lat": 32.7688799,
       "entrance_lng": -117.1690262,
-      "entrance_source": "OSM parking_entrance node 12284993620"
+      "entrance_source": "OSM parking_entrance node 12284993620",
+      "verified_on": "2026-04-23",
+      "pano_id": "FGo8JVFdDz9ko7UREVgOgw",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "ENTER",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Enter Clearance",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "sd-westfield-utc",
@@ -213,14 +248,29 @@
       "addr": "4545 La Jolla Village Dr",
       "lat": 32.8706,
       "lng": -117.2108,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Upscale mall garage near UCSD.",
-      "source": "westfield.com",
+      "notes": "Upscale mall garage near UCSD.\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano wLWx8BlrhZzrwXVy6tE-vQ, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: westfield.com",
       "entrance_lat": 32.871906,
       "entrance_lng": -117.2108479,
-      "entrance_source": "OSM parking_entrance node 13246801237"
+      "entrance_source": "OSM parking_entrance node 13246801237",
+      "verified_on": "2026-04-23",
+      "pano_id": "wLWx8BlrhZzrwXVy6tE-vQ",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Ocean Garage Entry",
+          "height_in": 120,
+          "height_label": "10'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "sd-la-jolla-cove",
@@ -244,7 +294,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots + street. Belmont Park adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-ucsd-gilman",
@@ -252,14 +303,17 @@
       "addr": "9500 Gilman Dr",
       "lat": 32.8796,
       "lng": -117.2333,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "UCSD visitor garage.",
-      "source": "transportation.ucsd.edu",
+      "notes": "UCSD visitor garage.\nVerified 2026-04-23 from sign reading \"7'0\" (pano R5ro8eYw2rvg8OZJTMUv6A, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: transportation.ucsd.edu",
       "entrance_lat": 32.877931,
       "entrance_lng": -117.233943,
-      "entrance_source": "OSM parking_entrance node 9429180958"
+      "entrance_source": "OSM parking_entrance node 9429180958",
+      "verified_on": "2026-04-23",
+      "pano_id": "R5ro8eYw2rvg8OZJTMUv6A",
+      "pano_heading": 90
     },
     {
       "id": "sd-qualcomm-stadium",
@@ -271,7 +325,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Aztecs/Wave FC. Surface lots. Oversized OK.",
-      "source": "snapdragonstadium.com"
+      "source": "snapdragonstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sd-viejas",
@@ -291,14 +346,17 @@
       "addr": "770 W Ash St",
       "lat": 32.7211,
       "lng": -117.1686,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Little Italy district.",
-      "source": "Needs verification",
+      "notes": "Little Italy district.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 0WHGT5wc9FrD-Ie8NxTf8g, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 32.7213349,
       "entrance_lng": -117.1694461,
-      "entrance_source": "OSM parking_entrance node 9900108097"
+      "entrance_source": "OSM parking_entrance node 9900108097",
+      "verified_on": "2026-04-23",
+      "pano_id": "0WHGT5wc9FrD-Ie8NxTf8g",
+      "pano_heading": 270
     },
     {
       "id": "sd-liberty-station",
@@ -310,7 +368,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mixed-use former Naval base. Free surface lots.",
-      "source": "libertystation.com"
+      "source": "libertystation.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "san-t1-garage",
@@ -346,7 +405,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK. Shuttle to terminals.",
-      "source": "san.org"
+      "source": "san.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w30808970",
@@ -358,7 +418,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w404670197",

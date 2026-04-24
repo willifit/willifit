@@ -43,7 +43,8 @@
       "source": "charlestoncvb.com",
       "entrance_lat": 32.7901255,
       "entrance_lng": -79.9379181,
-      "entrance_source": "OSM parking_entrance node 12994968792"
+      "entrance_source": "OSM parking_entrance node 12994968792",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-cumberland-garage",
@@ -51,14 +52,17 @@
       "addr": "55 Cumberland St",
       "lat": 32.7816,
       "lng": -79.9305,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "City-owned historic district.",
-      "source": "charleston-sc.gov",
+      "notes": "City-owned historic district.\nVerified 2026-04-23 from sign reading \"8'0\" (pano 1Wxg92Jp6w2WZSMfYe8CAQ, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: charleston-sc.gov",
       "entrance_lat": 32.7815455,
       "entrance_lng": -79.9306397,
-      "entrance_source": "OSM parking_entrance node 13265507469"
+      "entrance_source": "OSM parking_entrance node 13265507469",
+      "verified_on": "2026-04-23",
+      "pano_id": "1Wxg92Jp6w2WZSMfYe8CAQ",
+      "pano_heading": 135
     },
     {
       "id": "chs-marion-square",
@@ -142,7 +146,8 @@
       "source": "cofc.edu",
       "entrance_lat": 32.783207,
       "entrance_lng": -79.9362529,
-      "entrance_source": "OSM parking_entrance node 12717115019"
+      "entrance_source": "OSM parking_entrance node 12717115019",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-citadel",
@@ -154,7 +159,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Military college visitor.",
-      "source": "citadel.edu"
+      "source": "citadel.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-battery",
@@ -181,7 +187,8 @@
       "source": "Needs verification",
       "entrance_lat": 32.7774838,
       "entrance_lng": -79.9262568,
-      "entrance_source": "OSM parking_entrance node 12824742212"
+      "entrance_source": "OSM parking_entrance node 12824742212",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-patriots-point",
@@ -193,7 +200,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USS Yorktown + submarines. Large surface lot.",
-      "source": "patriotspoint.org"
+      "source": "patriotspoint.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-mt-pleasant-memorial",
@@ -205,7 +213,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Pier 'under the bridge'.",
-      "source": "tompsc.com"
+      "source": "tompsc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-folly-beach",
@@ -217,7 +226,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Folly Beach access. Surface lot.",
-      "source": "ccprc.com"
+      "source": "ccprc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-sullivans-island",
@@ -241,7 +251,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS visitor center.",
-      "source": "nps.gov/fosu"
+      "source": "nps.gov/fosu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-boone-hall",
@@ -253,7 +264,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic plantation. Large surface.",
-      "source": "boonehallplantation.com"
+      "source": "boonehallplantation.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-magnolia-plantation",
@@ -265,7 +277,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic plantation. Free parking.",
-      "source": "magnoliaplantation.com"
+      "source": "magnoliaplantation.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-middleton-place",
@@ -277,7 +290,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic plantation.",
-      "source": "middletonplace.org"
+      "source": "middletonplace.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-charleston-place",
@@ -316,7 +330,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air mall.",
-      "source": "mtpleasanttownecentre.com"
+      "source": "mtpleasanttownecentre.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chs-airport-garage",
@@ -340,7 +355,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "iflychs.com"
+      "source": "iflychs.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w38086509",

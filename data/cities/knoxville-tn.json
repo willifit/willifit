@@ -6,14 +6,17 @@
       "addr": "418 Wall Ave",
       "lat": 35.965,
       "lng": -83.9197,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown Market Square public garage.",
-      "source": "knoxvilletn.gov",
+      "notes": "Downtown Market Square public garage.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano d8HHlyzWRmwdyvoa2rMdPQ, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: knoxvilletn.gov",
       "entrance_lat": 35.9637445,
       "entrance_lng": -83.9211806,
-      "entrance_source": "OSM parking_entrance node 13196927956"
+      "entrance_source": "OSM parking_entrance node 13196927956",
+      "verified_on": "2026-04-23",
+      "pano_id": "d8HHlyzWRmwdyvoa2rMdPQ",
+      "pano_heading": 90
     },
     {
       "id": "knx-locust-st-garage",
@@ -55,7 +58,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ice Bears arena + concerts. Surface lots.",
-      "source": "knoxvilleciviccoliseum.com"
+      "source": "knoxvilleciviccoliseum.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-tennessee-theatre",
@@ -82,7 +86,8 @@
       "source": "knoxbijou.com",
       "entrance_lat": 35.9632984,
       "entrance_lng": -83.9209144,
-      "entrance_source": "OSM parking_entrance node 13196927957"
+      "entrance_source": "OSM parking_entrance node 13196927957",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-worlds-fair-park",
@@ -94,7 +99,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "1982 World's Fair site. Sunsphere.",
-      "source": "worldsfairpark.org"
+      "source": "worldsfairpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-convention-center",
@@ -102,14 +108,17 @@
       "addr": "701 Henley St",
       "lat": 35.9603,
       "lng": -83.9263,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 138,
+      "height_label": "11'6\"",
       "oversized": false,
-      "notes": "KCC garage.",
-      "source": "knoxvilleconventioncenter.com",
+      "notes": "KCC garage.\nVerified 2026-04-23 from sign reading \"11'6\"\" (pano OAfNIP6rTUseeUI9IziYAQ, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: knoxvilleconventioncenter.com",
       "entrance_lat": 35.9593487,
       "entrance_lng": -83.9254033,
-      "entrance_source": "OSM parking_entrance node 12531914806"
+      "entrance_source": "OSM parking_entrance node 12531914806",
+      "verified_on": "2026-04-23",
+      "pano_id": "OAfNIP6rTUseeUI9IziYAQ",
+      "pano_heading": 180
     },
     {
       "id": "knx-thompson-boling",
@@ -121,7 +130,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Tennessee basketball. Surface lots.",
-      "source": "utsports.com"
+      "source": "utsports.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-neyland-stadium",
@@ -133,7 +143,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Vols football (7th-largest US stadium). Massive RV tailgating.",
-      "source": "utsports.com"
+      "source": "utsports.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-ut-volunteer-garage",
@@ -160,7 +171,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-east-tn-history-ctr",
@@ -196,7 +208,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Nature preserve + trails.",
-      "source": "ijams.org"
+      "source": "ijams.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-zoo",
@@ -208,7 +221,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Red panda conservation center.",
-      "source": "zooknoxville.org"
+      "source": "zooknoxville.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-womens-basketball-hof",
@@ -235,7 +249,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "50mi of trails in South Knoxville.",
-      "source": "outdoorknoxville.com"
+      "source": "outdoorknoxville.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-west-town-mall",
@@ -259,7 +274,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping + dining.",
-      "source": "turkeycreek.com"
+      "source": "turkeycreek.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-oak-ridge-nat-lab",
@@ -283,7 +299,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main GSMNP visitor center (TN side). RV-friendly.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-cades-cove",
@@ -295,7 +312,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "11-mile scenic loop. Trailhead lots.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "knx-airport-tys-main",
@@ -319,7 +337,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "tys.org"
+      "source": "tys.org",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

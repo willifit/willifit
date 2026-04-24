@@ -51,14 +51,17 @@
       "addr": "100 Montgomery St",
       "lat": 32.0795,
       "lng": -81.0942,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned.",
-      "source": "savannahga.gov",
+      "notes": "City-owned.\nVerified 2026-04-23 from sign reading \"7' 0\" (pano KN-O4et3oOnacXkqR1mquw, heading 315.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: savannahga.gov",
       "entrance_lat": 32.0787275,
       "entrance_lng": -81.095851,
-      "entrance_source": "OSM parking_entrance node 10236573114"
+      "entrance_source": "OSM parking_entrance node 10236573114",
+      "verified_on": "2026-04-23",
+      "pano_id": "KN-O4et3oOnacXkqR1mquw",
+      "pano_heading": 315.0
     },
     {
       "id": "sav-whitaker-garage",
@@ -88,7 +91,8 @@
       "source": "visitsavannah.com",
       "entrance_lat": 32.079843,
       "entrance_lng": -81.0972005,
-      "entrance_source": "OSM parking_entrance node 2187588369"
+      "entrance_source": "OSM parking_entrance node 2187588369",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-city-market",
@@ -103,7 +107,8 @@
       "source": "savannahcitymarket.com",
       "entrance_lat": 32.0813819,
       "entrance_lng": -81.0946228,
-      "entrance_source": "OSM parking_entrance node 10236200384"
+      "entrance_source": "OSM parking_entrance node 10236200384",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-river-street",
@@ -118,7 +123,8 @@
       "source": "riverstreetsavannah.com",
       "entrance_lat": 32.0817731,
       "entrance_lng": -81.0927215,
-      "entrance_source": "OSM parking_entrance node 11991379153"
+      "entrance_source": "OSM parking_entrance node 11991379153",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-plant-riverside",
@@ -145,7 +151,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic 30-acre park.",
-      "source": "visitsavannah.com"
+      "source": "visitsavannah.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-telfair-academy",
@@ -160,7 +167,8 @@
       "source": "telfair.org",
       "entrance_lat": 32.0787275,
       "entrance_lng": -81.095851,
-      "entrance_source": "OSM parking_entrance node 10236573114"
+      "entrance_source": "OSM parking_entrance node 10236573114",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-scad-gallery",
@@ -172,7 +180,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "SCAD campus museum.",
-      "source": "scadmoa.org"
+      "source": "scadmoa.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-trustees-theater",
@@ -187,7 +196,8 @@
       "source": "Needs verification",
       "entrance_lat": 32.0790851,
       "entrance_lng": -81.0905883,
-      "entrance_source": "OSM parking_entrance node 10251127937"
+      "entrance_source": "OSM parking_entrance node 10251127937",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-tybee-north-beach",
@@ -199,7 +209,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Tybee Island beach. ~20mi east.",
-      "source": "cityoftybee.org"
+      "source": "cityoftybee.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-tybee-south-beach",
@@ -211,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main Tybee beach lot + pier.",
-      "source": "cityoftybee.org"
+      "source": "cityoftybee.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-ft-pulaski",
@@ -223,7 +235,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic Civil War fort. RV-friendly.",
-      "source": "nps.gov/fopu"
+      "source": "nps.gov/fopu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-wormsloe",
@@ -247,7 +260,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + campground.",
-      "source": "gastateparks.org"
+      "source": "gastateparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-oatland-island",
@@ -307,7 +321,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic house + film location.",
-      "source": "mercerhouse.com"
+      "source": "mercerhouse.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sav-airport",
@@ -331,7 +346,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "savannahairport.com"
+      "source": "savannahairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w130209207",

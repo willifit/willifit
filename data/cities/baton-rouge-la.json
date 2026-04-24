@@ -6,14 +6,17 @@
       "addr": "275 S River Rd",
       "lat": 30.4408,
       "lng": -91.19,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Arena + theater + exhibition hall.",
-      "source": "brrivercenter.com",
+      "notes": "Arena + theater + exhibition hall.\nVerified 2026-04-23 from sign reading \"3-7\" (pano txgPg2WuxzRdFDmE2C9W_g, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: brrivercenter.com",
       "entrance_lat": 30.4397885,
       "entrance_lng": -91.1896838,
-      "entrance_source": "OSM parking_entrance node 1822095613"
+      "entrance_source": "OSM parking_entrance node 1822095613",
+      "verified_on": "2026-04-23",
+      "pano_id": "txgPg2WuxzRdFDmE2C9W_g",
+      "pano_heading": 0
     },
     {
       "id": "btr-state-capitol",
@@ -25,7 +28,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Grounds.",
-      "source": "louisianaoldstatecapitol.org"
+      "source": "louisianaoldstatecapitol.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-old-capitol",
@@ -33,11 +37,14 @@
       "addr": "100 North Blvd",
       "lat": 30.4464,
       "lng": -91.188,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Historic 1847 Gothic building. Museum.",
-      "source": "louisianaoldstatecapitol.org"
+      "notes": "Historic 1847 Gothic building. Museum.\nVerified 2026-04-23 from sign reading \"10'0\" (pano 6MsJ9NigBXI9GjBqgJDRjA, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: louisianaoldstatecapitol.org",
+      "verified_on": "2026-04-23",
+      "pano_id": "6MsJ9NigBXI9GjBqgJDRjA",
+      "pano_heading": 90
     },
     {
       "id": "btr-lsu-museum-art",
@@ -73,7 +80,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "LSU football. Massive surface lots + RV tailgating ('Pre-game' most iconic tailgate).",
-      "source": "lsusports.net"
+      "source": "lsusports.net",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-alex-box-stadium",
@@ -85,7 +93,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "LSU baseball. 10,000+ RVs on weekends.",
-      "source": "lsusports.net"
+      "source": "lsusports.net",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-pmac",
@@ -136,7 +145,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "brzoo.org"
+      "source": "brzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-perkins-rowe",
@@ -148,7 +158,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale open-air mixed-use.",
-      "source": "perkinsrowe.com"
+      "source": "perkinsrowe.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-mall-louisiana",
@@ -172,7 +183,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air lifestyle center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-uss-kidd",
@@ -232,7 +244,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "HBCU campus.",
-      "source": "subr.edu"
+      "source": "subr.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-burden-museum-gardens",
@@ -244,7 +257,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "440-acre research + gardens.",
-      "source": "lsu.edu"
+      "source": "lsu.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-capitol-park-museum",
@@ -252,14 +266,29 @@
       "addr": "660 N 4th St",
       "lat": 30.4515,
       "lng": -91.1864,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "LA history museum.",
-      "source": "louisianastatemuseum.org",
+      "notes": "LA history museum.\nVerified 2026-04-23 from sign reading \"11' 0\"\" (pano tQ6eXh7sHWezjL1U5MpQBA, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: louisianastatemuseum.org",
       "entrance_lat": 30.4516283,
       "entrance_lng": -91.185526,
-      "entrance_source": "OSM parking_entrance node 9143244431"
+      "entrance_source": "OSM parking_entrance node 9143244431",
+      "verified_on": "2026-04-23",
+      "pano_id": "tQ6eXh7sHWezjL1U5MpQBA",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Enter",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Parking garage entrance",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "btr-baton-rouge-farmers",
@@ -310,7 +339,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flybtr.com"
+      "source": "flybtr.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

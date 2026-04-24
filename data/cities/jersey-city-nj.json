@@ -6,14 +6,17 @@
       "addr": "30 Mall Dr W",
       "lat": 40.7271,
       "lng": -74.0352,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Hudson River mall + PATH station.",
-      "source": "newportnj.com",
+      "notes": "Hudson River mall + PATH station.\nVerified 2026-04-23 from sign reading \"7'4\" (pano hpBNybTs64Fug8aRlN5tdw, heading 90.0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: newportnj.com",
       "entrance_lat": 40.7273361,
       "entrance_lng": -74.0358764,
-      "entrance_source": "OSM parking_entrance node 10723062054"
+      "entrance_source": "OSM parking_entrance node 10723062054",
+      "verified_on": "2026-04-23",
+      "pano_id": "hpBNybTs64Fug8aRlN5tdw",
+      "pano_heading": 90.0
     },
     {
       "id": "jc-journal-square-path",
@@ -43,7 +46,8 @@
       "source": "Needs verification",
       "entrance_lat": 40.719522,
       "entrance_lng": -74.0418592,
-      "entrance_source": "OSM parking_entrance node 6579266830"
+      "entrance_source": "OSM parking_entrance node 6579266830",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-liberty-state-park",
@@ -55,7 +59,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Statue of Liberty + Ellis Island ferry. Free surface lots.",
-      "source": "libertystatepark.com"
+      "source": "libertystatepark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-liberty-science-center",
@@ -67,7 +72,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Science center surface lots.",
-      "source": "lsc.org"
+      "source": "lsc.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-exchange-place",
@@ -94,7 +100,8 @@
       "source": "Needs verification",
       "entrance_lat": 40.7273361,
       "entrance_lng": -74.0358764,
-      "entrance_source": "OSM parking_entrance node 10723062054"
+      "entrance_source": "OSM parking_entrance node 10723062054",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-metro-plaza",
@@ -133,7 +140,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Statue Cruises ferry lot.",
-      "source": "statuecruises.com"
+      "source": "statuecruises.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-historic-downtown",
@@ -181,7 +189,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "LSP south lot.",
-      "source": "libertystatepark.com"
+      "source": "libertystatepark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-jersey-city-medical",
@@ -208,7 +217,8 @@
       "source": "saintpeters.edu",
       "entrance_lat": 40.7258086,
       "entrance_lng": -74.0660012,
-      "entrance_source": "OSM parking_entrance node 12381750712"
+      "entrance_source": "OSM parking_entrance node 12381750712",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-edison-pkwy",
@@ -235,7 +245,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Multiple small lots along waterfront.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-bayonne-bridge-lot",
@@ -247,7 +258,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Bayonne adjacent.",
-      "source": "panynj.gov"
+      "source": "panynj.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-hoboken-terminal",
@@ -274,7 +286,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Meadowlands transit hub. Large lots.",
-      "source": "njtransit.com"
+      "source": "njtransit.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-meadowlands-sports",
@@ -286,7 +299,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Giants/Jets + concerts. Massive surface + RV tailgating.",
-      "source": "metlifestadium.com"
+      "source": "metlifestadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jc-american-dream",
@@ -294,11 +308,14 @@
       "addr": "1 American Dream Way, E Rutherford",
       "lat": 40.8152,
       "lng": -74.0686,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Mega-mall with indoor theme park + water park + ski slope.",
-      "source": "americandream.com"
+      "notes": "Mega-mall with indoor theme park + water park + ski slope.\nVerified 2026-04-23 from sign reading \"10'0\" (pano OUQ_ptroIJ9g5mN2z4ecBw, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: americandream.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "OUQ_ptroIJ9g5mN2z4ecBw",
+      "pano_heading": 0
     },
     {
       "id": "jc-park-ride-palisade",
@@ -318,14 +335,17 @@
       "addr": "Bergenline Ave, Union City",
       "lat": 40.7731,
       "lng": -74.0261,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Busy Hudson County commercial strip.",
-      "source": "Needs verification",
+      "notes": "Busy Hudson County commercial strip.\nVerified 2026-04-23 from sign reading \"7'0\" (pano iLxYS5_IN0InqFz-_1V8Ew, heading 270.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7738214,
       "entrance_lng": -74.0248519,
-      "entrance_source": "OSM parking_entrance node 7338907697"
+      "entrance_source": "OSM parking_entrance node 7338907697",
+      "verified_on": "2026-04-23",
+      "pano_id": "iLxYS5_IN0InqFz-_1V8Ew",
+      "pano_heading": 270.0
     },
     {
       "id": "jc-newark-penn-station",
@@ -333,14 +353,17 @@
       "addr": "1 Raymond Plaza W, Newark",
       "lat": 40.7347,
       "lng": -74.1644,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 90,
+      "height_label": "7'6\"",
       "oversized": false,
-      "notes": "Newark rail hub adjacent (separate city).",
-      "source": "Needs verification",
+      "notes": "Newark rail hub adjacent (separate city).\nVerified 2026-04-23 from sign reading \"7'6\"\" (pano y68S1js-cDbn6TxW9fVnnQ, heading 315\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7357315,
       "entrance_lng": -74.1638255,
-      "entrance_source": "OSM parking_entrance node 5005392487"
+      "entrance_source": "OSM parking_entrance node 5005392487",
+      "verified_on": "2026-04-23",
+      "pano_id": "y68S1js-cDbn6TxW9fVnnQ",
+      "pano_heading": 315
     }
   ],
   "tunnels": [
@@ -385,10 +408,13 @@
       "addr": "US-1/9 over Meadowlands",
       "lat": 40.7411,
       "lng": -74.0812,
-      "height_in": null,
-      "height_label": "Over water",
-      "notes": "1932 cantilever truss. No commercial trucks allowed.",
-      "source": "NJDOT"
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "1932 cantilever truss. No commercial trucks allowed.\nVerified 2026-04-23 from sign reading \"13 FT 0 IN\" (pano I8CU5KJ6afLjnj68yixwPQ, heading 315\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: NJDOT",
+      "verified_on": "2026-04-23",
+      "pano_id": "I8CU5KJ6afLjnj68yixwPQ",
+      "pano_heading": 315
     },
     {
       "id": "jc-nj-turnpike-low",

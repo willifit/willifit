@@ -22,7 +22,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic movie palace.",
-      "source": "kentuckytheatre.org"
+      "source": "kentuckytheatre.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-convention-ctr",
@@ -30,14 +31,17 @@
       "addr": "430 W Vine St",
       "lat": 38.0422,
       "lng": -84.4995,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "New convention center + Rupp complex.",
-      "source": "centralbankcenter.com",
+      "notes": "New convention center + Rupp complex.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Ztxj3GiIOKORtm9j1trWgQ, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: centralbankcenter.com",
       "entrance_lat": 38.0425427,
       "entrance_lng": -84.501676,
-      "entrance_source": "OSM parking_entrance node 12633166324"
+      "entrance_source": "OSM parking_entrance node 12633166324",
+      "verified_on": "2026-04-23",
+      "pano_id": "Ztxj3GiIOKORtm9j1trWgQ",
+      "pano_heading": 225
     },
     {
       "id": "lex-victorian-sq",
@@ -45,14 +49,17 @@
       "addr": "401 W Main St",
       "lat": 38.0467,
       "lng": -84.4991,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown.",
-      "source": "Needs verification",
+      "notes": "Downtown.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7' 0\"\" (pano RIuN_IpClN00Biw_A4m_og, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 38.0470799,
       "entrance_lng": -84.4990661,
-      "entrance_source": "OSM parking_entrance node 4162419456"
+      "entrance_source": "OSM parking_entrance node 4162419456",
+      "verified_on": "2026-04-23",
+      "pano_id": "RIuN_IpClN00Biw_A4m_og",
+      "pano_heading": 45
     },
     {
       "id": "lex-park-plaza",
@@ -103,7 +110,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-the-summit",
@@ -115,7 +123,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale open-air shopping.",
-      "source": "thesummitatfritzfarm.com"
+      "source": "thesummitatfritzfarm.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-kentucky-horse-park",
@@ -127,7 +136,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous equestrian park + campground. Multiple RV sites.",
-      "source": "kyhorsepark.com"
+      "source": "kyhorsepark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-keeneland",
@@ -139,7 +149,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic thoroughbred track. Massive surface + RV.",
-      "source": "keeneland.com"
+      "source": "keeneland.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-red-mile",
@@ -151,7 +162,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Harness racing + gaming. RV-friendly.",
-      "source": "redmileky.com"
+      "source": "redmileky.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-uk-student-center",
@@ -159,14 +171,17 @@
       "addr": "160 Avenue of Champions",
       "lat": 38.0349,
       "lng": -84.5044,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 138,
+      "height_label": "11'6\"",
       "oversized": false,
-      "notes": "UK visitor garage.",
-      "source": "uky.edu/transportation",
+      "notes": "UK visitor garage.\nVerified 2026-04-23 from sign reading \"11'6\"\" (pano P6EUfBc0Ht6KN9crx74tLA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: uky.edu/transportation",
       "entrance_lat": 38.0335194,
       "entrance_lng": -84.5038963,
-      "entrance_source": "OSM parking_entrance node 2445179083"
+      "entrance_source": "OSM parking_entrance node 2445179083",
+      "verified_on": "2026-04-23",
+      "pano_id": "P6EUfBc0Ht6KN9crx74tLA",
+      "pano_heading": 0
     },
     {
       "id": "lex-uk-medical-ctr",
@@ -190,7 +205,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Wildcats football. Surface lots + RV tailgating.",
-      "source": "ukathletics.com"
+      "source": "ukathletics.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-distillery-district",
@@ -202,7 +218,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former distillery converted to restaurants.",
-      "source": "distillerydistrict.com"
+      "source": "distillerydistrict.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-woodland-park",
@@ -226,7 +243,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot at trailhead.",
-      "source": "lexingtonky.gov"
+      "source": "lexingtonky.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-headley-whitney",
@@ -274,7 +292,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Adjacent to Blue Grass Airport.",
-      "source": "aviationky.org"
+      "source": "aviationky.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-blue-grass-airport",
@@ -298,7 +317,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "bluegrassairport.com"
+      "source": "bluegrassairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lex-bourbon-trail",
@@ -310,7 +330,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "~25mi west. Distillery tours. Many more on trail.",
-      "source": "buffalotracedistillery.com"
+      "source": "buffalotracedistillery.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

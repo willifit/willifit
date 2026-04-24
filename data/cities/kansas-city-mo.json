@@ -6,14 +6,17 @@
       "addr": "1200 Main St",
       "lat": 39.102,
       "lng": -94.5845,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Multiple Entertainment district ramps.",
-      "source": "powerandlightdistrict.com",
+      "notes": "Multiple Entertainment district ramps.\nVerified 2026-04-23 from sign reading \"CLEARANCE 8' 0\"\" (pano TUOMSTSwZSwytzF0ORR1BA, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: powerandlightdistrict.com",
       "entrance_lat": 39.1016575,
       "entrance_lng": -94.5841361,
-      "entrance_source": "OSM parking_entrance node 9934921950"
+      "entrance_source": "OSM parking_entrance node 9934921950",
+      "verified_on": "2026-04-23",
+      "pano_id": "TUOMSTSwZSwytzF0ORR1BA",
+      "pano_heading": 45
     },
     {
       "id": "kc-t-mobile-center",
@@ -21,14 +24,17 @@
       "addr": "1407 Grand Blvd",
       "lat": 39.098,
       "lng": -94.5831,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Sporting KC / concerts arena.",
-      "source": "t-mobilecenter.com",
+      "notes": "Sporting KC / concerts arena.\nVerified 2026-04-23 from sign reading \"11'0\" (pano whgwr_0SmksHDkZLAR7j4g, heading 0.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: t-mobilecenter.com",
       "entrance_lat": 39.0979694,
       "entrance_lng": -94.5831355,
-      "entrance_source": "OSM parking_entrance node 9896540115"
+      "entrance_source": "OSM parking_entrance node 9896540115",
+      "verified_on": "2026-04-23",
+      "pano_id": "whgwr_0SmksHDkZLAR7j4g",
+      "pano_heading": 0.0
     },
     {
       "id": "kc-convention-bartle",
@@ -51,14 +57,17 @@
       "addr": "2450 Grand Blvd",
       "lat": 39.0842,
       "lng": -94.5839,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Hallmark HQ + shopping + Sea Life.",
-      "source": "crowncenter.com",
+      "notes": "Hallmark HQ + shopping + Sea Life.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano HXao22AZRj_GmSN498QhqA, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: crowncenter.com",
       "entrance_lat": 39.0837428,
       "entrance_lng": -94.5825337,
-      "entrance_source": "OSM parking_entrance node 1527768156"
+      "entrance_source": "OSM parking_entrance node 1527768156",
+      "verified_on": "2026-04-23",
+      "pano_id": "HXao22AZRj_GmSN498QhqA",
+      "pano_heading": 135
     },
     {
       "id": "kc-union-station",
@@ -88,7 +97,8 @@
       "source": "theworldwar.org",
       "entrance_lat": 39.0813757,
       "entrance_lng": -94.5834849,
-      "entrance_source": "OSM parking_entrance node 13419023025"
+      "entrance_source": "OSM parking_entrance node 13419023025",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-country-club-plaza",
@@ -96,14 +106,17 @@
       "addr": "4750 Broadway Blvd",
       "lat": 39.0423,
       "lng": -94.5895,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Historic open-air shopping plaza garages.",
-      "source": "countryclubplaza.com",
+      "notes": "Historic open-air shopping plaza garages.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'-0\"\" (pano zVeRRz91f_fZ4zIvDNbMIQ, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: countryclubplaza.com",
       "entrance_lat": 39.041604,
       "entrance_lng": -94.5888708,
-      "entrance_source": "OSM parking_entrance node 12468355573"
+      "entrance_source": "OSM parking_entrance node 12468355573",
+      "verified_on": "2026-04-23",
+      "pano_id": "zVeRRz91f_fZ4zIvDNbMIQ",
+      "pano_heading": 45
     },
     {
       "id": "kc-river-market",
@@ -115,7 +128,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Farmers market surface.",
-      "source": "thecitymarket.org"
+      "source": "thecitymarket.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-nelson-atkins",
@@ -127,7 +141,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Famous shuttlecock sculpture lot.",
-      "source": "nelson-atkins.org"
+      "source": "nelson-atkins.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-kauffman",
@@ -135,14 +150,17 @@
       "addr": "1601 Broadway Blvd",
       "lat": 39.0941,
       "lng": -94.5879,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Attached underground garage.",
-      "source": "kauffmancenter.org",
+      "notes": "Attached underground garage.\nVerified 2026-04-23 from sign reading \"8'0\"\" (pano cl58jjOuptjAJUsrpKsBRQ, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: kauffmancenter.org",
       "entrance_lat": 39.0931228,
       "entrance_lng": -94.587163,
-      "entrance_source": "OSM parking_entrance node 6389321668"
+      "entrance_source": "OSM parking_entrance node 6389321668",
+      "verified_on": "2026-04-23",
+      "pano_id": "cl58jjOuptjAJUsrpKsBRQ",
+      "pano_heading": 0
     },
     {
       "id": "kc-negro-leagues",
@@ -154,7 +172,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "18th & Vine historic district.",
-      "source": "nlbm.com"
+      "source": "nlbm.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-18th-vine",
@@ -166,7 +185,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic jazz district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-westport",
@@ -178,7 +198,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Bar/restaurant district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-arrowhead",
@@ -190,7 +211,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Chiefs stadium. Surface + RV tailgating.",
-      "source": "chiefs.com"
+      "source": "chiefs.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-kauffman-stadium",
@@ -202,7 +224,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Royals ballpark. Shares Truman Sports Complex lots.",
-      "source": "mlb.com/royals"
+      "source": "mlb.com/royals",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-childrens-mercy",
@@ -226,7 +249,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Swope Park. Surface.",
-      "source": "kansascityzoo.org"
+      "source": "kansascityzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kc-legends-outlets",
@@ -238,7 +262,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air mall.",
-      "source": "legendsshopping.com"
+      "source": "legendsshopping.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mci-airport-garage",
@@ -246,11 +271,14 @@
       "addr": "1 Intl Sq",
       "lat": 39.2976,
       "lng": -94.7139,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "New single-terminal garage (opened 2023).",
-      "source": "flykci.com"
+      "notes": "New single-terminal garage (opened 2023).\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano wMlJeanoCAxgmPwy825H8g, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: flykci.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "wMlJeanoCAxgmPwy825H8g",
+      "pano_heading": 225
     },
     {
       "id": "mci-airport-economy",
@@ -265,7 +293,8 @@
       "source": "flykci.com",
       "entrance_lat": 39.294186,
       "entrance_lng": -94.713756,
-      "entrance_source": "OSM parking_entrance node 6793547205"
+      "entrance_source": "OSM parking_entrance node 6793547205",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w132571409",
@@ -273,14 +302,17 @@
       "addr": "1118 Oak Street",
       "lat": 39.1004,
       "lng": -94.57886,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano kDWq0GeqBJrQM6oxENtZ7Q, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.1004111,
       "entrance_lng": -94.5786419,
-      "entrance_source": "OSM parking_entrance node 9892147598"
+      "entrance_source": "OSM parking_entrance node 9892147598",
+      "verified_on": "2026-04-23",
+      "pano_id": "kDWq0GeqBJrQM6oxENtZ7Q",
+      "pano_heading": 270
     },
     {
       "id": "osm-w170989886",
@@ -288,14 +320,17 @@
       "addr": "",
       "lat": 39.09913,
       "lng": -94.58156,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\" (pano VbwL-08tncBXi4bHTpLTJQ, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.0990976,
       "entrance_lng": -94.5811758,
-      "entrance_source": "OSM parking_entrance node 9893687663"
+      "entrance_source": "OSM parking_entrance node 9893687663",
+      "verified_on": "2026-04-23",
+      "pano_id": "VbwL-08tncBXi4bHTpLTJQ",
+      "pano_heading": 270
     },
     {
       "id": "osm-w256809109",
@@ -318,14 +353,29 @@
       "addr": "1034 Main Street",
       "lat": 39.10145,
       "lng": -94.58369,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"CLEARANCE 7' 0\"\" (pano TUOMSTSwZSwytzF0ORR1BA, heading 45\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.1015921,
       "entrance_lng": -94.5841391,
-      "entrance_source": "OSM parking_entrance node 9934921943"
+      "entrance_source": "OSM parking_entrance node 9934921943",
+      "verified_on": "2026-04-23",
+      "pano_id": "TUOMSTSwZSwytzF0ORR1BA",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "ENTRANCE",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Entrance",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "osm-w439241350",
@@ -333,14 +383,17 @@
       "addr": "",
       "lat": 39.09483,
       "lng": -94.58381,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "166 spaces [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "166 spaces [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano hrEsRVuvB9D57UQ49oY86w, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.0946342,
       "entrance_lng": -94.5839359,
-      "entrance_source": "OSM parking_entrance node 10215861364"
+      "entrance_source": "OSM parking_entrance node 10215861364",
+      "verified_on": "2026-04-23",
+      "pano_id": "hrEsRVuvB9D57UQ49oY86w",
+      "pano_heading": 0
     },
     {
       "id": "osm-w466819062",
@@ -363,11 +416,14 @@
       "addr": "",
       "lat": 38.99439,
       "lng": -94.69135,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"8'0\" (pano 7wv-Ju2ugzy7Eu8fWuIc2g, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "7wv-Ju2ugzy7Eu8fWuIc2g",
+      "pano_heading": 45
     }
   ],
   "tunnels": [],
@@ -378,10 +434,13 @@
       "addr": "Broadway over Missouri River",
       "lat": 39.1139,
       "lng": -94.591,
-      "height_in": null,
-      "height_label": "Over water",
-      "notes": "Auto bridge.",
-      "source": "Wikipedia"
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Auto bridge.\nVerified 2026-04-23 from sign reading \"13' 0\"\" (pano 4hHtjuLIWtq0HQWpEWLEeA, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Wikipedia",
+      "verified_on": "2026-04-23",
+      "pano_id": "4hHtjuLIWtq0HQWpEWLEeA",
+      "pano_heading": 0
     },
     {
       "id": "kc-bond-bridge",

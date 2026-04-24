@@ -6,14 +6,29 @@
       "addr": "87 Haywood St",
       "lat": 35.597,
       "lng": -82.554,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Main downtown arena + convention.",
-      "source": "harrahscherokeecenter.com",
+      "notes": "Main downtown arena + convention.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6' 5\"\" (pano mkZfBSuAn__b0dWIybellw, heading 270\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: harrahscherokeecenter.com",
       "entrance_lat": 35.5970468,
       "entrance_lng": -82.5541663,
-      "entrance_source": "OSM parking_entrance node 12032021109"
+      "entrance_source": "OSM parking_entrance node 12032021109",
+      "verified_on": "2026-04-23",
+      "pano_id": "mkZfBSuAn__b0dWIybellw",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Entrance",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Parking Garage Entrance",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "ash-biltmore-estate",
@@ -25,7 +40,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Biltmore Estate visitor parking. Tour bus + RV OK.",
-      "source": "biltmore.com"
+      "source": "biltmore.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-biltmore-village",
@@ -37,7 +53,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic village shopping.",
-      "source": "historicbiltmorevillage.com"
+      "source": "historicbiltmorevillage.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-pack-sq-garage",
@@ -49,7 +66,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown central park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-wall-st-garage",
@@ -99,14 +117,17 @@
       "addr": "1 Page Ave",
       "lat": 35.5967,
       "lng": -82.5564,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Historic 1929 building.",
-      "source": "grovearcade.com",
+      "notes": "Historic 1929 building.\nVerified 2026-04-23 from sign reading \"8'\" (pano bhEauk9U6_UE9KQx0Z2xNg, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: grovearcade.com",
       "entrance_lat": 35.5969023,
       "entrance_lng": -82.5580562,
-      "entrance_source": "OSM parking_entrance node 11402585252"
+      "entrance_source": "OSM parking_entrance node 11402585252",
+      "verified_on": "2026-04-23",
+      "pano_id": "bhEauk9U6_UE9KQx0Z2xNg",
+      "pano_heading": 45
     },
     {
       "id": "ash-river-arts-dist",
@@ -118,7 +139,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Artist studios + galleries.",
-      "source": "riverartsdistrict.com"
+      "source": "riverartsdistrict.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-blue-ridge-pkwy-milepost-382",
@@ -130,7 +152,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "BRP Visitor Center + craft shop.",
-      "source": "nps.gov/blri"
+      "source": "nps.gov/blri",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-nc-arboretum",
@@ -142,7 +165,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Botanical garden research facility.",
-      "source": "ncarboretum.org"
+      "source": "ncarboretum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-western-nc-nature-ctr",
@@ -166,7 +190,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Parkway overlook + trailhead.",
-      "source": "nps.gov/blri"
+      "source": "nps.gov/blri",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-mt-pisgah",
@@ -178,7 +203,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Parkway visitor center + inn.",
-      "source": "nps.gov/blri"
+      "source": "nps.gov/blri",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-omni-grove-park",
@@ -226,7 +252,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "High-A Asheville Tourists.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-unc-asheville",
@@ -262,7 +289,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "~25mi SE. State park surface lot.",
-      "source": "chimneyrockpark.com"
+      "source": "chimneyrockpark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-dupont-state-forest",
@@ -274,7 +302,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous waterfalls. Surface lots at trailheads.",
-      "source": "dupontforest.com"
+      "source": "dupontforest.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-pisgah-brevard",
@@ -286,7 +315,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple trailhead lots. RV OK.",
-      "source": "fs.usda.gov/nfsnc"
+      "source": "fs.usda.gov/nfsnc",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ash-weaverville-downtown",
@@ -310,7 +340,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flyavl.com"
+      "source": "flyavl.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

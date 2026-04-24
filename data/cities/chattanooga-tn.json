@@ -22,7 +22,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Waterfront surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-convention-center",
@@ -30,14 +31,17 @@
       "addr": "1 Carter Plaza",
       "lat": 35.0519,
       "lng": -85.3055,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention center garage.",
-      "source": "chattconvention.org",
+      "notes": "Convention center garage.\nVerified 2026-04-23 from sign reading \"7'0\" (pano lDEA5h5zs16LMsODkOy0GA, heading 270.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: chattconvention.org",
       "entrance_lat": 35.0516994,
       "entrance_lng": -85.3076533,
-      "entrance_source": "OSM parking_entrance node 10702113054"
+      "entrance_source": "OSM parking_entrance node 10702113054",
+      "verified_on": "2026-04-23",
+      "pano_id": "lDEA5h5zs16LMsODkOy0GA",
+      "pano_heading": 270.0
     },
     {
       "id": "cha-unum-garage",
@@ -57,14 +61,17 @@
       "addr": "910 Market St",
       "lat": 35.0515,
       "lng": -85.3094,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown plaza.",
-      "source": "Needs verification",
+      "notes": "Downtown plaza.\nVerified 2026-04-23 from sign reading \"7'0\" (pano 0t_wUCTgAKLJWkq6sE18nQ, heading 90.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 35.051186,
       "entrance_lng": -85.3084142,
-      "entrance_source": "OSM parking_entrance node 10701848898"
+      "entrance_source": "OSM parking_entrance node 10701848898",
+      "verified_on": "2026-04-23",
+      "pano_id": "0t_wUCTgAKLJWkq6sE18nQ",
+      "pano_heading": 90.0
     },
     {
       "id": "cha-choo-choo",
@@ -76,7 +83,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic train station hotel + events. Surface lot.",
-      "source": "choochoo.com"
+      "source": "choochoo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-walnut-st-bridge",
@@ -88,7 +96,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic pedestrian bridge landings.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-bluff-view-art",
@@ -124,7 +133,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "UT-Chattanooga football.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-mccellan-stadium",
@@ -136,7 +146,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AA Chattanooga Lookouts.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-coolidge-park",
@@ -148,7 +159,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Carousel + riverfront park.",
-      "source": "chattanooga.gov"
+      "source": "chattanooga.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-creative-discovery",
@@ -196,7 +208,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Steepest passenger railway in world.",
-      "source": "ridetheincline.com"
+      "source": "ridetheincline.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-rock-city",
@@ -208,7 +221,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "See 7 states. GA side of mountain. Surface lot.",
-      "source": "seerockcity.com"
+      "source": "seerockcity.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-ruby-falls",
@@ -220,7 +234,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Underground waterfall. Surface lot.",
-      "source": "rubyfalls.com"
+      "source": "rubyfalls.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-point-park",
@@ -244,7 +259,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "First national military park.",
-      "source": "nps.gov/chch"
+      "source": "nps.gov/chch",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-tva-lakes",
@@ -256,7 +272,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple TVA lake lots.",
-      "source": "tva.com"
+      "source": "tva.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cha-hamilton-place",
@@ -264,11 +281,14 @@
       "addr": "2100 Hamilton Place Blvd",
       "lat": 35.0403,
       "lng": -85.157,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 138,
+      "height_label": "11'6\"",
       "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "simon.com"
+      "notes": "Enclosed mall.\nVerified 2026-04-23 from sign reading \"11'6\"\" (pano 5K1P52PawdWyTqHSXmUOEg, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: simon.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "5K1P52PawdWyTqHSXmUOEg",
+      "pano_heading": 45
     },
     {
       "id": "cha-airport-main",
@@ -292,7 +312,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "chattairport.com"
+      "source": "chattairport.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [
@@ -326,10 +347,13 @@
       "addr": "over Tennessee River",
       "lat": 35.0602,
       "lng": -85.307,
-      "height_in": null,
-      "height_label": "Pedestrian only",
-      "notes": "One of world's longest pedestrian bridges. 1891 truss.",
-      "source": "Wikipedia"
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "One of world's longest pedestrian bridges. 1891 truss.\nVerified 2026-04-23 from sign reading \"11'6\"\" (pano T2XNKUVzBuKtv5RZ-AnIqg, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Wikipedia",
+      "verified_on": "2026-04-23",
+      "pano_id": "T2XNKUVzBuKtv5RZ-AnIqg",
+      "pano_heading": 270
     },
     {
       "id": "cha-market-st-bridge",

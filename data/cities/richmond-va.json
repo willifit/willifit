@@ -21,14 +21,29 @@
       "addr": "6 N Laurel St",
       "lat": 37.5458,
       "lng": -77.4509,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Historic theater + performing arts.",
-      "source": "altriatheater.com",
+      "notes": "Historic theater + performing arts.\nVerified 2026-04-23 from sign reading \"6 FT\" (pano JS2nIZGS9fYvE8P5D9aFUw, heading 315\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: altriatheater.com",
       "entrance_lat": 37.5451884,
       "entrance_lng": -77.4518427,
-      "entrance_source": "OSM parking_entrance node 7682290637"
+      "entrance_source": "OSM parking_entrance node 7682290637",
+      "verified_on": "2026-04-23",
+      "pano_id": "JS2nIZGS9fYvE8P5D9aFUw",
+      "pano_heading": 315,
+      "sections": [
+        {
+          "label": "VCU Parking",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "West Main Street Deck",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "rva-diamond",
@@ -40,7 +55,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "AA Richmond Flying Squirrels. Surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-state-capitol",
@@ -55,7 +71,8 @@
       "source": "virginiacapitol.gov",
       "entrance_lat": 37.5372346,
       "entrance_lng": -77.4330942,
-      "entrance_source": "OSM parking_entrance node 9789085696"
+      "entrance_source": "OSM parking_entrance node 9789085696",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-7th-st-garage",
@@ -63,14 +80,17 @@
       "addr": "601 E Leigh St",
       "lat": 37.5452,
       "lng": -77.4339,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Near former Coliseum.",
-      "source": "Needs verification",
+      "notes": "Near former Coliseum.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano HerBWS6E2tD_Z7Q13UZ8Iw, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 37.5463014,
       "entrance_lng": -77.4352541,
-      "entrance_source": "OSM parking_entrance node 9789206901"
+      "entrance_source": "OSM parking_entrance node 9789206901",
+      "verified_on": "2026-04-23",
+      "pano_id": "HerBWS6E2tD_Z7Q13UZ8Iw",
+      "pano_heading": 45
     },
     {
       "id": "rva-gsk-garage",
@@ -100,7 +120,8 @@
       "source": "venturerichmond.com",
       "entrance_lat": 37.536423,
       "entrance_lng": -77.4342388,
-      "entrance_source": "OSM parking_entrance node 13397284612"
+      "entrance_source": "OSM parking_entrance node 13397284612",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-17th-st-farmers",
@@ -120,14 +141,17 @@
       "addr": "1200 E Marshall St",
       "lat": 37.5402,
       "lng": -77.4281,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Hospital complex.",
-      "source": "vcuhealth.org",
+      "notes": "Hospital complex.\nVerified 2026-04-23 from sign reading \"6 Enter\" (pano V2a3LX6L1WiFNOHL0KKd0w, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: vcuhealth.org",
       "entrance_lat": 37.5404717,
       "entrance_lng": -77.4285798,
-      "entrance_source": "OSM parking_entrance node 7682639018"
+      "entrance_source": "OSM parking_entrance node 7682639018",
+      "verified_on": "2026-04-23",
+      "pano_id": "V2a3LX6L1WiFNOHL0KKd0w",
+      "pano_heading": 90
     },
     {
       "id": "rva-vcu-monroe-park",
@@ -135,11 +159,14 @@
       "addr": "601 W Main St",
       "lat": 37.5474,
       "lng": -77.4516,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "VCU Monroe Park campus.",
-      "source": "parking.vcu.edu"
+      "notes": "VCU Monroe Park campus.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'0\"\" (pano SsO_47tnwlgvUUg3Kf9eJQ, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: parking.vcu.edu",
+      "verified_on": "2026-04-23",
+      "pano_id": "SsO_47tnwlgvUUg3Kf9eJQ",
+      "pano_heading": 270
     },
     {
       "id": "rva-vmfa",
@@ -147,14 +174,17 @@
       "addr": "200 N Arthur Ashe Blvd",
       "lat": 37.5545,
       "lng": -77.4744,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "VMFA underground garage. Free museum admission.",
-      "source": "vmfa.museum",
+      "notes": "VMFA underground garage. Free museum admission.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ZjEMzrYzC2Y6nTHJBIOkhA, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: vmfa.museum",
       "entrance_lat": 37.5537401,
       "entrance_lng": -77.4735677,
-      "entrance_source": "OSM parking_entrance node 9434215873"
+      "entrance_source": "OSM parking_entrance node 9434215873",
+      "verified_on": "2026-04-23",
+      "pano_id": "ZjEMzrYzC2Y6nTHJBIOkhA",
+      "pano_heading": 90
     },
     {
       "id": "rva-science-museum",
@@ -166,7 +196,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former Broad St Station. Surface lot.",
-      "source": "smv.org"
+      "source": "smv.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-carytown",
@@ -178,7 +209,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping + dining district.",
-      "source": "carytownrva.com"
+      "source": "carytownrva.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-scotts-addition",
@@ -190,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Brewery district.",
-      "source": "scottsaddition.com"
+      "source": "scottsaddition.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-main-street-station",
@@ -202,7 +235,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak station + food hall.",
-      "source": "dhr.virginia.gov"
+      "source": "dhr.virginia.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-short-pump",
@@ -214,7 +248,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air upscale mall west of city.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-stony-point",
@@ -226,7 +261,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale open-air.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-byrd-park",
@@ -238,7 +274,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large city park.",
-      "source": "rva.gov"
+      "source": "rva.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-maymont",
@@ -250,7 +287,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic estate + zoo.",
-      "source": "maymont.org"
+      "source": "maymont.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-church-hill",
@@ -262,7 +300,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic neighborhood street parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-manchester-district",
@@ -274,7 +313,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Redeveloped industrial district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-rir",
@@ -286,7 +326,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NASCAR venue. Massive RV camping on race weekends.",
-      "source": "richmondraceway.com"
+      "source": "richmondraceway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-airport-garage",
@@ -310,7 +351,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flyrichmond.com"
+      "source": "flyrichmond.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rva-brown-island",
@@ -322,7 +364,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Island concert venue on James.",
-      "source": "venturerichmond.com"
+      "source": "venturerichmond.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

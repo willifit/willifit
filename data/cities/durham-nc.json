@@ -6,14 +6,29 @@
       "addr": "318 Blackwell St",
       "lat": 35.9926,
       "lng": -78.9047,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Historic tobacco adaptive-reuse campus.",
-      "source": "americantobaccocampus.com",
+      "notes": "Historic tobacco adaptive-reuse campus.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano eSXnCqdrlYzOBkUqsdtJTA, heading 45\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: americantobaccocampus.com",
       "entrance_lat": 35.9926373,
       "entrance_lng": -78.9028594,
-      "entrance_source": "OSM parking_entrance node 9992904421"
+      "entrance_source": "OSM parking_entrance node 9992904421",
+      "verified_on": "2026-04-23",
+      "pano_id": "eSXnCqdrlYzOBkUqsdtJTA",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "dur-dpac",
@@ -21,14 +36,29 @@
       "addr": "123 Vivian St",
       "lat": 35.9932,
       "lng": -78.9065,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Broadway tours + concerts.",
-      "source": "dpacnc.com",
+      "notes": "Broadway tours + concerts.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'0\"\" (pano x_wLX0Uc75dfZ7Tgxlxs6Q, heading 45\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: dpacnc.com",
       "entrance_lat": 35.9917712,
       "entrance_lng": -78.9062653,
-      "entrance_source": "OSM parking_entrance node 8532623759"
+      "entrance_source": "OSM parking_entrance node 8532623759",
+      "verified_on": "2026-04-23",
+      "pano_id": "x_wLX0Uc75dfZ7Tgxlxs6Q",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "American Parking",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "PARKING",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "dur-convention-center",
@@ -36,14 +66,17 @@
       "addr": "201 Foster St",
       "lat": 35.9978,
       "lng": -78.902,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention center + Carolina Theatre adjacent.",
-      "source": "durhamconventioncenter.com",
+      "notes": "Convention center + Carolina Theatre adjacent.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Oq4TQlDz89k9q79S7YxZEQ, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: durhamconventioncenter.com",
       "entrance_lat": 35.998222,
       "entrance_lng": -78.9020011,
-      "entrance_source": "OSM parking_entrance node 7639012880"
+      "entrance_source": "OSM parking_entrance node 7639012880",
+      "verified_on": "2026-04-23",
+      "pano_id": "Oq4TQlDz89k9q79S7YxZEQ",
+      "pano_heading": 0
     },
     {
       "id": "dur-morgan-st",
@@ -51,14 +84,17 @@
       "addr": "211 E Morgan St",
       "lat": 35.9973,
       "lng": -78.9012,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned downtown.",
-      "source": "durhamnc.gov",
+      "notes": "City-owned downtown.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Oq4TQlDz89k9q79S7YxZEQ, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: durhamnc.gov",
       "entrance_lat": 35.998222,
       "entrance_lng": -78.9020011,
-      "entrance_source": "OSM parking_entrance node 7639012880"
+      "entrance_source": "OSM parking_entrance node 7639012880",
+      "verified_on": "2026-04-23",
+      "pano_id": "Oq4TQlDz89k9q79S7YxZEQ",
+      "pano_heading": 0
     },
     {
       "id": "dur-church-st",
@@ -66,14 +102,17 @@
       "addr": "200 N Church St",
       "lat": 35.9974,
       "lng": -78.9003,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned.",
-      "source": "durhamnc.gov",
+      "notes": "City-owned.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ikpSGRkmD9ytdH0mb6ofwQ, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: durhamnc.gov",
       "entrance_lat": 35.9968468,
       "entrance_lng": -78.8999135,
-      "entrance_source": "OSM parking_entrance node 795894330"
+      "entrance_source": "OSM parking_entrance node 795894330",
+      "verified_on": "2026-04-23",
+      "pano_id": "ikpSGRkmD9ytdH0mb6ofwQ",
+      "pano_heading": 180
     },
     {
       "id": "dur-durham-centre",
@@ -81,14 +120,17 @@
       "addr": "300 Morris St",
       "lat": 35.9975,
       "lng": -78.9049,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 75,
+      "height_label": "6'3\"",
       "oversized": false,
-      "notes": "Office tower garage.",
-      "source": "Needs verification",
+      "notes": "Office tower garage.\nVerified 2026-04-23 from sign reading \"6'3\" (pano qa1f1xBvWlh47zBCI21jwQ, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 35.9982418,
       "entrance_lng": -78.9034269,
-      "entrance_source": "OSM parking_entrance node 7639067186"
+      "entrance_source": "OSM parking_entrance node 7639067186",
+      "verified_on": "2026-04-23",
+      "pano_id": "qa1f1xBvWlh47zBCI21jwQ",
+      "pano_heading": 0
     },
     {
       "id": "dur-city-hall",
@@ -96,14 +138,17 @@
       "addr": "101 City Hall Plaza",
       "lat": 35.996,
       "lng": -78.9035,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned.",
-      "source": "durhamnc.gov",
+      "notes": "City-owned.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ffxBgggdmrQgLtGXa1UTRw, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: durhamnc.gov",
       "entrance_lat": 35.9956641,
       "entrance_lng": -78.9027913,
-      "entrance_source": "OSM parking_entrance node 2340036319"
+      "entrance_source": "OSM parking_entrance node 2340036319",
+      "verified_on": "2026-04-23",
+      "pano_id": "ffxBgggdmrQgLtGXa1UTRw",
+      "pano_heading": 45
     },
     {
       "id": "dur-bull-city-garage",
@@ -115,7 +160,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AAA Durham Bulls ballpark. Surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-duke-westgarage",
@@ -139,7 +185,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Iconic campus landmark.",
-      "source": "chapel.duke.edu"
+      "source": "chapel.duke.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-cameron-indoor",
@@ -151,7 +198,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Duke basketball. Legendary venue.",
-      "source": "goduke.com"
+      "source": "goduke.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-wallace-wade-stadium",
@@ -163,7 +211,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Duke football.",
-      "source": "goduke.com"
+      "source": "goduke.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-duke-hospital",
@@ -171,14 +220,17 @@
       "addr": "2301 Erwin Rd",
       "lat": 36.0075,
       "lng": -78.9383,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Major teaching hospital.",
-      "source": "dukehealth.org",
+      "notes": "Major teaching hospital.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 941ImImPHk-FvO1VJMlq4A, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: dukehealth.org",
       "entrance_lat": 36.0080153,
       "entrance_lng": -78.9403472,
-      "entrance_source": "OSM parking_entrance node 5289667749"
+      "entrance_source": "OSM parking_entrance node 5289667749",
+      "verified_on": "2026-04-23",
+      "pano_id": "941ImImPHk-FvO1VJMlq4A",
+      "pano_heading": 225
     },
     {
       "id": "dur-nasher-museum",
@@ -214,7 +266,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Kids science museum. Large surface lot.",
-      "source": "lifeandscience.org"
+      "source": "lifeandscience.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-nc-museum-art-durham",
@@ -222,14 +275,29 @@
       "addr": "111 N Corcoran St",
       "lat": 35.9972,
       "lng": -78.9012,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Art hotel + museum.",
-      "source": "21cmuseumhotels.com",
+      "notes": "Art hotel + museum.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ikpSGRkmD9ytdH0mb6ofwQ, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: 21cmuseumhotels.com",
       "entrance_lat": 35.9968468,
       "entrance_lng": -78.8999135,
-      "entrance_source": "OSM parking_entrance node 795894330"
+      "entrance_source": "OSM parking_entrance node 795894330",
+      "verified_on": "2026-04-23",
+      "pano_id": "ikpSGRkmD9ytdH0mb6ofwQ",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Chapel Hill Street Parking Garage",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "dur-streets-at-southpoint",
@@ -241,7 +309,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major mall + open-air.",
-      "source": "streetsatsouthpoint.com"
+      "source": "streetsatsouthpoint.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-brightleaf-square",
@@ -265,7 +334,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Student-area shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-sarah-duke-museum-fabric",
@@ -277,7 +347,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park trailheads.",
-      "source": "ncparks.gov"
+      "source": "ncparks.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-stagville-historic",
@@ -301,7 +372,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Biotech/research campus.",
-      "source": "rtp.org"
+      "source": "rtp.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-nccu-main",
@@ -313,7 +385,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "HBCU campus.",
-      "source": "nccu.edu"
+      "source": "nccu.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dur-north-hills",

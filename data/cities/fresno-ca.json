@@ -6,14 +6,17 @@
       "addr": "700 M St",
       "lat": 36.7337,
       "lng": -119.7909,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "Convention center garage.",
-      "source": "fresnoconventioncenter.com",
+      "notes": "Convention center garage.\nVerified 2026-04-23 from sign reading \"12'\" (pano Nu582XiERAQJyEAzrv4X5w, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: fresnoconventioncenter.com",
       "entrance_lat": 36.7333937,
       "entrance_lng": -119.7910881,
-      "entrance_source": "OSM parking_entrance node 12042045682"
+      "entrance_source": "OSM parking_entrance node 12042045682",
+      "verified_on": "2026-04-23",
+      "pano_id": "Nu582XiERAQJyEAzrv4X5w",
+      "pano_heading": 0
     },
     {
       "id": "fre-chukchansi-park",
@@ -40,7 +43,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Arena surface lots.",
-      "source": "savemartcenter.com"
+      "source": "savemartcenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-bulldog-stadium",
@@ -52,7 +56,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Fresno State football.",
-      "source": "gobulldogs.com"
+      "source": "gobulldogs.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-fashion-fair",
@@ -76,7 +81,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-tower-district",
@@ -88,7 +94,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-city-hall",
@@ -115,7 +122,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Pedestrian mall adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-airport-garage",
@@ -139,7 +147,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flyfresno.com"
+      "source": "flyfresno.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-fresno-chaffee-zoo",
@@ -151,7 +160,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo surface lot.",
-      "source": "fresnochaffeezoo.org"
+      "source": "fresnochaffeezoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-tower-theatre",
@@ -163,7 +173,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic theater + surrounding restaurant district street + surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-woodward-park",
@@ -175,7 +186,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large park with multiple surface lots. $5 parking fee.",
-      "source": "fresno.gov"
+      "source": "fresno.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-roeding-park",
@@ -187,7 +199,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park + small amusement area. Surface lots.",
-      "source": "fresno.gov"
+      "source": "fresno.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-forestiere-underground",
@@ -211,7 +224,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Older mall surface lot.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-sierra-vista-mall",
@@ -295,7 +309,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic ranch park with campground.",
-      "source": "valleyhistory.org"
+      "source": "valleyhistory.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-selland-arena",
@@ -310,7 +325,8 @@
       "source": "fresnoconventioncenter.com",
       "entrance_lat": 36.733368,
       "entrance_lng": -119.7911202,
-      "entrance_source": "OSM parking_entrance node 12042045680"
+      "entrance_source": "OSM parking_entrance node 12042045680",
+      "structure_type": "surface_lot"
     },
     {
       "id": "fre-st-agnes-hospital",

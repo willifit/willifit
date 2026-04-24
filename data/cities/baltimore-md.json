@@ -6,14 +6,17 @@
       "addr": "201 W Pratt St",
       "lat": 39.2867,
       "lng": -76.6148,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Inner Harbor central garage.",
-      "source": "baltimore.org",
+      "notes": "Inner Harbor central garage.\nVerified 2026-04-23 from sign reading \"7'0\" (pano UBp_CHOyaPzqforaOMQl0w, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: baltimore.org",
       "entrance_lat": 39.2855823,
       "entrance_lng": -76.6143668,
-      "entrance_source": "OSM parking_entrance node 2083185319"
+      "entrance_source": "OSM parking_entrance node 2083185319",
+      "verified_on": "2026-04-23",
+      "pano_id": "UBp_CHOyaPzqforaOMQl0w",
+      "pano_heading": 0
     },
     {
       "id": "bal-convention-ctr",
@@ -21,14 +24,17 @@
       "addr": "20 W Baltimore St",
       "lat": 39.2876,
       "lng": -76.6133,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Under convention center.",
-      "source": "bccenter.org",
+      "notes": "Under convention center.\nVerified 2026-04-23 from sign reading \"8 INCHES MIN 7'\" (pano INqRGWOG79HRuXCf9POXcg, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: bccenter.org",
       "entrance_lat": 39.2874055,
       "entrance_lng": -76.6119995,
-      "entrance_source": "OSM parking_entrance node 4470280423"
+      "entrance_source": "OSM parking_entrance node 4470280423",
+      "verified_on": "2026-04-23",
+      "pano_id": "INqRGWOG79HRuXCf9POXcg",
+      "pano_heading": 90
     },
     {
       "id": "bal-aquarium-lockwood",
@@ -51,14 +57,17 @@
       "addr": "600 President St",
       "lat": 39.2853,
       "lng": -76.6053,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Aquarium + amphitheater.",
-      "source": "Needs verification",
+      "notes": "Aquarium + amphitheater.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano cHX_G6BsQ9CFtphxvC4SYw, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.285751,
       "entrance_lng": -76.6050462,
-      "entrance_source": "OSM parking_entrance node 1886924656"
+      "entrance_source": "OSM parking_entrance node 1886924656",
+      "verified_on": "2026-04-23",
+      "pano_id": "cHX_G6BsQ9CFtphxvC4SYw",
+      "pano_heading": 270
     },
     {
       "id": "bal-camden-yards",
@@ -73,7 +82,8 @@
       "source": "mlb.com/orioles",
       "entrance_lat": 39.2855482,
       "entrance_lng": -76.6218644,
-      "entrance_source": "OSM parking_entrance node 8999123982"
+      "entrance_source": "OSM parking_entrance node 8999123982",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bal-mt-royal",
@@ -81,14 +91,17 @@
       "addr": "320 Light St",
       "lat": 39.2882,
       "lng": -76.6102,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Inner Harbor office area.",
-      "source": "Needs verification",
+      "notes": "Inner Harbor office area.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 2oRm-xKXRyUnHzWHymINXw, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.2891692,
       "entrance_lng": -76.6103069,
-      "entrance_source": "OSM parking_entrance node 13082853029"
+      "entrance_source": "OSM parking_entrance node 13082853029",
+      "verified_on": "2026-04-23",
+      "pano_id": "2oRm-xKXRyUnHzWHymINXw",
+      "pano_heading": 225
     },
     {
       "id": "bal-ravens-stadium",
@@ -100,7 +113,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ravens. Surface lots. Tailgating RVs.",
-      "source": "baltimoreravens.com"
+      "source": "baltimoreravens.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bal-pier-five",
@@ -108,11 +122,14 @@
       "addr": "711 Eastern Ave",
       "lat": 39.284,
       "lng": -76.6062,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 48,
+      "height_label": "4'0\"",
       "oversized": false,
-      "notes": "Pier Five Hotel.",
-      "source": "Needs verification"
+      "notes": "Pier Five Hotel.\nVerified 2026-04-23 from sign reading \"4\" (pano nGqpRMwrs3rx-sQROkOFPA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
+      "verified_on": "2026-04-23",
+      "pano_id": "nGqpRMwrs3rx-sQROkOFPA",
+      "pano_heading": 0
     },
     {
       "id": "bal-inner-harbor-east",
@@ -120,14 +137,17 @@
       "addr": "850 Aliceanna St",
       "lat": 39.2836,
       "lng": -76.6,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Harbor East mixed-use.",
-      "source": "harboreast.com",
+      "notes": "Harbor East mixed-use.\nVerified 2026-04-23 from sign reading \"7' 0\"\" (pano Ny9gzTKy8xRTf7RM7TUB1A, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: harboreast.com",
       "entrance_lat": 39.2837894,
       "entrance_lng": -76.6003703,
-      "entrance_source": "OSM parking_entrance node 2414964046"
+      "entrance_source": "OSM parking_entrance node 2414964046",
+      "verified_on": "2026-04-23",
+      "pano_id": "Ny9gzTKy8xRTf7RM7TUB1A",
+      "pano_heading": 270
     },
     {
       "id": "bal-fells-point",
@@ -154,7 +174,8 @@
       "source": "Needs verification",
       "entrance_lat": 39.3068624,
       "entrance_lng": -76.6153807,
-      "entrance_source": "OSM parking_entrance node 832288780"
+      "entrance_source": "OSM parking_entrance node 832288780",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bal-mount-vernon",
@@ -174,14 +195,17 @@
       "addr": "825 Dulaney Valley Rd, Towson",
       "lat": 39.4,
       "lng": -76.6047,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Suburban mall.",
-      "source": "simon.com",
+      "notes": "Suburban mall.\nVerified 2026-04-23 from sign reading \"7' CLEARANCE\" (pano ANX3L-4FuwKmapsm7-ilUg, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: simon.com",
       "entrance_lat": 39.4000117,
       "entrance_lng": -76.6042304,
-      "entrance_source": "OSM parking_entrance node 9767617275"
+      "entrance_source": "OSM parking_entrance node 9767617275",
+      "verified_on": "2026-04-23",
+      "pano_id": "ANX3L-4FuwKmapsm7-ilUg",
+      "pano_heading": 90
     },
     {
       "id": "bal-horseshoe-casino",
@@ -189,11 +213,31 @@
       "addr": "1525 Russell St",
       "lat": 39.2765,
       "lng": -76.6213,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Casino garage.",
-      "source": "caesars.com"
+      "notes": "Casino garage.\nVerified 2026-04-23 from sign reading \"11'0\" (pano fAKD4zof-ZKpRkm-K7zvxw, heading 0.0\u00b0, Claude confidence medium [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: caesars.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "fAKD4zof-ZKpRkm-K7zvxw",
+      "pano_heading": 0.0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 132,
+          "height_label": "11'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 138,
+          "height_label": "11'6\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "bal-hopkins-visitor",
@@ -220,7 +264,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Inner Harbor south lot.",
-      "source": "mdsci.org"
+      "source": "mdsci.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bal-zoo",
@@ -232,7 +277,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Druid Hill Park. Surface lot.",
-      "source": "marylandzoo.org"
+      "source": "marylandzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bal-canton-sq",
@@ -244,7 +290,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Canton waterfront.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bwi-central",
@@ -268,7 +315,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "bwiairport.com"
+      "source": "bwiairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w111721400",
@@ -291,14 +339,29 @@
       "addr": "110 West Susquehanna Avenue",
       "lat": 39.39901,
       "lng": -76.6069,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid; hrs: 24/7 [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid; hrs: 24/7 [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano H9rnr6YrskXZwm99cthVQg, heading 0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.3988365,
       "entrance_lng": -76.6069261,
-      "entrance_source": "OSM parking_entrance node 11951145170"
+      "entrance_source": "OSM parking_entrance node 11951145170",
+      "verified_on": "2026-04-23",
+      "pano_id": "H9rnr6YrskXZwm99cthVQg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Jury & Public Parking",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "osm-w178328345",
@@ -336,14 +399,17 @@
       "addr": "",
       "lat": 39.29986,
       "lng": -76.59293,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano u3TNc8JZVsibhPzndzPKVw, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.2994235,
       "entrance_lng": -76.5919641,
-      "entrance_source": "OSM parking_entrance node 7406421852"
+      "entrance_source": "OSM parking_entrance node 7406421852",
+      "verified_on": "2026-04-23",
+      "pano_id": "u3TNc8JZVsibhPzndzPKVw",
+      "pano_heading": 180
     },
     {
       "id": "osm-w336309045",
@@ -351,14 +417,17 @@
       "addr": "555 North Caroline Street",
       "lat": 39.29665,
       "lng": -76.59655,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano NPu-xuicFuNf0fd44l4VAQ, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.2970573,
       "entrance_lng": -76.5965833,
-      "entrance_source": "OSM parking_entrance node 7406373084"
+      "entrance_source": "OSM parking_entrance node 7406373084",
+      "verified_on": "2026-04-23",
+      "pano_id": "NPu-xuicFuNf0fd44l4VAQ",
+      "pano_heading": 180
     },
     {
       "id": "osm-w336312351",
@@ -366,14 +435,17 @@
       "addr": "1501 East Monument Street",
       "lat": 39.29756,
       "lng": -76.59685,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano VtpbC72YwCerQwzFBQuN8w, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.2973333,
       "entrance_lng": -76.5964634,
-      "entrance_source": "OSM parking_entrance node 7406379318"
+      "entrance_source": "OSM parking_entrance node 7406379318",
+      "verified_on": "2026-04-23",
+      "pano_id": "VtpbC72YwCerQwzFBQuN8w",
+      "pano_heading": 180
     },
     {
       "id": "osm-w336341570",
@@ -381,14 +453,17 @@
       "addr": "55 Market Place",
       "lat": 39.28837,
       "lng": -76.60612,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"8'0\" (pano 0iPWzf3h2vKxixk1y11ZSg, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.2884873,
       "entrance_lng": -76.6065856,
-      "entrance_source": "OSM parking_entrance node 2504064469"
+      "entrance_source": "OSM parking_entrance node 2504064469",
+      "verified_on": "2026-04-23",
+      "pano_id": "0iPWzf3h2vKxixk1y11ZSg",
+      "pano_heading": 45
     },
     {
       "id": "osm-w336347909",
@@ -408,14 +483,17 @@
       "addr": "",
       "lat": 39.29009,
       "lng": -76.61067,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 2oRm-xKXRyUnHzWHymINXw, heading 225\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.2891692,
       "entrance_lng": -76.6103069,
-      "entrance_source": "OSM parking_entrance node 13082853029"
+      "entrance_source": "OSM parking_entrance node 13082853029",
+      "verified_on": "2026-04-23",
+      "pano_id": "2oRm-xKXRyUnHzWHymINXw",
+      "pano_heading": 225
     },
     {
       "id": "osm-w336383735",
@@ -438,14 +516,17 @@
       "addr": "",
       "lat": 39.30113,
       "lng": -76.59022,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\" (pano IID1SDAMEHX7u15xRLCZtQ, heading 270.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.3009985,
       "entrance_lng": -76.5898807,
-      "entrance_source": "OSM parking_entrance node 12853490810"
+      "entrance_source": "OSM parking_entrance node 12853490810",
+      "verified_on": "2026-04-23",
+      "pano_id": "IID1SDAMEHX7u15xRLCZtQ",
+      "pano_heading": 270.0
     },
     {
       "id": "osm-w338084081",
@@ -495,14 +576,29 @@
       "addr": "1795 Orleans Street",
       "lat": 39.29488,
       "lng": -76.59226,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"8'0\"\" (pano ggxULnxvUoJsR_1aHPP8_w, heading 90\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.2951002,
       "entrance_lng": -76.5921798,
-      "entrance_source": "OSM parking_entrance node 982863577"
+      "entrance_source": "OSM parking_entrance node 982863577",
+      "verified_on": "2026-04-23",
+      "pano_id": "ggxULnxvUoJsR_1aHPP8_w",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Parking Garage",
+          "height_in": 96,
+          "height_label": "8'0\""
+        },
+        {
+          "label": "Parking Garage",
+          "height_in": 125,
+          "height_label": "10'5\""
+        }
+      ]
     }
   ],
   "tunnels": [

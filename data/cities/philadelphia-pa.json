@@ -36,14 +36,34 @@
       "addr": "Front & Chestnut St",
       "lat": 39.9496,
       "lng": -75.1444,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": true,
-      "notes": "Limited oversized spaces on ground level \u2014 first come, first served. Call 215-683-9407.",
-      "source": "Philadelphia Parking Authority",
+      "notes": "Limited oversized spaces on ground level \u2014 first come, first served. Call 215-683-9407.\nVerified 2026-04-23 from sign reading \"7' 0\"\" (pano 8mi71_fumOlhLCMZRS8Xww, heading 90\u00b0, Claude confidence high [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Philadelphia Parking Authority",
       "entrance_lat": 39.9488331,
       "entrance_lng": -75.14389,
-      "entrance_source": "OSM parking_entrance node 3023730689"
+      "entrance_source": "OSM parking_entrance node 3023730689",
+      "verified_on": "2026-04-23",
+      "pano_id": "8mi71_fumOlhLCMZRS8Xww",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "PARK",
+          "height_in": 96,
+          "height_label": "8'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 108,
+          "height_label": "9'0\""
+        }
+      ]
     },
     {
       "id": "phl-8th-filbert",
@@ -66,14 +86,17 @@
       "addr": "1201 Filbert St",
       "lat": 39.9527,
       "lng": -75.1591,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Near Reading Terminal, Fashion District.",
-      "source": "philapark.org",
+      "notes": "Near Reading Terminal, Fashion District.\nVerified 2026-04-23 from sign reading \"9'10 CLEARANCE\" (pano j0JMagTnh5yC7ctQ6XbyTw, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: philapark.org",
       "entrance_lat": 39.9531686,
       "entrance_lng": -75.1608047,
-      "entrance_source": "OSM parking_entrance node 7412644649"
+      "entrance_source": "OSM parking_entrance node 7412644649",
+      "verified_on": "2026-04-23",
+      "pano_id": "j0JMagTnh5yC7ctQ6XbyTw",
+      "pano_heading": 45
     },
     {
       "id": "phl-family-court",
@@ -81,14 +104,17 @@
       "addr": "15 S 15th St",
       "lat": 39.9512,
       "lng": -75.1659,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City Hall / Suburban Station area.",
-      "source": "philapark.org",
+      "notes": "City Hall / Suburban Station area.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano QFu-a9flDB1xR2u5aLO9CQ, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: philapark.org",
       "entrance_lat": 39.9513597,
       "entrance_lng": -75.165409,
-      "entrance_source": "OSM parking_entrance node 12049600265"
+      "entrance_source": "OSM parking_entrance node 12049600265",
+      "verified_on": "2026-04-23",
+      "pano_id": "QFu-a9flDB1xR2u5aLO9CQ",
+      "pano_heading": 225
     },
     {
       "id": "phl-comcast-ctr",
@@ -111,14 +137,17 @@
       "addr": "1601 Chestnut St",
       "lat": 39.9506,
       "lng": -75.1679,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Rittenhouse area shopping.",
-      "source": "Needs verification",
+      "notes": "Rittenhouse area shopping.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano _8E3v65UeQk6cQuuuVICdg, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.9518998,
       "entrance_lng": -75.1671811,
-      "entrance_source": "OSM parking_entrance node 7417069052"
+      "entrance_source": "OSM parking_entrance node 7417069052",
+      "verified_on": "2026-04-23",
+      "pano_id": "_8E3v65UeQk6cQuuuVICdg",
+      "pano_heading": 270
     },
     {
       "id": "phl-fashion-dist",
@@ -141,14 +170,17 @@
       "addr": "2525 Pennsylvania Ave",
       "lat": 39.9656,
       "lng": -75.1803,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Underground museum garage.",
-      "source": "philamuseum.org",
+      "notes": "Underground museum garage.\nVerified 2026-04-23 from sign reading \"8'0\" (pano gknMc2I6KMlutdS__hlzrg, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: philamuseum.org",
       "entrance_lat": 39.9670868,
       "entrance_lng": -75.1813506,
-      "entrance_source": "OSM parking_entrance node 7410786789"
+      "entrance_source": "OSM parking_entrance node 7410786789",
+      "verified_on": "2026-04-23",
+      "pano_id": "gknMc2I6KMlutdS__hlzrg",
+      "pano_heading": 270
     },
     {
       "id": "phl-lincoln-fin",
@@ -160,7 +192,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Eagles stadium surface lots \u2014 open-air.",
-      "source": "phillyparking"
+      "source": "phillyparking",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phl-wells-fargo",
@@ -172,7 +205,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Sports complex surface lots \u2014 76ers, Phillies, Flyers.",
-      "source": "Sports Complex"
+      "source": "Sports Complex",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phl-penns-landing",
@@ -192,14 +226,17 @@
       "addr": "2955 Market St",
       "lat": 39.9565,
       "lng": -75.1818,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Amtrak + SEPTA regional hub.",
-      "source": "Needs verification",
+      "notes": "Amtrak + SEPTA regional hub.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano N796472E-oqiWKfi2llbfw, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.9570889,
       "entrance_lng": -75.1828118,
-      "entrance_source": "OSM parking_entrance node 12159308974"
+      "entrance_source": "OSM parking_entrance node 12159308974",
+      "verified_on": "2026-04-23",
+      "pano_id": "N796472E-oqiWKfi2llbfw",
+      "pano_heading": 180
     },
     {
       "id": "phl-airport-garage-a",
@@ -223,7 +260,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy lot. Oversized OK with shuttle.",
-      "source": "phl.org"
+      "source": "phl.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phl-franklin-institute",
@@ -258,14 +296,17 @@
       "addr": "3401 Chestnut St",
       "lat": 39.9544,
       "lng": -75.1929,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Serves Penn campus + hospital.",
-      "source": "transportation.upenn.edu",
+      "notes": "Serves Penn campus + hospital.\nVerified 2026-04-23 from sign reading \"PARKING ENTRANCE MAX. CLEARANCE 7' 5\"\" (pano TPA5vGD5sFaD53Br_H1BvA, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: transportation.upenn.edu",
       "entrance_lat": 39.9552367,
       "entrance_lng": -75.1934041,
-      "entrance_source": "OSM parking_entrance node 7412591550"
+      "entrance_source": "OSM parking_entrance node 7412591550",
+      "verified_on": "2026-04-23",
+      "pano_id": "TPA5vGD5sFaD53Br_H1BvA",
+      "pano_heading": 180
     },
     {
       "id": "phl-penn-health",
@@ -324,14 +365,29 @@
       "addr": "1900 Market St",
       "lat": 39.954,
       "lng": -75.1719,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Center City West office district.",
-      "source": "Needs verification",
+      "notes": "Center City West office district.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'\" (pano -okhZgdgY0Xe2tm7kosuUg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.9541743,
       "entrance_lng": -75.1719497,
-      "entrance_source": "OSM parking_entrance node 3471718649"
+      "entrance_source": "OSM parking_entrance node 3471718649",
+      "verified_on": "2026-04-23",
+      "pano_id": "-okhZgdgY0Xe2tm7kosuUg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Parking garage entrance",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "phl-kimmel-ctr",
@@ -363,14 +419,17 @@
       "addr": "125 Dock St",
       "lat": 39.9478,
       "lng": -75.1436,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "South Old City.",
-      "source": "Needs verification",
+      "notes": "South Old City.\nVerified 2026-04-23 from sign reading \"CLEARANCE 11'0\"\" (pano U8vaWHSEHYyCFK7BFnwnBg, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.9476541,
       "entrance_lng": -75.1441482,
-      "entrance_source": "OSM parking_entrance node 3022547742"
+      "entrance_source": "OSM parking_entrance node 3022547742",
+      "verified_on": "2026-04-23",
+      "pano_id": "U8vaWHSEHYyCFK7BFnwnBg",
+      "pano_heading": 90
     },
     {
       "id": "phl-reading-terminal",
@@ -378,14 +437,17 @@
       "addr": "1123 Arch St",
       "lat": 39.953,
       "lng": -75.158,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Serves Reading Terminal Market + Convention Center.",
-      "source": "philapark.org",
+      "notes": "Serves Reading Terminal Market + Convention Center.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano y9kztDHzVmmSm0iWFblLGw, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: philapark.org",
       "entrance_lat": 39.9529211,
       "entrance_lng": -75.1562861,
-      "entrance_source": "OSM parking_entrance node 7411360353"
+      "entrance_source": "OSM parking_entrance node 7411360353",
+      "verified_on": "2026-04-23",
+      "pano_id": "y9kztDHzVmmSm0iWFblLGw",
+      "pano_heading": 90
     },
     {
       "id": "phl-suburban-sta",
@@ -393,14 +455,17 @@
       "addr": "1601 John F Kennedy Blvd",
       "lat": 39.9539,
       "lng": -75.1679,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Under SEPTA Suburban Station.",
-      "source": "Needs verification",
+      "notes": "Under SEPTA Suburban Station.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Kob751ejtWUa_Y41sQLm_A, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.953902,
       "entrance_lng": -75.1686957,
-      "entrance_source": "OSM parking_entrance node 3691774725"
+      "entrance_source": "OSM parking_entrance node 3691774725",
+      "verified_on": "2026-04-23",
+      "pano_id": "Kob751ejtWUa_Y41sQLm_A",
+      "pano_heading": 180
     },
     {
       "id": "phl-city-hall-muny",
@@ -442,7 +507,8 @@
       "source": "Needs verification",
       "entrance_lat": 39.942191,
       "entrance_lng": -75.1459306,
-      "entrance_source": "OSM parking_entrance node 2997765873"
+      "entrance_source": "OSM parking_entrance node 2997765873",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phl-chinatown-8th",
@@ -450,14 +516,29 @@
       "addr": "907 Vine St",
       "lat": 39.9569,
       "lng": -75.156,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Serves Chinatown + Convention Center.",
-      "source": "Needs verification",
+      "notes": "Serves Chinatown + Convention Center.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6\" (pano ndGWCyTviloSuxB1NyeWkw, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.9554647,
       "entrance_lng": -75.1571187,
-      "entrance_source": "OSM parking_entrance node 7415234581"
+      "entrance_source": "OSM parking_entrance node 7415234581",
+      "verified_on": "2026-04-23",
+      "pano_id": "ndGWCyTviloSuxB1NyeWkw",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "phl-zoo",
@@ -469,7 +550,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. $20. Oversized accommodated.",
-      "source": "philadelphiazoo.org"
+      "source": "philadelphiazoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phl-30th-surface",
@@ -484,7 +566,8 @@
       "source": "Needs verification",
       "entrance_lat": 39.9570889,
       "entrance_lng": -75.1828118,
-      "entrance_source": "OSM parking_entrance node 12159308974"
+      "entrance_source": "OSM parking_entrance node 12159308974",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [

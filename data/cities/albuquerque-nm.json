@@ -40,7 +40,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic district surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-biopark",
@@ -52,7 +53,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo + Aquarium + Botanic Garden surface lots.",
-      "source": "cabq.gov/biopark"
+      "source": "cabq.gov/biopark",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-abq-museum",
@@ -64,7 +66,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Old Town adjacent.",
-      "source": "cabq.gov"
+      "source": "cabq.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-isotopes",
@@ -76,7 +79,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "AAA ballpark surface.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-cedro",
@@ -100,7 +104,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air upscale retail.",
-      "source": "abquptown.com"
+      "source": "abquptown.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-coronado-mall",
@@ -124,7 +129,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Casino surface lots + RV area.",
-      "source": "sandiacasino.com"
+      "source": "sandiacasino.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-tram",
@@ -136,7 +142,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Tramway base. Surface lot.",
-      "source": "sandiapeak.com"
+      "source": "sandiapeak.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-petroglyph-nm",
@@ -148,7 +155,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS site surface lots.",
-      "source": "nps.gov/petr"
+      "source": "nps.gov/petr",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-sunport-garage",
@@ -172,7 +180,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "abqsunport.com"
+      "source": "abqsunport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-nob-hill",
@@ -184,7 +193,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Route 66 shopping district.",
-      "source": "nobhillabq.com"
+      "source": "nobhillabq.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-sawmill-market",
@@ -223,7 +233,8 @@
       "source": "Needs verification",
       "entrance_lat": 35.0829342,
       "entrance_lng": -106.6518278,
-      "entrance_source": "OSM parking_entrance node 10583689855"
+      "entrance_source": "OSM parking_entrance node 10583689855",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-hispanic-cultural",
@@ -235,7 +246,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Museum + theater surface lot.",
-      "source": "nhccnm.org"
+      "source": "nhccnm.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-explora",
@@ -247,7 +259,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Old Town adjacent. Surface lot.",
-      "source": "explora.us"
+      "source": "explora.us",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-isotopes-stadium",
@@ -259,7 +272,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "BioPark overflow.",
-      "source": "cabq.gov/biopark"
+      "source": "cabq.gov/biopark",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-santa-ana-star",
@@ -271,7 +285,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Rio Rancho arena. Surface lot.",
-      "source": "santaanastarcenter.com"
+      "source": "santaanastarcenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-unm-south",
@@ -298,7 +313,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Casino + RV park. South of ABQ.",
-      "source": "isleta.com"
+      "source": "isleta.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-cottonwood-mall",
@@ -322,7 +338,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free cell phone waiting area.",
-      "source": "abqsunport.com"
+      "source": "abqsunport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "abq-kimo-theatre",
@@ -330,14 +347,17 @@
       "addr": "423 Central Ave NW",
       "lat": 35.0847,
       "lng": -106.6481,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Historic theater garage.",
-      "source": "kimotickets.com",
+      "notes": "Historic theater garage.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano lUNu6mkGRvxaa3ojYOmDKQ, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: kimotickets.com",
       "entrance_lat": 35.0850168,
       "entrance_lng": -106.647809,
-      "entrance_source": "OSM parking_entrance node 9808044843"
+      "entrance_source": "OSM parking_entrance node 9808044843",
+      "verified_on": "2026-04-23",
+      "pano_id": "lUNu6mkGRvxaa3ojYOmDKQ",
+      "pano_heading": 90
     },
     {
       "id": "abq-abq-rapid-transit",

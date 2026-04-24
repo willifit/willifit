@@ -13,7 +13,8 @@
       "source": "bengals.com",
       "entrance_lat": 39.0949539,
       "entrance_lng": -84.517496,
-      "entrance_source": "OSM parking_entrance node 10289154726"
+      "entrance_source": "OSM parking_entrance node 10289154726",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-gabp",
@@ -21,14 +22,17 @@
       "addr": "100 Joe Nuxhall Way",
       "lat": 39.0973,
       "lng": -84.508,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Reds ballpark. Surrounding riverfront garages.",
-      "source": "mlb.com/reds",
+      "notes": "Reds ballpark. Surrounding riverfront garages.\nVerified 2026-04-23 from sign reading \"7'0\" (pano TlVnPLyfFPgrgK7CaQPcWQ, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: mlb.com/reds",
       "entrance_lat": 39.096975,
       "entrance_lng": -84.5087079,
-      "entrance_source": "OSM parking_entrance node 9774529546"
+      "entrance_source": "OSM parking_entrance node 9774529546",
+      "verified_on": "2026-04-23",
+      "pano_id": "TlVnPLyfFPgrgK7CaQPcWQ",
+      "pano_heading": 270
     },
     {
       "id": "cin-banks-garage",
@@ -51,14 +55,17 @@
       "addr": "525 Elm St",
       "lat": 39.1027,
       "lng": -84.5146,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention center garage.",
-      "source": "duke-energycenter.com",
+      "notes": "Convention center garage.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano PCm0-hDGqQ_7tKb7WpIXDw, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: duke-energycenter.com",
       "entrance_lat": 39.1020253,
       "entrance_lng": -84.5155456,
-      "entrance_source": "OSM parking_entrance node 9216445502"
+      "entrance_source": "OSM parking_entrance node 9216445502",
+      "verified_on": "2026-04-23",
+      "pano_id": "PCm0-hDGqQ_7tKb7WpIXDw",
+      "pano_heading": 180
     },
     {
       "id": "cin-findlay-market",
@@ -70,7 +77,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic market. OTR district.",
-      "source": "findlaymarket.org"
+      "source": "findlaymarket.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-washington-park",
@@ -108,14 +116,34 @@
       "addr": "38 Fountain Sq Plaza",
       "lat": 39.1017,
       "lng": -84.5128,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Fountain Square downtown.",
-      "source": "Needs verification",
+      "notes": "Fountain Square downtown.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano GIU5brlvluQSo91oArkvHg, heading 90\u00b0, Claude confidence medium [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 39.1017199,
       "entrance_lng": -84.5129342,
-      "entrance_source": "OSM parking_entrance node 1250209402"
+      "entrance_source": "OSM parking_entrance node 1250209402",
+      "verified_on": "2026-04-23",
+      "pano_id": "GIU5brlvluQSo91oArkvHg",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Parking entrance",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "PARKING",
+          "height_in": 96,
+          "height_label": "8'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "cin-mercantile-center",
@@ -145,7 +173,8 @@
       "source": "cincinnatiartmuseum.org",
       "entrance_lat": 39.1132203,
       "entrance_lng": -84.4994187,
-      "entrance_source": "OSM parking_entrance node 2465663508"
+      "entrance_source": "OSM parking_entrance node 2465663508",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-zoo",
@@ -157,7 +186,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous zoo. Large surface lots.",
-      "source": "cincinnatizoo.org"
+      "source": "cincinnatizoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-kings-island",
@@ -169,7 +199,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Theme park. Surface lot. RV OK.",
-      "source": "visitkingsisland.com"
+      "source": "visitkingsisland.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-newport-on-levee",
@@ -241,7 +272,8 @@
       "source": "gobearcats.com",
       "entrance_lat": 39.1306274,
       "entrance_lng": -84.5178528,
-      "entrance_source": "OSM parking_entrance node 6546639894"
+      "entrance_source": "OSM parking_entrance node 6546639894",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-kenwood-towne-center",
@@ -249,14 +281,17 @@
       "addr": "7875 Montgomery Rd",
       "lat": 39.2057,
       "lng": -84.3728,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Upscale mall.",
-      "source": "kenwoodtownecentre.com",
+      "notes": "Upscale mall.\nVerified 2026-04-23 from sign reading \"7'0\" (pano bInmOrZK0hEMSOLL0JovZg, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: kenwoodtownecentre.com",
       "entrance_lat": 39.2057563,
       "entrance_lng": -84.3737454,
-      "entrance_source": "OSM parking_entrance node 6818680239"
+      "entrance_source": "OSM parking_entrance node 6818680239",
+      "verified_on": "2026-04-23",
+      "pano_id": "bInmOrZK0hEMSOLL0JovZg",
+      "pano_heading": 180
     },
     {
       "id": "cin-eden-park",
@@ -271,7 +306,8 @@
       "source": "cincinnatiparks.com",
       "entrance_lat": 39.1112911,
       "entrance_lng": -84.4964458,
-      "entrance_source": "OSM parking_entrance node 1057313802"
+      "entrance_source": "OSM parking_entrance node 1057313802",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-mt-adams",
@@ -283,7 +319,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic hill neighborhood.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-jack-casino",
@@ -319,7 +356,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "cvgairport.com"
+      "source": "cvgairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cin-lunken-field",
@@ -331,7 +369,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Municipal airport.",
-      "source": "cincinnati-oh.gov/aviation"
+      "source": "cincinnati-oh.gov/aviation",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],
@@ -364,10 +403,13 @@
       "addr": "I-471 over Ohio River",
       "lat": 39.0938,
       "lng": -84.5009,
-      "height_in": null,
-      "height_label": "Over water",
-      "notes": "Interstate to KY.",
-      "source": "ODOT"
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Interstate to KY.\nVerified 2026-04-23 from sign reading \"11'6\"\" (pano M9ve7_pEJBffRE_MXE3YGg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: ODOT",
+      "verified_on": "2026-04-23",
+      "pano_id": "M9ve7_pEJBffRE_MXE3YGg",
+      "pano_heading": 0
     },
     {
       "id": "cin-brent-spence",

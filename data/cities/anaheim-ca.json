@@ -6,14 +6,29 @@
       "addr": "1313 S Disneyland Dr",
       "lat": 33.8127,
       "lng": -117.9241,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Largest Disney parking structure (10,200 spaces). Tram to esplanade.",
-      "source": "disneyland.disney.go.com",
+      "notes": "Largest Disney parking structure (10,200 spaces). Tram to esplanade.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano WUf5-TUGNnu-6m2CuohsCg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: disneyland.disney.go.com",
       "entrance_lat": 33.8129236,
       "entrance_lng": -117.9257982,
-      "entrance_source": "OSM parking_entrance node 6554580407"
+      "entrance_source": "OSM parking_entrance node 6554580407",
+      "verified_on": "2026-04-23",
+      "pano_id": "WUf5-TUGNnu-6m2CuohsCg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "ana-pixar-pals",
@@ -40,7 +55,8 @@
       "source": "disneyland.disney.go.com",
       "entrance_lat": 33.803826,
       "entrance_lng": -117.9121913,
-      "entrance_source": "OSM parking_entrance node 4643834400"
+      "entrance_source": "OSM parking_entrance node 4643834400",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-downtown-disney",
@@ -55,7 +71,8 @@
       "source": "disneyland.disney.go.com",
       "entrance_lat": 33.8088324,
       "entrance_lng": -117.9237482,
-      "entrance_source": "OSM parking_entrance node 2001253842"
+      "entrance_source": "OSM parking_entrance node 2001253842",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-simba-self-park",
@@ -67,7 +84,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Overflow surface lot. Oversized OK.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-conv-ctr",
@@ -94,7 +112,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ducks hockey + concerts. Surface lots. Oversized OK event days.",
-      "source": "hondacenter.com"
+      "source": "hondacenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-angel-stadium",
@@ -106,7 +125,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Angels ballpark. Massive surface lots + RV tailgating.",
-      "source": "mlb.com/angels"
+      "source": "mlb.com/angels",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-arte-museum",
@@ -121,7 +141,8 @@
       "source": "anaheimgardenwalk.com",
       "entrance_lat": 33.8055421,
       "entrance_lng": -117.9125327,
-      "entrance_source": "OSM parking_entrance node 1836058757"
+      "entrance_source": "OSM parking_entrance node 1836058757",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-hilton-anaheim",
@@ -129,14 +150,29 @@
       "addr": "777 Convention Way",
       "lat": 33.8012,
       "lng": -117.9187,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention Center adjacent hotel.",
-      "source": "hilton.com",
+      "notes": "Convention Center adjacent hotel.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano MEA4bKwZ852Sr9f32UBXkw, heading 225\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: hilton.com",
       "entrance_lat": 33.8020587,
       "entrance_lng": -117.9176932,
-      "entrance_source": "OSM parking_entrance node 5166434104"
+      "entrance_source": "OSM parking_entrance node 5166434104",
+      "verified_on": "2026-04-23",
+      "pano_id": "MEA4bKwZ852Sr9f32UBXkw",
+      "pano_heading": 225,
+      "sections": [
+        {
+          "label": "CAR PARK 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "CAR PARK 1",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "ana-marriott-ana",
@@ -159,14 +195,17 @@
       "addr": "1150 W Magic Way",
       "lat": 33.8087,
       "lng": -117.9242,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Disney resort hotel.",
-      "source": "disneyland.disney.go.com",
+      "notes": "Disney resort hotel.\nVerified 2026-04-23 from sign reading \"11'-0\" (pano Z8LLwQCX19ni3BsGAZ-DHw, heading 0.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: disneyland.disney.go.com",
       "entrance_lat": 33.8088324,
       "entrance_lng": -117.9237482,
-      "entrance_source": "OSM parking_entrance node 2001253842"
+      "entrance_source": "OSM parking_entrance node 2001253842",
+      "verified_on": "2026-04-23",
+      "pano_id": "Z8LLwQCX19ni3BsGAZ-DHw",
+      "pano_heading": 0.0
     },
     {
       "id": "ana-grand-californian",
@@ -193,7 +232,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air outlet mall (Orange \u2014 adjacent).",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-packing-district",
@@ -213,14 +253,29 @@
       "addr": "1065 Brea Mall, Brea",
       "lat": 33.916,
       "lng": -117.8854,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Nearby regional mall.",
-      "source": "simon.com",
+      "notes": "Nearby regional mall.\nVerified 2026-04-23 from sign reading \"CLEARANCE WITHIN DECK 6'6\"\" (pano BOffleKW2ARp3fk-YrClGQ, heading 0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: simon.com",
       "entrance_lat": 33.9167823,
       "entrance_lng": -117.885399,
-      "entrance_source": "OSM parking_entrance node 1385263835"
+      "entrance_source": "OSM parking_entrance node 1385263835",
+      "verified_on": "2026-04-23",
+      "pano_id": "BOffleKW2ARp3fk-YrClGQ",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Deck entrance",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "ana-main-place-santa",
@@ -244,7 +299,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Theme park. Surface lot. Oversized OK.",
-      "source": "knotts.com"
+      "source": "knotts.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-medieval-times",
@@ -256,7 +312,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Dinner show.",
-      "source": "medievaltimes.com"
+      "source": "medievaltimes.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-soak-city",
@@ -268,7 +325,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Water park. Shares Knott's lots.",
-      "source": "knotts.com"
+      "source": "knotts.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-christ-cathedral",
@@ -280,7 +338,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former Crystal Cathedral. Surface lots.",
-      "source": "christcathedralcalifornia.org"
+      "source": "christcathedralcalifornia.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ana-resort-transit",
@@ -288,14 +347,29 @@
       "addr": "100 N Harbor Blvd",
       "lat": 33.835,
       "lng": -117.914,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "ART shuttle hub.",
-      "source": "rideart.org",
+      "notes": "ART shuttle hub.\nVerified 2026-04-23 from sign reading \"Maximum Clearance 6'-10\"\" (pano m-NdvymgHFCmaxCiJvd7WQ, heading 180\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: rideart.org",
       "entrance_lat": 33.8346669,
       "entrance_lng": -117.9146281,
-      "entrance_source": "OSM parking_entrance node 8462809128"
+      "entrance_source": "OSM parking_entrance node 8462809128",
+      "verified_on": "2026-04-23",
+      "pano_id": "m-NdvymgHFCmaxCiJvd7WQ",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Parking",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Exit Only",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "ana-arm-convention-way",

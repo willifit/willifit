@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic antler-arch square. Limited street + public lots.",
-      "source": "jacksonholechamber.com"
+      "source": "jacksonholechamber.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-center-for-arts",
@@ -34,7 +35,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski resort base. Tram + gondola. Huge RV-capable surface lots.",
-      "source": "jacksonhole.com"
+      "source": "jacksonhole.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-snow-king-resort",
@@ -46,7 +48,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "In-town ski area + mountain coaster.",
-      "source": "snowkingmountain.com"
+      "source": "snowkingmountain.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-national-museum-of-wildlife-art",
@@ -58,7 +61,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Museum near National Elk Refuge.",
-      "source": "wildlifeart.org"
+      "source": "wildlifeart.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-elk-refuge",
@@ -70,7 +74,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Elk refuge \u2014 sleigh rides in winter.",
-      "source": "fws.gov/refuge/national_elk_refuge"
+      "source": "fws.gov/refuge/national_elk_refuge",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-grand-teton-moose-vc",
@@ -82,7 +87,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main Grand Teton visitor center.",
-      "source": "nps.gov/grte"
+      "source": "nps.gov/grte",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-grand-teton-jenny-lake",
@@ -94,7 +100,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular Teton lake hike + boat.",
-      "source": "nps.gov/grte"
+      "source": "nps.gov/grte",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-signal-mountain",
@@ -106,7 +113,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Lodge + campground + marina.",
-      "source": "signalmountainlodge.com"
+      "source": "signalmountainlodge.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-colter-bay",
@@ -118,7 +126,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV park + cabins + visitor center.",
-      "source": "nps.gov/grte"
+      "source": "nps.gov/grte",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-yellowstone-south",
@@ -130,7 +139,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "South entrance to Yellowstone via Rockefeller Parkway.",
-      "source": "nps.gov/yell"
+      "source": "nps.gov/yell",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-yellowstone-old-faithful",
@@ -142,7 +152,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic geyser. Massive RV-capable lot.",
-      "source": "nps.gov/yell"
+      "source": "nps.gov/yell",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-yellowstone-canyon",
@@ -154,7 +165,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Grand Canyon of Yellowstone. Full services.",
-      "source": "nps.gov/yell"
+      "source": "nps.gov/yell",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-mammoth-hot-springs",
@@ -166,7 +178,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "North area. Year-round entrance.",
-      "source": "nps.gov/yell"
+      "source": "nps.gov/yell",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-lake-village",
@@ -178,7 +191,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Yellowstone Lake. RV campground.",
-      "source": "nps.gov/yell"
+      "source": "nps.gov/yell",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-jackson-hole-airport",
@@ -190,7 +204,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Only commercial airport inside a US National Park (Grand Teton). Surface lots.",
-      "source": "jacksonholeairport.com"
+      "source": "jacksonholeairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-rustic-inn-rv",
@@ -202,7 +217,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "In-town RV park + lodge.",
-      "source": "virginianlodge.com"
+      "source": "virginianlodge.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-gros-ventre-campground",
@@ -214,7 +230,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS campground near Moose.",
-      "source": "nps.gov/grte"
+      "source": "nps.gov/grte",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-jackson-lake-lodge",
@@ -226,7 +243,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic lodge. Views of Tetons across lake.",
-      "source": "gtlc.com"
+      "source": "gtlc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-antler-arch-lot",
@@ -238,7 +256,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown transit + shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-rodeo-arena",
@@ -250,7 +269,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Summer rodeo series.",
-      "source": "jhrodeo.com"
+      "source": "jhrodeo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-mad-river-boat",
@@ -262,7 +282,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Snake River rafting outfitter.",
-      "source": "mad-river.com"
+      "source": "mad-river.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-bradley-taggart-lake",
@@ -274,7 +295,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Grand Teton NP trailhead.",
-      "source": "nps.gov/grte"
+      "source": "nps.gov/grte",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-grand-targhee",
@@ -286,7 +308,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "West side of Tetons ski resort. Via Driggs ID.",
-      "source": "grandtarghee.com"
+      "source": "grandtarghee.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jac-jackson-hole-high-school",
@@ -294,11 +317,14 @@
       "addr": "155 W Broadway",
       "lat": 43.4783,
       "lng": -110.764,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "START Bus transit hub.",
-      "source": "startbus.com"
+      "notes": "START Bus transit hub.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano -YaNTV3p8QWOv5L_yY5ccg, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: startbus.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "-YaNTV3p8QWOv5L_yY5ccg",
+      "pano_heading": 270
     }
   ],
   "tunnels": [],

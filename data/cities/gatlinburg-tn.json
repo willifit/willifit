@@ -40,7 +40,8 @@
       "source": "gatlinburgspaceneedle.com",
       "entrance_lat": 35.7136947,
       "entrance_lng": -83.5100791,
-      "entrance_source": "OSM parking_entrance node 7995831866"
+      "entrance_source": "OSM parking_entrance node 7995831866",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-arts-crafts-loop",
@@ -52,7 +53,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "8-mile loop of artist studios. Multiple surface lots.",
-      "source": "gatlinburgcrafts.com"
+      "source": "gatlinburgcrafts.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-convention-ctr",
@@ -76,7 +78,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "US-441 entrance to Gatlinburg. RV-friendly lot.",
-      "source": "gatlinburg.com"
+      "source": "gatlinburg.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-gsmnp-sugarlands-vc",
@@ -88,7 +91,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main Tennessee entrance to Smokies. Large RV-capable lots.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-gsmnp-newfound-gap",
@@ -100,7 +104,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Highest pass across Smokies. Large surface lot.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-gsmnp-clingmans-dome",
@@ -112,7 +117,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Highest point in TN (6,643'). Closed winters.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-gsmnp-roaring-fork",
@@ -136,7 +142,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular 11mi loop drive. Wildlife viewing.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-ober-gatlinburg",
@@ -160,7 +167,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski + theme park summit.",
-      "source": "obergatlinburg.com"
+      "source": "obergatlinburg.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-mynatt-park",
@@ -172,7 +180,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "City park.",
-      "source": "gatlinburgtn.gov"
+      "source": "gatlinburgtn.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-pigeon-forge-island",
@@ -196,7 +205,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Dolly Parton theme park. Large surface + RV sections.",
-      "source": "dollywood.com"
+      "source": "dollywood.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-dollywood-splash-country",
@@ -208,7 +218,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Adjacent water park.",
-      "source": "dollywood.com"
+      "source": "dollywood.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-tanger-outlets-sevierville",
@@ -232,7 +243,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Half-scale Titanic replica.",
-      "source": "titanicpigeonforge.com"
+      "source": "titanicpigeonforge.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-creation-museum",
@@ -240,11 +252,14 @@
       "addr": "106 Showplace Blvd, Pigeon Forge",
       "lat": 35.8076,
       "lng": -83.5822,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Wax museum.",
-      "source": "Needs verification"
+      "notes": "Wax museum.\nVerified 2026-04-23 from sign reading \"8 FT\" (pano qGDOd5xkk_Wv_iye2euVeQ, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
+      "verified_on": "2026-04-23",
+      "pano_id": "qGDOd5xkk_Wv_iye2euVeQ",
+      "pano_heading": 270
     },
     {
       "id": "gat-wears-valley-rv",
@@ -256,7 +271,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV resort near alt Smokies entrance.",
-      "source": "littlearrowoutdoorresort.com"
+      "source": "littlearrowoutdoorresort.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-gatlinburg-falls-hidden",
@@ -268,7 +284,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Cabin resort.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-smokies-elk-refuge",
@@ -280,7 +297,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NC side of GSMNP. Elk often visible. RV-friendly.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-cherokee-nc",
@@ -292,7 +310,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Casino + hotel. South of park via US-441.",
-      "source": "caesars.com"
+      "source": "caesars.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "gat-knox-airport",

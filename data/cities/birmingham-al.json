@@ -22,7 +22,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "UAB Blazers + Birmingham Stallions. Surface lots.",
-      "source": "protectivestadium.com"
+      "source": "protectivestadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-regions-field",
@@ -37,7 +38,8 @@
       "source": "milb.com",
       "entrance_lat": 33.5081689,
       "entrance_lng": -86.8089917,
-      "entrance_source": "OSM parking_entrance node 10759232709"
+      "entrance_source": "OSM parking_entrance node 10759232709",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-legion-field",
@@ -49,7 +51,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic Magic City Classic venue. Surface lots.",
-      "source": "birminghamal.gov"
+      "source": "birminghamal.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-alabama-theater",
@@ -85,7 +88,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic civil rights landmark.",
-      "source": "16thstreetbaptist.org"
+      "source": "16thstreetbaptist.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-railroad-park",
@@ -97,7 +101,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Central urban park. Surface lots.",
-      "source": "railroadpark.org"
+      "source": "railroadpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-vulcan-park",
@@ -136,7 +141,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free gardens.",
-      "source": "bbgardens.org"
+      "source": "bbgardens.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-zoo",
@@ -151,7 +157,8 @@
       "source": "birminghamzoo.com",
       "entrance_lat": 33.4802121,
       "entrance_lng": -86.7881669,
-      "entrance_source": "OSM parking_entrance node 13363839099"
+      "entrance_source": "OSM parking_entrance node 13363839099",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-sloss-furnaces",
@@ -163,7 +170,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic iron works.",
-      "source": "slossfurnaces.com"
+      "source": "slossfurnaces.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-mcwane-science",
@@ -198,14 +206,17 @@
       "addr": "619 19th St S",
       "lat": 33.5089,
       "lng": -86.8028,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 138,
+      "height_label": "11'6\"",
       "oversized": false,
-      "notes": "UAB Medical Center \u2014 largest in South.",
-      "source": "uabmedicine.org",
+      "notes": "UAB Medical Center \u2014 largest in South.\nVerified 2026-04-23 from sign reading \"11'6\" (pano SrSsB5XKYpf2uQ95RML1PQ, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: uabmedicine.org",
       "entrance_lat": 33.509591,
       "entrance_lng": -86.8040748,
-      "entrance_source": "OSM parking_entrance node 10759218286"
+      "entrance_source": "OSM parking_entrance node 10759218286",
+      "verified_on": "2026-04-23",
+      "pano_id": "SrSsB5XKYpf2uQ95RML1PQ",
+      "pano_heading": 90
     },
     {
       "id": "bhm-five-points-south",
@@ -217,7 +228,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-lakeview-dist",
@@ -229,7 +241,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Popular nightlife area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-summit",
@@ -241,7 +254,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air upscale shopping.",
-      "source": "thesummitonline.com"
+      "source": "thesummitonline.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-riverchase-galleria",
@@ -265,7 +279,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Motorcycle museum + racetrack. RV OK.",
-      "source": "barbermuseum.org"
+      "source": "barbermuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-talladega-speedway",
@@ -277,7 +292,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NASCAR infield/RV camping.",
-      "source": "talladegasuperspeedway.com"
+      "source": "talladegasuperspeedway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bhm-bhm-airport",
@@ -301,7 +317,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flybirmingham.com"
+      "source": "flybirmingham.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

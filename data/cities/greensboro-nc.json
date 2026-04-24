@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Arena + Special Events Center + Aquatic Center + Odeon. Massive surface lots.",
-      "source": "greensborocoliseum.com"
+      "source": "greensborocoliseum.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-convention-ctr",
@@ -52,7 +53,8 @@
       "source": "milb.com",
       "entrance_lat": 36.0761799,
       "entrance_lng": -79.7936888,
-      "entrance_source": "OSM parking_entrance node 12086398503"
+      "entrance_source": "OSM parking_entrance node 12086398503",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-deep-roots",
@@ -60,14 +62,17 @@
       "addr": "600 N Eugene St",
       "lat": 36.0767,
       "lng": -79.7933,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Center City Park area.",
-      "source": "Needs verification",
+      "notes": "Center City Park area.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano h2DFg0O_722lkqT4KM07jA, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 36.0761799,
       "entrance_lng": -79.7936888,
-      "entrance_source": "OSM parking_entrance node 12086398503"
+      "entrance_source": "OSM parking_entrance node 12086398503",
+      "verified_on": "2026-04-23",
+      "pano_id": "h2DFg0O_722lkqT4KM07jA",
+      "pano_heading": 45
     },
     {
       "id": "grb-davie-st",
@@ -75,14 +80,29 @@
       "addr": "200 N Davie St",
       "lat": 36.0715,
       "lng": -79.7905,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned downtown.",
-      "source": "greensboro-nc.gov",
+      "notes": "City-owned downtown.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano phGhHbAK6OiIeA89Tq2Ptg, heading 45\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: greensboro-nc.gov",
       "entrance_lat": 36.0707715,
       "entrance_lng": -79.7915632,
-      "entrance_source": "OSM parking_entrance node 2185787640"
+      "entrance_source": "OSM parking_entrance node 2185787640",
+      "verified_on": "2026-04-23",
+      "pano_id": "phGhHbAK6OiIeA89Tq2Ptg",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "ENTER",
+          "height_in": 138,
+          "height_label": "11'6\""
+        }
+      ]
     },
     {
       "id": "grb-bellemeade-st",
@@ -90,14 +110,29 @@
       "addr": "200 Bellemeade St",
       "lat": 36.0764,
       "lng": -79.7932,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City garage near ballpark + Tanger Center.",
-      "source": "greensboro-nc.gov",
+      "notes": "City garage near ballpark + Tanger Center.\nVerified 2026-04-23 from sign reading \"7'0\" (pano XB-Km_7Fn5nCRXEm6dGSpQ, heading 90\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: greensboro-nc.gov",
       "entrance_lat": 36.0761799,
       "entrance_lng": -79.7936888,
-      "entrance_source": "OSM parking_entrance node 12086398503"
+      "entrance_source": "OSM parking_entrance node 12086398503",
+      "verified_on": "2026-04-23",
+      "pano_id": "XB-Km_7Fn5nCRXEm6dGSpQ",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "PARKIING",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "grb-friendly-center",
@@ -109,7 +144,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping center.",
-      "source": "shopfriendlycenter.com"
+      "source": "shopfriendlycenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-four-seasons-mall",
@@ -133,7 +169,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo + aquarium + museum + ropes course.",
-      "source": "greensboroscience.org"
+      "source": "greensboroscience.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-international-civil-rights",
@@ -141,14 +178,17 @@
       "addr": "134 S Elm St",
       "lat": 36.0712,
       "lng": -79.7908,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Sit-in Movement site. Former Woolworth.",
-      "source": "sitinmovement.org",
+      "notes": "Sit-in Movement site. Former Woolworth.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano phGhHbAK6OiIeA89Tq2Ptg, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sitinmovement.org",
       "entrance_lat": 36.0707715,
       "entrance_lng": -79.7915632,
-      "entrance_source": "OSM parking_entrance node 2185787640"
+      "entrance_source": "OSM parking_entrance node 2185787640",
+      "verified_on": "2026-04-23",
+      "pano_id": "phGhHbAK6OiIeA89Tq2Ptg",
+      "pano_heading": 90
     },
     {
       "id": "grb-elsewhere-museum",
@@ -160,7 +200,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Living museum / art collective.",
-      "source": "elsewheremuseum.org"
+      "source": "elsewheremuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-natural-science-ctr",
@@ -184,7 +225,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS Rev War battlefield.",
-      "source": "nps.gov/guco"
+      "source": "nps.gov/guco",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-bog-garden",
@@ -250,7 +292,8 @@
       "source": "carolinatheatre.com",
       "entrance_lat": 36.0707715,
       "entrance_lng": -79.7915632,
-      "entrance_source": "OSM parking_entrance node 2185787640"
+      "entrance_source": "OSM parking_entrance node 2185787640",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-lindley-park",
@@ -262,7 +305,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district street.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-lake-brandt",
@@ -274,7 +318,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Lake recreation.",
-      "source": "greensboro-nc.gov"
+      "source": "greensboro-nc.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-bryan-park",
@@ -286,7 +331,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Soccer + golf + lake complex.",
-      "source": "greensboro-nc.gov"
+      "source": "greensboro-nc.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-oak-hollow-mall",
@@ -313,7 +359,8 @@
       "source": "highpointmarket.org",
       "entrance_lat": 35.955657,
       "entrance_lng": -80.0064334,
-      "entrance_source": "OSM parking_entrance node 10155250687"
+      "entrance_source": "OSM parking_entrance node 10155250687",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-arboretum",
@@ -325,7 +372,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Starmount Park.",
-      "source": "greensborobeautiful.org"
+      "source": "greensborobeautiful.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "grb-airport-main",
@@ -349,7 +397,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flyfrompti.com"
+      "source": "flyfrompti.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

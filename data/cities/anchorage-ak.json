@@ -6,14 +6,17 @@
       "addr": "320 W 5th Ave",
       "lat": 61.2181,
       "lng": -149.9007,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown mall parking. Validates.",
-      "source": "simon.com",
+      "notes": "Downtown mall parking. Validates.\nVerified 2026-04-23 from sign reading \"7'0\" (pano eparnmhi5SOy0_tGBNToKA, heading 45.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: simon.com",
       "entrance_lat": 61.218402,
       "entrance_lng": -149.9021768,
-      "entrance_source": "OSM parking_entrance node 4806225238"
+      "entrance_source": "OSM parking_entrance node 4806225238",
+      "verified_on": "2026-04-23",
+      "pano_id": "eparnmhi5SOy0_tGBNToKA",
+      "pano_heading": 45.0
     },
     {
       "id": "anc-dena-ina-conv",
@@ -28,7 +31,8 @@
       "source": "anchorageconventions.com",
       "entrance_lat": 61.2161754,
       "entrance_lng": -149.8973271,
-      "entrance_source": "OSM parking_entrance node 3709779828"
+      "entrance_source": "OSM parking_entrance node 3709779828",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-carr-gottstein",
@@ -36,14 +40,17 @@
       "addr": "555 W 5th Ave",
       "lat": 61.217,
       "lng": -149.901,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention + exhibit hall.",
-      "source": "anchorageconventions.com",
+      "notes": "Convention + exhibit hall.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano xAWEoKe8gQWATsu5e5wS0A, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: anchorageconventions.com",
       "entrance_lat": 61.2177011,
       "entrance_lng": -149.9021105,
-      "entrance_source": "OSM parking_entrance node 4806225240"
+      "entrance_source": "OSM parking_entrance node 4806225240",
+      "verified_on": "2026-04-23",
+      "pano_id": "xAWEoKe8gQWATsu5e5wS0A",
+      "pano_heading": 0
     },
     {
       "id": "anc-performing-arts",
@@ -51,14 +58,17 @@
       "addr": "621 W 6th Ave",
       "lat": 61.2175,
       "lng": -149.9019,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown performing arts.",
-      "source": "myalaskacenter.com",
+      "notes": "Downtown performing arts.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano xAWEoKe8gQWATsu5e5wS0A, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: myalaskacenter.com",
       "entrance_lat": 61.2177011,
       "entrance_lng": -149.9021105,
-      "entrance_source": "OSM parking_entrance node 4806225240"
+      "entrance_source": "OSM parking_entrance node 4806225240",
+      "verified_on": "2026-04-23",
+      "pano_id": "xAWEoKe8gQWATsu5e5wS0A",
+      "pano_heading": 0
     },
     {
       "id": "anc-anchorage-museum",
@@ -82,7 +92,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Downtown park surface lots.",
-      "source": "muni.org"
+      "source": "muni.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-ship-creek",
@@ -94,7 +105,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Fishing + train depot area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-alaska-railroad",
@@ -106,7 +118,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Rail depot. Handles RVs.",
-      "source": "alaskarailroad.com"
+      "source": "alaskarailroad.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-dimond-mall",
@@ -130,7 +143,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-providence-med",
@@ -138,11 +152,26 @@
       "addr": "3200 Providence Dr",
       "lat": 61.1881,
       "lng": -149.8262,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "providence.org/alaska"
+      "notes": "Hospital visitor garage.\nVerified 2026-04-23 from sign reading \"21FT 6IN\" (pano CFIlBFyrN8gCXmF5wFoNfA, heading 45\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: providence.org/alaska",
+      "verified_on": "2026-04-23",
+      "pano_id": "CFIlBFyrN8gCXmF5wFoNfA",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "anc-alaska-zoo",
@@ -154,7 +183,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Native + arctic species zoo.",
-      "source": "alaskazoo.org"
+      "source": "alaskazoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-native-heritage",
@@ -166,7 +196,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Cultural museum + outdoor exhibits.",
-      "source": "alaskanative.net"
+      "source": "alaskanative.net",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-uaa-library",
@@ -190,7 +221,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ski + trail park. West Anchorage.",
-      "source": "muni.org"
+      "source": "muni.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-flattop-trailhead",
@@ -202,7 +234,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Most-climbed peak in AK. Surface lot. Fee.",
-      "source": "muni.org"
+      "source": "muni.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-earthquake-park",
@@ -226,7 +259,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous plane-landing viewpoint near ANC.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-chugach-prospect",
@@ -238,7 +272,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Chugach State Park access.",
-      "source": "dnr.alaska.gov/parks"
+      "source": "dnr.alaska.gov/parks",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-alyeska-resort",
@@ -250,7 +285,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "~40mi south. Ski + RV-friendly.",
-      "source": "alyeskaresort.com"
+      "source": "alyeskaresort.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-portage-glacier",
@@ -262,7 +298,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Chugach NF visitor center. Portage Lake.",
-      "source": "fs.usda.gov/chugach"
+      "source": "fs.usda.gov/chugach",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-airport-long",
@@ -286,7 +323,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "dot.alaska.gov/anc"
+      "source": "dot.alaska.gov/anc",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-merrill-field",
@@ -298,7 +336,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "General aviation airport.",
-      "source": "muni.org"
+      "source": "muni.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "anc-lake-hood",
@@ -310,7 +349,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "World's busiest seaplane base. Viewing/parking.",
-      "source": "dot.alaska.gov/anc"
+      "source": "dot.alaska.gov/anc",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w28587803",

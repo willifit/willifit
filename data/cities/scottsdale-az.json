@@ -33,14 +33,29 @@
       "addr": "3939 N Drinkwater Blvd",
       "lat": 33.4966,
       "lng": -111.9262,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Performing arts + museum adjacent.",
-      "source": "scottsdaleaz.gov",
+      "notes": "Performing arts + museum adjacent.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7' 0\"\" (pano hfFY5FSlHrSMcMW9QA7dcw, heading 315\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: scottsdaleaz.gov",
       "entrance_lat": 33.4962084,
       "entrance_lng": -111.9251956,
-      "entrance_source": "OSM parking_entrance node 10901460248"
+      "entrance_source": "OSM parking_entrance node 10901460248",
+      "verified_on": "2026-04-23",
+      "pano_id": "hfFY5FSlHrSMcMW9QA7dcw",
+      "pano_heading": 315,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Entrance",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "sco-quarter-garage",
@@ -67,7 +82,8 @@
       "source": "kierlandcommons.com",
       "entrance_lat": 33.6248272,
       "entrance_lng": -111.9279502,
-      "entrance_source": "OSM parking_entrance node 13750982221"
+      "entrance_source": "OSM parking_entrance node 13750982221",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-scottsdale-quarter",
@@ -103,7 +119,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Equestrian + car auction venue (Barrett-Jackson). Huge surface + RV.",
-      "source": "westworldaz.com"
+      "source": "westworldaz.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-museum-of-west",
@@ -123,14 +140,29 @@
       "addr": "7374 E 2nd St",
       "lat": 33.4956,
       "lng": -111.9258,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Civic Center Mall adjacent.",
-      "source": "smoca.org",
+      "notes": "Civic Center Mall adjacent.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'-0\" (pano hfFY5FSlHrSMcMW9QA7dcw, heading 0.0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: smoca.org",
       "entrance_lat": 33.4962084,
       "entrance_lng": -111.9251956,
-      "entrance_source": "OSM parking_entrance node 10901460248"
+      "entrance_source": "OSM parking_entrance node 10901460248",
+      "verified_on": "2026-04-23",
+      "pano_id": "hfFY5FSlHrSMcMW9QA7dcw",
+      "pano_heading": 0.0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "sco-taliesin-west",
@@ -142,7 +174,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "FLW winter estate + school. Surface lot.",
-      "source": "franklloydwright.org"
+      "source": "franklloydwright.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-mccormick-stillman-railroad",
@@ -154,7 +187,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free kids park with trains.",
-      "source": "scottsdaleaz.gov"
+      "source": "scottsdaleaz.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-desert-botanical-pv",
@@ -166,7 +200,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Papago Park \u2014 technically Phoenix but Scottsdale-adjacent.",
-      "source": "dbg.org"
+      "source": "dbg.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-camelback-golf",
@@ -178,7 +213,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Resort golf surface.",
-      "source": "camelbackgolf.com"
+      "source": "camelbackgolf.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-talking-stick-resort",
@@ -190,7 +226,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Casino + WestWorld area. RV-friendly.",
-      "source": "talkingstickresort.com"
+      "source": "talkingstickresort.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-salt-river-field",
@@ -202,7 +239,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "D-backs + Rockies spring training. Surface lots.",
-      "source": "saltriverfields.com"
+      "source": "saltriverfields.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-scottsdale-stadium",
@@ -217,7 +255,8 @@
       "source": "Needs verification",
       "entrance_lat": 33.4926753,
       "entrance_lng": -111.9237288,
-      "entrance_source": "OSM parking_entrance node 8754762395"
+      "entrance_source": "OSM parking_entrance node 8754762395",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-mayo-clinic-scottsdale",
@@ -253,7 +292,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular trail. Surface lot.",
-      "source": "scottsdaleaz.gov"
+      "source": "scottsdaleaz.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-mcdowell-sonoran",
@@ -265,7 +305,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Major preserve trailhead + RV-capable.",
-      "source": "mcdowellsonoran.org"
+      "source": "mcdowellsonoran.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-tom-s-thumb",
@@ -277,7 +318,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular trailhead.",
-      "source": "mcdowellsonoran.org"
+      "source": "mcdowellsonoran.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-papago-park-nscotts",
@@ -289,7 +331,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Hole-in-the-Rock lot.",
-      "source": "phoenix.gov"
+      "source": "phoenix.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-cosanti",
@@ -325,7 +368,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "PGA tournament. Huge surface lots + shuttle.",
-      "source": "wmphoenixopen.com"
+      "source": "wmphoenixopen.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-gilbert-odysea",
@@ -337,7 +381,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Aquarium complex with OdySea in the Desert + Butterfly Wonderland.",
-      "source": "odyseaaquarium.com"
+      "source": "odyseaaquarium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sco-scottsdale-airport",
@@ -371,10 +416,13 @@
       "addr": "Scottsdale Rd @ Indian Bend",
       "lat": 33.53,
       "lng": -111.9265,
-      "height_in": null,
-      "height_label": "Over seasonal wash",
-      "notes": "Multiple bridges over Indian Bend drainage park.",
-      "source": "scottsdaleaz.gov"
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Multiple bridges over Indian Bend drainage park.\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano 9XafL10Mpm5ZZ0EnlrwMoA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: scottsdaleaz.gov",
+      "verified_on": "2026-04-23",
+      "pano_id": "9XafL10Mpm5ZZ0EnlrwMoA",
+      "pano_heading": 0
     },
     {
       "id": "nbi-04-09638",

@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Shared by former A's + Raiders venue. Surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-jack-london",
@@ -18,14 +19,17 @@
       "addr": "55 Harrison St",
       "lat": 37.794,
       "lng": -122.2763,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Waterfront district.",
-      "source": "jacklondonsquare.com",
+      "notes": "Waterfront district.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano wlq-_v-bun5o8Dh1-aANTw, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: jacklondonsquare.com",
       "entrance_lat": 37.7946915,
       "entrance_lng": -122.275872,
-      "entrance_source": "OSM parking_entrance node 6290507420"
+      "entrance_source": "OSM parking_entrance node 6290507420",
+      "verified_on": "2026-04-23",
+      "pano_id": "wlq-_v-bun5o8Dh1-aANTw",
+      "pano_heading": 225
     },
     {
       "id": "oak-ferry-building",
@@ -40,7 +44,8 @@
       "source": "sanfranciscobayferry.com",
       "entrance_lat": 37.7950384,
       "entrance_lng": -122.276766,
-      "entrance_source": "OSM parking_entrance node 430547785"
+      "entrance_source": "OSM parking_entrance node 430547785",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-city-center",
@@ -48,14 +53,17 @@
       "addr": "1250 Broadway",
       "lat": 37.8041,
       "lng": -122.2709,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "oversized": false,
-      "notes": "Downtown Oakland.",
-      "source": "Needs verification",
+      "notes": "Downtown Oakland.\nVerified 2026-04-23 from sign reading \"CLEARANCE 13'-0\"\" (pano aAWxBeVg5XrsgYd-_p79CA, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 37.8030777,
       "entrance_lng": -122.2698571,
-      "entrance_source": "OSM parking_entrance node 12716765804"
+      "entrance_source": "OSM parking_entrance node 12716765804",
+      "verified_on": "2026-04-23",
+      "pano_id": "aAWxBeVg5XrsgYd-_p79CA",
+      "pano_heading": 45
     },
     {
       "id": "oak-rotunda",
@@ -63,14 +71,29 @@
       "addr": "300 Frank H Ogawa Plaza",
       "lat": 37.8051,
       "lng": -122.2717,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "oversized": false,
-      "notes": "City Hall adjacent.",
-      "source": "Needs verification",
+      "notes": "City Hall adjacent.\nVerified 2026-04-23 from sign reading \"CLEARANCE 13'6\" (pano r5K_odFd0bWjM-4reHSoDg, heading 90\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 37.8045306,
       "entrance_lng": -122.273025,
-      "entrance_source": "OSM parking_entrance node 1428447626"
+      "entrance_source": "OSM parking_entrance node 1428447626",
+      "verified_on": "2026-04-23",
+      "pano_id": "r5K_odFd0bWjM-4reHSoDg",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 156,
+          "height_label": "13'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 162,
+          "height_label": "13'6\""
+        }
+      ]
     },
     {
       "id": "oak-lake-merritt",
@@ -82,7 +105,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Lake Merritt perimeter street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-airport-garage",
@@ -106,7 +130,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "oaklandairport.com"
+      "source": "oaklandairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-chinatown",
@@ -130,7 +155,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Restaurant/shopping district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-paramount",
@@ -145,7 +171,8 @@
       "source": "paramounttheatre.com",
       "entrance_lat": 37.8093897,
       "entrance_lng": -122.267494,
-      "entrance_source": "OSM parking_entrance node 5061028530"
+      "entrance_source": "OSM parking_entrance node 5061028530",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-montclair",
@@ -157,7 +184,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Hills neighborhood shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-redwood-regional",
@@ -169,7 +197,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "EB Regional Parks district.",
-      "source": "ebparks.org"
+      "source": "ebparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-fox-theater",
@@ -196,7 +225,8 @@
       "source": "Needs verification",
       "entrance_lat": 37.8069065,
       "entrance_lng": -122.2712682,
-      "entrance_source": "OSM parking_entrance node 12776593263"
+      "entrance_source": "OSM parking_entrance node 12776593263",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-kaiser-arena",
@@ -223,7 +253,8 @@
       "source": "baystreetemeryville.com",
       "entrance_lat": 37.8398769,
       "entrance_lng": -122.2944377,
-      "entrance_source": "OSM parking_entrance node 4923455179"
+      "entrance_source": "OSM parking_entrance node 4923455179",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-oakland-chinatown-lot",
@@ -247,7 +278,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic park-side kids attraction.",
-      "source": "fairyland.org"
+      "source": "fairyland.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-museum-of-california",
@@ -267,14 +299,29 @@
       "addr": "1233 Preservation Park Way",
       "lat": 37.8052,
       "lng": -122.273,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Victorian-era preserved park.",
-      "source": "preservationpark.com",
+      "notes": "Victorian-era preserved park.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano UhmtRW7SV2m_AEdc4FxsQA, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: preservationpark.com",
       "entrance_lat": 37.8046761,
       "entrance_lng": -122.273111,
-      "entrance_source": "OSM parking_entrance node 4109997013"
+      "entrance_source": "OSM parking_entrance node 4109997013",
+      "verified_on": "2026-04-23",
+      "pano_id": "UhmtRW7SV2m_AEdc4FxsQA",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Parking Garage",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Loading Dock",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "oak-mills-college",
@@ -298,7 +345,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Hills neighborhood parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-bay-wildlife",
@@ -310,7 +358,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "EB Regional Parks shoreline.",
-      "source": "ebparks.org"
+      "source": "ebparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-coliseum-bart",
@@ -322,7 +371,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "BART park-and-ride.",
-      "source": "bart.gov"
+      "source": "bart.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oak-rockridge",
@@ -337,7 +387,8 @@
       "source": "bart.gov",
       "entrance_lat": 37.8432975,
       "entrance_lng": -122.2523578,
-      "entrance_source": "OSM parking_entrance node 7059221470"
+      "entrance_source": "OSM parking_entrance node 7059221470",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [

@@ -6,14 +6,17 @@
       "addr": "345 E Congress St",
       "lat": 32.2218,
       "lng": -110.9697,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown Tucson.",
-      "source": "parktucson.org",
+      "notes": "Downtown Tucson.\nVerified 2026-04-23 from sign reading \"7'0\" (pano pVDcjkCrQf_s8O_6BBgS6A, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: parktucson.org",
       "entrance_lat": 32.2224726,
       "entrance_lng": -110.969783,
-      "entrance_source": "OSM parking_entrance node 9563763612"
+      "entrance_source": "OSM parking_entrance node 9563763612",
+      "verified_on": "2026-04-23",
+      "pano_id": "pVDcjkCrQf_s8O_6BBgS6A",
+      "pano_heading": 90
     },
     {
       "id": "tus-congress-pennington",
@@ -21,14 +24,29 @@
       "addr": "110 E Pennington St",
       "lat": 32.2225,
       "lng": -110.9716,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City garage downtown.",
-      "source": "parktucson.org",
+      "notes": "City garage downtown.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano wLns7dCvsHyDgPaFyA1W6A, heading 90\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: parktucson.org",
       "entrance_lat": 32.2223591,
       "entrance_lng": -110.9723623,
-      "entrance_source": "OSM parking_entrance node 12030051206"
+      "entrance_source": "OSM parking_entrance node 12030051206",
+      "verified_on": "2026-04-23",
+      "pano_id": "wLns7dCvsHyDgPaFyA1W6A",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Loading Dock",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "tus-tucson-conv-ctr",
@@ -58,7 +76,8 @@
       "source": "tucsonconventioncenter.com",
       "entrance_lat": 32.2178087,
       "entrance_lng": -110.9726179,
-      "entrance_source": "OSM parking_entrance node 10255028053"
+      "entrance_source": "OSM parking_entrance node 10255028053",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-depot-garage",
@@ -88,7 +107,8 @@
       "source": "fourthavenue.org",
       "entrance_lat": 32.2273207,
       "entrance_lng": -110.966987,
-      "entrance_source": "OSM parking_entrance node 13325496304"
+      "entrance_source": "OSM parking_entrance node 13325496304",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-ua-tyndall",
@@ -127,7 +147,8 @@
       "source": "arizonawildcats.com",
       "entrance_lat": 32.2300671,
       "entrance_lng": -110.947994,
-      "entrance_source": "OSM parking_entrance node 6108507239"
+      "entrance_source": "OSM parking_entrance node 6108507239",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-park-mall",
@@ -166,7 +187,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "West Tucson famous museum. Large surface lot.",
-      "source": "desertmuseum.org"
+      "source": "desertmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-saguaro-west",
@@ -178,7 +200,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "National park lot. RV-capable.",
-      "source": "nps.gov/sagu"
+      "source": "nps.gov/sagu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-airport-main",
@@ -202,7 +225,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flytucson.com"
+      "source": "flytucson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-saguaro-east",
@@ -214,7 +238,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "East unit of Saguaro NP. RV-friendly.",
-      "source": "nps.gov/sagu"
+      "source": "nps.gov/sagu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-pima-air-space",
@@ -226,7 +251,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Huge aviation museum. Large surface lots.",
-      "source": "pimaair.org"
+      "source": "pimaair.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-reid-park-zoo",
@@ -238,7 +264,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "reidparkzoo.org"
+      "source": "reidparkzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-old-tucson",
@@ -250,7 +277,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic film studio / theme park.",
-      "source": "oldtucson.com"
+      "source": "oldtucson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-tucson-mall",
@@ -286,7 +314,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic mission south of Tucson. Free surface lot.",
-      "source": "sanxaviermission.org"
+      "source": "sanxaviermission.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-biosphere-2",
@@ -298,7 +327,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "30mi N of Tucson. Iconic earth-systems research facility.",
-      "source": "biosphere2.org"
+      "source": "biosphere2.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-saguaro-west-bajada",
@@ -337,7 +367,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "City park surface lots.",
-      "source": "tucsonaz.gov"
+      "source": "tucsonaz.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-mercado-san-agustin",
@@ -361,7 +392,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Sam Hughes neighborhood.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [

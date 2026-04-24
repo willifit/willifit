@@ -21,14 +21,29 @@
       "addr": "123 Losoya St",
       "lat": 29.426,
       "lng": -98.4889,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "No oversized per policy. $8 premium for oversized vehicles.",
-      "source": "Hyatt",
+      "notes": "No oversized per policy. $8 premium for oversized vehicles.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'-0\" (pano ta4Pw2kQJ_gk10k2HVyOhw, heading 0.0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Hyatt",
       "entrance_lat": 29.4259379,
       "entrance_lng": -98.4900592,
-      "entrance_source": "OSM parking_entrance node 9566226791"
+      "entrance_source": "OSM parking_entrance node 9566226791",
+      "verified_on": "2026-04-23",
+      "pano_id": "ta4Pw2kQJ_gk10k2HVyOhw",
+      "pano_heading": 0.0,
+      "sections": [
+        {
+          "label": "Enter/Main entrance",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Reserved",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "sat-houston-st",
@@ -36,14 +51,29 @@
       "addr": "230 E Houston St",
       "lat": 29.4263,
       "lng": -98.4915,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "City-owned. Near The Alamo, Riverwalk.",
-      "source": "sapark.sanantonio.gov",
+      "notes": "City-owned. Near The Alamo, Riverwalk.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'0\"\" (pano lGYkaNSF_BGlyvWgNMEAlg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sapark.sanantonio.gov",
       "entrance_lat": 29.4259391,
       "entrance_lng": -98.490314,
-      "entrance_source": "OSM parking_entrance node 9566226796"
+      "entrance_source": "OSM parking_entrance node 9566226796",
+      "verified_on": "2026-04-23",
+      "pano_id": "lGYkaNSF_BGlyvWgNMEAlg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Entrance/Exit",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "EXIT",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "sat-market-sq",
@@ -51,14 +81,17 @@
       "addr": "600 Santa Rosa Ave",
       "lat": 29.4257,
       "lng": -98.4966,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned. Serves El Mercado, historic market.",
-      "source": "sapark.sanantonio.gov",
+      "notes": "City-owned. Serves El Mercado, historic market.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 5wD_pJ9vj23IY3tml08-2A, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sapark.sanantonio.gov",
       "entrance_lat": 29.425631,
       "entrance_lng": -98.4978751,
-      "entrance_source": "OSM parking_entrance node 3607958090"
+      "entrance_source": "OSM parking_entrance node 3607958090",
+      "verified_on": "2026-04-23",
+      "pano_id": "5wD_pJ9vj23IY3tml08-2A",
+      "pano_heading": 90
     },
     {
       "id": "sat-convention-ctr",
@@ -81,14 +114,17 @@
       "addr": "217 N St Mary's St",
       "lat": 29.4273,
       "lng": -98.4939,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown core.",
-      "source": "sapark.sanantonio.gov",
+      "notes": "Downtown core.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 0_pMDuKtaZSgGftUYAeFfw, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sapark.sanantonio.gov",
       "entrance_lat": 29.4280339,
       "entrance_lng": -98.493173,
-      "entrance_source": "OSM parking_entrance node 1663731431"
+      "entrance_source": "OSM parking_entrance node 1663731431",
+      "verified_on": "2026-04-23",
+      "pano_id": "0_pMDuKtaZSgGftUYAeFfw",
+      "pano_heading": 45
     },
     {
       "id": "sat-rivercenter",
@@ -115,7 +151,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Event/sports surface lots. Oversized OK.",
-      "source": "Alamodome"
+      "source": "Alamodome",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-atnt-center",
@@ -127,7 +164,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Spurs arena. Open surface parking.",
-      "source": "AT&T Center"
+      "source": "AT&T Center",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-pearl-garage",
@@ -150,14 +188,17 @@
       "addr": "One UTSA Cir",
       "lat": 29.5821,
       "lng": -98.6195,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "UTSA Main Campus.",
-      "source": "utsa.edu",
+      "notes": "UTSA Main Campus.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano BfHDCVlEBt5hQSHGi5zvEQ, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: utsa.edu",
       "entrance_lat": 29.5823442,
       "entrance_lng": -98.6195039,
-      "entrance_source": "OSM parking_entrance node 2552018192"
+      "entrance_source": "OSM parking_entrance node 2552018192",
+      "verified_on": "2026-04-23",
+      "pano_id": "BfHDCVlEBt5hQSHGi5zvEQ",
+      "pano_heading": 45
     },
     {
       "id": "sat-sat-airport",
@@ -181,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy. Oversized OK.",
-      "source": "flysanantonio.com"
+      "source": "flysanantonio.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-six-flags",
@@ -193,7 +235,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot at theme park. $30+ parking. Oversized + RV OK.",
-      "source": "sixflags.com"
+      "source": "sixflags.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-seaworld",
@@ -205,7 +248,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "250-acre park surface lots. Oversized OK.",
-      "source": "seaworld.com"
+      "source": "seaworld.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-alamo-garage",
@@ -228,14 +272,17 @@
       "addr": "126 Navarro St",
       "lat": 29.4253,
       "lng": -98.4926,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 138,
+      "height_label": "11'6\"",
       "oversized": false,
-      "notes": "Riverwalk-adjacent city garage.",
-      "source": "sapark.sanantonio.gov",
+      "notes": "Riverwalk-adjacent city garage.\nVerified 2026-04-23 from sign reading \"11'6\"\" (pano byYigSTi7cjHnOsKYJURwQ, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sapark.sanantonio.gov",
       "entrance_lat": 29.4246434,
       "entrance_lng": -98.4923635,
-      "entrance_source": "OSM parking_entrance node 10957109771"
+      "entrance_source": "OSM parking_entrance node 10957109771",
+      "verified_on": "2026-04-23",
+      "pano_id": "byYigSTi7cjHnOsKYJURwQ",
+      "pano_heading": 45
     },
     {
       "id": "sat-tower-of-amer",
@@ -247,7 +294,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "HemisFair Park surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-hemisfair",
@@ -267,14 +315,17 @@
       "addr": "401 S Alamo St",
       "lat": 29.4208,
       "lng": -98.4845,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Near Convention Center, Alamodome.",
-      "source": "Needs verification",
+      "notes": "Near Convention Center, Alamodome.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano hwm9R9w-mMlvSnKRw7Gysw, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.4218702,
       "entrance_lng": -98.4834846,
-      "entrance_source": "OSM parking_entrance node 937360044"
+      "entrance_source": "OSM parking_entrance node 937360044",
+      "verified_on": "2026-04-23",
+      "pano_id": "hwm9R9w-mMlvSnKRw7Gysw",
+      "pano_heading": 180
     },
     {
       "id": "sat-shops-la-cantera",
@@ -286,7 +337,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale open-air mall NW San Antonio.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-rim",
@@ -298,7 +350,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lots, open-air. Near Six Flags.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-northpark",
@@ -313,7 +366,8 @@
       "source": "Needs verification",
       "entrance_lat": 29.5354517,
       "entrance_lng": -98.4932605,
-      "entrance_source": "OSM parking_entrance node 10586700219"
+      "entrance_source": "OSM parking_entrance node 10586700219",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-pearl-plaza",
@@ -321,11 +375,14 @@
       "addr": "303 Pearl Pkwy",
       "lat": 29.4419,
       "lng": -98.4803,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Underground garage at Pearl District.",
-      "source": "atpearl.com"
+      "notes": "Underground garage at Pearl District.\nVerified 2026-04-23 from sign reading \"8 FT\" (pano KMNaQKEqZswDWSoy9SyV4A, heading 315\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: atpearl.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "KMNaQKEqZswDWSoy9SyV4A",
+      "pano_heading": 315
     },
     {
       "id": "sat-pearl-can",
@@ -352,7 +409,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park surface lots. Oversized OK.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-mi-tierra",
@@ -367,7 +425,8 @@
       "source": "Needs verification",
       "entrance_lat": 29.425631,
       "entrance_lng": -98.4978751,
-      "entrance_source": "OSM parking_entrance node 3607958090"
+      "entrance_source": "OSM parking_entrance node 3607958090",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-missions-garage",
@@ -379,7 +438,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot, free. Part of Missions World Heritage Site.",
-      "source": "nps.gov/saan"
+      "source": "nps.gov/saan",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-mission-san-jose",
@@ -391,7 +451,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS lot. Oversized OK.",
-      "source": "nps.gov/saan"
+      "source": "nps.gov/saan",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-witte",
@@ -403,7 +464,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Brackenridge Park area museum surface lot.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-brackenridge-park",
@@ -415,7 +477,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park surface lots. Oversized OK.",
-      "source": "sanantonio.gov/parksandrec"
+      "source": "sanantonio.gov/parksandrec",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sat-zoo",
@@ -430,7 +493,8 @@
       "source": "sazoo.org",
       "entrance_lat": 29.4640758,
       "entrance_lng": -98.4762071,
-      "entrance_source": "OSM parking_entrance node 11778150469"
+      "entrance_source": "OSM parking_entrance node 11778150469",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

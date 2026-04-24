@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Transportation + Ticket Center. Massive lot. RV/oversized OK.",
-      "source": "disneyworld.disney.go.com"
+      "source": "disneyworld.disney.go.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-disney-epcot",
@@ -22,7 +23,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "EPCOT parking lot.",
-      "source": "disneyworld.disney.go.com"
+      "source": "disneyworld.disney.go.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-disney-hollywood-studios",
@@ -34,7 +36,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "DHS surface lot.",
-      "source": "disneyworld.disney.go.com"
+      "source": "disneyworld.disney.go.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-disney-animal-kingdom",
@@ -46,7 +49,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Animal Kingdom.",
-      "source": "disneyworld.disney.go.com"
+      "source": "disneyworld.disney.go.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-disney-springs",
@@ -81,11 +85,14 @@
       "addr": "6000 Universal Blvd",
       "lat": 28.4751,
       "lng": -81.464,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Upper-tier closer garages.",
-      "source": "universalorlando.com"
+      "notes": "Upper-tier closer garages.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano zge9b1qou1kBBW23LLq5iA, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: universalorlando.com",
+      "verified_on": "2026-04-23",
+      "pano_id": "zge9b1qou1kBBW23LLq5iA",
+      "pano_heading": 225
     },
     {
       "id": "orl-seaworld",
@@ -97,7 +104,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Theme park surface lot. Oversized OK.",
-      "source": "seaworld.com"
+      "source": "seaworld.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-oc-convention-ctr",
@@ -156,14 +164,17 @@
       "addr": "55 W Church St",
       "lat": 28.54,
       "lng": -81.3818,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown Orlando.",
-      "source": "cityoforlando.net",
+      "notes": "Downtown Orlando.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano A3yVanwWeXUEpVneyj9u8A, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: cityoforlando.net",
       "entrance_lat": 28.5401895,
       "entrance_lng": -81.379927,
-      "entrance_source": "OSM parking_entrance node 10142264443"
+      "entrance_source": "OSM parking_entrance node 10142264443",
+      "verified_on": "2026-04-23",
+      "pano_id": "A3yVanwWeXUEpVneyj9u8A",
+      "pano_heading": 180
     },
     {
       "id": "orl-kia-ctr",
@@ -202,7 +213,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "MLS stadium lots.",
-      "source": "orlandocitysc.com"
+      "source": "orlandocitysc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-camping-world-stadium",
@@ -214,7 +226,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Citrus Bowl + concerts. Surface lots.",
-      "source": "campingworldstadium.com"
+      "source": "campingworldstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-millenia-mall",
@@ -282,14 +295,17 @@
       "addr": "1 Jeff Fuqua Blvd",
       "lat": 28.4302,
       "lng": -81.3067,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 180,
+      "height_label": "15'0\"",
       "oversized": false,
-      "notes": "Terminal A.",
-      "source": "orlandoairports.net",
+      "notes": "Terminal A.\nVerified 2026-04-23 from sign reading \"SPEED LIMIT 15\" (pano pdosLbXu5ujDHvQ6ey84vw, heading 270.0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: orlandoairports.net",
       "entrance_lat": 28.4304664,
       "entrance_lng": -81.3073415,
-      "entrance_source": "OSM parking_entrance node 3823649812"
+      "entrance_source": "OSM parking_entrance node 3823649812",
+      "verified_on": "2026-04-23",
+      "pano_id": "pdosLbXu5ujDHvQ6ey84vw",
+      "pano_heading": 270.0
     },
     {
       "id": "orl-mco-terminal-b",
@@ -328,7 +344,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "orlandoairports.net"
+      "source": "orlandoairports.net",
+      "structure_type": "surface_lot"
     },
     {
       "id": "orl-fort-wilderness",
@@ -340,7 +357,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "On-Disney RV campground.",
-      "source": "disneyworld.disney.go.com"
+      "source": "disneyworld.disney.go.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

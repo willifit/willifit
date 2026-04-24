@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "VBCC surface lots.",
-      "source": "virginiabeachcc.com"
+      "source": "virginiabeachcc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-oceanfront-9th",
@@ -18,14 +19,17 @@
       "addr": "901 Pacific Ave",
       "lat": 36.8507,
       "lng": -75.977,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Resort strip garage.",
-      "source": "vbgov.com",
+      "notes": "Resort strip garage.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano mesSZ1t0PQByb9RnVwJTlg, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: vbgov.com",
       "entrance_lat": 36.8514623,
       "entrance_lng": -75.9757787,
-      "entrance_source": "OSM parking_entrance node 13602482297"
+      "entrance_source": "OSM parking_entrance node 13602482297",
+      "verified_on": "2026-04-23",
+      "pano_id": "mesSZ1t0PQByb9RnVwJTlg",
+      "pano_heading": 45
     },
     {
       "id": "vb-oceanfront-4th",
@@ -55,7 +59,8 @@
       "source": "vbgov.com",
       "entrance_lat": 36.8515638,
       "entrance_lng": -75.9758062,
-      "entrance_source": "OSM parking_entrance node 13602482295"
+      "entrance_source": "OSM parking_entrance node 13602482295",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-town-center",
@@ -91,7 +96,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot mall.",
-      "source": "shoppembroke.com"
+      "source": "shoppembroke.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-aquarium",
@@ -103,7 +109,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "virginiaaquarium.com"
+      "source": "virginiaaquarium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-botanical-garden",
@@ -115,7 +122,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-first-landing",
@@ -127,7 +135,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + campground. Oversized + RV OK.",
-      "source": "dcr.virginia.gov"
+      "source": "dcr.virginia.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-pier-fishing",
@@ -139,7 +148,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Pier + boardwalk access.",
-      "source": "virginiabeach.com"
+      "source": "virginiabeach.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-norfolk-airport",
@@ -163,7 +173,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Chesapeake Bay beach.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-sandler-ctr",
@@ -187,7 +198,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Southern VB. Surface lot.",
-      "source": "militaryaviationmuseum.org"
+      "source": "militaryaviationmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-contemporary-art",
@@ -211,7 +223,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Concert amphitheater. Large surface lot.",
-      "source": "livenation.com"
+      "source": "livenation.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-hampton-roads-hockey",
@@ -219,11 +232,14 @@
       "addr": "801 Monroe Ave, Hampton",
       "lat": 37.0349,
       "lng": -76.3615,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "Hampton \u2014 regional sports complex.",
-      "source": "Needs verification"
+      "notes": "Hampton \u2014 regional sports complex.\nVerified 2026-04-23 from sign reading \"12 FT\" (pano XkrKtuOYm04cgytIQDydRQ, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
+      "verified_on": "2026-04-23",
+      "pano_id": "XkrKtuOYm04cgytIQDydRQ",
+      "pano_heading": 270
     },
     {
       "id": "vb-norfolk-waterside",
@@ -231,14 +247,17 @@
       "addr": "333 Waterside Dr, Norfolk",
       "lat": 36.8466,
       "lng": -76.2924,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown Norfolk riverside entertainment.",
-      "source": "watersidedistrict.com",
+      "notes": "Downtown Norfolk riverside entertainment.\nVerified 2026-04-23 from sign reading \"7'0\" (pano j-LxtBzJatkODglWZB4p8Q, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: watersidedistrict.com",
       "entrance_lat": 36.8470971,
       "entrance_lng": -76.2913821,
-      "entrance_source": "OSM parking_entrance node 5800138386"
+      "entrance_source": "OSM parking_entrance node 5800138386",
+      "verified_on": "2026-04-23",
+      "pano_id": "j-LxtBzJatkODglWZB4p8Q",
+      "pano_heading": 180
     },
     {
       "id": "vb-chrysler-museum",
@@ -258,14 +277,29 @@
       "addr": "300 Monticello Ave, Norfolk",
       "lat": 36.8521,
       "lng": -76.2885,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown Norfolk mall.",
-      "source": "shopmacarthur.com",
+      "notes": "Downtown Norfolk mall.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano z9olxGyC4eab8MBEdunuHg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: shopmacarthur.com",
       "entrance_lat": 36.8507018,
       "entrance_lng": -76.2880236,
-      "entrance_source": "OSM parking_entrance node 4099916661"
+      "entrance_source": "OSM parking_entrance node 4099916661",
+      "verified_on": "2026-04-23",
+      "pano_id": "z9olxGyC4eab8MBEdunuHg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Bank Street Garage",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "vb-virginia-zoo",
@@ -277,7 +311,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "virginiazoo.org"
+      "source": "virginiazoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-sandbridge-beach",
@@ -289,7 +324,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Southern VB beach. Surface lot. RV OK.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-back-bay-nwr",
@@ -301,7 +337,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USFWS refuge.",
-      "source": "fws.gov"
+      "source": "fws.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-boardwalk-main",
@@ -316,7 +353,8 @@
       "source": "visitvirginiabeach.com",
       "entrance_lat": 36.8514623,
       "entrance_lng": -75.9757787,
-      "entrance_source": "OSM parking_entrance node 13602482297"
+      "entrance_source": "OSM parking_entrance node 13602482297",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-resort-parking-34th",
@@ -331,7 +369,8 @@
       "source": "vbgov.com",
       "entrance_lat": 36.8570118,
       "entrance_lng": -75.978018,
-      "entrance_source": "OSM parking_entrance node 12305488722"
+      "entrance_source": "OSM parking_entrance node 12305488722",
+      "structure_type": "surface_lot"
     },
     {
       "id": "vb-mt-trashmore",
@@ -343,7 +382,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park built on landfill. Free surface lots.",
-      "source": "vbgov.com"
+      "source": "vbgov.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w402217383",
@@ -351,11 +391,14 @@
       "addr": "3558 Shore Drive",
       "lat": 36.9087,
       "lng": -76.09767,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano lX72sV-PSsGaGL83Gdz-2A, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "lX72sV-PSsGaGL83Gdz-2A",
+      "pano_heading": 225
     },
     {
       "id": "osm-w402296807",
@@ -375,14 +418,17 @@
       "addr": "35th Street",
       "lat": 36.86278,
       "lng": -75.97982,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano v8XusjSAlkT6d4_3JdA9sg, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 36.863023,
       "entrance_lng": -75.9796877,
-      "entrance_source": "OSM parking_entrance node 4053927151"
+      "entrance_source": "OSM parking_entrance node 4053927151",
+      "verified_on": "2026-04-23",
+      "pano_id": "v8XusjSAlkT6d4_3JdA9sg",
+      "pano_heading": 90
     },
     {
       "id": "osm-w402400559",
@@ -390,14 +436,29 @@
       "addr": "812 Atlantic Avenue",
       "lat": 36.83709,
       "lng": -75.97264,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 75,
+      "height_label": "6'3\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6'3\"\" (pano DixuJp6cm31cFcDYVElMfg, heading 270\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 36.8368546,
       "entrance_lng": -75.9721407,
-      "entrance_source": "OSM parking_entrance node 12305488705"
+      "entrance_source": "OSM parking_entrance node 12305488705",
+      "verified_on": "2026-04-23",
+      "pano_id": "DixuJp6cm31cFcDYVElMfg",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Parking",
+          "height_in": 75,
+          "height_label": "6'3\""
+        },
+        {
+          "label": "Parking",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "osm-w402400761",
@@ -405,14 +466,17 @@
       "addr": "303 Atlantic Avenue",
       "lat": 36.83221,
       "lng": -75.97039,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 5rJyJNK-AfFN9BBlvPoqaQ, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 36.8335904,
       "entrance_lng": -75.9715799,
-      "entrance_source": "OSM parking_entrance node 12305488702"
+      "entrance_source": "OSM parking_entrance node 12305488702",
+      "verified_on": "2026-04-23",
+      "pano_id": "5rJyJNK-AfFN9BBlvPoqaQ",
+      "pano_heading": 135
     },
     {
       "id": "osm-w402413116",
@@ -439,7 +503,8 @@
       "source": "OpenStreetMap",
       "entrance_lat": 36.8153037,
       "entrance_lng": -76.069393,
-      "entrance_source": "OSM parking_entrance node 2062731541"
+      "entrance_source": "OSM parking_entrance node 2062731541",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [

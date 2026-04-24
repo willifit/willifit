@@ -66,14 +66,17 @@
       "addr": "5085 Westheimer Rd",
       "lat": 29.738,
       "lng": -95.4625,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Clearance needs verification.",
-      "source": "Denison Parking",
+      "notes": "Clearance needs verification.\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano tlMTnzQWH6m8tDwIDaw1_g, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Denison Parking",
       "entrance_lat": 29.7381183,
       "entrance_lng": -95.4628513,
-      "entrance_source": "OSM parking_entrance node 8320566945"
+      "entrance_source": "OSM parking_entrance node 8320566945",
+      "verified_on": "2026-04-23",
+      "pano_id": "tlMTnzQWH6m8tDwIDaw1_g",
+      "pano_heading": 0
     },
     {
       "id": "hou-gallry-red",
@@ -81,14 +84,17 @@
       "addr": "5148 Hidalgo St",
       "lat": 29.7388,
       "lng": -95.4607,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 108,
+      "height_label": "9'0\"",
       "oversized": false,
-      "notes": "Clearance needs verification.",
-      "source": "Denison Parking",
+      "notes": "Clearance needs verification.\nVerified 2026-04-23 from sign reading \"9'0\"\" (pano lmKCIGyQ0Skqrt_u1yIqbA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Denison Parking",
       "entrance_lat": 29.7389223,
       "entrance_lng": -95.4603801,
-      "entrance_source": "OSM parking_entrance node 8320566940"
+      "entrance_source": "OSM parking_entrance node 8320566940",
+      "verified_on": "2026-04-23",
+      "pano_id": "lmKCIGyQ0Skqrt_u1yIqbA",
+      "pano_heading": 0
     },
     {
       "id": "hou-avenida-main",
@@ -156,11 +162,14 @@
       "addr": "400 Rusk St",
       "lat": 29.7603,
       "lng": -95.3688,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "City-owned Theater District garage.",
-      "source": "houstontx.gov"
+      "notes": "City-owned Theater District garage.\nVerified 2026-04-23 from sign reading \"8'0\"\" (pano XFndKXJ7mPmOWwOFd4eB_g, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: houstontx.gov",
+      "verified_on": "2026-04-23",
+      "pano_id": "XFndKXJ7mPmOWwOFd4eB_g",
+      "pano_heading": 270
     },
     {
       "id": "hou-theater-pierce",
@@ -213,14 +222,29 @@
       "addr": "1000 Louisiana St",
       "lat": 29.757,
       "lng": -95.366,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown office tower.",
-      "source": "Needs verification",
+      "notes": "Downtown office tower.\nVerified 2026-04-23 from sign reading \"8'0\" (pano auPYZEfFPt0Jrw06twmkuw, heading 90\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7569103,
       "entrance_lng": -95.3660776,
-      "entrance_source": "OSM parking_entrance node 10091758199"
+      "entrance_source": "OSM parking_entrance node 10091758199",
+      "verified_on": "2026-04-23",
+      "pano_id": "auPYZEfFPt0Jrw06twmkuw",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "The Noel Tower",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "hou-memorial-city",
@@ -228,14 +252,29 @@
       "addr": "303 Memorial City Way",
       "lat": 29.7833,
       "lng": -95.546,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Large suburban mall garage.",
-      "source": "Needs verification",
+      "notes": "Large suburban mall garage.\nVerified 2026-04-23 from sign reading \"7'0\" (pano XvtfeFx_FDuFlubUv5ScCg, heading 45.0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7830616,
       "entrance_lng": -95.5449931,
-      "entrance_source": "OSM parking_entrance node 6680455960"
+      "entrance_source": "OSM parking_entrance node 6680455960",
+      "verified_on": "2026-04-23",
+      "pano_id": "XvtfeFx_FDuFlubUv5ScCg",
+      "pano_heading": 45.0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Gateway Self Parking",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "hou-tmc2",
@@ -243,14 +282,17 @@
       "addr": "6550 Bertner Ave",
       "lat": 29.7103,
       "lng": -95.3996,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 180,
+      "height_label": "15'0\"",
       "oversized": false,
-      "notes": "TMC visitor garage. Clearance needs verification.",
-      "source": "Parkopedia",
+      "notes": "TMC visitor garage. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"15\" (pano Wwl4RutYBgs4xMDE1wBSWg, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Parkopedia",
       "entrance_lat": 29.7111136,
       "entrance_lng": -95.4001312,
-      "entrance_source": "OSM parking_entrance node 10199152962"
+      "entrance_source": "OSM parking_entrance node 10199152962",
+      "verified_on": "2026-04-23",
+      "pano_id": "Wwl4RutYBgs4xMDE1wBSWg",
+      "pano_heading": 0
     },
     {
       "id": "hou-tmc-garage6",
@@ -277,7 +319,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Texans/Rodeo Houston. Surface lots accommodate RVs.",
-      "source": "NRG Stadium"
+      "source": "NRG Stadium",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-museum-dist",
@@ -316,7 +359,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Accommodates RVs, campers. Shuttle to terminals.",
-      "source": "fly2houston.com"
+      "source": "fly2houston.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-iah-ecopark1",
@@ -328,7 +372,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered lot. Oversized OK.",
-      "source": "fly2houston.com"
+      "source": "fly2houston.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-hobby-red-l1",
@@ -352,7 +397,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "fly2houston.com"
+      "source": "fly2houston.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-rice-village",
@@ -427,7 +473,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot, historic art-deco shopping center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-post-hou",
@@ -435,14 +482,29 @@
       "addr": "401 Franklin St",
       "lat": 29.7618,
       "lng": -95.3622,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Adaptive-reuse food hall + rooftop. Underground garage.",
-      "source": "Needs verification",
+      "notes": "Adaptive-reuse food hall + rooftop. Underground garage.\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano aI31tkVHeO3p3E2p8IZNnw, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7626868,
       "entrance_lng": -95.3612545,
-      "entrance_source": "OSM parking_entrance node 10570640068"
+      "entrance_source": "OSM parking_entrance node 10570640068",
+      "verified_on": "2026-04-23",
+      "pano_id": "aI31tkVHeO3p3E2p8IZNnw",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 120,
+          "height_label": "10'0\""
+        },
+        {
+          "label": "Parking garage entrance",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "hou-shell-plaza",
@@ -450,14 +512,17 @@
       "addr": "910 Louisiana St",
       "lat": 29.7588,
       "lng": -95.3677,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Downtown office tower.",
-      "source": "Needs verification",
+      "notes": "Downtown office tower.\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano doEcnS429c53RpfGArP2JA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7577131,
       "entrance_lng": -95.3663944,
-      "entrance_source": "OSM parking_entrance node 9833562149"
+      "entrance_source": "OSM parking_entrance node 9833562149",
+      "verified_on": "2026-04-23",
+      "pano_id": "doEcnS429c53RpfGArP2JA",
+      "pano_heading": 0
     },
     {
       "id": "hou-center-allen",
@@ -465,14 +530,29 @@
       "addr": "500 Dallas St",
       "lat": 29.7579,
       "lng": -95.3712,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown office complex (One, Two, Three Allen Center).",
-      "source": "Needs verification",
+      "notes": "Downtown office complex (One, Two, Three Allen Center).\nVerified 2026-04-23 from sign reading \"7'0\" (pano 2pvEmgShb-iFeMPkjMEsNQ, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7581323,
       "entrance_lng": -95.3710527,
-      "entrance_source": "OSM parking_entrance node 10255544672"
+      "entrance_source": "OSM parking_entrance node 10255544672",
+      "verified_on": "2026-04-23",
+      "pano_id": "2pvEmgShb-iFeMPkjMEsNQ",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 138,
+          "height_label": "11'6\""
+        }
+      ]
     },
     {
       "id": "hou-green-st",
@@ -480,14 +560,29 @@
       "addr": "1201 Fannin St",
       "lat": 29.7569,
       "lng": -95.3627,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Mixed-use downtown block. House of Blues.",
-      "source": "Needs verification",
+      "notes": "Mixed-use downtown block. House of Blues.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano vHjcq98l-TWbpW_c8HeZDQ, heading 270\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7574875,
       "entrance_lng": -95.3630519,
-      "entrance_source": "OSM parking_entrance node 10097281334"
+      "entrance_source": "OSM parking_entrance node 10097281334",
+      "verified_on": "2026-04-23",
+      "pano_id": "vHjcq98l-TWbpW_c8HeZDQ",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "CONTRACT / PUBLIC",
+          "height_in": 87,
+          "height_label": "7'3\""
+        }
+      ]
     },
     {
       "id": "hou-pavilions-shopping",
@@ -495,14 +590,29 @@
       "addr": "5085 Westheimer Rd",
       "lat": 29.7395,
       "lng": -95.4609,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Other Galleria lots beyond Blue Express. Needs verification per color-coded lot.",
-      "source": "Denison Parking",
+      "notes": "Other Galleria lots beyond Blue Express. Needs verification per color-coded lot.\nVerified 2026-04-23 from sign reading \"8' 0\" (pano eupEF8bNifcoJsywd8Do7g, heading 135\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Denison Parking",
       "entrance_lat": 29.7389223,
       "entrance_lng": -95.4603801,
-      "entrance_source": "OSM parking_entrance node 8320566940"
+      "entrance_source": "OSM parking_entrance node 8320566940",
+      "verified_on": "2026-04-23",
+      "pano_id": "eupEF8bNifcoJsywd8Do7g",
+      "pano_heading": 135,
+      "sections": [
+        {
+          "label": "Upper Level",
+          "height_in": 96,
+          "height_label": "8'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "hou-museum-hmns",
@@ -526,7 +636,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Oversized OK.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-bbva-shell",
@@ -541,7 +652,8 @@
       "source": "houstondynamofc.com",
       "entrance_lat": 29.7511114,
       "entrance_lng": -95.351277,
-      "entrance_source": "OSM parking_entrance node 10962862465"
+      "entrance_source": "OSM parking_entrance node 10962862465",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hou-downtown-tunnel",
@@ -549,14 +661,17 @@
       "addr": "300 Preston St",
       "lat": 29.761,
       "lng": -95.3681,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 114,
+      "height_label": "9'6\"",
       "oversized": false,
-      "notes": "Near Market Square + Pierce Junction Tunnel system entrance.",
-      "source": "Needs verification",
+      "notes": "Near Market Square + Pierce Junction Tunnel system entrance.\nVerified 2026-04-23 from sign reading \"9'6\" (pano ppcPPZb8QfjcwpNqHtqW8A, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7625721,
       "entrance_lng": -95.3688997,
-      "entrance_source": "OSM parking_entrance node 12045419331"
+      "entrance_source": "OSM parking_entrance node 12045419331",
+      "verified_on": "2026-04-23",
+      "pano_id": "ppcPPZb8QfjcwpNqHtqW8A",
+      "pano_heading": 45
     },
     {
       "id": "hou-the-shops-houston-center",
@@ -564,14 +679,29 @@
       "addr": "1200 McKinney St",
       "lat": 29.7574,
       "lng": -95.3616,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown food court / retail garage.",
-      "source": "Needs verification",
+      "notes": "Downtown food court / retail garage.\nVerified 2026-04-23 from sign reading \"7'0\" (pano vHjcq98l-TWbpW_c8HeZDQ, heading 270\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7574875,
       "entrance_lng": -95.3630519,
-      "entrance_source": "OSM parking_entrance node 10097281334"
+      "entrance_source": "OSM parking_entrance node 10097281334",
+      "verified_on": "2026-04-23",
+      "pano_id": "vHjcq98l-TWbpW_c8HeZDQ",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "CONTRACT/PUBLIC",
+          "height_in": 87,
+          "height_label": "7'3\""
+        }
+      ]
     },
     {
       "id": "hou-midtown-kirby",
@@ -579,14 +709,17 @@
       "addr": "3339 Main St",
       "lat": 29.7455,
       "lng": -95.3771,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Midtown entertainment/dining district.",
-      "source": "Needs verification",
+      "notes": "Midtown entertainment/dining district.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ixIhTEy4YLKh-FOk_GqRbA, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 29.7453546,
       "entrance_lng": -95.3774299,
-      "entrance_source": "OSM parking_entrance node 9609223777"
+      "entrance_source": "OSM parking_entrance node 9609223777",
+      "verified_on": "2026-04-23",
+      "pano_id": "ixIhTEy4YLKh-FOk_GqRbA",
+      "pano_heading": 270
     }
   ],
   "tunnels": [

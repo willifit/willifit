@@ -36,14 +36,17 @@
       "addr": "1 E Washington St",
       "lat": 33.4491,
       "lng": -112.0735,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Underground, up to 2,000 cars. 24/7 security. Needs verification.",
-      "source": "Needs verification",
+      "notes": "Underground, up to 2,000 cars. 24/7 security. Needs verification.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano XlgZ2bsQFeiZyWHaoOtvJw, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4490164,
       "entrance_lng": -112.0753242,
-      "entrance_source": "OSM parking_entrance node 1604510861"
+      "entrance_source": "OSM parking_entrance node 1604510861",
+      "verified_on": "2026-04-23",
+      "pano_id": "XlgZ2bsQFeiZyWHaoOtvJw",
+      "pano_heading": 225
     },
     {
       "id": "jefferson",
@@ -51,14 +54,17 @@
       "addr": "333 S 2nd Ave",
       "lat": 33.4484,
       "lng": -112.0778,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "1,000+ spaces. Near State Capitol, Convention Center, Chase Field.",
-      "source": "Needs verification",
+      "notes": "1,000+ spaces. Near State Capitol, Convention Center, Chase Field.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano AonquaBjNtUbPKmkGHv23Q, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4480381,
       "entrance_lng": -112.0781455,
-      "entrance_source": "OSM parking_entrance node 12320080181"
+      "entrance_source": "OSM parking_entrance node 12320080181",
+      "verified_on": "2026-04-23",
+      "pano_id": "AonquaBjNtUbPKmkGHv23Q",
+      "pano_heading": 180
     },
     {
       "id": "arizonactr",
@@ -66,14 +72,17 @@
       "addr": "455 N 3rd St",
       "lat": 33.4541,
       "lng": -112.0697,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Adjacent to Arizona Center.",
-      "source": "Needs verification",
+      "notes": "Adjacent to Arizona Center.\nVerified 2026-04-23 from sign reading \"7' 0\"\" (pano T-htVJ2KG5aSERqwjM-8_A, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4524968,
       "entrance_lng": -112.0701143,
-      "entrance_source": "OSM parking_entrance node 12265858402"
+      "entrance_source": "OSM parking_entrance node 12265858402",
+      "verified_on": "2026-04-23",
+      "pano_id": "T-htVJ2KG5aSERqwjM-8_A",
+      "pano_heading": 270
     },
     {
       "id": "heritage",
@@ -81,14 +90,17 @@
       "addr": "115 N 6th St",
       "lat": 33.4498,
       "lng": -112.0682,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Serves Heritage Square, Science Center.",
-      "source": "Needs verification",
+      "notes": "Serves Heritage Square, Science Center.\nVerified 2026-04-23 from sign reading \"8'0\"\" (pano aHUSAS9fyzehcU6aOTKQUQ, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4507086,
       "entrance_lng": -112.067855,
-      "entrance_source": "OSM parking_entrance node 10905880503"
+      "entrance_source": "OSM parking_entrance node 10905880503",
+      "verified_on": "2026-04-23",
+      "pano_id": "aHUSAS9fyzehcU6aOTKQUQ",
+      "pano_heading": 45
     },
     {
       "id": "centralarts",
@@ -96,14 +108,17 @@
       "addr": "1850 N Central Ave",
       "lat": 33.4658,
       "lng": -112.074,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Multiple entries off Central Ave.",
-      "source": "Needs verification",
+      "notes": "Multiple entries off Central Ave.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'-0\"\" (pano H9FHtRealewvDEfe1bzYEQ, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4667027,
       "entrance_lng": -112.0745961,
-      "entrance_source": "OSM parking_entrance node 9378342926"
+      "entrance_source": "OSM parking_entrance node 9378342926",
+      "verified_on": "2026-04-23",
+      "pano_id": "H9FHtRealewvDEfe1bzYEQ",
+      "pano_heading": 270
     },
     {
       "id": "hyatt-regency",
@@ -111,14 +126,17 @@
       "addr": "122 N 2nd St",
       "lat": 33.4495,
       "lng": -112.0729,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Hotel garage, public parking available.",
-      "source": "Needs verification",
+      "notes": "Hotel garage, public parking available.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 2UcyBhPygrK_FvJb4u4RcA, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4480568,
       "entrance_lng": -112.072003,
-      "entrance_source": "OSM parking_entrance node 10972324632"
+      "entrance_source": "OSM parking_entrance node 10972324632",
+      "verified_on": "2026-04-23",
+      "pano_id": "2UcyBhPygrK_FvJb4u4RcA",
+      "pano_heading": 180
     },
     {
       "id": "renaissance",
@@ -126,14 +144,29 @@
       "addr": "2 N Central Ave",
       "lat": 33.4488,
       "lng": -112.0748,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Renaissance Square office tower.",
-      "source": "Needs verification",
+      "notes": "Renaissance Square office tower.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano -TDmqlqZkAu1vqMjioL55A, heading 90\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4489264,
       "entrance_lng": -112.0753232,
-      "entrance_source": "OSM parking_entrance node 1604510852"
+      "entrance_source": "OSM parking_entrance node 1604510852",
+      "verified_on": "2026-04-23",
+      "pano_id": "-TDmqlqZkAu1vqMjioL55A",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Entrance",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "convctr-west",
@@ -141,14 +174,17 @@
       "addr": "300 S 3rd St",
       "lat": 33.4475,
       "lng": -112.0707,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Phoenix Convention Center West.",
-      "source": "Needs verification",
+      "notes": "Phoenix Convention Center West.\nVerified 2026-04-23 from sign reading \"7'0\" (pano 6gIie0nBag3_7hLuE72AjQ, heading 225\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4473502,
       "entrance_lng": -112.070093,
-      "entrance_source": "OSM parking_entrance node 12497512529"
+      "entrance_source": "OSM parking_entrance node 12497512529",
+      "verified_on": "2026-04-23",
+      "pano_id": "6gIie0nBag3_7hLuE72AjQ",
+      "pano_heading": 225
     },
     {
       "id": "convctr-east",
@@ -156,14 +192,17 @@
       "addr": "333 N 5th St",
       "lat": 33.4512,
       "lng": -112.0693,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Phoenix Convention Center East.",
-      "source": "Needs verification",
+      "notes": "Phoenix Convention Center East.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano v9SY-wN7k0dtVsfaEBpozg, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4507086,
       "entrance_lng": -112.067855,
-      "entrance_source": "OSM parking_entrance node 10905880503"
+      "entrance_source": "OSM parking_entrance node 10905880503",
+      "verified_on": "2026-04-23",
+      "pano_id": "v9SY-wN7k0dtVsfaEBpozg",
+      "pano_heading": 135
     },
     {
       "id": "freeport",
@@ -210,14 +249,29 @@
       "addr": "3400 E Sky Harbor Blvd",
       "lat": 33.4352,
       "lng": -112.0099,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent. $30/day max.",
-      "source": "Sky Harbor",
+      "notes": "Terminal-adjacent. $30/day max.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6' 0\"\" (pano xfELw_vRDauxtkHC9OsqJw, heading 0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Sky Harbor",
       "entrance_lat": 33.4351837,
       "entrance_lng": -112.0078494,
-      "entrance_source": "OSM parking_entrance node 9287293857"
+      "entrance_source": "OSM parking_entrance node 9287293857",
+      "verified_on": "2026-04-23",
+      "pano_id": "xfELw_vRDauxtkHC9OsqJw",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Entrance",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Entrance",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "phx-economy-a",
@@ -225,14 +279,17 @@
       "addr": "3700 E Sky Harbor Blvd",
       "lat": 33.4355,
       "lng": -112.0014,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "Economy garage, $16/day.",
-      "source": "Sky Harbor",
+      "notes": "Economy garage, $16/day.\nVerified 2026-04-23 from sign reading \"12'-0\"\" (pano j7FIquIlzeR6DKxPmm2-Qw, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Sky Harbor",
       "entrance_lat": 33.4357509,
       "entrance_lng": -112.0009636,
-      "entrance_source": "OSM parking_entrance node 9899580119"
+      "entrance_source": "OSM parking_entrance node 9899580119",
+      "verified_on": "2026-04-23",
+      "pano_id": "j7FIquIlzeR6DKxPmm2-Qw",
+      "pano_heading": 90
     },
     {
       "id": "phx-economy-b",
@@ -262,7 +319,8 @@
       "source": "Sky Harbor",
       "entrance_lat": 33.4351718,
       "entrance_lng": -112.0062584,
-      "entrance_source": "OSM parking_entrance node 9287293736"
+      "entrance_source": "OSM parking_entrance node 9287293736",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-westeconomy",
@@ -274,7 +332,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy lot \u2014 accommodates over-height.",
-      "source": "Sky Harbor"
+      "source": "Sky Harbor",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-24thst",
@@ -358,7 +417,8 @@
       "source": "reddevelopment.com",
       "entrance_lat": 33.5088042,
       "entrance_lng": -112.026486,
-      "entrance_source": "OSM parking_entrance node 13419139627"
+      "entrance_source": "OSM parking_entrance node 13419139627",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-desert-ridge",
@@ -370,7 +430,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Open-air shopping center. Surface lots. Free parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-arizona-mills",
@@ -382,7 +443,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot around mall. Free.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-papago",
@@ -394,7 +456,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free. Near Phoenix Zoo, Desert Botanical Garden. Surface lots.",
-      "source": "phoenix.gov"
+      "source": "phoenix.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-zoo",
@@ -406,7 +469,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot serves Phoenix Zoo. Free.",
-      "source": "phoenixzoo.org"
+      "source": "phoenixzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-desert-botanical",
@@ -418,7 +482,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface parking. Free for members.",
-      "source": "dbg.org"
+      "source": "dbg.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-herberger",
@@ -426,14 +491,17 @@
       "addr": "222 E Monroe St",
       "lat": 33.4506,
       "lng": -112.0711,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown arts district. Event parking.",
-      "source": "Needs verification",
+      "notes": "Downtown arts district. Event parking.\nVerified 2026-04-23 from sign reading \"7'0\" (pano NutzQMRFmLf4RST1RDXE5w, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4505974,
       "entrance_lng": -112.0714273,
-      "entrance_source": "OSM parking_entrance node 9958293600"
+      "entrance_source": "OSM parking_entrance node 9958293600",
+      "verified_on": "2026-04-23",
+      "pano_id": "NutzQMRFmLf4RST1RDXE5w",
+      "pano_heading": 270
     },
     {
       "id": "phx-burton-barr",
@@ -445,7 +513,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Public library surface lot. Free.",
-      "source": "phoenixpubliclibrary.org"
+      "source": "phoenixpubliclibrary.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-art-museum",
@@ -487,7 +556,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Food hall + RoRo arts district. Surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-warehouse-dist",
@@ -499,7 +569,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lots south of downtown.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-camelback-esplanade",
@@ -526,7 +597,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air mall (Scottsdale \u2014 listed for Phoenix metro visitors).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "phx-kierland-commons",
@@ -549,11 +621,14 @@
       "addr": "4444 E Washington St",
       "lat": 33.4473,
       "lng": -111.9874,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Sky Train access lot (alt to 24th St).",
-      "source": "Sky Harbor"
+      "notes": "Sky Train access lot (alt to 24th St).\nVerified 2026-04-23 from sign reading \"11'0\" (pano _hJr4LnFHO4lLPVWdJC-_w, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Sky Harbor",
+      "verified_on": "2026-04-23",
+      "pano_id": "_hJr4LnFHO4lLPVWdJC-_w",
+      "pano_heading": 180
     },
     {
       "id": "phx-mercado",
@@ -561,14 +636,17 @@
       "addr": "502 E Monroe St",
       "lat": 33.451,
       "lng": -112.066,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "ASU Downtown Phoenix campus.",
-      "source": "Needs verification",
+      "notes": "ASU Downtown Phoenix campus.\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano 97hkJI-eFD-UWLZsDqzofQ, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 33.4501708,
       "entrance_lng": -112.0665053,
-      "entrance_source": "OSM parking_entrance node 8770469545"
+      "entrance_source": "OSM parking_entrance node 8770469545",
+      "verified_on": "2026-04-23",
+      "pano_id": "97hkJI-eFD-UWLZsDqzofQ",
+      "pano_heading": 135
     },
     {
       "id": "osm-w37057915",

@@ -150,14 +150,17 @@
       "addr": "318 E 2nd St",
       "lat": 34.0501,
       "lng": -118.2414,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Japanese Village Plaza area.",
-      "source": "Needs verification",
+      "notes": "Japanese Village Plaza area.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 9In2cAT_7WN3MY3db-309Q, heading 315\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 34.049869,
       "entrance_lng": -118.241535,
-      "entrance_source": "OSM parking_entrance node 8309266259"
+      "entrance_source": "OSM parking_entrance node 8309266259",
+      "verified_on": "2026-04-23",
+      "pano_id": "9In2cAT_7WN3MY3db-309Q",
+      "pano_heading": 315
     },
     {
       "id": "la-fashion-district",
@@ -226,7 +229,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Open surface lot adjacent to The Grove.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-century-city",
@@ -234,14 +238,17 @@
       "addr": "10250 Santa Monica Blvd",
       "lat": 34.0583,
       "lng": -118.418,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "oversized": false,
-      "notes": "3 hours free. Large mall garage. Clearance needs verification.",
-      "source": "westfield.com",
+      "notes": "3 hours free. Large mall garage. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"13'0\" (pano da_PvvQ6SimeF9qAUTCi5g, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: westfield.com",
       "entrance_lat": 34.0576249,
       "entrance_lng": -118.4177554,
-      "entrance_source": "OSM parking_entrance node 8960708817"
+      "entrance_source": "OSM parking_entrance node 8960708817",
+      "verified_on": "2026-04-23",
+      "pano_id": "da_PvvQ6SimeF9qAUTCi5g",
+      "pano_heading": 270
     },
     {
       "id": "la-beverly-center",
@@ -249,14 +256,17 @@
       "addr": "8500 Beverly Blvd",
       "lat": 34.0752,
       "lng": -118.3772,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Beverly Grove mall garage.",
-      "source": "Needs verification",
+      "notes": "Beverly Grove mall garage.\nVerified 2026-04-23 from sign reading \"7 FT\" (pano 9MVJNwP-yf2G8VTMLaKJJg, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 34.0744374,
       "entrance_lng": -118.3767185,
-      "entrance_source": "OSM parking_entrance node 349340441"
+      "entrance_source": "OSM parking_entrance node 349340441",
+      "verified_on": "2026-04-23",
+      "pano_id": "9MVJNwP-yf2G8VTMLaKJJg",
+      "pano_heading": 270
     },
     {
       "id": "la-santa-monica-place",
@@ -264,14 +274,29 @@
       "addr": "395 Santa Monica Pl",
       "lat": 34.0148,
       "lng": -118.496,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "City-owned, serves Third Street Promenade + Pier. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "City-owned, serves Third Street Promenade + Pier. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"6\" (pano w5W60yQru-DRllvn60jmSQ, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 34.014374,
       "entrance_lng": -118.496249,
-      "entrance_source": "OSM parking_entrance node 8968931924"
+      "entrance_source": "OSM parking_entrance node 8968931924",
+      "verified_on": "2026-04-23",
+      "pano_id": "w5W60yQru-DRllvn60jmSQ",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Public Parking",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "la-sm-structure6",
@@ -279,14 +304,29 @@
       "addr": "1431 2nd St",
       "lat": 34.0171,
       "lng": -118.4965,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "City-owned downtown Santa Monica structure.",
-      "source": "santamonica.gov",
+      "notes": "City-owned downtown Santa Monica structure.\nVerified 2026-04-23 from sign reading \"6 FT\" (pano plGWmGFajcKE8vigcpMQ1w, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: santamonica.gov",
       "entrance_lat": 34.0182585,
       "entrance_lng": -118.497497,
-      "entrance_source": "OSM parking_entrance node 11162008275"
+      "entrance_source": "OSM parking_entrance node 11162008275",
+      "verified_on": "2026-04-23",
+      "pano_id": "plGWmGFajcKE8vigcpMQ1w",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Public Parking",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "la-venice-beach",
@@ -298,7 +338,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Open LA County beach lot. Accommodates oversized.",
-      "source": "LA County Beaches"
+      "source": "LA County Beaches",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-griffith",
@@ -310,7 +351,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot + street. Tight road \u2014 long RVs may struggle.",
-      "source": "laparks.org"
+      "source": "laparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-getty",
@@ -334,7 +376,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots. Accommodates oversized/RVs on game days with separate lot.",
-      "source": "Dodgers"
+      "source": "Dodgers",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-universal-citywalk",
@@ -342,14 +385,17 @@
       "addr": "100 Universal City Plaza",
       "lat": 34.136,
       "lng": -118.353,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Serves Universal Studios + CityWalk. Separate RV lot available.",
-      "source": "universalstudioshollywood.com",
+      "notes": "Serves Universal Studios + CityWalk. Separate RV lot available.\nVerified 2026-04-23 from sign reading \"7' 0\"\" (pano U99CvvvzvQiws4OXNg4veg, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: universalstudioshollywood.com",
       "entrance_lat": 34.1351343,
       "entrance_lng": -118.353321,
-      "entrance_source": "OSM parking_entrance node 4757166284"
+      "entrance_source": "OSM parking_entrance node 4757166284",
+      "verified_on": "2026-04-23",
+      "pano_id": "U99CvvvzvQiws4OXNg4veg",
+      "pano_heading": 45
     },
     {
       "id": "lax-p1",
@@ -430,7 +476,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated oversized vehicle parking for Rams/Chargers games. Requires 'Pink Zone - Oversized' pass. RVs, buses, motorcoaches.",
-      "source": "sofistadium.com"
+      "source": "sofistadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-sofi-red",
@@ -442,7 +489,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "For concerts/non-NFL events. 'Red Zone - Oversized Vehicle Only' pass required. Enter via Century Blvd \u2192 Yukon Ave.",
-      "source": "sofistadium.com"
+      "source": "sofistadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-sofi-general",
@@ -454,7 +502,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lots for standard vehicles on event days.",
-      "source": "sofistadium.com"
+      "source": "sofistadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-expo-blue-a",
@@ -490,7 +539,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "USC football + concerts. Surface lots. Oversized OK.",
-      "source": "lacoliseum.com"
+      "source": "lacoliseum.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-convention-ctr",
@@ -498,14 +548,17 @@
       "addr": "1201 S Figueroa St",
       "lat": 34.0405,
       "lng": -118.2694,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Serves convention center + Crypto.com Arena. Clearance needs verification.",
-      "source": "laconventioncenter.com",
+      "notes": "Serves convention center + Crypto.com Arena. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano Nc-Xw63Qf5ITqOEPsLSbMA, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: laconventioncenter.com",
       "entrance_lat": 34.0422002,
       "entrance_lng": -118.2699249,
-      "entrance_source": "OSM parking_entrance node 4837720018"
+      "entrance_source": "OSM parking_entrance node 4837720018",
+      "verified_on": "2026-04-23",
+      "pano_id": "Nc-Xw63Qf5ITqOEPsLSbMA",
+      "pano_heading": 90
     },
     {
       "id": "la-hollywood-bowl",
@@ -517,7 +570,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Stacked parking on show days \u2014 but surface lots accommodate oversized.",
-      "source": "hollywoodbowl.com"
+      "source": "hollywoodbowl.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-pantages",
@@ -552,14 +606,29 @@
       "addr": "6925 Hollywood Blvd",
       "lat": 34.1022,
       "lng": -118.3408,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Small lot + Ovation garage connection.",
-      "source": "Needs verification",
+      "notes": "Small lot + Ovation garage connection.\nVerified 2026-04-23 from sign reading \"6 FT\" (pano 3APUQk5rMdqdNbC67XH3_g, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 34.1024376,
       "entrance_lng": -118.3414199,
-      "entrance_source": "OSM parking_entrance node 11113371118"
+      "entrance_source": "OSM parking_entrance node 11113371118",
+      "verified_on": "2026-04-23",
+      "pano_id": "3APUQk5rMdqdNbC67XH3_g",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "PUBLIC PARKING",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Park Here",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "la-burbank-media",
@@ -610,7 +679,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lots around Rose Bowl. UCLA football + Rose Bowl Game.",
-      "source": "rosebowlstadium.com"
+      "source": "rosebowlstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-union-market",
@@ -622,7 +692,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Arts District surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "la-lacma",
@@ -630,14 +701,17 @@
       "addr": "5905 Wilshire Blvd",
       "lat": 34.0635,
       "lng": -118.359,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "LA County Museum of Art. Spaulding Ave entrance. Clearance needs verification.",
-      "source": "lacma.org",
+      "notes": "LA County Museum of Art. Spaulding Ave entrance. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"6 FT PARKING\" (pano XjcF9tKfMhD7y1FWShemIg, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: lacma.org",
       "entrance_lat": 34.0645512,
       "entrance_lng": -118.359254,
-      "entrance_source": "OSM parking_entrance node 1330213876"
+      "entrance_source": "OSM parking_entrance node 1330213876",
+      "verified_on": "2026-04-23",
+      "pano_id": "XjcF9tKfMhD7y1FWShemIg",
+      "pano_heading": 180
     },
     {
       "id": "la-petersen",
@@ -645,14 +719,17 @@
       "addr": "6060 Wilshire Blvd",
       "lat": 34.0627,
       "lng": -118.3611,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Under the museum. Typical for museum garages \u2014 check clearance.",
-      "source": "petersen.org",
+      "notes": "Under the museum. Typical for museum garages \u2014 check clearance.\nVerified 2026-04-23 from sign reading \"6' 0\"\" (pano MQLyeC2Z5KsTziUTTCKgSA, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: petersen.org",
       "entrance_lat": 34.0620971,
       "entrance_lng": -118.361686,
-      "entrance_source": "OSM parking_entrance node 12005581937"
+      "entrance_source": "OSM parking_entrance node 12005581937",
+      "verified_on": "2026-04-23",
+      "pano_id": "MQLyeC2Z5KsTziUTTCKgSA",
+      "pano_heading": 90
     },
     {
       "id": "la-grand-ave",

@@ -6,14 +6,29 @@
       "addr": "400 Pinnacle Arena Dr",
       "lat": 40.8165,
       "lng": -96.7065,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Nebraska basketball + concerts.",
-      "source": "pinnaclebankarena.com",
+      "notes": "Nebraska basketball + concerts.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano znm7Jfb2bsgGuh9EBmM5EQ, heading 90\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: pinnaclebankarena.com",
       "entrance_lat": 40.8155711,
       "entrance_lng": -96.7053135,
-      "entrance_source": "OSM parking_entrance node 7217850456"
+      "entrance_source": "OSM parking_entrance node 7217850456",
+      "verified_on": "2026-04-23",
+      "pano_id": "znm7Jfb2bsgGuh9EBmM5EQ",
+      "pano_heading": 90,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "lin-haymarket-park",
@@ -37,7 +52,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Nebraska football. Massive game-day surface lots + RV tailgating.",
-      "source": "huskers.com"
+      "source": "huskers.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-state-capitol",
@@ -52,7 +68,8 @@
       "source": "capitol.nebraska.gov",
       "entrance_lat": 40.8109012,
       "entrance_lng": -96.6989373,
-      "entrance_source": "OSM parking_entrance node 9955497717"
+      "entrance_source": "OSM parking_entrance node 9955497717",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-haymarket-garages",
@@ -102,14 +119,34 @@
       "addr": "1100 L St",
       "lat": 40.8123,
       "lng": -96.703,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Downtown mall garage.",
-      "source": "Needs verification",
+      "notes": "Downtown mall garage.\nVerified 2026-04-23 from sign reading \"8 FT\" (pano -19UR58ShUMa3qH1IX9Yzg, heading 45\u00b0, Claude confidence high [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.811922,
       "entrance_lng": -96.7038842,
-      "entrance_source": "OSM parking_entrance node 13428627684"
+      "entrance_source": "OSM parking_entrance node 13428627684",
+      "verified_on": "2026-04-23",
+      "pano_id": "-19UR58ShUMa3qH1IX9Yzg",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Parking garage entrance",
+          "height_in": 96,
+          "height_label": "8'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 120,
+          "height_label": "10'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "lin-unl-student-union",
@@ -157,7 +194,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping.",
-      "source": "southpointepavilions.com"
+      "source": "southpointepavilions.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-sheldon-museum",
@@ -177,14 +215,29 @@
       "addr": "131 Centennial Mall N",
       "lat": 40.811,
       "lng": -96.7032,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "State history museum.",
-      "source": "history.nebraska.gov",
+      "notes": "State history museum.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Q4XbflmaOQ05EHo81La4Fw, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: history.nebraska.gov",
       "entrance_lat": 40.8112642,
       "entrance_lng": -96.7037161,
-      "entrance_source": "OSM parking_entrance node 13428627696"
+      "entrance_source": "OSM parking_entrance node 13428627696",
+      "verified_on": "2026-04-23",
+      "pano_id": "Q4XbflmaOQ05EHo81La4Fw",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     },
     {
       "id": "lin-morrill-hall",
@@ -220,7 +273,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "lincolnzoo.org"
+      "source": "lincolnzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-folsom-zoo",
@@ -244,7 +298,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large park + nature center.",
-      "source": "lincoln.ne.gov"
+      "source": "lincoln.ne.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-mahoney-state-park",
@@ -256,7 +311,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park with lodge. Between Lincoln and Omaha.",
-      "source": "outdoornebraska.gov"
+      "source": "outdoornebraska.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-sid-dillon-auto",
@@ -280,7 +336,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Ag campus.",
-      "source": "parking.unl.edu"
+      "source": "parking.unl.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-lancaster-event-ctr",
@@ -292,7 +349,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "County fairgrounds.",
-      "source": "lancastereventcenter.com"
+      "source": "lancastereventcenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-airport-main",
@@ -304,7 +362,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Small regional airport. Surface lots.",
-      "source": "flyLNK.com"
+      "source": "flyLNK.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-st-elizabeth-hosp",

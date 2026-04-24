@@ -22,7 +22,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "CWS host venue. Surface lots + RV accommodation.",
-      "source": "Omaha Sports Commission"
+      "source": "Omaha Sports Commission",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-old-market",
@@ -37,7 +38,8 @@
       "source": "oldmarket.com",
       "entrance_lat": 41.2566576,
       "entrance_lng": -95.9311899,
-      "entrance_source": "OSM parking_entrance node 2528443471"
+      "entrance_source": "OSM parking_entrance node 2528443471",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-park-one",
@@ -61,7 +63,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "World-class zoo. Massive surface lots.",
-      "source": "omahazoo.com"
+      "source": "omahazoo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-gene-leahy",
@@ -76,7 +79,8 @@
       "source": "Needs verification",
       "entrance_lat": 41.2604883,
       "entrance_lng": -95.9324317,
-      "entrance_source": "OSM parking_entrance node 10015267528"
+      "entrance_source": "OSM parking_entrance node 10015267528",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-joslyn-art",
@@ -91,7 +95,8 @@
       "source": "joslyn.org",
       "entrance_lat": 41.2639304,
       "entrance_lng": -95.942901,
-      "entrance_source": "OSM parking_entrance node 6127359028"
+      "entrance_source": "OSM parking_entrance node 6127359028",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-omaha-union",
@@ -103,7 +108,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Art Deco station \u2014 now museum.",
-      "source": "durhammuseum.org"
+      "source": "durhammuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-westroads",
@@ -127,7 +133,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "shopvillagepointe.com"
+      "source": "shopvillagepointe.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-blackstone",
@@ -142,7 +149,8 @@
       "source": "Needs verification",
       "entrance_lat": 41.2574248,
       "entrance_lng": -95.9689077,
-      "entrance_source": "OSM parking_entrance node 13167012542"
+      "entrance_source": "OSM parking_entrance node 13167012542",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-airport-garage",
@@ -166,7 +174,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flyoma.com"
+      "source": "flyoma.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-lauritzen-gardens",
@@ -178,7 +187,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Botanical garden surface lot.",
-      "source": "lauritzengardens.org"
+      "source": "lauritzengardens.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-strategic-air",
@@ -190,7 +200,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Aerospace museum 25mi west of Omaha.",
-      "source": "sacmuseum.org"
+      "source": "sacmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-creighton-univ",
@@ -205,7 +216,8 @@
       "source": "creighton.edu",
       "entrance_lat": 41.2684494,
       "entrance_lng": -95.9451264,
-      "entrance_source": "OSM parking_entrance node 4285204521"
+      "entrance_source": "OSM parking_entrance node 4285204521",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-millwork-commons",
@@ -213,14 +225,29 @@
       "addr": "1314 Jones St",
       "lat": 41.2599,
       "lng": -95.931,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 87,
+      "height_label": "7'3\"",
       "oversized": false,
-      "notes": "Tech/retail redevelopment district.",
-      "source": "millworkcommons.com",
+      "notes": "Tech/retail redevelopment district.\nVerified 2026-04-23 from sign reading \"Clearance 7' 3\" (pano WKcOBT7TYSWULpAMZoZLEg, heading 180.0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: millworkcommons.com",
       "entrance_lat": 41.2604883,
       "entrance_lng": -95.9324317,
-      "entrance_source": "OSM parking_entrance node 10015267528"
+      "entrance_source": "OSM parking_entrance node 10015267528",
+      "verified_on": "2026-04-23",
+      "pano_id": "WKcOBT7TYSWULpAMZoZLEg",
+      "pano_heading": 180.0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 87,
+          "height_label": "7'3\""
+        },
+        {
+          "label": "13th and Capital",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "oma-little-bohemia",
@@ -244,7 +271,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Second zoo lot near Scott Aquarium.",
-      "source": "omahazoo.com"
+      "source": "omahazoo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-nebraska-med",
@@ -310,7 +338,8 @@
       "source": "thericketthouse.com",
       "entrance_lat": 41.2577095,
       "entrance_lng": -95.9278713,
-      "entrance_source": "OSM parking_entrance node 10017521403"
+      "entrance_source": "OSM parking_entrance node 10017521403",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-tdameritrade-lot",
@@ -322,7 +351,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "CWS + NCAA events.",
-      "source": "Omaha Sports Commission"
+      "source": "Omaha Sports Commission",
+      "structure_type": "surface_lot"
     },
     {
       "id": "oma-werner-park",
@@ -334,7 +364,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AAA minor league surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

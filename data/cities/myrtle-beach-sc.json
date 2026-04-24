@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Entertainment complex. Ripley's, Wonderworks, Pavilion Park. Huge surface lots.",
-      "source": "broadwayatthebeach.com"
+      "source": "broadwayatthebeach.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-coastal-grand-mall",
@@ -42,14 +43,17 @@
       "addr": "1110 N Ocean Blvd",
       "lat": 33.6878,
       "lng": -78.8846,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Observation wheel. Boardwalk adjacent.",
-      "source": "skywheel.com",
+      "notes": "Observation wheel. Boardwalk adjacent.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano CyM7fbwhodEgzsi1QOKRoA, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: skywheel.com",
       "entrance_lat": 33.6883724,
       "entrance_lng": -78.88442,
-      "entrance_source": "OSM parking_entrance node 11751315696"
+      "entrance_source": "OSM parking_entrance node 11751315696",
+      "verified_on": "2026-04-23",
+      "pano_id": "CyM7fbwhodEgzsi1QOKRoA",
+      "pano_heading": 45
     },
     {
       "id": "mbs-boardwalk-pier-14",
@@ -64,7 +68,8 @@
       "source": "visitmyrtlebeach.com",
       "entrance_lat": 33.6889127,
       "entrance_lng": -78.8852396,
-      "entrance_source": "OSM parking_entrance node 11751315698"
+      "entrance_source": "OSM parking_entrance node 11751315698",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-myrtle-beach-state-park",
@@ -76,7 +81,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + campground + beach + fishing pier.",
-      "source": "southcarolinaparks.com"
+      "source": "southcarolinaparks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-huntington-beach-state",
@@ -88,7 +94,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + wildlife viewing.",
-      "source": "southcarolinaparks.com"
+      "source": "southcarolinaparks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-pirates-voyage",
@@ -100,7 +107,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Dolly Parton's dinner show.",
-      "source": "piratesvoyage.com"
+      "source": "piratesvoyage.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-alabama-theatre",
@@ -112,7 +120,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Country music venue.",
-      "source": "alabama-theatre.com"
+      "source": "alabama-theatre.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-barefoot-landing",
@@ -124,7 +133,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Shopping + dining + House of Blues.",
-      "source": "bflanding.com"
+      "source": "bflanding.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-tanger-501",
@@ -172,7 +182,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Beachfront amusement park.",
-      "source": "familykingdomfun.com"
+      "source": "familykingdomfun.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-pelicans-ballpark",
@@ -184,7 +195,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "High-A Myrtle Beach Pelicans.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-grande-dunes-marina",
@@ -196,7 +208,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Intracoastal marina.",
-      "source": "grandedunesmarina.com"
+      "source": "grandedunesmarina.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-market-common",
@@ -220,7 +233,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Sculpture gardens + zoo.",
-      "source": "brookgreen.org"
+      "source": "brookgreen.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-murrells-inlet-marshwalk",
@@ -256,7 +270,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Massive RV park on ocean. 3,400 sites.",
-      "source": "oceanlakes.com"
+      "source": "oceanlakes.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-myrtle-beach-travel-park",
@@ -268,7 +283,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV resort.",
-      "source": "myrtlebeachtravelpark.com"
+      "source": "myrtlebeachtravelpark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-pier-pavilion-park",
@@ -280,7 +296,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Beach access.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mbs-springmaid-pier",
@@ -316,7 +333,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flymyrtlebeach.com"
+      "source": "flymyrtlebeach.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

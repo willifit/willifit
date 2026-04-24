@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic 1888 capitol. Surface lots.",
-      "source": "wyoleg.gov"
+      "source": "wyoleg.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-historic-depot",
@@ -25,7 +26,8 @@
       "source": "cheyennedepotmuseum.org",
       "entrance_lat": 41.1352799,
       "entrance_lng": -104.8208209,
-      "entrance_source": "OSM parking_entrance node 9324843795"
+      "entrance_source": "OSM parking_entrance node 9324843795",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-frontier-days-park",
@@ -37,7 +39,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "'Daddy of 'em All' rodeo. Massive surface + RV grounds in late July.",
-      "source": "cfdrodeo.com"
+      "source": "cfdrodeo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-frontier-mall",
@@ -76,7 +79,8 @@
       "source": "cheyennedepotmuseum.org",
       "entrance_lat": 41.1352799,
       "entrance_lng": -104.8208209,
-      "entrance_source": "OSM parking_entrance node 9324843795"
+      "entrance_source": "OSM parking_entrance node 9324843795",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-botanic-gardens",
@@ -84,11 +88,14 @@
       "addr": "710 S Lions Park Dr",
       "lat": 41.1352,
       "lng": -104.8364,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Free gardens + conservatory.",
-      "source": "botanic.org"
+      "notes": "Free gardens + conservatory.\nVerified 2026-04-23 from sign reading \"10\" (pano qUEuyWYHje0-o9sTCZwuhw, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: botanic.org",
+      "verified_on": "2026-04-23",
+      "pano_id": "qUEuyWYHje0-o9sTCZwuhw",
+      "pano_heading": 90
     },
     {
       "id": "chy-frontier-days-old-west",
@@ -100,7 +107,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Rodeo + Western history museum.",
-      "source": "oldwestmuseum.org"
+      "source": "oldwestmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-lions-park",
@@ -112,7 +120,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large city park + Sloan's Lake.",
-      "source": "cheyennecity.org"
+      "source": "cheyennecity.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-plains-hotel",
@@ -120,14 +129,17 @@
       "addr": "1600 Central Ave",
       "lat": 41.1368,
       "lng": -104.8204,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Historic 1911 hotel.",
-      "source": "theplainshotel.com",
+      "notes": "Historic 1911 hotel.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano NknAuDZsw_8v26AdhORh9g, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: theplainshotel.com",
       "entrance_lat": 41.1360389,
       "entrance_lng": -104.8208039,
-      "entrance_source": "OSM parking_entrance node 9324843800"
+      "entrance_source": "OSM parking_entrance node 9324843800",
+      "verified_on": "2026-04-23",
+      "pano_id": "NknAuDZsw_8v26AdhORh9g",
+      "pano_heading": 180
     },
     {
       "id": "chy-terry-bison",
@@ -139,7 +151,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Working bison ranch + RV park + restaurant.",
-      "source": "terrybisonranch.com"
+      "source": "terrybisonranch.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-little-america",
@@ -151,7 +164,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic plains resort on I-25/I-80.",
-      "source": "cheyenne.littleamerica.com"
+      "source": "cheyenne.littleamerica.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-veterans-cemetery",
@@ -187,7 +201,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "County courthouse.",
-      "source": "laramiecountywy.gov"
+      "source": "laramiecountywy.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-vimor-field",
@@ -199,7 +214,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Community baseball field.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-colorado-wyoming",
@@ -211,7 +227,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Welcome center at I-25/I-80.",
-      "source": "wyomingtourism.org"
+      "source": "wyomingtourism.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-terry-parkway",
@@ -223,7 +240,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Greenway trail access.",
-      "source": "cheyennecity.org"
+      "source": "cheyennecity.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-regional-medical",
@@ -247,7 +265,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV park + campground.",
-      "source": "jellystonecheyenne.com"
+      "source": "jellystonecheyenne.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-cheyenne-airport",
@@ -259,7 +278,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Terminal + surface lots.",
-      "source": "cheyenneairport.com"
+      "source": "cheyenneairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-airport-economy",
@@ -271,7 +291,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "cheyenneairport.com"
+      "source": "cheyenneairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-curt-gowdy-state-park",
@@ -283,7 +304,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Lake park with campground.",
-      "source": "wyoparks.state.wy.us"
+      "source": "wyoparks.state.wy.us",
+      "structure_type": "surface_lot"
     },
     {
       "id": "chy-denver-alt",

@@ -51,14 +51,17 @@
       "addr": "2353 Flora St",
       "lat": 32.7894,
       "lng": -96.7976,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Serves Winspear Opera, Wyly Theatre. Underground.",
-      "source": "attpac.org",
+      "notes": "Serves Winspear Opera, Wyly Theatre. Underground.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano VHQPzn8_dG7jL4smKKe3rw, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: attpac.org",
       "entrance_lat": 32.7889646,
       "entrance_lng": -96.7980732,
-      "entrance_source": "OSM parking_entrance node 10725113256"
+      "entrance_source": "OSM parking_entrance node 10725113256",
+      "verified_on": "2026-04-23",
+      "pano_id": "VHQPzn8_dG7jL4smKKe3rw",
+      "pano_heading": 45
     },
     {
       "id": "dal-arts-1821pearl",
@@ -133,7 +136,8 @@
       "source": "nashersculpturecenter.org",
       "entrance_lat": 32.7885801,
       "entrance_lng": -96.7997335,
-      "entrance_source": "OSM parking_entrance node 10899170026"
+      "entrance_source": "OSM parking_entrance node 10899170026",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-west-end",
@@ -141,14 +145,29 @@
       "addr": "603 Munger Ave",
       "lat": 32.781,
       "lng": -96.8063,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Near JFK Memorial, Dealey Plaza, Sixth Floor Museum.",
-      "source": "Needs verification",
+      "notes": "Near JFK Memorial, Dealey Plaza, Sixth Floor Museum.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano on2abC6dHUENXzE8LqOAvw, heading 225\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 32.7818857,
       "entrance_lng": -96.8079561,
-      "entrance_source": "OSM parking_entrance node 12474107325"
+      "entrance_source": "OSM parking_entrance node 12474107325",
+      "verified_on": "2026-04-23",
+      "pano_id": "on2abC6dHUENXzE8LqOAvw",
+      "pano_heading": 225,
+      "sections": [
+        {
+          "label": "Resident & Guest Parking",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "dal-sixth-floor",
@@ -163,7 +182,8 @@
       "source": "Needs verification",
       "entrance_lat": 32.7794504,
       "entrance_lng": -96.8071288,
-      "entrance_source": "OSM parking_entrance node 5706869117"
+      "entrance_source": "OSM parking_entrance node 5706869117",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-reunion-tower",
@@ -193,7 +213,8 @@
       "source": "Needs verification",
       "entrance_lat": 32.775827,
       "entrance_lng": -96.8089815,
-      "entrance_source": "OSM parking_entrance node 13229153927"
+      "entrance_source": "OSM parking_entrance node 13229153927",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-jpm-chase",
@@ -201,14 +222,17 @@
       "addr": "901 Main St",
       "lat": 32.7823,
       "lng": -96.8014,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Tallest downtown tower \u2014 green outline. Underground garage.",
-      "source": "Needs verification",
+      "notes": "Tallest downtown tower \u2014 green outline. Underground garage.\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'5\"\" (pano C07oItoa8jad7FSmaiW-TQ, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 32.7818239,
       "entrance_lng": -96.8017475,
-      "entrance_source": "OSM parking_entrance node 13530613427"
+      "entrance_source": "OSM parking_entrance node 13530613427",
+      "verified_on": "2026-04-23",
+      "pano_id": "C07oItoa8jad7FSmaiW-TQ",
+      "pano_heading": 0
     },
     {
       "id": "dal-comerica",
@@ -231,14 +255,17 @@
       "addr": "1445 Ross Ave",
       "lat": 32.7867,
       "lng": -96.8041,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Iconic glass skyscraper.",
-      "source": "Needs verification",
+      "notes": "Iconic glass skyscraper.\nVerified 2026-04-23 from sign reading \"11'0\" (pano TiWpO5pIRs9cXWui0pTCFA, heading 135.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 32.7859918,
       "entrance_lng": -96.8032021,
-      "entrance_source": "OSM parking_entrance node 13530603781"
+      "entrance_source": "OSM parking_entrance node 13530603781",
+      "verified_on": "2026-04-23",
+      "pano_id": "TiWpO5pIRs9cXWui0pTCFA",
+      "pano_heading": 135.0
     },
     {
       "id": "dal-galleria",
@@ -246,14 +273,17 @@
       "addr": "13350 Dallas Pkwy",
       "lat": 32.9357,
       "lng": -96.8201,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Major mall garage. North Dallas. Indoor ice rink.",
-      "source": "galleriadallas.com",
+      "notes": "Major mall garage. North Dallas. Indoor ice rink.\nVerified 2026-04-23 from sign reading \"7'0\" (pano bmgKL2QpUcph2m4eQtijtg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: galleriadallas.com",
       "entrance_lat": 32.9340081,
       "entrance_lng": -96.8198674,
-      "entrance_source": "OSM parking_entrance node 13414244096"
+      "entrance_source": "OSM parking_entrance node 13414244096",
+      "verified_on": "2026-04-23",
+      "pano_id": "bmgKL2QpUcph2m4eQtijtg",
+      "pano_heading": 0
     },
     {
       "id": "dal-northpark-ctr",
@@ -268,7 +298,8 @@
       "source": "northparkcenter.com",
       "entrance_lat": 32.8694135,
       "entrance_lng": -96.7752714,
-      "entrance_source": "OSM parking_entrance node 6318828707"
+      "entrance_source": "OSM parking_entrance node 6318828707",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-aa-center",
@@ -283,7 +314,8 @@
       "source": "americanairlinescenter.com",
       "entrance_lat": 32.7916283,
       "entrance_lng": -96.8100486,
-      "entrance_source": "OSM parking_entrance node 5854410932"
+      "entrance_source": "OSM parking_entrance node 5854410932",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-cowboys-tex",
@@ -295,7 +327,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Arlington \u2014 surface lots. Oversized/RV OK. Note: Arlington is separate city.",
-      "source": "attstadium.com"
+      "source": "attstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-fair-park",
@@ -307,7 +340,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Cotton Bowl, Texas State Fair. Large surface lots.",
-      "source": "fairpark.org"
+      "source": "fairpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-deep-ellum",
@@ -334,7 +368,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mostly street + surface. Oak Cliff.",
-      "source": "bishopartsdistrict.com"
+      "source": "bishopartsdistrict.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-convention",
@@ -381,14 +416,34 @@
       "addr": "DFW Airport, Terminal C",
       "lat": 32.8979,
       "lng": -97.0395,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "dfwairport.com",
+      "notes": "Terminal-adjacent.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano BQU4-nbQs88KfLSsCejoKg, heading 45\u00b0, Claude confidence medium [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: dfwairport.com",
       "entrance_lat": 32.8982812,
       "entrance_lng": -97.0380094,
-      "entrance_source": "OSM parking_entrance node 4072461450"
+      "entrance_source": "OSM parking_entrance node 4072461450",
+      "verified_on": "2026-04-23",
+      "pano_id": "BQU4-nbQs88KfLSsCejoKg",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Short-term",
+          "height_in": 120,
+          "height_label": "10'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "dfw-terminal-d",
@@ -415,7 +470,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Oversized + RV OK. Shuttle to terminals.",
-      "source": "dfwairport.com"
+      "source": "dfwairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dfw-express-north",
@@ -427,7 +483,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Oversized OK.",
-      "source": "dfwairport.com"
+      "source": "dfwairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dal-love-c",
@@ -463,7 +520,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "dallas-lovefield.com"
+      "source": "dallas-lovefield.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n6297801360",
@@ -486,14 +544,34 @@
       "addr": "",
       "lat": 32.9061,
       "lng": -97.04289,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "50 spaces; paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "50 spaces; paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\" (pano fem_UYPWYooA42PWb7IjlA, heading 0\u00b0, Claude confidence medium [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9057032,
       "entrance_lng": -97.0435339,
-      "entrance_source": "OSM parking_entrance node 5363043710"
+      "entrance_source": "OSM parking_entrance node 5363043710",
+      "verified_on": "2026-04-23",
+      "pano_id": "fem_UYPWYooA42PWb7IjlA",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Open",
+          "height_in": 132,
+          "height_label": "11'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "osm-w25474936",
@@ -501,14 +579,17 @@
       "addr": "",
       "lat": 32.90475,
       "lng": -97.04411,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"10'\" (pano EFzGAAwt_IF_RyUDrNTkeg, heading 225\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9055349,
       "entrance_lng": -97.0441201,
-      "entrance_source": "OSM parking_entrance node 5363044282"
+      "entrance_source": "OSM parking_entrance node 5363044282",
+      "verified_on": "2026-04-23",
+      "pano_id": "EFzGAAwt_IF_RyUDrNTkeg",
+      "pano_heading": 225
     },
     {
       "id": "osm-w25474937",
@@ -516,14 +597,17 @@
       "addr": "",
       "lat": 32.90332,
       "lng": -97.04293,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano Pp5JgQWvRHLVmgFe9BzZcg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9028189,
       "entrance_lng": -97.0421046,
-      "entrance_source": "OSM parking_entrance node 9790106350"
+      "entrance_source": "OSM parking_entrance node 9790106350",
+      "verified_on": "2026-04-23",
+      "pano_id": "Pp5JgQWvRHLVmgFe9BzZcg",
+      "pano_heading": 0
     },
     {
       "id": "osm-w25549995",
@@ -546,14 +630,17 @@
       "addr": "1500 Jackson Street",
       "lat": 32.77911,
       "lng": -96.79767,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7' 0\" (pano bZCiq8h4Ec4F8fLlRZcFwA, heading 135.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7794332,
       "entrance_lng": -96.7974369,
-      "entrance_source": "OSM parking_entrance node 5846892953"
+      "entrance_source": "OSM parking_entrance node 5846892953",
+      "verified_on": "2026-04-23",
+      "pano_id": "bZCiq8h4Ec4F8fLlRZcFwA",
+      "pano_heading": 135.0
     },
     {
       "id": "osm-w28015827",
@@ -561,14 +648,17 @@
       "addr": "1601 Commerce Street",
       "lat": 32.77989,
       "lng": -96.7972,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"CLEARANCE 7 FT\" (pano yvlk2rCuLzHh8EtQISstbw, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7799719,
       "entrance_lng": -96.7975407,
-      "entrance_source": "OSM parking_entrance node 5838904514"
+      "entrance_source": "OSM parking_entrance node 5838904514",
+      "verified_on": "2026-04-23",
+      "pano_id": "yvlk2rCuLzHh8EtQISstbw",
+      "pano_heading": 90
     },
     {
       "id": "osm-w28015930",
@@ -576,14 +666,29 @@
       "addr": "873 Commerce Street",
       "lat": 32.7791,
       "lng": -96.80463,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6 FT\" (pano Y-OBm6Du7v5_x8o4_u4ung, heading 135\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7788919,
       "entrance_lng": -96.8044051,
-      "entrance_source": "OSM parking_entrance node 13030742617"
+      "entrance_source": "OSM parking_entrance node 13030742617",
+      "verified_on": "2026-04-23",
+      "pano_id": "Y-OBm6Du7v5_x8o4_u4ung",
+      "pano_heading": 135,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "osm-w28545009",
@@ -606,14 +711,29 @@
       "addr": "",
       "lat": 32.78228,
       "lng": -96.79341,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 1-P-lKJKrRGBVjYN_P_4JQ, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7820018,
       "entrance_lng": -96.7933956,
-      "entrance_source": "OSM parking_entrance node 5846753963"
+      "entrance_source": "OSM parking_entrance node 5846753963",
+      "verified_on": "2026-04-23",
+      "pano_id": "1-P-lKJKrRGBVjYN_P_4JQ",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "ELM STREET GARAGE",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Elm Street Garage",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "osm-w30897859",
@@ -621,14 +741,29 @@
       "addr": "1810 Jackson Street",
       "lat": 32.77954,
       "lng": -96.79557,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"Clearance 6'6\"\" (pano i9A8LpIQahpPbZUa_7loTg, heading 0\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7793325,
       "entrance_lng": -96.7953829,
-      "entrance_source": "OSM parking_entrance node 5846892958"
+      "entrance_source": "OSM parking_entrance node 5846892958",
+      "verified_on": "2026-04-23",
+      "pano_id": "i9A8LpIQahpPbZUa_7loTg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "osm-w30924376",
@@ -666,14 +801,17 @@
       "addr": "",
       "lat": 32.92778,
       "lng": -96.81951,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano oIFqEZIMGRJPfj_7qa_CGA, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9275561,
       "entrance_lng": -96.8196993,
-      "entrance_source": "OSM parking_entrance node 4458474066"
+      "entrance_source": "OSM parking_entrance node 4458474066",
+      "verified_on": "2026-04-23",
+      "pano_id": "oIFqEZIMGRJPfj_7qa_CGA",
+      "pano_heading": 0
     },
     {
       "id": "osm-w61674923",
@@ -696,14 +834,17 @@
       "addr": "",
       "lat": 32.78417,
       "lng": -96.79514,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano fELuytqQL3HvHiRaGfjWMg, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.783881,
       "entrance_lng": -96.7947651,
-      "entrance_source": "OSM parking_entrance node 13334726143"
+      "entrance_source": "OSM parking_entrance node 13334726143",
+      "verified_on": "2026-04-23",
+      "pano_id": "fELuytqQL3HvHiRaGfjWMg",
+      "pano_heading": 135
     },
     {
       "id": "osm-w221145484",
@@ -726,14 +867,17 @@
       "addr": "",
       "lat": 32.92078,
       "lng": -96.76817,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"CLEARANCE 6'8\"\" (pano Jq_BnXMizjDVjPb0zRpMvw, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9211182,
       "entrance_lng": -96.7680084,
-      "entrance_source": "OSM parking_entrance node 9552388463"
+      "entrance_source": "OSM parking_entrance node 9552388463",
+      "verified_on": "2026-04-23",
+      "pano_id": "Jq_BnXMizjDVjPb0zRpMvw",
+      "pano_heading": 180
     },
     {
       "id": "osm-w256097985",
@@ -741,14 +885,17 @@
       "addr": "",
       "lat": 33.01961,
       "lng": -96.76891,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano TsRVD7Dc5jPBd335qWWnNQ, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 33.0197263,
       "entrance_lng": -96.7687367,
-      "entrance_source": "OSM parking_entrance node 2617928481"
+      "entrance_source": "OSM parking_entrance node 2617928481",
+      "verified_on": "2026-04-23",
+      "pano_id": "TsRVD7Dc5jPBd335qWWnNQ",
+      "pano_heading": 0
     },
     {
       "id": "osm-w306437755",
@@ -756,14 +903,29 @@
       "addr": "",
       "lat": 32.98626,
       "lng": -96.70883,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6 FT\" (pano NMEMiHH7zWa-FvOiKGqtQQ, heading 225\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9861027,
       "entrance_lng": -96.7076607,
-      "entrance_source": "OSM parking_entrance node 6312958912"
+      "entrance_source": "OSM parking_entrance node 6312958912",
+      "verified_on": "2026-04-23",
+      "pano_id": "NMEMiHH7zWa-FvOiKGqtQQ",
+      "pano_heading": 225,
+      "sections": [
+        {
+          "label": "Parking garage entrance",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "osm-w306437756",
@@ -786,14 +948,17 @@
       "addr": "",
       "lat": 32.96825,
       "lng": -96.71803,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\" (pano QggD5gOPwX8JDgt6TANQiw, heading 180.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9684079,
       "entrance_lng": -96.717445,
-      "entrance_source": "OSM parking_entrance node 10828322261"
+      "entrance_source": "OSM parking_entrance node 10828322261",
+      "verified_on": "2026-04-23",
+      "pano_id": "QggD5gOPwX8JDgt6TANQiw",
+      "pano_heading": 180.0
     },
     {
       "id": "osm-w448875162",
@@ -801,14 +966,17 @@
       "addr": "",
       "lat": 32.92828,
       "lng": -96.81872,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano xBDR890bjZmVjrPtx0ibJQ, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9281194,
       "entrance_lng": -96.8184186,
-      "entrance_source": "OSM parking_entrance node 4458474943"
+      "entrance_source": "OSM parking_entrance node 4458474943",
+      "verified_on": "2026-04-23",
+      "pano_id": "xBDR890bjZmVjrPtx0ibJQ",
+      "pano_heading": 270
     },
     {
       "id": "osm-w450893370",
@@ -816,14 +984,17 @@
       "addr": "",
       "lat": 32.78385,
       "lng": -96.79979,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano KKr2_YWsl4A5pVoJ88N4YQ, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7851883,
       "entrance_lng": -96.8003504,
-      "entrance_source": "OSM parking_entrance node 9534539680"
+      "entrance_source": "OSM parking_entrance node 9534539680",
+      "verified_on": "2026-04-23",
+      "pano_id": "KKr2_YWsl4A5pVoJ88N4YQ",
+      "pano_heading": 45
     },
     {
       "id": "osm-w463994064",
@@ -831,14 +1002,17 @@
       "addr": "3110 Nussbaumer Street",
       "lat": 32.78799,
       "lng": -96.78216,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano NWc029Bk_xuEL1tplmwzJw, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7878895,
       "entrance_lng": -96.7817978,
-      "entrance_source": "OSM parking_entrance node 5911937209"
+      "entrance_source": "OSM parking_entrance node 5911937209",
+      "verified_on": "2026-04-23",
+      "pano_id": "NWc029Bk_xuEL1tplmwzJw",
+      "pano_heading": 0
     },
     {
       "id": "osm-w463996114",
@@ -846,14 +1020,29 @@
       "addr": "Worth Street",
       "lat": 32.79142,
       "lng": -96.77672,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6'Z\" (pano nW1u7rgfcZemEpIMJEZ9Cw, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7912425,
       "entrance_lng": -96.7769402,
-      "entrance_source": "OSM parking_entrance node 5921557896"
+      "entrance_source": "OSM parking_entrance node 5921557896",
+      "verified_on": "2026-04-23",
+      "pano_id": "nW1u7rgfcZemEpIMJEZ9Cw",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Parking Entrance",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "osm-w464124860",
@@ -861,14 +1050,17 @@
       "addr": "",
       "lat": 32.92308,
       "lng": -96.77014,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"8'\" (pano msAtvEwBDBNFQLa330sqvQ, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9226601,
       "entrance_lng": -96.769913,
-      "entrance_source": "OSM parking_entrance node 6326484014"
+      "entrance_source": "OSM parking_entrance node 6326484014",
+      "verified_on": "2026-04-23",
+      "pano_id": "msAtvEwBDBNFQLa330sqvQ",
+      "pano_heading": 45
     },
     {
       "id": "osm-w464124879",
@@ -891,14 +1083,34 @@
       "addr": "2777 North Stemmons Freeway",
       "lat": 32.80918,
       "lng": -96.84928,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6'0\"\" (pano E6QbHCjiWye1ktIwfJrgfg, heading 0\u00b0, Claude confidence medium [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.8089471,
       "entrance_lng": -96.8493198,
-      "entrance_source": "OSM parking_entrance node 7104821895"
+      "entrance_source": "OSM parking_entrance node 7104821895",
+      "verified_on": "2026-04-23",
+      "pano_id": "E6QbHCjiWye1ktIwfJrgfg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Short-term",
+          "height_in": 72,
+          "height_label": "6'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "East Only",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "osm-w470463076",
@@ -921,11 +1133,14 @@
       "addr": "",
       "lat": 32.97661,
       "lng": -96.71227,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Hx32EHHAFEiMxxc7OxW4tw, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "Hx32EHHAFEiMxxc7OxW4tw",
+      "pano_heading": 0
     },
     {
       "id": "osm-w470463078",
@@ -945,14 +1160,17 @@
       "addr": "",
       "lat": 32.79194,
       "lng": -96.8095,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano UnjaGDDWzKIZ1JoJOYOKzA, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.7916283,
       "entrance_lng": -96.8100486,
-      "entrance_source": "OSM parking_entrance node 5854410932"
+      "entrance_source": "OSM parking_entrance node 5854410932",
+      "verified_on": "2026-04-23",
+      "pano_id": "UnjaGDDWzKIZ1JoJOYOKzA",
+      "pano_heading": 45
     },
     {
       "id": "osm-w472145890",
@@ -975,14 +1193,17 @@
       "addr": "",
       "lat": 33.00187,
       "lng": -96.69819,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'-0\"\" (pano HnfN1ZpYDUn9YmnEzjjRGA, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 33.0021417,
       "entrance_lng": -96.6978952,
-      "entrance_source": "OSM parking_entrance node 12405909542"
+      "entrance_source": "OSM parking_entrance node 12405909542",
+      "verified_on": "2026-04-23",
+      "pano_id": "HnfN1ZpYDUn9YmnEzjjRGA",
+      "pano_heading": 180
     },
     {
       "id": "osm-w530724477",
@@ -1005,14 +1226,17 @@
       "addr": "",
       "lat": 32.9823,
       "lng": -96.70925,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\" (pano 78us5B6blmOfOQB6diWaqg, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9826226,
       "entrance_lng": -96.7087212,
-      "entrance_source": "OSM parking_entrance node 5253291958"
+      "entrance_source": "OSM parking_entrance node 5253291958",
+      "verified_on": "2026-04-23",
+      "pano_id": "78us5B6blmOfOQB6diWaqg",
+      "pano_heading": 270
     },
     {
       "id": "osm-w531858352",
@@ -1020,14 +1244,17 @@
       "addr": "",
       "lat": 32.98417,
       "lng": -96.70801,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6'0\"\" (pano a6TAkkOXDVpXyFv2vXXEyQ, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9836053,
       "entrance_lng": -96.7078092,
-      "entrance_source": "OSM parking_entrance node 6312958913"
+      "entrance_source": "OSM parking_entrance node 6312958913",
+      "verified_on": "2026-04-23",
+      "pano_id": "a6TAkkOXDVpXyFv2vXXEyQ",
+      "pano_heading": 225
     },
     {
       "id": "osm-w531858353",
@@ -1035,14 +1262,17 @@
       "addr": "",
       "lat": 32.98582,
       "lng": -96.70794,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\" (pano ajhzx8-RREAfX6jV-EQt-g, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 32.9861027,
       "entrance_lng": -96.7076607,
-      "entrance_source": "OSM parking_entrance node 6312958912"
+      "entrance_source": "OSM parking_entrance node 6312958912",
+      "verified_on": "2026-04-23",
+      "pano_id": "ajhzx8-RREAfX6jV-EQt-g",
+      "pano_heading": 270
     },
     {
       "id": "osm-w536204309",
@@ -1065,14 +1295,17 @@
       "addr": "",
       "lat": 33.00098,
       "lng": -96.70243,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"CLEARANCE 7' 0\" (pano zBaVpRTNoq03ht_rxxIAdg, heading 90.0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 33.0010428,
       "entrance_lng": -96.7027247,
-      "entrance_source": "OSM parking_entrance node 3079491744"
+      "entrance_source": "OSM parking_entrance node 3079491744",
+      "verified_on": "2026-04-23",
+      "pano_id": "zBaVpRTNoq03ht_rxxIAdg",
+      "pano_heading": 90.0
     },
     {
       "id": "osm-w576362372",
@@ -1146,11 +1379,14 @@
       "addr": "",
       "lat": 32.97356,
       "lng": -96.7269,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "free [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "notes": "free [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano VW2j8IftyL0Wb_D2tsbDPw, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "VW2j8IftyL0Wb_D2tsbDPw",
+      "pano_heading": 180
     },
     {
       "id": "osm-w619201239",
@@ -1218,14 +1454,29 @@
       "addr": "",
       "lat": 33.00243,
       "lng": -96.7013,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano K9Bs5gKN0oEDuVvYq88P8g, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 33.0028805,
       "entrance_lng": -96.7008577,
-      "entrance_source": "OSM parking_entrance node 12393069191"
+      "entrance_source": "OSM parking_entrance node 12393069191",
+      "verified_on": "2026-04-23",
+      "pano_id": "K9Bs5gKN0oEDuVvYq88P8g",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 132,
+          "height_label": "11'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     }
   ],
   "tunnels": [

@@ -10,7 +10,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n11565515891",
@@ -22,7 +23,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n12304377935",
@@ -34,7 +36,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n12304405391",
@@ -49,7 +52,8 @@
       "source": "OpenStreetMap",
       "entrance_lat": 39.6752192,
       "entrance_lng": -75.5962452,
-      "entrance_source": "OSM parking_entrance node 12304405393"
+      "entrance_source": "OSM parking_entrance node 12304405393",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n12304405399",
@@ -61,7 +65,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w41977847",
@@ -73,7 +78,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w41977851",
@@ -85,7 +91,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w43069678",
@@ -100,7 +107,8 @@
       "source": "OpenStreetMap",
       "entrance_lat": 39.6751958,
       "entrance_lng": -75.5964563,
-      "entrance_source": "OSM parking_entrance node 12304405392"
+      "entrance_source": "OSM parking_entrance node 12304405392",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w83887702",
@@ -120,14 +128,17 @@
       "addr": "",
       "lat": 39.73794,
       "lng": -75.55136,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
+      "notes": "paid\nVerified 2026-04-23 from sign reading \"8'0\" (pano QLqLQ4teB5vDCzY40jmq5A, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.7380711,
       "entrance_lng": -75.5503903,
-      "entrance_source": "OSM parking_entrance node 10926456401"
+      "entrance_source": "OSM parking_entrance node 10926456401",
+      "verified_on": "2026-04-23",
+      "pano_id": "QLqLQ4teB5vDCzY40jmq5A",
+      "pano_heading": 45
     },
     {
       "id": "osm-w103676668",
@@ -139,7 +150,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w108283408",
@@ -175,7 +187,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "8 spaces",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w135950590",
@@ -183,14 +196,17 @@
       "addr": "",
       "lat": 39.7372,
       "lng": -75.5524,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
+      "notes": "paid\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano QLqLQ4teB5vDCzY40jmq5A, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.7380711,
       "entrance_lng": -75.5503903,
-      "entrance_source": "OSM parking_entrance node 10926456401"
+      "entrance_source": "OSM parking_entrance node 10926456401",
+      "verified_on": "2026-04-23",
+      "pano_id": "QLqLQ4teB5vDCzY40jmq5A",
+      "pano_heading": 45
     },
     {
       "id": "osm-w135957232",
@@ -198,14 +214,17 @@
       "addr": "",
       "lat": 39.69517,
       "lng": -75.64912,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano RlwPiHDJ9MB0rNKr-ga79g, heading 225\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.6953802,
       "entrance_lng": -75.6487367,
-      "entrance_source": "OSM parking_entrance node 1873111417"
+      "entrance_source": "OSM parking_entrance node 1873111417",
+      "verified_on": "2026-04-23",
+      "pano_id": "RlwPiHDJ9MB0rNKr-ga79g",
+      "pano_heading": 225
     },
     {
       "id": "osm-w144843216",
@@ -229,7 +248,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w204684437",
@@ -280,7 +300,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w217394274",
@@ -288,11 +309,14 @@
       "addr": "",
       "lat": 39.74817,
       "lng": -75.54732,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano hvyGzePEww-DwecG_5geUQ, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "hvyGzePEww-DwecG_5geUQ",
+      "pano_heading": 90
     },
     {
       "id": "osm-w269412032",
@@ -304,7 +328,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w269460469",
@@ -316,7 +341,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w269461106",
@@ -328,7 +354,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w269461110",
@@ -340,7 +367,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w269461762",
@@ -352,7 +380,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w346336057",
@@ -364,7 +393,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w389967207",
@@ -376,7 +406,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w391093312",
@@ -388,7 +419,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w391093314",
@@ -400,7 +432,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w455880922",
@@ -432,11 +465,14 @@
       "addr": "",
       "lat": 39.83151,
       "lng": -75.53773,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano x4OMi1r1qFPJj42NLHcFpg, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "x4OMi1r1qFPJj42NLHcFpg",
+      "pano_heading": 270
     },
     {
       "id": "osm-w570293483",
@@ -460,7 +496,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w576912928",
@@ -472,7 +509,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w576914814",
@@ -484,7 +522,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w576917352",
@@ -496,7 +535,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w588235680",
@@ -508,7 +548,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w596230708",
@@ -520,7 +561,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w615638817",
@@ -544,7 +586,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w674945401",
@@ -556,7 +599,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "10 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w700803704",
@@ -580,7 +624,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w701934606",
@@ -592,7 +637,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w745482213",
@@ -604,7 +650,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w858671180",
@@ -616,7 +663,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "40 spaces",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w919963008",
@@ -628,7 +676,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w923234715",
@@ -636,11 +685,14 @@
       "addr": "",
       "lat": 39.68902,
       "lng": -75.66958,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\" (pano JK_4JRIApZMOESbHqeCCrA, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "JK_4JRIApZMOESbHqeCCrA",
+      "pano_heading": 270
     },
     {
       "id": "osm-w981832104",
@@ -652,7 +704,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w983599500",
@@ -664,7 +717,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w999698251",
@@ -684,11 +738,14 @@
       "addr": "",
       "lat": 39.78535,
       "lng": -75.55189,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano JiYnmJkk9zr9IXFnlUk6gg, heading 135\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "JiYnmJkk9zr9IXFnlUk6gg",
+      "pano_heading": 135
     },
     {
       "id": "osm-w1132094124",
@@ -700,7 +757,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1132094125",
@@ -712,7 +770,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1226041163",
@@ -732,11 +791,14 @@
       "addr": "",
       "lat": 39.81534,
       "lng": -75.44508,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 100,
+      "height_label": "8'4\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"100 HITCHMAN\" (pano NrzxKEeazxsCI4LEvWqClw, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "NrzxKEeazxsCI4LEvWqClw",
+      "pano_heading": 270
     },
     {
       "id": "osm-w1255337562",
@@ -772,7 +834,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1292479106",
@@ -784,7 +847,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1292480405",
@@ -796,7 +860,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1292503944",
@@ -808,7 +873,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1292536185",
@@ -820,7 +886,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1292536191",
@@ -832,7 +899,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1292536203",
@@ -844,7 +912,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1293306287",
@@ -856,7 +925,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1302966961",
@@ -868,7 +938,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "35 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1322888993",
@@ -880,7 +951,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1331426086",
@@ -963,11 +1035,14 @@
       "addr": "",
       "lat": 39.74762,
       "lng": -75.55218,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap"
+      "notes": "paid\nVerified 2026-04-23 from sign reading \"10 FT\" (pano Usq-PWpoqhsV1yKbRwLSzg, heading 270\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-04-23",
+      "pano_id": "Usq-PWpoqhsV1yKbRwLSzg",
+      "pano_heading": 270
     },
     {
       "id": "osm-w1486552264",
@@ -979,7 +1054,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free; open-air",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1486552271",
@@ -991,7 +1067,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "free; open-air",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1491011103",
@@ -1071,14 +1148,29 @@
       "addr": "",
       "lat": 39.75117,
       "lng": -75.54262,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\" (pano 044ji6ME5BY4JAyRRugpGQ, heading 45.0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.7504631,
       "entrance_lng": -75.5413248,
-      "entrance_source": "OSM parking_entrance node 13338666805"
+      "entrance_source": "OSM parking_entrance node 13338666805",
+      "verified_on": "2026-04-23",
+      "pano_id": "044ji6ME5BY4JAyRRugpGQ",
+      "pano_heading": 45.0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 108,
+          "height_label": "9'0\""
+        }
+      ]
     },
     {
       "id": "osm-w1491684892",
@@ -1110,14 +1202,17 @@
       "addr": "",
       "lat": 39.74835,
       "lng": -75.56824,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano DGAHbE99aL-W0PBXs3aKLg, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "entrance_lat": 39.7491547,
       "entrance_lng": -75.5671008,
-      "entrance_source": "OSM parking_entrance node 10539652626"
+      "entrance_source": "OSM parking_entrance node 10539652626",
+      "verified_on": "2026-04-23",
+      "pano_id": "DGAHbE99aL-W0PBXs3aKLg",
+      "pano_heading": 0
     },
     {
       "id": "osm-w1491687093",
@@ -1177,7 +1272,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "6 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1494487375",
@@ -1189,7 +1285,8 @@
       "height_label": null,
       "oversized": true,
       "notes": "25 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1494497349",

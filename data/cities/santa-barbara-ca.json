@@ -6,11 +6,14 @@
       "addr": "1221 Anacapa St",
       "lat": 34.4239,
       "lng": -119.6996,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "City-owned. 75 min free.",
-      "source": "santabarbaraca.gov"
+      "notes": "City-owned. 75 min free.\nVerified 2026-04-23 from sign reading \"10'\" (pano U4RKxuqWziAoxxXwsdbYtQ, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: santabarbaraca.gov",
+      "verified_on": "2026-04-23",
+      "pano_id": "U4RKxuqWziAoxxXwsdbYtQ",
+      "pano_heading": 0
     },
     {
       "id": "sba-lot-2-library",
@@ -18,14 +21,17 @@
       "addr": "1201 Anacapa St",
       "lat": 34.4233,
       "lng": -119.7001,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Library + museum access.",
-      "source": "santabarbaraca.gov",
+      "notes": "Library + museum access.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'0\"\" (pano VV1UuRZConPjSLWziLKIuQ, heading 180\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: santabarbaraca.gov",
       "entrance_lat": 34.4218934,
       "entrance_lng": -119.7005297,
-      "entrance_source": "OSM parking_entrance node 13200055675"
+      "entrance_source": "OSM parking_entrance node 13200055675",
+      "verified_on": "2026-04-23",
+      "pano_id": "VV1UuRZConPjSLWziLKIuQ",
+      "pano_heading": 180
     },
     {
       "id": "sba-lot-3-canon-perdido",
@@ -52,7 +58,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot near Stearns Wharf.",
-      "source": "santabarbaraca.gov"
+      "source": "santabarbaraca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-wharf-garage",
@@ -64,7 +71,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Drive on the wharf. Ocean views + restaurants.",
-      "source": "stearnswharf.org"
+      "source": "stearnswharf.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-leadbetter-beach",
@@ -76,7 +84,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Beach surface lot.",
-      "source": "santabarbaraca.gov"
+      "source": "santabarbaraca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-east-beach",
@@ -88,7 +97,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Beach surface lots.",
-      "source": "santabarbaraca.gov"
+      "source": "santabarbaraca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-west-beach",
@@ -100,7 +110,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Marina + harbor parking.",
-      "source": "santabarbaraca.gov"
+      "source": "santabarbaraca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-courthouse",
@@ -115,7 +126,8 @@
       "source": "santabarbaracourthouse.org",
       "entrance_lat": 34.4236807,
       "entrance_lng": -119.7029215,
-      "entrance_source": "OSM parking_entrance node 9405872493"
+      "entrance_source": "OSM parking_entrance node 9405872493",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-mission",
@@ -127,7 +139,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic 1786 mission. Surface lot.",
-      "source": "santabarbaramission.org"
+      "source": "santabarbaramission.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-museum-art",
@@ -135,14 +148,29 @@
       "addr": "1130 State St",
       "lat": 34.4218,
       "lng": -119.702,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "State Street museum.",
-      "source": "sbma.net",
+      "notes": "State Street museum.\nVerified 2026-04-23 from sign reading \"6'6\" (pano f5cuahLQVFbmtEMtfAgqxQ, heading 180.0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sbma.net",
       "entrance_lat": 34.4218934,
       "entrance_lng": -119.7005297,
-      "entrance_source": "OSM parking_entrance node 13200055675"
+      "entrance_source": "OSM parking_entrance node 13200055675",
+      "verified_on": "2026-04-23",
+      "pano_id": "f5cuahLQVFbmtEMtfAgqxQ",
+      "pano_heading": 180.0,
+      "sections": [
+        {
+          "label": "Parking garage entrance",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Clearance",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "sba-natural-history",
@@ -154,7 +182,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Mission Canyon. Surface lot.",
-      "source": "sbnature.org"
+      "source": "sbnature.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-zoo",
@@ -166,7 +195,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Beachfront zoo. Large surface lot.",
-      "source": "sbzoo.org"
+      "source": "sbzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-botanic-garden",
@@ -178,7 +208,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "78-acre native plant garden.",
-      "source": "sbbg.org"
+      "source": "sbbg.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-funk-zone",
@@ -193,7 +224,8 @@
       "source": "funkzone.net",
       "entrance_lat": 34.4137378,
       "entrance_lng": -119.6901234,
-      "entrance_source": "OSM parking_entrance node 8973832340"
+      "entrance_source": "OSM parking_entrance node 8973832340",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-paseo-nuevo",
@@ -205,7 +237,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown shopping center.",
-      "source": "paseonuevoshopping.com"
+      "source": "paseonuevoshopping.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-la-cumbre-plaza",
@@ -217,7 +250,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping.",
-      "source": "lacumbreplaza.com"
+      "source": "lacumbreplaza.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-camino-real-mkt",
@@ -241,7 +275,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "UCSB campus.",
-      "source": "tps.ucsb.edu"
+      "source": "tps.ucsb.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-cottage-hospital",
@@ -268,7 +303,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State beach + campground.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-refugio-state-beach",
@@ -280,7 +316,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State beach.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-carp-state-beach",
@@ -292,7 +329,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular family beach + campground.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-gaviota-state-park",
@@ -304,7 +342,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park with RV campsites.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-airport",
@@ -328,7 +367,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Pacific Surfliner + Coast Starlight.",
-      "source": "amtrak.com"
+      "source": "amtrak.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

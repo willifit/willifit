@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "City-run waterfront lots.",
-      "source": "montereywharf.com"
+      "source": "montereywharf.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-cannery-row",
@@ -18,14 +19,17 @@
       "addr": "680 Cannery Row",
       "lat": 36.6162,
       "lng": -121.8995,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City garage.",
-      "source": "canneryrow.com",
+      "notes": "City garage.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano y01TuUygSOqZ3McqSf2Hgw, heading 45\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: canneryrow.com",
       "entrance_lat": 36.6160073,
       "entrance_lng": -121.901322,
-      "entrance_source": "OSM parking_entrance node 6481829932"
+      "entrance_source": "OSM parking_entrance node 6481829932",
+      "verified_on": "2026-04-23",
+      "pano_id": "y01TuUygSOqZ3McqSf2Hgw",
+      "pano_heading": 45
     },
     {
       "id": "mry-aquarium-lot",
@@ -45,14 +49,17 @@
       "addr": "1 Portola Plaza",
       "lat": 36.6013,
       "lng": -121.8948,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention center + Portola Hotel.",
-      "source": "montereyconferencecenter.com",
+      "notes": "Convention center + Portola Hotel.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ybtBnK_z5rARb1QmZ83y2g, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: montereyconferencecenter.com",
       "entrance_lat": 36.6012157,
       "entrance_lng": -121.893727,
-      "entrance_source": "OSM parking_entrance node 1660040003"
+      "entrance_source": "OSM parking_entrance node 1660040003",
+      "verified_on": "2026-04-23",
+      "pano_id": "ybtBnK_z5rARb1QmZ83y2g",
+      "pano_heading": 0
     },
     {
       "id": "mry-custom-house-plaza",
@@ -64,7 +71,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic plaza near Wharf.",
-      "source": "monterey.org"
+      "source": "monterey.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-cannery-row-marketplace",
@@ -88,7 +96,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Working commercial wharf.",
-      "source": "monterey.org"
+      "source": "monterey.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-17-mile-drive-pacific-grove",
@@ -100,7 +109,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Toll entrance ($12.25). Famous scenic drive. RVs welcome.",
-      "source": "pebblebeach.com"
+      "source": "pebblebeach.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-pebble-beach",
@@ -112,7 +122,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Pebble Beach Golf Links complex.",
-      "source": "pebblebeach.com"
+      "source": "pebblebeach.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-carmel-by-the-sea",
@@ -124,7 +135,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Walkable village. Small lots + street.",
-      "source": "carmelcalifornia.com"
+      "source": "carmelcalifornia.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-point-lobos",
@@ -136,7 +148,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State reserve \u2014 tide pools + sea lions.",
-      "source": "pointlobos.org"
+      "source": "pointlobos.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-presidio-monterey",
@@ -172,7 +185,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic racetrack + campground. Huge RV sections.",
-      "source": "weathertechraceway.com"
+      "source": "weathertechraceway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-monterey-bay-kayaks",
@@ -184,7 +198,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Kayak rental + Del Monte Beach.",
-      "source": "montereybaykayaks.com"
+      "source": "montereybaykayaks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-pacific-grove-lighthouse",
@@ -196,7 +211,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Oldest continuously operating West Coast lighthouse.",
-      "source": "pointpinoslighthouse.org"
+      "source": "pointpinoslighthouse.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-asilomar-state-beach",
@@ -208,7 +224,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State beach + Julia Morgan-designed conference grounds.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-monterey-state-historic",
@@ -232,7 +249,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air mall.",
-      "source": "delmontecenter.com"
+      "source": "delmontecenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-big-sur-andrew-molera",
@@ -244,7 +262,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Big Sur state park. ~30mi south.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-bixby-bridge-vista",
@@ -256,7 +275,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic arch bridge vista.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-pfeiffer-big-sur",
@@ -268,7 +288,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Big Sur state park + campground.",
-      "source": "parks.ca.gov"
+      "source": "parks.ca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mry-salinas-steinbeck",
@@ -304,7 +325,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "montereyairport.com"
+      "source": "montereyairport.com",
+      "structure_type": "surface_lot"
     }
   ],
   "tunnels": [],

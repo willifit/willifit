@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Hurricanes hockey + NC State basketball. Surface lots.",
-      "source": "thepncarena.com"
+      "source": "thepncarena.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-convention-ctr",
@@ -18,14 +19,29 @@
       "addr": "500 S Salisbury St",
       "lat": 35.7712,
       "lng": -78.642,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "RCC underground.",
-      "source": "raleighconvention.com",
+      "notes": "RCC underground.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano m0lzZiBu6Zit52XYnNfsmQ, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: raleighconvention.com",
       "entrance_lat": 35.7723615,
       "entrance_lng": -78.6419155,
-      "entrance_source": "OSM parking_entrance node 6573073971"
+      "entrance_source": "OSM parking_entrance node 6573073971",
+      "verified_on": "2026-04-23",
+      "pano_id": "m0lzZiBu6Zit52XYnNfsmQ",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "PUBLIC PARKING",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "PUBLIC PARKING",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "rdu-city-moore-sq",
@@ -33,14 +49,17 @@
       "addr": "10 S Person St",
       "lat": 35.7768,
       "lng": -78.6361,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned downtown deck.",
-      "source": "raleighnc.gov",
+      "notes": "City-owned downtown deck.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano uSSxrVTseAlcvxEtUfV1Sg, heading 270\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: raleighnc.gov",
       "entrance_lat": 35.7763087,
       "entrance_lng": -78.6368017,
-      "entrance_source": "OSM parking_entrance node 3360555947"
+      "entrance_source": "OSM parking_entrance node 3360555947",
+      "verified_on": "2026-04-23",
+      "pano_id": "uSSxrVTseAlcvxEtUfV1Sg",
+      "pano_heading": 270
     },
     {
       "id": "rdu-city-blount-st",
@@ -48,14 +67,17 @@
       "addr": "216 S Blount St",
       "lat": 35.7747,
       "lng": -78.6382,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "City-owned.",
-      "source": "raleighnc.gov",
+      "notes": "City-owned.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'0\"\" (pano 7LtLZHixJUMDCqA_vyrllA, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: raleighnc.gov",
       "entrance_lat": 35.7750422,
       "entrance_lng": -78.6382907,
-      "entrance_source": "OSM parking_entrance node 11643650821"
+      "entrance_source": "OSM parking_entrance node 11643650821",
+      "verified_on": "2026-04-23",
+      "pano_id": "7LtLZHixJUMDCqA_vyrllA",
+      "pano_heading": 90
     },
     {
       "id": "rdu-perf-arts",
@@ -63,14 +85,17 @@
       "addr": "2 E South St",
       "lat": 35.7732,
       "lng": -78.6414,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Performing arts garage.",
-      "source": "dukeenergycenterraleigh.com",
+      "notes": "Performing arts garage.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano zKggtT-MYphJ-0swskEvyg, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: dukeenergycenterraleigh.com",
       "entrance_lat": 35.7728787,
       "entrance_lng": -78.6411138,
-      "entrance_source": "OSM parking_entrance node 6573073980"
+      "entrance_source": "OSM parking_entrance node 6573073980",
+      "verified_on": "2026-04-23",
+      "pano_id": "zKggtT-MYphJ-0swskEvyg",
+      "pano_heading": 180
     },
     {
       "id": "rdu-mccrae-park",
@@ -82,7 +107,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Former hospital campus \u2014 now park. Surface lots.",
-      "source": "dorotheadixpark.org"
+      "source": "dorotheadixpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-north-hills",
@@ -94,7 +120,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air lifestyle center.",
-      "source": "visitnorthhills.com"
+      "source": "visitnorthhills.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-triangle-town-ctr",
@@ -114,14 +141,17 @@
       "addr": "4325 Glenwood Ave",
       "lat": 35.8404,
       "lng": -78.6795,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "crabtreevalleymall.com",
+      "notes": "Enclosed mall.\nVerified 2026-04-23 from sign reading \"7' MAX CLEARANCE\" (pano W7Z1isd1RR9OZeRNbt6OEw, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: crabtreevalleymall.com",
       "entrance_lat": 35.8410971,
       "entrance_lng": -78.6789481,
-      "entrance_source": "OSM parking_entrance node 5835218890"
+      "entrance_source": "OSM parking_entrance node 5835218890",
+      "verified_on": "2026-04-23",
+      "pano_id": "W7Z1isd1RR9OZeRNbt6OEw",
+      "pano_heading": 90
     },
     {
       "id": "rdu-nc-state-coliseum",
@@ -136,7 +166,8 @@
       "source": "gopack.com",
       "entrance_lat": 35.8013514,
       "entrance_lng": -78.7207323,
-      "entrance_source": "OSM parking_entrance node 11518803273"
+      "entrance_source": "OSM parking_entrance node 11518803273",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-museum-natural-sciences",
@@ -151,7 +182,8 @@
       "source": "naturalsciences.org",
       "entrance_lat": 35.7820373,
       "entrance_lng": -78.6401558,
-      "entrance_source": "OSM parking_entrance node 11841870890"
+      "entrance_source": "OSM parking_entrance node 11841870890",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-airport-garage-1",
@@ -190,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy.",
-      "source": "rdu.com"
+      "source": "rdu.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-wilson-center",
@@ -198,14 +231,17 @@
       "addr": "2 E South St",
       "lat": 35.7735,
       "lng": -78.6415,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Formerly Duke Energy Center. Renovated.",
-      "source": "dukeenergycenterraleigh.com",
+      "notes": "Formerly Duke Energy Center. Renovated.\nVerified 2026-04-23 from sign reading \"7'0\" (pano rSwbBj0zyNDjGo2PzFJE-w, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: dukeenergycenterraleigh.com",
       "entrance_lat": 35.7728981,
       "entrance_lng": -78.6418786,
-      "entrance_source": "OSM parking_entrance node 6573073981"
+      "entrance_source": "OSM parking_entrance node 6573073981",
+      "verified_on": "2026-04-23",
+      "pano_id": "rSwbBj0zyNDjGo2PzFJE-w",
+      "pano_heading": 180
     },
     {
       "id": "rdu-marbles-kids",
@@ -232,7 +268,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large free surface lots. Trails + sculpture.",
-      "source": "ncartmuseum.org"
+      "source": "ncartmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-pullen-park",
@@ -247,7 +284,8 @@
       "source": "raleighnc.gov",
       "entrance_lat": 35.7829558,
       "entrance_lng": -78.6672346,
-      "entrance_source": "OSM parking_entrance node 8567663945"
+      "entrance_source": "OSM parking_entrance node 8567663945",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-umstead-state-park",
@@ -259,7 +297,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park. Large surface lots. RV-friendly.",
-      "source": "ncparks.gov"
+      "source": "ncparks.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-cameron-village",
@@ -283,7 +322,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Nightlife district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-warehouse-district",
@@ -298,7 +338,8 @@
       "source": "Needs verification",
       "entrance_lat": 35.7781647,
       "entrance_lng": -78.6452193,
-      "entrance_source": "OSM parking_entrance node 11384964284"
+      "entrance_source": "OSM parking_entrance node 11384964284",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-five-points",
@@ -310,7 +351,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic shopping district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-wake-med",
@@ -337,7 +379,8 @@
       "source": "Needs verification",
       "entrance_lat": 35.7728981,
       "entrance_lng": -78.6418786,
-      "entrance_source": "OSM parking_entrance node 6573073981"
+      "entrance_source": "OSM parking_entrance node 6573073981",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-state-fairgrounds",
@@ -349,7 +392,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Annual state fair. Massive surface lots + RV camping.",
-      "source": "ncstatefair.org"
+      "source": "ncstatefair.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-walnut-creek-amphitheater",
@@ -361,7 +405,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Outdoor amphitheater. Surface lots.",
-      "source": "livenation.com"
+      "source": "livenation.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "rdu-durham-tobacco",
@@ -369,14 +414,29 @@
       "addr": "318 Blackwell St, Durham",
       "lat": 35.9925,
       "lng": -78.9045,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Durham campus \u2014 historic tobacco adaptive reuse. Triangle area.",
-      "source": "americantobaccocampus.com",
+      "notes": "Durham campus \u2014 historic tobacco adaptive reuse. Triangle area.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano eSXnCqdrlYzOBkUqsdtJTA, heading 45\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: americantobaccocampus.com",
       "entrance_lat": 35.9926373,
       "entrance_lng": -78.9028594,
-      "entrance_source": "OSM parking_entrance node 9992904421"
+      "entrance_source": "OSM parking_entrance node 9992904421",
+      "verified_on": "2026-04-23",
+      "pano_id": "eSXnCqdrlYzOBkUqsdtJTA",
+      "pano_heading": 45,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "osm-w764491791",

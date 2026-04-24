@@ -120,14 +120,17 @@
       "addr": "234 W 31st St",
       "lat": 40.7506,
       "lng": -73.9935,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "Official Madison Square Garden event garage. 1,500 spaces. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Official Madison Square Garden event garage. 1,500 spaces. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"12 FT\" (pano EyhDpIYXjpxUy4LgkTDWhA, heading 90\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7495332,
       "entrance_lng": -73.9932857,
-      "entrance_source": "OSM parking_entrance node 8567304865"
+      "entrance_source": "OSM parking_entrance node 8567304865",
+      "verified_on": "2026-04-23",
+      "pano_id": "EyhDpIYXjpxUy4LgkTDWhA",
+      "pano_heading": 90
     },
     {
       "id": "nyc-penn1",
@@ -135,14 +138,17 @@
       "addr": "1 Penn Plaza",
       "lat": 40.751,
       "lng": -73.9928,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Under Penn 1 office tower. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Under Penn 1 office tower. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"8'0\"\" (pano 9umAs6BY_Vy9Jv9Lv20DJw, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7516064,
       "entrance_lng": -73.9928867,
-      "entrance_source": "OSM parking_entrance node 4599496701"
+      "entrance_source": "OSM parking_entrance node 4599496701",
+      "verified_on": "2026-04-23",
+      "pano_id": "9umAs6BY_Vy9Jv9Lv20DJw",
+      "pano_heading": 0
     },
     {
       "id": "nyc-port-auth",
@@ -150,14 +156,17 @@
       "addr": "625 8th Ave",
       "lat": 40.757,
       "lng": -73.9905,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 111,
+      "height_label": "9'3\"",
       "oversized": false,
-      "notes": "Rooftop garage above bus terminal. ~600 spaces. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Rooftop garage above bus terminal. ~600 spaces. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"CLEARANCE 9'3\"\" (pano PJDhEpNVsrYpYnHfk6JcMQ, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7575941,
       "entrance_lng": -73.9883345,
-      "entrance_source": "OSM parking_entrance node 8669764314"
+      "entrance_source": "OSM parking_entrance node 8669764314",
+      "verified_on": "2026-04-23",
+      "pano_id": "PJDhEpNVsrYpYnHfk6JcMQ",
+      "pano_heading": 0
     },
     {
       "id": "nyc-20166-67th",
@@ -172,7 +181,8 @@
       "source": "20166parking.com",
       "entrance_lat": 40.7669319,
       "entrance_lng": -73.9616371,
-      "entrance_source": "OSM parking_entrance node 5373598784"
+      "entrance_source": "OSM parking_entrance node 5373598784",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-lincoln-ctr",
@@ -180,14 +190,17 @@
       "addr": "60 W 66th St",
       "lat": 40.7737,
       "lng": -73.9838,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 93,
+      "height_label": "7'9\"",
       "oversized": false,
-      "notes": "Public garage serving Lincoln Center. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Public garage serving Lincoln Center. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"MAX OCCUPANCY IS 93\" (pano C0ZeNrOCgIcX9my1QwawaQ, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7734299,
       "entrance_lng": -73.9838425,
-      "entrance_source": "OSM parking_entrance node 10211295974"
+      "entrance_source": "OSM parking_entrance node 10211295974",
+      "verified_on": "2026-04-23",
+      "pano_id": "C0ZeNrOCgIcX9my1QwawaQ",
+      "pano_heading": 90
     },
     {
       "id": "nyc-metnorth",
@@ -237,14 +250,17 @@
       "addr": "74 Trinity Pl",
       "lat": 40.7085,
       "lng": -74.0127,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Downtown FiDi. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Downtown FiDi. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano UX3BcguxBFsuDgv0kXGHlQ, heading 315\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7071915,
       "entrance_lng": -74.0140577,
-      "entrance_source": "OSM parking_entrance node 4149936244"
+      "entrance_source": "OSM parking_entrance node 4149936244",
+      "verified_on": "2026-04-23",
+      "pano_id": "UX3BcguxBFsuDgv0kXGHlQ",
+      "pano_heading": 315
     },
     {
       "id": "nyc-wtc",
@@ -297,14 +313,17 @@
       "addr": "JFK Expy",
       "lat": 40.644,
       "lng": -73.7831,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent. Standard terminal garage clearance needs verification.",
-      "source": "Port Authority NY/NJ",
+      "notes": "Terminal-adjacent. Standard terminal garage clearance needs verification.\nVerified 2026-04-23 from sign reading \"12'\" (pano 3Eqzt35pEdCiHGdJQCQw0Q, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Port Authority NY/NJ",
       "entrance_lat": 40.6452868,
       "entrance_lng": -73.7819569,
-      "entrance_source": "OSM parking_entrance node 10572129960"
+      "entrance_source": "OSM parking_entrance node 10572129960",
+      "verified_on": "2026-04-23",
+      "pano_id": "3Eqzt35pEdCiHGdJQCQw0Q",
+      "pano_heading": 0
     },
     {
       "id": "nyc-jfk-t4",
@@ -328,7 +347,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered long-term lot \u2014 accommodates over-height vehicles. AirTrain connection to terminals.",
-      "source": "Port Authority NY/NJ"
+      "source": "Port Authority NY/NJ",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-lga-centralgarage",
@@ -352,7 +372,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Accommodates taller vehicles.",
-      "source": "Port Authority NY/NJ"
+      "source": "Port Authority NY/NJ",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-ewr-p1",
@@ -388,7 +409,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered economy lot. Handles over-height vehicles. AirTrain to terminals.",
-      "source": "newarkairport.com"
+      "source": "newarkairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-hy-chelsea29",
@@ -426,14 +448,29 @@
       "addr": "20 Hudson Yards",
       "lat": 40.7538,
       "lng": -74.0007,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Serves The Shops at Hudson Yards, The Vessel, The Shed. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Serves The Shops at Hudson Yards, The Vessel, The Shed. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"7' 0\"\" (pano Aqa650pgITArdGifGnZUgg, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.753999,
       "entrance_lng": -73.9987478,
-      "entrance_source": "OSM parking_entrance node 11144700432"
+      "entrance_source": "OSM parking_entrance node 11144700432",
+      "verified_on": "2026-04-23",
+      "pano_id": "Aqa650pgITArdGifGnZUgg",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 120,
+          "height_label": "10'0\""
+        }
+      ]
     },
     {
       "id": "nyc-chelsea-mkt",
@@ -441,14 +478,29 @@
       "addr": "75 9th Ave",
       "lat": 40.7424,
       "lng": -74.0061,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Food hall + tourist destination. Nearby garages via 9th Ave.",
-      "source": "Needs verification",
+      "notes": "Food hall + tourist destination. Nearby garages via 9th Ave.\nVerified 2026-04-23 from sign reading \"7'0\" (pano mhQ95oR8lIsZ9g9EPKjomA, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7419884,
       "entrance_lng": -74.0039469,
-      "entrance_source": "OSM parking_entrance node 12357848373"
+      "entrance_source": "OSM parking_entrance node 12357848373",
+      "verified_on": "2026-04-23",
+      "pano_id": "mhQ95oR8lIsZ9g9EPKjomA",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 96,
+          "height_label": "8'0\""
+        }
+      ]
     },
     {
       "id": "nyc-barclays-atlantic",
@@ -480,14 +532,17 @@
       "addr": "620 Atlantic Ave",
       "lat": 40.6826,
       "lng": -73.9754,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 132,
+      "height_label": "11'0\"",
       "oversized": false,
-      "notes": "Event-only garage under Barclays Center.",
-      "source": "barclayscenter.com",
+      "notes": "Event-only garage under Barclays Center.\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano 17JjLC3HOcOM5I33iF9Zsw, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: barclayscenter.com",
       "entrance_lat": 40.6818344,
       "entrance_lng": -73.9745807,
-      "entrance_source": "OSM parking_entrance node 13701020426"
+      "entrance_source": "OSM parking_entrance node 13701020426",
+      "verified_on": "2026-04-23",
+      "pano_id": "17JjLC3HOcOM5I33iF9Zsw",
+      "pano_heading": 0
     },
     {
       "id": "nyc-yankee-gerard",
@@ -499,7 +554,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Designated bus/van/oversized lot. Reserve via City Parking. Call 718-588-7817.",
-      "source": "City Parking NYC"
+      "source": "City Parking NYC",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-yankee-river",
@@ -507,11 +563,14 @@
       "addr": "River Ave, Bronx",
       "lat": 40.8266,
       "lng": -73.926,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 135,
+      "height_label": "11'3\"",
       "oversized": false,
-      "notes": "Standard game day garage. Clearance needs verification.",
-      "source": "Needs verification"
+      "notes": "Standard game day garage. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"11'3\" (pano F3QlJg0E6P9YT_nsdmXL1w, heading 0\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
+      "verified_on": "2026-04-23",
+      "pano_id": "F3QlJg0E6P9YT_nsdmXL1w",
+      "pano_heading": 0
     },
     {
       "id": "nyc-citi-field-porkchop",
@@ -523,7 +582,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Bus/Sprinter/Oversized Parking north of Citi Field. Surface lot.",
-      "source": "nymets.com"
+      "source": "nymets.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-citi-field-main",
@@ -535,7 +595,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Main surface lots. Game day parking.",
-      "source": "Mets"
+      "source": "Mets",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nyc-jacob-javits",
@@ -582,14 +643,29 @@
       "addr": "421 8th Ave",
       "lat": 40.7528,
       "lng": -73.9955,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "New Amtrak hall west side of Penn.",
-      "source": "Needs verification",
+      "notes": "New Amtrak hall west side of Penn.\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano J-0Ku49Up2Kwp5G8-eRHeg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7538172,
       "entrance_lng": -73.9969471,
-      "entrance_source": "OSM parking_entrance node 10089242335"
+      "entrance_source": "OSM parking_entrance node 10089242335",
+      "verified_on": "2026-04-23",
+      "pano_id": "J-0Ku49Up2Kwp5G8-eRHeg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 120,
+          "height_label": "10'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "nyc-rock-plaza",
@@ -609,14 +685,29 @@
       "addr": "10 Columbus Cir",
       "lat": 40.7685,
       "lng": -73.9822,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Under the mall \u2014 Deutsche Bank Center. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Under the mall \u2014 Deutsche Bank Center. Clearance needs verification.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano NaOddCT1M_9-e8pZhURCKQ, heading 180\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7693482,
       "entrance_lng": -73.9815382,
-      "entrance_source": "OSM parking_entrance node 10187602682"
+      "entrance_source": "OSM parking_entrance node 10187602682",
+      "verified_on": "2026-04-23",
+      "pano_id": "NaOddCT1M_9-e8pZhURCKQ",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "parking garage",
+          "height_in": 144,
+          "height_label": "12'0\""
+        }
+      ]
     }
   ],
   "tunnels": [

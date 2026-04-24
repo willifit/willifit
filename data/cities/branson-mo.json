@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Waterfront shopping + dining + fountain show. Large surface lot.",
-      "source": "bransonlanding.com"
+      "source": "bransonlanding.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-76-country-strip",
@@ -22,7 +23,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main entertainment strip. Dozens of theater + hotel surface lots.",
-      "source": "explorebranson.com"
+      "source": "explorebranson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-silver-dollar-city",
@@ -34,7 +36,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "1880s-themed amusement park. Surface lots + RV.",
-      "source": "silverdollarcity.com"
+      "source": "silverdollarcity.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-whitewater",
@@ -46,7 +49,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Silver Dollar City water park.",
-      "source": "silverdollarcity.com"
+      "source": "silverdollarcity.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-big-cedar-lodge",
@@ -58,7 +62,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Bass Pro's huge resort complex.",
-      "source": "bigcedar.com"
+      "source": "bigcedar.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-dixie-stampede",
@@ -70,7 +75,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Dinner show venue. Large lot.",
-      "source": "dpstampede.com"
+      "source": "dpstampede.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-branson-conv-ctr",
@@ -94,7 +100,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Lake dinner cruise. Large lot.",
-      "source": "silverdollarcity.com"
+      "source": "silverdollarcity.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-presleys-theatre",
@@ -106,7 +113,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Long-running music show.",
-      "source": "presleys.com"
+      "source": "presleys.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-titanic-museum",
@@ -118,7 +126,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Half-scale Titanic replica.",
-      "source": "titanicbranson.com"
+      "source": "titanicbranson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-branson-ip-casino",
@@ -142,7 +151,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Lake recreation + boating + campground.",
-      "source": "mostateparks.com"
+      "source": "mostateparks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-hollywood-wax",
@@ -178,7 +188,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Branson RV park.",
-      "source": "abcbranson.com"
+      "source": "abcbranson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-koa-branson",
@@ -190,7 +201,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "KOA RV park + campground.",
-      "source": "koa.com"
+      "source": "koa.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-scenic-railroad",
@@ -205,7 +217,8 @@
       "source": "bransontrain.com",
       "entrance_lat": 36.6433372,
       "entrance_lng": -93.2158592,
-      "entrance_source": "OSM parking_entrance node 13682325522"
+      "entrance_source": "OSM parking_entrance node 13682325522",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-butterfly-palace",
@@ -229,7 +242,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "SDC-owned RV park.",
-      "source": "silverdollarcity.com"
+      "source": "silverdollarcity.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-college-of-ozarks",
@@ -265,7 +279,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic homestead + outdoor play venue.",
-      "source": "theshepherdofthehills.com"
+      "source": "theshepherdofthehills.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-veterans-memorial",
@@ -289,7 +304,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Private regional airport (limited service). Surface lot.",
-      "source": "flybranson.com"
+      "source": "flybranson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bra-sgf-airport",

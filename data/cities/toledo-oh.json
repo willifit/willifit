@@ -37,7 +37,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "AAA Toledo Mud Hens.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-valentine-theatre",
@@ -88,7 +89,8 @@
       "source": "toledo.oh.gov",
       "entrance_lat": 41.6492533,
       "entrance_lng": -83.5358049,
-      "entrance_source": "OSM parking_entrance node 8195414872"
+      "entrance_source": "OSM parking_entrance node 8195414872",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-toledo-museum-art",
@@ -100,7 +102,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free world-class museum + Glass Pavilion.",
-      "source": "toledomuseum.org"
+      "source": "toledomuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-zoo",
@@ -112,7 +115,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "World-class zoo.",
-      "source": "toledozoo.org"
+      "source": "toledozoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-west-field-shopping",
@@ -139,7 +143,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air Maumee (adjacent).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-toledo-hospital",
@@ -178,7 +183,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "UT visitor parking.",
-      "source": "utoledo.edu"
+      "source": "utoledo.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-glass-bowl",
@@ -190,7 +196,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "UT football. Surface + RV.",
-      "source": "utrockets.com"
+      "source": "utrockets.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-botanical-gardens",
@@ -214,7 +221,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic estate + trails.",
-      "source": "metroparkstoledo.com"
+      "source": "metroparkstoledo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-maumee-bay-sp",
@@ -226,7 +234,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + lodge + campground.",
-      "source": "ohiodnr.gov"
+      "source": "ohiodnr.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-pearson-metropark",
@@ -238,7 +247,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Swamp remnant park.",
-      "source": "metroparkstoledo.com"
+      "source": "metroparkstoledo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-fort-meigs",
@@ -250,7 +260,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Restored 1812 fort.",
-      "source": "fortmeigs.org"
+      "source": "fortmeigs.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-cedar-point",
@@ -262,7 +273,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic amusement park. Massive surface lot + campground + RV.",
-      "source": "cedarpoint.com"
+      "source": "cedarpoint.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-rudolphs-resort",
@@ -274,7 +286,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV park + lake access north of Toledo (MI).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-rudolph-libby-glass",
@@ -301,7 +314,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Small regional airport. Surface.",
-      "source": "tol.aero"
+      "source": "tol.aero",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tol-detroit-alt",
@@ -358,10 +372,25 @@
       "addr": "US-24 over Maumee",
       "lat": 41.6418,
       "lng": -83.496,
-      "height_in": null,
-      "height_label": "Over water",
-      "notes": "Bascule bridge.",
-      "source": "ODOT"
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Bascule bridge.\nVerified 2026-04-23 from sign reading \"11'0\"\" (pano _JxqjWOAxY3ZiWj_rjoiRg, heading 0\u00b0, Claude confidence medium [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: ODOT",
+      "verified_on": "2026-04-23",
+      "pano_id": "_JxqjWOAxY3ZiWj_rjoiRg",
+      "pano_heading": 0,
+      "sections": [
+        {
+          "label": "Texas exit",
+          "height_in": 132,
+          "height_label": "11'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 156,
+          "height_label": "13'0\""
+        }
+      ]
     },
     {
       "id": "nbi-39-4862562",

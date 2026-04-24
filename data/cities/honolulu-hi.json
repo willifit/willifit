@@ -21,14 +21,17 @@
       "addr": "2330 Kalakaua Ave",
       "lat": 21.2786,
       "lng": -157.8299,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 168,
+      "height_label": "14'0\"",
       "oversized": false,
-      "notes": "Waikiki shopping center. Underground garage.",
-      "source": "shopinternationalmarketplace.com",
+      "notes": "Waikiki shopping center. Underground garage.\nVerified 2026-04-23 from sign reading \"CLEARANCE 14'\" (pano EEXZ_n_lyo1PNvZ0BoQPrA, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: shopinternationalmarketplace.com",
       "entrance_lat": 21.2786958,
       "entrance_lng": -157.8300108,
-      "entrance_source": "OSM parking_entrance node 9861415823"
+      "entrance_source": "OSM parking_entrance node 9861415823",
+      "verified_on": "2026-04-23",
+      "pano_id": "EEXZ_n_lyo1PNvZ0BoQPrA",
+      "pano_heading": 0
     },
     {
       "id": "hnl-royal-hawaiian-center",
@@ -36,14 +39,17 @@
       "addr": "2201 Kalakaua Ave",
       "lat": 21.2803,
       "lng": -157.8278,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Waikiki shopping + dining.",
-      "source": "royalhawaiiancenter.com",
+      "notes": "Waikiki shopping + dining.\nVerified 2026-04-23 from sign reading \"7'0\" (pano tSD8e7ovZEZMTfF9fBaePA, heading 180\u00b0, Claude confidence medium)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: royalhawaiiancenter.com",
       "entrance_lat": 21.2800258,
       "entrance_lng": -157.8288878,
-      "entrance_source": "OSM parking_entrance node 7777172968"
+      "entrance_source": "OSM parking_entrance node 7777172968",
+      "verified_on": "2026-04-23",
+      "pano_id": "tSD8e7ovZEZMTfF9fBaePA",
+      "pano_heading": 180
     },
     {
       "id": "hnl-hawaii-conv-ctr",
@@ -66,14 +72,17 @@
       "addr": "2255 Kalakaua Ave",
       "lat": 21.278,
       "lng": -157.8293,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 168,
+      "height_label": "14'0\"",
       "oversized": false,
-      "notes": "Major Waikiki hotel.",
-      "source": "marriott.com",
+      "notes": "Major Waikiki hotel.\nVerified 2026-04-23 from sign reading \"CLEARANCE 14'\" (pano EEXZ_n_lyo1PNvZ0BoQPrA, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: marriott.com",
       "entrance_lat": 21.2786958,
       "entrance_lng": -157.8300108,
-      "entrance_source": "OSM parking_entrance node 9861415823"
+      "entrance_source": "OSM parking_entrance node 9861415823",
+      "verified_on": "2026-04-23",
+      "pano_id": "EEXZ_n_lyo1PNvZ0BoQPrA",
+      "pano_heading": 0
     },
     {
       "id": "hnl-hilton-hawaiian-village",
@@ -97,7 +106,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free street + surface lots at east end of Waikiki.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-zoo-kapiolani",
@@ -109,7 +119,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot at Kapiolani Park.",
-      "source": "honoluluzoo.org"
+      "source": "honoluluzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-waikiki-aquarium",
@@ -121,7 +132,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot. Oldest aquarium in US.",
-      "source": "waikikiaquarium.org"
+      "source": "waikikiaquarium.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-diamond-head",
@@ -133,7 +145,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Reservation required. Small lot. Crater trailhead.",
-      "source": "gostateparks.hawaii.gov"
+      "source": "gostateparks.hawaii.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-ala-wai-harbor",
@@ -145,7 +158,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Harbor surface lot.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-honolulu-mus-art",
@@ -172,7 +186,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Natural history + planetarium.",
-      "source": "bishopmuseum.org"
+      "source": "bishopmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-iolani-palace",
@@ -196,7 +211,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Stadium being replaced. Swap meet + surface lots. Pearl Harbor adjacent.",
-      "source": "alohastadium.org"
+      "source": "alohastadium.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-pearl-harbor",
@@ -208,7 +224,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS Pearl Harbor. Bags in lockers required. Handles tour buses.",
-      "source": "nps.gov/perl"
+      "source": "nps.gov/perl",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-kewalo-basin",
@@ -223,7 +240,8 @@
       "source": "Needs verification",
       "entrance_lat": 21.2929002,
       "entrance_lng": -157.8526325,
-      "entrance_source": "OSM parking_entrance node 3663403487"
+      "entrance_source": "OSM parking_entrance node 3663403487",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-uh-manoa",
@@ -262,7 +280,8 @@
       "source": "Needs verification",
       "entrance_lat": 21.3137372,
       "entrance_lng": -157.8608625,
-      "entrance_source": "OSM parking_entrance node 10794035051"
+      "entrance_source": "OSM parking_entrance node 10794035051",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-dole-plantation",
@@ -274,7 +293,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "North shore agricultural tourism.",
-      "source": "doleplantation.com"
+      "source": "doleplantation.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-north-shore-haleiwa",
@@ -286,7 +306,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "North Shore town street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-hanauma-bay",
@@ -298,7 +319,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Reservation required. Snorkel preserve.",
-      "source": "honolulu.gov/parks"
+      "source": "honolulu.gov/parks",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hnl-airport-main",
