@@ -12,17 +12,26 @@
 <meta name="author" content="WillIFit.ai">
 <meta name="robots" content="index,follow">
 
-<!-- Open Graph / Social -->
+<!-- Open Graph / Social.
+     og:image must be a PNG/JPEG for messaging apps (iMessage, WhatsApp,
+     Signal, Slack) -- SVG is ignored and the preview falls back to
+     bare-text.  Absolute URL + explicit width/height/type/alt gives the
+     best cross-client rendering. -->
 <meta property="og:title" content="WillIFit.ai — AI-verified clearance for every oversized vehicle">
 <meta property="og:description" content="226 US cities. 7,400+ parking garages, tunnels, and low bridges — clearances AI-verified from Street View signage. Enter your vehicle height, see what fits.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="/og-image.svg">
+<meta property="og:image" content="https://willifit.ai/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="WillIFit.ai — AI-verified clearance heights for RVs, trucks, and oversized vehicles. 226 US cities, 7,400+ garages.">
 <meta property="og:url" content="https://willifit.ai/">
 <meta property="og:site_name" content="WillIFit.ai">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WillIFit.ai — AI-verified clearance heights">
 <meta name="twitter:description" content="AI-verified clearance data for 226 US cities. RV, truck, and oversized-vehicle parking made legible.">
-<meta name="twitter:image" content="/og-image.svg">
+<meta name="twitter:image" content="https://willifit.ai/og-image.png">
+<meta name="twitter:image:alt" content="WillIFit.ai — AI-verified clearance heights for oversized vehicles.">
 
 <!-- Canonical — single-page app; app-internal city selection uses hash
      routing (#city-slug), so the bare root is always the canonical form. -->
