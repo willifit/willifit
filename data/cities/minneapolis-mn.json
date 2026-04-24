@@ -94,18 +94,6 @@
       "entrance_source": "OSM parking_entrance node 13296233516"
     },
     {
-      "id": "mpls-7th-st",
-      "name": "7th Street (Government Center) Ramp",
-      "addr": "200 S 7th St",
-      "lat": 44.9769,
-      "lng": -93.2682,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Government Center.",
-      "source": "Needs verification"
-    },
-    {
       "id": "mpls-iconic-lot",
       "name": "The Commons Underground Lot (US Bank)",
       "addr": "425 Portland Ave",
@@ -235,18 +223,6 @@
       "entrance_source": "OSM parking_entrance node 13753021107"
     },
     {
-      "id": "mpls-cathedral-hill",
-      "name": "Summit Avenue (Cathedral Hill, St. Paul)",
-      "addr": "239 Selby Ave, St. Paul",
-      "lat": 44.9453,
-      "lng": -93.1145,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Historic neighborhood street parking.",
-      "source": "Needs verification"
-    },
-    {
       "id": "mpls-sculpture-garden",
       "name": "Walker Art Center / Sculpture Garden",
       "addr": "1750 Hennepin Ave",
@@ -323,21 +299,6 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "mspairport.com"
-    },
-    {
-      "id": "osm-w29120544",
-      "name": "Church Street Garage",
-      "addr": "80 Southeast Church Street",
-      "lat": 44.97636,
-      "lng": -93.23429,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "237 spaces; paid; covered",
-      "source": "OpenStreetMap",
-      "entrance_lat": 44.9763518,
-      "entrance_lng": -93.2339418,
-      "entrance_source": "OSM parking_entrance node 322722622"
     },
     {
       "id": "osm-w41424573",
@@ -437,6 +398,19 @@
       "entrance_lat": 44.9763518,
       "entrance_lng": -93.2339418,
       "entrance_source": "OSM parking_entrance node 322722622"
+    },
+    {
+      "id": "osm-w385624011",
+      "name": "St. Anthony Center Parking",
+      "addr": "",
+      "lat": 45.01535,
+      "lng": -93.21942,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces.",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

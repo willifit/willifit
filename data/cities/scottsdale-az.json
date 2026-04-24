@@ -259,30 +259,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "sco-mayo-clinic-scottsdale",
-      "name": "Mayo Clinic Hospital Scottsdale",
-      "addr": "5777 E Mayo Blvd, Phoenix",
-      "lat": 33.6569,
-      "lng": -111.9552,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Major medical facility.",
-      "source": "mayoclinic.org"
-    },
-    {
-      "id": "sco-honor-health-shea",
-      "name": "HonorHealth Scottsdale Shea Medical Center",
-      "addr": "9003 E Shea Blvd",
-      "lat": 33.5829,
-      "lng": -111.8932,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "honorhealth.com"
-    },
-    {
       "id": "sco-pinnacle-peak-park",
       "name": "Pinnacle Peak Park",
       "addr": "26802 N 102nd Way",

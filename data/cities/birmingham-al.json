@@ -79,19 +79,6 @@
       "source": "bcri.org"
     },
     {
-      "id": "bhm-16th-st-baptist",
-      "name": "16th Street Baptist Church Lot",
-      "addr": "1530 6th Ave N",
-      "lat": 33.5173,
-      "lng": -86.8158,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Historic civil rights landmark.",
-      "source": "16thstreetbaptist.org",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "bhm-railroad-park",
       "name": "Railroad Park",
       "addr": "1600 1st Ave S",
@@ -199,24 +186,6 @@
       "entrance_lat": 33.5044236,
       "entrance_lng": -86.8045932,
       "entrance_source": "OSM parking_entrance node 12638025627"
-    },
-    {
-      "id": "bhm-uab-hospital",
-      "name": "UAB Hospital Parking",
-      "addr": "619 19th St S",
-      "lat": 33.5089,
-      "lng": -86.8028,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "oversized": false,
-      "notes": "UAB Medical Center \u2014 largest in South.\nVerified 2026-04-23 from sign reading \"11'6\" (pano SrSsB5XKYpf2uQ95RML1PQ, heading 90\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: uabmedicine.org",
-      "entrance_lat": 33.509591,
-      "entrance_lng": -86.8040748,
-      "entrance_source": "OSM parking_entrance node 10759218286",
-      "verified_on": "2026-04-23",
-      "pano_id": "SrSsB5XKYpf2uQ95RML1PQ",
-      "pano_heading": 90
     },
     {
       "id": "bhm-five-points-south",

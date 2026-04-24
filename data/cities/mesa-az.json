@@ -205,21 +205,6 @@
       "source": "saltrivertubing.com"
     },
     {
-      "id": "mes-banner-desert-med",
-      "name": "Banner Desert Medical Center",
-      "addr": "1400 S Dobson Rd",
-      "lat": 33.3873,
-      "lng": -111.8759,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "bannerhealth.com",
-      "entrance_lat": 33.3887485,
-      "entrance_lng": -111.8766371,
-      "entrance_source": "OSM parking_entrance node 9576945662"
-    },
-    {
       "id": "mes-community-college",
       "name": "Mesa Community College \u2014 Southern + Dobson",
       "addr": "1833 W Southern Ave",

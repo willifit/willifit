@@ -329,19 +329,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "ana-christ-cathedral",
-      "name": "Christ Cathedral (Garden Grove)",
-      "addr": "13280 Chapman Ave, Garden Grove",
-      "lat": 33.7852,
-      "lng": -117.9482,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Former Crystal Cathedral. Surface lots.",
-      "source": "christcathedralcalifornia.org",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "ana-resort-transit",
       "name": "Anaheim Resort Transit Park-Ride",
       "addr": "100 N Harbor Blvd",

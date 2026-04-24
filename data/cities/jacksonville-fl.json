@@ -52,21 +52,6 @@
       "source": "jacksonville.gov"
     },
     {
-      "id": "jax-duval-courthouse",
-      "name": "Duval County Courthouse Garage",
-      "addr": "501 W Adams St",
-      "lat": 30.3277,
-      "lng": -81.6662,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "County garage.",
-      "source": "Needs verification",
-      "entrance_lat": 30.3289305,
-      "entrance_lng": -81.665896,
-      "entrance_source": "OSM parking_entrance node 13417593389"
-    },
-    {
       "id": "jax-cityplace",
       "name": "CityPlace Garage",
       "addr": "245 W Forsyth St",

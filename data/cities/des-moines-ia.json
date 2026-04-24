@@ -247,18 +247,6 @@
       "source": "adventurelandresort.com"
     },
     {
-      "id": "dsm-mercy-hospital",
-      "name": "MercyOne Des Moines Medical Center",
-      "addr": "1111 6th Ave",
-      "lat": 41.5943,
-      "lng": -93.6352,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital garage.",
-      "source": "mercyone.org"
-    },
-    {
       "id": "dsm-principal-financial",
       "name": "Principal Financial Group Garage",
       "addr": "711 High St",
@@ -296,6 +284,71 @@
       "oversized": true,
       "notes": "Uncovered.",
       "source": "dsmairport.com"
+    },
+    {
+      "id": "osm-w413776748",
+      "name": "Griff's Valley View RV Park",
+      "addr": "",
+      "lat": 41.67888,
+      "lng": -93.51845,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1014932176",
+      "name": "Bob Shetler",
+      "addr": "",
+      "lat": 41.70242,
+      "lng": -93.68255,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1014932178",
+      "name": "Bob Shetler",
+      "addr": "",
+      "lat": 41.70049,
+      "lng": -93.68609,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1014932179",
+      "name": "Bob Shetler",
+      "addr": "",
+      "lat": 41.69975,
+      "lng": -93.68791,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1336627828",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 41.5948,
+      "lng": -93.54187,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

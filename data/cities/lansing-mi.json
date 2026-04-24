@@ -1,5 +1,71 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w352885416",
+      "name": "Riverbend",
+      "addr": "",
+      "lat": 42.60083,
+      "lng": -84.59378,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w387889767",
+      "name": "truck parking",
+      "addr": "",
+      "lat": 42.66286,
+      "lng": -84.47295,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). Free parking.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w534175050",
+      "name": "Michigan Department of Transportation",
+      "addr": "",
+      "lat": 42.64057,
+      "lng": -84.47691,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (56 spaces). 56 spaces. Free parking. Operator: Michigan Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w554576580",
+      "name": "Lansing - Northwest",
+      "addr": "",
+      "lat": 42.78563,
+      "lng": -84.67086,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (92 spaces). 92 spaces. Operator: Michigan Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w776826877",
+      "name": "Lansing Cottonwood Campground",
+      "addr": "5339 Aurelius Road",
+      "lat": 42.67905,
+      "lng": -84.5221,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

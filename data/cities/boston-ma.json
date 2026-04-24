@@ -16,21 +16,6 @@
       "entrance_source": "OSM parking_entrance node 12149852602"
     },
     {
-      "id": "bos-government-ctr",
-      "name": "Government Center Garage",
-      "addr": "50 New Sudbury St",
-      "lat": 42.3619,
-      "lng": -71.0604,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Steps from TD Garden, Faneuil Hall, Quincy Market, North End.",
-      "source": "governmentcentergarage.com",
-      "entrance_lat": 42.3604024,
-      "entrance_lng": -71.0615538,
-      "entrance_source": "OSM parking_entrance node 7838542851"
-    },
-    {
       "id": "bos-haymarket-garage",
       "name": "Haymarket Garage",
       "addr": "136 Blackstone St",

@@ -87,19 +87,6 @@
       "source": "canneryrow.com"
     },
     {
-      "id": "mry-mcpc-lot",
-      "name": "Municipal Wharf Parking",
-      "addr": "Municipal Wharf No. 2",
-      "lat": 36.6038,
-      "lng": -121.888,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "notes": "Working commercial wharf.",
-      "source": "monterey.org",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "mry-17-mile-drive-pacific-grove",
       "name": "17-Mile Drive (Pacific Grove Gate)",
       "addr": "Pacific Grove entrance",

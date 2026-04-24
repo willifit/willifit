@@ -921,24 +921,6 @@
       "entrance_source": "OSM parking_entrance node 280426999"
     },
     {
-      "id": "osm-w111339081",
-      "name": "Wynn Employee Parking",
-      "addr": "",
-      "lat": 36.12101,
-      "lng": -115.16341,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-22 from sign reading \"5-11-8\" (pano h_iBLtcT70ZkqXE2pXaTnw, heading 45\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 36.120107,
-      "entrance_lng": -115.163831,
-      "entrance_source": "OSM parking_entrance node 11412107556",
-      "verified_on": "2026-04-22",
-      "pano_id": "h_iBLtcT70ZkqXE2pXaTnw",
-      "pano_heading": 45
-    },
-    {
       "id": "osm-w111367853",
       "name": "Harrah's Self Parking",
       "addr": "",

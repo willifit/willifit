@@ -1,19 +1,6 @@
 {
   "garages": [
     {
-      "id": "osm-n2263595361",
-      "name": "New Castle County Courthouse Parking",
-      "addr": "",
-      "lat": 39.74069,
-      "lng": -75.54858,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-n11565515891",
       "name": "COA Wilmington Parking",
       "addr": "Little Falls Drive",
@@ -487,19 +474,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w575764225",
-      "name": "First Baptist Church of Ogden Parking Lot",
-      "addr": "",
-      "lat": 39.8314,
-      "lng": -75.45582,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w576912928",
       "name": "Ogden Supply Company",
       "addr": "",
@@ -637,19 +611,6 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w745482213",
-      "name": "Trinity United Methodist Church",
-      "addr": "",
-      "lat": 39.65177,
-      "lng": -75.5214,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "free",
       "source": "OpenStreetMap",
       "structure_type": "surface_lot"
     },
@@ -825,32 +786,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1292284993",
-      "name": "Garnet Valley Middle School",
-      "addr": "",
-      "lat": 39.86855,
-      "lng": -75.51265,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1292479106",
-      "name": "Garnet Valley School District",
-      "addr": "",
-      "lat": 39.86855,
-      "lng": -75.51515,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w1292480405",
       "name": "Rachel Kohl Library",
       "addr": "",
@@ -869,32 +804,6 @@
       "addr": "",
       "lat": 39.86344,
       "lng": -75.52504,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1292536185",
-      "name": "Pennington School",
-      "addr": "",
-      "lat": 39.86678,
-      "lng": -75.5068,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1292536191",
-      "name": "Garnet Valley School District",
-      "addr": "",
-      "lat": 39.86783,
-      "lng": -75.50423,
       "height_in": null,
       "height_label": null,
       "oversized": true,
@@ -1359,6 +1268,19 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w40407056",
+      "name": "RV Park (unnamed)",
+      "addr": "",
+      "lat": 39.75698,
+      "lng": -75.43732,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

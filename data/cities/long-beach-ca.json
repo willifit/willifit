@@ -190,21 +190,6 @@
       "source": "catalinaexpress.com"
     },
     {
-      "id": "lb-city-hall",
-      "name": "Long Beach City Hall Lot",
-      "addr": "411 W Ocean Blvd",
-      "lat": 33.7685,
-      "lng": -118.1943,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City-owned downtown.",
-      "source": "longbeach.gov",
-      "entrance_lat": 33.7684093,
-      "entrance_lng": -118.1941668,
-      "entrance_source": "OSM parking_entrance node 9694318230"
-    },
-    {
       "id": "lb-mola-museum",
       "name": "Museum of Latin American Art (MOLAA)",
       "addr": "628 Alamitos Ave",

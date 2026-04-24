@@ -199,30 +199,6 @@
       "source": "Needs verification"
     },
     {
-      "id": "lit-little-rock-central",
-      "name": "Little Rock Central High School NHS",
-      "addr": "2120 W Daisy L Gatson Bates Dr",
-      "lat": 34.7316,
-      "lng": -92.2988,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Civil rights historic site. NPS visitor center.",
-      "source": "nps.gov/chsc"
-    },
-    {
-      "id": "lit-ar-surgical-hospital",
-      "name": "UAMS Medical Center",
-      "addr": "4301 W Markham St",
-      "lat": 34.7504,
-      "lng": -92.3265,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "University hospital.",
-      "source": "uamshealth.com"
-    },
-    {
       "id": "lit-hillcrest",
       "name": "Hillcrest District Lots",
       "addr": "2710 Kavanaugh Blvd",

@@ -58,18 +58,6 @@
       "source": "nashville.gov"
     },
     {
-      "id": "nsh-church-st",
-      "name": "Metro Courthouse / Church Street Garage",
-      "addr": "1st Ave N & Church St",
-      "lat": 36.1664,
-      "lng": -86.777,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Public Square area.",
-      "source": "nashville.gov"
-    },
-    {
       "id": "nsh-commerce",
       "name": "Commerce Street Garage",
       "addr": "221 Commerce St",

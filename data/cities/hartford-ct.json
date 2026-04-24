@@ -43,21 +43,6 @@
       "source": "hartford.gov"
     },
     {
-      "id": "hrt-church-street",
-      "name": "Church Street Garage",
-      "addr": "205 Church St",
-      "lat": 41.7649,
-      "lng": -72.6734,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Travelers Tower area.",
-      "source": "Needs verification",
-      "entrance_lat": 41.7642194,
-      "entrance_lng": -72.67335,
-      "entrance_source": "OSM parking_entrance node 13239928975"
-    },
-    {
       "id": "hrt-dunkin-park",
       "name": "Dunkin' Park (Yard Goats)",
       "addr": "1214 Main St",
@@ -278,18 +263,6 @@
       "oversized": false,
       "notes": "UConn medical center.",
       "source": "health.uconn.edu"
-    },
-    {
-      "id": "hrt-hartford-hospital",
-      "name": "Hartford Hospital Garage",
-      "addr": "80 Seymour St",
-      "lat": 41.7571,
-      "lng": -72.69,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "hartfordhospital.org"
     },
     {
       "id": "hrt-bradley-airport",

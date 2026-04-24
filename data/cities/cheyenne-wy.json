@@ -180,31 +180,6 @@
       "source": "Needs verification"
     },
     {
-      "id": "chy-cheyenne-warren-afb",
-      "name": "F.E. Warren Air Force Base",
-      "addr": "F.E. Warren AFB",
-      "lat": 41.136,
-      "lng": -104.87,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Base access \u2014 ID required. Historic minuteman facility.",
-      "source": "warren.af.mil"
-    },
-    {
-      "id": "chy-laramie-county-courthouse",
-      "name": "Laramie County Courthouse Lot",
-      "addr": "309 W 20th St",
-      "lat": 41.1383,
-      "lng": -104.8196,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "County courthouse.",
-      "source": "laramiecountywy.gov",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "chy-vimor-field",
       "name": "Pioneer Park / VIMOR Field",
       "addr": "2400 Pioneer Ave",
@@ -242,18 +217,6 @@
       "notes": "Greenway trail access.",
       "source": "cheyennecity.org",
       "structure_type": "surface_lot"
-    },
-    {
-      "id": "chy-regional-medical",
-      "name": "Cheyenne Regional Medical Center",
-      "addr": "214 E 23rd St",
-      "lat": 41.1398,
-      "lng": -104.812,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "cheyenneregional.org"
     },
     {
       "id": "chy-vic-farms-rv",

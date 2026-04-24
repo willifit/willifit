@@ -147,18 +147,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "tol-toledo-hospital",
-      "name": "ProMedica Toledo Hospital",
-      "addr": "1 Promedica Pkwy",
-      "lat": 41.6664,
-      "lng": -83.5885,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital complex.",
-      "source": "promedica.org"
-    },
-    {
       "id": "tol-promedica-hq",
       "name": "ProMedica Headquarters (Steam Plant)",
       "addr": "100 N Summit St",

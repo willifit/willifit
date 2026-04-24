@@ -196,22 +196,6 @@
       "entrance_source": "OSM parking_entrance node 13720546307"
     },
     {
-      "id": "osm-w199900252",
-      "name": "Collins Aerospace Employee Parking",
-      "addr": "",
-      "lat": 38.97536,
-      "lng": -76.54992,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 38.9754499,
-      "entrance_lng": -76.5519609,
-      "entrance_source": "OSM parking_entrance node 13575185180",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w199900257",
       "name": "Collins Aerospace Visitor Parking",
       "addr": "",
@@ -465,19 +449,6 @@
       "entrance_lat": 38.9901574,
       "entrance_lng": -76.5377922,
       "entrance_source": "OSM parking_entrance node 2383882491"
-    },
-    {
-      "id": "osm-w259004558",
-      "name": "Saint Mary Catholic Church",
-      "addr": "",
-      "lat": 38.97435,
-      "lng": -76.48867,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w259004560",
@@ -822,19 +793,6 @@
       "pano_heading": 135
     },
     {
-      "id": "osm-w813252484",
-      "name": "Bay Ridge Christian Church",
-      "addr": "",
-      "lat": 38.94228,
-      "lng": -76.48085,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "36 spaces",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w854477013",
       "name": "USCG",
       "addr": "",
@@ -871,32 +829,6 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w958054750",
-      "name": "Saint John Neumann Catholic Church",
-      "addr": "",
-      "lat": 38.99844,
-      "lng": -76.52223,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w958054751",
-      "name": "Saint John Neumann Catholic Church",
-      "addr": "",
-      "lat": 38.99815,
-      "lng": -76.52052,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1000559641",
@@ -1012,45 +944,6 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1431039870",
-      "name": "Saint Andrew by the Bay Catholic Church",
-      "addr": "",
-      "lat": 39.03155,
-      "lng": -76.44886,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1435383946",
-      "name": "Our Lady of Perpetual Help Catholic Church",
-      "addr": "",
-      "lat": 38.91163,
-      "lng": -76.53982,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1435383947",
-      "name": "Our Lady of Perpetual Help Catholic Church",
-      "addr": "",
-      "lat": 38.91072,
-      "lng": -76.53979,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1481197623",

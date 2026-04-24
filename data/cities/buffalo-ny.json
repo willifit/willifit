@@ -100,21 +100,6 @@
       "entrance_source": "OSM parking_entrance node 11041777570"
     },
     {
-      "id": "buf-city-hall",
-      "name": "City Hall / Niagara Square Lots",
-      "addr": "65 Niagara Sq",
-      "lat": 42.8864,
-      "lng": -78.8789,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Civic center lots.",
-      "source": "buffalony.gov",
-      "entrance_lat": 42.8852723,
-      "entrance_lng": -78.879685,
-      "entrance_source": "OSM parking_entrance node 11205994139"
-    },
-    {
       "id": "buf-darwin-martin",
       "name": "Frank Lloyd Wright Darwin Martin House",
       "addr": "125 Jewett Pkwy",

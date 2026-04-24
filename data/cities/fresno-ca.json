@@ -98,21 +98,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "fre-city-hall",
-      "name": "Fresno City Hall Garage",
-      "addr": "2600 Fresno St",
-      "lat": 36.7374,
-      "lng": -119.7884,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Downtown civic garage.",
-      "source": "fresno.gov",
-      "entrance_lat": 36.7371516,
-      "entrance_lng": -119.7886012,
-      "entrance_source": "OSM parking_entrance node 9873878053"
-    },
-    {
       "id": "fre-fulton-mall",
       "name": "Fulton Street Mall Lots",
       "addr": "1101 Fulton St",
@@ -276,18 +261,6 @@
       "source": "fresnostate.edu"
     },
     {
-      "id": "fre-crmc-hospital",
-      "name": "Community Regional Medical Center",
-      "addr": "2823 Fresno St",
-      "lat": 36.7485,
-      "lng": -119.7867,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Main trauma hospital visitor garage.",
-      "source": "communitymedical.org"
-    },
-    {
       "id": "fre-shields-blackstone",
       "name": "Shields & Blackstone Plaza",
       "addr": "Shields Ave & Blackstone Ave",
@@ -327,18 +300,6 @@
       "entrance_lng": -119.7911202,
       "entrance_source": "OSM parking_entrance node 12042045680",
       "structure_type": "surface_lot"
-    },
-    {
-      "id": "fre-st-agnes-hospital",
-      "name": "Saint Agnes Medical Center",
-      "addr": "1303 E Herndon Ave",
-      "lat": 36.8347,
-      "lng": -119.7747,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "samc.com"
     }
   ],
   "tunnels": [

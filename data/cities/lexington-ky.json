@@ -184,18 +184,6 @@
       "pano_heading": 0
     },
     {
-      "id": "lex-uk-medical-ctr",
-      "name": "UK HealthCare \u2014 Chandler Medical Center",
-      "addr": "800 Rose St",
-      "lat": 38.0305,
-      "lng": -84.5087,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "ukhealthcare.uky.edu"
-    },
-    {
       "id": "lex-kroger-field",
       "name": "Kroger Field (UK Football)",
       "addr": "1540 University Dr",

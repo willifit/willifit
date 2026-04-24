@@ -321,21 +321,6 @@
       "source": "pennmedicine.org"
     },
     {
-      "id": "phl-chop-garage",
-      "name": "Children's Hospital of Philadelphia (CHOP)",
-      "addr": "3401 Civic Center Blvd",
-      "lat": 39.9478,
-      "lng": -75.1947,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "CHOP visitor garage.",
-      "source": "Needs verification",
-      "entrance_lat": 39.948209,
-      "entrance_lng": -75.1951652,
-      "entrance_source": "OSM parking_entrance node 1644860081"
-    },
-    {
       "id": "phl-drexel-garage",
       "name": "Drexel \u2014 Gerri C. LeBow Hall Garage",
       "addr": "3220 Market St",
@@ -466,33 +451,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "Kob751ejtWUa_Y41sQLm_A",
       "pano_heading": 180
-    },
-    {
-      "id": "phl-city-hall-muny",
-      "name": "Municipal Services Building Garage",
-      "addr": "1401 JFK Blvd",
-      "lat": 39.953,
-      "lng": -75.165,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City Hall area garage.",
-      "source": "Needs verification",
-      "entrance_lat": 39.9518869,
-      "entrance_lng": -75.1665684,
-      "entrance_source": "OSM parking_entrance node 7417069061"
-    },
-    {
-      "id": "phl-temple-garage",
-      "name": "Temple University \u2014 Main Campus Garage",
-      "addr": "1859 N 12th St",
-      "lat": 39.9809,
-      "lng": -75.1567,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Temple University main campus visitor garage.",
-      "source": "temple.edu"
     },
     {
       "id": "phl-south-st-head",

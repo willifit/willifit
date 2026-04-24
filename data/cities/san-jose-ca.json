@@ -28,21 +28,6 @@
       "source": "sapcenter.com"
     },
     {
-      "id": "sjc-city-hall",
-      "name": "San Jose City Hall Garage",
-      "addr": "4th & San Fernando St",
-      "lat": 37.3382,
-      "lng": -121.8855,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City-owned. Clearance needs verification.",
-      "source": "sanjoseca.gov",
-      "entrance_lat": 37.3376418,
-      "entrance_lng": -121.8851627,
-      "entrance_source": "OSM parking_entrance node 3622788317"
-    },
-    {
       "id": "sjc-2nd-san-carlos",
       "name": "2nd & San Carlos Garage",
       "addr": "45 E San Carlos St",

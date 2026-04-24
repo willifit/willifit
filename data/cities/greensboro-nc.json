@@ -216,19 +216,6 @@
       "source": "greensboroscience.org"
     },
     {
-      "id": "grb-guilford-battleground",
-      "name": "Guilford Courthouse National Military Park",
-      "addr": "2332 New Garden Rd",
-      "lat": 36.1289,
-      "lng": -79.8454,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "notes": "NPS Rev War battlefield.",
-      "source": "nps.gov/guco",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "grb-bog-garden",
       "name": "Bog Garden / Bicentennial Garden",
       "addr": "1101 Hobbs Rd",
@@ -266,18 +253,6 @@
       "entrance_lat": 36.0742159,
       "entrance_lng": -79.7728701,
       "entrance_source": "OSM parking_entrance node 9969312548"
-    },
-    {
-      "id": "grb-lewis-greensboro-hosp",
-      "name": "Moses Cone Hospital",
-      "addr": "1200 N Elm St",
-      "lat": 36.0926,
-      "lng": -79.7914,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Major Cone Health hospital.",
-      "source": "conehealth.com"
     },
     {
       "id": "grb-carolina-theatre",

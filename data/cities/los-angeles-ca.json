@@ -792,21 +792,6 @@
       "entrance_source": "OSM parking_entrance node 8416416064"
     },
     {
-      "id": "osm-w24684577",
-      "name": "Chapel Parking Structure",
-      "addr": "103 North Chapel Avenue",
-      "lat": 34.09716,
-      "lng": -118.12478,
-      "height_in": 137,
-      "height_label": "11'5\"",
-      "oversized": false,
-      "notes": "293 spaces",
-      "source": "OpenStreetMap",
-      "entrance_lat": 34.0971299,
-      "entrance_lng": -118.1243615,
-      "entrance_source": "OSM parking_entrance node 12787167341"
-    },
-    {
       "id": "osm-w27208801",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2961,21 +2946,6 @@
       "entrance_source": "OSM parking_entrance node 9956626394"
     },
     {
-      "id": "osm-w431671572",
-      "name": "Hospital Parking",
-      "addr": "",
-      "lat": 34.21852,
-      "lng": -118.42922,
-      "height_in": 142,
-      "height_label": "11'10\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 34.218072,
-      "entrance_lng": -118.4291986,
-      "entrance_source": "OSM parking_entrance node 7106276299"
-    },
-    {
       "id": "osm-w431672551",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3315,21 +3285,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w441460169",
-      "name": "Parking structure for Visitors, Employee, Volunteers",
-      "addr": "",
-      "lat": 33.8067,
-      "lng": -118.18785,
-      "height_in": 233,
-      "height_label": "19'5\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8071043,
-      "entrance_lng": -118.1880654,
-      "entrance_source": "OSM parking_entrance node 7200447368"
-    },
-    {
       "id": "osm-w441464328",
       "name": "AmeriFleet Transportation Suite 350",
       "addr": "",
@@ -3640,18 +3595,6 @@
       "lng": -118.03651,
       "height_in": 84,
       "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w471618286",
-      "name": "Hospital Employee Parking",
-      "addr": "",
-      "lat": 34.09994,
-      "lng": -118.10635,
-      "height_in": 134,
-      "height_label": "11'2\"",
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"

@@ -1,5 +1,84 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n7317557706",
+      "name": "Steamboat Park Campground",
+      "addr": "825 Taylor Street",
+      "lat": 42.93703,
+      "lng": -85.80024,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w329934211",
+      "name": "Carpool Lot",
+      "addr": "",
+      "lat": 42.85397,
+      "lng": -85.54076,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (86 spaces). 86 spaces. Free parking. Operator: MDOT.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w381251299",
+      "name": "Woodchip Campground",
+      "addr": "7501 Burlingame Avenue Southwest",
+      "lat": 42.82887,
+      "lng": -85.70444,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w484615253",
+      "name": "M6 Car Pool Lot - 8th St.",
+      "addr": "4450 8th Avenue",
+      "lat": 42.85093,
+      "lng": -85.80135,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (70 spaces). 70 spaces. Operator: Michigan Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w841512199",
+      "name": "MDOT Park & Ride - Kentwood",
+      "addr": "3250 Deposit Drive Northeast",
+      "lat": 42.97151,
+      "lng": -85.58928,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (161 spaces). 161 spaces. Free parking. Operator: Michigan Department of Transportation.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1249966942",
+      "name": "City Of Wyoming Parks and Recreation",
+      "addr": "",
+      "lat": 42.8631,
+      "lng": -85.71218,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (113 spaces). 113 spaces. Operator: City Of Wyoming Parks and Recreation.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

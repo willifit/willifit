@@ -61,21 +61,6 @@
       "entrance_source": "OSM parking_entrance node 10147928309"
     },
     {
-      "id": "slc-temple-square",
-      "name": "Temple Square Public Garage",
-      "addr": "50 W North Temple",
-      "lat": 40.7706,
-      "lng": -111.8917,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Under Conference Center. LDS Temple Square access.",
-      "source": "templesquare.com",
-      "entrance_lat": 40.7711667,
-      "entrance_lng": -111.8911656,
-      "entrance_source": "OSM parking_entrance node 11238107890"
-    },
-    {
       "id": "slc-utah-state-capitol",
       "name": "Utah State Capitol Lots",
       "addr": "350 N State St",

@@ -614,18 +614,6 @@
       "entrance_source": "OSM parking_entrance node 8261122870"
     },
     {
-      "id": "nyc-brooklyn-navy",
-      "name": "Brooklyn Navy Yard Public Garage",
-      "addr": "Clinton Ave & Flushing Ave",
-      "lat": 40.6972,
-      "lng": -73.974,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Serves Brooklyn Navy Yard campus.",
-      "source": "Needs verification"
-    },
-    {
       "id": "nyc-atlantic-term",
       "name": "Atlantic Terminal Mall Garage",
       "addr": "139 Flatbush Ave",

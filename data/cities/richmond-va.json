@@ -136,24 +136,6 @@
       "source": "rva.gov"
     },
     {
-      "id": "rva-vcu-medical",
-      "name": "VCU Medical Center \u2014 Gateway Garage",
-      "addr": "1200 E Marshall St",
-      "lat": 37.5402,
-      "lng": -77.4281,
-      "height_in": 72,
-      "height_label": "6'0\"",
-      "oversized": false,
-      "notes": "Hospital complex.\nVerified 2026-04-23 from sign reading \"6 Enter\" (pano V2a3LX6L1WiFNOHL0KKd0w, heading 90\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: vcuhealth.org",
-      "entrance_lat": 37.5404717,
-      "entrance_lng": -77.4285798,
-      "entrance_source": "OSM parking_entrance node 7682639018",
-      "verified_on": "2026-04-23",
-      "pano_id": "V2a3LX6L1WiFNOHL0KKd0w",
-      "pano_heading": 90
-    },
-    {
       "id": "rva-vcu-monroe-park",
       "name": "VCU \u2014 Monroe Park Campus Deck",
       "addr": "601 W Main St",
@@ -288,19 +270,6 @@
       "oversized": false,
       "notes": "Historic estate + zoo.",
       "source": "maymont.org",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "rva-church-hill",
-      "name": "Church Hill / St John's Lots",
-      "addr": "2401 E Broad St",
-      "lat": 37.5342,
-      "lng": -77.4196,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Historic neighborhood street parking.",
-      "source": "Needs verification",
       "structure_type": "surface_lot"
     },
     {

@@ -114,22 +114,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "sba-courthouse",
-      "name": "Santa Barbara County Courthouse Lots",
-      "addr": "1100 Anacapa St",
-      "lat": 34.4245,
-      "lng": -119.702,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Historic Spanish-Moorish courthouse.",
-      "source": "santabarbaracourthouse.org",
-      "entrance_lat": 34.4236807,
-      "entrance_lng": -119.7029215,
-      "entrance_source": "OSM parking_entrance node 9405872493",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "sba-mission",
       "name": "Old Mission Santa Barbara",
       "addr": "2201 Laguna St",
@@ -277,21 +261,6 @@
       "notes": "UCSB campus.",
       "source": "tps.ucsb.edu",
       "structure_type": "surface_lot"
-    },
-    {
-      "id": "sba-cottage-hospital",
-      "name": "Cottage Health \u2014 Santa Barbara Cottage Hospital",
-      "addr": "400 W Pueblo St",
-      "lat": 34.4273,
-      "lng": -119.7103,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "cottagehealth.org",
-      "entrance_lat": 34.4261018,
-      "entrance_lng": -119.7099421,
-      "entrance_source": "OSM parking_entrance node 5185212550"
     },
     {
       "id": "sba-el-capitan-state-beach",

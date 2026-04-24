@@ -97,24 +97,6 @@
       "pano_heading": 0
     },
     {
-      "id": "dur-church-st",
-      "name": "Church Street Garage",
-      "addr": "200 N Church St",
-      "lat": 35.9974,
-      "lng": -78.9003,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "City-owned.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ikpSGRkmD9ytdH0mb6ofwQ, heading 180\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: durhamnc.gov",
-      "entrance_lat": 35.9968468,
-      "entrance_lng": -78.8999135,
-      "entrance_source": "OSM parking_entrance node 795894330",
-      "verified_on": "2026-04-23",
-      "pano_id": "ikpSGRkmD9ytdH0mb6ofwQ",
-      "pano_heading": 180
-    },
-    {
       "id": "dur-durham-centre",
       "name": "Durham Centre Garage",
       "addr": "300 Morris St",
@@ -131,24 +113,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "qa1f1xBvWlh47zBCI21jwQ",
       "pano_heading": 0
-    },
-    {
-      "id": "dur-city-hall",
-      "name": "City Hall Garage",
-      "addr": "101 City Hall Plaza",
-      "lat": 35.996,
-      "lng": -78.9035,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "City-owned.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano ffxBgggdmrQgLtGXa1UTRw, heading 45\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: durhamnc.gov",
-      "entrance_lat": 35.9956641,
-      "entrance_lng": -78.9027913,
-      "entrance_source": "OSM parking_entrance node 2340036319",
-      "verified_on": "2026-04-23",
-      "pano_id": "ffxBgggdmrQgLtGXa1UTRw",
-      "pano_heading": 45
     },
     {
       "id": "dur-bull-city-garage",
@@ -174,19 +138,6 @@
       "oversized": false,
       "notes": "Duke visitor parking. Chapel + museums access.",
       "source": "parking.duke.edu"
-    },
-    {
-      "id": "dur-duke-chapel",
-      "name": "Duke Chapel Lot",
-      "addr": "Chapel Dr",
-      "lat": 36.0013,
-      "lng": -78.94,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Iconic campus landmark.",
-      "source": "chapel.duke.edu",
-      "structure_type": "surface_lot"
     },
     {
       "id": "dur-cameron-indoor",
@@ -387,30 +338,6 @@
       "notes": "HBCU campus.",
       "source": "nccu.edu",
       "structure_type": "surface_lot"
-    },
-    {
-      "id": "dur-north-hills",
-      "name": "Patterson Place / Southern Village (Chapel Hill adj)",
-      "addr": "Pinehurst Dr, Chapel Hill",
-      "lat": 35.8933,
-      "lng": -79.034,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Chapel Hill adjacent retail.",
-      "source": "Needs verification"
-    },
-    {
-      "id": "dur-unc-ch-campus",
-      "name": "UNC Chapel Hill \u2014 Rams Head Deck (~12mi SW)",
-      "addr": "215 Ridge Rd, Chapel Hill",
-      "lat": 35.9108,
-      "lng": -79.0413,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UNC visitor parking (Chapel Hill is separate town).",
-      "source": "move.unc.edu"
     },
     {
       "id": "rdu-airport-dur",

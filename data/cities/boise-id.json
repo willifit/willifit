@@ -166,21 +166,6 @@
       "source": "boisestate.edu"
     },
     {
-      "id": "boi-st-lukes",
-      "name": "St. Luke's Boise Medical Center",
-      "addr": "190 E Bannock St",
-      "lat": 43.619,
-      "lng": -116.1973,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "stlukesonline.org",
-      "entrance_lat": 43.6189269,
-      "entrance_lng": -116.1976101,
-      "entrance_source": "OSM parking_entrance node 8987039970"
-    },
-    {
       "id": "boi-8th-idaho",
       "name": "8th & Idaho Garage",
       "addr": "760 W Idaho St",

@@ -159,24 +159,6 @@
       "source": "iconparkorlando.com"
     },
     {
-      "id": "orl-downtown-church-st",
-      "name": "Church Street Garage",
-      "addr": "55 W Church St",
-      "lat": 28.54,
-      "lng": -81.3818,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "Downtown Orlando.\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano A3yVanwWeXUEpVneyj9u8A, heading 180\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: cityoforlando.net",
-      "entrance_lat": 28.5401895,
-      "entrance_lng": -81.379927,
-      "entrance_source": "OSM parking_entrance node 10142264443",
-      "verified_on": "2026-04-23",
-      "pano_id": "A3yVanwWeXUEpVneyj9u8A",
-      "pano_heading": 180
-    },
-    {
       "id": "orl-kia-ctr",
       "name": "Kia Center (Magic) Garage",
       "addr": "400 W Church St",

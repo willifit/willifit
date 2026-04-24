@@ -58,21 +58,6 @@
       "entrance_source": "OSM parking_entrance node 10282577907"
     },
     {
-      "id": "elp-city-hall",
-      "name": "City Hall / Police Garage",
-      "addr": "300 N Campbell St",
-      "lat": 31.7606,
-      "lng": -106.4858,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City-owned.",
-      "source": "elpasotexas.gov",
-      "entrance_lat": 31.7610039,
-      "entrance_lng": -106.4865699,
-      "entrance_source": "OSM parking_entrance node 11786626807"
-    },
-    {
       "id": "elp-mills-plaza",
       "name": "Mills Plaza / Blue Flame Building",
       "addr": "115 N Mesa St",

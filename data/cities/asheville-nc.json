@@ -268,18 +268,6 @@
       "source": "unca.edu"
     },
     {
-      "id": "ash-mission-hospital",
-      "name": "Mission Hospital Garage",
-      "addr": "509 Biltmore Ave",
-      "lat": 35.5784,
-      "lng": -82.5444,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "mission-health.org"
-    },
-    {
       "id": "ash-chimney-rock-sp",
       "name": "Chimney Rock State Park",
       "addr": "431 Main St, Chimney Rock",

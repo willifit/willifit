@@ -73,21 +73,6 @@
       "source": "njtransit.com"
     },
     {
-      "id": "nwk-military-park",
-      "name": "Military Park Garage",
-      "addr": "51 Park Pl",
-      "lat": 40.739,
-      "lng": -74.1725,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Underground Military Park garage.",
-      "source": "militarypark.nj",
-      "entrance_lat": 40.7402895,
-      "entrance_lng": -74.1709391,
-      "entrance_source": "OSM parking_entrance node 11738079727"
-    },
-    {
       "id": "nwk-raymond-plaza",
       "name": "Raymond Plaza Garage",
       "addr": "115 Mulberry St",
@@ -154,18 +139,6 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former Newark Bears stadium.",
-      "source": "Needs verification"
-    },
-    {
-      "id": "nwk-science-park-high",
-      "name": "Science Park High School Lot",
-      "addr": "260 Norfolk St",
-      "lat": 40.7495,
-      "lng": -74.1815,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Urban school campus.",
       "source": "Needs verification"
     },
     {

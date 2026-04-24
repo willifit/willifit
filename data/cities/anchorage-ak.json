@@ -147,33 +147,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "anc-providence-med",
-      "name": "Providence Alaska Medical Center",
-      "addr": "3200 Providence Dr",
-      "lat": 61.1881,
-      "lng": -149.8262,
-      "height_in": 78,
-      "height_label": "6'6\"",
-      "oversized": false,
-      "notes": "Hospital visitor garage.\nVerified 2026-04-23 from sign reading \"21FT 6IN\" (pano CFIlBFyrN8gCXmF5wFoNfA, heading 45\u00b0, Claude confidence high [+1 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: providence.org/alaska",
-      "verified_on": "2026-04-23",
-      "pano_id": "CFIlBFyrN8gCXmF5wFoNfA",
-      "pano_heading": 45,
-      "sections": [
-        {
-          "label": "Lane 1",
-          "height_in": 78,
-          "height_label": "6'6\""
-        },
-        {
-          "label": "Lane 2",
-          "height_in": 120,
-          "height_label": "10'0\""
-        }
-      ]
-    },
-    {
       "id": "anc-alaska-zoo",
       "name": "Alaska Zoo",
       "addr": "4731 O'Malley Rd",

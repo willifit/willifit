@@ -142,18 +142,6 @@
       "entrance_source": "OSM parking_entrance node 13750502472"
     },
     {
-      "id": "stp-cathedral",
-      "name": "Cathedral of St. Paul Lot",
-      "addr": "239 Selby Ave",
-      "lat": 44.9453,
-      "lng": -93.1106,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Cathedral Hill.",
-      "source": "cathedralsaintpaul.org"
-    },
-    {
       "id": "stp-como-park",
       "name": "Como Park Zoo & Conservatory",
       "addr": "1225 Estabrook Dr",

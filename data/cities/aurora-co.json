@@ -1,18 +1,6 @@
 {
   "garages": [
     {
-      "id": "aur-aurora-city-pl",
-      "name": "Aurora Municipal Center Lot",
-      "addr": "15151 E Alameda Pkwy",
-      "lat": 39.7093,
-      "lng": -104.8308,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "City Hall.",
-      "source": "auroragov.org"
-    },
-    {
       "id": "aur-anschutz-med",
       "name": "Anschutz Medical Campus (CU Hospital)",
       "addr": "1635 N Aurora Ct",
@@ -23,33 +11,6 @@
       "oversized": false,
       "notes": "Major medical campus + UCHealth.",
       "source": "cuanschutz.edu"
-    },
-    {
-      "id": "aur-childrens-hospital",
-      "name": "Children's Hospital Colorado Garage",
-      "addr": "13123 E 16th Ave",
-      "lat": 39.7449,
-      "lng": -104.8373,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Anschutz Medical Campus.",
-      "source": "childrenscolorado.org"
-    },
-    {
-      "id": "aur-va-medical",
-      "name": "Rocky Mountain VA Medical Center",
-      "addr": "1700 N Wheeling St",
-      "lat": 39.7432,
-      "lng": -104.8443,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "VA hospital.",
-      "source": "va.gov",
-      "entrance_lat": 39.7422797,
-      "entrance_lng": -104.843956,
-      "entrance_source": "OSM parking_entrance node 2984035667"
     },
     {
       "id": "aur-southlands-mall",
@@ -182,18 +143,6 @@
       "oversized": false,
       "notes": "Community college.",
       "source": "ccaurora.edu"
-    },
-    {
-      "id": "aur-stadium-medical-center-of",
-      "name": "Medical Center of Aurora \u2014 South",
-      "addr": "1501 S Potomac St",
-      "lat": 39.6829,
-      "lng": -104.8278,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "auroramed.com"
     },
     {
       "id": "aur-saddle-rock-golf",

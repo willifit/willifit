@@ -193,18 +193,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "jc-jersey-city-medical",
-      "name": "Jersey City Medical Center",
-      "addr": "355 Grand St",
-      "lat": 40.714,
-      "lng": -74.0498,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "rwjbh.org"
-    },
-    {
       "id": "jc-st-peters-univ",
       "name": "Saint Peter's University Visitor Lot",
       "addr": "2641 John F Kennedy Blvd",

@@ -127,18 +127,6 @@
       "entrance_source": "OSM parking_entrance node 12836696946"
     },
     {
-      "id": "arl-livinglight-ctr",
-      "name": "Living Light Church & Convention",
-      "addr": "1099 N Great SW Pkwy",
-      "lat": 32.7594,
-      "lng": -97.1196,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Private venue. Surface lots.",
-      "source": "Needs verification"
-    },
-    {
       "id": "arl-parks-mall",
       "name": "The Parks Mall at Arlington",
       "addr": "3811 S Cooper St",

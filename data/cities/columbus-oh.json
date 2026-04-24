@@ -112,21 +112,6 @@
       "entrance_source": "OSM parking_entrance node 2394202047"
     },
     {
-      "id": "col-city-hall",
-      "name": "City Hall Garage",
-      "addr": "90 W Broad St",
-      "lat": 39.9628,
-      "lng": -83.0017,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City-owned.",
-      "source": "Needs verification",
-      "entrance_lat": 39.9611547,
-      "entrance_lng": -83.0020962,
-      "entrance_source": "OSM parking_entrance node 5836792861"
-    },
-    {
       "id": "col-franklin-park",
       "name": "Franklin Park Conservatory Lot",
       "addr": "1777 E Broad St",

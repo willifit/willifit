@@ -1,5 +1,58 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w148902786",
+      "name": "Old York Road Lot",
+      "addr": "121 West Union Boulevard",
+      "lat": 40.62484,
+      "lng": -75.38402,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: Bethlehem Parking Authority.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w153319059",
+      "name": "Best Western",
+      "addr": "",
+      "lat": 40.59222,
+      "lng": -75.58641,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces. Operator: Best Western.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w266910008",
+      "name": "Lehigh Street Lot",
+      "addr": "123 West Lehigh Street",
+      "lat": 40.61662,
+      "lng": -75.38394,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (87 spaces). 87 spaces. Paid parking. Operator: Bethlehem Parking Authority.",
+      "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w1279549379",
+      "name": "Bus Parking Lot",
+      "addr": "",
+      "lat": 40.61659,
+      "lng": -75.35694,
+      "height_in": null,
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "structure_type": "surface_lot",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus'). Operator: Wind Creek Bethlehem.",
+      "source": "OpenStreetMap (surface lot)"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {

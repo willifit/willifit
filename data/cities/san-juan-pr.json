@@ -403,18 +403,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w259684867",
-      "name": "Hospital San Jorge",
-      "addr": "Calle del Parque",
-      "lat": 18.44754,
-      "lng": -66.06372,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w260045401",
       "name": "Unnamed parking structure",
       "addr": "Calle Navas",
@@ -1162,18 +1150,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w333374798",
-      "name": "Hospital San Jorge",
-      "addr": "Calle San Jorge",
-      "lat": 18.44589,
-      "lng": -66.06316,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "paid",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w333993680",
       "name": "Parking Iglesia San Jorge",
       "addr": "",
@@ -1828,18 +1804,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w439239995",
-      "name": "APS Faculty Parking",
-      "addr": "",
-      "lat": 18.45456,
-      "lng": -66.08443,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w440269103",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2179,18 +2143,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "9 spaces",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w535694872",
-      "name": "Estacionamiento Municipal de La Puntilla",
-      "addr": "",
-      "lat": 18.44159,
-      "lng": -66.11647,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
     {
@@ -2724,18 +2676,6 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1427685513",
-      "name": "Nirvana Health Clinic",
-      "addr": "",
-      "lat": 18.41897,
-      "lng": -66.05747,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },

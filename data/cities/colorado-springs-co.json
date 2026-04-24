@@ -16,21 +16,6 @@
       "entrance_source": "OSM parking_entrance node 12102838827"
     },
     {
-      "id": "cos-downtown-city-hall",
-      "name": "Downtown \u2014 City Hall / Kiowa Lot",
-      "addr": "107 N Nevada Ave",
-      "lat": 38.8346,
-      "lng": -104.8213,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Municipal garage.",
-      "source": "coloradosprings.gov",
-      "entrance_lat": 38.8350249,
-      "entrance_lng": -104.8213963,
-      "entrance_source": "OSM parking_entrance node 12102838827"
-    },
-    {
       "id": "cos-downtown-plaza",
       "name": "Plaza of the Rockies Garage",
       "addr": "121 S Tejon St",

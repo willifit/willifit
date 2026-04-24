@@ -189,19 +189,6 @@
       "source": "sandlercenter.org"
     },
     {
-      "id": "vb-military-aviation",
-      "name": "Military Aviation Museum",
-      "addr": "1341 Princess Anne Rd",
-      "lat": 36.697,
-      "lng": -76.0319,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "notes": "Southern VB. Surface lot.",
-      "source": "militaryaviationmuseum.org",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "vb-contemporary-art",
       "name": "Virginia MOCA (Contemporary Art)",
       "addr": "2200 Parks Ave",
@@ -429,36 +416,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "v8XusjSAlkT6d4_3JdA9sg",
       "pano_heading": 90
-    },
-    {
-      "id": "osm-w402400559",
-      "name": "9th Street Municipal Parking Deck",
-      "addr": "812 Atlantic Avenue",
-      "lat": 36.83709,
-      "lng": -75.97264,
-      "height_in": 75,
-      "height_label": "6'3\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6'3\"\" (pano DixuJp6cm31cFcDYVElMfg, heading 270\u00b0, Claude confidence medium [+1 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 36.8368546,
-      "entrance_lng": -75.9721407,
-      "entrance_source": "OSM parking_entrance node 12305488705",
-      "verified_on": "2026-04-23",
-      "pano_id": "DixuJp6cm31cFcDYVElMfg",
-      "pano_heading": 270,
-      "sections": [
-        {
-          "label": "Parking",
-          "height_in": 75,
-          "height_label": "6'3\""
-        },
-        {
-          "label": "Parking",
-          "height_in": 84,
-          "height_label": "7'0\""
-        }
-      ]
     },
     {
       "id": "osm-w402400761",

@@ -275,21 +275,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "oma-nebraska-med",
-      "name": "Nebraska Medicine Hospital Garage",
-      "addr": "4400 Emile St",
-      "lat": 41.256,
-      "lng": -95.9777,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UNMC medical center.",
-      "source": "nebraskamed.com",
-      "entrance_lat": 41.2557187,
-      "entrance_lng": -95.978541,
-      "entrance_source": "OSM parking_entrance node 13166947397"
-    },
-    {
       "id": "oma-west-dodge-station",
       "name": "West Dodge Park & Ride",
       "addr": "17600 West Dodge Rd",

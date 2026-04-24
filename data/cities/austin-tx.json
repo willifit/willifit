@@ -256,18 +256,6 @@
       "source": "austintexas.gov"
     },
     {
-      "id": "atx-dell-med",
-      "name": "Dell Seton Medical Center \u2014 UT Garage",
-      "addr": "1500 Red River St",
-      "lat": 30.2792,
-      "lng": -97.7309,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "Needs verification"
-    },
-    {
       "id": "atx-airport-garage",
       "name": "AUS Bergstrom \u2014 Economy Garage",
       "addr": "3600 Presidential Blvd",
