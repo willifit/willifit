@@ -184,18 +184,6 @@
       "source": "cainsballroom.com"
     },
     {
-      "id": "tul-tu",
-      "name": "University of Tulsa \u2014 Collins Fitness Center Lot",
-      "addr": "3300 E 8th St",
-      "lat": 36.1529,
-      "lng": -95.9452,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "TU visitor parking.",
-      "source": "utulsa.edu"
-    },
-    {
       "id": "tul-turkey-mtn",
       "name": "Turkey Mountain Urban Wilderness",
       "addr": "6850 S Elwood Ave",

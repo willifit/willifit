@@ -343,21 +343,6 @@
       "source": "nps.gov/sagu"
     },
     {
-      "id": "tus-banner-umc-tucson",
-      "name": "Banner \u2014 University Medical Center Garage",
-      "addr": "1501 N Campbell Ave",
-      "lat": 32.2396,
-      "lng": -110.944,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hospital visitor garage.",
-      "source": "bannerhealth.com",
-      "entrance_lat": 32.2393516,
-      "entrance_lng": -110.9451755,
-      "entrance_source": "OSM parking_entrance node 392665257"
-    },
-    {
       "id": "tus-reid-park",
       "name": "Reid Park Lots",
       "addr": "900 S Randolph Way",

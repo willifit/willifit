@@ -383,18 +383,6 @@
       "entrance_source": "OSM parking_entrance node 8473858477"
     },
     {
-      "id": "hou-rice-univ",
-      "name": "Rice University \u2014 Central Campus Garage",
-      "addr": "6100 Main St",
-      "lat": 29.7179,
-      "lng": -95.4018,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "University visitor parking.",
-      "source": "parking.rice.edu"
-    },
-    {
       "id": "hou-highland-village",
       "name": "Highland Village Shopping Center",
       "addr": "4055 Westheimer Rd",

@@ -235,21 +235,6 @@
       "source": "howard.edu"
     },
     {
-      "id": "dc-gw-univ",
-      "name": "GW University \u2014 University Parking Garage",
-      "addr": "2211 H St NW",
-      "lat": 38.8998,
-      "lng": -77.0472,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "George Washington Univ. visitor garage.",
-      "source": "gwu.edu",
-      "entrance_lat": 38.8997017,
-      "entrance_lng": -77.0474703,
-      "entrance_source": "OSM parking_entrance node 3382119818"
-    },
-    {
       "id": "dc-tysons-corner",
       "name": "Tysons Corner Center (VA)",
       "addr": "1961 Chain Bridge Rd, McLean VA",
@@ -386,21 +371,6 @@
       "entrance_lat": 38.9952079,
       "entrance_lng": -76.9441343,
       "entrance_source": "OSM parking_entrance node 6550214815"
-    },
-    {
-      "id": "osm-w24305863",
-      "name": "UMGC/University College Garage",
-      "addr": "7951 Ehrensberger Drive",
-      "lat": 38.98701,
-      "lng": -76.9545,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 38.9873489,
-      "entrance_lng": -76.9542066,
-      "entrance_source": "OSM parking_entrance node 6559039538"
     },
     {
       "id": "osm-w153515337",

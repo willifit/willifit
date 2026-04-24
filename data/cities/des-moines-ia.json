@@ -199,18 +199,6 @@
       "source": "dmbotanicalgarden.com"
     },
     {
-      "id": "dsm-drake-univ",
-      "name": "Drake University Lots",
-      "addr": "2507 University Ave",
-      "lat": 41.6011,
-      "lng": -93.651,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Private university.",
-      "source": "drake.edu"
-    },
-    {
       "id": "dsm-living-history-farms",
       "name": "Living History Farms (Urbandale)",
       "addr": "11121 Hickman Rd",

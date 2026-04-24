@@ -196,18 +196,6 @@
       "source": "texasmotorspeedway.com"
     },
     {
-      "id": "ftw-tcu-garage",
-      "name": "TCU \u2014 Campus Garages",
-      "addr": "2800 S University Dr",
-      "lat": 32.7092,
-      "lng": -97.3625,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "TCU visitor parking.",
-      "source": "tcu.edu"
-    },
-    {
       "id": "ftw-dickies-arena",
       "name": "Dickies Arena \u2014 Main Lots",
       "addr": "1911 Montgomery St",

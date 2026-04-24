@@ -128,18 +128,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "dur-duke-westgarage",
-      "name": "Duke University \u2014 Bryan Center Garage",
-      "addr": "125 Science Dr",
-      "lat": 36.0014,
-      "lng": -78.9381,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Duke visitor parking. Chapel + museums access.",
-      "source": "parking.duke.edu"
-    },
-    {
       "id": "dur-cameron-indoor",
       "name": "Cameron Indoor Stadium Lots",
       "addr": "115 Whitford Dr",

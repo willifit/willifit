@@ -327,19 +327,6 @@
       "source": "Needs verification"
     },
     {
-      "id": "lin-unl-east-campus",
-      "name": "UNL \u2014 East Campus Lots",
-      "addr": "2700 Vine St",
-      "lat": 40.8355,
-      "lng": -96.6715,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Ag campus.",
-      "source": "parking.unl.edu",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "lin-lancaster-event-ctr",
       "name": "Lancaster Event Center Fairgrounds",
       "addr": "4100 N 84th St",

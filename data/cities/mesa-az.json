@@ -205,30 +205,6 @@
       "source": "saltrivertubing.com"
     },
     {
-      "id": "mes-community-college",
-      "name": "Mesa Community College \u2014 Southern + Dobson",
-      "addr": "1833 W Southern Ave",
-      "lat": 33.3923,
-      "lng": -111.86,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "MCC main campus.",
-      "source": "mesacc.edu"
-    },
-    {
-      "id": "mes-asu-poly",
-      "name": "ASU \u2014 Polytechnic Campus",
-      "addr": "7001 E Williams Field Rd",
-      "lat": 33.3062,
-      "lng": -111.6772,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "ASU Polytechnic (East Mesa).",
-      "source": "asu.edu"
-    },
-    {
       "id": "mes-las-sendas",
       "name": "Red Mountain Community Center",
       "addr": "7550 E Adobe Rd",

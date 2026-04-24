@@ -380,24 +380,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "osm-w27824178",
-      "name": "Auraria Campus 7th Street Garage",
-      "addr": "777 Lawrence Way",
-      "lat": 39.74339,
-      "lng": -105.00746,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"8'0\" (pano -YmaWOoZaW8wiczYjHSOyA, heading 135\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 39.7436245,
-      "entrance_lng": -105.0071086,
-      "entrance_source": "OSM parking_entrance node 3274582507",
-      "verified_on": "2026-04-23",
-      "pano_id": "-YmaWOoZaW8wiczYjHSOyA",
-      "pano_heading": 135
-    },
-    {
       "id": "osm-w37263005",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -563,21 +545,6 @@
       "pano_heading": 90
     },
     {
-      "id": "osm-w282622307",
-      "name": "University of Denver Station Park-n-Ride",
-      "addr": "",
-      "lat": 39.68452,
-      "lng": -104.96371,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 39.6847433,
-      "entrance_lng": -104.9642439,
-      "entrance_source": "OSM parking_entrance node 7287575814"
-    },
-    {
       "id": "osm-w291998366",
       "name": "Unnamed parking structure",
       "addr": "780 Acoma Street",
@@ -673,41 +640,6 @@
           "label": "Lane 2",
           "height_in": 120,
           "height_label": "10'0\""
-        }
-      ]
-    },
-    {
-      "id": "osm-w320694731",
-      "name": "Auraria Campus 5th Street Garage",
-      "addr": "1351 5th Street",
-      "lat": 39.74313,
-      "lng": -105.01042,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 4SNflEQBKegwwogCEmAgsw, heading 90\u00b0, Claude confidence high [+2 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 39.7429618,
-      "entrance_lng": -105.0107679,
-      "entrance_source": "OSM parking_entrance node 7307679154",
-      "verified_on": "2026-04-23",
-      "pano_id": "4SNflEQBKegwwogCEmAgsw",
-      "pano_heading": 90,
-      "sections": [
-        {
-          "label": "5TH STREET GARAGE",
-          "height_in": 84,
-          "height_label": "7'0\""
-        },
-        {
-          "label": "Entrance",
-          "height_in": 132,
-          "height_label": "11'0\""
-        },
-        {
-          "label": "5TH STREET GARAGE",
-          "height_in": 156,
-          "height_label": "13'0\""
         }
       ]
     },

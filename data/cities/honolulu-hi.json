@@ -244,18 +244,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "hnl-uh-manoa",
-      "name": "University of Hawaii M\u0101noa \u2014 Lower Campus",
-      "addr": "2500 Campus Rd",
-      "lat": 21.3,
-      "lng": -157.8171,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UH M\u0101noa visitor parking structure.",
-      "source": "hawaii.edu"
-    },
-    {
       "id": "hnl-kakaako-ward-village",
       "name": "Ward Village \u2014 South Shore Market",
       "addr": "1240 Ala Moana Blvd",

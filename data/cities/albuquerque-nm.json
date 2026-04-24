@@ -83,18 +83,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "abq-cedro",
-      "name": "University of New Mexico \u2014 Cornell Structure",
-      "addr": "1 University of New Mexico",
-      "lat": 35.0843,
-      "lng": -106.6195,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UNM visitor garage.",
-      "source": "pats.unm.edu"
-    },
-    {
       "id": "abq-uptown-shops",
       "name": "ABQ Uptown Shopping Center",
       "addr": "2200 Uptown Loop NE",

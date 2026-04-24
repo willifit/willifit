@@ -136,21 +136,6 @@
       "source": "rva.gov"
     },
     {
-      "id": "rva-vcu-monroe-park",
-      "name": "VCU \u2014 Monroe Park Campus Deck",
-      "addr": "601 W Main St",
-      "lat": 37.5474,
-      "lng": -77.4516,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "VCU Monroe Park campus.\nVerified 2026-04-23 from sign reading \"CLEARANCE 7'0\"\" (pano SsO_47tnwlgvUUg3Kf9eJQ, heading 270\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: parking.vcu.edu",
-      "verified_on": "2026-04-23",
-      "pano_id": "SsO_47tnwlgvUUg3Kf9eJQ",
-      "pano_heading": 270
-    },
-    {
       "id": "rva-vmfa",
       "name": "Virginia Museum of Fine Arts",
       "addr": "200 N Arthur Ashe Blvd",

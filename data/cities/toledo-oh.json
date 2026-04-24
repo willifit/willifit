@@ -147,21 +147,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "tol-promedica-hq",
-      "name": "ProMedica Headquarters (Steam Plant)",
-      "addr": "100 N Summit St",
-      "lat": 41.6492,
-      "lng": -83.5338,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Adaptive-reuse historic steam plant.",
-      "source": "promedica.org",
-      "entrance_lat": 41.6492533,
-      "entrance_lng": -83.5358049,
-      "entrance_source": "OSM parking_entrance node 8195414872"
-    },
-    {
       "id": "tol-university-of-toledo",
       "name": "University of Toledo \u2014 Main Visitor Lot",
       "addr": "2801 W Bancroft St",

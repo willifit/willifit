@@ -112,18 +112,6 @@
       "entrance_source": "OSM parking_entrance node 8361287111"
     },
     {
-      "id": "det-west-campus",
-      "name": "Wayne State \u2014 West Campus Structure",
-      "addr": "4141 Anthony Wayne Dr",
-      "lat": 42.3547,
-      "lng": -83.0686,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "WSU visitor parking.",
-      "source": "wayne.edu"
-    },
-    {
       "id": "det-eastern-market",
       "name": "Eastern Market Lots",
       "addr": "2934 Russell St",

@@ -202,18 +202,6 @@
       "source": "harley-davidson.com"
     },
     {
-      "id": "mke-marquette",
-      "name": "Marquette University Structure 1",
-      "addr": "1240 W Kilbourn Ave",
-      "lat": 43.0415,
-      "lng": -87.9312,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Marquette visitor parking.",
-      "source": "marquette.edu"
-    },
-    {
       "id": "mke-south-shore",
       "name": "South Shore Park Lot",
       "addr": "2900 S Shore Dr",

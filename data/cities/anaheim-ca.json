@@ -369,21 +369,6 @@
       "oversized": false,
       "notes": "Near Convention Center.",
       "source": "Needs verification"
-    },
-    {
-      "id": "ana-chapman-commons",
-      "name": "Chapman University (Orange) Parking Structure",
-      "addr": "1 University Dr, Orange",
-      "lat": 33.7939,
-      "lng": -117.8517,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Chapman University campus.",
-      "source": "chapman.edu",
-      "entrance_lat": 33.7948531,
-      "entrance_lng": -117.851555,
-      "entrance_source": "OSM parking_entrance node 1933610845"
     }
   ],
   "tunnels": [],

@@ -134,22 +134,6 @@
       "source": "Needs verification"
     },
     {
-      "id": "chs-cofc-main",
-      "name": "College of Charleston \u2014 Main Campus Lot",
-      "addr": "66 George St",
-      "lat": 32.7836,
-      "lng": -79.9373,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "CofC visitor parking.",
-      "source": "cofc.edu",
-      "entrance_lat": 32.783207,
-      "entrance_lng": -79.9362529,
-      "entrance_source": "OSM parking_entrance node 12717115019",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "chs-citadel",
       "name": "The Citadel \u2014 Visitor Lots",
       "addr": "171 Moultrie St",

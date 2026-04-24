@@ -188,19 +188,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "rno-truckee-meadows-community",
-      "name": "Truckee Meadows Community College Lots",
-      "addr": "7000 Dandini Blvd",
-      "lat": 39.6078,
-      "lng": -119.7942,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "North Reno community college.",
-      "source": "tmcc.edu",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "rno-scheels",
       "name": "Scheels Sports (Sparks)",
       "addr": "1200 Scheels Dr, Sparks",

@@ -100,18 +100,6 @@
       "entrance_source": "OSM parking_entrance node 8994212125"
     },
     {
-      "id": "pvd-brown-power-st",
-      "name": "Brown University \u2014 Power Street Garage",
-      "addr": "41 Power St",
-      "lat": 41.8268,
-      "lng": -71.4036,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Brown visitor parking.",
-      "source": "brown.edu"
-    },
-    {
       "id": "pvd-risd-museum",
       "name": "RISD Museum",
       "addr": "224 Benefit St",

@@ -1,18 +1,6 @@
 {
   "garages": [
     {
-      "id": "aur-anschutz-med",
-      "name": "Anschutz Medical Campus (CU Hospital)",
-      "addr": "1635 N Aurora Ct",
-      "lat": 39.7435,
-      "lng": -104.8372,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Major medical campus + UCHealth.",
-      "source": "cuanschutz.edu"
-    },
-    {
       "id": "aur-southlands-mall",
       "name": "Southlands Shopping Center",
       "addr": "6155 S Main St",
@@ -131,18 +119,6 @@
       "oversized": true,
       "notes": "Fishing reservoir.",
       "source": "auroragov.org"
-    },
-    {
-      "id": "aur-community-college",
-      "name": "Community College of Aurora",
-      "addr": "16000 E CentreTech Pkwy",
-      "lat": 39.706,
-      "lng": -104.8159,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Community college.",
-      "source": "ccaurora.edu"
     },
     {
       "id": "aur-saddle-rock-golf",

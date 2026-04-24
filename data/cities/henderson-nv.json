@@ -193,18 +193,6 @@
       "source": "springspreserve.org"
     },
     {
-      "id": "hen-legacy-golf",
-      "name": "Legacy Golf Club",
-      "addr": "130 Par Excellence Dr",
-      "lat": 36.0257,
-      "lng": -115.055,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Municipal golf course.",
-      "source": "Needs verification"
-    },
-    {
       "id": "hen-clark-training",
       "name": "Clark County Heritage Museum",
       "addr": "1830 S Boulder Hwy",

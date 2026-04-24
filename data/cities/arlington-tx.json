@@ -163,18 +163,6 @@
       "source": "uta.edu"
     },
     {
-      "id": "arl-uta-west-campus",
-      "name": "UTA \u2014 West Campus Garage",
-      "addr": "510 S Pecan St",
-      "lat": 32.7303,
-      "lng": -97.1168,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UTA visitor.",
-      "source": "uta.edu"
-    },
-    {
       "id": "arl-parks-lincoln-sq",
       "name": "Lincoln Square",
       "addr": "1500 E Copeland Rd",

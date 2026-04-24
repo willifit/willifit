@@ -204,19 +204,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "sco-camelback-golf",
-      "name": "Camelback Golf Club Lots",
-      "addr": "7847 N Mockingbird Ln",
-      "lat": 33.5478,
-      "lng": -111.9553,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Resort golf surface.",
-      "source": "camelbackgolf.com",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "sco-talking-stick-resort",
       "name": "Talking Stick Resort & Casino",
       "addr": "9800 E Talking Stick Way",

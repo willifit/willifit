@@ -324,18 +324,6 @@
       ]
     },
     {
-      "id": "oak-mills-college",
-      "name": "Mills College at Northeastern University",
-      "addr": "5000 MacArthur Blvd",
-      "lat": 37.7806,
-      "lng": -122.1838,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Campus visitor parking.",
-      "source": "northeastern.edu"
-    },
-    {
       "id": "oak-redwood-heights",
       "name": "Redwood Heights Lots (Trestle Glen/Piedmont)",
       "addr": "Skyline Blvd",

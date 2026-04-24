@@ -173,18 +173,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "anc-uaa-library",
-      "name": "UAA \u2014 Main Campus (Consortium Library)",
-      "addr": "3700 Alumni Loop",
-      "lat": 61.1917,
-      "lng": -149.828,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "University of Alaska Anchorage.",
-      "source": "uaa.alaska.edu"
-    },
-    {
       "id": "anc-kincaid-park",
       "name": "Kincaid Park Lots",
       "addr": "9401 Raspberry Rd",

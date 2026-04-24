@@ -115,21 +115,6 @@
       "entrance_source": "OSM parking_entrance node 2084111668"
     },
     {
-      "id": "nwk-university-hosp",
-      "name": "University Hospital Parking",
-      "addr": "150 Bergen St",
-      "lat": 40.7395,
-      "lng": -74.192,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Main state teaching hospital.",
-      "source": "uhnj.org",
-      "entrance_lat": 40.7396102,
-      "entrance_lng": -74.1921111,
-      "entrance_source": "OSM parking_entrance node 9023900274"
-    },
-    {
       "id": "nwk-bears-stadium",
       "name": "Riverfront Stadium (former Bears) Lots",
       "addr": "450 Broad St",

@@ -235,19 +235,6 @@
       "source": "lasm.org"
     },
     {
-      "id": "btr-southern-univ",
-      "name": "Southern University A&M College Lots",
-      "addr": "801 Harding Blvd",
-      "lat": 30.5193,
-      "lng": -91.1944,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "HBCU campus.",
-      "source": "subr.edu",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "btr-burden-museum-gardens",
       "name": "LSU AgCenter Botanic Gardens at Burden",
       "addr": "4560 Essen Ln",

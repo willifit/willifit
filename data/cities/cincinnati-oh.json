@@ -245,21 +245,6 @@
       "entrance_source": "OSM parking_entrance node 5464268587"
     },
     {
-      "id": "cin-uc-main",
-      "name": "University of Cincinnati \u2014 Main Garage",
-      "addr": "120 W University Ave",
-      "lat": 39.1329,
-      "lng": -84.5176,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UC campus visitor.",
-      "source": "uc.edu",
-      "entrance_lat": 39.1339068,
-      "entrance_lng": -84.5176949,
-      "entrance_source": "OSM parking_entrance node 2470133084"
-    },
-    {
       "id": "cin-nippert-stadium",
       "name": "Nippert Stadium (UC) Lots",
       "addr": "2700 Bearcat Way",

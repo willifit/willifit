@@ -246,18 +246,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "bra-college-of-ozarks",
-      "name": "College of the Ozarks",
-      "addr": "100 Opportunity Ave, Point Lookout",
-      "lat": 36.6153,
-      "lng": -93.2306,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "'Hard work U' \u2014 free tuition college.",
-      "source": "cofo.edu"
-    },
-    {
       "id": "bra-promised-land-zoo",
       "name": "Promised Land Zoo",
       "addr": "2751 Shepherd of the Hills Expy",

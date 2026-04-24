@@ -173,21 +173,6 @@
       "source": "mcwane.org"
     },
     {
-      "id": "bhm-uab-main",
-      "name": "UAB \u2014 Campus Green Parking Deck",
-      "addr": "918 19th St S",
-      "lat": 33.504,
-      "lng": -86.8028,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "UAB campus + medical center.",
-      "source": "uab.edu",
-      "entrance_lat": 33.5044236,
-      "entrance_lng": -86.8045932,
-      "entrance_source": "OSM parking_entrance node 12638025627"
-    },
-    {
       "id": "bhm-five-points-south",
       "name": "Five Points South District Lots",
       "addr": "1020 20th St S",

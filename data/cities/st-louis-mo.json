@@ -157,18 +157,6 @@
       "source": "slsc.org"
     },
     {
-      "id": "stl-wash-univ",
-      "name": "Washington University \u2014 Snow Way Garage",
-      "addr": "6515 Wydown Blvd",
-      "lat": 38.6464,
-      "lng": -90.3081,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "WashU visitor parking.",
-      "source": "parking.wustl.edu"
-    },
-    {
       "id": "stl-cwe",
       "name": "Central West End / BJC Medical Lots",
       "addr": "1 Barnes Jewish Hospital Plaza",

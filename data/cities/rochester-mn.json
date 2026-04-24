@@ -118,19 +118,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w135488106",
-      "name": "country club",
-      "addr": "",
-      "lat": 43.89716,
-      "lng": -92.37843,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (72 spaces). 72 spaces. Operator: country club.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w136485613",
       "name": "City of Rochester",
       "addr": "",
