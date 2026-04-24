@@ -64,7 +64,11 @@ OVERPASS_MIRRORS = [
 ]
 USER_AGENT = "willifit-surface-lots/0.1 (RV/oversized parking aggregator)"
 REQUEST_TIMEOUT = 60
-SLEEP_BETWEEN_CITIES = 2.0
+# 3s/city: earlier 2s runs got 429'd by the primary Overpass endpoint
+# partway through a 226-city sweep.  3s is more polite; the mirror
+# fallback chain still handles transient 504s / 429s on individual
+# cities without aborting.
+SLEEP_BETWEEN_CITIES = 3.0
 
 # Radius (in lat/lng degrees) around city center per OSM zoom level.  These
 # match the other importer (scripts/overpass_import.py) so the two passes
@@ -147,18 +151,18 @@ def build_query(lat: float, lng: float, radius_deg: float) -> str:
     bbox = f"{south},{west},{north},{east}"
     amen_alt = "|".join(sorted(INSTITUTIONAL_AMENITIES))
     land_alt = "|".join(sorted(INSTITUTIONAL_LANDUSES))
+    # Previously ran 5 tag-specific parking subqueries over the same
+    # bbox (name / capacity / bus / hgv / motorhome) which hammered
+    # the Overpass index 5x per city and started 429'ing on 226-city
+    # sweeps.  Now one parking subquery; qualifies() re-applies the
+    # same tag filters client-side.  Slightly bigger download per
+    # city (~1MB vs ~200KB) but ~3x fewer Overpass queries.
     return f"""
-[out:json][timeout:90];
+[out:json][timeout:60];
 (
-  // Candidate parking
-  way["amenity"="parking"]["name"]({bbox});
-  way["amenity"="parking"]["capacity"]({bbox});
-  way["amenity"="parking"]["bus"="yes"]({bbox});
-  way["amenity"="parking"]["hgv"="yes"]({bbox});
-  way["amenity"="parking"]["motorhome"="yes"]({bbox});
+  way["amenity"="parking"]({bbox});
   way["tourism"="caravan_site"]({bbox});
   node["tourism"="caravan_site"]({bbox});
-  // Institutional polygons -- used as a skip list during filtering
   way["amenity"~"^({amen_alt})$"]({bbox});
   way["landuse"~"^({land_alt})$"]({bbox});
 );
