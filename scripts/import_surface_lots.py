@@ -90,21 +90,67 @@ OVERSIZED_NAME_KEYWORDS = (
     "oversize", "fairground", "stadium",
 )
 
+# Keywords in the lot name that indicate institutional or private-use-only
+# parking.  Matched case-insensitively with word boundaries.  Anything that
+# hits one of these is skipped even if other signals would've qualified it.
+INSTITUTIONAL_NAME_KEYWORDS = (
+    # schools
+    "school", "elementary", "middle school", "high school", "college",
+    "university", "academy", "kindergarten", "district", "student", "faculty",
+    # government / civic
+    "courthouse", "city hall", "county", "municipal", "government", "dmv",
+    "police", "fire station", "correctional", "prison", "jail",
+    "military", "army", "navy", "marine", "air force", "base",
+    # private / employee-only
+    "staff", "employee", "teacher", "administration", "admin",
+    # religious
+    "church", "temple", "mosque", "synagogue",
+    # healthcare (patients only — adjacent not oversized-friendly)
+    "hospital", "clinic",
+)
+
+# OSM amenity and landuse values that identify "this is institutional land,
+# any parking within it is private/limited".  A candidate within
+# INSTITUTIONAL_PROXIMITY_M of an element tagged like this is rejected.
+INSTITUTIONAL_AMENITIES = {
+    "school", "college", "university", "kindergarten",
+    "hospital", "clinic",
+    "prison", "police", "fire_station", "courthouse",
+    "townhall", "post_office",
+    "place_of_worship",
+}
+INSTITUTIONAL_LANDUSES = {
+    "education", "military",
+}
+
+# Distance in meters; lots closer than this to the centroid of an
+# institutional polygon are skipped.  200m is generous -- a campus
+# parking lot can easily sit 150m+ from the school building itself.
+INSTITUTIONAL_PROXIMITY_M = 200.0
+
 
 def build_query(lat: float, lng: float, radius_deg: float) -> str:
-    """Overpass QL for parking + RV-park elements in a bbox.
+    """Overpass QL for parking + RV-park candidates AND institutional
+    polygons (schools / hospitals / military / etc.) in a single bbox call.
 
-    We over-query here (everything amenity=parking with any of: name, capacity,
-    bus, hgv, motorhome) and let Python filter -- bbox queries are cheap,
-    and the filter logic changes more often than the bbox does."""
+    Candidates and institutional areas come back in the same element list;
+    Python splits them afterward so each candidate can be tested for
+    proximity to an institution.
+
+    We over-query here (everything amenity=parking with any of: name,
+    capacity, bus, hgv, motorhome) and let Python filter -- bbox queries
+    are cheap; the filter logic changes more often than the bbox does."""
     south = lat - radius_deg
     west = lng - radius_deg
     north = lat + radius_deg
     east = lng + radius_deg
     bbox = f"{south},{west},{north},{east}"
+    amen_alt = "|".join(sorted(INSTITUTIONAL_AMENITIES))
+    land_alt = "|".join(sorted(INSTITUTIONAL_LANDUSES))
     return f"""
-[out:json][timeout:60];
+[out:json][timeout:90];
 (
+  // Candidate parking
   way["amenity"="parking"]["name"]({bbox});
   way["amenity"="parking"]["capacity"]({bbox});
   way["amenity"="parking"]["bus"="yes"]({bbox});
@@ -112,6 +158,9 @@ def build_query(lat: float, lng: float, radius_deg: float) -> str:
   way["amenity"="parking"]["motorhome"="yes"]({bbox});
   way["tourism"="caravan_site"]({bbox});
   node["tourism"="caravan_site"]({bbox});
+  // Institutional polygons -- used as a skip list during filtering
+  way["amenity"~"^({amen_alt})$"]({bbox});
+  way["landuse"~"^({land_alt})$"]({bbox});
 );
 out center tags;
 """
@@ -157,9 +206,37 @@ def haversine_m(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
     return 2 * R * math.asin(math.sqrt(a))
 
 
+def _name_hits_institutional_blacklist(name: str) -> Optional[str]:
+    """Return the offending keyword if the name reads as institutional /
+    private-use, else None."""
+    nl = (name or "").lower()
+    if not nl:
+        return None
+    for kw in INSTITUTIONAL_NAME_KEYWORDS:
+        # Word-boundary so "district" doesn't match "districted" (there's
+        # no such word but you get the idea) and "coach" (good) doesn't
+        # collide with "Coach USA" (fine -- still bus operator).
+        if re.search(r"\b" + re.escape(kw) + r"\b", nl):
+            return kw
+    return None
+
+
 def qualifies(tags: dict) -> Optional[str]:
     """Return a human-readable reason if this tag set qualifies as
-    oversized-friendly, or None to skip."""
+    oversized-friendly, or None to skip.
+
+    Institutional-name blacklist runs first -- a "Bus Parking" lot owned
+    by a school district still reads as bus-friendly via the keyword path,
+    but the name check here kills it.  We check both the `name` and
+    `operator` tags so a generically-named lot ("Lot U") with an
+    institutional operator ("University of Nevada Las Vegas") is skipped."""
+    name = tags.get("name") or ""
+    operator = tags.get("operator") or ""
+    if _name_hits_institutional_blacklist(name):
+        return None
+    if _name_hits_institutional_blacklist(operator):
+        return None
+
     if tags.get("tourism") == "caravan_site":
         return "RV park (OSM tourism=caravan_site)"
     if tags.get("motorhome") == "yes":
@@ -177,9 +254,9 @@ def qualifies(tags: dict) -> Optional[str]:
         return f"large capacity ({cap} spaces)"
 
     # Word-boundary match so we don't pick up "rv" inside "obseRVation" etc.
-    name = (tags.get("name") or "").lower()
+    nl = name.lower()
     for kw in OVERSIZED_NAME_KEYWORDS:
-        if re.search(r"\b" + re.escape(kw) + r"\b", name):
+        if re.search(r"\b" + re.escape(kw) + r"\b", nl):
             return f"name signals oversized use ('{kw}')"
 
     return None
@@ -277,10 +354,36 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
         return 0
 
     elements = resp.get("elements", [])
+
+    # Split the response: candidate parking lots vs institutional polygons.
+    # A single element can technically be both (a parking lot tagged with
+    # amenity=parking inside an element also tagged landuse=education),
+    # but Overpass returns them as separate elements here.
+    institutional_centers: list[tuple[float, float]] = []
+    candidates: list[dict] = []
+    for el in elements:
+        tags = el.get("tags", {}) or {}
+        amen = tags.get("amenity")
+        land = tags.get("landuse")
+        if amen in INSTITUTIONAL_AMENITIES or land in INSTITUTIONAL_LANDUSES:
+            ll = element_latlng(el)
+            if ll:
+                institutional_centers.append(ll)
+            continue
+        if amen == "parking" or tags.get("tourism") == "caravan_site":
+            candidates.append(el)
+
+    def _inside_institution(lat: float, lng: float) -> bool:
+        for (ilat, ilng) in institutional_centers:
+            if haversine_m(lat, lng, ilat, ilng) < INSTITUTIONAL_PROXIMITY_M:
+                return True
+        return False
+
     added: list[dict] = []
     skipped_filter = 0
+    skipped_inst = 0
     skipped_dup = 0
-    for el in elements:
+    for el in candidates:
         tags = el.get("tags", {}) or {}
         reason = qualifies(tags)
         if not reason:
@@ -290,6 +393,15 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
         if not entry:
             skipped_filter += 1
             continue
+        # caravan_site is a strong, explicit "this is an RV park" signal.
+        # Skip the institutional-proximity check in that case -- downtown
+        # casino RV parks (e.g., Main Street Station in Vegas) often sit
+        # within 200m of a courthouse or police station, but they're
+        # still real RV destinations and shouldn't be filtered out.
+        if tags.get("tourism") != "caravan_site":
+            if _inside_institution(entry["lat"], entry["lng"]):
+                skipped_inst += 1
+                continue
         if entry["id"] in existing_ids:
             skipped_dup += 1
             continue
@@ -312,7 +424,7 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
     action = "would add" if dry_run else "added"
     print(
         f"[{slug}] {action}: {len(added)} surface lots "
-        f"(skipped: {skipped_filter} filter, {skipped_dup} dedup)"
+        f"(skipped: {skipped_filter} filter, {skipped_inst} institutional, {skipped_dup} dedup)"
     )
     for entry in added[:6]:
         print(f"  + {entry['id']:<24} {entry['name']}")

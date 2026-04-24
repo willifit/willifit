@@ -1168,19 +1168,6 @@
       "source": "Manually verified from Google Street View \u2014 was: OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w301413582",
-      "name": "Bus Parking",
-      "addr": "",
-      "lat": 36.0383,
-      "lng": -115.24502,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w312344632",
       "name": "Las Vegas KOA at Sam's Town",
       "addr": "5225 Boulder Highway",
@@ -1204,19 +1191,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w325840039",
-      "name": "Lot U",
-      "addr": "",
-      "lat": 36.10375,
-      "lng": -115.13859,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (78 spaces). 78 spaces. Paid parking. Operator: University of Nevada Las Vegas.",
       "source": "OpenStreetMap (surface lot)"
     },
     {
