@@ -11,7 +11,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 42.9396868,
+      "entrance_lng": -85.7969894,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
       "id": "osm-w329934211",
@@ -76,7 +79,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (113 spaces). 113 spaces. Operator: City Of Wyoming Parks and Recreation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 42.8626743,
+      "entrance_lng": -85.713489,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     }
   ],
   "tunnels": [],

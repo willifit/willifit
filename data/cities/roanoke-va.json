@@ -24,7 +24,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (229 spaces). 229 spaces.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 37.2748284,
+      "entrance_lng": -80.0221834,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
       "id": "osm-w469515531",
@@ -37,7 +40,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (65 spaces). 65 spaces.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 37.2756081,
+      "entrance_lng": -80.0190584,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     }
   ],
   "tunnels": [],

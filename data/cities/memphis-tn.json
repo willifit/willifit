@@ -260,7 +260,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 35.0477394,
+      "entrance_lng": -90.0285322,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
       "id": "osm-w1206946481",
@@ -273,7 +276,10 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "entrance_lat": 35.0182007,
+      "entrance_lng": -89.9181265,
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
       "id": "osm-w1228280580",
