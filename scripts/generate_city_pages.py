@@ -27,7 +27,9 @@ from __future__ import annotations
 
 import html
 import json
+import math
 import os
+import re
 from pathlib import Path
 from datetime import date
 
@@ -58,6 +60,231 @@ STATE_NAMES = {
 def esc(s):
     """HTML-escape, safely handling None."""
     return html.escape(str(s) if s is not None else "", quote=True)
+
+
+RV_NAME_RE = re.compile(r'\b(rv park|rv resort|caravan|kampground|koa)\b', re.IGNORECASE)
+
+
+def compute_quick_facts(garages: list, tunnels: list, bridges: list) -> dict:
+    """Per-city stat block used both for the visible 'Quick facts' card
+    and as the source for FAQPage answers below.
+
+    Lowest/highest are computed from GARAGES only -- the FAQs ask about
+    parking garages specifically, and pulling bridge/tunnel heights into
+    the answer would be misleading (a "Low clearance underpass" tagged
+    at 18'7" is not Vegas's tallest garage).  Tunnels + bridges still
+    appear in their own page sections below."""
+    verified = [g for g in garages
+                if isinstance(g.get("height_in"), (int, float)) and g["height_in"] > 0]
+    lowest = min(verified, key=lambda g: g["height_in"]) if verified else None
+    highest = max(verified, key=lambda g: g["height_in"]) if verified else None
+    oversized = [g for g in garages if g.get("oversized")]
+    rv_parks = [g for g in garages
+                if RV_NAME_RE.search(g.get("name") or "")
+                or "caravan_site" in (g.get("source") or "").lower()]
+    return {
+        "verified": verified,
+        "lowest": lowest,
+        "highest": highest,
+        "oversized": oversized,
+        "rv_parks": rv_parks,
+        "verified_count": len(verified),
+        "oversized_count": len(oversized),
+        "rv_park_count": len(rv_parks),
+    }
+
+
+def render_quick_facts(facts: dict) -> str:
+    """Featured-snippet-friendly stat block.  Renders right under the H1
+    so Google's 'Answer' / 'Featured snippet' selector can lift it
+    verbatim, and so AI Overview / ChatGPT cite it directly."""
+    cards = []
+    if facts["lowest"]:
+        e = facts["lowest"]
+        cards.append(
+            '<div class="qf-card">'
+            '<div class="qf-label">Lowest clearance</div>'
+            f'<div class="qf-value">{esc(e.get("height_label") or "")}</div>'
+            f'<div class="qf-detail">{esc(e.get("name") or "")}</div>'
+            '</div>'
+        )
+    if facts["highest"]:
+        e = facts["highest"]
+        cards.append(
+            '<div class="qf-card">'
+            '<div class="qf-label">Highest clearance</div>'
+            f'<div class="qf-value">{esc(e.get("height_label") or "")}</div>'
+            f'<div class="qf-detail">{esc(e.get("name") or "")}</div>'
+            '</div>'
+        )
+    cards.append(
+        '<div class="qf-card">'
+        '<div class="qf-label">Oversized-friendly</div>'
+        f'<div class="qf-value">{facts["oversized_count"]}</div>'
+        '<div class="qf-detail">RV / box-truck OK</div>'
+        '</div>'
+    )
+    cards.append(
+        '<div class="qf-card">'
+        '<div class="qf-label">RV parks</div>'
+        f'<div class="qf-value">{facts["rv_park_count"]}</div>'
+        '<div class="qf-detail">indexed</div>'
+        '</div>'
+    )
+    return '<section class="quick-facts" aria-label="Quick facts">' + ''.join(cards) + '</section>'
+
+
+def build_faqs(city_meta: dict, facts: dict) -> list:
+    """Auto-generate 4-5 Q&A pairs per city from its stats.  Used both
+    as visible content (an HTML <details> list) AND as FAQPage JSON-LD,
+    which is what ChatGPT / Perplexity / AI Overviews cite verbatim."""
+    name = city_meta["name"]
+    state_full = STATE_NAMES.get(city_meta["state"], city_meta["state"])
+    slug = city_meta["slug"]
+    faqs = []
+
+    if facts["lowest"]:
+        e = facts["lowest"]
+        faqs.append({
+            "q": f"What's the lowest-clearance parking garage in {name}, {state_full}?",
+            "a": (f"The lowest verified clearance in {name} is {e.get('height_label')} "
+                  f"({int(e.get('height_in'))} inches) at {e.get('name')}. "
+                  f"Standard cars and small SUVs fit, but vans, RVs, and box trucks "
+                  f"should look elsewhere."),
+        })
+
+    if facts["highest"]:
+        e = facts["highest"]
+        faqs.append({
+            "q": f"What's the highest-clearance parking option in {name}?",
+            "a": (f"{e.get('name')} has the tallest verified clearance in {name} at "
+                  f"{e.get('height_label')} ({int(e.get('height_in'))} inches), which "
+                  f"accommodates most box trucks and smaller RVs."),
+        })
+
+    if facts["oversized_count"] > 0:
+        names = [g.get("name") or "Unnamed" for g in facts["oversized"][:3]]
+        joined = ", ".join(names)
+        more = f" and {facts['oversized_count'] - len(names)} more" if facts['oversized_count'] > len(names) else ""
+        faqs.append({
+            "q": f"Which parking facilities in {name} accept RVs or oversized vehicles?",
+            "a": (f"{facts['oversized_count']} facilities in {name} are explicitly marked as "
+                  f"oversized-vehicle-friendly: {joined}{more}. "
+                  f"See the full list on the interactive map at willifit.ai/#{slug}."),
+        })
+    else:
+        faqs.append({
+            "q": f"Which parking facilities in {name} accept RVs or oversized vehicles?",
+            "a": (f"None of the parking facilities currently indexed in {name} are explicitly "
+                  f"marked as oversized-vehicle-friendly. RV and box-truck drivers should "
+                  f"call ahead, look for surface lots, or check nearby cities on willifit.ai."),
+        })
+
+    if facts["rv_park_count"] > 0:
+        rv_names = [g.get("name") or "Unnamed" for g in facts["rv_parks"][:3]]
+        joined = ", ".join(rv_names)
+        more = f" and {facts['rv_park_count'] - len(rv_names)} more" if facts['rv_park_count'] > len(rv_names) else ""
+        faqs.append({
+            "q": f"Are there RV parks in {name}?",
+            "a": (f"Yes. {facts['rv_park_count']} RV park(s) are indexed in {name}, "
+                  f"including {joined}{more}. RV parks have no overhead clearance — any "
+                  f"vehicle size fits."),
+        })
+
+    faqs.append({
+        "q": "How is the clearance data verified?",
+        "a": ("Each posted clearance is read directly from the sign at the garage entrance "
+              "using Google Street View imagery and Claude Vision (Anthropic's image AI). "
+              "Only readings with high confidence are committed; we record the exact "
+              "Street View pano ID and the verification date so anyone can independently "
+              "confirm in Google Maps."),
+    })
+
+    return faqs
+
+
+def render_faq_section(faqs: list) -> str:
+    if not faqs:
+        return ""
+    items = []
+    for f in faqs:
+        items.append(
+            '<details class="faq-item">'
+            f'<summary class="faq-q">{esc(f["q"])}</summary>'
+            f'<div class="faq-a">{esc(f["a"])}</div>'
+            '</details>'
+        )
+    return (
+        '<section class="faq-section" aria-label="Frequently asked questions">'
+        '<h2>Frequently asked</h2>'
+        + ''.join(items)
+        + '</section>'
+    )
+
+
+def faqs_to_jsonld(faqs: list) -> dict:
+    """Returns a FAQPage Schema.org dict suitable for embedding in
+    the page's combined JSON-LD array."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": f["q"],
+                "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
+            }
+            for f in faqs
+        ],
+    }
+
+
+def haversine_miles(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    R = 3958.8  # earth radius in miles
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp = math.radians(lat2 - lat1)
+    dl = math.radians(lng2 - lng1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(a))
+
+
+def compute_nearby_cities(this_city: dict, all_cities: list, max_miles: float = 60.0,
+                          max_results: int = 6) -> list:
+    """List of (city, distance_mi) tuples for cities within max_miles of
+    the current city's centroid, sorted by distance.  Drives the
+    'Nearby cities' cross-link block (internal-link equity) and the
+    'plan a route' use case (Vegas -> Henderson -> Boulder City)."""
+    out = []
+    for c in all_cities:
+        if c.get("slug") == this_city.get("slug"):
+            continue
+        if c.get("status") != "live":
+            continue
+        d = haversine_miles(this_city["lat"], this_city["lng"], c["lat"], c["lng"])
+        if d <= max_miles:
+            out.append((c, d))
+    out.sort(key=lambda x: x[1])
+    return out[:max_results]
+
+
+def render_nearby_cities(nearby: list) -> str:
+    if not nearby:
+        return ""
+    items = []
+    for (c, d) in nearby:
+        slug = c["slug"]
+        name = esc(c["name"])
+        state = esc(c["state"])
+        items.append(
+            f'<li><a href="/city/{slug}.html">{name}, {state}</a>'
+            f' <span class="nc-dist">{int(round(d))} mi</span></li>'
+        )
+    return (
+        '<section class="nearby-cities" aria-label="Nearby cities">'
+        '<h2>Nearby cities</h2>'
+        '<ul class="nc-list">' + ''.join(items) + '</ul>'
+        '</section>'
+    )
 
 
 def render_entry(e: dict, kind: str) -> str:
@@ -97,7 +324,8 @@ def render_entry(e: dict, kind: str) -> str:
     )
 
 
-def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list) -> str:
+def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
+                 faqs: list = None) -> str:
     """Build JSON-LD structured data for the city + entries.
     Gives Google enough detail to render rich snippets."""
     name = city["name"]
@@ -157,7 +385,10 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list) -> str
              "item": f"{SITE}/city/{city['slug']}.html"},
         ],
     }
-    return json.dumps([item_list, breadcrumbs], separators=(",", ":"))
+    blocks = [item_list, breadcrumbs]
+    if faqs:
+        blocks.append(faqs_to_jsonld(faqs))
+    return json.dumps(blocks, separators=(",", ":"))
 
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
@@ -275,6 +506,61 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   footer a {{ color: var(--muted); }} footer a:hover {{ color: var(--accent); }}
   .empty {{ color: var(--muted); font-style: italic; padding: 16px 0; }}
 
+  /* Quick-facts stat block.  Big, definitive numbers in a 4-up grid
+     that AI Overview / featured-snippet pickers can lift verbatim. */
+  .quick-facts {{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin: 24px 0 8px;
+  }}
+  .qf-card {{
+    background: var(--panel); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px; padding: 12px 14px;
+  }}
+  .qf-label {{
+    font-family: 'SF Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted);
+  }}
+  .qf-value {{
+    font-size: 22px; font-weight: 700; color: var(--text);
+    margin: 4px 0 2px; letter-spacing: -0.01em;
+  }}
+  .qf-detail {{ font-size: 12px; color: var(--muted); }}
+
+  /* FAQ section -- <details>/<summary> for accessibility, FAQPage
+     JSON-LD lives in the page head for AI answer engines. */
+  .faq-section {{ margin-top: 40px; }}
+  .faq-item {{
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0; margin: 8px 0; overflow: hidden;
+  }}
+  .faq-q {{
+    padding: 14px 16px; font-weight: 600; font-size: 15px; cursor: pointer;
+    color: var(--text); list-style: none;
+  }}
+  .faq-q::-webkit-details-marker {{ display: none; }}
+  .faq-q::before {{
+    content: '+'; display: inline-block; width: 20px;
+    color: var(--accent); font-weight: 800;
+  }}
+  details[open] .faq-q::before {{ content: '−'; }}
+  .faq-a {{
+    padding: 0 16px 14px 36px; font-size: 14px; color: var(--muted); line-height: 1.55;
+  }}
+
+  /* Nearby cities -- internal-link equity + plan-a-route. */
+  .nearby-cities {{ margin-top: 40px; }}
+  .nc-list {{
+    list-style: none; padding: 0; margin: 12px 0 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 6px 16px;
+  }}
+  .nc-list li {{ font-size: 14px; }}
+  .nc-dist {{ color: var(--muted); font-family: 'SF Mono', monospace; font-size: 11px; }}
+
   /* Sponsor card — fed by /js/sponsors.js from /data/sponsors.json.
      Styling matches the card used in the main app so visitors see one
      consistent visual language for ad inventory across the site. */
@@ -336,6 +622,11 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <a class="cta" href="/#{slug}">Open interactive map →</a>
   </div>
 
+  <!-- Quick-facts: featured-snippet bait.  Renders right under the CTA so
+       it's the first content block AI Overview / ChatGPT / Perplexity
+       see when summarizing the page. -->
+  {quick_facts}
+
   <!-- City-hero sponsor slot.  Populated by /js/sponsors.js from sponsors.json.
        Kept above-the-fold so high-intent visitors (someone researching {city}
        parking) see geo-targeted inventory before they scroll into the list. -->
@@ -344,6 +635,14 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   {garages_section}
   {tunnels_section}
   {bridges_section}
+
+  <!-- Auto-generated FAQ from city stats.  Visible <details>/<summary>
+       for users; FAQPage JSON-LD in the head for AI answer engines. -->
+  {faq_section}
+
+  <!-- Nearby-cities cross-link block.  Internal-link equity + helps
+       users plan multi-city routes. -->
+  {nearby_cities}
 
   <div class="disclaimer">
     <b>⚠ Always verify at the sign.</b>
@@ -385,7 +684,7 @@ def render_section(title: str, entries: list, kind: str) -> str:
     return f'<h2>{title} ({len(entries)})</h2><ul class="entries">{items_html}</ul>'
 
 
-def generate_city(city: dict) -> str:
+def generate_city(city: dict, all_cities: list = None) -> str:
     slug = city["slug"]
     name = city["name"]
     state = city["state"]
@@ -400,6 +699,12 @@ def generate_city(city: dict) -> str:
     tunnels = data.get("tunnels") or []
     bridges = data.get("bridges") or []
     total = len(garages) + len(tunnels) + len(bridges)
+
+    # Quick-facts stat block + auto-generated FAQs feed both visible content
+    # and the FAQPage JSON-LD (cited by ChatGPT / Perplexity / AI Overviews).
+    facts = compute_quick_facts(garages, tunnels, bridges)
+    faqs = build_faqs(city, facts)
+    nearby = compute_nearby_cities(city, all_cities or [city]) if all_cities else []
 
     # Build a short paragraph describing what's on the page, for meta + lede.
     parts = []
@@ -436,8 +741,11 @@ def generate_city(city: dict) -> str:
         garages_section=render_section("Parking garages", garages, "garage"),
         tunnels_section=render_section("Tunnels", tunnels, "tunnel"),
         bridges_section=render_section("Low-clearance bridges", bridges, "bridge"),
+        quick_facts=render_quick_facts(facts),
+        faq_section=render_faq_section(faqs),
+        nearby_cities=render_nearby_cities(nearby),
         year=date.today().year,
-        jsonld=build_jsonld(city, garages, tunnels, bridges),
+        jsonld=build_jsonld(city, garages, tunnels, bridges, faqs=faqs),
     )
     return page
 
@@ -451,7 +759,7 @@ def main():
     generated = 0
     skipped = 0
     for city in live:
-        html_str = generate_city(city)
+        html_str = generate_city(city, all_cities=live)
         if html_str is None:
             skipped += 1
             continue
