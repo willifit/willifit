@@ -263,32 +263,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-n1756137197",
-      "name": "RV Park (unnamed)",
-      "addr": "",
-      "lat": 32.76354,
-      "lng": -97.45184,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-n1756137278",
-      "name": "RV Park (unnamed)",
-      "addr": "",
-      "lat": 32.76251,
-      "lng": -97.45158,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w25664330",
       "name": "Trinity Metro",
       "addr": "",

@@ -435,19 +435,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w141461494",
-      "name": "Valhalla Park Condominiums",
-      "addr": "",
-      "lat": 44.04375,
-      "lng": -92.47184,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (114 spaces). 114 spaces. Operator: Valhalla Park Condominiums.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w142090706",
       "name": "McDonald's",
       "addr": "",

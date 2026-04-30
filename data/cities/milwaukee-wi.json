@@ -405,19 +405,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w377779365",
-      "name": "Interstate Parking",
-      "addr": "518 North Plankinton Avenue",
-      "lat": 43.03647,
-      "lng": -87.91083,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (92 spaces). 92 spaces. Paid parking. Operator: Interstate Parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w377787263",
       "name": "ABM Industries",
       "addr": "400 North 3rd Street",
@@ -571,19 +558,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (70 spaces). 70 spaces. Free parking. Operator: City of Milwaukee.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w874883812",
-      "name": "City of Milwaukee",
-      "addr": "1650 South 13th Street",
-      "lat": 43.01298,
-      "lng": -87.9275,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces. Free parking. Operator: City of Milwaukee.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

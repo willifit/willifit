@@ -370,18 +370,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w259667089",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44996,
-      "lng": -66.07517,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w259681794",
       "name": "XI XI Casa",
       "addr": "Calle Luisa",
@@ -391,18 +379,6 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w259684866",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44901,
-      "lng": -66.06573,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
       "source": "OpenStreetMap"
     },
     {
@@ -517,18 +493,6 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
-      "id": "osm-w288319351",
-      "name": "Estudiantes",
-      "addr": "",
-      "lat": 18.36935,
-      "lng": -66.14237,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w288319423",
       "name": "Estudiantes",
       "addr": "",
@@ -541,21 +505,6 @@
       "source": "OpenStreetMap",
       "entrance_lat": 18.3735897,
       "entrance_lng": -66.1429859,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
-      "id": "osm-w288350166",
-      "name": "Estudiantes",
-      "addr": "",
-      "lat": 18.37118,
-      "lng": -66.14556,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.3718616,
-      "entrance_lng": -66.1468408,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
@@ -596,18 +545,6 @@
       "entrance_lat": 18.4543307,
       "entrance_lng": -66.0686205,
       "entrance_source": "OSM parking_entrance node 4913392362"
-    },
-    {
-      "id": "osm-w291499681",
-      "name": "Unnamed parking structure",
-      "addr": "Marginal Baldorioty de Castro",
-      "lat": 18.45383,
-      "lng": -66.07432,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
     },
     {
       "id": "osm-w291699280",
@@ -868,18 +805,6 @@
       "entrance_source": "OSM parking_entrance node 3150016755"
     },
     {
-      "id": "osm-w303119030",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44785,
-      "lng": -66.06786,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w303895470",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -903,18 +828,6 @@
       "height_in": null,
       "height_label": null,
       "oversized": true,
-      "notes": "free",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w304927078",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.45145,
-      "lng": -66.06519,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap"
     },
@@ -982,36 +895,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w313329267",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44825,
-      "lng": -66.06875,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "426 spaces; paid",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4497159,
-      "entrance_lng": -66.0688047,
-      "entrance_source": "OSM parking_entrance node 3267606753"
-    },
-    {
-      "id": "osm-w313329268",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44633,
-      "lng": -66.0689,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "614 spaces; paid",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4446579,
-      "entrance_lng": -66.0691759,
-      "entrance_source": "OSM parking_entrance node 3267143416"
-    },
-    {
       "id": "osm-w314846018",
       "name": "La Jaquita Baya",
       "addr": "",
@@ -1044,30 +927,6 @@
       "height_in": null,
       "height_label": null,
       "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w320236363",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.42601,
-      "lng": -66.05679,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w320236364",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.42713,
-      "lng": -66.05701,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
@@ -1325,18 +1184,6 @@
       "lng": -66.18386,
       "height_in": 122,
       "height_label": "10'2\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w339547945",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.39941,
-      "lng": -66.1479,
-      "height_in": null,
-      "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
@@ -1633,21 +1480,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w375708855",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41942,
-      "lng": -66.06913,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4194515,
-      "entrance_lng": -66.0691929,
-      "entrance_source": "OSM parking_entrance node 3790559872"
-    },
-    {
       "id": "osm-w376864011",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -1688,21 +1520,6 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w387486812",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.42603,
-      "lng": -66.06359,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.425217,
-      "entrance_lng": -66.0633673,
-      "entrance_source": "OSM parking_entrance node 13152196245"
     },
     {
       "id": "osm-w390142828",
@@ -1897,33 +1714,6 @@
       "entrance_source": "OSM parking_entrance node 4446385935"
     },
     {
-      "id": "osm-w443826786",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.40366,
-      "lng": -66.05394,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w462817958",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.4267,
-      "lng": -66.06342,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.425217,
-      "entrance_lng": -66.0633673,
-      "entrance_source": "OSM parking_entrance node 13152196245"
-    },
-    {
       "id": "osm-w464279435",
       "name": "Estacionamiento J",
       "addr": "",
@@ -2020,33 +1810,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w479046881",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.39729,
-      "lng": -66.04706,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w479046887",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.39749,
-      "lng": -66.05033,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.3977339,
-      "entrance_lng": -66.0502195,
-      "entrance_source": "OSM parking_entrance node 3298541129"
-    },
-    {
       "id": "osm-w490378506",
       "name": "San Juan MRI & CT",
       "addr": "Calle Lafayette",
@@ -2072,18 +1835,6 @@
       "entrance_lat": 18.4446579,
       "entrance_lng": -66.0691759,
       "entrance_source": "OSM parking_entrance node 3267143416"
-    },
-    {
-      "id": "osm-w496990748",
-      "name": "Farmacia San Rafael",
-      "addr": "1415 Calle San Rafael",
-      "lat": 18.4449,
-      "lng": -66.07257,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
     },
     {
       "id": "osm-w497926495",
@@ -2203,21 +1954,6 @@
       "entrance_source": "OSM parking_entrance node 13152134708"
     },
     {
-      "id": "osm-w540444211",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41544,
-      "lng": -66.10726,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.415932,
-      "entrance_lng": -66.1082703,
-      "entrance_source": "OSM parking_entrance node 13152134708"
-    },
-    {
       "id": "osm-w609734246",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2231,18 +1967,6 @@
       "entrance_lat": 18.4427682,
       "entrance_lng": -66.0169823,
       "entrance_source": "OSM parking_entrance node 13319081029"
-    },
-    {
-      "id": "osm-w669355540",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43977,
-      "lng": -66.02285,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
     },
     {
       "id": "osm-w754719096",
@@ -2353,21 +2077,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1079118732",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.414,
-      "lng": -66.09739,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.413572,
-      "entrance_lng": -66.098153,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
       "id": "osm-w1079315304",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2420,21 +2129,6 @@
       "entrance_lat": 18.4086698,
       "entrance_lng": -66.1148633,
       "entrance_source": "OSM parking_entrance node 12977430829"
-    },
-    {
-      "id": "osm-w1229977077",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.40455,
-      "lng": -66.10759,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4035486,
-      "entrance_lng": -66.1061049,
-      "entrance_source": "OSM parking_entrance node 13457254097"
     },
     {
       "id": "osm-w1303791173",
@@ -2533,57 +2227,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1414926669",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43792,
-      "lng": -66.05832,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1414938715",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.4377,
-      "lng": -66.05589,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1418674682",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43614,
-      "lng": -66.04314,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1420199959",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43601,
-      "lng": -66.04448,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4363316,
-      "entrance_lng": -66.0455715,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
       "id": "osm-w1422633340",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2608,83 +2251,11 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1423068037",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43742,
-      "lng": -66.0425,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1424389894",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43717,
-      "lng": -66.04332,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1424838626",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.439,
-      "lng": -66.04296,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1425047212",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43673,
-      "lng": -66.04241,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1425330684",
       "name": "Polic\u00eda de Puerto Rico",
       "addr": "",
       "lat": 18.43682,
       "lng": -66.04164,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1425339616",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.43692,
-      "lng": -66.04044,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1426685300",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41642,
-      "lng": -66.06531,
       "height_in": null,
       "height_label": null,
       "oversized": false,
@@ -2716,18 +2287,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1428004569",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41992,
-      "lng": -66.06137,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1428121092",
       "name": "Walgreens",
       "addr": "",
@@ -2736,30 +2295,6 @@
       "height_in": null,
       "height_label": null,
       "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1430034535",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.40178,
-      "lng": -66.05688,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1432294806",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.40328,
-      "lng": -66.05594,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
@@ -2812,57 +2347,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1434489963",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44766,
-      "lng": -66.04777,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1434683405",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44834,
-      "lng": -66.04868,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4483853,
-      "entrance_lng": -66.0495121,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
-      "id": "osm-w1435152371",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44918,
-      "lng": -66.04718,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1435218394",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44855,
-      "lng": -66.04756,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1435277128",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2887,30 +2371,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1436260918",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41619,
-      "lng": -66.08279,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1436260923",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41661,
-      "lng": -66.08186,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1436277354",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -2921,69 +2381,6 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1436484590",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41488,
-      "lng": -66.08194,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1436496218",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44771,
-      "lng": -66.04697,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1436517916",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41556,
-      "lng": -66.08231,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1436726468",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.41605,
-      "lng": -66.08141,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1442888340",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44792,
-      "lng": -66.04513,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.448904,
-      "entrance_lng": -66.0449891,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1446634085",
@@ -3022,33 +2419,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1458452446",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.38411,
-      "lng": -65.95699,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1460017606",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44863,
-      "lng": -66.04321,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4495962,
-      "entrance_lng": -66.0437851,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
       "id": "osm-w1464418586",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3070,21 +2440,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "1500 spaces; paid",
-      "source": "OpenStreetMap",
-      "entrance_lat": 18.4497159,
-      "entrance_lng": -66.0688047,
-      "entrance_source": "OSM parking_entrance node 3267606753"
-    },
-    {
-      "id": "osm-w1478462736",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 18.44907,
-      "lng": -66.06734,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "entrance_lat": 18.4497159,
       "entrance_lng": -66.0688047,

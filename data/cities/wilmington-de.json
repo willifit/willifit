@@ -156,18 +156,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w108283903",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.84959,
-      "lng": -75.53653,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "5 spaces",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w121295204",
       "name": "The Dog House",
       "addr": "",
@@ -252,33 +240,6 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w204684443",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.88188,
-      "lng": -75.52483,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w204684452",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.88009,
-      "lng": -75.52686,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 39.8791473,
-      "entrance_lng": -75.5274426,
-      "entrance_source": "OSM parking_entrance node 7442659152"
     },
     {
       "id": "osm-w207659254",
@@ -409,19 +370,6 @@
       "height_label": null,
       "oversized": true,
       "notes": "hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w391093314",
-      "name": "Delaware Park",
-      "addr": "",
-      "lat": 39.70766,
-      "lng": -75.665,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "surface_lot"
     },
@@ -694,18 +642,6 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
-      "id": "osm-w999698251",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.68873,
-      "lng": -75.67131,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1123227577",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -726,19 +662,6 @@
       "addr": "",
       "lat": 39.69811,
       "lng": -75.39586,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1132094125",
-      "name": "New Jersey Turnpike Authority",
-      "addr": "",
-      "lat": 39.69725,
-      "lng": -75.39795,
       "height_in": null,
       "height_label": null,
       "oversized": true,
@@ -891,54 +814,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1331426088",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.79439,
-      "lng": -75.52218,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1331426091",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.7946,
-      "lng": -75.52129,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1331426095",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.79545,
-      "lng": -75.52223,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1331426097",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.79573,
-      "lng": -75.52305,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1415201435",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -980,73 +855,6 @@
       "notes": "free; open-air",
       "source": "OpenStreetMap",
       "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1486552271",
-      "name": "New Castle Health & Rehabilitation Center",
-      "addr": "",
-      "lat": 39.64002,
-      "lng": -75.63142,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "free; open-air",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w1491011103",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.7545,
-      "lng": -75.5494,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1491011105",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.75528,
-      "lng": -75.55057,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1491027848",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.7601,
-      "lng": -75.55287,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "4 spaces",
-      "source": "OpenStreetMap",
-      "entrance_lat": 39.759884,
-      "entrance_lng": -75.5518493,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
-      "id": "osm-w1491027853",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.75999,
-      "lng": -75.55397,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 39.7593877,
-      "entrance_lng": -75.555016,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w1491027873",
@@ -1169,30 +977,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1491687899",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.74159,
-      "lng": -75.55847,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1491687900",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.74205,
-      "lng": -75.55956,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1493550825",
       "name": "Meghan's Restaurant",
       "addr": "",
@@ -1248,30 +1032,6 @@
       "addr": "",
       "lat": 39.74441,
       "lng": -75.55746,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1495831427",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.74241,
-      "lng": -75.5574,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1495831436",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.74159,
-      "lng": -75.55628,
       "height_in": null,
       "height_label": null,
       "oversized": false,

@@ -16,21 +16,6 @@
       "entrance_source": "OSM parking_entrance node 11448949187"
     },
     {
-      "id": "sav-liberty-st-garage",
-      "name": "Liberty Street Garage",
-      "addr": "401 W Liberty St",
-      "lat": 32.0759,
-      "lng": -81.0963,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City garage.",
-      "source": "savannahga.gov",
-      "entrance_lat": 32.0754087,
-      "entrance_lng": -81.0971952,
-      "entrance_source": "OSM parking_entrance node 9108306482"
-    },
-    {
       "id": "sav-state-st-garage",
       "name": "State Street Garage",
       "addr": "100 E State St",

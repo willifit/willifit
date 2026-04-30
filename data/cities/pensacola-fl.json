@@ -118,19 +118,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w1157325038",
-      "name": "RV Park (unnamed)",
-      "addr": "",
-      "lat": 30.53201,
-      "lng": -87.31523,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w1157325040",
       "name": "RV Park (unnamed)",
       "addr": "",

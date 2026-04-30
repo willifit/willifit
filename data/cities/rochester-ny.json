@@ -53,19 +53,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w868482175",
-      "name": "Minotti Crossings Plaza",
-      "addr": "811 Jefferson Road",
-      "lat": 43.08672,
-      "lng": -77.61914,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (92 spaces). 92 spaces. Free parking. Operator: Minotti Crossings Plaza.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w1090373681",
       "name": "Bellagio Apartments",
       "addr": "",

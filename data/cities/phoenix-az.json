@@ -382,21 +382,6 @@
       "verified_on": "2026-04-27"
     },
     {
-      "id": "chase-field-garage",
-      "name": "Chase Field Garage",
-      "addr": "401 E Jefferson St",
-      "lat": 33.4455,
-      "lng": -112.067,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Chase Field (D-backs).",
-      "source": "Needs verification",
-      "entrance_lat": 33.4439739,
-      "entrance_lng": -112.0675256,
-      "entrance_source": "OSM parking_entrance node 2980250897"
-    },
-    {
       "id": "phx-biltmore-fashion",
       "name": "Biltmore Fashion Park \u2014 Parking Garage",
       "addr": "2502 E Camelback Rd",

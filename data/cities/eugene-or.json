@@ -66,19 +66,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w1057797514",
-      "name": "Franz",
-      "addr": "",
-      "lat": 44.03923,
-      "lng": -123.03303,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (78 spaces). 78 spaces. Operator: Franz.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w1101668894",
       "name": "Meadowlark RV Park",
       "addr": "310 East Oregon Avenue",

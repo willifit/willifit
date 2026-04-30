@@ -327,19 +327,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w870901413",
-      "name": "Campus Parc",
-      "addr": "",
-      "lat": 40.01236,
-      "lng": -83.03516,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (85 spaces). 85 spaces. Operator: Campus Parc.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w1207016595",
       "name": "Korbel North Campground",
       "addr": "",

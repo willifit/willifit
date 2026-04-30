@@ -437,32 +437,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w166077168",
-      "name": "Benson Park",
-      "addr": "",
-      "lat": 41.29618,
-      "lng": -96.01867,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (150 spaces). 150 spaces. Operator: City of Omaha.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w166077170",
-      "name": "Benson Park",
-      "addr": "",
-      "lat": 41.29811,
-      "lng": -96.02072,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: City of Omaha.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w166079115",
       "name": "Roberts Park",
       "addr": "",

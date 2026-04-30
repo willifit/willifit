@@ -301,19 +301,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w421887491",
-      "name": "CenterPort Station - Park and Ride",
-      "addr": "",
-      "lat": 32.81884,
-      "lng": -97.05245,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (985 spaces). 985 spaces. Operator: Trinity Metro.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w557078826",
       "name": "Traders Village RV Park",
       "addr": "",

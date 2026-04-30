@@ -337,19 +337,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w25004236",
-      "name": "Capitol",
-      "addr": "",
-      "lat": 37.27522,
-      "lng": -121.8616,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (951 spaces). 951 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w28397584",
       "name": "Great Mall/Main",
       "addr": "",
@@ -368,32 +355,6 @@
       "addr": "",
       "lat": 37.25793,
       "lng": -121.86035,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (549 spaces). 549 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w28433940",
-      "name": "Ohlone/Chynoweth",
-      "addr": "",
-      "lat": 37.25794,
-      "lng": -121.86143,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (549 spaces). 549 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w28433954",
-      "name": "Ohlone/Chynoweth",
-      "addr": "",
-      "lat": 37.25635,
-      "lng": -121.8598,
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
@@ -441,19 +402,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w31011722",
-      "name": "Snell",
-      "addr": "",
-      "lat": 37.24853,
-      "lng": -121.83015,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (430 spaces). 430 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w35721194",
       "name": "Blossom Hill",
       "addr": "",
@@ -477,19 +425,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (176 spaces). 176 spaces. Free parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w38941404",
-      "name": "Ohlone/Chynoweth",
-      "addr": "",
-      "lat": 37.25713,
-      "lng": -121.85977,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (549 spaces). 549 spaces.",
       "source": "OpenStreetMap (surface lot)"
     },
     {
@@ -542,19 +477,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (119 spaces). 119 spaces. Free parking. Operator: Irvine Company.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w328930994",
-      "name": "Tamien",
-      "addr": "",
-      "lat": 37.31242,
-      "lng": -121.88634,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Free parking.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

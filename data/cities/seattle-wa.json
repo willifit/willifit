@@ -541,19 +541,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (365 spaces). 365 spaces. Paid parking. Operator: International Parking Management.",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w434303319",
-      "name": "Houghton Park & Ride",
-      "addr": "",
-      "lat": 47.66751,
-      "lng": -122.18501,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (470 spaces). 470 spaces.",
-      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [

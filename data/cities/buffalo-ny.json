@@ -313,19 +313,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (190 spaces). 190 spaces. Paid parking. Operator: Pay2Park.",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w449798169",
-      "name": "Premium Parking",
-      "addr": "64 Exchange Street",
-      "lat": 42.87911,
-      "lng": -78.87367,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (232 spaces). 232 spaces. Paid parking. Operator: Premium Parking.",
-      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

@@ -858,19 +858,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w182569333",
-      "name": "Linden Park & Ride",
-      "addr": "349 Linden Avenue",
-      "lat": 42.07324,
-      "lng": -87.69056,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (328 spaces). 328 spaces. Paid parking. Operator: Village of Wilmette.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w220245085",
       "name": "Metra",
       "addr": "",
@@ -985,19 +972,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (1051 spaces). 1051 spaces. Paid parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w737900652",
-      "name": "Metra",
-      "addr": "",
-      "lat": 41.84447,
-      "lng": -87.74567,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (138 spaces). 138 spaces. Paid parking. Operator: Metra.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

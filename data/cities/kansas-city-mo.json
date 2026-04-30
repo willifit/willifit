@@ -333,21 +333,6 @@
       "pano_heading": 270
     },
     {
-      "id": "osm-w256809109",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.09253,
-      "lng": -94.58392,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 39.0926503,
-      "entrance_lng": -94.5836937,
-      "entrance_source": "OSM parking_entrance node 10220499579"
-    },
-    {
       "id": "osm-w340311466",
       "name": "Main Street Parking Garage",
       "addr": "1034 Main Street",

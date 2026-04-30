@@ -27,22 +27,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w897808778",
-      "name": "Missoula KOA Holiday",
-      "addr": "",
-      "lat": 46.89593,
-      "lng": -114.04343,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)",
-      "entrance_lat": 46.8959264,
-      "entrance_lng": -114.0448053,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
-    },
-    {
       "id": "osm-w1203826812",
       "name": "Jim & Mary's RV Park",
       "addr": "9800 US 93",

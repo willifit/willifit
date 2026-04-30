@@ -421,19 +421,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w106211516",
-      "name": "Seminary Park And Ride",
-      "addr": "W & E Of Us 101 N Of Seminary Ave",
-      "lat": 37.88997,
-      "lng": -122.51724,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (62 spaces). 62 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w826941389",
       "name": "Tiburon Park And Ride",
       "addr": "W. of Rte. 13 (Tiburon Blvd) at Lyford Drive",

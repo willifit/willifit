@@ -259,21 +259,6 @@
       "source": "shopcherrycreek.com"
     },
     {
-      "id": "den-botanic-gardens",
-      "name": "Denver Botanic Gardens Garage",
-      "addr": "909 York St",
-      "lat": 39.7323,
-      "lng": -104.9611,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Underground garage at Botanic Gardens.",
-      "source": "botanicgardens.org",
-      "entrance_lat": 39.7327119,
-      "entrance_lng": -104.9594905,
-      "entrance_source": "OSM parking_entrance node 2326734328"
-    },
-    {
       "id": "den-nature-science",
       "name": "Denver Museum of Nature & Science",
       "addr": "2001 Colorado Blvd",
@@ -668,24 +653,6 @@
       ]
     },
     {
-      "id": "osm-w541290747",
-      "name": "Unnamed parking structure",
-      "addr": "Monroe Street",
-      "lat": 39.71687,
-      "lng": -104.94529,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano 5CmsGcKRFNzzYlQllkgVyQ, heading 135\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 39.7160992,
-      "entrance_lng": -104.9473931,
-      "entrance_source": "OSM parking_entrance node 12563464893",
-      "verified_on": "2026-04-23",
-      "pano_id": "5CmsGcKRFNzzYlQllkgVyQ",
-      "pano_heading": 135
-    },
-    {
       "id": "osm-w541291795",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -934,19 +901,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w136814737",
-      "name": "North Bear Crossing",
-      "addr": "",
-      "lat": 39.66962,
-      "lng": -105.11211,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (102 spaces). 102 spaces. Operator: North Bear Crossing.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w136977204",
       "name": "Hampden Kipling Center",
       "addr": "",
@@ -957,19 +911,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces. Operator: Hampden Kipling Center.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w136977398",
-      "name": "Hampden Kipling Center",
-      "addr": "",
-      "lat": 39.65452,
-      "lng": -105.10773,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Operator: Hampden Kipling Center.",
       "source": "OpenStreetMap (surface lot)"
     },
     {
@@ -1061,19 +1002,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (114 spaces). 114 spaces. Operator: Creekside at Green Gables.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w144476708",
-      "name": "Offices",
-      "addr": "",
-      "lat": 39.68426,
-      "lng": -105.0805,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (57 spaces). 57 spaces. Operator: Key Bank Office Bldg management.",
       "source": "OpenStreetMap (surface lot)"
     },
     {
@@ -1207,19 +1135,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w333923326",
-      "name": "Stadium Parking",
-      "addr": "",
-      "lat": 39.72217,
-      "lng": -105.1093,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (71 spaces). 71 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w436485637",
       "name": "38th & Blake Park-n-Ride",
       "addr": "3768 Blake Street",
@@ -1238,19 +1153,6 @@
       "addr": "4220 Garfield Street",
       "lat": 39.77554,
       "lng": -104.94428,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Paid parking. Operator: RTD.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w436501663",
-      "name": "40th & Colorado Park-n-Ride",
-      "addr": "4220 Garfield Street",
-      "lat": 39.7755,
-      "lng": -104.94266,
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
@@ -1321,45 +1223,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (292 spaces). 292 spaces. Operator: RTD.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w490610882",
-      "name": "RTD",
-      "addr": "",
-      "lat": 39.71912,
-      "lng": -105.12833,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (283 spaces). 283 spaces. Operator: RTD.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w490611325",
-      "name": "RTD",
-      "addr": "",
-      "lat": 39.71841,
-      "lng": -105.12833,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (197 spaces). 197 spaces. Operator: RTD.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w490611326",
-      "name": "RTD",
-      "addr": "",
-      "lat": 39.7184,
-      "lng": -105.12985,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (196 spaces). 196 spaces. Operator: RTD.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

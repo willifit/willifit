@@ -65,36 +65,6 @@
       "pano_heading": 135
     },
     {
-      "id": "chs-marion-square",
-      "name": "Marion Square Garage",
-      "addr": "330 King St",
-      "lat": 32.7884,
-      "lng": -79.9352,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Charleston Museum area.",
-      "source": "Needs verification",
-      "entrance_lat": 32.7882514,
-      "entrance_lng": -79.9364369,
-      "entrance_source": "OSM parking_entrance node 12960023383"
-    },
-    {
-      "id": "chs-queen-st-garage",
-      "name": "Queen Street Garage",
-      "addr": "93 Queen St",
-      "lat": 32.7771,
-      "lng": -79.9318,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "City-owned.",
-      "source": "charleston-sc.gov",
-      "entrance_lat": 32.7772775,
-      "entrance_lng": -79.9321874,
-      "entrance_source": "OSM parking_entrance node 12821038677"
-    },
-    {
       "id": "chs-hutson-st",
       "name": "Hutson Street Garage",
       "addr": "91 Hutson St",

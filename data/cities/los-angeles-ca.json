@@ -3281,18 +3281,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w450435694",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.9492,
-      "lng": -118.13166,
-      "height_in": 134,
-      "height_label": "11'2\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w450819457",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3742,37 +3730,11 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w104357811",
-      "name": "Lynwood Park And Ride",
-      "addr": "I-105 / Long Beach Blvd Ic",
-      "lat": 33.92526,
-      "lng": -118.21089,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (357 spaces). 357 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w104357812",
       "name": "Slauson Park And Ride",
       "addr": "Sw & Se Quad I-110 / Slauson Avenue Ic",
       "lat": 33.98866,
       "lng": -118.2798,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (160 spaces). 160 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w104357815",
-      "name": "Slauson Park And Ride",
-      "addr": "Sw & Se Quad I-110 / Slauson Avenue Ic",
-      "lat": 33.98867,
-      "lng": -118.28134,
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,

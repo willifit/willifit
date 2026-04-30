@@ -270,19 +270,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-n1711384487",
-      "name": "Silver Crown Mobile Home Park",
-      "addr": "",
-      "lat": 39.58667,
-      "lng": -119.78129,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w304220025",
       "name": "Cell Phone Waiting Lot Reno Airport",
       "addr": "",
@@ -340,19 +327,6 @@
       "addr": "1300 West 2nd Street",
       "lat": 39.52296,
       "lng": -119.83055,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w496554839",
-      "name": "Bonanza Terrace RV Park",
-      "addr": "",
-      "lat": 39.57323,
-      "lng": -119.83027,
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,

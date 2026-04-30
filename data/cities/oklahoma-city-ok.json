@@ -277,21 +277,6 @@
       "entrance_source": "OSM parking_entrance node 10803229905"
     },
     {
-      "id": "osm-w1161540516",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 35.46144,
-      "lng": -97.51381,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 35.462734,
-      "entrance_lng": -97.5149903,
-      "entrance_source": "OSM parking_entrance node 10803229905"
-    },
-    {
       "id": "osm-w426648537",
       "name": "RV Park (unnamed)",
       "addr": "",

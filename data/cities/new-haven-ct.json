@@ -38,32 +38,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). 17 spaces.",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w425097407",
-      "name": "Truck Parking",
-      "addr": "",
-      "lat": 41.2463,
-      "lng": -73.00753,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w963519593",
-      "name": "City of Milford",
-      "addr": "",
-      "lat": 41.25035,
-      "lng": -73.05435,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Operator: City of Milford.",
-      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

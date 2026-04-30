@@ -480,19 +480,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w598414190",
-      "name": "Golden West Transportation Center Park and Ride",
-      "addr": "Gothard Street",
-      "lat": 33.73432,
-      "lng": -118.00037,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (331 spaces). 331 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w736432632",
       "name": "Toy Story Parking Lot",
       "addr": "300 West Katella Avenue",

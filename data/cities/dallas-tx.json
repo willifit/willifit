@@ -604,24 +604,6 @@
       "pano_heading": 225
     },
     {
-      "id": "osm-w25474937",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.90332,
-      "lng": -97.04293,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"10'0\"\" (pano Pp5JgQWvRHLVmgFe9BzZcg, heading 0\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 32.9028189,
-      "entrance_lng": -97.0421046,
-      "entrance_source": "OSM parking_entrance node 9790106350",
-      "verified_on": "2026-04-23",
-      "pano_id": "Pp5JgQWvRHLVmgFe9BzZcg",
-      "pano_heading": 0
-    },
-    {
       "id": "osm-w25549995",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -703,21 +685,6 @@
       ]
     },
     {
-      "id": "osm-w28545009",
-      "name": "Unnamed parking structure",
-      "addr": "1806 Ross Avenue",
-      "lat": 32.78557,
-      "lng": -96.8003,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.7855981,
-      "entrance_lng": -96.7998662,
-      "entrance_source": "OSM parking_entrance node 9534539682"
-    },
-    {
       "id": "osm-w28545237",
       "name": "Elm Street Garage",
       "addr": "",
@@ -776,21 +743,6 @@
           "height_label": "7'0\""
         }
       ]
-    },
-    {
-      "id": "osm-w30924376",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.78633,
-      "lng": -96.79728,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.7857008,
-      "entrance_lng": -96.7975176,
-      "entrance_source": "OSM parking_entrance node 13532394946"
     },
     {
       "id": "osm-w31265332",
@@ -857,21 +809,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "fELuytqQL3HvHiRaGfjWMg",
       "pano_heading": 135
-    },
-    {
-      "id": "osm-w221145484",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.92157,
-      "lng": -96.76727,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.9217955,
-      "entrance_lng": -96.7669103,
-      "entrance_source": "OSM parking_entrance node 9552388454"
     },
     {
       "id": "osm-w221145499",
@@ -1075,21 +1012,6 @@
       "pano_heading": 45
     },
     {
-      "id": "osm-w464124879",
-      "name": "Unnamed parking structure",
-      "addr": "12750 Merit Drive",
-      "lat": 32.92207,
-      "lng": -96.77002,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.9218957,
-      "entrance_lng": -96.7700337,
-      "entrance_source": "OSM parking_entrance node 6326483997"
-    },
-    {
       "id": "osm-w465042568",
       "name": "Unnamed parking structure",
       "addr": "2777 North Stemmons Freeway",
@@ -1155,18 +1077,6 @@
       "pano_heading": 0
     },
     {
-      "id": "osm-w470463078",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.97929,
-      "lng": -96.70904,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w471546768",
       "name": "Lexus Garage",
       "addr": "",
@@ -1216,21 +1126,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "HnfN1ZpYDUn9YmnEzjjRGA",
       "pano_heading": 180
-    },
-    {
-      "id": "osm-w530724477",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.98254,
-      "lng": -96.71079,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.984138,
-      "entrance_lng": -96.7105731,
-      "entrance_source": "OSM parking_entrance node 12322994108"
     },
     {
       "id": "osm-w530724478",
@@ -1285,21 +1180,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "ajhzx8-RREAfX6jV-EQt-g",
       "pano_heading": 270
-    },
-    {
-      "id": "osm-w536204309",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.00061,
-      "lng": -96.70014,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.0002482,
-      "entrance_lng": -96.7002279,
-      "entrance_source": "OSM parking_entrance node 10612133841"
     },
     {
       "id": "osm-w536204310",
@@ -1416,51 +1296,6 @@
       "entrance_source": "OSM parking_entrance node 9583222318"
     },
     {
-      "id": "osm-w794179078",
-      "name": "Fountain Place Parking Garage",
-      "addr": "",
-      "lat": 32.78561,
-      "lng": -96.80264,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.785913,
-      "entrance_lng": -96.8027026,
-      "entrance_source": "OSM parking_entrance node 13530613406"
-    },
-    {
-      "id": "osm-w1177967604",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.00054,
-      "lng": -96.69861,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.9996136,
-      "entrance_lng": -96.6983858,
-      "entrance_source": "OSM parking_entrance node 10942915897"
-    },
-    {
-      "id": "osm-w1177967621",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.99985,
-      "lng": -96.6963,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.0000203,
-      "entrance_lng": -96.6965773,
-      "entrance_source": "OSM parking_entrance node 10942915938"
-    },
-    {
       "id": "osm-r8379645",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -1527,32 +1362,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Free parking. Operator: Founders Park.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w500796083",
-      "name": "Founders Park",
-      "addr": "",
-      "lat": 33.00398,
-      "lng": -96.56894,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (150 spaces). 150 spaces. Free parking. Operator: Founders Park.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w500796087",
-      "name": "Founders Park",
-      "addr": "",
-      "lat": 33.00343,
-      "lng": -96.57015,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (70 spaces). 70 spaces. Free parking. Operator: Founders Park.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

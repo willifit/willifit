@@ -59,19 +59,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "osm-w89905983",
-      "name": "City of Annapolis",
-      "addr": "",
-      "lat": 38.97761,
-      "lng": -76.48623,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "62 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w140460267",
       "name": "Lot D",
       "addr": "",
@@ -182,21 +169,6 @@
       "verified_on": "2026-04-23",
       "pano_id": "jdhq_X4k-efeqHU8ny2pow",
       "pano_heading": 135
-    },
-    {
-      "id": "osm-w177598980",
-      "name": "Unnamed parking structure",
-      "addr": "217 Harker Place",
-      "lat": 38.97977,
-      "lng": -76.54017,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "entrance_lat": 38.9797532,
-      "entrance_lng": -76.5396381,
-      "entrance_source": "OSM parking_entrance node 13720546307"
     },
     {
       "id": "osm-w199900257",
@@ -792,37 +764,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "osm-w561588372",
-      "name": "Anne Arundle County Public Schools",
-      "addr": "",
-      "lat": 39.04704,
-      "lng": -76.48413,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "25 spaces",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w677683322",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 38.982,
-      "lng": -76.54024,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "free\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano TO1whBCgDeGH1KGNZSWhrg, heading 135\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "entrance_lat": 38.982503,
-      "entrance_lng": -76.5404356,
-      "entrance_source": "OSM parking_entrance node 6345372871",
-      "verified_on": "2026-04-23",
-      "pano_id": "TO1whBCgDeGH1KGNZSWhrg",
-      "pano_heading": 135
-    },
-    {
       "id": "osm-w854477013",
       "name": "USCG",
       "addr": "",
@@ -864,22 +805,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1000559641",
-      "name": "City of Annapolis",
-      "addr": "",
-      "lat": 38.97773,
-      "lng": -76.48764,
-      "height_in": null,
-      "height_label": null,
-      "oversized": true,
-      "notes": "24 spaces",
-      "source": "OpenStreetMap",
-      "entrance_lat": 38.9771898,
-      "entrance_lng": -76.4890045,
-      "entrance_source": "OSM parking_entrance node 2907070007",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w1014471849",
       "name": "United States Postal Service (USPS)",
       "addr": "",
@@ -893,18 +818,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "osm-w1014525469",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 38.96568,
-      "lng": -76.49141,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "10 spaces",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1015978221",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -914,30 +827,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "8 spaces",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1015978224",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 38.96244,
-      "lng": -76.49894,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "22 spaces",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1015979018",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 38.96299,
-      "lng": -76.49808,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "24 spaces",
       "source": "OpenStreetMap"
     },
     {

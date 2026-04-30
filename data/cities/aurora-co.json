@@ -285,19 +285,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w272506212",
-      "name": "Aurora Marketplace",
-      "addr": "",
-      "lat": 39.66064,
-      "lng": -104.85846,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (187 spaces). 187 spaces. Operator: Aurora Marketplace.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w286992727",
       "name": "Alameda & Havana Park-n-Ride",
       "addr": "200 South Havana Street",
@@ -431,19 +418,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w547560468",
-      "name": "Radisson Hotel",
-      "addr": "",
-      "lat": 39.6594,
-      "lng": -104.83964,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (78 spaces). 78 spaces. Operator: Radisson Hotel.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w557854733",
       "name": "US Bank",
       "addr": "",
@@ -496,19 +470,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w569118729",
-      "name": "Buckingham Village",
-      "addr": "",
-      "lat": 39.68832,
-      "lng": -104.86717,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (149 spaces). 149 spaces. Operator: Buckingham Village.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w582082083",
       "name": "Costco",
       "addr": "",
@@ -519,32 +480,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (210 spaces). 210 spaces. Operator: Costco.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w582082788",
-      "name": "Costco",
-      "addr": "",
-      "lat": 39.69082,
-      "lng": -104.86769,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (119 spaces). 119 spaces. Operator: Costco.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w582084852",
-      "name": "Costco",
-      "addr": "",
-      "lat": 39.69059,
-      "lng": -104.86677,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (275 spaces). 275 spaces. Operator: Costco.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

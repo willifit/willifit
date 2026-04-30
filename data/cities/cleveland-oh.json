@@ -196,21 +196,6 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
-      "id": "cle-cle-museum-art",
-      "name": "Cleveland Museum of Art Lot",
-      "addr": "11150 East Blvd",
-      "lat": 41.5089,
-      "lng": -81.6119,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Free museum! Underground garage.",
-      "source": "clevelandart.org",
-      "entrance_lat": 41.5094594,
-      "entrance_lng": -81.6132922,
-      "entrance_source": "OSM parking_entrance node 4110034692"
-    },
-    {
       "id": "cle-severance-hall",
       "name": "Severance Hall / Cleveland Orchestra",
       "addr": "11001 Euclid Ave",

@@ -355,19 +355,6 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
-      "id": "osm-w169228006",
-      "name": "Wickham Park",
-      "addr": "",
-      "lat": 41.78734,
-      "lng": -72.57555,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Operator: Wickham Park.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w718105265",
       "name": "Riverfront Recapture Inc",
       "addr": "",

@@ -316,19 +316,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w1014932179",
-      "name": "Bob Shetler",
-      "addr": "",
-      "lat": 41.69975,
-      "lng": -93.68791,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w1336627828",
       "name": "RV Park (unnamed)",
       "addr": "",

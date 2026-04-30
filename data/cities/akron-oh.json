@@ -12,19 +12,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w499487005",
-      "name": "truck parking",
-      "addr": "",
-      "lat": 41.19475,
-      "lng": -81.62504,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck').",
-      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],

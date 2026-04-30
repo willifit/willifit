@@ -287,19 +287,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). Operator: Railroad Pass Casino.",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1240349730",
-      "name": "Truck Parking",
-      "addr": "",
-      "lat": 35.97209,
-      "lng": -114.91052,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). Operator: Railroad Pass Casino.",
-      "source": "OpenStreetMap (surface lot)"
     }
   ],
   "tunnels": [],
