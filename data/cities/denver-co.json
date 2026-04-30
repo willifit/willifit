@@ -653,21 +653,6 @@
       ]
     },
     {
-      "id": "osm-w541291795",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 39.71697,
-      "lng": -104.94824,
-      "height_in": 79,
-      "height_label": "6'7\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 39.7160992,
-      "entrance_lng": -104.9473931,
-      "entrance_source": "OSM parking_entrance node 12563464893"
-    },
-    {
       "id": "osm-w542356469",
       "name": "East Deck",
       "addr": "55 South Steele Street",

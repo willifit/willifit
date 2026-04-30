@@ -1228,33 +1228,6 @@
       "entrance_source": "OSM parking_entrance node 7423897098"
     },
     {
-      "id": "osm-w597876728",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.96672,
-      "lng": -96.71837,
-      "height_in": 205,
-      "height_label": "17'1\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.9665895,
-      "entrance_lng": -96.7183784,
-      "entrance_source": "OSM parking_entrance node 6312958928"
-    },
-    {
-      "id": "osm-w597894205",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 32.97686,
-      "lng": -96.7099,
-      "height_in": 240,
-      "height_label": "20'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w598154329",
       "name": "Unnamed parking structure",
       "addr": "",

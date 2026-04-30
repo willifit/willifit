@@ -379,21 +379,6 @@
       "entrance_source": "OSM parking_entrance node 13274855387"
     },
     {
-      "id": "osm-w189070188",
-      "name": "Cumberland Street Garage",
-      "addr": "90 Cumberland Street",
-      "lat": 32.77979,
-      "lng": -79.93038,
-      "height_in": 204,
-      "height_label": "17'0\"",
-      "oversized": false,
-      "notes": "990 spaces; paid; covered; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "entrance_lat": 32.7796775,
-      "entrance_lng": -79.9302738,
-      "entrance_source": "OSM parking_entrance node 12624557931"
-    },
-    {
       "id": "osm-w189102140",
       "name": "Camden Exchange Garage",
       "addr": "35 John Street",
