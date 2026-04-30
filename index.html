@@ -720,6 +720,10 @@
   .marker-warn { background: #d18a0a; }
   .marker-bad { background: #b5393e; }
   .marker-unknown { background: #555c6b; }
+  /* Surface lots / RV parks — green like .ok so they don't render as
+     grey "unverified" pins on the map.  No height_in (open-air) but
+     definitely accommodating, hence high-clearance treatment. */
+  .marker-nolimit { background: #2da66f; }
   .garage-marker.active-marker {
     transform: rotate(-45deg) scale(1.3);
     z-index: 1000 !important;
@@ -2491,8 +2495,14 @@ function isConfirmedEntry(g) {
                g.structure_type === 'surface_lot' ||
                (typeof g.height_label === 'string' && /uncovered|no limit/i.test(g.height_label)));
 }
-function markerClass(inches) {
-  const c = heightClass(inches);
+function markerClass(arg) {
+  // Accept either a full entry (so we honor surface_lot / "no limit"
+  // -> green like the list view) OR a raw `inches` number for legacy
+  // callers.  RV parks would otherwise render as grey "unknown" dots
+  // because their height_in is null.
+  const c = (arg !== null && typeof arg === 'object')
+    ? heightClassForEntry(arg)
+    : heightClass(arg);
   return 'marker-' + c;
 }
 
@@ -2955,7 +2965,7 @@ function renderMarkersOSM() {
   if (!shouldShowGarages()) return; // hide garages at country-level zoom
   const items = getFiltered();
   items.forEach(g => {
-    const cls = markerClass(g.height_in);
+    const cls = markerClass(g);
     const label = g.height_in ? (g.height_label.split("'")[0] + "'") : '?';
     const icon = L.divIcon({
       className: '',
@@ -2975,6 +2985,7 @@ const _GM_COLORS = {
   'marker-warn':    '#d18a0a',
   'marker-bad':     '#b5393e',
   'marker-unknown': '#555c6b',
+  'marker-nolimit': '#2da66f', /* surface lots / RV parks — same green as ok */
 };
 function _gmIcon(cls, label, active) {
   const color = _GM_COLORS[cls] || '#555c6b';
@@ -3021,7 +3032,7 @@ function renderMarkersGoogle() {
   if (!shouldShowGarages()) return; // hide garages at country-level zoom
   const items = getFiltered();
   items.forEach(g => {
-    const cls = markerClass(g.height_in);
+    const cls = markerClass(g);
     const label = g.height_in ? (g.height_label.split("'")[0] + "'") : '?';
     const marker = new google.maps.Marker({
       position: { lat: g.lat, lng: g.lng },
