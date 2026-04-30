@@ -67,11 +67,13 @@
       "addr": "604 S Gay St",
       "lat": 35.9647,
       "lng": -83.9189,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 83,
+      "height_label": "6'11\"",
       "oversized": false,
-      "notes": "Historic 1928 theater.",
-      "source": "tennesseetheatre.com"
+      "notes": "Historic 1928 theater. Locust Street 6'11",
+      "source": "Web-verified (high confidence) - was: tennesseetheatre.com",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.downtownknoxville.org/locust-street-garage/"
     },
     {
       "id": "knx-bijou-theatre",
@@ -180,11 +182,13 @@
       "addr": "601 S Gay St",
       "lat": 35.9644,
       "lng": -83.9186,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 83,
+      "height_label": "6'11\"",
       "oversized": false,
-      "notes": "Museum garage.",
-      "source": "easttnhistory.org"
+      "notes": "Museum garage. Same Locust Street Garage",
+      "source": "Web-verified (medium confidence) - was: easttnhistory.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.downtownknoxville.org/locust-street-garage/"
     },
     {
       "id": "knx-sunsphere",
@@ -284,10 +288,12 @@
       "lat": 36.0104,
       "lng": -84.2603,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Manhattan Project museum.",
-      "source": "amse.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Manhattan Project museum. Surface lot",
+      "source": "Web-verified surface lot - was: amse.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "knx-great-smoky-sugarlands",

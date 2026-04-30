@@ -52,13 +52,15 @@
       "lat": 41.586,
       "lng": -93.6254,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Performing arts center. Parking ramp adjacent.",
-      "source": "desmoinesperformingarts.org",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Performing arts center. Parking ramp adjacent. Uses nearby city ramps; on-site is street/surface",
+      "source": "Web-verified surface lot - was: desmoinesperformingarts.org",
       "entrance_lat": 41.5849288,
       "entrance_lng": -93.6254586,
-      "entrance_source": "OSM parking_entrance node 8931261417"
+      "entrance_source": "OSM parking_entrance node 8931261417",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dsm-cowles-commons",
@@ -94,13 +96,15 @@
       "lat": 41.5814,
       "lng": -93.6312,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Museum + IMAX.",
-      "source": "sciowa.org",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Museum + IMAX. Surface parking adjacent",
+      "source": "Web-verified surface lot - was: sciowa.org",
       "entrance_lat": 41.5823373,
       "entrance_lng": -93.6325372,
-      "entrance_source": "OSM parking_entrance node 2852325364"
+      "entrance_source": "OSM parking_entrance node 2852325364",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dsm-art-ctr",
@@ -109,10 +113,12 @@
       "lat": 41.5889,
       "lng": -93.6795,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Free museum. Surface lot.",
-      "source": "desmoinesartcenter.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Free museum. Surface lot. Surface lot in Greenwood Park",
+      "source": "Web-verified surface lot - was: desmoinesartcenter.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dsm-pappajohn-sculpture",
@@ -169,13 +175,15 @@
       "lat": 41.5545,
       "lng": -93.7944,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Upscale enclosed mall.",
-      "source": "simon.com",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Upscale enclosed mall. 5,000+ surface spaces",
+      "source": "Web-verified surface lot - was: simon.com",
       "entrance_lat": 41.5554477,
       "entrance_lng": -93.7954369,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dsm-valley-junction",
@@ -220,10 +228,12 @@
       "lat": 41.6517,
       "lng": -93.4789,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Casino + horse racing. RV-friendly.",
-      "source": "prairiemeadows.com"
+      "notes": "Casino + horse racing. RV-friendly. Large surface casino lot, RV friendly",
+      "source": "Web-verified surface lot - was: prairiemeadows.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dsm-adventureland",

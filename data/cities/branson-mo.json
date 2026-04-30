@@ -84,11 +84,13 @@
       "addr": "200 N Sycamore St",
       "lat": 36.6463,
       "lng": -93.2204,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Hilton-attached convention center.",
-      "source": "bransonconventioncenter.com"
+      "notes": "Hilton-attached convention center. Listed over 7'",
+      "source": "Web-verified (medium confidence) - was: bransonconventioncenter.com",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.bransoncc.com/parking/"
     },
     {
       "id": "bra-showboat-branson",
@@ -164,10 +166,12 @@
       "lat": 36.6428,
       "lng": -93.2783,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Attractions complex on 76.",
-      "source": "hollywoodwaxentertainment.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Attractions complex on 76. Surface lots on Country Blvd",
+      "source": "Web-verified surface lot - was: hollywoodwaxentertainment.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "bra-track-family",
@@ -286,10 +290,12 @@
       "lat": 36.6434,
       "lng": -93.238,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Military history museum.",
-      "source": "vetsm.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Military history museum. Surface lot",
+      "source": "Web-verified surface lot - was: vetsm.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "bra-bransonairport",

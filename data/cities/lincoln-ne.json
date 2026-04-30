@@ -180,10 +180,12 @@
       "lat": 40.8192,
       "lng": -96.6342,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "Needs verification"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Enclosed mall. Surface only",
+      "source": "Web-verified surface lot - was: Needs verification",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lin-sun-valley-lanes",
@@ -205,10 +207,12 @@
       "lat": 40.8168,
       "lng": -96.7005,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Free museum on UNL campus.",
-      "source": "sheldonartmuseum.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Free museum on UNL campus. Street and surface lots",
+      "source": "Web-verified surface lot - was: sheldonartmuseum.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lin-museum-nebraska-history",
@@ -247,10 +251,12 @@
       "lat": 40.8204,
       "lng": -96.6992,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "UNL paleontology museum with mammoths.",
-      "source": "museum.unl.edu"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "UNL paleontology museum with mammoths. Street/surface on UNL",
+      "source": "Web-verified surface lot - was: museum.unl.edu",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lin-sunken-gardens",

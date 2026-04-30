@@ -93,14 +93,16 @@
       "addr": "2001 Robert Dedman Dr",
       "lat": 30.2843,
       "lng": -97.7324,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "New arena (Longhorns basketball). Multiple UT garages serve events.",
-      "source": "moodycenteratx.com",
+      "notes": "New arena (Longhorns basketball). Multiple UT garages serve events. Use 7'0 for upper levels (lowest at game-day-accessible structures)",
+      "source": "Web-verified (high confidence) - was: moodycenteratx.com",
       "entrance_lat": 30.2834713,
       "entrance_lng": -97.7306998,
-      "entrance_source": "OSM parking_entrance node 358056300"
+      "entrance_source": "OSM parking_entrance node 358056300",
+      "verified_on": "2026-04-30",
+      "source_url": "https://parking.utexas.edu/parking/garages/manor-garage-mag"
     },
     {
       "id": "atx-ut-trinity",
@@ -133,10 +135,12 @@
       "lat": 30.2861,
       "lng": -97.7291,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Free surface lot.",
-      "source": "lbjlibrary.org"
+      "notes": "Free surface lot. Surface lot on UT campus",
+      "source": "Web-verified surface lot - was: lbjlibrary.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "atx-domain",
@@ -160,10 +164,12 @@
       "lat": 30.2589,
       "lng": -97.8031,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
+      "height_label": "No limit",
+      "oversized": true,
       "notes": "Surface lots.",
-      "source": "simon.com"
+      "source": "Web-verified surface lot - was: simon.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "atx-zilker-park",
@@ -226,10 +232,12 @@
       "lat": 30.3876,
       "lng": -97.7198,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "MLS stadium surface lots.",
-      "source": "austinfc.com"
+      "notes": "MLS stadium surface lots. Surface event lots",
+      "source": "Web-verified surface lot - was: austinfc.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "atx-circuit-americas",

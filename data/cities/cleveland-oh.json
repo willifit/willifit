@@ -80,14 +80,16 @@
       "addr": "50 Public Sq",
       "lat": 41.4993,
       "lng": -81.6944,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Iconic Terminal Tower + retail.",
-      "source": "towercitycenter.com",
+      "notes": "Iconic Terminal Tower + retail. Vehicles >6' must use alt entrance",
+      "source": "Web-verified (high confidence) - was: towercitycenter.com",
       "entrance_lat": 41.4986132,
       "entrance_lng": -81.6953055,
-      "entrance_source": "OSM parking_entrance node 4097827033"
+      "entrance_source": "OSM parking_entrance node 4097827033",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.towercitycenter.com/parking"
     },
     {
       "id": "cle-warehouse-dist",
@@ -149,11 +151,13 @@
       "addr": "601 Erieside Ave",
       "lat": 41.508,
       "lng": -81.696,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Science center lakefront.",
-      "source": "greatscience.com"
+      "notes": "Science center lakefront. Max height 6'10",
+      "source": "Web-verified (high confidence) - was: greatscience.com",
+      "verified_on": "2026-04-30",
+      "source_url": "https://greatscience.com/visit/directions-parking"
     },
     {
       "id": "cle-ohio-city",

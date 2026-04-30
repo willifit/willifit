@@ -118,11 +118,13 @@
       "addr": "1285 Elmwood Ave",
       "lat": 42.9241,
       "lng": -78.8774,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Museum surface + new underground (2023 reopening).",
-      "source": "buffaloakg.org"
+      "notes": "Museum surface + new underground (2023 reopening). Official 8'2",
+      "source": "Web-verified (high confidence) - was: buffaloakg.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://buffaloakg.org/visit/directions-parking"
     },
     {
       "id": "buf-delaware-park",

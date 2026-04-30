@@ -6,14 +6,16 @@
       "addr": "One Civic Center Plaza",
       "lat": 31.7619,
       "lng": -106.4906,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 77,
+      "height_label": "6'5\"",
       "oversized": false,
-      "notes": "Convention Center + Abraham Chavez Theatre.",
-      "source": "destinationelpaso.com",
+      "notes": "Convention Center + Abraham Chavez Theatre. Two-level underground 6'5",
+      "source": "Web-verified (high confidence) - was: destinationelpaso.com",
       "entrance_lat": 31.7611966,
       "entrance_lng": -106.4916325,
-      "entrance_source": "OSM parking_entrance node 10718827774"
+      "entrance_source": "OSM parking_entrance node 10718827774",
+      "verified_on": "2026-04-30",
+      "source_url": "https://elpasolive.com/experience/directions-and-parking"
     },
     {
       "id": "elp-san-jacinto",
@@ -37,10 +39,12 @@
       "lat": 31.7585,
       "lng": -106.487,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Historic theater + hotel.",
-      "source": "Needs verification"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Historic theater + hotel. Surface lots",
+      "source": "Web-verified surface lot - was: Needs verification",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "elp-union-plaza",
@@ -234,10 +238,12 @@
       "lat": 31.81,
       "lng": -106.3775,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Uncovered. Oversized OK.",
-      "source": "elpasointernationalairport.com"
+      "notes": "Uncovered. Oversized OK. Surface long-term",
+      "source": "Web-verified surface lot - was: elpasointernationalairport.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "osm-w990199147",

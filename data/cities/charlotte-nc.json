@@ -49,14 +49,16 @@
       "addr": "200 S Tryon St",
       "lat": 35.2267,
       "lng": -80.8432,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 160,
+      "height_label": "13'4\"",
       "oversized": false,
-      "notes": "Uptown office/event parking.",
-      "source": "centercitygreen.com",
+      "notes": "Uptown office/event parking. 13'4 \u2014 RV-friendly",
+      "source": "Web-verified (high confidence) - was: centercitygreen.com",
       "entrance_lat": 35.2260937,
       "entrance_lng": -80.8433489,
-      "entrance_source": "OSM parking_entrance node 9111862609"
+      "entrance_source": "OSM parking_entrance node 9111862609",
+      "verified_on": "2026-04-30",
+      "source_url": "https://centercitygreen.com/"
     },
     {
       "id": "cht-7th-st-station",
@@ -79,14 +81,16 @@
       "addr": "210 E Trade St",
       "lat": 35.226,
       "lng": -80.8395,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Former EpiCentre entertainment + office tower.",
-      "source": "Needs verification",
+      "notes": "Former EpiCentre entertainment + office tower. 6'8 max",
+      "source": "Web-verified (high confidence) - was: Needs verification",
       "entrance_lat": 35.2262223,
       "entrance_lng": -80.8400841,
-      "entrance_source": "OSM parking_entrance node 11020919397"
+      "entrance_source": "OSM parking_entrance node 11020919397",
+      "verified_on": "2026-04-30",
+      "source_url": "https://parkmobile.io/parking/locations/nc/charlotte-parking/parking-lot/fifth-third-center-garage"
     },
     {
       "id": "cht-convention-ctr",

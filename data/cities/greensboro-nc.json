@@ -213,10 +213,12 @@
       "lat": 36.1213,
       "lng": -79.8272,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Museum adjacent to Science Center.",
-      "source": "greensboroscience.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Museum adjacent to Science Center. Surface lot",
+      "source": "Web-verified surface lot - was: greensboroscience.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "grb-bog-garden",

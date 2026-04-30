@@ -45,13 +45,15 @@
       "lat": 32.7518,
       "lng": -97.0834,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "XFL + Cowboys training lots.",
-      "source": "Needs verification",
+      "notes": "XFL + Cowboys training lots. Surface lots E and L; RV in Lot D",
+      "source": "Web-verified surface lot - was: Needs verification",
       "entrance_lat": 32.7525157,
       "entrance_lng": -97.0844401,
-      "entrance_source": "OSM parking_entrance node 12836696946"
+      "entrance_source": "OSM parking_entrance node 12836696946",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "arl-esports-stadium",
@@ -96,10 +98,12 @@
       "lat": 32.7506,
       "lng": -97.084,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Part of entertainment district.",
-      "source": "arlingtonconventioncenter.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Part of entertainment district. Surface lots adjacent to Choctaw Stadium",
+      "source": "Web-verified surface lot - was: arlingtonconventioncenter.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "arl-texas-live",

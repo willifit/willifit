@@ -19,11 +19,13 @@
       "addr": "500 Grinnell St",
       "lat": 24.5565,
       "lng": -81.7994,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 86,
+      "height_label": "7'2\"",
       "oversized": false,
-      "notes": "City garage. Connected to Duval Loop bus.",
-      "source": "cityofkeywest-fl.gov"
+      "notes": "City garage. Connected to Duval Loop bus. 7'2 max at 301 Grinnell",
+      "source": "Web-verified (high confidence) - was: cityofkeywest-fl.gov",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.cityofkeywest-fl.gov/334/Old-Town-Parking-Garage"
     },
     {
       "id": "kw-old-town-trolley",
@@ -92,10 +94,12 @@
       "lat": 24.5512,
       "lng": -81.8002,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
+      "height_label": "No limit",
+      "oversized": true,
       "notes": "Street parking only. Home of Papa + polydactyl cats.",
-      "source": "hemingwayhome.com"
+      "source": "Web-verified surface lot - was: hemingwayhome.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "kw-southernmost-point",
@@ -128,13 +132,15 @@
       "lat": 24.5593,
       "lng": -81.8062,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Treasure museum.",
-      "source": "melfisher.org",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Treasure museum. Street parking only",
+      "source": "Web-verified surface lot - was: melfisher.org",
       "entrance_lat": 24.5575742,
       "entrance_lng": -81.8067373,
-      "entrance_source": "OSM parking_entrance node 8170719751"
+      "entrance_source": "OSM parking_entrance node 8170719751",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "kw-conch-republic-waterfront",
@@ -170,10 +176,12 @@
       "lat": 24.5483,
       "lng": -81.7636,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Civil War fort museum at airport end.",
-      "source": "kwahs.org"
+      "notes": "Civil War fort museum at airport end. Surface lot",
+      "source": "Web-verified surface lot - was: kwahs.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "kw-west-martello",

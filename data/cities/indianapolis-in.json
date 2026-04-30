@@ -48,11 +48,13 @@
       "addr": "100 S Capitol Ave",
       "lat": 39.7643,
       "lng": -86.1633,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 81,
+      "height_label": "6'9\"",
       "oversized": false,
-      "notes": "Denison Parking. ICC + Lucas Oil Stadium access.",
-      "source": "denisonparking.com"
+      "notes": "Denison Parking. ICC + Lucas Oil Stadium access. 6'9 per Indiana Conv Ctr FAQ",
+      "source": "Web-verified (medium confidence) - was: denisonparking.com",
+      "verified_on": "2026-04-30",
+      "source_url": "https://denisonparking.com/plaza-park-indiana/"
     },
     {
       "id": "ind-merchants",
@@ -101,11 +103,13 @@
       "addr": "100 S Capitol Ave",
       "lat": 39.7626,
       "lng": -86.1616,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Capitol Commons / Sports Garage. Denison.",
-      "source": "iccrca.com"
+      "notes": "Capitol Commons / Sports Garage. Denison. Capitol Commons 6'8",
+      "source": "Web-verified (high confidence) - was: iccrca.com",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.generalparking.com/capitol-commons-parking-garage/"
     },
     {
       "id": "ind-city-market",
@@ -194,14 +198,16 @@
       "addr": "500 W Washington St",
       "lat": 39.7685,
       "lng": -86.169,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "White River State Park surface lots.",
-      "source": "eiteljorg.org",
+      "notes": "White River State Park surface lots. Underground garage 8'0; no buses",
+      "source": "Web-verified (medium confidence) - was: eiteljorg.org",
       "entrance_lat": 39.7677441,
       "entrance_lng": -86.16896,
-      "entrance_source": "OSM parking_entrance node 1283198586"
+      "entrance_source": "OSM parking_entrance node 1283198586",
+      "verified_on": "2026-04-30",
+      "source_url": "https://eiteljorg.org/visit/map-hours-parking/"
     },
     {
       "id": "ind-childrens-museum",
@@ -272,14 +278,16 @@
       "addr": "49 W Maryland St",
       "lat": 39.7665,
       "lng": -86.1596,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Downtown mall garage.",
-      "source": "circlecentre.com",
+      "notes": "Downtown mall garage. 6'8 levels 3+; 8'2 entrance L2",
+      "source": "Web-verified (high confidence) - was: circlecentre.com",
       "entrance_lat": 39.7670016,
       "entrance_lng": -86.1591815,
-      "entrance_source": "OSM parking_entrance node 3637770856"
+      "entrance_source": "OSM parking_entrance node 3637770856",
+      "verified_on": "2026-04-30",
+      "source_url": "https://downtownindy.org/parking/world-wonders-garage-circle-centre-mall"
     },
     {
       "id": "ind-ind-airport-garage",

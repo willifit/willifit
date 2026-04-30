@@ -6,11 +6,13 @@
       "addr": "2100 Richard Arrington Jr Blvd N",
       "lat": 33.5234,
       "lng": -86.8098,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Legacy Arena + Concert Hall + convention.",
-      "source": "bjcc.org"
+      "notes": "Legacy Arena + Concert Hall + convention. Over 7' clearance per parking aggregators",
+      "source": "Web-verified (medium confidence) - was: bjcc.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.bjcc.org/wp-content/uploads/2023/08/BJCC-Parking-Map.pdf"
     },
     {
       "id": "bhm-protective-stadium",
@@ -98,10 +100,12 @@
       "lat": 33.4937,
       "lng": -86.7976,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Iconic iron statue + city view.",
-      "source": "visitvulcan.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Iconic iron statue + city view. Surface parking",
+      "source": "Web-verified surface lot - was: visitvulcan.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "bhm-museum-art",
@@ -110,13 +114,15 @@
       "lat": 33.5206,
       "lng": -86.8105,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Free museum.",
-      "source": "artsbma.org",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Free museum. Free surface lot behind museum",
+      "source": "Web-verified surface lot - was: artsbma.org",
       "entrance_lat": 33.5206446,
       "entrance_lng": -86.8114271,
-      "entrance_source": "OSM parking_entrance node 9978482603"
+      "entrance_source": "OSM parking_entrance node 9978482603",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "bhm-botanical-gardens",
@@ -166,11 +172,13 @@
       "addr": "200 19th St N",
       "lat": 33.513,
       "lng": -86.808,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Science museum + IMAX.",
-      "source": "mcwane.org"
+      "notes": "Science museum + IMAX. Official 6'8 limit",
+      "source": "Web-verified (high confidence) - was: mcwane.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://mcwane.org/explore/plan-your-visit/parking/"
     },
     {
       "id": "bhm-five-points-south",

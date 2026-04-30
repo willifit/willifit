@@ -7,10 +7,12 @@
       "lat": 39.6166,
       "lng": -104.7314,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Open-air lifestyle center.",
-      "source": "shopsouthlands.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Open-air lifestyle center. Open-air with surface lots",
+      "source": "Web-verified surface lot - was: shopsouthlands.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "aur-town-center",
@@ -58,10 +60,12 @@
       "lat": 39.709,
       "lng": -104.8313,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Civic center area.",
-      "source": "auroragov.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Civic center area. Surface lot",
+      "source": "Web-verified surface lot - was: auroragov.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "aur-fitzsimons-golf",
@@ -94,10 +98,12 @@
       "lat": 39.72,
       "lng": -104.8947,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Aviation museum. Surface lot.",
-      "source": "wingsmuseum.org"
+      "notes": "Aviation museum. Surface lot. Free surface; bus parking on site",
+      "source": "Web-verified surface lot - was: wingsmuseum.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "aur-aurora-reservoir",

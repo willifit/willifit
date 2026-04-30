@@ -178,10 +178,12 @@
       "lat": 36.0023,
       "lng": -78.9371,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Free Duke museum.",
-      "source": "nasher.duke.edu"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Free Duke museum. Surface lot on Duke campus",
+      "source": "Web-verified surface lot - was: nasher.duke.edu",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dur-sarah-p-duke-gardens",

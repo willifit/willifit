@@ -84,14 +84,16 @@
       "addr": "100 Huntington Ave",
       "lat": 42.3471,
       "lng": -71.0808,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 68,
+      "height_label": "5'8\"",
       "oversized": false,
-      "notes": "Prudential Center / Copley Place.",
-      "source": "Needs verification",
+      "notes": "Prudential Center / Copley Place. Prudential Center garage 5'8 (1.72m)",
+      "source": "Web-verified (high confidence) - was: Needs verification",
       "entrance_lat": 42.3470262,
       "entrance_lng": -71.0801253,
-      "entrance_source": "OSM parking_entrance node 7725901173"
+      "entrance_source": "OSM parking_entrance node 7725901173",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.prudentialcenter.com/visit/parking/"
     },
     {
       "id": "bos-copley",
@@ -115,14 +117,16 @@
       "addr": "415 Summer St",
       "lat": 42.3459,
       "lng": -71.0446,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Seaport convention center. Large garage.",
-      "source": "signatureboston.com",
+      "notes": "Seaport convention center. Large garage. BCEC nearby Stillings/Congress garages 6'8",
+      "source": "Web-verified (medium confidence) - was: signatureboston.com",
       "entrance_lat": 42.345716,
       "entrance_lng": -71.0434331,
-      "entrance_source": "OSM parking_entrance node 7761310770"
+      "entrance_source": "OSM parking_entrance node 7761310770",
+      "verified_on": "2026-04-30",
+      "source_url": "https://s3.amazonaws.com/signatureboston/documents/BCECExhibitorParkingv11032020.pdf"
     },
     {
       "id": "bos-seaport-wtc",
@@ -215,11 +219,13 @@
       "addr": "465 Huntington Ave",
       "lat": 42.3394,
       "lng": -71.0938,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "MFA underground garage.",
-      "source": "mfa.org"
+      "notes": "MFA underground garage. ~6'8 per aggregators",
+      "source": "Web-verified (medium confidence) - was: mfa.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.mfa.org/visit/getting-here/parking"
     },
     {
       "id": "bos-science-museum",
@@ -227,14 +233,16 @@
       "addr": "1 Science Park",
       "lat": 42.3682,
       "lng": -71.0714,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 88,
+      "height_label": "7'4\"",
       "oversized": false,
-      "notes": "Adjacent Charles River.",
-      "source": "mos.org",
+      "notes": "Adjacent Charles River. Upper 7'4; entrance 13'9 (lift-van accommodation)",
+      "source": "Web-verified (high confidence) - was: mos.org",
       "entrance_lat": 42.3682044,
       "entrance_lng": -71.0719732,
-      "entrance_source": "OSM parking_entrance node 1164496775"
+      "entrance_source": "OSM parking_entrance node 1164496775",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.mos.org/visit/parking-garage"
     },
     {
       "id": "bos-assembly-row",

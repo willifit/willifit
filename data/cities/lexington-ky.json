@@ -95,10 +95,12 @@
       "lat": 37.9972,
       "lng": -84.5082,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Largest KY mall.",
-      "source": "fayettemall.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Largest KY mall. Surface only",
+      "source": "Web-verified surface lot - was: fayettemall.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lex-hamburg-pavilion",
@@ -250,10 +252,12 @@
       "lat": 38.0774,
       "lng": -84.6216,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Decorative arts museum.",
-      "source": "headley-whitney.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Decorative arts museum. Surface lot",
+      "source": "Web-verified surface lot - was: headley-whitney.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lex-ashland-estate",

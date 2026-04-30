@@ -6,14 +6,16 @@
       "addr": "1 Civic Center Plaza",
       "lat": 41.7657,
       "lng": -72.6746,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "UConn basketball + AHL + concerts.",
-      "source": "xlcenter.com",
+      "notes": "UConn basketball + AHL + concerts. 200 Church 6'8 main",
+      "source": "Web-verified (high confidence) - was: xlcenter.com",
       "entrance_lat": 41.7642194,
       "entrance_lng": -72.67335,
-      "entrance_source": "OSM parking_entrance node 13239928975"
+      "entrance_source": "OSM parking_entrance node 13239928975",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.parkwhiz.com/xl-center-parking/"
     },
     {
       "id": "hrt-convention-ctr",
@@ -64,11 +66,13 @@
       "addr": "166 Capitol Ave",
       "lat": 41.7626,
       "lng": -72.6823,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Historic theater.",
-      "source": "bushnell.org"
+      "notes": "Historic theater. 8'2 max at 120 Capitol",
+      "source": "Web-verified (high confidence) - was: bushnell.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.propark.com/facilities/bushnell-south-garage/"
     },
     {
       "id": "hrt-ct-state-capitol",
@@ -91,14 +95,16 @@
       "addr": "600 Main St",
       "lat": 41.7639,
       "lng": -72.6719,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Oldest public art museum in US.",
-      "source": "thewadsworth.org",
+      "notes": "Oldest public art museum in US. Recommended Capitol Ave garage 8'2",
+      "source": "Web-verified (medium confidence) - was: thewadsworth.org",
       "entrance_lat": 41.7638523,
       "entrance_lng": -72.6716693,
-      "entrance_source": "OSM parking_entrance node 13239919360"
+      "entrance_source": "OSM parking_entrance node 13239919360",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.thewadsworth.org/visit/directions-parking/"
     },
     {
       "id": "hrt-union-station",
@@ -122,10 +128,12 @@
       "lat": 41.7683,
       "lng": -72.7008,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Twain residence museum.",
-      "source": "marktwainhouse.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Twain residence museum. Surface lot at museum",
+      "source": "Web-verified surface lot - was: marktwainhouse.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hrt-west-hartford-center",
@@ -134,13 +142,15 @@
       "lat": 41.7613,
       "lng": -72.743,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Upscale downtown.",
-      "source": "blueback-square.com",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Upscale downtown. Mix of street and surface lots",
+      "source": "Web-verified surface lot - was: blueback-square.com",
       "entrance_lat": 41.7612082,
       "entrance_lng": -72.74061,
-      "entrance_source": "OSM parking_entrance node 8739439663"
+      "entrance_source": "OSM parking_entrance node 8739439663",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hrt-blue-back-square",
@@ -193,14 +203,16 @@
       "addr": "250 Columbus Blvd",
       "lat": 41.7635,
       "lng": -72.6721,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Downtown riverfront museum.",
-      "source": "ctsciencecenter.org",
+      "notes": "Downtown riverfront museum. 8'2 max per Propark",
+      "source": "Web-verified (high confidence) - was: ctsciencecenter.org",
       "entrance_lat": 41.7633682,
       "entrance_lng": -72.6717343,
-      "entrance_source": "OSM parking_entrance node 13239928972"
+      "entrance_source": "OSM parking_entrance node 13239928972",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.propark.com/facilities/connecticut-science-center-garage/"
     },
     {
       "id": "hrt-bushnell-park-garage",
@@ -235,14 +247,16 @@
       "addr": "350 Trolley Line Blvd, Mashantucket",
       "lat": 41.4745,
       "lng": -71.9577,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": true,
-      "notes": "Huge casino resort ~45mi SE. RV-friendly.",
-      "source": "foxwoods.com",
+      "notes": "Huge casino resort ~45mi SE. RV-friendly. Rainmaker upper levels 7'0; L1 8'0",
+      "source": "Web-verified (high confidence) - was: foxwoods.com",
       "entrance_lat": 41.4747798,
       "entrance_lng": -71.9576155,
-      "entrance_source": "OSM parking_entrance node 569028508"
+      "entrance_source": "OSM parking_entrance node 569028508",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.foxwoods.com/parking/"
     },
     {
       "id": "hrt-mohegan-sun",

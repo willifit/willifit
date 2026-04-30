@@ -103,13 +103,15 @@
       "lat": 32.7497,
       "lng": -97.3622,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
+      "height_label": "No limit",
+      "oversized": true,
       "notes": "Surface lot.",
-      "source": "themodern.org",
+      "source": "Web-verified surface lot - was: themodern.org",
       "entrance_lat": 32.7498118,
       "entrance_lng": -97.3603557,
-      "entrance_source": "OSM parking_entrance node 13057549083"
+      "entrance_source": "OSM parking_entrance node 13057549083",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "ftw-amon-carter",
@@ -118,10 +120,12 @@
       "lat": 32.7499,
       "lng": -97.3661,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Free surface lot.",
-      "source": "cartermuseum.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Free surface lot. Surface lot",
+      "source": "Web-verified surface lot - was: cartermuseum.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "ftw-botanic-garden",

@@ -178,14 +178,16 @@
       "addr": "500 Rusk St",
       "lat": 29.7603,
       "lng": -95.37,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Under Tranquillity Park.",
-      "source": "houstontx.gov",
+      "notes": "Under Tranquillity Park. Theater District underground 6'8",
+      "source": "Web-verified (high confidence) - was: houstontx.gov",
       "entrance_lat": 29.7611705,
       "entrance_lng": -95.3709357,
-      "entrance_source": "OSM parking_entrance node 12210072861"
+      "entrance_source": "OSM parking_entrance node 12210072861",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.visithoustontexas.com/theater/parking/"
     },
     {
       "id": "hou-main-st-sq",
@@ -296,11 +298,13 @@
       "addr": "5101 Montrose Blvd",
       "lat": 29.7254,
       "lng": -95.3912,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Museum of Fine Arts Houston.",
-      "source": "Needs verification"
+      "notes": "Museum of Fine Arts Houston. Beck/Glassell/Kinder ~7'",
+      "source": "Web-verified (medium confidence) - was: Needs verification",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.mfah.org/visit/parking-garage"
     },
     {
       "id": "hou-iah-terminal",
@@ -391,10 +395,12 @@
       "lat": 29.7409,
       "lng": -95.4506,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Covered + front-door parking. Upscale shopping.",
-      "source": "houstonhighlandvillage.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Covered + front-door parking. Upscale shopping. Free self-park + surface",
+      "source": "Web-verified surface lot - was: houstonhighlandvillage.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hou-williams-tower",
@@ -577,11 +583,13 @@
       "addr": "5555 Hermann Park Dr",
       "lat": 29.7221,
       "lng": -95.39,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "HMNS visitor garage. Clearance needs verification.",
-      "source": "hmns.org"
+      "notes": "HMNS visitor garage. Clearance needs verification. 6'8 per most sources",
+      "source": "Web-verified (medium confidence) - was: hmns.org",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.hmns.org/visit/directions-parking/"
     },
     {
       "id": "hou-hermann-park",

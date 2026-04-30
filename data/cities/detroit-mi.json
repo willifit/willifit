@@ -51,14 +51,16 @@
       "addr": "2645 Woodward Ave",
       "lat": 42.3411,
       "lng": -83.0551,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Red Wings/Pistons arena.",
-      "source": "313presents.com",
+      "notes": "Red Wings/Pistons arena. 165 Sproat 8'2",
+      "source": "Web-verified (medium confidence) - was: 313presents.com",
       "entrance_lat": 42.3395793,
       "entrance_lng": -83.0551977,
-      "entrance_source": "OSM parking_entrance node 6148476713"
+      "entrance_source": "OSM parking_entrance node 6148476713",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.bestparking.com/detroit-parking/165-sproat-st/"
     },
     {
       "id": "det-cobo-tcf",
@@ -78,11 +80,13 @@
       "addr": "1200 St Antoine St",
       "lat": 42.335,
       "lng": -83.0425,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Greektown casino district.",
-      "source": "Needs verification"
+      "notes": "Greektown casino district. Multi-structure; one offers 7' truck-suitable",
+      "source": "Web-verified (medium confidence) - was: Needs verification",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.hollywoodgreektown.com/entertainment/entertainment-parking"
     },
     {
       "id": "det-mgm-grand",

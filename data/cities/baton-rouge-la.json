@@ -65,10 +65,12 @@
       "lat": 30.4474,
       "lng": -91.126,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Flagship library.",
-      "source": "ebrpl.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Flagship library. Surface lot",
+      "source": "Web-verified surface lot - was: ebrpl.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "btr-tiger-stadium",
@@ -172,10 +174,12 @@
       "lat": 30.3917,
       "lng": -91.0992,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Major enclosed mall.",
-      "source": "mallofla.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Major enclosed mall. Surface lots only confirmed",
+      "source": "Web-verified surface lot - was: mallofla.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "btr-towne-center-cortana",
@@ -197,13 +201,15 @@
       "lat": 30.4401,
       "lng": -91.1927,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Destroyer museum on Mississippi.",
-      "source": "usskidd.com",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Destroyer museum on Mississippi. Free street + surface",
+      "source": "Web-verified surface lot - was: usskidd.com",
       "entrance_lat": 30.4393485,
       "entrance_lng": -91.1928184,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "btr-louisiana-art-science",
@@ -212,10 +218,12 @@
       "lat": 30.4469,
       "lng": -91.1904,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Museum + planetarium.",
-      "source": "lasm.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Museum + planetarium. Surface lots near River Rd",
+      "source": "Web-verified surface lot - was: lasm.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "btr-baton-rouge-gallery",

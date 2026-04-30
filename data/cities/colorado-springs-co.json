@@ -6,14 +6,16 @@
       "addr": "4 S Cascade Ave",
       "lat": 38.8338,
       "lng": -104.8216,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Historic Antlers Hotel downtown. Underground.",
-      "source": "Needs verification",
+      "notes": "Historic Antlers Hotel downtown. Underground. 6'8 per official FAQ",
+      "source": "Web-verified (high confidence) - was: Needs verification",
       "entrance_lat": 38.8350249,
       "entrance_lng": -104.8213963,
-      "entrance_source": "OSM parking_entrance node 12102838827"
+      "entrance_source": "OSM parking_entrance node 12102838827",
+      "verified_on": "2026-04-30",
+      "source_url": "https://antlers.com/stay/faq.shtml"
     },
     {
       "id": "cos-downtown-plaza",
@@ -64,10 +66,12 @@
       "lat": 38.9974,
       "lng": -104.8641,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Air Force Academy visitor center + chapel.",
-      "source": "usafa.af.mil"
+      "notes": "Air Force Academy visitor center + chapel. Free surface at Hosmer Visitor Center",
+      "source": "Web-verified surface lot - was: usafa.af.mil",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cos-garden-gods",
@@ -76,10 +80,12 @@
       "lat": 38.8782,
       "lng": -104.86,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Free surface lots. Oversized + RV OK.",
-      "source": "gardenofgods.com"
+      "notes": "Free surface lots. Oversized + RV OK. Surface lot",
+      "source": "Web-verified surface lot - was: gardenofgods.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cos-garden-gods-main",

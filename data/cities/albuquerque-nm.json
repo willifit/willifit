@@ -21,14 +21,16 @@
       "addr": "401 2nd St NW",
       "lat": 35.0886,
       "lng": -106.6509,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention center.",
-      "source": "albuquerquecc.com",
+      "notes": "Convention center. 7-foot vehicle height limit per Parkopedia",
+      "source": "Web-verified (medium confidence) - was: albuquerquecc.com",
       "entrance_lat": 35.0880575,
       "entrance_lng": -106.650654,
-      "entrance_source": "OSM parking_entrance node 2444021608"
+      "entrance_source": "OSM parking_entrance node 2444021608",
+      "verified_on": "2026-04-30",
+      "source_url": "https://en.parkopedia.com/parking/garage/albuquerque_convention_center/87102/albuquerque/"
     },
     {
       "id": "abq-old-town",
@@ -102,10 +104,12 @@
       "lat": 35.112,
       "lng": -106.5735,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "mycoronadocenter.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Enclosed mall. Surface parking",
+      "source": "Web-verified surface lot - was: mycoronadocenter.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "abq-sandia-resort",
@@ -317,10 +321,12 @@
       "lat": 35.1966,
       "lng": -106.6697,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Westside mall.",
-      "source": "Needs verification"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Westside mall. Surface parking",
+      "source": "Web-verified surface lot - was: Needs verification",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "abq-abq-intl-sunport-cellphone",
@@ -360,10 +366,12 @@
       "lat": 35.0831,
       "lng": -106.6206,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Multiple ART BRT park-rides.",
-      "source": "cabq.gov/transit"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Multiple ART BRT park-rides. Park-and-Ride along Central Ave \u2014 surface",
+      "source": "Web-verified surface lot - was: cabq.gov/transit",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "osm-w160185505",

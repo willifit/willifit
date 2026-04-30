@@ -228,13 +228,15 @@
       "lat": 35.5768,
       "lng": -82.5086,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "simon.com",
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Enclosed mall. One-story mall with surface parking",
+      "source": "Web-verified surface lot - was: simon.com",
       "entrance_lat": 35.5759922,
       "entrance_lng": -82.5090447,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "ash-tanger-outlets",

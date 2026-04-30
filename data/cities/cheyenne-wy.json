@@ -49,10 +49,12 @@
       "lat": 41.1743,
       "lng": -104.8026,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "shopfrontiermall.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Enclosed mall. Surface lots",
+      "source": "Web-verified surface lot - was: shopfrontiermall.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "chy-civic-center",
@@ -61,10 +63,12 @@
       "lat": 41.137,
       "lng": -104.8138,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Performing arts venue.",
-      "source": "cheyenneciviccenter.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Performing arts venue. Surface lot",
+      "source": "Web-verified surface lot - was: cheyenneciviccenter.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "chy-union-pacific-railroad-museum",

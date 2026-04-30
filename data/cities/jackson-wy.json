@@ -20,10 +20,12 @@
       "lat": 43.4778,
       "lng": -110.7613,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Performing arts + gallery complex.",
-      "source": "jhcenterforthearts.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Performing arts + gallery complex. Surface lot",
+      "source": "Web-verified surface lot - was: jhcenterforthearts.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "jac-teton-village",

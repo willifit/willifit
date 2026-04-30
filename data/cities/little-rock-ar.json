@@ -58,10 +58,12 @@
       "lat": 34.7455,
       "lng": -92.2585,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Library + museum surface lot.",
-      "source": "clintonlibrary.gov"
+      "notes": "Library + museum surface lot. Free surface; RV/bus friendly",
+      "source": "Web-verified surface lot - was: clintonlibrary.gov",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lit-arkansas-state-capitol",
@@ -85,10 +87,12 @@
       "lat": 34.7473,
       "lng": -92.2731,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Historic 1836 statehouse.",
-      "source": "oldstatehouse.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Historic 1836 statehouse. Surface lot",
+      "source": "Web-verified surface lot - was: oldstatehouse.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lit-mcarthur-park",
@@ -97,10 +101,12 @@
       "lat": 34.739,
       "lng": -92.2689,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Downtown park.",
-      "source": "littlerock.gov"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Downtown park. Surface in park",
+      "source": "Web-verified surface lot - was: littlerock.gov",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lit-arkansas-art-ctr",
@@ -109,10 +115,12 @@
       "lat": 34.7386,
       "lng": -92.2691,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Recently rebuilt 2023. Underground garage.",
-      "source": "arkmfa.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Recently rebuilt 2023. Underground garage. Free on-site surface",
+      "source": "Web-verified surface lot - was: arkmfa.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lit-heifer-international",
@@ -133,10 +141,12 @@
       "lat": 34.7481,
       "lng": -92.2674,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Free library garage.",
-      "source": "cals.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Free library garage. Surface and street",
+      "source": "Web-verified surface lot - was: cals.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lit-war-memorial-stadium",

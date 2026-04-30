@@ -118,10 +118,12 @@
       "lat": 35.0581,
       "lng": -85.3033,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Museum on bluff overlooking river.",
-      "source": "huntermuseum.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Museum on bluff overlooking river. Free surface lot 500ft away",
+      "source": "Web-verified surface lot - was: huntermuseum.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cha-finley-stadium",
@@ -169,10 +171,12 @@
       "lat": 35.0563,
       "lng": -85.3126,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Children's museum.",
-      "source": "cdmfun.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Children's museum. Surface lot adjacent",
+      "source": "Web-verified surface lot - was: cdmfun.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cha-utc-campus",

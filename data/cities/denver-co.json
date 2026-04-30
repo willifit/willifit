@@ -203,14 +203,16 @@
       "addr": "1600 Stout St",
       "lat": 39.7481,
       "lng": -104.9929,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 83,
+      "height_label": "6'11\"",
       "oversized": false,
-      "notes": "Multiple downtown garages along 16th St.",
-      "source": "Needs verification",
+      "notes": "Multiple downtown garages along 16th St. 16th Street Center 6'11",
+      "source": "Web-verified (high confidence) - was: Needs verification",
       "entrance_lat": 39.7479811,
       "entrance_lng": -104.9922653,
-      "entrance_source": "OSM parking_entrance node 7465146583"
+      "entrance_source": "OSM parking_entrance node 7465146583",
+      "verified_on": "2026-04-30",
+      "source_url": "https://www.lazparking.com/local/denver--co/us-bank-public-garage"
     },
     {
       "id": "den-state-capitol",

@@ -275,10 +275,12 @@
       "lat": 32.8151,
       "lng": -80.0152,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Enclosed mall.",
-      "source": "Needs verification"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Enclosed mall. Surface lots over 53 acres",
+      "source": "Web-verified surface lot - was: Needs verification",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "chs-mount-pleasant-towne",

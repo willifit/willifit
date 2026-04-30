@@ -177,10 +177,12 @@
       "lat": 40.7169,
       "lng": -74.0498,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Library surface parking.",
-      "source": "jclibrary.org"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Library surface parking. Street parking only",
+      "source": "Web-verified surface lot - was: jclibrary.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "jc-lsc-sdfm-ferry",

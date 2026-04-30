@@ -42,14 +42,16 @@
       "addr": "301 W 13th St",
       "lat": 39.0989,
       "lng": -94.5892,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Underground convention center.",
-      "source": "kcconvention.com",
+      "notes": "Underground convention center. Barney Allis / Municipal 6'6",
+      "source": "Web-verified (high confidence) - was: kcconvention.com",
       "entrance_lat": 39.0990221,
       "entrance_lng": -94.5893203,
-      "entrance_source": "OSM parking_entrance node 5219086322"
+      "entrance_source": "OSM parking_entrance node 5219086322",
+      "verified_on": "2026-04-30",
+      "source_url": "https://planetcomicon.com/exhibitor-parking/"
     },
     {
       "id": "kc-crown-center",

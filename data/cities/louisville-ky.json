@@ -6,14 +6,16 @@
       "addr": "1 Arena Plaza",
       "lat": 38.2568,
       "lng": -85.7555,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Louisville basketball arena.",
-      "source": "kfcyumcenter.com",
+      "notes": "Louisville basketball arena. PARC 7'0 under arena",
+      "source": "Web-verified (high confidence) - was: kfcyumcenter.com",
       "entrance_lat": 38.256935,
       "entrance_lng": -85.7547264,
-      "entrance_source": "OSM parking_entrance node 9075086469"
+      "entrance_source": "OSM parking_entrance node 9075086469",
+      "verified_on": "2026-04-30",
+      "source_url": "https://louisvilleky.gov/government/parking-authority-parc/arena-garage"
     },
     {
       "id": "lou-4th-st-live",
@@ -36,14 +38,16 @@
       "addr": "221 S 4th St",
       "lat": 38.2572,
       "lng": -85.7571,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 92,
+      "height_label": "7'8\"",
       "oversized": false,
-      "notes": "KICC garage.",
-      "source": "kyconvention.com",
+      "notes": "KICC garage. Jefferson Centre 7'8",
+      "source": "Web-verified (high confidence) - was: kyconvention.com",
       "entrance_lat": 38.2574168,
       "entrance_lng": -85.7568341,
-      "entrance_source": "OSM parking_entrance node 3516420148"
+      "entrance_source": "OSM parking_entrance node 3516420148",
+      "verified_on": "2026-04-30",
+      "source_url": "https://louisvilleky.gov/government/parking-authority-parc/jefferson-centre-garage"
     },
     {
       "id": "lou-slugger-garage",
@@ -81,14 +85,16 @@
       "addr": "140 N 4th St",
       "lat": 38.2592,
       "lng": -85.7592,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Hotel + conference garage.",
-      "source": "galthouse.com",
+      "notes": "Hotel + conference garage. PARC Riverfront 6'8",
+      "source": "Web-verified (high confidence) - was: galthouse.com",
       "entrance_lat": 38.2583792,
       "entrance_lng": -85.7594307,
-      "entrance_source": "OSM parking_entrance node 2316985096"
+      "entrance_source": "OSM parking_entrance node 2316985096",
+      "verified_on": "2026-04-30",
+      "source_url": "https://louisvilleky.gov/government/parking-authority-parc/riverfront-garage"
     },
     {
       "id": "lou-palace-theatre",
@@ -96,14 +102,16 @@
       "addr": "625 S 4th St",
       "lat": 38.2522,
       "lng": -85.7576,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Performing arts district.",
-      "source": "Needs verification",
+      "notes": "Performing arts district. PARC 5th Street 6'8",
+      "source": "Web-verified (high confidence) - was: Needs verification",
       "entrance_lat": 38.2511703,
       "entrance_lng": -85.7584288,
-      "entrance_source": "OSM parking_entrance node 12072889177"
+      "entrance_source": "OSM parking_entrance node 12072889177",
+      "verified_on": "2026-04-30",
+      "source_url": "https://louisvilleky.gov/government/parking-authority-parc/5th-street-garage"
     },
     {
       "id": "lou-slugger-museum",
@@ -112,10 +120,12 @@
       "lat": 38.2574,
       "lng": -85.768,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Museum Row. Surface lot.",
-      "source": "sluggermuseum.com"
+      "height_label": "No limit",
+      "oversized": true,
+      "notes": "Museum Row. Surface lot. Paid surface behind factory",
+      "source": "Web-verified surface lot - was: sluggermuseum.com",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lou-muhammad-ali",
@@ -123,14 +133,16 @@
       "addr": "144 N 6th St",
       "lat": 38.2604,
       "lng": -85.7608,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Museum adjacent to Belvedere.",
-      "source": "alicenter.org",
+      "notes": "Museum adjacent to Belvedere. PARC 7'0; 5 levels",
+      "source": "Web-verified (high confidence) - was: alicenter.org",
       "entrance_lat": 38.2588752,
       "entrance_lng": -85.7604096,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30",
+      "source_url": "https://louisvilleky.gov/government/parking-authority-parc/muhammad-ali-center-garage"
     },
     {
       "id": "lou-waterfront-park",
@@ -166,10 +178,12 @@
       "lat": 38.2,
       "lng": -85.7403,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "State Fair + Freedom Hall. Massive surface lots.",
-      "source": "kyexpo.org"
+      "notes": "State Fair + Freedom Hall. Massive surface lots. Massive surface event lots",
+      "source": "Web-verified surface lot - was: kyexpo.org",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "lou-fairdale",

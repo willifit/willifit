@@ -331,10 +331,12 @@
       "lat": 41.8807,
       "lng": -87.6742,
       "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_label": "No limit",
       "oversized": true,
-      "notes": "Surface lots + garage around arena.",
-      "source": "United Center"
+      "notes": "Surface lots + garage around arena. Predominantly surface event lots",
+      "source": "Web-verified surface lot - was: United Center",
+      "structure_type": "surface_lot",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "ord-main",
