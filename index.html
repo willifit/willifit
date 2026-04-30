@@ -1112,8 +1112,14 @@
   .type-chip[data-type="garage"] .chip-dot { background: #2da66f; }
   .type-chip[data-type="tunnel"] .chip-dot { background: #5aa0d6; }
   .type-chip[data-type="bridge"] .chip-dot { background: #d87c3b; }
+  .type-chip[data-filter="oversized"] .chip-dot { background: #3ecf8e; }  /* match oversized-tag green */
+  .type-chip[data-filter="verified"] .chip-dot { background: #0ea5e9; }   /* same blue as ai-verified-badge */
   .type-chip.active { color: var(--text); border-color: var(--ok); background: var(--panel); }
   .type-chip:not(.active) .chip-dot { opacity: 0.3; }
+  /* The two filter chips (Oversized / Hide unverified) live in their own
+     row below the type chips so visual hierarchy is clear (categories
+     above, filters below).  Small top margin separates the groups. */
+  .filter-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 
   /* SEARCH THIS AREA */
   .search-area-btn, .search-area-clear {
@@ -1915,8 +1921,14 @@
           <button class="type-chip" data-type="tunnel" id="chipTunnel"><span class="chip-dot"></span>Tunnels</button>
           <button class="type-chip" data-type="bridge" id="chipBridge"><span class="chip-dot"></span>Bridges</button>
         </div>
-        <button class="toggle" id="oversizedToggle" type="button">Oversized only</button>
-        <button class="toggle" id="verifiedToggle" type="button">Hide unverified</button>
+        <div class="filter-chips">
+          <button class="type-chip" data-filter="oversized" id="oversizedToggle" type="button">
+            <span class="chip-dot"></span>Oversized only
+          </button>
+          <button class="type-chip" data-filter="verified" id="verifiedToggle" type="button">
+            <span class="chip-dot"></span>Hide unverified
+          </button>
+        </div>
       </div>
       <div class="result-count">
         <span id="countText">0 locations</span>
