@@ -324,10 +324,11 @@
       "lat": 34.4271,
       "lng": -119.8415,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Terminal-adjacent garage.",
-      "source": "flysba.santabarbaraca.gov"
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "Terminal-adjacent garage.\nReclassified 2026-04-27 as surface lot per web research: Surface lots only - 'no height restriction' per official SBA site",
+      "source": "Web-verified surface lot \u2014 was: flysba.santabarbaraca.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sba-amtrak-station",

@@ -20,9 +20,10 @@
       "lng": -111.8342,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Convention center surface lots.",
-      "source": "mesaconventioncenter.com"
+      "oversized": true,
+      "notes": "Convention center surface lots.\nReclassified 2026-04-27 as surface lot per web research: 500-space surface lot",
+      "source": "Web-verified surface lot \u2014 was: mesaconventioncenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-amphitheatre",
@@ -33,8 +34,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Concert amphitheatre.",
-      "source": "mesaamp.com"
+      "notes": "Concert amphitheatre.\nReclassified 2026-04-27 as surface lot per web research: On-site surface paid + free lots",
+      "source": "Web-verified surface lot \u2014 was: mesaamp.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-museum-natural-history",
@@ -68,9 +70,10 @@
       "lng": -111.8745,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Open-air retail center.",
-      "source": "mesariverview.com"
+      "oversized": true,
+      "notes": "Open-air retail center.\nReclassified 2026-04-27 as surface lot per web research: Open-air shopping center surface lot",
+      "source": "Web-verified surface lot \u2014 was: mesariverview.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-fiesta-mall",
@@ -92,12 +95,13 @@
       "lng": -111.731,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "East Mesa mall.",
-      "source": "Needs verification",
+      "oversized": true,
+      "notes": "East Mesa mall.\nReclassified 2026-04-27 as surface lot per web research: Surface lot (covered/uncovered) at mall",
+      "source": "Web-verified surface lot \u2014 was: Needs verification",
       "entrance_lat": 33.3937839,
       "entrance_lng": -111.7309331,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-sloan-park",
@@ -120,8 +124,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Spring training facility.",
-      "source": "Needs verification"
+      "notes": "Spring training facility.\nReclassified 2026-04-27 as surface lot per web research: 3,000+ surface lot spaces",
+      "source": "Web-verified surface lot \u2014 was: Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-gateway-airport",
@@ -132,8 +137,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Secondary airport. Surface lots.",
-      "source": "gatewayairport.com"
+      "notes": "Secondary airport. Surface lots.\nReclassified 2026-04-27 as surface lot per web research: Surface economy parking (covered/uncovered)",
+      "source": "Web-verified surface lot \u2014 was: gatewayairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-organ-stop",
@@ -221,9 +227,10 @@
       "lng": -111.7011,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Community + park area.",
-      "source": "mesaaz.gov"
+      "oversized": true,
+      "notes": "Community + park area.\nReclassified 2026-04-27 as surface lot per web research: Surface lot (community center)",
+      "source": "Web-verified surface lot \u2014 was: mesaaz.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-town-square",
@@ -246,8 +253,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Long-term uncovered airport lot.",
-      "source": "gatewayairport.com"
+      "notes": "Long-term uncovered airport lot.\nReclassified 2026-04-27 as surface lot per web research: Surface RV lot",
+      "source": "Web-verified surface lot \u2014 was: gatewayairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-falcon-field",
@@ -257,12 +265,13 @@
       "lng": -111.7277,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "General aviation airport.",
-      "source": "falconfieldairport.com",
+      "oversized": true,
+      "notes": "General aviation airport.\nReclassified 2026-04-27 as surface lot per web research: Free surface lots at small GA airport",
+      "source": "Web-verified surface lot \u2014 was: falconfieldairport.com",
       "entrance_lat": 33.4574305,
       "entrance_lng": -111.727417,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w45290303",

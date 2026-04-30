@@ -6,14 +6,15 @@
       "addr": "500 David J Stern Walk",
       "lat": 38.5803,
       "lng": -121.4998,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 81,
+      "height_label": "6'9\"",
       "oversized": false,
-      "notes": "Kings arena + DOCO (Downtown Commons).",
-      "source": "golden1center.com",
+      "notes": "Kings arena + DOCO (Downtown Commons).\nWeb-verified 2026-04-27: https://www.docosacramento.com/parking \u2014 DOCO West Garage (designated event parking for Golden 1 Center) clearance 6'9\"; East 6'4\", Central varies 8'2\"-7'3\"",
+      "source": "Web-verified (high confidence) \u2014 was: golden1center.com",
       "entrance_lat": 38.581567,
       "entrance_lng": -121.4988757,
-      "entrance_source": "OSM parking_entrance node 9790476253"
+      "entrance_source": "OSM parking_entrance node 9790476253",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sac-capitol-mall",
@@ -36,11 +37,12 @@
       "addr": "1401 K St",
       "lat": 38.5798,
       "lng": -121.4872,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Convention center underground.",
-      "source": "sacconvention.com"
+      "notes": "Convention center underground.\nWeb-verified 2026-04-27: https://en.parkopedia.com/parking/attraction/sacramento-convention-center/ \u2014 Memorial Garage (the Convention Center garage) is 7'0\"",
+      "source": "Web-verified (medium confidence) \u2014 was: sacconvention.com",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sac-community-ctr",
@@ -225,11 +227,12 @@
       "addr": "6900 Airport Blvd",
       "lat": 38.6946,
       "lng": -121.5945,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Terminal A garage.",
-      "source": "sacramento.aero"
+      "notes": "Terminal A garage.\nWeb-verified 2026-04-27: https://flysmf.gov/to-and-from/parking \u2014 Sacramento International Garage 1 (serves Terminal A): vertical clearance 8'2\"",
+      "source": "Web-verified (high confidence) \u2014 was: sacramento.aero",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "smf-terminal-b",
@@ -237,11 +240,12 @@
       "addr": "6900 Airport Blvd",
       "lat": 38.695,
       "lng": -121.5905,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Terminal B garage.",
-      "source": "sacramento.aero"
+      "notes": "Terminal B garage.\nWeb-verified 2026-04-27: https://flysmf.gov/to-and-from/parking \u2014 Both Terminal A and B garages built to similar 8'2\" clearance",
+      "source": "Web-verified (medium confidence) \u2014 was: sacramento.aero",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "osm-n90569456",

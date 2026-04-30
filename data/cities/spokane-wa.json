@@ -42,14 +42,15 @@
       "addr": "507 W Main Ave",
       "lat": 47.6591,
       "lng": -117.4211,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Main downtown mall.",
-      "source": "riverparksquare.com",
+      "notes": "Main downtown mall.\nWeb-verified 2026-04-27: https://www.riverparksquare.com/parking \u2014 Official River Park Square site: 6'6\" max vehicle height",
+      "source": "Web-verified (high confidence) \u2014 was: riverparksquare.com",
       "entrance_lat": 47.6589417,
       "entrance_lng": -117.420177,
-      "entrance_source": "OSM parking_entrance node 8165909116"
+      "entrance_source": "OSM parking_entrance node 8165909116",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "spk-parking-3rd-main",
@@ -86,9 +87,10 @@
       "lng": -117.3494,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "High-A ballpark surface.",
-      "source": "milb.com"
+      "oversized": true,
+      "notes": "High-A ballpark surface.\nReclassified 2026-04-27 as surface lot per web research: Free fairgrounds surface lot",
+      "source": "Web-verified surface lot \u2014 was: milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "spk-spokane-county-fair",
@@ -99,8 +101,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Fairgrounds. RV-friendly.",
-      "source": "spokanecounty.org"
+      "notes": "Fairgrounds. RV-friendly.\nReclassified 2026-04-27 as surface lot per web research: Fairgrounds surface lots",
+      "source": "Web-verified surface lot \u2014 was: spokanecounty.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "spk-northtown-mall",
@@ -136,10 +139,11 @@
       "lat": 47.669,
       "lng": -117.4039,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Gonzaga basketball. Campus parking.",
-      "source": "gozags.com"
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "Gonzaga basketball. Campus parking.\nReclassified 2026-04-27 as surface lot per web research: Adjacent surface lots free at Gonzaga",
+      "source": "Web-verified surface lot \u2014 was: gozags.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "spk-kendall-yards",
@@ -222,14 +226,15 @@
       "addr": "9000 W Airport Dr",
       "lat": 47.6198,
       "lng": -117.536,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "spokaneairports.net",
+      "notes": "Terminal-adjacent.\nWeb-verified 2026-04-27: https://spokaneairports.net/faq/ \u2014 1st floor 8'6\"; floors 2-5 6'10\"; outside lot 12'4\"",
+      "source": "Web-verified (high confidence) \u2014 was: spokaneairports.net",
       "entrance_lat": 47.62458,
       "entrance_lng": -117.5385592,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "spk-airport-economy",

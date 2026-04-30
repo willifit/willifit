@@ -14,8 +14,10 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v5: dropped legacy /willifit.html entry — it's now a 301 redirect to /.
-const CACHE_VERSION = "willifit-v5";
+// v6: forces clients to re-fetch HTML after the verified-badge / aerial-fallback
+// improvements (commits 5da1adf and earlier).  Without bumping, returning visitors
+// keep seeing the old cached index.html and miss the new "Verified" badges.
+const CACHE_VERSION = "willifit-v6";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 

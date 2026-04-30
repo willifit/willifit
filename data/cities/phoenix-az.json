@@ -237,11 +237,12 @@
       "addr": "3400 E Sky Harbor Blvd",
       "lat": 33.4378,
       "lng": -112.0081,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent. $30/day max.",
-      "source": "Sky Harbor"
+      "notes": "Terminal-adjacent. $30/day max.\nWeb-verified 2026-04-27: https://www.skyharbor.com/parking/parking-faqs/ \u2014 Sky Harbor terminal garages 7' max; over-height parking outside",
+      "source": "Web-verified (medium confidence) \u2014 was: Sky Harbor",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "phx-t4",
@@ -297,14 +298,15 @@
       "addr": "3700 E Sky Harbor Blvd",
       "lat": 33.4343,
       "lng": -112.0008,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Economy garage, $16/day.",
-      "source": "Sky Harbor",
+      "notes": "Economy garage, $16/day.\nWeb-verified 2026-04-27: https://www.fjcruiserforums.com/threads/maximum-vehicle-height-at-skyharbor-garages.41185/ \u2014 Ramp from level 1 posted at 7'; upper levels lower",
+      "source": "Web-verified (medium confidence) \u2014 was: Sky Harbor",
       "entrance_lat": 33.4352422,
       "entrance_lng": -112.0005966,
-      "entrance_source": "OSM parking_entrance node 8825180547"
+      "entrance_source": "OSM parking_entrance node 8825180547",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "phx-oversized",
@@ -356,11 +358,12 @@
       "addr": "522 N Central Ave",
       "lat": 33.4548,
       "lng": -112.0738,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "ASU downtown campus.",
-      "source": "Needs verification"
+      "notes": "ASU downtown campus.\nWeb-verified 2026-04-27: https://dtphx.org/go/university-center-garage \u2014 ASU's University Center Garage (sister facility on Downtown Phoenix campus) listed at 6'8\"",
+      "source": "Web-verified (medium confidence) \u2014 was: Needs verification",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "footprint-east",
@@ -368,14 +371,15 @@
       "addr": "201 E Jefferson St",
       "lat": 33.4457,
       "lng": -112.0712,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Near Footprint Center (Suns arena).",
-      "source": "Needs verification",
+      "notes": "Near Footprint Center (Suns arena).\nWeb-verified 2026-04-27: https://parkingaccess.com/blog/phoenix-suns-parking \u2014 Footprint Center oversized vehicle clearance is 6'6\" at 1st & Madison",
+      "source": "Web-verified (high confidence) \u2014 was: Needs verification",
       "entrance_lat": 33.4467169,
       "entrance_lng": -112.0705443,
-      "entrance_source": "OSM parking_entrance node 11975211100"
+      "entrance_source": "OSM parking_entrance node 11975211100",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "chase-field-garage",

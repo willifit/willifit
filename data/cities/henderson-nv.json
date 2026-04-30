@@ -82,10 +82,11 @@
       "lat": 36.0394,
       "lng": -114.9832,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "AHL hockey arena.",
-      "source": "thedollarloancenter.com"
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "AHL hockey arena.\nReclassified 2026-04-27 as surface lot per web research: Now Lee's Family Forum; surface lot parking (Black/Silver/Red/Gold)",
+      "source": "Web-verified surface lot \u2014 was: thedollarloancenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-lifeguard-arena",
@@ -95,9 +96,10 @@
       "lng": -114.9829,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "NHL affiliate practice facility. Surface lot.",
-      "source": "Needs verification"
+      "oversized": true,
+      "notes": "NHL affiliate practice facility. Surface lot.\nReclassified 2026-04-27 as surface lot per web research: Surface lot parking adjacent to arena",
+      "source": "Web-verified surface lot \u2014 was: Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-henderson-pavilion",
@@ -108,8 +110,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Concert amphitheater.",
-      "source": "cityofhenderson.com"
+      "notes": "Concert amphitheater.\nReclassified 2026-04-27 as surface lot per web research: Free surface lot at amphitheater (venue noted as closed/repurposed)",
+      "source": "Web-verified surface lot \u2014 was: cityofhenderson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-cowabunga-bay",
@@ -153,11 +156,12 @@
       "addr": "Hoover Dam Access Rd",
       "lat": 36.0142,
       "lng": -114.7375,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 126,
+      "height_label": "10'6\"",
       "oversized": false,
-      "notes": "Visitor garage. Oversized vehicles use alt overlook parking.",
-      "source": "usbr.gov"
+      "notes": "Visitor garage. Oversized vehicles use alt overlook parking.\nWeb-verified 2026-04-27: https://usbr.gov/lc/hooverdam//service/directions.html \u2014 Bureau of Reclamation: vehicles >10.5 ft high prohibited from garage",
+      "source": "Web-verified (high confidence) \u2014 was: usbr.gov",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "hen-boulder-city",

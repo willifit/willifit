@@ -6,14 +6,15 @@
       "addr": "95 S Pine Ave",
       "lat": 33.7656,
       "lng": -118.1915,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Downtown outlet mall.",
-      "source": "thepikeoutlets.com",
+      "notes": "Downtown outlet mall.\nWeb-verified 2026-04-27: https://en.parkopedia.com/parking/garage/the_pike_outlets/90802/long_beach/ \u2014 Pike Outlets / Pike Garage operated by City of Long Beach Parking; 8'2\" clearance",
+      "source": "Web-verified (high confidence) \u2014 was: thepikeoutlets.com",
       "entrance_lat": 33.7649996,
       "entrance_lng": -118.1920353,
-      "entrance_source": "OSM parking_entrance node 12416488173"
+      "entrance_source": "OSM parking_entrance node 12416488173",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "lb-convention",
@@ -21,14 +22,15 @@
       "addr": "300 E Ocean Blvd",
       "lat": 33.7644,
       "lng": -118.1883,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Convention center + Arena.",
-      "source": "longbeachcc.com",
+      "notes": "Convention center + Arena.\nWeb-verified 2026-04-27: https://www.parklb.com/parking-lotsgarages/waterfront-parking/convention-center-garage/ \u2014 City of Long Beach waterfront garage page lists 8'2\" clearance",
+      "source": "Web-verified (medium confidence) \u2014 was: longbeachcc.com",
       "entrance_lat": 33.7650724,
       "entrance_lng": -118.1865748,
-      "entrance_source": "OSM parking_entrance node 7200208716"
+      "entrance_source": "OSM parking_entrance node 7200208716",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "lb-aquarium",
@@ -108,11 +110,12 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Long Beach Airport. Uncovered.",
-      "source": "lgb.org",
+      "notes": "Long Beach Airport. Uncovered.\nReclassified 2026-04-27 as surface lot per web research: Surface economy lot",
+      "source": "Web-verified surface lot \u2014 was: lgb.org",
       "entrance_lat": 33.8176739,
       "entrance_lng": -118.1444483,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-lgb-garage",
@@ -147,14 +150,15 @@
       "addr": "110 Pine Ave",
       "lat": 33.7682,
       "lng": -118.1909,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Downtown Long Beach.",
-      "source": "Needs verification",
+      "notes": "Downtown Long Beach.\nWeb-verified 2026-04-27: https://www.bestparking.com/long-beach-parking/200-s-pine-ave/?venue_id=6443 \u2014 200 S. Pine Ave Garage max vehicle height 6'6\"",
+      "source": "Web-verified (medium confidence) \u2014 was: Needs verification",
       "entrance_lat": 33.7673924,
       "entrance_lng": -118.1919785,
-      "entrance_source": "OSM parking_entrance node 13150064297"
+      "entrance_source": "OSM parking_entrance node 13150064297",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "lb-port-parking",
@@ -258,11 +262,12 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Large regional park.",
-      "source": "longbeach.gov",
+      "notes": "Large regional park.\nReclassified 2026-04-27 as surface lot per web research: Park surface lot",
+      "source": "Web-verified surface lot \u2014 was: longbeach.gov",
       "entrance_lat": 33.8042594,
       "entrance_lng": -118.0893084,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-long-beach-museum-art",

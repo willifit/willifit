@@ -6,14 +6,15 @@
       "addr": "150 W San Carlos St",
       "lat": 37.3299,
       "lng": -121.8893,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "1,140 spaces. Connects to Hilton + Marriott. $25-30 daily max.",
-      "source": "parksj.org",
+      "notes": "1,140 spaces. Connects to Hilton + Marriott. $25-30 daily max.\nWeb-verified 2026-04-27: https://parking.com/san-jose/lot/150-west-san-carlos-street \u2014 ParkSJ Convention Center Garage at 150 W San Carlos: 6'8\"",
+      "source": "Web-verified (medium confidence) \u2014 was: parksj.org",
       "entrance_lat": 37.3293683,
       "entrance_lng": -121.8902247,
-      "entrance_source": "OSM parking_entrance node 7159880762"
+      "entrance_source": "OSM parking_entrance node 7159880762",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sjc-sap-center",
@@ -147,11 +148,12 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "49ers stadium. Surface lots. Oversized OK.",
-      "source": "levisstadium.com",
+      "notes": "49ers stadium. Surface lots. Oversized OK.\nReclassified 2026-04-27 as surface lot per web research: Surface stadium parking lot",
+      "source": "Web-verified surface lot \u2014 was: levisstadium.com",
       "entrance_lat": 37.4044672,
       "entrance_lng": -121.9717383,
-      "entrance_source": "OSM parking_entrance node 9980691886"
+      "entrance_source": "OSM parking_entrance node 9980691886",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sjc-levi-rv",
@@ -162,11 +164,12 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Designated RV lot on game days.",
-      "source": "levisstadium.com",
+      "notes": "Designated RV lot on game days.\nReclassified 2026-04-27 as surface lot per web research: Surface RV lot",
+      "source": "Web-verified surface lot \u2014 was: levisstadium.com",
       "entrance_lat": 37.4053715,
       "entrance_lng": -121.9720528,
-      "entrance_source": "OSM parking_entrance node 519642939"
+      "entrance_source": "OSM parking_entrance node 519642939",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sjc-santana-row",
@@ -266,12 +269,13 @@
       "lng": -122.0117,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Small public lot. Apple Campus visitor center.",
-      "source": "Apple",
+      "oversized": true,
+      "notes": "Small public lot. Apple Campus visitor center.\nReclassified 2026-04-27 as surface lot per web research: Surface visitor lot + below-grade garage; visitor info inconclusive on garage clearance",
+      "source": "Web-verified surface lot \u2014 was: Apple",
       "entrance_lat": 37.3329456,
       "entrance_lng": -122.0103342,
-      "entrance_source": "OSM parking_entrance node 5055063508"
+      "entrance_source": "OSM parking_entrance node 5055063508",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sjc-airport-garage-a",
@@ -279,14 +283,15 @@
       "addr": "1701 Airport Blvd",
       "lat": 37.364,
       "lng": -121.925,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "SJC terminal-adjacent. Clearance needs verification.",
-      "source": "flysanjose.com",
+      "notes": "SJC terminal-adjacent. Clearance needs verification.\nWeb-verified 2026-04-27: https://www.flysanjose.com/parking/hourly-lot-2-terminal-garage \u2014 Hourly Lot 2 (Terminal A Garage) clearance 7'0\" per official SJC site",
+      "source": "Web-verified (high confidence) \u2014 was: flysanjose.com",
       "entrance_lat": 37.3656159,
       "entrance_lng": -121.9240064,
-      "entrance_source": "OSM parking_entrance node 6777845875"
+      "entrance_source": "OSM parking_entrance node 6777845875",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sjc-airport-garage-b",

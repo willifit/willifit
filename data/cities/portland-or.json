@@ -81,14 +81,15 @@
       "addr": "700 SW 5th Ave",
       "lat": 45.5181,
       "lng": -122.6783,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Mall garage.",
-      "source": "pioneerplace.com",
+      "notes": "Mall garage.\nWeb-verified 2026-04-27: https://abmparking.com/facilities/pioneer-tower-garage/ \u2014 Pioneer Tower Garage at Pioneer Place: vehicles >6'8\" not permitted",
+      "source": "Web-verified (medium confidence) \u2014 was: pioneerplace.com",
       "entrance_lat": 45.5176465,
       "entrance_lng": -122.6786594,
-      "entrance_source": "OSM parking_entrance node 661311307"
+      "entrance_source": "OSM parking_entrance node 661311307",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "pdx-moda-garages",
@@ -96,14 +97,15 @@
       "addr": "1 N Center Ct St",
       "lat": 45.5316,
       "lng": -122.6668,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Trail Blazers arena. 4 garages + 2 lots (2,500+ spaces).",
-      "source": "modaportland.com",
+      "notes": "Trail Blazers arena. 4 garages + 2 lots (2,500+ spaces).\nWeb-verified 2026-04-27: https://www.rosequarter.com/plan-your-visit/directions-transportation \u2014 Most Moda/Rose Quarter garages 6'8\"; East/West garages at 8'2\"",
+      "source": "Web-verified (high confidence) \u2014 was: modaportland.com",
       "entrance_lat": 45.5319277,
       "entrance_lng": -122.6683418,
-      "entrance_source": "OSM parking_entrance node 1588761782"
+      "entrance_source": "OSM parking_entrance node 1588761782",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "pdx-moda-benton-lot",
@@ -277,14 +279,15 @@
       "addr": "7000 NE Airport Way",
       "lat": 45.5875,
       "lng": -122.5971,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent garage.",
-      "source": "flypdx.com",
+      "notes": "Terminal-adjacent garage.\nWeb-verified 2026-04-27: https://www.flypdx.com/Parking \u2014 Port of Portland: long-term garage vertical clearance 8'",
+      "source": "Web-verified (high confidence) \u2014 was: flypdx.com",
       "entrance_lat": 45.5875467,
       "entrance_lng": -122.5928698,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "pdx-airport-economy",

@@ -144,14 +144,15 @@
       "addr": "334 1st Ave N",
       "lat": 47.6221,
       "lng": -122.3536,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "Kraken/Storm arena. Event garages + surface.",
-      "source": "climatepledgearena.com",
+      "notes": "Kraken/Storm arena. Event garages + surface.\nWeb-verified 2026-04-27: https://www.seattlecenter.com/visitor-info/parking \u2014 Mercer Garage at 516 Harrison St: 8'6\" P1 (Harrison entrance), 6'10\" lower levels via Republican entrance",
+      "source": "Web-verified (medium confidence) \u2014 was: climatepledgearena.com",
       "entrance_lat": 47.6211204,
       "entrance_lng": -122.3537162,
-      "entrance_source": "OSM parking_entrance node 10765288741"
+      "entrance_source": "OSM parking_entrance node 10765288741",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sea-lumen-field",
@@ -375,11 +376,12 @@
       "addr": "17801 International Blvd",
       "lat": 47.4469,
       "lng": -122.3075,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Terminal-adjacent 8,300-space garage.",
-      "source": "portseattle.org"
+      "notes": "Terminal-adjacent 8,300-space garage.\nWeb-verified 2026-04-27: https://www.portseattle.org/sea/parking/parking-information \u2014 Port of Seattle: SEA garage height limit 6'10\"; over-height parking separately",
+      "source": "Web-verified (high confidence) \u2014 was: portseattle.org",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sea-tac-dogs-a",

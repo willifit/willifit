@@ -57,14 +57,15 @@
       "addr": "1801 Kalakaua Ave",
       "lat": 21.2899,
       "lng": -157.838,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 107,
+      "height_label": "8'11\"",
       "oversized": false,
-      "notes": "Main convention center.",
-      "source": "hawaiiconvention.com",
+      "notes": "Main convention center.\nWeb-verified 2026-04-27: https://www.meethawaii.com/convention-center/about-hawaii-convention-center/getting-to-the-center/ \u2014 Official site: 8'11\" max vehicle height (temporary 8' clearance noted as of Feb 2025)",
+      "source": "Web-verified (high confidence) \u2014 was: hawaiiconvention.com",
       "entrance_lat": 21.2910469,
       "entrance_lng": -157.8388867,
-      "entrance_source": "OSM parking_entrance node 11510751361"
+      "entrance_source": "OSM parking_entrance node 11510751361",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "hnl-sheraton-waikiki",
@@ -316,11 +317,12 @@
       "addr": "300 Rodgers Blvd",
       "lat": 21.3186,
       "lng": -157.9222,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "HNL terminal garage.",
-      "source": "airports.hawaii.gov"
+      "notes": "HNL terminal garage.\nWeb-verified 2026-04-27: https://airports.hawaii.gov/hnl/getting-to-from/parking/ \u2014 International parking garage: 8'0\" within garage, 10'0\" uncovered; HIDOT official",
+      "source": "Web-verified (high confidence) \u2014 was: airports.hawaii.gov",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "hnl-airport-long",

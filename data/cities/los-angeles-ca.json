@@ -36,14 +36,15 @@
       "addr": "1100 S Figueroa St",
       "lat": 34.0419,
       "lng": -118.268,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Event parking. Clearance needs verification.",
-      "source": "Crypto.com Arena",
+      "notes": "Event parking. Clearance needs verification.\nWeb-verified 2026-04-27: https://www.cryptoarena.com/plan-your-visit/getting-here/interactive-parking-map \u2014 West/Olympic Garage at 888 W Olympic Blvd: 8'2\" clearance per official site",
+      "source": "Web-verified (high confidence) \u2014 was: Crypto.com Arena",
       "entrance_lat": 34.0413288,
       "entrance_lng": -118.2671298,
-      "entrance_source": "OSM parking_entrance node 9202286902"
+      "entrance_source": "OSM parking_entrance node 9202286902",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "la-row-dtla-low",
@@ -360,11 +361,12 @@
       "addr": "1200 Getty Center Dr",
       "lat": 34.0788,
       "lng": -118.4751,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Large underground structure. Clearance needs verification.",
-      "source": "Getty.edu"
+      "notes": "Large underground structure. Clearance needs verification.\nWeb-verified 2026-04-27: https://www.getty.edu/visit/center/parking-and-transportation/ \u2014 Getty official: vehicles 6'10\"-12'6\" must use Level P1; 6'10\" is the standard car-level clearance",
+      "source": "Web-verified (high confidence) \u2014 was: Getty.edu",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "la-dodger-stadium",

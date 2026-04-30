@@ -471,11 +471,12 @@
       "addr": "5757 Wayne Newton Blvd",
       "lat": 36.0815,
       "lng": -115.1563,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": true,
-      "notes": "Vehicles over 22' long, 8.5' wide, or 13.5' high must use oversized lots.",
-      "source": "LAS airport"
+      "notes": "Vehicles over 22' long, 8.5' wide, or 13.5' high must use oversized lots.\nWeb-verified 2026-04-27: https://www.harryreidairport.com/parking \u2014 Main entry 8'2\"; varies by level (Level 2M short-term 7'0\")",
+      "source": "Web-verified (high confidence) \u2014 was: LAS airport",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "harryreid-t3",
@@ -803,15 +804,16 @@
     },
     {
       "id": "green-valley-ranch",
-      "name": "Green Valley Ranch Garage",
+      "name": "Green Valley Ranch \u2014 West Garage",
       "addr": "2300 Paseo Verde Pkwy",
       "lat": 36.019073,
       "lng": -115.090461,
       "height_in": null,
-      "height_label": null,
+      "height_label": "Unverified (sign obscured)",
       "oversized": false,
-      "notes": "Station Casinos Henderson. Free parking. Coords corrected 2026-04-27 from 36.0371/-115.0636 (Paseo Verde landmark) to actual marker location reported by site operator. NOTE: now sits ~500m from green-valley-ranch-north -- if these are the same physical garage, one should be merged.",
-      "source": "Needs verification"
+      "verified_on": "2026-04-27",
+      "notes": "West side of the GVR resort property. Posted clearance sign at the entrance is not readable from Google Street View imagery (no usable angle); sister facility on the north side is verified separately at 8'2\" \u2014 see green-valley-ranch-north.\nUser-confirmed both garages exist; west one currently has no readable sign.",
+      "source": "User-observed (sign obscured in Street View; height unknown)"
     },
     {
       "id": "green-valley-ranch-north",
@@ -870,7 +872,7 @@
       "oversized": true,
       "verified_on": "2026-04-27",
       "notes": "Surface lots at LVCC. Event + self-park for trade shows. No covered garage; entirely open-air, any vehicle size fits.\nVerified in person by site operator.",
-      "source": "Verified in person — was: lvcva.com",
+      "source": "Verified in person \u2014 was: lvcva.com",
       "structure_type": "surface_lot"
     },
     {
@@ -915,14 +917,15 @@
       "addr": "",
       "lat": 36.11127,
       "lng": -115.17615,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 103,
+      "height_label": "8'7\"",
       "oversized": false,
-      "notes": "paid; hrs: 24/7 [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap",
+      "notes": "paid; hrs: 24/7 [OSM clearance value rejected as implausible]\nWeb-verified 2026-04-27: https://en.parkopedia.com/parking/garage/bellagio_hotel_and_casino/89109/las_vegas/ \u2014 Bellagio garage listed at 8'7\" - taller than most Strip garages; cross-referenced multiple sources",
+      "source": "Web-verified (high confidence) \u2014 was: OpenStreetMap",
       "entrance_lat": 36.1109415,
       "entrance_lng": -115.1763901,
-      "entrance_source": "OSM parking_entrance node 280426999"
+      "entrance_source": "OSM parking_entrance node 280426999",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "osm-w111367853",
@@ -1203,8 +1206,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "verified_on": "2026-04-27",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).\nVerified in person by site operator — open-air RV park, oversized-friendly by nature.",
-      "source": "Verified in person — was: OpenStreetMap (surface lot)"
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).\nVerified in person by site operator \u2014 open-air RV park, oversized-friendly by nature.",
+      "source": "Verified in person \u2014 was: OpenStreetMap (surface lot)"
     },
     {
       "id": "osm-w847040582",

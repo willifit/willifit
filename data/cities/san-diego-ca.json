@@ -36,11 +36,12 @@
       "addr": "600 K St",
       "lat": 32.7099,
       "lng": -117.1599,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Major Gaslamp garage. Clearance needs verification.",
-      "source": "Needs verification"
+      "notes": "Major Gaslamp garage. Clearance needs verification.\nWeb-verified 2026-04-27: https://en.parkopedia.com/parking/garage/6th_and_k_parkade_ace_parking_lot_1068/92101/san_diego/ \u2014 6th and K Parkade max vehicle height 7'0\"",
+      "source": "Web-verified (medium confidence) \u2014 was: Needs verification",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sd-ace-market-7th",
@@ -118,14 +119,15 @@
       "addr": "1 Park Blvd",
       "lat": 32.705,
       "lng": -117.1586,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Hotel + Convention Center adjacent.",
-      "source": "Needs verification",
+      "notes": "Hotel + Convention Center adjacent.\nWeb-verified 2026-04-27: https://www.tripadvisor.com/Hotel_Feature-g60750-d1011240-zft12116-Hilton_San_Diego_Bayfront.html \u2014 Multiple TripAdvisor reports plus Petco Park parking guide cite 7'0\" garage limit",
+      "source": "Web-verified (medium confidence) \u2014 was: Needs verification",
       "entrance_lat": 32.7043785,
       "entrance_lng": -117.157912,
-      "entrance_source": "OSM parking_entrance node 2965376719"
+      "entrance_source": "OSM parking_entrance node 2965376719",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sd-marriott-marquis",
@@ -337,11 +339,12 @@
       "addr": "5500 Canyon Crest Dr",
       "lat": 32.7752,
       "lng": -117.0707,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 88,
+      "height_label": "7'4\"",
       "oversized": false,
-      "notes": "SDSU basketball + events.",
-      "source": "sdsu.edu"
+      "notes": "SDSU basketball + events.\nWeb-verified 2026-04-27: https://as.sdsu.edu/viejas_arena/parking \u2014 Official SDSU parking pages: parking structure clearance 7'4\"",
+      "source": "Web-verified (high confidence) \u2014 was: sdsu.edu",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "sd-little-italy",
@@ -380,14 +383,15 @@
       "addr": "3225 N Harbor Dr",
       "lat": 32.7337,
       "lng": -117.192,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 100,
+      "height_label": "8'4\"",
       "oversized": false,
-      "notes": "New Terminal 1 parking structure (opened 2025).",
-      "source": "san.org",
+      "notes": "New Terminal 1 parking structure (opened 2025).\nWeb-verified 2026-04-27: https://www.san.org/parking/Terminal-1-Parking-Plaza \u2014 Terminal 1 Parking Plaza: 9'6\" level 1; 8'4\" levels 2-5",
+      "source": "Web-verified (high confidence) \u2014 was: san.org",
       "entrance_lat": 32.7308387,
       "entrance_lng": -117.1948217,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "san-t2-garage",
@@ -395,11 +399,12 @@
       "addr": "3225 N Harbor Dr",
       "lat": 32.7348,
       "lng": -117.1994,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Terminal 2 terminal-adjacent.",
-      "source": "san.org"
+      "notes": "Terminal 2 terminal-adjacent.\nWeb-verified 2026-04-27: https://www.san.org/venue/terminal-2/ \u2014 Terminal 2 Parking Plaza max clearance 8'2\"",
+      "source": "Web-verified (high confidence) \u2014 was: san.org",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "san-longterm",

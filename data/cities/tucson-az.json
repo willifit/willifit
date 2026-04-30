@@ -116,11 +116,12 @@
       "addr": "880 E 4th St",
       "lat": 32.2311,
       "lng": -110.9584,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "U of Arizona visitor.",
-      "source": "parking.arizona.edu"
+      "notes": "U of Arizona visitor.\nWeb-verified 2026-04-27: https://parking.arizona.edu/about/garages.php?garage=5 \u2014 University of Arizona Parking & Transportation: Tyndall Avenue Garage 7'0\"",
+      "source": "Web-verified (high confidence) \u2014 was: parking.arizona.edu",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "tus-ua-cherry",
@@ -128,11 +129,12 @@
       "addr": "1000 N Cherry Ave",
       "lat": 32.2321,
       "lng": -110.9549,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Arizona Stadium adjacent.",
-      "source": "parking.arizona.edu"
+      "notes": "Arizona Stadium adjacent.\nWeb-verified 2026-04-27: https://parking.arizona.edu/parking/garages/visitor-parking/ \u2014 Cherry Avenue Garage clearance 7'0\"",
+      "source": "Web-verified (high confidence) \u2014 was: parking.arizona.edu",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "tus-arizona-stadium",
@@ -173,12 +175,13 @@
       "lng": -110.932,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Foothills upscale retail.",
-      "source": "Needs verification",
+      "oversized": true,
+      "notes": "Foothills upscale retail.\nReclassified 2026-04-27 as surface lot per web research: Free surface parking + covered surface (no garage)",
+      "source": "Web-verified surface lot \u2014 was: Needs verification",
       "entrance_lat": 32.3081697,
       "entrance_lng": -110.9327895,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tus-desert-museum",

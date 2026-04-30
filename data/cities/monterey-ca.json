@@ -37,11 +37,12 @@
       "addr": "886 Cannery Row",
       "lat": 36.6187,
       "lng": -121.9016,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Aquarium garage.",
-      "source": "montereybayaquarium.org"
+      "notes": "Aquarium garage.\nWeb-verified 2026-04-27: https://monterey.gov/your_city_hall/departments/public_works/parking/public_garages_and_lots.php \u2014 Cannery Row Parking Garage (closest to aquarium) is 6'10\"",
+      "source": "Web-verified (medium confidence) \u2014 was: montereybayaquarium.org",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "mry-conf-ctr",

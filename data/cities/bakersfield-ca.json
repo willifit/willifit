@@ -7,10 +7,11 @@
       "lat": 35.3737,
       "lng": -119.0178,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Convention center + arena complex.",
-      "source": "mechanicsbankarena.com"
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "Convention center + arena complex.\nReclassified 2026-04-27 as surface lot per web research: Adjacent surface lot + nearby garage; convention site uses surface predominantly",
+      "source": "Web-verified surface lot \u2014 was: mechanicsbankarena.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-arena",
@@ -56,9 +57,10 @@
       "lng": -119.0193,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Historic Fox Theater + downtown arts.",
-      "source": "thebakersfieldfox.com"
+      "oversized": true,
+      "notes": "Historic Fox Theater + downtown arts.\nReclassified 2026-04-27 as surface lot per web research: Bakersfield surface district lots",
+      "source": "Web-verified surface lot \u2014 was: thebakersfieldfox.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-padre-hotel",
@@ -156,8 +158,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "BC football.",
-      "source": "bakersfieldcollege.edu"
+      "notes": "BC football.\nReclassified 2026-04-27 as surface lot per web research: BC student parking lots \u2014 surface only (3,800 spaces)",
+      "source": "Web-verified surface lot \u2014 was: bakersfieldcollege.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-river-walk-park",

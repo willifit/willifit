@@ -93,14 +93,15 @@
       "addr": "800 W Katella Ave",
       "lat": 33.8012,
       "lng": -117.9236,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Largest on West Coast. Connected to ACC.",
-      "source": "anaheimconventioncenter.com",
+      "notes": "Largest on West Coast. Connected to ACC.\nWeb-verified 2026-04-27: https://en.parkopedia.com/parking/anaheim_convention_center/ \u2014 6'8\" cited on Parkopedia/Anaheim parking listings; standard for the convention-center structure",
+      "source": "Web-verified (medium confidence) \u2014 was: anaheimconventioncenter.com",
       "entrance_lat": 33.8013772,
       "entrance_lng": -117.9232287,
-      "entrance_source": "OSM parking_entrance node 5485690701"
+      "entrance_source": "OSM parking_entrance node 5485690701",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "ana-honda-center",
@@ -180,14 +181,15 @@
       "addr": "700 W Convention Way",
       "lat": 33.8018,
       "lng": -117.9196,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Convention hotel.",
-      "source": "marriott.com",
+      "notes": "Convention hotel.\nWeb-verified 2026-04-27: https://en.parkopedia.com/parking/garage/anaheim_marriott/92802/anaheim/ \u2014 6'8\" listed for the Anaheim Marriott garage at 700 W Convention Way",
+      "source": "Web-verified (medium confidence) \u2014 was: marriott.com",
       "entrance_lat": 33.8020587,
       "entrance_lng": -117.9176932,
-      "entrance_source": "OSM parking_entrance node 5166434104"
+      "entrance_source": "OSM parking_entrance node 5166434104",
+      "verified_on": "2026-04-27"
     },
     {
       "id": "ana-disneyland-hotel",
