@@ -2966,7 +2966,12 @@ function renderMarkersOSM() {
   const items = getFiltered();
   items.forEach(g => {
     const cls = markerClass(g);
-    const label = g.height_in ? (g.height_label.split("'")[0] + "'") : '?';
+    // Surface lots / RV parks: show "✓" (verified, just no overhead).
+    // Real unverifieds: "?".
+    // Verified garages: short height like "8'".
+    const label = g.height_in
+      ? (g.height_label.split("'")[0] + "'")
+      : (heightClassForEntry(g) === 'nolimit' ? '✓' : '?');
     const icon = L.divIcon({
       className: '',
       html: `<div class="garage-marker ${cls} ${state.selectedId===g.id?'active-marker':''}"><span>${label}</span></div>`,
@@ -3033,7 +3038,12 @@ function renderMarkersGoogle() {
   const items = getFiltered();
   items.forEach(g => {
     const cls = markerClass(g);
-    const label = g.height_in ? (g.height_label.split("'")[0] + "'") : '?';
+    // Surface lots / RV parks: show "✓" (verified, just no overhead).
+    // Real unverifieds: "?".
+    // Verified garages: short height like "8'".
+    const label = g.height_in
+      ? (g.height_label.split("'")[0] + "'")
+      : (heightClassForEntry(g) === 'nolimit' ? '✓' : '?');
     const marker = new google.maps.Marker({
       position: { lat: g.lat, lng: g.lng },
       icon: _gmIcon(cls, label, state.selectedId === g.id),

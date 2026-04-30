@@ -830,20 +830,6 @@
       "source": "Verified in person"
     },
     {
-      "id": "district-at-gvr",
-      "name": "The District at Green Valley Ranch",
-      "addr": "2240 Village Walk Dr, Henderson",
-      "lat": 36.0217,
-      "lng": -115.0844,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "verified_on": "2026-04-27",
-      "notes": "Mediterranean-village-style shopping/dining district adjacent to the GVR Resort. Mostly open-air surface lots and on-street angled parking; the small underground garage on-site is residents-only and not for shoppers.\nVerified in person by site operator.",
-      "source": "Verified in person"
-    },
-    {
       "id": "green-valley-ranch-north",
       "name": "Green Valley Ranch \u2014 North Garage",
       "addr": "Village View Dr, Henderson",

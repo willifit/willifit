@@ -14,10 +14,11 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v6: forces clients to re-fetch HTML after the verified-badge / aerial-fallback
-// improvements (commits 5da1adf and earlier).  Without bumping, returning visitors
-// keep seeing the old cached index.html and miss the new "Verified" badges.
-const CACHE_VERSION = "willifit-v6";
+// v7: invalidates v6's data cache too -- the stale-while-revalidate strategy
+// was serving cached city JSON (e.g. las-vegas-nv.json) on first load even
+// after data updates landed (GVR layout in 4f9c602).  v7's separate cache
+// names ensure the OLD city JSON is dropped on activate.
+const CACHE_VERSION = "willifit-v7";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
