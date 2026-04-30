@@ -1912,8 +1912,8 @@
         <div class="filter-label">Show</div>
         <div class="type-chips">
           <button class="type-chip active" data-type="garage" id="chipGarage"><span class="chip-dot"></span>Garages</button>
-          <button class="type-chip active" data-type="tunnel" id="chipTunnel"><span class="chip-dot"></span>Tunnels</button>
-          <button class="type-chip active" data-type="bridge" id="chipBridge"><span class="chip-dot"></span>Bridges</button>
+          <button class="type-chip" data-type="tunnel" id="chipTunnel"><span class="chip-dot"></span>Tunnels</button>
+          <button class="type-chip" data-type="bridge" id="chipBridge"><span class="chip-dot"></span>Bridges</button>
         </div>
         <button class="toggle" id="oversizedToggle" type="button">Oversized only</button>
         <button class="toggle" id="verifiedToggle" type="button">Hide unverified</button>
@@ -2428,7 +2428,10 @@ const state = {
   _gmCityDots: [],         // Google Maps city dot markers (parallel)
   pickerMap: null,
   // Which location types to show. All three on by default.
-  showTypes: { garage: true, tunnel: true, bridge: true },
+  // Default to garages-only view; tunnels and bridges are off by default
+  // since the typical use case is "where can I park my RV/truck?", not
+  // "what bridges should I avoid?".  User can flip the chips to add either.
+  showTypes: { garage: true, tunnel: false, bridge: false },
   // User's vehicle height in inches (null = not set). Persisted in localStorage.
   vehicleHeightIn: null,
   // "Search this area" — bounds object {north, south, east, west} when active, else null.
