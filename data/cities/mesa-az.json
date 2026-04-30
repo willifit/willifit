@@ -326,45 +326,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w325260032",
-      "name": "Public Parking Lot",
-      "addr": "",
-      "lat": 33.49925,
-      "lng": -111.92216,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (72 spaces). 72 spaces. Free parking. Operator: City of Scottsdale.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w325262618",
-      "name": "1st Ave Public Parking Lot",
-      "addr": "",
-      "lat": 33.49429,
-      "lng": -111.92732,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (52 spaces). 52 spaces. Free parking. Operator: City of Scottsdale.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w325274068",
-      "name": "Rose Garden Public Parking Lot",
-      "addr": "",
-      "lat": 33.49706,
-      "lng": -111.93116,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (116 spaces). 116 spaces. Free parking. Operator: City of Scottsdale.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w497683233",
       "name": "Truck Parking",
       "addr": "",

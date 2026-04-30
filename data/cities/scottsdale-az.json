@@ -368,19 +368,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "osm-w45290303",
-      "name": "Twin Palms RV\u00a0Park",
-      "addr": "",
-      "lat": 33.41487,
-      "lng": -111.78308,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w325260032",
       "name": "Public Parking Lot",
       "addr": "",

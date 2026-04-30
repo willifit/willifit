@@ -395,19 +395,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w67395840",
-      "name": "Launch Ramp Trailers Only Public Parking",
-      "addr": "",
-      "lat": 37.86928,
-      "lng": -122.31778,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces. Paid parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w106211463",
       "name": "Manzanita Park And Ride",
       "addr": "W Of Us 101 @ Jct Sr 1",
@@ -444,71 +431,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (62 spaces). 62 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w282352311",
-      "name": "O lot",
-      "addr": "",
-      "lat": 37.86538,
-      "lng": -122.31739,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (72 spaces). 72 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w282352313",
-      "name": "N Lot / Skates",
-      "addr": "",
-      "lat": 37.86387,
-      "lng": -122.31705,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (140 spaces). 140 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w282352316",
-      "name": "South Cove West Lot",
-      "addr": "",
-      "lat": 37.86353,
-      "lng": -122.3136,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (89 spaces). 89 spaces. Free parking. Operator: City of Berkeley.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w282352318",
-      "name": "J & K Lot",
-      "addr": "",
-      "lat": 37.86437,
-      "lng": -122.31269,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (96 spaces). 96 spaces. Free parking. Operator: City of Berkeley.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w404721993",
-      "name": "South Cove East Lot",
-      "addr": "",
-      "lat": 37.86362,
-      "lng": -122.31239,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (98 spaces). 98 spaces. Free parking. Operator: City of Berkeley.",
       "source": "OpenStreetMap (surface lot)"
     },
     {
@@ -564,19 +486,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('bus').",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1396473711",
-      "name": "Wareham Development",
-      "addr": "",
-      "lat": 37.85285,
-      "lng": -122.29087,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (86 spaces). 86 spaces. Operator: Wareham Development.",
       "source": "OpenStreetMap (surface lot)"
     }
   ],

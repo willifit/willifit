@@ -381,45 +381,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w80791663",
-      "name": "Keolis Commuter Services",
-      "addr": "",
-      "lat": 42.40173,
-      "lng": -71.07549,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (1316 spaces). 1316 spaces. Paid parking. Operator: Keolis Commuter Services.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w83327118",
-      "name": "Winchester",
-      "addr": "",
-      "lat": 42.44453,
-      "lng": -71.14078,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (119 spaces). 119 spaces. Paid parking. Operator: Winchester.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w85339138",
-      "name": "City of Malden",
-      "addr": "",
-      "lat": 42.42363,
-      "lng": -71.07613,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Free parking. Operator: City of Malden.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w122410655",
       "name": "ABM Sargent's Wharf Parking",
       "addr": "269 Commercial Street",
@@ -446,19 +407,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w182215795",
-      "name": "Keolis Commuter Services",
-      "addr": "",
-      "lat": 42.36304,
-      "lng": -71.18462,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Paid parking. Operator: Keolis Commuter Services.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w193031295",
       "name": "Wollaston MBTA Parking",
       "addr": "",
@@ -469,19 +417,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (550 spaces). 550 spaces. Paid parking. Operator: Keolis Commuter Services.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w277437319",
-      "name": "Boston Unversity Lot F",
-      "addr": "",
-      "lat": 42.35008,
-      "lng": -71.1131,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (262 spaces). 262 spaces. Free parking.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

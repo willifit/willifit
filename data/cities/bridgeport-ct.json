@@ -14,19 +14,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w329559152",
-      "name": "City of Milford",
-      "addr": "",
-      "lat": 41.25,
-      "lng": -73.05279,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (70 spaces). 70 spaces. Free parking. Operator: City of Milford.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w468973978",
       "name": "Town of Stratford",
       "addr": "",
@@ -37,19 +24,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (65 spaces). 65 spaces. Operator: Town of Stratford.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w963519593",
-      "name": "City of Milford",
-      "addr": "",
-      "lat": 41.25035,
-      "lng": -73.05435,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (60 spaces). 60 spaces. Operator: City of Milford.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

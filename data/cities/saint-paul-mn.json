@@ -302,19 +302,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w385624011",
-      "name": "St. Anthony Center Parking",
-      "addr": "",
-      "lat": 45.01535,
-      "lng": -93.21942,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w618933059",
       "name": "City of Oakdale",
       "addr": "",

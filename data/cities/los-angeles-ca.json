@@ -797,21 +797,6 @@
       "entrance_source": "OSM parking_entrance node 8416416064"
     },
     {
-      "id": "osm-w27208801",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.81769,
-      "lng": -118.14362,
-      "height_in": 157,
-      "height_label": "13'1\"",
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.817443,
-      "entrance_lng": -118.1430464,
-      "entrance_source": "OSM parking_entrance node 1844621525"
-    },
-    {
       "id": "osm-w30967912",
       "name": "Oak Parking Garage",
       "addr": "",
@@ -960,21 +945,6 @@
       "entrance_lat": 34.0107811,
       "entrance_lng": -118.3384704,
       "entrance_source": "OSM parking_entrance node 8317614169"
-    },
-    {
-      "id": "osm-w146635494",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.90336,
-      "lng": -118.13231,
-      "height_in": 115,
-      "height_label": "9'7\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.9029373,
-      "entrance_lng": -118.1320702,
-      "entrance_source": "OSM parking_entrance node 12859253705"
     },
     {
       "id": "osm-w155813622",
@@ -1178,21 +1148,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w303268434",
-      "name": "parking structure",
-      "addr": "3750 Kilroy Airport Way",
-      "lat": 33.80742,
-      "lng": -118.14682,
-      "height_in": 205,
-      "height_label": "17'1\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8071405,
-      "entrance_lng": -118.1472228,
-      "entrance_source": "OSM parking_entrance node 9468701203"
-    },
-    {
       "id": "osm-w317289954",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -1347,21 +1302,6 @@
       "entrance_lat": 34.0541288,
       "entrance_lng": -118.413223,
       "entrance_source": "OSM parking_entrance node 5411346332"
-    },
-    {
-      "id": "osm-w403831629",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.86972,
-      "lng": -118.06183,
-      "height_in": 215,
-      "height_label": "17'11\"",
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8693595,
-      "entrance_lng": -118.062099,
-      "entrance_source": "OSM parking_entrance node 10012205151"
     },
     {
       "id": "osm-w406988279",
@@ -3272,45 +3212,6 @@
       "entrance_source": "OSM parking_entrance node 4001614652"
     },
     {
-      "id": "osm-w441279921",
-      "name": "parking structure",
-      "addr": "",
-      "lat": 33.85973,
-      "lng": -118.15013,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w441451232",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.80592,
-      "lng": -118.19085,
-      "height_in": 239,
-      "height_label": "19'11\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w441464328",
-      "name": "AmeriFleet Transportation Suite 350",
-      "addr": "",
-      "lat": 33.80922,
-      "lng": -118.13574,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8089791,
-      "entrance_lng": -118.1361446,
-      "entrance_source": "OSM parking_entrance node 7200979389"
-    },
-    {
       "id": "osm-w442301393",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3324,36 +3225,6 @@
       "entrance_lat": 33.81337,
       "entrance_lng": -118.3483022,
       "entrance_source": "OSM parking_entrance node 9247162963"
-    },
-    {
-      "id": "osm-w442301492",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.81119,
-      "lng": -118.34321,
-      "height_in": 233,
-      "height_label": "19'5\"",
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8114004,
-      "entrance_lng": -118.3434265,
-      "entrance_source": "OSM parking_entrance node 4873018652"
-    },
-    {
-      "id": "osm-w442302212",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.89052,
-      "lng": -118.30792,
-      "height_in": 201,
-      "height_label": "16'9\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8910358,
-      "entrance_lng": -118.3095248,
-      "entrance_source": "OSM parking_entrance node 5881000509"
     },
     {
       "id": "osm-w442823794",
@@ -3422,21 +3293,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w450456860",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.89276,
-      "lng": -118.22558,
-      "height_in": 128,
-      "height_label": "10'8\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.8928104,
-      "entrance_lng": -118.226048,
-      "entrance_source": "OSM parking_entrance node 12157193513"
-    },
-    {
       "id": "osm-w450819457",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3449,21 +3305,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w450854085",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.91576,
-      "lng": -118.06072,
-      "height_in": 94,
-      "height_label": "7'10\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.9159365,
-      "entrance_lng": -118.0608093,
-      "entrance_source": "OSM parking_entrance node 12845034009"
-    },
-    {
       "id": "osm-w451110167",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3474,21 +3315,6 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w451199700",
-      "name": "Unnamed parking structure",
-      "addr": "Avenida Manuel Salinas",
-      "lat": 33.91484,
-      "lng": -118.07053,
-      "height_in": 134,
-      "height_label": "11'2\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.9152511,
-      "entrance_lng": -118.0700086,
-      "entrance_source": "OSM parking_entrance node 9351604606"
     },
     {
       "id": "osm-w451425608",
@@ -3518,18 +3344,6 @@
       "entrance_source": "OSM parking_entrance node 11577924769"
     },
     {
-      "id": "osm-w455800744",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.86798,
-      "lng": -118.09608,
-      "height_in": 116,
-      "height_label": "9'8\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w456593072",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3543,18 +3357,6 @@
       "entrance_lat": 33.9301689,
       "entrance_lng": -118.159732,
       "entrance_source": "OSM parking_entrance node 11238070548"
-    },
-    {
-      "id": "osm-w456618231",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.87865,
-      "lng": -118.15041,
-      "height_in": 102,
-      "height_label": "8'6\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
     },
     {
       "id": "osm-w456647551",
@@ -3770,21 +3572,6 @@
       "entrance_source": "OSM parking_entrance node 7182120106"
     },
     {
-      "id": "osm-r6748743",
-      "name": "Unnamed parking structure",
-      "addr": "",
-      "lat": 33.91808,
-      "lng": -118.12727,
-      "height_in": 167,
-      "height_label": "13'11\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.9174118,
-      "entrance_lng": -118.1274431,
-      "entrance_source": "OSM parking_entrance node 11593599445"
-    },
-    {
       "id": "osm-r6945788",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -3810,19 +3597,6 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w54034970",
-      "name": "Metro Norwalk C Line Station Parking",
-      "addr": "12901 Hoxie Avenue",
-      "lat": 33.91192,
-      "lng": -118.10356,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (1759 spaces). 1759 spaces.",
-      "source": "OpenStreetMap (surface lot)"
     },
     {
       "id": "osm-w72157798",
@@ -3942,19 +3716,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w104357796",
-      "name": "Harbor Gateway Transit Center Park And Ride",
-      "addr": "Sw Quad I-110 / Sr 91 Ic Off 182nd Street",
-      "lat": 33.87066,
-      "lng": -118.28768,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (980 spaces). 980 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w104357800",
       "name": "Lynwood Park And Ride",
       "addr": "I-105 / Long Beach Blvd Ic",
@@ -4007,19 +3768,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w104357813",
-      "name": "Rosecrans Park And Ride",
-      "addr": "Se Quad I-110 / Rosecrans Ave Ic",
-      "lat": 33.90104,
-      "lng": -118.28576,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (342 spaces). 342 spaces. Paid parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w104357815",
       "name": "Slauson Park And Ride",
       "addr": "Sw & Se Quad I-110 / Slauson Avenue Ic",
@@ -4046,19 +3794,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w104357819",
-      "name": "Carson Park And Ride",
-      "addr": "Nw Quad I-110 / W Carson St Int",
-      "lat": 33.83281,
-      "lng": -118.28802,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (140 spaces). 140 spaces. Paid parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w116574099",
       "name": "Lot A",
       "addr": "",
@@ -4069,19 +3804,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (143 spaces). 143 spaces. Paid parking. Operator: City of Hermosa Beach.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w193959426",
-      "name": "Lakewood Boulevard Park And Ride",
-      "addr": "12747 Lakewood Blvd (Sr 19) @ I-105 / Lakewood Blvd Ic",
-      "lat": 33.91212,
-      "lng": -118.14215,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (410 spaces). 410 spaces.",
       "source": "OpenStreetMap (surface lot)"
     },
     {
@@ -4145,19 +3867,6 @@
       "addr": "12001 Vista Del Mar",
       "lat": 33.92866,
       "lng": -118.43458,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w669600755",
-      "name": "mobile home park",
-      "addr": "",
-      "lat": 33.8555,
-      "lng": -118.15764,
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,

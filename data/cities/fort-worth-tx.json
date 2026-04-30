@@ -391,35 +391,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking. Operator: Paul Mansir Memorial Post 297.",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1458952075",
-      "name": "Mid-Cities RV park",
-      "addr": "",
-      "lat": 32.61495,
-      "lng": -97.22323,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1470156906",
-      "name": "Starry Night RV Resort",
-      "addr": "4513 Kennedale New Hope Road",
-      "lat": 32.61772,
-      "lng": -97.21911,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)",
-      "entrance_lat": 32.6177124,
-      "entrance_lng": -97.2209676,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     }
   ],
   "tunnels": [],

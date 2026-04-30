@@ -121,19 +121,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w413975294",
-      "name": "E 122nd/Menlo Park Park and Ride",
-      "addr": "",
-      "lat": 45.52175,
-      "lng": -122.53646,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (612 spaces). 612 spaces. Free parking. Operator: TriMet.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w435714302",
       "name": "Piper RV Park",
       "addr": "",

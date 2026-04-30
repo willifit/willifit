@@ -1,19 +1,6 @@
 {
   "garages": [
     {
-      "id": "osm-w329358202",
-      "name": "Connecticut Department of Energy and Environmental Protection",
-      "addr": "",
-      "lat": 41.20113,
-      "lng": -73.06931,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Free parking. Operator: Connecticut Department of Energy and Environmental Protection.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w329559152",
       "name": "City of Milford",
       "addr": "",

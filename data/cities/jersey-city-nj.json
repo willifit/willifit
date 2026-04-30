@@ -383,19 +383,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w281218256",
-      "name": "Central Parking System of New York, Inc.",
-      "addr": "",
-      "lat": 40.74296,
-      "lng": -73.93812,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (100 spaces). 100 spaces. Paid parking. Operator: SP+.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w354408901",
       "name": "Liberty Harbor RV",
       "addr": "",
@@ -406,19 +393,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 50 spaces. Paid parking. Operator: Liberty Harbor Marina.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1075152242",
-      "name": "Kinder Tower",
-      "addr": "",
-      "lat": 40.80869,
-      "lng": -74.19135,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (57 spaces). 57 spaces. Free parking. Operator: Kinder Tower.",
       "source": "OpenStreetMap (surface lot)"
     }
   ],

@@ -434,61 +434,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w340557802",
-      "name": "Delta Park/Vanport Park and Ride",
-      "addr": "1940 North Victory Boulevard",
-      "lat": 45.59592,
-      "lng": -122.68617,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (129 spaces). 129 spaces. Operator: TriMet.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w388345676",
-      "name": "Janzen Beach RV Park",
-      "addr": "",
-      "lat": 45.61637,
-      "lng": -122.68797,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w395013671",
-      "name": "Columbia River RV Park",
-      "addr": "10649 Northeast 13th Avenue",
-      "lat": 45.5997,
-      "lng": -122.65523,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). Paid parking.",
-      "source": "OpenStreetMap (surface lot)",
-      "entrance_lat": 45.6005541,
-      "entrance_lng": -122.6559479,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
-    },
-    {
-      "id": "osm-w396606133",
-      "name": "Vancouver Mall RV Park",
-      "addr": "",
-      "lat": 45.66106,
-      "lng": -122.56703,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w413975294",
       "name": "E 122nd/Menlo Park Park and Ride",
       "addr": "",
@@ -538,19 +483,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w652167488",
-      "name": "Expo Center Park and Ride",
-      "addr": "",
-      "lat": 45.60599,
-      "lng": -122.68598,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (300 spaces). 300 spaces. Operator: TriMet.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

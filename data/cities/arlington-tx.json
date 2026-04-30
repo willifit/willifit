@@ -236,19 +236,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w25664330",
-      "name": "Trinity Metro",
-      "addr": "",
-      "lat": 32.79902,
-      "lng": -97.22289,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (364 spaces). 364 spaces. Operator: Trinity Metro.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w97555485",
       "name": "D Lot Bus/RV",
       "addr": "",
@@ -337,32 +324,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w670759615",
-      "name": "Foster Village Park",
-      "addr": "",
-      "lat": 32.87959,
-      "lng": -97.24135,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (57 spaces). 57 spaces. Operator: Foster Village Park.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w864768089",
-      "name": "Smithfield Station - Park and Ride",
-      "addr": "",
-      "lat": 32.86395,
-      "lng": -97.21129,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (548 spaces). 548 spaces. Operator: Trinity Metro.",
       "source": "OpenStreetMap (surface lot)"
     },
     {

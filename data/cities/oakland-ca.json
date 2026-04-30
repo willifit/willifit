@@ -388,19 +388,6 @@
       "structure_type": "surface_lot"
     },
     {
-      "id": "osm-n4216588290",
-      "name": "Candlestick RV Park",
-      "addr": "650 Gilman Avenue",
-      "lat": 37.71598,
-      "lng": -122.38328,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w23454666",
       "name": "Harbor Bay Ferry Terminal Parking",
       "addr": "",
@@ -542,22 +529,6 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('stadium'). Operator: Oakland.",
       "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1292771819",
-      "name": "RV Park (unnamed)",
-      "addr": "",
-      "lat": 37.74315,
-      "lng": -122.37951,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)",
-      "entrance_lat": 37.7422661,
-      "entrance_lng": -122.3803711,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
       "id": "osm-w1396473711",

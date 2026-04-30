@@ -1,20 +1,8 @@
 {
   "garages": [
     {
-      "id": "hen-green-valley-ranch",
-      "name": "Green Valley Ranch Resort",
-      "addr": "2300 Paseo Verde Pkwy",
-      "lat": 36.0374,
-      "lng": -115.0625,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Station Casinos. Free parking.",
-      "source": "greenvalleyranch.com"
-    },
-    {
       "id": "hen-station-casinos-sunset",
-      "name": "Sunset Station — Open-Air Parking",
+      "name": "Sunset Station \u2014 Open-Air Parking",
       "addr": "1301 W Sunset Rd",
       "lat": 36.0471,
       "lng": -115.0427,
@@ -24,7 +12,7 @@
       "structure_type": "surface_lot",
       "verified_on": "2026-04-27",
       "notes": "Open-air surface parking at Sunset Station. The covered garage portion is verified separately at 8'2\" (see Vegas-data entry osm-w544697544 for the garage; same property but tracked in Vegas because the OSM way ID lives there).\nVerified in person by site operator.",
-      "source": "Verified in person — was: sunsetstation.com"
+      "source": "Verified in person \u2014 was: sunsetstation.com"
     },
     {
       "id": "hen-m-resort",
@@ -49,8 +37,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "verified_on": "2026-04-27",
-      "notes": "Enclosed mall on Sunset Rd. Parking is open-air surface lots only — no covered garage on-site. Oversized-friendly by nature.\nVerified in person by site operator.",
-      "source": "Verified in person — was: galleriaatsunset.com"
+      "notes": "Enclosed mall on Sunset Rd. Parking is open-air surface lots only \u2014 no covered garage on-site. Oversized-friendly by nature.\nVerified in person by site operator.",
+      "source": "Verified in person \u2014 was: galleriaatsunset.com"
     },
     {
       "id": "hen-district-green-valley",
@@ -64,7 +52,7 @@
       "structure_type": "surface_lot",
       "verified_on": "2026-04-27",
       "notes": "Mediterranean-village-style shopping/dining adjacent to GVR Resort. Open-air surface lots + on-street angled parking; the small underground garage on-site is residents-only (not for shoppers). Oversized-friendly by nature.\nVerified in person by site operator.",
-      "source": "Verified in person — was: shopthedistrict.com",
+      "source": "Verified in person \u2014 was: shopthedistrict.com",
       "entrance_lat": 36.0382546,
       "entrance_lng": -115.0688329,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
@@ -233,32 +221,6 @@
       "source": "blm.gov"
     },
     {
-      "id": "osm-w312344632",
-      "name": "Las Vegas KOA at Sam's Town",
-      "addr": "5225 Boulder Highway",
-      "lat": 36.10999,
-      "lng": -115.05892,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w319325706",
-      "name": "Maycliff Mini Storage and RV Park",
-      "addr": "4001 East Sahara Avenue",
-      "lat": 36.14377,
-      "lng": -115.08753,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w543015574",
       "name": "Desert Sands RV Park",
       "addr": "1940 North Boulder Highway",
@@ -304,19 +266,6 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     },
     {
-      "id": "osm-w1052316288",
-      "name": "Thousand Trails Las Vegas",
-      "addr": "4925 Boulder Highway",
-      "lat": 36.12865,
-      "lng": -115.0793,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w1063732433",
       "name": "Canyon Trail RV Park",
       "addr": "1200 Industrial Road",
@@ -330,22 +279,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w1180487517",
-      "name": "Las Vegas KOA Journey North Section",
-      "addr": "4040 South Nellis Boulevard",
-      "lat": 36.11727,
-      "lng": -115.06385,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)",
-      "entrance_lat": 36.1171995,
-      "entrance_lng": -115.0647433,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
-    },
-    {
       "id": "osm-w1211811206",
       "name": "Truck Parking",
       "addr": "",
@@ -356,35 +289,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('truck'). Operator: Railroad Pass Casino.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w1212143075",
-      "name": "Las Vegas RV Resort",
-      "addr": "3890 South Nellis Boulevard",
-      "lat": 36.12008,
-      "lng": -115.06259,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)",
-      "entrance_lat": 36.1216241,
-      "entrance_lng": -115.0626593,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
-    },
-    {
-      "id": "osm-w1215628399",
-      "name": "Arizona Charlie's Boulder RV Park",
-      "addr": "",
-      "lat": 36.12511,
-      "lng": -115.07636,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
     },
     {

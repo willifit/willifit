@@ -1504,58 +1504,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w311716709",
-      "name": "City of Grand Prairie",
-      "addr": "",
-      "lat": 32.76799,
-      "lng": -96.98734,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (80 spaces). 80 spaces. Free parking. Operator: City of Grand Prairie.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w361470126",
-      "name": "Veterans Center Parking",
-      "addr": "",
-      "lat": 32.73706,
-      "lng": -97.01847,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w365216277",
-      "name": "Lynn Creek Marina Parking",
-      "addr": "",
-      "lat": 32.63146,
-      "lng": -97.04066,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking. Operator: City of Grand Prairie.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w366777081",
-      "name": "Bank of America Building Park",
-      "addr": "",
-      "lat": 32.74042,
-      "lng": -97.01852,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w401521699",
       "name": "Lot C",
       "addr": "",

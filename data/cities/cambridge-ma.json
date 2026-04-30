@@ -40,19 +40,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w122410655",
-      "name": "ABM Sargent's Wharf Parking",
-      "addr": "269 Commercial Street",
-      "lat": 42.36449,
-      "lng": -71.05019,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (252 spaces). 252 spaces. Paid parking. Operator: ABM Parking Services.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
       "id": "osm-w182215795",
       "name": "Keolis Commuter Services",
       "addr": "",
@@ -76,32 +63,6 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (262 spaces). 262 spaces. Free parking.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w485212629",
-      "name": "Channelside Parking",
-      "addr": "45 Binford Street",
-      "lat": 42.34807,
-      "lng": -71.05159,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (814 spaces). 814 spaces. Paid parking. Operator: SP+.",
-      "source": "OpenStreetMap (surface lot)"
-    },
-    {
-      "id": "osm-w767990685",
-      "name": "Underground at Ink Block Parking",
-      "addr": "",
-      "lat": 42.3448,
-      "lng": -71.06126,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (175 spaces). 175 spaces. Paid parking. Operator: LAZ Parking.",
       "source": "OpenStreetMap (surface lot)"
     }
   ],
