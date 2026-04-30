@@ -14,11 +14,11 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v7: invalidates v6's data cache too -- the stale-while-revalidate strategy
-// was serving cached city JSON (e.g. las-vegas-nv.json) on first load even
-// after data updates landed (GVR layout in 4f9c602).  v7's separate cache
-// names ensure the OLD city JSON is dropped on activate.
-const CACHE_VERSION = "willifit-v7";
+// v8: ships nearby-city pre-loading (clicking Vegas now also pulls
+// Henderson + Boulder City + etc. so the metro view is complete) plus
+// updated Cache-Control headers (no-cache on city JSONs) so future data
+// updates propagate without a SW bump.
+const CACHE_VERSION = "willifit-v8";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 

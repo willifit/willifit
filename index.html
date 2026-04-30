@@ -569,6 +569,20 @@
     font-weight: 600; font-size: 14px;
     margin-bottom: 4px; line-height: 1.3;
   }
+  /* City chip on entries loaded from a NEARBY city in the metro pre-load.
+     Helps users recognize Henderson entries when on Vegas, etc. */
+  .city-chip {
+    display: inline-block; margin-left: 8px;
+    padding: 1px 7px; border-radius: 999px;
+    background: var(--panel-2); color: var(--muted);
+    font-family: var(--mono); font-size: 10px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    vertical-align: 1px; border: 1px solid var(--border);
+  }
+  /* Subtle dim on cards from nearby cities so primary-city items feel
+     more prominent without hiding the rest. */
+  .garage-card.is-nearby { opacity: 0.85; }
+  .garage-card.is-nearby:hover { opacity: 1; }
   .garage-meta {
     display: flex; gap: 10px; align-items: center;
     font-size: 11px; color: var(--muted); font-family: var(--mono);
@@ -2359,6 +2373,31 @@ function getCityMeta(slug) {
   return CITY_INDEX.find(c => c.slug === slug);
 }
 
+// Haversine distance in miles between two cities by lat/lng.
+function _cityDistMi(a, b) {
+  const R = 3958.8;
+  const toR = d => d * Math.PI / 180;
+  const dLat = toR(b.lat - a.lat), dLng = toR(b.lng - a.lng);
+  const x = Math.sin(dLat/2)**2 + Math.cos(toR(a.lat)) * Math.cos(toR(b.lat)) * Math.sin(dLng/2)**2;
+  return 2 * R * Math.asin(Math.sqrt(x));
+}
+
+// "Nearby" cities: every live city in the index within NEARBY_RADIUS_MI of
+// the given city's centroid.  Used by switchToCity() to also pre-load those
+// cities' data so the map shows nearby locations alongside the primary
+// city's, without forcing the user to switch.
+const NEARBY_RADIUS_MI = 30;
+function nearbyCitySlugs(slug) {
+  const me = getCityMeta(slug);
+  if (!me) return [];
+  return CITY_INDEX
+    .filter(c => c.status === 'live' && c.slug !== slug)
+    .map(c => ({ c, d: _cityDistMi(me, c) }))
+    .filter(x => x.d <= NEARBY_RADIUS_MI)
+    .sort((a, b) => a.d - b.d)
+    .map(x => x.c.slug);
+}
+
 const STATE_NAMES = {
   NV:'Nevada', AZ:'Arizona', NM:'New Mexico', UT:'Utah', ID:'Idaho',
   CO:'Colorado', CA:'California', OR:'Oregon', WA:'Washington',
@@ -2701,7 +2740,11 @@ function renderList() {
   }
   if (!state.search.trim()) {
     items.sort((a,b) => {
-      if (a.height_in == null && b.height_in == null) return a.name.localeCompare(b.name);
+      // Primary city's entries come first, then nearby cities below.
+      const ap = a._primary !== false ? 0 : 1;
+      const bp = b._primary !== false ? 0 : 1;
+      if (ap !== bp) return ap - bp;
+      if (a.height_in == null && b.height_in == null) return (a.name || '').localeCompare(b.name || '');
       if (a.height_in == null) return 1;
       if (b.height_in == null) return -1;
       return b.height_in - a.height_in;
@@ -2734,12 +2777,20 @@ function renderList() {
     // Surface lots / RV parks are confirmed, just height-less; don't
     // visually dull them out like a true unverified garage.
     const unv = (g.height_in == null && !isConfirmedEntry(g)) ? 'unverified' : '';
+    // Show a city-tag chip on entries that come from a NEARBY city
+    // (loaded alongside the primary city for "metro view").  Helps
+    // users recognize Henderson entries when they're on Vegas, etc.
+    const isNearby = g._primary === false;
+    const nearbyMeta = isNearby ? getCityMeta(g._city) : null;
+    const cityChip = nearbyMeta
+      ? `<span class="city-chip">${escapeHTML(nearbyMeta.name)}, ${escapeHTML(nearbyMeta.state)}</span>`
+      : '';
     const nameSafe = escapeHTML(g.name || '');
     const hlabelSafe = escapeHTML(hlabel);
     const idSafe = escapeHTML(g.id || '');
     return `
-      <div class="garage-card ${active} ${unv}" data-id="${idSafe}" role="button" tabindex="0" aria-label="${nameSafe}, clearance ${hlabelSafe}${g.oversized ? ', oversized parking available' : ''}${isAiVerified ? ', AI-verified' : ''}">
-        <div class="garage-name">${nameSafe}</div>
+      <div class="garage-card ${active} ${unv} ${isNearby ? 'is-nearby' : ''}" data-id="${idSafe}" data-city="${escapeHTML(g._city || '')}" role="button" tabindex="0" aria-label="${nameSafe}, clearance ${hlabelSafe}${g.oversized ? ', oversized parking available' : ''}${isAiVerified ? ', AI-verified' : ''}${isNearby ? ', in ' + (nearbyMeta?.name || 'nearby city') : ''}">
+        <div class="garage-name">${nameSafe}${cityChip}</div>
         <div class="garage-meta">
           <span class="height-badge ${hc}">${hlabelSafe}</span>
           ${overTag}
@@ -3516,15 +3567,51 @@ async function switchToCity(slug) {
       throw new Error('No data returned for this city');
     }
     // Merge garages + tunnels + bridges into a single list with `type` tags.
-    const merged = [
-      ...(data.garages || []).map(g => ({ ...g, type: 'garage' })),
-      ...(data.tunnels || []).map(g => ({ ...g, type: 'tunnel', oversized: false })),
-      ...(data.bridges || []).map(g => ({ ...g, type: 'bridge', oversized: false })),
+    // Each entry gets a `_city` field so list rendering can show a city
+    // chip on entries from the surrounding metro (Henderson when you're
+    // on Vegas, etc.) and so the map can style them slightly differently.
+    const tag = (entries, type, primary) => (entries || []).map(g => ({
+      ...g, type,
+      oversized: type === 'garage' ? g.oversized : false,
+      _city: primary,
+      _primary: true,
+    }));
+    let merged = [
+      ...tag(data.garages, 'garage', slug),
+      ...tag(data.tunnels, 'tunnel', slug),
+      ...tag(data.bridges, 'bridge', slug),
     ];
     state.cityData = { garages: merged, _raw: data };
     state.loading = false;
     state.loadError = null;
     try { localStorage.setItem('willifit_last_city', slug); } catch(e) {}
+
+    // Render the primary city's data first for fast first paint, then
+    // fan out to nearby cities in the background.  Once each nearby
+    // city loads, append its entries (tagged with _city + _primary=false)
+    // so they appear on the map and at the bottom of the list without
+    // delaying the primary view.
+    renderList();
+    renderMarkers();
+    const nearby = nearbyCitySlugs(slug);
+    if (nearby.length) {
+      Promise.all(nearby.map(s => loadCity(s).then(d => ({ slug: s, data: d }))))
+        .then(results => {
+          // The user may have switched cities while these were in flight.
+          if (state.city !== slug) return;
+          for (const { slug: nslug, data: nd } of results) {
+            const more = [
+              ...tag(nd.garages, 'garage', nslug),
+              ...tag(nd.tunnels, 'tunnel', nslug),
+              ...tag(nd.bridges, 'bridge', nslug),
+            ].map(e => ({ ...e, _primary: false }));
+            state.cityData.garages = state.cityData.garages.concat(more);
+          }
+          renderList();
+          renderMarkers();
+        })
+        .catch(err => console.warn('nearby-city load failed:', err));
+    }
   } catch (err) {
     state.loading = false;
     state.loadError = err.message || String(err);
