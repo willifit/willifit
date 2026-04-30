@@ -6,14 +6,15 @@
       "addr": "1500 Sugar Bowl Dr",
       "lat": 29.9511,
       "lng": -90.0814,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Saints stadium. Multiple adjacent garages.",
-      "source": "caesarssuperdome.com",
+      "notes": "Saints stadium. Multiple adjacent garages.\nWeb-verified 2026-04-30: https://www.caesarssuperdome.com/plan-your-visit/directions-parking \u2014 Standard 6'6 across Superdome garages",
+      "source": "Web-verified (high confidence) \u2014 was: caesarssuperdome.com",
       "entrance_lat": 29.9504384,
       "entrance_lng": -90.0829358,
-      "entrance_source": "OSM parking_entrance node 10903996935"
+      "entrance_source": "OSM parking_entrance node 10903996935",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "nola-smoothie-king-ctr",

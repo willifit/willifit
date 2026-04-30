@@ -107,12 +107,13 @@
       "lng": -91.1872,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "LSU basketball + gymnastics.",
-      "source": "lsusports.net",
+      "oversized": true,
+      "notes": "LSU basketball + gymnastics.\nReclassified 2026-04-30 as surface lot per web research: LSU campus surface lots",
+      "source": "Web-verified surface lot \u2014 was: lsusports.net",
       "entrance_lat": 30.4135999,
       "entrance_lng": -91.1885592,
-      "entrance_source": "OSM parking_entrance node 12057011029"
+      "entrance_source": "OSM parking_entrance node 12057011029",
+      "structure_type": "surface_lot"
     },
     {
       "id": "btr-lsu-union-sq",

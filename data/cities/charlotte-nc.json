@@ -24,8 +24,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Panthers/Charlotte FC. Surface lots. Oversized on event days.",
-      "source": "bankofamericastadium.com"
+      "notes": "Panthers/Charlotte FC. Surface lots. Oversized on event days.\nReclassified 2026-04-30 as surface lot per web research: Panthers stadium event lots predominantly surface",
+      "source": "Web-verified surface lot \u2014 was: bankofamericastadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cht-spectrum-center",
@@ -282,14 +283,15 @@
       "addr": "5501 Josh Birmingham Pkwy",
       "lat": 35.215,
       "lng": -80.9395,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "cltairport.com",
+      "notes": "Terminal-adjacent.\nWeb-verified 2026-04-30: https://www.cltairport.com/parking/parking-options/hourly-deck/ \u2014 CLT Hourly Deck max 7'",
+      "source": "Web-verified (high confidence) \u2014 was: cltairport.com",
       "entrance_lat": 35.2125985,
       "entrance_lng": -80.9384234,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "clt-airport-daily",
@@ -297,14 +299,15 @@
       "addr": "5501 Josh Birmingham Pkwy",
       "lat": 35.213,
       "lng": -80.9425,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 100,
+      "height_label": "8'4\"",
       "oversized": false,
-      "notes": "Daily parking deck.",
-      "source": "cltairport.com",
+      "notes": "Daily parking deck.\nWeb-verified 2026-04-30: https://www.cltairport.com/parking/parking-options/daily-decks/ \u2014 Daily Deck Level 1/entrance = 8'4; other levels 7'",
+      "source": "Web-verified (high confidence) \u2014 was: cltairport.com",
       "entrance_lat": 35.210786,
       "entrance_lng": -80.942184,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "clt-airport-economy",

@@ -6,14 +6,15 @@
       "addr": "1001 5th Ave",
       "lat": 40.4395,
       "lng": -79.9892,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Penguins arena + concerts.",
-      "source": "ppgpaintsarena.com",
+      "notes": "Penguins arena + concerts.\nWeb-verified 2026-04-30: https://www.ppgpaintsarena.com/plan_your_visit/directions_parking \u2014 PPG Paints Arena official parking page lists 7'0 max",
+      "source": "Web-verified (high confidence) \u2014 was: ppgpaintsarena.com",
       "entrance_lat": 40.4399827,
       "entrance_lng": -79.9884462,
-      "entrance_source": "OSM parking_entrance node 1436093585"
+      "entrance_source": "OSM parking_entrance node 1436093585",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "pit-convention-ctr",
@@ -51,8 +52,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Steelers. Large North Shore lots.",
-      "source": "acrisurestadium.com"
+      "notes": "Steelers. Large North Shore lots.\nReclassified 2026-04-30 as surface lot per web research: Surface tailgate lots; campers/RVs not allowed in standard lots",
+      "source": "Web-verified surface lot \u2014 was: acrisurestadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-north-shore",

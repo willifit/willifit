@@ -63,14 +63,15 @@
       "addr": "200 W Nationwide Blvd",
       "lat": 39.9692,
       "lng": -83.0034,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 75,
+      "height_label": "6'3\"",
       "oversized": false,
-      "notes": "Blue Jackets home. Event parking.",
-      "source": "nationwidearena.com",
+      "notes": "Blue Jackets home. Event parking.\nWeb-verified 2026-04-30: https://columbusconventions.com/wp-content/uploads/2023/02/GCCC-Parking-Information-and-Validation-2-9-23.pdf \u2014 South Garage adjacent to arena = 6'3 per GCCC fact sheet",
+      "source": "Web-verified (medium confidence) \u2014 was: nationwidearena.com",
       "entrance_lat": 39.9680883,
       "entrance_lng": -83.0037354,
-      "entrance_source": "OSM parking_entrance node 370209621"
+      "entrance_source": "OSM parking_entrance node 370209621",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "col-high-st-parking",

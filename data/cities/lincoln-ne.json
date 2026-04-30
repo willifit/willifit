@@ -168,9 +168,10 @@
       "lng": -96.7033,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": false,
-      "notes": "Volleyball + wrestling arena.",
-      "source": "huskers.com"
+      "oversized": true,
+      "notes": "Volleyball + wrestling arena.\nReclassified 2026-04-30 as surface lot per web research: Nebraska athletics surface lots",
+      "source": "Web-verified surface lot \u2014 was: huskers.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lin-gateway-mall",

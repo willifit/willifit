@@ -9,8 +9,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Cowboys + concerts. Massive surface lots. RV tailgating.",
-      "source": "attstadium.com"
+      "notes": "Cowboys + concerts. Massive surface lots. RV tailgating.\nReclassified 2026-04-30 as surface lot per web research: All AT&T Stadium parking is open surface lots",
+      "source": "Web-verified surface lot \u2014 was: attstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-att-rv",
@@ -21,8 +22,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Designated RV lot on game days.",
-      "source": "attstadium.com"
+      "notes": "Designated RV lot on game days.\nReclassified 2026-04-30 as surface lot per web research: Per attstadium.com, RV/oversize parking is in Silver Lot 14, surface only",
+      "source": "Web-verified surface lot \u2014 was: attstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-globe-life-field",

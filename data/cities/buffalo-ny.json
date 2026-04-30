@@ -81,8 +81,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Bills stadium. Surface lots + RV tailgating.",
-      "source": "buffalobills.com"
+      "notes": "Bills stadium. Surface lots + RV tailgating.\nReclassified 2026-04-30 as surface lot per web research: Surface lots for Bills games; RV camper lot temporarily closed for new stadium construction",
+      "source": "Web-verified surface lot \u2014 was: buffalobills.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-electric-tower",

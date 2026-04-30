@@ -220,14 +220,15 @@
       "addr": "70 Greenwich St",
       "lat": 40.7054,
       "lng": -74.0136,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 77,
+      "height_label": "6'5\"",
       "oversized": false,
-      "notes": "Large Financial District garage under LAZ Parking. Clearance needs verification.",
-      "source": "LAZ Parking",
+      "notes": "Large Financial District garage under LAZ Parking. Clearance needs verification.\nWeb-verified 2026-04-30: https://www.lazparking.com/local/new-york-ny/battery-parking-garage \u2014 Operator LAZ Parking page posts 6'5 max",
+      "source": "Web-verified (high confidence) \u2014 was: LAZ Parking",
       "entrance_lat": 40.7036961,
       "entrance_lng": -74.0139059,
-      "entrance_source": "OSM parking_entrance node 7687295648"
+      "entrance_source": "OSM parking_entrance node 7687295648",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "nyc-1west",
@@ -331,14 +332,15 @@
       "addr": "JFK Expy",
       "lat": 40.642,
       "lng": -73.7822,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 92,
+      "height_label": "7'8\"",
       "oversized": false,
-      "notes": "Terminal-adjacent. Clearance needs verification.",
-      "source": "Port Authority NY/NJ",
+      "notes": "Terminal-adjacent. Clearance needs verification.\nWeb-verified 2026-04-30: https://parking.jfkairport.com/book/JFK/Content/FAQs \u2014 Level 1 is 11'6; Levels 2-6 are 7'8",
+      "source": "Web-verified (high confidence) \u2014 was: Port Authority NY/NJ",
       "entrance_lat": 40.6428167,
       "entrance_lng": -73.7829117,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "nyc-jfk-economy",
@@ -359,11 +361,12 @@
       "addr": "Central Terminal, LGA",
       "lat": 40.7769,
       "lng": -73.874,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 93,
+      "height_label": "7'9\"",
       "oversized": false,
-      "notes": "Redeveloped Terminal B garage. Clearance needs verification.",
-      "source": "Port Authority NY/NJ"
+      "notes": "Redeveloped Terminal B garage. Clearance needs verification.\nWeb-verified 2026-04-30: https://parking.laguardiaairport.com/book/LGA/Content/FAQs \u2014 Terminal B Levels 2-7 are 7'9; Level 1 is 6'4",
+      "source": "Web-verified (high confidence) \u2014 was: Port Authority NY/NJ",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "nyc-lga-marineair",
@@ -667,11 +670,12 @@
       "addr": "30 Rockefeller Plaza",
       "lat": 40.7587,
       "lng": -73.9787,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Under 30 Rock / Top of the Rock.",
-      "source": "Needs verification"
+      "notes": "Under 30 Rock / Top of the Rock.\nWeb-verified 2026-04-30: https://www.rockefellercenter.com/amenities/rockefeller-center-parking-garage/ \u2014 Official Rockefeller Center page lists 6'8 max",
+      "source": "Web-verified (high confidence) \u2014 was: Needs verification",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "nyc-columbus-circle",

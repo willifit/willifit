@@ -21,14 +21,15 @@
       "addr": "700 Clark Ave",
       "lat": 38.6226,
       "lng": -90.1928,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Stadium-adjacent garages.",
-      "source": "mlb.com/cardinals",
+      "notes": "Stadium-adjacent garages.\nWeb-verified 2026-04-30: https://www.gatewayarch.com/plan-your-visit/parking/ \u2014 Stadium East Garage primary covered garage = 6'8",
+      "source": "Web-verified (medium confidence) \u2014 was: mlb.com/cardinals",
       "entrance_lat": 38.623443,
       "entrance_lng": -90.1909701,
-      "entrance_source": "OSM parking_entrance node 12228143726"
+      "entrance_source": "OSM parking_entrance node 12228143726",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "stl-enterprise-center",
@@ -96,14 +97,15 @@
       "addr": "11 N 4th St",
       "lat": 38.6267,
       "lng": -90.1863,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Underground garage at Arch. Closest to Arch + Old Courthouse.",
-      "source": "gatewayarch.com",
+      "notes": "Underground garage at Arch. Closest to Arch + Old Courthouse.\nWeb-verified 2026-04-30: https://www.gatewayarch.com/plan-your-visit/parking/ \u2014 Gateway Arch Stadium East Garage = 6'8",
+      "source": "Web-verified (high confidence) \u2014 was: gatewayarch.com",
       "entrance_lat": 38.6264464,
       "entrance_lng": -90.1875108,
-      "entrance_source": "OSM parking_entrance node 12456359256"
+      "entrance_source": "OSM parking_entrance node 12456359256",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "stl-union-station",

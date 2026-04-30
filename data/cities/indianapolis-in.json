@@ -78,8 +78,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Colts stadium surface lot. Oversized OK on game days.",
-      "source": "lucasoilstadium.com"
+      "notes": "Colts stadium surface lot. Oversized OK on game days.\nReclassified 2026-04-30 as surface lot per web research: Surface tailgate lot",
+      "source": "Web-verified surface lot \u2014 was: lucasoilstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-lucas-oil-orange",
@@ -90,8 +91,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Event surface lot.",
-      "source": "lucasoilstadium.com"
+      "notes": "Event surface lot.\nReclassified 2026-04-30 as surface lot per web research: Surface tailgate lot",
+      "source": "Web-verified surface lot \u2014 was: lucasoilstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-convention-ctr",
@@ -285,11 +287,12 @@
       "addr": "7800 Col H Weir Cook Memorial Dr",
       "lat": 39.7167,
       "lng": -86.2956,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "IND Col. Weir Cook Terminal garage.",
-      "source": "ind.com"
+      "notes": "IND Col. Weir Cook Terminal garage.\nWeb-verified 2026-04-30: https://www.ind.com/parking/terminal-garage \u2014 Indianapolis Airport Authority terminal garage page lists 8'2",
+      "source": "Web-verified (high confidence) \u2014 was: ind.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "ind-ind-airport-economy",

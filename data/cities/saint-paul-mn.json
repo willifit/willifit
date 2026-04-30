@@ -6,14 +6,15 @@
       "addr": "199 W Kellogg Blvd",
       "lat": 44.9449,
       "lng": -93.1011,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Wild arena + RiverCentre. Attached garage.",
-      "source": "xcelenergycenter.com",
+      "notes": "Wild arena + RiverCentre. Attached garage.\nWeb-verified 2026-04-30: https://www.grandcasinoarena.com/plan-your-visit/parking \u2014 Kellogg Ramp (primary ramp) = 7' clearance",
+      "source": "Web-verified (medium confidence) \u2014 was: xcelenergycenter.com",
       "entrance_lat": 44.943623,
       "entrance_lng": -93.1024276,
-      "entrance_source": "OSM parking_entrance node 13753021107"
+      "entrance_source": "OSM parking_entrance node 13753021107",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "stp-rivercentre",

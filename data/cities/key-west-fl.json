@@ -7,10 +7,11 @@
       "lat": 24.5608,
       "lng": -81.8065,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Main tourist area near Mallory Square sunset celebration.",
-      "source": "cityofkeywest-fl.gov"
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "Main tourist area near Mallory Square sunset celebration.\nReclassified 2026-04-30 as surface lot per web research: Mallory Square is a city surface lot in Key West (despite the 'Garage' name)",
+      "source": "Web-verified surface lot \u2014 was: cityofkeywest-fl.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-park-n-ride",

@@ -36,11 +36,12 @@
       "addr": "50 Massachusetts Ave NE",
       "lat": 38.8974,
       "lng": -77.0065,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 89,
+      "height_label": "7'5\"",
       "oversized": false,
-      "notes": "Amtrak + Metro hub.",
-      "source": "unionstationdc.com"
+      "notes": "Amtrak + Metro hub.\nWeb-verified 2026-04-30: https://www.unionstationdc.com/parking/ \u2014 Official Union Station DC parking page lists 7'5 max",
+      "source": "Web-verified (high confidence) \u2014 was: unionstationdc.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dc-walter-washington",
@@ -129,14 +130,15 @@
       "addr": "900 I St NW",
       "lat": 38.9001,
       "lng": -77.0251,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 86,
+      "height_label": "7'2\"",
       "oversized": false,
-      "notes": "Upscale downtown retail garage.",
-      "source": "citycenterdc.com",
+      "notes": "Upscale downtown retail garage.\nWeb-verified 2026-04-30: https://citycenterdcoffice.com/main.cfm?sid=amenities&pid=pgarage \u2014 Tenant portal lists 7'2 max",
+      "source": "Web-verified (high confidence) \u2014 was: citycenterdc.com",
       "entrance_lat": 38.9001791,
       "entrance_lng": -77.0241051,
-      "entrance_source": "OSM parking_entrance node 13250739638"
+      "entrance_source": "OSM parking_entrance node 13250739638",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dc-washington-hilton",
@@ -270,11 +272,12 @@
       "addr": "2401 S Smith Blvd, Arlington VA",
       "lat": 38.8513,
       "lng": -77.0408,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Terminal 1 (old A).",
-      "source": "flyreagan.com"
+      "notes": "Terminal 1 (old A).\nWeb-verified 2026-04-30: https://www.flyreagan.com/parking-transportation/parking-information/parking-1 \u2014 Parking 1 (Garage A) listed at 7' on official DCA page",
+      "source": "Web-verified (high confidence) \u2014 was: flyreagan.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "dca-daily-garage-bc",
@@ -282,14 +285,15 @@
       "addr": "2401 S Smith Blvd",
       "lat": 38.8522,
       "lng": -77.04,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Terminal 2 (B/C).",
-      "source": "flyreagan.com",
+      "notes": "Terminal 2 (B/C).\nWeb-verified 2026-04-30: https://www.flyreagan.com/parking-transportation/parking-information/parking-2 \u2014 Parking 2 (Garage B/C) listed at 8'2 on official DCA page",
+      "source": "Web-verified (high confidence) \u2014 was: flyreagan.com",
       "entrance_lat": 38.8515098,
       "entrance_lng": -77.0427023,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "iad-daily-garage",
@@ -327,11 +331,12 @@
       "addr": "7070 Elm Rd, Baltimore MD",
       "lat": 39.1774,
       "lng": -76.6683,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "BWI terminal garage (Baltimore \u2014 listed for DC metro).",
-      "source": "bwiairport.com"
+      "notes": "BWI terminal garage (Baltimore \u2014 listed for DC metro).\nWeb-verified 2026-04-30: https://bwiairport.com/to-from-bwi/parking/hourly-garage/ \u2014 Same BWI Hourly Garage; 8'0 on Levels 4-6",
+      "source": "Web-verified (high confidence) \u2014 was: bwiairport.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "osm-n12444658764",

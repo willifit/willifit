@@ -273,8 +273,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Casino surface lots + RV area.",
-      "source": "riverspirittulsa.com"
+      "notes": "Casino surface lots + RV area.\nReclassified 2026-04-30 as surface lot per web research: River Spirit Casino - large surface lot",
+      "source": "Web-verified surface lot \u2014 was: riverspirittulsa.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w202210765",

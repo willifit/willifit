@@ -150,11 +150,12 @@
       "addr": "1510 Polk St",
       "lat": 29.7509,
       "lng": -95.3624,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Rockets arena. Event parking.",
-      "source": "Needs verification"
+      "notes": "Rockets arena. Event parking.\nWeb-verified 2026-04-30: https://www.toyotacenter.com/directions-parking \u2014 Toyota Tundra Garage 7'0 per official page",
+      "source": "Web-verified (high confidence) \u2014 was: Needs verification",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hou-theater-dist",
@@ -348,11 +349,12 @@
       "addr": "7800 Airport Blvd",
       "lat": 29.6455,
       "lng": -95.281,
-      "height_in": null,
-      "height_label": "Oversized OK",
+      "height_in": 79,
+      "height_label": "6'7\"",
       "oversized": true,
-      "notes": "Designated oversized accessible parking at HOU.",
-      "source": "fly2houston.com"
+      "notes": "Designated oversized accessible parking at HOU.\nWeb-verified 2026-04-30: https://www.fly2houston.com/hou/parking/faq/ \u2014 HOU FAQ states max 6'7 oversized",
+      "source": "Web-verified (high confidence) \u2014 was: fly2houston.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hou-hobby-ecopark",

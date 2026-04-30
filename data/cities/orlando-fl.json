@@ -58,14 +58,15 @@
       "addr": "1486 Buena Vista Dr",
       "lat": 28.3698,
       "lng": -81.5178,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "Disney Springs shopping/dining garages. Free.",
-      "source": "disneysprings.com",
+      "notes": "Disney Springs shopping/dining garages. Free.\nWeb-verified 2026-04-30: https://www.disneysprings.com/disney-springs-map/parking-transportation/ \u2014 Orange Garage cited at 8'6 in walk-throughs",
+      "source": "Web-verified (medium confidence) \u2014 was: disneysprings.com",
       "entrance_lat": 28.3694299,
       "entrance_lng": -81.5163821,
-      "entrance_source": "OSM parking_entrance node 4293939902"
+      "entrance_source": "OSM parking_entrance node 4293939902",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "orl-universal-garages",
@@ -313,11 +314,12 @@
       "addr": "1 Jeff Fuqua Blvd",
       "lat": 28.4233,
       "lng": -81.3,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "New 2022 South Terminal garage.",
-      "source": "orlandoairports.net"
+      "notes": "New 2022 South Terminal garage.\nWeb-verified 2026-04-30: https://www.flymco.com/parking-information/parking-garage-c/ \u2014 Official MCO Garage C page; 8'2 vs 7'0 standard",
+      "source": "Web-verified (high confidence) \u2014 was: orlandoairports.net",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "orl-mco-economy",

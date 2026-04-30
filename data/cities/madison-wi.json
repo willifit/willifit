@@ -126,11 +126,12 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Badgers football. Surface lots + RV tailgating.",
-      "source": "uwbadgers.com",
+      "notes": "Badgers football. Surface lots + RV tailgating.\nReclassified 2026-04-30 as surface lot per web research: Wisconsin Camp Randall surface lots",
+      "source": "Web-verified surface lot \u2014 was: uwbadgers.com",
       "entrance_lat": 43.0714896,
       "entrance_lng": -89.4120492,
-      "entrance_source": "OSM parking_entrance node 2990318024"
+      "entrance_source": "OSM parking_entrance node 2990318024",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-botanical-gardens",

@@ -231,8 +231,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Ski resort. RV-OK.",
-      "source": "snowbird.com"
+      "notes": "Ski resort. RV-OK.\nReclassified 2026-04-30 as surface lot per web research: Snowbird ski resort outdoor surface parking",
+      "source": "Web-verified surface lot \u2014 was: snowbird.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-park-city-resort",
@@ -243,11 +244,12 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Ski resort base area. Park City is separate city.",
-      "source": "parkcitymountain.com",
+      "notes": "Ski resort base area. Park City is separate city.\nReclassified 2026-04-30 as surface lot per web research: Park City surface parking lots",
+      "source": "Web-verified surface lot \u2014 was: parkcitymountain.com",
       "entrance_lat": 40.6517045,
       "entrance_lng": -111.5067102,
-      "entrance_source": "OSM parking_entrance node 13720566545"
+      "entrance_source": "OSM parking_entrance node 13720566545",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-airport-short",
@@ -255,11 +257,12 @@
       "addr": "3920 W Terminal Dr",
       "lat": 40.7889,
       "lng": -111.9789,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "New 2020 terminal garage.",
-      "source": "slcairport.com"
+      "notes": "New 2020 terminal garage.\nWeb-verified 2026-04-30: https://slcairport.com/parking-and-transportation/parking/parking-garage/ \u2014 Official site cites 8'6",
+      "source": "Web-verified (medium confidence) \u2014 was: slcairport.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "slc-airport-economy",

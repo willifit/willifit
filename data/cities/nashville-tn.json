@@ -123,8 +123,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Titans + Tennessee State. Surface lots. Oversized OK.",
-      "source": "nissanstadium.com"
+      "notes": "Titans + Tennessee State. Surface lots. Oversized OK.\nReclassified 2026-04-30 as surface lot per web research: Titans stadium surface lots",
+      "source": "Web-verified surface lot \u2014 was: nissanstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-first-horizon",

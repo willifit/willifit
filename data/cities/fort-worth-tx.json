@@ -171,8 +171,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Stockyards venue surface lot.",
-      "source": "Needs verification"
+      "notes": "Stockyards venue surface lot.\nReclassified 2026-04-30 as surface lot per web research: Fort Worth Stockyards surface lot",
+      "source": "Web-verified surface lot \u2014 was: Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-will-rogers",
@@ -183,8 +184,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Rodeo + event center. Surface lots.",
-      "source": "willrogersmemorialcenter.com"
+      "notes": "Rodeo + event center. Surface lots.\nReclassified 2026-04-30 as surface lot per web research: Will Rogers Memorial Center surface lots",
+      "source": "Web-verified surface lot \u2014 was: willrogersmemorialcenter.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-texas-motor-speedway",
@@ -207,8 +209,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "2019 arena. Event parking.",
-      "source": "dickiesarena.com"
+      "notes": "2019 arena. Event parking.\nReclassified 2026-04-30 as surface lot per web research: Dickies Arena predominantly surface lots",
+      "source": "Web-verified surface lot \u2014 was: dickiesarena.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-bass-hall",

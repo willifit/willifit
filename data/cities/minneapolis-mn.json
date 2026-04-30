@@ -18,14 +18,15 @@
       "addr": "600 1st Ave N",
       "lat": 44.9795,
       "lng": -93.276,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Target Center arena ramp.",
-      "source": "targetcenter.com",
+      "notes": "Target Center arena ramp.\nWeb-verified 2026-04-30: https://www.targetcenter.com/plan-your-visit-1/parking \u2014 Ramp C (skyway-connected) = 8'0; Ramp B = 7'9",
+      "source": "Web-verified (medium confidence) \u2014 was: targetcenter.com",
       "entrance_lat": 44.9788916,
       "entrance_lng": -93.2774798,
-      "entrance_source": "OSM parking_entrance node 2090482427"
+      "entrance_source": "OSM parking_entrance node 2090482427",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "mpls-us-bank-stadium",
@@ -213,14 +214,15 @@
       "addr": "199 W Kellogg Blvd, St. Paul",
       "lat": 44.9446,
       "lng": -93.1013,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Wild arena + RiverCentre.",
-      "source": "xcelenergycenter.com",
+      "notes": "Wild arena + RiverCentre.\nWeb-verified 2026-04-30: https://www.grandcasinoarena.com/plan-your-visit/parking \u2014 Same Kellogg Ramp serving Xcel Center",
+      "source": "Web-verified (medium confidence) \u2014 was: xcelenergycenter.com",
       "entrance_lat": 44.943623,
       "entrance_lng": -93.1024276,
-      "entrance_source": "OSM parking_entrance node 13753021107"
+      "entrance_source": "OSM parking_entrance node 13753021107",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "mpls-sculpture-garden",
@@ -255,11 +257,12 @@
       "addr": "4300 Glumack Dr",
       "lat": 44.8811,
       "lng": -93.2162,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Lindbergh Terminal garage.",
-      "source": "mspairport.com"
+      "notes": "Lindbergh Terminal garage.\nWeb-verified 2026-04-30: https://www.mspairport.com/parking/terminal-1-hourly-parking \u2014 MSP Gold Ramp standard 7'; oversize section 9'2",
+      "source": "Web-verified (high confidence) \u2014 was: mspairport.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "msp-green-ramp",

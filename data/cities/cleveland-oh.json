@@ -6,14 +6,15 @@
       "addr": "1 Center Ct",
       "lat": 41.4963,
       "lng": -81.6889,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 114,
+      "height_label": "9'6\"",
       "oversized": false,
-      "notes": "Cavaliers/Monsters arena.",
-      "source": "rocketmortgagefieldhouse.com",
+      "notes": "Cavaliers/Monsters arena.\nWeb-verified 2026-04-30: https://www.rocketmortgagefieldhouse.com/directions-parking \u2014 Gateway East Garage oversize area = 9'6",
+      "source": "Web-verified (medium confidence) \u2014 was: rocketmortgagefieldhouse.com",
       "entrance_lat": 41.4971152,
       "entrance_lng": -81.6909936,
-      "entrance_source": "OSM parking_entrance node 3437817608"
+      "entrance_source": "OSM parking_entrance node 3437817608",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cle-progressive-field",
@@ -39,8 +40,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Browns. Lakefront surface lots + Muni Lot (famous tailgating).",
-      "source": "clevelandbrowns.com"
+      "notes": "Browns. Lakefront surface lots + Muni Lot (famous tailgating).\nReclassified 2026-04-30 as surface lot per web research: Browns stadium parking is surface lots (Muni Lot etc.)",
+      "source": "Web-verified surface lot \u2014 was: clevelandbrowns.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cle-huntington-garage",
@@ -255,11 +257,12 @@
       "addr": "5300 Riverside Dr",
       "lat": 41.41,
       "lng": -81.8495,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "clevelandairport.com"
+      "notes": "Terminal-adjacent.\nWeb-verified 2026-04-30: https://www.clevelandairport.com/parking-transportation/parking-map-locations/smart-garage \u2014 Official Cleveland Airport Smart Garage page lists 8'2",
+      "source": "Web-verified (high confidence) \u2014 was: clevelandairport.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cle-airport-brown",

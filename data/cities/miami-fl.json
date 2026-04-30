@@ -21,14 +21,15 @@
       "addr": "401 Biscayne Blvd",
       "lat": 25.7782,
       "lng": -80.1864,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Tourist shopping + boat docks.",
-      "source": "baysidemarketplace.com",
+      "notes": "Tourist shopping + boat docks.\nWeb-verified 2026-04-30: https://platinumparking.com/facilities/bayside-marketplace/ \u2014 Operator Platinum Parking lists 6'6 max",
+      "source": "Web-verified (high confidence) \u2014 was: baysidemarketplace.com",
       "entrance_lat": 25.7785803,
       "entrance_lng": -80.1876593,
-      "entrance_source": "OSM parking_entrance node 1738845583"
+      "entrance_source": "OSM parking_entrance node 1738845583",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "mia-convention-ctr",
@@ -126,8 +127,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Dolphins + Hurricanes + F1. Surface lots.",
-      "source": "hardrockstadium.com"
+      "notes": "Dolphins + Hurricanes + F1. Surface lots.\nReclassified 2026-04-30 as surface lot per web research: All Hard Rock Stadium parking is surface lots (RV in Lot 18)",
+      "source": "Web-verified surface lot \u2014 was: hardrockstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mia-adrienne-arsht",

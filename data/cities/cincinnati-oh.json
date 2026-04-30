@@ -325,14 +325,15 @@
       "addr": "3087 Terminal Dr, Hebron KY",
       "lat": 39.0508,
       "lng": -84.6686,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Cincinnati/NKY Int'l \u2014 in Kentucky.",
-      "source": "cvgairport.com",
+      "notes": "Cincinnati/NKY Int'l \u2014 in Kentucky.\nWeb-verified 2026-04-30: https://www.cvgairport.com/parking-options/terminal-garage/ \u2014 CVG Terminal Garage; 6.8 ft (~6'10) on official page",
+      "source": "Web-verified (high confidence) \u2014 was: cvgairport.com",
       "entrance_lat": 39.0559409,
       "entrance_lng": -84.6555051,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "cin-cvg-economy",

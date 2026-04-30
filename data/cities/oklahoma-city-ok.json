@@ -36,11 +36,12 @@
       "addr": "15 S Robinson Ave",
       "lat": 35.4642,
       "lng": -97.5175,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "New convention center (opened 2021).",
-      "source": "okcconventioncenter.com"
+      "notes": "New convention center (opened 2021).\nWeb-verified 2026-04-30: https://www.embarkok.com/parking/convention-center-garage \u2014 Embark OK page posts 8'2 entrance",
+      "source": "Web-verified (high confidence) \u2014 was: okcconventioncenter.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "okc-paycom-ctr",
@@ -243,11 +244,12 @@
       "addr": "7100 Terminal Dr",
       "lat": 35.3928,
       "lng": -97.6011,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 97,
+      "height_label": "8'1\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "flyokc.com"
+      "notes": "Terminal-adjacent.\nWeb-verified 2026-04-30: https://flyokc.com/parking-garages-and-b-improvement-project \u2014 Red Garage 8'1; Blue 6'8",
+      "source": "Web-verified (high confidence) \u2014 was: flyokc.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "okc-airport-economy",

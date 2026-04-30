@@ -408,11 +408,12 @@
       "addr": "5700 S Cicero Ave",
       "lat": 41.7883,
       "lng": -87.7486,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "MDW economy. Clearance needs verification.",
-      "source": "flychicago.com"
+      "notes": "MDW economy. Clearance needs verification.\nWeb-verified 2026-04-30: https://www.flychicago.com/midway/tofrom/parking/Pages/economy.aspx \u2014 MDW Economy Garage 8'2",
+      "source": "Web-verified (high confidence) \u2014 was: flychicago.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "mdw-main",
@@ -420,14 +421,15 @@
       "addr": "5700 S Cicero Ave",
       "lat": 41.7856,
       "lng": -87.7517,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 104,
+      "height_label": "8'8\"",
       "oversized": false,
-      "notes": "MDW terminal-adjacent. Clearance needs verification.",
-      "source": "flychicago.com",
+      "notes": "MDW terminal-adjacent. Clearance needs verification.\nWeb-verified 2026-04-30: https://www.flychicago.com/midway/tofrom/parking/ \u2014 Terminal Garage Level 1 = 8'8",
+      "source": "Web-verified (high confidence) \u2014 was: flychicago.com",
       "entrance_lat": 41.7929577,
       "entrance_lng": -87.7482364,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "chi-adler-lot",
@@ -474,14 +476,15 @@
       "addr": "5700 S DuSable Lake Shore Dr",
       "lat": 41.7913,
       "lng": -87.583,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Underground MSI garage. Clearance needs verification.",
-      "source": "Needs verification",
+      "notes": "Underground MSI garage. Clearance needs verification.\nWeb-verified 2026-04-30: https://www.griffinmsi.org/directions-and-parking \u2014 Blue (D) section = 8'2 -> 7'2; other sections = 6'6",
+      "source": "Web-verified (high confidence) \u2014 was: Needs verification",
       "entrance_lat": 41.7917025,
       "entrance_lng": -87.5841951,
-      "entrance_source": "OSM parking_entrance node 12760785662"
+      "entrance_source": "OSM parking_entrance node 12760785662",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "chi-lincoln-park-zoo",
@@ -502,14 +505,15 @@
       "addr": "108 N State St",
       "lat": 41.8838,
       "lng": -87.6278,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Self-park + valet, entrance on Dearborn between Washington & Randolph. Standard Parking 312-658-0862.",
-      "source": "blockthirtyseven.com",
+      "notes": "Self-park + valet, entrance on Dearborn between Washington & Randolph. Standard Parking 312-658-0862.\nWeb-verified 2026-04-30: https://parkmobile.io/parking/locations/il/chicago-parking/parking-lot/block-37-mall-garage-self-park-and-valet \u2014 Multiple sources list 6'10",
+      "source": "Web-verified (high confidence) \u2014 was: blockthirtyseven.com",
       "entrance_lat": 41.8846081,
       "entrance_lng": -87.6270648,
-      "entrance_source": "OSM parking_entrance node 10933386895"
+      "entrance_source": "OSM parking_entrance node 10933386895",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "chi-poetry-garage",

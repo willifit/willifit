@@ -6,14 +6,15 @@
       "addr": "401 Channelside Dr",
       "lat": 27.9428,
       "lng": -82.4517,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Lightning arena. Adjacent + valet.",
-      "source": "amaliearena.com",
+      "notes": "Lightning arena. Adjacent + valet.\nWeb-verified 2026-04-30: https://www.nhl.com/lightning/arena/parking \u2014 Whiting Street Garage (closest official lot) lists 6'8 on Lightning parking page",
+      "source": "Web-verified (medium confidence) \u2014 was: amaliearena.com",
       "entrance_lat": 27.9418533,
       "entrance_lng": -82.4530063,
-      "entrance_source": "OSM parking_entrance node 9622046730"
+      "entrance_source": "OSM parking_entrance node 9622046730",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "tpa-convention-ctr",
@@ -36,14 +37,15 @@
       "addr": "217 E Whiting St",
       "lat": 27.9452,
       "lng": -82.458,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "City-owned downtown.",
-      "source": "tampa.gov",
+      "notes": "City-owned downtown.\nWeb-verified 2026-04-30: https://www.nhl.com/lightning/arena/parking \u2014 City of Tampa Whiting St garage; 6'8 confirmed on Lightning site",
+      "source": "Web-verified (high confidence) \u2014 was: tampa.gov",
       "entrance_lat": 27.9457316,
       "entrance_lng": -82.457842,
-      "entrance_source": "OSM parking_entrance node 8451580120"
+      "entrance_source": "OSM parking_entrance node 8451580120",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "tpa-poe-garage",
@@ -123,8 +125,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Bucs + Bulls. Massive surface lots + RV tailgating.",
-      "source": "buccaneers.com"
+      "notes": "Bucs + Bulls. Massive surface lots + RV tailgating.\nReclassified 2026-04-30 as surface lot per web research: Surface lots only at Raymond James Stadium",
+      "source": "Web-verified surface lot \u2014 was: buccaneers.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tpa-steinbrenner-field",
@@ -297,14 +300,15 @@
       "addr": "4100 George J Bean Pkwy",
       "lat": 27.9755,
       "lng": -82.5334,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "tampaairport.com",
+      "notes": "Terminal-adjacent.\nWeb-verified 2026-04-30: https://www.tampaairport.com/parking \u2014 Official TPA parking page lists 6'8 for Short Term Garage",
+      "source": "Web-verified (high confidence) \u2014 was: tampaairport.com",
       "entrance_lat": 27.9768005,
       "entrance_lng": -82.534215,
-      "entrance_source": "OSM parking_entrance node 10224836008"
+      "entrance_source": "OSM parking_entrance node 10224836008",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "tpa-airport-economy",
@@ -312,11 +316,12 @@
       "addr": "4100 George J Bean Pkwy",
       "lat": 27.9735,
       "lng": -82.5353,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Economy garage.",
-      "source": "tampaairport.com"
+      "notes": "Economy garage.\nWeb-verified 2026-04-30: https://www.tampaairport.com/parking \u2014 Economy Levels 2-6 = 8'0; Level 1/surface = 13'",
+      "source": "Web-verified (high confidence) \u2014 was: tampaairport.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "tpa-airport-long",

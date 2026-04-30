@@ -21,14 +21,15 @@
       "addr": "100 Columbus Blvd",
       "lat": 41.7598,
       "lng": -72.6735,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 90,
+      "height_label": "7'6\"",
       "oversized": false,
-      "notes": "Riverfront convention center.",
-      "source": "ctconventions.com",
+      "notes": "Riverfront convention center.\nWeb-verified 2026-04-30: https://www.ctconventions.com/visitors/parking/ \u2014 Level 1 = 8'2; all other levels = 7'6",
+      "source": "Web-verified (high confidence) \u2014 was: ctconventions.com",
       "entrance_lat": 41.7598817,
       "entrance_lng": -72.6741214,
-      "entrance_source": "OSM parking_entrance node 13420801854"
+      "entrance_source": "OSM parking_entrance node 13420801854",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hrt-morgan-st-garage",
@@ -276,14 +277,15 @@
       "addr": "Schoephoester Rd, Windsor Locks",
       "lat": 41.9389,
       "lng": -72.6831,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "BDL terminal garage.",
-      "source": "bradleyairport.com",
+      "notes": "BDL terminal garage.\nWeb-verified 2026-04-30: https://parkbradleyairport.com/garage/ \u2014 BDL sPARK garage 6'8 above ground floor; ground floor 9'6",
+      "source": "Web-verified (high confidence) \u2014 was: bradleyairport.com",
       "entrance_lat": 41.9306988,
       "entrance_lng": -72.6867569,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "hrt-bradley-economy",

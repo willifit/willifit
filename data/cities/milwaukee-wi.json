@@ -6,14 +6,15 @@
       "addr": "1111 Vel R. Phillips Ave",
       "lat": 43.0451,
       "lng": -87.9172,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Bucks arena + Deer District.",
-      "source": "fiservforum.com",
+      "notes": "Bucks arena + Deer District.\nWeb-verified 2026-04-30: https://www.fiservforum.com/plan-your-visit/directions-parking/5th-street-parking-structure \u2014 5th Street Parking Structure: 8'2 on first 2 floors, 7'2 above",
+      "source": "Web-verified (high confidence) \u2014 was: fiservforum.com",
       "entrance_lat": 43.0442454,
       "entrance_lng": -87.918205,
-      "entrance_source": "OSM parking_entrance node 4016697291"
+      "entrance_source": "OSM parking_entrance node 4016697291",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "mke-am-family-field",
@@ -243,11 +244,12 @@
       "addr": "5300 S Howell Ave",
       "lat": 42.9479,
       "lng": -87.8961,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 83,
+      "height_label": "6'11\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "mitchellairport.com"
+      "notes": "Terminal-adjacent.\nWeb-verified 2026-04-30: https://www.mitchellairport.com/parking-transportation/parking \u2014 Mitchell Airport parking page lists 6'11 max",
+      "source": "Web-verified (high confidence) \u2014 was: mitchellairport.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "mke-airport-economy",

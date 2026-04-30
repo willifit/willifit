@@ -244,11 +244,12 @@
       "addr": "8000 Essington Ave",
       "lat": 39.8744,
       "lng": -75.2421,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 74,
+      "height_label": "6'2\"",
       "oversized": false,
-      "notes": "Terminal A\u2013F short-term garages.",
-      "source": "phl.org"
+      "notes": "Terminal A\u2013F short-term garages.\nWeb-verified 2026-04-30: https://www.phl.org/parking/garages \u2014 PHL official parking page posts 6'2 standard",
+      "source": "Web-verified (high confidence) \u2014 was: phl.org",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "phl-airport-econ",
@@ -269,14 +270,15 @@
       "addr": "271 N 21st St",
       "lat": 39.9585,
       "lng": -75.1735,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 77,
+      "height_label": "6'5\"",
       "oversized": false,
-      "notes": "Multi-level, direct elevator to Atrium. $25/vehicle. First-come first-served.",
-      "source": "fi.edu",
+      "notes": "Multi-level, direct elevator to Atrium. $25/vehicle. First-come first-served.\nWeb-verified 2026-04-30: https://fi.edu/en/plan-your-visit/getting-here \u2014 Franklin Institute official Getting Here page posts 6'5",
+      "source": "Web-verified (high confidence) \u2014 was: fi.edu",
       "entrance_lat": 39.9584645,
       "entrance_lng": -75.1737726,
-      "entrance_source": "OSM parking_entrance node 3420657093"
+      "entrance_source": "OSM parking_entrance node 3420657093",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "phl-penn-walnut",

@@ -6,14 +6,15 @@
       "addr": "1 AMB Dr NW",
       "lat": 33.7554,
       "lng": -84.4008,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "Falcons/Atlanta United. Multiple attached decks.",
-      "source": "mercedesbenzstadium.com",
+      "notes": "Falcons/Atlanta United. Multiple attached decks.\nWeb-verified 2026-04-30: https://parking.mercedesbenzstadium.com/lot-info/ \u2014 Official MBS parking site lists 6'8 for Green Deck; J Deck also 6'8; I Deck 6'3",
+      "source": "Web-verified (high confidence) \u2014 was: mercedesbenzstadium.com",
       "entrance_lat": 33.7548626,
       "entrance_lng": -84.4022761,
-      "entrance_source": "OSM parking_entrance node 6252180171"
+      "entrance_source": "OSM parking_entrance node 6252180171",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "atl-state-farm-arena",
@@ -22,13 +23,14 @@
       "lat": 33.7573,
       "lng": -84.3963,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Hawks arena.",
-      "source": "statefarmarena.com",
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "Hawks arena.\nReclassified 2026-04-30 as surface lot per web research: Sapphire Deck has no posted height restriction per official page; Diamond + Ruby are surface",
+      "source": "Web-verified surface lot \u2014 was: statefarmarena.com",
       "entrance_lat": 33.7566431,
       "entrance_lng": -84.3982086,
-      "entrance_source": "OSM parking_entrance node 8296811839"
+      "entrance_source": "OSM parking_entrance node 8296811839",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-centennial-olympic",
@@ -172,13 +174,14 @@
       "lat": 33.7631,
       "lng": -84.3937,
       "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Shares COP-area parking.",
-      "source": "civilandhumanrights.org",
+      "height_label": "No limit (uncovered)",
+      "oversized": true,
+      "notes": "Shares COP-area parking.\nReclassified 2026-04-30 as surface lot per web research: Uses MBS lots; no dedicated covered garage at the museum itself",
+      "source": "Web-verified surface lot \u2014 was: civilandhumanrights.org",
       "entrance_lat": 33.7641847,
       "entrance_lng": -84.3938242,
-      "entrance_source": "OSM parking_entrance node 2036951742"
+      "entrance_source": "OSM parking_entrance node 2036951742",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-georgia-dome-site",

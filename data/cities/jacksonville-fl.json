@@ -102,8 +102,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Jaguars stadium. Surface lots accommodate RVs on game days.",
-      "source": "jaguars.com"
+      "notes": "Jaguars stadium. Surface lots accommodate RVs on game days.\nReclassified 2026-04-30 as surface lot per web research: Open surface event lots",
+      "source": "Web-verified surface lot \u2014 was: jaguars.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-vystar-arena",
@@ -234,11 +235,12 @@
       "addr": "2400 Yankee Clipper Dr",
       "lat": 30.4947,
       "lng": -81.6878,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Terminal-adjacent. Clearance needs verification.",
-      "source": "flyjacksonville.com"
+      "notes": "Terminal-adjacent. Clearance needs verification.\nWeb-verified 2026-04-30: https://jaxairport.com/parking/ \u2014 JAX hourly garage 7'; Economy Lot 1 7'6, Lot 2 10'6",
+      "source": "Web-verified (high confidence) \u2014 was: flyjacksonville.com",
+      "verified_on": "2026-04-30"
     },
     {
       "id": "jax-airport-economy",
