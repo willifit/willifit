@@ -296,11 +296,11 @@
       "addr": "60 Observer Highway",
       "lat": 40.7358,
       "lng": -74.03083,
-      "height_in": 216,
-      "height_label": "18'0\"",
-      "oversized": true,
-      "notes": "paid; hrs: 04:00-20:00",
-      "source": "OpenStreetMap"
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 04:00-20:00 OSM-imported 18'0\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w241842698",
@@ -308,11 +308,11 @@
       "addr": "",
       "lat": 40.63999,
       "lng": -74.07701,
-      "height_in": 216,
-      "height_label": "18'0\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
+      "notes": "paid OSM-imported 18'0\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 40.6397533,
       "entrance_lng": -74.0766241,
       "entrance_source": "OSM parking_entrance node 4409340616"

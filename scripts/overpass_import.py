@@ -311,8 +311,13 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
     parts = [tags.get("addr:housenumber"), tags.get("addr:street")]
     addr = " ".join(p for p in parts if p) or tags.get("addr:full") or ""
 
-    # Clearance
-    maxh = tags.get("maxheight") or tags.get("maxheight:physical") or tags.get("height")
+    # Clearance.  IMPORTANT: do NOT fall back to OSM's `height` tag here --
+    # for parking ways, `height` is the BUILDING'S overall height (e.g. a
+    # 6-storey garage tags height=20m), not the vehicle clearance.  Falling
+    # back caused 193 garages across 14 cities to be marked with bogus
+    # 15'-20' clearances (cleared April 2026).  Only `maxheight` and
+    # `maxheight:physical` are clearance tags.
+    maxh = tags.get("maxheight") or tags.get("maxheight:physical")
     height_in = parse_maxheight(maxh) if maxh else None
     height_label = inches_to_label(height_in)
 

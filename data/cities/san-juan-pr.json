@@ -351,11 +351,11 @@
       "addr": "",
       "lat": 18.46503,
       "lng": -66.11065,
-      "height_in": 179,
-      "height_label": "14'11\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 14'11\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w259665839",
@@ -753,11 +753,11 @@
       "addr": "",
       "lat": 18.41006,
       "lng": -66.05715,
-      "height_in": 217,
-      "height_label": "18'1\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. OSM-imported 18'1\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 18.409555,
       "entrance_lng": -66.0569123,
       "entrance_source": "OSM parking_entrance node 13528721113"
@@ -1194,11 +1194,11 @@
       "addr": "101/RX0M58868 Avenida Ongay",
       "lat": 18.39822,
       "lng": -66.14865,
-      "height_in": 164,
-      "height_label": "13'8\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 13'8\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w358995080",
@@ -1242,11 +1242,11 @@
       "addr": "Calle Lafayette",
       "lat": 18.44401,
       "lng": -66.07241,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "oversized": true,
-      "notes": "10 spaces; free",
-      "source": "OpenStreetMap"
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "10 spaces; free OSM-imported 14'1\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w364185169",
@@ -1278,11 +1278,11 @@
       "addr": "",
       "lat": 18.39912,
       "lng": -66.03886,
-      "height_in": 174,
-      "height_label": "14'6\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 14'6\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w365139955",
@@ -1290,11 +1290,11 @@
       "addr": "",
       "lat": 18.39737,
       "lng": -66.03568,
-      "height_in": 197,
-      "height_label": "16'5\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap. OSM-imported 16'5\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 18.3979256,
       "entrance_lng": -66.0373606,
       "entrance_source": "OSM parking_entrance node 13152593109"
@@ -1317,11 +1317,11 @@
       "addr": "",
       "lat": 18.38133,
       "lng": -66.06612,
-      "height_in": 217,
-      "height_label": "18'1\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 18'1\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w365420617",
@@ -1344,11 +1344,11 @@
       "addr": "",
       "lat": 18.36974,
       "lng": -66.07665,
-      "height_in": 193,
-      "height_label": "16'1\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 16'1\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w366501047",
@@ -1425,11 +1425,11 @@
       "addr": "125 Avenida Eleanor Roosevelt",
       "lat": 18.42096,
       "lng": -66.05935,
-      "height_in": 187,
-      "height_label": "15'7\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 15'7\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w366592248",

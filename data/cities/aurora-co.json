@@ -207,11 +207,11 @@
       "addr": "",
       "lat": 39.69201,
       "lng": -104.94256,
-      "height_in": 180,
-      "height_label": "15'0\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 15'0\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w542367260",
@@ -219,11 +219,11 @@
       "addr": "",
       "lat": 39.72039,
       "lng": -104.95885,
-      "height_in": 240,
-      "height_label": "20'0\"",
+      "height_in": null,
+      "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap. OSM-imported 20'0\" was building height, not clearance.",
+      "source": "Needs verification (was OSM building-height)"
     },
     {
       "id": "osm-w39199427",
