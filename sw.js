@@ -14,11 +14,13 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v8: ships nearby-city pre-loading (clicking Vegas now also pulls
-// Henderson + Boulder City + etc. so the metro view is complete) plus
-// updated Cache-Control headers (no-cache on city JSONs) so future data
-// updates propagate without a SW bump.
-const CACHE_VERSION = "willifit-v8";
+// v9: ships the OSM building-height fix (193 falsely-confident "20 ft
+// clearance" garages now show as unverified) + Round 3 web-verifications
+// (40 new heights, 64 surface-lot reclassifications) + refreshed
+// data/index.json garage_count totals (was stale on 206/226 cities).
+// Bump triggers shell-cache invalidation so users pick up the new
+// index.json (which is cacheFirst in the SW).
+const CACHE_VERSION = "willifit-v9";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
