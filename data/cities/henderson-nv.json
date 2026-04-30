@@ -44,18 +44,15 @@
       "id": "hen-district-green-valley",
       "name": "The District at Green Valley Ranch",
       "addr": "2225 Village Walk Dr",
-      "lat": 36.0382,
-      "lng": -115.0671,
+      "lat": 36.0217,
+      "lng": -115.0844,
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "structure_type": "surface_lot",
       "verified_on": "2026-04-27",
-      "notes": "Mediterranean-village-style shopping/dining adjacent to GVR Resort. Open-air surface lots + on-street angled parking; the small underground garage on-site is residents-only (not for shoppers). Oversized-friendly by nature.\nVerified in person by site operator.",
-      "source": "Verified in person \u2014 was: shopthedistrict.com",
-      "entrance_lat": 36.0382546,
-      "entrance_lng": -115.0688329,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "notes": "Mediterranean-village-style shopping/dining adjacent to GVR Resort. Open-air surface lots + on-street angled parking; the small underground garage on-site is residents-only (not for shoppers). Oversized-friendly by nature.\nVerified in person by site operator.\nLat/lng corrected 2026-04-30 from 36.0382/-115.0671 (~2km north, in residential area) to Google's actual place pin 36.0217/-115.0844.",
+      "source": "Verified in person \u2014 was: shopthedistrict.com"
     },
     {
       "id": "hen-water-street-district",
