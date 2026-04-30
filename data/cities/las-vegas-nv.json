@@ -717,8 +717,8 @@
       "pano_id": "LH6B40SgVGgH1onbzdQKGg",
       "pano_heading": 67.93,
       "verified_on": "2026-04-22",
-      "notes": "Designated oversized vehicle lot. Open air, no overhead clearance. Call 702-967-4481 for availability.\nManually verified 2026-04-22 as an open-air surface lot (pano LH6B40SgVGgH1onbzdQKGg @ 67.93\u00b0).",
-      "source": "Manually verified from Google Street View \u2014 was: vegasfoodandfun.com",
+      "notes": "Designated oversized vehicle lot. Open air, no overhead clearance. Call 702-967-4481 for availability.\nVerified in person by site operator (open-air surface lot, no overhead structure).",
+      "source": "Verified in person \u2014 was: vegasfoodandfun.com",
       "structure_type": "surface_lot"
     },
     {
@@ -805,12 +805,12 @@
       "id": "green-valley-ranch",
       "name": "Green Valley Ranch Garage",
       "addr": "2300 Paseo Verde Pkwy",
-      "lat": 36.0371,
-      "lng": -115.0636,
+      "lat": 36.019073,
+      "lng": -115.090461,
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "Station Casinos Henderson. Free parking. (Main casino garage at Paseo Verde Pkwy; a separate North Garage exists at Village View Dr \u2014 see green-valley-ranch-north.)",
+      "notes": "Station Casinos Henderson. Free parking. Coords corrected 2026-04-27 from 36.0371/-115.0636 (Paseo Verde landmark) to actual marker location reported by site operator. NOTE: now sits ~500m from green-valley-ranch-north -- if these are the same physical garage, one should be merged.",
       "source": "Needs verification"
     },
     {
@@ -868,8 +868,9 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Surface lots at LVCC. Event + self-park for trade shows.",
-      "source": "lvcva.com",
+      "verified_on": "2026-04-27",
+      "notes": "Surface lots at LVCC. Event + self-park for trade shows. No covered garage; entirely open-air, any vehicle size fits.\nVerified in person by site operator.",
+      "source": "Verified in person — was: lvcva.com",
       "structure_type": "surface_lot"
     },
     {
@@ -1201,8 +1202,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "verified_on": "2026-04-27",
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).\nVerified in person by site operator — open-air RV park, oversized-friendly by nature.",
+      "source": "Verified in person — was: OpenStreetMap (surface lot)"
     },
     {
       "id": "osm-w847040582",

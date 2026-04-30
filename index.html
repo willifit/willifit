@@ -245,6 +245,18 @@
     border: 1px solid rgba(14,165,233,0.25);
   }
   .ai-verified-badge::before { content: "✦"; font-size: 9px; }
+  /* Human-verified badge — distinct color (green) from AI-verified (blue)
+     so the trust provenance is legible at a glance.  Used when the site
+     operator personally verified an entry or read a Street View sign. */
+  .human-verified-badge {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 2px 7px; border-radius: 999px;
+    background: rgba(62,207,142,0.12); color: var(--ok);
+    font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1px solid rgba(62,207,142,0.3);
+  }
+  .human-verified-badge::before { content: "✓"; font-size: 11px; }
   /* Vehicle height input in topbar — drives fit-coloring across the app */
   .vehicle-height {
     display: flex; align-items: center; gap: 10px;
@@ -1048,7 +1060,10 @@
   .leaflet-control-attribution a { color: var(--muted) !important; }
 
   .legend {
-    position: absolute; bottom: 20px; left: 16px;
+    /* Bottom-RIGHT to clear the bottom-left layers-control toggle.
+       Top-right is taken by the detail-panel close-X; top-left is too
+       cluttered with the brand bar on mobile. */
+    position: absolute; bottom: 20px; right: 16px;
     background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 4px;
@@ -2686,8 +2701,25 @@ function renderList() {
     const hc = heightClassForEntry(g);
     const hlabel = g.height_label || 'Unverified';
     const overTag = g.oversized ? '<span class="oversized-tag">Oversized OK</span>' : '';
-    const isAiVerified = typeof g.source === 'string' && g.source.includes('AI-verified');
-    const aiBadge = isAiVerified ? '<span class="ai-verified-badge" title="Posted clearance read by Claude Vision from Street View imagery">AI-verified</span>' : '';
+    const src = typeof g.source === 'string' ? g.source : '';
+    const isAiVerified = src.includes('AI-verified');
+    // Human-verified: explicit personal verification by site operator OR
+    // a manual Street View pass.  Distinct trust badge from AI-verified
+    // so users can see provenance at a glance.
+    const isHumanVerified = !isAiVerified && (
+      src.includes('Verified in person') ||
+      src.includes('Manually verified') ||
+      // OSM-tagged surface lots and caravan_site entries are confirmed-real
+      // RV parks by community tagging.  Treat them as verified for the trust
+      // badge -- we're confident these are real, oversized-friendly destinations
+      // even though no individual sign was read (there isn't one; it's open-air).
+      src.includes('OpenStreetMap (surface lot)')
+    );
+    const aiBadge = isAiVerified
+      ? '<span class="ai-verified-badge" title="Posted clearance read by Claude Vision from Street View imagery">AI-verified</span>'
+      : (isHumanVerified
+        ? '<span class="human-verified-badge" title="Verified in person or via Google Street View by the site operator">Verified</span>'
+        : '');
     const active = state.selectedId === g.id ? 'active' : '';
     // Surface lots / RV parks are confirmed, just height-less; don't
     // visually dull them out like a true unverified garage.
@@ -3137,17 +3169,34 @@ async function loadDetailHero(hero, g) {
   const showAerialFallback = (reason) => {
     if (myReq !== _heroReq) return;
     const mapsLink = `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lng}`;
-    hero.innerHTML = `
-      <a class="detail-hero-aerial" href="${mapsLink}" target="_blank" rel="noopener"
-         aria-label="Aerial map of ${escapeHTML(g.name || 'this location')}, opens in Google Maps">
-        <img src="${staticMapUrl(g.lat, g.lng)}" alt="Aerial map showing ${escapeHTML(g.name || 'this location')}"
-             onerror="this.style.display='none'">
-        <div class="detail-hero-aerial-overlay">
-          <span class="detail-hero-aerial-badge">AERIAL</span>
-          <span class="detail-hero-aerial-reason">${escapeHTML(reason || "Street View not available — satellite view shown.")}</span>
-          <span class="detail-hero-aerial-link">Open in Google Maps ↗</span>
-        </div>
-      </a>`;
+    // Probe the static map URL with a Promise.  If Google's Static Maps
+    // API returns a usable image, render the aerial card; if it 403s
+    // (e.g. the Maps Static API isn't enabled on the GCloud project,
+    // billing missing, key restriction, etc.) drop straight through to
+    // the bare empty-state instead of showing an "AERIAL" badge over
+    // a broken img.  Native <img> error events don't fire in time on
+    // some browsers, so we preload via JS and gate the swap.
+    const url = staticMapUrl(g.lat, g.lng);
+    const img = new Image();
+    img.onload = () => {
+      if (myReq !== _heroReq) return;
+      hero.innerHTML = `
+        <a class="detail-hero-aerial" href="${mapsLink}" target="_blank" rel="noopener"
+           aria-label="Aerial map of ${escapeHTML(g.name || 'this location')}, opens in Google Maps">
+          <img src="${url}" alt="Aerial map showing ${escapeHTML(g.name || 'this location')}">
+          <div class="detail-hero-aerial-overlay">
+            <span class="detail-hero-aerial-badge">AERIAL</span>
+            <span class="detail-hero-aerial-reason">${escapeHTML(reason || "Street View not available — satellite view shown.")}</span>
+            <span class="detail-hero-aerial-link">Open in Google Maps ↗</span>
+          </div>
+        </a>`;
+    };
+    img.onerror = () => {
+      // Static Maps unavailable — clean text empty-state.  Better UX
+      // than a broken-image icon next to an "AERIAL" badge.
+      showEmpty(reason);
+    };
+    img.src = url;
   };
   // Legacy bare empty-state — used only when even the aerial API isn't
   // configured.  The aerial shares GOOGLE_MAPS_API_KEY so it practically
