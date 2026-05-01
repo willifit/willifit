@@ -694,14 +694,29 @@
       "addr": "",
       "lat": 33.4355,
       "lng": -111.99806,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 20'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "Imported from OpenStreetMap. OSM-imported 20'0\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"7' 0\"\" (pano O6unCJriY9F6vtRDBkYfsg, heading 270\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 33.4354412,
       "entrance_lng": -111.9961243,
-      "entrance_source": "OSM parking_entrance node 6472058149"
+      "entrance_source": "OSM parking_entrance node 6472058149",
+      "verified_on": "2026-05-01",
+      "pano_id": "O6unCJriY9F6vtRDBkYfsg",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Terminal 2 Departures",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 132,
+          "height_label": "11'0\""
+        }
+      ]
     },
     {
       "id": "osm-w130280853",

@@ -308,14 +308,17 @@
       "addr": "",
       "lat": 40.63999,
       "lng": -74.07701,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid OSM-imported 18'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid OSM-imported 18'0\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"7'0\"\" (pano 53DHA822K-HL5-FyAbwjoA, heading 225\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 40.6397533,
       "entrance_lng": -74.0766241,
-      "entrance_source": "OSM parking_entrance node 4409340616"
+      "entrance_source": "OSM parking_entrance node 4409340616",
+      "verified_on": "2026-05-01",
+      "pano_id": "53DHA822K-HL5-FyAbwjoA",
+      "pano_heading": 225
     },
     {
       "id": "osm-w1236418921",

@@ -374,14 +374,34 @@
       "addr": "4155 Terrapin Trail",
       "lat": 38.99499,
       "lng": -76.94336,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 16'3\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "Imported from OpenStreetMap. OSM-imported 16'3\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"6'6\"\" (pano JW-c-Zy9Qb9gnTAB72O1mg, heading 180\u00b0, Claude confidence high [+2 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 38.9952079,
       "entrance_lng": -76.9441343,
-      "entrance_source": "OSM parking_entrance node 6550214815"
+      "entrance_source": "OSM parking_entrance node 6550214815",
+      "verified_on": "2026-05-01",
+      "pano_id": "JW-c-Zy9Qb9gnTAB72O1mg",
+      "pano_heading": 180,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        },
+        {
+          "label": "Lane 3",
+          "height_in": 168,
+          "height_label": "14'0\""
+        }
+      ]
     },
     {
       "id": "osm-w153515337",
@@ -458,14 +478,29 @@
       "addr": "4509 Knox Road",
       "lat": 38.98037,
       "lng": -76.93709,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 61,
+      "height_label": "5'1\"",
       "oversized": false,
-      "notes": "paid OSM-imported 14'2\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid OSM-imported 14'2\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"5' 1 CLEARANCE\" (pano vP_8MvE8hafmJsasHjpinQ, heading 270\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 38.9803482,
       "entrance_lng": -76.9368833,
-      "entrance_source": "OSM parking_entrance node 6575605239"
+      "entrance_source": "OSM parking_entrance node 6575605239",
+      "verified_on": "2026-05-01",
+      "pano_id": "vP_8MvE8hafmJsasHjpinQ",
+      "pano_heading": 270,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 61,
+          "height_label": "5'1\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 84,
+          "height_label": "7'0\""
+        }
+      ]
     },
     {
       "id": "osm-w248766712",

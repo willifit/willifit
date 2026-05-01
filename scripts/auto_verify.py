@@ -623,7 +623,7 @@ def verify_garage(g, model):
     return result
 
 
-def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, check_only=False):
+def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, check_only=False, only_ids=None):
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
         return {"slug": slug, "error": "no city file", "cost": 0}
@@ -641,6 +641,9 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
     candidates = []
     skipped_lots = 0
     for g in all_structures:
+        # If --ids-file was passed, restrict to that set strictly.
+        if only_ids is not None and g.get("id") not in only_ids:
+            continue
         if g.get("structure_type") == "surface_lot":
             skipped_lots += 1
             continue
@@ -846,6 +849,11 @@ def main():
                     help="Re-verify already-verified entries WITHOUT writing. "
                          "Reports per-garage MATCH / CLOSE / MISMATCH + section "
                          "discrepancies so a human can review.")
+    ap.add_argument("--ids-file",
+                    help="Path to a file with one entry-id per line. "
+                         "Restricts the run to those ids only (within the "
+                         "selected slug(s)). Useful for targeted re-runs of "
+                         "a subset like the OSM building-height cleanup.")
     args = ap.parse_args()
 
     if not (args.slug or args.slugs or args.all):
@@ -853,6 +861,12 @@ def main():
     if not GOOGLE_KEY:
         print("ERROR: GOOGLE_MAPS_API_KEY not set", file=sys.stderr)
         sys.exit(2)
+
+    only_ids = None
+    if args.ids_file:
+        with open(args.ids_file) as f:
+            only_ids = {line.strip() for line in f if line.strip() and not line.startswith("#")}
+        print(f"[--ids-file] restricting to {len(only_ids)} entry ids from {args.ids_file}")
 
     idx = json.loads(INDEX_PATH.read_text())
     if args.slug:
@@ -872,7 +886,8 @@ def main():
     for slug in targets:
         try:
             r = process_city(slug, args.max_cost, args.confidence, args.model,
-                             args.dry_run, running_total, check_only=args.check)
+                             args.dry_run, running_total, check_only=args.check,
+                             only_ids=only_ids)
             summaries.append(r)
             running_total += r.get("cost", 0)
             if r.get("aborted"):

@@ -1344,11 +1344,14 @@
       "addr": "",
       "lat": 18.36974,
       "lng": -66.07665,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 120,
+      "height_label": "10'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 16'1\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "notes": "Imported from OpenStreetMap. OSM-imported 16'1\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"ALTURA MAXIMA 10'0\" (pano oxmoL28pgorF1AuWSYTODg, heading 45\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
+      "verified_on": "2026-05-01",
+      "pano_id": "oxmoL28pgorF1AuWSYTODg",
+      "pano_heading": 45
     },
     {
       "id": "osm-w366501047",

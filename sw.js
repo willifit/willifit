@@ -14,13 +14,13 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v9: ships the OSM building-height fix (193 falsely-confident "20 ft
-// clearance" garages now show as unverified) + Round 3 web-verifications
-// (40 new heights, 64 surface-lot reclassifications) + refreshed
-// data/index.json garage_count totals (was stale on 206/226 cities).
-// Bump triggers shell-cache invalidation so users pick up the new
-// index.json (which is cacheFirst in the SW).
-const CACHE_VERSION = "willifit-v9";
+// v10: ships auto_verify Round 4 — 23 new high-confidence Street-View +
+// Claude-Vision reads on entries that were cleared by the OSM building-
+// height fix.  Big finds: Hyattsville Crossing Metro 5'1", multiple
+// Charleston/LA garages at 7'0", 5 LA structures at 10'+ (real garages,
+// not building-height bugs).  $13.49 spent of $25 cap.  76 medium-
+// confidence reads were rejected -- worth a follow-up at lower threshold.
+const CACHE_VERSION = "willifit-v10";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
