@@ -171,6 +171,34 @@
     padding: 0 16px;
     overflow: hidden;
   }
+  /* Pre-footer "popular cities" strip.  Static HTML so crawlers see direct
+     links from the homepage to the highest-traffic /city/ pages instead of
+     routing all PageRank through /cities.html.  Visible on desktop only --
+     mobile already exposes the same set via the city-picker modal. */
+  .popular-cities {
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    padding: 10px 16px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .popular-cities-inner {
+    display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline;
+    max-width: 1600px; margin: 0 auto;
+  }
+  .popular-cities-title {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
+    font-weight: 700; color: var(--muted); margin: 0; flex-shrink: 0;
+  }
+  .popular-cities-list {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-wrap: wrap; gap: 4px 12px;
+  }
+  .popular-cities-list a { color: var(--muted); text-decoration: none; }
+  .popular-cities-list a:hover { color: var(--text); text-decoration: underline; }
+  .popular-cities-all { color: var(--accent); font-weight: 600; }
+  .popular-cities-all:hover { color: var(--accent); }
+  @media (max-width: 900px) { .popular-cities { display: none; } }
   .site-footer .footer-inner {
     display: flex; justify-content: space-between; align-items: center;
     width: 100%; gap: 16px;
@@ -1968,6 +1996,38 @@
       </div>
     </div>
   </div>
+
+  <!-- Popular cities — direct internal links from homepage to highest-
+       traffic /city/ pages.  Static HTML for crawler discovery; same set
+       is already reachable interactively via the city-picker modal. -->
+  <nav class="popular-cities" aria-label="Popular cities">
+    <div class="popular-cities-inner">
+      <h2 class="popular-cities-title">Popular cities</h2>
+      <ul class="popular-cities-list">
+        <li><a href="/city/las-vegas-nv.html">Las Vegas, NV</a></li>
+        <li><a href="/city/los-angeles-ca.html">Los Angeles, CA</a></li>
+        <li><a href="/city/new-york-ny.html">New York, NY</a></li>
+        <li><a href="/city/chicago-il.html">Chicago, IL</a></li>
+        <li><a href="/city/houston-tx.html">Houston, TX</a></li>
+        <li><a href="/city/phoenix-az.html">Phoenix, AZ</a></li>
+        <li><a href="/city/miami-fl.html">Miami, FL</a></li>
+        <li><a href="/city/orlando-fl.html">Orlando, FL</a></li>
+        <li><a href="/city/san-francisco-ca.html">San Francisco, CA</a></li>
+        <li><a href="/city/seattle-wa.html">Seattle, WA</a></li>
+        <li><a href="/city/san-diego-ca.html">San Diego, CA</a></li>
+        <li><a href="/city/denver-co.html">Denver, CO</a></li>
+        <li><a href="/city/boston-ma.html">Boston, MA</a></li>
+        <li><a href="/city/washington-dc.html">Washington, DC</a></li>
+        <li><a href="/city/atlanta-ga.html">Atlanta, GA</a></li>
+        <li><a href="/city/dallas-tx.html">Dallas, TX</a></li>
+        <li><a href="/city/new-orleans-la.html">New Orleans, LA</a></li>
+        <li><a href="/city/nashville-tn.html">Nashville, TN</a></li>
+        <li><a href="/city/salt-lake-ut.html">Salt Lake City, UT</a></li>
+        <li><a href="/city/portland-or.html">Portland, OR</a></li>
+        <li><a href="/cities.html" class="popular-cities-all">All 226 cities →</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">

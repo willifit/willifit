@@ -14,13 +14,14 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v10: ships auto_verify Round 4 — 23 new high-confidence Street-View +
-// Claude-Vision reads on entries that were cleared by the OSM building-
-// height fix.  Big finds: Hyattsville Crossing Metro 5'1", multiple
-// Charleston/LA garages at 7'0", 5 LA structures at 10'+ (real garages,
-// not building-height bugs).  $13.49 spent of $25 cap.  76 medium-
-// confidence reads were rejected -- worth a follow-up at lower threshold.
-const CACHE_VERSION = "willifit-v10";
+// v11: adds "Popular cities" pre-footer block on the homepage with
+// direct static links to 20 highest-traffic /city/ pages plus the full
+// /cities.html hub.  SEO purpose: stop routing all PageRank through
+// /cities.html -- give the homepage (the strongest page in the site's
+// link graph) direct outbound flow to the city pages so they index
+// faster and rank stronger.  Hidden on mobile (mobile uses the
+// city-picker modal for the same navigation).
+const CACHE_VERSION = "willifit-v11";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
