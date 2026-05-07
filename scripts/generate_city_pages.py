@@ -8,7 +8,7 @@ Problem this solves:
   is loaded via JS fetch.  That makes 226 cities look like 1 page to crawlers.
 
 Fix:
-  Generate a real HTML file per city at /city/{slug}.html.  Each page has:
+  Generate a real HTML file per city at /city/{slug}.  Each page has:
     - Unique <title>, <meta description>, <link rel=canonical>
     - Real HTML content listing every garage / tunnel / bridge with address,
       clearance height, and notes (indexable text, not JS-fetched)
@@ -276,7 +276,7 @@ def render_nearby_cities(nearby: list) -> str:
         name = esc(c["name"])
         state = esc(c["state"])
         items.append(
-            f'<li><a href="/city/{slug}.html">{name}, {state}</a>'
+            f'<li><a href="/city/{slug}">{name}, {state}</a>'
             f' <span class="nc-dist">{int(round(d))} mi</span></li>'
         )
     return (
@@ -382,7 +382,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
             {"@type": "ListItem", "position": 2, "name": "Cities",
              "item": f"{SITE}/cities.html"},
             {"@type": "ListItem", "position": 3, "name": f"{name}, {state_full}",
-             "item": f"{SITE}/city/{city['slug']}.html"},
+             "item": f"{SITE}/city/{city['slug']}"},
         ],
     }
     blocks = [item_list, breadcrumbs]
@@ -728,7 +728,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     page = PAGE_TEMPLATE.format(
         title=title,
         description=esc(description),
-        canonical=f"{SITE}/city/{slug}.html",
+        canonical=f"{SITE}/city/{slug}",
         site=SITE,
         slug=slug,
         city=esc(name),

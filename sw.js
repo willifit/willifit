@@ -14,14 +14,16 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v11: adds "Popular cities" pre-footer block on the homepage with
-// direct static links to 20 highest-traffic /city/ pages plus the full
-// /cities.html hub.  SEO purpose: stop routing all PageRank through
-// /cities.html -- give the homepage (the strongest page in the site's
-// link graph) direct outbound flow to the city pages so they index
-// faster and rank stronger.  Hidden on mobile (mobile uses the
-// city-picker modal for the same navigation).
-const CACHE_VERSION = "willifit-v11";
+// v12: kills the duplicate-content trap from Netlify Pretty URLs.
+// Both /city/<slug> and /city/<slug>.html return 200 with identical
+// content; canonical was declaring .html, but every internal link
+// (homepage popular-cities, cities-hub, breadcrumbs, even the
+// homepage minified output) loses .html at deploy time.  Switched
+// canonical / og:url / sitemap / breadcrumbs / nearby-city-links to
+// the extensionless form across all 226 city pages, the sitemap, the
+// /cities.html hub, and the homepage source.  Now everything points
+// at the same canonical form Netlify naturally serves.
+const CACHE_VERSION = "willifit-v12";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
