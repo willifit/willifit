@@ -75,5 +75,54 @@ Disallow: /data/nbi_cache/
 Disallow: /admin.html
 Disallow: /.netlify/
 
+# -----------------------------------------------------------------------------
+# Social-share scrapers — explicit allow.
+#
+# When users post a willifit.ai link to Facebook, Twitter/X, LinkedIn, etc.,
+# those platforms send their own crawler to fetch the page and read the
+# Open Graph tags so the post displays a preview card (image + title +
+# description).  Even though "User-agent: *  Allow: /" should cover them,
+# Facebook's debugger explicitly recommends allowlisting
+# `facebookexternalhit`, suggesting their bot does strict UA matching and
+# only honors blocks named after itself.  Twitterbot and LinkedInBot are
+# included for symmetry.
+# -----------------------------------------------------------------------------
+
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: meta-externalfetcher
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Facebot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Twitterbot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: LinkedInBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
 # For a human-readable project overview meant for LLM agents, see /llms.txt
 Sitemap: https://willifit.ai/sitemap.xml
