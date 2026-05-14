@@ -14,16 +14,17 @@
 //
 // Bump CACHE_VERSION when you ship a breaking change to the precached shell.
 
-// v12: kills the duplicate-content trap from Netlify Pretty URLs.
-// Both /city/<slug> and /city/<slug>.html return 200 with identical
-// content; canonical was declaring .html, but every internal link
-// (homepage popular-cities, cities-hub, breadcrumbs, even the
-// homepage minified output) loses .html at deploy time.  Switched
-// canonical / og:url / sitemap / breadcrumbs / nearby-city-links to
-// the extensionless form across all 226 city pages, the sitemap, the
-// /cities.html hub, and the homepage source.  Now everything points
-// at the same canonical form Netlify naturally serves.
-const CACHE_VERSION = "willifit-v12";
+// v13: completes the share-card checklist for FB/iMessage/Slack/LinkedIn/
+// Twitter/Discord/Telegram/WhatsApp.  Added og:locale=en_US to the
+// homepage <head> (FB recommends it, AI agents read it for
+// regionalisation), plus 11 new explicit Allow blocks in robots.txt
+// for Slackbot, Slackbot-LinkExpanding, WhatsApp, Discordbot,
+// TelegramBot, Applebot (plain, in addition to existing
+// Applebot-Extended), SkypeUriPreview, Embedly, redditbot, Pinterest.
+// All 11 follow the same pattern as the existing facebookexternalhit
+// block -- needed because each crawler does strict UA matching and
+// ignores the "User-agent: *" wildcard.
+const CACHE_VERSION = "willifit-v13";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 

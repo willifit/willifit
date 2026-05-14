@@ -124,5 +124,65 @@ Disallow: /data/nbi_cache/
 Disallow: /admin.html
 Disallow: /.netlify/
 
+User-agent: Slackbot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: WhatsApp
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Discordbot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: TelegramBot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Applebot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: SkypeUriPreview
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Embedly
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: redditbot
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
+User-agent: Pinterest
+Allow: /
+Disallow: /data/nbi_cache/
+Disallow: /admin.html
+Disallow: /.netlify/
+
 # For a human-readable project overview meant for LLM agents, see /llms.txt
 Sitemap: https://willifit.ai/sitemap.xml
