@@ -402,7 +402,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{description}">
 <meta name="keywords" content="parking clearance {city}, {city} garage heights, low bridges {city}, RV parking {city}, truck clearance {city}, oversized vehicle parking">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="{robots}">
 <link rel="canonical" href="{canonical}">
 
 <meta property="og:title" content="{title}">
@@ -725,9 +725,16 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     )[:160]
     title = f"Parking &amp; Bridge Clearance Heights in {name}, {state_full} ({total} locations) | WillIFit.ai"
 
+    # A city with zero indexed locations is thin content -- noindex it so it
+    # can't dilute the site's quality signal, but keep "follow" so the
+    # nearby-cities links still pass equity.  generate_sitemap.py drops these
+    # same pages from sitemap.xml, so the two stay consistent.
+    robots = "noindex,follow" if total == 0 else "index,follow"
+
     page = PAGE_TEMPLATE.format(
         title=title,
         description=esc(description),
+        robots=robots,
         canonical=f"{SITE}/city/{slug}",
         site=SITE,
         slug=slug,
