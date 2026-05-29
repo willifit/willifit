@@ -3699,13 +3699,100 @@ async function switchToCity(slug) {
   renderCityDots();
 }
 
+/* ============================================================
+   ACCESSIBLE MODALS — focus trap, Escape-to-close, focus restore
+   Applies to the blocking dialog overlays (cityPicker, reportModal,
+   issueModal, newLocationModal) and the welcome overlay.  The detail
+   panel is a non-blocking side sheet, so it only gets Escape-to-close
+   (handled in the global keydown listener below), not a focus trap.
+   ============================================================ */
+const _modalStack = [];
+const _MODAL_FOCUSABLE =
+  'a[href], button:not([disabled]), input:not([disabled]), ' +
+  'select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+// Visible, focusable descendants. getClientRects() is empty for display:none
+// elements (e.g. the inactive tab panels in the city picker), so they're
+// excluded automatically — only the on-screen tab's controls are trapped.
+function _focusables(container) {
+  return Array.from(container.querySelectorAll(_MODAL_FOCUSABLE))
+    .filter((el) => el.getClientRects().length > 0);
+}
+
+// Register a modal as the active focus-trapped layer. opts:
+//   onEscape     — called when Escape is pressed while this modal is on top
+//   initialFocus — CSS selector for the element to focus (desktop only)
+function openModal(el, opts) {
+  if (!el || _modalStack.some((m) => m.el === el)) return;
+  opts = opts || {};
+  _modalStack.push({ el, opener: document.activeElement, onEscape: opts.onEscape || null });
+  // Auto-focus on desktop only: focusing on mobile pops the soft keyboard
+  // before the user has even seen the dialog.
+  if (window.matchMedia('(min-width: 900px)').matches) {
+    setTimeout(() => {
+      const target = (opts.initialFocus && el.querySelector(opts.initialFocus)) || _focusables(el)[0];
+      if (target) { try { target.focus(); } catch (e) {} }
+    }, 50);
+  }
+}
+
+// Release a modal and restore focus to whatever opened it. Safe to call even
+// if the modal was never registered (no-op), so close paths can stay simple.
+function closeModal(el) {
+  const idx = _modalStack.findIndex((m) => m.el === el);
+  if (idx === -1) return;
+  const [entry] = _modalStack.splice(idx, 1);
+  const opener = entry.opener;
+  if (opener && opener !== document.body && typeof opener.focus === 'function') {
+    try { opener.focus(); } catch (e) {}
+  }
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (_modalStack.length) {
+      const top = _modalStack[_modalStack.length - 1];
+      e.preventDefault();
+      if (top.onEscape) top.onEscape();
+      return;
+    }
+    // No blocking modal open — let Escape dismiss the non-blocking detail panel.
+    const detail = document.getElementById('detail');
+    if (detail && detail.classList.contains('open')) {
+      e.preventDefault();
+      closeDetailPanel();
+    }
+    return;
+  }
+  if (e.key === 'Tab' && _modalStack.length) {
+    const top = _modalStack[_modalStack.length - 1];
+    const f = _focusables(top.el);
+    if (!f.length) { e.preventDefault(); return; }
+    const first = f[0], last = f[f.length - 1], active = document.activeElement;
+    if (!top.el.contains(active)) {
+      // Focus escaped the modal (or never entered) — pull it back in.
+      e.preventDefault();
+      (e.shiftKey ? last : first).focus();
+    } else if (e.shiftKey && active === first) {
+      e.preventDefault(); last.focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault(); first.focus();
+    }
+  }
+});
+
 function openCityPicker() {
   document.getElementById('cityPicker').classList.add('open');
   renderSearchTab();
   renderBrowseTab();
+  openModal(document.getElementById('cityPicker'), {
+    onEscape: closeCityPicker,
+    initialFocus: '#citySearchInput',
+  });
 }
 function closeCityPicker() {
   document.getElementById('cityPicker').classList.remove('open');
+  closeModal(document.getElementById('cityPicker'));
 }
 function switchTab(tabName) {
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabName));
@@ -3920,7 +4007,9 @@ function findNearestLiveCity(lat, lng) {
 }
 
 function hideWelcome() {
-  document.getElementById('welcome').style.display = 'none';
+  const w = document.getElementById('welcome');
+  w.style.display = 'none';
+  closeModal(w); // release the focus trap if the welcome overlay was registered
 }
 
 function detectLocationAndBoot() {
@@ -4097,6 +4186,7 @@ _searchInput.addEventListener('keydown', (e) => {
     return;
   } else if (e.key === 'Escape') {
     _hideSearchSuggestions();
+    e.stopPropagation(); // consumed here — don't also close an open modal/panel
     return;
   } else {
     return;
@@ -4238,10 +4328,20 @@ document.getElementById('citySearchClear').addEventListener('click', () => {
   input.focus();
   renderSearchTab('');
 });
-document.getElementById('skipGeo').addEventListener('click', () => {
+function skipWelcome() {
   hideWelcome();
   openCityPicker();
-});
+}
+document.getElementById('skipGeo').addEventListener('click', skipWelcome);
+// The welcome overlay is shown on load (CSS display:flex, no .open class).
+// Register it for focus-trapping + Escape-to-skip while it's up; hideWelcome()
+// releases it.  Runs before boot() (below) hides it on a successful geo lookup.
+(function registerWelcomeModal() {
+  const w = document.getElementById('welcome');
+  if (w && getComputedStyle(w).display !== 'none') {
+    openModal(w, { onEscape: skipWelcome, initialFocus: '#skipGeo' });
+  }
+})();
 
 async function boot() {
   const status = document.getElementById('welcomeStatus');
@@ -4443,9 +4543,14 @@ function openReportModal(garageId) {
   form.dataset.garageId = g.id;
 
   document.getElementById('reportModal').classList.add('open');
+  openModal(document.getElementById('reportModal'), {
+    onEscape: closeReportModal,
+    initialFocus: '#rfHeightFt',
+  });
 }
 function closeReportModal() {
   document.getElementById('reportModal').classList.remove('open');
+  closeModal(document.getElementById('reportModal'));
 }
 async function submitReport(e) {
   e.preventDefault();
@@ -4575,12 +4680,14 @@ function openIssueModal(garageId) {
   document.getElementById('isStatus').textContent = '';
   document.getElementById('isStatus').className = 'report-status';
   document.getElementById('issueModal').classList.add('open');
-  if (window.matchMedia('(min-width: 900px)').matches) {
-    setTimeout(() => document.getElementById('isType').focus(), 50);
-  }
+  openModal(document.getElementById('issueModal'), {
+    onEscape: closeIssueModal,
+    initialFocus: '#isType',
+  });
 }
 function closeIssueModal() {
   document.getElementById('issueModal').classList.remove('open');
+  closeModal(document.getElementById('issueModal'));
 }
 
 async function submitIssue(e) {
@@ -4685,15 +4792,14 @@ function openNewLocationModal() {
   document.getElementById('nlStatus').textContent = '';
   document.getElementById('nlStatus').className = 'report-status';
   modal.classList.add('open');
-  // Focus the first field on desktop only (avoids the mobile keyboard
-  // popping before the user has even seen the modal).
-  if (window.matchMedia('(min-width: 900px)').matches) {
-    setTimeout(() => document.getElementById('nlName').focus(), 50);
-  }
+  // openModal focuses the first field on desktop only (avoids the mobile
+  // keyboard popping before the user has even seen the modal).
+  openModal(modal, { onEscape: closeNewLocationModal, initialFocus: '#nlName' });
 }
 
 function closeNewLocationModal() {
   document.getElementById('newLocationModal').classList.remove('open');
+  closeModal(document.getElementById('newLocationModal'));
 }
 
 async function submitNewLocation(e) {

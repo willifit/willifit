@@ -29,6 +29,9 @@
 // modal (defensive XSS hardening), fix the clearance-report form field name
 // (id -> report_id) and add its honeypot, and guard the caches against being
 // poisoned by a 200 HTML maintenance/error page (content-type checks below).
+// Also an accessibility modal pass: every dialog overlay (city picker, report,
+// issue, new-location) plus the welcome screen now has a focus trap,
+// Escape-to-close, and focus restoration to the element that opened it.
 const CACHE_VERSION = "willifit-v14";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
