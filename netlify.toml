@@ -36,12 +36,17 @@
   status = 301
   force  = true
 
-# SEO-friendly deep links like /city/las-vegas-nv → app with hash pre-loaded.
-# Disabled by default; uncomment once the app reads a path-style slug.
-# [[redirects]]
-#   from = "/city/:slug"
-#   to   = "/#:slug"
-#   status = 200
+# Clean city URLs: serve /city/<slug> from the physical /city/<slug>.html file
+# WITHOUT relying on Netlify's "Pretty URLs" post-processing toggle (which, if
+# ever switched off in the dashboard, would 404 all 226 indexed city pages).
+# status = 200 is a rewrite -- the URL stays extensionless while the content
+# comes from the .html file. Requests to the .html form still hit the real file
+# directly (Netlify serves existing files before non-forced redirects), so
+# there's no rewrite loop. VERIFY ON A DEPLOY PREVIEW before promoting.
+[[redirects]]
+  from   = "/city/:slug"
+  to     = "/city/:slug.html"
+  status = 200
 
 # -----------------------------------------------------------------------------
 # Security headers — set site-wide.  These match the CSP declared in the HTML

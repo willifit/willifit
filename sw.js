@@ -24,7 +24,12 @@
 // All 11 follow the same pattern as the existing facebookexternalhit
 // block -- needed because each crawler does strict UA matching and
 // ignores the "User-agent: *" wildcard.
-const CACHE_VERSION = "willifit-v13";
+//
+// v14: bug-fix sweep -- escape garage name/label in map popups + the report
+// modal (defensive XSS hardening), fix the clearance-report form field name
+// (id -> report_id) and add its honeypot, and guard the caches against being
+// poisoned by a 200 HTML maintenance/error page (content-type checks below).
+const CACHE_VERSION = "willifit-v14";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
@@ -112,7 +117,10 @@ async function cacheFirst(req, cacheName) {
   if (cached) return cached;
   try {
     const fresh = await fetch(req);
-    if (fresh.ok) cache.put(req, fresh.clone());
+    // Don't cache an HTML error/maintenance page in place of a static asset.
+    if (fresh.ok && !(fresh.headers.get("content-type") || "").includes("text/html")) {
+      cache.put(req, fresh.clone());
+    }
     return fresh;
   } catch (e) {
     return cached || Response.error();
@@ -135,7 +143,11 @@ async function staleWhileRevalidate(req, cacheName) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(req);
   const fetchPromise = fetch(req).then((fresh) => {
-    if (fresh.ok) cache.put(req, fresh.clone());
+    // Only cache real JSON -- guards against a 200 HTML maintenance/error
+    // page being poisoned into DATA_CACHE and served as city data forever.
+    if (fresh.ok && (fresh.headers.get("content-type") || "").includes("json")) {
+      cache.put(req, fresh.clone());
+    }
     return fresh;
   }).catch(() => null);
   return cached || (await fetchPromise) || Response.error();

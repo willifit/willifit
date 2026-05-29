@@ -34,7 +34,7 @@
 exports.handler = async (event) => {
   // CORS + method guard
   const cors = {
-    "access-control-allow-origin": "*",
+    "access-control-allow-origin": "https://willifit.ai",
     "access-control-allow-headers": "content-type, x-willifit-admin",
     "access-control-allow-methods": "GET, OPTIONS",
   };
@@ -57,6 +57,9 @@ exports.handler = async (event) => {
     };
   }
   if (!constantTimeEqual(supplied, expected)) {
+    // Throttle brute-force guesses. No shared state across cold starts, but it
+    // caps the effective guess rate per warm connection to ~2/sec.
+    await new Promise((r) => setTimeout(r, 500));
     return { statusCode: 403, headers: cors, body: JSON.stringify({ error: "forbidden" }) };
   }
 
@@ -184,9 +187,10 @@ exports.handler = async (event) => {
       }),
     };
   } catch (err) {
+    console.error("reports function error:", err);
     return {
       statusCode: 500, headers: cors,
-      body: JSON.stringify({ error: String(err) }),
+      body: JSON.stringify({ error: "internal error" }),
     };
   }
 };

@@ -299,7 +299,7 @@ function renderReport(r) {
       ${contactBlock}
 
       <div class="report-actions">
-        <button onclick="toggleTsv('${r.id}')">Copy bulk_update row</button>
+        <button onclick="toggleTsv(this)">Copy bulk_update row</button>
         <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((r.garage_name||"") + " " + (r.garage_addr||"") + " " + (r.city_name||"") + " " + (r.city_state||""))}">
           Verify in Google Maps ↗
         </a>
@@ -308,7 +308,7 @@ function renderReport(r) {
         <div class="muted" style="font-size:10px;margin-bottom:4px">Copy this row into data/manual_updates.tsv (fill in the URL column):</div>
         ${escapeHtml(tsvRow)}
         <br><br>
-        <button onclick="copyTsv('${r.id}', ${JSON.stringify(tsvRow).replace(/"/g, '&quot;')})">Copy to clipboard</button>
+        <button data-tsv="${escapeHtml(tsvRow)}" onclick="copyTsv(this)">Copy to clipboard</button>
       </div>
     </div>
   `;
@@ -456,16 +456,16 @@ function renderIssue(r) {
   `;
 }
 
-function toggleTsv(id) {
-  const el = document.getElementById(`tsv-${id}`);
-  el.classList.toggle("visible");
+function toggleTsv(btn) {
+  // The .tsv-preview div is the sibling right after the .report-actions row.
+  const el = btn.closest(".report-actions").nextElementSibling;
+  if (el) el.classList.toggle("visible");
 }
 
-async function copyTsv(id, text) {
+async function copyTsv(btn) {
   try {
-    await navigator.clipboard.writeText(text);
-    const el = document.getElementById(`tsv-${id}`);
-    const btn = el.querySelector("button");
+    // Row is stashed (HTML-escaped) on the button's data-tsv; dataset decodes it.
+    await navigator.clipboard.writeText(btn.dataset.tsv || "");
     const orig = btn.textContent;
     btn.textContent = "Copied!";
     setTimeout(() => { btn.textContent = orig; }, 1500);

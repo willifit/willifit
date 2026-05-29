@@ -3096,7 +3096,7 @@ function renderMarkersOSM() {
     // Surface lots / RV parks: show "✓" (verified, just no overhead).
     // Real unverifieds: "?".
     // Verified garages: short height like "8'".
-    const label = g.height_in
+    const label = (g.height_in && g.height_label)
       ? (g.height_label.split("'")[0] + "'")
       : (heightClassForEntry(g) === 'nolimit' ? '✓' : '?');
     const icon = L.divIcon({
@@ -3107,7 +3107,7 @@ function renderMarkersOSM() {
     });
     const m = L.marker([g.lat, g.lng], { icon }).addTo(state.markerLayer);
     m.on('click', () => selectGarage(g.id));
-    m.bindPopup(`<strong>${g.name}</strong><br>${g.height_label||'Unverified'} ${g.oversized?' · Oversized OK':''}`);
+    m.bindPopup(`<strong>${escapeHTML(g.name)}</strong><br>${escapeHTML(g.height_label||'Unverified')} ${g.oversized?' · Oversized OK':''}`);
   });
 }
 
@@ -3168,7 +3168,7 @@ function renderMarkersGoogle() {
     // Surface lots / RV parks: show "✓" (verified, just no overhead).
     // Real unverifieds: "?".
     // Verified garages: short height like "8'".
-    const label = g.height_in
+    const label = (g.height_in && g.height_label)
       ? (g.height_label.split("'")[0] + "'")
       : (heightClassForEntry(g) === 'nolimit' ? '✓' : '?');
     const marker = new google.maps.Marker({
@@ -4432,7 +4432,7 @@ function openReportModal(garageId) {
   const cityLabel = meta ? `${meta.name}, ${meta.state}` : state.city;
 
   document.getElementById('reportTarget').innerHTML =
-    `<b>${g.name}</b><br>${g.addr || ''}<br>${cityLabel} — currently listed as ${g.height_label || 'Unverified'}`;
+    `<b>${escapeHTML(g.name)}</b><br>${escapeHTML(g.addr || '')}<br>${escapeHTML(cityLabel)} — currently listed as ${escapeHTML(g.height_label || 'Unverified')}`;
 
   // Reset form
   const form = document.getElementById('reportForm');
@@ -4495,8 +4495,10 @@ async function submitReport(e) {
     try {
       const body = new URLSearchParams();
       body.set('form-name', REPORT_FORM_NAME);
+      body.set('bot-field', '');             // honeypot must be present + empty
       for (const [k, v] of Object.entries(report)) {
-        body.set(k, v == null ? '' : String(v));
+        // Netlify Forms stub declares this field as `report_id`, not `id`.
+        body.set(k === 'id' ? 'report_id' : k, v == null ? '' : String(v));
       }
       const r = await fetch(REPORT_ENDPOINT_URL, {
         method: 'POST',
