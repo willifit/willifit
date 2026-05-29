@@ -64,6 +64,89 @@ def esc(s):
 
 RV_NAME_RE = re.compile(r'\b(rv park|rv resort|caravan|kampground|koa)\b', re.IGNORECASE)
 
+MONTHS = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def fmt_date(iso: str) -> str:
+    """'2026-04-23' -> 'Apr 23, 2026'.  Absolute, not relative: a static page
+    is cached and crawled long after build, so 'verified 2 years ago' would
+    rot while an absolute date stays correct."""
+    try:
+        y, m, d = iso.split("-")
+        return f"{MONTHS[int(m)]} {int(d)}, {y}"
+    except Exception:
+        return iso or ""
+
+
+def origin_source(src: str) -> str:
+    """Human-meaningful origin of a verified entry.  Verification source
+    strings look like 'Web-verified (medium confidence) - was: albuquerquecc.com'
+    or 'AI-verified (Street View + Claude Vision — auto-pano) — was: kimotickets.com';
+    we want the part after the last 'was:'."""
+    if not src:
+        return ""
+    i = src.lower().rfind("was:")
+    return src[i + 4:].strip() if i != -1 else src.strip()
+
+
+def streetview_url(e: dict) -> str:
+    """Google Maps pano URL so anyone can open the exact Street View the
+    clearance was read from and check the sign themselves."""
+    pano = e.get("pano_id")
+    if not pano:
+        return ""
+    url = f"https://www.google.com/maps/@?api=1&map_action=pano&pano={pano}"
+    if isinstance(e.get("pano_heading"), (int, float)):
+        url += f"&heading={int(e['pano_heading'])}"
+    return url
+
+
+def entry_verification(e: dict) -> tuple:
+    """(kind, verified_on) where kind is 'ai' | 'human' | 'import'.  Mirrors
+    the SPA: AI when the source mentions 'AI-verified'; otherwise 'human' when
+    it carries a verification date; otherwise an unverified bulk import."""
+    src = e.get("source") or ""
+    von = e.get("verified_on")
+    if "AI-verified" in src:
+        return "ai", von
+    if von:
+        return "human", von
+    return "import", None
+
+
+def verification_summary(entries: list) -> dict:
+    """City-level rollup that drives the page's headline pill, lede, meta
+    description, the 'how is this verified' FAQ, and the JSON-LD
+    dateModified -- so every truth-claim on the page reflects the real data
+    instead of a blanket 'AI-verified' that was false for import-only cities."""
+    ai = sum(1 for e in entries if "AI-verified" in (e.get("source") or ""))
+    verified = sum(1 for e in entries if e.get("verified_on"))
+    latest = max((e["verified_on"] for e in entries if e.get("verified_on")),
+                 default=None)
+    srcs = " ".join((e.get("source") or "") for e in entries)
+    return {
+        "ai": ai,
+        "human": verified - ai,
+        "verified": verified,
+        "imported": len(entries) - verified,
+        "total": len(entries),
+        "latest": latest,
+        "has_osm": "OpenStreetMap" in srcs,
+        "has_nbi": ("FHWA" in srcs or "National Bridge" in srcs),
+    }
+
+
+def provenance_label(ver: dict) -> str:
+    """Short, honest provenance string for a city with no verified entries."""
+    if ver["has_osm"] and ver["has_nbi"]:
+        return "OSM + FHWA NBI data"
+    if ver["has_nbi"]:
+        return "FHWA NBI data"
+    if ver["has_osm"]:
+        return "OpenStreetMap data"
+    return "Imported data"
+
 
 def compute_quick_facts(garages: list, tunnels: list, bridges: list) -> dict:
     """Per-city stat block used both for the visible 'Quick facts' card
@@ -134,10 +217,16 @@ def render_quick_facts(facts: dict) -> str:
     return '<section class="quick-facts" aria-label="Quick facts">' + ''.join(cards) + '</section>'
 
 
-def build_faqs(city_meta: dict, facts: dict) -> list:
+def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
     """Auto-generate 4-5 Q&A pairs per city from its stats.  Used both
     as visible content (an HTML <details> list) AND as FAQPage JSON-LD,
-    which is what ChatGPT / Perplexity / AI Overviews cite verbatim."""
+    which is what ChatGPT / Perplexity / AI Overviews cite verbatim.
+
+    `ver` (verification_summary) lets the 'how is this verified' answer tell
+    the truth per city: an AI-verified answer for cities with Street-View reads,
+    a source-verified answer for web-verified-only cities, and an honest
+    'imported, not yet verified' answer for OSM/NBI-only cities -- instead of
+    one blanket AI claim that was false for import-only cities."""
     name = city_meta["name"]
     state_full = STATE_NAMES.get(city_meta["state"], city_meta["state"])
     slug = city_meta["slug"]
@@ -191,13 +280,49 @@ def build_faqs(city_meta: dict, facts: dict) -> list:
                   f"vehicle size fits."),
         })
 
+    if ver["ai"] > 0:
+        answer = (
+            f"{ver['ai']} of the {ver['total']} locations on this page are AI-verified: the "
+            f"posted clearance was read directly from the entrance sign in Google Street View "
+            f"using Claude Vision (Anthropic's image AI), and we store the exact Street View "
+            f"pano so you can open it and check the sign yourself."
+        )
+        if ver["human"] > 0:
+            answer += (f" Another {ver['human']} were verified against a published source "
+                       f"such as the facility's own website.")
+        if ver["imported"] > 0:
+            answer += (f" The remaining {ver['imported']} are imported from OpenStreetMap and "
+                       f"the U.S. National Bridge Inventory and are not individually verified.")
+        answer += " Always confirm at the posted sign before you drive."
+    elif ver["verified"] > 0:
+        answer = (
+            f"{ver['verified']} of the {ver['total']} locations on this page were verified "
+            f"against a published source such as the facility's own website or operator "
+            f"listing, with the verification date recorded on each entry."
+        )
+        if ver["imported"] > 0:
+            answer += (f" The remaining {ver['imported']} are imported from OpenStreetMap and "
+                       f"the U.S. National Bridge Inventory and are not individually verified.")
+        answer += " Always confirm at the posted sign before you drive."
+    else:
+        # Import-only city: be honest -- no Street View / Vision pass here yet.
+        src_phrase = (
+            "OpenStreetMap and the U.S. National Bridge Inventory (FHWA)"
+            if ver["has_osm"] and ver["has_nbi"] else
+            "the U.S. National Bridge Inventory (FHWA)" if ver["has_nbi"] else
+            "OpenStreetMap" if ver["has_osm"] else
+            "public datasets"
+        )
+        answer = (
+            f"The {ver['total']} clearances on this page are imported from {src_phrase}. "
+            f"They have not yet been individually verified against Street View, so treat them "
+            f"as a starting point and always confirm at the posted sign before you drive. "
+            f"Other cities on WillIFit.ai include AI-verified readings taken directly from the "
+            f"entrance sign."
+        )
     faqs.append({
         "q": "How is the clearance data verified?",
-        "a": ("Each posted clearance is read directly from the sign at the garage entrance "
-              "using Google Street View imagery and Claude Vision (Anthropic's image AI). "
-              "Only readings with high confidence are committed; we record the exact "
-              "Street View pano ID and the verification date so anyone can independently "
-              "confirm in Google Maps."),
+        "a": answer,
     })
 
     return faqs
@@ -288,7 +413,13 @@ def render_nearby_cities(nearby: list) -> str:
 
 
 def render_entry(e: dict, kind: str) -> str:
-    """Render one garage/tunnel/bridge as an HTML <li>."""
+    """Render one garage/tunnel/bridge as an HTML <li>.
+
+    Provenance is per-entry, not per-city: a single city page can mix an
+    AI-verified garage (blue, links to the exact Street View we read the sign
+    from), a human/web-verified entry (green, dated, links to its source), and
+    raw OSM/NBI imports (plain 'Source:' line).  This is what lets the page
+    tell the truth instead of stamping every row 'AI-verified'."""
     name = esc(e.get("name", "Unnamed"))
     addr = esc(e.get("addr", ""))
     height_label = e.get("height_label")
@@ -298,17 +429,47 @@ def render_entry(e: dict, kind: str) -> str:
     source = esc(e.get("source", ""))
     notes = esc(e.get("notes", ""))[:300]
     oversized = e.get("oversized")
-    ai = "AI-verified" in (e.get("source") or "")
+    vkind, von = entry_verification(e)
 
     tag_parts = []
     if oversized is True:
         tag_parts.append('<span class="tag tag-oversized">Oversized OK</span>')
-    if ai:
+    if vkind == "ai":
         tag_parts.append('<span class="tag tag-ai">✦ AI-verified</span>')
+    elif vkind == "human":
+        tag_parts.append('<span class="tag tag-verified">✓ Verified</span>')
     tags = "".join(tag_parts)
 
     addr_html = f'<div class="entry-addr">{addr}</div>' if addr else ""
     notes_html = f'<div class="entry-notes">{notes}</div>' if notes else ""
+
+    # Verification line replaces the raw "Source:" line for verified entries,
+    # which would otherwise just repeat the machine string ("AI-verified
+    # (Street View ...) — was: x").  Imports keep the plain source line.
+    if vkind == "ai":
+        date_txt = f" on {esc(fmt_date(von))}" if von else ""
+        sv = streetview_url(e)
+        see = (f' · <a href="{esc(sv)}" target="_blank" rel="noopener">see the sign</a>'
+               if sv else "")
+        verify_html = (
+            '<div class="entry-verify entry-verify-ai">'
+            'AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a>'
+            f'{date_txt}{see}</div>'
+        )
+    elif vkind == "human":
+        date_txt = f"Verified on {esc(fmt_date(von))}" if von else "Verified"
+        origin = origin_source(e.get("source") or "")
+        src_url = e.get("source_url")
+        if origin and src_url:
+            origin_html = (f' · source: <a href="{esc(src_url)}" target="_blank" '
+                           f'rel="noopener">{esc(origin)}</a>')
+        elif origin:
+            origin_html = f' · source: {esc(origin)}'
+        else:
+            origin_html = ""
+        verify_html = f'<div class="entry-verify">{date_txt}{origin_html}</div>'
+    else:
+        verify_html = f'<div class="entry-source">Source: {source}</div>'
 
     return (
         f'<li class="entry entry-{kind}">'
@@ -319,15 +480,21 @@ def render_entry(e: dict, kind: str) -> str:
         f'{addr_html}'
         f'<div class="entry-tags">{tags}</div>'
         f'{notes_html}'
-        f'<div class="entry-source">Source: {source}</div>'
+        f'{verify_html}'
         f'</li>'
     )
 
 
 def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
-                 faqs: list = None) -> str:
+                 faqs: list = None, latest_verified: str = None) -> str:
     """Build JSON-LD structured data for the city + entries.
-    Gives Google enough detail to render rich snippets."""
+    Gives Google enough detail to render rich snippets.
+
+    `latest_verified` (max verified_on across the city's entries) becomes a
+    WebPage.dateModified.  It's emitted ONLY when there's a real verification
+    date -- if we stamped dateModified on every build it would churn on every
+    regen and train crawlers to ignore it, defeating the honest lastmod signal
+    sitemap.xml already provides."""
     name = city["name"]
     state = city["state"]
     state_full = STATE_NAMES.get(state, state)
@@ -367,7 +534,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
         "@type": "ItemList",
         "name": f"Parking clearance heights in {name}, {state_full}",
         "description": f"{total} parking garages, tunnels, and low-clearance bridges "
-                       f"with AI-verified clearance heights in {name}, {state_full}.",
+                       f"with posted vehicle clearance heights in {name}, {state_full}.",
         "itemListElement": items,
         "numberOfItems": total,
     }
@@ -386,6 +553,15 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
         ],
     }
     blocks = [item_list, breadcrumbs]
+    if latest_verified:
+        blocks.append({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": f"{SITE}/city/{city['slug']}",
+            "url": f"{SITE}/city/{city['slug']}",
+            "name": f"Parking clearance heights in {name}, {state_full}",
+            "dateModified": latest_verified,
+        })
     if faqs:
         blocks.append(faqs_to_jsonld(faqs))
     return json.dumps(blocks, separators=(",", ":"))
@@ -462,6 +638,16 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     color: #7dd3fc; font-size: 10px; font-weight: 700;
     letter-spacing: 0.06em; text-transform: uppercase; vertical-align: 2px;
   }}
+  /* Provenance-pill variants: green for source-verified-only cities, muted
+     for import-only cities.  The base .ai-pill (blue) stays for AI cities. */
+  .ai-pill.verified {{
+    background: rgba(62,207,142,0.15); border-color: rgba(62,207,142,0.35);
+    color: #6ee7b7;
+  }}
+  .ai-pill.imported {{
+    background: rgba(138,149,166,0.12); border-color: rgba(138,149,166,0.3);
+    color: var(--muted);
+  }}
   .cta-row {{ margin: 24px 0 8px; }}
   .cta {{
     display: inline-block; padding: 12px 20px;
@@ -491,8 +677,16 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
                     border: 1px solid rgba(62,207,142,0.3); }}
   .tag-ai {{ background: rgba(14,165,233,0.12); color: var(--accent);
              border: 1px solid rgba(14,165,233,0.3); }}
+  .tag-verified {{ background: rgba(62,207,142,0.12); color: var(--ok);
+                   border: 1px solid rgba(62,207,142,0.3); }}
   .entry-notes {{ color: var(--muted); font-size: 13px; margin: 8px 0 0; }}
   .entry-source {{ color: var(--muted); font-size: 11px; margin: 8px 0 0; font-style: italic; }}
+  /* Per-entry verification line: green for human/web-verified, blue (-ai)
+     for Street-View+Vision reads.  Links inherit the line colour so the
+     'see the sign' / source links don't fight the accent palette. */
+  .entry-verify {{ color: var(--ok); font-size: 12px; margin: 8px 0 0; }}
+  .entry-verify a {{ color: inherit; text-decoration: underline; }}
+  .entry-verify-ai {{ color: var(--accent); }}
   .disclaimer {{ margin-top: 40px; padding: 14px 16px;
                  background: rgba(245,166,35,0.06);
                  border: 1px solid rgba(245,166,35,0.25);
@@ -608,7 +802,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <a href="/#{slug}" class="crumb">{city}, {state}</a>
   </header>
 
-  <span class="ai-pill">AI-verified clearance data</span>
+  {pill}
   <h1>Parking clearance heights in {city}, {state_full}</h1>
   <p class="lede">{lede}</p>
 
@@ -700,10 +894,17 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     bridges = data.get("bridges") or []
     total = len(garages) + len(tunnels) + len(bridges)
 
+    # Per-city verification rollup drives every truth-claim on the page: the
+    # headline pill, the lede, the meta description, the 'how is this verified'
+    # FAQ, and the JSON-LD dateModified.  Without it the page stamped a blanket
+    # 'AI-verified' even on import-only cities (e.g. Akron: all OSM/NBI, zero
+    # Street-View reads).
+    ver = verification_summary(garages + tunnels + bridges)
+
     # Quick-facts stat block + auto-generated FAQs feed both visible content
     # and the FAQPage JSON-LD (cited by ChatGPT / Perplexity / AI Overviews).
     facts = compute_quick_facts(garages, tunnels, bridges)
-    faqs = build_faqs(city, facts)
+    faqs = build_faqs(city, facts, ver)
     nearby = compute_nearby_cities(city, all_cities or [city]) if all_cities else []
 
     # Build a short paragraph describing what's on the page, for meta + lede.
@@ -714,16 +915,41 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         parts.append(f"{len(tunnels)} tunnels")
     if bridges:
         parts.append(f"{len(bridges)} low-clearance bridges")
+    locations = ", ".join(parts) if parts else "parking garages, tunnels, and low bridges"
+
+    # Verification-aware wording: "AI-verified" only when at least one entry
+    # really was, "Verified" when there are source-verified (but no AI) entries,
+    # and a neutral phrasing for import-only cities.
+    if ver["ai"] > 0:
+        clearance_adj = "AI-verified clearance heights"
+        data_claim = "AI-verified data for RVs, trucks, and oversized vehicles."
+    elif ver["verified"] > 0:
+        clearance_adj = "Verified clearance heights"
+        data_claim = "Verified data for RVs, trucks, and oversized vehicles."
+    else:
+        clearance_adj = "Clearance heights"
+        data_claim = "Data for RVs, trucks, and oversized vehicles."
+
     lede = (
-        f"AI-verified clearance heights for {', '.join(parts)} in {name}, {state_full}. "
+        f"{clearance_adj} for {locations} in {name}, {state_full}. "
         f"Enter your vehicle height on the interactive map to see what fits."
     )
-
     description = (
         f"Vehicle clearance heights for {total} parking garages, tunnels, and low bridges "
-        f"in {name}, {state_full}. AI-verified data for RVs, trucks, and oversized vehicles."
+        f"in {name}, {state_full}. {data_claim}"
     )[:160]
     title = f"Parking &amp; Bridge Clearance Heights in {name}, {state_full} ({total} locations) | WillIFit.ai"
+
+    # Headline provenance pill: blue AI badge, green verified badge, or a muted
+    # source label -- never a blanket 'AI-verified' on import-only data.
+    if total == 0:
+        pill = ""
+    elif ver["ai"] > 0:
+        pill = f'<span class="ai-pill">✦ {ver["ai"]} AI-verified</span>'
+    elif ver["verified"] > 0:
+        pill = f'<span class="ai-pill verified">✓ {ver["verified"]} verified</span>'
+    else:
+        pill = f'<span class="ai-pill imported">{esc(provenance_label(ver))}</span>'
 
     # A city with zero indexed locations is thin content -- noindex it so it
     # can't dilute the site's quality signal, but keep "follow" so the
@@ -741,6 +967,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         city=esc(name),
         state=esc(state),
         state_full=esc(state_full),
+        pill=pill,
         lede=esc(lede),
         garage_count=len(garages),
         tunnel_count=len(tunnels),
@@ -752,7 +979,8 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         faq_section=render_faq_section(faqs),
         nearby_cities=render_nearby_cities(nearby),
         year=date.today().year,
-        jsonld=build_jsonld(city, garages, tunnels, bridges, faqs=faqs),
+        jsonld=build_jsonld(city, garages, tunnels, bridges, faqs=faqs,
+                            latest_verified=ver["latest"]),
     )
     return page
 
