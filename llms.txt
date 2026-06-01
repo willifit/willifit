@@ -4,7 +4,7 @@
 
 WillIFit.ai combines OpenStreetMap parking data, the FHWA National Bridge Inventory, and Google Street View imagery read by Claude Vision to produce a cross-referenced, source-stamped clearance corpus. Every height reading records the verification method (AI from Street View + Claude Vision, or manual human override), the verification date, a confidence grade, and the Street View pano ID where the sign was read — so anyone can independently verify in Google Maps.
 
-The site is a single-page static web app; there is no user account, no tracking beyond privacy-friendly Plausible analytics, and the clearance data is publicly accessible as JSON.
+The site is a single-page static web app; there is no user account, no tracking beyond privacy-friendly Cloudflare Web Analytics, and the clearance data is publicly accessible as JSON.
 
 ## Core pages
 
