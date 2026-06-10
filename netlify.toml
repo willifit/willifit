@@ -77,15 +77,20 @@
 # 1h max-age window to expire).  ETag/304 still saves bandwidth when
 # nothing changed.  Trade: ~50ms per JSON fetch for an HTTP roundtrip
 # instead of an instant cache hit -- worth it given how often we update.
+# CORS: this data is advertised as machine-readable (llms.txt) — let
+# browser-based agents and tools fetch it cross-origin.  Read-only public
+# data, so "*" is safe.
 [[headers]]
   for = "/data/cities/*.json"
   [headers.values]
     Cache-Control = "no-cache, must-revalidate"
+    Access-Control-Allow-Origin = "*"
 
 [[headers]]
   for = "/data/index.json"
   [headers.values]
     Cache-Control = "no-cache, must-revalidate"
+    Access-Control-Allow-Origin = "*"
 
 # Never cache the service worker — you always want the new one picked up.
 [[headers]]

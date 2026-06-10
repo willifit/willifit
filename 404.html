@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0e1116">
+<meta name="color-scheme" content="dark">
+<!-- Netlify serves this file (with a real 404 status) for any path that
+     doesn't exist.  The 404 status keeps it out of search indexes; the
+     robots meta below is belt-and-suspenders. -->
+<meta name="robots" content="noindex">
+<title>Page not found | WillIFit.ai</title>
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "162b93f801fa42499a0b840c50d3f772"}'></script>
+<!-- End Cloudflare Web Analytics -->
+
+<style>
+  :root {
+    --bg: #0e1116; --panel: #171b23; --text: #e6eaf0;
+    --muted: #8a95a6; --border: #2a3140; --accent: #0ea5e9;
+    --warn: #f5a623;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .card { max-width: 480px; text-align: center; }
+  .brand { font-weight: 800; font-size: 18px; letter-spacing: -0.01em;
+           color: var(--text); text-decoration: none; }
+  .brand .tld { color: var(--accent); }
+  .sign {
+    display: inline-block; margin: 28px auto 20px;
+    background: var(--warn); color: #1a1304;
+    font-weight: 800; font-size: 28px; letter-spacing: 0.02em;
+    padding: 14px 26px; border-radius: 8px;
+    border: 4px solid #1a1304; box-shadow: 0 0 0 3px var(--warn);
+    font-family: 'SF Mono', Menlo, monospace;
+  }
+  h1 { font-size: 22px; letter-spacing: -0.01em; margin: 0 0 10px; }
+  p { color: var(--muted); font-size: 15px; margin: 0 0 24px; }
+  .links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .links a {
+    display: inline-block; padding: 9px 18px; border-radius: 6px;
+    font-size: 14px; font-weight: 600; text-decoration: none;
+  }
+  .links a.primary { background: var(--accent); color: #06121a; }
+  .links a.ghost { border: 1px solid var(--border); color: var(--text); }
+  .links a.ghost:hover { border-color: var(--accent); }
+  .links a.primary:hover { filter: brightness(1.1); }
+</style>
+</head>
+<body>
+  <main class="card">
+    <a href="/" class="brand">Will<span class="tld">I</span>Fit<span class="tld">.ai</span></a>
+    <div class="sign" aria-hidden="true">CLEARANCE 4'0&quot;</div>
+    <h1>404 — this page didn&rsquo;t clear</h1>
+    <p>The URL you tried doesn&rsquo;t exist (or was moved). The clearance data
+       you&rsquo;re after is probably one click away.</p>
+    <nav class="links">
+      <a class="primary" href="/">Open the map</a>
+      <a class="ghost" href="/cities.html">Browse all 226 cities</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -935,7 +935,9 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         f"Vehicle clearance heights for {total} parking garages, tunnels, and low bridges "
         f"in {name}, {state_full}. {data_claim}"
     )[:160]
-    title = f"Parking &amp; Bridge Clearance Heights in {name}, {state_full} ({total} locations) | WillIFit.ai"
+    # Front-load the city name and keep ~60 chars so SERPs show the whole
+    # thing (the old form ran 77-93 chars and truncated mid-title).
+    title = f"{name}, {state} Parking &amp; Bridge Clearance Heights | WillIFit.ai"
 
     # Headline provenance pill: blue AI badge, green verified badge, or a muted
     # source label -- never a blanket 'AI-verified' on import-only data.
