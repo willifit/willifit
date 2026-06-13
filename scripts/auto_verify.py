@@ -461,22 +461,41 @@ def _log(line):
         f.write(line + "\n")
 
 
+# Sign text that proves the reading is NOT a vehicle-clearance sign — a
+# speed limit, weight limit, etc.  A height sign never contains these words.
+_NON_CLEARANCE_RX = re.compile(r"\b(mph|km/?h|speed|gvw|tons?|lbs?|kg)\b", re.I)
+
+
 def _height_matches_raw(height_in, raw_text):
-    """Defense against Claude hallucinating a height when raw_text has none.
-    We require raw_text to contain DIGITS that plausibly encode the stated
-    height.  Accepts either feet-inches form ("7'0"", "13 FT 6 IN") or a
-    bare inch number.  Returns True if plausible, False if the model
-    invented digits."""
+    """Reject hallucinated / mis-transcribed readings by PARSING the height
+    out of raw_text and requiring it to equal height_in EXACTLY.
+
+    The previous version accepted a match if ANY single digit in raw_text
+    landed in {feet, inches, total_inches}.  That was far too weak: inches
+    is usually "0" and feet is a single digit, so the sign text "8'0""
+    passed for a stored 7'0" (the "0" matched) and "5 MPH" passed for 5'0"
+    (the "5" matched).  We now require the parsed feet-inches to equal the
+    stored value, and reject any non-clearance keyword outright.  Skipping a
+    real sign (false-negative) is the safe error for a clearance database."""
     if not raw_text or height_in is None:
         return False
-    digits = re.findall(r"\d+", raw_text)
-    if not digits:
+    if _NON_CLEARANCE_RX.search(raw_text):
         return False
-    ft = height_in // 12
-    rem = height_in % 12
-    # Any of these numeric combos is a plausible match:
-    candidates = {str(ft), str(rem), str(height_in), f"{ft}{rem:02d}"}
-    return any(d in candidates for d in digits)
+    t = (raw_text.lower()
+         .replace("’", "'").replace("”", '"').replace("''", '"'))
+    # feet[-inches]:  7'6"  ·  7' 6  ·  10'  ·  13 ft 6 in
+    m = re.search(r"(\d{1,2})\s*(?:'|ft|feet)\s*(\d{1,2})?", t)
+    if m:
+        ft = int(m.group(1))
+        inch = int(m.group(2)) if m.group(2) else 0
+        if inch >= 12:
+            return False
+        return ft * 12 + inch == int(height_in)
+    # bare inches:  84"
+    m2 = re.search(r'(\d{2,3})\s*"', t)
+    if m2:
+        return int(m2.group(1)) == int(height_in)
+    return False
 
 
 def verify_garage(g, model):
