@@ -84,14 +84,17 @@
       "addr": "1722 Routh St",
       "lat": 32.7883,
       "lng": -96.8006,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Office + residential tower.",
-      "source": "Needs verification",
+      "notes": "Office + residential tower.\nVerified 2026-06-20 from sign reading \"8'2\" CLEAR\" (pano Z7zVe7mBBBNe_eBcg4V7Gw, heading 90\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 32.7886771,
       "entrance_lng": -96.7998508,
-      "entrance_source": "OSM parking_entrance node 10899170028"
+      "entrance_source": "OSM parking_entrance node 10899170028",
+      "verified_on": "2026-06-20",
+      "pano_id": "Z7zVe7mBBBNe_eBcg4V7Gw",
+      "pano_heading": 90
     },
     {
       "id": "dal-trammell-crow",
