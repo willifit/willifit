@@ -6,6 +6,14 @@
 <meta name="theme-color" content="#0e1116">
 <meta name="color-scheme" content="dark">
 
+<!-- Resource hints: warm the third-party origins the map's first paint
+     depends on (Leaflet from unpkg, OpenStreetMap tiles) so LCP isn't
+     gated on cold DNS/TLS.  Plain non-CORS subresources -> no crossorigin. -->
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://a.tile.openstreetmap.org">
+<link rel="preconnect" href="https://b.tile.openstreetmap.org">
+<link rel="preconnect" href="https://c.tile.openstreetmap.org">
+
 <title>RV &amp; Truck Clearance Heights, AI-Verified | WillIFit.ai</title>
 <meta name="description" content="Will your RV or truck fit? AI-verified clearance heights for parking garages, tunnels, and low bridges across 226 US cities — check before you drive.">
 <meta name="keywords" content="AI parking clearance, AI-verified garage heights, oversized vehicle parking, RV parking AI, low bridges, tunnel height, truck clearance, clearance height lookup, bridge strike prevention">
