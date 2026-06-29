@@ -726,8 +726,8 @@
       "id": "palms",
       "name": "Palms \u2014 East Garage (VIP)",
       "addr": "4321 W Flamingo Rd",
-      "lat": 36.1144,
-      "lng": -115.1948,
+      "lat": 36.1148023,
+      "lng": -115.192732,
       "entrance_lat": 36.1148023,
       "entrance_lng": -115.192732,
       "entrance_source": "Manual (Google Maps URL)",
@@ -737,15 +737,15 @@
       "pano_id": "GMns99AZLAToyFlCvVGESA",
       "pano_heading": 203.59,
       "verified_on": "2026-04-22",
-      "notes": "East/VIP garage at the Palms. 2-level. Front lot accommodates oversized (no hookups).\nManually verified 2026-04-22 at 7'6\" (pano GMns99AZLAToyFlCvVGESA @ 203.59\u00b0).\nLat/lng corrected from 36.1129/-115.2285 (~2.8km too far west) to the actual Palms Casino Resort location.",
+      "notes": "East/VIP garage at the Palms. 2-level. Front lot accommodates oversized (no hookups).\nManually verified 2026-04-22 at 7'6\" (pano GMns99AZLAToyFlCvVGESA @ 203.59\u00b0).\nLat/lng corrected from 36.1129/-115.2285 (~2.8km too far west) to the actual Palms Casino Resort location.\nMap pin moved 2026-06-29 from the shared property midpoint (36.1144,-115.1948) to this garage's own entrance so the two Palms garages no longer stack into a single overlapping pin.",
       "source": "Manually verified from Google Street View \u2014 was: vegasfoodandfun.com"
     },
     {
       "id": "palms-west-garage",
       "name": "Palms \u2014 West Garage",
       "addr": "4321 W Flamingo Rd",
-      "lat": 36.1144,
-      "lng": -115.1948,
+      "lat": 36.1145311,
+      "lng": -115.1974514,
       "entrance_lat": 36.1145311,
       "entrance_lng": -115.1974514,
       "entrance_source": "Manual (Google Maps URL)",
@@ -755,7 +755,7 @@
       "pano_id": "aKRurb6AcGG7QC4ZzuZ-MA",
       "pano_heading": 141.37,
       "verified_on": "2026-04-22",
-      "notes": "Separate West-side garage at the Palms. Taller than the East/VIP garage on the opposite side of the property.\nManually verified 2026-04-22 at 8'0\" (pano aKRurb6AcGG7QC4ZzuZ-MA @ 141.37\u00b0).",
+      "notes": "Separate West-side garage at the Palms. Taller than the East/VIP garage on the opposite side of the property.\nManually verified 2026-04-22 at 8'0\" (pano aKRurb6AcGG7QC4ZzuZ-MA @ 141.37\u00b0).\nMap pin moved 2026-06-29 from the shared property midpoint (36.1144,-115.1948) to this garage's own entrance so the two Palms garages no longer stack into a single overlapping pin.",
       "source": "Manually verified from Google Street View"
     },
     {

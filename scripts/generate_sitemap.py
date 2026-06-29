@@ -51,6 +51,7 @@ TODAY = date.today().isoformat()
 STATIC_PAGES = [
     ("",                              "index.html",                      "weekly",  "1.0"),
     ("how-ai-verification-works.html", "how-ai-verification-works.html", "monthly", "0.7"),
+    ("parking-garage-clearance-heights.html", "parking-garage-clearance-heights.html", "monthly", "0.8"),
     ("advertise.html",                "advertise.html",                  "monthly", "0.7"),
     ("disclaimer.html",               "disclaimer.html",                 "monthly", "0.3"),
     ("terms.html",                    "terms.html",                      "monthly", "0.3"),

@@ -2042,6 +2042,8 @@
       <div class="footer-links">
         <a href="/how-ai-verification-works.html" rel="noopener">How AI verification works</a>
         <span class="footer-dot">·</span>
+        <a href="/parking-garage-clearance-heights.html" rel="noopener">Clearance guide</a>
+        <span class="footer-dot">·</span>
         <a href="/advertise.html" rel="noopener">Advertise</a>
         <span class="footer-dot">·</span>
         <a href="/disclaimer.html" rel="noopener">Disclaimer</a>
@@ -4209,11 +4211,12 @@ document.getElementById('searchClear').addEventListener('click', () => {
   renderList(); renderMarkers();
 });
 document.getElementById('heightSlider').addEventListener('input', e => {
-  const ft = parseFloat(e.target.value);
-  const inches = Math.round(ft * 12);
-  state.minHeight = inches;
-  document.getElementById('heightValue').textContent = inchesToFeetStr(inches);
-  renderList(); renderMarkers();
+  // Married to "My vehicle": dragging the Min-Clearance slider sets the vehicle
+  // height too (the reverse direction lives in applyVehicleHeightToUI).
+  const inches = Math.round(parseFloat(e.target.value) * 12);
+  state.vehicleHeightIn = inches;
+  saveVehicleHeightToStorage();
+  applyVehicleHeightToUI(true);   // fromSlider — don't fight the drag
 });
 document.getElementById('oversizedToggle').addEventListener('click', (e) => {
   state.oversizedOnly = !state.oversizedOnly;
@@ -4468,7 +4471,7 @@ function saveVehicleHeightToStorage() {
     else localStorage.setItem(VEHICLE_HEIGHT_KEY, String(state.vehicleHeightIn));
   } catch (e) {}
 }
-function applyVehicleHeightToUI() {
+function applyVehicleHeightToUI(fromSlider) {
   const wrap = document.getElementById('vehicleHeight');
   const feetEl = document.getElementById('vhFeet');
   const inchesEl = document.getElementById('vhInches');
@@ -4481,10 +4484,17 @@ function applyVehicleHeightToUI() {
     // Sync the min-clearance slider to the vehicle height so the filter
     // matches the driver's actual concern.  Clamp to the slider's range.
     if (slider) {
-      const feet = state.vehicleHeightIn / 12;
-      const clamped = Math.max(parseFloat(slider.min), Math.min(parseFloat(slider.max), feet));
-      slider.value = String(clamped);
-      state.minHeight = Math.round(clamped * 12);
+      if (!fromSlider) {
+        // vehicle height -> slider: position the thumb to match (clamped to range)
+        const feet = state.vehicleHeightIn / 12;
+        const clamped = Math.max(parseFloat(slider.min), Math.min(parseFloat(slider.max), feet));
+        slider.value = String(clamped);
+        state.minHeight = Math.round(clamped * 12);
+      } else {
+        // slider -> vehicle height: the thumb is the source, so don't move it;
+        // just keep the Min-Clearance filter tracking the vehicle height.
+        state.minHeight = state.vehicleHeightIn;
+      }
       if (sliderLabel) sliderLabel.textContent = inchesToFeetStr(state.minHeight);
     }
   } else {
