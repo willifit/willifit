@@ -6,10 +6,9 @@
 <meta name="theme-color" content="#0e1116">
 <meta name="color-scheme" content="dark">
 
-<!-- Resource hints: warm the third-party origins the map's first paint
-     depends on (Leaflet from unpkg, OpenStreetMap tiles) so LCP isn't
-     gated on cold DNS/TLS.  Plain non-CORS subresources -> no crossorigin. -->
-<link rel="preconnect" href="https://unpkg.com">
+<!-- Resource hints: warm the OpenStreetMap tile origins (the map's first
+     paint) so LCP isn't gated on cold DNS/TLS.  Leaflet is self-hosted now.
+     Plain non-CORS subresources -> no crossorigin. -->
 <link rel="preconnect" href="https://a.tile.openstreetmap.org">
 <link rel="preconnect" href="https://b.tile.openstreetmap.org">
 <link rel="preconnect" href="https://c.tile.openstreetmap.org">
@@ -119,14 +118,14 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <!-- Security: Content Security Policy. Whitelist matches known resource origins. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "162b93f801fa42499a0b840c50d3f772"}'></script>
 <!-- End Cloudflare Web Analytics -->
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
 <style>
   :root {
     --bg: #0e1116;
@@ -2257,7 +2256,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/vendor/leaflet/leaflet.js"></script>
 <script>
 /* ============================================================
    DATA ARCHITECTURE — fetched from /data
@@ -2317,7 +2316,7 @@ function loadGoogleMaps() {
   if (window.google && window.google.maps) return Promise.resolve();
   return new Promise((resolve, reject) => {
     const cluster = document.createElement('script');
-    cluster.src = 'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js';
+    cluster.src = '/vendor/markerclusterer.min.js';
     cluster.onload = () => {
       const gm = document.createElement('script');
       gm.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(GOOGLE_MAPS_API_KEY)}&v=weekly&loading=async`;
