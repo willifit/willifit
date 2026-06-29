@@ -3895,10 +3895,7 @@ function renderSearchTab(query = '') {
       } else {
         html += `<div class="empty">No tracked city found near that ZIP yet.</div>`;
       }
-      container.innerHTML = html;
-      container.querySelectorAll('.city-row').forEach(row => {
-        row.addEventListener('click', () => switchToCity(row.dataset.slug));
-      });
+      container.innerHTML = html;   // row clicks handled by delegation (bound once at init)
     });
     return;
   }
@@ -3940,10 +3937,7 @@ function renderSearchTab(query = '') {
       </div>`).join('');
   }
   if (!html) html = '<div class="empty">No cities match.</div>';
-  container.innerHTML = html;
-  container.querySelectorAll('.city-row').forEach(row => {
-    row.addEventListener('click', () => switchToCity(row.dataset.slug));
-  });
+  container.innerHTML = html;   // row clicks handled by delegation (bound once at init)
 }
 
 function renderBrowseTab() {
@@ -4322,9 +4316,20 @@ document.getElementById('cityPicker').addEventListener('click', (e) => {
 document.querySelectorAll('.tab').forEach(t => {
   t.addEventListener('click', () => switchTab(t.dataset.tab));
 });
+let _citySearchDebounce;
 document.getElementById('citySearchInput').addEventListener('input', e => {
   document.getElementById('citySearchWrap').classList.toggle('has-value', e.target.value.length > 0);
-  renderSearchTab(e.target.value);
+  const v = e.target.value;
+  // Debounce so a burst of typing collapses into ONE render instead of
+  // rebuilding the whole city list every keystroke (was the ~424ms INP source).
+  clearTimeout(_citySearchDebounce);
+  _citySearchDebounce = setTimeout(() => renderSearchTab(v), 120);
+});
+// Row clicks via delegation on the persistent results container — avoids
+// re-attaching a listener to every .city-row on each render.
+document.getElementById('citySearchResults').addEventListener('click', (e) => {
+  const row = e.target.closest('.city-row');
+  if (row && row.dataset.slug) switchToCity(row.dataset.slug);
 });
 document.getElementById('citySearchClear').addEventListener('click', () => {
   const input = document.getElementById('citySearchInput');
