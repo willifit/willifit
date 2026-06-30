@@ -6,12 +6,12 @@
 <meta name="theme-color" content="#0e1116">
 <meta name="color-scheme" content="dark">
 
-<!-- Resource hints: warm the OpenStreetMap tile origins (the map's first
+<!-- Resource hints: warm the Carto basemap tile origins (the map's first
      paint) so LCP isn't gated on cold DNS/TLS.  Leaflet is self-hosted now.
      Plain non-CORS subresources -> no crossorigin. -->
-<link rel="preconnect" href="https://a.tile.openstreetmap.org">
-<link rel="preconnect" href="https://b.tile.openstreetmap.org">
-<link rel="preconnect" href="https://c.tile.openstreetmap.org">
+<link rel="preconnect" href="https://a.basemaps.cartocdn.com">
+<link rel="preconnect" href="https://b.basemaps.cartocdn.com">
+<link rel="preconnect" href="https://c.basemaps.cartocdn.com">
 
 <title>RV &amp; Truck Clearance Heights, AI-Verified | WillIFit.ai</title>
 <meta name="description" content="Will your RV or truck fit? AI-verified clearance heights for parking garages, tunnels, and low bridges across 226 US cities — check before you drive.">
@@ -118,7 +118,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <!-- Security: Content Security Policy. Whitelist matches known resource origins. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.basemaps.cartocdn.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- Cloudflare Web Analytics -->
@@ -643,9 +643,8 @@
 
   .map-container { position: relative; overflow: hidden; }
   #map { width: 100%; height: 100%; background: #0a0d12; }
-  .leaflet-tile {
-    filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) saturate(0.7);
-  }
+  /* Carto Dark Matter tiles are natively dark — no invert filter, which also
+     keeps the Esri satellite layer in true color (the old filter inverted it). */
   .leaflet-container {
     background: #0a0d12 !important;
     font-family: var(--sans) !important;
@@ -3054,9 +3053,9 @@ function initMapOSM() {
   // Two base layers — users toggle via the layer control (top-right of the
   // map).  Street is default; satellite uses Esri World Imagery (free,
   // public, no API key, but requires the attribution string below).
-  const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  const streetLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
-    attribution: '© OpenStreetMap | Willifit beta',
+    attribution: '© OpenStreetMap © CARTO | WillIFit beta',
   });
   const satelliteLayer = L.tileLayer(
     'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
@@ -3976,9 +3975,9 @@ function renderBrowseTab() {
 function initPickerMap() {
   if (state.pickerMap) { state.pickerMap.invalidateSize(); return; }
   state.pickerMap = L.map('pickerMap', { zoomControl: true }).setView([39.5, -98.5], 4);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
-    attribution: '© OpenStreetMap',
+    attribution: '© OpenStreetMap © CARTO',
   }).addTo(state.pickerMap);
   CITY_INDEX.forEach(c => {
     const comingCls = c.status === 'coming' ? 'coming-soon' : '';

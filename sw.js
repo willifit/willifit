@@ -102,7 +102,7 @@ self.addEventListener("fetch", (event) => {
 
   // Third-party tiles / CDNs → network-first, cache fallback
   if (
-    url.hostname.endsWith("tile.openstreetmap.org") ||
+    url.hostname.endsWith("basemaps.cartocdn.com") ||
     url.hostname === "server.arcgisonline.com"  // Esri World Imagery (satellite layer)
   ) {
     event.respondWith(networkFirst(req, DATA_CACHE));
