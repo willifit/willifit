@@ -3614,7 +3614,7 @@ function renderAd(g) {
   return `<div class="ad-title">${ad.title}</div><div class="ad-desc">${ad.desc}</div><a class="ad-cta">${ad.cta}</a>`;
 }
 
-async function switchToCity(slug) {
+async function switchToCity(slug, center) {
   const meta = getCityMeta(slug);
   if (!meta) return;
   if (meta.status === 'coming') {
@@ -3632,7 +3632,26 @@ async function switchToCity(slug) {
   document.getElementById('searchAreaClear').classList.remove('visible');
   document.getElementById('currentCityName').textContent = `${meta.name}, ${meta.state}`;
   document.getElementById('currentCityCount').textContent = `${meta.garage_count} locations`;
-  mapFlyTo(meta.lat, meta.lng, meta.zoom);
+  // Clear any previous "searched address" pin.
+  if (state._searchMarker) { try { state.map.removeLayer(state._searchMarker); } catch (e) {} state._searchMarker = null; }
+  if (center) {
+    // Came from an address search — center on the exact point (not the city
+    // center) and drop a pin so the driver can see where they searched.
+    mapFlyTo(center.lat, center.lng, center.zoom != null ? center.zoom : 14);
+    if (MAP_PROVIDER !== 'google' && state.map) {
+      state._searchMarker = L.marker([center.lat, center.lng], {
+        icon: L.divIcon({
+          className: 'search-pin',
+          html: '<div style="width:16px;height:16px;border-radius:50%;background:#0ea5e9;border:3px solid #fff;box-shadow:0 0 0 2px #0ea5e9, 0 2px 6px rgba(0,0,0,.55)"></div>',
+          iconSize: [22, 22], iconAnchor: [11, 11],
+        }),
+        zIndexOffset: 1000,
+      }).addTo(state.map);
+      if (center.label) state._searchMarker.bindPopup(center.label);
+    }
+  } else {
+    mapFlyTo(meta.lat, meta.lng, meta.zoom);
+  }
   document.getElementById('detail').classList.remove('open');
   renderList();
   renderMarkers();
@@ -3841,6 +3860,27 @@ async function geocodeZip(zip) {
     return null;
   }
 }
+// Free-form address / place geocode (street address, landmark, "City, ST").
+// Reuses Nominatim like geocodeZip; in-memory cached per session.
+const _addrCache = {};
+async function geocodeAddress(query) {
+  const key = query.trim().toLowerCase();
+  if (key in _addrCache) return _addrCache[key];
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&countrycodes=us&format=json&limit=1&addressdetails=1`;
+    const r = await fetch(url, { headers: { 'Accept-Language': 'en' } });
+    if (!r.ok) throw new Error('nominatim ' + r.status);
+    const data = await r.json();
+    if (!data.length) { _addrCache[key] = null; return null; }
+    const d = data[0];
+    const hit = { lat: parseFloat(d.lat), lng: parseFloat(d.lon), label: d.display_name, state: d.address?.state };
+    _addrCache[key] = hit;
+    return hit;
+  } catch (e) {
+    console.warn('geocodeAddress failed:', e);
+    return null;
+  }
+}
 /* Haversine distance between two coords, in km. */
 function _distKm(aLat, aLng, bLat, bLng) {
   const R = 6371;
@@ -3937,7 +3977,40 @@ function renderSearchTab(query = '') {
         <div class="count">coming soon</div>
       </div>`).join('');
   }
-  if (!html) html = '<div class="empty">No cities match.</div>';
+  if (!html) {
+    // No city/state match — try the query as a full street address or place
+    // (e.g. "325 N Maple Dr, Beverly Hills, CA 90210").  Only when it looks
+    // address-like (has a number or comma) so we don't geocode every typo.
+    if (q.length >= 5 && (/\d/.test(q) || q.includes(','))) {
+      container.innerHTML = `<div class="city-section-title">Address</div><div class="empty"><span class="spinner"></span>Looking up &ldquo;${escapeHTML(q)}&rdquo;&hellip;</div>`;
+      geocodeAddress(q).then(hit => {
+        if (renderId !== _searchTabRenderId) return;  // a newer search took over
+        if (!hit) {
+          container.innerHTML = `<div class="city-section-title">Address</div><div class="empty">Couldn&rsquo;t find that address. Try including city + state, or a ZIP code.</div>`;
+          return;
+        }
+        const near = _nearestLiveCity(hit.lat, hit.lng);
+        const short = escapeHTML(hit.label.split(',').slice(0, 3).join(',').trim());
+        let h = `<div class="city-section-title">${short}</div>`;
+        if (near) {
+          const miles = (near.distKm * 0.621371).toFixed(0);
+          h += `<div class="city-row" data-slug="${escapeHTML(near.city.slug)}" data-lat="${hit.lat}" data-lng="${hit.lng}" data-label="${escapeHTML(hit.label)}">
+            <div>
+              <span class="name">Zoom to this address</span>
+              <span class="state">${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}</span>
+              <div class="zip-distance">${miles} mi from ${escapeHTML(near.city.name)} — showing ${escapeHTML(near.city.name)} garages</div>
+            </div>
+            <div class="count">→</div>
+          </div>`;
+        } else {
+          h += `<div class="empty">Found it, but there&rsquo;s no tracked city near there yet.</div>`;
+        }
+        container.innerHTML = h;
+      });
+      return;
+    }
+    html = '<div class="empty">No cities match. Try a city, ZIP, or full address.</div>';
+  }
   container.innerHTML = html;   // row clicks handled by delegation (bound once at init)
 }
 
@@ -4331,7 +4404,18 @@ document.getElementById('citySearchInput').addEventListener('input', e => {
 // re-attaching a listener to every .city-row on each render.
 document.getElementById('citySearchResults').addEventListener('click', (e) => {
   const row = e.target.closest('.city-row');
-  if (row && row.dataset.slug) switchToCity(row.dataset.slug);
+  if (!row || !row.dataset.slug) return;
+  if (row.dataset.lat) {
+    // Address result — switch to the nearest tracked city, then zoom to the point.
+    switchToCity(row.dataset.slug, {
+      lat: parseFloat(row.dataset.lat),
+      lng: parseFloat(row.dataset.lng),
+      zoom: 13,
+      label: row.dataset.label || '',
+    });
+  } else {
+    switchToCity(row.dataset.slug);
+  }
 });
 document.getElementById('citySearchClear').addEventListener('click', () => {
   const input = document.getElementById('citySearchInput');
