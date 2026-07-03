@@ -14,6 +14,140 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
-  "bridges": []
+  "tunnels": [
+    {
+      "id": "osm-w9633532",
+      "name": "10th Street South",
+      "addr": "US 81 Business",
+      "lat": 46.87503,
+      "lng": -96.7941,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w125267425",
+      "name": "2nd Street North",
+      "addr": "2nd Street North",
+      "lat": 46.88117,
+      "lng": -96.78165,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w135999990",
+      "name": "South University Drive",
+      "addr": "US 81 BUS",
+      "lat": 46.87551,
+      "lng": -96.79825,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w184474987",
+      "name": "10th Street North",
+      "addr": "US 81 Business",
+      "lat": 46.88187,
+      "lng": -96.79403,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w42992556",
+      "name": "Low clearance \u2014 3rd Street South",
+      "addr": "3rd Street South",
+      "lat": 46.87403,
+      "lng": -96.77528,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w44191599",
+      "name": "Low clearance \u2014 3rd Street South",
+      "addr": "3rd Street South",
+      "lat": 46.87343,
+      "lng": -96.7761,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w44351631",
+      "name": "Low clearance \u2014 3rd Street South",
+      "addr": "3rd Street South",
+      "lat": 46.87496,
+      "lng": -96.77554,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w905578308",
+      "name": "Low clearance \u2014 2nd Street North",
+      "addr": "2nd Street North",
+      "lat": 46.87461,
+      "lng": -96.7812,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1366052983",
+      "name": "Low clearance \u2014 Center Street",
+      "addr": "Center Street",
+      "lat": 46.8816,
+      "lng": -96.89984,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1366053640",
+      "name": "Low clearance \u2014 9th Street Northwest",
+      "addr": "9th Street Northwest",
+      "lat": 46.88253,
+      "lng": -96.9147,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501129213",
+      "name": "Low clearance \u2014 North University Drive (US 81 Business)",
+      "addr": "US 81 Business",
+      "lat": 46.88245,
+      "lng": -96.7982,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1502799262",
+      "name": "Low clearance \u2014 Albrecht Boulevard",
+      "addr": "Albrecht Boulevard",
+      "lat": 46.89299,
+      "lng": -96.80275,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

@@ -1,1 +1,86 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w170561038",
+      "name": "Red Parking Garage",
+      "addr": "",
+      "lat": 32.83459,
+      "lng": -83.6347,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w170562294",
+      "name": "Orange Parking Garage",
+      "addr": "",
+      "lat": 32.83354,
+      "lng": -83.63453,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "osm-w88471311",
+      "name": "Low clearance \u2014 Martin Luther King Junior Boulevard (US 80;US 129;GA 11)",
+      "addr": "US 80;US 129;GA 11",
+      "lat": 32.83692,
+      "lng": -83.62176,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w958636160",
+      "name": "Low clearance \u2014 Lower Poplar Street",
+      "addr": "Lower Poplar Street",
+      "lat": 32.82785,
+      "lng": -83.61846,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w966557634",
+      "name": "Low clearance \u2014 Jeffersonville Road",
+      "addr": "Jeffersonville Road",
+      "lat": 32.84685,
+      "lng": -83.57904,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w966783195",
+      "name": "Low clearance \u2014 Martin Luther King Junior Boulevard (US 80;US 129;US 41 Business;GA 11;GA 22;GA 49)",
+      "addr": "US 80;US 129;US 41 Business;GA 11;GA 22;GA 49",
+      "lat": 32.82404,
+      "lng": -83.63496,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w966813032",
+      "name": "Low clearance \u2014 Clisby Place",
+      "addr": "Clisby Place",
+      "lat": 32.84119,
+      "lng": -83.65565,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
+}

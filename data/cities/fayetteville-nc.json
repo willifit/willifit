@@ -1,1 +1,42 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-w278563760",
+      "name": "Parking Deck",
+      "addr": "",
+      "lat": 35.05245,
+      "lng": -78.88034,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "tunnels": [
+    {
+      "id": "osm-w1464454683",
+      "name": "North Main Street",
+      "addr": "SR1596",
+      "lat": 34.97475,
+      "lng": -78.94922,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w1457829440",
+      "name": "Low clearance \u2014 Ramsey Street",
+      "addr": "Ramsey Street",
+      "lat": 35.06634,
+      "lng": -78.87878,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
+}

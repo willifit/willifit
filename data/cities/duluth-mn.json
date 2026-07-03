@@ -14,7 +14,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w975552053",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 46.82109,
+      "lng": -92.04443,
+      "height_in": 104,
+      "height_label": "8'8\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-55-B16075500000000",

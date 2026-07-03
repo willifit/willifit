@@ -12,9 +12,45 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: name signals oversized use ('stadium').",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w297458692",
+      "name": "PNG Park, Galactic Ice, & Lakemont Park Parking Garage",
+      "addr": "",
+      "lat": 40.47247,
+      "lng": -78.39398,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w528436683",
+      "name": "Altoona Transportation Center",
+      "addr": "",
+      "lat": 40.51483,
+      "lng": -78.40158,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w12066386",
+      "name": "Mill Run Road",
+      "addr": "Mill Run Road",
+      "lat": 40.5019,
+      "lng": -78.424,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-42-000000000005962",
@@ -26,6 +62,17 @@
       "height_label": "14'11\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1898",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w557815512",
+      "name": "Low clearance \u2014 PA 764",
+      "addr": "PA 764",
+      "lat": 40.44474,
+      "lng": -78.43339,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

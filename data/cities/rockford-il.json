@@ -1,1 +1,216 @@
-{"garages":[],"tunnels":[],"bridges":[]}
+{
+  "garages": [
+    {
+      "id": "osm-n11046683766",
+      "name": "Cherry Valley School",
+      "addr": "",
+      "lat": 42.23346,
+      "lng": -88.98319,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-n13527614758",
+      "name": "Rockford Park District",
+      "addr": "",
+      "lat": 42.25929,
+      "lng": -89.13135,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-n13527614761",
+      "name": "Rockford Park District",
+      "addr": "",
+      "lat": 42.26128,
+      "lng": -89.13029,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-n13527614767",
+      "name": "Rockford Park District",
+      "addr": "",
+      "lat": 42.25814,
+      "lng": -89.13308,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w70998456",
+      "name": "Metro Centre Parking Ramp",
+      "addr": "",
+      "lat": 42.27067,
+      "lng": -89.09746,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w773828610",
+      "name": "Metro Garage",
+      "addr": "",
+      "lat": 42.27165,
+      "lng": -89.09469,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "297 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w823889374",
+      "name": "Wyman\u2010 South",
+      "addr": "",
+      "lat": 42.27057,
+      "lng": -89.09455,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "329 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1193052717",
+      "name": "Rockford Park District",
+      "addr": "",
+      "lat": 42.26794,
+      "lng": -88.95955,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1246181351",
+      "name": "Seversen Dells State Park",
+      "addr": "",
+      "lat": 42.21324,
+      "lng": -89.20424,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1430666606",
+      "name": "City of Rockford",
+      "addr": "",
+      "lat": 42.26878,
+      "lng": -89.09721,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "23 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1473577641",
+      "name": "Schnucks",
+      "addr": "",
+      "lat": 42.22793,
+      "lng": -89.06938,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "tunnels": [],
+  "bridges": [
+    {
+      "id": "osm-w1413944641",
+      "name": "Low clearance \u2014 Broadway",
+      "addr": "Broadway",
+      "lat": 42.2525,
+      "lng": -89.06408,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1413944736",
+      "name": "Low clearance \u2014 20th Street",
+      "addr": "20th Street",
+      "lat": 42.24361,
+      "lng": -89.05753,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1423445483",
+      "name": "Low clearance \u2014 North Madison Street",
+      "addr": "North Madison Street",
+      "lat": 42.27057,
+      "lng": -89.08856,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1424237323",
+      "name": "Low clearance \u2014 Tay Street",
+      "addr": "Tay Street",
+      "lat": 42.2686,
+      "lng": -89.10938,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1424237646",
+      "name": "Low clearance \u2014 9th Street",
+      "addr": "9th Street",
+      "lat": 42.25847,
+      "lng": -89.07694,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1494240446",
+      "name": "Low clearance \u2014 Spring Creek Road",
+      "addr": "Spring Creek Road",
+      "lat": 42.28877,
+      "lng": -89.06108,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1494358705",
+      "name": "Low clearance \u2014 Gleasman Road",
+      "addr": "Gleasman Road",
+      "lat": 42.39799,
+      "lng": -89.04623,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
+}

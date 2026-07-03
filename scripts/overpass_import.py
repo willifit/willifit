@@ -273,7 +273,7 @@ def element_latlng(el: dict) -> Optional[tuple]:
     return None
 
 
-def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min_capacity: int = 0) -> Optional[dict]:
+def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min_capacity: int = 0, named_only: bool = False) -> Optional[dict]:
     """Turn an OSM element into our garage schema. Returns None if we should skip."""
     tags = el.get("tags", {}) or {}
 
@@ -301,6 +301,10 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
     oversized = is_surface
 
     name = tags.get("name") or tags.get("operator") or tags.get("ref")
+    if named_only and (is_surface or not name):
+        # "named garages" scope — keep only covered structures with a real name,
+        # skipping surface lots and would-be "Unnamed parking structure" entries.
+        return None
     if not name:
         # Generic fallback — don't add un-named non-garage surface lots (too noisy).
         if is_surface:
@@ -583,6 +587,7 @@ def import_city(
     verified_only: bool = False,
     min_capacity: int = 0,
     types: Optional[set] = None,
+    named_only: bool = False,
 ) -> dict:
     if types is None:
         types = {"garages", "tunnels", "bridges"}
@@ -596,7 +601,7 @@ def import_city(
         q = build_query(city["lat"], city["lng"], radius)
         # Garages use the richer normalizer with verified_only / min_capacity
         def gnorm(el):
-            return normalize_element(el, slug, verified_only=verified_only, min_capacity=min_capacity)
+            return normalize_element(el, slug, verified_only=verified_only, min_capacity=min_capacity, named_only=named_only)
         res = _run_pass(slug, "garages", q, gnorm, "garages", dry_run)
         summary["garages"] = res
         time.sleep(1.0)
@@ -631,6 +636,9 @@ def main():
                     help="Skip entries whose capacity tag is < N. Named garages with no capacity still pass.")
     ap.add_argument("--types", default="garages,tunnels,bridges",
                     help="Comma-separated: garages, tunnels, bridges. Default: all three.")
+    ap.add_argument("--named-garages", action="store_true",
+                    help="Only import garages that are covered structures with a real "
+                         "name (skip surface lots and 'Unnamed parking structure').")
     args = ap.parse_args()
 
     if not args.slug and not args.all and not args.slugs:
@@ -674,6 +682,7 @@ def main():
                 verified_only=args.verified_only,
                 min_capacity=args.min_capacity,
                 types=types,
+                named_only=args.named_garages,
             ))
         except KeyboardInterrupt:
             print("\nInterrupted.")

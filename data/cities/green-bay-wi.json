@@ -15,6 +15,78 @@
       "entrance_lat": 44.4067928,
       "entrance_lng": -87.8768384,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-n6241997180",
+      "name": "St. Norbert College",
+      "addr": "",
+      "lat": 44.44492,
+      "lng": -88.07299,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w231207986",
+      "name": "Cherry Street Ramp",
+      "addr": "",
+      "lat": 44.51468,
+      "lng": -88.01537,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w231207990",
+      "name": "Main Street Ramp",
+      "addr": "",
+      "lat": 44.51731,
+      "lng": -88.01219,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w409157320",
+      "name": "River Ramp",
+      "addr": "",
+      "lat": 44.51672,
+      "lng": -88.01489,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w505123858",
+      "name": "Pine Street Ramp",
+      "addr": "",
+      "lat": 44.51577,
+      "lng": -88.01124,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1172265885",
+      "name": "Private",
+      "addr": "",
+      "lat": 44.56524,
+      "lng": -88.07724,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "0 spaces; free",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
