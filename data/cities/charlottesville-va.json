@@ -14,7 +14,52 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w283832166",
+      "name": "Polo Grounds Road",
+      "addr": "Polo Grounds Road",
+      "lat": 38.09682,
+      "lng": -78.43414,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w917807220",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.03227,
+      "lng": -78.49458,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1420049465",
+      "name": "Old Ivy Road",
+      "addr": "SR 601",
+      "lat": 38.04484,
+      "lng": -78.51463,
+      "height_in": 133,
+      "height_label": "11'1\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1420052887",
+      "name": "Henry Avenue",
+      "addr": "Henry Avenue",
+      "lat": 38.03752,
+      "lng": -78.48431,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-51-000000000030142",
@@ -26,6 +71,116 @@
       "height_label": "14'1\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2001; bridge carries ROUTE 20 / 9TH ST",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w20560611",
+      "name": "Low clearance \u2014 8th Street Northwest",
+      "addr": "8th Street Northwest",
+      "lat": 38.03321,
+      "lng": -78.48963,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w283832170",
+      "name": "Low clearance \u2014 Polo Grounds Road",
+      "addr": "Polo Grounds Road",
+      "lat": 38.09997,
+      "lng": -78.42683,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w395709841",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 38.03261,
+      "lng": -78.49422,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w396519155",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 38.03571,
+      "lng": -78.48588,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w656867823",
+      "name": "Low clearance \u2014 Emmet Street South (US 29 BUS)",
+      "addr": "US 29 BUS",
+      "lat": 38.03371,
+      "lng": -78.50889,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1008541780",
+      "name": "Low clearance \u2014 4th Street Southeast",
+      "addr": "4th Street Southeast",
+      "lat": 38.02884,
+      "lng": -78.47986,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1420049255",
+      "name": "Low clearance \u2014 Emmet Street North (US 29 BUS)",
+      "addr": "US 29 BUS",
+      "lat": 38.04146,
+      "lng": -78.50607,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1420050022",
+      "name": "Low clearance \u2014 Old Garth Road",
+      "addr": "Old Garth Road",
+      "lat": 38.05011,
+      "lng": -78.52644,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1420051890",
+      "name": "Low clearance \u2014 University Avenue (US 250 BUS)",
+      "addr": "US 250 BUS",
+      "lat": 38.03406,
+      "lng": -78.49962,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1420054085",
+      "name": "Low clearance \u2014 Franklin Street",
+      "addr": "Franklin Street",
+      "lat": 38.0226,
+      "lng": -78.46211,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -15,8 +15,92 @@
       "entrance_lat": 34.2780861,
       "entrance_lng": -77.8152038,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w309001925",
+      "name": "Parking Deck (Visitor Parking)",
+      "addr": "",
+      "lat": 34.22623,
+      "lng": -77.86611,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w398836765",
+      "name": "City of Wilmington 2nd Street Parking Deck",
+      "addr": "114 North 2nd Street",
+      "lat": 34.23708,
+      "lng": -77.94716,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w591941304",
+      "name": "Convention Center Parking Deck",
+      "addr": "515 Nutt Street",
+      "lat": 34.24221,
+      "lng": -77.951,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "580 spaces; paid; hrs: 24/7",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w591941305",
+      "name": "Lanier Parking",
+      "addr": "515 Nutt Street",
+      "lat": 34.23589,
+      "lng": -77.94795,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "580 spaces; paid; hrs: 24/7",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w709675786",
+      "name": "Cape Fear Community College",
+      "addr": "",
+      "lat": 34.24284,
+      "lng": -77.94762,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
-  "bridges": []
+  "tunnels": [
+    {
+      "id": "osm-w1133160931",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 34.26697,
+      "lng": -77.92093,
+      "height_in": 216,
+      "height_label": "18'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w1463729587",
+      "name": "Low clearance \u2014 McRae Street",
+      "addr": "McRae Street",
+      "lat": 34.2526,
+      "lng": -77.9396,
+      "height_in": 155,
+      "height_label": "12'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

@@ -12,6 +12,54 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w316893550",
+      "name": "Fiesta Palm Springs Parking",
+      "addr": "",
+      "lat": 33.82205,
+      "lng": -116.54063,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w316896156",
+      "name": "Downtown Parking",
+      "addr": "",
+      "lat": 33.82,
+      "lng": -116.54589,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w967066221",
+      "name": "Palm Springs Public Parking Garage",
+      "addr": "",
+      "lat": 33.82494,
+      "lng": -116.54882,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1123183280",
+      "name": "Trixie Motel",
+      "addr": "",
+      "lat": 33.84315,
+      "lng": -116.54798,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

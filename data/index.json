@@ -865,7 +865,7 @@
     "lat": 42.9956,
     "lng": -71.4548,
     "zoom": 12,
-    "garage_count": 2,
+    "garage_count": 15,
     "status": "live"
   },
   {
@@ -1657,7 +1657,7 @@
     "lat": 34.2257,
     "lng": -77.9447,
     "zoom": 12,
-    "garage_count": 1,
+    "garage_count": 6,
     "status": "live"
   },
   {
@@ -2108,7 +2108,7 @@
     "lat": 33.8303,
     "lng": -116.5453,
     "zoom": 13,
-    "garage_count": 1,
+    "garage_count": 5,
     "status": "live"
   },
   {

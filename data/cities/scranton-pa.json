@@ -14,7 +14,118 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w10895385",
+      "name": "Oakford Road",
+      "addr": "Oakford Road",
+      "lat": 41.51101,
+      "lng": -75.71422,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w173222498",
+      "name": "Ash Street",
+      "addr": "Ash Street",
+      "lat": 41.40788,
+      "lng": -75.63471,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w173226652",
+      "name": "South Washington Avenue",
+      "addr": "South Washington Avenue",
+      "lat": 41.40608,
+      "lng": -75.66579,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w173228106",
+      "name": "North 7th Avenue",
+      "addr": "North 7th Avenue",
+      "lat": 41.41142,
+      "lng": -75.67342,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w178160519",
+      "name": "Market Street",
+      "addr": "PA 690",
+      "lat": 41.33618,
+      "lng": -75.51791,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w369948868",
+      "name": "Gravel Pond Road",
+      "addr": "Gravel Pond Road",
+      "lat": 41.51059,
+      "lng": -75.73315,
+      "height_in": 125,
+      "height_label": "10'5\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w478359990",
+      "name": "East Market Street",
+      "addr": "East Market Street",
+      "lat": 41.43562,
+      "lng": -75.6526,
+      "height_in": 134,
+      "height_label": "11'2\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w482495614",
+      "name": "Shady Lane Road",
+      "addr": "Shady Lane Road",
+      "lat": 41.47383,
+      "lng": -75.68496,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1502063742",
+      "name": "Wayne Street",
+      "addr": "Wayne Street",
+      "lat": 41.4952,
+      "lng": -75.53879,
+      "height_in": 121,
+      "height_label": "10'1\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1502068825",
+      "name": "Delaware Street",
+      "addr": "Delaware Street",
+      "lat": 41.52565,
+      "lng": -75.54547,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-42-000000000020839",
@@ -26,6 +137,402 @@
       "height_label": "11'9\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1904",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w163903812",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.31528,
+      "lng": -75.75888,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w173217001",
+      "name": "Low clearance \u2014 Moosic Street (PA 307)",
+      "addr": "PA 307",
+      "lat": 41.39512,
+      "lng": -75.64568,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w174827879",
+      "name": "Low clearance \u2014 Erie Street",
+      "addr": "Erie Street",
+      "lat": 41.55042,
+      "lng": -75.52445,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w175748348",
+      "name": "Low clearance \u2014 PA 315",
+      "addr": "PA 315",
+      "lat": 41.31204,
+      "lng": -75.75842,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w186141090",
+      "name": "Low clearance \u2014 US 11;PA 307",
+      "addr": "US 11;PA 307",
+      "lat": 41.40531,
+      "lng": -75.66024,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w311045491",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.31534,
+      "lng": -75.7578,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w311045494",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.31432,
+      "lng": -75.75913,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w325030828",
+      "name": "Low clearance \u2014 North Main Avenue",
+      "addr": "North Main Avenue",
+      "lat": 41.42509,
+      "lng": -75.67144,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w459690618",
+      "name": "Low clearance \u2014 West Main Street (PA 632)",
+      "addr": "PA 632",
+      "lat": 41.53494,
+      "lng": -75.73786,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w459847817",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 41.48243,
+      "lng": -75.68276,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w459886777",
+      "name": "Low clearance \u2014 Main Avenue",
+      "addr": "Main Avenue",
+      "lat": 41.44994,
+      "lng": -75.63821,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w461401442",
+      "name": "Low clearance \u2014 Northern Boulevard (US 11)",
+      "addr": "US 11",
+      "lat": 41.45522,
+      "lng": -75.66345,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w461424611",
+      "name": "Low clearance \u2014 Rushbrook Street (PA 107)",
+      "addr": "PA 107",
+      "lat": 41.53497,
+      "lng": -75.55124,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w481067899",
+      "name": "Low clearance \u2014 Main Street",
+      "addr": "Main Street",
+      "lat": 41.32316,
+      "lng": -75.75661,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w481807718",
+      "name": "Low clearance \u2014 Birney Avenue (US 11)",
+      "addr": "US 11",
+      "lat": 41.35583,
+      "lng": -75.72258,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w482254325",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 41.40319,
+      "lng": -75.6598,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w482322163",
+      "name": "Low clearance \u2014 North 7th Avenue",
+      "addr": "North 7th Avenue",
+      "lat": 41.41569,
+      "lng": -75.66934,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w681883327",
+      "name": "Low clearance \u2014 South Washington Avenue",
+      "addr": "South Washington Avenue",
+      "lat": 41.40457,
+      "lng": -75.66742,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w681884809",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 41.40322,
+      "lng": -75.66074,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w693761715",
+      "name": "Low clearance \u2014 Luzerne Street",
+      "addr": "Luzerne Street",
+      "lat": 41.40486,
+      "lng": -75.67732,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w693793918",
+      "name": "Low clearance \u2014 Constitution Avenue",
+      "addr": "Constitution Avenue",
+      "lat": 41.47551,
+      "lng": -75.57503,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w693803392",
+      "name": "Low clearance \u2014 Oak Street",
+      "addr": "Oak Street",
+      "lat": 41.39246,
+      "lng": -75.70202,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w694296560",
+      "name": "Low clearance \u2014 Lonesome Road",
+      "addr": "Lonesome Road",
+      "lat": 41.35902,
+      "lng": -75.74637,
+      "height_in": 137,
+      "height_label": "11'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w694296562",
+      "name": "Low clearance \u2014 York Avenue",
+      "addr": "York Avenue",
+      "lat": 41.34571,
+      "lng": -75.74539,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w694296564",
+      "name": "Low clearance \u2014 Airport Road (PA 315)",
+      "addr": "PA 315",
+      "lat": 41.33463,
+      "lng": -75.73743,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w694533110",
+      "name": "Low clearance \u2014 Green Ridge Street",
+      "addr": "Green Ridge Street",
+      "lat": 41.43015,
+      "lng": -75.654,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w694533112",
+      "name": "Low clearance \u2014 Theodore Street",
+      "addr": "Theodore Street",
+      "lat": 41.43761,
+      "lng": -75.66767,
+      "height_in": 134,
+      "height_label": "11'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w923758028",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.31456,
+      "lng": -75.75753,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w948864260",
+      "name": "Low clearance \u2014 PA 315",
+      "addr": "PA 315",
+      "lat": 41.30365,
+      "lng": -75.76766,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1268996679",
+      "name": "Low clearance \u2014 Ash Street",
+      "addr": "Ash Street",
+      "lat": 41.40837,
+      "lng": -75.63572,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1322732622",
+      "name": "Low clearance \u2014 Court Street",
+      "addr": "Court Street",
+      "lat": 41.43132,
+      "lng": -75.67054,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1322734827",
+      "name": "Low clearance \u2014 Capouse Avenue",
+      "addr": "Capouse Avenue",
+      "lat": 41.41428,
+      "lng": -75.6611,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1322734832",
+      "name": "Low clearance \u2014 West Olive Street",
+      "addr": "West Olive Street",
+      "lat": 41.41483,
+      "lng": -75.66202,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1322735760",
+      "name": "Low clearance \u2014 South Main Street",
+      "addr": "South Main Street",
+      "lat": 41.34709,
+      "lng": -75.77588,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1329686766",
+      "name": "Low clearance \u2014 PA 435",
+      "addr": "PA 435",
+      "lat": 41.39999,
+      "lng": -75.58277,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1355820088",
+      "name": "Low clearance \u2014 McAlpine Street",
+      "addr": "McAlpine Street",
+      "lat": 41.33778,
+      "lng": -75.75353,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -26,6 +26,72 @@
       "height_label": "13'6\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1969; bridge carries I-80 EBL",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w402834589",
+      "name": "Low clearance \u2014 Snowy Range Road (WY 130;WY 230)",
+      "addr": "WY 130;WY 230",
+      "lat": 41.30901,
+      "lng": -105.61422,
+      "height_in": 209,
+      "height_label": "17'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531723246",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
+      "addr": "I 80",
+      "lat": 41.29322,
+      "lng": -105.57894,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531724342",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
+      "addr": "I 80",
+      "lat": 41.29125,
+      "lng": -105.53918,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531732039",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
+      "addr": "I 80",
+      "lat": 41.29105,
+      "lng": -105.52853,
+      "height_in": 214,
+      "height_label": "17'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1532823871",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
+      "addr": "I 80",
+      "lat": 41.32588,
+      "lng": -105.61585,
+      "height_in": 205,
+      "height_label": "17'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1532824417",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
+      "addr": "I 80",
+      "lat": 41.32822,
+      "lng": -105.61578,
+      "height_in": 204,
+      "height_label": "17'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

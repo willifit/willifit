@@ -1,6 +1,29 @@
 {
   "garages": [],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w5830319",
+      "name": "South 21st Street",
+      "addr": "South 21st Street",
+      "lat": 45.78498,
+      "lng": -108.49591,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1431076079",
+      "name": "Johnson Lane",
+      "addr": "Johnson Lane",
+      "lat": 45.8152,
+      "lng": -108.414,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-30-L56303000+08001",
@@ -12,6 +35,28 @@
       "height_label": "13'1\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1997",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1431076078",
+      "name": "Low clearance \u2014 Johnson Lane",
+      "addr": "Johnson Lane",
+      "lat": 45.81505,
+      "lng": -108.414,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1502886586",
+      "name": "Low clearance \u2014 Minnesota Avenue",
+      "addr": "Minnesota Avenue",
+      "lat": 45.78972,
+      "lng": -108.48613,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }
