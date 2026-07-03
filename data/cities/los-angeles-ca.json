@@ -1098,7 +1098,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.1371786,
       "entrance_lng": -118.3592483,
-      "entrance_source": "OSM parking_entrance node 8573468739"
+      "entrance_source": "OSM parking_entrance node 8573468739",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w253505186",
@@ -1321,7 +1323,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.064404,
       "entrance_lng": -118.3989366,
-      "entrance_source": "OSM parking_entrance node 7357390462"
+      "entrance_source": "OSM parking_entrance node 7357390462",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w390776981",
@@ -1351,7 +1355,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0263854,
       "entrance_lng": -118.4844951,
-      "entrance_source": "OSM parking_entrance node 12060144628"
+      "entrance_source": "OSM parking_entrance node 12060144628",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w391295096",
@@ -1366,7 +1372,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.034729,
       "entrance_lng": -118.435824,
-      "entrance_source": "OSM parking_entrance node 4082202605"
+      "entrance_source": "OSM parking_entrance node 4082202605",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w401613613",
@@ -1566,14 +1574,18 @@
       "addr": "",
       "lat": 33.9433,
       "lng": -118.40513,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid OSM-imported 18'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid OSM-imported 18'0\" was building height, not clearance.\nVerified 2026-07-03 from sign reading \"MAX. CLEARANCE 7'\" (pano V68sr9jMpUj4gYGJITDfZA, heading 72\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 33.9429934,
       "entrance_lng": -118.4054813,
-      "entrance_source": "OSM parking_entrance node 8897530614"
+      "entrance_source": "OSM parking_entrance node 8897530614",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "V68sr9jMpUj4gYGJITDfZA",
+      "pano_heading": 72
     },
     {
       "id": "osm-w413226421",
@@ -1602,7 +1614,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.9463166,
       "entrance_lng": -118.3899788,
-      "entrance_source": "OSM parking_entrance node 9969243488"
+      "entrance_source": "OSM parking_entrance node 9969243488",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w413226585",
@@ -1702,7 +1716,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.981367,
       "entrance_lng": -118.4406343,
-      "entrance_source": "OSM parking_entrance node 12213537146"
+      "entrance_source": "OSM parking_entrance node 12213537146",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w419967624",
@@ -1746,7 +1762,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0773338,
       "entrance_lng": -118.261457,
-      "entrance_source": "OSM parking_entrance node 11233181463"
+      "entrance_source": "OSM parking_entrance node 11233181463",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w419974409",
@@ -1927,7 +1945,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.9879153,
       "entrance_lng": -118.3835224,
-      "entrance_source": "OSM parking_entrance node 11729955750"
+      "entrance_source": "OSM parking_entrance node 11729955750",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w421953361",
@@ -2016,7 +2036,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0453239,
       "entrance_lng": -118.4430128,
-      "entrance_source": "OSM parking_entrance node 10713201643"
+      "entrance_source": "OSM parking_entrance node 10713201643",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w422876616",
@@ -2031,7 +2053,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0774079,
       "entrance_lng": -118.43968,
-      "entrance_source": "OSM parking_entrance node 2406058253"
+      "entrance_source": "OSM parking_entrance node 2406058253",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w422876619",
@@ -2205,7 +2229,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid OSM-imported 14'4\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w424945754",
@@ -2263,7 +2289,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.9028141,
       "entrance_lng": -118.389561,
-      "entrance_source": "OSM parking_entrance node 9121207288"
+      "entrance_source": "OSM parking_entrance node 9121207288",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w424946226",
@@ -2290,7 +2318,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0371623,
       "entrance_lng": -118.4409914,
-      "entrance_source": "OSM parking_entrance node 11441626885"
+      "entrance_source": "OSM parking_entrance node 11441626885",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w425107087",
@@ -2525,7 +2555,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0561639,
       "entrance_lng": -118.2628001,
-      "entrance_source": "OSM parking_entrance node 11386700813"
+      "entrance_source": "OSM parking_entrance node 11386700813",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w426371952",
@@ -2589,7 +2621,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 14'6\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w427628913",
@@ -2662,7 +2696,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0445228,
       "entrance_lng": -118.2382582,
-      "entrance_source": "OSM parking_entrance node 8309266432"
+      "entrance_source": "OSM parking_entrance node 8309266432",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w427822150",
@@ -2674,7 +2710,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 17'5\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w427942769",
@@ -2689,7 +2727,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0485667,
       "entrance_lng": -118.2500803,
-      "entrance_source": "OSM parking_entrance node 2164239094"
+      "entrance_source": "OSM parking_entrance node 2164239094",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w427942862",
@@ -2697,14 +2737,18 @@
       "addr": "730 South Broadway",
       "lat": 34.04419,
       "lng": -118.25384,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "paid OSM-imported 15'8\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid OSM-imported 15'8\" was building height, not clearance.\nVerified 2026-07-03 from sign reading \"Clearance 8' 6\"\" (pano 9JNdswLzx6FU37gPD7rnWA, heading 108\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 34.0443652,
       "entrance_lng": -118.2539878,
-      "entrance_source": "OSM parking_entrance node 2164029975"
+      "entrance_source": "OSM parking_entrance node 2164029975",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "9JNdswLzx6FU37gPD7rnWA",
+      "pano_heading": 108
     },
     {
       "id": "osm-w427942890",
@@ -2783,7 +2827,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0453962,
       "entrance_lng": -118.2690657,
-      "entrance_source": "OSM parking_entrance node 4837719788"
+      "entrance_source": "OSM parking_entrance node 4837719788",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w428021873",
@@ -2827,7 +2873,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 19'2\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w428562214",
@@ -2886,7 +2934,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 13'7\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w428955573",
@@ -2947,7 +2997,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0669054,
       "entrance_lng": -118.236593,
-      "entrance_source": "OSM parking_entrance node 8409457181"
+      "entrance_source": "OSM parking_entrance node 8409457181",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w429331829",
@@ -2962,7 +3014,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0384594,
       "entrance_lng": -118.373242,
-      "entrance_source": "OSM parking_entrance node 8716702966"
+      "entrance_source": "OSM parking_entrance node 8716702966",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w429331917",
@@ -3068,7 +3122,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.2208432,
       "entrance_lng": -118.429632,
-      "entrance_source": "OSM parking_entrance node 9956626394"
+      "entrance_source": "OSM parking_entrance node 9956626394",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w431672551",
@@ -3095,7 +3151,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.2202036,
       "entrance_lng": -118.4308715,
-      "entrance_source": "OSM parking_entrance node 2052368208"
+      "entrance_source": "OSM parking_entrance node 2052368208",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w432088021",
@@ -3169,7 +3227,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.1566674,
       "entrance_lng": -118.4345006,
-      "entrance_source": "OSM parking_entrance node 3785111590"
+      "entrance_source": "OSM parking_entrance node 3785111590",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w432313551",
@@ -3232,7 +3292,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.0144138,
       "entrance_lng": -118.494199,
-      "entrance_source": "OSM parking_entrance node 4700732587"
+      "entrance_source": "OSM parking_entrance node 4700732587",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w440812820",
@@ -3536,7 +3598,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.9301689,
       "entrance_lng": -118.159732,
-      "entrance_source": "OSM parking_entrance node 11238070548"
+      "entrance_source": "OSM parking_entrance node 11238070548",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w456647551",
@@ -3681,7 +3745,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 34.1899822,
       "entrance_lng": -118.3356847,
-      "entrance_source": "OSM parking_entrance node 3771129586"
+      "entrance_source": "OSM parking_entrance node 3771129586",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1343543618",
@@ -3696,7 +3762,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.9054256,
       "entrance_lng": -118.3868082,
-      "entrance_source": "OSM parking_entrance node 12431384237"
+      "entrance_source": "OSM parking_entrance node 12431384237",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r6168068",
