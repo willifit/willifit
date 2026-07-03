@@ -78,18 +78,31 @@ LOG_PATH = REPO_ROOT / "data" / "auto_verify.log"
 GOOGLE_KEY = os.environ.get("GOOGLE_MAPS_API_KEY") or os.environ.get("GOOGLE_STREETVIEW_KEY")
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
-DEFAULT_MODEL = "claude-haiku-4-5"
+DEFAULT_DETECT_MODEL = "claude-haiku-4-5"   # stage 1: cheap "is a sign visible?"
+DEFAULT_READ_MODEL = "claude-sonnet-4-6"    # stage 2: accurate transcription
+DEFAULT_MODEL = DEFAULT_DETECT_MODEL        # legacy --single-model default
 IMG_SIZE = "640x640"
 FOV = 75                     # wide enough to catch signs in peripheral
+FOV_READ = 50                # tighter re-shoot for the transcription stage
 PITCH = 10                   # slight upward tilt
-HEADINGS_8 = [0, 45, 90, 135, 180, 225, 270, 315]  # 45° intervals
+HEADINGS_8 = [0, 45, 90, 135, 180, 225, 270, 315]  # legacy full-circle
 
-MAX_PANOS_PER_GARAGE = 4     # budget: up to 4 Claude calls per garage
-MAX_PANO_DISTANCE_M = 50.0   # widened from 30 — willing to scan further
+# Aimed arc: the camera only needs to look AT the garage, not behind itself.
+# 5 shots covering bearing±90° = 37.5% fewer image tokens than the 8-shot
+# full circle, with negligible recall loss (entrance signs face the street).
+ARC_OFFSETS = [-90, -45, 0, 45, 90]
+
+MAX_PANOS_PER_GARAGE = 3     # audit: the 4th-closest pano rarely paid off
+MAX_PANO_DISTANCE_M = 35.0   # audit: past ~35m signs are unreadable — the
+                             # 35-50m band was pure spend, no verified yield
 OFFSET_PROBE_M = 15.0
 
-# Rough costs in USD (Haiku vision pricing; update if model changes)
-COST_PER_CLAUDE_CALL = 0.024
+# Rough per-call costs (USD) for the --max-cost gate — an order-of-magnitude
+# guardrail, not a ledger.  detect = 5 images on the cheap model;
+# read = up to 4 images on the accurate model; legacy = 8-image single-model.
+COST_DETECT_CALL = 0.008
+COST_READ_CALL = 0.020
+COST_PER_CLAUDE_CALL = 0.030   # legacy single-model path
 
 SV_STATIC = "https://maps.googleapis.com/maps/api/streetview"
 SV_META   = "https://maps.googleapis.com/maps/api/streetview/metadata"
@@ -227,10 +240,9 @@ def fetch_sv_image(pano_id, heading, pitch=PITCH, fov=FOV):
 # Claude Vision — one call scores all 8 headings from one pano
 # ---------------------------------------------------------------------------
 
-PROMPT_SCAN_PANO = """You are looking at 8 Google Street View images captured from a SINGLE fixed
-camera location (pano_id: {pano_id}), rotating through 8 compass headings
-spaced 45° apart.  Each image is labeled with its heading in degrees (0°=N,
-90°=E, 180°=S, 270°=W).
+PROMPT_SCAN_PANO = """You are looking at Google Street View images captured from a SINGLE fixed
+camera location (pano_id: {pano_id}) at several compass headings.  Each image
+is labeled with its heading in degrees (0°=N, 90°=E, 180°=S, 270°=W).
 
 The camera is near a parking garage / structure / tunnel / bridge entrance.
 Your job is to find EVERY distinct posted vehicle-height CLEARANCE sign
@@ -301,6 +313,27 @@ If no clearance signs are visible in any image, return {{"signs": [], "notes": "
 """
 
 
+# Stage-1 prompt: binary detection only — no transcription.  Deliberately
+# recall-biased: a false "yes" costs one cheap read-stage call; a false "no"
+# loses the garage.  The strict transcription + digit-match guard downstream
+# filters false positives.
+PROMPT_DETECT = """You are looking at Google Street View images from ONE camera location near a
+parking garage.  Each image is labeled with its compass heading in degrees.
+
+Question: is a posted VEHICLE CLEARANCE HEIGHT sign visible in ANY image?
+That means: a sign or clearance bar showing a height number in feet/inches
+("8'2\"", "CLEARANCE 7' 0\"", "MAX HEIGHT 6FT 8IN"), usually at a garage
+entrance.  Ignore speed limits, parking rates, street names, weight limits.
+
+If you are UNSURE whether a sign is a clearance sign (too small/blurry to
+read), answer found=true anyway and include its heading — a second, closer
+pass will read it.
+
+Return ONLY JSON: {"found": boolean, "headings": [numbers], "confidence": "low"|"medium"|"high"}
+headings = the labeled heading(s) of image(s) showing a possible clearance sign (empty if none).
+"""
+
+
 def _anthropic_client():
     try:
         import anthropic  # noqa
@@ -312,6 +345,54 @@ def _anthropic_client():
         print("ERROR: ANTHROPIC_API_KEY not set", file=sys.stderr)
         sys.exit(2)
     return anthropic.Anthropic(api_key=ANTHROPIC_KEY)
+
+
+def detect_pano_with_claude(images_by_heading, model):
+    """Stage 1: cheap binary detection.  Returns {found, headings, confidence}
+    or None on API/parse failure (caller treats None as found=True so a flaky
+    detect never silently drops a garage — the read stage re-checks anyway)."""
+    client = _anthropic_client()
+    content = []
+    for heading, img in images_by_heading:
+        content.append({"type": "text", "text": f"Heading {heading}°:"})
+        content.append({
+            "type": "image",
+            "source": {
+                "type": "base64",
+                "media_type": "image/jpeg",
+                "data": base64.standard_b64encode(img).decode("ascii"),
+            },
+        })
+    content.append({"type": "text", "text": PROMPT_DETECT})
+    try:
+        resp = client.messages.create(
+            model=model,
+            max_tokens=200,
+            messages=[{"role": "user", "content": content}],
+        )
+    except Exception as e:
+        print(f"    detect API error: {e}", file=sys.stderr)
+        return None
+    text = ""
+    for block in resp.content:
+        if getattr(block, "type", None) == "text":
+            text = block.text
+            break
+    text = re.sub(r"^\s*```(?:json)?\s*|\s*```\s*$", "", text.strip())
+    try:
+        d = json.loads(text)
+    except json.JSONDecodeError:
+        m = re.search(r"\{.*\}", text, flags=re.DOTALL)
+        if not m:
+            return None
+        try:
+            d = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            return None
+    if not isinstance(d, dict) or "found" not in d:
+        return None
+    d.setdefault("headings", [])
+    return d
 
 
 def scan_pano_with_claude(pano_id, images_by_heading, model):
@@ -498,10 +579,14 @@ def _height_matches_raw(height_in, raw_text):
     return False
 
 
-def verify_garage(g, model):
-    """Multi-pano scan.  Aggregates every readable clearance sign found
-    across up to MAX_PANOS_PER_GARAGE panos.  Dedupes by height (within
-    a 1-inch tolerance) and returns:
+def verify_garage(g, detect_model, read_model, single_model=None, thorough=False):
+    """Multi-pano scan.  Two-stage by default: a cheap detect pass per pano
+    ("is a clearance sign visible at all?"), then an accurate transcription
+    pass ONLY on panos/headings that detected something — the audit showed
+    61% of all spend went to full-price 'no sign found' scans.  Pass
+    single_model=<model> for the legacy one-model path.  Aggregates every
+    readable clearance sign found across up to MAX_PANOS_PER_GARAGE panos.
+    Dedupes by height (within a 1-inch tolerance) and returns:
 
         status: "verified" | "no-sign" | "no-pano" | "error"
         claude_calls: int
@@ -542,27 +627,16 @@ def verify_garage(g, model):
                 panos = panos[:MAX_PANOS_PER_GARAGE]
 
     if not panos:
-        return {"status": "no-pano", "claude_calls": 0}
+        return {"status": "no-pano", "claude_calls": 0, "cost_est": 0.0}
 
-    # Scan each pano.  Flatten all returned signs across all panos.
+    # Scan each pano.  Flatten all validated signs across all panos.
     all_signs = []  # list of dicts, each augmented with pano info
-    claude_calls = 0
-    for p in panos:
-        images_by_heading = []
-        for h in HEADINGS_8:
-            img = fetch_sv_image(p["pano_id"], h)
-            if img:
-                images_by_heading.append((h, img))
-        if len(images_by_heading) < 4:
-            continue
+    detect_calls = read_calls = legacy_calls = 0
 
-        print(f"    pano {p['pano_id'][:12]}… (d={p['distance_m']:.1f}m, via={p['via_probe']}) → "
-              f"{len(images_by_heading)} shots, asking Claude…", flush=True)
-        result = scan_pano_with_claude(p["pano_id"], images_by_heading, model)
-        claude_calls += 1
-        if not result:
-            continue
-
+    def _collect_signs(result, p):
+        """Validate a scan result's signs (sanity bound + digit-match guard)
+        and append the survivors to all_signs.  Returns count appended."""
+        added = 0
         for s in (result.get("signs") or []):
             height_in = s.get("height_in")
             raw_text = s.get("raw_text", "") or ""
@@ -588,9 +662,75 @@ def verify_garage(g, model):
                 "conf_rank": CONF_RANK.get(conf, -1),
                 "raw_text": raw_text,
             })
+            added += 1
+        return added
+
+    for p in panos:
+        # Aimed arc at the garage (bearing ±90°) instead of a full circle —
+        # the entrance sign faces the street the camera is on.
+        b = p["bearing_to_target"]
+        arc = [round((b + off) % 360) for off in ARC_OFFSETS]
+        images_by_heading = []
+        for h in arc:
+            img = fetch_sv_image(p["pano_id"], h)
+            if img:
+                images_by_heading.append((h, img))
+        if len(images_by_heading) < 3:
+            continue
+
+        if single_model:
+            print(f"    pano {p['pano_id'][:12]}… (d={p['distance_m']:.1f}m, via={p['via_probe']}) → "
+                  f"{len(images_by_heading)} shots, asking {single_model}…", flush=True)
+            result = scan_pano_with_claude(p["pano_id"], images_by_heading, single_model)
+            legacy_calls += 1
+            if result:
+                _collect_signs(result, p)
+        else:
+            # Stage 1 — cheap detection
+            det = detect_pano_with_claude(images_by_heading, detect_model)
+            detect_calls += 1
+            if det is not None and not det.get("found"):
+                print(f"    pano {p['pano_id'][:12]}… (d={p['distance_m']:.1f}m, via={p['via_probe']}) → "
+                      f"detect: no sign", flush=True)
+                continue
+            # Stage 2 — accurate transcription on the detected heading(s) only.
+            det_headings = [h for h in (det.get("headings") if det else []) or []
+                            if isinstance(h, (int, float))]
+            if det_headings:
+                keep = set()
+                for dh in det_headings:
+                    for (h, _img) in images_by_heading:
+                        diff = abs((h - dh + 180) % 360 - 180)
+                        if diff <= 45:
+                            keep.add(h)
+                read_images = [(h, img) for (h, img) in images_by_heading if h in keep]
+            else:
+                read_images = list(images_by_heading)  # detect unsure — read all
+            # One tighter-FOV re-shoot at the primary detected heading for
+            # readability of small/distant sign text.
+            zoom_h = round(det_headings[0]) if det_headings else round(b % 360)
+            zoom_img = fetch_sv_image(p["pano_id"], zoom_h, fov=FOV_READ)
+            if zoom_img:
+                read_images.append((zoom_h, zoom_img))
+            print(f"    pano {p['pano_id'][:12]}… (d={p['distance_m']:.1f}m, via={p['via_probe']}) → "
+                  f"detect hit, reading {len(read_images)} shot(s) with {read_model}…", flush=True)
+            result = scan_pano_with_claude(p["pano_id"], read_images, read_model)
+            read_calls += 1
+            if result:
+                _collect_signs(result, p)
+
+        # Early exit: once a high-confidence sign is in hand, further panos
+        # rarely add anything (multi-gate facilities excepted — use --thorough).
+        if not thorough and any(s["conf_rank"] >= CONF_RANK["high"] for s in all_signs):
+            break
+
+    claude_calls = detect_calls + read_calls + legacy_calls
+    cost_est = (detect_calls * COST_DETECT_CALL
+                + read_calls * COST_READ_CALL
+                + legacy_calls * COST_PER_CLAUDE_CALL)
 
     if not all_signs:
-        return {"status": "no-sign", "claude_calls": claude_calls}
+        return {"status": "no-sign", "claude_calls": claude_calls, "cost_est": cost_est}
 
     # Dedupe by approximate height (within 1 inch = same physical sign).
     # Within a group, pick the highest-confidence / closest-pano instance.
@@ -618,6 +758,7 @@ def verify_garage(g, model):
     result = {
         "status": "verified",
         "claude_calls": claude_calls,
+        "cost_est": cost_est,
         "pano_id": primary["pano_id"],
         "pano_heading": primary["heading"],
         "pano_distance_m": primary["pano_distance_m"],
@@ -642,7 +783,11 @@ def verify_garage(g, model):
     return result
 
 
-def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, check_only=False, only_ids=None):
+def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
+                 detect_model=DEFAULT_DETECT_MODEL, read_model=DEFAULT_READ_MODEL,
+                 single_model=None, thorough=False,
+                 recheck_days=365, force_recheck=False,
+                 check_only=False, only_ids=None):
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
         return {"slug": slug, "error": "no city file", "cost": 0}
@@ -659,6 +804,7 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
     all_structures = garages + tunnels + bridges
     candidates = []
     skipped_lots = 0
+    skipped_checked = 0
     for g in all_structures:
         # If --ids-file was passed, restrict to that set strictly.
         if only_ids is not None and g.get("id") not in only_ids:
@@ -672,6 +818,16 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
         else:
             if g.get("height_in") is not None:
                 continue  # only fill entries that need a value
+            # Skip garages a previous run already scanned and found nothing —
+            # imagery doesn't change often; re-spend only after recheck_days.
+            if not force_recheck and g.get("sv_checked"):
+                try:
+                    age = (date.today() - date.fromisoformat(g["sv_checked"])).days
+                except (ValueError, TypeError):
+                    age = None
+                if age is not None and 0 <= age < recheck_days:
+                    skipped_checked += 1
+                    continue
             if _classify_structure:
                 kind = _classify_structure(g)
                 if kind == "surface_lot":
@@ -683,20 +839,26 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
         candidates.append(g)
 
     mode_word = "to re-check" if check_only else "to verify"
-    print(f"[{slug}] {len(candidates)} {mode_word} (skipped {skipped_lots} surface lots)"
+    print(f"[{slug}] {len(candidates)} {mode_word} (skipped {skipped_lots} surface lots, "
+          f"{skipped_checked} already-scanned)"
           f"{' [CHECK MODE -- no writes]' if check_only else ''}")
 
     updated = 0
     no_sign = 0
     no_pano = 0
     low_conf = 0
+    stamped = 0
     cost_this_city = 0.0
     aborted_for_cost = False
     mismatches = []  # populated by --check mode when AI disagrees with stored
 
     for g in candidates:
         # Budget gate — will this garage's worst-case Claude spend push us over?
-        worst_case_this_garage = MAX_PANOS_PER_GARAGE * COST_PER_CLAUDE_CALL
+        if single_model:
+            worst_case_this_garage = MAX_PANOS_PER_GARAGE * COST_PER_CLAUDE_CALL
+        else:
+            worst_case_this_garage = (MAX_PANOS_PER_GARAGE * COST_DETECT_CALL
+                                      + 2 * COST_READ_CALL)
         if running_total + cost_this_city + worst_case_this_garage > max_cost_usd:
             print(f"[{slug}] ABORT — next garage ({g.get('id')}) worst-case "
                   f"${worst_case_this_garage:.2f} would exceed cap "
@@ -707,8 +869,11 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
         tag = f"  {g.get('id','?'):<34} {(g.get('name') or '?')[:40]:<40}"
         print(tag, flush=True)
 
-        res = verify_garage(g, model)
-        call_cost = res.get("claude_calls", 0) * COST_PER_CLAUDE_CALL
+        res = verify_garage(g, detect_model, read_model,
+                            single_model=single_model, thorough=thorough)
+        call_cost = res.get("cost_est")
+        if call_cost is None:
+            call_cost = res.get("claude_calls", 0) * COST_PER_CLAUDE_CALL
         cost_this_city += call_cost
 
         status = res.get("status", "error")
@@ -717,12 +882,20 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
             no_pano += 1
             print(f"    → no Google-outdoor pano within {MAX_PANO_DISTANCE_M:.0f}m")
             _log(f"{date.today()} {slug} {g.get('id')} NO-PANO cost=${call_cost:.3f}")
+            if not check_only and not dry_run:
+                g["sv_checked"] = date.today().isoformat()
+                g["sv_status"] = "no-pano"
+                stamped += 1
             continue
 
         if status == "no-sign":
             no_sign += 1
             print(f"    → scanned {res['claude_calls']} pano(s), no sign found (cost=${call_cost:.3f})")
             _log(f"{date.today()} {slug} {g.get('id')} NO-SIGN calls={res['claude_calls']} cost=${call_cost:.3f}")
+            if not check_only and not dry_run:
+                g["sv_checked"] = date.today().isoformat()
+                g["sv_status"] = "no-sign"
+                stamped += 1
             continue
 
         if status == "error":
@@ -796,6 +969,8 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
             g["height_in"] = ai_height
             g["height_label"] = inches_to_label(ai_height)
             g["verified_on"] = date.today().isoformat()
+            g["sv_checked"] = date.today().isoformat()
+            g.pop("sv_status", None)   # clear any stale no-sign stamp
             g["pano_id"] = res["pano_id"]
             g["pano_heading"] = round(res["pano_heading"], 1) if res.get("pano_heading") is not None else None
             if ai_sections and len(ai_sections) >= 2:
@@ -823,7 +998,8 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
 
     # Persist — only in normal mode.  --check never writes, even on "new"
     # findings (those should be re-verified in a separate normal run).
-    if not check_only and (updated > 0 or skipped_lots > 0) and not dry_run:
+    # stamped>0 counts sv_checked/sv_status marks on no-sign/no-pano garages.
+    if not check_only and (updated > 0 or skipped_lots > 0 or stamped > 0) and not dry_run:
         city_path.write_text(json.dumps(data, indent=2) + "\n")
 
     if check_only:
@@ -832,11 +1008,13 @@ def process_city(slug, max_cost_usd, min_conf, model, dry_run, running_total, ch
               f"cost=${cost_this_city:.2f}")
     else:
         print(f"[{slug}] done: verified={updated} no-sign={no_sign} no-pano={no_pano} "
-              f"low-conf={low_conf} lots-skipped={skipped_lots} cost=${cost_this_city:.2f}")
+              f"low-conf={low_conf} lots-skipped={skipped_lots} "
+              f"already-scanned-skipped={skipped_checked} cost=${cost_this_city:.2f}")
 
     return {
         "slug": slug,
         "updated": updated,
+        "skipped_checked": skipped_checked,
         "no_sign": no_sign,
         "no_pano": no_pano,
         "low_conf": low_conf,
@@ -860,7 +1038,22 @@ def main():
                     help="Hard cap on Claude spend in USD (default: $10)")
     ap.add_argument("--confidence", choices=["low", "medium", "high"], default="high",
                     help="Minimum Claude confidence to write a reading (default: high)")
-    ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--model", default=None,
+                    help="Legacy single-model mode: use this one model for full "
+                         "8-image scans (implies --single-model). Default: tiered.")
+    ap.add_argument("--single-model", action="store_true",
+                    help="Disable two-stage tiering; scan with --model only.")
+    ap.add_argument("--detect-model", default=DEFAULT_DETECT_MODEL,
+                    help=f"Stage-1 sign detection model (default: {DEFAULT_DETECT_MODEL})")
+    ap.add_argument("--read-model", default=DEFAULT_READ_MODEL,
+                    help=f"Stage-2 transcription model (default: {DEFAULT_READ_MODEL})")
+    ap.add_argument("--thorough", action="store_true",
+                    help="Keep scanning remaining panos even after a high-confidence "
+                         "reading (catches multi-gate facilities; costs more).")
+    ap.add_argument("--recheck-days", type=int, default=365,
+                    help="Skip garages scanned (no-sign/no-pano) within N days (default: 365)")
+    ap.add_argument("--force-recheck", action="store_true",
+                    help="Ignore sv_checked stamps and rescan everything selected")
     ap.add_argument("--dry-run", action="store_true", help="Don't write to city files")
     ap.add_argument("--sleep", type=float, default=0.5,
                     help="Seconds between garages")
@@ -896,16 +1089,26 @@ def main():
         targets = [c["slug"] for c in idx if c.get("status") == "live"]
 
     mode = "CHECK" if args.check else ("DRY-RUN" if args.dry_run else "LIVE")
+    single = args.model or (DEFAULT_MODEL if args.single_model else None)
+    pipeline = (f"single-model={single}" if single
+                else f"tiered detect={args.detect_model} read={args.read_model}")
     print(f"auto_verify [{mode}]: {len(targets)} cities, cost cap ${args.max_cost:.2f}, "
-          f"confidence >={args.confidence}, model={args.model}")
+          f"confidence >={args.confidence}, {pipeline}")
     print()
 
     summaries = []
     running_total = 0.0
     for slug in targets:
         try:
-            r = process_city(slug, args.max_cost, args.confidence, args.model,
-                             args.dry_run, running_total, check_only=args.check,
+            r = process_city(slug, args.max_cost, args.confidence,
+                             args.dry_run, running_total,
+                             detect_model=args.detect_model,
+                             read_model=args.read_model,
+                             single_model=single,
+                             thorough=args.thorough,
+                             recheck_days=args.recheck_days,
+                             force_recheck=args.force_recheck,
+                             check_only=args.check,
                              only_ids=only_ids)
             summaries.append(r)
             running_total += r.get("cost", 0)

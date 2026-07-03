@@ -178,9 +178,15 @@ def build_query(lat: float, lng: float, radius_deg: float) -> str:
   node["amenity"="parking"]({bbox});
   way["amenity"="parking"]({bbox});
   relation["amenity"="parking"]({bbox});
+  way["building"="parking"]({bbox});
+  relation["building"="parking"]({bbox});
 );
 out center tags;
 """.strip()
+# NOTE: building=parking is unioned in because many real decks are mapped as
+# a parking BUILDING without the amenity tag — those were invisible to us.
+# Overpass dedupes elements matching both clauses; merge_into_city dedupes
+# against existing entries by id + 75m proximity.
 
 
 DRIVABLE_HIGHWAYS = {
@@ -277,7 +283,8 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
     """Turn an OSM element into our garage schema. Returns None if we should skip."""
     tags = el.get("tags", {}) or {}
 
-    if tags.get("amenity") != "parking":
+    building = (tags.get("building") or "").lower()
+    if tags.get("amenity") != "parking" and building != "parking":
         return None
     # Skip private/staff-only/customer-only
     access = (tags.get("access") or "").lower()
@@ -289,12 +296,24 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
         return None
     lat, lng = ll
 
-    parking_type = (tags.get("parking") or "surface").lower()
-    is_covered = parking_type in (
-        "multi-storey", "underground", "garage_boxes",
-        "carports", "garage", "rooftop"
+    # Covered/surface identification.  A missing parking= tag used to default
+    # to "surface", silently misclassifying decks mapped only as
+    # building=parking.  Now several independent signals mark a structure:
+    # the parking type, the building tag, covered=yes, or 2+ building levels.
+    parking_type = (tags.get("parking") or "").lower()
+    covered_types = ("multi-storey", "underground", "garage_boxes",
+                     "carports", "garage", "rooftop")
+    try:
+        levels = int(float(tags.get("building:levels") or 0))
+    except (TypeError, ValueError):
+        levels = 0
+    is_covered = (
+        any(t in parking_type for t in covered_types)  # handles "multi-storey;underground"
+        or building == "parking"
+        or (tags.get("covered") or "").lower() == "yes"
+        or levels >= 2
     )
-    is_surface = parking_type == "surface"
+    is_surface = not is_covered and (parking_type == "surface" or not parking_type)
 
     # Oversized vehicles only fit surface or underground w/ height >= 8'2"
     # We'll tag surface lots with oversized=True when access is public.
@@ -358,7 +377,7 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
     osm_id = el.get("id")
     gid = f"osm-{osm_type[0]}{osm_id}"
 
-    return {
+    out = {
         "id": gid,
         "name": name.strip()[:120],
         "addr": addr.strip()[:200],
@@ -370,6 +389,14 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
         "notes": notes,
         "source": "OpenStreetMap",
     }
+    # Identification is decided HERE, from OSM tags, so downstream consumers
+    # (auto_verify's skip logic, the app's "open-air" rendering) don't have
+    # to re-guess from the name.
+    if is_surface:
+        out["structure_type"] = "surface_lot"
+    elif is_covered:
+        out["structure_type"] = "structure"
+    return out
 
 
 def normalize_tunnel_element(el: dict) -> Optional[dict]:
