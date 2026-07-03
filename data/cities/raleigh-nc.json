@@ -133,7 +133,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Suburban mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "rdu-crabtree-valley",
@@ -195,7 +197,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal 1 short/daily.",
-      "source": "rdu.com"
+      "source": "rdu.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "rdu-airport-garage-2",
@@ -210,7 +214,9 @@
       "source": "rdu.com",
       "entrance_lat": 35.877508,
       "entrance_lng": -78.7907952,
-      "entrance_source": "OSM parking_entrance node 1388096573"
+      "entrance_source": "OSM parking_entrance node 1388096573",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "rdu-airport-economy",
@@ -256,7 +262,9 @@
       "source": "marbleskidsmuseum.org",
       "entrance_lat": 35.7788279,
       "entrance_lng": -78.6376282,
-      "entrance_source": "OSM parking_entrance node 3360555956"
+      "entrance_source": "OSM parking_entrance node 3360555956",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "rdu-ncma-park",
@@ -310,7 +318,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic shopping district.",
-      "source": "villagedistrict.com"
+      "source": "villagedistrict.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "rdu-glenwood-south",
@@ -367,7 +377,9 @@
       "source": "wakemed.org",
       "entrance_lat": 35.7730304,
       "entrance_lng": -78.6004134,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "rdu-duke-energy-progress",
@@ -457,7 +469,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 35.8357686,
       "entrance_lng": -78.6392237,
-      "entrance_source": "OSM parking_entrance node 13417323219"
+      "entrance_source": "OSM parking_entrance node 13417323219",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w732444325",

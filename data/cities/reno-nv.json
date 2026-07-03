@@ -11,7 +11,9 @@
       "oversized": false,
       "notes": "Main convention center. Surface lots.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.4908,-119.7946, 592m off).",
       "source": "renotahoeusa.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-national-bowling-stadium",
@@ -41,7 +43,9 @@
       "source": "reno.gov",
       "entrance_lat": 39.5254451,
       "entrance_lng": -119.8137897,
-      "entrance_source": "OSM parking_entrance node 6296539875"
+      "entrance_source": "OSM parking_entrance node 6296539875",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-eldorado-silver-legacy-circus",
@@ -53,7 +57,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Caesars-owned casino complex. Free parking.",
-      "source": "caesars.com"
+      "source": "caesars.com",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-peppermill",
@@ -66,7 +72,9 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Open-air surface parking only \u2014 no parking structure at this property (manually verified on Google Maps 2026-04-21).",
-      "source": "peppermillreno.com"
+      "source": "peppermillreno.com",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-pano"
     },
     {
       "id": "rno-atlantis",
@@ -79,7 +87,9 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Open-air surface parking. Connected to convention center via skyway.",
-      "source": "atlantiscasino.com"
+      "source": "atlantiscasino.com",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-grand-sierra",
@@ -92,7 +102,9 @@
       "oversized": true,
       "notes": "Large casino. RV-friendly surface lots.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5231,-119.7773, 203m off).",
       "source": "grandsierraresort.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-pano"
     },
     {
       "id": "rno-legends-sparks",
@@ -105,7 +117,9 @@
       "oversized": false,
       "notes": "Open-air retail.",
       "source": "legendsatsparks.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-pano"
     },
     {
       "id": "rno-nugget",
@@ -118,7 +132,9 @@
       "oversized": true,
       "notes": "Casino. RV-friendly lot.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5364,-119.7494, 881m off).",
       "source": "nuggetcasinoresort.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-greater-nevada-field",
@@ -131,7 +147,9 @@
       "oversized": false,
       "notes": "AAA ballpark.",
       "source": "milb.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-amtrak-depot",
@@ -144,7 +162,9 @@
       "oversized": false,
       "notes": "Rail station.",
       "source": "amtrak.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-meadowood-mall",
@@ -157,7 +177,9 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Enclosed mall. Open-air surface parking only \u2014 no parking structure (manually verified on Google Maps 2026-04-21).\nCoords corrected via Google Geocoding 2026-04-21 (was 39.482,-119.809, 2431m off).",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-pano"
     },
     {
       "id": "rno-unr-whalen",
@@ -185,7 +207,9 @@
       "oversized": true,
       "notes": "Wolf Pack football.",
       "source": "nevadawolfpack.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-scheels",
@@ -198,7 +222,9 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Open-air surface parking only \u2014 no parking structure at this property (manually verified on Google Maps 2026-04-21).",
-      "source": "scheels.com"
+      "source": "scheels.com",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-sign"
     },
     {
       "id": "rno-idlewild-park",
@@ -211,7 +237,9 @@
       "oversized": true,
       "notes": "City park along Truckee.\nCoords corrected via Google Geocoding 2026-04-21 (was 39.5244,-119.8334, 578m off).",
       "source": "reno.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-pano"
     },
     {
       "id": "rno-airport-garage",
@@ -254,7 +282,9 @@
       "oversized": true,
       "notes": "Uncovered.",
       "source": "renoairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-21",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n1711384462",

@@ -82,7 +82,9 @@
       "source": "ashevillenc.gov",
       "entrance_lat": 35.5966643,
       "entrance_lng": -82.5540116,
-      "entrance_source": "OSM parking_entrance node 12032021116"
+      "entrance_source": "OSM parking_entrance node 12032021116",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-rankin-ave",
@@ -97,7 +99,9 @@
       "source": "ashevillenc.gov",
       "entrance_lat": 35.5966643,
       "entrance_lng": -82.5540116,
-      "entrance_source": "OSM parking_entrance node 12032021116"
+      "entrance_source": "OSM parking_entrance node 12032021116",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-biltmore-ave",
@@ -109,7 +113,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "ashevillenc.gov"
+      "source": "ashevillenc.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-grove-arcade",
@@ -178,7 +184,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Wildlife preserve.",
-      "source": "wildwnc.org"
+      "source": "wildwnc.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-craggy-gardens",
@@ -219,7 +227,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic resort.",
-      "source": "omnihotels.com"
+      "source": "omnihotels.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-asheville-mall",
@@ -236,7 +246,9 @@
       "entrance_lng": -82.5090447,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "ash-tanger-outlets",
@@ -251,7 +263,9 @@
       "source": "tangeroutlet.com",
       "entrance_lat": 35.5203228,
       "entrance_lng": -82.6112208,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "ash-mcCormick-field",
@@ -276,7 +290,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UNCA campus.",
-      "source": "unca.edu"
+      "source": "unca.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-chimney-rock-sp",
@@ -327,7 +343,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic small town north of Asheville.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-airport",

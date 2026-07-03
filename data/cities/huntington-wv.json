@@ -12,9 +12,243 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w338355303",
+      "name": "Central Huntington Garage",
+      "addr": "",
+      "lat": 38.42007,
+      "lng": -82.44282,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w550452167",
+      "name": "Sixth Avenue Parking Garage",
+      "addr": "",
+      "lat": 38.42091,
+      "lng": -82.42913,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w338390417",
+      "name": "8th Street",
+      "addr": "WV 527",
+      "lat": 38.41555,
+      "lng": -82.44419,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w338390870",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.42024,
+      "lng": -82.44082,
+      "height_in": 111,
+      "height_label": "9'3\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w371284963",
+      "name": "10th Street",
+      "addr": "10th Street",
+      "lat": 38.4161,
+      "lng": -82.44063,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w371284965",
+      "name": "1st Street",
+      "addr": "1st Street",
+      "lat": 38.41342,
+      "lng": -82.45612,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w371284967",
+      "name": "Hal Greer Boulevard",
+      "addr": "WV 10",
+      "lat": 38.41791,
+      "lng": -82.43048,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w375757846",
+      "name": "Guyan River Road",
+      "addr": "CR 26",
+      "lat": 38.41863,
+      "lng": -82.35446,
+      "height_in": 105,
+      "height_label": "8'9\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w396468855",
+      "name": "20th Street",
+      "addr": "20th Street",
+      "lat": 38.41945,
+      "lng": -82.42155,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w463504198",
+      "name": "14th Street",
+      "addr": "WV 75",
+      "lat": 38.39802,
+      "lng": -82.57809,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w467969922",
+      "name": "Cyrus Road",
+      "addr": "Cyrus Road",
+      "lat": 38.30549,
+      "lng": -82.57328,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w485131087",
+      "name": "Peyton Street",
+      "addr": "CR 31/1",
+      "lat": 38.40617,
+      "lng": -82.31451,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607197516",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.40804,
+      "lng": -82.42826,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w616029574",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.41352,
+      "lng": -82.44428,
+      "height_in": 104,
+      "height_label": "8'8\"",
+      "notes": "4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w633294838",
+      "name": "Big Sandy River Access Road",
+      "addr": "CR 1",
+      "lat": 38.37302,
+      "lng": -82.59056,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w635722974",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.41561,
+      "lng": -82.44696,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w638368661",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.39541,
+      "lng": -82.42226,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w664033454",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.4186,
+      "lng": -82.44352,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w692846386",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.41859,
+      "lng": -82.44235,
+      "height_in": 104,
+      "height_label": "8'8\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w696679983",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.39466,
+      "lng": -82.41691,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w770082624",
+      "name": "Guyan River Road",
+      "addr": "CR 26",
+      "lat": 38.42796,
+      "lng": -82.31811,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-21-010B00040N",
@@ -59,6 +293,61 @@
       "height_label": "11'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2004",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w50286478",
+      "name": "Low clearance \u2014 Irl Duling Boulevard (US 52)",
+      "addr": "US 52",
+      "lat": 38.4083,
+      "lng": -82.4825,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w619286236",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 38.40862,
+      "lng": -82.42579,
+      "height_in": 99,
+      "height_label": "8'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w629733789",
+      "name": "Low clearance \u2014 West 14th Street",
+      "addr": "West 14th Street",
+      "lat": 38.40573,
+      "lng": -82.47712,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w648596594",
+      "name": "Low clearance \u2014 23rd Street",
+      "addr": "23rd Street",
+      "lat": 38.40211,
+      "lng": -82.59165,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w696049619",
+      "name": "Low clearance \u2014 Riverside Drive",
+      "addr": "Riverside Drive",
+      "lat": 38.42087,
+      "lng": -82.38978,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

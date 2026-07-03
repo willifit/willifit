@@ -23,7 +23,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Largest mall on coast.",
-      "source": "coastalgrand.com"
+      "source": "coastalgrand.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-convention-ctr",
@@ -35,7 +37,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Sheraton-attached convention center.",
-      "source": "myrtlebeachconventioncenter.com"
+      "source": "myrtlebeachconventioncenter.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-skywheel",
@@ -158,7 +162,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall.",
-      "source": "tangeroutlet.com"
+      "source": "tangeroutlet.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-tanger-17",
@@ -170,7 +176,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Second Tanger outlet.",
-      "source": "tangeroutlet.com"
+      "source": "tangeroutlet.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-ripleys-aquarium",
@@ -182,7 +190,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Aquarium in Broadway complex.",
-      "source": "ripleyaquariums.com"
+      "source": "ripleyaquariums.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mbs-family-kingdom",
@@ -233,7 +243,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mixed-use on former air base.",
-      "source": "marketcommonmb.com"
+      "source": "marketcommonmb.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-brookgreen-gardens",
@@ -258,7 +270,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Restaurant boardwalk district.",
-      "source": "marshwalk.com"
+      "source": "marshwalk.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mbs-conway-riverwalk",
@@ -270,7 +284,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic downtown Conway + Waccamaw River.",
-      "source": "cityofconway.com"
+      "source": "cityofconway.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-ocean-lakes-family",
@@ -321,7 +337,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Resort + fishing pier.",
-      "source": "springmaidbeach.com"
+      "source": "springmaidbeach.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-airport-garage",
@@ -336,7 +354,9 @@
       "source": "flymyrtlebeach.com",
       "entrance_lat": 33.6815996,
       "entrance_lng": -78.9225793,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-airport-economy",

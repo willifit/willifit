@@ -13,7 +13,9 @@
       "source": "gatlinburg.com",
       "entrance_lat": 35.7136947,
       "entrance_lng": -83.5100791,
-      "entrance_source": "OSM parking_entrance node 7995831866"
+      "entrance_source": "OSM parking_entrance node 7995831866",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-ripley-aquarium",
@@ -25,7 +27,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium garage.",
-      "source": "ripleyaquariums.com"
+      "source": "ripleyaquariums.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-space-needle",
@@ -69,7 +73,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center lots.",
-      "source": "gatlinburg.com"
+      "source": "gatlinburg.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-great-smokies-welcome",
@@ -133,7 +139,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Scenic one-way loop. RV/bus prohibited on loop.",
-      "source": "nps.gov/grsm"
+      "source": "nps.gov/grsm",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "gat-gsmnp-cades-cove",
@@ -161,7 +169,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Tram base + lot. Mountain amusements.",
-      "source": "obergatlinburg.com"
+      "source": "obergatlinburg.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-ober-mountain",
@@ -199,7 +209,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Entertainment complex. Massive surface + garage. ~10mi N.",
-      "source": "islandinpigeonforge.com"
+      "source": "islandinpigeonforge.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-dollywood",
@@ -240,7 +252,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall ~15mi N.",
-      "source": "tangeroutlet.com"
+      "source": "tangeroutlet.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-titanic-museum",
@@ -335,7 +349,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Knoxville airport ~40mi W.",
-      "source": "tys.org"
+      "source": "tys.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n5065374472",

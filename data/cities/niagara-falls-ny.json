@@ -15,9 +15,137 @@
       "entrance_lat": 43.1732035,
       "entrance_lng": -79.062964,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-n3580486878",
+      "name": "Casino Niagara",
+      "addr": "",
+      "lat": 43.09271,
+      "lng": -79.07189,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w393294163",
+      "name": "City of Niagara Falls Municipal Parking",
+      "addr": "",
+      "lat": 43.08708,
+      "lng": -79.0624,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w393294330",
+      "name": "Seneca Niagara Garage",
+      "addr": "",
+      "lat": 43.08781,
+      "lng": -79.0566,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w428478131",
+      "name": "Ramada Niagara Falls Near the Falls",
+      "addr": "",
+      "lat": 43.08923,
+      "lng": -79.08888,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w439612247",
+      "name": "Travelodge by the Falls",
+      "addr": "",
+      "lat": 43.08993,
+      "lng": -79.08075,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-r11549417",
+      "name": "Three Sisters Islands Parking",
+      "addr": "",
+      "lat": 43.07917,
+      "lng": -79.06513,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w97811089",
+      "name": "10th Street",
+      "addr": "10th Street",
+      "lat": 43.08453,
+      "lng": -79.04986,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1088538529",
+      "name": "Niagara Parkway",
+      "addr": "Niagara Parkway",
+      "lat": 43.07945,
+      "lng": -79.0795,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1098261790",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 43.08887,
+      "lng": -79.06591,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1124284016",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 43.08854,
+      "lng": -78.97467,
+      "height_in": 72,
+      "height_label": "6'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1361765527",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 43.08204,
+      "lng": -79.05667,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-36-000000003368020",

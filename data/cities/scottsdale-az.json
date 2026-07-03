@@ -13,7 +13,9 @@
       "source": "fashionsquare.com",
       "entrance_lat": 33.503245,
       "entrance_lng": -111.9301046,
-      "entrance_source": "OSM parking_entrance node 11230544268"
+      "entrance_source": "OSM parking_entrance node 11230544268",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sco-old-town-garage",
@@ -26,7 +28,9 @@
       "oversized": true,
       "notes": "City-owned. Serves Old Town + Civic Center.\nReclassified 2026-04-27 as surface lot per web research: Stetson Parking Lot is surface (free, 9am-2am); future garage planned",
       "source": "Web-verified surface lot \u2014 was: scottsdaleaz.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sco-civic-center",
@@ -68,7 +72,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "N Scottsdale shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sco-kierland-commons",
@@ -96,7 +102,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale open-air center. Parking garage.",
-      "source": "scottsdalequarter.com"
+      "source": "scottsdalequarter.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sco-paradise-valley-mall",
@@ -108,7 +116,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former mall \u2014 redeveloping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sco-westworld",
@@ -133,7 +143,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Old Town museum.",
-      "source": "scottsdalemuseumwest.org"
+      "source": "scottsdalemuseumwest.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sco-smoca",
@@ -311,7 +323,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Paolo Soleri studio.",
-      "source": "cosanti.com"
+      "source": "cosanti.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sco-five-star-hotel-resorts",
@@ -323,7 +337,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Luxury resort garage.",
-      "source": "thephoenician.com"
+      "source": "thephoenician.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sco-waste-management-phoenix-open",
@@ -365,7 +381,9 @@
       "entrance_lat": 33.6218139,
       "entrance_lng": -111.9078011,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w325260032",

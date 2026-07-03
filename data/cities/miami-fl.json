@@ -13,7 +13,9 @@
       "source": "kaseyacenter.com",
       "entrance_lat": 25.7806889,
       "entrance_lng": -80.1875718,
-      "entrance_source": "OSM parking_entrance node 4587381527"
+      "entrance_source": "OSM parking_entrance node 4587381527",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-bayside",
@@ -41,7 +43,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "miamibeachconvention.com"
+      "source": "miamibeachconvention.com",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "mia-lincoln-rd",
@@ -56,7 +60,9 @@
       "source": "miamibeachfl.gov",
       "entrance_lat": 25.7926703,
       "entrance_lng": -80.1414616,
-      "entrance_source": "OSM parking_entrance node 12272464957"
+      "entrance_source": "OSM parking_entrance node 12272464957",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-ocean-drive",
@@ -71,7 +77,9 @@
       "source": "miamibeachfl.gov",
       "entrance_lat": 25.7769293,
       "entrance_lng": -80.132902,
-      "entrance_source": "OSM parking_entrance node 7179546562"
+      "entrance_source": "OSM parking_entrance node 7179546562",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-brickell-city-centre",
@@ -116,7 +124,9 @@
       "source": "mlb.com/marlins",
       "entrance_lat": 25.776834,
       "entrance_lng": -80.2196591,
-      "entrance_source": "OSM parking_entrance node 5034536384"
+      "entrance_source": "OSM parking_entrance node 5034536384",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-hard-rock-stadium",
@@ -141,7 +151,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts complex.",
-      "source": "arshtcenter.org"
+      "source": "arshtcenter.org",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-frost-museum",

@@ -13,7 +13,9 @@
       "source": "richmondcenter.com",
       "entrance_lat": 37.5441275,
       "entrance_lng": -77.4354048,
-      "entrance_source": "OSM parking_entrance node 3281110420"
+      "entrance_source": "OSM parking_entrance node 3281110420",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "rva-altria-theater",
@@ -293,7 +295,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flyrichmond.com"
+      "source": "flyrichmond.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "rva-airport-economy",

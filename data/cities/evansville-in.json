@@ -28,6 +28,78 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w350978308",
+      "name": "Old National Bank",
+      "addr": "111 Main Street",
+      "lat": 37.9696,
+      "lng": -87.57375,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w350988904",
+      "name": "Evansville-Vanderburgh Public Library",
+      "addr": "",
+      "lat": 37.97151,
+      "lng": -87.56539,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w351217432",
+      "name": "University of Southern Indiana",
+      "addr": "",
+      "lat": 37.96273,
+      "lng": -87.66837,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w354181296",
+      "name": "Bally's Evansville Casino & Hotel",
+      "addr": "",
+      "lat": 37.97279,
+      "lng": -87.57747,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1251432240",
+      "name": "University of Southern Indiana",
+      "addr": "",
+      "lat": 37.95964,
+      "lng": -87.67223,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1381000868",
+      "name": "University of Southern Indiana",
+      "addr": "",
+      "lat": 37.96173,
+      "lng": -87.6788,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
@@ -64,6 +136,94 @@
       "height_label": "14'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1928",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w351701766",
+      "name": "Low clearance \u2014 East Virginia Street",
+      "addr": "East Virginia Street",
+      "lat": 37.98197,
+      "lng": -87.54943,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1116631559",
+      "name": "Low clearance \u2014 East Virginia Street",
+      "addr": "East Virginia Street",
+      "lat": 37.98202,
+      "lng": -87.5509,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1196202463",
+      "name": "Low clearance \u2014 North Green Street (US 60;US 41 Alt)",
+      "addr": "US 60;US 41 Alt",
+      "lat": 37.84192,
+      "lng": -87.58689,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1335140881",
+      "name": "Low clearance \u2014 North Main Street",
+      "addr": "North Main Street",
+      "lat": 37.84317,
+      "lng": -87.59013,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1335141110",
+      "name": "Low clearance \u2014 North Elm Street",
+      "addr": "North Elm Street",
+      "lat": 37.84255,
+      "lng": -87.58854,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1335141614",
+      "name": "Low clearance \u2014 North Ingram Street",
+      "addr": "North Ingram Street",
+      "lat": 37.84134,
+      "lng": -87.58537,
+      "height_in": 128,
+      "height_label": "10'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1335143855",
+      "name": "Low clearance \u2014 East Diamond Avenue (SR 66)",
+      "addr": "SR 66",
+      "lat": 37.99919,
+      "lng": -87.5412,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1366486942",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.97633,
+      "lng": -87.46846,
+      "height_in": 86,
+      "height_label": "7'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

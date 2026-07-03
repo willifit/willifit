@@ -253,7 +253,9 @@
       "source": "Needs verification",
       "entrance_lat": 41.8875938,
       "entrance_lng": -87.6256881,
-      "entrance_source": "OSM parking_entrance node 9378228733"
+      "entrance_source": "OSM parking_entrance node 9378228733",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "chi-mccormick-mrshl",
@@ -266,7 +268,9 @@
       "oversized": true,
       "notes": "Surface lots used for convention overflow + oversized/RV. Open-air.",
       "source": "McCormick Place",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "chi-mccormick-north",
@@ -336,7 +340,9 @@
       "notes": "Surface lots + garage around arena. Predominantly surface event lots",
       "source": "Web-verified surface lot - was: United Center",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-pano"
     },
     {
       "id": "ord-main",
@@ -596,7 +602,9 @@
       "source": "Needs verification",
       "entrance_lat": 41.8880628,
       "entrance_lng": -87.6289471,
-      "entrance_source": "OSM parking_entrance node 2885273879"
+      "entrance_source": "OSM parking_entrance node 2885273879",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "chi-hancock-deck",

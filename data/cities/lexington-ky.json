@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Wildcats basketball arena + Lexington Center.",
-      "source": "rupparena.com"
+      "source": "rupparena.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lex-kentucky-theatre",
@@ -74,7 +76,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.0446,
       "entrance_lng": -84.4952579,
-      "entrance_source": "OSM parking_entrance node 4129008264"
+      "entrance_source": "OSM parking_entrance node 4129008264",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lex-hyatt-regency",
@@ -86,7 +90,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention hotel.",
-      "source": "hyatt.com"
+      "source": "hyatt.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lex-fayette-mall",
@@ -100,7 +106,9 @@
       "notes": "Largest KY mall. Surface only",
       "source": "Web-verified surface lot - was: fayettemall.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lex-hamburg-pavilion",
@@ -230,7 +238,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic park.",
-      "source": "lexingtonky.gov"
+      "source": "lexingtonky.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lex-raven-run",
@@ -257,7 +267,9 @@
       "notes": "Decorative arts museum. Surface lot",
       "source": "Web-verified surface lot - was: headley-whitney.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lex-ashland-estate",
@@ -269,7 +281,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Henry Clay's historic home.",
-      "source": "henryclay.org"
+      "source": "henryclay.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lex-loudoun-house",
@@ -284,7 +298,9 @@
       "source": "lexingtonartleague.org",
       "entrance_lat": 38.0684432,
       "entrance_lng": -84.48397,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lex-aviation-museum",
@@ -309,7 +325,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "bluegrassairport.com"
+      "source": "bluegrassairport.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lex-airport-economy",

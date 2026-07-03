@@ -44,9 +44,67 @@
       "entrance_lat": 35.2961831,
       "entrance_lng": -94.2977653,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w1285938240",
+      "name": "COFS",
+      "addr": "",
+      "lat": 35.39022,
+      "lng": -94.42962,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1287988686",
+      "name": "City of Fort Smith",
+      "addr": "",
+      "lat": 35.38569,
+      "lng": -94.42436,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w429848321",
+      "name": "North 6th Street",
+      "addr": "North 6th Street",
+      "lat": 35.43619,
+      "lng": -94.35476,
+      "height_in": 121,
+      "height_label": "10'1\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w430062552",
+      "name": "South 3rd Street",
+      "addr": "South 3rd Street",
+      "lat": 35.43213,
+      "lng": -94.35415,
+      "height_in": 192,
+      "height_label": "16'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w430070625",
+      "name": "South 3rd Street",
+      "addr": "South 3rd Street",
+      "lat": 35.4328,
+      "lng": -94.35487,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-40-322140000000000",

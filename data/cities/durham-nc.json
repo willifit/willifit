@@ -183,7 +183,9 @@
       "notes": "Free Duke museum. Surface lot on Duke campus",
       "source": "Web-verified surface lot - was: nasher.duke.edu",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "dur-sarah-p-duke-gardens",
@@ -195,7 +197,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic 55-acre gardens.",
-      "source": "gardens.duke.edu"
+      "source": "gardens.duke.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "dur-museum-life-science",
@@ -263,7 +267,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping + dining in former tobacco warehouses.",
-      "source": "historicbrightleaf.com"
+      "source": "historicbrightleaf.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "dur-ninth-street-district",
@@ -304,7 +310,9 @@
       "source": "historicsites.nc.gov",
       "entrance_lat": 36.1183794,
       "entrance_lng": -78.8824905,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "dur-rtp-main",
@@ -345,7 +353,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shared airport. Durham access via I-40.",
-      "source": "rdu.com"
+      "source": "rdu.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1324743530",

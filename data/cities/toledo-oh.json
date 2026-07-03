@@ -13,7 +13,9 @@
       "source": "seagateconvention.com",
       "entrance_lat": 41.6492533,
       "entrance_lng": -83.5358049,
-      "entrance_source": "OSM parking_entrance node 8195414872"
+      "entrance_source": "OSM parking_entrance node 8195414872",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tol-huntington-arena",
@@ -25,7 +27,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "ECHL Walleye + concerts.",
-      "source": "huntingtoncentertoledo.com"
+      "source": "huntingtoncentertoledo.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tol-mud-hens-fifth-third",
@@ -50,7 +54,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts theater.",
-      "source": "valentinetheatre.com"
+      "source": "valentinetheatre.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tol-one-seagate",
@@ -62,7 +68,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office tower.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "tol-imagination-station",
@@ -77,7 +85,9 @@
       "source": "imaginationstationtoledo.org",
       "entrance_lat": 41.6472627,
       "entrance_lng": -83.5351956,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "tol-owens-arena",
@@ -134,7 +144,9 @@
       "source": "shopfranklinpark.com",
       "entrance_lat": 41.6956733,
       "entrance_lng": -83.6422338,
-      "entrance_source": "OSM parking_entrance node 13640169215"
+      "entrance_source": "OSM parking_entrance node 13640169215",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tol-levis-commons",
@@ -185,7 +197,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Free 60-acre gardens.",
-      "source": "metroparkstoledo.com"
+      "source": "metroparkstoledo.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tol-wildwood-metropark",
@@ -284,7 +298,9 @@
       "source": "libbey.com",
       "entrance_lat": 41.6492533,
       "entrance_lng": -83.5358049,
-      "entrance_source": "OSM parking_entrance node 8195414872"
+      "entrance_source": "OSM parking_entrance node 8195414872",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tol-airport-tol",
@@ -312,7 +328,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "~55mi N. Primary air service for Toledo.",
-      "source": "metroairport.com"
+      "source": "metroairport.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n2942682600",

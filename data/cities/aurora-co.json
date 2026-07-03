@@ -211,7 +211,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 15'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-05-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w542367260",
@@ -223,7 +225,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 20'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-05-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w39199427",

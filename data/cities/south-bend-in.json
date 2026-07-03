@@ -49,6 +49,250 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
-  "tunnels": [],
-  "bridges": []
+  "tunnels": [
+    {
+      "id": "osm-w1333972372",
+      "name": "High Street",
+      "addr": "High Street",
+      "lat": 41.66353,
+      "lng": -86.23947,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333973826",
+      "name": "Chapin Street",
+      "addr": "Chapin Street",
+      "lat": 41.66963,
+      "lng": -86.26136,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1356245018",
+      "name": "Miami Street",
+      "addr": "Miami Street",
+      "lat": 41.66145,
+      "lng": -86.23503,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w17550100",
+      "name": "Low clearance \u2014 Ironwood Road",
+      "addr": "Ironwood Road",
+      "lat": 41.62662,
+      "lng": -86.21547,
+      "height_in": 194,
+      "height_label": "16'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w17562394",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.66429,
+      "lng": -86.24114,
+      "height_in": 149,
+      "height_label": "12'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w147496817",
+      "name": "Low clearance \u2014 Chapin Street",
+      "addr": "Chapin Street",
+      "lat": 41.67112,
+      "lng": -86.26131,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w608427643",
+      "name": "Low clearance \u2014 Juniper Road",
+      "addr": "Juniper Road",
+      "lat": 41.71692,
+      "lng": -86.23579,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w796831790",
+      "name": "Low clearance \u2014 South Scott Street",
+      "addr": "South Scott Street",
+      "lat": 41.66926,
+      "lng": -86.25895,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1082614340",
+      "name": "Low clearance \u2014 South Eddy Street (SR 23;SR 933)",
+      "addr": "SR 23;SR 933",
+      "lat": 41.66534,
+      "lng": -86.24336,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1157277743",
+      "name": "Low clearance \u2014 South Bend Avenue (SR 23)",
+      "addr": "SR 23",
+      "lat": 41.71617,
+      "lng": -86.19648,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1211508953",
+      "name": "Low clearance \u2014 North Michigan Street (SR 933)",
+      "addr": "SR 933",
+      "lat": 41.69148,
+      "lng": -86.25068,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1221934290",
+      "name": "Low clearance \u2014 South Twyckenham Drive",
+      "addr": "South Twyckenham Drive",
+      "lat": 41.66967,
+      "lng": -86.22564,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333566566",
+      "name": "Low clearance \u2014 Chamberlain Road",
+      "addr": "Chamberlain Road",
+      "lat": 41.81282,
+      "lng": -86.34388,
+      "height_in": 103,
+      "height_label": "8'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333972210",
+      "name": "Low clearance \u2014 South Sunnyside Avenue",
+      "addr": "South Sunnyside Avenue",
+      "lat": 41.66759,
+      "lng": -86.22935,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333972557",
+      "name": "Low clearance \u2014 Fellows Street",
+      "addr": "Fellows Street",
+      "lat": 41.66584,
+      "lng": -86.24447,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333972839",
+      "name": "Low clearance \u2014 East Bronson Street",
+      "addr": "East Bronson Street",
+      "lat": 41.66831,
+      "lng": -86.24991,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333973302",
+      "name": "Low clearance \u2014 South Main Street (SR 933;BUS US 31)",
+      "addr": "SR 933;BUS US 31",
+      "lat": 41.6688,
+      "lng": -86.25182,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333973623",
+      "name": "Low clearance \u2014 South Lafayette Boulevard",
+      "addr": "South Lafayette Boulevard",
+      "lat": 41.66895,
+      "lng": -86.25343,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333974081",
+      "name": "Low clearance \u2014 South Walnut Street",
+      "addr": "South Walnut Street",
+      "lat": 41.67214,
+      "lng": -86.27035,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1517462547",
+      "name": "Low clearance \u2014 West Western Avenue (SR 2)",
+      "addr": "SR 2",
+      "lat": 41.67181,
+      "lng": -86.34097,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1517484627",
+      "name": "Low clearance \u2014 York Road",
+      "addr": "York Road",
+      "lat": 41.62647,
+      "lng": -86.22514,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1517503673",
+      "name": "Low clearance \u2014 Leeper Avenue",
+      "addr": "Leeper Avenue",
+      "lat": 41.68977,
+      "lng": -86.2499,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

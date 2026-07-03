@@ -28,6 +28,30 @@
       "entrance_lat": 45.651676,
       "entrance_lng": -110.9436519,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w55036884",
+      "name": "SUB Bus Loop",
+      "addr": "",
+      "lat": 45.66542,
+      "lng": -111.0476,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w392994913",
+      "name": "Bridger Park Downtown",
+      "addr": "26 East Mendenhall Street",
+      "lat": 45.68007,
+      "lng": -111.03636,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

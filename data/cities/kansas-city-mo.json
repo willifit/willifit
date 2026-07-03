@@ -84,7 +84,9 @@
       "source": "unionstation.org",
       "entrance_lat": 39.0847269,
       "entrance_lng": -94.5871063,
-      "entrance_source": "OSM parking_entrance node 7267119927"
+      "entrance_source": "OSM parking_entrance node 7267119927",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "kc-wwi-museum",
@@ -239,7 +241,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital garage.",
-      "source": "childrensmercy.org"
+      "source": "childrensmercy.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "kc-zoo",
@@ -395,7 +399,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 39.1002005,
       "entrance_lng": -94.5878866,
-      "entrance_source": "OSM parking_entrance node 12385499469"
+      "entrance_source": "OSM parking_entrance node 12385499469",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w620723588",

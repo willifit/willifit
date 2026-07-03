@@ -49,7 +49,9 @@
       "source": "aqua.org",
       "entrance_lat": 39.28746,
       "entrance_lng": -76.6070244,
-      "entrance_source": "OSM parking_entrance node 1886926579"
+      "entrance_source": "OSM parking_entrance node 1886926579",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bal-aquarium-pier-6",
@@ -159,7 +161,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic waterfront district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bal-penn-station",
@@ -187,7 +191,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Walters Art Museum + Peabody district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bal-arts-tower-town",
@@ -252,7 +258,9 @@
       "source": "hopkinsmedicine.org",
       "entrance_lat": 39.2962265,
       "entrance_lng": -76.5929416,
-      "entrance_source": "OSM parking_entrance node 7406370855"
+      "entrance_source": "OSM parking_entrance node 7406370855",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bal-science-center",
@@ -377,7 +385,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 39.2877419,
       "entrance_lng": -76.6075397,
-      "entrance_source": "OSM parking_entrance node 1886926689"
+      "entrance_source": "OSM parking_entrance node 1886926689",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w178328582",
@@ -392,7 +402,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 39.2873564,
       "entrance_lng": -76.6088709,
-      "entrance_source": "OSM parking_entrance node 8058625267"
+      "entrance_source": "OSM parking_entrance node 8058625267",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w336299270",
@@ -476,7 +488,9 @@
       "height_label": null,
       "oversized": true,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w336354040",

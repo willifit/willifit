@@ -13,7 +13,9 @@
       "source": "charleston-sc.gov",
       "entrance_lat": 32.7892703,
       "entrance_lng": -79.9254906,
-      "entrance_source": "OSM parking_entrance node 12745136944"
+      "entrance_source": "OSM parking_entrance node 12745136944",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-sc-aquarium",
@@ -28,7 +30,9 @@
       "source": "scaquarium.org",
       "entrance_lat": 32.7892703,
       "entrance_lng": -79.9254906,
-      "entrance_source": "OSM parking_entrance node 12745136944"
+      "entrance_source": "OSM parking_entrance node 12745136944",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-visitor-center",
@@ -74,7 +78,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near CofC campus.",
-      "source": "charleston-sc.gov"
+      "source": "charleston-sc.gov",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-st-philips-st-garage",
@@ -89,7 +95,9 @@
       "source": "charleston-sc.gov",
       "entrance_lat": 32.7859972,
       "entrance_lng": -79.9383351,
-      "entrance_source": "OSM parking_entrance node 12876009338"
+      "entrance_source": "OSM parking_entrance node 12876009338",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-tradd-garage",
@@ -101,7 +109,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "South of Broad historic district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-citadel",
@@ -126,7 +136,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic waterfront promenade. Street parking.",
-      "source": "charleston-sc.gov"
+      "source": "charleston-sc.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "chs-waterfront-park",
@@ -196,7 +208,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Multiple street lots. Ft Moultrie adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "chs-fort-moultrie",
@@ -266,7 +280,9 @@
       "source": "belmond.com",
       "entrance_lat": 32.7819934,
       "entrance_lng": -79.9321719,
-      "entrance_source": "OSM parking_entrance node 13274855385"
+      "entrance_source": "OSM parking_entrance node 13274855385",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-citadel-mall",
@@ -280,7 +296,9 @@
       "notes": "Enclosed mall. Surface lots over 53 acres",
       "source": "Web-verified surface lot - was: Needs verification",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "chs-mount-pleasant-towne",
@@ -305,7 +323,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "iflychs.com"
+      "source": "iflychs.com",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "chs-airport-economy",
@@ -333,7 +353,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7875973,
       "entrance_lng": -79.9302447,
-      "entrance_source": "OSM parking_entrance node 12750491019"
+      "entrance_source": "OSM parking_entrance node 12750491019",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w38092089",
@@ -348,7 +370,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7897211,
       "entrance_lng": -79.9278133,
-      "entrance_source": "OSM parking_entrance node 12790248472"
+      "entrance_source": "OSM parking_entrance node 12790248472",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w114185198",
@@ -363,7 +387,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7833299,
       "entrance_lng": -79.9484499,
-      "entrance_source": "OSM parking_entrance node 12824130515"
+      "entrance_source": "OSM parking_entrance node 12824130515",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w114396254",
@@ -378,7 +404,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7818757,
       "entrance_lng": -79.9321546,
-      "entrance_source": "OSM parking_entrance node 13274855387"
+      "entrance_source": "OSM parking_entrance node 13274855387",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w189102140",
@@ -393,7 +421,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.788237,
       "entrance_lng": -79.9364684,
-      "entrance_source": "OSM parking_entrance node 12960023385"
+      "entrance_source": "OSM parking_entrance node 12960023385",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w189118323",
@@ -408,7 +438,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7799879,
       "entrance_lng": -79.9262353,
-      "entrance_source": "OSM parking_entrance node 12621077292"
+      "entrance_source": "OSM parking_entrance node 12621077292",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w189118327",
@@ -423,7 +455,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7777731,
       "entrance_lng": -79.932275,
-      "entrance_source": "OSM parking_entrance node 12604564194"
+      "entrance_source": "OSM parking_entrance node 12604564194",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w189118332",
@@ -456,7 +490,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7827042,
       "entrance_lng": -79.9324476,
-      "entrance_source": "OSM parking_entrance node 12670328256"
+      "entrance_source": "OSM parking_entrance node 12670328256",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w301007166",
@@ -471,7 +507,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7870463,
       "entrance_lng": -79.9504937,
-      "entrance_source": "OSM parking_entrance node 12806370913"
+      "entrance_source": "OSM parking_entrance node 12806370913",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w313576433",
@@ -504,7 +542,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.783173,
       "entrance_lng": -79.9540138,
-      "entrance_source": "OSM parking_entrance node 12779117781"
+      "entrance_source": "OSM parking_entrance node 12779117781",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r19163014",
@@ -519,7 +559,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7865142,
       "entrance_lng": -79.9368661,
-      "entrance_source": "OSM parking_entrance node 12856281266"
+      "entrance_source": "OSM parking_entrance node 12856281266",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r19345278",
@@ -534,7 +576,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7904473,
       "entrance_lng": -79.9377839,
-      "entrance_source": "OSM parking_entrance node 12994979106"
+      "entrance_source": "OSM parking_entrance node 12994979106",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r19383048",

@@ -58,7 +58,9 @@
       "source": "Denison Parking",
       "entrance_lat": 29.7400526,
       "entrance_lng": -95.4632503,
-      "entrance_source": "OSM parking_entrance node 9017460289"
+      "entrance_source": "OSM parking_entrance node 9017460289",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-gallry-orange",
@@ -130,7 +132,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent to GRB Convention Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "hou-minute-maid",
@@ -142,7 +146,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Astros stadium. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "hou-toyota-ctr",
@@ -202,7 +208,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.7577131,
       "entrance_lng": -95.3663944,
-      "entrance_source": "OSM parking_entrance node 9833562149"
+      "entrance_source": "OSM parking_entrance node 9833562149",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-jpm-chase",
@@ -217,7 +225,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.75866,
       "entrance_lng": -95.3643178,
-      "entrance_source": "OSM parking_entrance node 10142823584"
+      "entrance_source": "OSM parking_entrance node 10142823584",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-wells-fargo",
@@ -386,7 +396,9 @@
       "source": "ricevillage.org",
       "entrance_lat": 29.7164075,
       "entrance_lng": -95.4148031,
-      "entrance_source": "OSM parking_entrance node 8473858477"
+      "entrance_source": "OSM parking_entrance node 8473858477",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-highland-village",
@@ -400,7 +412,9 @@
       "notes": "Covered + front-door parking. Upscale shopping. Free self-park + surface",
       "source": "Web-verified surface lot - was: houstonhighlandvillage.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-williams-tower",
@@ -412,7 +426,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Williams Tower / next to Gerald D. Hines Waterwall Park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-uptown-park",
@@ -424,7 +440,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Uptown Park shopping + dining.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hou-river-oaks",

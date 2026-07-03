@@ -253,7 +253,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Small local museum.",
-      "source": "moabmuseum.org"
+      "source": "moabmuseum.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mab-bar-m-chuckwagon",

@@ -23,7 +23,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center.",
-      "source": "sheratongreensboro.com"
+      "source": "sheratongreensboro.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "grb-tanger-center",
@@ -38,7 +40,9 @@
       "source": "tangercenter.com",
       "entrance_lat": 36.0746683,
       "entrance_lng": -79.7912476,
-      "entrance_source": "OSM parking_entrance node 2185787855"
+      "entrance_source": "OSM parking_entrance node 2185787855",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "grb-first-national-bank-field",
@@ -157,7 +161,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "grb-lemur-museum",
@@ -218,7 +224,9 @@
       "notes": "Museum adjacent to Science Center. Surface lot",
       "source": "Web-verified surface lot - was: greensboroscience.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "grb-bog-garden",
@@ -230,7 +238,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Free gardens.",
-      "source": "greensborobeautiful.org"
+      "source": "greensborobeautiful.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "grb-uncg-visitor",
@@ -245,7 +255,9 @@
       "source": "parking.uncg.edu",
       "entrance_lat": 36.0706883,
       "entrance_lng": -79.8115983,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "grb-carolina-theatre",
@@ -312,7 +324,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mostly vacated. Furniture Market uses.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "grb-furniture-market",
@@ -356,7 +370,9 @@
       "source": "flyfrompti.com",
       "entrance_lat": 36.1078323,
       "entrance_lng": -79.9427436,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "grb-airport-economy",

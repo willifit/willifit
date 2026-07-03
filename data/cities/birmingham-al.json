@@ -66,7 +66,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic 1927 movie palace.",
-      "source": "alabamatheatre.com"
+      "source": "alabamatheatre.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bhm-civil-rights-inst",
@@ -78,7 +80,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Museum + Kelly Ingram Park area.",
-      "source": "bcri.org"
+      "source": "bcri.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bhm-railroad-park",
@@ -105,7 +109,9 @@
       "notes": "Iconic iron statue + city view. Surface parking",
       "source": "Web-verified surface lot - was: visitvulcan.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bhm-museum-art",
@@ -122,7 +128,9 @@
       "entrance_lng": -86.8114271,
       "entrance_source": "OSM parking_entrance node 9978482603",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bhm-botanical-gardens",
@@ -229,7 +237,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major mall.",
-      "source": "riverchasegalleriaonline.com"
+      "source": "riverchasegalleriaonline.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "bhm-barbers-motorsports",
@@ -267,7 +277,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flybirmingham.com"
+      "source": "flybirmingham.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "bhm-bhm-economy",

@@ -56,7 +56,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown museum + performance venue.",
-      "source": "shawcenter.org"
+      "source": "shawcenter.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "btr-public-library-main",
@@ -70,7 +72,9 @@
       "notes": "Flagship library. Surface lot",
       "source": "Web-verified surface lot - was: ebrpl.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-tiger-stadium",
@@ -115,7 +119,9 @@
       "entrance_lat": 30.4135999,
       "entrance_lng": -91.1885592,
       "entrance_source": "OSM parking_entrance node 12057011029",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-lsu-union-sq",
@@ -127,7 +133,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "LSU visitor parking.",
-      "source": "lsu.edu/parking"
+      "source": "lsu.edu/parking",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-lsu-vet-med",
@@ -139,7 +147,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "LSU ag campus.",
-      "source": "lsu.edu"
+      "source": "lsu.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-baton-rouge-zoo",
@@ -179,7 +189,9 @@
       "notes": "Major enclosed mall. Surface lots only confirmed",
       "source": "Web-verified surface lot - was: mallofla.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-towne-center-cortana",
@@ -209,7 +221,9 @@
       "entrance_lng": -91.1928184,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "btr-louisiana-art-science",
@@ -223,7 +237,9 @@
       "notes": "Museum + planetarium. Surface lots near River Rd",
       "source": "Web-verified surface lot - was: lasm.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-baton-rouge-gallery",
@@ -235,7 +251,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Artist collective in city park.",
-      "source": "batonrougegallery.org"
+      "source": "batonrougegallery.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-lasm-planetarium",
@@ -247,7 +265,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown riverfront.",
-      "source": "lasm.org"
+      "source": "lasm.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-burden-museum-gardens",
@@ -305,7 +325,9 @@
       "source": "redstickfm.com",
       "entrance_lat": 30.4483372,
       "entrance_lng": -91.1885561,
-      "entrance_source": "OSM parking_entrance node 9143244442"
+      "entrance_source": "OSM parking_entrance node 9143244442",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-mid-city-district",
@@ -317,7 +339,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Government St arts district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-airport-main",
@@ -329,7 +353,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flybtr.com"
+      "source": "flybtr.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "btr-airport-economy",

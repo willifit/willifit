@@ -31,7 +31,9 @@
       "source": "milb.com",
       "entrance_lat": 36.7367145,
       "entrance_lng": -119.7881232,
-      "entrance_source": "OSM parking_entrance node 11914344161"
+      "entrance_source": "OSM parking_entrance node 11914344161",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-save-mart-center",
@@ -69,7 +71,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Macerich mall.",
-      "source": "macerich.com"
+      "source": "macerich.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-river-park",
@@ -120,7 +124,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flyfresno.com"
+      "source": "flyfresno.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "fre-airport-economy",
@@ -200,7 +206,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Unique subterranean gardens attraction.",
-      "source": "undergroundgardens.com"
+      "source": "undergroundgardens.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-manchester-center",
@@ -225,7 +233,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall. Clovis (neighboring city).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "fre-old-town-clovis",
@@ -237,7 +247,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Clovis shopping/dining.",
-      "source": "oldtownclovis.com"
+      "source": "oldtownclovis.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-campus-pointe",
@@ -249,7 +261,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mixed-use retail adjacent to Fresno State.",
-      "source": "campuspointecenter.com"
+      "source": "campuspointecenter.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-fresno-state-structure-2",
@@ -261,7 +275,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Campus visitor parking structure.",
-      "source": "fresnostate.edu"
+      "source": "fresnostate.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-shields-blackstone",
@@ -273,7 +289,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Large commercial corridor surface.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "fre-kearney-mansion",

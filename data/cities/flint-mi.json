@@ -27,7 +27,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w974945029",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 42.94701,
+      "lng": -83.72041,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-26-000000000002657",
@@ -50,6 +62,413 @@
       "height_label": "14'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1971",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w38341410",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 42.98343,
+      "lng": -83.73454,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w39452909",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.96148,
+      "lng": -83.72475,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w42906747",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.99753,
+      "lng": -83.74652,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w42906749",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.97944,
+      "lng": -83.72988,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w86092773",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.96465,
+      "lng": -83.72558,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100721354",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.88897,
+      "lng": -83.73257,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w101083006",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.99826,
+      "lng": -83.74427,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w101083082",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.0181,
+      "lng": -83.7511,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w400574256",
+      "name": "Low clearance \u2014 West Bristol Road",
+      "addr": "West Bristol Road",
+      "lat": 42.97286,
+      "lng": -83.76521,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w400574859",
+      "name": "Low clearance \u2014 West Bristol Road",
+      "addr": "West Bristol Road",
+      "lat": 42.97344,
+      "lng": -83.72526,
+      "height_in": 185,
+      "height_label": "15'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w435719386",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.86273,
+      "lng": -83.73299,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1163080258",
+      "name": "Low clearance \u2014 Davison Road",
+      "addr": "Davison Road",
+      "lat": 43.03335,
+      "lng": -83.67701,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1194099877",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.08974,
+      "lng": -83.76317,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1194099879",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.04609,
+      "lng": -83.75506,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1194099880",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.98829,
+      "lng": -83.73715,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1194099881",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.9897,
+      "lng": -83.73875,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1237718642",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.06061,
+      "lng": -83.76264,
+      "height_in": 185,
+      "height_label": "15'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1237718643",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.04647,
+      "lng": -83.75762,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1237718648",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.07525,
+      "lng": -83.76291,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1409729629",
+      "name": "Low clearance \u2014 South Dort Highway (M 54)",
+      "addr": "M 54",
+      "lat": 43.01508,
+      "lng": -83.65451,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477383101",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.986,
+      "lng": -83.73444,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477383102",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.9846,
+      "lng": -83.73301,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477383967",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.9889,
+      "lng": -83.73778,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477383968",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.99175,
+      "lng": -83.74183,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477384441",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.00481,
+      "lng": -83.74906,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477384442",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 43.00262,
+      "lng": -83.74936,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477802292",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.97109,
+      "lng": -83.7256,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477802293",
+      "name": "Low clearance \u2014 I 75;US 23",
+      "addr": "I 75;US 23",
+      "lat": 42.96845,
+      "lng": -83.72549,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1482914310",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.86308,
+      "lng": -83.73968,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1482914311",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.86663,
+      "lng": -83.73948,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1482915510",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.92496,
+      "lng": -83.72513,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1482915511",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.91083,
+      "lng": -83.72576,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1482915512",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.91422,
+      "lng": -83.72587,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1482915513",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.91818,
+      "lng": -83.72599,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1483304133",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.91899,
+      "lng": -83.72631,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1483304134",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.91552,
+      "lng": -83.72622,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1483304135",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 42.91153,
+      "lng": -83.72604,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

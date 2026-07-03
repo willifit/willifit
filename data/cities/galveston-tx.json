@@ -25,6 +25,30 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w324513166",
+      "name": "Parking Garage #2",
+      "addr": "1011 Harborside Drive",
+      "lat": 29.31188,
+      "lng": -94.77969,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w769132359",
+      "name": "University Plaza Garage",
+      "addr": "500 Darrell Royal Avenue",
+      "lat": 29.31169,
+      "lng": -94.77559,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

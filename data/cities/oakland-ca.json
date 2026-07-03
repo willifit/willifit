@@ -121,7 +121,9 @@
       "source": "oaklandairport.com",
       "entrance_lat": 37.7204533,
       "entrance_lng": -122.2200225,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "oak-airport-econ",
@@ -149,7 +151,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Chinatown parking garage/street.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "oak-temescal",
@@ -216,7 +220,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic concert venue.",
-      "source": "thefoxoakland.com"
+      "source": "thefoxoakland.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "oak-uptown-dist",
@@ -244,7 +250,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic 1914 arena reopening as Oakland Arena.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "oak-emeryville-public-market",
@@ -272,7 +280,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Chinatown public garage.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "oak-children-museum-habitot",
@@ -297,7 +307,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum underground garage.",
-      "source": "museumca.org"
+      "source": "museumca.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "oak-preservation-park",

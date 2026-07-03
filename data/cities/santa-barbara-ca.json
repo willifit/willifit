@@ -46,7 +46,9 @@
       "source": "santabarbaraca.gov",
       "entrance_lat": 34.4238508,
       "entrance_lng": -119.7071193,
-      "entrance_source": "OSM parking_entrance node 8890967086"
+      "entrance_source": "OSM parking_entrance node 8890967086",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sba-lot-10-wharfside",
@@ -250,7 +252,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Goleta lifestyle center.",
-      "source": "caminorealmarketplace.com"
+      "source": "caminorealmarketplace.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sba-ucsb-parking",
@@ -328,7 +332,9 @@
       "oversized": true,
       "notes": "Terminal-adjacent garage.\nReclassified 2026-04-27 as surface lot per web research: Surface lots only - 'no height restriction' per official SBA site",
       "source": "Web-verified surface lot \u2014 was: flysba.santabarbaraca.gov",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sba-amtrak-station",

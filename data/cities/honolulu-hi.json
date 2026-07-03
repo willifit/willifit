@@ -13,7 +13,9 @@
       "source": "alamoanacenter.com",
       "entrance_lat": 21.2903129,
       "entrance_lng": -157.8444946,
-      "entrance_source": "OSM parking_entrance node 11568831372"
+      "entrance_source": "OSM parking_entrance node 11568831372",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "hnl-international-mkt",
@@ -95,7 +97,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest Waikiki resort complex.",
-      "source": "hilton.com"
+      "source": "hilton.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hnl-kuhio-beach-marina",
@@ -175,7 +179,9 @@
       "source": "honolulumuseum.org",
       "entrance_lat": 21.3037517,
       "entrance_lng": -157.8510105,
-      "entrance_source": "OSM parking_entrance node 12599445704"
+      "entrance_source": "OSM parking_entrance node 12599445704",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hnl-bishop-museum",
@@ -200,7 +206,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic royal palace. Limited street + lot.",
-      "source": "iolanipalace.org"
+      "source": "iolanipalace.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hnl-aloha-stadium",
@@ -254,7 +262,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Howard Hughes redevelopment. Shops + restaurants.",
-      "source": "wardvillage.com"
+      "source": "wardvillage.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "hnl-chinatown-maunakea",
@@ -334,7 +344,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered long term.",
-      "source": "airports.hawaii.gov"
+      "source": "airports.hawaii.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1181208849",

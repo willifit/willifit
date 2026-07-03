@@ -30,7 +30,107 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w65042153",
+      "name": "Liberty Street",
+      "addr": "Liberty Street",
+      "lat": 42.11603,
+      "lng": -80.0975,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w280513747",
+      "name": "Cherry Street",
+      "addr": "Cherry Street",
+      "lat": 42.11711,
+      "lng": -80.09357,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w330294449",
+      "name": "Ash Street",
+      "addr": "Ash Street",
+      "lat": 42.12567,
+      "lng": -80.06636,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w330328386",
+      "name": "Peach Street",
+      "addr": "Peach Street",
+      "lat": 42.12074,
+      "lng": -80.08115,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w330328391",
+      "name": "State Street",
+      "addr": "State Street",
+      "lat": 42.12114,
+      "lng": -80.07972,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w330328397",
+      "name": "French Street",
+      "addr": "French Street",
+      "lat": 42.12157,
+      "lng": -80.07833,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w330328400",
+      "name": "Sassafras Street",
+      "addr": "Sassafras Street",
+      "lat": 42.12,
+      "lng": -80.08362,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w466690671",
+      "name": "Wattsburg Road",
+      "addr": "PA 8",
+      "lat": 42.10088,
+      "lng": -80.01944,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w826286626",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 42.04794,
+      "lng": -80.07823,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-42-000000000016449",
@@ -53,6 +153,127 @@
       "height_label": "8'11\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1875",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w317477793",
+      "name": "Low clearance \u2014 Buffalo Road (US 20)",
+      "addr": "US 20",
+      "lat": 42.16746,
+      "lng": -79.95337,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w466458801",
+      "name": "Low clearance \u2014 Wattsburg Road (PA 8)",
+      "addr": "PA 8",
+      "lat": 42.09334,
+      "lng": -80.00584,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w466690532",
+      "name": "Low clearance \u2014 Parade Street",
+      "addr": "Parade Street",
+      "lat": 42.12413,
+      "lng": -80.07097,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w841525808",
+      "name": "Low clearance \u2014 Lawrence Parkway",
+      "addr": "Lawrence Parkway",
+      "lat": 42.14489,
+      "lng": -80.01445,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w845715568",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 42.10223,
+      "lng": -80.14623,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w911834844",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 42.06471,
+      "lng": -80.09963,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w938841076",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 42.09314,
+      "lng": -80.08437,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1515691033",
+      "name": "Low clearance \u2014 Asbury Road",
+      "addr": "Asbury Road",
+      "lat": 42.07534,
+      "lng": -80.18426,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1515693051",
+      "name": "Low clearance \u2014 Buffalo Road (US 20)",
+      "addr": "US 20",
+      "lat": 42.16679,
+      "lng": -79.95294,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1515693272",
+      "name": "Low clearance \u2014 Lawrence Parkway",
+      "addr": "Lawrence Parkway",
+      "lat": 42.14605,
+      "lng": -80.01516,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1515693732",
+      "name": "Low clearance \u2014 East Lake Road (PA 5 Alternate)",
+      "addr": "PA 5 Alternate",
+      "lat": 42.14314,
+      "lng": -80.04894,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

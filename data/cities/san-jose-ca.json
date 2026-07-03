@@ -26,7 +26,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "1,500 onsite spaces. Sharks + concerts.",
-      "source": "sapcenter.com"
+      "source": "sapcenter.com",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "sjc-2nd-san-carlos",
@@ -41,7 +43,9 @@
       "source": "sanjoseca.gov",
       "entrance_lat": 37.3303638,
       "entrance_lng": -121.8880628,
-      "entrance_source": "OSM parking_entrance node 10731733793"
+      "entrance_source": "OSM parking_entrance node 10731733793",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-3rd-san-fernando",
@@ -56,7 +60,9 @@
       "source": "sanjoseca.gov",
       "entrance_lat": 37.3364307,
       "entrance_lng": -121.8858104,
-      "entrance_source": "OSM parking_entrance node 5681157302"
+      "entrance_source": "OSM parking_entrance node 5681157302",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-market-san-pedro",
@@ -71,7 +77,9 @@
       "source": "sanjoseca.gov",
       "entrance_lat": 37.3392034,
       "entrance_lng": -121.8938565,
-      "entrance_source": "OSM parking_entrance node 13105246399"
+      "entrance_source": "OSM parking_entrance node 13105246399",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-4th-san-fernando",
@@ -86,7 +94,9 @@
       "source": "sanjoseca.gov",
       "entrance_lat": 37.3364307,
       "entrance_lng": -121.8858104,
-      "entrance_source": "OSM parking_entrance node 5681157302"
+      "entrance_source": "OSM parking_entrance node 5681157302",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-sjsu-north",
@@ -98,7 +108,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "San Jose State campus visitor parking.",
-      "source": "sjsu.edu"
+      "source": "sjsu.edu",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-sjsu-south",
@@ -113,7 +125,9 @@
       "source": "sjsu.edu",
       "entrance_lat": 37.3329788,
       "entrance_lng": -121.8816031,
-      "entrance_source": "OSM parking_entrance node 9760782984"
+      "entrance_source": "OSM parking_entrance node 9760782984",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-tech-museum",
@@ -125,7 +139,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage. Plaza de Cesar Chavez adjacent.",
-      "source": "thetech.org"
+      "source": "thetech.org",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-childrens-discovery",
@@ -199,7 +215,9 @@
       "source": "westfield.com",
       "entrance_lat": 37.3227827,
       "entrance_lng": -121.9460086,
-      "entrance_source": "OSM parking_entrance node 13082522974"
+      "entrance_source": "OSM parking_entrance node 13082522974",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-eastridge",
@@ -306,7 +324,9 @@
       "source": "flysanjose.com",
       "entrance_lat": 37.3645792,
       "entrance_lng": -121.9243619,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "sjc-airport-economy",

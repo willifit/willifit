@@ -13,7 +13,9 @@
       "source": "savannahga.gov",
       "entrance_lat": 32.0807994,
       "entrance_lng": -81.0925648,
-      "entrance_source": "OSM parking_entrance node 11448949187"
+      "entrance_source": "OSM parking_entrance node 11448949187",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-state-st-garage",
@@ -28,7 +30,9 @@
       "source": "savannahga.gov",
       "entrance_lat": 32.0792752,
       "entrance_lng": -81.0919512,
-      "entrance_source": "OSM parking_entrance node 2186774397"
+      "entrance_source": "OSM parking_entrance node 2186774397",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-robinson-garage",
@@ -61,7 +65,9 @@
       "source": "savannahga.gov",
       "entrance_lat": 32.0813819,
       "entrance_lng": -81.0946228,
-      "entrance_source": "OSM parking_entrance node 10236200384"
+      "entrance_source": "OSM parking_entrance node 10236200384",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-visitor-ctr",
@@ -124,7 +130,9 @@
       "source": "plantriverside.com",
       "entrance_lat": 32.0836996,
       "entrance_lng": -81.096407,
-      "entrance_source": "OSM parking_entrance node 12427955425"
+      "entrance_source": "OSM parking_entrance node 12427955425",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-forsyth-park",
@@ -236,7 +244,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Famous oak tree alley.",
-      "source": "gastateparks.org"
+      "source": "gastateparks.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sav-skidaway-park",
@@ -264,7 +274,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Wildlife preserve.",
-      "source": "oatlandisland.org"
+      "source": "oatlandisland.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-oglethorpe-mall",
@@ -276,7 +288,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sav-tanger-outlets",
@@ -288,7 +302,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall.",
-      "source": "tangeroutlet.com"
+      "source": "tangeroutlet.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-bonaventure",
@@ -300,7 +316,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic cemetery. Famous from 'Midnight in the Garden'.",
-      "source": "bonaventurehistorical.org"
+      "source": "bonaventurehistorical.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sav-mercer-house",
@@ -325,7 +343,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "savannahairport.com"
+      "source": "savannahairport.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sav-airport-economy",

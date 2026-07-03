@@ -182,7 +182,9 @@
       "entrance_lat": 40.7669319,
       "entrance_lng": -73.9616371,
       "entrance_source": "OSM parking_entrance node 5373598784",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-lincoln-ctr",
@@ -212,7 +214,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Metropolitan Museum area. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-battery-laz",
@@ -243,7 +247,9 @@
       "source": "parkright.com",
       "entrance_lat": 40.7036961,
       "entrance_lng": -74.0139059,
-      "entrance_source": "OSM parking_entrance node 7687295648"
+      "entrance_source": "OSM parking_entrance node 7687295648",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-trinity",
@@ -276,7 +282,9 @@
       "source": "Needs verification",
       "entrance_lat": 40.7129268,
       "entrance_lng": -74.0122919,
-      "entrance_source": "OSM parking_entrance node 11301575812"
+      "entrance_source": "OSM parking_entrance node 11301575812",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-14th8th",
@@ -391,7 +399,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal A daily parking. Clearance needs verification.",
-      "source": "newarkairport.com"
+      "source": "newarkairport.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-ewr-p4",
@@ -446,7 +456,9 @@
       "source": "Icon Parking",
       "entrance_lat": 40.7574007,
       "entrance_lng": -73.9982716,
-      "entrance_source": "OSM parking_entrance node 8318644138"
+      "entrance_source": "OSM parking_entrance node 8318644138",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-hy-mall",
@@ -518,7 +530,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Barclays Center, Atlantic Terminal. Oversized fee for vehicles 181\"+ long or 70\"+ high.",
-      "source": "GGMC Parking"
+      "source": "GGMC Parking",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-barclays-545wash",
@@ -620,7 +634,9 @@
       "source": "javitscenter.com",
       "entrance_lat": 40.756995,
       "entrance_lng": -74.0042199,
-      "entrance_source": "OSM parking_entrance node 8261122870"
+      "entrance_source": "OSM parking_entrance node 8261122870",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-atlantic-term",
@@ -632,7 +648,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent to Barclays + LIRR.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-moynihan",

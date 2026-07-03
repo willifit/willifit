@@ -13,7 +13,9 @@
       "source": "Hyatt",
       "entrance_lat": 29.4249611,
       "entrance_lng": -98.4857654,
-      "entrance_source": "OSM parking_entrance node 13190864772"
+      "entrance_source": "OSM parking_entrance node 13190864772",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-hyatt-regency",
@@ -106,7 +108,9 @@
       "source": "sapark.sanantonio.gov",
       "entrance_lat": 29.4233701,
       "entrance_lng": -98.4856193,
-      "entrance_source": "OSM parking_entrance node 12464215928"
+      "entrance_source": "OSM parking_entrance node 12464215928",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-st-marys",
@@ -139,7 +143,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.4249611,
       "entrance_lng": -98.4857654,
-      "entrance_source": "OSM parking_entrance node 13190864772"
+      "entrance_source": "OSM parking_entrance node 13190864772",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-alamodome",
@@ -180,7 +186,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.4430708,
       "entrance_lng": -98.4775804,
-      "entrance_source": "OSM parking_entrance node 10246074206"
+      "entrance_source": "OSM parking_entrance node 10246074206",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-utsa-bauerle",
@@ -210,7 +218,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "SAT terminal garages.",
-      "source": "flysanantonio.com"
+      "source": "flysanantonio.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sat-sat-ecopark",
@@ -267,7 +277,9 @@
       "source": "sapark.sanantonio.gov",
       "entrance_lat": 29.4249611,
       "entrance_lng": -98.4857654,
-      "entrance_source": "OSM parking_entrance node 13190864772"
+      "entrance_source": "OSM parking_entrance node 13190864772",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-navarro",
@@ -310,7 +322,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under HemisFair Park (Yanaguana Garden).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-alamoplaza",
@@ -400,7 +414,9 @@
       "source": "atpearl.com",
       "entrance_lat": 29.4430708,
       "entrance_lng": -98.4775804,
-      "entrance_source": "OSM parking_entrance node 10246074206"
+      "entrance_source": "OSM parking_entrance node 10246074206",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sat-mcallister",

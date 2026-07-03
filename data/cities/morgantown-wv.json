@@ -62,6 +62,17 @@
       "height_label": "13'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1893",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w96906867",
+      "name": "Low clearance \u2014 I 68",
+      "addr": "I 68",
+      "lat": 39.64783,
+      "lng": -79.88489,
+      "height_in": 199,
+      "height_label": "16'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

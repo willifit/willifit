@@ -80,7 +80,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage.",
-      "source": "anchoragemuseum.org"
+      "source": "anchoragemuseum.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "anc-delaney-park",
@@ -134,7 +136,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "South Anchorage enclosed mall.",
-      "source": "dimondcenter.com"
+      "source": "dimondcenter.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "anc-tikahtnu-commons",
@@ -217,7 +221,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "1964 quake memorial park. Trail access.",
-      "source": "muni.org"
+      "source": "muni.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "anc-point-woronzof",
@@ -281,7 +287,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Covered airport garage.",
-      "source": "dot.alaska.gov/anc"
+      "source": "dot.alaska.gov/anc",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "anc-airport-economy",

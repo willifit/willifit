@@ -13,7 +13,9 @@
       "source": "cabq.gov",
       "entrance_lat": 35.0867201,
       "entrance_lng": -106.650916,
-      "entrance_source": "OSM parking_entrance node 6167251723"
+      "entrance_source": "OSM parking_entrance node 6167251723",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "abq-conv-ctr",
@@ -109,7 +111,9 @@
       "notes": "Enclosed mall. Surface parking",
       "source": "Web-verified surface lot - was: mycoronadocenter.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "abq-sandia-resort",
@@ -166,7 +170,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Airport terminal garage.",
-      "source": "abqsunport.com"
+      "source": "abqsunport.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "abq-sunport-econ",
@@ -204,7 +210,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Food hall in former lumber mill.",
-      "source": "sawmillmarket.com"
+      "source": "sawmillmarket.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "abq-old-town-plaza",
@@ -216,7 +224,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage near Plaza.",
-      "source": "cabq.gov"
+      "source": "cabq.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "abq-ted-m-gallegos",
@@ -299,7 +309,9 @@
       "source": "pats.unm.edu",
       "entrance_lat": 35.0818032,
       "entrance_lng": -106.618806,
-      "entrance_source": "OSM parking_entrance node 4657000210"
+      "entrance_source": "OSM parking_entrance node 4657000210",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "abq-isleta-resort",
@@ -326,7 +338,9 @@
       "notes": "Westside mall. Surface parking",
       "source": "Web-verified surface lot - was: Needs verification",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "abq-abq-intl-sunport-cellphone",
@@ -371,7 +385,9 @@
       "notes": "Multiple ART BRT park-rides. Park-and-Ride along Central Ave \u2014 surface",
       "source": "Web-verified surface lot - was: cabq.gov/transit",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w160185505",

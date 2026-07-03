@@ -40,7 +40,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Second Disneyland structure (5,000 spaces). Opened 2019.",
-      "source": "disneyland.disney.go.com"
+      "source": "disneyland.disney.go.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "ana-toy-story-lot",
@@ -222,7 +224,9 @@
       "source": "disneyland.disney.go.com",
       "entrance_lat": 33.8067679,
       "entrance_lng": -117.9233578,
-      "entrance_source": "OSM parking_entrance node 1291058380"
+      "entrance_source": "OSM parking_entrance node 1291058380",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ana-outlets-orange",
@@ -250,7 +254,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic citrus-packing house food hall.",
-      "source": "anaheimpackingdistrict.com"
+      "source": "anaheimpackingdistrict.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ana-brea-mall",
@@ -292,7 +298,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent Santa Ana mall.",
-      "source": "shopmainplace.com"
+      "source": "shopmainplace.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "ana-knotts-berry",
@@ -373,7 +381,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Near Convention Center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w91035465",

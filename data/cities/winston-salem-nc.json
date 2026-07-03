@@ -41,8 +41,304 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w31295068",
+      "name": "Visitor Parking Garage",
+      "addr": "",
+      "lat": 36.07743,
+      "lng": -80.29693,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w340124131",
+      "name": "Liberty Street Parking",
+      "addr": "",
+      "lat": 36.0996,
+      "lng": -80.24465,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w343485368",
+      "name": "Liberty Plaza Parking",
+      "addr": "",
+      "lat": 36.09646,
+      "lng": -80.24532,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w448589529",
+      "name": "Parking Deck A",
+      "addr": "",
+      "lat": 36.08921,
+      "lng": -80.2699,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w489450069",
+      "name": "4th & Chruch Street Parking Deck",
+      "addr": "",
+      "lat": 36.09959,
+      "lng": -80.24278,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1027243484",
+      "name": "Parking Deck C",
+      "addr": "",
+      "lat": 36.09015,
+      "lng": -80.27074,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1194667761",
+      "name": "Government Center Public Parking",
+      "addr": "",
+      "lat": 36.09762,
+      "lng": -80.24145,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1267210551",
+      "name": "Clemmons Food Pantry",
+      "addr": "",
+      "lat": 36.0242,
+      "lng": -80.38462,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "6 spaces",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
-  "bridges": []
+  "tunnels": [
+    {
+      "id": "osm-w1188727061",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 36.06638,
+      "lng": -80.25471,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w625865667",
+      "name": "Low clearance \u2014 East 5th Street",
+      "addr": "East 5th Street",
+      "lat": 36.10044,
+      "lng": -80.23975,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w663199198",
+      "name": "Low clearance \u2014 Rams Drive",
+      "addr": "Rams Drive",
+      "lat": 36.09041,
+      "lng": -80.23027,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w825784943",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 36.032,
+      "lng": -80.38268,
+      "height_in": 119,
+      "height_label": "9'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1014423521",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 36.03976,
+      "lng": -80.38895,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1210004650",
+      "name": "Low clearance \u2014 Reynolda Road Northwest",
+      "addr": "Reynolda Road Northwest",
+      "lat": 36.10265,
+      "lng": -80.26275,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1234767376",
+      "name": "Low clearance \u2014 Indiana Avenue",
+      "addr": "Indiana Avenue",
+      "lat": 36.15376,
+      "lng": -80.29278,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1414620174",
+      "name": "Low clearance \u2014 East 5th Street",
+      "addr": "East 5th Street",
+      "lat": 36.10052,
+      "lng": -80.23807,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1457836403",
+      "name": "Low clearance \u2014 Glenn Avenue Northeast",
+      "addr": "Glenn Avenue Northeast",
+      "lat": 36.13074,
+      "lng": -80.23997,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458123494",
+      "name": "Low clearance \u2014 Motor Road",
+      "addr": "Motor Road",
+      "lat": 36.15537,
+      "lng": -80.25292,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458135929",
+      "name": "Low clearance \u2014 Indiana Avenue",
+      "addr": "Indiana Avenue",
+      "lat": 36.12483,
+      "lng": -80.23429,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458150040",
+      "name": "Low clearance \u2014 North Patterson Avenue",
+      "addr": "North Patterson Avenue",
+      "lat": 36.11574,
+      "lng": -80.24187,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458151373",
+      "name": "Low clearance \u2014 Northwest Boulevard",
+      "addr": "Northwest Boulevard",
+      "lat": 36.1107,
+      "lng": -80.24411,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458153106",
+      "name": "Low clearance \u2014 Northwest Boulevard",
+      "addr": "Northwest Boulevard",
+      "lat": 36.11128,
+      "lng": -80.23738,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458165182",
+      "name": "Low clearance \u2014 West 20th Street",
+      "addr": "West 20th Street",
+      "lat": 36.11738,
+      "lng": -80.25638,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458168631",
+      "name": "Low clearance \u2014 East 7th Street",
+      "addr": "East 7th Street",
+      "lat": 36.10279,
+      "lng": -80.23932,
+      "height_in": 141,
+      "height_label": "11'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458171446",
+      "name": "Low clearance \u2014 East 4th Street",
+      "addr": "East 4th Street",
+      "lat": 36.099,
+      "lng": -80.23971,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1458184766",
+      "name": "Low clearance \u2014 East 3rd Street",
+      "addr": "East 3rd Street",
+      "lat": 36.09834,
+      "lng": -80.23938,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

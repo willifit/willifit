@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium complex garage.",
-      "source": "tnaqua.org"
+      "source": "tnaqua.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "cha-riverfront-lot",
@@ -53,7 +55,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown office.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "cha-miller-plaza",
@@ -109,7 +113,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Art district + Hunter Museum.",
-      "source": "bluffviewartdistrict.com"
+      "source": "bluffviewartdistrict.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "cha-hunter-museum",
@@ -123,7 +129,9 @@
       "notes": "Museum on bluff overlooking river. Free surface lot 500ft away",
       "source": "Web-verified surface lot - was: huntermuseum.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "cha-finley-stadium",
@@ -176,7 +184,9 @@
       "notes": "Children's museum. Surface lot adjacent",
       "source": "Web-verified surface lot - was: cdmfun.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "cha-utc-campus",
@@ -188,7 +198,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UT Chattanooga visitor.",
-      "source": "utc.edu"
+      "source": "utc.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "cha-warehouse-row",
@@ -200,7 +212,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shopping + dining district.",
-      "source": "warehouserow.net"
+      "source": "warehouserow.net",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "cha-lookout-mountain-incline",
@@ -254,7 +268,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Lookout Mountain Battlefield NPS.",
-      "source": "nps.gov/chch"
+      "source": "nps.gov/chch",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "cha-chickamauga-battlefield",
@@ -313,7 +329,9 @@
       "source": "chattairport.com",
       "entrance_lat": 35.0379866,
       "entrance_lng": -85.206503,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "cha-airport-economy",

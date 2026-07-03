@@ -31,7 +31,9 @@
       "source": "panynj.gov",
       "entrance_lat": 40.7327082,
       "entrance_lng": -74.0613541,
-      "entrance_source": "OSM parking_entrance node 12313769354"
+      "entrance_source": "OSM parking_entrance node 12313769354",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-grove-st-path",
@@ -85,7 +87,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Wall Street West. Waterfront office district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-harsimus-cove",
@@ -116,7 +120,9 @@
       "source": "Needs verification",
       "entrance_lat": 40.7327082,
       "entrance_lng": -74.0613541,
-      "entrance_source": "OSM parking_entrance node 12313769354"
+      "entrance_source": "OSM parking_entrance node 12313769354",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-port-liberte",
@@ -128,7 +134,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Waterfront residential.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "jc-ellis-island-ferry",
@@ -156,7 +164,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Farmers market + restaurants.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-hoboken-13th",
@@ -168,7 +178,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hoboken adjacent (separate city).",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-jersey-city-museum",
@@ -182,7 +194,9 @@
       "notes": "Library surface parking. Street parking only",
       "source": "Web-verified surface lot - was: jclibrary.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-lsc-sdfm-ferry",
@@ -226,7 +240,9 @@
       "source": "parkfast.com",
       "entrance_lat": 40.7327082,
       "entrance_lng": -74.0613541,
-      "entrance_source": "OSM parking_entrance node 12313769354"
+      "entrance_source": "OSM parking_entrance node 12313769354",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-hudson-river-waterfront",
@@ -267,7 +283,9 @@
       "source": "njtransit.com",
       "entrance_lat": 40.7370551,
       "entrance_lng": -74.0281221,
-      "entrance_source": "OSM parking_entrance node 12148898922"
+      "entrance_source": "OSM parking_entrance node 12148898922",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-secaucus-junction",
@@ -320,7 +338,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "NJ Transit park-and-ride.",
-      "source": "njtransit.com"
+      "source": "njtransit.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-bergenline-transit",

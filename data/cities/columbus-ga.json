@@ -28,9 +28,33 @@
       "entrance_lat": 32.3799611,
       "entrance_lng": -84.956896,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w720574949",
+      "name": "Columbus State University",
+      "addr": "",
+      "lat": 32.504,
+      "lng": -84.93917,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1117153633",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 32.50689,
+      "lng": -84.98945,
+      "height_in": 240,
+      "height_label": "20'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-01-004427",
@@ -64,6 +88,28 @@
       "height_label": "15'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1952",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w875087971",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 32.55211,
+      "lng": -84.94005,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1490919682",
+      "name": "Low clearance \u2014 West 9th Street",
+      "addr": "West 9th Street",
+      "lat": 32.46292,
+      "lng": -84.99542,
+      "height_in": 128,
+      "height_label": "10'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -27,7 +27,30 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w177233571",
+      "name": "North McKinley Street",
+      "addr": "North McKinley Street",
+      "lat": 42.85542,
+      "lng": -106.31219,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1459379112",
+      "name": "North Center Street",
+      "addr": "I 25 Business;US 87 Business",
+      "lat": 42.85402,
+      "lng": -106.32518,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-56-AHL",
@@ -39,6 +62,127 @@
       "height_label": "14'4\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1966; bridge carries I-25 NBL",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w142869174",
+      "name": "Low clearance \u2014 North Center Street (I 25 Business;US 87 Business)",
+      "addr": "I 25 Business;US 87 Business",
+      "lat": 42.85698,
+      "lng": -106.32517,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1150002871",
+      "name": "Low clearance \u2014 Curtis Street (WY 258)",
+      "addr": "WY 258",
+      "lat": 42.85452,
+      "lng": -106.27077,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531002531",
+      "name": "Low clearance \u2014 I 25",
+      "addr": "I 25",
+      "lat": 42.85759,
+      "lng": -106.29774,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531239291",
+      "name": "Low clearance \u2014 US 20;US 26",
+      "addr": "US 20;US 26",
+      "lat": 42.86452,
+      "lng": -106.36179,
+      "height_in": 208,
+      "height_label": "17'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531239311",
+      "name": "Low clearance \u2014 US 20;US 26",
+      "addr": "US 20;US 26",
+      "lat": 42.86492,
+      "lng": -106.36005,
+      "height_in": 206,
+      "height_label": "17'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531242752",
+      "name": "Low clearance \u2014 Southeast Wyoming Boulevard (WY 258)",
+      "addr": "WY 258",
+      "lat": 42.85349,
+      "lng": -106.27078,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531243650",
+      "name": "Low clearance \u2014 Southeast Wyoming Boulevard (WY 258)",
+      "addr": "WY 258",
+      "lat": 42.84211,
+      "lng": -106.26532,
+      "height_in": 228,
+      "height_label": "19'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531246596",
+      "name": "Low clearance \u2014 County Road 308 (WY 220)",
+      "addr": "WY 220",
+      "lat": 42.77245,
+      "lng": -106.46233,
+      "height_in": 240,
+      "height_label": "20'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1532030523",
+      "name": "Low clearance \u2014 I 25",
+      "addr": "I 25",
+      "lat": 42.85521,
+      "lng": -106.29004,
+      "height_in": 208,
+      "height_label": "17'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1532030907",
+      "name": "Low clearance \u2014 I 25",
+      "addr": "I 25",
+      "lat": 42.85565,
+      "lng": -106.29142,
+      "height_in": 202,
+      "height_label": "16'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1532031362",
+      "name": "Low clearance \u2014 North McKinley Street",
+      "addr": "North McKinley Street",
+      "lat": 42.85694,
+      "lng": -106.31222,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -97,7 +97,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "SoMa surface lot, accommodates RVs.",
-      "source": "sftourismtips.com"
+      "source": "sftourismtips.com",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-embarcadero-bryant",
@@ -112,7 +114,9 @@
       "source": "sftourismtips.com",
       "entrance_lat": 37.7843694,
       "entrance_lng": -122.3893634,
-      "entrance_source": "OSM parking_entrance node 10874913915"
+      "entrance_source": "OSM parking_entrance node 10874913915",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-ellis-ofarrell",

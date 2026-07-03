@@ -40,7 +40,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Baseball stadium.",
-      "source": "saltdogs.com"
+      "source": "saltdogs.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lin-memorial-stadium",
@@ -81,7 +83,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic warehouse district \u2014 multiple city garages.",
-      "source": "lincoln.ne.gov"
+      "source": "lincoln.ne.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-center-park-garage",
@@ -96,7 +100,9 @@
       "source": "lincoln.ne.gov",
       "entrance_lat": 40.8153511,
       "entrance_lng": -96.7042377,
-      "entrance_source": "OSM parking_entrance node 7217846197"
+      "entrance_source": "OSM parking_entrance node 7217846197",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-university-sq",
@@ -111,7 +117,9 @@
       "source": "lincoln.ne.gov",
       "entrance_lat": 40.8153511,
       "entrance_lng": -96.7042377,
-      "entrance_source": "OSM parking_entrance node 7217846197"
+      "entrance_source": "OSM parking_entrance node 7217846197",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-larson-motors-mall",
@@ -158,7 +166,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UNL visitor garage near stadium.",
-      "source": "parking.unl.edu"
+      "source": "parking.unl.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-devaney-center",
@@ -171,7 +181,9 @@
       "oversized": true,
       "notes": "Volleyball + wrestling arena.\nReclassified 2026-04-30 as surface lot per web research: Nebraska athletics surface lots",
       "source": "Web-verified surface lot \u2014 was: huskers.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-gateway-mall",
@@ -185,7 +197,9 @@
       "notes": "Enclosed mall. Surface only",
       "source": "Web-verified surface lot - was: Needs verification",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-sun-valley-lanes",
@@ -212,7 +226,9 @@
       "notes": "Free museum on UNL campus. Street and surface lots",
       "source": "Web-verified surface lot - was: sheldonartmuseum.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-museum-nebraska-history",
@@ -256,7 +272,9 @@
       "notes": "UNL paleontology museum with mammoths. Street/surface on UNL",
       "source": "Web-verified surface lot - was: museum.unl.edu",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-sunken-gardens",
@@ -268,7 +286,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic formal garden.",
-      "source": "lincoln.ne.gov"
+      "source": "lincoln.ne.gov",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-childrens-zoo",
@@ -293,7 +313,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Kids zoo.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lin-pioneers-park",
@@ -334,7 +356,9 @@
       "source": "Needs verification",
       "entrance_lat": 40.8562006,
       "entrance_lng": -96.7313023,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lin-lancaster-event-ctr",
@@ -378,7 +402,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "chihealth.com"
+      "source": "chihealth.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w234062580",

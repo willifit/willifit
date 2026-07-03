@@ -86,7 +86,9 @@
       "source": "denverconvention.com",
       "entrance_lat": 39.7426901,
       "entrance_lng": -104.9946905,
-      "entrance_source": "OSM parking_entrance node 5985617207"
+      "entrance_source": "OSM parking_entrance node 5985617207",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "den-performing-arts",
@@ -179,7 +181,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.750882,
       "entrance_lng": -104.9989475,
-      "entrance_source": "OSM parking_entrance node 12032669792"
+      "entrance_source": "OSM parking_entrance node 12032669792",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "den-union-station",
@@ -258,7 +262,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall garage.",
-      "source": "shopcherrycreek.com"
+      "source": "shopcherrycreek.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "den-nature-science",
@@ -273,7 +279,9 @@
       "source": "dmns.org",
       "entrance_lat": 39.7484962,
       "entrance_lng": -104.9440443,
-      "entrance_source": "OSM parking_entrance node 3275412916"
+      "entrance_source": "OSM parking_entrance node 3275412916",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "den-zoo",
@@ -314,7 +322,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former airport redevelopment.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "den-red-rocks",
@@ -339,7 +349,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "DIA Terminal East garage. Clearance needs verification.",
-      "source": "flydenver.com"
+      "source": "flydenver.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "dia-west-garage",
@@ -354,7 +366,9 @@
       "source": "flydenver.com",
       "entrance_lat": 39.8586887,
       "entrance_lng": -104.6794296,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "dia-pikes-peak-econ",
@@ -463,7 +477,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 39.7419533,
       "entrance_lng": -104.9942859,
-      "entrance_source": "OSM parking_entrance node 5985629200"
+      "entrance_source": "OSM parking_entrance node 5985629200",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w218162061",
@@ -538,7 +554,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 39.7287213,
       "entrance_lng": -104.9887422,
-      "entrance_source": "OSM parking_entrance node 7546243734"
+      "entrance_source": "OSM parking_entrance node 7546243734",
+      "sv_checked": "2026-05-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w303352957",
@@ -717,7 +735,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w688021320",
@@ -742,7 +762,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9074597368",

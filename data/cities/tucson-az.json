@@ -61,7 +61,9 @@
       "source": "tucsonconventioncenter.com",
       "entrance_lat": 32.2178087,
       "entrance_lng": -110.9726179,
-      "entrance_source": "OSM parking_entrance node 10255028053"
+      "entrance_source": "OSM parking_entrance node 10255028053",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tus-arena-main",
@@ -92,7 +94,9 @@
       "source": "parktucson.org",
       "entrance_lat": 32.2273207,
       "entrance_lng": -110.966987,
-      "entrance_source": "OSM parking_entrance node 13325496304"
+      "entrance_source": "OSM parking_entrance node 13325496304",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tus-4th-ave",
@@ -165,7 +169,9 @@
       "source": "parkplacemall.com",
       "entrance_lat": 32.2206322,
       "entrance_lng": -110.8801932,
-      "entrance_source": "OSM parking_entrance node 7495502444"
+      "entrance_source": "OSM parking_entrance node 7495502444",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tus-la-encantada",
@@ -181,7 +187,9 @@
       "entrance_lat": 32.3081697,
       "entrance_lng": -110.9327895,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "tus-desert-museum",
@@ -222,7 +230,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flytucson.com"
+      "source": "flytucson.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "tus-airport-economy",
@@ -305,7 +315,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "tucsonmall.com"
+      "source": "tucsonmall.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tus-foothills-mall",
@@ -317,7 +329,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall.",
-      "source": "premiumoutlets.com"
+      "source": "premiumoutlets.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "tus-mission-san-xavier",
@@ -358,7 +372,9 @@
       "source": "nps.gov/sagu",
       "entrance_lat": 32.2472193,
       "entrance_lng": -111.1826356,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "tus-reid-park",
@@ -383,7 +399,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mexican-themed food hall + shops.",
-      "source": "mercadosanagustin.com"
+      "source": "mercadosanagustin.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "tus-rincon-market",

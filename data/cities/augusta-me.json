@@ -25,6 +25,30 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (209 spaces). 209 spaces. Operator: Shaw's.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w368063248",
+      "name": "Dickman Street Parking Garage",
+      "addr": "",
+      "lat": 44.31537,
+      "lng": -69.77536,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w368066078",
+      "name": "Sewall Street Parking Garage",
+      "addr": "93 Sewall Street",
+      "lat": 44.30869,
+      "lng": -69.78339,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

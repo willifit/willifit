@@ -13,7 +13,9 @@
       "source": "klydewarrenpark.org",
       "entrance_lat": 32.7899075,
       "entrance_lng": -96.8018552,
-      "entrance_source": "OSM parking_entrance node 5851710037"
+      "entrance_source": "OSM parking_entrance node 5851710037",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-parkfast-1925pearl",
@@ -28,7 +30,9 @@
       "source": "dallasartsdistrict.org",
       "entrance_lat": 32.7892931,
       "entrance_lng": -96.7995182,
-      "entrance_source": "OSM parking_entrance node 10899170025"
+      "entrance_source": "OSM parking_entrance node 10899170025",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-perot-museum",
@@ -76,7 +80,9 @@
       "source": "parkplaceparking.com",
       "entrance_lat": 32.7892931,
       "entrance_lng": -96.7995182,
-      "entrance_source": "OSM parking_entrance node 10899170025"
+      "entrance_source": "OSM parking_entrance node 10899170025",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-one-arts-plaza",
@@ -109,7 +115,9 @@
       "source": "Needs verification",
       "entrance_lat": 32.7898294,
       "entrance_lng": -96.802338,
-      "entrance_source": "OSM parking_entrance node 5851710072"
+      "entrance_source": "OSM parking_entrance node 5851710072",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-museum-art",
@@ -124,7 +132,9 @@
       "source": "dma.org",
       "entrance_lat": 32.7875704,
       "entrance_lng": -96.7996815,
-      "entrance_source": "OSM parking_entrance node 9668858113"
+      "entrance_source": "OSM parking_entrance node 9668858113",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-nasher",
@@ -201,7 +211,9 @@
       "source": "Needs verification",
       "entrance_lat": 32.7749156,
       "entrance_lng": -96.8095032,
-      "entrance_source": "OSM parking_entrance node 5807909394"
+      "entrance_source": "OSM parking_entrance node 5807909394",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-union-station",
@@ -250,7 +262,9 @@
       "source": "Needs verification",
       "entrance_lat": 32.7822657,
       "entrance_lng": -96.7978053,
-      "entrance_source": "OSM parking_entrance node 13157185648"
+      "entrance_source": "OSM parking_entrance node 13157185648",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-fountain-pl",
@@ -359,7 +373,9 @@
       "source": "Needs verification",
       "entrance_lat": 32.785661,
       "entrance_lng": -96.7824855,
-      "entrance_source": "OSM parking_entrance node 5910339240"
+      "entrance_source": "OSM parking_entrance node 5910339240",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-bishop-arts",
@@ -387,7 +403,9 @@
       "source": "dallasconventioncenter.com",
       "entrance_lat": 32.7713828,
       "entrance_lng": -96.8020262,
-      "entrance_source": "OSM parking_entrance node 5807814863"
+      "entrance_source": "OSM parking_entrance node 5807814863",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dal-dart-cityplace",
@@ -399,7 +417,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Cityplace tower + DART.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dfw-terminal-a",
@@ -465,7 +485,9 @@
       "source": "dfwairport.com",
       "entrance_lat": 32.8992263,
       "entrance_lng": -97.0428507,
-      "entrance_source": "OSM parking_entrance node 5363304082"
+      "entrance_source": "OSM parking_entrance node 5363304082",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dfw-express-south",
@@ -521,7 +543,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Love Field garage A. Call 214-350-4881 for clearance confirm.",
-      "source": "dallas-lovefield.com"
+      "source": "dallas-lovefield.com",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "dal-love-economy",
@@ -620,7 +644,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.8898873,
       "entrance_lng": -97.0375425,
-      "entrance_source": "OSM parking_entrance node 12381236665"
+      "entrance_source": "OSM parking_entrance node 12381236665",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w28015768",
@@ -761,7 +787,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 32.7877306,
       "entrance_lng": -96.7944243,
-      "entrance_source": "OSM parking_entrance node 13121774488"
+      "entrance_source": "OSM parking_entrance node 13121774488",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w61674812",
@@ -794,7 +822,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 32.9312933,
       "entrance_lng": -96.8211125,
-      "entrance_source": "OSM parking_entrance node 4458475492"
+      "entrance_source": "OSM parking_entrance node 4458475492",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w179241469",
@@ -893,7 +923,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 32.9887794,
       "entrance_lng": -96.7056663,
-      "entrance_source": "OSM parking_entrance node 6312958901"
+      "entrance_source": "OSM parking_entrance node 6312958901",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w421715523",
@@ -1063,7 +1095,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 32.9739339,
       "entrance_lng": -96.7141886,
-      "entrance_source": "OSM parking_entrance node 6312958919"
+      "entrance_source": "OSM parking_entrance node 6312958919",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w470463077",
@@ -1111,7 +1145,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 32.7916432,
       "entrance_lng": -96.7776698,
-      "entrance_source": "OSM parking_entrance node 11151659839"
+      "entrance_source": "OSM parking_entrance node 11151659839",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w486822477",
@@ -1213,7 +1249,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 20'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w597520847",
@@ -1228,7 +1266,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 32.9987538,
       "entrance_lng": -96.7070857,
-      "entrance_source": "OSM parking_entrance node 7423897098"
+      "entrance_source": "OSM parking_entrance node 7423897098",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w598154329",
@@ -1240,7 +1280,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w598154332",
@@ -1270,7 +1312,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 32.7908851,
       "entrance_lng": -96.8041842,
-      "entrance_source": "OSM parking_entrance node 9583222318"
+      "entrance_source": "OSM parking_entrance node 9583222318",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r8379645",

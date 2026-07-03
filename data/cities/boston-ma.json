@@ -29,7 +29,9 @@
       "source": "pilgrimparking.com",
       "entrance_lat": 42.3602506,
       "entrance_lng": -71.0574816,
-      "entrance_source": "OSM parking_entrance node 5212687623"
+      "entrance_source": "OSM parking_entrance node 5212687623",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "bos-folio",
@@ -44,7 +46,9 @@
       "source": "pilgrimparking.com",
       "entrance_lat": 42.35951,
       "entrance_lng": -71.0560214,
-      "entrance_source": "OSM parking_entrance node 7288598125"
+      "entrance_source": "OSM parking_entrance node 7288598125",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "bos-td-garden",
@@ -138,7 +142,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Seaport district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "bos-pru",

@@ -54,7 +54,9 @@
       "notes": "Enclosed mall. Surface lots",
       "source": "Web-verified surface lot - was: shopfrontiermall.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "chy-civic-center",
@@ -68,7 +70,9 @@
       "notes": "Performing arts venue. Surface lot",
       "source": "Web-verified surface lot - was: cheyenneciviccenter.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "chy-union-pacific-railroad-museum",
@@ -187,7 +191,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Military museum.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "chy-vimor-field",
@@ -293,7 +299,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Closest major airport to Cheyenne.",
-      "source": "flydenver.com"
+      "source": "flydenver.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n12752446620",

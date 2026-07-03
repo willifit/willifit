@@ -491,7 +491,9 @@
       "source": "LAS airport",
       "entrance_lat": 36.0861418,
       "entrance_lng": -115.1481219,
-      "entrance_source": "OSM parking_entrance node 10108675492"
+      "entrance_source": "OSM parking_entrance node 10108675492",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "fashionshow",
@@ -720,7 +722,9 @@
       "verified_on": "2026-04-22",
       "notes": "Designated oversized vehicle lot. Open air, no overhead clearance. Call 702-967-4481 for availability.\nVerified in person by site operator (open-air surface lot, no overhead structure).",
       "source": "Verified in person \u2014 was: vegasfoodandfun.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "sv_checked": "2026-04-18",
+      "sv_status": "no-sign"
     },
     {
       "id": "palms",
@@ -813,7 +817,9 @@
       "oversized": false,
       "verified_on": "2026-04-27",
       "notes": "West-side covered garage at GVR Resort. User-confirmed exists; posted clearance sign is not readable from Street View imagery. Sister facility on the north side is separately verified at 8'2\" (see green-valley-ranch-north). Open-air parking also available throughout the property \u2014 see green-valley-ranch-openair.",
-      "source": "User-observed (sign obscured in Street View; height unknown)"
+      "source": "User-observed (sign obscured in Street View; height unknown)",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "green-valley-ranch-openair",
@@ -858,7 +864,9 @@
       "oversized": true,
       "verified_on": "2026-04-22",
       "notes": "Station Casinos. Free parking. Posted clearance sign at the garage entrance is blurred in Google Street View, so the exact height can't be AI- or manually verified from imagery. Property has ample oversized vehicle parking on-site (user-observed 2026-04-22), so RVs and box trucks should be accommodated even if the garage itself is low.",
-      "source": "User-observed (oversized available; garage height sign obscured in Street View)"
+      "source": "User-observed (oversized available; garage height sign obscured in Street View)",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "santa-fe-station",
@@ -1083,7 +1091,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 36.1087434,
       "entrance_lng": -115.1822035,
-      "entrance_source": "OSM parking_entrance node 4874269651"
+      "entrance_source": "OSM parking_entrance node 4874269651",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w544016653",

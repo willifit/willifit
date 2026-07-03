@@ -56,7 +56,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w956487238",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 43.47704,
+      "lng": -111.9916,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-16-000000000023120",
@@ -68,6 +80,28 @@
       "height_label": "14'9\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1936",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w13753385",
+      "name": "Low clearance \u2014 Yellowstone Avenue (US 26;US 20 Business)",
+      "addr": "US 26;US 20 Business",
+      "lat": 43.49631,
+      "lng": -112.03465,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1015481056",
+      "name": "Low clearance \u2014 Birch Street",
+      "addr": "Birch Street",
+      "lat": 43.49402,
+      "lng": -112.03619,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

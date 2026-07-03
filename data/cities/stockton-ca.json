@@ -25,9 +25,69 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (98 spaces). 98 spaces.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w287553785",
+      "name": "Hunter Street Garage",
+      "addr": "114 South Hunter Street",
+      "lat": 37.95178,
+      "lng": -121.28749,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w458907048",
+      "name": "Private Parking (Customers & Employees)",
+      "addr": "",
+      "lat": 37.95212,
+      "lng": -121.28887,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "155 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w458950948",
+      "name": "Stewart Eberhardt Parking Garage",
+      "addr": "15 North El Dorado Street",
+      "lat": 37.95308,
+      "lng": -121.29057,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "721 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w459629615",
+      "name": "Market Street Garage",
+      "addr": "430 East Market Street",
+      "lat": 37.95215,
+      "lng": -121.28489,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "782 spaces; paid",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1389996982",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.95687,
+      "lng": -121.29475,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-06-29C0037",
@@ -50,6 +110,182 @@
       "height_label": "14'8\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1936",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w10533847",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 37.98464,
+      "lng": -121.25086,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w10542982",
+      "name": "Low clearance \u2014 West Hospital Road",
+      "addr": "West Hospital Road",
+      "lat": 37.88578,
+      "lng": -121.27885,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w37056455",
+      "name": "Low clearance \u2014 East March Lane",
+      "addr": "East March Lane",
+      "lat": 38.00465,
+      "lng": -121.28051,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w37551002",
+      "name": "Low clearance \u2014 East March Lane",
+      "addr": "East March Lane",
+      "lat": 38.00139,
+      "lng": -121.2939,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w177938798",
+      "name": "Low clearance \u2014 River Drive",
+      "addr": "River Drive",
+      "lat": 37.97859,
+      "lng": -121.34108,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w184361701",
+      "name": "Low clearance \u2014 Golden State Highway (CA 99)",
+      "addr": "CA 99",
+      "lat": 37.9402,
+      "lng": -121.2347,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w392663000",
+      "name": "Low clearance \u2014 West March Lane",
+      "addr": "West March Lane",
+      "lat": 37.98449,
+      "lng": -121.34341,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w392798879",
+      "name": "Low clearance \u2014 West Mathews Road",
+      "addr": "West Mathews Road",
+      "lat": 37.88204,
+      "lng": -121.27844,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w395358344",
+      "name": "Low clearance \u2014 Roth Road",
+      "addr": "Roth Road",
+      "lat": 37.8555,
+      "lng": -121.28203,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w769477927",
+      "name": "Low clearance \u2014 East Miner Avenue",
+      "addr": "East Miner Avenue",
+      "lat": 37.95774,
+      "lng": -121.27822,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w876456302",
+      "name": "Low clearance \u2014 Golden State Highway (CA 99)",
+      "addr": "CA 99",
+      "lat": 37.94131,
+      "lng": -121.23504,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w938322013",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.95676,
+      "lng": -121.2949,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w943129272",
+      "name": "Low clearance \u2014 South California Street",
+      "addr": "South California Street",
+      "lat": 37.95114,
+      "lng": -121.28391,
+      "height_in": 184,
+      "height_label": "15'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w946976276",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.98732,
+      "lng": -121.24495,
+      "height_in": 106,
+      "height_label": "8'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w964307452",
+      "name": "Low clearance \u2014 West Telegraph Avenue",
+      "addr": "West Telegraph Avenue",
+      "lat": 37.97345,
+      "lng": -121.33904,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1013537274",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.9997,
+      "lng": -121.28918,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

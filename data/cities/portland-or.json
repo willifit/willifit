@@ -43,7 +43,9 @@
       "source": "portland.gov",
       "entrance_lat": 45.5195889,
       "entrance_lng": -122.682171,
-      "entrance_source": "OSM parking_entrance node 4186815342"
+      "entrance_source": "OSM parking_entrance node 4186815342",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "pdx-smartpark-naito-davis",
@@ -58,7 +60,9 @@
       "source": "portland.gov",
       "entrance_lat": 45.5224118,
       "entrance_lng": -122.674644,
-      "entrance_source": "OSM parking_entrance node 11367118155"
+      "entrance_source": "OSM parking_entrance node 11367118155",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "pdx-smartpark-pearl",
@@ -73,7 +77,9 @@
       "source": "portland.gov",
       "entrance_lat": 45.5028894,
       "entrance_lng": -122.682288,
-      "entrance_source": "OSM parking_entrance node 718707963"
+      "entrance_source": "OSM parking_entrance node 718707963",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-pano"
     },
     {
       "id": "pdx-pioneer-place",
@@ -164,7 +170,9 @@
       "source": "pdx.edu",
       "entrance_lat": 45.5079533,
       "entrance_lng": -122.6826423,
-      "entrance_source": "OSM parking_entrance node 3706097850"
+      "entrance_source": "OSM parking_entrance node 3706097850",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "pdx-omsi",
@@ -230,7 +238,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall surface.",
-      "source": "premiumoutlets.com"
+      "source": "premiumoutlets.com",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "pdx-powells",
@@ -245,7 +255,9 @@
       "source": "powells.com",
       "entrance_lat": 45.5232471,
       "entrance_lng": -122.6820257,
-      "entrance_source": "OSM parking_entrance node 3498112772"
+      "entrance_source": "OSM parking_entrance node 3498112772",
+      "sv_checked": "2026-04-22",
+      "sv_status": "no-sign"
     },
     {
       "id": "pdx-portland-saturday",

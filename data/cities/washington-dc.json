@@ -28,7 +28,9 @@
       "source": "capitalonearena.com",
       "entrance_lat": 38.8972189,
       "entrance_lng": -77.021173,
-      "entrance_source": "OSM parking_entrance node 12451835493"
+      "entrance_source": "OSM parking_entrance node 12451835493",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-union-station",
@@ -56,7 +58,9 @@
       "source": "events.dc.gov",
       "entrance_lat": 38.904046,
       "entrance_lng": -77.021014,
-      "entrance_source": "OSM parking_entrance node 13250739630"
+      "entrance_source": "OSM parking_entrance node 13250739630",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-smithsonian-mall-lot",
@@ -68,7 +72,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Limited Mall-adjacent street + lot. No dedicated Smithsonian garage.",
-      "source": "nps.gov/nama"
+      "source": "nps.gov/nama",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "dc-rfk-lots",
@@ -107,7 +113,9 @@
       "source": "mlb.com/nationals",
       "entrance_lat": 38.8737636,
       "entrance_lng": -77.0063092,
-      "entrance_source": "OSM parking_entrance node 11053779367"
+      "entrance_source": "OSM parking_entrance node 11053779367",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-gallery-place",
@@ -122,7 +130,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.8990044,
       "entrance_lng": -77.0227698,
-      "entrance_source": "OSM parking_entrance node 13194697662"
+      "entrance_source": "OSM parking_entrance node 13194697662",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-cityctr",
@@ -153,7 +163,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.9161268,
       "entrance_lng": -77.0436907,
-      "entrance_source": "OSM parking_entrance node 12423436311"
+      "entrance_source": "OSM parking_entrance node 12423436311",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-dupont",
@@ -168,7 +180,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.9051327,
       "entrance_lng": -77.0415295,
-      "entrance_source": "OSM parking_entrance node 9672573881"
+      "entrance_source": "OSM parking_entrance node 9672573881",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-georgetown",
@@ -183,7 +197,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.9044341,
       "entrance_lng": -77.065142,
-      "entrance_source": "OSM parking_entrance node 9140635545"
+      "entrance_source": "OSM parking_entrance node 9140635545",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-kennedy-ctr",
@@ -198,7 +214,9 @@
       "source": "kennedy-center.org",
       "entrance_lat": 38.8949702,
       "entrance_lng": -77.0547669,
-      "entrance_source": "OSM parking_entrance node 6867720120"
+      "entrance_source": "OSM parking_entrance node 6867720120",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-the-wharf",
@@ -210,7 +228,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "SW Waterfront + Anthem venue.",
-      "source": "wharfdc.com"
+      "source": "wharfdc.com",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "dc-smithsonian-zoo",
@@ -234,7 +254,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "HU visitor parking.",
-      "source": "howard.edu"
+      "source": "howard.edu",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dc-tysons-corner",
@@ -264,7 +286,9 @@
       "source": "simon.com",
       "entrance_lat": 38.8627321,
       "entrance_lng": -77.0583442,
-      "entrance_source": "OSM parking_entrance node 9146864675"
+      "entrance_source": "OSM parking_entrance node 9146864675",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "dca-daily-garage-a",
@@ -308,7 +332,9 @@
       "source": "flydulles.com",
       "entrance_lat": 38.9532467,
       "entrance_lng": -77.4528708,
-      "entrance_source": "OSM parking_entrance node 9504074093"
+      "entrance_source": "OSM parking_entrance node 9504074093",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "iad-economy",
@@ -366,7 +392,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.9916671,
       "entrance_lng": -76.9478234,
-      "entrance_source": "OSM parking_entrance node 3732371554"
+      "entrance_source": "OSM parking_entrance node 3732371554",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w23502762",
@@ -416,7 +444,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.8812008,
       "entrance_lng": -77.117824,
-      "entrance_source": "OSM parking_entrance node 6164809978"
+      "entrance_source": "OSM parking_entrance node 6164809978",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w176731206",
@@ -443,7 +473,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.9698714,
       "entrance_lng": -76.9509195,
-      "entrance_source": "OSM parking_entrance node 4308257771"
+      "entrance_source": "OSM parking_entrance node 4308257771",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w184640039",
@@ -455,7 +487,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 15'3\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-05-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w199333548",
@@ -470,7 +504,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.9715311,
       "entrance_lng": -76.9234114,
-      "entrance_source": "OSM parking_entrance node 6558916365"
+      "entrance_source": "OSM parking_entrance node 6558916365",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w245392958",
@@ -530,7 +566,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.9997245,
       "entrance_lng": -76.9596703,
-      "entrance_source": "OSM parking_entrance node 9712617396"
+      "entrance_source": "OSM parking_entrance node 9712617396",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w615364279",
@@ -545,7 +583,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.9656056,
       "entrance_lng": -76.9565948,
-      "entrance_source": "OSM parking_entrance node 3780360071"
+      "entrance_source": "OSM parking_entrance node 3780360071",
+      "sv_checked": "2026-05-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w686332533",
@@ -560,7 +600,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 38.9702998,
       "entrance_lng": -76.9358669,
-      "entrance_source": "OSM parking_entrance node 6534451161"
+      "entrance_source": "OSM parking_entrance node 6534451161",
+      "sv_checked": "2026-06-20",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1421282483",

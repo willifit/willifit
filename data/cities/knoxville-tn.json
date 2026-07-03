@@ -31,7 +31,9 @@
       "source": "knoxvilletn.gov",
       "entrance_lat": 35.9637445,
       "entrance_lng": -83.9211806,
-      "entrance_source": "OSM parking_entrance node 13196927956"
+      "entrance_source": "OSM parking_entrance node 13196927956",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "knx-gay-st-garage",
@@ -46,7 +48,9 @@
       "source": "knoxvilletn.gov",
       "entrance_lat": 35.9637445,
       "entrance_lng": -83.9211806,
-      "entrance_source": "OSM parking_entrance node 13196927956"
+      "entrance_source": "OSM parking_entrance node 13196927956",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "knx-civic-coliseum",
@@ -161,7 +165,9 @@
       "source": "parking.utk.edu",
       "entrance_lat": 35.9540418,
       "entrance_lng": -83.9284249,
-      "entrance_source": "OSM parking_entrance node 10272119676"
+      "entrance_source": "OSM parking_entrance node 10272119676",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "knx-old-city",
@@ -200,7 +206,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Iconic World's Fair tower.",
-      "source": "worldsfairpark.org"
+      "source": "worldsfairpark.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "knx-ijams-nature",
@@ -241,7 +249,9 @@
       "source": "wbhof.com",
       "entrance_lat": 35.9652158,
       "entrance_lng": -83.9102832,
-      "entrance_source": "OSM parking_entrance node 12964668777"
+      "entrance_source": "OSM parking_entrance node 12964668777",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "knx-urban-wilderness",
@@ -266,7 +276,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "shopwesttownmall.com"
+      "source": "shopwesttownmall.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "knx-turkey-creek",
@@ -293,7 +305,9 @@
       "notes": "Manhattan Project museum. Surface lot",
       "source": "Web-verified surface lot - was: amse.org",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "knx-great-smoky-sugarlands",
@@ -334,7 +348,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "tys.org"
+      "source": "tys.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "knx-airport-economy",

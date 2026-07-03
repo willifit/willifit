@@ -51,6 +51,18 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (56 spaces). 56 spaces. Free parking. Operator: City of Lawton.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w824688942",
+      "name": "City of Lawton",
+      "addr": "",
+      "lat": 34.61744,
+      "lng": -98.39805,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

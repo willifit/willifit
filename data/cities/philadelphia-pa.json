@@ -78,7 +78,9 @@
       "source": "philapark.org",
       "entrance_lat": 39.9527596,
       "entrance_lng": -75.1549791,
-      "entrance_source": "OSM parking_entrance node 7411360350"
+      "entrance_source": "OSM parking_entrance node 7411360350",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-12th-filbert",
@@ -129,7 +131,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.9545133,
       "entrance_lng": -75.169352,
-      "entrance_source": "OSM parking_entrance node 3409796043"
+      "entrance_source": "OSM parking_entrance node 3409796043",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-liberty-pl",
@@ -162,7 +166,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.950787,
       "entrance_lng": -75.1569849,
-      "entrance_source": "OSM parking_entrance node 7411802692"
+      "entrance_source": "OSM parking_entrance node 7411802692",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-art-museum",
@@ -218,7 +224,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Waterfront attractions.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-30th-st",
@@ -290,7 +298,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UPenn visitor + public parking. Closes 11pm. Lighted availability sign at entrance.",
-      "source": "transportation.upenn.edu"
+      "source": "transportation.upenn.edu",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-penn-chestnut",
@@ -320,7 +330,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "HUP / Perelman Center. Hospital visitor parking.",
-      "source": "pennmedicine.org"
+      "source": "pennmedicine.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-drexel-garage",
@@ -332,7 +344,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Drexel University. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-rittenhouse-sq",
@@ -344,7 +358,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Underground near Rittenhouse Sq. Clearance needs verification.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-walnut-hgt",
@@ -386,7 +402,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Avenue of the Arts / Philadelphia Orchestra. Clearance needs verification.",
-      "source": "kimmelcenter.org"
+      "source": "kimmelcenter.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-old-city-2nd",
@@ -398,7 +416,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Old City historic district. Near Elfreth's Alley, Betsy Ross House.",
-      "source": "philapark.org"
+      "source": "philapark.org",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "phl-old-city-dock",

@@ -56,7 +56,9 @@
       "source": "Needs verification",
       "entrance_lat": 32.7117536,
       "entrance_lng": -117.1584536,
-      "entrance_source": "OSM parking_entrance node 2526075978"
+      "entrance_source": "OSM parking_entrance node 2526075978",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sd-petco-park",
@@ -68,7 +70,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Padres stadium garage. Event parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sd-seaport-village",
@@ -96,7 +100,9 @@
       "source": "portofsandiego.org",
       "entrance_lat": 32.7148701,
       "entrance_lng": -117.1725418,
-      "entrance_source": "OSM parking_entrance node 12219355793"
+      "entrance_source": "OSM parking_entrance node 12219355793",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sd-convention-ctr",
@@ -111,7 +117,9 @@
       "source": "visitsandiego.com",
       "entrance_lat": 32.7060617,
       "entrance_lng": -117.1623052,
-      "entrance_source": "OSM parking_entrance node 12988997545"
+      "entrance_source": "OSM parking_entrance node 12988997545",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "sd-hilton-bayfront",
@@ -284,7 +292,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Street parking + small lot. Tight for long RVs.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "sd-mission-beach",

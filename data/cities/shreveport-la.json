@@ -31,9 +31,45 @@
       "entrance_lat": 32.51143,
       "entrance_lng": -93.7242606,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w92276127",
+      "name": "Parking Gargage",
+      "addr": "",
+      "lat": 32.51032,
+      "lng": -93.72604,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w619133093",
+      "name": "Parking Garage",
+      "addr": "",
+      "lat": 32.50995,
+      "lng": -93.73201,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w396093236",
+      "name": "Roy Road",
+      "addr": "Roy Road",
+      "lat": 32.54369,
+      "lng": -93.84706,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-22-040800010300001",
@@ -56,6 +92,116 @@
       "height_label": "14'11\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1966",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w12602626",
+      "name": "Low clearance \u2014 Kings Highway",
+      "addr": "Kings Highway",
+      "lat": 32.48182,
+      "lng": -93.7669,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w12606705",
+      "name": "Low clearance \u2014 Marshall Street",
+      "addr": "Marshall Street",
+      "lat": 32.50456,
+      "lng": -93.74099,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w940569386",
+      "name": "Low clearance \u2014 Traffic Street",
+      "addr": "Traffic Street",
+      "lat": 32.51791,
+      "lng": -93.73676,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231236770",
+      "name": "Low clearance \u2014 North Common Street (LA 3036)",
+      "addr": "LA 3036",
+      "lat": 32.51428,
+      "lng": -93.75582,
+      "height_in": 187,
+      "height_label": "15'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231237018",
+      "name": "Low clearance \u2014 Marshall Street",
+      "addr": "Marshall Street",
+      "lat": 32.50962,
+      "lng": -93.74646,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231237021",
+      "name": "Low clearance \u2014 Marshall Street",
+      "addr": "Marshall Street",
+      "lat": 32.51014,
+      "lng": -93.74698,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231237068",
+      "name": "Low clearance \u2014 Franklin Street",
+      "addr": "Franklin Street",
+      "lat": 32.50922,
+      "lng": -93.74503,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231237331",
+      "name": "Low clearance \u2014 Hamilton Road",
+      "addr": "Hamilton Road",
+      "lat": 32.52243,
+      "lng": -93.72561,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231237968",
+      "name": "Low clearance \u2014 Dalzell Street",
+      "addr": "Dalzell Street",
+      "lat": 32.48908,
+      "lng": -93.75572,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231238933",
+      "name": "Low clearance \u2014 North Lakeshore Drive",
+      "addr": "North Lakeshore Drive",
+      "lat": 32.52559,
+      "lng": -93.82446,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

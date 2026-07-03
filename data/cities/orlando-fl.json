@@ -78,7 +78,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Universal Studios + Islands of Adventure garages.",
-      "source": "universalorlando.com"
+      "source": "universalorlando.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "orl-universal-prime",
@@ -118,7 +120,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "OCCC West garage.",
-      "source": "occc.net"
+      "source": "occc.net",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "orl-occc-north-south",
@@ -133,7 +137,9 @@
       "source": "occc.net",
       "entrance_lat": 28.4289478,
       "entrance_lng": -81.4688287,
-      "entrance_source": "OSM parking_entrance node 5304175596"
+      "entrance_source": "OSM parking_entrance node 5304175596",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-intl-drive",
@@ -148,7 +154,9 @@
       "source": "pointeorlando.com",
       "entrance_lat": 28.430567,
       "entrance_lng": -81.4647356,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "orl-icon-park",
@@ -160,7 +168,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Observation wheel + aquarium.",
-      "source": "iconparkorlando.com"
+      "source": "iconparkorlando.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-kia-ctr",
@@ -172,7 +182,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Orlando Magic arena.",
-      "source": "kiacenter.com"
+      "source": "kiacenter.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "orl-dr-phillips-center",
@@ -187,7 +199,9 @@
       "source": "drphillipscenter.org",
       "entrance_lat": 28.5396615,
       "entrance_lng": -81.3781753,
-      "entrance_source": "OSM parking_entrance node 5369731572"
+      "entrance_source": "OSM parking_entrance node 5369731572",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "orl-inter-miami-orl-city",
@@ -225,7 +239,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall garage.",
-      "source": "mallatmillenia.com"
+      "source": "mallatmillenia.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-florida-mall",
@@ -237,7 +253,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Major enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-premium-outlets-vineland",
@@ -249,7 +267,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall surface.",
-      "source": "premiumoutlets.com"
+      "source": "premiumoutlets.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-premium-outlets-intl",
@@ -261,7 +281,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall.",
-      "source": "premiumoutlets.com"
+      "source": "premiumoutlets.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-orlando-health",
@@ -273,7 +295,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor garage.",
-      "source": "orlandohealth.com"
+      "source": "orlandohealth.com",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "orl-mco-terminal-a",
@@ -306,7 +330,9 @@
       "source": "orlandoairports.net",
       "entrance_lat": 28.4291705,
       "entrance_lng": -81.3095392,
-      "entrance_source": "OSM parking_entrance node 723194420"
+      "entrance_source": "OSM parking_entrance node 723194420",
+      "sv_checked": "2026-04-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "orl-mco-terminal-c",
