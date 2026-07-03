@@ -29,7 +29,9 @@
       "source": "pittsburghcc.com",
       "entrance_lat": 40.4438553,
       "entrance_lng": -79.9950577,
-      "entrance_source": "OSM parking_entrance node 6219305268"
+      "entrance_source": "OSM parking_entrance node 6219305268",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-pnc-park",
@@ -41,7 +43,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "North Shore ballpark.",
-      "source": "mlb.com/pirates"
+      "source": "mlb.com/pirates",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-acrisure-stadium",
@@ -69,7 +72,9 @@
       "source": "riverscasino.com",
       "entrance_lat": 40.4475842,
       "entrance_lng": -80.0214078,
-      "entrance_source": "OSM parking_entrance node 5421653790"
+      "entrance_source": "OSM parking_entrance node 5421653790",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-sci-center",
@@ -81,7 +86,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Science museum surface.",
-      "source": "carnegiesciencecenter.org"
+      "source": "carnegiesciencecenter.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-downtown-ninth-liberty",
@@ -96,7 +102,9 @@
       "source": "pittsburghparking.com",
       "entrance_lat": 40.4438553,
       "entrance_lng": -79.9950577,
-      "entrance_source": "OSM parking_entrance node 6219305268"
+      "entrance_source": "OSM parking_entrance node 6219305268",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-third-forbes",
@@ -104,14 +112,18 @@
       "addr": "339 Forbes Ave",
       "lat": 40.4391,
       "lng": -79.997,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 76,
+      "height_label": "6'4\"",
       "oversized": false,
-      "notes": "Pittsburgh Parking Authority downtown.",
-      "source": "pittsburghparking.com",
+      "notes": "Pittsburgh Parking Authority downtown.\nVerified 2026-07-03 from sign reading \"CLEARANCE 6'4\"\" (pano uSHckKR-3KPp9Mb_CiYqsw, heading 292\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: pittsburghparking.com",
       "entrance_lat": 40.4386063,
       "entrance_lng": -79.9986052,
-      "entrance_source": "OSM parking_entrance node 2133358876"
+      "entrance_source": "OSM parking_entrance node 2133358876",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "uSHckKR-3KPp9Mb_CiYqsw",
+      "pano_heading": 292
     },
     {
       "id": "pit-mellon-sq",
@@ -119,14 +131,18 @@
       "addr": "501 Smithfield St",
       "lat": 40.4423,
       "lng": -79.9976,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 74,
+      "height_label": "6'2\"",
       "oversized": false,
-      "notes": "Under Mellon Square park.",
-      "source": "Needs verification",
+      "notes": "Under Mellon Square park.\nVerified 2026-07-03 from sign reading \"6'2\" CLEARANCE 6'2\"\" (pano 5AjCgsA2jKcgNg3RfYs8eg, heading 170\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.4428164,
       "entrance_lng": -79.9980041,
-      "entrance_source": "OSM parking_entrance node 4804778861"
+      "entrance_source": "OSM parking_entrance node 4804778861",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "5AjCgsA2jKcgNg3RfYs8eg",
+      "pano_heading": 170
     },
     {
       "id": "pit-market-square",
@@ -134,14 +150,18 @@
       "addr": "809 Penn Ave",
       "lat": 40.4434,
       "lng": -79.9982,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 74,
+      "height_label": "6'2\"",
       "oversized": false,
-      "notes": "Downtown core.",
-      "source": "Needs verification",
+      "notes": "Downtown core.\nVerified 2026-07-03 from sign reading \"6'2\" CLEARANCE 6'2\"\" (pano 5AjCgsA2jKcgNg3RfYs8eg, heading 170\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.4428164,
       "entrance_lng": -79.9980041,
-      "entrance_source": "OSM parking_entrance node 4804778861"
+      "entrance_source": "OSM parking_entrance node 4804778861",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "5AjCgsA2jKcgNg3RfYs8eg",
+      "pano_heading": 170
     },
     {
       "id": "pit-strip-district",
@@ -153,7 +173,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Produce market district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-pittsburgh-public",
@@ -168,7 +189,9 @@
       "source": "pittsburghparking.com",
       "entrance_lat": 40.4350636,
       "entrance_lng": -79.9955571,
-      "entrance_source": "OSM parking_entrance node 11098531744"
+      "entrance_source": "OSM parking_entrance node 11098531744",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-carnegie-music-hall",
@@ -183,7 +206,8 @@
       "source": "pittsburgh.carnegiemuseums.org",
       "entrance_lat": 40.4426932,
       "entrance_lng": -79.9488919,
-      "entrance_source": "OSM parking_entrance node 11110609420"
+      "entrance_source": "OSM parking_entrance node 11110609420",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-pitt-panther",
@@ -198,7 +222,9 @@
       "source": "pts.pitt.edu",
       "entrance_lat": 40.443723,
       "entrance_lng": -79.9602964,
-      "entrance_source": "OSM parking_entrance node 8934181465"
+      "entrance_source": "OSM parking_entrance node 8934181465",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-phipps-conservatory",
@@ -210,7 +236,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Oakland / Schenley Park.",
-      "source": "phipps.conservatory.org"
+      "source": "phipps.conservatory.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-the-waterfront",
@@ -222,7 +249,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-ross-park",
@@ -234,7 +262,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "pit-station-square",
@@ -249,7 +279,9 @@
       "source": "stationsquare.com",
       "entrance_lat": 40.4319922,
       "entrance_lng": -80.0009908,
-      "entrance_source": "OSM parking_entrance node 7808291270"
+      "entrance_source": "OSM parking_entrance node 7808291270",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "pit-mt-washington",
@@ -261,7 +293,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Scenic overlooks. Street + small lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-downtown-fifth-ave-place",
@@ -276,7 +309,9 @@
       "source": "Needs verification",
       "entrance_lat": 40.4420045,
       "entrance_lng": -80.0006161,
-      "entrance_source": "OSM parking_entrance node 8860727970"
+      "entrance_source": "OSM parking_entrance node 8860727970",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-airport-short",
@@ -288,7 +323,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flypittsburgh.com"
+      "source": "flypittsburgh.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "pit-airport-long",
@@ -300,7 +337,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Next to Short Term.",
-      "source": "flypittsburgh.com"
+      "source": "flypittsburgh.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "pit-airport-extended",
@@ -312,7 +351,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flypittsburgh.com"
+      "source": "flypittsburgh.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pit-zoo-aquarium",
@@ -324,7 +364,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Highland Park surface lot.",
-      "source": "pittsburghzoo.org"
+      "source": "pittsburghzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w269500869",
@@ -513,7 +554,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Double-deck bridge emerging from Fort Pitt Tunnel.",
-      "source": "PennDOT"
+      "source": "PennDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-fort-duquesne",
@@ -521,10 +564,14 @@
       "addr": "I-279 over Allegheny",
       "lat": 40.4432,
       "lng": -80.0046,
-      "height_in": null,
-      "height_label": "Over water",
-      "notes": "North Shore connector.",
-      "source": "PennDOT"
+      "height_in": 75,
+      "height_label": "6'3\"",
+      "notes": "North Shore connector.\nVerified 2026-07-03 from sign reading \"CLEARANCE 6'3\"\" (pano NPNi9HtxDnRHdTVWPzNYjg, heading 252\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: PennDOT",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "NPNi9HtxDnRHdTVWPzNYjg",
+      "pano_heading": 252
     },
     {
       "id": "pit-roberto-clemente",
@@ -535,7 +582,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "One of 'Three Sisters' identical bridges. Closed to cars on Pirates game days.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pit-smithfield-st",
@@ -546,7 +595,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "1883 lenticular truss \u2014 oldest steel bridge in US.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-42-000000000000492",

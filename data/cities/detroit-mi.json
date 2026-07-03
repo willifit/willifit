@@ -6,14 +6,18 @@
       "addr": "400 Renaissance Ctr",
       "lat": 42.3289,
       "lng": -83.04,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 83,
+      "height_label": "6'11\"",
       "oversized": false,
-      "notes": "Under GM Renaissance Center. 6'8\" typical.",
-      "source": "gmrencen.com",
+      "notes": "Under GM Renaissance Center. 6'8\" typical.\nVerified 2026-07-03 from sign reading \"Clearance 6' 11\"\" (pano C1mMeGdlXOvv3S6ikScV5Q, heading 214\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: gmrencen.com",
       "entrance_lat": 42.3282847,
       "entrance_lng": -83.0407845,
-      "entrance_source": "OSM parking_entrance node 12925825650"
+      "entrance_source": "OSM parking_entrance node 12925825650",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "C1mMeGdlXOvv3S6ikScV5Q",
+      "pano_heading": 214
     },
     {
       "id": "det-ford-field",
@@ -21,14 +25,18 @@
       "addr": "2000 Brush St",
       "lat": 42.3399,
       "lng": -83.0457,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Lions stadium garage.",
-      "source": "fordfield.com",
+      "notes": "Lions stadium garage.\nVerified 2026-07-03 from sign reading \"8' 2\" CLEARANCE\" (pano 7XFERqLM__dw5mpMm1MPpA, heading 348\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: fordfield.com",
       "entrance_lat": 42.3399749,
       "entrance_lng": -83.0432854,
-      "entrance_source": "OSM parking_entrance node 1262302882"
+      "entrance_source": "OSM parking_entrance node 1262302882",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "7XFERqLM__dw5mpMm1MPpA",
+      "pano_heading": 348
     },
     {
       "id": "det-comerica",
@@ -43,7 +51,8 @@
       "source": "mlb.com/tigers",
       "entrance_lat": 42.3382415,
       "entrance_lng": -83.0479516,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-little-caesars",
@@ -72,7 +81,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Detroit Auto Show venue.",
-      "source": "huntingtonplacedetroit.com"
+      "source": "huntingtonplacedetroit.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "det-greektown",
@@ -101,7 +112,9 @@
       "source": "mgmgranddetroit.com",
       "entrance_lat": 42.3325568,
       "entrance_lng": -83.0611786,
-      "entrance_source": "OSM parking_entrance node 1213955074"
+      "entrance_source": "OSM parking_entrance node 1213955074",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "det-motor-city-casino",
@@ -109,14 +122,18 @@
       "addr": "2901 Grand River Ave",
       "lat": 42.3379,
       "lng": -83.066,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 94,
+      "height_label": "7'10\"",
       "oversized": false,
-      "notes": "Casino garage.",
-      "source": "motorcitycasino.com",
+      "notes": "Casino garage.\nVerified 2026-07-03 from sign reading \"MAX HEIGHT 7'10\"\" (pano cb4Oc31mZkCFvYEfGELrtA, heading 263\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: motorcitycasino.com",
       "entrance_lat": 42.3382745,
       "entrance_lng": -83.0677207,
-      "entrance_source": "OSM parking_entrance node 8361287111"
+      "entrance_source": "OSM parking_entrance node 8361287111",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "cb4Oc31mZkCFvYEfGELrtA",
+      "pano_heading": 263
     },
     {
       "id": "det-eastern-market",
@@ -131,7 +148,8 @@
       "source": "easternmarket.org",
       "entrance_lat": 42.3481102,
       "entrance_lng": -83.0398897,
-      "entrance_source": "OSM parking_entrance node 9753156031"
+      "entrance_source": "OSM parking_entrance node 9753156031",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-campus-martius",
@@ -146,7 +164,8 @@
       "source": "Needs verification",
       "entrance_lat": 42.330879,
       "entrance_lng": -83.0446958,
-      "entrance_source": "OSM parking_entrance node 7102018516"
+      "entrance_source": "OSM parking_entrance node 7102018516",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-dia",
@@ -158,7 +177,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "DIA + Midtown cultural area.",
-      "source": "dia.org"
+      "source": "dia.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-belle-isle",
@@ -173,7 +193,8 @@
       "source": "belleisleconservancy.org",
       "entrance_lat": 42.3417697,
       "entrance_lng": -82.9979177,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-hart-plaza",
@@ -185,7 +206,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverfront surface.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-mexicantown",
@@ -197,7 +219,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Restaurant district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "det-henry-ford-hosp",
@@ -212,7 +235,9 @@
       "source": "henryford.com",
       "entrance_lat": 42.3664093,
       "entrance_lng": -83.084451,
-      "entrance_source": "OSM parking_entrance node 6903869850"
+      "entrance_source": "OSM parking_entrance node 6903869850",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "det-somerset",
@@ -224,7 +249,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Suburban upscale mall.",
-      "source": "thesomersetcollection.com"
+      "source": "thesomersetcollection.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "det-fairlane",
@@ -239,7 +266,9 @@
       "source": "Needs verification",
       "entrance_lat": 42.3223324,
       "entrance_lng": -83.2273195,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "dtw-big-blue",
@@ -251,7 +280,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "DTW terminal garage.",
-      "source": "metroairport.com"
+      "source": "metroairport.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "dtw-evans-deck",
@@ -263,7 +294,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "North Terminal garage.",
-      "source": "metroairport.com"
+      "source": "metroairport.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "dtw-economy",
@@ -275,7 +308,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "metroairport.com"
+      "source": "metroairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w59264060",
@@ -773,7 +807,9 @@
       "source": "dwtf.com",
       "entrance_lat": 42.3281621,
       "entrance_lng": -83.0379101,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w8728058",
@@ -874,7 +910,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Major commercial truck crossing to Canada. Toll.",
-      "source": "ambassadorbridge.com"
+      "source": "ambassadorbridge.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "det-gordie-howe",
@@ -888,7 +926,9 @@
       "source": "gordiehoweinternationalbridge.com",
       "entrance_lat": 42.2998118,
       "entrance_lng": -83.1031748,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "det-mackinac",
@@ -899,7 +939,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Far from Detroit but Michigan's iconic bridge. 5-mile suspension.",
-      "source": "mackinacbridge.org"
+      "source": "mackinacbridge.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-26-000000000007879",

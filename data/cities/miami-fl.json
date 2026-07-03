@@ -87,14 +87,30 @@
       "addr": "701 S Miami Ave",
       "lat": 25.7665,
       "lng": -80.1919,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Mixed-use luxury.",
-      "source": "brickellcitycentre.com",
+      "notes": "Mixed-use luxury.\nVerified 2026-07-03 from sign reading \"Clearance 8'-0\"\" (pano xJj6vMt7JBu3oUUQu0zUKw, heading 16\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: brickellcitycentre.com",
       "entrance_lat": 25.7665873,
       "entrance_lng": -80.192342,
-      "entrance_source": "OSM parking_entrance node 7638757324"
+      "entrance_source": "OSM parking_entrance node 7638757324",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "xJj6vMt7JBu3oUUQu0zUKw",
+      "pano_heading": 16,
+      "sections": [
+        {
+          "label": "Enter",
+          "height_in": 96,
+          "height_label": "8'0\""
+        },
+        {
+          "label": "Loading Zone B",
+          "height_in": 180,
+          "height_label": "15'0\""
+        }
+      ]
     },
     {
       "id": "mia-mary-brickell",
@@ -195,7 +211,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outlet mall surface lots.",
-      "source": "shopdolphinmall.com"
+      "source": "shopdolphinmall.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mia-aventura-mall",
@@ -231,7 +248,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Arts district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mia-design-district",
@@ -243,7 +261,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Luxury retail district.",
-      "source": "miamidesigndistrict.net"
+      "source": "miamidesigndistrict.net",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mia-cruise-terminal",
@@ -270,7 +289,8 @@
       "source": "portmiami.biz",
       "entrance_lat": 25.7742362,
       "entrance_lng": -80.168059,
-      "entrance_source": "OSM parking_entrance node 1326303404"
+      "entrance_source": "OSM parking_entrance node 1326303404",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mia-airport-dolphin",

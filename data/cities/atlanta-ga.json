@@ -45,7 +45,9 @@
       "source": "centennialparkatlanta.com",
       "entrance_lat": 33.7595048,
       "entrance_lng": -84.3948617,
-      "entrance_source": "OSM parking_entrance node 7483005060"
+      "entrance_source": "OSM parking_entrance node 7483005060",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-aquarium",
@@ -75,7 +77,9 @@
       "source": "Needs verification",
       "entrance_lat": 33.7586986,
       "entrance_lng": -84.3943771,
-      "entrance_source": "OSM parking_entrance node 13675764690"
+      "entrance_source": "OSM parking_entrance node 13675764690",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-ponce-city",
@@ -90,7 +94,9 @@
       "source": "poncecitymarket.com",
       "entrance_lat": 33.7721524,
       "entrance_lng": -84.3669532,
-      "entrance_source": "OSM parking_entrance node 3416374751"
+      "entrance_source": "OSM parking_entrance node 3416374751",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-atlantic-station",
@@ -105,7 +111,9 @@
       "source": "atlanticstation.com",
       "entrance_lat": 33.7914131,
       "entrance_lng": -84.4004448,
-      "entrance_source": "OSM parking_entrance node 9822107030"
+      "entrance_source": "OSM parking_entrance node 9822107030",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-phipps-plaza",
@@ -120,7 +128,9 @@
       "source": "simon.com",
       "entrance_lat": 33.847828,
       "entrance_lng": -84.3655994,
-      "entrance_source": "OSM parking_entrance node 6444930378"
+      "entrance_source": "OSM parking_entrance node 6444930378",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-lenox-square",
@@ -135,7 +145,9 @@
       "source": "simon.com",
       "entrance_lat": 33.8465592,
       "entrance_lng": -84.3615309,
-      "entrance_source": "OSM parking_entrance node 8205835715"
+      "entrance_source": "OSM parking_entrance node 8205835715",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-truist-park",
@@ -150,7 +162,9 @@
       "source": "mlb.com/braves",
       "entrance_lat": 33.8912882,
       "entrance_lng": -84.4691853,
-      "entrance_source": "OSM parking_entrance node 4763062590"
+      "entrance_source": "OSM parking_entrance node 4763062590",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-world-of-coke",
@@ -165,7 +179,8 @@
       "source": "worldofcoca-cola.com",
       "entrance_lat": 33.7641847,
       "entrance_lng": -84.3938242,
-      "entrance_source": "OSM parking_entrance node 2036951742"
+      "entrance_source": "OSM parking_entrance node 2036951742",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-center-civil-rights",
@@ -193,7 +208,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Georgia World Congress Center.",
-      "source": "gwcca.org"
+      "source": "gwcca.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-airport-south",
@@ -205,7 +222,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "ATL South Terminal garage.",
-      "source": "atl.com"
+      "source": "atl.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-airport-north",
@@ -220,7 +239,9 @@
       "source": "atl.com",
       "entrance_lat": 33.6397776,
       "entrance_lng": -84.4459616,
-      "entrance_source": "OSM parking_entrance node 5515174780"
+      "entrance_source": "OSM parking_entrance node 5515174780",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "atl-airport-economy",
@@ -235,7 +256,8 @@
       "source": "atl.com",
       "entrance_lat": 33.6324958,
       "entrance_lng": -84.4590713,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-airport-park-ride",
@@ -250,7 +272,8 @@
       "source": "atl.com",
       "entrance_lat": 33.6375735,
       "entrance_lng": -84.4432858,
-      "entrance_source": "OSM parking_entrance node 5375575643"
+      "entrance_source": "OSM parking_entrance node 5375575643",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-zoo",
@@ -262,7 +285,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Grant Park. Surface lot.",
-      "source": "zooatlanta.org"
+      "source": "zooatlanta.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-sweetauburn",
@@ -274,7 +298,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "MLK Jr. NHP visitor lot.",
-      "source": "nps.gov"
+      "source": "nps.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atl-piedmont-park",
@@ -286,7 +311,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Midtown park surface lots.",
-      "source": "piedmontpark.org"
+      "source": "piedmontpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w38760224",

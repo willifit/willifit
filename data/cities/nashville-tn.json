@@ -13,7 +13,9 @@
       "source": "nashvilledowntown.com",
       "entrance_lat": 36.1593999,
       "entrance_lng": -86.776517,
-      "entrance_source": "OSM parking_entrance node 10173307457"
+      "entrance_source": "OSM parking_entrance node 10173307457",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-music-city-center",
@@ -28,7 +30,9 @@
       "source": "nashvillemcc.com",
       "entrance_lat": 36.1593498,
       "entrance_lng": -86.7764834,
-      "entrance_source": "OSM parking_entrance node 10173307459"
+      "entrance_source": "OSM parking_entrance node 10173307459",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-5th-broadway",
@@ -43,7 +47,9 @@
       "source": "fifthandb.com",
       "entrance_lat": 36.1604159,
       "entrance_lng": -86.7802608,
-      "entrance_source": "OSM parking_entrance node 10020201268"
+      "entrance_source": "OSM parking_entrance node 10020201268",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nsh-library",
@@ -55,7 +61,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned. Downtown.",
-      "source": "nashville.gov"
+      "source": "nashville.gov",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-commerce",
@@ -82,7 +90,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Riverfront. Handles oversized/RV.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-ryman",
@@ -97,7 +106,8 @@
       "source": "ryman.com",
       "entrance_lat": 36.1619588,
       "entrance_lng": -86.7780181,
-      "entrance_source": "OSM parking_entrance node 10154258344"
+      "entrance_source": "OSM parking_entrance node 10154258344",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-gulch",
@@ -112,7 +122,9 @@
       "source": "Needs verification",
       "entrance_lat": 36.1538643,
       "entrance_lng": -86.7838734,
-      "entrance_source": "OSM parking_entrance node 7396412310"
+      "entrance_source": "OSM parking_entrance node 7396412310",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-nissan-stadium",
@@ -137,7 +149,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AAA ballpark.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-geodis-park",
@@ -152,7 +166,8 @@
       "source": "nashvillesc.com",
       "entrance_lat": 36.1300473,
       "entrance_lng": -86.7642139,
-      "entrance_source": "OSM parking_entrance node 12827606076"
+      "entrance_source": "OSM parking_entrance node 12827606076",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-hall-of-fame",
@@ -167,7 +182,9 @@
       "source": "countrymusichalloffame.org",
       "entrance_lat": 36.1593498,
       "entrance_lng": -86.7764834,
-      "entrance_source": "OSM parking_entrance node 10173307459"
+      "entrance_source": "OSM parking_entrance node 10173307459",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-opryland",
@@ -179,7 +196,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Resort + mall. Large surface lots. RV-capable.",
-      "source": "marriott.com"
+      "source": "marriott.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-grand-ole-opry",
@@ -191,7 +209,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "opry.com"
+      "source": "opry.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-fair-grounds",
@@ -203,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State fair + speedway.",
-      "source": "fairgroundsnashville.com"
+      "source": "fairgroundsnashville.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-ford-theater-garage",
@@ -218,7 +238,9 @@
       "source": "nmaam.org",
       "entrance_lat": 36.1604159,
       "entrance_lng": -86.7802608,
-      "entrance_source": "OSM parking_entrance node 10020201268"
+      "entrance_source": "OSM parking_entrance node 10020201268",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nsh-green-hills-mall",
@@ -233,7 +255,9 @@
       "source": "shopgreenhills.com",
       "entrance_lat": 36.1054889,
       "entrance_lng": -86.812334,
-      "entrance_source": "OSM parking_entrance node 13249356333"
+      "entrance_source": "OSM parking_entrance node 13249356333",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-centennial-park",
@@ -245,7 +269,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free surface lot.",
-      "source": "Metro Parks"
+      "source": "Metro Parks",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nsh-vanderbilt",
@@ -260,7 +285,9 @@
       "source": "vanderbilt.edu",
       "entrance_lat": 36.1483637,
       "entrance_lng": -86.7989506,
-      "entrance_source": "OSM parking_entrance node 13296452216"
+      "entrance_source": "OSM parking_entrance node 13296452216",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "bna-short-term",
@@ -272,7 +299,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent garage.",
-      "source": "flynashville.com"
+      "source": "flynashville.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "bna-economy",
@@ -284,7 +313,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flynashville.com"
+      "source": "flynashville.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w479377360",
@@ -327,7 +357,9 @@
       "height_in": null,
       "height_label": "Pedestrian only",
       "notes": "Not for vehicles. Iconic downtown walkway.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-korean-vets",
@@ -338,7 +370,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Standard vehicle bridge.",
-      "source": "TDOT"
+      "source": "TDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nsh-i24-low",

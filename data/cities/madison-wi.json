@@ -13,7 +13,9 @@
       "source": "doa.wi.gov",
       "entrance_lat": 43.0735514,
       "entrance_lng": -89.3823281,
-      "entrance_source": "OSM parking_entrance node 13527853206"
+      "entrance_source": "OSM parking_entrance node 13527853206",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-overture-center",
@@ -28,7 +30,9 @@
       "source": "overture.org",
       "entrance_lat": 43.0732237,
       "entrance_lng": -89.3846426,
-      "entrance_source": "OSM parking_entrance node 12984415586"
+      "entrance_source": "OSM parking_entrance node 12984415586",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-monona-terrace",
@@ -43,7 +47,9 @@
       "source": "mononaterrace.com",
       "entrance_lat": 43.0711233,
       "entrance_lng": -89.3819167,
-      "entrance_source": "OSM parking_entrance node 3254265979"
+      "entrance_source": "OSM parking_entrance node 3254265979",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-state-st",
@@ -58,7 +64,9 @@
       "source": "cityofmadison.com/parking",
       "entrance_lat": 43.0755643,
       "entrance_lng": -89.3877319,
-      "entrance_source": "OSM parking_entrance node 362586822"
+      "entrance_source": "OSM parking_entrance node 362586822",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-overture-garage",
@@ -103,7 +111,9 @@
       "source": "transportation.wisc.edu",
       "entrance_lat": 43.0724582,
       "entrance_lng": -89.403396,
-      "entrance_source": "OSM parking_entrance node 9557137926"
+      "entrance_source": "OSM parking_entrance node 9557137926",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-kohl-center",
@@ -115,7 +125,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Wisconsin basketball arena.",
-      "source": "uwbadgers.com"
+      "source": "uwbadgers.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "mad-camp-randall",
@@ -146,7 +158,8 @@
       "source": "olbrich.org",
       "entrance_lat": 43.0969236,
       "entrance_lng": -89.3380509,
-      "entrance_source": "OSM parking_entrance node 12635378043"
+      "entrance_source": "OSM parking_entrance node 12635378043",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-vilas-zoo",
@@ -158,7 +171,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free zoo.",
-      "source": "henryvilaszoo.gov"
+      "source": "henryvilaszoo.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-tenney-park",
@@ -170,7 +184,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park + boat launch on Lake Mendota.",
-      "source": "cityofmadison.com/parks"
+      "source": "cityofmadison.com/parks",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-union-terrace",
@@ -185,7 +200,9 @@
       "source": "union.wisc.edu",
       "entrance_lat": 43.0765849,
       "entrance_lng": -89.4007686,
-      "entrance_source": "OSM parking_entrance node 1857894261"
+      "entrance_source": "OSM parking_entrance node 1857894261",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-east-towne-mall",
@@ -197,7 +214,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-west-towne-mall",
@@ -209,7 +228,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "West side mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-hilldale",
@@ -221,7 +242,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall.",
-      "source": "hilldale.com"
+      "source": "hilldale.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-alliant-energy-ctr",
@@ -236,7 +259,8 @@
       "source": "alliantenergycenter.com",
       "entrance_lat": 43.0445794,
       "entrance_lng": -89.3691339,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-breese-stevens",
@@ -251,7 +275,8 @@
       "source": "Needs verification",
       "entrance_lat": 43.0823458,
       "entrance_lng": -89.3750723,
-      "entrance_source": "OSM parking_entrance node 5631141340"
+      "entrance_source": "OSM parking_entrance node 5631141340",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-uw-hospital",
@@ -266,7 +291,9 @@
       "source": "uwhealth.org",
       "entrance_lat": 43.0774335,
       "entrance_lng": -89.4332472,
-      "entrance_source": "OSM parking_entrance node 8109848398"
+      "entrance_source": "OSM parking_entrance node 8109848398",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-farmer-market-surrounds",
@@ -281,7 +308,9 @@
       "source": "dcfm.org",
       "entrance_lat": 43.0732237,
       "entrance_lng": -89.3846426,
-      "entrance_source": "OSM parking_entrance node 12984415586"
+      "entrance_source": "OSM parking_entrance node 12984415586",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-middleton-outlet",
@@ -293,7 +322,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail west of city.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mad-airport-short",
@@ -308,7 +338,9 @@
       "source": "msnairport.com",
       "entrance_lat": 43.1352525,
       "entrance_lng": -89.3460916,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-airport-long",
@@ -323,7 +355,8 @@
       "source": "msnairport.com",
       "entrance_lat": 43.1337275,
       "entrance_lng": -89.3465709,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w32264004",
@@ -434,7 +467,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Isthmus gateway.",
-      "source": "WisDOT"
+      "source": "WisDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "mad-beltline-bridges",

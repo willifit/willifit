@@ -13,7 +13,9 @@
       "source": "stlballparkvillage.com",
       "entrance_lat": 38.6275159,
       "entrance_lng": -90.2030471,
-      "entrance_source": "OSM parking_entrance node 12297117679"
+      "entrance_source": "OSM parking_entrance node 12297117679",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-busch-stadium",
@@ -44,7 +46,9 @@
       "source": "enterprisecenter.com",
       "entrance_lat": 38.6275159,
       "entrance_lng": -90.2030471,
-      "entrance_source": "OSM parking_entrance node 12297117679"
+      "entrance_source": "OSM parking_entrance node 12297117679",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-america-s-center",
@@ -52,14 +56,18 @@
       "addr": "701 Convention Plaza",
       "lat": 38.6341,
       "lng": -90.193,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 81,
+      "height_label": "6'9\"",
       "oversized": false,
-      "notes": "Convention center + former Rams Dome.",
-      "source": "explorestlouis.com",
+      "notes": "Convention center + former Rams Dome.\nVerified 2026-07-03 from sign reading \"CLEARANCE 6' 9\"\" (pano ux5DSrSqR6qfBgS9LhAcaw, heading 263\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: explorestlouis.com",
       "entrance_lat": 38.6343978,
       "entrance_lng": -90.1940069,
-      "entrance_source": "OSM parking_entrance node 12535225487"
+      "entrance_source": "OSM parking_entrance node 12535225487",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "ux5DSrSqR6qfBgS9LhAcaw",
+      "pano_heading": 263
     },
     {
       "id": "stl-kiener-plaza",
@@ -67,14 +75,18 @@
       "addr": "500 Market St",
       "lat": 38.6266,
       "lng": -90.1936,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Downtown core.",
-      "source": "Needs verification",
+      "notes": "Downtown core.\nVerified 2026-07-03 from sign reading \"6'-0\" Maximum Clearance\" (pano qhoCBPnk2bV6XrsXWb6pEA, heading 102\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 38.6267215,
       "entrance_lng": -90.1930488,
-      "entrance_source": "OSM parking_entrance node 12053395716"
+      "entrance_source": "OSM parking_entrance node 12053395716",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "qhoCBPnk2bV6XrsXWb6pEA",
+      "pano_heading": 102
     },
     {
       "id": "stl-city-foundry",
@@ -120,7 +132,9 @@
       "source": "stlouisunionstation.com",
       "entrance_lat": 38.6279516,
       "entrance_lng": -90.2105635,
-      "entrance_source": "OSM parking_entrance node 12329597082"
+      "entrance_source": "OSM parking_entrance node 12329597082",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "stl-forest-park",
@@ -132,7 +146,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo, Art Museum, Science Center, History Museum all free parking in park.",
-      "source": "forestparkforever.org"
+      "source": "forestparkforever.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-zoo-lot-north",
@@ -144,7 +159,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free zoo, paid parking $15.",
-      "source": "stlzoo.org"
+      "source": "stlzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-sclc",
@@ -156,7 +172,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Free museum. Surface lots.",
-      "source": "slsc.org"
+      "source": "slsc.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-cwe",
@@ -171,7 +188,8 @@
       "source": "Needs verification",
       "entrance_lat": 38.634645,
       "entrance_lng": -90.2649891,
-      "entrance_source": "OSM parking_entrance node 2780348325"
+      "entrance_source": "OSM parking_entrance node 2780348325",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-delmar-loop",
@@ -183,7 +201,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Entertainment district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-the-grove",
@@ -195,7 +214,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Bar/restaurant district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-soulard",
@@ -207,7 +227,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic farmers market.",
-      "source": "soulardmarket.com"
+      "source": "soulardmarket.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-citygarden",
@@ -222,7 +243,8 @@
       "source": "citygarden.com",
       "entrance_lat": 38.6281517,
       "entrance_lng": -90.1974024,
-      "entrance_source": "OSM parking_entrance node 12363646016"
+      "entrance_source": "OSM parking_entrance node 12363646016",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-galleria",
@@ -237,7 +259,9 @@
       "source": "saintlouisgalleria.com",
       "entrance_lat": 38.6367564,
       "entrance_lng": -90.3488006,
-      "entrance_source": "OSM parking_entrance node 2775865239"
+      "entrance_source": "OSM parking_entrance node 2775865239",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-clayton-plaza-frontenac",
@@ -249,7 +273,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale mall.",
-      "source": "plazafrontenac.com"
+      "source": "plazafrontenac.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-saint-louis-mills",
@@ -264,7 +290,8 @@
       "source": "Needs verification",
       "entrance_lat": 38.759107,
       "entrance_lng": -90.4474012,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-city-park",
@@ -279,7 +306,9 @@
       "source": "stlcitysc.com",
       "entrance_lat": 38.6320968,
       "entrance_lng": -90.2154014,
-      "entrance_source": "OSM parking_entrance node 13115532952"
+      "entrance_source": "OSM parking_entrance node 13115532952",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "stl-airport-short",
@@ -294,7 +323,9 @@
       "source": "flystl.com",
       "entrance_lat": 38.7411371,
       "entrance_lng": -90.3648895,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-airport-economy",
@@ -306,7 +337,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flystl.com"
+      "source": "flystl.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stl-ameristar-casino",
@@ -318,7 +350,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Casino surface + garage.",
-      "source": "ameristarstcharles.com"
+      "source": "ameristarstcharles.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12534091534",
@@ -452,7 +486,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Historic 1874 bridge. Pedestrian + car + MetroLink.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-martin-luther-king-bridge",
@@ -463,7 +499,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Cantilever truss.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "stl-stan-musial",
@@ -474,7 +512,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "2014 cable-stayed.",
-      "source": "MoDOT"
+      "source": "MoDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-17-082014100000000",

@@ -348,10 +348,14 @@ def inches_to_label(inches: Optional[int]) -> Optional[str]:
 
 def verify_garage(g: dict, city: dict, model: str) -> Optional[dict]:
     src = g.get("source") or ""
-    # Preferred: the `source` field itself is a bare domain (original import
-    # format).  Fallback: walk '— was: <domain>' chains to find an operator
-    # domain that our own provenance stamps may have buried.
-    domain = normalize_domain(src) or extract_source_domain(src)
+    # Preferred: an explicit website field (kept from OSM's website/
+    # contact:website tags at import, or backfilled).  Then: the `source`
+    # field itself as a bare domain (original import format).  Fallback:
+    # walk '— was: <domain>' chains to find an operator domain that our
+    # own provenance stamps may have buried.
+    domain = (normalize_domain(g.get("website") or "")
+              or normalize_domain(src)
+              or extract_source_domain(src))
     if not domain:
         return {"status": "no-domain"}
 

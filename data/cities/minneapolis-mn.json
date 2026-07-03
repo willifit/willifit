@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Twins ballpark garages.",
-      "source": "mlb.com/twins"
+      "source": "mlb.com/twins",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "mpls-target-center",
@@ -38,7 +40,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Vikings stadium.",
-      "source": "usbankstadium.com"
+      "source": "usbankstadium.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mpls-convention-ctr",
@@ -65,7 +68,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown ramp.",
-      "source": "minneapolisparking.com"
+      "source": "minneapolisparking.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-haaf",
@@ -77,7 +82,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned.",
-      "source": "minneapolisparking.com"
+      "source": "minneapolisparking.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-11th-marquette",
@@ -107,7 +114,8 @@
       "source": "Needs verification",
       "entrance_lat": 44.9752217,
       "entrance_lng": -93.2605091,
-      "entrance_source": "OSM parking_entrance node 13712967306"
+      "entrance_source": "OSM parking_entrance node 13712967306",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mpls-ids-center",
@@ -137,7 +145,9 @@
       "source": "Needs verification",
       "entrance_lat": 44.9775413,
       "entrance_lng": -93.2740413,
-      "entrance_source": "OSM parking_entrance node 9785301021"
+      "entrance_source": "OSM parking_entrance node 9785301021",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-guthrie",
@@ -152,7 +162,9 @@
       "source": "guthrietheater.org",
       "entrance_lat": 44.9792319,
       "entrance_lng": -93.2575476,
-      "entrance_source": "OSM parking_entrance node 12911650751"
+      "entrance_source": "OSM parking_entrance node 12911650751",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "mpls-mall-of-america",
@@ -164,7 +176,8 @@
       "height_label": "No limit (uncovered ramp top)",
       "oversized": true,
       "notes": "12,000-space ramps. Free. Oversized accommodated at top levels.",
-      "source": "mallofamerica.com"
+      "source": "mallofamerica.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mpls-stone-arch",
@@ -179,7 +192,8 @@
       "source": "minneapolisparks.org",
       "entrance_lat": 44.9801539,
       "entrance_lng": -93.2601287,
-      "entrance_source": "OSM parking_entrance node 12911650724"
+      "entrance_source": "OSM parking_entrance node 12911650724",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mpls-uofm-east-bank",
@@ -194,7 +208,9 @@
       "source": "pts.umn.edu",
       "entrance_lat": 44.9731594,
       "entrance_lng": -93.2294955,
-      "entrance_source": "OSM parking_entrance node 7359957272"
+      "entrance_source": "OSM parking_entrance node 7359957272",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-allianz-field",
@@ -206,7 +222,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "MLS stadium. St. Paul.",
-      "source": "mnufc.com"
+      "source": "mnufc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mpls-xcel-st-paul",
@@ -237,7 +254,9 @@
       "source": "walkerart.org",
       "entrance_lat": 44.9686231,
       "entrance_lng": -93.2900061,
-      "entrance_source": "OSM parking_entrance node 1385610398"
+      "entrance_source": "OSM parking_entrance node 1385610398",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-minnehaha",
@@ -249,7 +268,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous waterfall park lots.",
-      "source": "minneapolisparks.org"
+      "source": "minneapolisparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "msp-gold-ramp",
@@ -274,7 +294,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal 1 alt garage.",
-      "source": "mspairport.com"
+      "source": "mspairport.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "msp-silver-ramp",
@@ -289,7 +311,9 @@
       "source": "mspairport.com",
       "entrance_lat": 44.8736109,
       "entrance_lng": -93.2239153,
-      "entrance_source": "OSM parking_entrance node 10029260271"
+      "entrance_source": "OSM parking_entrance node 10029260271",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "msp-quickride",
@@ -304,7 +328,8 @@
       "source": "mspairport.com",
       "entrance_lat": 44.8665485,
       "entrance_lng": -93.2400482,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w41424573",
@@ -695,7 +720,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Rebuilt 2008 after 2007 collapse.",
-      "source": "MnDOT"
+      "source": "MnDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-stone-arch-bridge",
@@ -706,7 +733,9 @@
       "height_in": null,
       "height_label": "Pedestrian only",
       "notes": "Historic limestone bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-hennepin-ave",
@@ -717,7 +746,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Classic suspension bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-27-3575A",

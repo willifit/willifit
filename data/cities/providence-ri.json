@@ -13,7 +13,9 @@
       "source": "providenceplace.com",
       "entrance_lat": 41.8269553,
       "entrance_lng": -71.4156784,
-      "entrance_source": "OSM parking_entrance node 8994212125"
+      "entrance_source": "OSM parking_entrance node 8994212125",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-rhode-island-conv",
@@ -28,7 +30,9 @@
       "source": "riconvention.com",
       "entrance_lat": 41.8240892,
       "entrance_lng": -71.4174531,
-      "entrance_source": "OSM parking_entrance node 13085682084"
+      "entrance_source": "OSM parking_entrance node 13085682084",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-amica-pavilion",
@@ -43,7 +47,9 @@
       "source": "amicamutualpavilion.com",
       "entrance_lat": 41.823374,
       "entrance_lng": -71.4192479,
-      "entrance_source": "OSM parking_entrance node 11941557287"
+      "entrance_source": "OSM parking_entrance node 11941557287",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-mcoy-stadium",
@@ -55,7 +61,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former AAA PawSox stadium. Status uncertain post-move.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-state-house",
@@ -67,7 +74,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol grounds.",
-      "source": "sos.ri.gov"
+      "source": "sos.ri.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-kennedy-plaza",
@@ -82,7 +90,8 @@
       "source": "providenceri.gov",
       "entrance_lat": 41.8248458,
       "entrance_lng": -71.4111437,
-      "entrance_source": "OSM parking_entrance node 8998976882"
+      "entrance_source": "OSM parking_entrance node 8998976882",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-waterplace-park",
@@ -97,7 +106,8 @@
       "source": "waterfire.org",
       "entrance_lat": 41.8269553,
       "entrance_lng": -71.4156784,
-      "entrance_source": "OSM parking_entrance node 8994212125"
+      "entrance_source": "OSM parking_entrance node 8994212125",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-risd-museum",
@@ -109,7 +119,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rhode Island School of Design museum.",
-      "source": "risdmuseum.org"
+      "source": "risdmuseum.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-providence-federal-hill",
@@ -121,7 +133,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Italian district.",
-      "source": "federalhillprovri.com"
+      "source": "federalhillprovri.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-thayer-street",
@@ -133,7 +146,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "College Hill shopping/dining.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-roger-williams-park",
@@ -145,7 +159,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo + park + museum. Surface lots.",
-      "source": "rwpzoo.org"
+      "source": "rwpzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-prov-performing-arts",
@@ -160,7 +175,9 @@
       "source": "ppacri.org",
       "entrance_lat": 41.8205256,
       "entrance_lng": -71.4149149,
-      "entrance_source": "OSM parking_entrance node 7143617003"
+      "entrance_source": "OSM parking_entrance node 7143617003",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-providence-children",
@@ -172,7 +189,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum.",
-      "source": "childrenmuseum.org"
+      "source": "childrenmuseum.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-garden-city",
@@ -187,7 +206,8 @@
       "source": "gardencitycenter.com",
       "entrance_lat": 41.761027,
       "entrance_lng": -71.4406438,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-twin-river-casino",
@@ -199,7 +219,9 @@
       "height_label": null,
       "oversized": true,
       "notes": "Casino garage + RV friendly lots.",
-      "source": "ballys.com"
+      "source": "ballys.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-wickford-village",
@@ -211,7 +233,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic seafaring village.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-newport-mansions",
@@ -223,7 +247,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Gilded Age mansion tours. 35mi south.",
-      "source": "newportmansions.org"
+      "source": "newportmansions.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-newport-gateway",
@@ -235,7 +261,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Newport transit + trolleys.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-johnston-jackson",
@@ -247,7 +275,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Suburban retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-providence-amtrak",
@@ -262,7 +291,8 @@
       "source": "amtrak.com",
       "entrance_lat": 41.8291835,
       "entrance_lng": -71.416761,
-      "entrance_source": "OSM parking_entrance node 9023329017"
+      "entrance_source": "OSM parking_entrance node 9023329017",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-airport-garage",
@@ -277,7 +307,9 @@
       "source": "flyri.com",
       "entrance_lat": 41.7271585,
       "entrance_lng": -71.4356144,
-      "entrance_source": "OSM parking_entrance node 2099033346"
+      "entrance_source": "OSM parking_entrance node 2099033346",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-airport-economy",
@@ -292,7 +324,8 @@
       "source": "flyri.com",
       "entrance_lat": 41.7226194,
       "entrance_lng": -71.4389711,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "pvd-bristol-harbor",
@@ -304,7 +337,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic bay town.",
-      "source": "herreshoff.org"
+      "source": "herreshoff.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w146062999",
@@ -396,7 +430,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Toll bridge to Newport. Suspension span.",
-      "source": "ritba.org"
+      "source": "ritba.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "pvd-mt-hope-bridge",
@@ -407,7 +443,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Suspension bridge Bristol to Portsmouth.",
-      "source": "ritba.org"
+      "source": "ritba.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "pvd-i95-low-prov",

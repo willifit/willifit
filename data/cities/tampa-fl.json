@@ -29,7 +29,9 @@
       "source": "tampaconventioncenter.com",
       "entrance_lat": 27.9422621,
       "entrance_lng": -82.4553591,
-      "entrance_source": "OSM parking_entrance node 8419008721"
+      "entrance_source": "OSM parking_entrance node 8419008721",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-whiting-st",
@@ -60,7 +62,9 @@
       "source": "tampa.gov",
       "entrance_lat": 27.9476038,
       "entrance_lng": -82.4589661,
-      "entrance_source": "OSM parking_entrance node 11911622414"
+      "entrance_source": "OSM parking_entrance node 11911622414",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-centro-ybor",
@@ -87,7 +91,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale shopping district.",
-      "source": "hydeparkvillage.com"
+      "source": "hydeparkvillage.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "tpa-waterworks-park",
@@ -99,7 +105,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Tampa Heights food hall.",
-      "source": "armatureworks.com"
+      "source": "armatureworks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tpa-ikon-channelside",
@@ -114,7 +121,9 @@
       "source": "sparkmanwharf.com",
       "entrance_lat": 27.9443761,
       "entrance_lng": -82.4469424,
-      "entrance_source": "OSM parking_entrance node 9604430421"
+      "entrance_source": "OSM parking_entrance node 9604430421",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-raymond-james",
@@ -139,7 +148,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Spring training + Tampa Tarpons.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tpa-busch-gardens",
@@ -151,7 +161,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Theme park. Surface lot. RV OK.",
-      "source": "buschgardens.com"
+      "source": "buschgardens.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tpa-lowry-park-zoo",
@@ -163,7 +174,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo surface lot.",
-      "source": "zootampa.org"
+      "source": "zootampa.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tpa-museum-of-science",
@@ -171,14 +183,18 @@
       "addr": "4801 E Fowler Ave",
       "lat": 28.0576,
       "lng": -82.4164,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Science museum surface.",
-      "source": "mosi.org",
+      "notes": "Science museum surface.\nVerified 2026-07-03 from sign reading \"CLEARANCE 8' 2\"\" (pano uopQJ6CzPcivrC9lN3kmIA, heading 300\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: mosi.org",
       "entrance_lat": 28.0583416,
       "entrance_lng": -82.4167181,
-      "entrance_source": "OSM parking_entrance node 538662920"
+      "entrance_source": "OSM parking_entrance node 538662920",
+      "verified_on": "2026-07-03",
+      "sv_checked": "2026-07-03",
+      "pano_id": "uopQJ6CzPcivrC9lN3kmIA",
+      "pano_heading": 300
     },
     {
       "id": "tpa-florida-aquarium",
@@ -190,7 +206,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium garage.",
-      "source": "flaquarium.org"
+      "source": "flaquarium.org",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "tpa-international-plaza",
@@ -217,7 +235,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "USF campus.",
-      "source": "usf.edu"
+      "source": "usf.edu",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-tampa-theatre",
@@ -232,7 +252,9 @@
       "source": "tampatheatre.org",
       "entrance_lat": 27.9476038,
       "entrance_lng": -82.4589661,
-      "entrance_source": "OSM parking_entrance node 11911622414"
+      "entrance_source": "OSM parking_entrance node 11911622414",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-hrda-water-street",
@@ -247,7 +269,9 @@
       "source": "waterstreettampa.com",
       "entrance_lat": 27.9426788,
       "entrance_lng": -82.4495874,
-      "entrance_source": "OSM parking_entrance node 9839905302"
+      "entrance_source": "OSM parking_entrance node 9839905302",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-tampa-riverwalk",
@@ -262,7 +286,8 @@
       "source": "thetampariverwalk.com",
       "entrance_lat": 27.948075,
       "entrance_lng": -82.461533,
-      "entrance_source": "OSM parking_entrance node 1952469320"
+      "entrance_source": "OSM parking_entrance node 1952469320",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tpa-westshore-plaza",
@@ -277,7 +302,9 @@
       "source": "Needs verification",
       "entrance_lat": 27.9513691,
       "entrance_lng": -82.5259279,
-      "entrance_source": "OSM parking_entrance node 11215633861"
+      "entrance_source": "OSM parking_entrance node 11215633861",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-port-cruise",
@@ -292,7 +319,9 @@
       "source": "porttb.com",
       "entrance_lat": 27.942584,
       "entrance_lng": -82.4476217,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "tpa-airport-short",
@@ -336,7 +365,8 @@
       "source": "tampaairport.com",
       "entrance_lat": 27.9685441,
       "entrance_lng": -82.5318059,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w25679426",
@@ -428,7 +458,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Iconic cable-stayed bridge to St. Pete.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "tpa-howard-frankland",
@@ -439,7 +471,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Main commuter bridge to Pinellas County.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "tpa-courtney-campbell",
@@ -450,7 +484,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Scenic alt to interstate bridges.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "tpa-gandy",
@@ -461,7 +497,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Third main bay crossing.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-12-109907",

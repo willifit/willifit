@@ -29,7 +29,9 @@
       "source": "smoothiekingcenter.com",
       "entrance_lat": 29.9494678,
       "entrance_lng": -90.0803571,
-      "entrance_source": "OSM parking_entrance node 10903996920"
+      "entrance_source": "OSM parking_entrance node 10903996920",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-convention-ctr",
@@ -44,7 +46,9 @@
       "source": "mccno.com",
       "entrance_lat": 29.9422929,
       "entrance_lng": -90.0700164,
-      "entrance_source": "OSM parking_entrance node 11222409790"
+      "entrance_source": "OSM parking_entrance node 11222409790",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-harrahs",
@@ -59,7 +63,9 @@
       "source": "caesars.com",
       "entrance_lat": 29.9477839,
       "entrance_lng": -90.0648995,
-      "entrance_source": "OSM parking_entrance node 4751332222"
+      "entrance_source": "OSM parking_entrance node 4751332222",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-st-louis-1",
@@ -74,7 +80,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.9547245,
       "entrance_lng": -90.0672204,
-      "entrance_source": "OSM parking_entrance node 2188362091"
+      "entrance_source": "OSM parking_entrance node 2188362091",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-jax-brewery",
@@ -89,7 +97,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.9566677,
       "entrance_lng": -90.0622967,
-      "entrance_source": "OSM parking_entrance node 3356907892"
+      "entrance_source": "OSM parking_entrance node 3356907892",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-premium-canal",
@@ -104,7 +114,9 @@
       "source": "premiumparking.com",
       "entrance_lat": 29.95152,
       "entrance_lng": -90.0681387,
-      "entrance_source": "OSM parking_entrance node 3067445345"
+      "entrance_source": "OSM parking_entrance node 3067445345",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-aquarium",
@@ -116,7 +128,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Aquarium + Entergy IMAX.",
-      "source": "audubonnatureinstitute.org"
+      "source": "audubonnatureinstitute.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-riverwalk-outlet",
@@ -131,7 +144,9 @@
       "source": "riverwalkneworleans.com",
       "entrance_lat": 29.9477839,
       "entrance_lng": -90.0648995,
-      "entrance_source": "OSM parking_entrance node 4751332222"
+      "entrance_source": "OSM parking_entrance node 4751332222",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-poydras",
@@ -146,7 +161,9 @@
       "source": "Needs verification",
       "entrance_lat": 29.9497167,
       "entrance_lng": -90.0763887,
-      "entrance_source": "OSM parking_entrance node 10841609491"
+      "entrance_source": "OSM parking_entrance node 10841609491",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-fulton-street",
@@ -158,7 +175,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Warehouse District.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-audubon-park",
@@ -170,7 +189,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic park. Free surface lots.",
-      "source": "audubonnatureinstitute.org"
+      "source": "audubonnatureinstitute.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-audubon-zoo",
@@ -182,7 +202,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo surface lot.",
-      "source": "audubonnatureinstitute.org"
+      "source": "audubonnatureinstitute.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-city-park",
@@ -194,7 +215,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Huge park + art museum + sculpture garden.",
-      "source": "neworleanscitypark.com"
+      "source": "neworleanscitypark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-french-market",
@@ -206,7 +228,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic market district.",
-      "source": "frenchmarket.org"
+      "source": "frenchmarket.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-garden-dist-tours",
@@ -218,7 +241,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mostly street parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-magazine-st",
@@ -230,7 +254,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "6-mile shopping street.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-lakeside",
@@ -242,7 +267,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Major mall in suburb.",
-      "source": "lakesideshopping.com"
+      "source": "lakesideshopping.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-oak-st-river-beaux",
@@ -254,7 +281,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverbend music + dining district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nola-st-charles-streetcar",
@@ -266,7 +294,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mostly street parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "msy-short-term",
@@ -278,7 +308,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "New 2019 terminal garage.",
-      "source": "flymsy.com"
+      "source": "flymsy.com",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "msy-economy",
@@ -290,7 +322,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flymsy.com"
+      "source": "flymsy.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w328669308",
@@ -305,7 +338,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 29.9464763,
       "entrance_lng": -90.064856,
-      "entrance_source": "OSM parking_entrance node 4751311826"
+      "entrance_source": "OSM parking_entrance node 4751311826",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],
@@ -319,7 +354,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Twin cantilever bridges to West Bank.",
-      "source": "LADOTD"
+      "source": "LADOTD",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-sign"
     },
     {
       "id": "nola-lake-pontchartrain",
@@ -330,7 +367,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "~24 miles \u2014 longest continuous bridge over water in world.",
-      "source": "thecauseway.us"
+      "source": "thecauseway.us",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nola-i-10-twin-spans",
@@ -341,7 +380,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Interstate crossing to Slidell.",
-      "source": "LADOTD"
+      "source": "LADOTD",
+      "sv_checked": "2026-07-03",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-22-023600060500001",

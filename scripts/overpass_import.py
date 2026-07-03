@@ -396,6 +396,11 @@ def normalize_element(el: dict, city_slug: str, verified_only: bool = False, min
         out["structure_type"] = "surface_lot"
     elif is_covered:
         out["structure_type"] = "structure"
+    # Operator website — fuel for website_verify.py (operator sites publish
+    # clearances Street View can't see).  Previously discarded at import.
+    website = (tags.get("website") or tags.get("contact:website") or "").strip()
+    if website:
+        out["website"] = website[:200]
     return out
 
 
