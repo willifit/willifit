@@ -257,11 +257,12 @@
       "addr": "5800 S Howell Ave",
       "lat": 42.9448,
       "lng": -87.9,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "notes": "Uncovered. Oversized OK.",
-      "source": "mitchellairport.com"
+      "height_in": 83,
+      "height_label": "6'11\"",
+      "oversized": false,
+      "notes": "Uncovered. Oversized OK.\nVerified 2026-07-03 from mitchellairport.com: \"Maximum vehicle height is 6 feet 11 inches.\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: mitchellairport.com",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "osm-w74100310",
@@ -287,7 +288,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (409 spaces). 409 spaces. Free parking. Operator: Wisconsin Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://wisconsindot.gov/Pages/travel/road/parknride/mil4040.aspx"
     },
     {
       "id": "osm-w93412668",
@@ -300,7 +302,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (285 spaces). 285 spaces. Free parking. Operator: Wisconsin Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://wisconsindot.gov/Pages/travel/road/parknride/mil4055.aspx"
     },
     {
       "id": "osm-w93793485",
@@ -313,7 +316,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (53 spaces). 53 spaces. Paid parking. Operator: Interstate Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://interstateparking.com/milwaukee/1190"
     },
     {
       "id": "osm-w93837661",
@@ -326,7 +330,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (172 spaces). 172 spaces. Paid parking. Operator: Interstate Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://interstateparking.com/milwaukee/1167"
     },
     {
       "id": "osm-w118038530",
@@ -339,7 +344,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (53 spaces). 53 spaces. Paid parking. Operator: Interstate Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://interstateparking.com/milwaukee/1133"
     },
     {
       "id": "osm-w190295333",
@@ -352,7 +358,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (351 spaces). 351 spaces. Paid parking. Operator: SP+.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://parking.com/milwaukee/lot/300-van-buren"
     },
     {
       "id": "osm-w190336833",
@@ -391,7 +398,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: motorhome-friendly (OSM motorhome=yes). Paid parking. Operator: SP+.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://parking.com/milwaukee/lot/921-east-erie-street"
     },
     {
       "id": "osm-w362825138",
@@ -404,7 +412,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (279 spaces). 279 spaces. Paid parking. Operator: Interstate Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://interstateparking.com/milwaukee/1148"
     },
     {
       "id": "osm-w377787263",
@@ -534,7 +543,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (165 spaces). 165 spaces. Paid parking. Operator: Interstate Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://interstateparking.com/milwaukee/1168"
     },
     {
       "id": "osm-w874459920",
@@ -573,7 +583,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (263 spaces). 263 spaces. Paid parking. Operator: Impark.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://lots.impark.com/IMP/EN#details=30,28"
     }
   ],
   "tunnels": [

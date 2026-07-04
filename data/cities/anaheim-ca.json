@@ -396,7 +396,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (581 spaces). 581 spaces. Free parking. Operator: California Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://dot.ca.gov"
     },
     {
       "id": "osm-w104907573",
@@ -409,7 +410,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (800 spaces). 800 spaces. Free parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.octa.net/ebusbook/RoutePDF/Routes_Serving_Stations.pdf"
     },
     {
       "id": "osm-w104907574",
@@ -435,7 +437,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (59 spaces). 59 spaces. Free parking. Operator: Caltrans.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://dot.ca.gov/caltrans-near-me/district-12/district-12-popular-links/district-12-park-and-ride"
     },
     {
       "id": "osm-w104932768",
@@ -529,7 +532,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.besttimerv.com/"
     }
   ],
   "tunnels": [],

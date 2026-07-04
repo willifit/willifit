@@ -363,7 +363,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "willowtreeinnbranson.com"
     },
     {
       "id": "osm-n2623113607",
@@ -376,7 +377,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "musiclandkampground.com"
     },
     {
       "id": "osm-n2689309813",
@@ -402,7 +404,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://www.andrewslanding.com/"
     },
     {
       "id": "osm-n2689339696",
@@ -428,7 +431,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "bransonstagecoachcampground.com"
     },
     {
       "id": "osm-n2693744983",
@@ -467,7 +471,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.bransoncampground.com/"
     },
     {
       "id": "osm-n2693824293",
@@ -493,7 +498,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.thebransonviewcampground.com/"
     },
     {
       "id": "osm-n2694185840",
@@ -509,7 +515,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 36.64517,
       "entrance_lng": -93.292091,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.bransonrvparks.com/"
     },
     {
       "id": "osm-n2694354973",
@@ -625,7 +632,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.abc-branson.com/"
     },
     {
       "id": "osm-w264524301",
@@ -638,7 +646,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://bransonlakesidervpark.com/"
     },
     {
       "id": "osm-w706084501",

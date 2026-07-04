@@ -163,16 +163,34 @@
       "addr": "2200 Norview Ave, Norfolk",
       "lat": 36.8946,
       "lng": -76.2024,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 79,
+      "height_label": "6'7\"",
       "oversized": false,
-      "notes": "Closest airport \u2014 Norfolk. Not VB proper.",
-      "source": "norfolkairport.com",
+      "notes": "Closest airport \u2014 Norfolk. Not VB proper.\nVerified 2026-07-03 from norfolkairport.com: \"Daily Garage A \u2013 8\u2032 1\u2033, Daily Garages B and C \u2013 6\u2032 7\u2033, Daily Garage D \u2013 8'2\"\"\nPrimary height set to the STRICTEST garage (B/C 6'7\") per safety convention; per-garage heights in sections.",
+      "source": "AI-verified (operator website + Claude) \u2014 was: norfolkairport.com",
       "entrance_lat": 36.8974362,
       "entrance_lng": -76.2043547,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
       "sv_checked": "2026-04-23",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "verified_on": "2026-07-03",
+      "sections": [
+        {
+          "label": "Daily Garage B / C",
+          "height_in": 79,
+          "height_label": "6'7\""
+        },
+        {
+          "label": "Daily Garage A",
+          "height_in": 97,
+          "height_label": "8'1\""
+        },
+        {
+          "label": "Daily Garage D",
+          "height_in": 98,
+          "height_label": "8'2\""
+        }
+      ]
     },
     {
       "id": "vb-chicks-beach",
@@ -504,7 +522,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.campingvb.com/"
     },
     {
       "id": "osm-w404559864",

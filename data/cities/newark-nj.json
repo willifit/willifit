@@ -21,14 +21,15 @@
       "addr": "1 Center St",
       "lat": 40.7376,
       "lng": -74.1706,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 77,
+      "height_label": "6'5\"",
       "oversized": false,
-      "notes": "Performing arts + attached garage.",
-      "source": "njpac.org",
+      "notes": "Performing arts + attached garage.\nVerified 2026-07-03 from njpac.org: \"Vehicle height clearance is 6' 5\" at the entrance.\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: njpac.org",
       "entrance_lat": 40.7368663,
       "entrance_lng": -74.1691782,
-      "entrance_source": "OSM parking_entrance node 12483862403"
+      "entrance_source": "OSM parking_entrance node 12483862403",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "nwk-gateway-center",
@@ -302,7 +303,8 @@
       "notes": "paid; hrs: 04:00-20:00 OSM-imported 18'0\" was building height, not clearance.",
       "source": "Needs verification (was OSM building-height)",
       "sv_checked": "2026-05-01",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "website": "https://parking.com/nyc/lot/nj-hoboken-1-washington-street"
     },
     {
       "id": "osm-w241842698",

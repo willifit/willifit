@@ -388,7 +388,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (120 spaces). 120 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.mass.gov/locations/canton-park-and-ride"
     },
     {
       "id": "osm-w80671181",
@@ -414,7 +415,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (252 spaces). 252 spaces. Paid parking. Operator: ABM Parking Services.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.parkwithabm.com/sargents-wharf-parking-lot"
     },
     {
       "id": "osm-w141395729",
@@ -482,7 +484,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (814 spaces). 814 spaces. Paid parking. Operator: SP+.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://parking.com/boston/lot/channelside-lot"
     },
     {
       "id": "osm-w496977380",
@@ -573,7 +576,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (200 spaces). 200 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.mass.gov/locations/milton-park-and-ride"
     },
     {
       "id": "osm-w1282217338",
@@ -586,7 +590,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (68 spaces). 68 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.mass.gov/locations/woburn-hill-street-park-and-ride"
     }
   ],
   "tunnels": [

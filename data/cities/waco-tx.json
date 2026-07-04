@@ -132,12 +132,14 @@
       "addr": "1078 Willow Grove Road",
       "lat": 31.55118,
       "lng": -97.29592,
-      "height_in": null,
-      "height_label": "No limit (uncovered)",
+      "height_in": 192,
+      "height_label": "16'0\"",
       "oversized": true,
       "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).\nVerified 2026-07-03 from www.4urvpark.com: \"4U (20\u2032 W x 30\u2032 L x 16\u2032 H)\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: OpenStreetMap (surface lot)",
+      "website": "https://www.4urvpark.com/",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "osm-w1301575110",

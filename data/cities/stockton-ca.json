@@ -11,7 +11,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.frenchcamp.com/"
     },
     {
       "id": "osm-w831191248",
@@ -72,7 +73,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "782 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "website": "https://stocktonparking.spplus.com/market-street-garage.html"
     }
   ],
   "tunnels": [

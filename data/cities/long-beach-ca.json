@@ -350,7 +350,8 @@
       "source": "OpenStreetMap",
       "entrance_lat": 33.7730423,
       "entrance_lng": -118.1917978,
-      "entrance_source": "OSM parking_entrance node 7200334004"
+      "entrance_source": "OSM parking_entrance node 7200334004",
+      "website": "https://www.parklb.com/parking-lotsgarages/downtown-parking/city-place-a-50-w-6th-st/"
     },
     {
       "id": "osm-w146635494",

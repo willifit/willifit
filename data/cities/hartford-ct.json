@@ -339,7 +339,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (743 spaces). 743 spaces. Free parking. Operator: Connecticut Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://portal.ct.gov/dot/travel-gateway/roads-and-highways/park-and-ride"
     },
     {
       "id": "osm-w142387069",

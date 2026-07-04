@@ -393,7 +393,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (58 spaces). 58 spaces.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.gatlinburg.com/listing/m-%26-o-parking-lot/4143/"
     },
     {
       "id": "osm-w980098136",

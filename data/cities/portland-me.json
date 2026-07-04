@@ -11,7 +11,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://www.sunrvresorts.com/Community/WAC.aspx"
     },
     {
       "id": "osm-n3017305518",
@@ -24,7 +25,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://paradiseparkresort.com/"
     },
     {
       "id": "osm-w463040614",
@@ -37,7 +39,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (90 spaces). 90 spaces. Free parking. Operator: City of Westbrook.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.maineturnpike.com/Traveler-Services/Park-Ride-Lots.aspx"
     },
     {
       "id": "osm-w1037242133",
@@ -69,7 +72,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 43.527527,
       "entrance_lng": -70.3873843,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.mainecampgrounds.com/"
     },
     {
       "id": "osm-w1037829628",
@@ -85,7 +89,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 43.5250862,
       "entrance_lng": -70.3823513,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "http://mainefamilycamping.com/"
     },
     {
       "id": "osm-w1068860885",
@@ -114,7 +119,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.wildduckcampground.com/"
     },
     {
       "id": "osm-w1069909016",
@@ -127,7 +133,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://bayleysresort.com/"
     }
   ],
   "tunnels": [],

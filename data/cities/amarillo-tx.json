@@ -11,7 +11,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://fortrvparks.com/"
     },
     {
       "id": "osm-w456547935",
@@ -27,7 +28,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 35.1965879,
       "entrance_lng": -101.773829,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.bigtexanrvranch.com/"
     },
     {
       "id": "osm-w471892078",
@@ -43,7 +45,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 35.1953535,
       "entrance_lng": -101.7430294,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.overnitervpark.com/"
     },
     {
       "id": "osm-w488569027",
@@ -140,7 +143,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 35.2246604,
       "entrance_lng": -101.7244784,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://koa.com/campgrounds/amarillo/"
     },
     {
       "id": "osm-w1214353292",

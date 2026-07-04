@@ -319,13 +319,14 @@
       "addr": "5500 International Blvd",
       "lat": 32.8993,
       "lng": -80.0383,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 95,
+      "height_label": "7'11\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "iflychs.com",
+      "notes": "Terminal-adjacent.\nVerified 2026-07-03 from iflychs.com: \"The max height restriction for this garage is 7'11\".\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: iflychs.com",
       "sv_checked": "2026-06-20",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "chs-airport-economy",
@@ -561,7 +562,8 @@
       "entrance_lng": -79.9368661,
       "entrance_source": "OSM parking_entrance node 12856281266",
       "sv_checked": "2026-06-20",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "website": "https://www.charleston-sc.gov/1025/Parking-Information"
     },
     {
       "id": "osm-r19345278",

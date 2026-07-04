@@ -324,13 +324,14 @@
       "addr": "2601 Worldgateway Pl, Romulus MI",
       "lat": 42.2147,
       "lng": -83.3548,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "~55mi N. Primary air service for Toledo.",
-      "source": "metroairport.com",
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "oversized": true,
+      "notes": "~55mi N. Primary air service for Toledo.\nVerified 2026-07-03 from metroairport.com: \"Most areas of the parking structures are not able to accommodate vehicles over 7\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: metroairport.com",
       "sv_checked": "2026-04-23",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "osm-n2942682600",
@@ -346,7 +347,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 41.7984133,
       "entrance_lng": -83.6823133,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.coveredwagoncamp.com/"
     },
     {
       "id": "osm-w203542867",

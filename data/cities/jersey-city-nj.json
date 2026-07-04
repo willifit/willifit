@@ -402,7 +402,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (1022 spaces). 1022 spaces. Paid parking. Operator: New Jersey Turnpike Authority.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.njtransit.com/station/vince-lombardi-park-ride"
     },
     {
       "id": "osm-w354408901",
@@ -415,7 +416,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 50 spaces. Paid parking. Operator: Liberty Harbor Marina.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.libertyharborrv.com/"
     }
   ],
   "tunnels": [

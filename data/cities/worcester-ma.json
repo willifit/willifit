@@ -24,7 +24,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (446 spaces). 446 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.mass.gov/locations/millbury-park-and-ride"
     },
     {
       "id": "osm-w1086811841",
@@ -37,7 +38,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (163 spaces). 163 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.mass.gov/locations/auburn-park-and-ride"
     },
     {
       "id": "osm-w1086978586",
@@ -50,7 +52,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (122 spaces). 122 spaces. Free parking. Operator: Massachusetts Department of Transportation.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.mass.gov/locations/millbury-grafton-road-park-and-ride"
     }
   ],
   "tunnels": [],

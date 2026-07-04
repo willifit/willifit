@@ -27,7 +27,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 32.3799611,
       "entrance_lng": -84.956896,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.campdavidrvresort.com/"
     },
     {
       "id": "osm-w720574949",

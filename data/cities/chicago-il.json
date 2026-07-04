@@ -804,7 +804,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (53 spaces). 53 spaces. Paid parking. Operator: CPS Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://www.transitchicago.com/parking/#blueline"
     },
     {
       "id": "osm-w33702428",
@@ -869,7 +870,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (299 spaces). 299 spaces. Paid parking. Operator: CPS Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://www.transitchicago.com/parking/#orangeline"
     },
     {
       "id": "osm-w220245085",
@@ -895,7 +897,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (1220 spaces). 1220 spaces. Paid parking. Operator: SP+.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://chicagoparking.spplus.com/13730-South-Brainard.html"
     },
     {
       "id": "osm-w232547605",

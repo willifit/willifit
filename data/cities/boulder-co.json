@@ -50,7 +50,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (466 spaces). 466 spaces. Operator: RTD Denver.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://www3.rtd-denver.com/elbert/SystemMap/"
     },
     {
       "id": "osm-w204426312",
@@ -63,7 +64,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (264 spaces). 264 spaces. Operator: RTD Denver.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "http://www3.rtd-denver.com/elbert/SystemMap/"
     },
     {
       "id": "osm-w620946173",

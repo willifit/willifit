@@ -449,7 +449,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (186 spaces). 186 spaces. Free parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.soundtransit.org/x1356.xml"
     },
     {
       "id": "osm-w53836263",
@@ -527,7 +528,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (390 spaces). 390 spaces. Free parking. Operator: Sound Transit.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.soundtransit.org/ride-with-us/stations/sounder-train-stations/tukwila-station"
     },
     {
       "id": "osm-w360439967",

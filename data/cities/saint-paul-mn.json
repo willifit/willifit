@@ -133,14 +133,15 @@
       "addr": "120 W Kellogg Blvd",
       "lat": 44.9442,
       "lng": -93.0976,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 96,
+      "height_label": "8'0\"",
       "oversized": false,
-      "notes": "Museum ramp.",
-      "source": "smm.org",
+      "notes": "Museum ramp.\nVerified 2026-07-03 from smm.org: \"Vehicles up to eight feet tall can park in the ramp.\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: smm.org",
       "entrance_lat": 44.9438888,
       "entrance_lng": -93.0984607,
-      "entrance_source": "OSM parking_entrance node 13750502472"
+      "entrance_source": "OSM parking_entrance node 13750502472",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "stp-como-park",
@@ -300,7 +301,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (74 spaces). 74 spaces. Operator: Impark.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://lots.impark.com/IMP/en?latlng=44.977753,-93.26501080000003&zoom=15#details=20,88"
     },
     {
       "id": "osm-w618933059",

@@ -231,7 +231,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 36.0671132,
       "entrance_lng": -115.008905,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://www.desertsandsnv.com"
     },
     {
       "id": "osm-w849462646",
@@ -273,7 +274,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.canyontrailrvpark.com"
     },
     {
       "id": "osm-w1211811206",

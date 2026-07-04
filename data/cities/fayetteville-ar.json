@@ -56,7 +56,8 @@
       "source": "OpenStreetMap (surface lot)",
       "entrance_lat": 36.0375294,
       "entrance_lng": -94.1679388,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
+      "website": "https://southgatervpark.com/"
     }
   ],
   "tunnels": [],

@@ -484,7 +484,8 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (275 spaces). 275 spaces.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "https://www.vta.org/getting-around/park-and-ride-lots-i880milpitas-light-rail-station"
     },
     {
       "id": "osm-w326488489",
