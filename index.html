@@ -1245,6 +1245,43 @@
   .fit-verdict.fit-bad  { border-color: var(--bad);  background: rgba(229, 72, 77, 0.12); }
   .fit-verdict.fit-bad  .fit-verdict-label { color: var(--bad); }
 
+  /* Saved spots + share — detail quick actions */
+  .detail-quick-acts { display: flex; gap: 8px; margin: 10px 0 2px; }
+  .quick-act {
+    padding: 6px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 600;
+    background: var(--panel-2); color: var(--text);
+    border: 1px solid var(--border); cursor: pointer;
+  }
+  .quick-act:hover { border-color: var(--accent); color: var(--accent); }
+  .quick-act[aria-pressed="true"] { border-color: var(--warn); color: var(--warn); }
+  .fav-star { color: var(--warn); margin-right: 5px; }
+
+  /* Vehicle preset dropdown (topbar "My vehicle") */
+  .vehicle-height { position: relative; }
+  .vh-preset-btn {
+    background: none; border: 1px solid var(--border); border-radius: 5px;
+    color: var(--muted); cursor: pointer; font-size: 11px;
+    padding: 3px 7px; margin-left: 4px; line-height: 1;
+  }
+  .vh-preset-btn:hover, .vh-preset-btn[aria-expanded="true"] { color: var(--accent); border-color: var(--accent); }
+  .vh-presets {
+    position: absolute; top: calc(100% + 6px); right: 0; z-index: 940;
+    min-width: 265px; padding: 6px;
+    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+  .vh-presets-title {
+    padding: 6px 8px 8px; font-size: 10.5px; color: var(--muted); line-height: 1.45;
+    border-bottom: 1px solid var(--border); margin-bottom: 4px;
+  }
+  .vh-presets-title b { color: var(--warn); }
+  .vh-presets button {
+    display: block; width: 100%; text-align: left;
+    padding: 7px 9px; border: none; border-radius: 6px;
+    background: none; color: var(--text); font-size: 12.5px; cursor: pointer;
+  }
+  .vh-presets button:hover { background: var(--panel-2); color: var(--accent); }
+
   /* Directions — primary action above verdict banner */
   .directions-row {
     display: flex; flex-direction: column; gap: 6px;
@@ -1922,6 +1959,20 @@
         <input type="number" id="vhInches" min="0" max="11" value="" placeholder="–" aria-label="Vehicle height, inches">
         <span class="vh-unit">"</span>
         <button class="vh-clear" id="vhClear" title="Clear vehicle height">×</button>
+        <button class="vh-preset-btn" id="vhPresetBtn" title="Pick a common vehicle type" aria-haspopup="true" aria-expanded="false">▾</button>
+      </div>
+      <div class="vh-presets" id="vhPresets" hidden>
+        <div class="vh-presets-title">Typical heights — always measure <b>your</b> rig (racks, AC &amp; lifts add inches)</div>
+        <button type="button" data-in="78">Pickup / SUV (stock) — 6'6"</button>
+        <button type="button" data-in="84">Cargo van — low roof — 7'0"</button>
+        <button type="button" data-in="90">Lifted truck + rack — 7'6"</button>
+        <button type="button" data-in="100">Cargo van — mid roof — 8'4"</button>
+        <button type="button" data-in="114">High-roof Sprinter / Transit — 9'6"</button>
+        <button type="button" data-in="116">Camper van (Class B) — 9'8"</button>
+        <button type="button" data-in="126">U-Haul / small box truck — 10'6"</button>
+        <button type="button" data-in="138">Class C RV — 11'6"</button>
+        <button type="button" data-in="150">Box / grip truck (15–26') — 12'6"</button>
+        <button type="button" data-in="162">Semi / 13'6" trailer</button>
       </div>
     </div>
     <div class="current-city" id="currentCityBtn" role="button" tabindex="0" aria-label="Change city">
@@ -1960,6 +2011,9 @@
           </button>
           <button class="type-chip" data-filter="verified" id="verifiedToggle" type="button">
             <span class="chip-dot"></span>Hide unverified
+          </button>
+          <button class="type-chip" data-filter="saved" id="savedToggle" type="button" title="Show only spots you starred">
+            <span class="chip-dot"></span>★ Saved
           </button>
         </div>
       </div>
@@ -2778,6 +2832,7 @@ function getFiltered() {
        // haven't checked.  Using isConfirmedEntry() keeps that rule in
        // one place so the detail panel + list agree.
       if (state.verifiedOnly && !isConfirmedEntry(g)) return false;
+      if (state.savedOnly && !favs.has(g.id)) return false;
       if (state.minHeight > 60 && g.height_in != null && g.height_in < state.minHeight) return false;
       if (state.searchBounds && !_inBounds(g, state.searchBounds)) return false;
       return true;
@@ -2872,7 +2927,7 @@ function renderList() {
     const idSafe = escapeHTML(g.id || '');
     return `
       <div class="garage-card ${active} ${unv} ${isNearby ? 'is-nearby' : ''}" data-id="${idSafe}" data-city="${escapeHTML(g._city || '')}" role="button" tabindex="0" aria-label="${nameSafe}, clearance ${hlabelSafe}${g.oversized ? ', oversized parking available' : ''}${isAiVerified ? ', AI-verified' : ''}${isNearby ? ', in ' + (nearbyMeta?.name || 'nearby city') : ''}">
-        <div class="garage-name">${nameSafe}${cityChip}</div>
+        <div class="garage-name">${favs.has(g.id) ? '<span class="fav-star" title="Saved">★</span>' : ''}${nameSafe}${cityChip}</div>
         <div class="garage-meta">
           <span class="height-badge ${hc}">${hlabelSafe}</span>
           ${overTag}
@@ -3486,6 +3541,25 @@ function renderSectionsList(g) {
   `;
 }
 
+/* ============================================================
+   SAVED SPOTS — star garages for trip planning.  Persisted in
+   localStorage as an array of entry ids (globally unique).
+   ============================================================ */
+const FAVS_KEY = 'willifit_saved_spots';
+function _favsLoad() {
+  try { return new Set(JSON.parse(localStorage.getItem(FAVS_KEY) || '[]')); }
+  catch (e) { return new Set(); }
+}
+function _favsSave(s) {
+  try { localStorage.setItem(FAVS_KEY, JSON.stringify([...s])); } catch (e) {}
+}
+const favs = _favsLoad();
+state.savedOnly = false;
+function toggleFav(id) {
+  if (favs.has(id)) favs.delete(id); else favs.add(id);
+  _favsSave(favs);
+}
+
 function renderDetail(g) {
   const panel = document.getElementById('detail');
   const body = document.getElementById('detailBody');
@@ -3523,6 +3597,10 @@ function renderDetail(g) {
   body.innerHTML = `
     <div class="detail-name">${escapeHTML(g.name || '')}${aiBadgeDetail}</div>
     <div class="detail-address">${escapeHTML(g.addr || '')}</div>
+    <div class="detail-quick-acts">
+      <button class="quick-act" id="detailFavBtn" aria-pressed="${favs.has(g.id)}">${favs.has(g.id) ? '★ Saved' : '☆ Save'}</button>
+      <button class="quick-act" id="detailShareBtn">Share link</button>
+    </div>
     <div class="directions-row">
       <a class="directions-btn" href="${gmapsDir}" target="_blank" rel="noopener" aria-label="Get directions to ${escapeHTML(g.name)} via Google Maps">
         <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zM14 14.5V12h-4v3H8v-4a1 1 0 011-1h5V7.5l3.5 3.5z"/></svg>
@@ -3598,6 +3676,40 @@ function renderDetail(g) {
   const issueBtn = document.getElementById('detailIssueBtn');
   if (issueBtn) {
     issueBtn.addEventListener('click', () => openIssueModal(issueBtn.dataset.gid));
+  }
+  // Save + share quick actions
+  const favBtn = document.getElementById('detailFavBtn');
+  if (favBtn) {
+    favBtn.addEventListener('click', () => {
+      toggleFav(g.id);
+      const on = favs.has(g.id);
+      favBtn.textContent = on ? '★ Saved' : '☆ Save';
+      favBtn.setAttribute('aria-pressed', String(on));
+      renderList();   // refresh star indicators (and the ★ Saved filter if active)
+    });
+  }
+  const shareBtn = document.getElementById('detailShareBtn');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+      // Deep link — the app's hash router restores city + garage from this.
+      const url = `https://willifit.ai/#${encodeURIComponent(g._city || state.city)}/${encodeURIComponent(g.id)}`;
+      const payload = {
+        title: `${g.name} — WillIFit.ai`,
+        text: `${g.name}: posted clearance ${g.height_label || 'unverified'}`,
+        url,
+      };
+      if (navigator.share) {
+        try { await navigator.share(payload); return; }
+        catch (e) { if (e && e.name === 'AbortError') return; /* else fall through */ }
+      }
+      try {
+        await navigator.clipboard.writeText(url);
+        shareBtn.textContent = 'Copied ✓';
+        setTimeout(() => { shareBtn.textContent = 'Share link'; }, 1600);
+      } catch (e) {
+        window.prompt('Copy this link:', url);
+      }
+    });
   }
 }
 
@@ -4301,6 +4413,11 @@ document.getElementById('verifiedToggle').addEventListener('click', (e) => {
   e.currentTarget.classList.toggle('active', state.verifiedOnly);
   renderList(); renderMarkers();
 });
+document.getElementById('savedToggle').addEventListener('click', (e) => {
+  state.savedOnly = !state.savedOnly;
+  e.currentTarget.classList.toggle('active', state.savedOnly);
+  renderList(); renderMarkers();
+});
 document.querySelectorAll('.type-chip').forEach(el => {
   el.addEventListener('click', () => {
     const t = el.dataset.type;
@@ -4997,6 +5114,39 @@ function wireVehicleHeightInput() {
     saveVehicleHeightToStorage();
     applyVehicleHeightToUI();
   });
+
+  // Vehicle presets dropdown — one tap instead of knowing your rig's height.
+  const presetBtn = document.getElementById('vhPresetBtn');
+  const presetPanel = document.getElementById('vhPresets');
+  if (presetBtn && presetPanel) {
+    const closePresets = () => {
+      presetPanel.hidden = true;
+      presetBtn.setAttribute('aria-expanded', 'false');
+    };
+    presetBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const opening = presetPanel.hidden;
+      presetPanel.hidden = !opening;
+      presetBtn.setAttribute('aria-expanded', String(opening));
+    });
+    presetPanel.querySelectorAll('button[data-in]').forEach(b => {
+      b.addEventListener('click', () => {
+        const total = parseInt(b.dataset.in, 10);
+        feetEl.value = Math.floor(total / 12);
+        inchesEl.value = total % 12;
+        // Route through the normal input path so state, storage, the
+        // slider marriage, and fit re-coloring all update as one.
+        feetEl.dispatchEvent(new Event('input', { bubbles: true }));
+        closePresets();
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!presetPanel.hidden && !presetPanel.contains(e.target) && e.target !== presetBtn) closePresets();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !presetPanel.hidden) closePresets();
+    });
+  }
 }
 </script>
 
