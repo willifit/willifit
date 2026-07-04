@@ -13,7 +13,9 @@
       "source": "fedexforum.com",
       "entrance_lat": 35.1402244,
       "entrance_lng": -90.0500489,
-      "entrance_source": "OSM parking_entrance node 8899025068"
+      "entrance_source": "OSM parking_entrance node 8899025068",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-beale-st-lot",
@@ -25,7 +27,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Serves Beale Street entertainment district.",
-      "source": "downtownmemphis.com"
+      "source": "downtownmemphis.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-gibson-garage",
@@ -37,7 +41,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Orpheum adjacent.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "mem-peabody",
@@ -49,7 +55,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic Peabody Hotel.",
-      "source": "peabodymemphis.com"
+      "source": "peabodymemphis.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-convention-ctr",
@@ -61,7 +69,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown convention center.",
-      "source": "memphisconvention.com"
+      "source": "memphisconvention.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-autozone-park",
@@ -73,7 +83,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "AAA Memphis Redbirds.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-crosstown",
@@ -85,7 +97,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adaptive-reuse landmark.",
-      "source": "crosstownconcourse.com"
+      "source": "crosstownconcourse.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-shelby-farms",
@@ -100,7 +114,8 @@
       "source": "shelbyfarmspark.org",
       "entrance_lat": 35.1496369,
       "entrance_lng": -89.8586455,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-graceland",
@@ -112,7 +127,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Elvis mansion. Massive surface lots + RV parking.",
-      "source": "graceland.com"
+      "source": "graceland.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-liberty-park",
@@ -124,7 +140,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Former Mid-South Fairgrounds + Liberty Bowl.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-simmons-liberty-bowl",
@@ -149,7 +166,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Overton Park surface lots.",
-      "source": "memphiszoo.org"
+      "source": "memphiszoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-brooks-museum",
@@ -161,7 +179,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Overton Park free surface lot.",
-      "source": "brooksmuseum.org"
+      "source": "brooksmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-civil-rights-museum",
@@ -176,7 +195,8 @@
       "source": "civilrightsmuseum.org",
       "entrance_lat": 35.1362392,
       "entrance_lng": -90.0562976,
-      "entrance_source": "OSM parking_entrance node 13386387209"
+      "entrance_source": "OSM parking_entrance node 13386387209",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-stax-museum",
@@ -188,7 +208,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot.",
-      "source": "staxmuseum.com"
+      "source": "staxmuseum.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-oak-court",
@@ -200,7 +221,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-wolfchase",
@@ -212,7 +234,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Suburban mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-south-main",
@@ -224,7 +248,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Arts district surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mem-airport-garage",
@@ -237,7 +262,9 @@
       "oversized": false,
       "notes": "MEM terminal garage.",
       "source": "flymemphis.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "mem-airport-economy",
@@ -249,7 +276,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flymemphis.com"
+      "source": "flymemphis.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1133927457",
@@ -311,7 +339,9 @@
       "source": "Wikipedia",
       "entrance_lat": 35.1531599,
       "entrance_lng": -90.0771467,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mem-harahan",
@@ -322,7 +352,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Rail + pedestrian bridge. Big River Crossing pedestrian path.",
-      "source": "bigrivercrossing.com"
+      "source": "bigrivercrossing.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "mem-i55-old-bridge",
@@ -333,7 +365,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Truss bridge. High clearance.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-47-79028610007",

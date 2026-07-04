@@ -24,7 +24,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "towncenterataurora.com"
+      "source": "towncenterataurora.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "aur-cherry-creek-sp",
@@ -39,7 +41,8 @@
       "source": "cpw.state.co.us",
       "entrance_lat": 39.6413097,
       "entrance_lng": -104.8498724,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-stanley-marketplace",
@@ -51,7 +54,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Adaptive-reuse food hall + shops.",
-      "source": "stanleymarketplace.com"
+      "source": "stanleymarketplace.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "aur-history-center",
@@ -77,7 +82,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Municipal golf.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-east-colfax",
@@ -89,7 +95,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Commercial strip.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-wings-over-rockies",
@@ -115,7 +122,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Reservoir recreation. Surface lots.",
-      "source": "auroragov.org"
+      "source": "auroragov.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-quincy-reservoir",
@@ -127,7 +135,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Fishing reservoir.",
-      "source": "auroragov.org"
+      "source": "auroragov.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-saddle-rock-golf",
@@ -139,7 +148,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Municipal golf.",
-      "source": "auroragov.org"
+      "source": "auroragov.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "aur-movie-theater-iimax",
@@ -151,7 +162,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Theater \u2014 rebuilt after 2012 tragedy. Surface lot.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-mississippi-market",
@@ -163,7 +175,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping plaza.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "aur-buckley-space-force",
@@ -175,7 +189,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Base access \u2014 ID required.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "aur-range-view",
@@ -187,7 +203,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Trailhead.",
-      "source": "auroragov.org"
+      "source": "auroragov.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "aur-central-rec-center",
@@ -199,7 +216,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Aquatic center + gym.",
-      "source": "auroragov.org"
+      "source": "auroragov.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w257036519",

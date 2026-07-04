@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Concert arena across Arkansas River. Surface lots.",
-      "source": "simmonsbankarena.com"
+      "source": "simmonsbankarena.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lit-dickey-stephens",
@@ -25,7 +26,9 @@
       "source": "milb.com",
       "entrance_lat": 34.7556654,
       "entrance_lng": -92.2803134,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-statehouse-conv-ctr",
@@ -33,11 +36,15 @@
       "addr": "7 Statehouse Plaza",
       "lat": 34.745,
       "lng": -92.2719,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Downtown convention.",
-      "source": "littlerockmeetings.com"
+      "notes": "Downtown convention.\nVerified 2026-07-04 from sign reading \"6'6\"\" (pano pbp0d2dk90aPKJXWU17YAA, heading 163\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: littlerockmeetings.com",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "pbp0d2dk90aPKJXWU17YAA",
+      "pano_heading": 163
     },
     {
       "id": "lit-river-market",
@@ -49,7 +56,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Farmers + food hall district.",
-      "source": "rivermarket.info"
+      "source": "rivermarket.info",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lit-clinton-library",
@@ -78,7 +86,9 @@
       "source": "sos.arkansas.gov",
       "entrance_lat": 34.7459759,
       "entrance_lng": -92.2866618,
-      "entrance_source": "OSM parking_entrance node 5263886041"
+      "entrance_source": "OSM parking_entrance node 5263886041",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-old-statehouse",
@@ -133,7 +143,9 @@
       "oversized": false,
       "notes": "HQ + museum.",
       "source": "heifer.org",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-arkansas-inn-library",
@@ -172,7 +184,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State fair venue.",
-      "source": "arkansasstatefair.com"
+      "source": "arkansasstatefair.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lit-zoo",
@@ -184,7 +197,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "littlerockzoo.com"
+      "source": "littlerockzoo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lit-park-plaza-mall",
@@ -199,7 +213,9 @@
       "source": "shopparkplaza.com",
       "entrance_lat": 34.7510588,
       "entrance_lng": -92.3424434,
-      "entrance_source": "OSM parking_entrance node 4058987526"
+      "entrance_source": "OSM parking_entrance node 4058987526",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-summit-mall",
@@ -214,7 +230,9 @@
       "source": "Needs verification",
       "entrance_lat": 34.8045272,
       "entrance_lng": -92.4165351,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-hillcrest",
@@ -226,7 +244,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic shopping district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lit-south-main",
@@ -238,7 +257,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Arts district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-argenta-district",
@@ -250,7 +271,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Arts + dining district.",
-      "source": "argentaartsdistrict.com"
+      "source": "argentaartsdistrict.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "lit-lit-airport-garage",
@@ -263,7 +286,9 @@
       "oversized": false,
       "notes": "Terminal-adjacent.",
       "source": "clintonairport.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-lit-airport-economy",
@@ -278,7 +303,8 @@
       "source": "clintonairport.com",
       "entrance_lat": 34.7278079,
       "entrance_lng": -92.2239278,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n13358264883",
@@ -373,7 +399,9 @@
       "height_in": null,
       "height_label": "Pedestrian only",
       "notes": "Longest pedestrian bridge in US built specifically for walkers.",
-      "source": "bigdambridge.com"
+      "source": "bigdambridge.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-main-st-bridge",
@@ -387,7 +415,9 @@
       "source": "Wikipedia",
       "entrance_lat": 34.7493757,
       "entrance_lng": -92.2720136,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lit-broadway-bridge",
@@ -398,7 +428,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Replaced 2017.",
-      "source": "ardot.gov"
+      "source": "ardot.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "lit-i30-bridge",
@@ -409,7 +441,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Major interstate crossing.",
-      "source": "ardot.gov"
+      "source": "ardot.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-05-000000000019624",

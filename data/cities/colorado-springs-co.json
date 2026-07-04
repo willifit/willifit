@@ -30,7 +30,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.8317677,
       "entrance_lng": -104.8220651,
-      "entrance_source": "OSM parking_entrance node 3164115197"
+      "entrance_source": "OSM parking_entrance node 3164115197",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "cos-1-north-cascade",
@@ -57,7 +59,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Fort Carson PX lot \u2014 base access required.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-usafa",
@@ -97,7 +100,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Multiple parking areas inside park.",
-      "source": "gardenofgods.com"
+      "source": "gardenofgods.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-pikes-peak-cog",
@@ -109,7 +113,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Manitou Springs. Limited \u2014 reservations encouraged.",
-      "source": "cograilway.com"
+      "source": "cograilway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-pikes-peak-summit",
@@ -121,7 +126,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "14,115' summit. Surface lot. RV OK with brake awareness.",
-      "source": "pikespeak.us.com"
+      "source": "pikespeak.us.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-manitou-springs",
@@ -136,7 +142,8 @@
       "source": "manitousprings.org",
       "entrance_lat": 38.8640933,
       "entrance_lng": -104.9167956,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-incline-trail",
@@ -148,7 +155,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Paid parking. Reservation required peak season.",
-      "source": "manitousprings.org"
+      "source": "manitousprings.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "cos-olympic-museum",
@@ -175,7 +184,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Private university visitor parking.",
-      "source": "coloradocollege.edu"
+      "source": "coloradocollege.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-cheyenne-mtn-zoo",
@@ -190,7 +200,8 @@
       "source": "cmzoo.org",
       "entrance_lat": 38.7700154,
       "entrance_lng": -104.854692,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-broadmoor",
@@ -202,7 +213,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic resort garage.",
-      "source": "broadmoor.com"
+      "source": "broadmoor.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "cos-glen-eyrie",
@@ -214,7 +227,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic castle + retreat.",
-      "source": "gleneyrie.org"
+      "source": "gleneyrie.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-north-gate",
@@ -226,7 +240,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "North Academy + shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "cos-first-friday-lot",
@@ -241,7 +257,8 @@
       "source": "Needs verification",
       "entrance_lat": 38.8351085,
       "entrance_lng": -104.820832,
-      "entrance_source": "OSM parking_entrance node 12102838825"
+      "entrance_source": "OSM parking_entrance node 12102838825",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-citadel-mall",
@@ -253,7 +270,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "cos-promenade-briargate",
@@ -265,7 +284,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "cos-uccs",
@@ -277,7 +297,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "CU Colorado Springs campus.",
-      "source": "uccs.edu"
+      "source": "uccs.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "cos-airport-garage",
@@ -289,7 +311,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "flycos.com"
+      "source": "flycos.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "cos-airport-economy",
@@ -301,7 +325,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flycos.com"
+      "source": "flycos.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n7505012303",
@@ -622,7 +647,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Multiple pedestrian + vehicle bridges through downtown park.",
-      "source": "coloradosprings.gov"
+      "source": "coloradosprings.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w37051870",

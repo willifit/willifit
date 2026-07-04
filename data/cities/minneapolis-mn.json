@@ -56,7 +56,9 @@
       "source": "minneapolisconventioncenter.com",
       "entrance_lat": 44.9706158,
       "entrance_lng": -93.2741446,
-      "entrance_source": "OSM parking_entrance node 12896908999"
+      "entrance_source": "OSM parking_entrance node 12896908999",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-gateway",
@@ -99,7 +101,9 @@
       "source": "minneapolisparking.com",
       "entrance_lat": 44.9737701,
       "entrance_lng": -93.2728737,
-      "entrance_source": "OSM parking_entrance node 13296233516"
+      "entrance_source": "OSM parking_entrance node 13296233516",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-iconic-lot",
@@ -130,7 +134,9 @@
       "source": "Needs verification",
       "entrance_lat": 44.9758381,
       "entrance_lng": -93.2714481,
-      "entrance_source": "OSM parking_entrance node 6684839161"
+      "entrance_source": "OSM parking_entrance node 6684839161",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mpls-nicollet-mall",

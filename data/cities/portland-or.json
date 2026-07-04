@@ -219,14 +219,18 @@
       "addr": "2201 Lloyd Ctr",
       "lat": 45.5336,
       "lng": -122.6554,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Mall garage + surface.",
-      "source": "Needs verification",
+      "notes": "Mall garage + surface.\nVerified 2026-07-04 from sign reading \"CLEARANCE 6'6\"\" (pano r3l4KqbvIB72_DH4x1n0eQ, heading 167\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 45.5335107,
       "entrance_lng": -122.655581,
-      "entrance_source": "OSM parking_entrance node 1474540639"
+      "entrance_source": "OSM parking_entrance node 1474540639",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "r3l4KqbvIB72_DH4x1n0eQ",
+      "pano_heading": 167
     },
     {
       "id": "pdx-woodburn-outlets",
@@ -330,7 +334,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 45.4505057,
       "entrance_lng": -122.783332,
-      "entrance_source": "OSM parking_entrance node 1291622560"
+      "entrance_source": "OSM parking_entrance node 1291622560",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w152294655",
@@ -357,7 +363,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free OSM-imported 17'9\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w361360469",
@@ -372,7 +380,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 45.5169921,
       "entrance_lng": -122.6790646,
-      "entrance_source": "OSM parking_entrance node 6510952253"
+      "entrance_source": "OSM parking_entrance node 6510952253",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w361835582",
@@ -694,7 +704,9 @@
       "source": "ODOT",
       "entrance_lat": 45.5409733,
       "entrance_lng": -122.6832485,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "pdx-steel-bridge",
@@ -727,7 +739,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Cantilever bridge.",
-      "source": "ODOT"
+      "source": "ODOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-41-0035700301143",

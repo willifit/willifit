@@ -23,14 +23,18 @@
       "addr": "114 W Mills Ave",
       "lat": 31.7597,
       "lng": -106.4881,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 95,
+      "height_label": "7'11\"",
       "oversized": false,
-      "notes": "Downtown plaza garage.",
-      "source": "Needs verification",
+      "notes": "Downtown plaza garage.\nVerified 2026-07-04 from sign reading \"CLEARANCE 7' 11\"\" (pano s2HIu3tLxP7z7vjyVlpe3g, heading 71\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 31.7609162,
       "entrance_lng": -106.4888419,
-      "entrance_source": "OSM parking_entrance node 13703026436"
+      "entrance_source": "OSM parking_entrance node 13703026436",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "s2HIu3tLxP7z7vjyVlpe3g",
+      "pano_heading": 71
     },
     {
       "id": "elp-plaza-theatre",
@@ -59,7 +63,8 @@
       "source": "elpasochihuahuas.com",
       "entrance_lat": 31.7580335,
       "entrance_lng": -106.4906962,
-      "entrance_source": "OSM parking_entrance node 10282577907"
+      "entrance_source": "OSM parking_entrance node 10282577907",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-mills-plaza",
@@ -74,7 +79,9 @@
       "source": "Needs verification",
       "entrance_lat": 31.7610748,
       "entrance_lng": -106.4869476,
-      "entrance_source": "OSM parking_entrance node 11786626809"
+      "entrance_source": "OSM parking_entrance node 11786626809",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "elp-outlet-shoppes",
@@ -86,7 +93,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air outlet mall surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-cielo-vista",
@@ -98,7 +106,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mall surface lots.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-fountains",
@@ -110,7 +119,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-utep-garage",
@@ -122,7 +132,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UTEP visitor parking.",
-      "source": "utep.edu"
+      "source": "utep.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "elp-sun-bowl",
@@ -160,7 +172,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot for historic site.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-zoo",
@@ -175,7 +188,8 @@
       "source": "elpasozoo.org",
       "entrance_lat": 31.7706015,
       "entrance_lng": -106.4360737,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-wyler-tram",
@@ -190,7 +204,8 @@
       "source": "tpwd.texas.gov",
       "entrance_lat": 31.7953714,
       "entrance_lng": -106.4809756,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-franklin-mtns",
@@ -205,7 +220,8 @@
       "source": "tpwd.texas.gov",
       "entrance_lat": 31.8214819,
       "entrance_lng": -106.5056328,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-fort-bliss",
@@ -217,7 +233,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Base shopping center. Access-restricted.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "elp-airport-garage",
@@ -230,7 +247,9 @@
       "oversized": false,
       "notes": "ELP terminal garage.",
       "source": "elpasointernationalairport.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "elp-airport-economy",
@@ -288,7 +307,9 @@
       "height_in": null,
       "height_label": "Border bridge",
       "notes": "Free international bridge to Ciudad Ju\u00e1rez. Truck lanes separate.",
-      "source": "US CBP"
+      "source": "US CBP",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "elp-ysleta-zaragoza",
@@ -299,7 +320,9 @@
       "height_in": null,
       "height_label": "Toll bridge",
       "notes": "Commercial vehicle crossing.",
-      "source": "elpasotexas.gov"
+      "source": "elpasotexas.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-48-240720255202112",

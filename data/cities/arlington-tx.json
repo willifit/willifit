@@ -36,7 +36,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Rangers stadium. Shared AT&T Stadium lot complex.",
-      "source": "mlb.com/rangers"
+      "source": "mlb.com/rangers",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-choctaw-stadium",
@@ -65,7 +66,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Esports venue in Convention Center.",
-      "source": "esportsstadium.gg"
+      "source": "esportsstadium.gg",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-six-flags",
@@ -77,7 +79,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Theme park surface lot. $30+ parking. Oversized OK.",
-      "source": "sixflags.com"
+      "source": "sixflags.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-hurricane-harbor",
@@ -89,7 +92,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Water park. Surface lot.",
-      "source": "sixflags.com"
+      "source": "sixflags.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-arlington-conv",
@@ -115,7 +119,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Entertainment + hotel + restaurant complex.",
-      "source": "texas-live.com"
+      "source": "texas-live.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "arl-loews-hotel",
@@ -130,7 +136,9 @@
       "source": "loewshotels.com",
       "entrance_lat": 32.7525157,
       "entrance_lng": -97.0844401,
-      "entrance_source": "OSM parking_entrance node 12836696946"
+      "entrance_source": "OSM parking_entrance node 12836696946",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "arl-parks-mall",
@@ -142,7 +150,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Major enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "arl-highlands",
@@ -154,7 +164,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping area.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "arl-uta-maverick",
@@ -166,7 +178,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UTA visitor garage.",
-      "source": "uta.edu"
+      "source": "uta.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "arl-parks-lincoln-sq",
@@ -178,7 +192,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "arl-river-legacy",
@@ -190,7 +206,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Trail parks.",
-      "source": "riverlegacy.org"
+      "source": "riverlegacy.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "arl-arlington-life-ctr",
@@ -202,7 +219,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Large performing arts venue.",
-      "source": "aisd.net"
+      "source": "aisd.net",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "arl-levitt",
@@ -214,7 +233,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown concert venue + Main Street district.",
-      "source": "levittpavilion.com"
+      "source": "levittpavilion.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "arl-gpfl-ride-out",
@@ -226,7 +247,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Event-day shuttle lot for AT&T/Globe Life.",
-      "source": "arlingtontx.gov"
+      "source": "arlingtontx.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w25553946",

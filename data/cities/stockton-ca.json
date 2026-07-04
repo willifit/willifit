@@ -37,7 +37,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w458907048",
@@ -49,7 +51,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "155 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w458950948",
@@ -61,7 +65,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "721 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w459629615",
@@ -74,7 +80,9 @@
       "oversized": false,
       "notes": "782 spaces; paid",
       "source": "OpenStreetMap",
-      "website": "https://stocktonparking.spplus.com/market-street-garage.html"
+      "website": "https://stocktonparking.spplus.com/market-street-garage.html",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [

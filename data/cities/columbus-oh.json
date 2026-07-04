@@ -40,7 +40,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "800 spaces. Convention Center + Short North.",
-      "source": "meetusincolumbus.com"
+      "source": "meetusincolumbus.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-mcconnell",
@@ -83,7 +85,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lots along Short North corridor.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "col-north-market",
@@ -95,7 +98,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "North Market food hall.",
-      "source": "northmarket.org"
+      "source": "northmarket.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-statehouse",
@@ -110,7 +115,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.962075,
       "entrance_lng": -82.9986272,
-      "entrance_source": "OSM parking_entrance node 2394202047"
+      "entrance_source": "OSM parking_entrance node 2394202047",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-franklin-park",
@@ -122,7 +129,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "fpconservatory.org"
+      "source": "fpconservatory.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "col-cosi",
@@ -134,7 +142,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Museum surface lot, sometimes garage-adjacent.",
-      "source": "cosi.org"
+      "source": "cosi.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-zoo",
@@ -149,7 +159,8 @@
       "source": "columbuszoo.org",
       "entrance_lat": 40.1528714,
       "entrance_lng": -83.1163998,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "col-easton",
@@ -164,7 +175,9 @@
       "source": "eastontowncenter.com",
       "entrance_lat": 40.051521,
       "entrance_lng": -82.9164391,
-      "entrance_source": "OSM parking_entrance node 5745173609"
+      "entrance_source": "OSM parking_entrance node 5745173609",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-polaris",
@@ -179,7 +192,8 @@
       "source": "Needs verification",
       "entrance_lat": 40.144095,
       "entrance_lng": -83.0000528,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "col-osu-gateway",
@@ -194,7 +208,8 @@
       "source": "osu.edu",
       "entrance_lat": 40.0005087,
       "entrance_lng": -83.007061,
-      "entrance_source": "OSM parking_entrance node 13334875716"
+      "entrance_source": "OSM parking_entrance node 13334875716",
+      "structure_type": "surface_lot"
     },
     {
       "id": "col-lane-ave-garage",
@@ -206,7 +221,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Ohio Stadium access on game days.",
-      "source": "osu.edu"
+      "source": "osu.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "col-convention-connex",
@@ -221,7 +238,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.9631725,
       "entrance_lng": -82.99843,
-      "entrance_source": "OSM parking_entrance node 8515558764"
+      "entrance_source": "OSM parking_entrance node 8515558764",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-brewery-district",
@@ -236,7 +255,8 @@
       "source": "Needs verification",
       "entrance_lat": 39.954611,
       "entrance_lng": -82.9981863,
-      "entrance_source": "OSM parking_entrance node 5789055748"
+      "entrance_source": "OSM parking_entrance node 5789055748",
+      "structure_type": "surface_lot"
     },
     {
       "id": "col-cmh-airport",
@@ -249,7 +269,9 @@
       "oversized": false,
       "notes": "Terminal-adjacent garage.",
       "source": "flycolumbus.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "col-cmh-economy",
@@ -261,7 +283,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flycolumbus.com"
+      "source": "flycolumbus.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n4208090790",
@@ -392,7 +415,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Modern concrete bridge. Tall clearance.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "col-i-70-low",

@@ -13,7 +13,9 @@
       "source": "cityofboise.org",
       "entrance_lat": 43.6152093,
       "entrance_lng": -116.2048255,
-      "entrance_source": "OSM parking_entrance node 11626062087"
+      "entrance_source": "OSM parking_entrance node 11626062087",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-convention-ctr",
@@ -25,7 +27,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center garage.",
-      "source": "boisecentre.com"
+      "source": "boisecentre.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-idaho-capitol",
@@ -40,7 +44,8 @@
       "source": "accessidaho.org",
       "entrance_lat": 43.6177161,
       "entrance_lng": -116.1977058,
-      "entrance_source": "OSM parking_entrance node 8987039935"
+      "entrance_source": "OSM parking_entrance node 8987039935",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-bodo",
@@ -52,7 +57,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Boise Downtown entertainment district.",
-      "source": "bodoboise.com"
+      "source": "bodoboise.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-basque-block",
@@ -67,7 +73,9 @@
       "source": "Needs verification",
       "entrance_lat": 43.6152093,
       "entrance_lng": -116.2048255,
-      "entrance_source": "OSM parking_entrance node 11626062087"
+      "entrance_source": "OSM parking_entrance node 11626062087",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-zoo-boise",
@@ -79,7 +87,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park + zoo + art museum + historical museum.",
-      "source": "zooboise.org"
+      "source": "zooboise.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-julia-davis-park",
@@ -91,7 +100,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "City's central park.",
-      "source": "cityofboise.org"
+      "source": "cityofboise.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-ann-morrison-park",
@@ -103,7 +113,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large urban park.",
-      "source": "cityofboise.org"
+      "source": "cityofboise.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-bronco-stadium",
@@ -128,7 +139,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Basketball arena.",
-      "source": "broncosports.com"
+      "source": "broncosports.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-idaho-central-arena",
@@ -140,7 +153,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "ECHL hockey + concerts.",
-      "source": "idahocentralarena.com"
+      "source": "idahocentralarena.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-morrison-center",
@@ -153,7 +168,9 @@
       "oversized": false,
       "notes": "Performing arts center.",
       "source": "morrisoncenter.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "boi-boise-state-lincoln",
@@ -165,7 +182,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "BSU visitor garage.",
-      "source": "boisestate.edu"
+      "source": "boisestate.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-8th-idaho",
@@ -177,7 +196,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "cityofboise.org"
+      "source": "cityofboise.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-freak-alley",
@@ -189,7 +210,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outdoor murals. Surrounding street + lots.",
-      "source": "freakalleygallery.com"
+      "source": "freakalleygallery.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-boise-towne-square",
@@ -201,7 +223,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Largest mall in Idaho.",
-      "source": "boisetownesquare.com"
+      "source": "boisetownesquare.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-eagle-island-state-park",
@@ -213,7 +237,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + waterpark. RV-friendly.",
-      "source": "parksandrecreation.idaho.gov"
+      "source": "parksandrecreation.idaho.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-airport-main",
@@ -228,7 +253,9 @@
       "source": "iflyboise.com",
       "entrance_lat": 43.5692638,
       "entrance_lng": -116.2216228,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "boi-airport-economy",
@@ -240,7 +267,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "iflyboise.com"
+      "source": "iflyboise.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-meridian-speedway",
@@ -252,7 +280,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Local short track racing.",
-      "source": "meridianspeedway.com"
+      "source": "meridianspeedway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "boi-expo-idaho",
@@ -264,7 +293,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State fair. Horse racing. Large surface lots.",
-      "source": "expoidaho.com"
+      "source": "expoidaho.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w223073490",
@@ -389,7 +419,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Downtown bridge.",
-      "source": "cityofboise.org"
+      "source": "cityofboise.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "boi-broadway-bridge",
@@ -400,7 +432,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Major downtown bridge.",
-      "source": "itd.idaho.gov"
+      "source": "itd.idaho.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w234051998",

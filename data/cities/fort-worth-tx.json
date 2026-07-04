@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "2.5 hrs free with Sundance Sq business validation. Paid evenings.",
-      "source": "sundancesquare.com"
+      "source": "sundancesquare.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ftw-sundance-4",
@@ -22,7 +24,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "2.5 hrs free with validation.",
-      "source": "fortworthparking.com"
+      "source": "fortworthparking.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ftw-sundance-2",
@@ -30,14 +34,18 @@
       "addr": "301 Commerce St",
       "lat": 32.7546,
       "lng": -97.3293,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Sundance Sq garage under City Center.",
-      "source": "sundancesquare.com",
+      "notes": "Sundance Sq garage under City Center.\nVerified 2026-07-04 from sign reading \"CLEARANCE 7' 0\"\" (pano oj2T73oESD3jJNPWRIwixg, heading 324\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: sundancesquare.com",
       "entrance_lat": 32.7540117,
       "entrance_lng": -97.329016,
-      "entrance_source": "OSM parking_entrance node 9545836810"
+      "entrance_source": "OSM parking_entrance node 9545836810",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "oj2T73oESD3jJNPWRIwixg",
+      "pano_heading": 324
     },
     {
       "id": "ftw-fw-center-garage",
@@ -52,7 +60,9 @@
       "source": "fortworth.com",
       "entrance_lat": 32.751398,
       "entrance_lng": -97.3302692,
-      "entrance_source": "OSM parking_entrance node 9901661117"
+      "entrance_source": "OSM parking_entrance node 9901661117",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ftw-water-gardens",
@@ -67,7 +77,9 @@
       "source": "Needs verification",
       "entrance_lat": 32.7488643,
       "entrance_lng": -97.3260562,
-      "entrance_source": "OSM parking_entrance node 6138269368"
+      "entrance_source": "OSM parking_entrance node 6138269368",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ftw-intermodal",
@@ -79,7 +91,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "TEXRail / Trinity Metro / Amtrak hub.",
-      "source": "trinitymetro.org"
+      "source": "trinitymetro.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "ftw-kimbell",
@@ -140,7 +154,8 @@
       "source": "fwbg.org",
       "entrance_lat": 32.7412476,
       "entrance_lng": -97.3640427,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-zoo",
@@ -152,7 +167,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Handles RVs.",
-      "source": "fortworthzoo.org"
+      "source": "fortworthzoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-stockyards-east",
@@ -164,7 +180,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic Stockyards. Free street + paid lots. RV-friendly.",
-      "source": "fortworthstockyards.org"
+      "source": "fortworthstockyards.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-stockyards-coliseum",
@@ -202,7 +219,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NASCAR venue. Massive RV camping lots.",
-      "source": "texasmotorspeedway.com"
+      "source": "texasmotorspeedway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-dickies-arena",
@@ -223,14 +241,18 @@
       "addr": "525 Commerce St",
       "lat": 32.7545,
       "lng": -97.3285,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Sundance Sq adjacent.",
-      "source": "basshall.com",
+      "notes": "Sundance Sq adjacent.\nVerified 2026-07-04 from sign reading \"CLEARANCE 7' 0\"\" (pano oj2T73oESD3jJNPWRIwixg, heading 324\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: basshall.com",
       "entrance_lat": 32.7540117,
       "entrance_lng": -97.329016,
-      "entrance_source": "OSM parking_entrance node 9545836810"
+      "entrance_source": "OSM parking_entrance node 9545836810",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "oj2T73oESD3jJNPWRIwixg",
+      "pano_heading": 324
     },
     {
       "id": "ftw-tcu-airport",
@@ -242,7 +264,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Cargo airport. Limited passenger.",
-      "source": "allianceairport.com"
+      "source": "allianceairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ftw-trinity-terrace",
@@ -254,7 +277,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mall surface lots.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n1756137089",
@@ -385,7 +409,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Signature concrete arch bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ftw-lancaster-rail",

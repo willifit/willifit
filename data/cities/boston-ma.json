@@ -172,7 +172,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Amtrak/MBTA hub.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "bos-post-office-sq",
@@ -263,7 +265,8 @@
       "source": "assemblyrow.com",
       "entrance_lat": 42.3937583,
       "entrance_lng": -71.0776351,
-      "entrance_source": "OSM parking_entrance node 8850686313"
+      "entrance_source": "OSM parking_entrance node 8850686313",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bos-quincy-market",
@@ -278,7 +281,8 @@
       "source": "faneuilhallmarketplace.com",
       "entrance_lat": 42.3608153,
       "entrance_lng": -71.0542684,
-      "entrance_source": "OSM parking_entrance node 7306583963"
+      "entrance_source": "OSM parking_entrance node 7306583963",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bos-kendall-cambridge",
@@ -293,7 +297,9 @@
       "source": "Needs verification",
       "entrance_lat": 42.3651609,
       "entrance_lng": -71.085919,
-      "entrance_source": "OSM parking_entrance node 11678430105"
+      "entrance_source": "OSM parking_entrance node 11678430105",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bos-harvard-sq",
@@ -308,7 +314,9 @@
       "source": "Needs verification",
       "entrance_lat": 42.3718948,
       "entrance_lng": -71.1214007,
-      "entrance_source": "OSM parking_entrance node 13025683118"
+      "entrance_source": "OSM parking_entrance node 13025683118",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bos-logan-central",
@@ -336,7 +344,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "massport.com"
+      "source": "massport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w49941266",
@@ -689,7 +698,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Cable-stayed. Iconic.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-25-B11005307DOTNBI",

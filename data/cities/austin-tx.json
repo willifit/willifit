@@ -48,14 +48,18 @@
       "addr": "1201 San Jacinto Blvd",
       "lat": 30.2747,
       "lng": -97.7383,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Underground state capitol garage.",
-      "source": "tspb.texas.gov",
+      "notes": "Underground state capitol garage.\nVerified 2026-07-04 from sign reading \"6'10\"\" (pano Z1kmNKWZdon3OFcuiJdF5w, heading 357\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: tspb.texas.gov",
       "entrance_lat": 30.2754812,
       "entrance_lng": -97.7377463,
-      "entrance_source": "OSM parking_entrance node 1078919225"
+      "entrance_source": "OSM parking_entrance node 1078919225",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "Z1kmNKWZdon3OFcuiJdF5w",
+      "pano_heading": 357
     },
     {
       "id": "atx-frost-bank",
@@ -116,7 +120,9 @@
       "notes": "UT visitor parking.",
       "source": "parking.utexas.edu",
       "website": "parking.utexas.edu",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "atx-ut-sac",
@@ -130,7 +136,9 @@
       "notes": "UT SAC Garage. Visitor parking.",
       "source": "parking.utexas.edu",
       "website": "parking.utexas.edu",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "atx-lbj-library",
@@ -152,14 +160,18 @@
       "addr": "11410 Century Oaks Ter",
       "lat": 30.4009,
       "lng": -97.7254,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Upscale open-air shopping district. Multiple garages.",
-      "source": "simon.com",
+      "notes": "Upscale open-air shopping district. Multiple garages.\nVerified 2026-07-04 from sign reading \"7'-0\"\" (pano TdNnKRX9Z1EEMZi7bYlerw, heading 277\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: simon.com",
       "entrance_lat": 30.4012935,
       "entrance_lng": -97.7249273,
-      "entrance_source": "OSM parking_entrance node 11558062133"
+      "entrance_source": "OSM parking_entrance node 11558062133",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "TdNnKRX9Z1EEMZi7bYlerw",
+      "pano_heading": 277
     },
     {
       "id": "atx-barton-creek",
@@ -185,7 +197,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "ACL Fest + Barton Springs. Surface lots.",
-      "source": "austintexas.gov"
+      "source": "austintexas.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atx-south-congress",
@@ -197,7 +210,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping + dining district. Street + small lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atx-rainey-st",
@@ -212,7 +226,8 @@
       "source": "Needs verification",
       "entrance_lat": 30.2599171,
       "entrance_lng": -97.7382253,
-      "entrance_source": "OSM parking_entrance node 8081791525"
+      "entrance_source": "OSM parking_entrance node 8081791525",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atx-mueller",
@@ -227,7 +242,8 @@
       "source": "Needs verification",
       "entrance_lat": 30.2978635,
       "entrance_lng": -97.7038055,
-      "entrance_source": "OSM parking_entrance node 9462169165"
+      "entrance_source": "OSM parking_entrance node 9462169165",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atx-q2-stadium",
@@ -253,7 +269,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "F1/MotoGP venue. Massive surface + RV lots on event days.",
-      "source": "circuitoftheamericas.com"
+      "source": "circuitoftheamericas.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atx-barton-springs",
@@ -265,7 +282,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Beloved pool surface parking.",
-      "source": "austintexas.gov"
+      "source": "austintexas.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "atx-airport-garage",
@@ -277,7 +295,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Airport garage. Clearance needs verification.",
-      "source": "austin-airport.com"
+      "source": "austin-airport.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "atx-airport-long",
@@ -289,7 +309,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "austin-airport.com"
+      "source": "austin-airport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n11646512271",
@@ -562,7 +583,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Famous bat colony. Car bridge over lake.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "atx-i35-low-east",

@@ -37,7 +37,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Trolley tour hub. Handles larger vehicles.",
-      "source": "trolleytours.com"
+      "source": "trolleytours.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-bayview-park",
@@ -49,7 +50,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Community park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-higgs-beach",
@@ -61,7 +63,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free public beach. Surface lots.",
-      "source": "keysblogs.com"
+      "source": "keysblogs.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-smathers-beach",
@@ -73,7 +76,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Largest public beach. Surface parking along road.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-fort-zachary-taylor",
@@ -85,7 +89,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park + historic fort + beach.",
-      "source": "floridastateparks.org"
+      "source": "floridastateparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-hemingway-house",
@@ -111,7 +116,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mostly street parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-truman-little-white-house",
@@ -123,7 +129,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic vacation White House.",
-      "source": "trumanlittlewhitehouse.org"
+      "source": "trumanlittlewhitehouse.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "kw-mel-fisher-museum",
@@ -152,7 +160,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Seaport waterfront.",
-      "source": "conchrepublicseafood.com"
+      "source": "conchrepublicseafood.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-audobon-house",
@@ -193,7 +202,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Ruins + tropical garden.",
-      "source": "keywestgardenclub.com"
+      "source": "keywestgardenclub.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "kw-eyw-airport",
@@ -208,7 +219,8 @@
       "source": "eyw.com",
       "entrance_lat": 24.5573565,
       "entrance_lng": -81.762298,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-bahama-village",
@@ -220,7 +232,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic Afro-Caribbean district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "kw-marathon-dolphin-research",
@@ -232,7 +246,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "~50mi NE on US-1. Dolphin encounters.",
-      "source": "dolphins.org"
+      "source": "dolphins.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-sevenmilebridge-pigeon",
@@ -244,7 +259,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic railroad island. Ferry from Marathon.",
-      "source": "pigeonkey.net"
+      "source": "pigeonkey.net",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "kw-bahia-honda",
@@ -256,7 +273,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous Keys state park + beach. RV campground.",
-      "source": "floridastateparks.org"
+      "source": "floridastateparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "kw-john-pennekamp",
@@ -271,7 +289,8 @@
       "source": "floridastateparks.org",
       "entrance_lat": 25.1240686,
       "entrance_lng": -80.4026969,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w548442541",
@@ -324,7 +343,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Iconic 7-mile bridge to the Lower Keys.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "kw-bahia-honda-bridge",
@@ -335,7 +356,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Modern replacement for old Flagler rail bridge.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "kw-overseas-highway",
@@ -346,7 +369,9 @@
       "height_in": null,
       "height_label": "Over water (many)",
       "notes": "113-mile island-hopping highway with 42 bridges. Only road to Key West.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-12-900128",

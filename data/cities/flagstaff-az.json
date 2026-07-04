@@ -10,7 +10,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown historic district street + lots.",
-      "source": "visitflagstaff.org"
+      "source": "visitflagstaff.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-nau-visitor-parking",
@@ -25,7 +26,9 @@
       "source": "nau.edu",
       "entrance_lat": 35.1829903,
       "entrance_lng": -111.6539753,
-      "entrance_source": "OSM parking_entrance node 12067239405"
+      "entrance_source": "OSM parking_entrance node 12067239405",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "flg-nau-walkup-skydome",
@@ -37,7 +40,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NAU football + concerts.",
-      "source": "nauathletics.com"
+      "source": "nauathletics.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-lowell-observatory",
@@ -49,7 +53,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic observatory. Surface lot.",
-      "source": "lowell.edu"
+      "source": "lowell.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-museum-na",
@@ -64,7 +69,8 @@
       "source": "musnaz.org",
       "entrance_lat": 35.2213693,
       "entrance_lng": -111.6668051,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-arboretum",
@@ -76,7 +82,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Research gardens.",
-      "source": "thearb.org"
+      "source": "thearb.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-buffalo-park",
@@ -88,7 +95,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "McMillan Mesa. Surface lot.",
-      "source": "flagstaffaz.gov"
+      "source": "flagstaffaz.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-flagstaff-mall",
@@ -100,7 +108,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "flg-marketplace",
@@ -112,7 +122,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "flg-snowbowl",
@@ -127,7 +139,8 @@
       "source": "snowbowl.ski",
       "entrance_lat": 35.3301205,
       "entrance_lng": -111.7104874,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-grand-canyon-south-visitor",
@@ -152,7 +165,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Main overlook + shuttle hub.",
-      "source": "nps.gov/grca"
+      "source": "nps.gov/grca",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-sedona-airport",
@@ -180,7 +194,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Sedona tourist district.",
-      "source": "visitsedona.com"
+      "source": "visitsedona.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "flg-walnut-canyon",
@@ -192,7 +208,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "NPS site east of Flagstaff.",
-      "source": "nps.gov/waca"
+      "source": "nps.gov/waca",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-sunset-crater",
@@ -207,7 +224,8 @@
       "source": "nps.gov/sucr",
       "entrance_lat": 35.3639414,
       "entrance_lng": -111.5172222,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-wupatki",
@@ -219,7 +237,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Ancestral Puebloan ruins.",
-      "source": "nps.gov/wupa"
+      "source": "nps.gov/wupa",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-meteor-crater",
@@ -231,7 +250,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "~40mi east. Private. RV park adjacent.",
-      "source": "meteorcrater.com"
+      "source": "meteorcrater.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-amtrak-station",
@@ -243,7 +263,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Southwest Chief route.",
-      "source": "amtrak.com"
+      "source": "amtrak.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "flg-airport",
@@ -271,7 +292,8 @@
       "source": "Needs verification",
       "entrance_lat": 35.1908954,
       "entrance_lng": -111.6390925,
-      "entrance_source": "OSM parking_entrance node 10862636329"
+      "entrance_source": "OSM parking_entrance node 10862636329",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w111887828",

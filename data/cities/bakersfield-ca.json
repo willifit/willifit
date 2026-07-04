@@ -23,7 +23,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "AHL arena + concerts.",
-      "source": "mechanicsbankarena.com"
+      "source": "mechanicsbankarena.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bak-17th-place",
@@ -35,7 +37,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown city garage.",
-      "source": "bakersfieldcity.us"
+      "source": "bakersfieldcity.us",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bak-20-21-structure",
@@ -47,7 +51,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown city garage.",
-      "source": "bakersfieldcity.us"
+      "source": "bakersfieldcity.us",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bak-fox-theater",
@@ -72,7 +78,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Historic downtown hotel.",
-      "source": "thepadrehotel.com"
+      "source": "thepadrehotel.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bak-valley-plaza-mall",
@@ -84,7 +92,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall surface lot.",
-      "source": "valleyplazashopping.com"
+      "source": "valleyplazashopping.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-bakersfield-commons",
@@ -96,7 +105,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-csub",
@@ -108,7 +118,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "CSUB visitor parking.",
-      "source": "csub.edu"
+      "source": "csub.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "bak-kern-river",
@@ -120,7 +132,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Kern River Parkway trail surface lots.",
-      "source": "bakersfieldcity.us"
+      "source": "bakersfieldcity.us",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-crystal-palace",
@@ -135,7 +148,8 @@
       "source": "buckowens.com",
       "entrance_lat": 35.3965188,
       "entrance_lng": -119.0451114,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-kern-county-museum",
@@ -147,7 +161,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Outdoor museum. Free surface lot.",
-      "source": "kerncountymuseum.org"
+      "source": "kerncountymuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-rabobank-stadium",
@@ -172,7 +187,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Community park + concerts.",
-      "source": "bakersfieldcity.us"
+      "source": "bakersfieldcity.us",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "bak-kern-museum-pioneer",
@@ -184,7 +201,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "60-structure historical village \u2014 Kern County Museum grounds.",
-      "source": "kerncountymuseum.org"
+      "source": "kerncountymuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-kern-fairgrounds",
@@ -196,7 +214,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Annual fair + events. Massive surface lots + RV camping.",
-      "source": "kerncountyfair.com"
+      "source": "kerncountyfair.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-airport-garage",
@@ -211,7 +230,8 @@
       "source": "meadowsfield.com",
       "entrance_lat": 35.4378477,
       "entrance_lng": -119.0547146,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-airport-longterm",
@@ -226,7 +246,8 @@
       "source": "meadowsfield.com",
       "entrance_lat": 35.4280429,
       "entrance_lng": -119.0583289,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-amtrak-station",
@@ -238,7 +259,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "San Joaquins terminus.",
-      "source": "amtrak.com"
+      "source": "amtrak.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "bak-east-hills-mall",
@@ -250,7 +272,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mall struggling. Surface lot.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w56175071",

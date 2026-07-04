@@ -85,7 +85,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Street-level surface lots nearby. Oversized OK.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sf-5th-brannan-lot",
@@ -240,7 +241,9 @@
       "source": "stonestowngalleria.com",
       "entrance_lat": 37.7282615,
       "entrance_lng": -122.4762727,
-      "entrance_source": "OSM parking_entrance node 1606222774"
+      "entrance_source": "OSM parking_entrance node 1606222774",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-westfield-centre",
@@ -255,7 +258,9 @@
       "source": "Needs verification",
       "entrance_lat": 37.7848906,
       "entrance_lng": -122.4053705,
-      "entrance_source": "OSM parking_entrance node 8707750988"
+      "entrance_source": "OSM parking_entrance node 8707750988",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-afc-lot",
@@ -267,7 +272,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Giants ballpark surface lots.",
-      "source": "mlb.com/giants"
+      "source": "mlb.com/giants",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sf-chase-center",
@@ -282,7 +288,9 @@
       "source": "chasecenter.com",
       "entrance_lat": 37.7671686,
       "entrance_lng": -122.3881766,
-      "entrance_source": "OSM parking_entrance node 9247776194"
+      "entrance_source": "OSM parking_entrance node 9247776194",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-gg-park-music",
@@ -310,7 +318,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "National park surface lots. Handles RVs.",
-      "source": "presidio.gov"
+      "source": "presidio.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "sf-sfo-international-a",
@@ -357,7 +366,8 @@
       "source": "flysfo.com",
       "entrance_lat": 37.6233218,
       "entrance_lng": -122.3943785,
-      "entrance_source": "OSM parking_entrance node 12537511367"
+      "entrance_source": "OSM parking_entrance node 12537511367",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n4216588290",
@@ -513,7 +523,9 @@
       "height_in": null,
       "height_label": "Freeway standard",
       "notes": "Multiple tunnels on the southern Golden Gate Bridge approach. Standard freeway clearance.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w8921175",
@@ -735,7 +747,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Toll (SB only). No low overpass issues. Wind-sensitive for high-profile.",
-      "source": "goldengate.org"
+      "source": "goldengate.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-bay-bridge",
@@ -746,7 +760,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Double-deck (old western span) / single-deck (new eastern). Toll WB.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "sf-central-fwy",

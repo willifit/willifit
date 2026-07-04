@@ -13,7 +13,9 @@
       "source": "bokcenter.com",
       "entrance_lat": 36.1506828,
       "entrance_lng": -95.9949697,
-      "entrance_source": "OSM parking_entrance node 6604005950"
+      "entrance_source": "OSM parking_entrance node 6604005950",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "tul-convention-ctr",
@@ -28,7 +30,9 @@
       "source": "coxcentertulsa.com",
       "entrance_lat": 36.1535569,
       "entrance_lng": -95.9924151,
-      "entrance_source": "OSM parking_entrance node 12848369319"
+      "entrance_source": "OSM parking_entrance node 12848369319",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "tul-tulsa-performing",
@@ -43,7 +47,8 @@
       "source": "tulsapac.com",
       "entrance_lat": 36.1536513,
       "entrance_lng": -95.9922372,
-      "entrance_source": "OSM parking_entrance node 12848369324"
+      "entrance_source": "OSM parking_entrance node 12848369324",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-williams-ctr",
@@ -58,7 +63,9 @@
       "source": "Needs verification",
       "entrance_lat": 36.1563475,
       "entrance_lng": -95.9894834,
-      "entrance_source": "OSM parking_entrance node 3221197059"
+      "entrance_source": "OSM parking_entrance node 3221197059",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "tul-oneok-field",
@@ -70,7 +77,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Greenwood district ballpark.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-gathering-place",
@@ -82,7 +90,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "World-class park. Free surface lots.",
-      "source": "gatheringplace.org"
+      "source": "gatheringplace.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-brady-district",
@@ -97,7 +106,8 @@
       "source": "Needs verification",
       "entrance_lat": 36.1602192,
       "entrance_lng": -95.9910629,
-      "entrance_source": "OSM parking_entrance node 11846588854"
+      "entrance_source": "OSM parking_entrance node 11846588854",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-philbrook",
@@ -109,7 +119,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Museum surface lot.",
-      "source": "philbrook.org"
+      "source": "philbrook.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-gilcrease",
@@ -121,7 +132,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Western art museum.",
-      "source": "gilcrease.org"
+      "source": "gilcrease.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-zoo",
@@ -133,7 +145,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Mohawk Park surface lot.",
-      "source": "tulsazoo.org"
+      "source": "tulsazoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-woodland-hills",
@@ -145,7 +158,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Major mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "tul-utica-square",
@@ -157,7 +172,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale open-air shopping.",
-      "source": "uticasquare.com"
+      "source": "uticasquare.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-jenks-riverwalk",
@@ -169,7 +185,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Aquarium + riverwalk shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "tul-cain-ballroom",
@@ -181,7 +199,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic music venue + Brady district.",
-      "source": "cainsballroom.com"
+      "source": "cainsballroom.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-turkey-mtn",
@@ -193,7 +212,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Popular trailhead.",
-      "source": "riverparks.org"
+      "source": "riverparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-river-parks",
@@ -205,7 +225,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "River trail + events.",
-      "source": "riverparks.org"
+      "source": "riverparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-blue-dome",
@@ -220,7 +241,8 @@
       "source": "Needs verification",
       "entrance_lat": 36.153786,
       "entrance_lng": -95.9883403,
-      "entrance_source": "OSM parking_entrance node 8581500041"
+      "entrance_source": "OSM parking_entrance node 8581500041",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-vision-industrial",
@@ -232,7 +254,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Tulsa State Fair venue. Massive lots.",
-      "source": "tulsastatefair.com"
+      "source": "tulsastatefair.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-airport-garage",
@@ -247,7 +270,9 @@
       "source": "flytulsa.com",
       "entrance_lat": 36.2005386,
       "entrance_lng": -95.887172,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "tul-airport-economy",
@@ -262,7 +287,8 @@
       "source": "flytulsa.com",
       "entrance_lat": 36.1995681,
       "entrance_lng": -95.8917765,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "tul-river-spirit-casino",
@@ -348,7 +374,9 @@
       "source": "ODOT",
       "entrance_lat": 36.1409094,
       "entrance_lng": -95.9977792,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "tul-11th-st-bridge",
@@ -359,7 +387,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Historic Route 66 bridge (decommissioned for vehicles).",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-40-011690000000000",

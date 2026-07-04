@@ -13,7 +13,9 @@
       "source": "iowaeventscenter.com",
       "entrance_lat": 41.5835092,
       "entrance_lng": -93.6208831,
-      "entrance_source": "OSM parking_entrance node 3848432781"
+      "entrance_source": "OSM parking_entrance node 3848432781",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "dsm-hy-vee-hall",
@@ -29,7 +31,9 @@
       "entrance_lat": 41.5835092,
       "entrance_lng": -93.6208831,
       "entrance_source": "OSM parking_entrance node 3848432781",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "dsm-principal-park",
@@ -44,7 +48,8 @@
       "source": "milb.com",
       "entrance_lat": 41.5788274,
       "entrance_lng": -93.6272647,
-      "entrance_source": "OSM parking_entrance node 9698023616"
+      "entrance_source": "OSM parking_entrance node 9698023616",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-civic-center",
@@ -76,7 +81,9 @@
       "source": "Needs verification",
       "entrance_lat": 41.5849352,
       "entrance_lng": -93.6250175,
-      "entrance_source": "OSM parking_entrance node 8931261326"
+      "entrance_source": "OSM parking_entrance node 8931261326",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "dsm-iowa-state-capitol",
@@ -88,7 +95,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Square.",
-      "source": "legis.iowa.gov"
+      "source": "legis.iowa.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-science-center",
@@ -131,7 +139,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown sculpture park.",
-      "source": "desmoinesartcenter.org"
+      "source": "desmoinesartcenter.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-east-village",
@@ -143,7 +152,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic district east of river.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-des-moines-zoo",
@@ -155,7 +165,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo surface lot.",
-      "source": "blankparkzoo.com"
+      "source": "blankparkzoo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-fairgrounds",
@@ -167,7 +178,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Famous Iowa State Fair. Massive surface + RV camping.",
-      "source": "iowastatefair.org"
+      "source": "iowastatefair.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-jordan-creek",
@@ -196,7 +208,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic shopping district.",
-      "source": "validawaivalleyjunction.com"
+      "source": "validawaivalleyjunction.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "dsm-botanical-garden",
@@ -208,7 +222,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverfront garden.",
-      "source": "dmbotanicalgarden.com"
+      "source": "dmbotanicalgarden.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "dsm-living-history-farms",
@@ -220,7 +236,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic farm museum.",
-      "source": "livinghistoryfarms.org"
+      "source": "livinghistoryfarms.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-prairie-meadows",
@@ -246,7 +263,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iowa's major theme park. Surface lot + RV park.",
-      "source": "adventurelandresort.com"
+      "source": "adventurelandresort.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "dsm-principal-financial",
@@ -261,7 +279,9 @@
       "source": "Needs verification",
       "entrance_lat": 41.5875949,
       "entrance_lng": -93.6316332,
-      "entrance_source": "OSM parking_entrance node 3899241794"
+      "entrance_source": "OSM parking_entrance node 3899241794",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "dsm-airport-garage",
@@ -275,7 +295,9 @@
       "notes": "Terminal-adjacent.\nOperator site (flydsm.com) checked 2026-07-03: no numeric clearance published.",
       "source": "dsmairport.com",
       "website": "flydsm.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "dsm-airport-economy",
@@ -287,7 +309,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "dsmairport.com"
+      "source": "dsmairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w413776748",
@@ -353,7 +376,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Downtown bridge.",
-      "source": "dsm.city"
+      "source": "dsm.city",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "dsm-womens-mlk",
@@ -364,7 +389,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Modern downtown bridge.",
-      "source": "dsm.city"
+      "source": "dsm.city",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-19-000000000132370",

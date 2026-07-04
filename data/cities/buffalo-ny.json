@@ -13,7 +13,9 @@
       "source": "keybankcenter.com",
       "entrance_lat": 42.8761145,
       "entrance_lng": -78.8764638,
-      "entrance_source": "OSM parking_entrance node 9840424645"
+      "entrance_source": "OSM parking_entrance node 9840424645",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-canalside",
@@ -28,7 +30,8 @@
       "source": "canalsidebuffalo.com",
       "entrance_lat": 42.8761228,
       "entrance_lng": -78.877027,
-      "entrance_source": "OSM parking_entrance node 9840424648"
+      "entrance_source": "OSM parking_entrance node 9840424648",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-buffalo-conv-ctr",
@@ -40,7 +43,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Convention center.",
-      "source": "buffaloconvention.com"
+      "source": "buffaloconvention.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-seneca-hotel",
@@ -55,7 +60,9 @@
       "source": "senecabuffalocreekcasino.com",
       "entrance_lat": 42.8768007,
       "entrance_lng": -78.8762466,
-      "entrance_source": "OSM parking_entrance node 11159772475"
+      "entrance_source": "OSM parking_entrance node 11159772475",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-sahlen-field",
@@ -70,7 +77,8 @@
       "source": "milb.com",
       "entrance_lat": 42.8789646,
       "entrance_lng": -78.874367,
-      "entrance_source": "OSM parking_entrance node 11157600501"
+      "entrance_source": "OSM parking_entrance node 11157600501",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-highmark-stadium",
@@ -98,7 +106,9 @@
       "source": "Needs verification",
       "entrance_lat": 42.8850743,
       "entrance_lng": -78.8759223,
-      "entrance_source": "OSM parking_entrance node 11041777570"
+      "entrance_source": "OSM parking_entrance node 11041777570",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-darwin-martin",
@@ -110,7 +120,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot for visits.",
-      "source": "darwinmartinhouse.org"
+      "source": "darwinmartinhouse.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-albright-knox",
@@ -139,7 +150,8 @@
       "source": "Needs verification",
       "entrance_lat": 42.938232,
       "entrance_lng": -78.8664936,
-      "entrance_source": "OSM parking_entrance node 12230243135"
+      "entrance_source": "OSM parking_entrance node 12230243135",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-buffalo-zoo",
@@ -151,7 +163,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Delaware Park surface lot.",
-      "source": "buffalozoo.org"
+      "source": "buffalozoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-elmwood-village",
@@ -163,7 +176,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-allentown",
@@ -175,7 +189,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic bohemian district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-larkinville",
@@ -187,7 +202,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Food hall + Larkin buildings.",
-      "source": "larkinville.com"
+      "source": "larkinville.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-walden-galleria",
@@ -199,7 +216,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Major regional mall.",
-      "source": "waldengalleria.com"
+      "source": "waldengalleria.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-ubuff-visitor",
@@ -211,7 +230,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UB North Campus visitor.",
-      "source": "buffalo.edu"
+      "source": "buffalo.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-niagara-falls-state-park",
@@ -223,7 +244,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State park. Handles RVs + tour buses.",
-      "source": "niagarafallsstatepark.com"
+      "source": "niagarafallsstatepark.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "buf-airport-garage",
@@ -235,7 +257,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "buffaloairport.com"
+      "source": "buffaloairport.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "buf-airport-economy",
@@ -247,7 +271,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "buffaloairport.com"
+      "source": "buffaloairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w56217379",
@@ -332,7 +357,9 @@
       "source": "peacebridge.com",
       "entrance_lat": 42.8952589,
       "entrance_lng": -78.9008438,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-rainbow-bridge",
@@ -346,7 +373,9 @@
       "source": "niagarafallsbridges.com",
       "entrance_lat": 43.0909041,
       "entrance_lng": -79.0703106,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "buf-190-harbor-bridge",
@@ -357,7 +386,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Elevated 'Skyway' bridge \u2014 scheduled for demolition/replacement.",
-      "source": "NYSDOT"
+      "source": "NYSDOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-36-00000000100157C",

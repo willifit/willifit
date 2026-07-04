@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Downtown Mesa performing arts.",
-      "source": "mesaartscenter.com"
+      "source": "mesaartscenter.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mes-convention-ctr",
@@ -48,7 +50,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot.",
-      "source": "arizonamuseumofnaturalhistory.org"
+      "source": "arizonamuseumofnaturalhistory.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-i-dea",
@@ -60,7 +63,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Children's museum.",
-      "source": "ideamuseum.org"
+      "source": "ideamuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-mesa-riverview",
@@ -85,7 +89,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Formerly major mall. Most anchors closed.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mes-superstition-springs",
@@ -113,7 +119,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Cubs spring training + farm. Surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-hohokam-stadium",
@@ -152,7 +159,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Iconic pipe organ pizza place.",
-      "source": "organstoppizza.com"
+      "source": "organstoppizza.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-golfland-sunsplash",
@@ -164,7 +172,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Water park + mini golf. Surface lot.",
-      "source": "golflandaz.com"
+      "source": "golflandaz.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-boeing-mesa",
@@ -179,7 +188,8 @@
       "source": "boeing.com",
       "entrance_lat": 33.4642547,
       "entrance_lng": -111.7400737,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-usery-mountain",
@@ -194,7 +204,8 @@
       "source": "maricopacountyparks.net",
       "entrance_lat": 33.4697142,
       "entrance_lng": -111.6381331,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-lost-dutchman",
@@ -206,7 +217,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Superstition Mountains state park.",
-      "source": "azstateparks.com"
+      "source": "azstateparks.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-salt-river-tubing",
@@ -218,7 +230,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Tonto NF recreation site. Tubing launch.",
-      "source": "saltrivertubing.com"
+      "source": "saltrivertubing.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mes-las-sendas",
@@ -243,7 +256,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown civic plaza + Light Rail stop.",
-      "source": "mesaaz.gov"
+      "source": "mesaaz.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "mes-williams-gateway-airport-rv",
@@ -502,7 +517,9 @@
       "height_in": null,
       "height_label": "Over water (seasonal)",
       "notes": "Standard freeway bridge.",
-      "source": "ADOT"
+      "source": "ADOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-04-02647",

@@ -13,7 +13,9 @@
       "source": "okc.gov",
       "entrance_lat": 35.4675408,
       "entrance_lng": -97.5193557,
-      "entrance_source": "OSM parking_entrance node 13125292126"
+      "entrance_source": "OSM parking_entrance node 13125292126",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "okc-century-center",
@@ -28,7 +30,9 @@
       "source": "Needs verification",
       "entrance_lat": 35.4675259,
       "entrance_lng": -97.5178446,
-      "entrance_source": "OSM parking_entrance node 13125292375"
+      "entrance_source": "OSM parking_entrance node 13125292375",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "okc-cox-conv-ctr",
@@ -56,7 +60,9 @@
       "source": "paycomcenter.com",
       "entrance_lat": 35.462734,
       "entrance_lng": -97.5149903,
-      "entrance_source": "OSM parking_entrance node 10803229905"
+      "entrance_source": "OSM parking_entrance node 10803229905",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "okc-bricktown-mickey",
@@ -68,7 +74,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Bricktown entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "okc-bricktown-surface",
@@ -83,7 +91,8 @@
       "source": "Needs verification",
       "entrance_lat": 35.4662958,
       "entrance_lng": -97.5084105,
-      "entrance_source": "OSM parking_entrance node 13124251018"
+      "entrance_source": "OSM parking_entrance node 13124251018",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-chickasaw-ballpark",
@@ -95,7 +104,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Comets stadium surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-civic-center",
@@ -110,7 +120,8 @@
       "source": "okcciviccenter.com",
       "entrance_lat": 35.4707167,
       "entrance_lng": -97.5222593,
-      "entrance_source": "OSM parking_entrance node 8994431234"
+      "entrance_source": "OSM parking_entrance node 8994431234",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-myriad-gardens",
@@ -122,7 +133,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Downtown park surface lot.",
-      "source": "myriadgardens.org"
+      "source": "myriadgardens.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-scissortail-park",
@@ -134,7 +146,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "New downtown park surface lots.",
-      "source": "scissortailpark.org"
+      "source": "scissortailpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-ouhsc",
@@ -149,7 +162,9 @@
       "source": "ouhsc.edu",
       "entrance_lat": 35.479164,
       "entrance_lng": -97.4985059,
-      "entrance_source": "OSM parking_entrance node 5995789763"
+      "entrance_source": "OSM parking_entrance node 5995789763",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "okc-zoo",
@@ -161,7 +176,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free surface lot. RV-friendly.",
-      "source": "okczoo.org"
+      "source": "okczoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-science-museum",
@@ -173,7 +189,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Free surface parking.",
-      "source": "sciencemuseumok.org"
+      "source": "sciencemuseumok.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "okc-national-cowboy",
@@ -188,7 +206,8 @@
       "source": "nationalcowboymuseum.org",
       "entrance_lat": 35.5439874,
       "entrance_lng": -97.4855352,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-memorial",
@@ -200,7 +219,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Memorial to 1995 bombing.",
-      "source": "oklahomacitynationalmemorial.org"
+      "source": "oklahomacitynationalmemorial.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-penn-square-mall",
@@ -212,7 +232,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Mall garage.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "okc-classen-circle",
@@ -224,7 +246,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-stockyards",
@@ -236,7 +259,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Cattle stockyards + Cattlemen's. Free.",
-      "source": "stockyardscity.org"
+      "source": "stockyardscity.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "okc-airport-garage",
@@ -261,7 +285,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flyokc.com"
+      "source": "flyokc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w176362361",
@@ -276,7 +301,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 35.462734,
       "entrance_lng": -97.5149903,
-      "entrance_source": "OSM parking_entrance node 10803229905"
+      "entrance_source": "OSM parking_entrance node 10803229905",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w426648537",

@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Closest covered parking to Gainbridge Fieldhouse. Covered sky bridge on L3.",
-      "source": "gainbridgefieldhouse.com"
+      "source": "gainbridgefieldhouse.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "ind-world-wonders",
@@ -25,7 +27,9 @@
       "source": "downtownindy.org",
       "entrance_lat": 39.7670016,
       "entrance_lng": -86.1591815,
-      "entrance_source": "OSM parking_entrance node 3637770856"
+      "entrance_source": "OSM parking_entrance node 3637770856",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-pnc-center",
@@ -40,7 +44,9 @@
       "source": "denisonparking.com",
       "entrance_lat": 39.767299,
       "entrance_lng": -86.1607933,
-      "entrance_source": "OSM parking_entrance node 12470664633"
+      "entrance_source": "OSM parking_entrance node 12470664633",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-plaza-park",
@@ -69,7 +75,9 @@
       "source": "denisonparking.com",
       "entrance_lat": 39.7670016,
       "entrance_lng": -86.1591815,
-      "entrance_source": "OSM parking_entrance node 3637770856"
+      "entrance_source": "OSM parking_entrance node 3637770856",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-lucas-oil-blue",
@@ -124,7 +132,9 @@
       "source": "indycm.com",
       "entrance_lat": 39.7679814,
       "entrance_lng": -86.1550448,
-      "entrance_source": "OSM parking_entrance node 4006902001"
+      "entrance_source": "OSM parking_entrance node 4006902001",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-monument-circle",
@@ -139,7 +149,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.7689961,
       "entrance_lng": -86.1565747,
-      "entrance_source": "OSM parking_entrance node 8905209298"
+      "entrance_source": "OSM parking_entrance node 8905209298",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-state-capitol",
@@ -154,7 +166,9 @@
       "source": "Needs verification",
       "entrance_lat": 39.7681963,
       "entrance_lng": -86.161523,
-      "entrance_source": "OSM parking_entrance node 12189105023"
+      "entrance_source": "OSM parking_entrance node 12189105023",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-ims",
@@ -166,7 +180,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Indy 500. Massive surface lots + RV camping.",
-      "source": "indianapolismotorspeedway.com"
+      "source": "indianapolismotorspeedway.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-victory-field",
@@ -178,7 +193,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "MiLB ballpark surface lots.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-zoo",
@@ -190,7 +206,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Zoo parking surface lot.",
-      "source": "indianapoliszoo.com"
+      "source": "indianapoliszoo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-eiteljorg",
@@ -219,7 +236,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Adjacent garage + surface lot.",
-      "source": "childrensmuseum.org"
+      "source": "childrensmuseum.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "ind-ima-newfields",
@@ -232,7 +251,8 @@
       "oversized": true,
       "notes": "Museum surface lot.",
       "source": "discovernewfields.org",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-broad-ripple",
@@ -247,7 +267,8 @@
       "source": "Needs verification",
       "entrance_lat": 39.8711829,
       "entrance_lng": -86.1449386,
-      "entrance_source": "OSM parking_entrance node 6561555665"
+      "entrance_source": "OSM parking_entrance node 6561555665",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-mass-ave",
@@ -259,7 +280,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Arts district surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-fashion-mall",
@@ -271,7 +293,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale mall. Surface lots.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "ind-circle-mall",
@@ -316,7 +339,8 @@
       "source": "ind.com",
       "entrance_lat": 39.7122956,
       "entrance_lng": -86.2964537,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w223209957",
@@ -435,7 +459,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Concrete arch.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-18-4900027",

@@ -43,7 +43,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned downtown.",
-      "source": "hartford.gov"
+      "source": "hartford.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hrt-dunkin-park",
@@ -58,7 +60,8 @@
       "source": "milb.com",
       "entrance_lat": 41.7743617,
       "entrance_lng": -72.6749739,
-      "entrance_source": "OSM parking_entrance node 12997753477"
+      "entrance_source": "OSM parking_entrance node 12997753477",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hrt-bushnell",
@@ -87,7 +90,8 @@
       "source": "cga.ct.gov",
       "entrance_lat": 41.7649229,
       "entrance_lng": -72.684188,
-      "entrance_source": "OSM parking_entrance node 749238046"
+      "entrance_source": "OSM parking_entrance node 749238046",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hrt-wadsworth-museum",
@@ -119,7 +123,9 @@
       "source": "hartford.gov",
       "entrance_lat": 41.7681443,
       "entrance_lng": -72.6820367,
-      "entrance_source": "OSM parking_entrance node 6340836647"
+      "entrance_source": "OSM parking_entrance node 6340836647",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hrt-mark-twain-house",
@@ -165,7 +171,9 @@
       "source": "blueback-square.com",
       "entrance_lat": 41.7612082,
       "entrance_lng": -72.74061,
-      "entrance_source": "OSM parking_entrance node 8739439663"
+      "entrance_source": "OSM parking_entrance node 8739439663",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hrt-westfarms",
@@ -180,7 +188,9 @@
       "source": "shopwestfarms.com",
       "entrance_lat": 41.7270725,
       "entrance_lng": -72.7621824,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hrt-evergreen-walk",
@@ -195,7 +205,8 @@
       "source": "Needs verification",
       "entrance_lat": 41.8356857,
       "entrance_lng": -72.5780731,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hrt-ct-science-ctr",
@@ -224,7 +235,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Under Bushnell Park.",
-      "source": "hartford.gov"
+      "source": "hartford.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hrt-ct-river-riverfront",
@@ -239,7 +252,8 @@
       "source": "riverfront.org",
       "entrance_lat": 41.7632145,
       "entrance_lng": -72.6714263,
-      "entrance_source": "OSM parking_entrance node 8691936542"
+      "entrance_source": "OSM parking_entrance node 8691936542",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hrt-foxwoods-casino",
@@ -271,7 +285,8 @@
       "source": "mohegansun.com",
       "entrance_lat": 41.4903171,
       "entrance_lng": -72.0921408,
-      "entrance_source": "OSM parking_entrance node 568828874"
+      "entrance_source": "OSM parking_entrance node 568828874",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hrt-uconn-health",
@@ -283,7 +298,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UConn medical center.",
-      "source": "health.uconn.edu"
+      "source": "health.uconn.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "hrt-bradley-airport",
@@ -314,7 +331,8 @@
       "source": "bradleyairport.com",
       "entrance_lat": 41.9306988,
       "entrance_lng": -72.6867569,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hrt-bushnell-carillon",
@@ -326,7 +344,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Park surface.",
-      "source": "bushnellpark.org"
+      "source": "bushnellpark.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w31105092",
@@ -396,7 +415,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Stone arch bridge. Historic.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "hrt-founders-bridge",
@@ -407,7 +428,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "East Hartford connector.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-09-01500",

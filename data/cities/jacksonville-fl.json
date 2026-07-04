@@ -25,7 +25,9 @@
       "source": "jacksonville.gov",
       "entrance_lat": 30.3262073,
       "entrance_lng": -81.6585227,
-      "entrance_source": "OSM parking_entrance node 5644416417"
+      "entrance_source": "OSM parking_entrance node 5644416417",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "jax-ed-ball",
@@ -37,7 +39,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City-owned. Downtown office / courthouse access.",
-      "source": "jacksonville.gov"
+      "source": "jacksonville.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "jax-yates",
@@ -49,7 +53,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "City garage. Clearance needs verification.",
-      "source": "jacksonville.gov"
+      "source": "jacksonville.gov",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "jax-cityplace",
@@ -57,11 +63,15 @@
       "addr": "245 W Forsyth St",
       "lat": 30.3279,
       "lng": -81.6624,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 162,
+      "height_label": "13'6\"",
       "oversized": false,
-      "notes": "Downtown core.",
-      "source": "Needs verification"
+      "notes": "Downtown core.\nVerified 2026-07-04 from sign reading \"CLEARANCE 13FT 6\" (pano BLi8drX55-0rLv30AA_puA, heading 193\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "BLi8drX55-0rLv30AA_puA",
+      "pano_heading": 193
     },
     {
       "id": "jax-riverfront",
@@ -76,7 +86,8 @@
       "source": "dtjax.com",
       "entrance_lat": 30.3262073,
       "entrance_lng": -81.6585227,
-      "entrance_source": "OSM parking_entrance node 5644416417"
+      "entrance_source": "OSM parking_entrance node 5644416417",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-prime-osborn",
@@ -91,7 +102,8 @@
       "source": "visitjacksonville.com",
       "entrance_lat": 30.3227685,
       "entrance_lng": -81.6730324,
-      "entrance_source": "OSM parking_entrance node 10287940896"
+      "entrance_source": "OSM parking_entrance node 10287940896",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-everbank-lots",
@@ -130,7 +142,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Jumbo Shrimp (MiLB). Surface lots.",
-      "source": "jumboshrimp.com"
+      "source": "jumboshrimp.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-mosh",
@@ -156,7 +169,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Riverside eclectic district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-san-marco",
@@ -168,7 +182,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "jax-town-center",
@@ -197,7 +213,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Traditional mall surface lot.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-beaches-pier",
@@ -209,7 +226,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Beach parking. Surface lot + street.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-uf-health-garage",
@@ -221,7 +239,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Hospital visitor parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "jax-zoo",
@@ -233,7 +253,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot. Handles RVs.",
-      "source": "jacksonvillezoo.org"
+      "source": "jacksonvillezoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "jax-airport-main",
@@ -273,7 +294,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "St. Johns River Ferry.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n10079867527",
@@ -329,7 +351,9 @@
       "height_in": null,
       "height_label": "Drawbridge (varies)",
       "notes": "Iconic blue bridge. Vertical lift bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "jax-fuller-warren",
@@ -340,7 +364,9 @@
       "height_in": null,
       "height_label": "75' (over water)",
       "notes": "Interstate bridge. High clearance.",
-      "source": "FDOT"
+      "source": "FDOT",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "jax-low-rail-mathews",

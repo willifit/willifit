@@ -30,7 +30,9 @@
       "source": "4thstlive.com",
       "entrance_lat": 38.255755,
       "entrance_lng": -85.7569098,
-      "entrance_source": "OSM parking_entrance node 3516268515"
+      "entrance_source": "OSM parking_entrance node 3516268515",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lou-convention",
@@ -62,7 +64,8 @@
       "source": "milb.com",
       "entrance_lat": 38.2545411,
       "entrance_lng": -85.7453127,
-      "entrance_source": "OSM parking_entrance node 3560960843"
+      "entrance_source": "OSM parking_entrance node 3560960843",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lou-preston-main",
@@ -77,7 +80,9 @@
       "source": "Needs verification",
       "entrance_lat": 38.2568937,
       "entrance_lng": -85.7481188,
-      "entrance_source": "OSM parking_entrance node 3560961424"
+      "entrance_source": "OSM parking_entrance node 3560961424",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "lou-galt-house",
@@ -157,7 +162,8 @@
       "source": "ourwaterfront.org",
       "entrance_lat": 38.2569875,
       "entrance_lng": -85.7480097,
-      "entrance_source": "OSM parking_entrance node 3560961437"
+      "entrance_source": "OSM parking_entrance node 3560961437",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lou-churchill-downs",
@@ -169,7 +175,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic racetrack. Surface lots + RV for Derby.",
-      "source": "churchilldowns.com"
+      "source": "churchilldowns.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lou-kentucky-expo",
@@ -195,7 +202,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air shopping.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lou-mall-st-matthews",
@@ -207,7 +215,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Enclosed mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lou-oxmoor",
@@ -219,7 +229,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lou-bardstown-rd",
@@ -231,7 +243,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Highlands entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lou-nulu",
@@ -243,7 +256,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "New Louisville restaurant district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lou-uofl-garage",
@@ -258,7 +272,9 @@
       "source": "louisville.edu",
       "entrance_lat": 38.2100916,
       "entrance_lng": -85.7559451,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "sdf-short-term",
@@ -271,7 +287,9 @@
       "oversized": false,
       "notes": "SDF terminal garage.",
       "source": "flylouisville.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "sdf-economy",
@@ -283,7 +301,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
-      "source": "flylouisville.com"
+      "source": "flylouisville.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n164667181",
@@ -335,7 +354,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Car bridge to Indiana.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "lou-big-four",
@@ -346,7 +367,9 @@
       "height_in": null,
       "height_label": "Pedestrian only",
       "notes": "Converted former rail bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lou-kennedy-bridge",
@@ -360,7 +383,9 @@
       "source": "KYTC",
       "entrance_lat": 38.262812,
       "entrance_lng": -85.751772,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "lou-abe-lincoln-bridge",
@@ -374,7 +399,9 @@
       "source": "KYTC",
       "entrance_lat": 38.262812,
       "entrance_lng": -85.751772,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     }
   ]
 }

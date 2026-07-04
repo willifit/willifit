@@ -6,14 +6,18 @@
       "addr": "301 S Temple",
       "lat": 40.7683,
       "lng": -111.9012,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 88,
+      "height_label": "7'4\"",
       "oversized": false,
-      "notes": "Jazz arena. Arena Plaza garage attached.",
-      "source": "utahjazz.com",
+      "notes": "Jazz arena. Arena Plaza garage attached.\nVerified 2026-07-04 from sign reading \"CLEARANCE 7' 4\"\" (pano cVq4rEmPqRSVkW9gtTwVZQ, heading 95\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: utahjazz.com",
       "entrance_lat": 40.7682053,
       "entrance_lng": -111.8994476,
-      "entrance_source": "OSM parking_entrance node 12396402796"
+      "entrance_source": "OSM parking_entrance node 12396402796",
+      "verified_on": "2026-07-04",
+      "sv_checked": "2026-07-04",
+      "pano_id": "cVq4rEmPqRSVkW9gtTwVZQ",
+      "pano_heading": 95
     },
     {
       "id": "slc-convention-salt-palace",
@@ -28,7 +32,8 @@
       "source": "saltpalace.com",
       "entrance_lat": 40.765342,
       "entrance_lng": -111.8947624,
-      "entrance_source": "OSM parking_entrance node 12215031479"
+      "entrance_source": "OSM parking_entrance node 12215031479",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-city-creek-center",
@@ -43,7 +48,9 @@
       "source": "shopcitycreekcenter.com",
       "entrance_lat": 40.7671807,
       "entrance_lng": -111.89007,
-      "entrance_source": "OSM parking_entrance node 2155586662"
+      "entrance_source": "OSM parking_entrance node 2155586662",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "slc-gateway",
@@ -58,7 +65,8 @@
       "source": "shopthegateway.com",
       "entrance_lat": 40.7673271,
       "entrance_lng": -111.9033445,
-      "entrance_source": "OSM parking_entrance node 10147928309"
+      "entrance_source": "OSM parking_entrance node 10147928309",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-utah-state-capitol",
@@ -73,7 +81,8 @@
       "source": "utahstatecapitol.utah.gov",
       "entrance_lat": 40.7776838,
       "entrance_lng": -111.8866511,
-      "entrance_source": "OSM parking_entrance node 3684285215"
+      "entrance_source": "OSM parking_entrance node 3684285215",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-smiths-ballpark",
@@ -85,7 +94,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "AAA baseball.",
-      "source": "milb.com"
+      "source": "milb.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-rice-eccles",
@@ -97,7 +107,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Utah football. Surface lots + RV tailgating.",
-      "source": "utahutes.com"
+      "source": "utahutes.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-huntsman-center",
@@ -109,7 +120,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Utah basketball + gymnastics.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-u-utah-visitor",
@@ -121,7 +133,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Visitor garage.",
-      "source": "commuterservices.utah.edu"
+      "source": "commuterservices.utah.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "slc-this-is-the-place",
@@ -133,7 +147,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic park. RV-friendly.",
-      "source": "thisistheplace.org"
+      "source": "thisistheplace.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-hogle-zoo",
@@ -145,7 +160,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Surface lot.",
-      "source": "hoglezoo.org"
+      "source": "hoglezoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-liberty-park",
@@ -157,7 +173,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Large city park.",
-      "source": "slc.gov"
+      "source": "slc.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-9th-9th",
@@ -169,7 +186,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Eclectic shopping district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-sugar-house",
@@ -184,7 +202,8 @@
       "source": "Needs verification",
       "entrance_lat": 40.7266263,
       "entrance_lng": -111.8574239,
-      "entrance_source": "OSM parking_entrance node 10187641751"
+      "entrance_source": "OSM parking_entrance node 10187641751",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-station-park",
@@ -196,7 +215,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Open-air retail.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-fashion-place",
@@ -208,7 +228,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "slc-south-towne-expo",
@@ -220,7 +242,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large event/trade-show venue.",
-      "source": "mountainamericaexpo.com"
+      "source": "mountainamericaexpo.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-snowbird",
@@ -274,7 +297,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "slcairport.com"
+      "source": "slcairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "slc-bonneville-salt-flats",
@@ -286,7 +310,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "~2 hours west. BLM land. Free parking for Speed Week.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w40690020",

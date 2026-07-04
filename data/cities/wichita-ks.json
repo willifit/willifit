@@ -10,7 +10,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Main event arena downtown.",
-      "source": "intrustbankarena.com"
+      "source": "intrustbankarena.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "wic-century-2",
@@ -22,7 +24,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Iconic round convention center.",
-      "source": "century2.org"
+      "source": "century2.org",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "wic-old-town",
@@ -37,7 +41,8 @@
       "source": "oldtownwichita.com",
       "entrance_lat": 37.6899067,
       "entrance_lng": -97.3298892,
-      "entrance_source": "OSM parking_entrance node 11271480463"
+      "entrance_source": "OSM parking_entrance node 11271480463",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-exploration-place",
@@ -52,7 +57,8 @@
       "source": "exploration.org",
       "entrance_lat": 37.6872952,
       "entrance_lng": -97.3461701,
-      "entrance_source": "OSM parking_entrance node 12035297000"
+      "entrance_source": "OSM parking_entrance node 12035297000",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-botanica",
@@ -64,7 +70,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Botanical garden surface lot.",
-      "source": "botanica.org"
+      "source": "botanica.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-zoo",
@@ -76,7 +83,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large zoo surface lot. RV-friendly.",
-      "source": "scz.org"
+      "source": "scz.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-art-museum",
@@ -88,7 +96,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Surface lot.",
-      "source": "wichitaartmuseum.org"
+      "source": "wichitaartmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-keeper-plains",
@@ -100,7 +109,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Iconic steel statue at river confluence.",
-      "source": "wichita.gov"
+      "source": "wichita.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-riverside-park",
@@ -112,7 +122,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Park surface lots.",
-      "source": "wichita.gov"
+      "source": "wichita.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-towne-east",
@@ -124,7 +135,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Enclosed mall surface lot.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-towne-west",
@@ -136,7 +148,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "West side mall.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "wic-bradley-fair",
@@ -148,7 +162,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Upscale open-air retail.",
-      "source": "bradleyfair.com"
+      "source": "bradleyfair.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-newmarket-square",
@@ -160,7 +175,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "West side power center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "wic-wsu",
@@ -172,7 +189,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "WSU campus.",
-      "source": "wichita.edu"
+      "source": "wichita.edu",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "wic-koch-arena",
@@ -184,7 +203,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shockers basketball.",
-      "source": "goshockers.com"
+      "source": "goshockers.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "wic-riverfest-expo",
@@ -196,7 +217,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Annual Riverfest overflow lots.",
-      "source": "wichita.gov"
+      "source": "wichita.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-air-capital",
@@ -208,7 +230,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic aviation museum. Surface lot.",
-      "source": "kansasaviationmuseum.org"
+      "source": "kansasaviationmuseum.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-fairgrounds",
@@ -220,7 +243,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State Fair. 45 min from Wichita.",
-      "source": "kansasstatefair.com"
+      "source": "kansasstatefair.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "wic-airport-garage",
@@ -233,7 +257,9 @@
       "oversized": false,
       "notes": "Terminal-adjacent.",
       "source": "flywichita.com",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "wic-airport-economy",
@@ -245,7 +271,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered.",
-      "source": "flywichita.com"
+      "source": "flywichita.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n8577161413",
@@ -343,7 +370,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Downtown riverside bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "wic-i-135-low",

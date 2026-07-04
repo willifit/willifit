@@ -24,7 +24,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Extreme south LV Blvd. Henderson-adjacent.",
-      "source": "themresort.com"
+      "source": "themresort.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hen-galleria-at-sunset",
@@ -64,7 +66,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic downtown + events.",
-      "source": "visitdowntownhenderson.com"
+      "source": "visitdowntownhenderson.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hen-dollar-loan-ctr",
@@ -115,7 +119,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Water park. Surface lot.",
-      "source": "cowabungabay.com"
+      "source": "cowabungabay.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-heritage-park",
@@ -127,7 +132,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Large sports complex surface lot.",
-      "source": "cityofhenderson.com"
+      "source": "cityofhenderson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-hoover-dam-lake-mead",
@@ -139,7 +145,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Boulder City (adjacent). Lake Mead NRA. RV friendly.",
-      "source": "nps.gov/lake"
+      "source": "nps.gov/lake",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-hoover-dam-garage",
@@ -164,7 +171,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic town built for Hoover Dam workers.",
-      "source": "visitbouldercity.com"
+      "source": "visitbouldercity.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-lake-las-vegas",
@@ -176,7 +184,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Master-planned lake community + hotels.",
-      "source": "lakelasvegas.com"
+      "source": "lakelasvegas.com",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-pano"
     },
     {
       "id": "hen-nevada-state-museum",
@@ -188,7 +198,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Springs Preserve complex (officially Vegas, near Henderson).",
-      "source": "springspreserve.org"
+      "source": "springspreserve.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-clark-training",
@@ -203,7 +214,8 @@
       "source": "clarkcountynv.gov",
       "entrance_lat": 36.0007196,
       "entrance_lng": -114.9646417,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "hen-sloan-canyon",
@@ -215,7 +227,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "BLM conservation area.",
-      "source": "blm.gov"
+      "source": "blm.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w543015574",
@@ -305,7 +318,9 @@
       "source": "Wikipedia",
       "entrance_lat": 36.0145542,
       "entrance_lng": -114.7366497,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-07-04",
+      "sv_status": "no-sign"
     },
     {
       "id": "hen-i-215-beltway",
