@@ -231,7 +231,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Museum surface lot.",
-      "source": "discovernewfields.org"
+      "source": "discovernewfields.org",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "ind-broad-ripple",

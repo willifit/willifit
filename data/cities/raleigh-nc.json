@@ -199,7 +199,8 @@
       "notes": "Terminal 1 short/daily.",
       "source": "rdu.com",
       "sv_checked": "2026-04-23",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "rdu-airport-garage-2",
@@ -216,7 +217,8 @@
       "entrance_lng": -78.7907952,
       "entrance_source": "OSM parking_entrance node 1388096573",
       "sv_checked": "2026-04-23",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "rdu-airport-economy",

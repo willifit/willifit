@@ -383,7 +383,8 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
       "structure_type": "surface_lot",
       "sv_checked": "2026-04-23",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w325260032",

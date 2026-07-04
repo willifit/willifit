@@ -139,7 +139,8 @@
       "oversized": true,
       "notes": "Secondary airport. Surface lots.\nReclassified 2026-04-27 as surface lot per web research: Surface economy parking (covered/uncovered)",
       "source": "Web-verified surface lot \u2014 was: gatewayairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "mes-organ-stop",
@@ -255,7 +256,8 @@
       "oversized": true,
       "notes": "Long-term uncovered airport lot.\nReclassified 2026-04-27 as surface lot per web research: Surface RV lot",
       "source": "Web-verified surface lot \u2014 was: gatewayairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "mes-falcon-field",

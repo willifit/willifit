@@ -395,6 +395,7 @@ def process_city(
     dry_run: bool,
     overwrite: bool,
     check_only: bool = False,
+    only_ids: Optional[set] = None,
 ) -> dict:
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
@@ -414,7 +415,14 @@ def process_city(
     elif overwrite:
         candidates = list(garages)
     else:
-        candidates = [g for g in garages if g.get("height_in") is None]
+        # Scan memory: skip entries a previous run already cross-checked
+        # against their website and found nothing (wv_checked stamp) —
+        # mirrors auto_verify's sv_checked so re-runs don't re-spend.
+        candidates = [g for g in garages
+                      if g.get("height_in") is None
+                      and not (not overwrite and g.get("wv_checked"))]
+    if only_ids is not None:
+        candidates = [g for g in candidates if g.get("id") in only_ids]
 
     if not candidates:
         print(f"[{slug}] no candidates")
@@ -425,6 +433,7 @@ def process_city(
           f"{' [CHECK MODE — no writes]' if check_only else ''}")
 
     checked = updated = no_domain = unreachable = no_clearance = low_conf = 0
+    stamped = 0
     mismatches = []
 
     for g in candidates:
@@ -460,6 +469,10 @@ def process_city(
             no_clearance += 1
             print(f"no clearance found on {domain}")
             _log(f"{date.today()} {slug} {g['id']} NO-CLEARANCE conf={conf} domain={domain}")
+            # Scan memory — site checked, nothing published; don't re-spend.
+            if not check_only and not dry_run:
+                g["wv_checked"] = date.today().isoformat()
+                stamped += 1
             continue
 
         if CONF_RANK.get(conf, -1) < CONF_RANK[min_conf]:
@@ -524,7 +537,7 @@ def process_city(
         print(f"{action}: {height_in}in ({inches_to_label(int(height_in))}) conf={conf} \"{quote}\"")
         _log(f"{date.today()} {slug} {g['id']} VERIFIED h={height_in} conf={conf} domain={domain} quote={quote!r}")
 
-    if updated and not dry_run and not check_only:
+    if (updated or stamped) and not dry_run and not check_only:
         city_path.write_text(json.dumps(data, indent=2) + "\n")
 
     summary_parts = [
@@ -567,6 +580,9 @@ def main():
                          "CLOSE / MISMATCH for each garage whose source has a "
                          "reachable domain.")
     ap.add_argument("--sleep", type=float, default=0.5, help="Seconds between garages")
+    ap.add_argument("--ids-file",
+                    help="File with one entry-id per line; restrict the run to "
+                         "those ids (within the selected slugs)")
     args = ap.parse_args()
 
     if not (args.slug or args.slugs or args.all):
@@ -584,8 +600,14 @@ def main():
     summary = []
     for slug in targets:
         try:
+            only_ids = None
+            if args.ids_file:
+                with open(args.ids_file) as fh:
+                    only_ids = {ln.strip() for ln in fh
+                                if ln.strip() and not ln.startswith("#")}
             r = process_city(slug, args.limit, args.confidence, args.model,
-                             args.dry_run, args.overwrite, check_only=args.check)
+                             args.dry_run, args.overwrite, check_only=args.check,
+                             only_ids=only_ids)
             summary.append(r)
         except KeyboardInterrupt:
             print("\nInterrupted.")

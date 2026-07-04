@@ -229,7 +229,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "ELP terminal garage.",
-      "source": "elpasointernationalairport.com"
+      "source": "elpasointernationalairport.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "elp-airport-economy",
@@ -243,7 +244,8 @@
       "notes": "Uncovered. Oversized OK. Surface long-term",
       "source": "Web-verified surface lot - was: elpasointernationalairport.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w990199147",

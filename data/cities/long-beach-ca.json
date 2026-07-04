@@ -115,7 +115,8 @@
       "entrance_lat": 33.8176739,
       "entrance_lng": -118.1444483,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "lb-lgb-garage",
@@ -130,7 +131,8 @@
       "source": "lgb.org",
       "entrance_lat": 33.8199568,
       "entrance_lng": -118.1514552,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "lb-csulb",
@@ -303,7 +305,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Secondary airport garage.",
-      "source": "lgb.org"
+      "source": "lgb.org",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "lb-shoreline-village-east",

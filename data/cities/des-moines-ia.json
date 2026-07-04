@@ -28,7 +28,8 @@
       "source": "iowaeventscenter.com",
       "entrance_lat": 41.5835092,
       "entrance_lng": -93.6208831,
-      "entrance_source": "OSM parking_entrance node 3848432781"
+      "entrance_source": "OSM parking_entrance node 3848432781",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "dsm-principal-park",

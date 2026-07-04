@@ -340,7 +340,8 @@
       "entrance_lng": -89.3460916,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
       "sv_checked": "2026-07-03",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "mad-airport-long",

@@ -309,7 +309,8 @@
       "entrance_lng": -71.4356144,
       "entrance_source": "OSM parking_entrance node 2099033346",
       "sv_checked": "2026-07-03",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "pvd-airport-economy",

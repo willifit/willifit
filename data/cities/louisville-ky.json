@@ -270,7 +270,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "SDF terminal garage.",
-      "source": "flylouisville.com"
+      "source": "flylouisville.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "sdf-economy",

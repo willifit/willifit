@@ -260,7 +260,8 @@
       "notes": "Uncovered economy lot. Shuttle. Surface long-term",
       "source": "Web-verified surface lot - was: flyjacksonville.com",
       "structure_type": "surface_lot",
-      "verified_on": "2026-04-30"
+      "verified_on": "2026-04-30",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "jax-mayport",

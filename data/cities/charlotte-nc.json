@@ -326,7 +326,8 @@
       "source": "cltairport.com",
       "entrance_lat": 35.206034,
       "entrance_lng": -80.9451752,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w516686210",

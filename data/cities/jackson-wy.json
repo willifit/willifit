@@ -221,7 +221,8 @@
       "oversized": true,
       "notes": "Only commercial airport inside a US National Park (Grand Teton). Surface lots.",
       "source": "jacksonholeairport.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "jac-rustic-inn-rv",

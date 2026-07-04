@@ -305,7 +305,8 @@
       "source": "miami-airport.com",
       "entrance_lat": 25.795745,
       "entrance_lng": -80.2779631,
-      "entrance_source": "OSM parking_entrance node 10886016099"
+      "entrance_source": "OSM parking_entrance node 10886016099",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "mia-airport-flamingo",
@@ -332,7 +333,8 @@
       "source": "broward.org/airport",
       "entrance_lat": 26.0708188,
       "entrance_lng": -80.1553066,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w617983502",

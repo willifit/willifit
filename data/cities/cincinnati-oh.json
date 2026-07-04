@@ -375,7 +375,8 @@
       "oversized": false,
       "notes": "Municipal airport.",
       "source": "cincinnati-oh.gov/aviation",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-n12046186092",

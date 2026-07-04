@@ -152,7 +152,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Performing arts center.",
-      "source": "morrisoncenter.com"
+      "source": "morrisoncenter.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "boi-boise-state-lincoln",
@@ -302,7 +303,9 @@
       "oversized": true,
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (172 spaces). 172 spaces. Paid parking. Operator: Boise Airport.",
-      "source": "OpenStreetMap (surface lot)"
+      "source": "OpenStreetMap (surface lot)",
+      "website": "iflyboise.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w747874469",

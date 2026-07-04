@@ -358,7 +358,8 @@
       "oversized": false,
       "notes": "Terminal-adjacent.",
       "source": "flyavl.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-n8335657317",

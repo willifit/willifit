@@ -484,16 +484,18 @@
       "addr": "5757 Wayne Newton Blvd",
       "lat": 36.0859,
       "lng": -115.1483,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 112,
+      "height_label": "9'4\"",
       "oversized": true,
-      "notes": "Oversized airport lot available separately.",
-      "source": "LAS airport",
+      "notes": "Oversized airport lot available separately.\nVerified 2026-07-03 from harryreidairport.com: \"Vehicle height clearance is 8'2\" at Terminal 1 and 9'4\" at Terminal 3.\"",
+      "source": "AI-verified (operator website + Claude) \u2014 was: LAS airport",
       "entrance_lat": 36.0861418,
       "entrance_lng": -115.1481219,
       "entrance_source": "OSM parking_entrance node 10108675492",
       "sv_checked": "2026-04-18",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "website": "harryreidairport.com",
+      "verified_on": "2026-07-03"
     },
     {
       "id": "fashionshow",

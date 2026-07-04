@@ -355,7 +355,8 @@
       "notes": "Shared airport. Durham access via I-40.",
       "source": "rdu.com",
       "sv_checked": "2026-04-23",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w1324743530",

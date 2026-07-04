@@ -114,7 +114,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UT visitor parking.",
-      "source": "parking.utexas.edu"
+      "source": "parking.utexas.edu",
+      "website": "parking.utexas.edu",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "atx-ut-sac",
@@ -126,7 +128,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "UT SAC Garage. Visitor parking.",
-      "source": "parking.utexas.edu"
+      "source": "parking.utexas.edu",
+      "website": "parking.utexas.edu",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "atx-lbj-library",

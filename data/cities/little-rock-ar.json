@@ -132,7 +132,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "HQ + museum.",
-      "source": "heifer.org"
+      "source": "heifer.org",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "lit-arkansas-inn-library",
@@ -261,7 +262,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "clintonairport.com"
+      "source": "clintonairport.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "lit-lit-airport-economy",

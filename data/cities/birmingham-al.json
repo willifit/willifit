@@ -25,7 +25,8 @@
       "oversized": true,
       "notes": "UAB Blazers + Birmingham Stallions. Surface lots.",
       "source": "protectivestadium.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "bhm-regions-field",
