@@ -93,8 +93,176 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w313520086",
+      "name": "Sandoval Garage",
+      "addr": "216 West San Francisco Street",
+      "lat": 35.68738,
+      "lng": -105.94158,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "404 spaces; paid; hrs: Mo-Sa 06:00-23:00; Su 07:00-23:00",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "https://www.santafenm.gov/parking_lots_and_garages"
+    },
+    {
+      "id": "osm-w461732954",
+      "name": "State of New Mexico",
+      "addr": "443 Galisteo Street",
+      "lat": 35.68227,
+      "lng": -105.94191,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "564 spaces; free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w623188621",
+      "name": "Aspen Vista Trailhead",
+      "addr": "",
+      "lat": 35.77724,
+      "lng": -105.81075,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w689784963",
+      "name": "Vista Grande Overlook",
+      "addr": "NM 475",
+      "lat": 35.78682,
+      "lng": -105.80854,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w706103379",
+      "name": "Pacheco Canyon Trailhead",
+      "addr": "",
+      "lat": 35.77334,
+      "lng": -105.81104,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w778195327",
+      "name": "Santa Fe County",
+      "addr": "",
+      "lat": 35.69073,
+      "lng": -105.94095,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w858641254",
+      "name": "City of Santa Fe",
+      "addr": "",
+      "lat": 35.68054,
+      "lng": -105.95207,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-r20291191",
+      "name": "City of Santa Fe",
+      "addr": "",
+      "lat": 35.68857,
+      "lng": -105.94071,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "8 spaces; paid",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
-  "bridges": []
+  "tunnels": [
+    {
+      "id": "osm-w472252667",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.64387,
+      "lng": -106.01079,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w712392267",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.68564,
+      "lng": -105.94044,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w14604146",
+      "name": "Low clearance \u2014 Ojo de la Vaca Road (CR 51)",
+      "addr": "CR 51",
+      "lat": 35.52761,
+      "lng": -105.84084,
+      "height_in": 202,
+      "height_label": "16'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w40952714",
+      "name": "Low clearance \u2014 I 25",
+      "addr": "I 25",
+      "lat": 35.63584,
+      "lng": -105.93824,
+      "height_in": 226,
+      "height_label": "18'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w40953015",
+      "name": "Low clearance \u2014 I 25",
+      "addr": "I 25",
+      "lat": 35.63677,
+      "lng": -105.93373,
+      "height_in": 226,
+      "height_label": "18'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w104628442",
+      "name": "Low clearance \u2014 North Saint Francis Drive (US 84;US 285)",
+      "addr": "US 84;US 285",
+      "lat": 35.69838,
+      "lng": -105.95207,
+      "height_in": 192,
+      "height_label": "16'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

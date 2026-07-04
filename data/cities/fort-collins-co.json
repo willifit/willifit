@@ -93,8 +93,132 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w54882910",
+      "name": "Civic Center Parking Garage",
+      "addr": "120 North Mason Street",
+      "lat": 40.58826,
+      "lng": -105.07839,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "550 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w171974035",
+      "name": "Old Town Parking",
+      "addr": "215 East Mountain Avenue",
+      "lat": 40.58649,
+      "lng": -105.07509,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w368336808",
+      "name": "Lory State Park",
+      "addr": "",
+      "lat": 40.57578,
+      "lng": -105.17778,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w374715785",
+      "name": "City of Fort Collins",
+      "addr": "",
+      "lat": 40.58146,
+      "lng": -105.10455,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w429549482",
+      "name": "Foothills Fashion Mall",
+      "addr": "315 East Foothills Parkway",
+      "lat": 40.54275,
+      "lng": -105.07153,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w544369325",
+      "name": "Firehouse Alley Parking",
+      "addr": "160 Chestnut Street",
+      "lat": 40.58817,
+      "lng": -105.07365,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "https://www.fcgov.com/parking/structures.php"
+    },
+    {
+      "id": "osm-w1298878234",
+      "name": "City of Fort Collins",
+      "addr": "",
+      "lat": 40.58174,
+      "lng": -105.10302,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "2 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-r14265255",
+      "name": "City of Fort Collins",
+      "addr": "",
+      "lat": 40.58703,
+      "lng": -105.07618,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
-  "bridges": []
+  "bridges": [
+    {
+      "id": "osm-w797553499",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.58646,
+      "lng": -105.07387,
+      "height_in": 128,
+      "height_label": "10'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1292621361",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 25)",
+      "addr": "I 25",
+      "lat": 40.62456,
+      "lng": -105.00111,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

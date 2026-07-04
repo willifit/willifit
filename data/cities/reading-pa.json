@@ -14,7 +14,63 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w14234617",
+      "name": "Oley Street",
+      "addr": "Oley Street",
+      "lat": 40.34591,
+      "lng": -75.92305,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w14237325",
+      "name": "Hiesters Lane",
+      "addr": "Hiesters Lane",
+      "lat": 40.364,
+      "lng": -75.92517,
+      "height_in": 131,
+      "height_label": "10'11\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w179180830",
+      "name": "North 6th Street",
+      "addr": "North 6th Street",
+      "lat": 40.34339,
+      "lng": -75.92568,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w292983509",
+      "name": "West Wyomissing Boulevard",
+      "addr": "West Wyomissing Boulevard",
+      "lat": 40.3264,
+      "lng": -75.99401,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w378067627",
+      "name": "Spring Street",
+      "addr": "Spring Street",
+      "lat": 40.35034,
+      "lng": -75.92215,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-42-000000000005022",
@@ -92,6 +148,391 @@
       "height_label": "7'10\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2017",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w26238540",
+      "name": "Low clearance \u2014 US 222",
+      "addr": "US 222",
+      "lat": 40.40068,
+      "lng": -75.95916,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w48783214",
+      "name": "Low clearance \u2014 Allentown Pike (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.4307,
+      "lng": -75.91238,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w65085435",
+      "name": "Low clearance \u2014 US 222",
+      "addr": "US 222",
+      "lat": 40.2666,
+      "lng": -76.02723,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w127868343",
+      "name": "Low clearance \u2014 Allentown Pike (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.42933,
+      "lng": -75.91293,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w469492675",
+      "name": "Low clearance \u2014 East Lancaster Avenue (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.32454,
+      "lng": -75.93352,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w483339704",
+      "name": "Low clearance \u2014 Centre Avenue (PA 61)",
+      "addr": "PA 61",
+      "lat": 40.36944,
+      "lng": -75.93296,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w483339750",
+      "name": "Low clearance \u2014 River Road",
+      "addr": "River Road",
+      "lat": 40.36521,
+      "lng": -75.94052,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w483339789",
+      "name": "Low clearance \u2014 Warren Street Bypass (PA 12)",
+      "addr": "PA 12",
+      "lat": 40.35597,
+      "lng": -75.94881,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w489193200",
+      "name": "Low clearance \u2014 Allentown Pike (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.42834,
+      "lng": -75.91353,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w514856940",
+      "name": "Low clearance \u2014 East Neversink Road",
+      "addr": "East Neversink Road",
+      "lat": 40.29943,
+      "lng": -75.88253,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1028881361",
+      "name": "Low clearance \u2014 River Road",
+      "addr": "River Road",
+      "lat": 40.35,
+      "lng": -75.94303,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1031372021",
+      "name": "Low clearance \u2014 East Lancaster Avenue (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.31686,
+      "lng": -75.93851,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1038264353",
+      "name": "Low clearance \u2014 Water Street",
+      "addr": "Water Street",
+      "lat": 40.40255,
+      "lng": -75.92976,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1046081982",
+      "name": "Low clearance \u2014 Penn Avenue (US 422 BUS)",
+      "addr": "US 422 BUS",
+      "lat": 40.33474,
+      "lng": -75.94161,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212907484",
+      "name": "Low clearance \u2014 Mail Route Road",
+      "addr": "Mail Route Road",
+      "lat": 40.29422,
+      "lng": -76.06897,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212907614",
+      "name": "Low clearance \u2014 Shillington Road (PA 724)",
+      "addr": "PA 724",
+      "lat": 40.32389,
+      "lng": -76.01377,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212909265",
+      "name": "Low clearance \u2014 Green Hills Road (PA 568)",
+      "addr": "PA 568",
+      "lat": 40.28355,
+      "lng": -75.87374,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212909696",
+      "name": "Low clearance \u2014 Jackson Street",
+      "addr": "Jackson Street",
+      "lat": 40.2671,
+      "lng": -75.82032,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212909800",
+      "name": "Low clearance \u2014 West Main Street (PA 724)",
+      "addr": "PA 724",
+      "lat": 40.2673,
+      "lng": -75.81082,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318447693",
+      "name": "Low clearance \u2014 Weavers Road",
+      "addr": "Weavers Road",
+      "lat": 40.47159,
+      "lng": -75.7815,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318447985",
+      "name": "Low clearance \u2014 Dryville Road",
+      "addr": "Dryville Road",
+      "lat": 40.46337,
+      "lng": -75.79769,
+      "height_in": 131,
+      "height_label": "10'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318448294",
+      "name": "Low clearance \u2014 Willow Creek Road",
+      "addr": "Willow Creek Road",
+      "lat": 40.42519,
+      "lng": -75.91952,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318448716",
+      "name": "Low clearance \u2014 Leesport Avenue",
+      "addr": "Leesport Avenue",
+      "lat": 40.41819,
+      "lng": -75.92689,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318448839",
+      "name": "Low clearance \u2014 Pottsville Pike (PA 61)",
+      "addr": "PA 61",
+      "lat": 40.39077,
+      "lng": -75.93511,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318449975",
+      "name": "Low clearance \u2014 North 5th Street Highway (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.36623,
+      "lng": -75.92694,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318450574",
+      "name": "Low clearance \u2014 North 6th Street",
+      "addr": "North 6th Street",
+      "lat": 40.3428,
+      "lng": -75.92569,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318450700",
+      "name": "Low clearance \u2014 Bingaman Street",
+      "addr": "Bingaman Street",
+      "lat": 40.33037,
+      "lng": -75.92337,
+      "height_in": 125,
+      "height_label": "10'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1318451241",
+      "name": "Low clearance \u2014 Laurel Street",
+      "addr": "Laurel Street",
+      "lat": 40.32752,
+      "lng": -75.92103,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1329458571",
+      "name": "Low clearance \u2014 US 222",
+      "addr": "US 222",
+      "lat": 40.2551,
+      "lng": -76.03479,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1329458572",
+      "name": "Low clearance \u2014 US 222",
+      "addr": "US 222",
+      "lat": 40.25604,
+      "lng": -76.03458,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1370402402",
+      "name": "Low clearance \u2014 Westley Road",
+      "addr": "Westley Road",
+      "lat": 40.22648,
+      "lng": -75.91233,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1374137603",
+      "name": "Low clearance \u2014 Allentown Pike (US 222 BUS)",
+      "addr": "US 222 BUS",
+      "lat": 40.43229,
+      "lng": -75.91134,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1392152046",
+      "name": "Low clearance \u2014 Leesport Avenue",
+      "addr": "Leesport Avenue",
+      "lat": 40.42769,
+      "lng": -75.93412,
+      "height_in": 139,
+      "height_label": "11'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1392153050",
+      "name": "Low clearance \u2014 West Huller Lane",
+      "addr": "West Huller Lane",
+      "lat": 40.41808,
+      "lng": -75.93147,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1392153052",
+      "name": "Low clearance \u2014 West Huller Lane",
+      "addr": "West Huller Lane",
+      "lat": 40.41607,
+      "lng": -75.93593,
+      "height_in": 94,
+      "height_label": "7'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

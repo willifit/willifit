@@ -13,6 +13,32 @@
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)",
       "website": "www.jellystonemaryland.com/"
+    },
+    {
+      "id": "osm-w164658609",
+      "name": "University District Parking Deck",
+      "addr": "",
+      "lat": 39.6429,
+      "lng": -77.72022,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "444 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w230259399",
+      "name": "Arts & Entertainment Parking Deck",
+      "addr": "",
+      "lat": 39.64086,
+      "lng": -77.72041,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "188 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -71,6 +97,39 @@
       "height_label": "10'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2013; bridge carries WV 480",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w11556088",
+      "name": "Low clearance \u2014 Pangborn Boulevard",
+      "addr": "Pangborn Boulevard",
+      "lat": 39.65123,
+      "lng": -77.7024,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w454979019",
+      "name": "Low clearance \u2014 White Hall Road",
+      "addr": "White Hall Road",
+      "lat": 39.59535,
+      "lng": -77.65564,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333616157",
+      "name": "Low clearance \u2014 Memorial Boulevard West",
+      "addr": "Memorial Boulevard West",
+      "lat": 39.63246,
+      "lng": -77.72518,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

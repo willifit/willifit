@@ -25,9 +25,105 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Free parking.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w455155364",
+      "name": "Binghamton University",
+      "addr": "",
+      "lat": 42.0901,
+      "lng": -75.96732,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w557148128",
+      "name": "Binghamton University",
+      "addr": "",
+      "lat": 42.09137,
+      "lng": -75.96375,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w749106887",
+      "name": "Lot O3",
+      "addr": "East Access Road",
+      "lat": 42.08561,
+      "lng": -75.96514,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 05:00-24:00",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w749106889",
+      "name": "Lot O4",
+      "addr": "",
+      "lat": 42.08649,
+      "lng": -75.96535,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 05:00-24:00",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w749106897",
+      "name": "Lot A1",
+      "addr": "",
+      "lat": 42.08923,
+      "lng": -75.96673,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 05:00-24:00",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w749108643",
+      "name": "Binghamton University",
+      "addr": "",
+      "lat": 42.08736,
+      "lng": -75.9687,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w591685504",
+      "name": "Brandywine Avenue",
+      "addr": "NY 7",
+      "lat": 42.10513,
+      "lng": -75.89823,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w591685506",
+      "name": "Brandywine Avenue",
+      "addr": "NY 7",
+      "lat": 42.1039,
+      "lng": -75.89809,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-36-000000001030480",
@@ -94,6 +190,138 @@
       "height_label": "14'11\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1935",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w12759582",
+      "name": "Low clearance \u2014 Old State Road (CR 68)",
+      "addr": "CR 68",
+      "lat": 42.1314,
+      "lng": -75.87585,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w12763383",
+      "name": "Low clearance \u2014 Grays Crossing",
+      "addr": "Grays Crossing",
+      "lat": 42.1173,
+      "lng": -75.99521,
+      "height_in": 92,
+      "height_label": "7'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w591685510",
+      "name": "Low clearance \u2014 Brandywine Avenue (NY 7)",
+      "addr": "NY 7",
+      "lat": 42.10433,
+      "lng": -75.89814,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w591699593",
+      "name": "Low clearance \u2014 Jarvis Street",
+      "addr": "Jarvis Street",
+      "lat": 42.10539,
+      "lng": -75.9295,
+      "height_in": 143,
+      "height_label": "11'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213193221",
+      "name": "Low clearance \u2014 Oakdale Road",
+      "addr": "Oakdale Road",
+      "lat": 42.11814,
+      "lng": -75.97702,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213197476",
+      "name": "Low clearance \u2014 Emma Street",
+      "addr": "Emma Street",
+      "lat": 42.11175,
+      "lng": -75.94267,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213197699",
+      "name": "Low clearance \u2014 Glenwood Avenue",
+      "addr": "Glenwood Avenue",
+      "lat": 42.10964,
+      "lng": -75.93794,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213198204",
+      "name": "Low clearance \u2014 Murray Street",
+      "addr": "Murray Street",
+      "lat": 42.10405,
+      "lng": -75.91963,
+      "height_in": 143,
+      "height_label": "11'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213198434",
+      "name": "Low clearance \u2014 Water Street",
+      "addr": "Water Street",
+      "lat": 42.10398,
+      "lng": -75.91271,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213198504",
+      "name": "Low clearance \u2014 State Street",
+      "addr": "State Street",
+      "lat": 42.10392,
+      "lng": -75.91071,
+      "height_in": 145,
+      "height_label": "12'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1213198576",
+      "name": "Low clearance \u2014 Robinson Street",
+      "addr": "Robinson Street",
+      "lat": 42.10716,
+      "lng": -75.89538,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1305510635",
+      "name": "Low clearance \u2014 Old State Road",
+      "addr": "Old State Road",
+      "lat": 42.12795,
+      "lng": -75.89334,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

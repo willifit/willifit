@@ -27,7 +27,96 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1442855836",
+      "name": "Harrison Street",
+      "addr": "US 61 Business",
+      "lat": 41.52458,
+      "lng": -90.57703,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442855837",
+      "name": "Ripley Street",
+      "addr": "Ripley Street",
+      "lat": 41.52459,
+      "lng": -90.57852,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442855839",
+      "name": "Main Street",
+      "addr": "US 6 Hist",
+      "lat": 41.52459,
+      "lng": -90.57556,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442855840",
+      "name": "Brady Street",
+      "addr": "US 61 Business",
+      "lat": 41.52457,
+      "lng": -90.57408,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442855842",
+      "name": "Perry Street",
+      "addr": "Perry Street",
+      "lat": 41.52438,
+      "lng": -90.57262,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442857483",
+      "name": "West River Drive",
+      "addr": "US 61 Business",
+      "lat": 41.51436,
+      "lng": -90.60247,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442857546",
+      "name": "Fillmore Street",
+      "addr": "Fillmore Street",
+      "lat": 41.52451,
+      "lng": -90.59434,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442858172",
+      "name": "Kirkwood Boulevard",
+      "addr": "Kirkwood Boulevard",
+      "lat": 41.53477,
+      "lng": -90.54704,
+      "height_in": 104,
+      "height_label": "8'8\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-17-000000000819903",

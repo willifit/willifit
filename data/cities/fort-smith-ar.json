@@ -68,6 +68,32 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w592893781",
+      "name": "Cherokee Casino Parking Garage",
+      "addr": "",
+      "lat": 35.40839,
+      "lng": -94.52712,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1424696063",
+      "name": "Mercy Hospital",
+      "addr": "",
+      "lat": 35.35578,
+      "lng": -94.35128,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free; covered",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [
@@ -127,6 +153,116 @@
       "height_label": "9'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2018; bridge carries E1100",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w12937329",
+      "name": "Low clearance \u2014 South Y Street",
+      "addr": "South Y Street",
+      "lat": 35.36051,
+      "lng": -94.42937,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527328",
+      "name": "Low clearance \u2014 Vietnam Veteran's Memorial Highway (I 40)",
+      "addr": "I 40",
+      "lat": 35.39753,
+      "lng": -94.54877,
+      "height_in": 192,
+      "height_label": "16'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527332",
+      "name": "Low clearance \u2014 Vietnam Veteran's Memorial Highway (I 40)",
+      "addr": "I 40",
+      "lat": 35.41254,
+      "lng": -94.51355,
+      "height_in": 193,
+      "height_label": "16'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527353",
+      "name": "Low clearance \u2014 Vietnam Veteran's Memorial Highway (I 40)",
+      "addr": "I 40",
+      "lat": 35.41959,
+      "lng": -94.50231,
+      "height_in": 194,
+      "height_label": "16'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527358",
+      "name": "Low clearance \u2014 Vietnam Veteran's Memorial Highway (I 40)",
+      "addr": "I 40",
+      "lat": 35.44797,
+      "lng": -94.44839,
+      "height_in": 191,
+      "height_label": "15'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527458",
+      "name": "Low clearance \u2014 OK 112",
+      "addr": "OK 112",
+      "lat": 35.29062,
+      "lng": -94.4428,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527494",
+      "name": "Low clearance \u2014 West Ray Fine Boulevard (US 64)",
+      "addr": "US 64",
+      "lat": 35.40528,
+      "lng": -94.52597,
+      "height_in": 189,
+      "height_label": "15'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527552",
+      "name": "Low clearance \u2014 US 64",
+      "addr": "US 64",
+      "lat": 35.40168,
+      "lng": -94.44686,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527569",
+      "name": "Low clearance \u2014 Old Highway 64",
+      "addr": "Old Highway 64",
+      "lat": 35.39776,
+      "lng": -94.44096,
+      "height_in": 196,
+      "height_label": "16'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w588527571",
+      "name": "Low clearance underpass (trunk link)",
+      "addr": "",
+      "lat": 35.39672,
+      "lng": -94.43985,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

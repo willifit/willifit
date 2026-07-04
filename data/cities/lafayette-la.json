@@ -54,9 +54,86 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w380263868",
+      "name": "Parking Garage",
+      "addr": "121 East Vermilion Street",
+      "lat": 30.22456,
+      "lng": -92.01806,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w599886170",
+      "name": "Girard Park Parking Garage/GPC/Zone 13",
+      "addr": "",
+      "lat": 30.20974,
+      "lng": -92.02147,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1343390873",
+      "name": "Ochsner",
+      "addr": "109 Pasa Place",
+      "lat": 30.20096,
+      "lng": -92.02186,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1343657074",
+      "name": "Burdin Riehl Garage",
+      "addr": "",
+      "lat": 30.20261,
+      "lng": -92.01733,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1505934646",
+      "name": "501 Parking Garage",
+      "addr": "",
+      "lat": 30.21636,
+      "lng": -92.02595,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1187537865",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 30.25043,
+      "lng": -92.01198,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-22-032808281401231",

@@ -1,6 +1,149 @@
 {
-  "garages": [],
-  "tunnels": [],
+  "garages": [
+    {
+      "id": "osm-w105431446",
+      "name": "Poplars Parking Garage",
+      "addr": "",
+      "lat": 39.16781,
+      "lng": -86.52885,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w178181849",
+      "name": "Atwater Parking Garage",
+      "addr": "",
+      "lat": 39.16339,
+      "lng": -86.52185,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w245730381",
+      "name": "4th Street Garage",
+      "addr": "105 West 4th Street",
+      "lat": 39.16517,
+      "lng": -86.53403,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "524 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w266057318",
+      "name": "Henderson Parking Garage",
+      "addr": "310 South Fess Avenue",
+      "lat": 39.16355,
+      "lng": -86.52632,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "0 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w282562688",
+      "name": "Morton Street Parking Garage",
+      "addr": "220 North Morton Street",
+      "lat": 39.1682,
+      "lng": -86.53568,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "523 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w282562704",
+      "name": "Walnut Street Parking Garage",
+      "addr": "",
+      "lat": 39.16896,
+      "lng": -86.53324,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "362 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w952422348",
+      "name": "Forest Avenue Garage",
+      "addr": "",
+      "lat": 39.17387,
+      "lng": -86.52178,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1106220014",
+      "name": "East Parking Garage",
+      "addr": "",
+      "lat": 39.16742,
+      "lng": -86.51496,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free; hrs: off",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1201144951",
+      "name": "Trades District Parking Garage",
+      "addr": "489 West 10th Street",
+      "lat": 39.17081,
+      "lng": -86.53784,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "359 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-r13342774",
+      "name": "Fee Lane Garage",
+      "addr": "",
+      "lat": 39.17301,
+      "lng": -86.51975,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    }
+  ],
+  "tunnels": [
+    {
+      "id": "osm-w1476953522",
+      "name": "West 11th Street",
+      "addr": "West 11th Street",
+      "lat": 39.17318,
+      "lng": -86.54096,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-18-060310",
@@ -73,6 +216,182 @@
       "height_label": "13'8\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2001",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w47521284",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 39.18966,
+      "lng": -86.5527,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w47521286",
+      "name": "Low clearance \u2014 SR 45",
+      "addr": "SR 45",
+      "lat": 39.18472,
+      "lng": -86.5534,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w64942589",
+      "name": "Low clearance \u2014 West 3rd Street",
+      "addr": "West 3rd Street",
+      "lat": 39.16467,
+      "lng": -86.53616,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w79867022",
+      "name": "Low clearance \u2014 SR 46",
+      "addr": "SR 46",
+      "lat": 39.18697,
+      "lng": -86.55249,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w83914151",
+      "name": "Low clearance \u2014 I 69;SR 45",
+      "addr": "I 69;SR 45",
+      "lat": 39.1778,
+      "lng": -86.56177,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w771959445",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.17158,
+      "lng": -86.51255,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w779655430",
+      "name": "Low clearance \u2014 West State Road 45 46 Bypass (SR 45;SR 46)",
+      "addr": "SR 45;SR 46",
+      "lat": 39.18704,
+      "lng": -86.54963,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1054013620",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.17149,
+      "lng": -86.50777,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1184744202",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.17161,
+      "lng": -86.51871,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1207346001",
+      "name": "Low clearance \u2014 North Fess Avenue",
+      "addr": "North Fess Avenue",
+      "lat": 39.17496,
+      "lng": -86.52587,
+      "height_in": 113,
+      "height_label": "9'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1210149268",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.17153,
+      "lng": -86.50344,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333089078",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.17156,
+      "lng": -86.5047,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1333089081",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.1716,
+      "lng": -86.51611,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1476953516",
+      "name": "Low clearance \u2014 North Indiana Avenue",
+      "addr": "North Indiana Avenue",
+      "lat": 39.17504,
+      "lng": -86.52699,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1476953518",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 39.17156,
+      "lng": -86.50675,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1476953520",
+      "name": "Low clearance \u2014 North College Avenue",
+      "addr": "North College Avenue",
+      "lat": 39.17515,
+      "lng": -86.53478,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

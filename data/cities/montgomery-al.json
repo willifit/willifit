@@ -60,6 +60,31 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w688507039",
+      "name": "One Commerce Street Parking",
+      "addr": "",
+      "lat": 32.37756,
+      "lng": -86.31058,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1369363225",
+      "name": "Trinity Presbyterian Church",
+      "addr": "",
+      "lat": 32.35772,
+      "lng": -86.3038,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
@@ -85,6 +110,39 @@
       "height_label": "14'4\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1934",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1017466282",
+      "name": "Low clearance \u2014 I 85",
+      "addr": "I 85",
+      "lat": 32.3672,
+      "lng": -86.29206,
+      "height_in": 188,
+      "height_label": "15'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1340967366",
+      "name": "Low clearance \u2014 Mobile Road",
+      "addr": "Mobile Road",
+      "lat": 32.35648,
+      "lng": -86.33418,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1340967571",
+      "name": "Low clearance \u2014 Terminal Road",
+      "addr": "Terminal Road",
+      "lat": 32.35888,
+      "lng": -86.33506,
+      "height_in": 192,
+      "height_label": "16'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

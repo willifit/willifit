@@ -115,8 +115,164 @@
       "entrance_lat": 39.0558084,
       "entrance_lng": -108.5442106,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w231535049",
+      "name": "UC Parking Garage (CP11/P1)",
+      "addr": "1455 North 12th Street",
+      "lat": 39.08054,
+      "lng": -108.55278,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w231770231",
+      "name": "CP1",
+      "addr": "",
+      "lat": 39.08315,
+      "lng": -108.55306,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w607090340",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.07835,
+      "lng": -108.55793,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "6 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607090342",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.07835,
+      "lng": -108.5588,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "4 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607142646",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.07925,
+      "lng": -108.55795,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607142648",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.07893,
+      "lng": -108.55694,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "3 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607411344",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.07918,
+      "lng": -108.55905,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "4 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607510581",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.08215,
+      "lng": -108.55956,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "6 spaces",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w607511684",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.08269,
+      "lng": -108.55696,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1309950315",
+      "name": "CP19",
+      "addr": "",
+      "lat": 39.08102,
+      "lng": -108.55983,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w669586067",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.06961,
+      "lng": -108.56481,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w689548973",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.07776,
+      "lng": -108.51551,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w724750775",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.06864,
+      "lng": -108.56513,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "4 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": []
 }

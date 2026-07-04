@@ -77,6 +77,39 @@
       "height_label": "8'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2014; bridge carries FRONT AVENUE",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w125392641",
+      "name": "Low clearance \u2014 I 90",
+      "addr": "I 90",
+      "lat": 47.68875,
+      "lng": -116.76486,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w449152724",
+      "name": "Low clearance \u2014 I 90",
+      "addr": "I 90",
+      "lat": 47.69335,
+      "lng": -116.77505,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w449152739",
+      "name": "Low clearance \u2014 I 90",
+      "addr": "I 90",
+      "lat": 47.68679,
+      "lng": -116.76295,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

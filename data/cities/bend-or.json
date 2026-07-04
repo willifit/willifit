@@ -69,9 +69,45 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w511854658",
+      "name": "Centennial Garage",
+      "addr": "61 Northwest Oregon Avenue",
+      "lat": 44.05817,
+      "lng": -121.31177,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; covered",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w507134028",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 44.0561,
+      "lng": -121.26305,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1210471384",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 44.0501,
+      "lng": -121.31529,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-41-1685337200193",

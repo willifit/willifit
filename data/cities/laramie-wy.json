@@ -12,6 +12,31 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n11528311078",
+      "name": "Ivinson Parking Garage",
+      "addr": "",
+      "lat": 41.311,
+      "lng": -105.58378,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1150460779",
+      "name": "Albany County School District #1",
+      "addr": "",
+      "lat": 41.298,
+      "lng": -105.5516,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "60 spaces; free",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

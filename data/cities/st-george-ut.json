@@ -66,6 +66,19 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w54144820",
+      "name": "Main Street Plaza Public Parking",
+      "addr": "",
+      "lat": 37.10869,
+      "lng": -113.58242,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -80,6 +93,72 @@
       "height_label": "10'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2012; bridge carries PATHWAY-STORM DRN.",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w32077519",
+      "name": "Low clearance \u2014 West Brigham Road",
+      "addr": "West Brigham Road",
+      "lat": 37.05978,
+      "lng": -113.58431,
+      "height_in": 187,
+      "height_label": "15'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w360433007",
+      "name": "Low clearance \u2014 700 South",
+      "addr": "700 South",
+      "lat": 37.09625,
+      "lng": -113.56563,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w443129052",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.11007,
+      "lng": -113.5804,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w801322167",
+      "name": "Low clearance \u2014 100 South",
+      "addr": "100 South",
+      "lat": 37.10641,
+      "lng": -113.55944,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1028208272",
+      "name": "Low clearance \u2014 East 700 South",
+      "addr": "East 700 South",
+      "lat": 37.09623,
+      "lng": -113.56464,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1295948017",
+      "name": "Low clearance \u2014 North Main Street",
+      "addr": "North Main Street",
+      "lat": 37.13902,
+      "lng": -113.51027,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

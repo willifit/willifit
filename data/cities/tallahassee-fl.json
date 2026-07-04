@@ -80,6 +80,50 @@
       "height_label": "7'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1970",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w382249693",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 30.45892,
+      "lng": -84.26114,
+      "height_in": 87,
+      "height_label": "7'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w540243383",
+      "name": "Low clearance \u2014 West Tennessee Street (US 90)",
+      "addr": "US 90",
+      "lat": 30.45556,
+      "lng": -84.34334,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1387943551",
+      "name": "Low clearance \u2014 North Lake Bradford Road (SR 371)",
+      "addr": "SR 371",
+      "lat": 30.42727,
+      "lng": -84.30227,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1483765710",
+      "name": "Low clearance \u2014 East Lafayette Street (CR 2196)",
+      "addr": "CR 2196",
+      "lat": 30.43749,
+      "lng": -84.27305,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

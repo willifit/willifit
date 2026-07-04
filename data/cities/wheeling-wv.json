@@ -1,5 +1,71 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-n10980097468",
+      "name": "Capitol Parking Garage",
+      "addr": "",
+      "lat": 40.06987,
+      "lng": -80.7244,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1148365879",
+      "name": "10th Street Parking Garage",
+      "addr": "",
+      "lat": 40.07101,
+      "lng": -80.72347,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1167487399",
+      "name": "Robert C. Byrd Intermodal Transportation Center",
+      "addr": "",
+      "lat": 40.06492,
+      "lng": -80.72375,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1167635230",
+      "name": "Market Street Garage",
+      "addr": "",
+      "lat": 40.06846,
+      "lng": -80.72236,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1210873467",
+      "name": "McLure Hotel Parking Garage",
+      "addr": "",
+      "lat": 40.06688,
+      "lng": -80.72161,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {
@@ -100,6 +166,17 @@
       "height_label": "14'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1966",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1337816403",
+      "name": "Low clearance \u2014 38th Street",
+      "addr": "38th Street",
+      "lat": 40.02079,
+      "lng": -80.74262,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

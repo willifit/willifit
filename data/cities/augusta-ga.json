@@ -59,6 +59,82 @@
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (220 spaces). 220 spaces. Operator: South Carolina Department of Energy.",
       "source": "OpenStreetMap (surface lot)",
       "website": "https://energy.sc.gov/node/3085"
+    },
+    {
+      "id": "osm-w26559111",
+      "name": "Goss Lane Parking Deck (CP)- Parking #04",
+      "addr": "",
+      "lat": 33.46874,
+      "lng": -81.99053,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w26559149",
+      "name": "Richard Algernon Dent Boulevard Parking Deck (CT)",
+      "addr": "",
+      "lat": 33.46782,
+      "lng": -81.98731,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w364429346",
+      "name": "Reynolds Street Deck",
+      "addr": "839 Reynolds Street",
+      "lat": 33.47733,
+      "lng": -81.96745,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1006978672",
+      "name": "Riverfront Parking Deck",
+      "addr": "",
+      "lat": 33.47924,
+      "lng": -81.97089,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1422958821",
+      "name": "Cell Phone Waiting Lot",
+      "addr": "",
+      "lat": 33.37158,
+      "lng": -81.97443,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1527378968",
+      "name": "Truist",
+      "addr": "",
+      "lat": 33.46999,
+      "lng": -82.03825,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "8 spaces; free",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
@@ -84,6 +160,138 @@
       "height_label": "14'7\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1950",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w119882362",
+      "name": "Low clearance \u2014 Williston Road (US 278;SC 28)",
+      "addr": "US 278;SC 28",
+      "lat": 33.42605,
+      "lng": -81.88588,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w175014544",
+      "name": "Low clearance \u2014 I 20",
+      "addr": "I 20",
+      "lat": 33.53838,
+      "lng": -81.99437,
+      "height_in": 200,
+      "height_label": "16'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1046184866",
+      "name": "Low clearance \u2014 I 20",
+      "addr": "I 20",
+      "lat": 33.55307,
+      "lng": -81.95512,
+      "height_in": 235,
+      "height_label": "19'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1071843663",
+      "name": "Low clearance \u2014 Jefferson Davis Highway (US 1;US 78;US 278)",
+      "addr": "US 1;US 78;US 278",
+      "lat": 33.48584,
+      "lng": -81.93349,
+      "height_in": 219,
+      "height_label": "18'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1182126160",
+      "name": "Low clearance \u2014 Heard Avenue",
+      "addr": "Heard Avenue",
+      "lat": 33.45908,
+      "lng": -82.00874,
+      "height_in": 125,
+      "height_label": "10'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501496925",
+      "name": "Low clearance underpass (trunk)",
+      "addr": "",
+      "lat": 33.55143,
+      "lng": -81.92816,
+      "height_in": 201,
+      "height_label": "16'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501497153",
+      "name": "Low clearance \u2014 Belvedere Clearwater Road (SC 126)",
+      "addr": "SC 126",
+      "lat": 33.52887,
+      "lng": -81.92433,
+      "height_in": 210,
+      "height_label": "17'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501497732",
+      "name": "Low clearance \u2014 Old Aiken Road",
+      "addr": "Old Aiken Road",
+      "lat": 33.50307,
+      "lng": -81.93784,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501498327",
+      "name": "Low clearance \u2014 Atomic Road (SC 125)",
+      "addr": "SC 125",
+      "lat": 33.49393,
+      "lng": -81.93795,
+      "height_in": 205,
+      "height_label": "17'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501498566",
+      "name": "Low clearance \u2014 Carolina Springs Road",
+      "addr": "Carolina Springs Road",
+      "lat": 33.49481,
+      "lng": -81.94277,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501499175",
+      "name": "Low clearance \u2014 Jefferson Davis Highway (US 1;US 78;US 278)",
+      "addr": "US 1;US 78;US 278",
+      "lat": 33.48335,
+      "lng": -81.948,
+      "height_in": 194,
+      "height_label": "16'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501499420",
+      "name": "Low clearance \u2014 Fifth Street Bridge Road",
+      "addr": "Fifth Street Bridge Road",
+      "lat": 33.47826,
+      "lng": -81.95424,
+      "height_in": 185,
+      "height_label": "15'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

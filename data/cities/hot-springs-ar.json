@@ -41,6 +41,18 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n9084578531",
+      "name": "NPS",
+      "addr": "",
+      "lat": 34.53843,
+      "lng": -93.05149,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "35 spaces; free",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],

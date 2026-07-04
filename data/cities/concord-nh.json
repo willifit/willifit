@@ -81,6 +81,17 @@
       "height_label": "10'11\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1853",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w436108962",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 43.23441,
+      "lng": -71.46734,
+      "height_in": 201,
+      "height_label": "16'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

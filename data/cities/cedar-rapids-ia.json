@@ -28,9 +28,74 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w162764956",
+      "name": "3rd Avenue Ramp",
+      "addr": "",
+      "lat": 41.97769,
+      "lng": -91.66455,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "https://parkcedarrapids.com/"
+    },
+    {
+      "id": "osm-w162766911",
+      "name": "GTC Ramp",
+      "addr": "",
+      "lat": 41.97591,
+      "lng": -91.66536,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w184790396",
+      "name": "Five Seasons Parking Ramp",
+      "addr": "",
+      "lat": 41.98078,
+      "lng": -91.66623,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w368821681",
+      "name": "Convention Center Parking Ramp",
+      "addr": "",
+      "lat": 41.9794,
+      "lng": -91.66638,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1025048972",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 42.01111,
+      "lng": -91.65923,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-19-000000000070000",
@@ -97,6 +162,94 @@
       "height_label": "13'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1951",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w15959655",
+      "name": "Low clearance \u2014 33rd Avenue Southwest (US 30 Emergency;US 151 Emergency;US 218 Emergency)",
+      "addr": "US 30 Emergency;US 151 Emergency;US 218 Emergency",
+      "lat": 41.94407,
+      "lng": -91.67375,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1105067326",
+      "name": "Low clearance \u2014 8th Avenue Southeast",
+      "addr": "8th Avenue Southeast",
+      "lat": 41.97802,
+      "lng": -91.65296,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1159774935",
+      "name": "Low clearance \u2014 2nd Street Northeast",
+      "addr": "2nd Street Northeast",
+      "lat": 41.98004,
+      "lng": -91.67007,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1160041904",
+      "name": "Low clearance \u2014 3rd Avenue Southwest",
+      "addr": "3rd Avenue Southwest",
+      "lat": 41.97338,
+      "lng": -91.67548,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1276241228",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.92858,
+      "lng": -91.77942,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1504501962",
+      "name": "Low clearance \u2014 16th Avenue Southwest",
+      "addr": "16th Avenue Southwest",
+      "lat": 41.96172,
+      "lng": -91.67081,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1504501964",
+      "name": "Low clearance \u2014 15th Avenue Southwest",
+      "addr": "15th Avenue Southwest",
+      "lat": 41.96269,
+      "lng": -91.67081,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1504532622",
+      "name": "Low clearance \u2014 33rd Avenue Southwest (US 30 Emergency;US 151 Emergency;US 218 Emergency)",
+      "addr": "US 30 Emergency;US 151 Emergency;US 218 Emergency",
+      "lat": 41.94507,
+      "lng": -91.6691,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -80,6 +80,31 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w311725489",
+      "name": "South Parking Ramp",
+      "addr": "1516 West 22nd Street",
+      "lat": 43.53365,
+      "lng": -96.74433,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1205964551",
+      "name": "City of Crooks",
+      "addr": "",
+      "lat": 43.65351,
+      "lng": -96.80416,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
@@ -105,6 +130,28 @@
       "height_label": "14'2\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1908",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w9905429",
+      "name": "Low clearance \u2014 South Mall Avenue",
+      "addr": "South Mall Avenue",
+      "lat": 43.54534,
+      "lng": -96.72599,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w942057285",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 43.53372,
+      "lng": -96.71487,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

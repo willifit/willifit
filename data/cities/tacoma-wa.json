@@ -95,7 +95,74 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w567474025",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 47.29183,
+      "lng": -122.3129,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w567474031",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 47.28651,
+      "lng": -122.31317,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w568382161",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 47.17074,
+      "lng": -122.52057,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1160321627",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 47.24869,
+      "lng": -122.43816,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1192139635",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 47.35814,
+      "lng": -122.31098,
+      "height_in": 192,
+      "height_label": "16'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1462600732",
+      "name": "North Alder Way",
+      "addr": "North Alder Way",
+      "lat": 47.28034,
+      "lng": -122.47812,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-53-085011000000000",
@@ -118,6 +185,237 @@
       "height_label": "14'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1925",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w12186921",
+      "name": "Low clearance \u2014 Lemons Beach Road West",
+      "addr": "Lemons Beach Road West",
+      "lat": 47.23714,
+      "lng": -122.55884,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w12225761",
+      "name": "Low clearance \u2014 Roberts Garden Road",
+      "addr": "Roberts Garden Road",
+      "lat": 47.30376,
+      "lng": -122.51752,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w166662935",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.31584,
+      "lng": -122.31023,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w170396082",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.35817,
+      "lng": -122.30977,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w170396427",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.35837,
+      "lng": -122.31167,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w236510032",
+      "name": "Low clearance \u2014 66th Avenue East",
+      "addr": "66th Avenue East",
+      "lat": 47.21401,
+      "lng": -122.34157,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance; Under: 66th Avenue Bridge East",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w260145143",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.20114,
+      "lng": -122.29388,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w261576563",
+      "name": "Low clearance \u2014 41st Division Drive",
+      "addr": "41st Division Drive",
+      "lat": 47.1041,
+      "lng": -122.58838,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w264425847",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.14457,
+      "lng": -122.50946,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w264425848",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.14772,
+      "lng": -122.50334,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w264425849",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.14511,
+      "lng": -122.50803,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w333927562",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.39295,
+      "lng": -122.29547,
+      "height_in": 100,
+      "height_label": "8'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w450280333",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.1271,
+      "lng": -122.54251,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w506581525",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.14187,
+      "lng": -122.51451,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w506581610",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.15445,
+      "lng": -122.4916,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w506581875",
+      "name": "Low clearance \u2014 I 5",
+      "addr": "I 5",
+      "lat": 47.15355,
+      "lng": -122.49351,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w532639823",
+      "name": "Low clearance \u2014 State Route 18 (WA 18)",
+      "addr": "WA 18",
+      "lat": 47.28955,
+      "lng": -122.30638,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w541839496",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.35891,
+      "lng": -122.30927,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w541839535",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.31554,
+      "lng": -122.30339,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w736489305",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.23819,
+      "lng": -122.41118,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w740108339",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 47.28936,
+      "lng": -122.31876,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

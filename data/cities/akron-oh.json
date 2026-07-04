@@ -14,7 +14,52 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w21437605",
+      "name": "Dart Avenue",
+      "addr": "Dart Avenue",
+      "lat": 41.08391,
+      "lng": -81.51936,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w319403892",
+      "name": "Riverfront Parkway",
+      "addr": "Riverfront Parkway",
+      "lat": 41.13451,
+      "lng": -81.48256,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "layer -2",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w864070837",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 41.13361,
+      "lng": -81.37376,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1017893123",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 41.07624,
+      "lng": -81.51889,
+      "height_in": 124,
+      "height_label": "10'4\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-39-1829971",
@@ -81,6 +126,171 @@
       "height_label": "12'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2013; bridge carries SEIBERLING WAY",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w466407270",
+      "name": "Low clearance \u2014 Eastwood Avenue",
+      "addr": "Eastwood Avenue",
+      "lat": 41.0868,
+      "lng": -81.48836,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w621356004",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.16267,
+      "lng": -81.47484,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w697660497",
+      "name": "Low clearance \u2014 North Forge Street",
+      "addr": "North Forge Street",
+      "lat": 41.08401,
+      "lng": -81.49591,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w699198920",
+      "name": "Low clearance \u2014 Newton Street",
+      "addr": "Newton Street",
+      "lat": 41.07315,
+      "lng": -81.48056,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w715191603",
+      "name": "Low clearance \u2014 North Maple Street",
+      "addr": "North Maple Street",
+      "lat": 41.08998,
+      "lng": -81.52195,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w715191606",
+      "name": "Low clearance \u2014 Furnace Street",
+      "addr": "Furnace Street",
+      "lat": 41.08862,
+      "lng": -81.50689,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w768788379",
+      "name": "Low clearance \u2014 East Buchtel Avenue",
+      "addr": "East Buchtel Avenue",
+      "lat": 41.07812,
+      "lng": -81.51219,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w772284748",
+      "name": "Low clearance \u2014 Cherry Street",
+      "addr": "Cherry Street",
+      "lat": 41.1412,
+      "lng": -81.36907,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w828297569",
+      "name": "Low clearance \u2014 South Case Avenue",
+      "addr": "South Case Avenue",
+      "lat": 41.06882,
+      "lng": -81.48928,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w845537228",
+      "name": "Low clearance underpass (unclassified)",
+      "addr": "",
+      "lat": 41.0708,
+      "lng": -81.52452,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w952638597",
+      "name": "Low clearance \u2014 East Warner Road (CH 156)",
+      "addr": "CH 156",
+      "lat": 41.00621,
+      "lng": -81.49423,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w961156138",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.02905,
+      "lng": -81.51205,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1050848099",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.14275,
+      "lng": -81.4555,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1293304058",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.06488,
+      "lng": -81.48232,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337805100",
+      "name": "Low clearance \u2014 Seasons Road",
+      "addr": "Seasons Road",
+      "lat": 41.204,
+      "lng": -81.3783,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

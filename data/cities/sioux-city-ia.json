@@ -28,6 +28,97 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w169039303",
+      "name": "River's Landing Parking",
+      "addr": "",
+      "lat": 42.49497,
+      "lng": -96.40714,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "690 spaces; free; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w221909997",
+      "name": "Heritage Parking",
+      "addr": "",
+      "lat": 42.49357,
+      "lng": -96.40138,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "344 spaces; free; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w228098676",
+      "name": "Discovery Parking",
+      "addr": "",
+      "lat": 42.49493,
+      "lng": -96.4014,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "753 spaces; free; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w228098677",
+      "name": "Martin Luther King Jr. Transportation Center",
+      "addr": "",
+      "lat": 42.49581,
+      "lng": -96.40388,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "472 spaces; free; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w229623056",
+      "name": "Physician Center Parking",
+      "addr": "",
+      "lat": 42.52023,
+      "lng": -96.40416,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w851522132",
+      "name": "Courtyard Marriott",
+      "addr": "",
+      "lat": 42.495,
+      "lng": -96.39838,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "140 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w852960202",
+      "name": "Hard Rock Parking Ramp",
+      "addr": "",
+      "lat": 42.49272,
+      "lng": -96.40839,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "535 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -86,6 +177,28 @@
       "height_label": "10'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1950",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1034306528",
+      "name": "Low clearance \u2014 3rd Street",
+      "addr": "3rd Street",
+      "lat": 42.49307,
+      "lng": -96.40833,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1414330633",
+      "name": "Low clearance \u2014 Main Street",
+      "addr": "Main Street",
+      "lat": 42.52799,
+      "lng": -96.48264,
+      "height_in": 155,
+      "height_label": "12'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -112,6 +112,19 @@
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)",
       "website": "https://koa.com/campgrounds/rapid-city/"
+    },
+    {
+      "id": "osm-w287755277",
+      "name": "City of Rapid City",
+      "addr": "",
+      "lat": 44.08171,
+      "lng": -103.22582,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],

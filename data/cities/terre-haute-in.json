@@ -54,6 +54,46 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w461428305",
+      "name": "ISU Parking Garage",
+      "addr": "101",
+      "lat": 39.4678,
+      "lng": -87.40942,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w545275307",
+      "name": "University Parking Garage",
+      "addr": "",
+      "lat": 39.46781,
+      "lng": -87.40656,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-r10089039",
+      "name": "The SkyGarden Downtown Parking Garage",
+      "addr": "15 South 7th St",
+      "lat": 39.46598,
+      "lng": -87.40825,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "http://theskygarden.com/"
     }
   ],
   "tunnels": [],

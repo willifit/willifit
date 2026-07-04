@@ -85,6 +85,237 @@
       "height_label": "14'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1922",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w43130469",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.24506,
+      "lng": -69.80766,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43130471",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.23532,
+      "lng": -69.81215,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43130474",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.26107,
+      "lng": -69.80681,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43130490",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.28901,
+      "lng": -69.80683,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43130492",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.29775,
+      "lng": -69.80729,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43133825",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.3378,
+      "lng": -69.80763,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43133826",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.34204,
+      "lng": -69.80094,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43133829",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.32894,
+      "lng": -69.81174,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43133843",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.34602,
+      "lng": -69.79452,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43133844",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.35442,
+      "lng": -69.7859,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w43139496",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.44413,
+      "lng": -69.73723,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w49036936",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.29868,
+      "lng": -69.80757,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w299389974",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.23713,
+      "lng": -69.81023,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w299389981",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.31146,
+      "lng": -69.80932,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w872755015",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.31766,
+      "lng": -69.81211,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w872755016",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 44.31645,
+      "lng": -69.81173,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w893156757",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.28315,
+      "lng": -69.80669,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w893156758",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.27722,
+      "lng": -69.80639,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1339005407",
+      "name": "Low clearance \u2014 Water Street",
+      "addr": "Water Street",
+      "lat": 44.3184,
+      "lng": -69.77331,
+      "height_in": 153,
+      "height_label": "12'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1428906447",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.31032,
+      "lng": -69.80897,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1428906467",
+      "name": "Low clearance \u2014 Maine Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 44.30716,
+      "lng": -69.80783,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

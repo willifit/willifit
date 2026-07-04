@@ -70,9 +70,70 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w112540266",
+      "name": "Central Park Structure",
+      "addr": "128 West Main Street",
+      "lat": 46.87171,
+      "lng": -113.99534,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; covered",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "http://www.ci.missoula.mt.us/489/Parking-Structures"
+    },
+    {
+      "id": "osm-w134157709",
+      "name": "St. Patricks Hospital",
+      "addr": "",
+      "lat": 46.87506,
+      "lng": -114.00091,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w41817244",
+      "name": "North Orange Street",
+      "addr": "US 93 Bus",
+      "lat": 46.87753,
+      "lng": -113.99537,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w384182641",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 46.87172,
+      "lng": -113.9954,
+      "height_in": 78,
+      "height_label": "6'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w684901869",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 46.87381,
+      "lng": -113.99908,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-30-000000202007006",
@@ -106,6 +167,72 @@
       "height_label": "14'2\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1935",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w684901867",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 46.87372,
+      "lng": -113.99915,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w702326726",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 46.87197,
+      "lng": -113.99586,
+      "height_in": 78,
+      "height_label": "6'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w702326728",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 46.87137,
+      "lng": -113.9951,
+      "height_in": 78,
+      "height_label": "6'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1314230049",
+      "name": "Low clearance \u2014 Deer Creek Road (533)",
+      "addr": "533",
+      "lat": 46.87756,
+      "lng": -113.91326,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1381249877",
+      "name": "Low clearance \u2014 Van Buren Street (I 90 Bus;US 12)",
+      "addr": "I 90 Bus;US 12",
+      "lat": 46.86973,
+      "lng": -113.98206,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1381250238",
+      "name": "Low clearance \u2014 East Broadway Street",
+      "addr": "East Broadway Street",
+      "lat": 46.86671,
+      "lng": -113.95133,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

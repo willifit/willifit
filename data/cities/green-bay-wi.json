@@ -102,5 +102,39 @@
     }
   ],
   "tunnels": [],
-  "bridges": []
+  "bridges": [
+    {
+      "id": "osm-w1218601652",
+      "name": "Low clearance \u2014 Main Avenue (WI 32)",
+      "addr": "WI 32",
+      "lat": 44.44811,
+      "lng": -88.07647,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1218601990",
+      "name": "Low clearance \u2014 Libal Street",
+      "addr": "Libal Street",
+      "lat": 44.48863,
+      "lng": -88.00775,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1218602177",
+      "name": "Low clearance \u2014 South Monroe Avenue (WI 57)",
+      "addr": "WI 57",
+      "lat": 44.49308,
+      "lng": -88.02137,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

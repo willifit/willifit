@@ -58,6 +58,123 @@
       "entrance_lng": -94.1679388,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)",
       "website": "https://southgatervpark.com/"
+    },
+    {
+      "id": "osm-w467338306",
+      "name": "Washington County, Arkansas",
+      "addr": "125 East Dickson Street",
+      "lat": 36.06579,
+      "lng": -94.15665,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w467674732",
+      "name": "Town Center Parking Garage",
+      "addr": "15 West Mountain Street",
+      "lat": 36.06107,
+      "lng": -94.1602,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "218 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w467812258",
+      "name": "Municipal Parking Deck",
+      "addr": "25 East Meadow Street",
+      "lat": 36.06331,
+      "lng": -94.15868,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w467822892",
+      "name": "Spring St. Parking Deck",
+      "addr": "434 West Spring Street",
+      "lat": 36.06515,
+      "lng": -94.16457,
+      "height_in": 98,
+      "height_label": "8'2\"",
+      "oversized": false,
+      "notes": "236 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w467841857",
+      "name": "Parking Deck",
+      "addr": "61 West Lafayette Street",
+      "lat": 36.06821,
+      "lng": -94.16002,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w468584538",
+      "name": "Harmon Parking Garage",
+      "addr": "146 North Harmon Avenue",
+      "lat": 36.06497,
+      "lng": -94.1719,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w692803820",
+      "name": "Parking Garage",
+      "addr": "282 West Appleby Road",
+      "lat": 36.10894,
+      "lng": -94.16141,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1318872632",
+      "name": "West Avenue Parking Deck",
+      "addr": "325 North West Avenue",
+      "lat": 36.06732,
+      "lng": -94.16575,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-r16078630",
+      "name": "Garland Avenue Parking Garage",
+      "addr": "650 North Garland Avenue",
+      "lat": 36.07282,
+      "lng": -94.17485,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "1500 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -83,6 +200,39 @@
       "height_label": "14'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1907",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w563063235",
+      "name": "Low clearance \u2014 West Center Street",
+      "addr": "West Center Street",
+      "lat": 36.0629,
+      "lng": -94.16765,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w563063246",
+      "name": "Low clearance \u2014 South Thompson Street (US 71B)",
+      "addr": "US 71B",
+      "lat": 36.15776,
+      "lng": -94.14376,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1304293306",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 36.05644,
+      "lng": -94.18082,
+      "height_in": 192,
+      "height_label": "16'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

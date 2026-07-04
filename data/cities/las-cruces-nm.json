@@ -91,5 +91,72 @@
     }
   ],
   "tunnels": [],
-  "bridges": []
+  "bridges": [
+    {
+      "id": "osm-w14476057",
+      "name": "Low clearance \u2014 Geothermal Drive",
+      "addr": "Geothermal Drive",
+      "lat": 32.27973,
+      "lng": -106.73614,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w49521036",
+      "name": "Low clearance \u2014 Spruce Avenue",
+      "addr": "Spruce Avenue",
+      "lat": 32.32785,
+      "lng": -106.75563,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1088330428",
+      "name": "Low clearance \u2014 West Boutz Road",
+      "addr": "West Boutz Road",
+      "lat": 32.28575,
+      "lng": -106.78312,
+      "height_in": 197,
+      "height_label": "16'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1500194734",
+      "name": "Low clearance \u2014 South Main Street (NM 478)",
+      "addr": "NM 478",
+      "lat": 32.28145,
+      "lng": -106.7705,
+      "height_in": 205,
+      "height_label": "17'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1500195669",
+      "name": "Low clearance \u2014 Cholla Road",
+      "addr": "Cholla Road",
+      "lat": 32.26566,
+      "lng": -106.73847,
+      "height_in": 188,
+      "height_label": "15'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1500196968",
+      "name": "Low clearance \u2014 South Fairacres Road",
+      "addr": "South Fairacres Road",
+      "lat": 32.28634,
+      "lng": -106.84333,
+      "height_in": 193,
+      "height_label": "16'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

@@ -12,6 +12,70 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w378321894",
+      "name": "Third Street Parking Garage",
+      "addr": "",
+      "lat": 41.23981,
+      "lng": -77.00282,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "50 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w378321896",
+      "name": "Church Street Transportation Center",
+      "addr": "11 West Church Street",
+      "lat": 41.24,
+      "lng": -77.00077,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "330 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w728846709",
+      "name": "Trade & Transit Centre II",
+      "addr": "",
+      "lat": 41.24009,
+      "lng": -77.0037,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1221044855",
+      "name": "Lot T",
+      "addr": "",
+      "lat": 41.24085,
+      "lng": -77.00354,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1514091207",
+      "name": "Stopper Field",
+      "addr": "",
+      "lat": 41.25448,
+      "lng": -76.98455,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
@@ -109,6 +173,17 @@
       "entrance_lat": 41.075643,
       "entrance_lng": -76.9022811,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w492608227",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 41.24972,
+      "lng": -77.04466,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }
