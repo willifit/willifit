@@ -301,7 +301,8 @@
       "notes": "Terminal-adjacent garage.",
       "source": "flynashville.com",
       "sv_checked": "2026-07-03",
-      "sv_status": "no-pano"
+      "sv_status": "no-pano",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "bna-economy",
@@ -314,7 +315,8 @@
       "oversized": true,
       "notes": "Uncovered. Oversized OK.",
       "source": "flynashville.com",
-      "structure_type": "surface_lot"
+      "structure_type": "surface_lot",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "osm-w479377360",

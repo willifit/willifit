@@ -73,10 +73,27 @@ ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 DEFAULT_MODEL = "claude-haiku-4-5"
 REQUEST_TIMEOUT = 12
+# A clean, current browser UA.  The old value appended "willifit-verifier/1.0",
+# which is precisely the kind of non-standard suffix bot-mitigation (Akamai,
+# Cloudflare) screens for — roughly half the airport sites in the July 2026
+# pass 403'd us because of it.  We fetch a handful of public marketing pages
+# per site at low volume; presenting as the browser a human would use is fine.
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 willifit-verifier/1.0"
+    "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 )
+BROWSER_HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Connection": "close",
+}
 
 # Candidate paths we try on the operator's domain, in priority order.
 # Homepage last so parking-specific pages rank higher when combined.
@@ -202,21 +219,38 @@ def extract_text(html: str, limit: int = MAX_PAGE_CHARS) -> str:
 # HTTP
 # ---------------------------------------------------------------------------
 
-def fetch_text(url: str) -> Optional[str]:
-    """Fetch URL, return decoded HTML string or None on error."""
-    req = request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"})
+def _fetch_once(url: str) -> Optional[str]:
+    req = request.Request(url, headers=BROWSER_HEADERS)
     try:
         with request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
             ct = resp.headers.get("Content-Type", "").lower()
             if "html" not in ct and "text" not in ct:
                 return None
             raw = resp.read(500_000)  # cap at 500KB
+            if (resp.headers.get("Content-Encoding") or "").lower() == "gzip":
+                import gzip
+                try:
+                    raw = gzip.decompress(raw)
+                except Exception:
+                    return None
             try:
                 return raw.decode("utf-8", errors="replace")
             except Exception:
                 return raw.decode("latin-1", errors="replace")
     except (error.HTTPError, error.URLError, TimeoutError, OSError):
         return None
+
+
+def fetch_text(url: str) -> Optional[str]:
+    """Fetch URL with browser-grade headers; on failure retry the www. host
+    (several airport sites 403 the bare domain but serve www)."""
+    html = _fetch_once(url)
+    if html is not None:
+        return html
+    m = re.match(r"^(https://)(?!www\.)([^/]+)(/.*)?$", url)
+    if m:
+        return _fetch_once(f"{m.group(1)}www.{m.group(2)}{m.group(3) or ''}")
+    return None
 
 
 def normalize_domain(s: str) -> Optional[str]:

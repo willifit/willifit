@@ -386,12 +386,14 @@
       "height_in": null,
       "height_label": "No limit (uncovered)",
       "oversized": true,
-      "notes": "Small regional airport. Surface lots.",
+      "notes": "Small regional airport. Surface lots.\nOperator site (lincolnairport.com) checked 2026-07-03: no numeric clearance published.",
       "source": "flyLNK.com",
       "structure_type": "surface_lot",
       "entrance_lat": 40.8486082,
       "entrance_lng": -96.7577064,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "website": "lincolnairport.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "lin-st-elizabeth-hosp",

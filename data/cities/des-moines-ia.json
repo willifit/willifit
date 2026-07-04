@@ -272,8 +272,10 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "dsmairport.com"
+      "notes": "Terminal-adjacent.\nOperator site (flydsm.com) checked 2026-07-03: no numeric clearance published.",
+      "source": "dsmairport.com",
+      "website": "flydsm.com",
+      "wv_checked": "2026-07-03"
     },
     {
       "id": "dsm-airport-economy",
