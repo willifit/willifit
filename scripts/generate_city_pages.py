@@ -217,6 +217,41 @@ def render_quick_facts(facts: dict) -> str:
     return '<section class="quick-facts" aria-label="Quick facts">' + ''.join(cards) + '</section>'
 
 
+def build_city_intro(name: str, state_full: str, facts: dict, ver: dict,
+                     garages: list, tunnels: list, bridges: list) -> str:
+    """A unique, data-driven prose paragraph per city — every page gets
+    different numbers and different landmark names, which is exactly what
+    separates 226 real pages from 226 near-duplicate templates (for both
+    search engines and AI answer engines quoting a sentence)."""
+    total = len(garages) + len(tunnels) + len(bridges)
+    if total == 0:
+        return ""
+    bits = []
+    if facts.get("lowest"):
+        e = facts["lowest"]
+        bits.append(f"The tightest garage on file is {esc(e.get('name') or 'an unnamed structure')}, "
+                    f"posting {esc(e.get('height_label') or '?')}")
+        if facts.get("highest") and facts["highest"] is not facts["lowest"]:
+            h = facts["highest"]
+            bits[-1] += (f", while {esc(h.get('name') or 'another garage')} offers the most room "
+                         f"at {esc(h.get('height_label') or '?')}")
+        bits[-1] += "."
+    lb = [b for b in bridges if isinstance(b.get("height_in"), (int, float)) and b["height_in"] > 0]
+    if lb:
+        low_b = min(lb, key=lambda b: b["height_in"])
+        bits.append(f"The lowest posted bridge clearance in the area is "
+                    f"{esc(low_b.get('height_label') or '?')} at {esc((low_b.get('name') or 'an unnamed underpass')[:70])}.")
+    if ver.get("ai"):
+        bits.append(f"{ver['ai']} of these clearances have been AI-verified directly against "
+                    f"the posted sign in Google Street View.")
+    if facts.get("oversized_count"):
+        bits.append(f"{facts['oversized_count']} location{'s' if facts['oversized_count'] != 1 else ''} "
+                    f"{'are' if facts['oversized_count'] != 1 else 'is'} flagged oversized-vehicle-friendly.")
+    if not bits:
+        return ""
+    return '<p class="city-intro">' + " ".join(bits) + "</p>"
+
+
 def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
     """Auto-generate 4-5 Q&A pairs per city from its stats.  Used both
     as visible content (an HTML <details> list) AND as FAQPage JSON-LD,
@@ -629,6 +664,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
         margin: 40px 0 16px; padding-bottom: 6px;
         border-bottom: 1px solid var(--border); }}
   .lede {{ color: var(--muted); font-size: 16px; max-width: 640px; }}
+  .city-intro {{ color: var(--text); font-size: 15px; max-width: 720px;
+                 margin: 18px 0 6px; line-height: 1.7; }}
   .ai-pill {{
     display: inline-block; padding: 2px 8px; border-radius: 999px;
     background: rgba(14,165,233,0.15); border: 1px solid rgba(14,165,233,0.35);
@@ -809,6 +846,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <div class="stat"><b>{bridge_count}</b> low bridges</div>
   </div>
 
+  {intro}
+
   <div class="cta-row">
     <a class="cta" href="/#{slug}">Open interactive map →</a>
   </div>
@@ -846,9 +885,11 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <footer>
     <div>© {year} WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>
     <div>
-      <a href="/">Home</a> · <a href="/advertise.html">Advertise</a> ·
+      <a href="/">Home</a> · <a href="/about.html">About</a> ·
+      <a href="/advertise.html">Advertise</a> ·
       <a href="/how-ai-verification-works.html">AI verification</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
       <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a>
     </div>
   </footer>
@@ -969,6 +1010,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         state_full=esc(state_full),
         pill=pill,
         lede=esc(lede),
+        intro=build_city_intro(name, state_full, facts, ver, garages, tunnels, bridges),
         garage_count=len(garages),
         tunnel_count=len(tunnels),
         bridge_count=len(bridges),
