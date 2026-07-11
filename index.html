@@ -1915,6 +1915,124 @@
   .city-cluster.coming-soon {
     background: var(--muted); opacity: 0.5;
   }
+  /* ============================================================
+     FLUID INTERFACE LAYER — Apple-HIG-inspired motion, feedback,
+     materials, ergonomics.  Audit findings this layer fixes:
+     zero :active press states (feedback was hover-only — dead on
+     touch), no reduced-motion/transparency support, near-zero
+     material depth, no coarse-pointer tap sizing, and five
+     different ad-hoc transition timings.
+     ============================================================ */
+  :root {
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);       /* decelerate, settle — default */
+    --ease-spring: cubic-bezier(0.34, 1.28, 0.44, 1); /* slight overshoot — momentum surfaces */
+    --dur-fast: 120ms; --dur-med: 240ms; --dur-slow: 340ms;
+  }
+
+  /* 1 · Respond on press, not on release — instant, subtle sink */
+  .type-chip:active, .quick-act:active, .report-btn:active, .btn:active,
+  .vh-preset-btn:active, .vh-presets button:active, .city-row:active,
+  .modal-close:active, .retry-btn:active, .search-clear:active,
+  .city-search-clear:active, .vh-clear:active, .current-city:active,
+  .image-thumb:active, .street-view-btn:active {
+    transform: scale(0.97);
+    transition-duration: 60ms;
+  }
+  .directions-btn:active { transform: scale(0.98); transition-duration: 60ms; }
+  .garage-card:active { transform: scale(0.99); transition-duration: 60ms; }
+
+  /* 2 · One motion vocabulary (replaces 0.12/0.15/0.18/0.25s ad-hoc mix) */
+  .garage-card { transition: background var(--dur-fast) var(--ease-out), transform 60ms var(--ease-out); }
+  .type-chip, .quick-act {
+    transition: background var(--dur-fast) var(--ease-out),
+                border-color var(--dur-fast) var(--ease-out),
+                color var(--dur-fast) var(--ease-out),
+                transform 60ms var(--ease-out);
+  }
+  .detail-panel {
+    transition: transform var(--dur-slow) var(--ease-spring);
+    will-change: transform;
+  }
+
+  /* 3 · Materials — the map reads through floating chrome (depth = hierarchy) */
+  .detail-panel {
+    background: rgba(23, 27, 35, 0.84);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    backdrop-filter: blur(24px) saturate(160%);
+    box-shadow: -18px 0 50px rgba(0, 0, 0, 0.5);
+  }
+  .topbar {
+    background: rgba(23, 27, 35, 0.9);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(16px) saturate(160%);
+  }
+  .vh-presets, .search-suggestions {
+    background: rgba(23, 27, 35, 0.88);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    backdrop-filter: blur(20px) saturate(160%);
+  }
+  .modal {
+    background: rgba(23, 27, 35, 0.93);
+    -webkit-backdrop-filter: blur(28px) saturate(160%);
+    backdrop-filter: blur(28px) saturate(160%);
+  }
+
+  /* 4 · Materialize from the trigger — scale+fade anchored to origin,
+     enter and exit along the same path */
+  @keyframes wf-materialize {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @keyframes wf-fade { from { opacity: 0; } to { opacity: 1; } }
+  .vh-presets { transform-origin: top right; animation: wf-materialize var(--dur-med) var(--ease-out); }
+  .search-suggestions { transform-origin: top left; animation: wf-materialize var(--dur-med) var(--ease-out); }
+  .modal-overlay.open { animation: wf-fade var(--dur-med) var(--ease-out); }
+  .modal-overlay.open .modal { animation: wf-materialize var(--dur-med) var(--ease-out); transform-origin: center 42%; }
+
+  /* Scroll edge — content fades under the filter chrome instead of a hard line */
+  .filters { position: relative; }
+  .filters::after {
+    content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 14px;
+    background: linear-gradient(rgba(23, 27, 35, 0.9), transparent);
+    pointer-events: none; z-index: 5;
+  }
+
+  /* 5 · Typography — size-specific tracking on the biggest UI text */
+  .detail-name { letter-spacing: -0.01em; }
+
+  /* 6 · Touch ergonomics — comfortable targets on coarse pointers */
+  @media (pointer: coarse) {
+    .type-chip { min-height: 38px; padding: 8px 14px; }
+    .quick-act { min-height: 40px; }
+    .vh-preset-btn, .vh-clear, .search-clear, .city-search-clear { min-height: 38px; min-width: 38px; }
+    .vh-presets button { padding: 12px; }
+    .directions-alt a { display: inline-block; padding: 8px 4px; }
+  }
+
+  /* 7 · Respect the user's motion & transparency settings */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    .detail-panel, .topbar, .vh-presets, .search-suggestions, .modal {
+      background: var(--panel);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
+  @media (prefers-contrast: more) {
+    .detail-panel, .vh-presets, .search-suggestions, .modal {
+      background: var(--panel);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+      border-color: var(--text);
+    }
+  }
 </style>
 </head>
 <body>
