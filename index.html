@@ -3231,7 +3231,12 @@ function initMapOSM() {
   // Two base layers — users toggle via the layer control (top-right of the
   // map).  Street is default; satellite uses Esri World Imagery (free,
   // public, no API key, but requires the attribution string below).
-  const streetLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  // 1x tiles (no {r}/@2x): the base map IS the homepage LCP element, and
+  // @2x retina tiles run 2-4x the bytes — serving 1x roughly halves tile
+  // weight for a materially faster LCP.  Garage names/heights live in our
+  // DOM markers, not baked into the tile, so only the base-map street
+  // labels soften slightly on retina — an easy trade for the load win.
+  const streetLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap © CARTO | WillIFit beta',
   });
@@ -4283,7 +4288,7 @@ function renderBrowseTab() {
 function initPickerMap() {
   if (state.pickerMap) { state.pickerMap.invalidateSize(); return; }
   state.pickerMap = L.map('pickerMap', { zoomControl: true }).setView([39.5, -98.5], 4);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap © CARTO',
   }).addTo(state.pickerMap);
