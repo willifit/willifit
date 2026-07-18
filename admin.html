@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Not indexed by search engines -- this is an admin-only page. -->
 <meta name="robots" content="noindex, nofollow">
+<!-- CSP: defense-in-depth.  This page renders attacker-submitted report text
+     (notes, names, contact) -- every field is escaped via escapeHtml(), and
+     this policy is the second line: even if an escape were ever missed, an
+     injected <script> or remote beacon has nowhere to run or phone home.
+     The page is fully self-contained: inline CSS/JS, one same-origin fetch. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
 <title>Willifit Admin — Pending Reports</title>
 <style>
   :root {

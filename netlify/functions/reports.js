@@ -33,10 +33,14 @@
 
 exports.handler = async (event) => {
   // CORS + method guard
+  // Shared response headers.  no-store because a successful response carries
+  // reporter PII (contact emails submitted with reports) — it must never come
+  // to rest in a browser, proxy, or CDN cache.
   const cors = {
     "access-control-allow-origin": "https://willifit.ai",
     "access-control-allow-headers": "content-type, x-willifit-admin",
     "access-control-allow-methods": "GET, OPTIONS",
+    "cache-control": "no-store",
   };
   if (event.httpMethod === "OPTIONS") {
     return { statusCode: 204, headers: cors, body: "" };
@@ -201,10 +205,15 @@ function numOrNull(v) {
   return Number.isFinite(n) ? n : null;
 }
 
+const crypto = require("crypto");
+
+// Compare via fixed-width SHA-256 digests.  The previous implementation
+// returned early when the lengths differed, which leaks the password's
+// LENGTH through response timing.  Hashing first makes every comparison
+// exactly 32 bytes wide, so timing reveals nothing about the secret.
 function constantTimeEqual(a, b) {
   if (typeof a !== "string" || typeof b !== "string") return false;
-  if (a.length !== b.length) return false;
-  let out = 0;
-  for (let i = 0; i < a.length; i++) out |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return out === 0;
+  const ha = crypto.createHash("sha256").update(a, "utf8").digest();
+  const hb = crypto.createHash("sha256").update(b, "utf8").digest();
+  return crypto.timingSafeEqual(ha, hb);
 }
