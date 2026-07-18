@@ -60,12 +60,38 @@ exports.handler = async (event) => {
       body: JSON.stringify({ error: "WILLIFIT_ADMIN_PASSWORD not configured" }),
     };
   }
-  if (!constantTimeEqual(supplied, expected)) {
-    // Throttle brute-force guesses. No shared state across cold starts, but it
-    // caps the effective guess rate per warm connection to ~2/sec.
-    await new Promise((r) => setTimeout(r, 500));
-    return { statusCode: 403, headers: cors, body: JSON.stringify({ error: "forbidden" }) };
+  // Rate-limit BEFORE evaluating the password, so a blocked client burns no
+  // guesses at all.  Every limiter path fails open (see helpers below) — a
+  // limiter outage must never lock the operator out of their own queue.
+  const ip = clientIp(event);
+  const store = await getBlobStore();
+  const now = Date.now();
+  const rec = normalizeRecord(await readRec(store, ip), now);
+
+  if (rec.blockedUntil > now) {
+    const retryAfter = Math.ceil((rec.blockedUntil - now) / 1000);
+    return {
+      statusCode: 429,
+      headers: { ...cors, "retry-after": String(retryAfter) },
+      body: JSON.stringify({ error: "too many attempts", retry_after_seconds: retryAfter }),
+    };
   }
+
+  if (!constantTimeEqual(supplied, expected)) {
+    rec.fails += 1;
+    if (rec.fails >= MAX_FAILS) rec.blockedUntil = now + BLOCK_MS;
+    await writeRec(store, ip, rec);
+    // Delay on top of the counter so even the first few guesses are slow.
+    await new Promise((r) => setTimeout(r, 500));
+    return {
+      statusCode: 403,
+      headers: { ...cors, "x-ratelimit-remaining": String(Math.max(0, MAX_FAILS - rec.fails)) },
+      body: JSON.stringify({ error: "forbidden" }),
+    };
+  }
+
+  // Correct password — clear this IP's failure record.
+  await clearRec(store, ip);
 
   const token = process.env.NETLIFY_FORMS_TOKEN;
   const siteId = process.env.NETLIFY_SITE_ID;
@@ -203,6 +229,78 @@ function numOrNull(v) {
   if (v === null || v === undefined || v === "") return null;
   const n = parseInt(v, 10);
   return Number.isFinite(n) ? n : null;
+}
+
+/* ---------------------------------------------------------------------
+   Brute-force rate limiting.  Two tiers, both best-effort, both fail-open:
+
+     1. Netlify Blobs — shared across containers, so a distributed attack is
+        genuinely capped.  Imported under a VARIABLE module name so the
+        bundler cannot statically resolve it and fail the build on this
+        deliberately dependency-free (no package.json) site.
+     2. Per-container memory — only partial coverage since functions scale
+        horizontally, but it is free and always available.
+
+   If both are unavailable the endpoint behaves exactly as it did before and
+   the password remains the real control.  That is the intended trade: a
+   limiter that silently degrades beats one that can lock you out.
+   ------------------------------------------------------------------ */
+const MAX_FAILS = 8;                  // wrong guesses allowed per window
+const WINDOW_MS = 15 * 60 * 1000;     // rolling window
+const BLOCK_MS = 15 * 60 * 1000;      // lockout once the window is spent
+
+const memHits = new Map();
+
+function clientIp(event) {
+  const raw = event.headers["x-nf-client-connection-ip"] ||
+              (event.headers["x-forwarded-for"] || "").split(",")[0] || "";
+  return (raw.trim() || "unknown").replace(/[^a-zA-Z0-9._-]/g, "_").slice(0, 60);
+}
+
+async function getBlobStore() {
+  try {
+    const mod = "@netlify/blobs";      // variable name defeats static bundling
+    const { getStore } = await import(mod);
+    return getStore("admin-rate-limit");
+  } catch (e) {
+    return null;                       // Blobs unavailable — tier 2 only
+  }
+}
+
+function normalizeRecord(rec, now) {
+  if (!rec || typeof rec !== "object") return { fails: 0, first: now, blockedUntil: 0 };
+  const out = {
+    fails: Number(rec.fails) || 0,
+    first: Number(rec.first) || now,
+    blockedUntil: Number(rec.blockedUntil) || 0,
+  };
+  if (out.blockedUntil > now) return out;                       // block in force
+  if (now - out.first > WINDOW_MS) return { fails: 0, first: now, blockedUntil: 0 };
+  return out;
+}
+
+async function readRec(store, ip) {
+  if (store) {
+    try {
+      const v = await store.get(ip, { type: "json" });
+      if (v) return v;
+    } catch (e) { /* fall through to memory */ }
+  }
+  return memHits.get(ip) || null;
+}
+
+async function writeRec(store, ip, rec) {
+  memHits.set(ip, rec);                // local copy always
+  if (store) {
+    try { await store.setJSON(ip, rec); } catch (e) { /* best effort */ }
+  }
+}
+
+async function clearRec(store, ip) {
+  memHits.delete(ip);
+  if (store) {
+    try { await store.delete(ip); } catch (e) { /* best effort */ }
+  }
 }
 
 const crypto = require("crypto");
