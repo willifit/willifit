@@ -54,6 +54,68 @@
       "entrance_lat": 41.1725957,
       "entrance_lng": -80.5714224,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w532656437",
+      "name": "Champion Street Garage",
+      "addr": "",
+      "lat": 41.10011,
+      "lng": -80.64813,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w536242698",
+      "name": "Boardman Street Garage",
+      "addr": "",
+      "lat": 41.09934,
+      "lng": -80.65125,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w817918272",
+      "name": "Struthers Park Department",
+      "addr": "",
+      "lat": 41.04334,
+      "lng": -80.59762,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1367012329",
+      "name": "Courtyards Visitor Parking",
+      "addr": "",
+      "lat": 41.10636,
+      "lng": -80.64146,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1372091572",
+      "name": "Ohio Department of Transportation",
+      "addr": "",
+      "lat": 41.17876,
+      "lng": -80.53276,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [],
@@ -134,6 +196,127 @@
       "height_label": "14'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 2004",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1273573235",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.18516,
+      "lng": -80.72141,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337735423",
+      "name": "Low clearance \u2014 West Park Avenue",
+      "addr": "West Park Avenue",
+      "lat": 41.18128,
+      "lng": -80.78792,
+      "height_in": 149,
+      "height_label": "12'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337739119",
+      "name": "Low clearance \u2014 Olive Street",
+      "addr": "Olive Street",
+      "lat": 41.16975,
+      "lng": -80.73592,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337740861",
+      "name": "Low clearance \u2014 North West Avenue",
+      "addr": "North West Avenue",
+      "lat": 41.10346,
+      "lng": -80.66384,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337742607",
+      "name": "Low clearance \u2014 Oak Hill Avenue",
+      "addr": "Oak Hill Avenue",
+      "lat": 41.10099,
+      "lng": -80.65725,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337745102",
+      "name": "Low clearance \u2014 Drummond Avenue",
+      "addr": "Drummond Avenue",
+      "lat": 41.18664,
+      "lng": -80.58579,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337745857",
+      "name": "Low clearance \u2014 Chestnut Ridge Road",
+      "addr": "Chestnut Ridge Road",
+      "lat": 41.19311,
+      "lng": -80.58589,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337746117",
+      "name": "Low clearance \u2014 Wick Campbell Road",
+      "addr": "Wick Campbell Road",
+      "lat": 41.20285,
+      "lng": -80.59105,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337746159",
+      "name": "Low clearance \u2014 Wick Campbell Road",
+      "addr": "Wick Campbell Road",
+      "lat": 41.1957,
+      "lng": -80.58717,
+      "height_in": 137,
+      "height_label": "11'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337746982",
+      "name": "Low clearance \u2014 Albright McKay Road Southeast",
+      "addr": "Albright McKay Road Southeast",
+      "lat": 41.22659,
+      "lng": -80.60302,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337747140",
+      "name": "Low clearance \u2014 Stewart Sharon Road",
+      "addr": "Stewart Sharon Road",
+      "lat": 41.21372,
+      "lng": -80.59696,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

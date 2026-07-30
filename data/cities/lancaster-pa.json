@@ -31,7 +31,74 @@
       "website": "http://www.oldmillstreamcampground.com/"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w97870559",
+      "name": "Greenfield Road",
+      "addr": "Greenfield Road",
+      "lat": 40.04385,
+      "lng": -76.25407,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w97870700",
+      "name": "Old Philadelphia Pike",
+      "addr": "PA 340",
+      "lat": 40.03865,
+      "lng": -76.18217,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w270006647",
+      "name": "Prospect Road",
+      "addr": "Prospect Road",
+      "lat": 40.02719,
+      "lng": -76.45497,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w299143416",
+      "name": "Kiwanis Road",
+      "addr": "Kiwanis Road",
+      "lat": 40.01517,
+      "lng": -76.28227,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "layer 1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1192911415",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 40.07414,
+      "lng": -76.32144,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1489798825",
+      "name": "Martha Avenue",
+      "addr": "Martha Avenue",
+      "lat": 40.05301,
+      "lng": -76.29565,
+      "height_in": 127,
+      "height_label": "10'7\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-42-000000000021396",

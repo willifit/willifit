@@ -44,6 +44,84 @@
       "entrance_lat": 37.2756081,
       "entrance_lng": -80.0190584,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w97637084",
+      "name": "Five Market Street",
+      "addr": "",
+      "lat": 37.27273,
+      "lng": -79.93965,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w166671654",
+      "name": "Church Avenue Garage",
+      "addr": "121 Church Avenue Southwest",
+      "lat": 37.27076,
+      "lng": -79.94307,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w166671658",
+      "name": "Center in the Square Garage",
+      "addr": "11 Campbell Avenue Southeast",
+      "lat": 37.27146,
+      "lng": -79.93982,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w222718433",
+      "name": "Carilion Community Hospital Parking",
+      "addr": "",
+      "lat": 37.26531,
+      "lng": -79.93873,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1126765897",
+      "name": "Appalachian Power",
+      "addr": "",
+      "lat": 37.26861,
+      "lng": -79.94303,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1333514746",
+      "name": "Carilion Clinic",
+      "addr": "",
+      "lat": 37.24991,
+      "lng": -79.94491,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -256,6 +334,105 @@
       "height_label": "14'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1958; bridge carries BLUE RIDGE PARKWAY",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w20458465",
+      "name": "Low clearance \u2014 US 220",
+      "addr": "US 220",
+      "lat": 37.34192,
+      "lng": -79.99688,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w51250648",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 37.33928,
+      "lng": -79.99801,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55056677",
+      "name": "Low clearance \u2014 Walnut Avenue",
+      "addr": "Walnut Avenue",
+      "lat": 37.27813,
+      "lng": -79.91208,
+      "height_in": 135,
+      "height_label": "11'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w120390449",
+      "name": "Low clearance \u2014 US 220",
+      "addr": "US 220",
+      "lat": 37.34061,
+      "lng": -79.99772,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w363784911",
+      "name": "Low clearance \u2014 Humbert Road (SR 653)",
+      "addr": "SR 653",
+      "lat": 37.39488,
+      "lng": -79.89674,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w964685632",
+      "name": "Low clearance \u2014 Orange Avenue Northeast (US 460;US 11 Alt;US 220 Alt;VA 116)",
+      "addr": "US 460;US 11 Alt;US 220 Alt;VA 116",
+      "lat": 37.28229,
+      "lng": -79.93865,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1381047655",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.2987,
+      "lng": -80.02741,
+      "height_in": 85,
+      "height_label": "7'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1427377928",
+      "name": "Low clearance \u2014 Lee Highway (US 11)",
+      "addr": "US 11",
+      "lat": 37.37427,
+      "lng": -79.90488,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1427384307",
+      "name": "Low clearance \u2014 Old Station Loop (SR 720)",
+      "addr": "SR 720",
+      "lat": 37.2254,
+      "lng": -79.80943,
+      "height_in": 145,
+      "height_label": "12'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

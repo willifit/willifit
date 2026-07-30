@@ -1,5 +1,32 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "osm-w231749754",
+      "name": "Hanover Public Parking Garage",
+      "addr": "1 Currier Place",
+      "lat": 43.70032,
+      "lng": -72.28785,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w294234145",
+      "name": "63 South Main Street Parking Deck",
+      "addr": "16 School Street",
+      "lat": 43.70025,
+      "lng": -72.29097,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "64 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    }
+  ],
   "tunnels": [],
   "bridges": [
     {
@@ -202,6 +229,83 @@
       "height_label": "14'7\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1928",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w4304211",
+      "name": "Low clearance \u2014 Mascoma Street",
+      "addr": "Mascoma Street",
+      "lat": 43.63926,
+      "lng": -72.26647,
+      "height_in": 106,
+      "height_label": "8'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w4304254",
+      "name": "Low clearance \u2014 Glen Road",
+      "addr": "Glen Road",
+      "lat": 43.63462,
+      "lng": -72.30674,
+      "height_in": 107,
+      "height_label": "8'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w18850006",
+      "name": "Low clearance \u2014 Hardy Hill Road",
+      "addr": "Hardy Hill Road",
+      "lat": 43.64015,
+      "lng": -72.22134,
+      "height_in": 161,
+      "height_label": "13'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w23571352",
+      "name": "Low clearance \u2014 Bridge Street",
+      "addr": "Bridge Street",
+      "lat": 43.6493,
+      "lng": -72.31914,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w828523356",
+      "name": "Low clearance \u2014 Maple Street (US 4)",
+      "addr": "US 4",
+      "lat": 43.65121,
+      "lng": -72.31625,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w828523359",
+      "name": "Low clearance \u2014 Hartford Avenue (US 5)",
+      "addr": "US 5",
+      "lat": 43.68233,
+      "lng": -72.31537,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w874487234",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 43.70054,
+      "lng": -72.28799,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

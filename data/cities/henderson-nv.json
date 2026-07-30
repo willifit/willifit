@@ -304,7 +304,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w733999338",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 36.07219,
+      "lng": -115.03019,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "hen-mike-ocallaghan-bridge",
@@ -332,6 +344,50 @@
       "height_label": "14'0\"",
       "notes": "Standard beltway clearance.",
       "source": "NDOT"
+    },
+    {
+      "id": "osm-w285414736",
+      "name": "Low clearance \u2014 North Water Street",
+      "addr": "North Water Street",
+      "lat": 36.0677,
+      "lng": -114.96755,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w313311693",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 36.11497,
+      "lng": -115.10117,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w980788834",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 35.9716,
+      "lng": -114.84909,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w990471777",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 35.99692,
+      "lng": -115.12626,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

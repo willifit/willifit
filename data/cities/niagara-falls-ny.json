@@ -185,6 +185,116 @@
       "entrance_lat": 43.1100998,
       "entrance_lng": -79.0567219,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w5715172",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 43.07414,
+      "lng": -78.99049,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w24679471",
+      "name": "Low clearance \u2014 Niagara Scenic Parkway",
+      "addr": "Niagara Scenic Parkway",
+      "lat": 43.07446,
+      "lng": -78.99172,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55548007",
+      "name": "Low clearance \u2014 Park Street",
+      "addr": "Park Street",
+      "lat": 43.10766,
+      "lng": -79.06128,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55548368",
+      "name": "Low clearance \u2014 Zimmerman Avenue",
+      "addr": "Zimmerman Avenue",
+      "lat": 43.10716,
+      "lng": -79.06192,
+      "height_in": 130,
+      "height_label": "10'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55548716",
+      "name": "Low clearance \u2014 River Road",
+      "addr": "River Road",
+      "lat": 43.09189,
+      "lng": -79.06914,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55551929",
+      "name": "Low clearance \u2014 Park Street",
+      "addr": "Park Street",
+      "lat": 43.10764,
+      "lng": -79.06016,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55792596",
+      "name": "Low clearance \u2014 Niagara Parkway",
+      "addr": "Niagara Parkway",
+      "lat": 43.15474,
+      "lng": -79.04843,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w112412946",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 43.07483,
+      "lng": -78.98959,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1016416961",
+      "name": "Low clearance \u2014 Niagara Scenic Parkway",
+      "addr": "Niagara Scenic Parkway",
+      "lat": 43.08015,
+      "lng": -78.98144,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1083586117",
+      "name": "Low clearance \u2014 Niagara Parkway",
+      "addr": "Niagara Parkway",
+      "lat": 43.1577,
+      "lng": -79.05019,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

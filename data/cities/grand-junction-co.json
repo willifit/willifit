@@ -274,5 +274,215 @@
       "source": "OpenStreetMap"
     }
   ],
-  "bridges": []
+  "bridges": [
+    {
+      "id": "osm-w32177519",
+      "name": "Low clearance \u2014 Frontage Road",
+      "addr": "Frontage Road",
+      "lat": 39.12801,
+      "lng": -108.68385,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32182508",
+      "name": "Low clearance \u2014 23 Road (23)",
+      "addr": "23",
+      "lat": 39.11398,
+      "lng": -108.62668,
+      "height_in": 214,
+      "height_label": "17'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32184972",
+      "name": "Low clearance \u2014 24 1/2 Road (24\u00bd)",
+      "addr": "24\u00bd",
+      "lat": 39.11387,
+      "lng": -108.5988,
+      "height_in": 218,
+      "height_label": "18'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32186059",
+      "name": "Low clearance \u2014 25 Road (25)",
+      "addr": "25",
+      "lat": 39.11384,
+      "lng": -108.58952,
+      "height_in": 185,
+      "height_label": "15'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32188334",
+      "name": "Low clearance \u2014 26 Road (26)",
+      "addr": "26",
+      "lat": 39.1147,
+      "lng": -108.57086,
+      "height_in": 205,
+      "height_label": "17'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32189543",
+      "name": "Low clearance \u2014 26 1/2 Road (26\u00bd)",
+      "addr": "26\u00bd",
+      "lat": 39.11545,
+      "lng": -108.56161,
+      "height_in": 220,
+      "height_label": "18'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32190992",
+      "name": "Low clearance \u2014 27 Road (27)",
+      "addr": "27",
+      "lat": 39.1157,
+      "lng": -108.55233,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32194119",
+      "name": "Low clearance \u2014 29 Road (29)",
+      "addr": "29",
+      "lat": 39.10818,
+      "lng": -108.51117,
+      "height_in": 212,
+      "height_label": "17'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w32195222",
+      "name": "Low clearance \u2014 33 Road (33)",
+      "addr": "33",
+      "lat": 39.10688,
+      "lng": -108.44102,
+      "height_in": 200,
+      "height_label": "16'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w121874877",
+      "name": "Low clearance \u2014 24 Road (24)",
+      "addr": "24",
+      "lat": 39.1139,
+      "lng": -108.60828,
+      "height_in": 203,
+      "height_label": "16'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w230915981",
+      "name": "Low clearance \u2014 I 70",
+      "addr": "I 70",
+      "lat": 39.10642,
+      "lng": -108.44172,
+      "height_in": 189,
+      "height_label": "15'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w610931008",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.09123,
+      "lng": -108.55096,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w613091289",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.06777,
+      "lng": -108.56907,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w628656903",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.11253,
+      "lng": -108.5419,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w638621262",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.07778,
+      "lng": -108.518,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w649786208",
+      "name": "Low clearance \u2014 30 Road (30)",
+      "addr": "30",
+      "lat": 39.07692,
+      "lng": -108.49647,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w685026627",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.06684,
+      "lng": -108.57042,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1188392076",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.09147,
+      "lng": -108.57211,
+      "height_in": 82,
+      "height_label": "6'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1188392169",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.09097,
+      "lng": -108.57142,
+      "height_in": 82,
+      "height_label": "6'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

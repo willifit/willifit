@@ -41,7 +41,30 @@
       "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w51749851",
+      "name": "South Burhans Boulevard East",
+      "addr": "US 11",
+      "lat": 39.64378,
+      "lng": -77.73482,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w94818596",
+      "name": "Mitchell Avenue",
+      "addr": "Mitchell Avenue",
+      "lat": 39.65421,
+      "lng": -77.72329,
+      "height_in": 127,
+      "height_label": "10'7\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-24-100000210040020",

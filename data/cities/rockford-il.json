@@ -153,6 +153,19 @@
       "source": "OpenStreetMap",
       "sv_checked": "2026-07-03",
       "sv_status": "no-sign"
+    },
+    {
+      "id": "osm-w823970377",
+      "name": "Pioneer Garage",
+      "addr": "325 North Main Street",
+      "lat": 42.2736,
+      "lng": -89.09233,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "654 spaces; paid; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],

@@ -156,6 +156,171 @@
       "height_label": "14'9\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1932",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1212951993",
+      "name": "Low clearance \u2014 West Charter Oak Road",
+      "addr": "West Charter Oak Road",
+      "lat": 40.75773,
+      "lng": -89.64709,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212952389",
+      "name": "Low clearance \u2014 West Richwoods Boulevard",
+      "addr": "West Richwoods Boulevard",
+      "lat": 40.73369,
+      "lng": -89.6559,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212952611",
+      "name": "Low clearance \u2014 South Kickapoo Creek Road (CR R51)",
+      "addr": "CR R51",
+      "lat": 40.66382,
+      "lng": -89.65182,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1449259581",
+      "name": "Low clearance \u2014 Center Street",
+      "addr": "Center Street",
+      "lat": 40.66742,
+      "lng": -89.58809,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1501501718",
+      "name": "Low clearance \u2014 Richland Street",
+      "addr": "Richland Street",
+      "lat": 40.67215,
+      "lng": -89.59384,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1502381863",
+      "name": "Low clearance \u2014 North Main Street",
+      "addr": "North Main Street",
+      "lat": 40.6213,
+      "lng": -89.45051,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518710698",
+      "name": "Low clearance \u2014 South Kickapoo Creek Road",
+      "addr": "South Kickapoo Creek Road",
+      "lat": 40.68122,
+      "lng": -89.65616,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518710900",
+      "name": "Low clearance \u2014 South Kickapoo Creek Road (CR R51)",
+      "addr": "CR R51",
+      "lat": 40.65477,
+      "lng": -89.6481,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518715789",
+      "name": "Low clearance \u2014 Edmund Street",
+      "addr": "Edmund Street",
+      "lat": 40.66938,
+      "lng": -89.59043,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518717202",
+      "name": "Low clearance \u2014 South Main Street (US 24;IL 8;IL 116;IL 29)",
+      "addr": "US 24;IL 8;IL 116;IL 29",
+      "lat": 40.6639,
+      "lng": -89.58368,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518718738",
+      "name": "Low clearance \u2014 East War Memorial Drive (US 150)",
+      "addr": "US 150",
+      "lat": 40.72473,
+      "lng": -89.56087,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518719953",
+      "name": "Low clearance \u2014 US 150",
+      "addr": "US 150",
+      "lat": 40.71493,
+      "lng": -89.52634,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518720585",
+      "name": "Low clearance \u2014 North Main Street (IL 116)",
+      "addr": "IL 116",
+      "lat": 40.7165,
+      "lng": -89.52857,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518721374",
+      "name": "Low clearance \u2014 North Main Street (US 24;IL 116)",
+      "addr": "US 24;IL 116",
+      "lat": 40.71498,
+      "lng": -89.52945,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1518722148",
+      "name": "Low clearance \u2014 College Drive",
+      "addr": "College Drive",
+      "lat": 40.70644,
+      "lng": -89.52338,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

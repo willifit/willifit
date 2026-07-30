@@ -50,6 +50,45 @@
       "entrance_lng": -86.1162876,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
       "website": "https://rjourney.com/park/in/elkhart"
+    },
+    {
+      "id": "osm-w178456602",
+      "name": "Memorial Hospital of South Bend",
+      "addr": "",
+      "lat": 41.6837,
+      "lng": -86.25325,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "0 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w380177772",
+      "name": "DTSB, Inc.",
+      "addr": "",
+      "lat": 41.67551,
+      "lng": -86.25075,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w987184806",
+      "name": "Eddy Street Commons Parking Garage",
+      "addr": "",
+      "lat": 41.69171,
+      "lng": -86.23419,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [

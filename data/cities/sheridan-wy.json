@@ -53,7 +53,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1459415086",
+      "name": "Wildcat Road",
+      "addr": "Wildcat Road",
+      "lat": 44.80628,
+      "lng": -106.90994,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-56-BBB",
@@ -142,6 +154,39 @@
       "height_label": "13'11\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1983; bridge carries I-90 EBL",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w48523843",
+      "name": "Low clearance \u2014 I 90;US 14;US 87",
+      "addr": "I 90;US 14;US 87",
+      "lat": 44.83822,
+      "lng": -106.97201,
+      "height_in": 233,
+      "height_label": "19'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1459415064",
+      "name": "Low clearance \u2014 North Sheridan Avenue",
+      "addr": "North Sheridan Avenue",
+      "lat": 44.79938,
+      "lng": -106.94845,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1531240748",
+      "name": "Low clearance \u2014 5th Street (WY 336)",
+      "addr": "WY 336",
+      "lat": 44.80477,
+      "lng": -106.93688,
+      "height_in": 209,
+      "height_label": "17'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

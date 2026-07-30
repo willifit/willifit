@@ -228,7 +228,19 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w686060806",
+      "name": "Southwest 6th Avenue",
+      "addr": "Loop 279;HR 66",
+      "lat": 35.21008,
+      "lng": -101.85499,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-48-041880027501171",

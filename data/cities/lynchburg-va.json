@@ -170,7 +170,52 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w439789033",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.3677,
+      "lng": -79.17433,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "6 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w439893295",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.36897,
+      "lng": -79.18016,
+      "height_in": 103,
+      "height_label": "8'7\"",
+      "notes": "1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w542525222",
+      "name": "Carroll Avenue",
+      "addr": "Carroll Avenue",
+      "lat": 37.39024,
+      "lng": -79.15936,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w562329312",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.41597,
+      "lng": -79.14813,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-51-000000000020550",
@@ -193,6 +238,50 @@
       "height_label": "13'3\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1960; bridge carries BLUE RIDGE PARKWAY",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w40398433",
+      "name": "Low clearance \u2014 Campbell Avenue",
+      "addr": "Campbell Avenue",
+      "lat": 37.39827,
+      "lng": -79.1534,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w525476972",
+      "name": "Low clearance \u2014 Lynchburg Expressway (US 501)",
+      "addr": "US 501",
+      "lat": 37.37763,
+      "lng": -79.22013,
+      "height_in": 189,
+      "height_label": "15'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w525476975",
+      "name": "Low clearance \u2014 Lynchburg Expressway (US 501)",
+      "addr": "US 501",
+      "lat": 37.3663,
+      "lng": -79.20326,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1411909428",
+      "name": "Low clearance \u2014 Florida Avenue",
+      "addr": "Florida Avenue",
+      "lat": 37.39646,
+      "lng": -79.13816,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

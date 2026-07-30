@@ -145,6 +145,58 @@
       "entrance_lat": 30.3961543,
       "entrance_lng": -88.9727578,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w165926079",
+      "name": "Palace Casino Parking Garage",
+      "addr": "132 Howard Avenue",
+      "lat": 30.39592,
+      "lng": -88.85936,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "0 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w328444443",
+      "name": "City of Biloxi / Keesler Federal Park",
+      "addr": "",
+      "lat": 30.39452,
+      "lng": -88.89339,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w334682867",
+      "name": "Beau Rivage Casino",
+      "addr": "",
+      "lat": 30.39303,
+      "lng": -88.89321,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-r4727710",
+      "name": "Hard Rock Casino Parking Garage",
+      "addr": "",
+      "lat": 30.39235,
+      "lng": -88.8865,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],

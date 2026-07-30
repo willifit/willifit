@@ -309,7 +309,85 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w7739061",
+      "name": "18th Street North",
+      "addr": "18th Street North",
+      "lat": 33.5119,
+      "lng": -86.80771,
+      "height_in": 154,
+      "height_label": "12'10\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w7782142",
+      "name": "Cedar Street",
+      "addr": "Cedar Street",
+      "lat": 33.57486,
+      "lng": -86.78834,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w78518891",
+      "name": "5th Avenue North",
+      "addr": "5th Avenue North",
+      "lat": 33.52249,
+      "lng": -86.79912,
+      "height_in": 115,
+      "height_label": "9'7\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w259318947",
+      "name": "20th Street South",
+      "addr": "20th Street South",
+      "lat": 33.51306,
+      "lng": -86.80474,
+      "height_in": 160,
+      "height_label": "13'4\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w608662041",
+      "name": "6th Avenue South",
+      "addr": "6th Avenue South",
+      "lat": 33.49843,
+      "lng": -86.81871,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w678510928",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 33.37304,
+      "lng": -86.80954,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1258436313",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 33.56122,
+      "lng": -86.75135,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "layer 0",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "bhm-i65-low-downtown",
@@ -332,6 +410,270 @@
       "height_label": "14'0\"",
       "notes": "Rebuilt downtown interchange.",
       "source": "ALDOT"
+    },
+    {
+      "id": "osm-w7740828",
+      "name": "Low clearance \u2014 Daniel Payne Drive",
+      "addr": "Daniel Payne Drive",
+      "lat": 33.54841,
+      "lng": -86.87825,
+      "height_in": 210,
+      "height_label": "17'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w7742261",
+      "name": "Low clearance \u2014 1st Avenue South",
+      "addr": "1st Avenue South",
+      "lat": 33.53765,
+      "lng": -86.75233,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w107920517",
+      "name": "Low clearance \u2014 Shades Creek Parkway (AL 149)",
+      "addr": "AL 149",
+      "lat": 33.47079,
+      "lng": -86.77264,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w233778130",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.50844,
+      "lng": -86.78717,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w507687476",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.50944,
+      "lng": -86.78724,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w723793130",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.65269,
+      "lng": -86.81971,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w734555025",
+      "name": "Low clearance \u2014 McDonald's Drive Thru",
+      "addr": "McDonald's Drive Thru",
+      "lat": 33.52461,
+      "lng": -86.72277,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w745995824",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.58762,
+      "lng": -86.69872,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w751589713",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.54118,
+      "lng": -86.82768,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w872864046",
+      "name": "Low clearance \u2014 Shades Creek Parkway (AL 149)",
+      "addr": "AL 149",
+      "lat": 33.46861,
+      "lng": -86.77739,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1002605912",
+      "name": "Low clearance \u2014 22nd Street North",
+      "addr": "22nd Street North",
+      "lat": 33.40411,
+      "lng": -86.94767,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1082409684",
+      "name": "Low clearance \u2014 19th Street South",
+      "addr": "19th Street South",
+      "lat": 33.51244,
+      "lng": -86.80619,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1117494447",
+      "name": "Low clearance \u2014 Daniel Payne Drive",
+      "addr": "Daniel Payne Drive",
+      "lat": 33.55303,
+      "lng": -86.87749,
+      "height_in": 210,
+      "height_label": "17'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231210536",
+      "name": "Low clearance \u2014 Montevallo Road Southwest",
+      "addr": "Montevallo Road Southwest",
+      "lat": 33.49653,
+      "lng": -86.83959,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231211648",
+      "name": "Low clearance \u2014 14th Street North",
+      "addr": "14th Street North",
+      "lat": 33.50917,
+      "lng": -86.81315,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231215390",
+      "name": "Low clearance \u2014 Reverend Abraham Woods Jr Boulevard",
+      "addr": "Reverend Abraham Woods Jr Boulevard",
+      "lat": 33.52612,
+      "lng": -86.80088,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231215594",
+      "name": "Low clearance \u2014 Messer Airport Highway",
+      "addr": "Messer Airport Highway",
+      "lat": 33.5262,
+      "lng": -86.79112,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231216301",
+      "name": "Low clearance \u2014 15th Avenue North",
+      "addr": "15th Avenue North",
+      "lat": 33.53604,
+      "lng": -86.807,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231217752",
+      "name": "Low clearance \u2014 16th Street North",
+      "addr": "16th Street North",
+      "lat": 33.5377,
+      "lng": -86.71068,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1231223679",
+      "name": "Low clearance \u2014 Bessemer Super Highway (US 11;AL 5)",
+      "addr": "US 11;AL 5",
+      "lat": 33.42081,
+      "lng": -86.94953,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1258461965",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.56026,
+      "lng": -86.75132,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1278523666",
+      "name": "Low clearance \u2014 Daniel Payne Drive",
+      "addr": "Daniel Payne Drive",
+      "lat": 33.54378,
+      "lng": -86.87912,
+      "height_in": 210,
+      "height_label": "17'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1494611580",
+      "name": "Low clearance \u2014 Shades Creek Parkway (AL 149)",
+      "addr": "AL 149",
+      "lat": 33.46931,
+      "lng": -86.77548,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1494614223",
+      "name": "Low clearance \u2014 Shades Creek Parkway (AL 149)",
+      "addr": "AL 149",
+      "lat": 33.47343,
+      "lng": -86.76812,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

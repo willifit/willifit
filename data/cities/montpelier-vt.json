@@ -180,6 +180,28 @@
       "height_label": "14'4\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1929",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w1213202645",
+      "name": "Low clearance \u2014 Boynton Street",
+      "addr": "Boynton Street",
+      "lat": 44.18918,
+      "lng": -72.49789,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1355467949",
+      "name": "Low clearance \u2014 Crosstown Road",
+      "addr": "Crosstown Road",
+      "lat": 44.21153,
+      "lng": -72.58263,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

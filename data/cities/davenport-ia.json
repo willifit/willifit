@@ -161,6 +161,127 @@
       "height_label": "11'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1942",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w21989613",
+      "name": "Low clearance underpass (tertiary)",
+      "addr": "",
+      "lat": 41.51714,
+      "lng": -90.56558,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w51805032",
+      "name": "Low clearance \u2014 Spruce Hills Drive",
+      "addr": "Spruce Hills Drive",
+      "lat": 41.55475,
+      "lng": -90.52308,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w364658727",
+      "name": "Low clearance \u2014 Middle Road",
+      "addr": "Middle Road",
+      "lat": 41.54092,
+      "lng": -90.51774,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1112598780",
+      "name": "Low clearance \u2014 East 12th Street",
+      "addr": "East 12th Street",
+      "lat": 41.53215,
+      "lng": -90.54674,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1424226414",
+      "name": "Low clearance \u2014 Wisconsin Avenue",
+      "addr": "Wisconsin Avenue",
+      "lat": 41.55862,
+      "lng": -90.6489,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1442856111",
+      "name": "Low clearance \u2014 Pershing Avenue",
+      "addr": "Pershing Avenue",
+      "lat": 41.52356,
+      "lng": -90.57118,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1500882400",
+      "name": "Low clearance \u2014 Spruce Hills Drive",
+      "addr": "Spruce Hills Drive",
+      "lat": 41.55472,
+      "lng": -90.52097,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1508822097",
+      "name": "Low clearance \u2014 Middle Road",
+      "addr": "Middle Road",
+      "lat": 41.5978,
+      "lng": -90.45901,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1508838340",
+      "name": "Low clearance \u2014 Wells Ferry Road (CR Z30)",
+      "addr": "CR Z30",
+      "lat": 41.59737,
+      "lng": -90.43053,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1508846935",
+      "name": "Low clearance \u2014 Rockingham Road (IA 22)",
+      "addr": "IA 22",
+      "lat": 41.49186,
+      "lng": -90.64983,
+      "height_in": 173,
+      "height_label": "14'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1513069546",
+      "name": "Low clearance \u2014 Telegraph Road",
+      "addr": "Telegraph Road",
+      "lat": 41.52758,
+      "lng": -90.60696,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

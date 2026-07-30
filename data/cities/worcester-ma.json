@@ -56,7 +56,52 @@
       "website": "https://www.mass.gov/locations/millbury-grafton-road-park-and-ride"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w87215725",
+      "name": "Grafton Street",
+      "addr": "Grafton Street",
+      "lat": 42.26113,
+      "lng": -71.79397,
+      "height_in": 148,
+      "height_label": "12'4\"",
+      "notes": "layer -2; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w719475904",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 42.28736,
+      "lng": -71.80619,
+      "height_in": 118,
+      "height_label": "9'10\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1189138183",
+      "name": "Mill Street",
+      "addr": "Mill Street",
+      "lat": 42.19406,
+      "lng": -71.90362,
+      "height_in": 151,
+      "height_label": "12'7\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227485",
+      "name": "Webster Street",
+      "addr": "MA 12",
+      "lat": 42.24105,
+      "lng": -71.83292,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-25-D09014BKPMUNNBI",
@@ -156,6 +201,270 @@
       "height_label": "9'8\"",
       "notes": "FHWA NBI; under-bridge clearance; built 2005; bridge carries HWY   MCKEON RD",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w9606743",
+      "name": "Low clearance \u2014 Brooks Street",
+      "addr": "Brooks Street",
+      "lat": 42.30856,
+      "lng": -71.79908,
+      "height_in": 134,
+      "height_label": "11'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w87215861",
+      "name": "Low clearance \u2014 Franklin Street",
+      "addr": "Franklin Street",
+      "lat": 42.26026,
+      "lng": -71.7966,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w132174783",
+      "name": "Low clearance \u2014 Front Street",
+      "addr": "Front Street",
+      "lat": 42.26178,
+      "lng": -71.79556,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w315030367",
+      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
+      "addr": "I 90",
+      "lat": 42.20271,
+      "lng": -71.82361,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w578449009",
+      "name": "Low clearance \u2014 Hermon Street",
+      "addr": "Hermon Street",
+      "lat": 42.25563,
+      "lng": -71.80464,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w766887037",
+      "name": "Low clearance \u2014 Southbridge Street",
+      "addr": "Southbridge Street",
+      "lat": 42.25456,
+      "lng": -71.80639,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w829556584",
+      "name": "Low clearance \u2014 Seymour Street",
+      "addr": "Seymour Street",
+      "lat": 42.24952,
+      "lng": -71.80011,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1051958903",
+      "name": "Low clearance \u2014 Endicott Street",
+      "addr": "Endicott Street",
+      "lat": 42.25079,
+      "lng": -71.79951,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190226890",
+      "name": "Low clearance \u2014 Southbridge Street",
+      "addr": "Southbridge Street",
+      "lat": 42.25235,
+      "lng": -71.80802,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227020",
+      "name": "Low clearance \u2014 Hammond Street",
+      "addr": "Hammond Street",
+      "lat": 42.2512,
+      "lng": -71.80941,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227084",
+      "name": "Low clearance \u2014 Hammond Street",
+      "addr": "Hammond Street",
+      "lat": 42.25175,
+      "lng": -71.81076,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227358",
+      "name": "Low clearance \u2014 Southbridge Street",
+      "addr": "Southbridge Street",
+      "lat": 42.2485,
+      "lng": -71.81011,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227360",
+      "name": "Low clearance \u2014 Southgate Street",
+      "addr": "Southgate Street",
+      "lat": 42.24886,
+      "lng": -71.81115,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227641",
+      "name": "Low clearance \u2014 Gardner Street",
+      "addr": "Gardner Street",
+      "lat": 42.24915,
+      "lng": -71.81492,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227722",
+      "name": "Low clearance \u2014 Cambridge Street",
+      "addr": "Cambridge Street",
+      "lat": 42.2454,
+      "lng": -71.80466,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190227940",
+      "name": "Low clearance \u2014 Madison Street (MA 122;MA 122A)",
+      "addr": "MA 122;MA 122A",
+      "lat": 42.25742,
+      "lng": -71.8021,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190228208",
+      "name": "Low clearance \u2014 Green Street",
+      "addr": "Green Street",
+      "lat": 42.25954,
+      "lng": -71.79819,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190228710",
+      "name": "Low clearance \u2014 Bridge Street",
+      "addr": "Bridge Street",
+      "lat": 42.2634,
+      "lng": -71.79595,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1190228887",
+      "name": "Low clearance \u2014 Martin Luther King Jr. Boulevard",
+      "addr": "Martin Luther King Jr. Boulevard",
+      "lat": 42.26664,
+      "lng": -71.79709,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1211964891",
+      "name": "Low clearance \u2014 Rochdale Street",
+      "addr": "Rochdale Street",
+      "lat": 42.20574,
+      "lng": -71.86699,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1211965232",
+      "name": "Low clearance \u2014 Sunderland Road",
+      "addr": "Sunderland Road",
+      "lat": 42.24094,
+      "lng": -71.74961,
+      "height_in": 154,
+      "height_label": "12'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1211965717",
+      "name": "Low clearance \u2014 Arch Street",
+      "addr": "Arch Street",
+      "lat": 42.26208,
+      "lng": -71.65947,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1212906725",
+      "name": "Low clearance \u2014 Main Street (MA 122A)",
+      "addr": "MA 122A",
+      "lat": 42.33601,
+      "lng": -71.83635,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1276280440",
+      "name": "Low clearance \u2014 Providence Road (MA 122A)",
+      "addr": "MA 122A",
+      "lat": 42.18054,
+      "lng": -71.73352,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

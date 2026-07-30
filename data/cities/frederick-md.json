@@ -12,6 +12,71 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (68 spaces). 68 spaces.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w151766247",
+      "name": "East All Saints Garage",
+      "addr": "",
+      "lat": 39.41198,
+      "lng": -77.40747,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w177920710",
+      "name": "Carroll Creek Parking Deck",
+      "addr": "44 East Patrick Street",
+      "lat": 39.4134,
+      "lng": -77.40958,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w177920711",
+      "name": "Church Street Garage",
+      "addr": "",
+      "lat": 39.41582,
+      "lng": -77.40997,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w177929569",
+      "name": "West Patrick Street Parking Garage",
+      "addr": "148 West Patrick Street",
+      "lat": 39.41359,
+      "lng": -77.41386,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-r16478337",
+      "name": "Court Street Garage",
+      "addr": "",
+      "lat": 39.41355,
+      "lng": -77.41203,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; hrs: PH,Mo-Su 00:00-24:00",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -125,6 +190,50 @@
       "height_label": "12'4\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1890; bridge carries POINT OF ROCKS ROA",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w363553090",
+      "name": "Low clearance \u2014 Green Valley Road (MD 75)",
+      "addr": "MD 75",
+      "lat": 39.37265,
+      "lng": -77.27224,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w413727125",
+      "name": "Low clearance \u2014 Utica Road",
+      "addr": "Utica Road",
+      "lat": 39.5252,
+      "lng": -77.3976,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "Underpass / low clearance; Under: Utica Covered Bridge",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w438074875",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.38607,
+      "lng": -77.40865,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w454981451",
+      "name": "Low clearance \u2014 Hollow Road",
+      "addr": "Hollow Road",
+      "lat": 39.4581,
+      "lng": -77.50931,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -175,7 +175,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1175927405",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.77705,
+      "lng": -84.05464,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-39-2934965",
@@ -231,6 +243,182 @@
       "height_label": "15'0\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1960; bridge carries RILEY BLVD",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w19194463",
+      "name": "Low clearance \u2014 East 3rd Street",
+      "addr": "East 3rd Street",
+      "lat": 39.76101,
+      "lng": -84.18258,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w34610868",
+      "name": "Low clearance \u2014 Longworth Street",
+      "addr": "Longworth Street",
+      "lat": 39.75433,
+      "lng": -84.19723,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w481040261",
+      "name": "Low clearance \u2014 Little York Road",
+      "addr": "Little York Road",
+      "lat": 39.85572,
+      "lng": -84.17462,
+      "height_in": 198,
+      "height_label": "16'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w654594453",
+      "name": "Low clearance \u2014 Springfield Pike",
+      "addr": "Springfield Pike",
+      "lat": 39.78296,
+      "lng": -84.11839,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w737216649",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.72941,
+      "lng": -84.19908,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w837487549",
+      "name": "Low clearance \u2014 East Monument Avenue",
+      "addr": "East Monument Avenue",
+      "lat": 39.76609,
+      "lng": -84.17838,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w912275230",
+      "name": "Low clearance \u2014 Leo Street",
+      "addr": "Leo Street",
+      "lat": 39.78299,
+      "lng": -84.1851,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w943145924",
+      "name": "Low clearance \u2014 Buckeye Lane",
+      "addr": "Buckeye Lane",
+      "lat": 39.69308,
+      "lng": -84.10285,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w961543439",
+      "name": "Low clearance \u2014 SR 4",
+      "addr": "SR 4",
+      "lat": 39.84367,
+      "lng": -84.0592,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w992533884",
+      "name": "Low clearance \u2014 Wayne Avenue",
+      "addr": "Wayne Avenue",
+      "lat": 39.75918,
+      "lng": -84.18423,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1334304729",
+      "name": "Low clearance \u2014 Springfield Pike (C-149)",
+      "addr": "C-149",
+      "lat": 39.79398,
+      "lng": -84.09602,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1334305638",
+      "name": "Low clearance \u2014 Guthrie Road",
+      "addr": "Guthrie Road",
+      "lat": 39.72518,
+      "lng": -84.22885,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1334305898",
+      "name": "Low clearance \u2014 East River Road",
+      "addr": "East River Road",
+      "lat": 39.72713,
+      "lng": -84.2128,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1334306455",
+      "name": "Low clearance \u2014 South Edwin C. Moses Boulevard",
+      "addr": "South Edwin C. Moses Boulevard",
+      "lat": 39.73248,
+      "lng": -84.21138,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1334307316",
+      "name": "Low clearance \u2014 McDonough Street",
+      "addr": "McDonough Street",
+      "lat": 39.76119,
+      "lng": -84.18011,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1334307903",
+      "name": "Low clearance \u2014 North Keowee Street",
+      "addr": "North Keowee Street",
+      "lat": 39.7714,
+      "lng": -84.17862,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }
