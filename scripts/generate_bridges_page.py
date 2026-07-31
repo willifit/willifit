@@ -103,6 +103,7 @@ def main():
             "publisher": {"@type": "Organization", "name": "WillIFit.ai", "url": f"{SITE}/",
                           "logo": {"@type": "ImageObject", "url": f"{SITE}/og-image.png"}},
             "mainEntityOfPage": {"@type": "WebPage", "@id": f"{SITE}/lowest-bridges-in-america.html"},
+            "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["#lowest-answer"]},
         },
         {
             "@context": "https://schema.org",
@@ -111,6 +112,44 @@ def main():
                 {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
                 {"@type": "ListItem", "position": 2, "name": "Lowest Bridges in America",
                  "item": f"{SITE}/lowest-bridges-in-america.html"},
+            ],
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the lowest bridge in America?",
+                    "acceptedAnswer": {"@type": "Answer", "text": (
+                        f"Among the {n_bridges:,} low-clearance bridges, underpasses, and tunnels tracked "
+                        f"by WillIFit.ai, the lowest posted clearance is {label(top[0]['h']) if top else '?'} "
+                        f"at {top[0]['name'] if top else '?'} in {top[0]['city'] if top else '?'}, "
+                        f"{top[0]['state'] if top else '?'}. Posted clearances nationwide vary widely by "
+                        "region and structure age; always trust the sign in front of you over any database."
+                    )},
+                },
+                {
+                    "@type": "Question",
+                    "name": "How many low-clearance bridges does WillIFit.ai track?",
+                    "acceptedAnswer": {"@type": "Answer", "text": (
+                        f"WillIFit.ai tracks {n_bridges:,} bridges, underpasses, and tunnels posted between "
+                        f"6' and 14' across {len(by_state)} US states and territories, sourced from the FHWA "
+                        "National Bridge Inventory, OpenStreetMap, and AI-verified readings of posted Street "
+                        "View signage."
+                    )},
+                },
+                {
+                    "@type": "Question",
+                    "name": "What vehicles are at risk from low bridges?",
+                    "acceptedAnswer": {"@type": "Answer", "text": (
+                        "Any vehicle taller than about 11'6\" is at meaningful risk nationwide: standard box "
+                        "trucks run 12'6\" to 13'6\", moving trucks and RVs commonly reach 13'6\", and even "
+                        "high-roof cargo vans (roughly 9'6\") can strike older, lower urban underpasses. "
+                        "Bridge strikes are almost always preventable by checking posted clearance before "
+                        "routing a tall vehicle."
+                    )},
+                },
             ],
         },
     ], separators=(",", ":"))
@@ -186,7 +225,7 @@ def main():
        computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {today}.</p>
   </header>
 
-  <div class="answer">
+  <div class="answer" id="lowest-answer">
     <b>The lowest posted drivable clearance in our database is {label(top[0]['h']) if top else '?'}</b> —
     {esc(top[0]['name']) if top else ''} in {esc(top[0]['city']) if top else ''}, {esc(top[0]['state']) if top else ''}.
     For context: a standard box truck is 12'6"–13'6" tall, a Class C RV about 10'–11'6", and a

@@ -9,7 +9,11 @@ The site is a single-page static web app; there is no user account, no tracking 
 ## Core pages
 
 - [App (home)](https://willifit.ai/): Interactive map + search. Filter by minimum clearance height, vehicle type (garage / tunnel / bridge), oversized-parking friendly, or city.
+- [About](https://willifit.ai/about.html): Who builds the site, why it exists, and the honesty rules behind every provenance label.
 - [How AI verification works](https://willifit.ai/how-ai-verification-works.html): Methodology in plain language — how Street View images are selected, what Claude Vision is asked to return, the confidence thresholds, and the sanity bounds that keep readings trustworthy.
+- [Parking garage clearance heights guide](https://willifit.ai/parking-garage-clearance-heights.html): Standard clearance sizes (7'0" typical, 8'2" ADA), clearance by garage type, and common vehicle heights — the reference page for "how tall is a parking garage" style questions.
+- [Lowest bridges in America](https://willifit.ai/lowest-bridges-in-america.html): The 25 lowest posted vehicle clearances nationally, plus the lowest bridge in every covered state, computed live from the tracked corpus.
+- [City directory](https://willifit.ai/cities.html): All 226 covered cities grouped by state, with per-city location counts.
 - [Advertise](https://willifit.ai/advertise.html): Sponsorship slots for parking operators, RV rental companies, and route-planning apps.
 
 ## Data

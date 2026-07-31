@@ -47,6 +47,7 @@ import json
 import math
 import os
 import re
+import signal
 import sys
 import time
 from pathlib import Path
@@ -235,10 +236,27 @@ out center tags;
 """.strip()
 
 
+class _OverpassWatchdog(Exception):
+    pass
+
+
+def _watchdog_fire(signum, frame):
+    raise _OverpassWatchdog("hard watchdog exceeded")
+
+
 def fetch_overpass(query: str, per_mirror_timeout: int = 45) -> dict:
     """Try each mirror in order; retry on 429/504/timeout. 45s cap per mirror so
     one slow endpoint can't stall us — failing fast to the next mirror is
-    better than hanging on one that's overloaded."""
+    better than hanging on one that's overloaded.
+
+    Belt-and-suspenders: urlopen's own `timeout=` has been observed, twice in
+    production on this project's Python 3.9, to NOT fire on a connection that
+    accepts the TCP handshake but then never sends a byte — the run hung for
+    11+ hours with no exception raised.  A SIGALRM watchdog set to a bit past
+    the soft timeout forcibly aborts the call no matter what state urlopen's
+    own timeout machinery is in, so one bad connection can never again stall
+    the whole import.  Main-thread-only (fine — this script is single-threaded).
+    """
     data = parse.urlencode({"data": query}).encode("utf-8")
     last_err = None
     for url in OVERPASS_MIRRORS:
@@ -251,9 +269,15 @@ def fetch_overpass(query: str, per_mirror_timeout: int = 45) -> dict:
             },
             method="POST",
         )
+        old_handler = signal.signal(signal.SIGALRM, _watchdog_fire)
+        signal.alarm(per_mirror_timeout + 30)
         try:
             with request.urlopen(req, timeout=per_mirror_timeout) as resp:
                 return json.loads(resp.read().decode("utf-8"))
+        except _OverpassWatchdog:
+            last_err = RuntimeError(f"Overpass watchdog timeout (>{per_mirror_timeout + 30}s) at {url}")
+            time.sleep(1.0)
+            continue
         except error.HTTPError as e:
             body = e.read().decode("utf-8", errors="replace")[:200]
             last_err = RuntimeError(f"Overpass HTTP {e.code} at {url}: {body}")
@@ -267,6 +291,9 @@ def fetch_overpass(query: str, per_mirror_timeout: int = 45) -> dict:
             last_err = e
             time.sleep(1.0)
             continue
+        finally:
+            signal.alarm(0)
+            signal.signal(signal.SIGALRM, old_handler)
     raise last_err or RuntimeError("Overpass: all mirrors failed")
 
 
