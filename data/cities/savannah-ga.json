@@ -376,7 +376,19 @@
       "entrance_source": "OSM parking_entrance node 9108306479"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1357065586",
+      "name": "West Boundary Street",
+      "addr": "West Boundary Street",
+      "lat": 32.07728,
+      "lng": -81.10358,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "sav-talmadge-bridge",
@@ -405,6 +417,105 @@
       "entrance_lat": 32.0233326,
       "entrance_lng": -80.8979045,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w9081841",
+      "name": "Low clearance \u2014 East Henry Street",
+      "addr": "East Henry Street",
+      "lat": 32.05939,
+      "lng": -81.0833,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w539942060",
+      "name": "Low clearance \u2014 West Boundary Street",
+      "addr": "West Boundary Street",
+      "lat": 32.07744,
+      "lng": -81.10339,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w769962037",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 32.06196,
+      "lng": -81.09781,
+      "height_in": 158,
+      "height_label": "13'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w964045267",
+      "name": "Low clearance \u2014 East Gwinnett Street",
+      "addr": "East Gwinnett Street",
+      "lat": 32.06522,
+      "lng": -81.0885,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w964045268",
+      "name": "Low clearance \u2014 East Gwinnett Street",
+      "addr": "East Gwinnett Street",
+      "lat": 32.06502,
+      "lng": -81.08773,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1257465847",
+      "name": "Low clearance \u2014 East Gwinnett Street",
+      "addr": "East Gwinnett Street",
+      "lat": 32.06478,
+      "lng": -81.08684,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1352439412",
+      "name": "Low clearance \u2014 East Lathrop Avenue",
+      "addr": "East Lathrop Avenue",
+      "lat": 32.07969,
+      "lng": -81.11242,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1536877351",
+      "name": "Low clearance \u2014 East Henry Street",
+      "addr": "East Henry Street",
+      "lat": 32.05637,
+      "lng": -81.0719,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1536877352",
+      "name": "Low clearance \u2014 East Henry Street",
+      "addr": "East Henry Street",
+      "lat": 32.05739,
+      "lng": -81.07584,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

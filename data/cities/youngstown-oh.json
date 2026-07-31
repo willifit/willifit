@@ -118,7 +118,52 @@
       "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w55668998",
+      "name": "Division Street",
+      "addr": "Division Street",
+      "lat": 41.12415,
+      "lng": -80.68018,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1159479350",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 41.21711,
+      "lng": -80.73892,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1337743616",
+      "name": "Mahoning Avenue",
+      "addr": "Mahoning Avenue",
+      "lat": 41.10186,
+      "lng": -80.65771,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1476270171",
+      "name": "Manning Avenue",
+      "addr": "Manning Avenue",
+      "lat": 41.10825,
+      "lng": -80.66838,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-39-5002621",

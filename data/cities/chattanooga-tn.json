@@ -362,6 +362,82 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w45094907",
+      "name": "CARTA North Garage",
+      "addr": "",
+      "lat": 35.05385,
+      "lng": -85.31132,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w45509897",
+      "name": "CARTA South Garage",
+      "addr": "",
+      "lat": 35.0382,
+      "lng": -85.30688,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w85630957",
+      "name": "Blue Cross Parking",
+      "addr": "",
+      "lat": 35.05019,
+      "lng": -85.31793,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w150237967",
+      "name": "Republic Parking",
+      "addr": "",
+      "lat": 35.05162,
+      "lng": -85.30804,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1316680541",
+      "name": "City of Chattanooga",
+      "addr": "",
+      "lat": 35.06914,
+      "lng": -85.2141,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "4 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1374791189",
+      "name": "Red Bank Army Store",
+      "addr": "",
+      "lat": 35.15363,
+      "lng": -85.26993,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "tunnels": [
@@ -386,6 +462,28 @@
       "height_label": "13'0\"",
       "notes": "Mountain road tunnels.",
       "source": "TDOT"
+    },
+    {
+      "id": "osm-w37965112",
+      "name": "Bachman Tunnel",
+      "addr": "US 41;US 76",
+      "lat": 35.00911,
+      "lng": -85.26938,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w128366592",
+      "name": "Wilcox Boulevard",
+      "addr": "Wilcox Boulevard",
+      "lat": 35.0504,
+      "lng": -85.25126,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -424,6 +522,226 @@
       "height_label": "Over water",
       "notes": "Main US-27 river crossing.",
       "source": "TDOT"
+    },
+    {
+      "id": "osm-w414812614",
+      "name": "Low clearance \u2014 Cummings Highway (US 41;US 64;US 72)",
+      "addr": "US 41;US 64;US 72",
+      "lat": 35.01862,
+      "lng": -85.38339,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w488209171",
+      "name": "Low clearance \u2014 Birmingham Highway (US 11)",
+      "addr": "US 11",
+      "lat": 34.99671,
+      "lng": -85.39042,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w582913876",
+      "name": "Low clearance \u2014 East Martin Luther King Boulevard",
+      "addr": "East Martin Luther King Boulevard",
+      "lat": 35.04276,
+      "lng": -85.30019,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w862110252",
+      "name": "Low clearance \u2014 West Main Street",
+      "addr": "West Main Street",
+      "lat": 35.03962,
+      "lng": -85.31665,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1101773589",
+      "name": "Low clearance \u2014 Cummings Highway (US 11;US 41;US 64;US 72)",
+      "addr": "US 11;US 41;US 64;US 72",
+      "lat": 35.02075,
+      "lng": -85.36312,
+      "height_in": 124,
+      "height_label": "10'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1256330145",
+      "name": "Low clearance \u2014 West 37th Street",
+      "addr": "West 37th Street",
+      "lat": 35.01137,
+      "lng": -85.32207,
+      "height_in": 78,
+      "height_label": "6'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1256330916",
+      "name": "Low clearance \u2014 Cummings Highway (US 11;US 41;US 64;US 72)",
+      "addr": "US 11;US 41;US 64;US 72",
+      "lat": 35.01378,
+      "lng": -85.32799,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1256331171",
+      "name": "Low clearance \u2014 Shingle Road",
+      "addr": "Shingle Road",
+      "lat": 35.00706,
+      "lng": -85.33887,
+      "height_in": 72,
+      "height_label": "6'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1256331521",
+      "name": "Low clearance \u2014 East 11th Street",
+      "addr": "East 11th Street",
+      "lat": 35.04141,
+      "lng": -85.30269,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1256331613",
+      "name": "Low clearance \u2014 East 10th Street",
+      "addr": "East 10th Street",
+      "lat": 35.04198,
+      "lng": -85.30169,
+      "height_in": 155,
+      "height_label": "12'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1273593302",
+      "name": "Low clearance \u2014 Bonny Oaks Drive (SR 17)",
+      "addr": "SR 17",
+      "lat": 35.08024,
+      "lng": -85.21831,
+      "height_in": 194,
+      "height_label": "16'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1275940701",
+      "name": "Low clearance \u2014 Alton Park Boulevard (TN 58)",
+      "addr": "TN 58",
+      "lat": 35.01349,
+      "lng": -85.31509,
+      "height_in": 128,
+      "height_label": "10'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1287962097",
+      "name": "Low clearance \u2014 West 47th Street",
+      "addr": "West 47th Street",
+      "lat": 34.99808,
+      "lng": -85.31624,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474087691",
+      "name": "Low clearance \u2014 Arno Street",
+      "addr": "Arno Street",
+      "lat": 35.06407,
+      "lng": -85.24738,
+      "height_in": 122,
+      "height_label": "10'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474090964",
+      "name": "Low clearance \u2014 Bonny Oaks Drive (TN 317)",
+      "addr": "TN 317",
+      "lat": 35.07229,
+      "lng": -85.15888,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474123133",
+      "name": "Low clearance \u2014 Kellys Ferry Road",
+      "addr": "Kellys Ferry Road",
+      "lat": 35.02515,
+      "lng": -85.37513,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474125921",
+      "name": "Low clearance \u2014 Old Mountain Road",
+      "addr": "Old Mountain Road",
+      "lat": 35.00909,
+      "lng": -85.33074,
+      "height_in": 98,
+      "height_label": "8'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474126140",
+      "name": "Low clearance \u2014 Old Mountain Road",
+      "addr": "Old Mountain Road",
+      "lat": 35.00877,
+      "lng": -85.33189,
+      "height_in": 88,
+      "height_label": "7'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1483738030",
+      "name": "Low clearance \u2014 Cummings Road",
+      "addr": "Cummings Road",
+      "lat": 35.01164,
+      "lng": -85.38931,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1483741403",
+      "name": "Low clearance \u2014 Saint Elmo Avenue",
+      "addr": "Saint Elmo Avenue",
+      "lat": 35.01815,
+      "lng": -85.32317,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

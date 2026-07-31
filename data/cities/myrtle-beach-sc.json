@@ -503,6 +503,57 @@
       "entrance_lat": 33.7709337,
       "entrance_lng": -79.0214687,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w25043299",
+      "name": "Myrtle Beach Public Parking",
+      "addr": "",
+      "lat": 33.69404,
+      "lng": -78.88113,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w619008342",
+      "name": "Cottage Beach",
+      "addr": "",
+      "lat": 33.76081,
+      "lng": -78.788,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "16 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w697471399",
+      "name": "Ocean 22 Hilton Garage",
+      "addr": "",
+      "lat": 33.7021,
+      "lng": -78.87072,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w912434291",
+      "name": "Woodsy Parking Garage",
+      "addr": "",
+      "lat": 33.75007,
+      "lng": -78.80892,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "250 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],
@@ -561,6 +612,61 @@
       "height_label": "12'5\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1937",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w44112169",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 33.70101,
+      "lng": -79.01393,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w447687448",
+      "name": "Low clearance \u2014 Carolina Bays Parkway (SC 31)",
+      "addr": "SC 31",
+      "lat": 33.67049,
+      "lng": -79.03003,
+      "height_in": 211,
+      "height_label": "17'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w684036913",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.75932,
+      "lng": -78.85695,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1085884596",
+      "name": "Low clearance \u2014 SC 544",
+      "addr": "SC 544",
+      "lat": 33.70085,
+      "lng": -79.01523,
+      "height_in": 207,
+      "height_label": "17'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1184983419",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.7522,
+      "lng": -78.86867,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

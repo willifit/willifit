@@ -330,9 +330,143 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (50 spaces). 50 spaces. Operator: Oasis Marina.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w83568208",
+      "name": "Old Town Garage",
+      "addr": "",
+      "lat": 24.56117,
+      "lng": -81.79877,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w457772059",
+      "name": "201 Front Street Garage",
+      "addr": "201 Front Street",
+      "lat": 24.55758,
+      "lng": -81.8071,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "400 spaces; paid; covered",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w776656588",
+      "name": "City",
+      "addr": "",
+      "lat": 24.56091,
+      "lng": -81.80463,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "4 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776659089",
+      "name": "City",
+      "addr": "",
+      "lat": 24.5605,
+      "lng": -81.80308,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "4 spaces; paid",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776786917",
+      "name": "City",
+      "addr": "",
+      "lat": 24.55992,
+      "lng": -81.80223,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "8 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776786922",
+      "name": "City",
+      "addr": "",
+      "lat": 24.55934,
+      "lng": -81.8018,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "1 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776786933",
+      "name": "City",
+      "addr": "",
+      "lat": 24.55862,
+      "lng": -81.80135,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "3 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776786941",
+      "name": "City",
+      "addr": "",
+      "lat": 24.55808,
+      "lng": -81.80086,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "1 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776786955",
+      "name": "City",
+      "addr": "",
+      "lat": 24.55739,
+      "lng": -81.80033,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "4 spaces; free",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w776869372",
+      "name": "City",
+      "addr": "",
+      "lat": 24.55576,
+      "lng": -81.79922,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "1 spaces; free",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w494965429",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 24.55796,
+      "lng": -81.80679,
+      "height_in": 113,
+      "height_label": "9'5\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "kw-seven-mile-bridge",

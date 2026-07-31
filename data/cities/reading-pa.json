@@ -533,6 +533,17 @@
       "height_label": "7'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w14227395",
+      "name": "Low clearance \u2014 Morgantown Road (PA 10)",
+      "addr": "PA 10",
+      "lat": 40.26003,
+      "lng": -75.91666,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

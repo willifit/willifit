@@ -335,6 +335,45 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (110 spaces). 110 spaces.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w61571716",
+      "name": "Convention Center Garage",
+      "addr": "",
+      "lat": 36.73472,
+      "lng": -119.7829,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "1565 spaces",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w415917412",
+      "name": "Double Tree Parking Garage",
+      "addr": "",
+      "lat": 36.73349,
+      "lng": -119.78518,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1284257253",
+      "name": "City of Fresno",
+      "addr": "",
+      "lat": 36.73595,
+      "lng": -119.78977,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [

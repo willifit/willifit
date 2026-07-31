@@ -473,6 +473,182 @@
       "height_label": "12'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1965",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w245340108",
+      "name": "Low clearance \u2014 East Washington Street",
+      "addr": "East Washington Street",
+      "lat": 40.11992,
+      "lng": -88.23904,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w286198550",
+      "name": "Low clearance \u2014 Digestive Health Patient Pick Up",
+      "addr": "Digestive Health Patient Pick Up",
+      "lat": 40.11828,
+      "lng": -88.21498,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w489455415",
+      "name": "Low clearance \u2014 Stadium Drive",
+      "addr": "Stadium Drive",
+      "lat": 40.10269,
+      "lng": -88.2434,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w616024467",
+      "name": "Low clearance \u2014 East Chester Street",
+      "addr": "East Chester Street",
+      "lat": 40.11603,
+      "lng": -88.24053,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w774384919",
+      "name": "Low clearance \u2014 North Vine Street",
+      "addr": "North Vine Street",
+      "lat": 40.11449,
+      "lng": -88.20506,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w910263181",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.11896,
+      "lng": -88.24418,
+      "height_in": 98,
+      "height_label": "8'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1125385550",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.0703,
+      "lng": -88.31089,
+      "height_in": 85,
+      "height_label": "7'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1286382775",
+      "name": "Low clearance \u2014 Logan Street",
+      "addr": "Logan Street",
+      "lat": 40.11483,
+      "lng": -88.24111,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1286382953",
+      "name": "Low clearance \u2014 East Springfield Avenue (US 45;US 150)",
+      "addr": "US 45;US 150",
+      "lat": 40.11261,
+      "lng": -88.24175,
+      "height_in": 142,
+      "height_label": "11'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1286383269",
+      "name": "Low clearance \u2014 East Green Street",
+      "addr": "East Green Street",
+      "lat": 40.11019,
+      "lng": -88.24219,
+      "height_in": 143,
+      "height_label": "11'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1286383581",
+      "name": "Low clearance \u2014 Saint Mary's Road",
+      "addr": "Saint Mary's Road",
+      "lat": 40.09447,
+      "lng": -88.24466,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1286383646",
+      "name": "Low clearance \u2014 East Kirby Avenue",
+      "addr": "East Kirby Avenue",
+      "lat": 40.09814,
+      "lng": -88.24409,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1367992633",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.07196,
+      "lng": -88.31062,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1373557113",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.03715,
+      "lng": -88.26156,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1511568284",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.03797,
+      "lng": -88.26451,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1511778334",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.11126,
+      "lng": -88.31467,
+      "height_in": 190,
+      "height_label": "15'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

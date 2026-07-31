@@ -393,6 +393,19 @@
       "source": "OpenStreetMap",
       "sv_checked": "2026-07-03",
       "sv_status": "no-sign"
+    },
+    {
+      "id": "osm-w802693060",
+      "name": "Atlantic City International Airport Parking Garage",
+      "addr": "",
+      "lat": 39.45057,
+      "lng": -74.57119,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [

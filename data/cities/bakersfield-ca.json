@@ -378,6 +378,20 @@
       "entrance_lat": 35.3143467,
       "entrance_lng": -119.030103,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w59846921",
+      "name": "North East Parking Lot (Permit Required)",
+      "addr": "",
+      "lat": 35.41169,
+      "lng": -118.96885,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid; open-air",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "https://www.thepermitstore.com/"
     }
   ],
   "tunnels": [],

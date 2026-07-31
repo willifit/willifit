@@ -444,9 +444,121 @@
       "entrance_lat": 35.6098163,
       "entrance_lng": -82.5907169,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
+    },
+    {
+      "id": "osm-w202105397",
+      "name": "Rankin Avenue Garage",
+      "addr": "",
+      "lat": 35.59575,
+      "lng": -82.55385,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "262 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w202110619",
+      "name": "Wall Street Garage",
+      "addr": "45 Wall Street",
+      "lat": 35.5947,
+      "lng": -82.55647,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "232 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w689368010",
+      "name": "A-B Tech/Mission Health Conference Center Parking Deck",
+      "addr": "",
+      "lat": 35.57122,
+      "lng": -82.55674,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w827504557",
+      "name": "Sears Alley Public Parking Deck",
+      "addr": "11 Sears Alley",
+      "lat": 35.59346,
+      "lng": -82.5546,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "664 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1258399745",
+      "name": "Ironwood Parking Garage",
+      "addr": "",
+      "lat": 35.58875,
+      "lng": -82.55574,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "1000 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1307284578",
+      "name": "Biltmore Farms",
+      "addr": "",
+      "lat": 35.48499,
+      "lng": -82.55452,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "3 spaces",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1413076240",
+      "name": "Harvest House",
+      "addr": "",
+      "lat": 35.57883,
+      "lng": -82.53831,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w49396776",
+      "name": "Tunnel Road",
+      "addr": "US 70;US 74A",
+      "lat": 35.59865,
+      "lng": -82.53865,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1238292053",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.57817,
+      "lng": -82.59407,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "ash-i-240-bowen-bridge",
@@ -469,6 +581,39 @@
       "height_label": "Varies",
       "notes": "Stone arch viaducts. Commercial truck prohibited on parkway.",
       "source": "nps.gov/blri"
+    },
+    {
+      "id": "osm-w198951958",
+      "name": "Low clearance \u2014 I 26;US 19;US 23",
+      "addr": "I 26;US 19;US 23",
+      "lat": 35.7136,
+      "lng": -82.56215,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w711302382",
+      "name": "Low clearance \u2014 Smokey Park Highway (US 19;US 23)",
+      "addr": "US 19;US 23",
+      "lat": 35.55512,
+      "lng": -82.64154,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w821100435",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 35.60211,
+      "lng": -82.55305,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

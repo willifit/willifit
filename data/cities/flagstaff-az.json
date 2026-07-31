@@ -352,7 +352,52 @@
       "website": "http://www.greerspineshadowsrvpark.com"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w586148340",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.17491,
+      "lng": -111.66419,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w600516973",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.17857,
+      "lng": -111.66364,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w610926063",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.19177,
+      "lng": -111.66372,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w611404675",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.19309,
+      "lng": -111.65949,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "flg-i40-overpasses",
@@ -375,6 +420,28 @@
       "height_label": "14'0\"",
       "notes": "I-17 terminates here.",
       "source": "ADOT"
+    },
+    {
+      "id": "osm-w586435227",
+      "name": "Low clearance \u2014 West McConnell Drive",
+      "addr": "West McConnell Drive",
+      "lat": 35.17751,
+      "lng": -111.66163,
+      "height_in": 172,
+      "height_label": "14'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1432480156",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 35.19275,
+      "lng": -111.66223,
+      "height_in": 130,
+      "height_label": "10'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

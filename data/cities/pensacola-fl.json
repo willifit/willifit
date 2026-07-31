@@ -198,9 +198,94 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (435 spaces). 435 spaces. Paid parking.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w353568294",
+      "name": "9th Avenue Garage",
+      "addr": "5151 North 9th Avenue",
+      "lat": 30.47793,
+      "lng": -87.21163,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w353568305",
+      "name": "Bayou Boulevard Garage",
+      "addr": "",
+      "lat": 30.47542,
+      "lng": -87.21399,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w523555596",
+      "name": "Women's Parking Garage",
+      "addr": "",
+      "lat": 30.473,
+      "lng": -87.23724,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1164643747",
+      "name": "Fort Redoubt Parking",
+      "addr": "",
+      "lat": 30.35456,
+      "lng": -87.29771,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w701205345",
+      "name": "Pensacola Beach Boulevard",
+      "addr": "CR 399",
+      "lat": 30.34189,
+      "lng": -87.14892,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1289071676",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 30.47576,
+      "lng": -87.1961,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1328988258",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 30.35802,
+      "lng": -87.16391,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-12-480290",

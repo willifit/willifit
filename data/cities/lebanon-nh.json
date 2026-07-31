@@ -27,7 +27,30 @@
       "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w722275703",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 43.70168,
+      "lng": -72.29046,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w837183248",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 43.70023,
+      "lng": -72.29029,
+      "height_in": 115,
+      "height_label": "9'7\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-33-005500640010800",

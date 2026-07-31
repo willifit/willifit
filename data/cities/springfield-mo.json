@@ -56,7 +56,52 @@
       "sv_status": "no-sign"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w547951664",
+      "name": "North Lyon Avenue",
+      "addr": "North Lyon Avenue",
+      "lat": 37.23019,
+      "lng": -93.29513,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w547951667",
+      "name": "North Washington Avenue",
+      "addr": "North Washington Avenue",
+      "lat": 37.23086,
+      "lng": -93.28546,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1322820425",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.17505,
+      "lng": -93.27234,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1423935995",
+      "name": "North Grant Avenue",
+      "addr": "North Grant Avenue",
+      "lat": 37.22999,
+      "lng": -93.29803,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-29-20153",
@@ -407,6 +452,17 @@
       "lng": -93.37808,
       "height_in": 187,
       "height_label": "15'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1527539345",
+      "name": "Low clearance \u2014 North Broadway Avenue",
+      "addr": "North Broadway Avenue",
+      "lat": 37.25158,
+      "lng": -93.30163,
+      "height_in": 185,
+      "height_label": "15'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

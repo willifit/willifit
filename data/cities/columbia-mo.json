@@ -366,6 +366,127 @@
       "height_label": "14'11\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1955",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w39167318",
+      "name": "Low clearance \u2014 Highway Patrol Sgt. Benjamin Booth Memorial Highway (I 70;US 40)",
+      "addr": "I 70;US 40",
+      "lat": 38.96901,
+      "lng": -92.33355,
+      "height_in": 190,
+      "height_label": "15'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w536229288",
+      "name": "Low clearance \u2014 Business Loop 70 East (I 70 Bus)",
+      "addr": "I 70 Bus",
+      "lat": 38.96387,
+      "lng": -92.31198,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w632392586",
+      "name": "Low clearance \u2014 U.S. Submarine Veterans' Memorial Highway (I 70)",
+      "addr": "I 70",
+      "lat": 38.97161,
+      "lng": -92.43061,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1215252902",
+      "name": "Low clearance \u2014 Business Loop 70 West (I 70 Bus)",
+      "addr": "I 70 Bus",
+      "lat": 38.96678,
+      "lng": -92.35111,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1524107950",
+      "name": "Low clearance \u2014 Sheriff Roger I. Wilson Memorial Highway (I 70;US 40)",
+      "addr": "I 70;US 40",
+      "lat": 38.96725,
+      "lng": -92.30822,
+      "height_in": 178,
+      "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1524107952",
+      "name": "Low clearance \u2014 Sheriff Roger I. Wilson Memorial Highway (I 70;US 40)",
+      "addr": "I 70;US 40",
+      "lat": 38.96737,
+      "lng": -92.30935,
+      "height_in": 185,
+      "height_label": "15'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1528435010",
+      "name": "Low clearance \u2014 US 63",
+      "addr": "US 63",
+      "lat": 38.9137,
+      "lng": -92.29386,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1528435011",
+      "name": "Low clearance \u2014 US 63",
+      "addr": "US 63",
+      "lat": 38.91285,
+      "lng": -92.29352,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1528437649",
+      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 70;US 40)",
+      "addr": "I 70;US 40",
+      "lat": 38.96832,
+      "lng": -92.37119,
+      "height_in": 188,
+      "height_label": "15'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1528439504",
+      "name": "Low clearance \u2014 Range Line Street (MO 763)",
+      "addr": "MO 763",
+      "lat": 38.96874,
+      "lng": -92.32492,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1524109065",
+      "name": "Low clearance \u2014 Sheriff Roger I. Wilson Memorial Highway (I 70;US 40)",
+      "addr": "I 70;US 40",
+      "lat": 38.96484,
+      "lng": -92.30271,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

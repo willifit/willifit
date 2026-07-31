@@ -409,9 +409,59 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (66 spaces). 66 spaces. Paid parking. Operator: Cal State Monterey Bay.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w151694918",
+      "name": "West Parking Facility",
+      "addr": "",
+      "lat": 36.6003,
+      "lng": -121.89359,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w465044747",
+      "name": "Lot D",
+      "addr": "",
+      "lat": 36.61865,
+      "lng": -121.93578,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w968315673",
+      "name": "Mound Meadow",
+      "addr": "",
+      "lat": 36.51256,
+      "lng": -121.94263,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w27566869",
+      "name": "Lighthouse Avenue",
+      "addr": "Lighthouse Avenue",
+      "lat": 36.60341,
+      "lng": -121.89402,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "mry-bixby-creek-bridge",
@@ -457,6 +507,61 @@
       "height_label": "14'10\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1968",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w152954385",
+      "name": "Low clearance \u2014 Soledad Drive",
+      "addr": "Soledad Drive",
+      "lat": 36.58222,
+      "lng": -121.89994,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w435592921",
+      "name": "Low clearance \u2014 Casa Verde Way",
+      "addr": "Casa Verde Way",
+      "lat": 36.59896,
+      "lng": -121.86451,
+      "height_in": 179,
+      "height_label": "14'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1083269389",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 36.59199,
+      "lng": -121.87971,
+      "height_in": 176,
+      "height_label": "14'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1083269400",
+      "name": "Low clearance \u2014 Sloat Avenue",
+      "addr": "Sloat Avenue",
+      "lat": 36.59345,
+      "lng": -121.87731,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1452918374",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 36.55733,
+      "lng": -121.92168,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

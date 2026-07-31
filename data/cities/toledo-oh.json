@@ -388,6 +388,71 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-n5967960485",
+      "name": "Kwik Parking",
+      "addr": "",
+      "lat": 41.65163,
+      "lng": -83.53375,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w429955392",
+      "name": "Arena Parking",
+      "addr": "",
+      "lat": 41.6522,
+      "lng": -83.53474,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w579747234",
+      "name": "ProMedica Parking Garage",
+      "addr": "",
+      "lat": 41.64953,
+      "lng": -83.53409,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w781429096",
+      "name": "Parking Garage - P2",
+      "addr": "",
+      "lat": 41.67484,
+      "lng": -83.59528,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w781433664",
+      "name": "Parking Area - P1",
+      "addr": "",
+      "lat": 41.67495,
+      "lng": -83.59366,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [
@@ -401,6 +466,50 @@
       "height_label": "14'0\"",
       "notes": "Standard interstate clearance.",
       "source": "ODOT"
+    },
+    {
+      "id": "osm-w8780612",
+      "name": "North Hawley Street",
+      "addr": "North Hawley Street",
+      "lat": 41.63866,
+      "lng": -83.56731,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w187080979",
+      "name": "Seaman Street",
+      "addr": "Seaman Street",
+      "lat": 41.65042,
+      "lng": -83.50132,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w452579090",
+      "name": "East Broadway",
+      "addr": "CR 10",
+      "lat": 41.60497,
+      "lng": -83.51226,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326823189",
+      "name": "South Fearing Boulevard",
+      "addr": "US 24",
+      "lat": 41.63662,
+      "lng": -83.59081,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -465,6 +574,160 @@
       "height_label": "12'9\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1961",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w41088862",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 41.81048,
+      "lng": -83.68682,
+      "height_in": 177,
+      "height_label": "14'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100767862",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 41.8227,
+      "lng": -83.67717,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w228157417",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.67704,
+      "lng": -83.62678,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w653793523",
+      "name": "Low clearance \u2014 Post Street",
+      "addr": "Post Street",
+      "lat": 41.67179,
+      "lng": -83.57005,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w862460303",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 41.55752,
+      "lng": -83.67431,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1053316637",
+      "name": "Low clearance \u2014 US 23",
+      "addr": "US 23",
+      "lat": 41.79866,
+      "lng": -83.68815,
+      "height_in": 175,
+      "height_label": "14'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326800901",
+      "name": "Low clearance \u2014 Glendale Avenue",
+      "addr": "Glendale Avenue",
+      "lat": 41.61199,
+      "lng": -83.59916,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326837077",
+      "name": "Low clearance \u2014 Woodsdale Avenue",
+      "addr": "Woodsdale Avenue",
+      "lat": 41.61976,
+      "lng": -83.58698,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326902084",
+      "name": "Low clearance \u2014 North Fearing Boulevard (US 24)",
+      "addr": "US 24",
+      "lat": 41.64215,
+      "lng": -83.58958,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326902085",
+      "name": "Low clearance \u2014 North Fearing Boulevard (US 24)",
+      "addr": "US 24",
+      "lat": 41.64293,
+      "lng": -83.58671,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326951676",
+      "name": "Low clearance \u2014 Secor Road",
+      "addr": "Secor Road",
+      "lat": 41.6566,
+      "lng": -83.62197,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1326997075",
+      "name": "Low clearance \u2014 Seaman Street",
+      "addr": "Seaman Street",
+      "lat": 41.6492,
+      "lng": -83.50634,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1454091399",
+      "name": "Low clearance \u2014 Yondota Street",
+      "addr": "Yondota Street",
+      "lat": 41.64105,
+      "lng": -83.52854,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1454092413",
+      "name": "Low clearance \u2014 Utah Street",
+      "addr": "Utah Street",
+      "lat": 41.64096,
+      "lng": -83.52749,
+      "height_in": 157,
+      "height_label": "13'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

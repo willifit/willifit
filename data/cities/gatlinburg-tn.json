@@ -489,6 +489,19 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w263705692",
+      "name": "Public Parking Garage",
+      "addr": "",
+      "lat": 35.71399,
+      "lng": -83.50995,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [
@@ -502,6 +515,39 @@
       "height_label": "14'0\"",
       "notes": "Multiple short tunnels on TN/NC crossing. Standard clearance.",
       "source": "nps.gov/grsm"
+    },
+    {
+      "id": "osm-w977838661",
+      "name": "Prince Street",
+      "addr": "Prince Street",
+      "lat": 35.86429,
+      "lng": -83.5647,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1203425387",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.79566,
+      "lng": -83.56215,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1489988664",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 35.80411,
+      "lng": -83.55953,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [

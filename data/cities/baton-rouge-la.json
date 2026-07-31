@@ -419,7 +419,30 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24 surface-lot pass)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1135391301",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 30.42343,
+      "lng": -91.13411,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1526116376",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 30.42452,
+      "lng": -91.13471,
+      "height_in": 139,
+      "height_label": "11'7\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "btr-horace-wilkinson",
@@ -470,6 +493,116 @@
       "height_label": "14'11\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1972; bridge carries I0010",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w868467405",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 30.42439,
+      "lng": -91.13496,
+      "height_in": 139,
+      "height_label": "11'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w876125429",
+      "name": "Low clearance \u2014 Florida Boulevard (US 190)",
+      "addr": "US 190",
+      "lat": 30.45281,
+      "lng": -91.09576,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1214635351",
+      "name": "Low clearance \u2014 Airline Highway (US 61;US 190)",
+      "addr": "US 61;US 190",
+      "lat": 30.50932,
+      "lng": -91.1497,
+      "height_in": 184,
+      "height_label": "15'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1214920935",
+      "name": "Low clearance \u2014 Airline Highway (US 190)",
+      "addr": "US 190",
+      "lat": 30.50773,
+      "lng": -91.18393,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1240355681",
+      "name": "Low clearance \u2014 South Acadian Thruway (LA 427)",
+      "addr": "LA 427",
+      "lat": 30.42267,
+      "lng": -91.1519,
+      "height_in": 209,
+      "height_label": "17'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1441923793",
+      "name": "Low clearance \u2014 LA 1",
+      "addr": "LA 1",
+      "lat": 30.50637,
+      "lng": -91.20799,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474441926",
+      "name": "Low clearance \u2014 Bluebonnet Boulevard",
+      "addr": "Bluebonnet Boulevard",
+      "lat": 30.38839,
+      "lng": -91.09315,
+      "height_in": 191,
+      "height_label": "15'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474445529",
+      "name": "Low clearance \u2014 South River Road",
+      "addr": "South River Road",
+      "lat": 30.44537,
+      "lng": -91.19012,
+      "height_in": 206,
+      "height_label": "17'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1474447226",
+      "name": "Low clearance \u2014 Spanish Town Road",
+      "addr": "Spanish Town Road",
+      "lat": 30.45503,
+      "lng": -91.17458,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1477758626",
+      "name": "Low clearance \u2014 Chippewa Street (LA 3164)",
+      "addr": "LA 3164",
+      "lat": 30.47291,
+      "lng": -91.17541,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }
