@@ -583,8 +583,13 @@ def _height_matches_raw(height_in, raw_text):
         return False
     t = (raw_text.lower()
          .replace("’", "'").replace("”", '"').replace("''", '"'))
-    # feet[-inches]:  7'6"  ·  7' 6  ·  10'  ·  13 ft 6 in
-    m = re.search(r"(\d{1,2})\s*(?:'|ft|feet)\s*(\d{1,2})?", t)
+    # feet[-inches]:  7'6"  ·  7' 6  ·  10'  ·  13 ft 6 in  ·  6'-10"  ·  7' - 4"
+    # The optional dash matters: signs very often write 6'-10", and without
+    # it the match stopped at 6' and read the inches as 0 — rejecting a
+    # correct transcription as a hallucination (and then stamping the garage
+    # "no sign" for a year).  Exact-match against the AI's stated height is
+    # still required, so allowing the separator can't loosen the guard.
+    m = re.search(r"(\d{1,2})\s*(?:'|ft|feet)\s*-?\s*(\d{1,2})?", t)
     if m:
         ft = int(m.group(1))
         inch = int(m.group(2)) if m.group(2) else 0
