@@ -64,7 +64,9 @@
       "notes": "478 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://empirestateplaza.ny.gov/parking"
+      "website": "https://empirestateplaza.ny.gov/parking",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n5321225846",
@@ -77,7 +79,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n12241758085",
@@ -90,7 +94,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n13656730718",
@@ -98,12 +104,16 @@
       "addr": "",
       "lat": 42.64974,
       "lng": -73.75567,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-07-31 from sign reading \"Clearance 6'6\"\" (pano YeKbgwdhqEJ1W6nPav1mhQ, heading 302\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "YeKbgwdhqEJ1W6nPav1mhQ",
+      "pano_heading": 302
     },
     {
       "id": "osm-w54223459",
@@ -116,7 +126,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w57717398",
@@ -124,12 +136,16 @@
       "addr": "",
       "lat": 42.73034,
       "lng": -73.69442,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 81,
+      "height_label": "6'9\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-07-31 from sign reading \"CLEARANCE 6'9\"\" (pano ekxgWFGReczx9wFCA8XprQ, heading 56\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "ekxgWFGReczx9wFCA8XprQ",
+      "pano_heading": 56
     },
     {
       "id": "osm-w57717399",
@@ -142,7 +158,9 @@
       "oversized": false,
       "notes": "paid; hrs: PH,Mo-Su 00:00-24:00",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w61968748",
@@ -155,7 +173,9 @@
       "oversized": false,
       "notes": "814 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w61968749",
@@ -168,7 +188,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w61968750",
@@ -181,7 +203,9 @@
       "oversized": false,
       "notes": "879 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w61968751",
@@ -189,12 +213,16 @@
       "addr": "",
       "lat": 42.64798,
       "lng": -73.75237,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "865 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "865 spaces; paid\nVerified 2026-07-31 from sign reading \"MAXIMUM CLEARANCE 6' 6\"\" (pano Njp-hl5Jq8dvrW3ut6rw9g, heading 247\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "Njp-hl5Jq8dvrW3ut6rw9g",
+      "pano_heading": 247
     },
     {
       "id": "osm-w77030044",
@@ -207,7 +235,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w86977266",
@@ -220,7 +250,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w88968222",
@@ -233,7 +265,9 @@
       "oversized": false,
       "notes": "1000 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w92108254",
@@ -246,7 +280,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w92168720",
@@ -259,7 +295,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w100220789",
@@ -272,7 +310,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w124651836",
@@ -285,7 +325,9 @@
       "oversized": false,
       "notes": "1500 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w126311009",
@@ -298,7 +340,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w257572570",
@@ -311,7 +355,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w332570920",
@@ -324,7 +370,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w395913112",
@@ -337,7 +385,9 @@
       "oversized": false,
       "notes": "300 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w469752114",
@@ -350,7 +400,9 @@
       "oversized": false,
       "notes": "816 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w880793498",
@@ -358,12 +410,16 @@
       "addr": "",
       "lat": 42.74338,
       "lng": -73.80867,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "1000 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "1000 spaces; paid\nVerified 2026-07-31 from sign reading \"8'2\"\" (pano L7een1toQApvj8JosYQapw, heading 4\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "L7een1toQApvj8JosYQapw",
+      "pano_heading": 4
     },
     {
       "id": "osm-r13699728",
@@ -376,7 +432,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [

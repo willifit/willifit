@@ -447,7 +447,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w40007263",
@@ -460,7 +462,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w64759096",
@@ -473,7 +477,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w148708870",
@@ -486,7 +492,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w161249186",
@@ -500,7 +508,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.downtownindy.org/parking/union-station-garage/"
+      "website": "https://www.downtownindy.org/parking/union-station-garage/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w199964452",
@@ -513,7 +523,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w199991225",
@@ -526,7 +538,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w200359602",
@@ -539,7 +553,9 @@
       "oversized": false,
       "notes": "paid; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w200400835",
@@ -553,7 +569,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://parking.indianapolis.iu.edu/"
+      "website": "https://parking.indianapolis.iu.edu/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w200425844",
@@ -566,7 +584,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w200623290",
@@ -579,7 +599,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w200624775",
@@ -592,7 +614,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w203866637",
@@ -606,7 +630,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://denisonparking.com/market-district-garage/"
+      "website": "https://denisonparking.com/market-district-garage/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w242809649",
@@ -619,7 +645,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w310146575",
@@ -632,7 +660,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w339728308",
@@ -645,7 +675,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w340008414",
@@ -658,7 +690,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w340141124",
@@ -671,7 +705,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w340480879",
@@ -684,7 +720,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w340480885",
@@ -697,7 +735,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w340965648",
@@ -711,7 +751,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://denisonparking.com/citypark/"
+      "website": "https://denisonparking.com/citypark/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w341313469",
@@ -724,7 +766,9 @@
       "oversized": false,
       "notes": "660 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w341313488",
@@ -737,7 +781,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w364706624",
@@ -763,7 +809,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w703156208",
@@ -776,7 +824,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1015331739",
@@ -788,7 +838,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1015331786",
@@ -800,7 +852,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1378890409",
@@ -813,7 +867,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r18201776",
@@ -826,7 +882,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [

@@ -589,7 +589,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w51824341",
@@ -601,7 +602,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "15 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w55770030",
@@ -615,7 +618,9 @@
       "notes": "1666 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://coloradosprings.gov/transportation/driver-resources/parking/city-admin-building-parking-garage"
+      "website": "https://coloradosprings.gov/transportation/driver-resources/parking/city-admin-building-parking-garage",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w156864456",
@@ -628,7 +633,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w186430629",
@@ -641,7 +648,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w186578877",
@@ -655,7 +664,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-03:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://admin.elpasoco.com/facilities-strategic-infrastructure-management/parking-services/"
+      "website": "https://admin.elpasoco.com/facilities-strategic-infrastructure-management/parking-services/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w189534222",
@@ -668,7 +679,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w208620605",
@@ -695,7 +708,9 @@
       "notes": "305 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://coloradosprings.gov/parking-system-enterprise"
+      "website": "https://coloradosprings.gov/parking-system-enterprise",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w307102426",
@@ -708,7 +723,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w548613694",
@@ -720,7 +737,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1119766119",
@@ -732,7 +751,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1119766121",
@@ -744,7 +765,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1292531626",
@@ -756,7 +779,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "free; open-air",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1396599575",
@@ -769,7 +793,8 @@
       "oversized": false,
       "notes": "25 spaces; free; open-air",
       "source": "OpenStreetMap",
-      "website": "https://coloradosprings.gov/parking"
+      "website": "https://coloradosprings.gov/parking",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1487258437",
@@ -781,7 +806,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1500977896",
@@ -794,7 +821,9 @@
       "oversized": false,
       "notes": "free; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [

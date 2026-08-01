@@ -79,7 +79,9 @@
       "oversized": false,
       "notes": "25 spaces; paid; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w28011814",
@@ -93,7 +95,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.btv.aero/index.php/airport-guide/parking-info"
+      "website": "https://www.btv.aero/index.php/airport-guide/parking-info",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w28160082",
@@ -106,7 +110,9 @@
       "oversized": false,
       "notes": "400 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w99979676",
@@ -119,7 +125,9 @@
       "oversized": false,
       "notes": "678 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w235380995",
@@ -132,7 +140,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w667266624",
@@ -145,7 +155,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1125106047",
@@ -157,7 +169,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r1507187",
@@ -170,7 +184,9 @@
       "oversized": false,
       "notes": "86 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

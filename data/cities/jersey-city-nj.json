@@ -430,7 +430,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n1581175976",
@@ -438,12 +440,16 @@
       "addr": "",
       "lat": 40.74689,
       "lng": -73.97277,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 76,
+      "height_label": "6'4\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-01 from sign reading \"6' 4\"\" (pano XQs8BxrmZcO7FhCXv9CpiQ, heading 347\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-01",
+      "sv_checked": "2026-08-01",
+      "pano_id": "XQs8BxrmZcO7FhCXv9CpiQ",
+      "pano_heading": 347
     },
     {
       "id": "osm-n1706051592",
@@ -456,7 +462,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n1825848824",
@@ -469,7 +477,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n1861819306",
@@ -482,7 +492,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2033993133",
@@ -495,7 +507,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2070984283",
@@ -508,7 +522,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2114011906",
@@ -521,7 +537,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2179502344",
@@ -1390,7 +1408,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w27080831",
@@ -1482,7 +1500,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w230064841",
@@ -1916,7 +1934,7 @@
       "oversized": false,
       "notes": "paid; open-air; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w331072219",

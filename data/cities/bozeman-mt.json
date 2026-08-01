@@ -39,7 +39,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w392994913",
@@ -51,7 +53,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid; hrs: 24/7",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

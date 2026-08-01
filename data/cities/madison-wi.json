@@ -468,7 +468,9 @@
       "notes": "194 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://transportation.wisc.edu/visitor-parking/"
+      "website": "https://transportation.wisc.edu/visitor-parking/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n1849046475",
@@ -481,7 +483,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n1857524822",
@@ -494,7 +498,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n1857568276",
@@ -507,7 +513,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n1859366370",
@@ -520,7 +528,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n1860399691",
@@ -533,7 +543,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2039097266",
@@ -546,7 +558,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3233331735",
@@ -559,7 +573,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n5417787804",
@@ -572,7 +588,9 @@
       "oversized": false,
       "notes": "free; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7189269479",
@@ -585,7 +603,9 @@
       "oversized": false,
       "notes": "743 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n7189308608",
@@ -598,7 +618,9 @@
       "oversized": false,
       "notes": "407 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7189316872",
@@ -606,12 +628,16 @@
       "addr": "129 West Doty Street",
       "lat": 43.07228,
       "lng": -89.3838,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-07-31 from sign reading \"CLEARANCE 8'2\"\" (pano NQ7fAgLVBehea75Hr5Vg7A, heading 284\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "NQ7fAgLVBehea75Hr5Vg7A",
+      "pano_heading": 284
     },
     {
       "id": "osm-n7189321959",
@@ -624,7 +650,9 @@
       "oversized": false,
       "notes": "92 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w28767743",
@@ -638,7 +666,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.cityofmadison.com/parking-utility/garages-lots/state-street-campus-garage"
+      "website": "https://www.cityofmadison.com/parking-utility/garages-lots/state-street-campus-garage",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w37516021",
@@ -651,7 +681,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w38064536",
@@ -664,7 +696,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w38342990",
@@ -677,7 +711,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w38855399",
@@ -690,7 +726,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w56997833",
@@ -703,7 +741,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w100403787",
@@ -711,12 +751,16 @@
       "addr": "118 North Pinckney Street",
       "lat": 43.07657,
       "lng": -89.3851,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "471 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "471 spaces; paid\nVerified 2026-07-31 from sign reading \"7'0\"\" (pano 02yXqayByr0guwGcOLEPnw, heading 202\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "02yXqayByr0guwGcOLEPnw",
+      "pano_heading": 202
     },
     {
       "id": "osm-w102291496",
@@ -729,7 +773,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w103242253",
@@ -742,7 +788,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w107391729",
@@ -755,7 +803,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w107454800",
@@ -768,7 +818,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w175146005",
@@ -781,7 +833,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w175146012",
@@ -793,7 +847,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w232690021",
@@ -805,7 +861,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w295768827",
@@ -817,7 +874,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w298979831",
@@ -830,7 +889,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w513166488",
@@ -843,7 +904,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w522946555",
@@ -856,7 +919,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w661256090",
@@ -870,7 +935,9 @@
       "notes": "655 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.cityofmadison.com/parking-utility/garages-lots/south-livingston-street-garage"
+      "website": "https://www.cityofmadison.com/parking-utility/garages-lots/south-livingston-street-garage",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w870590652",
@@ -883,7 +950,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w894733524",
@@ -897,7 +966,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://transportation.wisc.edu/parking-lots/"
+      "website": "https://transportation.wisc.edu/parking-lots/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1229166571",
@@ -910,7 +981,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1256752927",
@@ -922,7 +995,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [

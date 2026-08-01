@@ -430,7 +430,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w44464963",
@@ -443,7 +445,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w44464964",
@@ -456,7 +460,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w140415406",
@@ -469,7 +475,9 @@
       "oversized": false,
       "notes": "650 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w141535719",
@@ -483,7 +491,9 @@
       "notes": "440 spaces; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://biltmoregarage.com/"
+      "website": "https://biltmoregarage.com/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w141535724",
@@ -496,7 +506,9 @@
       "oversized": false,
       "notes": "300 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w141535818",
@@ -509,7 +521,9 @@
       "oversized": false,
       "notes": "65 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w141535833",
@@ -522,7 +536,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w141543381",
@@ -535,7 +551,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w177075298",
@@ -548,7 +566,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w217252674",
@@ -561,7 +581,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w309602216",
@@ -574,7 +596,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w313089120",
@@ -587,7 +611,9 @@
       "oversized": false,
       "notes": "1250 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w369433008",
@@ -600,7 +626,9 @@
       "oversized": false,
       "notes": "220 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w474529029",
@@ -613,7 +641,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w498593333",
@@ -626,7 +656,9 @@
       "oversized": false,
       "notes": "330 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w544197959",
@@ -639,7 +671,9 @@
       "oversized": false,
       "notes": "744 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w760594431",
@@ -652,7 +686,9 @@
       "oversized": false,
       "notes": "300 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w760828006",
@@ -665,7 +701,9 @@
       "oversized": false,
       "notes": "350 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w761129126",
@@ -678,7 +716,9 @@
       "oversized": false,
       "notes": "55 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w764264706",
@@ -691,7 +731,9 @@
       "oversized": false,
       "notes": "115 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w764264707",
@@ -704,7 +746,9 @@
       "oversized": false,
       "notes": "68 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w764441929",
@@ -718,7 +762,9 @@
       "notes": "160 spaces",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.lazparking.com/local/providence-ri/121-south-main-street"
+      "website": "https://www.lazparking.com/local/providence-ri/121-south-main-street",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w764664384",
@@ -731,7 +777,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w765290065",
@@ -744,7 +792,9 @@
       "oversized": false,
       "notes": "371 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w765290067",
@@ -752,12 +802,16 @@
       "addr": "15 Park Row West",
       "lat": 41.82834,
       "lng": -71.4137,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "175 spaces",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "175 spaces\nVerified 2026-07-31 from sign reading \"MAX HEIGHT 12'-0\"\" (pano ZqS1ugyx4LmqWPHhLHW2tQ, heading 254\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "ZqS1ugyx4LmqWPHhLHW2tQ",
+      "pano_heading": 254
     },
     {
       "id": "osm-w767694422",
@@ -770,7 +824,9 @@
       "oversized": false,
       "notes": "35 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w767694423",
@@ -783,7 +839,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w767912677",
@@ -796,7 +854,9 @@
       "oversized": false,
       "notes": "85 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w767912678",
@@ -809,7 +869,9 @@
       "oversized": false,
       "notes": "169 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w845546942",
@@ -821,7 +883,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w972044105",
@@ -834,7 +898,9 @@
       "oversized": false,
       "notes": "1400 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r19481255",
@@ -848,7 +914,9 @@
       "notes": "4300 spaces",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.lazparking.com/local/providence--ri/providence-place-mall"
+      "website": "https://www.lazparking.com/local/providence--ri/providence-place-mall",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

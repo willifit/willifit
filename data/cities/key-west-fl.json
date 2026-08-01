@@ -342,7 +342,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w457772059",
@@ -355,7 +357,9 @@
       "oversized": false,
       "notes": "400 spaces; paid; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776656588",
@@ -367,7 +371,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "4 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776659089",
@@ -379,7 +385,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "4 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776786917",
@@ -391,7 +399,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "8 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776786922",
@@ -403,7 +413,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "1 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776786933",
@@ -415,7 +427,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "3 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776786941",
@@ -427,7 +441,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "1 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776786955",
@@ -439,7 +455,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "4 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w776869372",
@@ -451,7 +469,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "1 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [

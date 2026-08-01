@@ -72,7 +72,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1369363225",
@@ -84,7 +86,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [],

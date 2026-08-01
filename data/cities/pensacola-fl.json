@@ -210,7 +210,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w353568305",
@@ -223,7 +225,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w523555596",
@@ -236,7 +240,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1164643747",
@@ -248,7 +254,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [

@@ -39,7 +39,9 @@
       "notes": "827 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://pcia2.com/ann-ashley/"
+      "website": "https://pcia2.com/ann-ashley/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w30839085",
@@ -67,7 +69,9 @@
       "notes": "984 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://pcia2.com/4th-william/"
+      "website": "https://pcia2.com/4th-william/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w30839120",
@@ -81,7 +85,9 @@
       "notes": "748 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://pcia2.com/library-lane/"
+      "website": "https://pcia2.com/library-lane/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w30839161",
@@ -95,7 +101,9 @@
       "notes": "808 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://pcia2.com/maynard/"
+      "website": "https://pcia2.com/maynard/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w30839192",
@@ -109,7 +117,9 @@
       "notes": "581 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://pcia2.com/libertysquare/"
+      "website": "https://pcia2.com/libertysquare/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w30839268",
@@ -123,7 +133,9 @@
       "notes": "855 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://pcia2.com/forest/"
+      "website": "https://pcia2.com/forest/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w156672479",
@@ -136,7 +148,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w193813106",
@@ -149,7 +163,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w316162257",
@@ -162,7 +178,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [

@@ -105,7 +105,9 @@
       "oversized": false,
       "notes": "550 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w171974035",
@@ -113,12 +115,16 @@
       "addr": "215 East Mountain Avenue",
       "lat": 40.58649,
       "lng": -105.07509,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-07-31 from sign reading \"8' 2\"\" (pano G5ZEEkqicVNUuu2CGDbehg, heading 22\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "G5ZEEkqicVNUuu2CGDbehg",
+      "pano_heading": 22
     },
     {
       "id": "osm-w368336808",
@@ -130,7 +136,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w374715785",
@@ -142,7 +150,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w429549482",
@@ -155,7 +165,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w544369325",
@@ -169,7 +181,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.fcgov.com/parking/structures.php"
+      "website": "https://www.fcgov.com/parking/structures.php",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1298878234",
@@ -181,7 +195,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "2 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r14265255",
@@ -193,7 +209,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

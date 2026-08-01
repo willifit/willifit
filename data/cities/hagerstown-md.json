@@ -25,7 +25,9 @@
       "oversized": false,
       "notes": "444 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w230259399",
@@ -38,7 +40,9 @@
       "oversized": false,
       "notes": "188 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [

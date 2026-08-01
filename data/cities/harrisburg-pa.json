@@ -11,7 +11,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w89578685",
@@ -25,7 +27,9 @@
       "notes": "1182 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://parkharrisburg.com/garages-and-lots/7th-st-garage-surface-lot"
+      "website": "https://parkharrisburg.com/garages-and-lots/7th-st-garage-surface-lot",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w89607696",
@@ -38,7 +42,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w346608534",
@@ -51,7 +57,9 @@
       "oversized": false,
       "notes": "850 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w346608535",
@@ -64,7 +72,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w346608536",
@@ -78,7 +88,9 @@
       "notes": "628 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://parkharrisburg.com/garages-and-lots/locust-st-garage/"
+      "website": "https://parkharrisburg.com/garages-and-lots/locust-st-garage/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w346608537",
@@ -86,12 +98,16 @@
       "addr": "",
       "lat": 40.26301,
       "lng": -76.88552,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-07-31 from sign reading \"8'2\"\" (pano Wq0YVOfC_Y4a8bN3UgEL7g, heading 7\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "Wq0YVOfC_Y4a8bN3UgEL7g",
+      "pano_heading": 7
     },
     {
       "id": "osm-w346608538",
@@ -105,7 +121,9 @@
       "notes": "1088 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://parkharrisburg.com/garages-and-lots/chestnut-st-garage/"
+      "website": "https://parkharrisburg.com/garages-and-lots/chestnut-st-garage/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w346608539",
@@ -118,7 +136,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w351966440",
@@ -132,7 +152,9 @@
       "notes": "577 spaces",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://parkharrisburg.com/garages-and-lots/market-sq-garage/"
+      "website": "https://parkharrisburg.com/garages-and-lots/market-sq-garage/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [

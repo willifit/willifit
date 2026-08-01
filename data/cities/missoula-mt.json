@@ -83,7 +83,9 @@
       "notes": "paid; covered",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www.ci.missoula.mt.us/489/Parking-Structures"
+      "website": "http://www.ci.missoula.mt.us/489/Parking-Structures",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w134157709",
@@ -96,7 +98,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
