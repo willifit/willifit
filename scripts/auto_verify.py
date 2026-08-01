@@ -138,13 +138,32 @@ def bearing_deg(from_lat, from_lng, to_lat, to_lng):
     return (math.degrees(math.atan2(y, x)) + 360) % 360
 
 
-def _http_get(url, timeout=30):
+def _http_get(url, timeout=30, retries=3):
+    """GET with bounded retries on transient network faults.
+
+    A single SSL-handshake timeout to the Street View API once killed a
+    71-city run at $39.79 spent — urllib raises URLError (not HTTPError)
+    for handshake/DNS/reset failures, and that escaped uncaught all the
+    way up through main().  Transient faults now get a short backoff and
+    a retry; a persistent one degrades to a synthetic error status that
+    callers already handle as "no pano here" rather than crashing the run.
+    HTTP status codes (including 4xx/5xx) return as before — those are
+    answers from the server, not transport failures, so they don't retry.
+    """
     req = request.Request(url, headers={"User-Agent": "willifit-auto-verify/0.1"})
-    try:
-        with request.urlopen(req, timeout=timeout) as resp:
-            return resp.status, resp.read()
-    except error.HTTPError as e:
-        return e.code, e.read()
+    for attempt in range(retries):
+        try:
+            with request.urlopen(req, timeout=timeout) as resp:
+                return resp.status, resp.read()
+        except error.HTTPError as e:
+            return e.code, e.read()
+        except Exception as e:  # URLError, SSL timeouts, socket resets, ...
+            if attempt == retries - 1:
+                print(f"    ⚠ network fault after {retries} tries ({e}) — treating as unavailable",
+                      file=sys.stderr)
+                return 599, b""
+            time.sleep(1.5 * (attempt + 1))
+    return 599, b""
 
 
 # ---------------------------------------------------------------------------
@@ -576,6 +595,20 @@ def _height_matches_raw(height_in, raw_text):
     m2 = re.search(r'(\d{2,3})\s*"', t)
     if m2:
         return int(m2.group(1)) == int(height_in)
+    # feet-dash-inches:  "CLEARANCE 8-2"  ·  "6-10"
+    # Very common on US clearance signs, which often drop the ' and " marks.
+    # Without this, valid reads were rejected as hallucinations AND the garage
+    # got stamped "no sign" for a year — a false negative that also poisoned
+    # the scan memory.  Kept deliberately tight, since a bare "8-2" is more
+    # ambiguous than an explicit-unit form: inches must be < 12, feet must be
+    # in a plausible clearance range, nothing may trail the pair (so dates
+    # like 8-2-2024 can't match), the non-clearance keyword filter above still
+    # applies, and the result must still EQUAL the AI's stated height exactly.
+    m3 = re.search(r"\b(\d{1,2})\s*-\s*(\d{1,2})\b(?!\s*[-\d])", t)
+    if m3:
+        ft, inch = int(m3.group(1)), int(m3.group(2))
+        if inch < 12 and 4 <= ft <= 20:
+            return ft * 12 + inch == int(height_in)
     return False
 
 
