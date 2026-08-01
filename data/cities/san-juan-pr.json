@@ -2662,6 +2662,61 @@
       "entrance_lat": 18.3925306,
       "entrance_lng": -66.0786893,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+    },
+    {
+      "id": "osm-w55177108",
+      "name": "Low clearance \u2014 Autopista Jos\u00e9 de Diego (PR-22)",
+      "addr": "PR-22",
+      "lat": 18.42277,
+      "lng": -66.14227,
+      "height_in": 221,
+      "height_label": "18'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w55841643",
+      "name": "Low clearance \u2014 Expreso Rom\u00e1n Baldorioty de Castro (PR-26)",
+      "addr": "PR-26",
+      "lat": 18.41649,
+      "lng": -65.98667,
+      "height_in": 189,
+      "height_label": "15'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w702024495",
+      "name": "Low clearance \u2014 Expreso John F. Kennedy (PR-2)",
+      "addr": "PR-2",
+      "lat": 18.41652,
+      "lng": -66.10121,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1021791159",
+      "name": "Low clearance \u2014 Avenida Lomas Verdes (PR-177)",
+      "addr": "PR-177",
+      "lat": 18.38458,
+      "lng": -66.12427,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1151684345",
+      "name": "Low clearance \u2014 Autopista Jos\u00e9 de Diego (PR-22)",
+      "addr": "PR-22",
+      "lat": 18.42258,
+      "lng": -66.1456,
+      "height_in": 221,
+      "height_label": "18'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

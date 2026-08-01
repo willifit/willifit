@@ -453,9 +453,58 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure"
+    },
+    {
+      "id": "osm-w243609074",
+      "name": "City Lot #9",
+      "addr": "921 Anacapa Street",
+      "lat": 34.42138,
+      "lng": -119.70076,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "228 spaces; paid; hrs: 24/7",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w969733388",
+      "name": "Helena Lot",
+      "addr": "217 Helena Street",
+      "lat": 34.41381,
+      "lng": -119.6905,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "54 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1100564067",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 34.44053,
+      "lng": -119.73068,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1510187652",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 34.42783,
+      "lng": -119.70988,
+      "height_in": 77,
+      "height_label": "6'5\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "sba-101-overpasses",

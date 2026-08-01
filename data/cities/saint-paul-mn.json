@@ -1427,6 +1427,17 @@
       "height_label": "15'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1029700371",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 44.93706,
+      "lng": -92.96361,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

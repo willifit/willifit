@@ -788,6 +788,17 @@
       "height_label": "9'0\"",
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1168436817",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.76847,
+      "lng": -122.42038,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -1789,6 +1800,17 @@
       "lng": -122.3056,
       "height_in": 162,
       "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w196739937",
+      "name": "Low clearance \u2014 Linda Avenue",
+      "addr": "Linda Avenue",
+      "lat": 37.82329,
+      "lng": -122.24581,
+      "height_in": 172,
+      "height_label": "14'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

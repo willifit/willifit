@@ -1192,7 +1192,74 @@
       "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w398835691",
+      "name": "North Drinkwater Boulevard",
+      "addr": "North Drinkwater Boulevard",
+      "lat": 33.4927,
+      "lng": -111.92181,
+      "height_in": 184,
+      "height_label": "15'4\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w492214752",
+      "name": "North Drinkwater Boulevard",
+      "addr": "North Drinkwater Boulevard",
+      "lat": 33.49935,
+      "lng": -111.92494,
+      "height_in": 183,
+      "height_label": "15'3\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w568378658",
+      "name": "Terminal 3 North",
+      "addr": "Terminal 3 North",
+      "lat": 33.43577,
+      "lng": -112.0088,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w670425480",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 33.63731,
+      "lng": -111.88163,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w892657409",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 33.4311,
+      "lng": -112.04406,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w953473220",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 33.43583,
+      "lng": -111.99433,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "1 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "sco-loop-101-bridges",

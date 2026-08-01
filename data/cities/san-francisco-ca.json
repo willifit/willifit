@@ -735,6 +735,39 @@
       "height_label": "8'5\"",
       "notes": "layer 1",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w791493592",
+      "name": "Lincoln Boulevard",
+      "addr": "Lincoln Boulevard",
+      "lat": 37.80628,
+      "lng": -122.47452,
+      "height_in": 181,
+      "height_label": "15'1\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1168436817",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.76847,
+      "lng": -122.42038,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1540686844",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 37.7819,
+      "lng": -122.50346,
+      "height_in": 98,
+      "height_label": "8'2\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -1597,6 +1630,17 @@
       "lng": -122.3056,
       "height_in": 162,
       "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1074628859",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.76297,
+      "lng": -122.43539,
+      "height_in": 141,
+      "height_label": "11'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

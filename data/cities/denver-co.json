@@ -1365,6 +1365,149 @@
       "height_label": "13'4\"",
       "notes": "Not in Denver proper \u2014 60mi west. Highest vehicle tunnel in US. Hazmat restricted.",
       "source": "CDOT"
+    },
+    {
+      "id": "osm-w34666362",
+      "name": "East Speer Boulevard",
+      "addr": "East Speer Boulevard",
+      "lat": 39.72609,
+      "lng": -104.98665,
+      "height_in": 197,
+      "height_label": "16'5\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w99962985",
+      "name": "38th Street",
+      "addr": "38th Street",
+      "lat": 39.77141,
+      "lng": -104.9734,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w274202070",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.65382,
+      "lng": -104.91343,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w345804492",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.73123,
+      "lng": -105.01482,
+      "height_in": 96,
+      "height_label": "8'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w365446756",
+      "name": "North Brighton Boulevard",
+      "addr": "CO 265",
+      "lat": 39.79406,
+      "lng": -104.95643,
+      "height_in": 136,
+      "height_label": "11'4\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w453022192",
+      "name": "Stout Street",
+      "addr": "Stout Street",
+      "lat": 39.74279,
+      "lng": -104.99701,
+      "height_in": 197,
+      "height_label": "16'5\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w668374521",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.6972,
+      "lng": -104.89268,
+      "height_in": 112,
+      "height_label": "9'4\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w700245321",
+      "name": "Lincoln Street",
+      "addr": "Lincoln Street",
+      "lat": 39.74364,
+      "lng": -104.98611,
+      "height_in": 118,
+      "height_label": "9'10\"",
+      "notes": "4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w720665220",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.65361,
+      "lng": -104.91499,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w790809316",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.7558,
+      "lng": -105.00171,
+      "height_in": 187,
+      "height_label": "15'7\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w860505230",
+      "name": "East 46th Avenue",
+      "addr": "East 46th Avenue",
+      "lat": 39.78005,
+      "lng": -104.97503,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1161048705",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.62454,
+      "lng": -104.88491,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1395896518",
+      "name": "North Speer Boulevard",
+      "addr": "North Speer Boulevard",
+      "lat": 39.72676,
+      "lng": -104.98759,
+      "height_in": 197,
+      "height_label": "16'5\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -1830,6 +1973,17 @@
       "lng": -104.99618,
       "height_in": 183,
       "height_label": "15'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w207593660",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 39.62892,
+      "lng": -104.9006,
+      "height_in": 156,
+      "height_label": "13'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

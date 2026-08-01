@@ -379,6 +379,96 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site). 30 spaces.",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w117751094",
+      "name": "City Ramp Garage",
+      "addr": "430",
+      "lat": 47.65691,
+      "lng": -117.41915,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w120863332",
+      "name": "NorthTown Mall",
+      "addr": "",
+      "lat": 47.70132,
+      "lng": -117.40673,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w120863338",
+      "name": "NorthTown Mall",
+      "addr": "",
+      "lat": 47.70121,
+      "lng": -117.41009,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w120863341",
+      "name": "NorthTown Mall",
+      "addr": "",
+      "lat": 47.70282,
+      "lng": -117.4065,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1328860178",
+      "name": "Davenport Hotels",
+      "addr": "",
+      "lat": 47.65616,
+      "lng": -117.42301,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-r1612234",
+      "name": "Diamond Parking",
+      "addr": "",
+      "lat": 47.65962,
+      "lng": -117.41431,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-r8418549",
+      "name": "Garage Parking",
+      "addr": "",
+      "lat": 47.6255,
+      "lng": -117.53881,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [
@@ -1247,6 +1337,17 @@
       "lng": -117.45272,
       "height_in": 178,
       "height_label": "14'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w168353106",
+      "name": "Low clearance \u2014 South Lindeke Street",
+      "addr": "South Lindeke Street",
+      "lat": 47.64591,
+      "lng": -117.45288,
+      "height_in": 179,
+      "height_label": "14'11\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

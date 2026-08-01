@@ -138,9 +138,88 @@
       "source": "OpenStreetMap",
       "sv_checked": "2026-07-04",
       "sv_status": "no-sign"
+    },
+    {
+      "id": "osm-w1541062641",
+      "name": "Bicycle Doctor",
+      "addr": "",
+      "lat": 39.81344,
+      "lng": -89.64937,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w104393258",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.84084,
+      "lng": -89.64133,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w359639786",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.80505,
+      "lng": -89.64591,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w690331695",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.80084,
+      "lng": -89.65245,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w691723902",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.8333,
+      "lng": -89.60076,
+      "height_in": 138,
+      "height_label": "11'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w691735343",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.76389,
+      "lng": -89.68296,
+      "height_in": 110,
+      "height_label": "9'2\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1389112335",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.8063,
+      "lng": -89.64506,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-17-058005000000000",

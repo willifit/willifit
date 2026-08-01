@@ -2445,6 +2445,50 @@
       "height_label": "14'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w445305024",
+      "name": "Low clearance \u2014 Northwest 37th Avenue",
+      "addr": "Northwest 37th Avenue",
+      "lat": 25.78609,
+      "lng": -80.25589,
+      "height_in": 174,
+      "height_label": "14'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w556999887",
+      "name": "Low clearance \u2014 Northwest 82nd Path",
+      "addr": "Northwest 82nd Path",
+      "lat": 25.80881,
+      "lng": -80.33099,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539163556",
+      "name": "Low clearance \u2014 Northwest 42nd Avenue (SR 953)",
+      "addr": "SR 953",
+      "lat": 25.7858,
+      "lng": -80.26418,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539163560",
+      "name": "Low clearance \u2014 Northwest 42nd Avenue (SR 953)",
+      "addr": "SR 953",
+      "lat": 25.78502,
+      "lng": -80.26417,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

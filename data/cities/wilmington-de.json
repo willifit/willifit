@@ -1116,7 +1116,74 @@
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w433325091",
+      "name": "Main Street",
+      "addr": "Main Street",
+      "lat": 39.82733,
+      "lng": -75.4069,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w433398423",
+      "name": "Tunnel (motorway link)",
+      "addr": "",
+      "lat": 39.83997,
+      "lng": -75.40619,
+      "height_in": 171,
+      "height_label": "14'3\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w433455219",
+      "name": "US 322",
+      "addr": "US 322",
+      "lat": 39.84147,
+      "lng": -75.40691,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w435502484",
+      "name": "14th Street",
+      "addr": "14th Street",
+      "lat": 39.74312,
+      "lng": -75.53072,
+      "height_in": 152,
+      "height_label": "12'8\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w997810258",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.88181,
+      "lng": -75.52935,
+      "height_in": 140,
+      "height_label": "11'8\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1460465056",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.78176,
+      "lng": -75.53842,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-10-1001279",

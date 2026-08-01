@@ -741,7 +741,19 @@
       "source": "OpenStreetMap (surface lot)"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w134978382",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 44.06022,
+      "lng": -92.47006,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "1 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-27-L6322",

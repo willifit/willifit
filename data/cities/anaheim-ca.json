@@ -1203,6 +1203,19 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "https://disneyland.disney.go.com/guest-services/parking/"
+    },
+    {
+      "id": "osm-w1104872296",
+      "name": "MemorialCare Employee/Visitor Parking",
+      "addr": "",
+      "lat": 33.71085,
+      "lng": -117.95243,
+      "height_in": 81,
+      "height_label": "6'9\"",
+      "oversized": false,
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [

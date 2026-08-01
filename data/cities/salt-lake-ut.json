@@ -469,6 +469,17 @@
       "height_label": "14'0\"",
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w768282710",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 40.69164,
+      "lng": -111.9528,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -1228,6 +1239,28 @@
       "lng": -111.89338,
       "height_in": 84,
       "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1389056991",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.68051,
+      "lng": -111.84339,
+      "height_in": 87,
+      "height_label": "7'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1500965938",
+      "name": "Low clearance \u2014 Center Street",
+      "addr": "Center Street",
+      "lat": 40.84186,
+      "lng": -111.91539,
+      "height_in": 188,
+      "height_label": "15'8\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

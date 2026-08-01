@@ -649,6 +649,105 @@
       "height_label": "15'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w463522780",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.14825,
+      "lng": -88.25736,
+      "height_in": 102,
+      "height_label": "8'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w907552708",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.11682,
+      "lng": -88.20666,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1125385542",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.07071,
+      "lng": -88.30846,
+      "height_in": 88,
+      "height_label": "7'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1202390819",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.14157,
+      "lng": -88.24705,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1372257097",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.13687,
+      "lng": -88.25176,
+      "height_in": 84,
+      "height_label": "7'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1463497878",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.13696,
+      "lng": -88.24275,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1473422854",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.09794,
+      "lng": -88.29392,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1526250399",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.06998,
+      "lng": -88.25139,
+      "height_in": 114,
+      "height_label": "9'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1529899586",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 40.14241,
+      "lng": -88.25005,
+      "height_in": 108,
+      "height_label": "9'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

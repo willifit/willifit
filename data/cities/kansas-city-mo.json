@@ -965,7 +965,162 @@
       "source": "OpenStreetMap"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w31226177",
+      "name": "I 35",
+      "addr": "I 35",
+      "lat": 39.07869,
+      "lng": -94.59398,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "layer -1; 3 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100101483",
+      "name": "Wilson Avenue",
+      "addr": "Wilson Avenue",
+      "lat": 39.10856,
+      "lng": -94.50574,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100219100",
+      "name": "East 9th Street",
+      "addr": "East 9th Street",
+      "lat": 39.10144,
+      "lng": -94.51862,
+      "height_in": 167,
+      "height_label": "13'11\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100219671",
+      "name": "Van Brunt Boulevard",
+      "addr": "Van Brunt Boulevard",
+      "lat": 39.099,
+      "lng": -94.52604,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100219674",
+      "name": "Jackson Avenue",
+      "addr": "Jackson Avenue",
+      "lat": 39.09709,
+      "lng": -94.53307,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w100219681",
+      "name": "East 12th Street",
+      "addr": "East 12th Street",
+      "lat": 39.0981,
+      "lng": -94.52967,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w556171844",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.07809,
+      "lng": -94.55346,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w571814725",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.22081,
+      "lng": -94.57436,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w571814727",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.22002,
+      "lng": -94.57436,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w571814731",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 39.22079,
+      "lng": -94.57323,
+      "height_in": 109,
+      "height_label": "9'1\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w604791317",
+      "name": "Summit Street",
+      "addr": "Summit Street",
+      "lat": 39.08362,
+      "lng": -94.59393,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1180424421",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.95944,
+      "lng": -94.64791,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1324493072",
+      "name": "Independence Avenue",
+      "addr": "Independence Avenue",
+      "lat": 39.10499,
+      "lng": -94.51308,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "layer -1; 4 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1409569845",
+      "name": "Blue Parkway",
+      "addr": "Blue Parkway",
+      "lat": 39.03477,
+      "lng": -94.52732,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "kc-broadway-bridge",

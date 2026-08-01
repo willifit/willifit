@@ -44,7 +44,30 @@
       "website": "https://transportation.westchestergov.com/commuter-services/park-n-ride"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w252225316",
+      "name": "Arch Street",
+      "addr": "Arch Street",
+      "lat": 41.0321,
+      "lng": -73.57322,
+      "height_in": 97,
+      "height_label": "8'1\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w799609558",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 41.06419,
+      "lng": -73.5427,
+      "height_in": 120,
+      "height_label": "10'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-09-00702",

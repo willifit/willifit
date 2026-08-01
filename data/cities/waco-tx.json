@@ -153,6 +153,32 @@
       "structure_type": "surface_lot",
       "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).",
       "source": "OpenStreetMap (surface lot)"
+    },
+    {
+      "id": "osm-w162882889",
+      "name": "8th St. Parking Garage",
+      "addr": "",
+      "lat": 31.54491,
+      "lng": -97.12412,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1012204714",
+      "name": "THe View Parking Garage",
+      "addr": "",
+      "lat": 31.54167,
+      "lng": -97.12408,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "free; covered",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [],

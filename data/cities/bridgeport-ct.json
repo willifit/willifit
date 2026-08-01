@@ -1334,6 +1334,72 @@
       "height_label": "11'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w28216079",
+      "name": "Low clearance \u2014 Stratford Avenue (CT 130)",
+      "addr": "CT 130",
+      "lat": 41.17961,
+      "lng": -73.18701,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539195870",
+      "name": "Low clearance \u2014 Bayberry Lane",
+      "addr": "Bayberry Lane",
+      "lat": 41.17159,
+      "lng": -73.33098,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539195872",
+      "name": "Low clearance \u2014 Hillside Road",
+      "addr": "Hillside Road",
+      "lat": 41.19153,
+      "lng": -73.29544,
+      "height_in": 132,
+      "height_label": "11'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539195874",
+      "name": "Low clearance \u2014 Reservoir Avenue",
+      "addr": "Reservoir Avenue",
+      "lat": 41.23487,
+      "lng": -73.19583,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539195876",
+      "name": "Low clearance \u2014 White Plains Road (CT 127)",
+      "addr": "CT 127",
+      "lat": 41.23722,
+      "lng": -73.17959,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1539196280",
+      "name": "Low clearance \u2014 Main Street (CT 110)",
+      "addr": "CT 110",
+      "lat": 41.24518,
+      "lng": -73.10254,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

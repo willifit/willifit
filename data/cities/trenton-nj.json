@@ -222,7 +222,107 @@
       "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w63520540",
+      "name": "Woolston Drive",
+      "addr": "Woolston Drive",
+      "lat": 40.19267,
+      "lng": -74.82387,
+      "height_in": 150,
+      "height_label": "12'6\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w109826149",
+      "name": "River Road",
+      "addr": "PA 32",
+      "lat": 40.2575,
+      "lng": -74.84968,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w246407244",
+      "name": "Woodbourne Road",
+      "addr": "Woodbourne Road",
+      "lat": 40.19388,
+      "lng": -74.89304,
+      "height_in": 125,
+      "height_label": "10'5\"",
+      "notes": "layer -1; 1 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w444802947",
+      "name": "Titus Mill Road",
+      "addr": "Titus Mill Road",
+      "lat": 40.34936,
+      "lng": -74.79105,
+      "height_in": 126,
+      "height_label": "10'6\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w460089209",
+      "name": "Sullivan Way",
+      "addr": "CR 579",
+      "lat": 40.25655,
+      "lng": -74.81591,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w486884592",
+      "name": "Pennington-Hopewell Road",
+      "addr": "CR 654",
+      "lat": 40.3653,
+      "lng": -74.78799,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w487965663",
+      "name": "Oxford Valley Road",
+      "addr": "Oxford Valley Road",
+      "lat": 40.23245,
+      "lng": -74.83496,
+      "height_in": 127,
+      "height_label": "10'7\"",
+      "notes": "layer -1",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w488312330",
+      "name": "South Main Street",
+      "addr": "South Main Street",
+      "lat": 40.23549,
+      "lng": -74.83033,
+      "height_in": 170,
+      "height_label": "14'2\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w910535014",
+      "name": "Sullivan Way",
+      "addr": "CR 579",
+      "lat": 40.23873,
+      "lng": -74.80309,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "layer -1; 2 lanes",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-34-10XX233",

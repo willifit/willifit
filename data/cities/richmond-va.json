@@ -1033,6 +1033,226 @@
       "height_label": "13'10\"",
       "notes": "FHWA NBI; under-bridge clearance; built 1995; bridge carries CAROLINA AVE",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w2059",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 37.68804,
+      "lng": -77.4506,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w4990973",
+      "name": "Low clearance \u2014 I 64",
+      "addr": "I 64",
+      "lat": 37.55869,
+      "lng": -77.41648,
+      "height_in": 166,
+      "height_label": "13'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w6033276",
+      "name": "Low clearance \u2014 Richmond-Petersburg Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 37.44082,
+      "lng": -77.42722,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w6038007",
+      "name": "Low clearance \u2014 Commerce Road Access",
+      "addr": "Commerce Road Access",
+      "lat": 37.49034,
+      "lng": -77.43251,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w46420361",
+      "name": "Low clearance \u2014 VA 146",
+      "addr": "VA 146",
+      "lat": 37.54525,
+      "lng": -77.48884,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w48841883",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 37.68421,
+      "lng": -77.45278,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w83606794",
+      "name": "Low clearance \u2014 East Canal Street",
+      "addr": "East Canal Street",
+      "lat": 37.53438,
+      "lng": -77.43381,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w123061030",
+      "name": "Low clearance \u2014 Downtown Expressway (VA 195)",
+      "addr": "VA 195",
+      "lat": 37.55047,
+      "lng": -77.48079,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w187131366",
+      "name": "Low clearance underpass (secondary link)",
+      "addr": "",
+      "lat": 37.51399,
+      "lng": -77.33619,
+      "height_in": 146,
+      "height_label": "12'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w202997064",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 37.68593,
+      "lng": -77.4521,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w265147380",
+      "name": "Low clearance \u2014 Robin Hood Road",
+      "addr": "Robin Hood Road",
+      "lat": 37.57186,
+      "lng": -77.45602,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w335957893",
+      "name": "Low clearance \u2014 VA 146",
+      "addr": "VA 146",
+      "lat": 37.54877,
+      "lng": -77.48274,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w599982041",
+      "name": "Low clearance underpass (motorway link)",
+      "addr": "",
+      "lat": 37.68345,
+      "lng": -77.45168,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w601103323",
+      "name": "Low clearance \u2014 I 95",
+      "addr": "I 95",
+      "lat": 37.53711,
+      "lng": -77.42851,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w756127084",
+      "name": "Low clearance \u2014 East Main Street (VA 5)",
+      "addr": "VA 5",
+      "lat": 37.52462,
+      "lng": -77.41858,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w756152468",
+      "name": "Low clearance \u2014 Orleans Street",
+      "addr": "Orleans Street",
+      "lat": 37.51774,
+      "lng": -77.4138,
+      "height_in": 156,
+      "height_label": "13'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1004614719",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 37.60433,
+      "lng": -77.54143,
+      "height_in": 82,
+      "height_label": "6'10\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1065974978",
+      "name": "Low clearance \u2014 Richmond-Petersburg Turnpike (I 95)",
+      "addr": "I 95",
+      "lat": 37.59022,
+      "lng": -77.46912,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1424536597",
+      "name": "Low clearance \u2014 Bellwood Road",
+      "addr": "Bellwood Road",
+      "lat": 37.41314,
+      "lng": -77.42667,
+      "height_in": 169,
+      "height_label": "14'1\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1490041401",
+      "name": "Low clearance \u2014 Robin Hood Road",
+      "addr": "Robin Hood Road",
+      "lat": 37.57188,
+      "lng": -77.45702,
+      "height_in": 164,
+      "height_label": "13'8\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

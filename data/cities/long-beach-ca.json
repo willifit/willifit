@@ -1792,6 +1792,61 @@
       "height_label": "13'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w185741140",
+      "name": "Low clearance \u2014 Lakewood Boulevard (CA 19)",
+      "addr": "CA 19",
+      "lat": 33.87729,
+      "lng": -118.1427,
+      "height_in": 186,
+      "height_label": "15'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w291406523",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.85064,
+      "lng": -118.13576,
+      "height_in": 162,
+      "height_label": "13'6\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w772801444",
+      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
+      "addr": "I 405",
+      "lat": 33.81423,
+      "lng": -118.17638,
+      "height_in": 182,
+      "height_label": "15'2\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1453281853",
+      "name": "Low clearance \u2014 Artesia Tollway (CA 91 EXPR)",
+      "addr": "CA 91 EXPR",
+      "lat": 33.87641,
+      "lng": -118.09106,
+      "height_in": 185,
+      "height_label": "15'5\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1545754500",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.85002,
+      "lng": -118.14331,
+      "height_in": 124,
+      "height_label": "10'4\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

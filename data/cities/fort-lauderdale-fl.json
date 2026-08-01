@@ -233,6 +233,19 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure"
+    },
+    {
+      "id": "osm-w1536654325",
+      "name": "Harrah's Pompano Beach Self Parking",
+      "addr": "",
+      "lat": 26.22379,
+      "lng": -80.15043,
+      "height_in": null,
+      "height_label": null,
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure"
     }
   ],
   "tunnels": [

@@ -606,7 +606,19 @@
       "structure_type": "structure"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w1119525503",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 38.007,
+      "lng": -84.51738,
+      "height_in": 111,
+      "height_label": "9'3\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "lex-new-circle-rd",
