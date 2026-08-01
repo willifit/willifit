@@ -4685,6 +4685,16 @@ document.getElementById('skipGeo').addEventListener('click', skipWelcome);
 
 async function boot() {
   const status = document.getElementById('welcomeStatus');
+  // LCP: start the map — and therefore the first tile requests — BEFORE the
+  // blocking JSON fetches below.  The base-map tile is this page's LCP
+  // element, and initMapOSM() opens on a hardcoded default view with no
+  // dependency on index.json or sponsors.json.  Previously tiles couldn't
+  // even be requested until two sequential same-origin fetches finished
+  // (~0.9s: index.json is no-cache, so it revalidates on every single load).
+  // Now the tiles download in parallel with the data.  The #map div is
+  // parsed well above this script, so it exists by the time we run.
+  // The Google path stays below — initMapGoogle() needs loadGoogleMaps().
+  if (MAP_PROVIDER !== 'google') initMap();
   try {
     const res = await fetch('./data/index.json');
     if (!res.ok) throw new Error('index fetch failed: ' + res.status);
@@ -4708,11 +4718,11 @@ async function boot() {
       if (status) status.textContent = 'Google Maps failed — check your API key, billing, and domain restrictions.';
       return;
     }
+    initMap();   // Google only — the OSM map already started at the top of boot()
   }
   loadVehicleHeightFromStorage();
   wireVehicleHeightInput();
   renderHomeSponsor();
-  initMap();
   // Hash-based deep-link routing. If URL has #slug or #slug/garage-id, jump there.
   // Otherwise fall back to geolocation + last-city flow.
   window.addEventListener('hashchange', handleHashRoute);
