@@ -885,14 +885,16 @@
       "addr": "72 West Vaughn Avenue",
       "lat": 33.35652,
       "lng": -111.7914,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 86,
+      "height_label": "7'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"CLEARANCE 7-2\" (pano KD4HqTtF2h_MdiqLhXL2aA, heading 308\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "KD4HqTtF2h_MdiqLhXL2aA",
+      "pano_heading": 308
     },
     {
       "id": "osm-w504281745",
@@ -921,7 +923,7 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
     {

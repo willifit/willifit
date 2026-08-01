@@ -125,7 +125,7 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
     {
@@ -164,14 +164,16 @@
       "addr": "",
       "lat": 42.96,
       "lng": -85.66944,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"8-2\" (pano OY220X7TShrV7wkX6vLm_A, heading 215\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "OY220X7TShrV7wkX6vLm_A",
+      "pano_heading": 215
     },
     {
       "id": "osm-w251492743",

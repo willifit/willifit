@@ -791,12 +791,16 @@
       "addr": "6280 North College Avenue",
       "lat": 39.86919,
       "lng": -86.14677,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "paid; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid; hrs: 24/7\nVerified 2026-08-01 from sign reading \"8'-2\"\" (pano o2xTuQ_Z5Kb9utPwyKscrA, heading 136\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-01",
+      "sv_checked": "2026-08-01",
+      "pano_id": "o2xTuQ_Z5Kb9utPwyKscrA",
+      "pano_heading": 136
     },
     {
       "id": "osm-w542181092",

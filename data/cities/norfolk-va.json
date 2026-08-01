@@ -272,13 +272,27 @@
       "addr": "",
       "lat": 36.84963,
       "lng": -76.29147,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 92,
+      "height_label": "7'8\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
-      "sv_status": "no-sign"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"7'-8\" CLEARANCE - LEVELS 2 & 3\" (pano --5e9BbYSCThWpyzgven7Q, heading 51\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "--5e9BbYSCThWpyzgven7Q",
+      "pano_heading": 51,
+      "sections": [
+        {
+          "label": "Levels 2 & 3",
+          "height_in": 92,
+          "height_label": "7'8\""
+        },
+        {
+          "label": "Level 2 Only",
+          "height_in": 98,
+          "height_label": "8'2\""
+        }
+      ]
     },
     {
       "id": "osm-w408624601",

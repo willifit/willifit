@@ -164,16 +164,18 @@
       "addr": "65 Memorial Rd, W Hartford",
       "lat": 41.7613,
       "lng": -72.7421,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Mixed-use shopping district.",
-      "source": "blueback-square.com",
+      "notes": "Mixed-use shopping district.\nVerified 2026-08-01 from sign reading \"8'-2\"\" (pano q45Y-gb_gyiV7FIZ-mS7-A, heading 134\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: blueback-square.com",
       "entrance_lat": 41.7612082,
       "entrance_lng": -72.74061,
       "entrance_source": "OSM parking_entrance node 8739439663",
-      "sv_checked": "2026-07-04",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "q45Y-gb_gyiV7FIZ-mS7-A",
+      "pano_heading": 134
     },
     {
       "id": "hrt-westfarms",
@@ -550,7 +552,7 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
     {

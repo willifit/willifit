@@ -1056,12 +1056,16 @@
       "addr": "72 West Vaughn Avenue",
       "lat": 33.35652,
       "lng": -111.7914,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 86,
+      "height_label": "7'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"CLEARANCE 7-2\" (pano KD4HqTtF2h_MdiqLhXL2aA, heading 308\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-01",
+      "sv_checked": "2026-08-01",
+      "pano_id": "KD4HqTtF2h_MdiqLhXL2aA",
+      "pano_heading": 308
     },
     {
       "id": "osm-w388609672",
@@ -1095,12 +1099,16 @@
       "addr": "",
       "lat": 33.35662,
       "lng": -111.78852,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"8'-2\"\" (pano Q5EDgrb0HBrsThF29y13WA, heading 48\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-01",
+      "sv_checked": "2026-08-01",
+      "pano_id": "Q5EDgrb0HBrsThF29y13WA",
+      "pano_heading": 48
     },
     {
       "id": "osm-w774896813",

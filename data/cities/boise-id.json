@@ -401,14 +401,16 @@
       "addr": "445 South Capitol Boulevard",
       "lat": 43.61256,
       "lng": -116.20522,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 94,
+      "height_label": "7'10\"",
       "oversized": false,
-      "notes": "343 spaces; paid",
-      "source": "OpenStreetMap",
+      "notes": "343 spaces; paid\nVerified 2026-08-01 from sign reading \"Clearance 7'-10\"\" (pano 9dBOQ9LZnIyFmUnxy2V0jQ, heading 303\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "9dBOQ9LZnIyFmUnxy2V0jQ",
+      "pano_heading": 303
     },
     {
       "id": "osm-w229832291",

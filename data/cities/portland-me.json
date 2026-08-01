@@ -170,14 +170,16 @@
       "addr": "",
       "lat": 43.6543,
       "lng": -70.27619,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 90,
+      "height_label": "7'6\"",
       "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
+      "notes": "free\nVerified 2026-08-01 from sign reading \"7'-6\" CLEARANCE\" (pano 5DEDuCBjzTtTEfzReEAURA, heading 169\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "5DEDuCBjzTtTEfzReEAURA",
+      "pano_heading": 169
     },
     {
       "id": "osm-w340970454",

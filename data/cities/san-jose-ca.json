@@ -78,7 +78,7 @@
       "entrance_lat": 37.3392034,
       "entrance_lng": -121.8938565,
       "entrance_source": "OSM parking_entrance node 13105246399",
-      "sv_checked": "2026-06-20",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
     {
@@ -828,14 +828,16 @@
       "addr": "95 North 3rd Street",
       "lat": 37.33797,
       "lng": -121.88952,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"6' - 10\"\" (pano f1ucx1AocIlGU1TGXGlXrQ, heading 179\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "f1ucx1AocIlGU1TGXGlXrQ",
+      "pano_heading": 179
     },
     {
       "id": "osm-w39020116",

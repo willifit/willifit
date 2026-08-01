@@ -1530,13 +1530,15 @@
       "addr": "",
       "lat": 18.39985,
       "lng": -66.0569,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-06-13",
-      "sv_status": "no-sign"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"ALTURA 6'-6\" MAXIMA\" (pano 1Z4KtP9yayLkP6BtLHBS7g, heading 140\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "1Z4KtP9yayLkP6BtLHBS7g",
+      "pano_heading": 140
     },
     {
       "id": "osm-w372993594",

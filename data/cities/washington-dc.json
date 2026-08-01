@@ -114,8 +114,8 @@
       "entrance_lat": 38.8737636,
       "entrance_lng": -77.0063092,
       "entrance_source": "OSM parking_entrance node 11053779367",
-      "sv_checked": "2026-06-20",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano"
     },
     {
       "id": "dc-gallery-place",

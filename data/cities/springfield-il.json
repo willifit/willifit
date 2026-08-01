@@ -47,13 +47,15 @@
       "addr": "701 East Monroe Street",
       "lat": 39.79974,
       "lng": -89.64578,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 155,
+      "height_label": "12'11\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-04",
-      "sv_status": "no-sign"
+      "notes": "paid\nVerified 2026-08-01 from sign reading \"CLEARANCE 12'-11\"\" (pano 3Wmc3zqsO44N5j0nUQr_gQ, heading 67\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "3Wmc3zqsO44N5j0nUQr_gQ",
+      "pano_heading": 67
     },
     {
       "id": "osm-w131406626",

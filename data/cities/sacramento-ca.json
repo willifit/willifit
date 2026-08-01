@@ -196,7 +196,7 @@
       "entrance_lat": 38.5717034,
       "entrance_lng": -121.4696827,
       "entrance_source": "OSM parking_entrance node 13072199299",
-      "sv_checked": "2026-07-04",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
     {
@@ -741,7 +741,7 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
     {
@@ -836,14 +836,16 @@
       "addr": "",
       "lat": 38.56413,
       "lng": -121.47302,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-01 from sign reading \"8'-2\"\" (pano xMDm0JKsyr2Gr8FD9yQ8WQ, heading 183\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
+      "sv_checked": "2026-08-01",
+      "verified_on": "2026-08-01",
+      "pano_id": "xMDm0JKsyr2Gr8FD9yQ8WQ",
+      "pano_heading": 183
     },
     {
       "id": "osm-w763230897",

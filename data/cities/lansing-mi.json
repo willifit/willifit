@@ -71,12 +71,16 @@
       "addr": "",
       "lat": 42.7358,
       "lng": -84.48302,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-01 from sign reading \"8'-2\"\" (pano g8FOuENS0E6oDUgG2RSWsg, heading 197\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-01",
+      "sv_checked": "2026-08-01",
+      "pano_id": "g8FOuENS0E6oDUgG2RSWsg",
+      "pano_heading": 197
     },
     {
       "id": "osm-w26262206",
