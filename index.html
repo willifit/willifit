@@ -3226,7 +3226,21 @@ function _inBounds(g, b) {
 
 /* ---------- OSM (Leaflet) ---------- */
 function initMapOSM() {
-  state.map = L.map('map', { zoomControl: true, preferCanvas: true }).setView([36.1147, -115.1728], 12);
+  // Open on the last city the visitor actually used, when we know it.  This is
+  // read synchronously from localStorage (no network, no index.json), so the
+  // very first tile request is already the correct one instead of a screenful
+  // of default-view tiles that get discarded a moment later when we fly to
+  // their city.  First-time visitors still get the default view.
+  const _start = (() => {
+    try {
+      const c = JSON.parse(localStorage.getItem('willifit_last_center') || 'null');
+      if (c && Number.isFinite(c.lat) && Number.isFinite(c.lng)) {
+        return [[c.lat, c.lng], Number.isFinite(c.zoom) ? c.zoom : 12];
+      }
+    } catch (e) {}
+    return [[36.1147, -115.1728], 12];
+  })();
+  state.map = L.map('map', { zoomControl: true, preferCanvas: true }).setView(_start[0], _start[1]);
 
   // Two base layers — users toggle via the layer control (top-right of the
   // map).  Street is default; satellite uses Esri World Imagery (free,
@@ -3890,6 +3904,17 @@ async function switchToCity(slug, center) {
     }
   } else {
     mapFlyTo(meta.lat, meta.lng, meta.zoom);
+    // Cache this city's center so the NEXT visit can open the map directly
+    // here.  Without it, boot() opens on the hardcoded default view, downloads
+    // a full screen of tiles for a city the user isn't looking at, and then
+    // flies away — those wasted tiles compete for bandwidth with the ones that
+    // actually become the LCP element.  Stored as plain numbers so it can be
+    // read synchronously at init, before index.json is available.
+    try {
+      localStorage.setItem('willifit_last_center', JSON.stringify({
+        lat: meta.lat, lng: meta.lng, zoom: meta.zoom,
+      }));
+    } catch (e) {}
   }
   document.getElementById('detail').classList.remove('open');
   renderList();
