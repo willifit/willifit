@@ -26,6 +26,35 @@
 
 # "/" serves /index.html by default (Netlify static convention).
 
+# -----------------------------------------------------------------------------
+# Source / tooling hardening.  `publish = "."` makes the whole repo root the web
+# root, so without these rules the deploy serves the Python build scripts
+# (/scripts/*.py) and the RAW function source (/netlify/functions/reports.js) as
+# static text.  The repo is public on GitHub, so this leaks no secret — but it
+# hands an attacker the admin auth mechanism and the exact rate-limit thresholds
+# on a plate, and it would become a real leak the day the repo goes private.
+# force=true is required because Netlify serves an existing file before any
+# non-forced redirect.  Note: the FUNCTION RUNTIME lives at /.netlify/* (leading
+# dot) and is unaffected — this only blocks the dotless static path /netlify/*.
+# Serving 404.html keeps these indistinguishable from any other missing path.
+[[redirects]]
+  from = "/scripts/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/*.py"
+  to = "/404.html"
+  status = 404
+  force = true
+
 # Legacy: /willifit.html was the original entry before we switched to /index.html.
 # Bookmarks, old PWA installs, and a handful of indexed backlinks still point at
 # it, so redirect them to the canonical root (301 = permanent).  The physical
