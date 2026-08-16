@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<title>Accessibility Statement — WillIFit.ai</title>
+<meta name="description" content="WillIFit.ai's accessibility statement: WCAG 2.1 AA target, current conformance status, a full list of known issues by severity, and how to report a problem.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://willifit.ai/accessibility.html">
+
+<meta property="og:title" content="Accessibility Statement — WillIFit.ai">
+<meta property="og:description" content="Our WCAG 2.1 AA target, current conformance status, and an honest, itemized list of known accessibility issues.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://willifit.ai/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://willifit.ai/accessibility.html">
+<meta property="og:site_name" content="WillIFit.ai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Accessibility Statement — WillIFit.ai">
+<meta name="twitter:description" content="Our WCAG 2.1 AA target, current status, and a full list of known issues.">
+<meta name="twitter:image" content="https://willifit.ai/og-image.png">
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Accessibility Statement",
+    "url": "https://willifit.ai/accessibility.html",
+    "description": "WillIFit.ai's accessibility statement, conformance status against WCAG 2.1 AA, and a list of known issues by severity.",
+    "dateModified": "2026-08-01",
+    "isPartOf": { "@type": "WebSite", "name": "WillIFit.ai", "url": "https://willifit.ai/" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://willifit.ai/" },
+      { "@type": "ListItem", "position": 2, "name": "Accessibility", "item": "https://willifit.ai/accessibility.html" }
+    ]
+  }
+]
+</script>
+
+<style>
+  :root {
+    --bg: #0e1116; --panel: #171b23; --panel-2: #1d2330;
+    --text: #e6eaf0; --muted: #8a95a6;
+    --border: #2a3140; --accent: #0ea5e9;
+    --ok: #3ecf8e; --warn: #f5a623; --bad: #e5484d;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         line-height: 1.65; }
+  .page { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  h1 { margin: 0 0 10px; font-size: 30px; letter-spacing: -0.02em; }
+  h2 { margin-top: 44px; font-size: 21px; letter-spacing: -0.01em;
+       border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+  h3 { margin-top: 26px; font-size: 15px; color: var(--text);
+       text-transform: uppercase; letter-spacing: 0.04em; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; border-bottom: 1px solid currentColor; }
+  .back { display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
+  .lede { font-size: 17px; color: var(--muted); margin: 0; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 10px; }
+
+  .status-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+  .status-chip {
+    padding: 5px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
+    background: var(--panel-2); border: 1px solid var(--border); color: var(--muted);
+  }
+  .status-chip b { color: var(--text); font-weight: 700; }
+
+  .callout {
+    background: var(--panel); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+    border-radius: 8px; padding: 16px 20px; margin: 20px 0; font-size: 15px;
+  }
+
+  .sev {
+    display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; padding: 2px 8px; border-radius: 4px; margin-right: 8px;
+    vertical-align: 1px; white-space: nowrap;
+  }
+  .sev-critical { background: rgba(229,72,77,0.16); color: #ff8a8f; }
+  .sev-serious  { background: rgba(245,166,35,0.16); color: var(--warn); }
+  .sev-moderate { background: rgba(14,165,233,0.14); color: #7dd3fc; }
+  .sev-minor    { background: rgba(138,149,166,0.16); color: var(--muted); }
+
+  .issue-group { margin: 18px 0; padding: 16px 18px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; }
+  .issue-group h4 { margin: 0 0 12px; font-size: 15px; }
+  .issue-group ul { margin: 0; padding-left: 18px; }
+  .issue-group li { font-size: 14.5px; margin-bottom: 12px; }
+  .wcag-ref { color: var(--muted); font-size: 12.5px; }
+
+  .good-list { display: grid; gap: 8px; margin: 16px 0; }
+  .good-item {
+    display: flex; gap: 10px; align-items: flex-start; font-size: 14.5px;
+    padding: 4px 0;
+  }
+  .good-item .mark { color: var(--ok); font-weight: 700; flex-shrink: 0; }
+
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border);
+           font-size: 12px; color: var(--muted);
+           display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--muted); }
+  footer a:hover { color: var(--accent); }
+</style>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "162b93f801fa42499a0b840c50d3f772"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SH191K5NGS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SH191K5NGS');
+</script>
+<!-- End Google tag -->
+</head>
+<body>
+<div class="page">
+  <a href="/" class="back">← Back to WillIFit.ai</a>
+  <header>
+    <h1>Accessibility Statement</h1>
+    <p class="lede">Our target, our current status, and an honest list of exactly what's not there yet.</p>
+  </header>
+
+  <p>WillIFit.ai exists to keep drivers from finding out the hard way that their vehicle doesn't
+     fit. That only works if the site itself doesn't put up its own barriers. We're not there yet
+     on every front, and this page says exactly where — the same way we label a clearance reading
+     "imported" instead of dressing it up as verified.</p>
+
+  <h2>Conformance target</h2>
+  <p>We aim for <b>WCAG 2.1 Level AA</b>. Current status: <b>partially conformant</b> — most of the
+     site meets that bar, and the gaps below are known, itemized, and not yet all fixed.</p>
+  <div class="status-row">
+    <span class="status-chip">Target: <b>WCAG 2.1 AA</b></span>
+    <span class="status-chip">Status: <b>Partially conformant</b></span>
+    <span class="status-chip">Last reviewed: <b>August 1, 2026</b></span>
+  </div>
+
+  <h2>How this was assessed</h2>
+  <p>This is a self-evaluation: an internal code review against WCAG 2.1, done by four focused
+     passes covering semantic structure, keyboard and focus behavior, color and contrast, and page
+     content — not a certified third-party audit, and not tested with real assistive-technology
+     users. Automated and code-level review catches real, citable issues, but it can miss things
+     only a person using a screen reader or switch device day-to-day would notice. If something
+     here is wrong or incomplete, <a href="#feedback">tell us</a> — that's more reliable than any
+     review we can do of our own code.</p>
+
+  <h2>What's already solid</h2>
+  <p>Not everything below is a problem. Some of this held up well under review, and it's worth
+     saying which parts:</p>
+  <div class="good-list">
+    <div class="good-item"><span class="mark">✓</span> A real focus trap on every modal — Tab and Shift+Tab wrap correctly, Escape closes the top one first, and focus returns to whatever opened it.</div>
+    <div class="good-item"><span class="mark">✓</span> A working skip link, one clear page heading, and a visible focus ring on every page — no components silently disable it.</div>
+    <div class="good-item"><span class="mark">✓</span> Body text contrast is strong throughout (15:1+ on the main text, 5:1+ on secondary text) — this was checked with real calculated ratios, not eyeballed.</div>
+    <div class="good-item"><span class="mark">✓</span> Reduced-motion, reduced-transparency, and increased-contrast preferences are all respected — most sites handle none of these.</div>
+    <div class="good-item"><span class="mark">✓</span> Every page has a language attribute, one clear heading, and a descriptive, unique title — across all 226 city pages, with zero exceptions found.</div>
+    <div class="good-item"><span class="mark">✓</span> No unlabeled images anywhere on the site, because the site doesn't use any — nothing to get wrong there.</div>
+    <div class="good-item"><span class="mark">✓</span> The garage-fit verdict in the detail panel is never color-only — it's always a plain-language sentence ("Won't fit — 4&quot; too short").</div>
+  </div>
+
+  <h2>Known issues</h2>
+  <p>Grouped by area, most serious first. "Serious" means a real feature doesn't work for someone
+     relying on that access method; "Moderate"/"Minor" are real but narrower or have a workaround.</p>
+
+  <div class="issue-group">
+    <h4>Navigating and changing cities</h4>
+    <ul>
+      <li><span class="sev sev-critical">Critical</span> The city-picker's search results and
+        state-browse list aren't operable by keyboard or announced to a screen reader — picking a
+        city, the site's core action, currently requires a mouse.
+        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
+      <li><span class="sev sev-critical">Critical</span> Status updates — result counts, load
+        errors, "detecting your location," a report submitting successfully or failing — aren't
+        announced to screen readers. They're silent unless you can see the screen.
+        <span class="wcag-ref">(WCAG 4.1.3)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The four dialogs (city picker, both report
+        forms, the add-a-location form) aren't marked as dialogs, so assistive tech doesn't
+        announce a boundary or a title when one opens.
+        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
+      <li><span class="sev sev-serious">Serious</span> Filter toggles ("Hide unverified," "★
+        Saved," garage/tunnel/bridge) don't expose on/off state — they sound identical either way.
+        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The city-picker's Search/Map/Browse tabs
+        aren't marked as tabs, so their relationship to each other isn't conveyed.
+        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The min-clearance slider and the city search
+        box rely on placeholder text instead of a real label, and the slider doesn't announce its
+        value in feet — just a raw number.
+        <span class="wcag-ref">(WCAG 4.1.2, 3.3.2)</span></li>
+    </ul>
+  </div>
+
+  <div class="issue-group">
+    <h4>The garage detail panel</h4>
+    <ul>
+      <li><span class="sev sev-serious">Serious</span> When the panel is closed, its contents
+        (Directions, Save, Share, both report buttons) stay reachable by Tab even though they're
+        invisible — you can tab into content that isn't there.
+        <span class="wcag-ref">(WCAG 2.4.3, 2.4.7)</span></li>
+      <li><span class="sev sev-serious">Serious</span> Opening or closing the panel doesn't move
+        focus in or restore it afterward — unlike every modal on the site, which does this
+        correctly.
+        <span class="wcag-ref">(WCAG 2.4.3)</span></li>
+      <li><span class="sev sev-serious">Serious</span> One of the two image thumbnails ("Open
+        Maps") is reachable by Tab but can't be activated by keyboard — its neighbor works fine,
+        this one was missed.
+        <span class="wcag-ref">(WCAG 2.1.1)</span></li>
+    </ul>
+  </div>
+
+  <div class="issue-group">
+    <h4>Color and visual contrast</h4>
+    <ul>
+      <li><span class="sev sev-serious">Serious</span> The height badge and map-marker colors for
+        "fits" vs. "tight" are almost the same brightness (a calculated contrast ratio of ~1:1
+        between them) — someone with color-vision deficiency likely can't tell them apart by color
+        alone, and the badge itself carries no separate label.
+        <span class="wcag-ref">(WCAG 1.4.1)</span></li>
+      <li><span class="sev sev-serious">Serious</span> White text on the map markers' amber/green
+        fills measures under 3:1 — below the minimum for that size text.
+        <span class="wcag-ref">(WCAG 1.4.3)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The "Won't fit" label in the detail panel
+        measures 3.94:1 against its background — just under the 4.5:1 minimum, on the single
+        highest-stakes message in the product.
+        <span class="wcag-ref">(WCAG 1.4.3)</span></li>
+      <li><span class="sev sev-serious">Serious</span> Card, input, and chip borders measure well
+        under the 3:1 minimum for UI boundaries site-wide — edges are present but very faint.
+        <span class="wcag-ref">(WCAG 1.4.11)</span></li>
+      <li><span class="sev sev-moderate">Moderate</span> Links on the informational pages are
+        distinguished from body text by color alone, with no underline until hover.
+        <span class="wcag-ref">(WCAG 1.4.1)</span></li>
+    </ul>
+  </div>
+
+  <div class="issue-group">
+    <h4>Page content and data tables</h4>
+    <ul>
+      <li><span class="sev sev-serious">Serious</span> Every AI-verified entry on all 226 city
+        pages links the words "Google Street View" to our own methodology page instead of Street
+        View itself — the link text names a destination it doesn't go to. This is a single template
+        fix that corrects all 226 pages at once, and the highest-leverage item on this whole list.
+        <span class="wcag-ref">(WCAG 2.4.4)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The data tables on the clearance guide and
+        the Lowest Bridges page have header cells but no <code>scope</code> attributes — a screen
+        reader reads each row as a list of bare values with no column association.
+        <span class="wcag-ref">(WCAG 1.3.1)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The "will it fit" comparison table on the
+        clearance guide conveys its verdict by text color only, and the legend explaining it is
+        itself written in terms of color.
+        <span class="wcag-ref">(WCAG 1.4.1)</span></li>
+      <li><span class="sev sev-serious">Serious</span> The Lowest Bridges table scrolls
+        horizontally on narrow screens, but that scroll region isn't reachable by keyboard — the
+        City column is unreachable without a mouse or touchscreen at that width.
+        <span class="wcag-ref">(WCAG 2.1.1)</span></li>
+      <li><span class="sev sev-moderate">Moderate</span> No page has a <code>&lt;main&gt;</code>
+        landmark, including all 226 city pages — headings still make the page navigable, but
+        landmark-based navigation (how many screen reader users jump around a page) doesn't work.
+        <span class="wcag-ref">(WCAG 1.3.1)</span></li>
+    </ul>
+  </div>
+
+  <h2>What we're doing about it</h2>
+  <p>These are logged, prioritized, and not all fixed yet — we're not going to claim otherwise. The
+     two Critical items (city selection, and silent status updates) are the current priority, since
+     they block a core function rather than degrade it. We'll update this page as issues close, not
+     just add new ones.</p>
+
+  <h2 id="feedback">Report a problem</h2>
+  <p>If you hit an access barrier anywhere on the site — something above, or something we missed —
+     we'd genuinely rather hear about it than not:</p>
+  <ul>
+    <li>Open an issue on <a href="https://github.com/willifit/willifit/issues" target="_blank" rel="noopener">our public GitHub repo</a> — the fastest way to reach us directly, and you can see exactly what's already tracked.</li>
+    <li>Or use the <b>Report an issue</b> button on any garage's detail panel in the app — it reaches the same review queue as a data correction.</li>
+  </ul>
+
+  <p>Read more about <a href="/about.html">who builds this and why</a>, or go back to
+     <a href="/">the map</a>.</p>
+
+  <footer>
+    <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>
+    <div>
+      <a href="/">Home</a> · <a href="/about.html">About</a> ·
+      <a href="/advertise.html">Advertise</a> ·
+      <a href="/how-ai-verification-works.html">AI verification</a> ·
+      <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
+      <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a>
+    </div>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -161,7 +161,7 @@ def main():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 <title>The Lowest Bridges in America (Posted Clearances) | WillIFit.ai</title>
-<meta name="description" content="The 25 lowest posted bridge clearances in the US — down to {label(top[0]['h']) if top else '?'} — plus the lowest bridge in every covered state. Computed from {n_bridges:,} tracked low-clearance structures.">
+<meta name="description" content="The 25 lowest posted bridge clearances in the US — down to {esc(label(top[0]['h']) if top else '?')} — plus the lowest bridge in every covered state. Computed from {n_bridges:,} tracked low-clearance structures.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="{SITE}/lowest-bridges-in-america.html">
 <meta property="og:title" content="The Lowest Bridges in America — Posted Clearances">

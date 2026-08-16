@@ -54,6 +54,7 @@ STATIC_PAGES = [
     ("parking-garage-clearance-heights.html", "parking-garage-clearance-heights.html", "monthly", "0.8"),
     ("lowest-bridges-in-america.html", "lowest-bridges-in-america.html", "weekly",  "0.8"),
     ("about.html",                    "about.html",                      "monthly", "0.5"),
+    ("accessibility.html",            "accessibility.html",              "monthly", "0.4"),
     ("advertise.html",                "advertise.html",                  "monthly", "0.7"),
     ("disclaimer.html",               "disclaimer.html",                 "monthly", "0.3"),
     ("terms.html",                    "terms.html",                      "monthly", "0.3"),
