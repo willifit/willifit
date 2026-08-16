@@ -33,6 +33,7 @@
   p { margin: 10px 0; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   .back { display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
   .back:hover { color: var(--accent); }
   .muted { color: var(--muted); font-size: 13px; }
@@ -162,6 +163,7 @@
       they're deciding where to park — no wasted impressions.</p>
   </header>
 
+  <main>
   <section>
     <div class="stats">
       <div class="stat"><div class="n">226</div><div class="l">US cities covered</div></div>
@@ -194,7 +196,7 @@
 
   <table class="rate-card">
     <thead>
-      <tr><th>Slot</th><th>Placement</th><th>Targeting</th><th>Rate (per 30 days)</th></tr>
+      <tr><th scope="col">Slot</th><th scope="col">Placement</th><th scope="col">Targeting</th><th scope="col">Rate (per 30 days)</th></tr>
     </thead>
     <tbody>
       <tr>
@@ -297,7 +299,7 @@
     <!-- Netlify Forms discovery form — mirrors the main app's pattern -->
     <form class="inq" name="advertiser-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/advertise-thanks.html">
       <input type="hidden" name="form-name" value="advertiser-inquiry">
-      <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <p class="hp" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <div class="row">
         <div>
           <label for="adv-name">Your name</label>
@@ -339,9 +341,10 @@
         <textarea id="adv-msg" name="message" placeholder="Your business, your target customer, budget range, timing…"></textarea>
       </div>
       <button type="submit">Send inquiry</button>
-      <div class="sent" id="advSent">Thanks — we'll be in touch within one business day.</div>
+      <div class="sent" id="advSent" role="status"></div>
     </form>
   </div>
+  </main>
 
   <footer>
     <div>
@@ -373,6 +376,10 @@
           body,
         });
         if (!r.ok) throw new Error('submit ' + r.status);
+        // Set textContent (not just toggle display) so role="status" reliably
+        // announces to screen readers -- a visibility change alone isn't a
+        // guaranteed live-region trigger, but a text mutation is.
+        sent.textContent = "Thanks — we'll be in touch within one business day.";
         sent.style.display = 'block';
         form.querySelectorAll('input, select, textarea').forEach(i => { i.value = ''; });
       } catch (err) {

@@ -488,8 +488,9 @@ def render_entry(e: dict, kind: str) -> str:
                if sv else "")
         verify_html = (
             '<div class="entry-verify entry-verify-ai">'
-            'AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a>'
-            f'{date_txt}{see}</div>'
+            'AI-verified from Google Street View'
+            f'{date_txt}{see}'
+            ' · <a href="/how-ai-verification-works.html">how we verify this</a></div>'
         )
     elif vkind == "human":
         date_txt = f"Verified on {esc(fmt_date(von))}" if von else "Verified"
@@ -660,6 +661,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     line-height: 1.6;
   }}
   a {{ color: var(--accent); text-decoration: none; }}
+  main a {{ text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }}
   a:hover {{ text-decoration: underline; }}
   .page {{ max-width: 960px; margin: 0 auto; padding: 32px 20px 60px; }}
   header {{ display: flex; align-items: center; gap: 12px;
@@ -845,6 +847,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <a href="/#{slug}" class="crumb">{city}, {state}</a>
   </header>
 
+  <main>
   {pill}
   <h1>Parking clearance heights in {city}, {state_full}</h1>
   <p class="lede">{lede}</p>
@@ -890,6 +893,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     due to re-paving, renovations, or weather. If you spot an inaccuracy,
     <a href="/#{slug}">open the map</a> and use the "Report clearance" button.
   </div>
+  </main>
 
   <footer>
     <div>© {year} WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>

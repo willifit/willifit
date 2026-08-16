@@ -140,7 +140,7 @@
     --bg: #0e1116;
     --panel: #171b23;
     --panel-2: #1f242e;
-    --border: #2a3140;
+    --border: #6b7690;
     --text: #e6ebf2;
     --muted: #8a95a6;
     --accent: #f5a623;
@@ -638,10 +638,18 @@
   .height-badge.warn { border-color: var(--warn); color: var(--warn); }
   .height-badge.bad { border-color: var(--bad); color: var(--bad); }
   .height-badge.unknown { border-color: var(--muted); color: var(--muted); font-style: italic; }
+  /* Non-color signal alongside the fit-verdict color (WCAG 1.4.1) -- --ok and
+     --warn measure ~1:1 contrast against EACH OTHER (different hue, near-
+     identical lightness), so a deuteranope sees two "different" badges as
+     the same badge. These glyphs carry the verdict independent of color. */
+  .height-badge.ok::before { content: '✓ '; }
+  .height-badge.warn::before { content: '~ '; }
+  .height-badge.bad::before { content: '✗ '; }
   /* Surface-lot / RV-park entries: no overhead, no clearance number to
      report, but they ARE verified open-air.  Style as confirmed-green
      (same as .ok) but upright -- NOT italic like the unknown state. */
   .height-badge.nolimit { border-color: var(--ok); color: var(--ok); }
+  .height-badge.nolimit::before { content: '✓ '; }
   .oversized-tag {
     background: rgba(62, 207, 142, 0.15);
     color: var(--ok);
@@ -772,8 +780,8 @@
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
   }
-  .marker-ok { background: #2da66f; }
-  .marker-warn { background: #d18a0a; }
+  .marker-ok { background: #1a7a4c; }
+  .marker-warn { background: #8f5e08; }
   .marker-bad { background: #b5393e; }
   .marker-unknown { background: #555c6b; }
   /* Surface lots / RV parks — green like .ok so they don't render as
@@ -1252,7 +1260,7 @@
   .fit-verdict.fit-warn { border-color: var(--warn); background: rgba(245, 166, 35, 0.08); }
   .fit-verdict.fit-warn .fit-verdict-label { color: var(--warn); }
   .fit-verdict.fit-bad  { border-color: var(--bad);  background: rgba(229, 72, 77, 0.12); }
-  .fit-verdict.fit-bad  .fit-verdict-label { color: var(--bad); }
+  .fit-verdict.fit-bad  .fit-verdict-label { color: #f16269; } /* lighter than --bad: measured 4.5:1+ against the panel background this actually renders on, vs 3.94:1 for --bad itself (WCAG 1.4.3) */
 
   /* Saved spots + share — detail quick actions */
   .detail-quick-acts { display: flex; gap: 8px; margin: 10px 0 2px; }
@@ -1357,6 +1365,11 @@
     text-transform: uppercase; letter-spacing: 0.08em;
     color: var(--muted);
   }
+  /* Reset browser fieldset/legend chrome (border, padding, and the min-width
+     quirk that can overflow flex layouts) so a <fieldset class="report-label">
+     looks identical to the plain label it replaces for radio/checkbox groups. */
+  fieldset.report-label { border: 0; padding: 0; margin: 14px 0 6px; min-width: 0; }
+  fieldset.report-label legend { padding: 0; font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; }
   .report-form input[type="text"],
   .report-form input[type="email"],
   .report-form input[type="number"],
@@ -2061,14 +2074,14 @@
     </div>
     <div class="welcome-title" id="welcomeTitleA11y">Will<span class="brand-word-i">I</span>Fit<span class="brand-tld">.ai</span></div>
     <div class="welcome-sub"><span class="ai-pill">AI-verified</span> parking-garage, tunnel &amp; low-bridge clearance heights.<br>Tell us your vehicle height. We'll tell you what fits.</div>
-    <div class="welcome-status" id="welcomeStatus">Detecting your location...</div>
+    <div class="welcome-status" id="welcomeStatus" role="status" aria-live="polite">Detecting your location...</div>
     <button class="btn" id="skipGeo">Skip — pick a city</button>
     <div id="welcomeSponsor" class="sponsor-slot-home"></div>
   </div>
 </div>
 
 <div class="app">
-  <div class="topbar">
+  <div class="topbar" role="banner">
     <div class="brand" id="brand">
       <div class="brand-mark">
         <svg viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -2111,44 +2124,46 @@
     </div>
   </div>
 
-  <div class="main">
+  <div class="main" role="main">
     <aside class="sidebar">
       <div id="sidebarSponsor" class="sponsor-slot-sidebar"></div>
       <div class="filters">
         <div class="search-box" id="searchBox">
+          <label for="search" class="sr-only">Search garage, casino, or address</label>
           <input type="text" id="search" placeholder="Search garage, casino, address..."
                  role="combobox" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false">
           <button class="search-clear" id="searchClear" title="Clear">×</button>
           <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
         </div>
-        <div class="filter-label">Min. Clearance Height</div>
+        <div class="filter-label" id="heightSliderLabel">Min. Clearance Height</div>
         <div class="height-slider">
-          <input type="range" id="heightSlider" min="5" max="14" step="0.1" value="5">
+          <input type="range" id="heightSlider" min="5" max="14" step="0.1" value="5" aria-labelledby="heightSliderLabel" aria-valuetext="5'0&quot;">
           <div class="height-value" id="heightValue">5'0"</div>
         </div>
         <div class="filter-label">Show</div>
         <div class="type-chips">
-          <button class="type-chip active" data-type="garage" id="chipGarage"><span class="chip-dot"></span>Garages</button>
-          <button class="type-chip" data-type="tunnel" id="chipTunnel"><span class="chip-dot"></span>Tunnels</button>
-          <button class="type-chip" data-type="bridge" id="chipBridge"><span class="chip-dot"></span>Bridges</button>
+          <button class="type-chip active" data-type="garage" id="chipGarage" aria-pressed="true"><span class="chip-dot"></span>Garages</button>
+          <button class="type-chip" data-type="tunnel" id="chipTunnel" aria-pressed="false"><span class="chip-dot"></span>Tunnels</button>
+          <button class="type-chip" data-type="bridge" id="chipBridge" aria-pressed="false"><span class="chip-dot"></span>Bridges</button>
         </div>
         <div class="filter-chips">
-          <button class="type-chip" data-filter="oversized" id="oversizedToggle" type="button">
+          <button class="type-chip" data-filter="oversized" id="oversizedToggle" type="button" aria-pressed="false">
             <span class="chip-dot"></span>Oversized only
           </button>
-          <button class="type-chip" data-filter="verified" id="verifiedToggle" type="button">
+          <button class="type-chip" data-filter="verified" id="verifiedToggle" type="button" aria-pressed="false">
             <span class="chip-dot"></span>Hide unverified
           </button>
-          <button class="type-chip" data-filter="saved" id="savedToggle" type="button" title="Show only spots you starred">
+          <button class="type-chip" data-filter="saved" id="savedToggle" type="button" title="Show only spots you starred" aria-pressed="false">
             <span class="chip-dot"></span>★ Saved
           </button>
         </div>
       </div>
       <div class="result-count">
-        <span id="countText">0 locations</span>
+        <span id="countText" aria-live="polite">0 locations</span>
         <span id="cityText"></span>
       </div>
-      <div class="list" id="list" role="list" aria-label="Garages, tunnels, and bridges"></div>
+      <div class="list-status sr-only" id="listStatus" role="status" aria-live="polite"></div>
+      <div class="list" id="list" role="group" aria-label="Garages, tunnels, and bridges" tabindex="-1"></div>
       <button class="add-location-btn" id="addLocationBtn" type="button"
               aria-label="Add a garage, tunnel, or low bridge that's missing from the map">
         <span class="add-icon" aria-hidden="true">+</span>
@@ -2174,7 +2189,7 @@
         <div class="legend-row"><div class="legend-dot" style="background:#b5393e"></div>&lt;7' (low)</div>
         <div class="legend-row"><div class="legend-dot" style="background:#555c6b"></div>Unverified</div>
       </div>
-      <div class="detail-panel" id="detail">
+      <div class="detail-panel" id="detail" inert role="region" aria-label="Garage details" tabindex="-1">
         <div class="detail-handle" id="detailHandle" role="button" tabindex="0" aria-label="Close"></div>
         <button class="detail-close" id="detailClose" aria-label="Close">×</button>
         <div class="detail-hero" id="detailHero"></div>
@@ -2250,27 +2265,28 @@
 </div>
 
 <div class="modal-overlay" id="cityPicker">
-  <div class="modal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cityPickerTitle">
     <div class="modal-header">
-      <div class="modal-title">Choose a city</div>
-      <button class="modal-close" id="modalClose">×</button>
+      <div class="modal-title" id="cityPickerTitle">Choose a city</div>
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
     </div>
-    <div class="tabs">
-      <button class="tab active" data-tab="search">Search</button>
-      <button class="tab" data-tab="map">Map</button>
-      <button class="tab" data-tab="browse">Browse by State</button>
+    <div class="tabs" role="tablist" aria-label="Choose city by">
+      <button class="tab active" data-tab="search" role="tab" aria-selected="true" aria-controls="tab-search" id="tabbtn-search">Search</button>
+      <button class="tab" data-tab="map" role="tab" aria-selected="false" aria-controls="tab-map" id="tabbtn-map">Map</button>
+      <button class="tab" data-tab="browse" role="tab" aria-selected="false" aria-controls="tab-browse" id="tabbtn-browse">Browse by State</button>
     </div>
-    <div class="tab-content active" id="tab-search">
+    <div class="tab-content active" id="tab-search" role="tabpanel" aria-labelledby="tabbtn-search">
       <div class="city-search-wrap" id="citySearchWrap">
+        <label for="citySearchInput" class="sr-only">Search by city, state, or ZIP</label>
         <input type="text" id="citySearchInput" placeholder="City, state, or ZIP — e.g. Denver, Texas, 02139" inputmode="search" autocomplete="postal-code">
         <button class="city-search-clear" id="citySearchClear" title="Clear">×</button>
       </div>
       <div class="city-list" id="citySearchResults"></div>
     </div>
-    <div class="tab-content" id="tab-map">
+    <div class="tab-content" id="tab-map" role="tabpanel" aria-labelledby="tabbtn-map">
       <div class="picker-map-wrap"><div id="pickerMap"></div></div>
     </div>
-    <div class="tab-content" id="tab-browse">
+    <div class="tab-content" id="tab-browse" role="tabpanel" aria-labelledby="tabbtn-browse">
       <div class="browse-wrap" id="browseContent"></div>
     </div>
   </div>
@@ -2281,9 +2297,9 @@
      (which targets an EXISTING garage): this one asks for everything
      needed to create a NEW entry after human review. -->
 <div class="modal-overlay" id="newLocationModal">
-  <div class="modal report-modal">
+  <div class="modal report-modal" role="dialog" aria-modal="true" aria-labelledby="newLocationModalTitle">
     <div class="modal-header">
-      <div class="modal-title">Add a missing location</div>
+      <div class="modal-title" id="newLocationModalTitle">Add a missing location</div>
       <button class="modal-close" id="newLocationModalClose" aria-label="Close">×</button>
     </div>
     <form id="newLocationForm" class="report-form">
@@ -2332,12 +2348,14 @@
         <label class="report-checkbox"><input type="checkbox" id="nlNoPosted"> No sign / open-air</label>
       </div>
 
-      <label class="report-label">Oversized-vehicle-friendly?</label>
-      <div class="report-radio-row">
-        <label><input type="radio" name="nl_oversized" value="yes"> Yes</label>
-        <label><input type="radio" name="nl_oversized" value="no"> No</label>
-        <label><input type="radio" name="nl_oversized" value="unknown" checked> Unknown</label>
-      </div>
+      <fieldset class="report-label">
+        <legend>Oversized-vehicle-friendly?</legend>
+        <div class="report-radio-row">
+          <label><input type="radio" name="nl_oversized" value="yes"> Yes</label>
+          <label><input type="radio" name="nl_oversized" value="no"> No</label>
+          <label><input type="radio" name="nl_oversized" value="unknown" checked> Unknown</label>
+        </div>
+      </fieldset>
 
       <label class="report-label" for="nlNotes">Notes (optional)</label>
       <textarea id="nlNotes" rows="3" maxlength="1000"
@@ -2349,7 +2367,7 @@
       <div class="report-actions">
         <button type="submit" class="btn-primary" id="nlSubmitBtn">Submit location</button>
       </div>
-      <div class="report-status" id="nlStatus"></div>
+      <div class="report-status" id="nlStatus" role="status" aria-live="polite"></div>
     </form>
   </div>
 </div>
@@ -2359,9 +2377,9 @@
      entry): this one is the freeform "something's wrong with this
      pin" flow -- closed, wrong address, wrong coords, duplicate, etc. -->
 <div class="modal-overlay" id="issueModal">
-  <div class="modal report-modal">
+  <div class="modal report-modal" role="dialog" aria-modal="true" aria-labelledby="issueModalTitle">
     <div class="modal-header">
-      <div class="modal-title">Report an issue</div>
+      <div class="modal-title" id="issueModalTitle">Report an issue</div>
       <button class="modal-close" id="issueModalClose" aria-label="Close">×</button>
     </div>
     <form id="issueForm" class="report-form">
@@ -2400,16 +2418,16 @@
         data &mdash; protects you and other drivers from bad-faith edits
         or accidental deletions.
       </div>
-      <div class="report-status" id="isStatus"></div>
+      <div class="report-status" id="isStatus" role="status" aria-live="polite"></div>
     </form>
   </div>
 </div>
 
 <div class="modal-overlay" id="reportModal">
-  <div class="modal report-modal">
+  <div class="modal report-modal" role="dialog" aria-modal="true" aria-labelledby="reportModalTitle">
     <div class="modal-header">
-      <div class="modal-title">Report clearance</div>
-      <button class="modal-close" id="reportModalClose">×</button>
+      <div class="modal-title" id="reportModalTitle">Report clearance</div>
+      <button class="modal-close" id="reportModalClose" aria-label="Close">×</button>
     </div>
     <form id="reportForm" class="report-form">
       <div class="report-target" id="reportTarget"></div>
@@ -2421,12 +2439,14 @@
         <span class="vh-unit">"</span>
         <label class="report-checkbox"><input type="checkbox" id="rfNoPosted"> No posted sign</label>
       </div>
-      <label class="report-label" for="rfOversized">Oversized vehicle parking available?</label>
-      <div class="report-radio-row">
-        <label><input type="radio" name="oversized" value="yes"> Yes</label>
-        <label><input type="radio" name="oversized" value="no"> No</label>
-        <label><input type="radio" name="oversized" value="unknown" checked> Unknown</label>
-      </div>
+      <fieldset class="report-label">
+        <legend>Oversized vehicle parking available?</legend>
+        <div class="report-radio-row">
+          <label><input type="radio" name="oversized" value="yes"> Yes</label>
+          <label><input type="radio" name="oversized" value="no"> No</label>
+          <label><input type="radio" name="oversized" value="unknown" checked> Unknown</label>
+        </div>
+      </fieldset>
       <label class="report-label" for="rfNotes">Notes (optional)</label>
       <textarea id="rfNotes" rows="3" placeholder="How did you verify? Street View link? Photo of the sign? Date observed?"></textarea>
       <label class="report-label" for="rfContact">Your email (optional — only if you want a reply)</label>
@@ -2440,7 +2460,7 @@
         before updating the map &mdash; protects you and other drivers from
         bad-faith edits or mistakes.
       </div>
-      <div class="report-status" id="rfStatus"></div>
+      <div class="report-status" id="rfStatus" role="status" aria-live="polite"></div>
     </form>
   </div>
 </div>
@@ -2790,6 +2810,19 @@ function heightClass(inches) {
 // and open-air lots have height_in==null but a non-null height_label
 // ("No limit (uncovered)"); treating those as the 'unknown' gray state
 // is wrong -- they're VERIFIED, just not height-restricted.
+// Spoken/read equivalent of the height-badge color+glyph, for aria-labels.
+// Works whether hc came from a personalized vehicle-height comparison or the
+// generic absolute-height bands -- phrasing stays honest either way (WCAG 1.4.1:
+// the card's only other cue was a raw height number, which doesn't tell a
+// screen-reader user whether that number is good or bad).
+function verdictWordForClass(hc) {
+  switch (hc) {
+    case 'ok': case 'nolimit': return 'likely fits';
+    case 'warn': return 'tight fit, check the sign';
+    case 'bad': return 'may not fit';
+    default: return '';
+  }
+}
 function heightClassForEntry(g) {
   if (g && g.height_in == null &&
       (g.structure_type === 'surface_lot' ||
@@ -2989,23 +3022,32 @@ function renderList() {
   const meta = getCityMeta(state.city);
   document.getElementById('countText').textContent = `${items.length} ${items.length===1?'location':'locations'}`;
   document.getElementById('cityText').textContent = meta ? `${meta.name}, ${meta.state}` : '';
+  // Cleared here, set only in the early-return branches below -- so the
+  // normal (has-results) path needs no extra line, and a screen reader
+  // never re-announces a stale "Loading..." once real content is showing.
+  const listStatus = document.getElementById('listStatus');
+  listStatus.textContent = '';
 
   if (state.loading) {
     list.innerHTML = '<div class="state-msg"><span class="spinner"></span>Loading garages…</div>';
+    listStatus.textContent = 'Loading garages…';
     return;
   }
   if (state.loadError) {
     list.innerHTML = `<div class="state-msg error">Couldn't load this city.<br><span style="color:var(--muted);font-size:11px">${escapeHTML(state.loadError)}</span><br><button class="retry-btn" id="retryBtn">Retry</button></div>`;
     const btn = document.getElementById('retryBtn');
     if (btn) btn.addEventListener('click', () => switchToCity(state.city));
+    listStatus.textContent = `Couldn't load this city: ${state.loadError}`;
     return;
   }
   if (!state.cityData || !state.cityData.garages.length) {
     list.innerHTML = '<div class="empty">No garage data yet for this city.<br><br>Data coming soon.</div>';
+    listStatus.textContent = 'No garage data yet for this city.';
     return;
   }
   if (items.length === 0) {
     list.innerHTML = '<div class="empty">No garages match your filters.</div>';
+    listStatus.textContent = 'No garages match your filters.';
     return;
   }
   if (!state.search.trim()) {
@@ -3059,7 +3101,7 @@ function renderList() {
     const hlabelSafe = escapeHTML(hlabel);
     const idSafe = escapeHTML(g.id || '');
     return `
-      <div class="garage-card ${active} ${unv} ${isNearby ? 'is-nearby' : ''}" data-id="${idSafe}" data-city="${escapeHTML(g._city || '')}" role="button" tabindex="0" aria-label="${nameSafe}, clearance ${hlabelSafe}${g.oversized ? ', oversized parking available' : ''}${isAiVerified ? ', AI-verified' : ''}${isNearby ? ', in ' + (nearbyMeta?.name || 'nearby city') : ''}">
+      <div class="garage-card ${active} ${unv} ${isNearby ? 'is-nearby' : ''}" data-id="${idSafe}" data-city="${escapeHTML(g._city || '')}" role="button" tabindex="0" aria-label="${nameSafe}, clearance ${hlabelSafe}${verdictWordForClass(hc) ? ', ' + verdictWordForClass(hc) : ''}${g.oversized ? ', oversized parking available' : ''}${isAiVerified ? ', AI-verified' : ''}${isNearby ? ', in ' + (nearbyMeta?.name || 'nearby city') : ''}">
         <div class="garage-name">${favs.has(g.id) ? '<span class="fav-star" title="Saved">★</span>' : ''}${nameSafe}${cityChip}</div>
         <div class="garage-meta">
           <span class="height-badge ${hc}">${hlabelSafe}</span>
@@ -3193,7 +3235,16 @@ function mapFlyTo(lat, lng, zoom) {
     state.map.panTo({ lat, lng });
     if (zoom != null) state.map.setZoom(zoom);
   } else {
-    state.map.flyTo([lat, lng], zoom, { duration: 0.6 });
+    // Respect the same reduced-motion preference the CSS layer already
+    // honors elsewhere -- a sweeping pan/zoom is exactly the kind of motion
+    // that setting exists to suppress, and Leaflet's animation has no CSS
+    // hook, so it needs this explicit check.
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+      state.map.setView([lat, lng], zoom);
+    } else {
+      state.map.flyTo([lat, lng], zoom, { duration: 0.6 });
+    }
   }
 }
 
@@ -3326,8 +3377,8 @@ function renderMarkersOSM() {
 
 /* ---------- Google Maps ---------- */
 const _GM_COLORS = {
-  'marker-ok':      '#2da66f',
-  'marker-warn':    '#d18a0a',
+  'marker-ok':      '#1a7a4c',
+  'marker-warn':    '#8f5e08',
   'marker-bad':     '#b5393e',
   'marker-unknown': '#555c6b',
   'marker-nolimit': '#2da66f', /* surface lots / RV parks — same green as ok */
@@ -3402,10 +3453,16 @@ function renderMarkersGoogle() {
   }
 }
 
+// Whatever had focus right before the detail panel opened -- captured in
+// selectGarage (the normal path) so closeDetailPanel can restore it. Kept
+// as a module-level var (not read live from document.activeElement at close
+// time) because by then focus has already moved onto the panel itself.
+let _detailOpener = null;
 function selectGarage(id) {
   state.selectedId = id;
   const g = state.cityData.garages.find(x => x.id === id);
   if (!g) return;
+  _detailOpener = document.activeElement;
   writeHash(state.city, id);
   renderList();
   renderMarkers();
@@ -3805,7 +3862,7 @@ function renderDetail(g) {
         <div class="no-image">Click to open Google Street View — pan to entrance and check the sign yourself</div>
         <div class="street-view-btn">Open Street View ↗</div>
       </div>
-      <div class="image-thumb" role="button" tabindex="0" onclick="window.open('https://www.google.com/maps/search/${encodeURIComponent(g.name+' '+g.addr)}','_blank','noopener,noreferrer')">
+      <div class="image-thumb" role="button" tabindex="0" onclick="window.open('https://www.google.com/maps/search/${encodeURIComponent(g.name+' '+g.addr)}','_blank','noopener,noreferrer')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://www.google.com/maps/search/${encodeURIComponent(g.name+' '+g.addr)}','_blank','noopener,noreferrer')}">
         <div class="no-image">Click for Google Maps listing, reviews, photos</div>
         <div class="street-view-btn">Open Maps ↗</div>
       </div>
@@ -3819,7 +3876,17 @@ function renderDetail(g) {
       <span class="subtitle">Closed, wrong pin, wrong address, duplicate, etc.</span>
     </button>
     ${renderSponsor('detail', { city: state.city, garage: g, oversized_filter: state.oversizedOnly }) || ''}`;
+  // renderDetail is also called to refresh an ALREADY-open panel's content
+  // (e.g. re-rendering the fit verdict after a vehicle-height edit) -- only
+  // do the open-transition work (remove inert, move focus in) the first
+  // time, or we'd yank focus away from whatever the user is doing, like a
+  // height input they're still typing in.
+  const wasInert = panel.hasAttribute('inert');
   panel.classList.add('open');
+  if (wasInert) {
+    panel.removeAttribute('inert');
+    panel.focus();
+  }
   // Wire up the report buttons safely (no inline onclick with interpolated id)
   const reportBtn = document.getElementById('detailReportBtn');
   if (reportBtn) {
@@ -4095,7 +4162,11 @@ function closeCityPicker() {
   closeModal(document.getElementById('cityPicker'));
 }
 function switchTab(tabName) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabName));
+  document.querySelectorAll('.tab').forEach(t => {
+    const on = t.dataset.tab === tabName;
+    t.classList.toggle('active', on);
+    t.setAttribute('aria-selected', String(on));
+  });
   document.querySelectorAll('.tab-content').forEach(tc => tc.classList.toggle('active', tc.id === 'tab-' + tabName));
   if (tabName === 'map') setTimeout(initPickerMap, 50);
 }
@@ -4197,7 +4268,7 @@ function renderSearchTab(query = '') {
       if (near) {
         const miles = (near.distKm * 0.621371).toFixed(0);
         const closeEnough = near.distKm <= 50;
-        html += `<div class="city-row zip-hit" data-slug="${escapeHTML(near.city.slug)}">
+        html += `<div class="city-row zip-hit" data-slug="${escapeHTML(near.city.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}, ${miles} miles ${closeEnough ? 'from ZIP' : 'away, nearest tracked city'}, ${near.city.garage_count} locations">
           <div>
             <span class="name">${escapeHTML(near.city.name)}</span>
             <span class="state">${escapeHTML(near.city.state)}</span>
@@ -4239,7 +4310,7 @@ function renderSearchTab(query = '') {
   if (liveMatches.length) {
     html += `<div class="city-section-title">Live — ${liveMatches.length} ${liveMatches.length===1?'city':'cities'}</div>`;
     html += liveMatches.map(c => `
-      <div class="city-row" data-slug="${escapeHTML(c.slug)}">
+      <div class="city-row" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${escapeHTML(c.state)}, ${c.garage_count} locations">
         <div><span class="name">${escapeHTML(c.name)}</span><span class="state">${escapeHTML(c.state)}</span></div>
         <div class="count"><strong>${c.garage_count}</strong> locations</div>
       </div>`).join('');
@@ -4247,7 +4318,7 @@ function renderSearchTab(query = '') {
   if (comingMatches.length) {
     html += `<div class="city-section-title">Coming Soon — ${comingMatches.length}</div>`;
     html += comingMatches.map(c => `
-      <div class="city-row coming-soon" data-slug="${escapeHTML(c.slug)}">
+      <div class="city-row coming-soon" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${escapeHTML(c.state)}, coming soon">
         <div><span class="name">${escapeHTML(c.name)}</span><span class="state">${escapeHTML(c.state)}</span></div>
         <div class="count">coming soon</div>
       </div>`).join('');
@@ -4269,7 +4340,7 @@ function renderSearchTab(query = '') {
         let h = `<div class="city-section-title">${short}</div>`;
         if (near) {
           const miles = (near.distKm * 0.621371).toFixed(0);
-          h += `<div class="city-row" data-slug="${escapeHTML(near.city.slug)}" data-lat="${hit.lat}" data-lng="${hit.lng}" data-label="${escapeHTML(hit.label)}">
+          h += `<div class="city-row" data-slug="${escapeHTML(near.city.slug)}" data-lat="${hit.lat}" data-lng="${hit.lng}" data-label="${escapeHTML(hit.label)}" role="button" tabindex="0" aria-label="Zoom to this address near ${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}, ${miles} miles away">
             <div>
               <span class="name">Zoom to this address</span>
               <span class="state">${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}</span>
@@ -4310,7 +4381,7 @@ function renderBrowseTab() {
       cities.forEach(c => {
         const soon = c.status === 'coming' ? 'coming-soon' : '';
         const cnt = c.status === 'live' ? `<span class="city-count">${c.garage_count} locations</span>` : `<span class="city-count">soon</span>`;
-        html += `<div class="state-city ${soon}" data-slug="${c.slug}"><span>${c.name}</span>${cnt}</div>`;
+        html += `<div class="state-city ${soon}" data-slug="${c.slug}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${c.status === 'live' ? c.garage_count + ' locations' : 'coming soon'}"><span>${c.name}</span>${cnt}</div>`;
       });
       html += `</div></div>`;
     });
@@ -4318,6 +4389,11 @@ function renderBrowseTab() {
   container.innerHTML = html;
   container.querySelectorAll('.state-city').forEach(row => {
     row.addEventListener('click', () => switchToCity(row.dataset.slug));
+    row.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      switchToCity(row.dataset.slug);
+    });
   });
 }
 
@@ -4446,6 +4522,7 @@ function _positionSearchSuggestions() {
 function _hideSearchSuggestions() {
   _searchSuggestions.hidden = true;
   _searchInput.setAttribute('aria-expanded', 'false');
+  _searchInput.removeAttribute('aria-activedescendant');
   _searchKbdIdx = -1;
 }
 
@@ -4461,7 +4538,7 @@ function _renderSearchSuggestions() {
     _searchSuggestions.innerHTML = items.map((g, i) => {
       const name = escapeHTML(g.name || '').replace(re, '<mark>$1</mark>');
       const h = escapeHTML(g.height_label || 'Unverified');
-      return `<div class="search-suggestion" role="option" data-id="${escapeHTML(g.id || '')}" data-idx="${i}">
+      return `<div class="search-suggestion" role="option" id="search-opt-${i}" aria-selected="false" data-id="${escapeHTML(g.id || '')}" data-idx="${i}">
         <span class="search-suggestion-name">${name}</span>
         <span class="search-suggestion-height">${h}</span>
       </div>`;
@@ -4485,6 +4562,7 @@ function _renderSearchSuggestions() {
   }
   _searchSuggestions.hidden = false;
   _searchInput.setAttribute('aria-expanded', 'true');
+  _searchInput.removeAttribute('aria-activedescendant'); // old options were just replaced
   _searchKbdIdx = -1;
   _positionSearchSuggestions();
 }
@@ -4539,7 +4617,15 @@ _searchInput.addEventListener('keydown', (e) => {
   } else {
     return;
   }
-  opts.forEach((el, i) => el.classList.toggle('kbd-active', i === _searchKbdIdx));
+  opts.forEach((el, i) => {
+    const on = i === _searchKbdIdx;
+    el.classList.toggle('kbd-active', on);
+    el.setAttribute('aria-selected', String(on));
+  });
+  // aria-activedescendant (not focus) is the correct combobox pattern here --
+  // focus stays in the text input the whole time, but this tells a screen
+  // reader which option is "current" as arrow keys move the visual highlight.
+  _searchInput.setAttribute('aria-activedescendant', _searchKbdIdx >= 0 ? `search-opt-${_searchKbdIdx}` : '');
   if (_searchKbdIdx >= 0) opts[_searchKbdIdx].scrollIntoView({ block: 'nearest' });
 });
 
@@ -4569,16 +4655,19 @@ document.getElementById('heightSlider').addEventListener('input', e => {
 document.getElementById('oversizedToggle').addEventListener('click', (e) => {
   state.oversizedOnly = !state.oversizedOnly;
   e.currentTarget.classList.toggle('active', state.oversizedOnly);
+  e.currentTarget.setAttribute('aria-pressed', String(state.oversizedOnly));
   renderList(); renderMarkers();
 });
 document.getElementById('verifiedToggle').addEventListener('click', (e) => {
   state.verifiedOnly = !state.verifiedOnly;
   e.currentTarget.classList.toggle('active', state.verifiedOnly);
+  e.currentTarget.setAttribute('aria-pressed', String(state.verifiedOnly));
   renderList(); renderMarkers();
 });
 document.getElementById('savedToggle').addEventListener('click', (e) => {
   state.savedOnly = !state.savedOnly;
   e.currentTarget.classList.toggle('active', state.savedOnly);
+  e.currentTarget.setAttribute('aria-pressed', String(state.savedOnly));
   renderList(); renderMarkers();
 });
 document.querySelectorAll('.type-chip').forEach(el => {
@@ -4586,6 +4675,12 @@ document.querySelectorAll('.type-chip').forEach(el => {
     const t = el.dataset.type;
     state.showTypes[t] = !state.showTypes[t];
     el.classList.toggle('active', state.showTypes[t]);
+    // aria-pressed mirrors whatever visual state was just set -- kept in
+    // its own line (not folded into the dedicated handlers above) since this
+    // generic listener also fires for the oversized/verified/saved buttons
+    // (they share the .type-chip class); this keeps the announced state
+    // consistent with the visible one no matter which handler runs last.
+    el.setAttribute('aria-pressed', String(el.classList.contains('active')));
     renderList(); renderMarkers();
   });
 });
@@ -4601,10 +4696,29 @@ document.getElementById('searchAreaClear').addEventListener('click', () => {
   renderList(); renderMarkers();
 });
 function closeDetailPanel() {
-  document.getElementById('detail').classList.remove('open');
+  const panel = document.getElementById('detail');
+  const closedGarageId = state.selectedId;
+  panel.classList.remove('open');
+  // Re-inert immediately: the panel is still visible mid-slide (a CSS
+  // transition), but inert takes effect right away, so it drops out of the
+  // tab order and AT tree before the animation finishes rather than after.
+  panel.setAttribute('inert', '');
   state.selectedId = null;
   if (state.city) writeHash(state.city, null);
+  // Restore focus to whatever opened the panel. The captured node
+  // (_detailOpener) is essentially ALWAYS stale by this point: selectGarage
+  // calls renderList() right after capturing it, and renderList() below
+  // does too -- both destroy and recreate every card element, so
+  // document.body.contains(_detailOpener) fails for the standard "clicked a
+  // card, now closing" path. Re-querying by garage id AFTER the re-render is
+  // the reliable way to land focus on the right, currently-visible card;
+  // the raw reference is only a fallback for a still-connected opener that
+  // was never a list card (e.g. some other future caller of selectGarage).
   renderList(); renderMarkers();
+  const toFocus = (closedGarageId && document.querySelector(`#list [data-id="${CSS.escape(closedGarageId)}"]`))
+    || (_detailOpener && document.body.contains(_detailOpener) ? _detailOpener : null);
+  _detailOpener = null;
+  if (toFocus && typeof toFocus.focus === 'function') toFocus.focus();
 }
 document.getElementById('detailClose').addEventListener('click', closeDetailPanel);
 // Drag-handle pill (mobile bottom-sheet affordance) — tapping or pressing Enter/Space closes.
@@ -4682,8 +4796,7 @@ document.getElementById('citySearchInput').addEventListener('input', e => {
 });
 // Row clicks via delegation on the persistent results container — avoids
 // re-attaching a listener to every .city-row on each render.
-document.getElementById('citySearchResults').addEventListener('click', (e) => {
-  const row = e.target.closest('.city-row');
+function _activateCityRow(row) {
   if (!row || !row.dataset.slug) return;
   if (row.dataset.lat) {
     // Address result — switch to the nearest tracked city, then zoom to the point.
@@ -4696,6 +4809,19 @@ document.getElementById('citySearchResults').addEventListener('click', (e) => {
   } else {
     switchToCity(row.dataset.slug);
   }
+}
+document.getElementById('citySearchResults').addEventListener('click', (e) => {
+  _activateCityRow(e.target.closest('.city-row'));
+});
+// Keyboard parity for the delegated click handler above -- these rows are
+// role="button" tabindex="0" divs (see renderSearchTab), which get no native
+// Enter/Space activation the way a real <button> would.
+document.getElementById('citySearchResults').addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const row = e.target.closest('.city-row');
+  if (!row) return;
+  e.preventDefault();
+  _activateCityRow(row);
 });
 document.getElementById('citySearchClear').addEventListener('click', () => {
   const input = document.getElementById('citySearchInput');
@@ -4870,6 +4996,11 @@ function applyVehicleHeightToUI(fromSlider) {
         state.minHeight = state.vehicleHeightIn;
       }
       if (sliderLabel) sliderLabel.textContent = inchesToFeetStr(state.minHeight);
+      // Screen readers announce the raw 0-14 slider value by default ("5.2")
+      // with no unit; aria-valuetext overrides that with the same feet/inches
+      // string sighted users see, kept in sync from this one call site
+      // regardless of which direction (drag vs. typed height) triggered it.
+      slider.setAttribute('aria-valuetext', inchesToFeetStr(state.minHeight));
     }
   } else {
     feetEl.value = '';
@@ -5292,9 +5423,14 @@ function wireVehicleHeightInput() {
   const presetBtn = document.getElementById('vhPresetBtn');
   const presetPanel = document.getElementById('vhPresets');
   if (presetBtn && presetPanel) {
-    const closePresets = () => {
+    // returnFocus defaults to true (Escape, picking a preset) -- explicitly
+    // passed false from the outside-click listener below, since stealing
+    // focus back to the trigger button would undo whatever the user just
+    // clicked instead (a garage card, another chip, anything else on the page).
+    const closePresets = (returnFocus = true) => {
       presetPanel.hidden = true;
       presetBtn.setAttribute('aria-expanded', 'false');
+      if (returnFocus) presetBtn.focus();
     };
     presetBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -5314,7 +5450,7 @@ function wireVehicleHeightInput() {
       });
     });
     document.addEventListener('click', (e) => {
-      if (!presetPanel.hidden && !presetPanel.contains(e.target) && e.target !== presetBtn) closePresets();
+      if (!presetPanel.hidden && !presetPanel.contains(e.target) && e.target !== presetBtn) closePresets(false);
     });
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !presetPanel.hidden) closePresets();

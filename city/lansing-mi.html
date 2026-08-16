@@ -56,6 +56,7 @@
     line-height: 1.6;
   }
   a { color: var(--accent); text-decoration: none; }
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   a:hover { text-decoration: underline; }
   .page { max-width: 960px; margin: 0 auto; padding: 32px 20px 60px; }
   header { display: flex; align-items: center; gap: 12px;
@@ -241,6 +242,7 @@
     <a href="/#lansing-mi" class="crumb">Lansing, MI</a>
   </header>
 
+  <main>
   <span class="ai-pill">✦ 1 AI-verified</span>
   <h1>Parking clearance heights in Lansing, Michigan</h1>
   <p class="lede">AI-verified clearance heights for 30 parking garages, 2 tunnels, 97 low-clearance bridges in Lansing, Michigan. Enter your vehicle height on the interactive map to see what fits.</p>
@@ -273,7 +275,7 @@
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Lansing - Northwest</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (92 spaces). 92 spaces. Operator: Michigan Department of Transportation.</div><div class="entry-source">Source: OpenStreetMap (surface lot)</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Lansing Cottonwood Campground</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-addr">5339 Aurelius Road</div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: RV park (OSM tourism=caravan_site).</div><div class="entry-source">Source: OpenStreetMap (surface lot)</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Albert Avenue Garage</h3><div class="entry-height height-verified">8&#x27;2&quot;</div></div><div class="entry-tags"><span class="tag tag-ai">✦ AI-verified</span></div><div class="entry-notes">paid
-Verified 2026-08-01 from sign reading &quot;8&#x27;-2&quot;&quot; (pano g8FOuENS0E6oDUgG2RSWsg, heading 197°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a> on Aug 1, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=g8FOuENS0E6oDUgG2RSWsg&amp;heading=197" target="_blank" rel="noopener">see the sign</a></div></li>
+Verified 2026-08-01 from sign reading &quot;8&#x27;-2&quot;&quot; (pano g8FOuENS0E6oDUgG2RSWsg, heading 197°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from Google Street View on Aug 1, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=g8FOuENS0E6oDUgG2RSWsg&amp;heading=197" target="_blank" rel="noopener">see the sign</a> · <a href="/how-ai-verification-works.html">how we verify this</a></div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Ramp 4</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-tags"></div><div class="entry-notes">paid</div><div class="entry-source">Source: OpenStreetMap</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">2</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-tags"></div><div class="entry-notes">Imported from OpenStreetMap.</div><div class="entry-source">Source: OpenStreetMap</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">North Capitol Ramp</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">316 North Capitol Avenue</div><div class="entry-tags"></div><div class="entry-notes">600 spaces; paid; hrs: Mo-Fr 06:00-22:30</div><div class="entry-source">Source: OpenStreetMap</div></li>
@@ -413,6 +415,7 @@ Verified 2026-08-01 from sign reading &quot;8&#x27;-2&quot;&quot; (pano g8FOuENS
     due to re-paving, renovations, or weather. If you spot an inaccuracy,
     <a href="/#lansing-mi">open the map</a> and use the "Report clearance" button.
   </div>
+  </main>
 
   <footer>
     <div>© 2026 WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>

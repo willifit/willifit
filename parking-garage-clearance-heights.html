@@ -101,6 +101,7 @@
        border-bottom: 1px solid var(--border); padding-bottom: 6px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   .back { display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
   .back:hover { color: var(--accent); }
   .lede { font-size: 17px; color: var(--muted); margin: 0; }
@@ -174,6 +175,7 @@
        specific garage before you drive.</p>
   </header>
 
+  <main>
   <div class="answer">
     <strong>Quick answer:</strong> Most US parking garages post a clearance of <strong>7'0" to 8'2"</strong>.
     The common code minimum for an ordinary space is <strong>7'0" (84&nbsp;inches)</strong>. Where a garage
@@ -184,7 +186,7 @@
 
   <h2>Standard clearance by garage type</h2>
   <table class="tbl">
-    <thead><tr><th>Garage type</th><th>Typical clearance</th></tr></thead>
+    <thead><tr><th scope="col">Garage type</th><th scope="col">Typical clearance</th></tr></thead>
     <tbody>
       <tr><td>Ordinary space (common code minimum)</td><td>7'0" (84")</td></tr>
       <tr><td>ADA van-accessible route (federal ADA)</td><td>8'2" (98") min</td></tr>
@@ -200,22 +202,23 @@
   <p>Approximate stock heights. <strong>Measure your own vehicle</strong> — roof racks, antennas, cargo
      boxes, lift kits, and rooftop A/C units all add inches the spec sheet doesn't list.</p>
   <table class="tbl">
-    <thead><tr><th>Vehicle</th><th>Typical height</th></tr></thead>
+    <thead><tr><th scope="col">Vehicle</th><th scope="col">Typical height</th><th scope="col">Fits a 7' garage?</th></tr></thead>
     <tbody>
-      <tr><td>Sedan</td><td class="fit-yes">4'8" – 5'0"</td></tr>
-      <tr><td>SUV / crossover</td><td class="fit-yes">5'6" – 6'0"</td></tr>
-      <tr><td>Minivan</td><td class="fit-yes">5'8" – 5'10"</td></tr>
-      <tr><td>Pickup (stock)</td><td class="fit-yes">5'8" – 6'6"</td></tr>
-      <tr><td>Cargo van — low roof</td><td class="fit-yes">6'8" – 7'2"</td></tr>
-      <tr><td>Cargo van — medium / standard roof</td><td class="fit-maybe">8'0" – 8'6"</td></tr>
-      <tr><td>High-roof van (Sprinter / Transit / ProMaster)</td><td class="fit-no">8'9" – 9'4"</td></tr>
-      <tr><td>Class B camper van</td><td class="fit-no">8'6" – 10'0"</td></tr>
-      <tr><td>U-Haul / box truck</td><td class="fit-no">9'6" – 13'6"</td></tr>
-      <tr><td>Class C RV</td><td class="fit-no">10'0" – 11'6"</td></tr>
+      <tr><td>Sedan</td><td class="fit-yes">4'8" – 5'0"</td><td class="fit-yes">Usually</td></tr>
+      <tr><td>SUV / crossover</td><td class="fit-yes">5'6" – 6'0"</td><td class="fit-yes">Usually</td></tr>
+      <tr><td>Minivan</td><td class="fit-yes">5'8" – 5'10"</td><td class="fit-yes">Usually</td></tr>
+      <tr><td>Pickup (stock)</td><td class="fit-yes">5'8" – 6'6"</td><td class="fit-yes">Usually</td></tr>
+      <tr><td>Cargo van — low roof</td><td class="fit-yes">6'8" – 7'2"</td><td class="fit-yes">Usually</td></tr>
+      <tr><td>Cargo van — medium / standard roof</td><td class="fit-maybe">8'0" – 8'6"</td><td class="fit-maybe">Close call</td></tr>
+      <tr><td>High-roof van (Sprinter / Transit / ProMaster)</td><td class="fit-no">8'9" – 9'4"</td><td class="fit-no">No</td></tr>
+      <tr><td>Class B camper van</td><td class="fit-no">8'6" – 10'0"</td><td class="fit-no">No</td></tr>
+      <tr><td>U-Haul / box truck</td><td class="fit-no">9'6" – 13'6"</td><td class="fit-no">No</td></tr>
+      <tr><td>Class C RV</td><td class="fit-no">10'0" – 11'6"</td><td class="fit-no">No</td></tr>
     </tbody>
   </table>
-  <p class="src"><span class="fit-yes">Green</span> usually clears a 7' garage · <span class="fit-maybe">amber</span>
-     is a close call (check the sign) · <span class="fit-no">red</span> typically won't fit a standard garage.</p>
+  <p class="src">"Fits" is a rough guide against a standard 7'0" garage, not a guarantee —
+     <strong>measure your own vehicle</strong> and check the posted sign. "Close call" means it's
+     worth checking a taller/oversized-friendly garage first.</p>
 
   <h2>How to measure your vehicle's height</h2>
   <ol>
@@ -274,6 +277,7 @@
     <p>Enter your vehicle's height on <a href="/">WillIFit.ai</a> and it shows the garages, tunnels, and low
        bridges that clear it across 226 US cities — many AI-verified from Google Street View signage.</p>
   </div>
+  </main>
 
   <footer>
     <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>

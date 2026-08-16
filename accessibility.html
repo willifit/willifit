@@ -31,7 +31,7 @@
     "name": "Accessibility Statement",
     "url": "https://willifit.ai/accessibility.html",
     "description": "WillIFit.ai's accessibility statement, conformance status against WCAG 2.1 AA, and a list of known issues by severity.",
-    "dateModified": "2026-08-01",
+    "dateModified": "2026-08-16",
     "isPartOf": { "@type": "WebSite", "name": "WillIFit.ai", "url": "https://willifit.ai/" }
   },
   {
@@ -133,148 +133,99 @@
     <p class="lede">Our target, our current status, and an honest list of exactly what's not there yet.</p>
   </header>
 
+  <main>
   <p>WillIFit.ai exists to keep drivers from finding out the hard way that their vehicle doesn't
-     fit. That only works if the site itself doesn't put up its own barriers. We're not there yet
-     on every front, and this page says exactly where — the same way we label a clearance reading
-     "imported" instead of dressing it up as verified.</p>
+     fit. That only works if the site itself doesn't put up its own barriers. This page says
+     exactly where we stand — the same way we label a clearance reading "imported" instead of
+     dressing it up as verified.</p>
 
   <h2>Conformance target</h2>
-  <p>We aim for <b>WCAG 2.1 Level AA</b>. Current status: <b>partially conformant</b> — most of the
-     site meets that bar, and the gaps below are known, itemized, and not yet all fixed.</p>
+  <p>We aim for <b>WCAG 2.1 Level AA</b>. Current status: <b>partially conformant</b> — an initial
+     audit turned up 47 issues; a same-day remediation pass fixed both Critical findings and the
+     large majority of the Serious and Moderate ones. What's genuinely left is itemized below, same
+     as before — nothing gets quietly dropped from this list, it just moves to "fixed."</p>
   <div class="status-row">
     <span class="status-chip">Target: <b>WCAG 2.1 AA</b></span>
     <span class="status-chip">Status: <b>Partially conformant</b></span>
-    <span class="status-chip">Last reviewed: <b>August 1, 2026</b></span>
+    <span class="status-chip">Last reviewed: <b>August 16, 2026</b></span>
+  </div>
+
+  <div class="callout">
+    <b>August 16, 2026 — remediation pass.</b> Following the audit below, we fixed both Critical
+    findings and most of the Serious ones in the same session: the city picker (search, ZIP/address
+    lookup, browse-by-state) is now fully keyboard-operable; status updates, load states, and form
+    results are announced to screen readers; all dialogs and the detail panel manage focus
+    correctly; the color-only fit indicators now carry a non-color signal too; the contrast
+    failures we measured are corrected; and the mislabeled link repeated across all 226 city pages
+    is fixed. What didn't get fixed yet is listed honestly below, not hidden.
   </div>
 
   <h2>How this was assessed</h2>
-  <p>This is a self-evaluation: an internal code review against WCAG 2.1, done by four focused
-     passes covering semantic structure, keyboard and focus behavior, color and contrast, and page
-     content — not a certified third-party audit, and not tested with real assistive-technology
-     users. Automated and code-level review catches real, citable issues, but it can miss things
-     only a person using a screen reader or switch device day-to-day would notice. If something
-     here is wrong or incomplete, <a href="#feedback">tell us</a> — that's more reliable than any
-     review we can do of our own code.</p>
+  <p>This is a self-evaluation: an internal code review against WCAG 2.1, originally done by four
+     focused passes covering semantic structure, keyboard and focus behavior, color and contrast,
+     and page content — not a certified third-party audit, and not tested with real
+     assistive-technology users. Automated and code-level review catches real, citable issues, but
+     it can miss things only a person using a screen reader or switch device day-to-day would
+     notice. If something here is wrong or incomplete, <a href="#feedback">tell us</a> — that's more
+     reliable than any review we can do of our own code.</p>
 
-  <h2>What's already solid</h2>
-  <p>Not everything below is a problem. Some of this held up well under review, and it's worth
-     saying which parts:</p>
+  <h2>What's solid</h2>
+  <p>Not all of this is new — some held up well from the start. Some of it is exactly what changed
+     today:</p>
   <div class="good-list">
+    <div class="good-item"><span class="mark">✓</span> The city picker — search, ZIP lookup, address lookup, and browse-by-state — is fully keyboard-operable, with proper button semantics and a screen-reader label on every result row.</div>
+    <div class="good-item"><span class="mark">✓</span> Status updates reach screen readers: result counts, loading/error states, geolocation status, and all three report forms' submit results now announce through live regions.</div>
+    <div class="good-item"><span class="mark">✓</span> All five dialogs (the welcome screen, city picker, and three report forms) are marked as dialogs with a real accessible name, and the city picker's tabs use proper tab/tabpanel semantics.</div>
+    <div class="good-item"><span class="mark">✓</span> The garage detail panel now manages focus correctly: it moves focus in on open, restores it to the right place on close — even after the list has re-rendered underneath it — and is removed from the tab order and accessibility tree while closed, via <code>inert</code>.</div>
     <div class="good-item"><span class="mark">✓</span> A real focus trap on every modal — Tab and Shift+Tab wrap correctly, Escape closes the top one first, and focus returns to whatever opened it.</div>
-    <div class="good-item"><span class="mark">✓</span> A working skip link, one clear page heading, and a visible focus ring on every page — no components silently disable it.</div>
-    <div class="good-item"><span class="mark">✓</span> Body text contrast is strong throughout (15:1+ on the main text, 5:1+ on secondary text) — this was checked with real calculated ratios, not eyeballed.</div>
-    <div class="good-item"><span class="mark">✓</span> Reduced-motion, reduced-transparency, and increased-contrast preferences are all respected — most sites handle none of these.</div>
-    <div class="good-item"><span class="mark">✓</span> Every page has a language attribute, one clear heading, and a descriptive, unique title — across all 226 city pages, with zero exceptions found.</div>
-    <div class="good-item"><span class="mark">✓</span> No unlabeled images anywhere on the site, because the site doesn't use any — nothing to get wrong there.</div>
-    <div class="good-item"><span class="mark">✓</span> The garage-fit verdict in the detail panel is never color-only — it's always a plain-language sentence ("Won't fit — 4&quot; too short").</div>
+    <div class="good-item"><span class="mark">✓</span> The "fits / tight / won't fit" color coding now carries a non-color signal too (a ✓ / ~ / ✗ mark on every badge, plus a spoken verdict in its accessible name) — color-vision deficiency no longer makes two different verdicts look identical.</div>
+    <div class="good-item"><span class="mark">✓</span> Every color pairing we measured as failing — badge borders, map-marker text, the "won't fit" label, UI borders site-wide — now clears its WCAG contrast minimum, checked with calculated ratios, not eyeballed.</div>
+    <div class="good-item"><span class="mark">✓</span> A working skip link that actually moves focus (not just scrolls), one clear page heading, and a visible focus ring everywhere — no component silently disables it.</div>
+    <div class="good-item"><span class="mark">✓</span> Body text contrast is strong throughout (15:1+ on the main text, 5:1+ on secondary text).</div>
+    <div class="good-item"><span class="mark">✓</span> Reduced-motion, reduced-transparency, and increased-contrast preferences are all respected — including the map's own pan/zoom animation, which needed an explicit check since CSS alone can't reach it.</div>
+    <div class="good-item"><span class="mark">✓</span> Every page — all 226 city pages included — has a language attribute, one clear heading, a descriptive unique title, and a <code>&lt;main&gt;</code> landmark.</div>
+    <div class="good-item"><span class="mark">✓</span> No unlabeled images anywhere on the site, because the site doesn't use any.</div>
   </div>
 
   <h2>Known issues</h2>
-  <p>Grouped by area, most serious first. "Serious" means a real feature doesn't work for someone
-     relying on that access method; "Moderate"/"Minor" are real but narrower or have a workaround.</p>
+  <p>What's left after the pass above — all Moderate or Minor at this point, nothing that blocks a
+     core action the way the two Critical findings did.</p>
 
   <div class="issue-group">
-    <h4>Navigating and changing cities</h4>
+    <h4>Heading structure inside the app</h4>
     <ul>
-      <li><span class="sev sev-critical">Critical</span> The city-picker's search results and
-        state-browse list aren't operable by keyboard or announced to a screen reader — picking a
-        city, the site's core action, currently requires a mouse.
-        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
-      <li><span class="sev sev-critical">Critical</span> Status updates — result counts, load
-        errors, "detecting your location," a report submitting successfully or failing — aren't
-        announced to screen readers. They're silent unless you can see the screen.
-        <span class="wcag-ref">(WCAG 4.1.3)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The four dialogs (city picker, both report
-        forms, the add-a-location form) aren't marked as dialogs, so assistive tech doesn't
-        announce a boundary or a title when one opens.
-        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
-      <li><span class="sev sev-serious">Serious</span> Filter toggles ("Hide unverified," "★
-        Saved," garage/tunnel/bridge) don't expose on/off state — they sound identical either way.
-        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The city-picker's Search/Map/Browse tabs
-        aren't marked as tabs, so their relationship to each other isn't conveyed.
-        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The min-clearance slider and the city search
-        box rely on placeholder text instead of a real label, and the slider doesn't announce its
-        value in feet — just a raw number.
-        <span class="wcag-ref">(WCAG 4.1.2, 3.3.2)</span></li>
+      <li><span class="sev sev-moderate">Moderate</span> The main app still has only two real
+        heading elements. Modal titles, the garage name in the detail panel, and its section
+        headers are styled to look like headings but are still <code>&lt;div&gt;</code>s — a
+        screen reader user jumping by heading can't use that to navigate within the app the way
+        they can on every content page.
+        <span class="wcag-ref">(WCAG 1.3.1, 2.4.6)</span></li>
     </ul>
   </div>
 
   <div class="issue-group">
-    <h4>The garage detail panel</h4>
+    <h4>Smaller gaps</h4>
     <ul>
-      <li><span class="sev sev-serious">Serious</span> When the panel is closed, its contents
-        (Directions, Save, Share, both report buttons) stay reachable by Tab even though they're
-        invisible — you can tab into content that isn't there.
-        <span class="wcag-ref">(WCAG 2.4.3, 2.4.7)</span></li>
-      <li><span class="sev sev-serious">Serious</span> Opening or closing the panel doesn't move
-        focus in or restore it afterward — unlike every modal on the site, which does this
-        correctly.
-        <span class="wcag-ref">(WCAG 2.4.3)</span></li>
-      <li><span class="sev sev-serious">Serious</span> One of the two image thumbnails ("Open
-        Maps") is reachable by Tab but can't be activated by keyboard — its neighbor works fine,
-        this one was missed.
-        <span class="wcag-ref">(WCAG 2.1.1)</span></li>
-    </ul>
-  </div>
-
-  <div class="issue-group">
-    <h4>Color and visual contrast</h4>
-    <ul>
-      <li><span class="sev sev-serious">Serious</span> The height badge and map-marker colors for
-        "fits" vs. "tight" are almost the same brightness (a calculated contrast ratio of ~1:1
-        between them) — someone with color-vision deficiency likely can't tell them apart by color
-        alone, and the badge itself carries no separate label.
-        <span class="wcag-ref">(WCAG 1.4.1)</span></li>
-      <li><span class="sev sev-serious">Serious</span> White text on the map markers' amber/green
-        fills measures under 3:1 — below the minimum for that size text.
-        <span class="wcag-ref">(WCAG 1.4.3)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The "Won't fit" label in the detail panel
-        measures 3.94:1 against its background — just under the 4.5:1 minimum, on the single
-        highest-stakes message in the product.
-        <span class="wcag-ref">(WCAG 1.4.3)</span></li>
-      <li><span class="sev sev-serious">Serious</span> Card, input, and chip borders measure well
-        under the 3:1 minimum for UI boundaries site-wide — edges are present but very faint.
-        <span class="wcag-ref">(WCAG 1.4.11)</span></li>
-      <li><span class="sev sev-moderate">Moderate</span> Links on the informational pages are
-        distinguished from body text by color alone, with no underline until hover.
-        <span class="wcag-ref">(WCAG 1.4.1)</span></li>
-    </ul>
-  </div>
-
-  <div class="issue-group">
-    <h4>Page content and data tables</h4>
-    <ul>
-      <li><span class="sev sev-serious">Serious</span> Every AI-verified entry on all 226 city
-        pages links the words "Google Street View" to our own methodology page instead of Street
-        View itself — the link text names a destination it doesn't go to. This is a single template
-        fix that corrects all 226 pages at once, and the highest-leverage item on this whole list.
-        <span class="wcag-ref">(WCAG 2.4.4)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The data tables on the clearance guide and
-        the Lowest Bridges page have header cells but no <code>scope</code> attributes — a screen
-        reader reads each row as a list of bare values with no column association.
-        <span class="wcag-ref">(WCAG 1.3.1)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The "will it fit" comparison table on the
-        clearance guide conveys its verdict by text color only, and the legend explaining it is
-        itself written in terms of color.
-        <span class="wcag-ref">(WCAG 1.4.1)</span></li>
-      <li><span class="sev sev-serious">Serious</span> The Lowest Bridges table scrolls
-        horizontally on narrow screens, but that scroll region isn't reachable by keyboard — the
-        City column is unreachable without a mouse or touchscreen at that width.
-        <span class="wcag-ref">(WCAG 2.1.1)</span></li>
-      <li><span class="sev sev-moderate">Moderate</span> No page has a <code>&lt;main&gt;</code>
-        landmark, including all 226 city pages — headings still make the page navigable, but
-        landmark-based navigation (how many screen reader users jump around a page) doesn't work.
+      <li><span class="sev sev-minor">Minor</span> The vehicle-height preset button declares
+        itself as opening a menu (<code>aria-haspopup="menu"</code>) but the dropdown is really a
+        plain list of buttons, not a full ARIA menu with arrow-key navigation — worth resolving the
+        mismatch so a screen reader doesn't set the wrong expectation.
+        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
+      <li><span class="sev sev-minor">Minor</span> A couple of small icon-only buttons (clear
+        search, clear vehicle height) are named only through a <code>title</code> attribute, which
+        not every assistive technology reads consistently — an explicit <code>aria-label</code>
+        would be more robust.
+        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
+      <li><span class="sev sev-minor">Minor</span> The data tables on the clearance guide and the
+        Lowest Bridges page now have proper column headers (<code>scope="col"</code>), but still
+        don't have a <code>&lt;caption&gt;</code> element describing the table as a whole.
         <span class="wcag-ref">(WCAG 1.3.1)</span></li>
     </ul>
   </div>
 
   <h2>What we're doing about it</h2>
-  <p>These are logged, prioritized, and not all fixed yet — we're not going to claim otherwise. The
-     two Critical items (city selection, and silent status updates) are the current priority, since
-     they block a core function rather than degrade it. We'll update this page as issues close, not
-     just add new ones.</p>
+  <p>What's left is logged and all Moderate or Minor — nothing here blocks a core action. We'll
+     keep updating this page as things close, not just when new findings show up.</p>
 
   <h2 id="feedback">Report a problem</h2>
   <p>If you hit an access barrier anywhere on the site — something above, or something we missed —
@@ -286,6 +237,7 @@
 
   <p>Read more about <a href="/about.html">who builds this and why</a>, or go back to
      <a href="/">the map</a>.</p>
+  </main>
 
   <footer>
     <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>

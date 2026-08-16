@@ -69,6 +69,10 @@
        border-bottom: 1px solid var(--border); padding-bottom: 6px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+  /* Prose links keep a subtle default underline -- color alone doesn't meet
+     WCAG 1.4.1 against body text at this contrast (nav/footer links are
+     positionally distinct, so they're excluded from this rule). */
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   .back { display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
   .lede { font-size: 17px; color: var(--muted); margin: 0; }
   ul { padding-left: 22px; }
@@ -110,6 +114,7 @@
     <p class="lede">Built by a driver who got tired of guessing — not by a data broker.</p>
   </header>
 
+  <main>
   <h2>Why this exists</h2>
   <p>WillIFit.ai is built and run by Dan, a film & video production professional who spends real
      days driving tall vehicles — grip trucks, cube trucks, high-roof vans — into cities that were
@@ -157,6 +162,7 @@
   <p>Spot a wrong height, a closed garage, a misplaced pin? Open the location and hit
      <b>Report clearance</b> or <b>Report an issue</b> — reports are reviewed by a human.
      For sponsorships and everything else, see the <a href="/advertise.html">advertise page</a>.</p>
+  </main>
 
   <footer>
     <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>

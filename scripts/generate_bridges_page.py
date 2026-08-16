@@ -192,6 +192,7 @@ def main():
   h1 {{ margin: 0 0 10px; font-size: 31px; letter-spacing: -0.02em; }}
   h2 {{ margin-top: 42px; font-size: 21px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }}
   a {{ color: var(--accent); text-decoration: none; }}
+  main a {{ text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }}
   a:hover {{ text-decoration: underline; }}
   .back {{ display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }}
   .lede {{ font-size: 17px; color: var(--muted); margin: 0; }}
@@ -225,6 +226,7 @@ def main():
        computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {today}.</p>
   </header>
 
+  <main>
   <div class="answer" id="lowest-answer">
     <b>The lowest posted drivable clearance in our database is {label(top[0]['h']) if top else '?'}</b> —
     {esc(top[0]['name']) if top else ''} in {esc(top[0]['city']) if top else ''}, {esc(top[0]['state']) if top else ''}.
@@ -233,9 +235,9 @@ def main():
   </div>
 
   <h2>The 25 lowest posted clearances</h2>
-  <div class="table-wrap">
+  <div class="table-wrap" tabindex="0" role="region" aria-label="The 25 lowest posted clearances, scrollable table">
   <table>
-    <thead><tr><th>#</th><th>Posted</th><th>Structure</th><th>City</th></tr></thead>
+    <thead><tr><th scope="col">#</th><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
     <tbody>
 {top_rows}
     </tbody>
@@ -246,9 +248,9 @@ def main():
      always trust the sign in front of you over any database, including this one.</p>
 
   <h2>The lowest bridge in every covered state</h2>
-  <div class="table-wrap">
+  <div class="table-wrap" tabindex="0" role="region" aria-label="The lowest bridge in every covered state, scrollable table">
   <table>
-    <thead><tr><th>Posted</th><th>Structure</th><th>City</th></tr></thead>
+    <thead><tr><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
     <tbody>
 {state_rows}
     </tbody>
@@ -269,6 +271,7 @@ def main():
   <p>Planning a route in a tall vehicle? Check your height against every garage, tunnel, and bridge in
      <a href="/cities.html">226 cities</a>, or read the
      <a href="/parking-garage-clearance-heights.html">parking garage clearance guide</a>.</p>
+  </main>
 
   <footer>
     <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>

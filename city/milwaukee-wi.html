@@ -56,6 +56,7 @@
     line-height: 1.6;
   }
   a { color: var(--accent); text-decoration: none; }
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   a:hover { text-decoration: underline; }
   .page { max-width: 960px; margin: 0 auto; padding: 32px 20px 60px; }
   header { display: flex; align-items: center; gap: 12px;
@@ -241,6 +242,7 @@
     <a href="/#milwaukee-wi" class="crumb">Milwaukee, WI</a>
   </header>
 
+  <main>
   <span class="ai-pill">✦ 1 AI-verified</span>
   <h1>Parking clearance heights in Milwaukee, Wisconsin</h1>
   <p class="lede">AI-verified clearance heights for 43 parking garages, 1 tunnels, 84 low-clearance bridges in Milwaukee, Wisconsin. Enter your vehicle height on the interactive map to see what fits.</p>
@@ -288,7 +290,7 @@ Web-verified 2026-04-30: https://www.fiservforum.com/plan-your-visit/directions-
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Milwaukee MKE — Daily Garage</h3><div class="entry-height height-verified">6&#x27;11&quot;</div></div><div class="entry-addr">5300 S Howell Ave</div><div class="entry-tags"><span class="tag tag-verified">✓ Verified</span></div><div class="entry-notes">Terminal-adjacent.
 Web-verified 2026-04-30: https://www.mitchellairport.com/parking-transportation/parking — Mitchell Airport parking page lists 6&#x27;11 max</div><div class="entry-verify">Verified on Apr 30, 2026 · source: mitchellairport.com</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">MKE — Economy Lot</h3><div class="entry-height height-verified">6&#x27;11&quot;</div></div><div class="entry-addr">5800 S Howell Ave</div><div class="entry-tags"><span class="tag tag-ai">✦ AI-verified</span></div><div class="entry-notes">Uncovered. Oversized OK.
-Verified 2026-07-03 from mitchellairport.com: &quot;Maximum vehicle height is 6 feet 11 inches.&quot;</div><div class="entry-verify entry-verify-ai">AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a> on Jul 3, 2026</div></li>
+Verified 2026-07-03 from mitchellairport.com: &quot;Maximum vehicle height is 6 feet 11 inches.&quot;</div><div class="entry-verify entry-verify-ai">AI-verified from Google Street View on Jul 3, 2026 · <a href="/how-ai-verification-works.html">how we verify this</a></div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">North Shore Park &amp; Ride</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (194 spaces). 194 spaces. Free parking.</div><div class="entry-source">Source: OpenStreetMap (surface lot)</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Loomis Road Park and Ride</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (409 spaces). 409 spaces. Free parking. Operator: Wisconsin Department of Transportation.</div><div class="entry-source">Source: OpenStreetMap (surface lot)</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">State Fair Park and Ride</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (285 spaces). 285 spaces. Free parking. Operator: Wisconsin Department of Transportation.</div><div class="entry-source">Source: OpenStreetMap (surface lot)</div></li>
@@ -414,6 +416,7 @@ Verified 2026-07-03 from mitchellairport.com: &quot;Maximum vehicle height is 6 
     due to re-paving, renovations, or weather. If you spot an inaccuracy,
     <a href="/#milwaukee-wi">open the map</a> and use the "Report clearance" button.
   </div>
+  </main>
 
   <footer>
     <div>© 2026 WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>

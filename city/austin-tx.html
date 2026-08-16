@@ -56,6 +56,7 @@
     line-height: 1.6;
   }
   a { color: var(--accent); text-decoration: none; }
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   a:hover { text-decoration: underline; }
   .page { max-width: 960px; margin: 0 auto; padding: 32px 20px 60px; }
   header { display: flex; align-items: center; gap: 12px;
@@ -241,6 +242,7 @@
     <a href="/#austin-tx" class="crumb">Austin, TX</a>
   </header>
 
+  <main>
   <span class="ai-pill">✦ 2 AI-verified</span>
   <h1>Parking clearance heights in Austin, Texas</h1>
   <p class="lede">AI-verified clearance heights for 105 parking garages, 17 tunnels, 273 low-clearance bridges in Austin, Texas. Enter your vehicle height on the interactive map to see what fits.</p>
@@ -271,7 +273,7 @@
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Austin Convention Center — 5th St Garage</h3><div class="entry-height height-verified">6&#x27;11&quot;</div></div><div class="entry-addr">601 E 5th St</div><div class="entry-tags"></div><div class="entry-notes">ACC garage. Slightly taller than 2nd St.</div><div class="entry-source">Source: austinconventioncenter.com</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Paramount Theatre Garage</h3><div class="entry-height height-verified">6&#x27;7&quot;</div></div><div class="entry-addr">713 Congress Ave</div><div class="entry-tags"></div><div class="entry-notes">Historic downtown. Low clearance.</div><div class="entry-source">Source: austintheatre.org</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">State Capitol Visitor Parking</h3><div class="entry-height height-verified">6&#x27;10&quot;</div></div><div class="entry-addr">1201 San Jacinto Blvd</div><div class="entry-tags"><span class="tag tag-ai">✦ AI-verified</span></div><div class="entry-notes">Underground state capitol garage.
-Verified 2026-07-04 from sign reading &quot;6&#x27;10&quot;&quot; (pano Z1kmNKWZdon3OFcuiJdF5w, heading 357°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a> on Jul 4, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=Z1kmNKWZdon3OFcuiJdF5w&amp;heading=357" target="_blank" rel="noopener">see the sign</a></div></li>
+Verified 2026-07-04 from sign reading &quot;6&#x27;10&quot;&quot; (pano Z1kmNKWZdon3OFcuiJdF5w, heading 357°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from Google Street View on Jul 4, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=Z1kmNKWZdon3OFcuiJdF5w&amp;heading=357" target="_blank" rel="noopener">see the sign</a> · <a href="/how-ai-verification-works.html">how we verify this</a></div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Frost Bank Tower Garage</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">401 Congress Ave</div><div class="entry-tags"></div><div class="entry-notes">Iconic skyscraper underground garage.</div><div class="entry-source">Source: Needs verification</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">2nd Street District — 300 W 2nd</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">300 W 2nd St</div><div class="entry-tags"></div><div class="entry-notes">Shopping district.</div><div class="entry-source">Source: 2ndstreetdistrict.com</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Moody Center — UT Campus Garages</h3><div class="entry-height height-verified">7&#x27;0&quot;</div></div><div class="entry-addr">2001 Robert Dedman Dr</div><div class="entry-tags"><span class="tag tag-verified">✓ Verified</span></div><div class="entry-notes">New arena (Longhorns basketball). Multiple UT garages serve events. Use 7&#x27;0 for upper levels (lowest at game-day-accessible structures)</div><div class="entry-verify">Verified on Apr 30, 2026 · source: <a href="https://parking.utexas.edu/parking/garages/manor-garage-mag" target="_blank" rel="noopener">moodycenteratx.com</a></div></li>
@@ -279,7 +281,7 @@ Verified 2026-07-04 from sign reading &quot;6&#x27;10&quot;&quot; (pano Z1kmNKWZ
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">UT Austin — Speedway (SAG)</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">2401 Speedway</div><div class="entry-tags"></div><div class="entry-notes">UT SAC Garage. Visitor parking.</div><div class="entry-source">Source: parking.utexas.edu</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">LBJ Presidential Library Lot</h3><div class="entry-height height-unverified">No limit</div></div><div class="entry-addr">2313 Red River St</div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span><span class="tag tag-verified">✓ Verified</span></div><div class="entry-notes">Free surface lot. Surface lot on UT campus</div><div class="entry-verify">Verified on Apr 30, 2026 · source: lbjlibrary.org</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">The Domain Garages</h3><div class="entry-height height-verified">7&#x27;0&quot;</div></div><div class="entry-addr">11410 Century Oaks Ter</div><div class="entry-tags"><span class="tag tag-ai">✦ AI-verified</span></div><div class="entry-notes">Upscale open-air shopping district. Multiple garages.
-Verified 2026-07-04 from sign reading &quot;7&#x27;-0&quot;&quot; (pano TdNnKRX9Z1EEMZi7bYlerw, heading 277°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a> on Jul 4, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=TdNnKRX9Z1EEMZi7bYlerw&amp;heading=277" target="_blank" rel="noopener">see the sign</a></div></li>
+Verified 2026-07-04 from sign reading &quot;7&#x27;-0&quot;&quot; (pano TdNnKRX9Z1EEMZi7bYlerw, heading 277°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from Google Street View on Jul 4, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=TdNnKRX9Z1EEMZi7bYlerw&amp;heading=277" target="_blank" rel="noopener">see the sign</a> · <a href="/how-ai-verification-works.html">how we verify this</a></div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Barton Creek Square Mall</h3><div class="entry-height height-unverified">No limit</div></div><div class="entry-addr">2901 S Capital of Texas Hwy</div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span><span class="tag tag-verified">✓ Verified</span></div><div class="entry-notes">Surface lots.</div><div class="entry-verify">Verified on Apr 30, 2026 · source: simon.com</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Zilker Park Lots</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-addr">2100 Barton Springs Rd</div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">ACL Fest + Barton Springs. Surface lots.</div><div class="entry-source">Source: austintexas.gov</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">South Congress (SoCo) Lots</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-addr">1500 S Congress Ave</div><div class="entry-tags"></div><div class="entry-notes">Shopping + dining district. Street + small lots.</div><div class="entry-source">Source: Needs verification</div></li>
@@ -680,6 +682,7 @@ Verified 2026-07-04 from sign reading &quot;7&#x27;-0&quot;&quot; (pano TdNnKRX9
     due to re-paving, renovations, or weather. If you spot an inaccuracy,
     <a href="/#austin-tx">open the map</a> and use the "Report clearance" button.
   </div>
+  </main>
 
   <footer>
     <div>© 2026 WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>

@@ -56,6 +56,7 @@
     line-height: 1.6;
   }
   a { color: var(--accent); text-decoration: none; }
+  main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   a:hover { text-decoration: underline; }
   .page { max-width: 960px; margin: 0 auto; padding: 32px 20px 60px; }
   header { display: flex; align-items: center; gap: 12px;
@@ -241,6 +242,7 @@
     <a href="/#boston-ma" class="crumb">Boston, MA</a>
   </header>
 
+  <main>
   <span class="ai-pill">✦ 1 AI-verified</span>
   <h1>Parking clearance heights in Boston, Massachusetts</h1>
   <p class="lede">AI-verified clearance heights for 41 parking garages, 4 tunnels, 234 low-clearance bridges in Boston, Massachusetts. Enter your vehicle height on the interactive map to see what fits.</p>
@@ -295,7 +297,7 @@ Web-verified 2026-04-30: https://www.pilgrimparking.com/boston-parking-garages/f
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Faneuil Hall Marketplace Lots</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">4 S Market St</div><div class="entry-tags"></div><div class="entry-notes">Limited — use Government Center instead.</div><div class="entry-source">Source: faneuilhallmarketplace.com</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Kendall Square Garages (Cambridge)</h3><div class="entry-height height-unverified">Unverified</div></div><div class="entry-addr">3 Cambridge Ctr</div><div class="entry-tags"></div><div class="entry-notes">MIT / Kendall tech district.</div><div class="entry-source">Source: Needs verification</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Harvard Square Garage (Cambridge)</h3><div class="entry-height height-verified">6&#x27;8&quot;</div></div><div class="entry-addr">65 JFK St, Cambridge</div><div class="entry-tags"><span class="tag tag-ai">✦ AI-verified</span></div><div class="entry-notes">University-area garage.
-Verified 2026-08-01 from sign reading &quot;CLEARANCE 6&#x27;-8&quot;&quot; (pano RtRSpSbazFALw2I75-ZnIA, heading 13°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from <a href="/how-ai-verification-works.html">Google Street View</a> on Aug 1, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=RtRSpSbazFALw2I75-ZnIA&amp;heading=13" target="_blank" rel="noopener">see the sign</a></div></li>
+Verified 2026-08-01 from sign reading &quot;CLEARANCE 6&#x27;-8&quot;&quot; (pano RtRSpSbazFALw2I75-ZnIA, heading 13°, Claude confidence high)</div><div class="entry-verify entry-verify-ai">AI-verified from Google Street View on Aug 1, 2026 · <a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;pano=RtRSpSbazFALw2I75-ZnIA&amp;heading=13" target="_blank" rel="noopener">see the sign</a> · <a href="/how-ai-verification-works.html">how we verify this</a></div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Logan Airport — Central Garage</h3><div class="entry-height height-verified">8&#x27;2&quot;</div></div><div class="entry-addr">1 Harborside Dr</div><div class="entry-tags"><span class="tag tag-verified">✓ Verified</span></div><div class="entry-notes">Terminal-adjacent.
 Web-verified 2026-04-30: https://www.massport.com/logan-airport/getting-to-logan/parking/terminal-parking — Massport posts 8&#x27;2 on Level 4 (Terminal E side); other levels lower</div><div class="entry-verify">Verified on Apr 30, 2026 · source: massport.com</div></li>
 <li class="entry entry-garage"><div class="entry-head"><h3 class="entry-name">Logan — Economy Lot</h3><div class="entry-height height-unverified">No limit (uncovered)</div></div><div class="entry-addr">1 Harborside Dr</div><div class="entry-tags"><span class="tag tag-oversized">Oversized OK</span></div><div class="entry-notes">Uncovered. Oversized OK.</div><div class="entry-source">Source: massport.com</div></li>
@@ -572,6 +574,7 @@ Web-verified 2026-04-30: https://www.massport.com/logan-airport/getting-to-logan
     due to re-paving, renovations, or weather. If you spot an inaccuracy,
     <a href="/#boston-ma">open the map</a> and use the "Report clearance" button.
   </div>
+  </main>
 
   <footer>
     <div>© 2026 WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>
