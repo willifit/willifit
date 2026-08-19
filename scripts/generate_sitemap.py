@@ -59,6 +59,7 @@ STATIC_PAGES = [
     ("disclaimer.html",               "disclaimer.html",                 "monthly", "0.3"),
     ("terms.html",                    "terms.html",                      "monthly", "0.3"),
     ("privacy.html",                  "privacy.html",                    "monthly", "0.3"),
+    ("cookies.html",                  "cookies.html",                    "monthly", "0.3"),
     ("dmca.html",                     "dmca.html",                       "monthly", "0.3"),
     ("cities.html",                   "cities.html",                     "weekly",  "0.8"),
 ]

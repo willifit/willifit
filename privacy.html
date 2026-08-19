@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 <title>Privacy Policy — Willifit</title>
-<meta name="description" content="How Willifit handles your data. We store your city preference and vehicle height locally in your browser. We do not sell personal data.">
+<meta name="description" content="How Willifit handles your data. Your city preference and vehicle height stay in your browser. We use Cloudflare Web Analytics (cookieless) and Google Analytics 4, which sets cookies. We do not sell personal data.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
   :root {
@@ -30,6 +30,7 @@
   footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
 </style>
 
+<script src="/js/consent.js"></script>
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "162b93f801fa42499a0b840c50d3f772"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -67,8 +68,10 @@
   <a href="/" class="back">← Back to Willifit</a>
   <header>
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: <time datetime="2026-04-17">April 17, 2026</time></p>
+    <p class="muted">Last updated: <time datetime="2026-08-19">August 19, 2026</time></p>
   </header>
+
+  <main>
 
   <p>This policy explains what data Willifit collects, how it's used, and your choices.</p>
 
@@ -77,52 +80,124 @@
     <li>We do <b>not</b> sell your personal data</li>
     <li>Most of what Willifit "knows" about you (last city, vehicle height, pending reports) lives in your own browser's localStorage — not our servers</li>
     <li>If you submit a clearance report with contact info, we store it so we can reply</li>
-    <li>We use privacy-respecting analytics to count visits; no cross-site tracking</li>
-    <li>Map tiles and embeds are served by third parties who have their own policies</li>
+    <li>We run two analytics tools: Cloudflare Web Analytics, which sets no cookies at all, and Google Analytics 4, which <b>does</b> set cookies and sends data to Google</li>
+    <li>Visitors in the EU, UK, EEA and Switzerland are asked before Google Analytics runs. Everyone else can turn it off at any time from the <b>Cookie preferences</b> control in the footer, and we honor Global Privacy Control automatically</li>
+    <li>Map tiles, Street View, and geocoding are served by third parties who have their own policies</li>
   </ul>
 
   <h2>What we store locally in your browser</h2>
-  <p>These keys are written to <code>localStorage</code> on your device. They never leave your browser unless you explicitly submit a report:</p>
+  <p>These keys are written to <code>localStorage</code> on your device. We never read them off your device — nothing here is transmitted to us unless you explicitly submit a report:</p>
   <ul>
     <li><code>willifit_last_city</code> — slug of the last city you viewed (for convenience on return visits)</li>
-    <li><code>willifit_vehicle_height_in</code> — your entered vehicle height, in inches, if you set one</li>
-    <li><code>willifit_report_queue</code> — clearance reports you've submitted (queued locally so nothing is lost if the network fails)</li>
-    <li><code>willifit_ad_impression</code> / <code>willifit_ad_click</code> — anonymous counters for which sponsored cards you've seen/clicked (used to rotate ads fairly)</li>
+    <li><code>willifit_last_center</code> — the map's last center point and zoom, so the map opens where you left off instead of redrawing from the default view</li>
     <li><code>willifit_map_layer</code> — whether you picked the street or satellite base layer on the map (so we open in your preferred view on return visits)</li>
+    <li><code>willifit_saved_spots</code> — the locations you starred as favorites</li>
+    <li><code>willifit_vehicle_height_in</code> — your entered vehicle height, in inches, if you set one</li>
+    <li><code>willifit_zip_cache</code> — ZIP codes you've looked up and the coordinates they resolved to, cached so repeat lookups are instant</li>
+    <li><code>willifit_report_queue</code> — clearance reports you've submitted (queued locally so nothing is lost if the network fails)</li>
+    <li><code>willifit_issue_queue</code> — the same local queue for "Report an issue" submissions</li>
+    <li><code>willifit_new_location_queue</code> — the same local queue for new locations you've submitted</li>
+    <li><code>willifit_ad_impression</code> / <code>willifit_ad_click</code> — anonymous counters for which sponsored cards you've seen/clicked, capped at the most recent 500 of each (used to rotate ads fairly)</li>
+    <li><code>willifit_cookie_consent</code> — your analytics choice and when you made it, so we don't ask again</li>
   </ul>
-  <p>You can clear all of it anytime by clearing your browser's site data for Willifit.</p>
+  <p>One more key, <code>willifit_admin_pw</code>, is written to <code>sessionStorage</code> — but only on <code>/admin.html</code>, which is a password-gated page for the site operator. Ordinary visitors never touch it, and it is erased when the browser tab closes.</p>
+  <p>You can clear all of it anytime by clearing your browser's site data for Willifit. For how this device storage differs from cookies, and why most of it doesn't need your consent, see the <a href="/cookies.html">Cookie Policy</a>.</p>
 
   <h2>Geolocation</h2>
-  <p>If you allow it, your browser shares your approximate location with Willifit so we can open the nearest covered city. We use it once to pick a city and do not store it. You can deny the permission and manually pick a city instead — no difference in functionality.</p>
+  <p>If you allow it, your browser hands your approximate location to the Willifit page so it can open the nearest covered city. That comparison happens entirely in your browser, against the city list already downloaded to your device: <b>your coordinates are never sent to our servers or to anyone else.</b> We use them once to pick a city and do not store them. You can deny the permission and manually pick a city instead — no difference in functionality.</p>
 
-  <h2>Clearance reports you submit</h2>
-  <p>When you use the "Report clearance" form:</p>
+  <h2>Forms you submit</h2>
+  <p>Willifit has four forms. Three are in the app — <b>Report clearance</b>, <b>Report an issue</b>, and <b>Add a location</b> — and one is the advertiser inquiry form on the <a href="/advertise.html">advertise page</a>. All four are handled by Netlify Forms, the form service built into our host.</p>
   <ul>
-    <li>The report data (garage ID, your measurements, notes, optional email) is submitted to our backend for review</li>
+    <li>The three app forms send the location the report is about (its ID, name, address, coordinates, and city), what you're correcting, your notes, your optional email, a submission timestamp, and your browser's user-agent string</li>
+    <li>The advertiser inquiry form sends the name, company, email, optional phone, and message you type into it</li>
     <li>Your email (if provided) is used only to reply with follow-up questions or to notify you if we update the data based on your report</li>
     <li>We never sell or share your email with third parties</li>
-    <li>Your user agent string and submission timestamp are captured for anti-abuse purposes</li>
+    <li>The timestamp and user-agent string are captured for anti-abuse purposes</li>
+    <li>Submissions land in Netlify Forms and are read back by the site operator through a password-protected admin page. Netlify processes them on our behalf under <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">its own privacy policy</a></li>
     <li>Submissions may be retained indefinitely as part of our data-quality audit trail</li>
   </ul>
+  <p>Until a submission reaches the network it also sits in a queue on your own device, so a dropped connection never loses your report. Those queues are listed above.</p>
 
   <h2>Analytics</h2>
-  <p>We use a privacy-respecting analytics service (such as Cloudflare Web Analytics) that counts page views and basic interactions without cookies, fingerprinting, or cross-site tracking. Individual users are not identified.</p>
+  <p>We run two analytics tools, and they are not the same kind of thing. Here is exactly what each one does.</p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">Cloudflare Web Analytics — no cookies</h3>
+  <p>Cloudflare Web Analytics counts page views and basic performance timings. It sets no cookies, uses no device fingerprinting, and does not follow you to other sites. Individual visitors are not identified. It runs on every public page of the site, including this one, and it is not affected by your cookie choice because it does not use cookies or device storage at all.</p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">Google Analytics 4 — this one sets cookies</h3>
+  <p>Since August 2026 the site has also run Google Analytics 4, measurement ID <code>G-SH191K5NGS</code>, loaded from <code>googletagmanager.com</code>. Being straight with you about it: this is not a cookieless tool.</p>
+  <ul>
+    <li><b>It sets two cookies</b> in your browser under the <code>willifit.ai</code> domain:
+      <code>_ga</code>, which holds a randomly generated ID that distinguishes your browser from other browsers, and
+      <code>_ga_SH191K5NGS</code>, which keeps track of your current visit. Both expire <b>2 years</b> after they are last set.</li>
+    <li><b>What it measures:</b> which pages you view, how you arrived (search, a link, direct), roughly where you are (country and city level, derived from your IP address), your device type, browser, and screen size, and how long you stay.</li>
+    <li><b>Where the data goes:</b> to Google, which processes it on our behalf and may store and process it on servers in the United States and elsewhere. Google's handling of it is governed by its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a> and its <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener">business data terms</a>. We do not upload your email, your report submissions, or anything you type into a form to Google Analytics.</li>
+    <li><b>Cross-site capability:</b> Google Analytics is a Google product and the underlying technology is capable of being used for cross-site measurement and advertising. We do not enable Google Signals, Google Ads linking, or advertising features on this property. We are describing the tool honestly rather than claiming it is something it isn't.</li>
+    <li><b>We don't sell it.</b> We do not sell the data, and we do not use it for targeted advertising. Some state privacy laws define "sale" and "sharing" broadly enough that sending data to an analytics provider can count, which is why the opt-out below exists for every visitor regardless of where you live.</li>
+  </ul>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">Your consent</h3>
+  <p>If you are visiting from the <b>EU, the UK, the EEA, or Switzerland</b>, Google Analytics does not run until you say yes. You get a banner on your first visit with an equally prominent Accept and Reject; nothing analytics-related is set until you choose, and choosing Reject means the <code>_ga</code> cookies are never written.</p>
+  <p>Everywhere else — including the United States, where most of our visitors are — Google Analytics runs by default and <b>you can turn it off at any time</b> using the <b>Cookie preferences</b> control in the footer of every page. If your browser or extension sends a <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener">Global Privacy Control</a> signal, we treat that as an opt-out automatically and you don't have to do anything.</p>
+  <p>The full cookie-by-cookie breakdown is on the <a href="/cookies.html">Cookie Policy</a> page.</p>
 
   <h2>Third parties</h2>
-  <p>Willifit loads resources and makes requests to:</p>
+  <p>Loading a page from any of these means your browser connects to them directly, so they can see your IP address, your user-agent string, and which of our pages sent you. Our site-wide referrer policy is <code>strict-origin-when-cross-origin</code>, so what they get as a referrer is <code>https://willifit.ai</code> and not the full URL of the page you were on.</p>
   <ul>
-    <li><b>OpenStreetMap</b> — street-layer map tiles (their <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">privacy policy</a>)</li>
+    <li><b>CARTO</b> — the street-layer map tiles are rendered by CARTO from OpenStreetMap data and served from <code>basemaps.cartocdn.com</code>. Requests for those tiles go to CARTO, under <a href="https://carto.com/privacy/" target="_blank" rel="noopener">their privacy policy</a>. The underlying map data is © OpenStreetMap contributors (<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSM privacy policy</a>)</li>
     <li><b>Esri World Imagery</b> — satellite-layer map tiles when you toggle to satellite view (their <a href="https://www.esri.com/en-us/privacy/overview" target="_blank" rel="noopener">privacy policy</a>)</li>
+    <li><b>Nominatim (OpenStreetMap)</b> — when you look up a ZIP code or type an address into the city picker, that text is sent to OpenStreetMap's Nominatim geocoding service to turn it into coordinates. The answer is cached on your device so we don't ask twice</li>
+    <li><b>Google Maps Platform</b> — see the section below</li>
+    <li><b>Google Analytics</b> — see the Analytics section above</li>
+    <li><b>Cloudflare</b> — Web Analytics, described above, and the CDN that serves the site</li>
+    <li><b>Netlify</b> — our host, and the processor for every form on the site</li>
     <li><b>Google Maps / Apple Maps / Waze</b> — if you click a "Directions" link, we hand you off to them for turn-by-turn navigation. What you do there is governed by their policies</li>
-    <li><b>Google Maps JavaScript API</b> — only if the site operator has enabled it (defaults to OpenStreetMap)</li>
     <li><b>Sponsors</b> — if you click a sponsored card, you leave Willifit and enter the sponsor's site, which has its own policy</li>
+  </ul>
+
+  <h2>Google Maps Platform</h2>
+  <p>An earlier version of this policy said the Google Maps JavaScript API was used "only if the site operator has enabled it." That is out of date. Here is the current arrangement:</p>
+  <ul>
+    <li>The <b>main map</b> is Leaflet with the tile layers listed above. It is not a Google map</li>
+    <li>The <b>Street View panel</b> on a location's detail page <em>is</em> Google. When you open a location, we ask Google's Street View metadata service whether imagery exists at that location's coordinates, and if it does we load the Google Maps JavaScript API to show you the panorama of the entrance</li>
+    <li>If Street View has no imagery there, we fall back to a <b>Google Static Maps</b> aerial image of the same spot</li>
+    <li>What Google receives in that exchange is your IP address, your user agent, our origin as the referrer, and <b>the coordinates of the location you are looking at</b> — a garage or bridge in our database, not your own position. Our API key is restricted to the willifit.ai domains</li>
+    <li>Google's use of that data is governed by its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>. Nothing about you personally — no vehicle height, no favorites, no report content — is sent with these requests</li>
   </ul>
 
   <h2>Children</h2>
   <p>Willifit is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has submitted a report, contact us and we will delete it.</p>
 
-  <h2>Your rights (California, EU, etc.)</h2>
-  <p>Depending on your jurisdiction you may have the right to access, correct, or delete personal data we hold about you, and to opt out of "sales" of personal data (we do not sell data). Email <a href="mailto:privacy@willifit.ai">privacy@willifit.ai</a> to make a request.</p>
+  <h2>Your choices</h2>
+  <p>Four ways to control what happens, from easiest to most thorough. Any one of them works on its own.</p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">1. The Cookie preferences control</h3>
+  <p>Every page has a <b>Cookie preferences</b> button in the footer. Open it and pick Accept or Reject for analytics. Rejecting stops Google Analytics from setting or reading its cookies. Your choice is remembered on that device in <code>willifit_cookie_consent</code>, and you can change it as often as you like. Clearing your site data resets it.</p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">2. Global Privacy Control</h3>
+  <p><a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener">Global Privacy Control</a> is a signal your browser or a privacy extension can send on your behalf, so you don't have to click an opt-out on every site you visit. Firefox has it built in; Brave, DuckDuckGo, and several extensions send it too. <b>If we see it, we treat it as an opt-out from analytics and you don't have to do anything else.</b></p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">3. Google's own opt-out</h3>
+  <p>Google publishes a <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a> that blocks Google Analytics on every site, not just this one. You can also review and limit what Google keeps about you at <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">My Ad Center</a> and <a href="https://myactivity.google.com/" target="_blank" rel="noopener">My Activity</a>.</p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">4. Your browser</h3>
+  <p>Every major browser lets you block or delete cookies, block third-party cookies, or browse in a private window that discards them on close. Clearing site data for <code>willifit.ai</code> also wipes every localStorage key listed above — your saved city, vehicle height, favorites, and any queued reports, so export anything pending first. Blocking storage entirely won't break the site; it just forgets you between visits.</p>
+
+  <h2>Your privacy rights by state and region</h2>
+  <p>Several U.S. states — including <b>California, Colorado, Connecticut, Virginia, Utah, Texas, Oregon, Montana, and a growing list of others</b> — give residents a set of rights over personal data. The details differ, but they generally cover the same five things. We extend all of them to everyone who asks, wherever you live, because sorting requests by state is more work than just honoring them.</p>
+  <ul>
+    <li><b>Know and access.</b> Ask us what personal data we hold about you and get a copy of it. In practice, for most visitors, the honest answer is "nothing" — unless you submitted a form or an advertiser inquiry, we hold no record tied to you</li>
+    <li><b>Correct.</b> Ask us to fix personal data about you that is wrong</li>
+    <li><b>Delete.</b> Ask us to delete personal data about you. We will, except where we have to keep something to comply with a legal obligation. Note that the clearance <em>measurements</em> in a report become part of the safety dataset; we can strip your email and any identifying details from the record without deleting the correction that keeps other drivers safe</li>
+    <li><b>Opt out of sale, sharing, and targeted advertising.</b> We do not sell personal data and do not use it for targeted advertising or profiling. Some state laws define "sale" and "sharing" broadly enough to reach ordinary analytics, so the opt-out is available to you regardless: use the <b>Cookie preferences</b> control in the footer or send Global Privacy Control. Both work as an opt-out request</li>
+    <li><b>No retaliation.</b> Exercising any of these rights costs you nothing and changes nothing about the site you get. There is no paid tier, no degraded version, and no feature we withhold from people who opt out</li>
+  </ul>
+  <p>If you are in the <b>EU, UK, EEA, or Switzerland</b>, you additionally have the right to object to processing, to restrict it, to data portability, to withdraw consent at any time (the Cookie preferences control does exactly that), and to lodge a complaint with your national supervisory authority.</p>
+
+  <h3 style="font-size:15px;margin:26px 0 6px;">How to make a request</h3>
+  <p>Email <a href="mailto:privacy@willifit.ai">privacy@willifit.ai</a> and say what you want. Include the email address you used when you submitted a report, if you did — without it we usually have no way to find a record that belongs to you, and we will not ask you for extra identity documents just to go looking. We aim to respond within 45 days, which is the deadline most of these laws set. If we can't verify a request we'll tell you why rather than quietly ignoring it.</p>
+  <p>You can also authorize someone to make a request for you; we may need written proof of that authorization before we act on it.</p>
 
   <h2>Changes</h2>
   <p>Material changes to this policy will be indicated by an updated "Last updated" date. Please check periodically.</p>
@@ -130,8 +205,10 @@
   <h2>Contact</h2>
   <p>Privacy questions: <a href="mailto:privacy@willifit.ai">privacy@willifit.ai</a></p>
 
+  </main>
+
   <footer>
-    <p>Willifit · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/dmca.html">DMCA</a></p>
+    <p>Willifit · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/dmca.html">DMCA</a> · <a href="/cookies.html">Cookies</a> · <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button></p>
   </footer>
 </div>
 </body>

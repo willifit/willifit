@@ -32,7 +32,19 @@
 // Also an accessibility modal pass: every dialog overlay (city picker, report,
 // issue, new-location) plus the welcome screen now has a focus trap,
 // Escape-to-close, and focus restoration to the element that opened it.
-const CACHE_VERSION = "willifit-v14";
+//
+// v15: cookie consent.  /js/consent.js is a render-blocking <head> script that
+// carries the site's Consent Mode policy, so it must never be served stale.
+// Under the generic same-origin rule below it would have landed in
+// cache-first alongside the favicon and been pinned until the next
+// CACHE_VERSION bump -- meaning a visitor whose browser cached the file the
+// day it shipped could keep running a superseded consent policy for months,
+// which is the same class of bug the v13->v14 note above describes for HTML.
+// It now gets its own network-first route (fresh whenever online, cached copy
+// only as an offline fallback).  The version bump is what purges any copy
+// that a v14 service worker already cache-first'ed during the window between
+// the HTML rollout and this file shipping.
+const CACHE_VERSION = "willifit-v15";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
@@ -83,6 +95,17 @@ self.addEventListener("fetch", (event) => {
     // City JSON → stale-while-revalidate
     if (url.pathname.startsWith("/data/cities/")) {
       event.respondWith(staleWhileRevalidate(req, DATA_CACHE));
+      return;
+    }
+    // Consent engine → network-first.  Deliberately carved out of the
+    // cache-first catch-all further down: this file decides what Google is
+    // allowed to store, and a stale copy would silently keep enforcing an
+    // old policy long after the current one shipped.  Correctness beats the
+    // few milliseconds cache-first would save.  Cache fallback is retained so
+    // the script still loads offline (without it, an offline page load would
+    // drop the Consent Mode defaults entirely).
+    if (url.pathname === "/js/consent.js") {
+      event.respondWith(networkFirst(req, SHELL_CACHE));
       return;
     }
     // HTML navigations → network-first (cache fallback for offline)

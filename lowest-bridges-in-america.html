@@ -57,9 +57,19 @@
            flex-wrap: wrap; gap: 12px; }
   footer a { color: var(--muted); }
 </style>
+<script src="/js/consent.js"></script>
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "162b93f801fa42499a0b840c50d3f772"}'></script>
 <!-- End Cloudflare Web Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SH191K5NGS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SH191K5NGS');
+</script>
+<!-- End Google tag -->
 </head>
 <body>
 <div class="page">
@@ -198,7 +208,9 @@
       <a href="/">Home</a> · <a href="/cities.html">Cities</a> ·
       <a href="/about.html">About</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
-      <a href="/privacy.html">Privacy</a>
+      <a href="/privacy.html">Privacy</a> ·
+      <a href="/cookies.html">Cookies</a> ·
+      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button>
     </div>
   </footer>
 </div>

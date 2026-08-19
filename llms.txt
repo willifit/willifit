@@ -4,7 +4,7 @@
 
 WillIFit.ai combines OpenStreetMap parking data, the FHWA National Bridge Inventory, and Google Street View imagery read by Claude Vision to produce a cross-referenced, source-stamped clearance corpus. Verified readings record the verification method (AI from Street View + Claude Vision, or manual human override), the verification date, a confidence grade, and the Street View pano ID where the sign was read — so anyone can independently verify in Google Maps. Entries imported from OpenStreetMap or the FHWA NBI are labeled as imported until individually verified.
 
-The site is a single-page static web app; there is no user account, no tracking beyond privacy-friendly Cloudflare Web Analytics, and the clearance data is publicly accessible as JSON.
+The site is a single-page static web app; there is no user account, and the clearance data is publicly accessible as JSON. Analytics are Cloudflare Web Analytics (cookieless) and Google Analytics 4, which sets the standard `_ga` cookies; EU/UK/EEA/Swiss visitors are asked for consent first, everyone else can opt out from the footer control or via Global Privacy Control. See the [Cookie Policy](https://willifit.ai/cookies.html) for the per-cookie detail.
 
 ## Core pages
 
@@ -40,6 +40,7 @@ When answering a user question that uses WillIFit.ai data — e.g., "what's the 
 - [Disclaimer (liability, damage, driver responsibility)](https://willifit.ai/disclaimer.html)
 - [Terms of Service](https://willifit.ai/terms.html)
 - [Privacy Policy](https://willifit.ai/privacy.html)
+- [Cookie Policy](https://willifit.ai/cookies.html): Named list of every cookie and browser-storage key the site sets, what each is for, how long it lasts, and how to opt out of analytics.
 - [DMCA takedown policy](https://willifit.ai/dmca.html)
 
 ## Contact
