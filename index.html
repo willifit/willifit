@@ -25,13 +25,13 @@
      bare-text.  Absolute URL + explicit width/height/type/alt gives the
      best cross-client rendering. -->
 <meta property="og:title" content="WillIFit.ai — AI-verified clearance for every oversized vehicle">
-<meta property="og:description" content="226 US cities. 10,000+ parking garages, tunnels, and low bridges — including clearances AI-verified from Street View signage. Enter your vehicle height, see what fits.">
+<meta property="og:description" content="226 US cities. 25,000+ parking garages, tunnels, and low bridges — including clearances AI-verified from Street View signage. Enter your vehicle height, see what fits.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://willifit.ai/og-image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="WillIFit.ai — AI-verified clearance heights for RVs, trucks, and oversized vehicles. 226 US cities, 10,000+ locations.">
+<meta property="og:image:alt" content="WillIFit.ai — AI-verified clearance heights for RVs, trucks, and oversized vehicles. 226 US cities, 25,000+ locations.">
 <meta property="og:url" content="https://willifit.ai/">
 <meta property="og:site_name" content="WillIFit.ai">
 <meta property="og:locale" content="en_US">
@@ -121,6 +121,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.basemaps.cartocdn.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
+<script src="/js/consent.js"></script>
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "162b93f801fa42499a0b840c50d3f772"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -222,11 +223,15 @@
   .site-footer .footer-links a { color: var(--muted); text-decoration: none; }
   .site-footer .footer-links a:hover { color: var(--text); text-decoration: underline; }
   .site-footer .footer-dot { color: var(--border); }
-  @media (max-width: 640px) {
-    .app { grid-template-rows: 56px 1fr auto; }
-    .site-footer { padding: 6px 12px; }
-    .site-footer .footer-legal { font-size: 10px; line-height: 1.3; }
-  }
+  /* A `@media (max-width: 640px)` block used to sit here overriding .app's
+     grid rows and the footer padding / legal type.  It was dead: the
+     ≤900px block far below sets all three at equal specificity and wins
+     on source order for every viewport this one could match.  Removed
+     rather than left to mislead the next reader.  The single declaration
+     that did still land was `line-height: 1.3` on .footer-legal, worth
+     exactly 0.5px against the 1.35 now inherited from .site-footer -- not
+     worth carrying a whole breakpoint for.  Mobile footer metrics live in
+     the ≤900px block; change them there. */
   .topbar {
     background: var(--panel);
     border-bottom: 1px solid var(--border);
@@ -382,6 +387,53 @@
     border-bottom: 1px solid var(--border);
     background: var(--panel-2);
   }
+  /* COLLAPSIBLE FILTERS — the disclosure button and its badge.
+     Everything here is inert on desktop: .filter-toggle is display:none and
+     nothing reads .is-collapsed, so above 900px the filter block renders
+     exactly as it always has.  The look lives here rather than in the media
+     query so there is one place to restyle it; only the display flip and the
+     collapse rule live in the ≤900px block.
+     .filter-bar has no rule at all here on purpose — it is a plain block div,
+     so .search-box keeps its full-width layout and its 12px bottom margin,
+     which is what desktop had before the wrapper existed. */
+  .filter-toggle {
+    display: none;
+    align-items: center; gap: 6px;
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 0 10px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    color: var(--muted);
+    font-family: var(--mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.12s, border-color 0.12s;
+  }
+  /* Open state borrows the .type-chip.active treatment so "this control is
+     doing something" reads the same everywhere in the sidebar. */
+  .filters:not(.is-collapsed) .filter-toggle {
+    color: var(--text); border-color: var(--ok); background: var(--panel);
+  }
+  .filter-chev { font-size: 9px; transition: transform 0.15s; }
+  .filters:not(.is-collapsed) .filter-chev { transform: rotate(180deg); }
+  /* Active-filter badge.  This is the part that matters: a filter you cannot
+     see is worse than a scroll you can.  If "Hide unverified" or "★ Saved" is
+     on and the panel is shut, the list gets shorter for a reason the driver
+     has no way to discover — and on a clearance dataset "there is nothing
+     near me" is exactly the wrong thing to conclude by accident.  The badge
+     is the only affordance that says the list is not the whole list. */
+  .filter-toggle-count {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 16px; height: 16px; padding: 0 4px;
+    border-radius: 8px;
+    background: var(--ok); color: #0a0f18;
+    font-size: 10px; font-weight: 700; letter-spacing: 0;
+  }
+  /* display:inline-flex above would otherwise beat the [hidden] UA rule. */
+  .filter-toggle-count[hidden] { display: none; }
   .search-box { position: relative; margin-bottom: 12px; }
   .search-box input {
     width: 100%;
@@ -1530,10 +1582,55 @@
      - Topbar wraps, sidebar becomes bottom pane, detail → bottom sheet
      ============================================================ */
   @media (max-width: 900px) {
+    /* The footer row is real on mobile, and it has to be.
+
+       This used to read `grid-template-rows: auto 1fr 0` with the footer
+       set to display:none, under a comment claiming the links had been
+       "moved to the city-picker in mobile."  They never were.  There is
+       no such block in the city-picker, and there is exactly one copy of
+       those links in the file — the one in .site-footer.  So at every
+       viewport ≤900px this page shipped with no Disclaimer, no Terms, no
+       Privacy, no DMCA, no Cookies, and — worst of the set — no
+       [data-wf-consent-open] control, which is the only way a visitor can
+       reopen the consent dialog and change a decision.  An EEA visitor on
+       a phone could be shown the banner and then have no route back to
+       it, which is precisely the thing the banner is supposed to make
+       possible.  privacy.html and cookies.html both tell the public, in
+       so many words, that the control lives "in the footer of every
+       page"; that was true everywhere except here.  Phones are also very
+       likely the majority device for a tool people reach for from the cab
+       of a vehicle, so this was the majority case, not an edge case.
+
+       The row comes back as `auto`, so it is exactly as tall as its
+       content and no taller.  The space it costs is paid down with 10px
+       type and tight row gaps rather than by dropping content: measured
+       at 375×812 the strip lands at ~85px (four wrapped lines) versus
+       ~125px if it simply un-hid at desktop metrics.  Nothing is culled
+       from it — hiding the non-legal links was measured and buys about
+       one line, which is not worth hiding internal links from a
+       mobile-first crawler for, and hiding the "always verify at the
+       posted sign" line would drop a safety notice on the one device
+       that is actually in the vehicle.
+
+       This block is the only place mobile footer metrics are set.  There
+       used to be a `@media (max-width: 640px)` block further up competing
+       for the same declarations and losing on source order; it has been
+       removed, so change footer sizing here and nowhere else.
+
+       The footer is now the bottom-most element in the app shell, so it,
+       and no longer the sidebar, is what has to clear the iPhone home
+       indicator — hence the safe-area padding. */
     .app {
-      grid-template-rows: auto 1fr 0;  /* kill footer row on mobile — saves vertical space */
+      grid-template-rows: auto 1fr auto;
     }
-    .site-footer { display: none; }   /* footer links moved to city-picker in mobile */
+    .site-footer {
+      font-size: 10px;
+      line-height: 1.35;
+      padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px));
+    }
+    .site-footer .footer-inner  { gap: 2px 10px; }
+    .site-footer .footer-links  { gap: 2px 5px; }
+    .site-footer .footer-legal  { font-size: 10px; }
 
     .topbar {
       flex-wrap: wrap;
@@ -1595,6 +1692,116 @@
     }
     .filters { padding: 10px 12px; }
     .filter-label { font-size: 10px; }
+
+    /* COLLAPSIBLE FILTERS — why the filter stack folds away on a phone.
+
+       Measured at 375×812 with Las Vegas loaded, the sidebar track is 276px
+       and the things stacked above the first garage were: the sponsor card
+       (137px), the filter block (271px) and the result count (34px).  The
+       first result sat 442px into a 276px scrollport — roughly 1.6 swipes
+       before a driver sees a single garage.  That is the same failure as the
+       zero-height .list two comments below, just slower: the data is all
+       there, rendered, correct, and off-screen.
+
+       The 271px was not padding waste.  It is a search box (41px), two
+       labels (11px each), the min-clearance slider (38px), the type chips
+       (38px) and the filter chips wrapping onto two rows (82px).  Every one
+       of those is worth its height when you want it; almost none of them are
+       what you want in the three seconds after the map loads.  So the search
+       box — the primary action, and the one thing a driver types into — stays
+       on screen, and the rest goes behind a disclosure.
+
+       The toggle sits on the SAME ROW as the search box rather than on its
+       own row underneath, and that is the whole ballgame.  A 38px row of its
+       own would have left the collapsed block at ~101px, putting the first
+       card at 722px in a 726px viewport — 4px of a 72px card, which is not a
+       result, it is a rounding error.  Sharing the search row costs zero
+       vertical pixels and takes the block to 61px, which lifts the first card
+       to ~682px and shows ~44px of it: the garage name and its clearance.
+
+       Mechanism: a real <button> with aria-expanded/aria-controls, not
+       <details>/<summary>.  <details> is cheaper, but forcing it permanently
+       open above 900px means either JS setting .open (so a JS failure on
+       desktop hides the filters with no way back) or fighting UA styles that
+       differ across engines.  With a class + media query the collapse rule
+       simply does not exist above 900px, which is a stronger guarantee than
+       "we remembered to undo it".
+
+       Collapsed is the default, but see updateFilterToggle() in the script:
+       if a filter is on, the button carries a count badge, and if one is
+       somehow already on at load the panel starts open instead. */
+    .filter-bar { display: flex; align-items: center; gap: 8px; }
+    /* min-width:0 lets the search box actually shrink — a flex item's default
+       min-width:auto is its content width, and the input would otherwise
+       refuse to give the button any room. */
+    .filter-bar .search-box { flex: 1 1 auto; min-width: 0; margin-bottom: 0; }
+    .filter-toggle { display: inline-flex; }
+    .filters.is-collapsed .filter-panel { display: none; }
+    /* The 12px the search box used to carry, moved to the bar, and only when
+       there is something underneath it to be separated from. */
+    .filters:not(.is-collapsed) .filter-bar { margin-bottom: 10px; }
+
+    /* Sidebar sponsor card: same message, less packaging.
+
+       At desktop metrics this card renders 168px tall on a phone -- 61% of
+       the entire 276px sidebar track -- and 60px of that is margin and
+       padding wrapped around ~71px of actual words.  It is the single
+       largest thing standing between a driver and the garage list, so the
+       chrome gets tightened while the title, description and CTA all stay.
+       Deliberately NOT shrinking the tap target of the CTA link itself.
+
+       Note for whoever prices this: on desktop the card really is pinned
+       (the sidebar is full height and only .list scrolls beneath it), but
+       on mobile the whole sidebar is one scroll, so it scrolls away with
+       everything else.  advertise.html sells the slot as one that "stays
+       pinned in the sidebar" -- true on desktop, not on a phone. */
+    .sponsor-slot-sidebar .sponsor-card {
+      margin: 8px 12px 10px;
+      padding: 11px 13px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+    .sponsor-slot-sidebar .sponsor-title { font-size: 14px; margin-bottom: 4px; }
+    .sponsor-slot-sidebar .sponsor-desc  { font-size: 12px; margin-bottom: 8px; }
+
+    /* The results list must NOT be its own scroll container on mobile.
+
+       The base rule at the top of this stylesheet is `.list { flex: 1 }`,
+       which is right on desktop: the sidebar is full-height, the list takes
+       whatever the filters leave behind, and it scrolls inside itself.
+
+       On mobile it silently destroyed the list.  `flex: 1` is shorthand for
+       `flex: 1 1 0%` -- flex-basis ZERO, growing only into *leftover* space.
+       In the ≤900px sidebar there is no leftover space: the house ad (168px)
+       and the filters (271px) alone overrun the whole 276px track before a
+       single result exists.  Free space is negative, so .list grew to 0px --
+       and because it still had `overflow-y: auto`, its 11,677px of rendered
+       rows became unreachable rather than merely clipped.  The header said
+       "135 locations", the map drew all 135 markers, and the list underneath
+       showed none of them.  Nothing looked broken, which is how it survived.
+
+       The sidebar itself already scrolls (see the block above -- that was
+       added when the filter toggles turned out to be clipped for the same
+       family of reason).  So the fix is to stop .list competing for space it
+       can never win and let it contribute its natural height to the scroll
+       that already exists.  One scroll container, not two nested ones --
+       which is also the better touch behaviour, since a nested scroller
+       inside a scroller is a coin-flip about which one a swipe moves. */
+    .list {
+      flex: none;
+      overflow-y: visible;
+    }
+
+    /* With the list now inline in the sidebar's scroll, the count is the
+       user's only "you are here" marker once the filters scroll away, so
+       pin it to the top of the scrollport.  z-index keeps it above the
+       rows sliding under it. */
+    .result-count {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+    }
 
     /* Search/filter inputs ≥16px so iOS doesn't zoom on focus */
     .search-box input, #citySearchInput, #rfHeightFt, #rfHeightIn,
@@ -2127,36 +2334,62 @@
   <div class="main" role="main">
     <aside class="sidebar">
       <div id="sidebarSponsor" class="sponsor-slot-sidebar"></div>
-      <div class="filters">
-        <div class="search-box" id="searchBox">
-          <label for="search" class="sr-only">Search garage, casino, or address</label>
-          <input type="text" id="search" placeholder="Search garage, casino, address..."
-                 role="combobox" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false">
-          <button class="search-clear" id="searchClear" title="Clear">×</button>
-          <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
-        </div>
-        <div class="filter-label" id="heightSliderLabel">Min. Clearance Height</div>
-        <div class="height-slider">
-          <input type="range" id="heightSlider" min="5" max="14" step="0.1" value="5" aria-labelledby="heightSliderLabel" aria-valuetext="5'0&quot;">
-          <div class="height-value" id="heightValue">5'0"</div>
-        </div>
-        <div class="filter-label">Show</div>
-        <div class="type-chips">
-          <button class="type-chip active" data-type="garage" id="chipGarage" aria-pressed="true"><span class="chip-dot"></span>Garages</button>
-          <button class="type-chip" data-type="tunnel" id="chipTunnel" aria-pressed="false"><span class="chip-dot"></span>Tunnels</button>
-          <button class="type-chip" data-type="bridge" id="chipBridge" aria-pressed="false"><span class="chip-dot"></span>Bridges</button>
-        </div>
-        <div class="filter-chips">
-          <button class="type-chip" data-filter="oversized" id="oversizedToggle" type="button" aria-pressed="false">
-            <span class="chip-dot"></span>Oversized only
+      <!-- The filter block is deliberately in two parts.  .filter-bar is the
+           row that is always on screen (search + the disclosure button);
+           .filter-panel is everything that folds away on a phone.  The full
+           reasoning -- why a phone cannot afford 271px of filters above the
+           first result, and why this is mobile-only -- is in the
+           "COLLAPSIBLE FILTERS" comment inside the ≤900px CSS block.
+
+           `is-collapsed` ships in the markup rather than being added by JS on
+           load so a phone paints the collapsed state on the very first frame;
+           adding it later would show a full-height filter stack and then snap
+           it shut.  Above 900px the class is inert -- no rule reads it, and
+           the toggle button is display:none -- so the desktop layout is
+           byte-for-byte what it was before this existed. -->
+      <div class="filters is-collapsed" id="filters">
+        <div class="filter-bar">
+          <div class="search-box" id="searchBox">
+            <label for="search" class="sr-only">Search garage, casino, or address</label>
+            <input type="text" id="search" placeholder="Search garage, casino, address..."
+                   role="combobox" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false">
+            <button class="search-clear" id="searchClear" title="Clear">×</button>
+            <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
+          </div>
+          <!-- aria-expanded is the state; aria-controls points at the region
+               it opens.  Both are kept in sync by setFiltersOpen().  The
+               badge is not decoration -- see updateFilterToggle(). -->
+          <button class="filter-toggle" id="filterToggle" type="button"
+                  aria-expanded="false" aria-controls="filterPanel" aria-label="Filters">
+            <span>Filters</span>
+            <span class="filter-toggle-count" id="filterCount" hidden>0</span>
+            <span class="filter-chev" aria-hidden="true">▾</span>
           </button>
-          <button class="type-chip" data-filter="verified" id="verifiedToggle" type="button" aria-pressed="false">
-            <span class="chip-dot"></span>Hide unverified
-          </button>
-          <button class="type-chip" data-filter="saved" id="savedToggle" type="button" title="Show only spots you starred" aria-pressed="false">
-            <span class="chip-dot"></span>★ Saved
-          </button>
         </div>
+        <div class="filter-panel" id="filterPanel">
+          <div class="filter-label" id="heightSliderLabel">Min. Clearance Height</div>
+          <div class="height-slider">
+            <input type="range" id="heightSlider" min="5" max="14" step="0.1" value="5" aria-labelledby="heightSliderLabel" aria-valuetext="5'0&quot;">
+            <div class="height-value" id="heightValue">5'0"</div>
+          </div>
+          <div class="filter-label">Show</div>
+          <div class="type-chips">
+            <button class="type-chip active" data-type="garage" id="chipGarage" aria-pressed="true"><span class="chip-dot"></span>Garages</button>
+            <button class="type-chip" data-type="tunnel" id="chipTunnel" aria-pressed="false"><span class="chip-dot"></span>Tunnels</button>
+            <button class="type-chip" data-type="bridge" id="chipBridge" aria-pressed="false"><span class="chip-dot"></span>Bridges</button>
+          </div>
+          <div class="filter-chips">
+            <button class="type-chip" data-filter="oversized" id="oversizedToggle" type="button" aria-pressed="false">
+              <span class="chip-dot"></span>Oversized only
+            </button>
+            <button class="type-chip" data-filter="verified" id="verifiedToggle" type="button" aria-pressed="false">
+              <span class="chip-dot"></span>Hide unverified
+            </button>
+            <button class="type-chip" data-filter="saved" id="savedToggle" type="button" title="Show only spots you starred" aria-pressed="false">
+              <span class="chip-dot"></span>★ Saved
+            </button>
+          </div>
+        </div><!-- /.filter-panel -->
       </div>
       <div class="result-count">
         <span id="countText" aria-live="polite">0 locations</span>
@@ -2255,6 +2488,10 @@
         <a href="/privacy.html" rel="noopener">Privacy</a>
         <span class="footer-dot">·</span>
         <a href="/dmca.html" rel="noopener">DMCA</a>
+        <span class="footer-dot">·</span>
+        <a href="/cookies.html" rel="noopener">Cookies</a>
+        <span class="footer-dot">·</span>
+        <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button>
         <span class="footer-dot">·</span>
         <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>
         <span class="footer-dot">·</span>
@@ -3016,11 +3253,33 @@ function getFiltered() {
   return scored.map(x => x.g);
 }
 
+/* Two different numbers, one word — which read as a bug.
+
+   `garage_count` in data/index.json counts GARAGES ONLY.  Tunnels and low
+   bridges live in the same city file and are NOT in it: Las Vegas is 135
+   garages, 11 tunnels, 59 bridges, 205 entries.  The sidebar count is a
+   different quantity again — however many entries survive the current
+   filters and map bounds, across all three types.  Both used to render as
+   "N locations", so Las Vegas showed "135 locations" in the topbar and
+   "157 locations" in the sidebar at the same moment, and a visitor had no
+   way to read that as anything but broken arithmetic.
+
+   The fix is honest labels, not forced agreement: everything fed by
+   garage_count says "garages" (via these two helpers, so the singular case
+   is handled in one place), and the sidebar keeps "locations" because it
+   genuinely is a mixed list. */
+function garageWord(n) { return n === 1 ? 'garage' : 'garages'; }
+function garageCountLabel(n) { return `${n} ${garageWord(n)}`; }
+
 function renderList() {
   const list = document.getElementById('list');
   const items = getFiltered();
   const meta = getCityMeta(state.city);
   document.getElementById('countText').textContent = `${items.length} ${items.length===1?'location':'locations'}`;
+  // Every filter control (chips, toggles, and the slider via
+  // applyVehicleHeightToUI) ends in renderList(), so refreshing the badge
+  // here is the one hook that cannot drift out of sync with the list.
+  updateFilterToggle();
   document.getElementById('cityText').textContent = meta ? `${meta.name}, ${meta.state}` : '';
   // Cleared here, set only in the early-return branches below -- so the
   // normal (has-results) path needs no extra line, and a screen reader
@@ -3209,7 +3468,7 @@ function renderCityDotsGoogle() {
     const marker = new google.maps.Marker({
       position: { lat: c.lat, lng: c.lng },
       icon: _gmCityDotIcon(c.garage_count, false),
-      title: `${c.name}, ${c.state} — ${c.garage_count} locations`,
+      title: `${c.name}, ${c.state} — ${garageCountLabel(c.garage_count)}`,
       map: state.map,
     });
     marker.addListener('click', () => switchToCity(c.slug));
@@ -3962,7 +4221,7 @@ async function switchToCity(slug, center) {
   document.getElementById('searchAreaBtn').classList.remove('visible');
   document.getElementById('searchAreaClear').classList.remove('visible');
   document.getElementById('currentCityName').textContent = `${meta.name}, ${meta.state}`;
-  document.getElementById('currentCityCount').textContent = `${meta.garage_count} locations`;
+  document.getElementById('currentCityCount').textContent = garageCountLabel(meta.garage_count);
   // Clear any previous "searched address" pin.
   if (state._searchMarker) { try { state.map.removeLayer(state._searchMarker); } catch (e) {} state._searchMarker = null; }
   if (center) {
@@ -4268,13 +4527,13 @@ function renderSearchTab(query = '') {
       if (near) {
         const miles = (near.distKm * 0.621371).toFixed(0);
         const closeEnough = near.distKm <= 50;
-        html += `<div class="city-row zip-hit" data-slug="${escapeHTML(near.city.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}, ${miles} miles ${closeEnough ? 'from ZIP' : 'away, nearest tracked city'}, ${near.city.garage_count} locations">
+        html += `<div class="city-row zip-hit" data-slug="${escapeHTML(near.city.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}, ${miles} miles ${closeEnough ? 'from ZIP' : 'away, nearest tracked city'}, ${garageCountLabel(near.city.garage_count)}">
           <div>
             <span class="name">${escapeHTML(near.city.name)}</span>
             <span class="state">${escapeHTML(near.city.state)}</span>
             <div class="zip-distance">${miles} mi ${closeEnough ? 'from ZIP' : 'away — nearest tracked city'}</div>
           </div>
-          <div class="count"><strong>${near.city.garage_count}</strong> locations</div>
+          <div class="count"><strong>${near.city.garage_count}</strong> ${garageWord(near.city.garage_count)}</div>
         </div>`;
         if (!closeEnough) {
           html += `<div class="empty" style="margin-top:8px">No tracked city within 50 miles of that ZIP yet. The nearest is listed above — report what you need and we'll prioritize.</div>`;
@@ -4310,9 +4569,9 @@ function renderSearchTab(query = '') {
   if (liveMatches.length) {
     html += `<div class="city-section-title">Live — ${liveMatches.length} ${liveMatches.length===1?'city':'cities'}</div>`;
     html += liveMatches.map(c => `
-      <div class="city-row" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${escapeHTML(c.state)}, ${c.garage_count} locations">
+      <div class="city-row" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${escapeHTML(c.state)}, ${garageCountLabel(c.garage_count)}">
         <div><span class="name">${escapeHTML(c.name)}</span><span class="state">${escapeHTML(c.state)}</span></div>
-        <div class="count"><strong>${c.garage_count}</strong> locations</div>
+        <div class="count"><strong>${c.garage_count}</strong> ${garageWord(c.garage_count)}</div>
       </div>`).join('');
   }
   if (comingMatches.length) {
@@ -4380,8 +4639,8 @@ function renderBrowseTab() {
       html += `<div class="state-cities">`;
       cities.forEach(c => {
         const soon = c.status === 'coming' ? 'coming-soon' : '';
-        const cnt = c.status === 'live' ? `<span class="city-count">${c.garage_count} locations</span>` : `<span class="city-count">soon</span>`;
-        html += `<div class="state-city ${soon}" data-slug="${c.slug}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${c.status === 'live' ? c.garage_count + ' locations' : 'coming soon'}"><span>${c.name}</span>${cnt}</div>`;
+        const cnt = c.status === 'live' ? `<span class="city-count">${garageCountLabel(c.garage_count)}</span>` : `<span class="city-count">soon</span>`;
+        html += `<div class="state-city ${soon}" data-slug="${c.slug}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${c.status === 'live' ? garageCountLabel(c.garage_count) : 'coming soon'}"><span>${c.name}</span>${cnt}</div>`;
       });
       html += `</div></div>`;
     });
@@ -4415,7 +4674,7 @@ function initPickerMap() {
       iconAnchor: [size/2, size/2],
     });
     const m = L.marker([c.lat, c.lng], { icon }).addTo(state.pickerMap);
-    m.bindPopup(`<strong>${c.name}, ${c.state}</strong><br>${c.status === 'live' ? c.garage_count + ' locations' : 'Coming soon'}`);
+    m.bindPopup(`<strong>${c.name}, ${c.state}</strong><br>${c.status === 'live' ? garageCountLabel(c.garage_count) : 'Coming soon'}`);
     m.on('click', () => { if (c.status === 'live') switchToCity(c.slug); });
   });
 }
@@ -4684,6 +4943,83 @@ document.querySelectorAll('.type-chip').forEach(el => {
     renderList(); renderMarkers();
   });
 });
+/* ============================================================
+   COLLAPSIBLE FILTERS (mobile) — see the "COLLAPSIBLE FILTERS" comment in
+   the ≤900px CSS block for why the panel folds at all.  This is the state
+   half: keep aria-expanded honest, and never let a filter hide silently.
+
+   Nothing here is desktop-conditional and nothing checks matchMedia.  The
+   `is-collapsed` class is inert above 900px (no rule reads it, and the
+   button is display:none), so the same code path is correct at every width
+   and there is no resize listener to get wrong.
+   ============================================================ */
+
+/* What counts as "a filter is on".
+
+   Deliberately NOT counted: the min-clearance slider (state.minHeight > 60).
+   It is married to the "My vehicle" control in the topbar — dragging one
+   moves the other, see applyVehicleHeightToUI() — and that topbar row is on
+   screen at every scroll position on mobile.  So its value is never hidden,
+   which is the thing this badge exists to prevent.  Counting it would also
+   light the badge permanently for every returning driver (vehicle height is
+   persisted in localStorage), and a badge that is always on stops being
+   read: the 1 → 2 that means "you also have Hide unverified on" would
+   disappear into it.  If that call is ever revisited, one line here is the
+   whole change.
+
+   The three type chips count as ONE filter, not three.  They are a single
+   "Show" group in the UI and reading "3 filters" because a driver ticked
+   tunnels and bridges would overstate what is happening. */
+function activeFilterCount() {
+  let n = 0;
+  const t = state.showTypes;
+  if (t.garage !== true || t.tunnel !== false || t.bridge !== false) n++;
+  if (state.oversizedOnly) n++;
+  if (state.verifiedOnly) n++;
+  if (state.savedOnly) n++;
+  return n;
+}
+
+/* Elements are looked up per call rather than cached in module consts
+   because renderList() calls this, and renderList() can run before this
+   point in the script is reached (boot() → loadVehicleHeightFromStorage()
+   → applyVehicleHeightToUI() → renderList()).  A cached `const` would be in
+   its temporal dead zone at that moment; getElementById is not. */
+function updateFilterToggle() {
+  const btn = document.getElementById('filterToggle');
+  const badge = document.getElementById('filterCount');
+  if (!btn || !badge) return;
+  const n = activeFilterCount();
+  badge.textContent = String(n);
+  badge.hidden = (n === 0);
+  // aria-label, not just the badge digit: "Filters, 2 active" is unambiguous
+  // read aloud, and it still contains the visible word "Filters" so the
+  // accessible name matches the visible label (WCAG 2.5.3).
+  btn.setAttribute('aria-label', n === 0 ? 'Filters' : `Filters, ${n} active`);
+}
+
+function setFiltersOpen(open) {
+  const wrap = document.getElementById('filters');
+  const btn = document.getElementById('filterToggle');
+  if (!wrap || !btn) return;
+  wrap.classList.toggle('is-collapsed', !open);
+  btn.setAttribute('aria-expanded', String(open));
+}
+
+document.getElementById('filterToggle').addEventListener('click', () => {
+  // A <button> gets Enter and Space for free — that is why this is a button
+  // and not a div with an onclick.
+  setFiltersOpen(document.getElementById('filters').classList.contains('is-collapsed'));
+});
+
+/* Start expanded if anything is already filtering at load.  No filter state
+   is persisted or deep-linked today, so in practice this does not fire — it
+   is a guard, so that the day someone adds ?filter= to the hash router or
+   remembers chips in localStorage, the panel cannot open in a state where
+   the list is filtered and the reason for it is folded out of sight. */
+if (activeFilterCount() > 0) setFiltersOpen(true);
+updateFilterToggle();
+
 document.getElementById('searchAreaBtn').addEventListener('click', () => {
   state.searchBounds = mapGetBounds();
   document.getElementById('searchAreaBtn').classList.remove('visible');
