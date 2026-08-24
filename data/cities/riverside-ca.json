@@ -137,66 +137,6 @@
       "sv_status": "no-pano"
     },
     {
-      "id": "osm-w205590363",
-      "name": "City Hall Public Parking Sctructure",
-      "addr": "",
-      "lat": 34.10357,
-      "lng": -117.29303,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w211849523",
-      "name": "Carousel Mall Parking Structure",
-      "addr": "",
-      "lat": 34.10576,
-      "lng": -117.29505,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w468546090",
-      "name": "Patient Parking Structure",
-      "addr": "",
-      "lat": 34.04898,
-      "lng": -117.2651,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w502786160",
-      "name": "Loma Linda VA Employee Parking Garage",
-      "addr": "",
-      "lat": 34.0495,
-      "lng": -117.24885,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "277 spaces; free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
       "id": "osm-w913950658",
       "name": "City of Riverside",
       "addr": "",
@@ -257,21 +197,6 @@
       "sv_status": "no-pano"
     },
     {
-      "id": "osm-w977758301",
-      "name": "City of Fontana",
-      "addr": "",
-      "lat": 34.10044,
-      "lng": -117.43508,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
       "id": "osm-w1002846326",
       "name": "Jurupa Unified School District",
       "addr": "",
@@ -299,77 +224,6 @@
       "source": "OpenStreetMap",
       "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w1135647438",
-      "name": "City of San Bernardino",
-      "addr": "",
-      "lat": 34.11025,
-      "lng": -117.29004,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "7 spaces",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w1135647445",
-      "name": "City of San Bernardino",
-      "addr": "",
-      "lat": 34.114,
-      "lng": -117.29024,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w1135647446",
-      "name": "City of San Bernardino",
-      "addr": "",
-      "lat": 34.114,
-      "lng": -117.2913,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w1135647448",
-      "name": "City of San Bernardino",
-      "addr": "",
-      "lat": 34.11301,
-      "lng": -117.2885,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w1437055754",
-      "name": "City of Fontana",
-      "addr": "",
-      "lat": 34.09976,
-      "lng": -117.43478,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],
@@ -382,17 +236,6 @@
       "lng": -117.35807,
       "height_in": 184,
       "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w7226252",
-      "name": "Low clearance \u2014 Fairway Drive",
-      "addr": "Fairway Drive",
-      "lat": 34.0685,
-      "lng": -117.30079,
-      "height_in": 182,
-      "height_label": "15'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -518,17 +361,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w181467814",
-      "name": "Low clearance \u2014 South Hunts Lane",
-      "addr": "South Hunts Lane",
-      "lat": 34.06369,
-      "lng": -117.2875,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w456580804",
       "name": "Low clearance \u2014 Central Avenue",
       "addr": "Central Avenue",
@@ -595,33 +427,11 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w474917903",
-      "name": "Low clearance \u2014 South Waterman Avenue (US 99 Hist)",
-      "addr": "US 99 Hist",
-      "lat": 34.06436,
-      "lng": -117.27865,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w474921035",
       "name": "Low clearance \u2014 Tyler Street",
       "addr": "Tyler Street",
       "lat": 33.90634,
       "lng": -117.45682,
-      "height_in": 179,
-      "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w475154313",
-      "name": "Low clearance \u2014 California Street",
-      "addr": "California Street",
-      "lat": 34.06662,
-      "lng": -117.22626,
       "height_in": 179,
       "height_label": "14'11\"",
       "notes": "Underpass / low clearance",
@@ -657,28 +467,6 @@
       "lng": -117.46501,
       "height_in": 185,
       "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w783773833",
-      "name": "Low clearance \u2014 North Rancho Avenue",
-      "addr": "North Rancho Avenue",
-      "lat": 34.07096,
-      "lng": -117.33551,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w787455602",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 34.06876,
-      "lng": -117.32415,
-      "height_in": 124,
-      "height_label": "10'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -727,39 +515,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1072935114",
-      "name": "Low clearance \u2014 South Hunts Lane",
-      "addr": "South Hunts Lane",
-      "lat": 34.06187,
-      "lng": -117.28745,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1107032192",
-      "name": "Low clearance \u2014 South Hunts Lane",
-      "addr": "South Hunts Lane",
-      "lat": 34.06279,
-      "lng": -117.28744,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1298236773",
-      "name": "Low clearance \u2014 West Fogg Street",
-      "addr": "West Fogg Street",
-      "lat": 34.05275,
-      "lng": -117.32934,
-      "height_in": 146,
-      "height_label": "12'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1366413658",
       "name": "Low clearance \u2014 Central Avenue",
       "addr": "Central Avenue",
@@ -767,17 +522,6 @@
       "lng": -117.31039,
       "height_in": 179,
       "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1370140191",
-      "name": "Low clearance \u2014 Mountain View Avenue",
-      "addr": "Mountain View Avenue",
-      "lat": 34.06666,
-      "lng": -117.24367,
-      "height_in": 180,
-      "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

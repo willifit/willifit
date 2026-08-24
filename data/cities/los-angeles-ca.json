@@ -3657,18 +3657,6 @@
       "entrance_source": "OSM parking_entrance node 6933152796"
     },
     {
-      "id": "osm-w471611589",
-      "name": "Public Parking",
-      "addr": "",
-      "lat": 33.98029,
-      "lng": -118.03651,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w471774743",
       "name": "Unnamed parking structure",
       "addr": "",
@@ -4746,19 +4734,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w61434829",
-      "name": "Parking Lot R",
-      "addr": "",
-      "lat": 33.90613,
-      "lng": -118.01279,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w70721559",
       "name": "The Shops on Lake Avenue",
       "addr": "",
@@ -4951,21 +4926,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w303268434",
-      "name": "parking structure",
-      "addr": "3750 Kilroy Airport Way",
-      "lat": 33.80742,
-      "lng": -118.14682,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w324978262",
       "name": "Parking Structure 3",
       "addr": "",
@@ -4990,21 +4950,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w358481203",
-      "name": "staff parking garage",
-      "addr": "",
-      "lat": 33.8042,
-      "lng": -118.06488,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "sv_checked": "2026-08-01",
@@ -5100,21 +5045,6 @@
       "structure_type": "structure",
       "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w397156466",
-      "name": "Parking Structure",
-      "addr": "",
-      "lat": 33.94937,
-      "lng": -118.00456,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-pano"
     },
     {
       "id": "osm-w401761495",
@@ -5597,19 +5527,6 @@
       "sv_status": "no-pano"
     },
     {
-      "id": "osm-w439939922",
-      "name": "Parking Lot S",
-      "addr": "",
-      "lat": 33.90515,
-      "lng": -118.01327,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
       "id": "osm-w440849773",
       "name": "The Medical Centre of Santa Monica",
       "addr": "",
@@ -5619,51 +5536,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w441279921",
-      "name": "parking structure",
-      "addr": "",
-      "lat": 33.85973,
-      "lng": -118.15013,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w441460169",
-      "name": "Parking structure for Visitors, Employee, Volunteers",
-      "addr": "401 East 27th Street",
-      "lat": 33.8067,
-      "lng": -118.18785,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w441464328",
-      "name": "AmeriFleet Transportation Suite 350",
-      "addr": "",
-      "lat": 33.80922,
-      "lng": -118.13574,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "sv_checked": "2026-08-01",
@@ -5997,20 +5869,6 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "https://wccs.com/",
-      "sv_checked": "2026-08-01",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w841479143",
-      "name": "Greenway Trail Parking",
-      "addr": "",
-      "lat": 33.94608,
-      "lng": -118.01911,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "22 spaces",
-      "source": "OpenStreetMap",
       "sv_checked": "2026-08-01",
       "sv_status": "no-sign"
     },
@@ -6538,28 +6396,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w52057118",
-      "name": "West Carson Street",
-      "addr": "West Carson Street",
-      "lat": 33.83176,
-      "lng": -118.20873,
-      "height_in": 160,
-      "height_label": "13'4\"",
-      "notes": "layer -1; 1 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w66399610",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.84335,
-      "lng": -117.99723,
-      "height_in": 117,
-      "height_label": "9'9\"",
-      "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w72156333",
       "name": "Baldwin Avenue",
       "addr": "Baldwin Avenue",
@@ -6681,17 +6517,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w507184846",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.87351,
-      "lng": -118.07187,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w523693749",
       "name": "Ventura Boulevard",
       "addr": "Ventura Boulevard",
@@ -6711,28 +6536,6 @@
       "height_in": 168,
       "height_label": "14'0\"",
       "notes": "2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w639853605",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.85251,
-      "lng": -117.99845,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w640139089",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.84997,
-      "lng": -117.99762,
-      "height_in": 129,
-      "height_label": "10'9\"",
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
     {
@@ -6769,28 +6572,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w757914574",
-      "name": "South McHelen Avenue",
-      "addr": "South McHelen Avenue",
-      "lat": 33.82525,
-      "lng": -118.2223,
-      "height_in": 179,
-      "height_label": "14'11\"",
-      "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w758006808",
-      "name": "Yukon Avenue",
-      "addr": "Yukon Avenue",
-      "lat": 33.86712,
-      "lng": -118.33495,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "layer -1; 2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w759758422",
       "name": "Devonshire Street",
       "addr": "Devonshire Street",
@@ -6810,28 +6591,6 @@
       "height_in": 174,
       "height_label": "14'6\"",
       "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w769425112",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.88705,
-      "lng": -118.33187,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w772801470",
-      "name": "East Wardlow Road",
-      "addr": "East Wardlow Road",
-      "lat": 33.81899,
-      "lng": -118.1912,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "layer -1; 2 lanes",
       "source": "OpenStreetMap"
     },
     {
@@ -7033,17 +6792,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1072153555",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.83169,
-      "lng": -118.32833,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1087789945",
       "name": "Tunnel (service)",
       "addr": "",
@@ -7132,28 +6880,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1164078459",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.83162,
-      "lng": -118.14292,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1167470966",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.85837,
-      "lng": -118.03032,
-      "height_in": 102,
-      "height_label": "8'6\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1179705443",
       "name": "Tunnel (service)",
       "addr": "",
@@ -7172,50 +6898,6 @@
       "lng": -118.30202,
       "height_in": 174,
       "height_label": "14'6\"",
-      "notes": "layer -1; 2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1288199554",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.8231,
-      "lng": -118.33233,
-      "height_in": 156,
-      "height_label": "13'0\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1360809612",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.8592,
-      "lng": -118.04701,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "4 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1364379977",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.85903,
-      "lng": -118.05024,
-      "height_in": 154,
-      "height_label": "12'10\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1432098273",
-      "name": "South Santa Fe Avenue",
-      "addr": "South Santa Fe Avenue",
-      "lat": 33.82795,
-      "lng": -118.21649,
-      "height_in": 173,
-      "height_label": "14'5\"",
       "notes": "layer -1; 2 lanes",
       "source": "OpenStreetMap"
     }
@@ -7372,17 +7054,6 @@
       "lng": -118.11798,
       "height_in": 181,
       "height_label": "15'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w13361134",
-      "name": "Low clearance \u2014 Woodruff Avenue",
-      "addr": "Woodruff Avenue",
-      "lat": 33.80287,
-      "lng": -118.11467,
-      "height_in": 182,
-      "height_label": "15'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8113,61 +7784,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w52739706",
-      "name": "Low clearance \u2014 Long Beach Freeway (I 710)",
-      "addr": "I 710",
-      "lat": 33.8215,
-      "lng": -118.20687,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w55770428",
-      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
-      "addr": "I 405",
-      "lat": 33.81393,
-      "lng": -118.16906,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w55770429",
-      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
-      "addr": "I 405",
-      "lat": 33.81391,
-      "lng": -118.17033,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w55848070",
-      "name": "Low clearance \u2014 Long Beach Freeway (I 710)",
-      "addr": "I 710",
-      "lat": 33.87436,
-      "lng": -118.1935,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w55848071",
-      "name": "Low clearance \u2014 Long Beach Freeway (I 710)",
-      "addr": "I 710",
-      "lat": 33.87362,
-      "lng": -118.19347,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w55848079",
       "name": "Low clearance \u2014 Long Beach Freeway (I 710)",
       "addr": "I 710",
@@ -8186,17 +7802,6 @@
       "lng": -118.07328,
       "height_in": 184,
       "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w63500101",
-      "name": "Low clearance \u2014 Rosecrans Avenue",
-      "addr": "Rosecrans Avenue",
-      "lat": 33.90226,
-      "lng": -118.06221,
-      "height_in": 177,
-      "height_label": "14'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8619,17 +8224,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w119359907",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.85724,
-      "lng": -118.0293,
-      "height_in": 176,
-      "height_label": "14'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w121651667",
       "name": "Low clearance \u2014 San Diego Freeway (I 405)",
       "addr": "I 405",
@@ -8883,17 +8477,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w160843937",
-      "name": "Low clearance \u2014 East Willow Street",
-      "addr": "East Willow Street",
-      "lat": 33.80374,
-      "lng": -118.13834,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w161702796",
       "name": "Low clearance \u2014 Hyperion Avenue",
       "addr": "Hyperion Avenue",
@@ -9048,17 +8631,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w181978116",
-      "name": "Low clearance \u2014 West 182nd Street",
-      "addr": "West 182nd Street",
-      "lat": 33.86591,
-      "lng": -118.33132,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w185012486",
       "name": "Low clearance \u2014 Arroyo Seco Parkway (CA 110;US 66 Hist)",
       "addr": "CA 110;US 66 Hist",
@@ -9088,28 +8660,6 @@
       "lng": -118.21798,
       "height_in": 170,
       "height_label": "14'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w185773326",
-      "name": "Low clearance \u2014 Beach Boulevard",
-      "addr": "Beach Boulevard",
-      "lat": 33.85668,
-      "lng": -117.9979,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w185773338",
-      "name": "Low clearance \u2014 Carson Street",
-      "addr": "Carson Street",
-      "lat": 33.83227,
-      "lng": -118.13607,
-      "height_in": 183,
-      "height_label": "15'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9213,28 +8763,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w288724448",
-      "name": "Low clearance \u2014 Wilmington Avenue",
-      "addr": "Wilmington Avenue",
-      "lat": 33.82583,
-      "lng": -118.24161,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w296527234",
-      "name": "Low clearance \u2014 Carson Street",
-      "addr": "Carson Street",
-      "lat": 33.83136,
-      "lng": -118.08415,
-      "height_in": 179,
-      "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w306487260",
       "name": "Low clearance \u2014 West 1st Street",
       "addr": "West 1st Street",
@@ -9312,28 +8840,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w380734692",
-      "name": "Low clearance \u2014 West Willow Street",
-      "addr": "West Willow Street",
-      "lat": 33.80434,
-      "lng": -118.22111,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w381206112",
-      "name": "Low clearance \u2014 East Los Coyotes Diagonal",
-      "addr": "East Los Coyotes Diagonal",
-      "lat": 33.80282,
-      "lng": -118.12423,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w381454479",
       "name": "Low clearance \u2014 North Figueroa Street (US 6 Hist)",
       "addr": "US 6 Hist",
@@ -9341,17 +8847,6 @@
       "lng": -118.24785,
       "height_in": 175,
       "height_label": "14'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w384240591",
-      "name": "Low clearance \u2014 213th Street",
-      "addr": "213th Street",
-      "lat": 33.83535,
-      "lng": -118.31422,
-      "height_in": 159,
-      "height_label": "13'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9466,17 +8961,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w398235824",
-      "name": "Low clearance \u2014 West Artesia Boulevard",
-      "addr": "West Artesia Boulevard",
-      "lat": 33.8729,
-      "lng": -118.34206,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w398239535",
       "name": "Low clearance \u2014 Pico Boulevard",
       "addr": "Pico Boulevard",
@@ -9484,17 +8968,6 @@
       "lng": -118.45321,
       "height_in": 184,
       "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w398364432",
-      "name": "Low clearance \u2014 Long Beach Boulevard",
-      "addr": "Long Beach Boulevard",
-      "lat": 33.84383,
-      "lng": -118.19278,
-      "height_in": 187,
-      "height_label": "15'7\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9675,28 +9148,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w400223627",
-      "name": "Low clearance \u2014 West Katella Avenue",
-      "addr": "West Katella Avenue",
-      "lat": 33.8032,
-      "lng": -118.0818,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w400836993",
-      "name": "Low clearance \u2014 Rosecrans Avenue",
-      "addr": "Rosecrans Avenue",
-      "lat": 33.90227,
-      "lng": -118.06133,
-      "height_in": 177,
-      "height_label": "14'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w402227323",
       "name": "Low clearance \u2014 Magnolia Boulevard",
       "addr": "Magnolia Boulevard",
@@ -9748,17 +9199,6 @@
       "lng": -118.24421,
       "height_in": 183,
       "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w405011885",
-      "name": "Low clearance \u2014 Beach Boulevard",
-      "addr": "Beach Boulevard",
-      "lat": 33.8557,
-      "lng": -117.99788,
-      "height_in": 180,
-      "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9902,28 +9342,6 @@
       "lng": -118.28079,
       "height_in": 174,
       "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w578725783",
-      "name": "Low clearance \u2014 Bixby Avenue",
-      "addr": "Bixby Avenue",
-      "lat": 33.8762,
-      "lng": -118.12087,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w591497927",
-      "name": "Low clearance \u2014 Crenshaw Boulevard",
-      "addr": "Crenshaw Boulevard",
-      "lat": 33.86447,
-      "lng": -118.32645,
-      "height_in": 183,
-      "height_label": "15'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -10467,39 +9885,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w755781588",
-      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
-      "addr": "I 405",
-      "lat": 33.8105,
-      "lng": -118.15961,
-      "height_in": 181,
-      "height_label": "15'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w755781590",
-      "name": "Low clearance \u2014 Redondo Avenue",
-      "addr": "Redondo Avenue",
-      "lat": 33.80727,
-      "lng": -118.15135,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w755781597",
-      "name": "Low clearance \u2014 Lakewood Boulevard (CA 19)",
-      "addr": "CA 19",
-      "lat": 33.80591,
-      "lng": -118.14266,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w756531327",
       "name": "Low clearance \u2014 Santa Ana Freeway (I 5)",
       "addr": "I 5",
@@ -10518,39 +9903,6 @@
       "lng": -118.39199,
       "height_in": 100,
       "height_label": "8'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w757114980",
-      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
-      "addr": "I 405",
-      "lat": 33.8144,
-      "lng": -118.1713,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w757114984",
-      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
-      "addr": "I 405",
-      "lat": 33.8144,
-      "lng": -118.17342,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w757114985",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.8136,
-      "lng": -118.1673,
-      "height_in": 184,
-      "height_label": "15'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -10672,17 +10024,6 @@
       "lng": -118.27355,
       "height_in": 78,
       "height_label": "6'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w771780941",
-      "name": "Low clearance \u2014 Clark Avenue",
-      "addr": "Clark Avenue",
-      "lat": 33.80284,
-      "lng": -118.13407,
-      "height_in": 177,
-      "height_label": "14'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -10837,17 +10178,6 @@
       "lng": -118.39574,
       "height_in": 90,
       "height_label": "7'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w838931896",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.80803,
-      "lng": -118.33389,
-      "height_in": 164,
-      "height_label": "13'8\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -11116,17 +10446,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w908437524",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.9757,
-      "lng": -118.03796,
-      "height_in": 139,
-      "height_label": "11'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w909471733",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -11226,17 +10545,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w975552898",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86285,
-      "lng": -118.04396,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w976809473",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -11281,17 +10589,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w998066425",
-      "name": "Low clearance \u2014 East Los Coyotes Diagonal",
-      "addr": "East Los Coyotes Diagonal",
-      "lat": 33.80225,
-      "lng": -118.12502,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1000715195",
       "name": "Low clearance \u2014 Santa Monica Freeway (I 10)",
       "addr": "I 10",
@@ -11332,17 +10629,6 @@
       "lng": -118.37947,
       "height_in": 108,
       "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1013429949",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.87338,
-      "lng": -118.32689,
-      "height_in": 80,
-      "height_label": "6'8\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -11453,17 +10739,6 @@
       "lng": -118.35379,
       "height_in": 98,
       "height_label": "8'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1061576516",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.87253,
-      "lng": -118.31686,
-      "height_in": 102,
-      "height_label": "8'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -11600,17 +10875,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1154355607",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.81266,
-      "lng": -118.32764,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1156785001",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -11732,17 +10996,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1270467525",
-      "name": "Low clearance \u2014 Woodruff Avenue",
-      "addr": "Woodruff Avenue",
-      "lat": 33.80195,
-      "lng": -118.11468,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1275077737",
       "name": "Low clearance \u2014 Long Beach Boulevard",
       "addr": "Long Beach Boulevard",
@@ -11831,83 +11084,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1302585700",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.87396,
-      "lng": -118.06257,
-      "height_in": 88,
-      "height_label": "7'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585707",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86389,
-      "lng": -118.04632,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585710",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86652,
-      "lng": -118.05051,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585713",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86963,
-      "lng": -118.05512,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1306478189",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.87362,
-      "lng": -118.04666,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1309994845",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.85869,
-      "lng": -118.31105,
-      "height_in": 102,
-      "height_label": "8'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1309994854",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.85882,
-      "lng": -118.30969,
-      "height_in": 108,
-      "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1312713311",
       "name": "Low clearance \u2014 South Soto Street",
       "addr": "South Soto Street",
@@ -11937,17 +11113,6 @@
       "lng": -118.20462,
       "height_in": 177,
       "height_label": "14'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1341652022",
-      "name": "Low clearance \u2014 Torrance Boulevard",
-      "addr": "Torrance Boulevard",
-      "lat": 33.83745,
-      "lng": -118.3118,
-      "height_in": 159,
-      "height_label": "13'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -12062,17 +11227,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1451927189",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86167,
-      "lng": -118.04116,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1453265740",
       "name": "Low clearance \u2014 Golden State Freeway (I 5)",
       "addr": "I 5",
@@ -12172,28 +11326,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w185741140",
-      "name": "Low clearance \u2014 Lakewood Boulevard (CA 19)",
-      "addr": "CA 19",
-      "lat": 33.87729,
-      "lng": -118.1427,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w291406523",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.85064,
-      "lng": -118.13576,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w489938588",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -12212,17 +11344,6 @@
       "lng": -118.36407,
       "height_in": 98,
       "height_label": "8'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w772801444",
-      "name": "Low clearance \u2014 San Diego Freeway (I 405)",
-      "addr": "I 405",
-      "lat": 33.81423,
-      "lng": -118.17638,
-      "height_in": 182,
-      "height_label": "15'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -12260,17 +11381,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1453281853",
-      "name": "Low clearance \u2014 Artesia Tollway (CA 91 EXPR)",
-      "addr": "CA 91 EXPR",
-      "lat": 33.87641,
-      "lng": -118.09106,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1507583650",
       "name": "Low clearance \u2014 Whittier Boulevard",
       "addr": "Whittier Boulevard",
@@ -12289,17 +11399,6 @@
       "lng": -118.42734,
       "height_in": 179,
       "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1545754500",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.85002,
-      "lng": -118.14331,
-      "height_in": 124,
-      "height_label": "10'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

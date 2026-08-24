@@ -1318,17 +1318,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-39-1829971",
-      "name": "Low on-bridge clearance: BARR RD",
-      "addr": "BARR RD",
-      "lat": 41.28008,
-      "lng": -81.64891,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1954",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "nbi-39-1860005",
       "name": "Low on-bridge clearance: WHITNEY ROAD",
       "addr": "WHITNEY ROAD",

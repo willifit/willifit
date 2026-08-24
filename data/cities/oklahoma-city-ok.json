@@ -1245,17 +1245,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w222719779",
-      "name": "Low clearance \u2014 South Interstate Highway 35 Service Road",
-      "addr": "South Interstate Highway 35 Service Road",
-      "lat": 35.33401,
-      "lng": -97.49042,
-      "height_in": 214,
-      "height_label": "17'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w258427435",
       "name": "Low clearance \u2014 John Kilpatrick Turnpike (I 344)",
       "addr": "I 344",
@@ -2675,28 +2664,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w593167573",
-      "name": "Low clearance \u2014 Helen Cole Memorial Highway (I 35;US 77)",
-      "addr": "I 35;US 77",
-      "lat": 35.32005,
-      "lng": -97.48987,
-      "height_in": 202,
-      "height_label": "16'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w593167581",
-      "name": "Low clearance \u2014 West Main Street",
-      "addr": "West Main Street",
-      "lat": 35.33827,
-      "lng": -97.4916,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w593167583",
       "name": "Low clearance \u2014 Northwest 5th Street",
       "addr": "Northwest 5th Street",
@@ -3672,17 +3639,6 @@
       "lng": -97.58841,
       "height_in": 108,
       "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w766245216",
-      "name": "Low clearance \u2014 Southeast 19th Street",
-      "addr": "Southeast 19th Street",
-      "lat": 35.31984,
-      "lng": -97.48109,
-      "height_in": 196,
-      "height_label": "16'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

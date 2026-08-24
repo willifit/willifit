@@ -1027,20 +1027,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-36-000000005039547",
-      "name": "Low on-bridge clearance: RTE 955",
-      "addr": "RTE 955",
-      "lat": 43.10931,
-      "lng": -79.05766,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1897",
-      "source": "FHWA National Bridge Inventory",
-      "entrance_lat": 43.1100998,
-      "entrance_lng": -79.0567219,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
-    },
-    {
       "id": "nbi-36-000000005060589",
       "name": "Low on-bridge clearance: RTE 400",
       "addr": "RTE 400",

@@ -299,39 +299,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w366977594",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 35.36352,
-      "lng": -97.49479,
-      "height_in": 212,
-      "height_label": "17'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w406482933",
-      "name": "Low clearance \u2014 Southwest 104th Street",
-      "addr": "Southwest 104th Street",
-      "lat": 35.36308,
-      "lng": -97.58028,
-      "height_in": 187,
-      "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w522309852",
-      "name": "Low clearance \u2014 Northeast 27th Street",
-      "addr": "Northeast 27th Street",
-      "lat": 35.36324,
-      "lng": -97.4845,
-      "height_in": 198,
-      "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w539857437",
       "name": "Low clearance \u2014 West Robinson Street",
       "addr": "West Robinson Street",
@@ -365,17 +332,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w591686216",
-      "name": "Low clearance \u2014 Will Rogers Expressway (I 44;US 62)",
-      "addr": "I 44;US 62",
-      "lat": 35.34856,
-      "lng": -97.58647,
-      "height_in": 198,
-      "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w593167573",
       "name": "Low clearance \u2014 Helen Cole Memorial Highway (I 35;US 77)",
       "addr": "I 35;US 77",
@@ -394,50 +350,6 @@
       "lng": -97.4916,
       "height_in": 180,
       "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w593167583",
-      "name": "Low clearance \u2014 Northwest 5th Street",
-      "addr": "Northwest 5th Street",
-      "lat": 35.34336,
-      "lng": -97.49333,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w593167586",
-      "name": "Low clearance underpass (secondary)",
-      "addr": "",
-      "lat": 35.34876,
-      "lng": -97.49497,
-      "height_in": 194,
-      "height_label": "16'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w593167593",
-      "name": "Low clearance \u2014 North Interstate Highway 35 Frontage Road",
-      "addr": "North Interstate Highway 35 Frontage Road",
-      "lat": 35.35705,
-      "lng": -97.49645,
-      "height_in": 201,
-      "height_label": "16'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w593167595",
-      "name": "Low clearance \u2014 Helen Cole Memorial Highway (I 35;US 77)",
-      "addr": "I 35;US 77",
-      "lat": 35.3578,
-      "lng": -97.496,
-      "height_in": 203,
-      "height_label": "16'11\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

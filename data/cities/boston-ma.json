@@ -571,10 +571,13 @@
       "lng": -71.06126,
       "height_in": null,
       "height_label": "No limit (uncovered)",
-      "oversized": true,
-      "structure_type": "surface_lot",
-      "notes": "Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (175 spaces). 175 spaces. Paid parking. Operator: LAZ Parking.",
-      "source": "OpenStreetMap (surface lot)"
+      "oversized": false,
+      "notes": "175 spaces; paid; covered",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "https://www.lazparking.com/local/boston-ma/lot-5",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1280420068",
@@ -716,17 +719,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-25-B160074EGDOTNBI",
-      "name": "Low on-bridge clearance: ST  2 BROOKLINE ST",
-      "addr": "ST  2 BROOKLINE ST",
-      "lat": 42.35262,
-      "lng": -71.11064,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1928",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "nbi-25-B160174WUDOTNBI",
       "name": "Low on-bridge clearance: US  1 SB/BS U11-32",
       "addr": "US  1 SB/BS U11-32",
@@ -779,28 +771,6 @@
       "height_in": 172,
       "height_label": "14'4\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1965",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-B160554T0DOTNBI",
-      "name": "Low on-bridge clearance: US 20 COMM AV/MBTA",
-      "addr": "US 20 COMM AV/MBTA",
-      "lat": 42.3506,
-      "lng": -71.11127,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1965",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-B1606638DMUNNBI",
-      "name": "Low on-bridge clearance: HWY   CAMBRIDGE ST",
-      "addr": "HWY   CAMBRIDGE ST",
-      "lat": 42.38303,
-      "lng": -71.07711,
-      "height_in": 175,
-      "height_label": "14'7\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1880",
       "source": "FHWA National Bridge Inventory"
     },
     {
@@ -1101,17 +1071,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-25-C010314DRDOTNBI",
-      "name": "Low clearance: TR    RED LINE under US  3 /ST2&16/ALWF",
-      "addr": "TR    RED LINE",
-      "lat": 42.39622,
-      "lng": -71.14072,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "FHWA NBI; under-bridge clearance; built 1983; bridge carries US  3 /ST2&16/ALWF",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "nbi-25-C0203635HDOTNBI",
       "name": "Low on-bridge clearance: I  95 NB",
       "addr": "I  95 NB",
@@ -1120,50 +1079,6 @@
       "height_in": 173,
       "height_label": "14'5\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1966",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-L100012N1DOT634",
-      "name": "Low clearance: OTHER MINUTEMAN BIKE PTH under ST  2 A/MAPLE ST",
-      "addr": "OTHER MINUTEMAN BIKE PTH",
-      "lat": 42.4357,
-      "lng": -71.20897,
-      "height_in": 161,
-      "height_label": "13'5\"",
-      "notes": "FHWA NBI; under-bridge clearance; built 1919; bridge carries ST  2 A/MAPLE ST",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-M010054UTMBTNBI",
-      "name": "Low on-bridge clearance: HWY   MOUNTAIN AVE",
-      "addr": "HWY   MOUNTAIN AVE",
-      "lat": 42.42987,
-      "lng": -71.07307,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1890",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-N120274QWDOTNBI",
-      "name": "Low on-bridge clearance: ST 16 WB/WSHGTN ST",
-      "addr": "ST 16 WB/WSHGTN ST",
-      "lat": 42.34764,
-      "lng": -71.23206,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1964",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-N120604D6DOTNBI",
-      "name": "Low clearance: TR    GREEN LINE D under HWY   HAMMOND PD",
-      "addr": "TR    GREEN LINE D",
-      "lat": 42.32889,
-      "lng": -71.17813,
-      "height_in": 156,
-      "height_label": "13'0\"",
-      "notes": "FHWA NBI; under-bridge clearance; built 1933; bridge carries HWY   HAMMOND PD",
       "source": "FHWA National Bridge Inventory"
     },
     {
@@ -1178,83 +1093,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-25-S170224E2DOTNBI",
-      "name": "Low on-bridge clearance: ST 28 MCGRATH HWY",
-      "addr": "ST 28 MCGRATH HWY",
-      "lat": 42.38438,
-      "lng": -71.09139,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1926",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-S17025BDWDOTNBI",
-      "name": "Low on-bridge clearance: ST 28 MCGRATH HWY",
-      "addr": "ST 28 MCGRATH HWY",
-      "lat": 42.38517,
-      "lng": -71.09101,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 2016",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-W290404Q1DOTNBI",
-      "name": "Low on-bridge clearance: HWY   WINTER ST",
-      "addr": "HWY   WINTER ST",
-      "lat": 42.33483,
-      "lng": -71.31431,
-      "height_in": 170,
-      "height_label": "14'2\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1957",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-W290434Q5DOTNBI",
-      "name": "Low on-bridge clearance: HWY   OAK ST",
-      "addr": "HWY   OAK ST",
-      "lat": 42.33734,
-      "lng": -71.28984,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1957",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-W290534Q9DOTNBI",
-      "name": "Low on-bridge clearance: I  90 RAMP J",
-      "addr": "I  90 RAMP J",
-      "lat": 42.33894,
-      "lng": -71.27264,
-      "height_in": 172,
-      "height_label": "14'4\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1962",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-W290544QCDOTNBI",
-      "name": "Low on-bridge clearance: HWY   PARK RD",
-      "addr": "HWY   PARK RD",
-      "lat": 42.33888,
-      "lng": -71.26839,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1962",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "nbi-25-W290584QGDOTNBI",
-      "name": "Low on-bridge clearance: I  90 RAMP G",
-      "addr": "I  90 RAMP G",
-      "lat": 42.3411,
-      "lng": -71.26602,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1962",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "osm-w8615882",
       "name": "Low clearance \u2014 Museum Way",
       "addr": "Museum Way",
@@ -1262,17 +1100,6 @@
       "lng": -71.07185,
       "height_in": 187,
       "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8615988",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.3603,
-      "lng": -71.09342,
-      "height_in": 166,
-      "height_label": "13'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1306,17 +1133,6 @@
       "lng": -71.06696,
       "height_in": 165,
       "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8639334",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36382,
-      "lng": -71.14016,
-      "height_in": 126,
-      "height_label": "10'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1383,28 +1199,6 @@
       "lng": -71.04595,
       "height_in": 165,
       "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8646148",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36836,
-      "lng": -71.12358,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8646197",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36232,
-      "lng": -71.11778,
-      "height_in": 120,
-      "height_label": "10'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1552,28 +1346,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w8922463",
-      "name": "Low clearance \u2014 Dartmouth Street",
-      "addr": "Dartmouth Street",
-      "lat": 42.42991,
-      "lng": -71.06894,
-      "height_in": 170,
-      "height_label": "14'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w9038897",
-      "name": "Low clearance \u2014 I 93",
-      "addr": "I 93",
-      "lat": 42.42893,
-      "lng": -71.10309,
-      "height_in": 173,
-      "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w9232481",
       "name": "Low clearance \u2014 Yankee Division Highway (I 95;MA 128)",
       "addr": "I 95;MA 128",
@@ -1673,50 +1445,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w34963604",
-      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
-      "addr": "I 90",
-      "lat": 42.35802,
-      "lng": -71.14921,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w41826155",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.3623,
-      "lng": -71.14377,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w41877950",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35105,
-      "lng": -71.10091,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w44559429",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35906,
-      "lng": -71.1177,
-      "height_in": 132,
-      "height_label": "11'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w48941600",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -1794,28 +1522,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w80676430",
-      "name": "Low clearance \u2014 I 93",
-      "addr": "I 93",
-      "lat": 42.40121,
-      "lng": -71.09521,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w82329768",
-      "name": "Low clearance \u2014 McGrath Highway (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.38756,
-      "lng": -71.0899,
-      "height_in": 178,
-      "height_label": "14'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w86479795",
       "name": "Low clearance \u2014 Commonwealth Avenue (MA 2)",
       "addr": "MA 2",
@@ -1827,17 +1533,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w86480022",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35082,
-      "lng": -71.09385,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w86480024",
       "name": "Low clearance \u2014 Storrow Drive",
       "addr": "Storrow Drive",
@@ -1845,50 +1540,6 @@
       "lng": -71.09081,
       "height_in": 144,
       "height_label": "12'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w86480331",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.3509,
-      "lng": -71.09483,
-      "height_in": 132,
-      "height_label": "11'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w86480892",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35105,
-      "lng": -71.09239,
-      "height_in": 129,
-      "height_label": "10'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w97639438",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35627,
-      "lng": -71.18683,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w138789021",
-      "name": "Low clearance \u2014 Memorial Drive (MA 3)",
-      "addr": "MA 3",
-      "lat": 42.35717,
-      "lng": -71.09241,
-      "height_in": 108,
-      "height_label": "9'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1937,28 +1588,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w261424135",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36711,
-      "lng": -71.11994,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w263264144",
-      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
-      "addr": "I 90",
-      "lat": 42.35729,
-      "lng": -71.13656,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w291407834",
       "name": "Low clearance \u2014 Martin A. Coughlin Bypass Road",
       "addr": "Martin A. Coughlin Bypass Road",
@@ -1988,17 +1617,6 @@
       "lng": -71.15983,
       "height_in": 168,
       "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w328015592",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.35194,
-      "lng": -71.11109,
-      "height_in": 132,
-      "height_label": "11'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2036,28 +1654,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w426491326",
-      "name": "Low clearance \u2014 Hammond Pond Parkway",
-      "addr": "Hammond Pond Parkway",
-      "lat": 42.32124,
-      "lng": -71.17227,
-      "height_in": 161,
-      "height_label": "13'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w457530226",
-      "name": "Low clearance \u2014 Medford Street",
-      "addr": "Medford Street",
-      "lat": 42.41765,
-      "lng": -71.07661,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w485193860",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2091,17 +1687,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w566881058",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.37273,
-      "lng": -71.12215,
-      "height_in": 76,
-      "height_label": "6'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w567390885",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2124,17 +1709,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w591217332",
-      "name": "Low clearance \u2014 Reid Rotary (MA 2)",
-      "addr": "MA 2",
-      "lat": 42.35405,
-      "lng": -71.11034,
-      "height_in": 127,
-      "height_label": "10'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w591294860",
       "name": "Low clearance \u2014 Dow Avenue",
       "addr": "Dow Avenue",
@@ -2142,17 +1716,6 @@
       "lng": -71.19428,
       "height_in": 171,
       "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w591493245",
-      "name": "Low clearance \u2014 Centre Street (MA 60)",
-      "addr": "MA 60",
-      "lat": 42.42602,
-      "lng": -71.07461,
-      "height_in": 162,
-      "height_label": "13'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2208,28 +1771,6 @@
       "lng": -71.08289,
       "height_in": 162,
       "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w807640156",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35142,
-      "lng": -71.10668,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w807640157",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35166,
-      "lng": -71.10818,
-      "height_in": 168,
-      "height_label": "14'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2311,17 +1852,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w829097343",
-      "name": "Low clearance \u2014 Riverside Avenue",
-      "addr": "Riverside Avenue",
-      "lat": 42.41631,
-      "lng": -71.104,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w832081424",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2340,28 +1870,6 @@
       "lng": -71.08495,
       "height_in": 168,
       "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w834057749",
-      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
-      "addr": "I 90",
-      "lat": 42.35798,
-      "lng": -71.14371,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w834057750",
-      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
-      "addr": "I 90",
-      "lat": 42.3568,
-      "lng": -71.1336,
-      "height_in": 169,
-      "height_label": "14'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2494,17 +2002,6 @@
       "lng": -71.04802,
       "height_in": 98,
       "height_label": "8'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w876635071",
-      "name": "Low clearance \u2014 Fellsway West (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.44807,
-      "lng": -71.10474,
-      "height_in": 170,
-      "height_label": "14'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2674,17 +2171,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1175594412",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.38908,
-      "lng": -71.14463,
-      "height_in": 102,
-      "height_label": "8'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1188964426",
       "name": "Low clearance \u2014 Southeast Expressway HOV Lane (I 93;US 1;MA 3)",
       "addr": "I 93;US 1;MA 3",
@@ -2714,28 +2200,6 @@
       "lng": -71.13148,
       "height_in": 124,
       "height_label": "10'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1212903653",
-      "name": "Low clearance \u2014 Charles Street",
-      "addr": "Charles Street",
-      "lat": 42.42332,
-      "lng": -71.07564,
-      "height_in": 158,
-      "height_label": "13'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1212903768",
-      "name": "Low clearance \u2014 Pleasant Street",
-      "addr": "Pleasant Street",
-      "lat": 42.42731,
-      "lng": -71.07406,
-      "height_in": 162,
-      "height_label": "13'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2795,28 +2259,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1215528187",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.38514,
-      "lng": -71.11327,
-      "height_in": 86,
-      "height_label": "7'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1215630131",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.39564,
-      "lng": -71.12768,
-      "height_in": 114,
-      "height_label": "9'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1226254419",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -2857,17 +2299,6 @@
       "lng": -71.00214,
       "height_in": 166,
       "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1263554461",
-      "name": "Low clearance \u2014 Dartmouth Street",
-      "addr": "Dartmouth Street",
-      "lat": 42.42902,
-      "lng": -71.06867,
-      "height_in": 170,
-      "height_label": "14'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2927,83 +2358,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1346312672",
-      "name": "Low clearance \u2014 Huntington Avenue (MA 9)",
-      "addr": "MA 9",
-      "lat": 42.33183,
-      "lng": -71.11299,
-      "height_in": 160,
-      "height_label": "13'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1353773382",
-      "name": "Low clearance \u2014 Grove Street",
-      "addr": "Grove Street",
-      "lat": 42.4209,
-      "lng": -71.16357,
-      "height_in": 137,
-      "height_label": "11'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1353773551",
-      "name": "Low clearance \u2014 Brattle Street",
-      "addr": "Brattle Street",
-      "lat": 42.42197,
-      "lng": -71.16862,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1353773875",
-      "name": "Low clearance \u2014 Forest Street",
-      "addr": "Forest Street",
-      "lat": 42.42585,
-      "lng": -71.17574,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1355895591",
-      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
-      "addr": "I 90",
-      "lat": 42.35758,
-      "lng": -71.14051,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1363303527",
-      "name": "Low clearance \u2014 McGrath Highway (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.38866,
-      "lng": -71.0892,
-      "height_in": 178,
-      "height_label": "14'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1408585933",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.42786,
-      "lng": -71.05652,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1409827102",
       "name": "Low clearance \u2014 Dorchester Avenue",
       "addr": "Dorchester Avenue",
@@ -3037,28 +2391,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1413970483",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36031,
-      "lng": -71.15018,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1413970484",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36162,
-      "lng": -71.14695,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1416775485",
       "name": "Low clearance \u2014 Woodrow Avenue",
       "addr": "Woodrow Avenue",
@@ -3070,17 +2402,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1416776687",
-      "name": "Low clearance \u2014 Adams Street",
-      "addr": "Adams Street",
-      "lat": 42.42172,
-      "lng": -71.07626,
-      "height_in": 160,
-      "height_label": "13'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1421777488",
       "name": "Low clearance \u2014 Boylston Street (MA 9)",
       "addr": "MA 9",
@@ -3088,28 +2409,6 @@
       "lng": -71.19436,
       "height_in": 164,
       "height_label": "13'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1430491693",
-      "name": "Low clearance \u2014 McGrath Highway (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.38658,
-      "lng": -71.09047,
-      "height_in": 178,
-      "height_label": "14'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1452782157",
-      "name": "Low clearance \u2014 Massachusetts Turnpike (I 90)",
-      "addr": "I 90",
-      "lat": 42.35645,
-      "lng": -71.12863,
-      "height_in": 169,
-      "height_label": "14'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3143,17 +2442,6 @@
       "lng": -71.0207,
       "height_in": 132,
       "height_label": "11'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1490765210",
-      "name": "Low clearance \u2014 Fellsway West (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.4261,
-      "lng": -71.10326,
-      "height_in": 171,
-      "height_label": "14'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3209,17 +2497,6 @@
       "lng": -71.08734,
       "height_in": 120,
       "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1533648656",
-      "name": "Low clearance \u2014 Soldiers Field Road",
-      "addr": "Soldiers Field Road",
-      "lat": 42.36459,
-      "lng": -71.13585,
-      "height_in": 126,
-      "height_label": "10'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

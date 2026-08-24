@@ -430,7 +430,8 @@
       "entrance_lng": -118.1472228,
       "entrance_source": "OSM parking_entrance node 9468701203",
       "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
+      "sv_status": "no-sign",
+      "structure_type": "structure"
     },
     {
       "id": "osm-w351202573",
@@ -535,9 +536,10 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 15'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
-      "sv_checked": "2026-05-01",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
       "sv_status": "no-pano"
     },
     {
@@ -586,19 +588,20 @@
     {
       "id": "osm-w441460169",
       "name": "Parking structure for Visitors, Employee, Volunteers",
-      "addr": "",
+      "addr": "401 East 27th Street",
       "lat": 33.8067,
       "lng": -118.18785,
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 19'5\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "free",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano",
       "entrance_lat": 33.8071043,
       "entrance_lng": -118.1880654,
-      "entrance_source": "OSM parking_entrance node 7200447368",
-      "sv_checked": "2026-05-01",
-      "sv_status": "no-pano"
+      "entrance_source": "OSM parking_entrance node 7200447368"
     },
     {
       "id": "osm-w441464328",
@@ -609,8 +612,11 @@
       "height_in": 72,
       "height_label": "6'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 14'6\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"CLEARANCE 6'\" (pano tGX_tWM1yvOTJ60b2S2ybg, heading 45\u00b0, Claude confidence high [+3 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-08-01",
+      "sv_status": "no-pano",
       "entrance_lat": 33.8089791,
       "entrance_lng": -118.1361446,
       "entrance_source": "OSM parking_entrance node 7200979389",
@@ -1104,28 +1110,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1360809612",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.8592,
-      "lng": -118.04701,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "4 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1364379977",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 33.85903,
-      "lng": -118.05024,
-      "height_in": 154,
-      "height_label": "12'10\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1432098273",
       "name": "South Santa Fe Avenue",
       "addr": "South Santa Fe Avenue",
@@ -1305,17 +1289,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w63500101",
-      "name": "Low clearance \u2014 Rosecrans Avenue",
-      "addr": "Rosecrans Avenue",
-      "lat": 33.90226,
-      "lng": -118.06221,
-      "height_in": 177,
-      "height_label": "14'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w159324578",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -1455,17 +1428,6 @@
       "lng": -118.09655,
       "height_in": 185,
       "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w400836993",
-      "name": "Low clearance \u2014 Rosecrans Avenue",
-      "addr": "Rosecrans Avenue",
-      "lat": 33.90227,
-      "lng": -118.06133,
-      "height_in": 177,
-      "height_label": "14'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1646,17 +1608,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w975552898",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86285,
-      "lng": -118.04396,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w998066425",
       "name": "Low clearance \u2014 East Los Coyotes Diagonal",
       "addr": "East Los Coyotes Diagonal",
@@ -1712,17 +1663,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1207620034",
-      "name": "Low clearance \u2014 Harris Avenue",
-      "addr": "Harris Avenue",
-      "lat": 33.91761,
-      "lng": -118.19468,
-      "height_in": 178,
-      "height_label": "14'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1213612137",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -1741,61 +1681,6 @@
       "lng": -118.11468,
       "height_in": 182,
       "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585700",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.87396,
-      "lng": -118.06257,
-      "height_in": 88,
-      "height_label": "7'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585707",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86389,
-      "lng": -118.04632,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585710",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86652,
-      "lng": -118.05051,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1302585713",
-      "name": "Low clearance \u2014 Artesia Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.86963,
-      "lng": -118.05512,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1306478189",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.87362,
-      "lng": -118.04666,
-      "height_in": 168,
-      "height_label": "14'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

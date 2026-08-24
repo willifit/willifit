@@ -418,7 +418,9 @@
       "verified_on": "2026-08-24",
       "sv_checked": "2026-08-24",
       "pano_id": "HnV0B9WjoYqvEVdTvyc_Gg",
-      "pano_heading": 312
+      "pano_heading": 312,
+      "structure_type": "structure",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w103456149",
@@ -509,8 +511,11 @@
       "height_in": 98,
       "height_label": "8'2\"",
       "oversized": false,
-      "notes": "425 spaces; paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"8'2\" CLEARANCE\" (pano _vsanAFAG4bh7TApx0l_eA, heading 45\u00b0, Claude confidence high [+1 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "notes": "425 spaces; paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano",
       "entrance_lat": 39.6780567,
       "entrance_lng": -104.9645215,
       "entrance_source": "OSM parking_entrance node 13007570626",
@@ -539,8 +544,11 @@
       "height_in": 84,
       "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"7'0\"\" (pano Z3GRCreiZd9aZrYjqLrKow, heading 90\u00b0, Claude confidence medium)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign",
       "verified_on": "2026-04-23",
       "pano_id": "Z3GRCreiZd9aZrYjqLrKow",
       "pano_heading": 90
@@ -685,8 +693,11 @@
       "height_in": 72,
       "height_label": "6'0\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6 FT\" (pano mu5hATU4_GlyPaDif98vYw, heading 45\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano",
       "entrance_lat": 39.7150645,
       "entrance_lng": -104.9514464,
       "entrance_source": "OSM parking_entrance node 5235700594",
@@ -703,8 +714,11 @@
       "height_in": 78,
       "height_label": "6'6\"",
       "oversized": false,
-      "notes": "paid [OSM clearance value rejected as implausible]\nVerified 2026-04-23 from sign reading \"6'6\" (pano kwriDf0qgioIdaeJHlbkKw, heading 45.0\u00b0, Claude confidence medium [+2 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign",
       "entrance_lat": 39.7161658,
       "entrance_lng": -104.9547372,
       "entrance_source": "OSM parking_entrance node 5235656028",
@@ -751,10 +765,12 @@
       "lng": -104.93553,
       "height_in": null,
       "height_label": null,
-      "oversized": true,
-      "notes": "Imported from OpenStreetMap. [OSM clearance value rejected as implausible]",
+      "oversized": false,
+      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w823570948",
@@ -1393,17 +1409,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w274202070",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 39.65382,
-      "lng": -104.91343,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "notes": "layer -1; 1 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w345804492",
       "name": "Tunnel (service)",
       "addr": "",
@@ -1437,17 +1442,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w668374521",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 39.6972,
-      "lng": -104.89268,
-      "height_in": 112,
-      "height_label": "9'4\"",
-      "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w700245321",
       "name": "Lincoln Street",
       "addr": "Lincoln Street",
@@ -1456,17 +1450,6 @@
       "height_in": 118,
       "height_label": "9'10\"",
       "notes": "4 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w720665220",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 39.65361,
-      "lng": -104.91499,
-      "height_in": 140,
-      "height_label": "11'8\"",
-      "notes": "layer -1; 2 lanes",
       "source": "OpenStreetMap"
     },
     {
@@ -1489,17 +1472,6 @@
       "height_in": 174,
       "height_label": "14'6\"",
       "notes": "3 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1161048705",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 39.62454,
-      "lng": -104.88491,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
     {
@@ -1651,17 +1623,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w106308399",
-      "name": "Low clearance \u2014 East Belleview Avenue",
-      "addr": "East Belleview Avenue",
-      "lat": 39.62368,
-      "lng": -104.90141,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w117951874",
       "name": "Low clearance \u2014 West Hampden Avenue (US 285)",
       "addr": "US 285",
@@ -1702,17 +1663,6 @@
       "lng": -104.97141,
       "height_in": 120,
       "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w218965860",
-      "name": "Low clearance \u2014 South Yosemite Street",
-      "addr": "South Yosemite Street",
-      "lat": 39.60048,
-      "lng": -104.88612,
-      "height_in": 144,
-      "height_label": "12'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1871,17 +1821,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1233878666",
-      "name": "Low clearance \u2014 Gateway Road",
-      "addr": "Gateway Road",
-      "lat": 39.8135,
-      "lng": -104.88413,
-      "height_in": 188,
-      "height_label": "15'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1268253348",
       "name": "Low clearance \u2014 East 58th Avenue",
       "addr": "East 58th Avenue",
@@ -1948,17 +1887,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1417532753",
-      "name": "Low clearance \u2014 North Quebec Street",
-      "addr": "North Quebec Street",
-      "lat": 39.77227,
-      "lng": -104.90285,
-      "height_in": 196,
-      "height_label": "16'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1417538046",
       "name": "Low clearance \u2014 Washington Street",
       "addr": "Washington Street",
@@ -1977,17 +1905,6 @@
       "lng": -104.99618,
       "height_in": 183,
       "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w207593660",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 39.62892,
-      "lng": -104.9006,
-      "height_in": 156,
-      "height_label": "13'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

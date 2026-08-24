@@ -335,24 +335,6 @@
       "website": "https://parking.com/nyc/lot/nj-hoboken-1-washington-street"
     },
     {
-      "id": "osm-w241842698",
-      "name": "St. George Garage",
-      "addr": "",
-      "lat": 40.63999,
-      "lng": -74.07701,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "paid OSM-imported 18'0\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"7'0\"\" (pano 53DHA822K-HL5-FyAbwjoA, heading 225\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
-      "entrance_lat": 40.6397533,
-      "entrance_lng": -74.0766241,
-      "entrance_source": "OSM parking_entrance node 4409340616",
-      "verified_on": "2026-05-01",
-      "pano_id": "53DHA822K-HL5-FyAbwjoA",
-      "pano_heading": 225
-    },
-    {
       "id": "osm-w1236418921",
       "name": "The Crossings Parking Deck",
       "addr": "",
@@ -391,160 +373,6 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-n2825591196",
-      "name": "Parking Deck A",
-      "addr": "",
-      "lat": 40.78733,
-      "lng": -74.04574,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-n2825635898",
-      "name": "Parking Deck D",
-      "addr": "",
-      "lat": 40.79131,
-      "lng": -74.04911,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-n5360019842",
-      "name": "Maxwell Place Parking Garage",
-      "addr": "",
-      "lat": 40.75041,
-      "lng": -74.02505,
-      "height_in": 102,
-      "height_label": "8'6\"",
-      "oversized": false,
-      "notes": "free\nVerified 2026-08-23 from sign reading \"GARAGE MAX HEIGHT 8' 6\"\" (pano YBR-yVg-rtobN4oX4XiNFw, heading 108\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "structure_type": "structure",
-      "verified_on": "2026-08-23",
-      "sv_checked": "2026-08-23",
-      "pano_id": "YBR-yVg-rtobN4oX4XiNFw",
-      "pano_heading": 108
-    },
-    {
-      "id": "osm-n9654139251",
-      "name": "ProPark",
-      "addr": "",
-      "lat": 40.71403,
-      "lng": -74.04073,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-n9655030679",
-      "name": "LM Liberty Parking",
-      "addr": "",
-      "lat": 40.7134,
-      "lng": -74.03522,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-n9655144550",
-      "name": "Cielo Garage",
-      "addr": "",
-      "lat": 40.71491,
-      "lng": -74.04186,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-n9670265974",
-      "name": "SP+ Parking",
-      "addr": "",
-      "lat": 40.71185,
-      "lng": -74.03993,
-      "height_in": 80,
-      "height_label": "6'8\"",
-      "oversized": false,
-      "notes": "paid\nVerified 2026-08-23 from sign reading \"CLEARANCE 6'8\"\" (pano m7H-ahiSIdinG3QDDgjCAg, heading 102\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "structure_type": "structure",
-      "verified_on": "2026-08-23",
-      "sv_checked": "2026-08-23",
-      "pano_id": "m7H-ahiSIdinG3QDDgjCAg",
-      "pano_heading": 102
-    },
-    {
-      "id": "osm-n9682801122",
-      "name": "LAZ Parking",
-      "addr": "",
-      "lat": 40.71632,
-      "lng": -74.0359,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-n12481606864",
-      "name": "Centerpark Century 21 Parking Garage",
-      "addr": "415 88th Street",
-      "lat": 40.62103,
-      "lng": -74.02844,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/century-21-garage-bay-ridge",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-n12481802641",
-      "name": "Centerpark Harlow Parking Garage",
-      "addr": "1330 Willow Avenue",
-      "lat": 40.75349,
-      "lng": -74.02995,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/hoboken-trader-joes-garage"
-    },
-    {
       "id": "osm-n13059951779",
       "name": "Gateway One Parking Garage",
       "addr": "",
@@ -558,94 +386,6 @@
       "structure_type": "structure",
       "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w27080292",
-      "name": "Municipal Parking Garage B",
-      "addr": "",
-      "lat": 40.73808,
-      "lng": -74.02904,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w27080295",
-      "name": "Municipal Lot D",
-      "addr": "",
-      "lat": 40.73909,
-      "lng": -74.02873,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "surface_lot"
-    },
-    {
-      "id": "osm-w27080831",
-      "name": "Midtown Garage",
-      "addr": "",
-      "lat": 40.74155,
-      "lng": -74.03492,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w27110661",
-      "name": "South Garage",
-      "addr": "",
-      "lat": 40.72536,
-      "lng": -74.03701,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w27110669",
-      "name": "North Garage",
-      "addr": "",
-      "lat": 40.72874,
-      "lng": -74.03646,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w27110670",
-      "name": "West Garage",
-      "addr": "",
-      "lat": 40.72711,
-      "lng": -74.03934,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
     },
     {
       "id": "osm-w182894040",
@@ -764,66 +504,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w272713890",
-      "name": "Metropolis",
-      "addr": "90 Town Square Place",
-      "lat": 40.72718,
-      "lng": -74.03325,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w278135380",
-      "name": "Parking Deck #",
-      "addr": "",
-      "lat": 40.78398,
-      "lng": -74.04419,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w278138632",
-      "name": "Parking Deck C",
-      "addr": "",
-      "lat": 40.78725,
-      "lng": -74.04236,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w278138643",
-      "name": "Parking Deck B",
-      "addr": "",
-      "lat": 40.78903,
-      "lng": -74.04322,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w312849085",
       "name": "Red Hawk Deck",
       "addr": "",
@@ -833,36 +513,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w331072219",
-      "name": "Newport River Market Garage",
-      "addr": "",
-      "lat": 40.73034,
-      "lng": -74.03333,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w396328953",
-      "name": "Sky Club Parking Garage",
-      "addr": "",
-      "lat": 40.74046,
-      "lng": -74.04218,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "sv_checked": "2026-08-23",
@@ -968,36 +618,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w707819002",
-      "name": "Lincoln Garage",
-      "addr": "",
-      "lat": 40.72961,
-      "lng": -74.04225,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-23",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w721487098",
-      "name": "Babbio Center Parking Garage",
-      "addr": "",
-      "lat": 40.74276,
-      "lng": -74.02602,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "sv_checked": "2026-08-23",
@@ -1160,17 +780,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w22927390",
-      "name": "Holland Tunnel",
-      "addr": "I 78",
-      "lat": 40.72859,
-      "lng": -74.0287,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "layer -1; 2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w132500883",
       "name": "Market Street",
       "addr": "Market Street",
@@ -1178,17 +787,6 @@
       "lng": -74.16468,
       "height_in": 163,
       "height_label": "13'7\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w214528355",
-      "name": "Marin Boulevard",
-      "addr": "Marin Boulevard",
-      "lat": 40.73536,
-      "lng": -74.03885,
-      "height_in": 146,
-      "height_label": "12'2\"",
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
@@ -1215,17 +813,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w444428816",
-      "name": "South Connection Road",
-      "addr": "South Connection Road",
-      "lat": 40.8083,
-      "lng": -74.07051,
-      "height_in": 156,
-      "height_label": "13'0\"",
-      "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w458777972",
       "name": "Reid Street",
       "addr": "Reid Street",
@@ -1245,17 +832,6 @@
       "height_in": 158,
       "height_label": "13'2\"",
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w777391125",
-      "name": "Grove Street",
-      "addr": "Grove Street",
-      "lat": 40.73322,
-      "lng": -74.04086,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "layer -1",
       "source": "OpenStreetMap"
     },
     {
@@ -1303,17 +879,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1064721172",
-      "name": "Shore Road Drive",
-      "addr": "Shore Road Drive",
-      "lat": 40.63976,
-      "lng": -74.02662,
-      "height_in": 149,
-      "height_label": "12'5\"",
-      "notes": "2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1071661972",
       "name": "Stetson Street",
       "addr": "Stetson Street",
@@ -1347,17 +912,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1091982444",
-      "name": "Shore Road Drive",
-      "addr": "Shore Road Drive",
-      "lat": 40.63834,
-      "lng": -74.02453,
-      "height_in": 139,
-      "height_label": "11'7\"",
-      "notes": "2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1094580093",
       "name": "Delawanna Avenue",
       "addr": "(610)",
@@ -1366,17 +920,6 @@
       "height_in": 150,
       "height_label": "12'6\"",
       "notes": "layer -1; 1 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1112261298",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 40.85784,
-      "lng": -74.06847,
-      "height_in": 163,
-      "height_label": "13'7\"",
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
     {
@@ -1754,28 +1297,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "osm-w5674037",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.6411,
-      "lng": -74.02832,
-      "height_in": 147,
-      "height_label": "12'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w5716159",
-      "name": "Low clearance \u2014 Burgher Avenue",
-      "addr": "Burgher Avenue",
-      "lat": 40.59308,
-      "lng": -74.09283,
-      "height_in": 154,
-      "height_label": "12'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w10819198",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -1853,17 +1374,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w11632319",
-      "name": "Low clearance \u2014 Hoboken Avenue",
-      "addr": "Hoboken Avenue",
-      "lat": 40.73626,
-      "lng": -74.04314,
-      "height_in": 160,
-      "height_label": "13'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w11633572",
       "name": "Low clearance \u2014 Avenue C",
       "addr": "Avenue C",
@@ -1871,17 +1381,6 @@
       "lng": -74.12908,
       "height_in": 186,
       "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w11634131",
-      "name": "Low clearance \u2014 Johnston Avenue",
-      "addr": "Johnston Avenue",
-      "lat": 40.71028,
-      "lng": -74.05342,
-      "height_in": 164,
-      "height_label": "13'8\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2007,17 +1506,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w23198680",
-      "name": "Low clearance underpass (trunk link)",
-      "addr": "",
-      "lat": 40.696,
-      "lng": -74.10712,
-      "height_in": 172,
-      "height_label": "14'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w24156002",
       "name": "Low clearance underpass (trunk link)",
       "addr": "",
@@ -2047,17 +1535,6 @@
       "lng": -74.23135,
       "height_in": 172,
       "height_label": "14'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w26924004",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.73454,
-      "lng": -74.10147,
-      "height_in": 165,
-      "height_label": "13'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2271,17 +1748,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w42508666",
-      "name": "Low clearance \u2014 Christopher Columbus Highway (I 80)",
-      "addr": "I 80",
-      "lat": 40.86717,
-      "lng": -74.04288,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w49200097",
       "name": "Low clearance \u2014 Murray Street",
       "addr": "Murray Street",
@@ -2403,17 +1869,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w56054746",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.73453,
-      "lng": -74.1029,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w60254480",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -2432,17 +1887,6 @@
       "lng": -74.23831,
       "height_in": 160,
       "height_label": "13'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w60429496",
-      "name": "Low clearance \u2014 US 1 Truck;US 9 Truck",
-      "addr": "US 1 Truck;US 9 Truck",
-      "lat": 40.73779,
-      "lng": -74.07437,
-      "height_in": 173,
-      "height_label": "14'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2546,17 +1990,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w116570295",
-      "name": "Low clearance \u2014 NJ 3",
-      "addr": "NJ 3",
-      "lat": 40.8049,
-      "lng": -74.07278,
-      "height_in": 173,
-      "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w122625712",
       "name": "Low clearance \u2014 Goethals Bridge (I 278)",
       "addr": "I 278",
@@ -2630,17 +2063,6 @@
       "lng": -74.06355,
       "height_in": 171,
       "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w223202928",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.80392,
-      "lng": -74.07367,
-      "height_in": 172,
-      "height_label": "14'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2788,17 +2210,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w361097107",
-      "name": "Low clearance \u2014 NJ 17",
-      "addr": "NJ 17",
-      "lat": 40.86656,
-      "lng": -74.0633,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w361097112",
       "name": "Low clearance \u2014 NJ 17",
       "addr": "NJ 17",
@@ -2821,28 +2232,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w415664767",
-      "name": "Low clearance \u2014 Monmouth Street",
-      "addr": "Monmouth Street",
-      "lat": 40.73114,
-      "lng": -74.04794,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w419089647",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.74725,
-      "lng": -74.09984,
-      "height_in": 173,
-      "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w420811724",
       "name": "Low clearance \u2014 US 1;US 9",
       "addr": "US 1;US 9",
@@ -2850,17 +2239,6 @@
       "lng": -74.25523,
       "height_in": 162,
       "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w420896630",
-      "name": "Low clearance \u2014 Jersey Avenue",
-      "addr": "Jersey Avenue",
-      "lat": 40.73579,
-      "lng": -74.04384,
-      "height_in": 160,
-      "height_label": "13'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3008,39 +2386,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w511904389",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.73918,
-      "lng": -74.06497,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w531897973",
-      "name": "Low clearance \u2014 NJ 3",
-      "addr": "NJ 3",
-      "lat": 40.77808,
-      "lng": -74.04602,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w579670575",
-      "name": "Low clearance \u2014 Johnston Avenue",
-      "addr": "Johnston Avenue",
-      "lat": 40.71082,
-      "lng": -74.05505,
-      "height_in": 164,
-      "height_label": "13'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w579737142",
       "name": "Low clearance \u2014 South Essex Avenue",
       "addr": "South Essex Avenue",
@@ -3052,17 +2397,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w579899390",
-      "name": "Low clearance \u2014 Marin Boulevard",
-      "addr": "Marin Boulevard",
-      "lat": 40.73451,
-      "lng": -74.03898,
-      "height_in": 146,
-      "height_label": "12'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w582734730",
       "name": "Low clearance \u2014 US 22",
       "addr": "US 22",
@@ -3070,17 +2404,6 @@
       "lng": -74.2661,
       "height_in": 170,
       "height_label": "14'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w583640586",
-      "name": "Low clearance \u2014 Terrace Avenue (CR 55)",
-      "addr": "CR 55",
-      "lat": 40.86769,
-      "lng": -74.06618,
-      "height_in": 166,
-      "height_label": "13'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3162,17 +2485,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w739111681",
-      "name": "Low clearance \u2014 Coles Street",
-      "addr": "Coles Street",
-      "lat": 40.73192,
-      "lng": -74.04614,
-      "height_in": 153,
-      "height_label": "12'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w740194579",
       "name": "Low clearance \u2014 Broad Street (CR 509)",
       "addr": "CR 509",
@@ -3191,17 +2503,6 @@
       "lng": -74.18534,
       "height_in": 160,
       "height_label": "13'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w773625503",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 40.75894,
-      "lng": -74.02343,
-      "height_in": 138,
-      "height_label": "11'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3305,17 +2606,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w941814923",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 40.87984,
-      "lng": -74.04902,
-      "height_in": 98,
-      "height_label": "8'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w954563802",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -3323,17 +2613,6 @@
       "lng": -74.14874,
       "height_in": 158,
       "height_label": "13'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w960100552",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 40.80581,
-      "lng": -74.07299,
-      "height_in": 173,
-      "height_label": "14'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -4273,17 +3552,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1069692101",
-      "name": "Low clearance \u2014 Hudson Street (CR 124)",
-      "addr": "CR 124",
-      "lat": 40.86701,
-      "lng": -74.03961,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1069693814",
       "name": "Low clearance \u2014 River Drive (CR 38)",
       "addr": "CR 38",
@@ -4614,28 +3882,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1086531001",
-      "name": "Low clearance \u2014 Christopher Columbus Highway (I 80)",
-      "addr": "I 80",
-      "lat": 40.86725,
-      "lng": -74.05004,
-      "height_in": 172,
-      "height_label": "14'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1086531993",
-      "name": "Low clearance \u2014 Christopher Columbus Highway (I 80)",
-      "addr": "I 80",
-      "lat": 40.86635,
-      "lng": -74.02267,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1086533785",
       "name": "Low clearance \u2014 Pearl Street (CR 614)",
       "addr": "CR 614",
@@ -4654,28 +3900,6 @@
       "lng": -74.31529,
       "height_in": 170,
       "height_label": "14'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1086738238",
-      "name": "Low clearance \u2014 Railroad Avenue (CR 41)",
-      "addr": "CR 41",
-      "lat": 40.86733,
-      "lng": -74.03173,
-      "height_in": 159,
-      "height_label": "13'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1086739615",
-      "name": "Low clearance \u2014 River Road (CR 41)",
-      "addr": "CR 41",
-      "lat": 40.86952,
-      "lng": -74.03179,
-      "height_in": 159,
-      "height_label": "13'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5714,17 +4938,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1233001312",
-      "name": "Low clearance \u2014 Christopher Columbus Highway (I 80)",
-      "addr": "I 80",
-      "lat": 40.86715,
-      "lng": -74.04072,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1264701691",
       "name": "Low clearance \u2014 I 278",
       "addr": "I 278",
@@ -5798,17 +5011,6 @@
       "lng": -74.15949,
       "height_in": 195,
       "height_label": "16'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1306598028",
-      "name": "Low clearance \u2014 Grove Street",
-      "addr": "Grove Street",
-      "lat": 40.73552,
-      "lng": -74.04052,
-      "height_in": 158,
-      "height_label": "13'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5901,28 +5103,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1340375991",
-      "name": "Low clearance \u2014 East 21st Street",
-      "addr": "East 21st Street",
-      "lat": 40.66081,
-      "lng": -74.11682,
-      "height_in": 132,
-      "height_label": "11'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1340376131",
-      "name": "Low clearance \u2014 East 22nd Street",
-      "addr": "East 22nd Street",
-      "lat": 40.66174,
-      "lng": -74.11604,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1341563969",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -6000,39 +5180,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1385097726",
-      "name": "Low clearance \u2014 Avenue C",
-      "addr": "Avenue C",
-      "lat": 40.68964,
-      "lng": -74.09983,
-      "height_in": 159,
-      "height_label": "13'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1385097728",
-      "name": "Low clearance \u2014 John F. Kennedy Boulevard (CR 501)",
-      "addr": "CR 501",
-      "lat": 40.69158,
-      "lng": -74.1038,
-      "height_in": 163,
-      "height_label": "13'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1385098360",
-      "name": "Low clearance \u2014 Garfield Avenue",
-      "addr": "Garfield Avenue",
-      "lat": 40.6885,
-      "lng": -74.09749,
-      "height_in": 163,
-      "height_label": "13'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1392186655",
       "name": "Low clearance \u2014 Mary Street",
       "addr": "Mary Street",
@@ -6040,17 +5187,6 @@
       "lng": -74.21172,
       "height_in": 148,
       "height_label": "12'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1416589760",
-      "name": "Low clearance \u2014 Linnet Street",
-      "addr": "Linnet Street",
-      "lat": 40.65436,
-      "lng": -74.12491,
-      "height_in": 183,
-      "height_label": "15'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -6073,28 +5209,6 @@
       "lng": -74.26679,
       "height_in": 142,
       "height_label": "11'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1479456883",
-      "name": "Low clearance \u2014 NJ 3",
-      "addr": "NJ 3",
-      "lat": 40.80593,
-      "lng": -74.07425,
-      "height_in": 173,
-      "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1479456884",
-      "name": "Low clearance \u2014 NJ 3",
-      "addr": "NJ 3",
-      "lat": 40.8066,
-      "lng": -74.07539,
-      "height_in": 173,
-      "height_label": "14'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -6128,39 +5242,6 @@
       "lng": -74.18403,
       "height_in": 170,
       "height_label": "14'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1538316633",
-      "name": "Low clearance \u2014 Canal Street",
-      "addr": "Canal Street",
-      "lat": 40.62673,
-      "lng": -74.075,
-      "height_in": 155,
-      "height_label": "12'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1538316635",
-      "name": "Low clearance \u2014 Thompson Street",
-      "addr": "Thompson Street",
-      "lat": 40.62605,
-      "lng": -74.07478,
-      "height_in": 155,
-      "height_label": "12'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1538334641",
-      "name": "Low clearance \u2014 Wave Street",
-      "addr": "Wave Street",
-      "lat": 40.62973,
-      "lng": -74.07533,
-      "height_in": 168,
-      "height_label": "14'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

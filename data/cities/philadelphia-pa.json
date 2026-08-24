@@ -1117,17 +1117,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-34-4500001",
-      "name": "Low on-bridge clearance: US 322",
-      "addr": "US 322",
-      "lat": 39.84231,
-      "lng": -75.38493,
-      "height_in": 176,
-      "height_label": "14'8\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1974",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "nbi-34-M035530",
       "name": "Low on-bridge clearance: NJ TURNPIKE",
       "addr": "NJ TURNPIKE",

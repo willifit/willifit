@@ -187,7 +187,12 @@ out center tags;
 # NOTE: building=parking is unioned in because many real decks are mapped as
 # a parking BUILDING without the amenity tag — those were invisible to us.
 # Overpass dedupes elements matching both clauses; merge_into_city dedupes
-# against existing entries by id + 75m proximity.
+# against existing entries by id + 75m proximity WITHIN the file, and
+# cross-city: a candidate is skipped when its id already lives in another
+# city's file, or when a different index.json city center is nearer (see
+# _belongs_elsewhere). Adjacent-metro bboxes overlap (Portland/Vancouver,
+# NYC/Jersey City/Newark) — without this, the same garage was imported into
+# multiple city files and paid verification ran on each copy.
 
 
 DRIVABLE_HIGHWAYS = {
@@ -553,13 +558,64 @@ def normalize_bridge_element(el: dict) -> Optional[dict]:
     }
 
 
+_INDEX_CITIES: Optional[list] = None
+_GLOBAL_ID_OWNER: Optional[dict] = None
+
+
+def _index_cities() -> list:
+    global _INDEX_CITIES
+    if _INDEX_CITIES is None:
+        _INDEX_CITIES = json.loads(INDEX_PATH.read_text())
+    return _INDEX_CITIES
+
+
+def _global_id_owner() -> dict:
+    """id → owning city slug, across every section of every city file."""
+    global _GLOBAL_ID_OWNER
+    if _GLOBAL_ID_OWNER is None:
+        _GLOBAL_ID_OWNER = {}
+        for path in CITIES_DIR.glob("*.json"):
+            data = json.loads(path.read_text())
+            for section in ("garages", "tunnels", "bridges"):
+                for e in data.get(section, []):
+                    if e.get("id"):
+                        _GLOBAL_ID_OWNER.setdefault(e["id"], path.stem)
+    return _GLOBAL_ID_OWNER
+
+
+def _belongs_elsewhere(cand: dict, city_slug: str) -> Optional[str]:
+    """Cross-city guard. Returns the slug of the city this candidate belongs
+    to when that is NOT the city being imported, else None.
+
+    Canonical city = the index.json city whose center is nearest — the same
+    rule scripts/dedupe_cross_city.py used to collapse historical duplicates.
+    We only reject when the nearer city's own import bbox would capture the
+    candidate, so an entry outside everyone else's reach still lands in the
+    city whose import found it instead of being orphaned.
+    """
+    best, best_d = None, float("inf")
+    for c in _index_cities():
+        d = haversine_m(cand["lat"], cand["lng"], c["lat"], c["lng"])
+        if d < best_d:
+            best_d, best = d, c
+    if best is None or best["slug"] == city_slug:
+        return None
+    r = CITY_RADIUS_DEG.get(best.get("zoom", 12), 0.15)
+    if abs(cand["lat"] - best["lat"]) <= r and abs(cand["lng"] - best["lng"]) <= r:
+        return best["slug"]
+    return None
+
+
 def merge_into_city(
     city_slug: str,
     candidates: list,
     key: str = "garages",
     dry_run: bool = False,
-) -> tuple[int, int, int]:
-    """Merge candidates into data[key]. Returns (added, skipped_dupe, existing_count)."""
+) -> tuple[int, int, int, int]:
+    """Merge candidates into data[key].
+
+    Returns (added, skipped_dupe, skipped_other_city, existing_count).
+    """
     city_path = CITIES_DIR / f"{city_slug}.json"
     if city_path.exists():
         data = json.loads(city_path.read_text())
@@ -572,10 +628,21 @@ def merge_into_city(
 
     added = 0
     skipped_dupe = 0
+    skipped_other_city = 0
 
     for cand in candidates:
         if cand["id"] in existing_ids:
             skipped_dupe += 1
+            continue
+        # Cross-city: this exact element already lives in another city's file
+        # (covers cities added to the index after their neighbors imported).
+        owner = _global_id_owner().get(cand["id"])
+        if owner is not None and owner != city_slug:
+            skipped_other_city += 1
+            continue
+        # Cross-city: a different city center is nearer — its import owns this.
+        if _belongs_elsewhere(cand, city_slug):
+            skipped_other_city += 1
             continue
         # Proximity dedupe — don't add if an item within DEDUPE_METERS exists
         dupe = False
@@ -589,6 +656,7 @@ def merge_into_city(
 
         arr.append(cand)
         existing_ids.add(cand["id"])
+        _global_id_owner()[cand["id"]] = city_slug
         added += 1
 
     if not dry_run and added > 0:
@@ -597,7 +665,7 @@ def merge_into_city(
         if key == "garages":
             update_index_count(city_slug, len(arr))
 
-    return added, skipped_dupe, existing_count
+    return added, skipped_dupe, skipped_other_city, existing_count
 
 
 def update_index_count(slug: str, new_count: int) -> None:
@@ -634,10 +702,10 @@ def _run_pass(
     with_height = sum(1 for c in candidates if c.get("height_in") is not None)
     print(f"    OSM returned {len(elements)}; normalized {len(candidates)} ({with_height} with height)")
 
-    added, dupes, existing = merge_into_city(slug, candidates, key=key, dry_run=dry_run)
+    added, dupes, other_city, existing = merge_into_city(slug, candidates, key=key, dry_run=dry_run)
     tag = "[DRY-RUN] would add" if dry_run else "Added"
-    print(f"    {tag}: {added}  (dupes: {dupes}; existing: {existing})")
-    return {"added": added, "dupes": dupes, "existing_before": existing}
+    print(f"    {tag}: {added}  (dupes: {dupes}; other-city: {other_city}; existing: {existing})")
+    return {"added": added, "dupes": dupes, "other_city": other_city, "existing_before": existing}
 
 
 def import_city(
@@ -679,6 +747,7 @@ def import_city(
     total_added = sum(summary.get(t, {}).get("added", 0) for t in ("garages", "tunnels", "bridges"))
     summary["added"] = total_added
     summary["dupes"] = sum(summary.get(t, {}).get("dupes", 0) for t in ("garages", "tunnels", "bridges"))
+    summary["other_city"] = sum(summary.get(t, {}).get("other_city", 0) for t in ("garages", "tunnels", "bridges"))
     return summary
 
 
@@ -753,10 +822,12 @@ def main():
     by_type = {"garages": 0, "tunnels": 0, "bridges": 0}
     total_added = 0
     total_dupes = 0
+    total_other_city = 0
     errors = []
     for s in summary:
         total_added += s.get("added", 0)
         total_dupes += s.get("dupes", 0)
+        total_other_city += s.get("other_city", 0)
         for t in by_type:
             sub = s.get(t) or {}
             by_type[t] += sub.get("added", 0)
@@ -770,6 +841,7 @@ def main():
     print(f"  tunnels: {by_type['tunnels']}")
     print(f"  bridges: {by_type['bridges']}")
     print(f"Total dupes:      {total_dupes}")
+    print(f"Other-city skips: {total_other_city}")
     if errors:
         print(f"Errors:           {len(errors)}")
         for slug, t, err in errors:

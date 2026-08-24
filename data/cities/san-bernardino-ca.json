@@ -85,20 +85,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w190379557",
-      "name": "Parking Structure",
-      "addr": "",
-      "lat": 33.97265,
-      "lng": -117.38251,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w205590363",
       "name": "City Hall Public Parking Sctructure",
       "addr": "",
@@ -109,7 +95,8 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-pano"
     },
     {
@@ -123,7 +110,8 @@
       "oversized": false,
       "notes": "free; hrs: 24/7",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-pano"
     },
     {
@@ -137,7 +125,8 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-pano"
     },
     {
@@ -151,64 +140,9 @@
       "oversized": false,
       "notes": "277 spaces; free",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w913950658",
-      "name": "City of Riverside",
-      "addr": "",
-      "lat": 33.9804,
-      "lng": -117.37498,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w913950665",
-      "name": "City of Riverside",
-      "addr": "3737 Orange Street",
-      "lat": 33.98204,
-      "lng": -117.37328,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w924028735",
-      "name": "Kaiser Permanente",
-      "addr": "",
-      "lat": 34.07285,
-      "lng": -117.42976,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w924028737",
-      "name": "Fontana Medical Center",
-      "addr": "",
-      "lat": 34.07347,
-      "lng": -117.43186,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
-      "sv_status": "no-pano"
     },
     {
       "id": "osm-w977758301",
@@ -221,7 +155,8 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
     },
     {
@@ -235,7 +170,7 @@
       "oversized": false,
       "notes": "7 spaces",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
     },
     {
@@ -249,7 +184,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
     },
     {
@@ -263,7 +198,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
     },
     {
@@ -277,7 +212,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
     },
     {
@@ -291,7 +226,8 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-03",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
       "sv_status": "no-sign"
     }
   ],
@@ -319,17 +255,6 @@
       "height_label": "14'5\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1928",
       "source": "FHWA National Bridge Inventory"
-    },
-    {
-      "id": "osm-w7003542",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.99052,
-      "lng": -117.35807,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
     },
     {
       "id": "osm-w7226252",
@@ -372,28 +297,6 @@
       "lng": -117.30426,
       "height_in": 182,
       "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w35126659",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 34.00071,
-      "lng": -117.35206,
-      "height_in": 181,
-      "height_label": "15'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w35379066",
-      "name": "Low clearance \u2014 Riverside Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.99331,
-      "lng": -117.35718,
-      "height_in": 184,
-      "height_label": "15'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -442,39 +345,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w97530620",
-      "name": "Low clearance \u2014 Riverside Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.95983,
-      "lng": -117.37793,
-      "height_in": 181,
-      "height_label": "15'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w97530623",
-      "name": "Low clearance \u2014 Riverside Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.96904,
-      "lng": -117.37642,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w97530625",
-      "name": "Low clearance \u2014 Riverside Freeway (CA 91)",
-      "addr": "CA 91",
-      "lat": 33.9737,
-      "lng": -117.37316,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w98130399",
       "name": "Low clearance \u2014 Glen Helen Parkway",
       "addr": "Glen Helen Parkway",
@@ -486,28 +356,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w128155580",
-      "name": "Low clearance \u2014 Pomona Freeway (CA 60)",
-      "addr": "CA 60",
-      "lat": 34.00528,
-      "lng": -117.41315,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w128155593",
-      "name": "Low clearance \u2014 Pomona Freeway (CA 60)",
-      "addr": "CA 60",
-      "lat": 34.00449,
-      "lng": -117.40049,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w181467814",
       "name": "Low clearance \u2014 South Hunts Lane",
       "addr": "South Hunts Lane",
@@ -515,61 +363,6 @@
       "lng": -117.2875,
       "height_in": 182,
       "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w456580804",
-      "name": "Low clearance \u2014 Central Avenue",
-      "addr": "Central Avenue",
-      "lat": 33.9589,
-      "lng": -117.30955,
-      "height_in": 179,
-      "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w474788517",
-      "name": "Low clearance \u2014 Jurupa Avenue",
-      "addr": "Jurupa Avenue",
-      "lat": 33.9626,
-      "lng": -117.42877,
-      "height_in": 198,
-      "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w474788519",
-      "name": "Low clearance \u2014 Jurupa Avenue",
-      "addr": "Jurupa Avenue",
-      "lat": 33.96271,
-      "lng": -117.43007,
-      "height_in": 198,
-      "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w474799757",
-      "name": "Low clearance \u2014 Valley Way (CA 81 Unco)",
-      "addr": "CA 81 Unco",
-      "lat": 34.01162,
-      "lng": -117.4341,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w474889129",
-      "name": "Low clearance \u2014 University Avenue (CA 60 BUS;CA 81 Unco)",
-      "addr": "CA 60 BUS;CA 81 Unco",
-      "lat": 33.98014,
-      "lng": -117.3707,
-      "height_in": 180,
-      "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -592,28 +385,6 @@
       "lng": -117.22626,
       "height_in": 179,
       "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w590040254",
-      "name": "Low clearance \u2014 Pacific Avenue",
-      "addr": "Pacific Avenue",
-      "lat": 34.00737,
-      "lng": -117.41989,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w611302540",
-      "name": "Low clearance \u2014 Market Street",
-      "addr": "Market Street",
-      "lat": 34.0009,
-      "lng": -117.37515,
-      "height_in": 182,
-      "height_label": "15'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -662,17 +433,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w963888302",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 34.04291,
-      "lng": -117.33125,
-      "height_in": 147,
-      "height_label": "12'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w997053207",
       "name": "Low clearance \u2014 Foothill Freeway (CA 210)",
       "addr": "CA 210",
@@ -695,28 +455,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1030055497",
-      "name": "Low clearance \u2014 Riverside Freeway (I 215)",
-      "addr": "I 215",
-      "lat": 34.00151,
-      "lng": -117.35174,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1030317624",
-      "name": "Low clearance \u2014 Riverside Freeway (I 215)",
-      "addr": "I 215",
-      "lat": 34.02448,
-      "lng": -117.3348,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1031555133",
       "name": "Low clearance \u2014 Foothill Freeway (CA 210)",
       "addr": "CA 210",
@@ -724,17 +462,6 @@
       "lng": -117.30851,
       "height_in": 183,
       "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1053888213",
-      "name": "Low clearance \u2014 Market Street",
-      "addr": "Market Street",
-      "lat": 34.00029,
-      "lng": -117.37466,
-      "height_in": 182,
-      "height_label": "15'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -843,17 +570,6 @@
       "addr": "New York Street",
       "lat": 34.06335,
       "lng": -117.1958,
-      "height_in": 179,
-      "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1366413658",
-      "name": "Low clearance \u2014 Central Avenue",
-      "addr": "Central Avenue",
-      "lat": 33.95828,
-      "lng": -117.31039,
       "height_in": 179,
       "height_label": "14'11\"",
       "notes": "Underpass / low clearance",

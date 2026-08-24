@@ -685,13 +685,14 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "paid OSM-imported 19'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano",
       "entrance_lat": 33.4439739,
       "entrance_lng": -112.0675256,
-      "entrance_source": "OSM parking_entrance node 2980250897",
-      "sv_checked": "2026-05-01",
-      "sv_status": "no-pano"
+      "entrance_source": "OSM parking_entrance node 2980250897"
     },
     {
       "id": "osm-w109924630",
@@ -717,8 +718,11 @@
       "height_in": 84,
       "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap. OSM-imported 20'0\" was building height, not clearance.\nVerified 2026-05-01 from sign reading \"7' 0\"\" (pano O6unCJriY9F6vtRDBkYfsg, heading 270\u00b0, Claude confidence high [+1 more section(s)])",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano",
       "entrance_lat": 33.4354412,
       "entrance_lng": -111.9961243,
       "entrance_source": "OSM parking_entrance node 6472058149",
@@ -830,148 +834,11 @@
       "source": "OpenStreetMap (surface lot)"
     },
     {
-      "id": "osm-w28740179",
-      "name": "Packard South Parking Structure",
-      "addr": "",
-      "lat": 33.42548,
-      "lng": -111.92873,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w28769223",
-      "name": "Stadium Parking Structure",
-      "addr": "",
-      "lat": 33.4241,
-      "lng": -111.93292,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w28822327",
-      "name": "10th St. Parking Structure",
-      "addr": "",
-      "lat": 33.4202,
-      "lng": -111.93777,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-24 from sign reading \"Clearance 7'-0\"\" (pano W8Rn9Ceeip7h-AwXoQ2aLw, heading 125\u00b0, Claude confidence high)",
-      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
-      "structure_type": "structure",
-      "verified_on": "2026-08-24",
-      "sv_checked": "2026-08-24",
-      "pano_id": "W8Rn9Ceeip7h-AwXoQ2aLw",
-      "pano_heading": 125
-    },
-    {
-      "id": "osm-w28878477",
-      "name": "Rural Road Parking Structure",
-      "addr": "",
-      "lat": 33.41766,
-      "lng": -111.92723,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w29736099",
-      "name": "Tyler Street Parking Structure",
-      "addr": "",
-      "lat": 33.42073,
-      "lng": -111.92825,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w30024726",
-      "name": "Garage A",
-      "addr": "",
-      "lat": 33.43543,
-      "lng": -111.98394,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w30024785",
-      "name": "Garage B",
-      "addr": "",
-      "lat": 33.43448,
-      "lng": -111.98325,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w30169925",
       "name": "Terminal 2 Garage",
       "addr": "",
       "lat": 33.43722,
       "lng": -112.01389,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w30407351",
-      "name": "Fulton Center Parking Structure",
-      "addr": "",
-      "lat": 33.42302,
-      "lng": -111.93431,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w30420080",
-      "name": "University Towers Parking Structure",
-      "addr": "",
-      "lat": 33.42473,
-      "lng": -111.93613,
       "height_in": null,
       "height_label": null,
       "oversized": false,
@@ -1147,21 +1014,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w65015456",
-      "name": "Apache Parking Structure",
-      "addr": "401 East Lemon Street",
-      "lat": 33.41549,
-      "lng": -111.93403,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w97516819",
       "name": "5th Avenue Garage",
       "addr": "",
@@ -1267,22 +1119,6 @@
       "sv_status": "no-pano"
     },
     {
-      "id": "osm-w157628483",
-      "name": "Centerpoint",
-      "addr": "",
-      "lat": 33.42302,
-      "lng": -111.94196,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "website": "https://www.asu.edu/tour/tempe/ctrpt.html",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w161917240",
       "name": "Terminal 3 Garage",
       "addr": "",
@@ -1296,66 +1132,6 @@
       "structure_type": "structure",
       "sv_checked": "2026-08-24",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w199128921",
-      "name": "Brown Garage",
-      "addr": "",
-      "lat": 33.50458,
-      "lng": -111.9286,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w199128922",
-      "name": "Blue Garage",
-      "addr": "",
-      "lat": 33.50126,
-      "lng": -111.92959,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "2200 spaces; free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w199128924",
-      "name": "Green Garage",
-      "addr": "",
-      "lat": 33.50283,
-      "lng": -111.93009,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w199128925",
-      "name": "Purple Garage",
-      "addr": "",
-      "lat": 33.50515,
-      "lng": -111.93201,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "400 spaces; free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
     },
     {
       "id": "osm-w209130168",
@@ -1402,21 +1178,6 @@
       ]
     },
     {
-      "id": "osm-w297777595",
-      "name": "Patient Parking Garage",
-      "addr": "",
-      "lat": 33.49019,
-      "lng": -111.92423,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w306212449",
       "name": "Halo Parking Garage",
       "addr": "",
@@ -1426,51 +1187,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "1,380 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w325261960",
-      "name": "Old Town Public Parking Garage",
-      "addr": "",
-      "lat": 33.49173,
-      "lng": -111.92509,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "224 spaces; free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w325264379",
-      "name": "Main Street Public Parking Garage",
-      "addr": "",
-      "lat": 33.49242,
-      "lng": -111.92908,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "130 spaces; free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w325266674",
-      "name": "3rd Ave Public Parking Garage",
-      "addr": "7143 East 3rd Avenue",
-      "lat": 33.49732,
-      "lng": -111.92696,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "409 spaces; free",
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "sv_checked": "2026-08-24",
@@ -1535,21 +1251,6 @@
       "structure_type": "structure",
       "sv_checked": "2026-08-24",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w504281745",
-      "name": "Hayden Ferry Lakeside Parking Garage",
-      "addr": "68 East Rio Salado Parkway",
-      "lat": 33.43056,
-      "lng": -111.93846,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
     },
     {
       "id": "osm-w530013169",
@@ -1639,65 +1340,6 @@
       "structure_type": "structure",
       "sv_checked": "2026-08-24",
       "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w909831582",
-      "name": "Novus Parking Structure",
-      "addr": "747 South Packard Drive",
-      "lat": 33.42288,
-      "lng": -111.92855,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w1287762665",
-      "name": "Trailhead Street Parking",
-      "addr": "",
-      "lat": 33.50906,
-      "lng": -111.94338,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w1327767000",
-      "name": "Mill Avenue Parking Structure",
-      "addr": "951 South Mill Avenue",
-      "lat": 33.41979,
-      "lng": -111.93911,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid; covered",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-r19318635",
-      "name": "PreFlight Airport Parking PHX",
-      "addr": "",
-      "lat": 33.44997,
-      "lng": -111.98865,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-08-24",
-      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -1713,17 +1355,6 @@
       "source": "ADOT",
       "sv_checked": "2026-08-24",
       "sv_status": "no-sign"
-    },
-    {
-      "id": "osm-w492214752",
-      "name": "North Drinkwater Boulevard",
-      "addr": "North Drinkwater Boulevard",
-      "lat": 33.49935,
-      "lng": -111.92494,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "2 lanes",
-      "source": "OpenStreetMap"
     },
     {
       "id": "osm-w568378658",
@@ -1893,17 +1524,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w23617922",
-      "name": "Low clearance \u2014 North Lake View Road",
-      "addr": "North Lake View Road",
-      "lat": 33.43669,
-      "lng": -111.94155,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w23647674",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -1911,39 +1531,6 @@
       "lng": -111.97788,
       "height_in": 200,
       "height_label": "16'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w23647683",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.42244,
-      "lng": -111.97829,
-      "height_in": 200,
-      "height_label": "16'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w23647827",
-      "name": "Low clearance underpass (primary link)",
-      "addr": "",
-      "lat": 33.45834,
-      "lng": -111.98787,
-      "height_in": 187,
-      "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w23647835",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.45932,
-      "lng": -111.98655,
-      "height_in": 187,
-      "height_label": "15'7\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2058,17 +1645,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w30116970",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.44781,
-      "lng": -111.98152,
-      "height_in": 176,
-      "height_label": "14'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w30123385",
       "name": "Low clearance \u2014 North 7th Avenue",
       "addr": "North 7th Avenue",
@@ -2124,39 +1700,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w105563957",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.43544,
-      "lng": -111.98187,
-      "height_in": 208,
-      "height_label": "17'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w106183200",
-      "name": "Low clearance \u2014 Hohokam Expressway (AZ 143)",
-      "addr": "AZ 143",
-      "lat": 33.45609,
-      "lng": -111.98287,
-      "height_in": 191,
-      "height_label": "15'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w106183219",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.45831,
-      "lng": -111.98329,
-      "height_in": 191,
-      "height_label": "15'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w109819780",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2179,17 +1722,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w137491639",
-      "name": "Low clearance \u2014 East Sky Harbor Boulevard",
-      "addr": "East Sky Harbor Boulevard",
-      "lat": 33.43658,
-      "lng": -111.9816,
-      "height_in": 194,
-      "height_label": "16'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w142438897",
       "name": "Low clearance \u2014 South 1st Avenue",
       "addr": "South 1st Avenue",
@@ -2208,17 +1740,6 @@
       "lng": -112.07529,
       "height_in": 132,
       "height_label": "11'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w148624274",
-      "name": "Low clearance \u2014 West Rio Salado Parkway",
-      "addr": "West Rio Salado Parkway",
-      "lat": 33.43143,
-      "lng": -111.94447,
-      "height_in": 196,
-      "height_label": "16'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2267,17 +1788,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w184111089",
-      "name": "Low clearance \u2014 Red Mountain Freeway",
-      "addr": "Red Mountain Freeway",
-      "lat": 33.45816,
-      "lng": -111.98935,
-      "height_in": 192,
-      "height_label": "16'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w196248323",
       "name": "Low clearance \u2014 East Sky Harbor Boulevard",
       "addr": "East Sky Harbor Boulevard",
@@ -2300,17 +1810,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w225509433",
-      "name": "Low clearance \u2014 Hohokam Expressway (AZ 143)",
-      "addr": "AZ 143",
-      "lat": 33.45759,
-      "lng": -111.98291,
-      "height_in": 191,
-      "height_label": "15'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w311051569",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -2320,20 +1819,6 @@
       "height_label": "16'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w314021946",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.43872,
-      "lng": -111.98141,
-      "height_in": 194,
-      "height_label": "16'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap",
-      "entrance_lat": 33.4388807,
-      "entrance_lng": -111.9796837,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
     },
     {
       "id": "osm-w325755182",
@@ -2358,83 +1843,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w391372634",
-      "name": "Low clearance \u2014 Tempe Town Lake Parking Mill Ave Bridge",
-      "addr": "Tempe Town Lake Parking Mill Ave Bridge",
-      "lat": 33.43547,
-      "lng": -111.94165,
-      "height_in": 152,
-      "height_label": "12'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w395490719",
-      "name": "Low clearance \u2014 South Mill Avenue",
-      "addr": "South Mill Avenue",
-      "lat": 33.41101,
-      "lng": -111.9398,
-      "height_in": 182,
-      "height_label": "15'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w406921682",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.45851,
-      "lng": -111.98708,
-      "height_in": 187,
-      "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w408592884",
-      "name": "Low clearance \u2014 East Washington Street",
-      "addr": "East Washington Street",
-      "lat": 33.44689,
-      "lng": -111.97522,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w436788202",
-      "name": "Low clearance \u2014 East Washington Street",
-      "addr": "East Washington Street",
-      "lat": 33.44573,
-      "lng": -111.96533,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w436788295",
-      "name": "Low clearance \u2014 East Washington Street",
-      "addr": "East Washington Street",
-      "lat": 33.44609,
-      "lng": -111.96854,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w436791474",
-      "name": "Low clearance \u2014 North Goldwater Boulevard",
-      "addr": "North Goldwater Boulevard",
-      "lat": 33.50379,
-      "lng": -111.93059,
-      "height_in": 199,
-      "height_label": "16'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w436795277",
       "name": "Low clearance \u2014 East Washington Street",
       "addr": "East Washington Street",
@@ -2442,17 +1850,6 @@
       "lng": -112.0669,
       "height_in": 199,
       "height_label": "16'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w436932677",
-      "name": "Low clearance \u2014 North Drinkwater Boulevard",
-      "addr": "North Drinkwater Boulevard",
-      "lat": 33.49927,
-      "lng": -111.92479,
-      "height_in": 183,
-      "height_label": "15'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2501,17 +1898,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w445427208",
-      "name": "Low clearance underpass (primary link)",
-      "addr": "",
-      "lat": 33.45936,
-      "lng": -111.98744,
-      "height_in": 187,
-      "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w455433798",
       "name": "Low clearance \u2014 South 19th Avenue",
       "addr": "South 19th Avenue",
@@ -2552,17 +1938,6 @@
       "lng": -112.10947,
       "height_in": 204,
       "height_label": "17'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w533136618",
-      "name": "Low clearance \u2014 Red Mountain Freeway",
-      "addr": "Red Mountain Freeway",
-      "lat": 33.45937,
-      "lng": -111.99177,
-      "height_in": 192,
-      "height_label": "16'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2666,17 +2041,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w758464978",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.51225,
-      "lng": -112.01326,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w771535118",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2688,17 +2052,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w818672452",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.51063,
-      "lng": -112.01352,
-      "height_in": 113,
-      "height_label": "9'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w860929810",
       "name": "Low clearance \u2014 East Osborn Road",
       "addr": "East Osborn Road",
@@ -2706,17 +2059,6 @@
       "lng": -112.04209,
       "height_in": 216,
       "height_label": "18'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w867645130",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.50326,
-      "lng": -111.92934,
-      "height_in": 144,
-      "height_label": "12'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2798,39 +2140,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1052600953",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 33.43452,
-      "lng": -111.93149,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1068094238",
-      "name": "Low clearance \u2014 North College Avenue",
-      "addr": "North College Avenue",
-      "lat": 33.43592,
-      "lng": -111.93033,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1138104246",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.44731,
-      "lng": -111.98211,
-      "height_in": 176,
-      "height_label": "14'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1331959084",
       "name": "Low clearance \u2014 West Madison Street",
       "addr": "West Madison Street",
@@ -2838,72 +2147,6 @@
       "lng": -112.08253,
       "height_in": 167,
       "height_label": "13'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1332891311",
-      "name": "Low clearance \u2014 North 48th Street",
-      "addr": "North 48th Street",
-      "lat": 33.45729,
-      "lng": -111.97846,
-      "height_in": 186,
-      "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1332893414",
-      "name": "Low clearance \u2014 North Lake View Road",
-      "addr": "North Lake View Road",
-      "lat": 33.435,
-      "lng": -111.94268,
-      "height_in": 161,
-      "height_label": "13'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1334224285",
-      "name": "Low clearance \u2014 East Sky Harbor Boulevard",
-      "addr": "East Sky Harbor Boulevard",
-      "lat": 33.4364,
-      "lng": -111.98348,
-      "height_in": 208,
-      "height_label": "17'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1334577717",
-      "name": "Low clearance \u2014 West Rio Salado Parkway",
-      "addr": "West Rio Salado Parkway",
-      "lat": 33.43142,
-      "lng": -111.94346,
-      "height_in": 196,
-      "height_label": "16'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1335205757",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 33.45776,
-      "lng": -111.98694,
-      "height_in": 187,
-      "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1342981618",
-      "name": "Low clearance \u2014 East Rancho Vista Drive",
-      "addr": "East Rancho Vista Drive",
-      "lat": 33.50772,
-      "lng": -111.9281,
-      "height_in": 163,
-      "height_label": "13'7\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

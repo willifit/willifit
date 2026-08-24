@@ -347,7 +347,9 @@
       "height_label": "8'2\"",
       "oversized": false,
       "notes": "755 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "website": "http://www1.umn.edu/pts/park/facilities/gortner.html"
     },
     {
       "id": "osm-w45528479",
@@ -377,7 +379,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 44.9763518,
       "entrance_lng": -93.2339418,
-      "entrance_source": "OSM parking_entrance node 322722622"
+      "entrance_source": "OSM parking_entrance node 322722622",
+      "structure_type": "structure",
+      "website": "http://www1.umn.edu/pts/park/facilities/northropramp.html"
     },
     {
       "id": "osm-w153930019",
@@ -419,7 +423,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 44.9763518,
       "entrance_lng": -93.2339418,
-      "entrance_source": "OSM parking_entrance node 322722622"
+      "entrance_source": "OSM parking_entrance node 322722622",
+      "structure_type": "structure",
+      "website": "http://www1.umn.edu/pts/park/facilities/nolteramp.html"
     },
     {
       "id": "osm-w284697367",
@@ -434,7 +440,9 @@
       "source": "OpenStreetMap",
       "entrance_lat": 44.9763518,
       "entrance_lng": -93.2339418,
-      "entrance_source": "OSM parking_entrance node 322722622"
+      "entrance_source": "OSM parking_entrance node 322722622",
+      "structure_type": "structure",
+      "website": "http://www1.umn.edu/pts/park/facilities/armoryramp.html"
     },
     {
       "id": "osm-w385624011",
@@ -477,7 +485,7 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "http://www1.umn.edu/pts/park/facilities/univave.html",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -493,7 +501,7 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "http://www1.umn.edu/pts/park/facilities/oakstreet.html",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -631,7 +639,7 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "http://www1.umn.edu/pts/park/facilities/washave.html",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -675,7 +683,7 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -705,7 +713,7 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -751,7 +759,7 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "http://www1.umn.edu/pts/park/facilities/forthstramp.html",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -856,7 +864,7 @@
       "notes": "free",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -920,21 +928,6 @@
       "sv_status": "no-pano"
     },
     {
-      "id": "osm-w69201801",
-      "name": "Quick-Ride Ramp",
-      "addr": "",
-      "lat": 44.87551,
-      "lng": -93.19705,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w70079205",
       "name": "Anderson Parking Facility",
       "addr": "",
@@ -946,23 +939,8 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w79236555",
-      "name": "Grand Place",
-      "addr": "870 Grand Avenue",
-      "lat": 44.93968,
-      "lng": -93.13704,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
     },
     {
       "id": "osm-w80313507",
@@ -1111,7 +1089,7 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -1126,7 +1104,7 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -1141,7 +1119,7 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -1156,7 +1134,7 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -1243,7 +1221,7 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "http://www1.umn.edu/pts/park/facilities/errramp.html",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -1259,7 +1237,7 @@
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "website": "http://www1.umn.edu/pts/park/facilities/weisman.html",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -1274,7 +1252,7 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -1348,7 +1326,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -1362,7 +1340,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -1391,7 +1369,7 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-sign"
     },
     {
@@ -1406,7 +1384,7 @@
       "notes": "free",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "sv_checked": "2026-07-31",
+      "sv_checked": "2026-08-23",
       "sv_status": "no-pano"
     },
     {
@@ -1595,17 +1573,6 @@
       "height_in": 92,
       "height_label": "7'8\"",
       "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w964426084",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 44.9404,
-      "lng": -93.17789,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
     },
     {
@@ -1837,28 +1804,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w18220305",
-      "name": "Low clearance \u2014 Victoria Street North",
-      "addr": "Victoria Street North",
-      "lat": 44.93227,
-      "lng": -93.1364,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w29362585",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 44.8777,
-      "lng": -93.19407,
-      "height_in": 140,
-      "height_label": "11'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w132777537",
       "name": "Low clearance \u2014 West Broadway Avenue (CR 66)",
       "addr": "CR 66",
@@ -2035,17 +1980,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w835987886",
-      "name": "Low clearance \u2014 Victoria Street North",
-      "addr": "Victoria Street North",
-      "lat": 44.93135,
-      "lng": -93.1364,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w848592463",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2152,61 +2086,6 @@
       "lng": -93.3468,
       "height_in": 171,
       "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1267512488",
-      "name": "Low clearance \u2014 Lilydale Road (CR 45)",
-      "addr": "CR 45",
-      "lat": 44.90495,
-      "lng": -93.13527,
-      "height_in": 135,
-      "height_label": "11'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1267513153",
-      "name": "Low clearance \u2014 Osceola Avenue",
-      "addr": "Osceola Avenue",
-      "lat": 44.93256,
-      "lng": -93.12823,
-      "height_in": 145,
-      "height_label": "12'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1267514283",
-      "name": "Low clearance \u2014 Maryland Avenue West (CH 31)",
-      "addr": "CH 31",
-      "lat": 44.97737,
-      "lng": -93.1233,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1267514508",
-      "name": "Low clearance \u2014 Dale Street North (CR 53)",
-      "addr": "CR 53",
-      "lat": 44.97609,
-      "lng": -93.12636,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1267516118",
-      "name": "Low clearance \u2014 Lexington Parkway North (CR 51)",
-      "addr": "CR 51",
-      "lat": 44.97355,
-      "lng": -93.14659,
-      "height_in": 112,
-      "height_label": "9'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

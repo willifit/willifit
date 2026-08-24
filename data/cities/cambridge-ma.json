@@ -1381,22 +1381,6 @@
       "sv_status": "no-pano"
     },
     {
-      "id": "osm-w767990685",
-      "name": "Underground at Ink Block Parking",
-      "addr": "",
-      "lat": 42.3448,
-      "lng": -71.06126,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "175 spaces; paid; covered",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "website": "https://www.lazparking.com/local/boston-ma/lot-5",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
       "id": "osm-w813954295",
       "name": "Lansdowne Garage",
       "addr": "49 Lansdowne Street",
@@ -2666,17 +2650,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "osm-w8615882",
-      "name": "Low clearance \u2014 Museum Way",
-      "addr": "Museum Way",
-      "lat": 42.36932,
-      "lng": -71.07185,
-      "height_in": 187,
-      "height_label": "15'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w8615988",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2688,39 +2661,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w8617276",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.40362,
-      "lng": -71.03348,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8637722",
-      "name": "Low clearance \u2014 David G. Mugar Way (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.35572,
-      "lng": -71.07294,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8637927",
-      "name": "Low clearance \u2014 MA 3",
-      "addr": "MA 3",
-      "lat": 42.36626,
-      "lng": -71.06696,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w8639334",
       "name": "Low clearance \u2014 Soldiers Field Road",
       "addr": "Soldiers Field Road",
@@ -2728,72 +2668,6 @@
       "lng": -71.14016,
       "height_in": 126,
       "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8643900",
-      "name": "Low clearance underpass (primary link)",
-      "addr": "",
-      "lat": 42.34777,
-      "lng": -71.04333,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8644232",
-      "name": "Low clearance underpass (motorway)",
-      "addr": "",
-      "lat": 42.36513,
-      "lng": -71.06934,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8644346",
-      "name": "Low clearance \u2014 General Casimir Pulaski Skyway (I 93;US 1;MA 3)",
-      "addr": "I 93;US 1;MA 3",
-      "lat": 42.33053,
-      "lng": -71.06146,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8644849",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.34786,
-      "lng": -71.05911,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8644976",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.36365,
-      "lng": -71.0575,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8645212",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.34799,
-      "lng": -71.04595,
-      "height_in": 165,
-      "height_label": "13'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2820,127 +2694,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w8646897",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.34825,
-      "lng": -71.04402,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8647116",
-      "name": "Low clearance \u2014 Foundry Street",
-      "addr": "Foundry Street",
-      "lat": 42.34393,
-      "lng": -71.05782,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8647721",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35371,
-      "lng": -71.05487,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8648601",
-      "name": "Low clearance \u2014 Science Park",
-      "addr": "Science Park",
-      "lat": 42.36832,
-      "lng": -71.07178,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8648658",
-      "name": "Low clearance \u2014 Storrow Drive (MA 3;MA 28)",
-      "addr": "MA 3;MA 28",
-      "lat": 42.36434,
-      "lng": -71.07004,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8649412",
-      "name": "Low clearance \u2014 Huntington Avenue (MA 9)",
-      "addr": "MA 9",
-      "lat": 42.34732,
-      "lng": -71.07914,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8649719",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35253,
-      "lng": -71.05715,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8649889",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.34685,
-      "lng": -71.05824,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8650944",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35537,
-      "lng": -71.05124,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8651498",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.35176,
-      "lng": -71.05869,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8652379",
-      "name": "Low clearance \u2014 Sumner Tunnel (MA 1A)",
-      "addr": "MA 1A",
-      "lat": 42.37326,
-      "lng": -71.03853,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w8922463",
       "name": "Low clearance \u2014 Dartmouth Street",
       "addr": "Dartmouth Street",
@@ -2959,17 +2712,6 @@
       "lng": -71.10309,
       "height_in": 173,
       "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w25482039",
-      "name": "Low clearance \u2014 MA 3",
-      "addr": "MA 3",
-      "lat": 42.36204,
-      "lng": -71.07917,
-      "height_in": 126,
-      "height_label": "10'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3018,17 +2760,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w48941600",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.34837,
-      "lng": -71.05812,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w80676430",
       "name": "Low clearance \u2014 I 93",
       "addr": "I 93",
@@ -3051,17 +2782,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w86479795",
-      "name": "Low clearance \u2014 Commonwealth Avenue (MA 2)",
-      "addr": "MA 2",
-      "lat": 42.34897,
-      "lng": -71.08953,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w86480022",
       "name": "Low clearance \u2014 Storrow Drive",
       "addr": "Storrow Drive",
@@ -3069,17 +2789,6 @@
       "lng": -71.09385,
       "height_in": 168,
       "height_label": "14'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w86480024",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35137,
-      "lng": -71.09081,
-      "height_in": 144,
-      "height_label": "12'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3128,17 +2837,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w242520458",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35449,
-      "lng": -71.07878,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w261424135",
       "name": "Low clearance \u2014 Soldiers Field Road",
       "addr": "Soldiers Field Road",
@@ -3161,17 +2859,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w294598691",
-      "name": "Low clearance \u2014 Frontage Road",
-      "addr": "Frontage Road",
-      "lat": 42.33161,
-      "lng": -71.0627,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w328015592",
       "name": "Low clearance \u2014 Soldiers Field Road",
       "addr": "Soldiers Field Road",
@@ -3179,28 +2866,6 @@
       "lng": -71.11109,
       "height_in": 132,
       "height_label": "11'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w341184586",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.36128,
-      "lng": -71.06633,
-      "height_in": 75,
-      "height_label": "6'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w354610701",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35201,
-      "lng": -71.08982,
-      "height_in": 144,
-      "height_label": "12'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3227,39 +2892,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w485193860",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34841,
-      "lng": -71.07906,
-      "height_in": 72,
-      "height_label": "6'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w485271434",
-      "name": "Low clearance \u2014 Commonwealth Avenue (MA 2)",
-      "addr": "MA 2",
-      "lat": 42.34943,
-      "lng": -71.0878,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w536526400",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34525,
-      "lng": -71.08746,
-      "height_in": 85,
-      "height_label": "7'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w566881058",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -3267,17 +2899,6 @@
       "lng": -71.12215,
       "height_in": 76,
       "height_label": "6'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w585051154",
-      "name": "Low clearance \u2014 William F. McClellan Highway (MA 1A)",
-      "addr": "MA 1A",
-      "lat": 42.37356,
-      "lng": -71.03686,
-      "height_in": 150,
-      "height_label": "12'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3298,28 +2919,6 @@
       "addr": "MA 60",
       "lat": 42.42602,
       "lng": -71.07461,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w802024386",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34997,
-      "lng": -71.07979,
-      "height_in": 114,
-      "height_label": "9'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w806585607",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34592,
-      "lng": -71.08289,
       "height_in": 162,
       "height_label": "13'6\"",
       "notes": "Underpass / low clearance",
@@ -3348,39 +2947,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w807640159",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35313,
-      "lng": -71.08369,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w816258730",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.35962,
-      "lng": -71.06274,
-      "height_in": 78,
-      "height_label": "6'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w817406992",
-      "name": "Low clearance \u2014 Storrow Drive (MA 28)",
-      "addr": "MA 28",
-      "lat": 42.35962,
-      "lng": -71.0721,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w822392249",
       "name": "Low clearance \u2014 Storrow Drive",
       "addr": "Storrow Drive",
@@ -3392,50 +2958,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w822706200",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35187,
-      "lng": -71.08856,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w825494452",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.36189,
-      "lng": -71.07162,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w827546771",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34696,
-      "lng": -71.08002,
-      "height_in": 72,
-      "height_label": "6'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w828315560",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.3528,
-      "lng": -71.0853,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w829097343",
       "name": "Low clearance \u2014 Riverside Avenue",
       "addr": "Riverside Avenue",
@@ -3443,28 +2965,6 @@
       "lng": -71.104,
       "height_in": 166,
       "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w832081424",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.35026,
-      "lng": -71.07347,
-      "height_in": 75,
-      "height_label": "6'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w833091399",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.3461,
-      "lng": -71.08495,
-      "height_in": 168,
-      "height_label": "14'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3491,138 +2991,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w836110387",
-      "name": "Low clearance \u2014 Memorial Drive (MA 3)",
-      "addr": "MA 3",
-      "lat": 42.36079,
-      "lng": -71.08179,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w837681802",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.36881,
-      "lng": -71.07274,
-      "height_in": 88,
-      "height_label": "7'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w837727435",
-      "name": "Low clearance \u2014 Legends Way",
-      "addr": "Legends Way",
-      "lat": 42.36643,
-      "lng": -71.06133,
-      "height_in": 173,
-      "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w838051695",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.36583,
-      "lng": -71.06318,
-      "height_in": 80,
-      "height_label": "6'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w839987355",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.36657,
-      "lng": -71.05026,
-      "height_in": 82,
-      "height_label": "6'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w840011312",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.3604,
-      "lng": -71.06149,
-      "height_in": 81,
-      "height_label": "6'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w841066744",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34846,
-      "lng": -71.08052,
-      "height_in": 90,
-      "height_label": "7'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w842187124",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.35015,
-      "lng": -71.07483,
-      "height_in": 75,
-      "height_label": "6'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w842264987",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34525,
-      "lng": -71.07068,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w845944276",
-      "name": "Low clearance \u2014 Foundry Street",
-      "addr": "Foundry Street",
-      "lat": 42.3432,
-      "lng": -71.05821,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w856169234",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.34669,
-      "lng": -71.07557,
-      "height_in": 78,
-      "height_label": "6'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w862890596",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.35356,
-      "lng": -71.04802,
-      "height_in": 98,
-      "height_label": "8'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w876635071",
       "name": "Low clearance \u2014 Fellsway West (MA 28)",
       "addr": "MA 28",
@@ -3630,39 +2998,6 @@
       "lng": -71.10474,
       "height_in": 170,
       "height_label": "14'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w923793043",
-      "name": "Low clearance \u2014 Legends Way",
-      "addr": "Legends Way",
-      "lat": 42.36576,
-      "lng": -71.06067,
-      "height_in": 173,
-      "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w931236412",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.39827,
-      "lng": -71.03645,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w931354764",
-      "name": "Low clearance \u2014 Northeast Expressway (US 1)",
-      "addr": "US 1",
-      "lat": 42.4027,
-      "lng": -71.03623,
-      "height_in": 166,
-      "height_label": "13'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3722,17 +3057,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1232877613",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 42.36807,
-      "lng": -71.06469,
-      "height_in": 156,
-      "height_label": "13'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1263554461",
       "name": "Low clearance \u2014 Dartmouth Street",
       "addr": "Dartmouth Street",
@@ -3744,28 +3068,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1284535196",
-      "name": "Low clearance \u2014 General Casimir Pulaski Skyway (I 93;US 1;MA 3)",
-      "addr": "I 93;US 1;MA 3",
-      "lat": 42.32602,
-      "lng": -71.05734,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1284535197",
-      "name": "Low clearance \u2014 General Casimir Pulaski Skyway (I 93;US 1;MA 3)",
-      "addr": "I 93;US 1;MA 3",
-      "lat": 42.32774,
-      "lng": -71.05894,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1284545009",
       "name": "Low clearance \u2014 General Casimir Pulaski Skyway (I 93;US 1;MA 3)",
       "addr": "I 93;US 1;MA 3",
@@ -3773,17 +3075,6 @@
       "lng": -71.06418,
       "height_in": 166,
       "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1323825259",
-      "name": "Low clearance \u2014 Freeport Street",
-      "addr": "Freeport Street",
-      "lat": 42.3075,
-      "lng": -71.05831,
-      "height_in": 144,
-      "height_label": "12'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3865,28 +3156,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1409827102",
-      "name": "Low clearance \u2014 Dorchester Avenue",
-      "addr": "Dorchester Avenue",
-      "lat": 42.3003,
-      "lng": -71.06016,
-      "height_in": 158,
-      "height_label": "13'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1409827104",
-      "name": "Low clearance \u2014 Adams Street",
-      "addr": "Adams Street",
-      "lat": 42.30031,
-      "lng": -71.05903,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1413970483",
       "name": "Low clearance \u2014 Soldiers Field Road",
       "addr": "Soldiers Field Road",
@@ -3942,17 +3211,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1453491997",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 42.37414,
-      "lng": -71.03772,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1490765210",
       "name": "Low clearance \u2014 Fellsway West (MA 28)",
       "addr": "MA 28",
@@ -3960,50 +3218,6 @@
       "lng": -71.10326,
       "height_in": 171,
       "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1505110059",
-      "name": "Low clearance \u2014 Clayton Street",
-      "addr": "Clayton Street",
-      "lat": 42.3012,
-      "lng": -71.05599,
-      "height_in": 165,
-      "height_label": "13'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1505110063",
-      "name": "Low clearance \u2014 Victory Road",
-      "addr": "Victory Road",
-      "lat": 42.2972,
-      "lng": -71.05159,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1525900444",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35351,
-      "lng": -71.0827,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1525900445",
-      "name": "Low clearance \u2014 Storrow Drive",
-      "addr": "Storrow Drive",
-      "lat": 42.35234,
-      "lng": -71.08734,
-      "height_in": 120,
-      "height_label": "10'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

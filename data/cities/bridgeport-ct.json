@@ -359,17 +359,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w96991235",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.26559,
-      "lng": -73.06155,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w97040486",
       "name": "Low clearance \u2014 Merritt Parkway (CT 15)",
       "addr": "CT 15",
@@ -388,17 +377,6 @@
       "lng": -73.07273,
       "height_in": 166,
       "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w127887192",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.27027,
-      "lng": -73.05694,
-      "height_in": 96,
-      "height_label": "8'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -766,33 +744,11 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1063142899",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.28333,
-      "lng": -73.04512,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1063147849",
       "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
       "addr": "CT 15",
       "lat": 41.25155,
       "lng": -73.07516,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1063158295",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.27998,
-      "lng": -73.04812,
       "height_in": 96,
       "height_label": "8'0\"",
       "notes": "Underpass / low clearance",

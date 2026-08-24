@@ -2268,17 +2268,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w9937808",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.8367,
-      "lng": -97.03198,
-      "height_in": 203,
-      "height_label": "16'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w9937838",
       "name": "Low clearance underpass (secondary link)",
       "addr": "",
@@ -2752,17 +2741,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w9945705",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.8372,
-      "lng": -96.97572,
-      "height_in": 202,
-      "height_label": "16'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w9946128",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -2891,17 +2869,6 @@
       "lng": -96.66156,
       "height_in": 180,
       "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w9958085",
-      "name": "Low clearance \u2014 Airport Freeway (TX 183)",
-      "addr": "TX 183",
-      "lat": 32.83688,
-      "lng": -97.03296,
-      "height_in": 203,
-      "height_label": "16'11\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3313,17 +3280,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w10026896",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.67628,
-      "lng": -97.04376,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w10052759",
       "name": "Low clearance \u2014 North State Highway 121",
       "addr": "North State Highway 121",
@@ -3331,17 +3287,6 @@
       "lng": -97.03714,
       "height_in": 206,
       "height_label": "17'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w10065606",
-      "name": "Low clearance \u2014 Tom Landry Freeway (I 30)",
-      "addr": "I 30",
-      "lat": 32.7597,
-      "lng": -97.04185,
-      "height_in": 179,
-      "height_label": "14'11\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3507,39 +3452,6 @@
       "lng": -96.82957,
       "height_in": 204,
       "height_label": "17'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w25579183",
-      "name": "Low clearance \u2014 West Airport Freeway",
-      "addr": "West Airport Freeway",
-      "lat": 32.83782,
-      "lng": -97.01802,
-      "height_in": 232,
-      "height_label": "19'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w25580592",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.83693,
-      "lng": -97.04058,
-      "height_in": 193,
-      "height_label": "16'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w25622227",
-      "name": "Low clearance \u2014 South Garage Drive",
-      "addr": "South Garage Drive",
-      "lat": 32.85529,
-      "lng": -97.03305,
-      "height_in": 108,
-      "height_label": "9'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -3841,28 +3753,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w28178232",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.83504,
-      "lng": -97.01909,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w28383206",
-      "name": "Low clearance \u2014 SH 183 TEXpress (TX 183 TEXpress)",
-      "addr": "TX 183 TEXpress",
-      "lat": 32.83715,
-      "lng": -96.98505,
-      "height_in": 196,
-      "height_label": "16'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w28672080",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -4138,17 +4028,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w39701956",
-      "name": "Low clearance \u2014 North State Highway 161 (TX 161)",
-      "addr": "TX 161",
-      "lat": 32.75954,
-      "lng": -97.02839,
-      "height_in": 235,
-      "height_label": "19'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w39707178",
       "name": "Low clearance underpass (secondary link)",
       "addr": "",
@@ -4178,17 +4057,6 @@
       "lng": -96.70887,
       "height_in": 230,
       "height_label": "19'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w39749587",
-      "name": "Low clearance \u2014 North State Highway 161 (TX 161)",
-      "addr": "TX 161",
-      "lat": 32.75957,
-      "lng": -97.02996,
-      "height_in": 204,
-      "height_label": "17'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -4237,28 +4105,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w43149068",
-      "name": "Low clearance \u2014 South Garage Drive",
-      "addr": "South Garage Drive",
-      "lat": 32.85526,
-      "lng": -97.03425,
-      "height_in": 108,
-      "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w43981317",
-      "name": "Low clearance \u2014 President George Bush Turnpike (PGBT)",
-      "addr": "PGBT",
-      "lat": 32.83879,
-      "lng": -97.01693,
-      "height_in": 207,
-      "height_label": "17'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w61322476",
       "name": "Low clearance \u2014 Las Colinas Boulevard",
       "addr": "Las Colinas Boulevard",
@@ -4266,17 +4112,6 @@
       "lng": -96.94156,
       "height_in": 203,
       "height_label": "16'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w61324828",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.83719,
-      "lng": -96.97727,
-      "height_in": 201,
-      "height_label": "16'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -4292,61 +4127,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w76137981",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.7102,
-      "lng": -97.02469,
-      "height_in": 235,
-      "height_label": "19'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w76137984",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.70506,
-      "lng": -97.02469,
-      "height_in": 204,
-      "height_label": "17'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w76142158",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.69822,
-      "lng": -97.02461,
-      "height_in": 201,
-      "height_label": "16'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w76142161",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.69893,
-      "lng": -97.02464,
-      "height_in": 207,
-      "height_label": "17'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w76142703",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.69144,
-      "lng": -97.02439,
-      "height_in": 213,
-      "height_label": "17'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w80215395",
       "name": "Low clearance \u2014 Lyndon B Johnson Freeway (I 635)",
       "addr": "I 635",
@@ -4354,28 +4134,6 @@
       "lng": -96.96948,
       "height_in": 217,
       "height_label": "18'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w80902384",
-      "name": "Low clearance \u2014 West Shady Grove Road",
-      "addr": "West Shady Grove Road",
-      "lat": 32.80342,
-      "lng": -97.01844,
-      "height_in": 210,
-      "height_label": "17'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w80902388",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.79901,
-      "lng": -97.0185,
-      "height_in": 210,
-      "height_label": "17'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -4398,28 +4156,6 @@
       "lng": -96.87345,
       "height_in": 202,
       "height_label": "16'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w84506071",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.76505,
-      "lng": -97.02916,
-      "height_in": 189,
-      "height_label": "15'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w85340903",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.77839,
-      "lng": -97.0262,
-      "height_in": 225,
-      "height_label": "18'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -4611,17 +4347,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w111810285",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.67638,
-      "lng": -97.04485,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w118182261",
       "name": "Low clearance \u2014 North Stemmons Freeway (I 35E)",
       "addr": "I 35E",
@@ -4640,39 +4365,6 @@
       "lng": -96.76392,
       "height_in": 202,
       "height_label": "16'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w120093370",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.72865,
-      "lng": -97.0197,
-      "height_in": 206,
-      "height_label": "17'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w120093372",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.68208,
-      "lng": -97.02408,
-      "height_in": 225,
-      "height_label": "18'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w120182180",
-      "name": "Low clearance \u2014 Crossunder #7",
-      "addr": "Crossunder #7",
-      "lat": 32.87357,
-      "lng": -97.04026,
-      "height_in": 180,
-      "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5007,28 +4699,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w170993985",
-      "name": "Low clearance \u2014 West Interstate 30",
-      "addr": "West Interstate 30",
-      "lat": 32.76005,
-      "lng": -97.0291,
-      "height_in": 230,
-      "height_label": "19'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w170993987",
-      "name": "Low clearance \u2014 Tom Landry Freeway (I 30)",
-      "addr": "I 30",
-      "lat": 32.75939,
-      "lng": -97.02312,
-      "height_in": 207,
-      "height_label": "17'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w174396196",
       "name": "Low clearance \u2014 North Central Expressway (US 75)",
       "addr": "US 75",
@@ -5047,28 +4717,6 @@
       "lng": -96.79317,
       "height_in": 204,
       "height_label": "17'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w176406558",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.72144,
-      "lng": -97.02247,
-      "height_in": 202,
-      "height_label": "16'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w176406559",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.7208,
-      "lng": -97.02279,
-      "height_in": 202,
-      "height_label": "16'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5183,17 +4831,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w189150275",
-      "name": "Low clearance underpass (primary link)",
-      "addr": "",
-      "lat": 32.81581,
-      "lng": -96.99322,
-      "height_in": 210,
-      "height_label": "17'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w197635348",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -5201,17 +4838,6 @@
       "lng": -96.78969,
       "height_in": 178,
       "height_label": "14'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w197953945",
-      "name": "Low clearance \u2014 Center Garage Drive",
-      "addr": "Center Garage Drive",
-      "lat": 32.85747,
-      "lng": -97.03272,
-      "height_in": 108,
-      "height_label": "9'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5289,28 +4915,6 @@
       "lng": -96.9591,
       "height_in": 208,
       "height_label": "17'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w282594320",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.75682,
-      "lng": -97.02974,
-      "height_in": 193,
-      "height_label": "16'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w282594322",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.7568,
-      "lng": -97.02866,
-      "height_in": 193,
-      "height_label": "16'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5421,17 +5025,6 @@
       "lng": -97.04365,
       "height_in": 198,
       "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w337489361",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.83752,
-      "lng": -97.01406,
-      "height_in": 193,
-      "height_label": "16'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -5645,17 +5238,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w419040557",
-      "name": "Low clearance \u2014 South Carrier Parkway",
-      "addr": "South Carrier Parkway",
-      "lat": 32.74196,
-      "lng": -97.0157,
-      "height_in": 172,
-      "height_label": "14'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w419053069",
       "name": "Low clearance \u2014 East Northwest Highway (Loop 12)",
       "addr": "Loop 12",
@@ -5707,28 +5289,6 @@
       "lng": -96.7248,
       "height_in": 198,
       "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w419313209",
-      "name": "Low clearance \u2014 South Carrier Parkway",
-      "addr": "South Carrier Parkway",
-      "lat": 32.67526,
-      "lng": -97.00679,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w419315884",
-      "name": "Low clearance \u2014 South Belt Line Road (FM 1382)",
-      "addr": "FM 1382",
-      "lat": 32.67241,
-      "lng": -96.98515,
-      "height_in": 206,
-      "height_label": "17'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -6195,28 +5755,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w454615351",
-      "name": "Low clearance \u2014 North Garage Drive",
-      "addr": "North Garage Drive",
-      "lat": 32.85992,
-      "lng": -97.03333,
-      "height_in": 108,
-      "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w454615353",
-      "name": "Low clearance \u2014 North Garage Drive",
-      "addr": "North Garage Drive",
-      "lat": 32.85982,
-      "lng": -97.03162,
-      "height_in": 108,
-      "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w470400702",
       "name": "Low clearance underpass (secondary link)",
       "addr": "",
@@ -6312,17 +5850,6 @@
       "lng": -96.92682,
       "height_in": 186,
       "height_label": "15'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w489082331",
-      "name": "Low clearance underpass (secondary link)",
-      "addr": "",
-      "lat": 32.76212,
-      "lng": -96.95982,
-      "height_in": 195,
-      "height_label": "16'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -6554,28 +6081,6 @@
       "lng": -96.99345,
       "height_in": 188,
       "height_label": "15'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w503268656",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.83632,
-      "lng": -97.0165,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w503404700",
-      "name": "Low clearance \u2014 Airport Freeway (TX 183)",
-      "addr": "TX 183",
-      "lat": 32.83717,
-      "lng": -97.02984,
-      "height_in": 201,
-      "height_label": "16'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -7229,17 +6734,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w563587039",
-      "name": "Low clearance \u2014 North Story Road",
-      "addr": "North Story Road",
-      "lat": 32.81563,
-      "lng": -96.9764,
-      "height_in": 191,
-      "height_label": "15'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w565673693",
       "name": "Low clearance \u2014 East Bear Creek Road",
       "addr": "East Bear Creek Road",
@@ -7258,17 +6752,6 @@
       "lng": -96.82907,
       "height_in": 200,
       "height_label": "16'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w569613762",
-      "name": "Low clearance \u2014 Northwest 7th Street",
-      "addr": "Northwest 7th Street",
-      "lat": 32.75944,
-      "lng": -97.01231,
-      "height_in": 196,
-      "height_label": "16'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -7735,17 +7218,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w754874163",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 32.78857,
-      "lng": -97.01688,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w757254087",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -7863,17 +7335,6 @@
       "lng": -96.79555,
       "height_in": 169,
       "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w827920434",
-      "name": "Low clearance \u2014 Robinson Road",
-      "addr": "Robinson Road",
-      "lat": 32.67608,
-      "lng": -97.01646,
-      "height_in": 180,
-      "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8017,17 +7478,6 @@
       "lng": -96.59515,
       "height_in": 210,
       "height_label": "17'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w847098102",
-      "name": "Low clearance \u2014 Airport Freeway (TX 183)",
-      "addr": "TX 183",
-      "lat": 32.83774,
-      "lng": -97.04673,
-      "height_in": 193,
-      "height_label": "16'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8461,17 +7911,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w917306822",
-      "name": "Low clearance \u2014 Tom Landry Freeway (I 30)",
-      "addr": "I 30",
-      "lat": 32.75942,
-      "lng": -97.03085,
-      "height_in": 213,
-      "height_label": "17'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w917317770",
       "name": "Low clearance \u2014 Lyndon B Johnson Freeway (I 635)",
       "addr": "I 635",
@@ -8494,17 +7933,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w917451687",
-      "name": "Low clearance \u2014 Airport Freeway (TX 183)",
-      "addr": "TX 183",
-      "lat": 32.83718,
-      "lng": -97.03982,
-      "height_in": 195,
-      "height_label": "16'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w917835770",
       "name": "Low clearance \u2014 I 35E",
       "addr": "I 35E",
@@ -8512,17 +7940,6 @@
       "lng": -96.82225,
       "height_in": 210,
       "height_label": "17'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w920898109",
-      "name": "Low clearance \u2014 Airport Freeway (TX 183)",
-      "addr": "TX 183",
-      "lat": 32.83713,
-      "lng": -97.00967,
-      "height_in": 201,
-      "height_label": "16'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8549,17 +7966,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w932324336",
-      "name": "Low clearance \u2014 West Interstate 20",
-      "addr": "West Interstate 20",
-      "lat": 32.67658,
-      "lng": -97.02234,
-      "height_in": 202,
-      "height_label": "16'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w932387437",
       "name": "Low clearance \u2014 La Prada Drive",
       "addr": "La Prada Drive",
@@ -8567,28 +7973,6 @@
       "lng": -96.63472,
       "height_in": 189,
       "height_label": "15'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w934177827",
-      "name": "Low clearance \u2014 West Airport Freeway",
-      "addr": "West Airport Freeway",
-      "lat": 32.83629,
-      "lng": -97.01774,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w934177828",
-      "name": "Low clearance \u2014 West Airport Freeway",
-      "addr": "West Airport Freeway",
-      "lat": 32.83625,
-      "lng": -97.01538,
-      "height_in": 197,
-      "height_label": "16'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8633,17 +8017,6 @@
       "lng": -96.75641,
       "height_in": 211,
       "height_label": "17'7\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w944234373",
-      "name": "Low clearance \u2014 North Service Road",
-      "addr": "North Service Road",
-      "lat": 32.85822,
-      "lng": -97.03999,
-      "height_in": 205,
-      "height_label": "17'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -8697,17 +8070,6 @@
       "addr": "10th Street",
       "lat": 33.01292,
       "lng": -96.70104,
-      "height_in": 198,
-      "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w955609273",
-      "name": "Low clearance \u2014 North Belt Line Road",
-      "addr": "North Belt Line Road",
-      "lat": 32.7586,
-      "lng": -96.99496,
       "height_in": 198,
       "height_label": "16'6\"",
       "notes": "Underpass / low clearance",
@@ -8831,17 +8193,6 @@
       "lng": -96.81238,
       "height_in": 209,
       "height_label": "17'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1029545892",
-      "name": "Low clearance \u2014 North Carrier Parkway",
-      "addr": "North Carrier Parkway",
-      "lat": 32.77133,
-      "lng": -97.02794,
-      "height_in": 193,
-      "height_label": "16'1\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9033,17 +8384,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1038670078",
-      "name": "Low clearance \u2014 North Carrier Parkway",
-      "addr": "North Carrier Parkway",
-      "lat": 32.77045,
-      "lng": -97.02735,
-      "height_in": 195,
-      "height_label": "16'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1038683742",
       "name": "Low clearance \u2014 Forest Lane",
       "addr": "Forest Lane",
@@ -9062,17 +8402,6 @@
       "lng": -96.90276,
       "height_in": 173,
       "height_label": "14'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1049348388",
-      "name": "Low clearance \u2014 West Airport Freeway",
-      "addr": "West Airport Freeway",
-      "lat": 32.83784,
-      "lng": -97.01605,
-      "height_in": 232,
-      "height_label": "19'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9139,17 +8468,6 @@
       "lng": -96.9739,
       "height_in": 198,
       "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1053400125",
-      "name": "Low clearance \u2014 Crossunder #7",
-      "addr": "Crossunder #7",
-      "lat": 32.87357,
-      "lng": -97.04136,
-      "height_in": 180,
-      "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9429,17 +8747,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1130838816",
-      "name": "Low clearance \u2014 Tom Landry Freeway (I 30)",
-      "addr": "I 30",
-      "lat": 32.75946,
-      "lng": -97.05068,
-      "height_in": 179,
-      "height_label": "14'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1136575318",
       "name": "Low clearance \u2014 Glen Lakes Drive",
       "addr": "Glen Lakes Drive",
@@ -9535,17 +8842,6 @@
       "lng": -96.91953,
       "height_in": 191,
       "height_label": "15'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1160061011",
-      "name": "Low clearance \u2014 North Briery Road",
-      "addr": "North Briery Road",
-      "lat": 32.81577,
-      "lng": -96.98948,
-      "height_in": 195,
-      "height_label": "16'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -9704,17 +9000,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1214595996",
-      "name": "Low clearance \u2014 Mountain Creek Parkway",
-      "addr": "Mountain Creek Parkway",
-      "lat": 32.67087,
-      "lng": -96.97032,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1221578765",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -9869,116 +9154,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1347107216",
-      "name": "Low clearance \u2014 West Oakdale Road",
-      "addr": "West Oakdale Road",
-      "lat": 32.79239,
-      "lng": -97.01859,
-      "height_in": 219,
-      "height_label": "18'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1347260356",
-      "name": "Low clearance \u2014 North State Highway 161 (TX 161)",
-      "addr": "TX 161",
-      "lat": 32.74756,
-      "lng": -97.02623,
-      "height_in": 205,
-      "height_label": "17'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1347266166",
-      "name": "Low clearance \u2014 East Main Street (TX 180)",
-      "addr": "TX 180",
-      "lat": 32.74605,
-      "lng": -96.99445,
-      "height_in": 219,
-      "height_label": "18'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1347420334",
-      "name": "Low clearance \u2014 Ronald Reagan Memorial Highway (I 20)",
-      "addr": "I 20",
-      "lat": 32.67617,
-      "lng": -97.02364,
-      "height_in": 219,
-      "height_label": "18'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1347420578",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.67561,
-      "lng": -97.02698,
-      "height_in": 192,
-      "height_label": "16'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1349727492",
-      "name": "Low clearance \u2014 SH 183 TEXpress (TX 183 TEXpress)",
-      "addr": "TX 183 TEXpress",
-      "lat": 32.83704,
-      "lng": -97.02896,
-      "height_in": 203,
-      "height_label": "16'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1349737882",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.83835,
-      "lng": -97.01511,
-      "height_in": 205,
-      "height_label": "17'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1349744041",
-      "name": "Low clearance \u2014 SH 183 TEXpress (TX 183 TEXpress)",
-      "addr": "TX 183 TEXpress",
-      "lat": 32.83703,
-      "lng": -97.00856,
-      "height_in": 201,
-      "height_label": "16'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1349744395",
-      "name": "Low clearance \u2014 SH 183 TEXpress (TX 183 TEXpress)",
-      "addr": "TX 183 TEXpress",
-      "lat": 32.83698,
-      "lng": -97.01848,
-      "height_in": 203,
-      "height_label": "16'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1349744867",
-      "name": "Low clearance \u2014 North Belt Line Road",
-      "addr": "North Belt Line Road",
-      "lat": 32.83707,
-      "lng": -96.99354,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1349752589",
       "name": "Low clearance \u2014 East Grauwyler Road",
       "addr": "East Grauwyler Road",
@@ -9986,17 +9161,6 @@
       "lng": -96.91692,
       "height_in": 181,
       "height_label": "15'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1349838322",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 32.85703,
-      "lng": -97.01281,
-      "height_in": 188,
-      "height_label": "15'8\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -11262,17 +10426,6 @@
       "lng": -96.78216,
       "height_in": 167,
       "height_label": "13'11\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1442569230",
-      "name": "Low clearance \u2014 North Story Road",
-      "addr": "North Story Road",
-      "lat": 32.83755,
-      "lng": -96.97656,
-      "height_in": 195,
-      "height_label": "16'3\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

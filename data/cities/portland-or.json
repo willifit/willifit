@@ -344,11 +344,28 @@
       "addr": "1025 Southwest 6th Avenue",
       "lat": 45.51684,
       "lng": -122.68021,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "paid; hrs: Mo-Th 07:00-23:00; Fr,Sa 07:00-01:00, Su OSM-imported 20'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid; hrs: Mo-Th 07:00-23:00; Fr,Sa 07:00-01:00, Su\nVerified 2026-07-31 from sign reading \"CLEARANCE 6' 6\"\" (pano ajSiCNlshxer7Fm_cYngbw, heading 279\u00b0, Claude confidence high [+1 more section(s)])",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "ajSiCNlshxer7Fm_cYngbw",
+      "pano_heading": 279,
+      "sections": [
+        {
+          "label": "Lane 1",
+          "height_in": 78,
+          "height_label": "6'6\""
+        },
+        {
+          "label": "Lane 2",
+          "height_in": 80,
+          "height_label": "6'8\""
+        }
+      ],
       "entrance_lat": 45.5167898,
       "entrance_lng": -122.6800291,
       "entrance_source": "OSM parking_entrance node 4005935331"
@@ -376,13 +393,14 @@
       "height_in": null,
       "height_label": null,
       "oversized": false,
-      "notes": "paid; hrs: Mo-Th 06:00-24:00, Fr 06:00-02:00, Sa 07 OSM-imported 15'0\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid; hrs: Mo-Th 06:00-24:00, Fr 06:00-02:00, Sa 07",
+      "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign",
       "entrance_lat": 45.5169921,
       "entrance_lng": -122.6790646,
-      "entrance_source": "OSM parking_entrance node 6510952253",
-      "sv_checked": "2026-07-04",
-      "sv_status": "no-sign"
+      "entrance_source": "OSM parking_entrance node 6510952253"
     },
     {
       "id": "osm-w361835582",
@@ -395,6 +413,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign",
       "entrance_lat": 45.5478062,
       "entrance_lng": -122.6806426,
       "entrance_source": "OSM parking_entrance node 1803204668"
@@ -410,6 +431,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano",
       "entrance_lat": 45.5444617,
       "entrance_lng": -122.6691265,
       "entrance_source": "OSM parking_entrance node 13483186596"
@@ -534,19 +558,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-n9336138884",
-      "name": "Gold Key Valet",
-      "addr": "",
-      "lat": 45.58865,
-      "lng": -122.59275,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w23514070",
@@ -559,7 +573,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w23514323",
@@ -572,20 +588,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-w30263664",
-      "name": "Short Term Parking Garage P1",
-      "addr": "7100 Northeast Airport Way",
-      "lat": 45.58845,
-      "lng": -122.59154,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "3300 spaces; paid; hrs: 24/7",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w31732616",
@@ -599,7 +604,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.pdx.edu/buildings/campus-building/parking-structure-1"
+      "website": "https://www.pdx.edu/buildings/campus-building/parking-structure-1",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w31742358",
@@ -612,7 +619,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w32482524",
@@ -626,7 +635,9 @@
       "notes": "645 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.portland.gov/transportation/parking/smartpark"
+      "website": "https://www.portland.gov/transportation/parking/smartpark",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w32482536",
@@ -640,7 +651,9 @@
       "notes": "408 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.portland.gov/transportation/parking/smartpark"
+      "website": "https://www.portland.gov/transportation/parking/smartpark",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w34814074",
@@ -653,7 +666,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w34814274",
@@ -666,7 +681,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w36735404",
@@ -679,7 +696,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w39403097",
@@ -692,7 +711,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w39563066",
@@ -705,7 +726,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w40941295",
@@ -718,7 +741,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w52975536",
@@ -732,7 +757,9 @@
       "notes": "614 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.portland.gov/transportation/parking/smartpark"
+      "website": "https://www.portland.gov/transportation/parking/smartpark",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w57716471",
@@ -745,7 +772,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w57736997",
@@ -758,7 +787,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w61358808",
@@ -771,7 +802,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w75182817",
@@ -797,7 +830,9 @@
       "oversized": false,
       "notes": "399 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w102116137",
@@ -811,7 +846,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.pdx.edu/buildings/campus-building/parking-structure-3"
+      "website": "https://www.pdx.edu/buildings/campus-building/parking-structure-3",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w109719588",
@@ -824,20 +861,9 @@
       "oversized": false,
       "notes": "free; hrs: Mo-Su,PH 00:00-24:00",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-w119010874",
-      "name": "Long Term Parking Garage P2",
-      "addr": "7200 Northeast Airport Way",
-      "lat": 45.5878,
-      "lng": -122.58995,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "3000 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w119408657",
@@ -850,7 +876,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w121782829",
@@ -864,7 +892,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.pdx.edu/buildings/campus-building/parking-structure-2"
+      "website": "https://www.pdx.edu/buildings/campus-building/parking-structure-2",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w122350607",
@@ -877,7 +907,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w152299860",
@@ -890,7 +922,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w152299863",
@@ -903,7 +937,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w152299869",
@@ -917,7 +953,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.aceparking.com/"
+      "website": "https://www.aceparking.com/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w166904320",
@@ -930,7 +968,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w200076671",
@@ -970,7 +1010,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w311206933",
@@ -983,7 +1025,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w315648359",
@@ -996,7 +1040,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w315648361",
@@ -1009,7 +1055,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w315950289",
@@ -1035,7 +1083,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w331334439",
@@ -1048,7 +1098,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w331334449",
@@ -1061,7 +1113,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w331334464",
@@ -1074,7 +1128,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w331334469",
@@ -1087,7 +1143,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w331780186",
@@ -1100,7 +1158,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w334729876",
@@ -1113,7 +1173,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w367690959",
@@ -1126,20 +1188,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-w368089894",
-      "name": "Main Place Parking Garage",
-      "addr": "",
-      "lat": 45.63005,
-      "lng": -122.67109,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w369334300",
@@ -1152,7 +1203,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w370046324",
@@ -1178,20 +1231,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-w376320410",
-      "name": "Park \u2018n Go",
-      "addr": "",
-      "lat": 45.62504,
-      "lng": -122.67061,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w382988417",
@@ -1205,7 +1247,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.citycenterparking.com/"
+      "website": "https://www.citycenterparking.com/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w417990379",
@@ -1219,7 +1263,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://star-park.com/"
+      "website": "https://star-park.com/",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w418121277",
@@ -1245,7 +1291,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w868925954",
@@ -1283,7 +1331,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w936240564",
@@ -1296,20 +1346,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-w939131821",
-      "name": "Long Term Parking Garage P3",
-      "addr": "7240 Northeast Airport Way",
-      "lat": 45.58635,
-      "lng": -122.59016,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "1400 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1027654721",
@@ -1322,21 +1361,9 @@
       "oversized": false,
       "notes": "352 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
-    },
-    {
-      "id": "osm-w1215525137",
-      "name": "The Waterfront Vancouver Parking Center",
-      "addr": "700 West Columbia Way",
-      "lat": 45.62491,
-      "lng": -122.67905,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.gramor.com/thewaterfrontparkingcenter"
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1285772668",
@@ -1368,12 +1395,16 @@
       "addr": "",
       "lat": 45.5302,
       "lng": -122.70339,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 72,
+      "height_label": "6'0\"",
       "oversized": false,
-      "notes": "free; covered",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "free; covered\nVerified 2026-07-31 from sign reading \"CLEARANCE 6'\" (pano SokiZjjkrteqE2PIlttgDw, heading 184\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-07-31",
+      "sv_checked": "2026-07-31",
+      "pano_id": "SokiZjjkrteqE2PIlttgDw",
+      "pano_heading": 184
     },
     {
       "id": "osm-w1383778611",
@@ -1398,7 +1429,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "6 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r2095576",
@@ -1411,7 +1444,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-r5381527",
@@ -1425,7 +1460,9 @@
       "notes": "834 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.portland.gov/transportation/parking/smartpark"
+      "website": "https://www.portland.gov/transportation/parking/smartpark",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r19932315",
@@ -1437,7 +1474,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-07-31",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [
@@ -1461,17 +1500,6 @@
       "height_in": 158,
       "height_label": "13'2\"",
       "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w109431221",
-      "name": "Southeast Marine Park Way",
-      "addr": "Southeast Marine Park Way",
-      "lat": 45.6182,
-      "lng": -122.62769,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "layer -1; 1 lanes",
       "source": "OpenStreetMap"
     },
     {
@@ -1538,17 +1566,6 @@
       "height_in": 118,
       "height_label": "9'10\"",
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w758827252",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 45.61744,
-      "lng": -122.52867,
-      "height_in": 183,
-      "height_label": "15'3\"",
-      "notes": "layer -1",
       "source": "OpenStreetMap"
     },
     {
@@ -1737,17 +1754,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-41-17107001C30731",
-      "name": "Low clearance: Bikepath under Hwy 001 Conn",
-      "addr": "Bikepath",
-      "lat": 45.60387,
-      "lng": -122.68125,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "FHWA NBI; under-bridge clearance; built 1992; bridge carries Hwy 001 Conn",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "nbi-41-S8588E00130170",
       "name": "Low on-bridge clearance: I-5 (HWY 001) SB",
       "addr": "I-5 (HWY 001) SB",
@@ -1770,28 +1776,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w52328300",
-      "name": "Low clearance \u2014 Northeast Highway 99",
-      "addr": "Northeast Highway 99",
-      "lat": 45.66451,
-      "lng": -122.66469,
-      "height_in": 160,
-      "height_label": "13'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w59543697",
-      "name": "Low clearance \u2014 Arrivals",
-      "addr": "Arrivals",
-      "lat": 45.58871,
-      "lng": -122.59236,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w104736296",
       "name": "Low clearance \u2014 Southeast Lake Road",
       "addr": "Southeast Lake Road",
@@ -1799,17 +1783,6 @@
       "lng": -122.63994,
       "height_in": 162,
       "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w105742258",
-      "name": "Low clearance \u2014 East McLoughlin Boulevard",
-      "addr": "East McLoughlin Boulevard",
-      "lat": 45.6345,
-      "lng": -122.66331,
-      "height_in": 174,
-      "height_label": "14'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1847,17 +1820,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w145318385",
-      "name": "Low clearance \u2014 Southeast Columbia Way",
-      "addr": "Southeast Columbia Way",
-      "lat": 45.62165,
-      "lng": -122.67316,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w171973736",
       "name": "Low clearance \u2014 Southwest Sam Jackson Park Road",
       "addr": "Southwest Sam Jackson Park Road",
@@ -1869,39 +1831,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w203665530",
-      "name": "Low clearance \u2014 North Columbia Boulevard",
-      "addr": "North Columbia Boulevard",
-      "lat": 45.59633,
-      "lng": -122.7352,
-      "height_in": 192,
-      "height_label": "16'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w312161045",
-      "name": "Low clearance \u2014 Arrivals",
-      "addr": "Arrivals",
-      "lat": 45.58939,
-      "lng": -122.59124,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w312161047",
-      "name": "Low clearance \u2014 Arrivals",
-      "addr": "Arrivals",
-      "lat": 45.58877,
-      "lng": -122.58965,
-      "height_in": 138,
-      "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w327190309",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -1909,17 +1838,6 @@
       "lng": -122.7963,
       "height_in": 138,
       "height_label": "11'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w340029652",
-      "name": "Low clearance \u2014 Southeast Columbia Shores Boulevard",
-      "addr": "Southeast Columbia Shores Boulevard",
-      "lat": 45.6176,
-      "lng": -122.6516,
-      "height_in": 204,
-      "height_label": "17'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1957,17 +1875,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w387041465",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 45.61812,
-      "lng": -122.53223,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w388133478",
       "name": "Low clearance \u2014 Southwest Talbot Road",
       "addr": "Southwest Talbot Road",
@@ -1975,28 +1882,6 @@
       "lng": -122.70742,
       "height_in": 145,
       "height_label": "12'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w388798562",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 45.57022,
-      "lng": -122.54619,
-      "height_in": 126,
-      "height_label": "10'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w395353759",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 45.58983,
-      "lng": -122.75443,
-      "height_in": 120,
-      "height_label": "10'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2030,17 +1915,6 @@
       "lng": -122.7897,
       "height_in": 108,
       "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w418739377",
-      "name": "Low clearance \u2014 Northeast Highway 99",
-      "addr": "Northeast Highway 99",
-      "lat": 45.66214,
-      "lng": -122.66514,
-      "height_in": 160,
-      "height_label": "13'4\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2127,17 +2001,6 @@
       "addr": "",
       "lat": 45.55067,
       "lng": -122.675,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w442935905",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 45.61876,
-      "lng": -122.53614,
       "height_in": 120,
       "height_label": "10'0\"",
       "notes": "Underpass / low clearance",

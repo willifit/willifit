@@ -1,0 +1,1883 @@
+# Cross-city dedupe audit log
+
+1615 duplicate (section, id) groups collapsed; 1859 copies removed (232 garages, 169 tunnels, 1458 bridges). Canonical file = nearest index.json city center; content = newest verification stamp, nulls filled from other copies.
+
+## Field conflicts (kept vs dropped — review these)
+
+- `[bridges] osm-w1017880359` **Low clearance — Westchester Avenue** `lat`: kept new-york-ny = `40.82184` / dropped jersey-city-nj = `40.82209`
+- `[bridges] osm-w1017880359` **Low clearance — Westchester Avenue** `lng`: kept new-york-ny = `-73.8974` / dropped jersey-city-nj = `-73.89691`
+- `[bridges] osm-w1085503136` **Low clearance — George Washington Bridge Lower Level (I 95;US 1)** `name`: kept new-york-ny = `Low clearance — George Washington Bridge Lower Level (I 95;US 1)` / dropped jersey-city-nj = `Low clearance — Bergen Boulevard (Lower Level) (I 95;US 1;US 9)`
+- `[bridges] osm-w1085503136` **Low clearance — George Washington Bridge Lower Level (I 95;US 1)** `addr`: kept new-york-ny = `I 95;US 1` / dropped jersey-city-nj = `I 95;US 1;US 9`
+- `[bridges] osm-w1086531001` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped new-york-ny = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1086531001` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped newark-nj = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1086531992` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped new-york-ny = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1086531993` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped new-york-ny = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1086531993` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped newark-nj = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1087546400` **Low clearance — Main Avenue (CR 61)** `height_in`: kept newark-nj = `160` / dropped jersey-city-nj = `164`
+- `[bridges] osm-w1087546400` **Low clearance — Main Avenue (CR 61)** `height_label`: kept newark-nj = `13'4"` / dropped jersey-city-nj = `13'8"`
+- `[bridges] osm-w11618252` **Low clearance — Broad Street** `height_in`: kept newark-nj = `150` / dropped jersey-city-nj = `161`
+- `[bridges] osm-w11618252` **Low clearance — Broad Street** `height_label`: kept newark-nj = `12'6"` / dropped jersey-city-nj = `13'5"`
+- `[bridges] osm-w1233001312` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped new-york-ny = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1233001312` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped newark-nj = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w1302585700` **Low clearance underpass (service)** `lat`: kept anaheim-ca = `33.87395` / dropped long-beach-ca = `33.87396`
+- `[bridges] osm-w1302585700` **Low clearance underpass (service)** `lng`: kept anaheim-ca = `-118.06262` / dropped long-beach-ca = `-118.06257`
+- `[bridges] osm-w1302585700` **Low clearance underpass (service)** `lat`: kept anaheim-ca = `33.87395` / dropped los-angeles-ca = `33.87396`
+- `[bridges] osm-w1302585700` **Low clearance underpass (service)** `lng`: kept anaheim-ca = `-118.06262` / dropped los-angeles-ca = `-118.06257`
+- `[bridges] osm-w1305702109` **Low clearance — McLester Street** `lat`: kept newark-nj = `40.67448` / dropped jersey-city-nj = `40.67452`
+- `[bridges] osm-w1305702109` **Low clearance — McLester Street** `lng`: kept newark-nj = `-74.15995` / dropped jersey-city-nj = `-74.1599`
+- `[bridges] osm-w1417538046` **Low clearance — Washington Street** `name`: kept denver-co = `Low clearance — Washington Street` / dropped aurora-co = `Low clearance — North Washington Street`
+- `[bridges] osm-w1417538046` **Low clearance — Washington Street** `addr`: kept denver-co = `Washington Street` / dropped aurora-co = `North Washington Street`
+- `[bridges] osm-w216933518` **Low clearance — Roosevelt Avenue** `lat`: kept new-york-ny = `40.74582` / dropped jersey-city-nj = `40.74585`
+- `[bridges] osm-w216933518` **Low clearance — Roosevelt Avenue** `lng`: kept new-york-ny = `-73.90121` / dropped jersey-city-nj = `-73.90096`
+- `[bridges] osm-w27274355` **Low clearance — New Jersey Turnpike Local Roadway (I 95;NJTP)** `name`: kept new-york-ny = `Low clearance — New Jersey Turnpike Local Roadway (I 95;NJTP)` / dropped jersey-city-nj = `Low clearance — New Jersey Turnpike (Local Roadway) (I 95;NJTP)`
+- `[bridges] osm-w384385252` **Low clearance underpass (motorway link)** `name`: kept jersey-city-nj = `Low clearance underpass (motorway link)` / dropped new-york-ny = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w384385252` **Low clearance underpass (motorway link)** `addr`: kept jersey-city-nj = `` / dropped new-york-ny = `I 80`
+- `[bridges] osm-w384385252` **Low clearance underpass (motorway link)** `lng`: kept jersey-city-nj = `-74.00955` / dropped new-york-ny = `-74.01176`
+- `[bridges] osm-w39172322` **Low clearance underpass (motorway link)** `lat`: kept newark-nj = `40.69683` / dropped jersey-city-nj = `40.69664`
+- `[bridges] osm-w39172322` **Low clearance underpass (motorway link)** `lng`: kept newark-nj = `-74.18505` / dropped jersey-city-nj = `-74.18513`
+- `[bridges] osm-w398235824` **Low clearance — West Artesia Boulevard (CA 91)** `name`: kept long-beach-ca = `Low clearance — West Artesia Boulevard (CA 91)` / dropped los-angeles-ca = `Low clearance — West Artesia Boulevard`
+- `[bridges] osm-w398235824` **Low clearance — West Artesia Boulevard (CA 91)** `addr`: kept long-beach-ca = `CA 91` / dropped los-angeles-ca = `West Artesia Boulevard`
+- `[bridges] osm-w419032811` **Low clearance — East Berry Street** `lat`: kept fort-worth-tx = `32.7081` / dropped arlington-tx = `32.70808`
+- `[bridges] osm-w419032811` **Low clearance — East Berry Street** `lng`: kept fort-worth-tx = `-97.23136` / dropped arlington-tx = `-97.23131`
+- `[bridges] osm-w42480738` **Low clearance — George Washington Bridge Lower Level (I 95;US 1)** `name`: kept new-york-ny = `Low clearance — George Washington Bridge Lower Level (I 95;US 1)` / dropped jersey-city-nj = `Low clearance — Bergen Boulevard (Lower Level) (I 95;US 1;US 9)`
+- `[bridges] osm-w42480738` **Low clearance — George Washington Bridge Lower Level (I 95;US 1)** `addr`: kept new-york-ny = `I 95;US 1` / dropped jersey-city-nj = `I 95;US 1;US 9`
+- `[bridges] osm-w42480747` **Low clearance — George Washington Bridge Lower Level (I 95;US 1)** `name`: kept new-york-ny = `Low clearance — George Washington Bridge Lower Level (I 95;US 1)` / dropped jersey-city-nj = `Low clearance — Bergen Boulevard (Lower Level) (I 95;US 1;US 9)`
+- `[bridges] osm-w42480747` **Low clearance — George Washington Bridge Lower Level (I 95;US 1)** `addr`: kept new-york-ny = `I 95;US 1` / dropped jersey-city-nj = `I 95;US 1;US 9`
+- `[bridges] osm-w42502902` **Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)** `name`: kept new-york-ny = `Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)` / dropped jersey-city-nj = `Low clearance — Bergen Boulevard (Upper Level) (I 95 EXPR;US 1 EXPR;US 9 EXPR)`
+- `[bridges] osm-w42502902` **Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)** `addr`: kept new-york-ny = `I 95;US 1;US 9` / dropped jersey-city-nj = `I 95 EXPR;US 1 EXPR;US 9 EXPR`
+- `[bridges] osm-w42502902` **Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)** `notes`: kept new-york-ny = `Underpass / low clearance; Under: George Washington Bridge Plaza` / dropped jersey-city-nj = `Underpass / low clearance`
+- `[bridges] osm-w42508666` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped new-york-ny = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w42508666` **Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)** `name`: kept jersey-city-nj = `Low clearance — Christopher Columbus Highway (Local Roadway) (I 80)` / dropped newark-nj = `Low clearance — Christopher Columbus Highway (I 80)`
+- `[bridges] osm-w46613696` **Low clearance — 86th Street Transverse** `lat`: kept new-york-ny = `40.78266` / dropped jersey-city-nj = `40.78303`
+- `[bridges] osm-w46613696` **Low clearance — 86th Street Transverse** `lng`: kept new-york-ny = `-73.96388` / dropped jersey-city-nj = `-73.96501`
+- `[bridges] osm-w50074179` **Low clearance — George Washington Bridge Lower Level (I 95;US 1;US 9)** `name`: kept new-york-ny = `Low clearance — George Washington Bridge Lower Level (I 95;US 1;US 9)` / dropped jersey-city-nj = `Low clearance — Bergen Boulevard (Lower Level) (I 95;US 1;US 9)`
+- `[bridges] osm-w50074179` **Low clearance — George Washington Bridge Lower Level (I 95;US 1;US 9)** `lng`: kept new-york-ny = `-73.97261` / dropped jersey-city-nj = `-73.9726`
+- `[bridges] osm-w51653691` **Low clearance underpass (tertiary link)** `lat`: kept newark-nj = `40.69024` / dropped jersey-city-nj = `40.69032`
+- `[bridges] osm-w51653691` **Low clearance underpass (tertiary link)** `lng`: kept newark-nj = `-74.18402` / dropped jersey-city-nj = `-74.184`
+- `[bridges] osm-w5669581` **Low clearance underpass (motorway link)** `lat`: kept new-york-ny = `40.73725` / dropped jersey-city-nj = `40.7372`
+- `[bridges] osm-w5669581` **Low clearance underpass (motorway link)** `lng`: kept new-york-ny = `-73.97467` / dropped jersey-city-nj = `-73.9747`
+- `[bridges] osm-w61663249` **Low clearance — NJ 17** `lng`: kept newark-nj = `-74.09772` / dropped jersey-city-nj = `-74.09771`
+- `[bridges] osm-w628823596` **Low clearance — North Brighton Boulevard (CO 265)** `name`: kept denver-co = `Low clearance — North Brighton Boulevard (CO 265)` / dropped aurora-co = `Low clearance — Brighton Boulevard (CO 265)`
+- `[bridges] osm-w749724080` **Low clearance underpass (service)** `lat`: kept portland-or = `45.54785` / dropped vancouver-wa = `45.54783`
+- `[bridges] osm-w8028082` **Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)** `name`: kept new-york-ny = `Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)` / dropped jersey-city-nj = `Low clearance — Bergen Boulevard (Upper Level) (I 95 EXPR;US 1 EXPR;US 9 EXPR)`
+- `[bridges] osm-w8028082` **Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9)** `addr`: kept new-york-ny = `I 95;US 1;US 9` / dropped jersey-city-nj = `I 95 EXPR;US 1 EXPR;US 9 EXPR`
+- `[bridges] osm-w9702612` **Low clearance — New Jersey Turnpike Local Roadway (I 95;NJTP)** `name`: kept new-york-ny = `Low clearance — New Jersey Turnpike Local Roadway (I 95;NJTP)` / dropped jersey-city-nj = `Low clearance — New Jersey Turnpike (Local Roadway) (I 95;NJTP)`
+- `[bridges] osm-w9702618` **Low clearance — US 1;US 9;US 46** `name`: kept new-york-ny = `Low clearance — US 1;US 9;US 46` / dropped jersey-city-nj = `Low clearance — US 1 EXPR;US 9 EXPR`
+- `[bridges] osm-w9702618` **Low clearance — US 1;US 9;US 46** `addr`: kept new-york-ny = `US 1;US 9;US 46` / dropped jersey-city-nj = `US 1 EXPR;US 9 EXPR`
+- `[garages] osm-w100227494` **Chase Field Garage** `notes`: kept scottsdale-az = `paid` / dropped phoenix-az = `paid OSM-imported 19'0" was building height, not clearance.`
+- `[garages] osm-w100227494` **Chase Field Garage** `source`: kept scottsdale-az = `OpenStreetMap` / dropped phoenix-az = `Needs verification (was OSM building-height)`
+- `[garages] osm-w100227494` **Chase Field Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped phoenix-az = `2026-05-01`
+- `[garages] osm-w1126741890` **Speedway** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w1135647438` **City of San Bernardino** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w1135647445` **City of San Bernardino** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w1135647446` **City of San Bernardino** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w1135647448` **City of San Bernardino** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w1284213976` **University of Minnesota** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w1287762665` **Trailhead Street Parking** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w1314562835` **Lovejoy Medical Parking** `notes`: kept vancouver-wa = `free; covered
+Verified 2026-07-31 from sign reading "CLEARANCE 6'" (pano SokiZjjkrteqE2PIl` / dropped portland-or = `free; covered`
+- `[garages] osm-w1314562835` **Lovejoy Medical Parking** `source`: kept vancouver-wa = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap` / dropped portland-or = `OpenStreetMap`
+- `[garages] osm-w1327767000` **Mill Avenue Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w134180161` **Pepper Place Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w134185638` **Sirrine Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w136144381` **North Eustis Street Garage** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w1363400563` **755 Prior Ave** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w136625489` **Pomeroy Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w136625494` **Centennial Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w137283621` **Mesa Financial Plaza** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w142429771` **Red Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w142440431` **Purple Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w142440523` **Yellow Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w1437055754` **City of Fontana** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w152294655` **PMC** `notes`: kept vancouver-wa = `paid; hrs: Mo-Th 07:00-23:00; Fr,Sa 07:00-01:00, Su
+Verified 2026-07-31 from sign reading ` / dropped portland-or = `paid; hrs: Mo-Th 07:00-23:00; Fr,Sa 07:00-01:00, Su OSM-imported 20'0" was building height`
+- `[garages] osm-w152294655` **PMC** `source`: kept vancouver-wa = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap` / dropped portland-or = `Needs verification (was OSM building-height)`
+- `[garages] osm-w154976508` **Civic Center Library Public Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w154976510` **Center for The Arts Public Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w157628483` **Centerpoint** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w175944787` **Terminal 4 Rooftop Garage** `notes`: kept scottsdale-az = `Imported from OpenStreetMap.` / dropped phoenix-az = `Imported from OpenStreetMap. OSM-imported 20'0" was building height, not clearance.
+Verifi`
+- `[garages] osm-w175944787` **Terminal 4 Rooftop Garage** `source`: kept scottsdale-az = `OpenStreetMap` / dropped phoenix-az = `AI-verified (Street View + Claude Vision — auto-pano) — was: Needs verification (was OSM b`
+- `[garages] osm-w190379557` **Parking Structure** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w199128921` **Brown Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w199128922` **Blue Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w199128924` **Green Garage** `sv_checked`: kept phoenix-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w199128925` **Purple Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w205590363` **City Hall Public Parking Sctructure** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w211849523` **Carousel Mall Parking Structure** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w24108195` **University Avenue Parking Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w24108200` **Oak Street Parking Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w241842698` **St. George Garage** `notes`: kept jersey-city-nj = `paid` / dropped newark-nj = `paid OSM-imported 18'0" was building height, not clearance.
+Verified 2026-05-01 from sign `
+- `[garages] osm-w241842698` **St. George Garage** `source`: kept jersey-city-nj = `OpenStreetMap` / dropped newark-nj = `AI-verified (Street View + Claude Vision — auto-pano) — was: Needs verification (was OSM b`
+- `[garages] osm-w251815082` **Galleria Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w259075840` **Evans Garage** `notes`: kept aurora-co = `425 spaces; paid` / dropped denver-co = `425 spaces; paid [OSM clearance value rejected as implausible]
+Verified 2026-04-23 from si`
+- `[garages] osm-w259075840` **Evans Garage** `source`: kept aurora-co = `OpenStreetMap` / dropped denver-co = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap`
+- `[garages] osm-w279285018` **IMT at City Park** `notes`: kept aurora-co = `Imported from OpenStreetMap.` / dropped denver-co = `Imported from OpenStreetMap. [OSM clearance value rejected as implausible]
+Verified 2026-0`
+- `[garages] osm-w279285018` **IMT at City Park** `source`: kept aurora-co = `OpenStreetMap` / dropped denver-co = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap`
+- `[garages] osm-w28740179` **Packard South Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w28769223` **Stadium Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w28822327` **10th St. Parking Structure** `notes`: kept scottsdale-az = `Imported from OpenStreetMap.
+Verified 2026-08-24 from sign reading "Clearance 7' - 0"" (pa` / dropped mesa-az = `Imported from OpenStreetMap.
+Verified 2026-07-31 from sign reading "Clearance 7'-0"" (pano`
+- `[garages] osm-w28822327` **10th St. Parking Structure** `verified_on`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w28822327` **10th St. Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w28822327` **10th St. Parking Structure** `notes`: kept scottsdale-az = `Imported from OpenStreetMap.
+Verified 2026-08-24 from sign reading "Clearance 7' - 0"" (pa` / dropped phoenix-az = `Imported from OpenStreetMap.
+Verified 2026-08-24 from sign reading "Clearance 7'-0"" (pano`
+- `[garages] osm-w28878477` **Rural Road Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w289784616` **East River Road Garage** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w29060634` **Washington Avenue Parking Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w293095993` **Weisman Art Museum Garage** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w293917644` **Gold Garage** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w29736099` **Tyler Street Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w297777595` **Patient Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w303268434` **parking structure** `notes`: kept long-beach-ca = `Imported from OpenStreetMap. OSM-imported 17'1" was building height, not clearance.` / dropped los-angeles-ca = `Imported from OpenStreetMap.`
+- `[garages] osm-w303268434` **parking structure** `source`: kept long-beach-ca = `Needs verification (was OSM building-height)` / dropped los-angeles-ca = `OpenStreetMap`
+- `[garages] osm-w303268434` **parking structure** `sv_checked`: kept long-beach-ca = `2026-08-23` / dropped los-angeles-ca = `2026-08-01`
+- `[garages] osm-w303268434` **parking structure** `sv_status`: kept long-beach-ca = `no-sign` / dropped los-angeles-ca = `no-pano`
+- `[garages] osm-w30407351` **Fulton Center Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w30420080` **University Towers Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w325261960` **Old Town Public Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w325264379` **Main Street Public Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w325266674` **3rd Ave Public Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w35209291` **Mall of America** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w35218850` **Patient & Visitor Parking Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w358481203` **staff parking garage** `sv_checked`: kept anaheim-ca = `2026-08-23` / dropped los-angeles-ca = `2026-08-01`
+- `[garages] osm-w361360469` **Metropolitan Garage** `notes`: kept vancouver-wa = `paid; hrs: Mo-Th 06:00-24:00, Fr 06:00-02:00, Sa 07` / dropped portland-or = `paid; hrs: Mo-Th 06:00-24:00, Fr 06:00-02:00, Sa 07 OSM-imported 15'0" was building height`
+- `[garages] osm-w361360469` **Metropolitan Garage** `source`: kept vancouver-wa = `OpenStreetMap` / dropped portland-or = `Needs verification (was OSM building-height)`
+- `[garages] osm-w361360469` **Metropolitan Garage** `sv_checked`: kept vancouver-wa = `2026-07-31` / dropped portland-or = `2026-07-04`
+- `[garages] osm-w39153154` **4th Street Parking Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w39440638` **Denver Botanic Gardens Parking Garage** `notes`: kept denver-co = `350 spaces; free OSM-imported 13'1" was building height, not clearance.
+Verified 2026-08-2` / dropped aurora-co = `350 spaces; free`
+- `[garages] osm-w39440638` **Denver Botanic Gardens Parking Garage** `source`: kept denver-co = `AI-verified (Street View + Claude Vision — auto-pano) — was: Needs verification (was OSM b` / dropped aurora-co = `OpenStreetMap`
+- `[garages] osm-w39440638` **Denver Botanic Gardens Parking Garage** `sv_checked`: kept denver-co = `2026-08-24` / dropped aurora-co = `2026-07-31`
+- `[garages] osm-w397156466` **Parking Structure** `sv_checked`: kept anaheim-ca = `2026-08-23` / dropped los-angeles-ca = `2026-08-01`
+- `[garages] osm-w441279921` **parking structure** `notes`: kept los-angeles-ca = `Imported from OpenStreetMap.` / dropped long-beach-ca = `Imported from OpenStreetMap. OSM-imported 15'0" was building height, not clearance.`
+- `[garages] osm-w441279921` **parking structure** `source`: kept los-angeles-ca = `OpenStreetMap` / dropped long-beach-ca = `Needs verification (was OSM building-height)`
+- `[garages] osm-w441279921` **parking structure** `sv_checked`: kept los-angeles-ca = `2026-08-01` / dropped long-beach-ca = `2026-05-01`
+- `[garages] osm-w441460169` **Parking structure for Visitors, Employee, Volunteers** `addr`: kept los-angeles-ca = `401 East 27th Street` / dropped long-beach-ca = ``
+- `[garages] osm-w441460169` **Parking structure for Visitors, Employee, Volunteers** `notes`: kept los-angeles-ca = `free` / dropped long-beach-ca = `Imported from OpenStreetMap. OSM-imported 19'5" was building height, not clearance.`
+- `[garages] osm-w441460169` **Parking structure for Visitors, Employee, Volunteers** `source`: kept los-angeles-ca = `OpenStreetMap` / dropped long-beach-ca = `Needs verification (was OSM building-height)`
+- `[garages] osm-w441460169` **Parking structure for Visitors, Employee, Volunteers** `sv_checked`: kept los-angeles-ca = `2026-08-01` / dropped long-beach-ca = `2026-05-01`
+- `[garages] osm-w441464328` **AmeriFleet Transportation Suite 350** `notes`: kept los-angeles-ca = `Imported from OpenStreetMap.` / dropped long-beach-ca = `Imported from OpenStreetMap. OSM-imported 14'6" was building height, not clearance.
+Verifi`
+- `[garages] osm-w441464328` **AmeriFleet Transportation Suite 350** `source`: kept los-angeles-ca = `OpenStreetMap` / dropped long-beach-ca = `AI-verified (Street View + Claude Vision — auto-pano) — was: Needs verification (was OSM b`
+- `[garages] osm-w468546090` **Patient Parking Structure** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w502786160` **Loma Linda VA Employee Parking Garage** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w504281745` **Hayden Ferry Lakeside Parking Garage** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w542356469` **East Deck** `notes`: kept aurora-co = `paid` / dropped denver-co = `paid [OSM clearance value rejected as implausible]
+Verified 2026-04-23 from sign reading "`
+- `[garages] osm-w542356469` **East Deck** `source`: kept aurora-co = `OpenStreetMap` / dropped denver-co = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap`
+- `[garages] osm-w542356523` **West Deck** `notes`: kept aurora-co = `paid` / dropped denver-co = `paid [OSM clearance value rejected as implausible]
+Verified 2026-04-23 from sign reading "`
+- `[garages] osm-w542356523` **West Deck** `source`: kept aurora-co = `OpenStreetMap` / dropped denver-co = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap`
+- `[garages] osm-w62146313` **Court International** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w65015456` **Apache Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w688021320` **La Fontana Condominium** `oversized`: kept aurora-co = `False` / dropped denver-co = `True`
+- `[garages] osm-w688021320` **La Fontana Condominium** `notes`: kept aurora-co = `Imported from OpenStreetMap.` / dropped denver-co = `Imported from OpenStreetMap. [OSM clearance value rejected as implausible]`
+- `[garages] osm-w688021320` **La Fontana Condominium** `structure_type`: kept aurora-co = `structure` / dropped denver-co = `surface_lot`
+- `[garages] osm-w69201801` **Quick-Ride Ramp** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w70079205` **Anderson Parking Facility** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w718295193` **Hearne Way Parking Garage** `notes`: kept mesa-az = `Imported from OpenStreetMap.` / dropped scottsdale-az = `Imported from OpenStreetMap.
+Verified 2026-08-01 from sign reading "8'-2"" (pano Q5EDgrb0H`
+- `[garages] osm-w718295193` **Hearne Way Parking Garage** `source`: kept mesa-az = `OpenStreetMap` / dropped scottsdale-az = `AI-verified (Street View + Claude Vision — auto-pano) — was: OpenStreetMap`
+- `[garages] osm-w767990685` **Underground at Ink Block Parking** `oversized`: kept cambridge-ma = `False` / dropped boston-ma = `True`
+- `[garages] osm-w767990685` **Underground at Ink Block Parking** `structure_type`: kept cambridge-ma = `structure` / dropped boston-ma = `surface_lot`
+- `[garages] osm-w767990685` **Underground at Ink Block Parking** `notes`: kept cambridge-ma = `175 spaces; paid; covered` / dropped boston-ma = `Imported 2026 from OSM as an oversized-vehicle-friendly surface lot: large capacity (175 s`
+- `[garages] osm-w767990685` **Underground at Ink Block Parking** `source`: kept cambridge-ma = `OpenStreetMap` / dropped boston-ma = `OpenStreetMap (surface lot)`
+- `[garages] osm-w774896813` **Maricopa County Community College District** `sv_checked`: kept phoenix-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w79236555` **Grand Place** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w819666632` **Apache Sands** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w841479143` **Greenway Trail Parking** `sv_checked`: kept anaheim-ca = `2026-08-23` / dropped los-angeles-ca = `2026-08-01`
+- `[garages] osm-w909831582` **Novus Parking Structure** `sv_checked`: kept scottsdale-az = `2026-08-24` / dropped mesa-az = `2026-07-31`
+- `[garages] osm-w913950658` **City of Riverside** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w913950665` **City of Riverside** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w924028735` **Kaiser Permanente** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w924028737` **Fontana Medical Center** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[garages] osm-w970443087` **Airport Viewing Area** `sv_checked`: kept saint-paul-mn = `2026-08-23` / dropped minneapolis-mn = `2026-07-31`
+- `[garages] osm-w977758301` **City of Fontana** `sv_checked`: kept riverside-ca = `2026-07-31` / dropped san-bernardino-ca = `2026-07-03`
+- `[tunnels] osm-w726850087` **Southeast 15th Avenue** `lat`: kept minneapolis-mn = `44.98444` / dropped saint-paul-mn = `44.98445`
+- `[tunnels] osm-w726850087` **Southeast 15th Avenue** `lng`: kept minneapolis-mn = `-93.23089` / dropped saint-paul-mn = `-93.23088`
+
+## All groups
+
+- `[bridges] nbi-25-B160074EGDOTNBI` Low on-bridge clearance: ST  2 BROOKLINE ST → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-B160554T0DOTNBI` Low on-bridge clearance: US 20 COMM AV/MBTA → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-B1606638DMUNNBI` Low on-bridge clearance: HWY   CAMBRIDGE ST → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-C010314DRDOTNBI` Low clearance: TR    RED LINE under US  3 /ST2&16/ALWF → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-L100012N1DOT634` Low clearance: OTHER MINUTEMAN BIKE PTH under ST  2 A/MAPLE ST → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-M010054UTMBTNBI` Low on-bridge clearance: HWY   MOUNTAIN AVE → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-N120274QWDOTNBI` Low on-bridge clearance: ST 16 WB/WSHGTN ST → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-N120604D6DOTNBI` Low clearance: TR    GREEN LINE D under HWY   HAMMOND PD → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-S170224E2DOTNBI` Low on-bridge clearance: ST 28 MCGRATH HWY → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-S17025BDWDOTNBI` Low on-bridge clearance: ST 28 MCGRATH HWY → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-W290404Q1DOTNBI` Low on-bridge clearance: HWY   WINTER ST → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-W290434Q5DOTNBI` Low on-bridge clearance: HWY   OAK ST → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-W290534Q9DOTNBI` Low on-bridge clearance: I  90 RAMP J → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-W290544QCDOTNBI` Low on-bridge clearance: HWY   PARK RD → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-25-W290584QGDOTNBI` Low on-bridge clearance: I  90 RAMP G → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] nbi-34-4500001` Low on-bridge clearance: US 322 → kept in **wilmington-de**, removed from philadelphia-pa
+- `[bridges] nbi-36-000000005039547` Low on-bridge clearance: RTE 955 → kept in **niagara-falls-ny**, removed from buffalo-ny
+- `[bridges] nbi-39-1829971` Low on-bridge clearance: BARR RD → kept in **akron-oh**, removed from cleveland-oh
+- `[bridges] nbi-41-17107001C30731` Low clearance: Bikepath under Hwy 001 Conn → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] nbi-51-000000000021797` Low on-bridge clearance: CENTERVILLE TURNPK → kept in **norfolk-va**, removed from virginia-beach-va
+- `[bridges] osm-w1001136737` Low clearance — Bayonne Bridge (NY 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1002537278` Low clearance — Lemoine Avenue (NJ 67) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1002565829` Low clearance — US 1;US 9 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w10026148` Low clearance underpass (secondary link) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w10026150` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10026155` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10026896` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w10028039` Low clearance underpass (secondary link) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w10028168` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10028723` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10028941` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10029456` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10030131` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10030864` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10031683` Low clearance underpass (secondary link) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w10031833` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10033638` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10035517` Low clearance — Melinda Drive → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w10037963` Low clearance — Loop 820 → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10055183` Low clearance — Northeast Loop (I 820) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w10060846` Low clearance — East Loop 820 → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10065606` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w10066077` Low clearance — West Bedford Euless Road → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w10071185` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w1011704471` Low clearance — Miller Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1013429949` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1014960254` Low clearance — North Oraton Parkway → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971895` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1014971896` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971900` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971901` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971904` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971906` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971911` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971917` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971919` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971921` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971925` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971926` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971929` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971931` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971932` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971934` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971936` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971940` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971941` Low clearance — I 280 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971950` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1014971952` Low clearance — East Peddie Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1015105412` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015105448` Low clearance — US 22 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015121997` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015122007` Low clearance — North Union Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015328866` Low clearance — US 22 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015691556` Low clearance — Meeker Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015948288` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w1015951863` Low clearance — Conant Street (CR 630) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1015951867` Low clearance — Frelinghuysen Avenue (NJ 27) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1017880359` Low clearance — Westchester Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1020095012` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w102022841` Low clearance — I 95 → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1020473841` Low clearance — Frelinghuysen Avenue (NJ 27) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1021291545` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1021291546` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1021538618` Low clearance — South Elmora Avenue (NJ 439) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1029545892` Low clearance — North Carrier Parkway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1030055497` Low clearance — Riverside Freeway (I 215) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w1030104935` Low clearance — North Oraton Parkway → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1030317624` Low clearance — Riverside Freeway (I 215) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w1031933071` Low clearance — East Loop 820 → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w1032480820` Low clearance — Nostrand Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1032594153` Low clearance — Brighton Beach Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1032594157` Low clearance — Brighton Beach Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1032594159` Low clearance — Brighton Beach Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1032594162` Low clearance — Brighton 4th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1032594166` Low clearance — Brighton 6th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1032757618` Low clearance — Brighton Beach Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1037056792` Low clearance — North MacArthur Boulevard → kept in **dallas-tx**, removed from arlington-tx
+- `[bridges] osm-w1037178731` Low clearance — Morris Avenue (NJ 82) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1037947371` Low clearance — Avenue I → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1038618475` Low clearance — Parking Garage Driveway → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1038670078` Low clearance — North Carrier Parkway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1039006947` Low clearance — Woodhaven Boulevard → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1040455442` Low clearance — Brighton 5th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1040455450` Low clearance — West 1st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1040683345` Low clearance — West 8th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1040683354` Low clearance — Neptune Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1040880807` Low clearance — Belt Parkway (BP) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1042842532` Low clearance underpass (trunk link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1043350176` Low clearance — Tiemann Place → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1044377936` Low clearance — Quentin Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1049348388` Low clearance — West Airport Freeway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1050606509` Low clearance — Bay 37th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1050905790` Low clearance — Avenue L → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1050922389` Low clearance — Park Place → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1051976306` Low clearance — East 92nd Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1052600953` Low clearance underpass (service) → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1053400125` Low clearance — Crossunder #7 → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1053888213` Low clearance — Market Street → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w1054123076` Low clearance — 23rd Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1055040805` Low clearance — Bayonne Bridge (NY 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1055046703` Low clearance — US 46 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w105563957` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1055774824` Low clearance — Columbia Avenue (NJ 5) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w105742258` Low clearance — East McLoughlin Boulevard → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w1060560551` Low clearance — Bay 49th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1060560965` Low clearance — 28th Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1060562477` Low clearance — Harway Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1061576516` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w106183200` Low clearance — Hohokam Expressway (AZ 143) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w106183219` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w1062114027` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w106308399` Low clearance — East Belleview Avenue → kept in **aurora-co**, removed from denver-co
+- `[bridges] osm-w1063142899` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **new-haven-ct**, removed from bridgeport-ct
+- `[bridges] osm-w1063147849` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1063158295` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **new-haven-ct**, removed from bridgeport-ct
+- `[bridges] osm-w1063158296` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1066256236` Low clearance — Bay 25th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1066278098` Low clearance — 55th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1067593596` Low clearance — I 95 → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1068094238` Low clearance — North College Avenue → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1069692101` Low clearance — Hudson Street (CR 124) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1069693814` Low clearance — River Drive (CR 38) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w10713766` Low clearance — 30th Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1071657817` Low clearance — Central Avenue (CR 508) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071658556` Low clearance — Joyce Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071658990` Low clearance — Mitchell Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071661977` Low clearance — Freeman Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071663373` Low clearance — Nassau Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071664344` Low clearance — McChesney Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071665443` Low clearance — Christopher Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071666063` Low clearance — Tremont Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071667063` Low clearance — Beach Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071667361` Low clearance — Chestnut Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071668127` Low clearance — Morris Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071668440` Low clearance — Argyle Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071670052` Low clearance — Cary Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071670842` Low clearance — Glebe Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071677263` Low clearance — South Day Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071677585` Low clearance — South Center Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071678870` Low clearance — Hickory Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1071679487` Low clearance — Oakwood Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w10718719` Low clearance underpass (motorway link) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1072935114` Low clearance — South Hunts Lane → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w1073245780` Low clearance — Avenue T → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1073246843` Low clearance — Avenue S → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w107418594` Low clearance — Washington Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1075538736` Low clearance — Avenue N → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075539477` Low clearance — Avenue M → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611223` Low clearance — Avenue O → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611224` Low clearance — Sheepshead Bay Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611228` Low clearance — Avenue Y → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611232` Low clearance — Avenue V → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611234` Low clearance — Avenue U → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611236` Low clearance — Avenue R → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611244` Low clearance — Avenue P → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611245` Low clearance — Locust Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611247` Low clearance — Avenue K → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1075611249` Low clearance — Avenue J → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1076694934` Low clearance — Belt Parkway (BP) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w107674371` Low clearance — 4th Street → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w1078189201` Low clearance — Wilbarger Street → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1080313714` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1081068727` Low clearance underpass (service) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1081634673` Low clearance underpass (service) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w1081649444` Low clearance — Bergen Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1082366326` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w108298535` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1083512873` Low clearance — 24th Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1083789818` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1085503136` Low clearance — George Washington Bridge Lower Level (I 95;US 1) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1086491151` Low clearance — Franklin Avenue (CR 645) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1086504473` Low clearance — Watchung Avenue (CR 655) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086508601` Low clearance — Passaic Avenue (CR 699) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1086524290` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086530426` Low clearance — NJ 17 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086531001` Low clearance — Christopher Columbus Highway (Local Roadway) (I 80) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1086531992` Low clearance — Christopher Columbus Highway (Local Roadway) (I 80) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w1086531993` Low clearance — Christopher Columbus Highway (Local Roadway) (I 80) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1086533785` Low clearance — Pearl Street (CR 614) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086738238` Low clearance — Railroad Avenue (CR 41) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1086739615` Low clearance — River Road (CR 41) → kept in **new-york-ny**, removed from newark-nj
+- `[bridges] osm-w1086744448` Low clearance — Fairview Avenue (CR 48) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w1086752465` Low clearance — Bergen Boulevard (US 1;US 9;US 46) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1086753611` Low clearance — Spring Street (US 1;US 9) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086758209` Low clearance — US 22 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086758211` Low clearance — US 22 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086761037` Low clearance — US 46 → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w1086761235` Low clearance — US 46 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1086782363` Low clearance — Grand Avenue (NJ 93) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w1086799242` Low clearance — Elmora Avenue (NJ 439) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087267236` Low clearance — North Grove Street (CR 509) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087300853` Low clearance — Hackensack Street (CR 55) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1087309207` Low clearance — Terrace Avenue (CR 55) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087309208` Low clearance — Terrace Avenue (CR 55) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087543409` Low clearance — New York Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1087546400` Low clearance — Main Avenue (CR 61) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1087547538` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087555763` Low clearance — Pompton Avenue (NJ 23) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087560392` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1087631135` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1087974357` Low clearance — Williamsburg Bridge → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1088616543` Low clearance — 1st Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1088618483` Low clearance — 2nd Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1088618571` Low clearance — 3rd Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1088620182` Low clearance — 4th Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089285818` Low clearance — Chester Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089286218` Low clearance — Raymond Boulevard → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089299627` Low clearance — Chestnut Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089301462` Low clearance — Green Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089302593` Low clearance — Greenwood Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089309957` Low clearance — Magnolia Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089310529` Low clearance — Magnolia Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089321885` Low clearance — North Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089322195` Low clearance — East Jersey Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089322707` Low clearance — West Jersey Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089500005` Low clearance — Trumbull Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089501223` Low clearance — South Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089502125` Low clearance — South Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089522140` Low clearance — Bond Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089522860` Low clearance — Catherine Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089526499` Low clearance — Clark Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089527477` Low clearance — Court Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089528371` Low clearance — Delafield Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089529662` Low clearance — Division Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089531987` Low clearance — East Kinney Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089535616` Low clearance — Elm Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089536602` Low clearance — Empire Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089537125` Low clearance — Fairmount Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089544243` Low clearance — Franklin Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089544759` Low clearance — Fulton Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089545030` Low clearance — Marshall Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089545347` Low clearance — Elizabeth Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089545762` Low clearance — Livingston Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089545989` Low clearance — Glenwood Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089546665` Low clearance — Washington Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089547133` Low clearance — Hillside Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089547247` Low clearance — North Grove Street (CR 509) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089547815` Low clearance — Walnut Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089548842` Low clearance — West Grand Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089550066` Low clearance — Union Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089551194` Low clearance — Chestnut Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089551706` Low clearance — Broad Street (CR 509) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089551709` Low clearance — Belleville Avenue (CR 506) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089552087` Low clearance — Pine Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089552206` Low clearance — Grove Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089556675` Low clearance — Jefferson Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089557392` Low clearance — Madison Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1089558079` Low clearance — Lafayette Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089559149` Low clearance — Oliver Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1089864102` Low clearance — 21st Street (NY 25A) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1091066404` Low clearance — McClellan Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1091068051` Low clearance — New Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1091068168` Low clearance — Stuyvesant Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1091072806` Low clearance — Rutledge Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1091073069` Low clearance — Spruce Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1091997729` Low clearance — Brooklyn Bridge Boulevard → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1093217590` Low clearance — River Drive (CR 624) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1093220839` Low clearance — River Road (CR 624) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1093223042` Low clearance — US 46 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1093224023` Low clearance — US 46 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1093224025` Low clearance — US 46 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1093235065` Low clearance — Main Avenue (CR 601) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1094578082` Low clearance — Brook Avenue ((608)) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1094580095` Low clearance — Delawanna Avenue ((610)) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1094586368` Low clearance — Newark-Jersey City Turnpike (CR 508) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1094970424` Low clearance — Clifton Boulevard → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1094973148` Low clearance — Lower Notch Road → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1094974669` Low clearance — Kingsland Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1096064530` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w109819780` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w1099415511` Low clearance — Prospect Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1103110912` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1103115027` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1107032192` Low clearance — South Hunts Lane → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w1111551742` Low clearance — Branch Brook Park Drive → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1111551743` Low clearance — Branch Brook Park Drive → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1111910061` Low clearance — Sands Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1116448470` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1117641236` Low clearance — Remsen Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w111810285` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1119283629` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1121627729` Low clearance — Bedford Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1121956572` Low clearance — Avenue X → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1121958891` Low clearance — Bay Parkway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1121958893` Low clearance — Bay 29th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1121958894` Low clearance — Bay 28th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1125303771` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w1126631773` Low clearance — East Edgar Road (US 1;US 9) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1126631776` Low clearance — East Edgar Road (US 1;US 9) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1130838816` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1137257585` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1138104246` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w1153118258` Low clearance — Northeast Buchanan Street → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1154355607` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w11563719` Low clearance — Bergen Boulevard (NJ 63) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1157780801` Low clearance — Avenue Z → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1157780802` Low clearance — Avenue Y → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1157780803` Low clearance — Shell Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w11580372` Low clearance — Kingsland Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1160061011` Low clearance — North Briery Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w11618252` Low clearance — Broad Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w11619197` Low clearance — Washington Place → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w11624544` Low clearance — Forest Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w11632319` Low clearance — Hoboken Avenue → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w11633572` Low clearance — Avenue C → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w11634131` Low clearance — Johnston Avenue → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w116570291` Low clearance — NJ 17 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w116570295` Low clearance — NJ 3 → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w11726310` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w11728355` Low clearance underpass (trunk link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w11728422` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w11728673` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w11745084` Low clearance — CR 702 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1175594412` Low clearance underpass (service) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w11785082` Low clearance — North Wood Avenue (CR 617) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1180567731` Low clearance — Nagle Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1188056755` Low clearance — 69th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w119089217` Low clearance — Superstition Freeway (US 60) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w119089342` Low clearance underpass (motorway link) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w119089385` Low clearance — Superstition Freeway (US 60) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w119116757` Low clearance — East Sky Harbor Boulevard → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w119359907` Low clearance — Artesia Freeway (CA 91) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1196915350` Low clearance — Beardsley Avenue → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1196915554` Low clearance — River Street → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1196915630` Low clearance — Prospect Street → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1196915709` Low clearance — Gulf Street → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w1200025986` Low clearance — Tension Drive → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w120093370` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w120093372` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w120182180` Low clearance — Crossunder #7 → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1207620034` Low clearance — Harris Avenue → kept in **los-angeles-ca**, removed from long-beach-ca
+- `[bridges] osm-w1212903653` Low clearance — Charles Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1212903768` Low clearance — Pleasant Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1214595996` Low clearance — Mountain Creek Parkway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1215528187` Low clearance underpass (service) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1215630131` Low clearance underpass (service) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1222625367` Low clearance — Van Sinderen Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223874588` Low clearance — Cypress Hills Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223875107` Low clearance — Forest Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223875403` Low clearance — Seneca Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223875564` Low clearance — Cypress Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223876462` Low clearance — Cooper Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223876681` Low clearance — Central Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223877537` Low clearance — Flushing Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223882480` Low clearance — Kingston Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223882893` Low clearance — Brooklyn Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223883220` Low clearance — Albany Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223885866` Low clearance — East 94th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223886337` Low clearance — Rockaway Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223886757` Low clearance — East 83rd Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223886872` Low clearance — Ralph Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223887307` Low clearance — Utica Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223887809` Low clearance — Glenwood Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223891407` Low clearance — New Lots Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1223892748` Low clearance — Dewitt Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1224741367` Low clearance — Spring Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w122625712` Low clearance — Goethals Bridge (I 278) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w122733008` Low clearance — Airport Freeway (TX 121; TX 183) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w122733057` Low clearance — Tom Landry Freeway (I 30) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1230769866` Low clearance underpass (tertiary link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1232877613` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1233001312` Low clearance — Christopher Columbus Highway (Local Roadway) (I 80) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1233878666` Low clearance — Gateway Road → kept in **aurora-co**, removed from denver-co
+- `[bridges] osm-w123502679` Low clearance — Southwest Sam Jackson Park Road → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w123689395` Low clearance — I 5 → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w1238946705` Low clearance — McDonald Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1240308125` Low clearance — Woodside Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1245143817` Low clearance — 36th Avenue South → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1245143822` Low clearance — 31st Avenue South → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1250690198` Low clearance — McDonald Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w125343975` Low clearance — San Pablo Avenue → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1263554461` Low clearance — Dartmouth Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1264701691` Low clearance — I 278 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1264707829` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1264707831` Low clearance — Goethals Bridge (I 278) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1266062552` Low clearance — Staten Island Expressway (I 278) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1267512488` Low clearance — Lilydale Road (CR 45) → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w1267513153` Low clearance — Osceola Avenue → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w1267514283` Low clearance — Maryland Avenue West (CH 31) → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w1267514508` Low clearance — Dale Street North (CR 53) → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w1267516118` Low clearance — Lexington Parkway North (CR 51) → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w1267517743` Low clearance — University Avenue (CH 34) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1267519579` Low clearance — Como Avenue → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1267526475` Low clearance — New Brighton Road (CR 47) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1267526845` Low clearance — 8th Avenue Southwest (CH 77) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w1267756943` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1268253348` Low clearance — East 58th Avenue → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1268253372` Low clearance — North York Street → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1268296742` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1270467525` Low clearance — Woodruff Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w127887192` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **new-haven-ct**, removed from bridgeport-ct
+- `[bridges] osm-w128155580` Low clearance — Pomona Freeway (CA 60) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w128155593` Low clearance — Pomona Freeway (CA 60) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w1284535196` Low clearance — General Casimir Pulaski Skyway (I 93;US 1;MA 3) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1284535197` Low clearance — General Casimir Pulaski Skyway (I 93;US 1;MA 3) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1286144679` Low clearance — East 60th Avenue → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1287670368` Low clearance — I 495 → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1298236773` Low clearance — West Fogg Street → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w1302585700` Low clearance underpass (service) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w1302585707` Low clearance — Artesia Freeway (CA 91) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w1302585710` Low clearance — Artesia Freeway (CA 91) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w1302585713` Low clearance — Artesia Freeway (CA 91) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w1305702109` Low clearance — McLester Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1305702110` Low clearance — McLester Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1306478189` Low clearance underpass (service) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w1306598028` Low clearance — Grove Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1307141354` Low clearance — Avenue A → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1307141368` Low clearance — Bayonne Bridge (NY 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1307141369` Low clearance — Bayonne Bridge (NJ 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1308908302` Low clearance — Valley Road (CR 621) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1309994845` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1309994854` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1312132522` Low clearance — North Bettie Cram Drive → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1317980055` Low clearance — Brook Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317980197` Low clearance — Saint Ann's Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317980609` Low clearance — Eagle Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317980649` Low clearance — Cauldwell Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317981452` Low clearance — Trinity Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317981887` Low clearance — Union Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317982043` Low clearance — East 161st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1317982807` Low clearance — Westchester Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1323450362` Low clearance — East 126th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1323825259` Low clearance — Freeport Street → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w132500903` Low clearance — Raymond Boulevard → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1327038028` Low clearance — North Stiles Street (CR 615) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1329515292` Low clearance — 38th Street → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1332891311` Low clearance — North 48th Street → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1332893414` Low clearance — North Lake View Road → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1333174394` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w1334224285` Low clearance — East Sky Harbor Boulevard → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w1334577717` Low clearance — West Rio Salado Parkway → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1335205757` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w1335365693` Low clearance — Trinity Place → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1336085258` Low clearance — South 5th Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w13361134` Low clearance — Woodruff Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1336397387` Low clearance — US 22 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w133801723` Low clearance — 86th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1339765258` Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1340120398` Low clearance — Pennsylvania Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1340139874` Low clearance — Carey Street → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1340143406` Low clearance — I 820 → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1340143932` Low clearance — I 820 → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1340375991` Low clearance — East 21st Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1340376131` Low clearance — East 22nd Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1341563969` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1341652022` Low clearance — Torrance Boulevard → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1341784722` Low clearance — Bayonne Bridge (NY 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1341935557` Low clearance — North Union Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1342981618` Low clearance — East Rancho Vista Drive → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1343418981` Low clearance — Ronald Reagan Memorial Highway (I 20) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w1343418982` Low clearance — Ronald Reagan Memorial Highway (I 20) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w1343669683` Low clearance — Northeast 122nd Avenue → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w1346312672` Low clearance — Huntington Avenue (MA 9) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1346934428` Low clearance underpass (service) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1346992449` Low clearance — Meeker Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1347096403` Low clearance — North MacArthur Boulevard → kept in **dallas-tx**, removed from arlington-tx
+- `[bridges] osm-w1347107216` Low clearance — West Oakdale Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1347250249` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1347260356` Low clearance — North State Highway 161 (TX 161) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1347266166` Low clearance — East Main Street (TX 180) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1347420334` Low clearance — Ronald Reagan Memorial Highway (I 20) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1347420578` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1349004795` Low clearance — New Utrecht Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1349727492` Low clearance — SH 183 TEXpress (TX 183 TEXpress) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1349737882` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1349744041` Low clearance — SH 183 TEXpress (TX 183 TEXpress) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1349744395` Low clearance — SH 183 TEXpress (TX 183 TEXpress) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1349744867` Low clearance — North Belt Line Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1349838322` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w134992173` Low clearance — North Marion Street → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1353773382` Low clearance — Grove Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1353773551` Low clearance — Brattle Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1353773875` Low clearance — Forest Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1355895591` Low clearance — Massachusetts Turnpike (I 90) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1363282651` Low clearance — West 133rd Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1363303527` Low clearance — McGrath Highway (MA 28) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1366413658` Low clearance — Central Avenue → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w1367662498` Low clearance — North Wood Avenue (CR 617) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1370140191` Low clearance — Mountain View Avenue → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w1370394913` Low clearance — Airport Freeway (TX 121;TX 183) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w137491639` Low clearance — East Sky Harbor Boulevard → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w1376915734` Low clearance — Martin Luther King Junior Way → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1385097726` Low clearance — Avenue C → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1385097728` Low clearance — John F. Kennedy Boulevard (CR 501) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1385098360` Low clearance — Garfield Avenue → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w138516547` Low clearance — US 1 EXPR;US 9 EXPR → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w138789021` Low clearance — Memorial Drive (MA 3) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1387914878` Low clearance — West 158th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1388377963` Low clearance — Saint Clair Place → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1389008419` Low clearance — Belt Parkway (BP) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1392186655` Low clearance — Mary Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w1408585933` Low clearance underpass (service) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1409827102` Low clearance — Dorchester Avenue → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1409827104` Low clearance — Adams Street → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1413970483` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1413970484` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1416589760` Low clearance — Linnet Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1416589762` Low clearance — Broadway → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1416776687` Low clearance — Adams Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1417532753` Low clearance — North Quebec Street → kept in **aurora-co**, removed from denver-co
+- `[bridges] osm-w1417538046` Low clearance — Washington Street → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w1418591120` Low clearance — River Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1418821455` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1418860893` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1418891428` Low clearance — River Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1418891429` Low clearance — River Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w142438897` Low clearance — South 1st Avenue → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w1430491693` Low clearance — McGrath Highway (MA 28) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w143829026` Low clearance — Boulevard 26 (TX 26) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1442569230` Low clearance — North Story Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w1443047998` Low clearance — Nimitz Freeway (I 880) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1443048000` Low clearance — Nimitz Freeway (I 880) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1443049422` Low clearance — Peralta Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1443063461` Low clearance — Martin Luther King Junior Way → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1443064056` Low clearance — Castro Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1443065012` Low clearance — 7th Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w1443681236` Low clearance — Westchester Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1446718929` Low clearance — Northeast 82nd Avenue (OR 213) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w1449453095` Low clearance — Northeast 60th Avenue → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w1451927189` Low clearance — Artesia Freeway (CA 91) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1452441104` Low clearance — Myrtle Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1452782157` Low clearance — Massachusetts Turnpike (I 90) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w145318385` Low clearance — Southeast Columbia Way → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w1453281853` Low clearance — Artesia Tollway (CA 91 EXPR) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w1453491997` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1462866584` Low clearance — East 124th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1462866586` Low clearance — East 123rd Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w146999459` Low clearance — CA 13 → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w147226990` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w147406798` Low clearance underpass (secondary link) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1479456883` Low clearance — NJ 3 → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1479456884` Low clearance — NJ 3 → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1481645402` Low clearance — Brooklyn Bridge Boulevard → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w148624274` Low clearance — West Rio Salado Parkway → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w148642373` Low clearance — South 24th Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w1490765210` Low clearance — Fellsway West (MA 28) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1503399228` Low clearance — New Utrecht Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1505110059` Low clearance — Clayton Street → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1505110063` Low clearance — Victory Road → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1507378271` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1507520775` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w151004064` Low clearance — Holiday Lane → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w1516642733` Low clearance — Westchester Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1525900444` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1525900445` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w1529390628` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w1530329880` Low clearance — 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1531747578` Low clearance — Roosevelt Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1533648656` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w1538316633` Low clearance — Canal Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1538316635` Low clearance — Thompson Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1538334641` Low clearance — Wave Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w1538334642` Low clearance — West Fordham Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w1545754500` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w156867590` Low clearance — 65th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w157012389` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w159230480` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w160843937` Low clearance — East Willow Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w170993985` Low clearance — West Interstate 30 → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w170993987` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w171973736` Low clearance — Southwest Sam Jackson Park Road → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w175157552` Low clearance — I 95 → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w176406558` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w176406559` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w179550531` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w180189484` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w181467814` Low clearance — South Hunts Lane → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w181978116` Low clearance — West 182nd Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w18220305` Low clearance — Victoria Street North → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w183103091` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w183343384` Low clearance — Webster Street (CA 61) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w184111089` Low clearance — Red Mountain Freeway → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w184792839` Low clearance — Webster Street (CA 61) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w185741140` Low clearance — Lakewood Boulevard (CA 19) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w185773326` Low clearance — Beach Boulevard → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[bridges] osm-w185773338` Low clearance — Carson Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w18580425` Low clearance — North 20th Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w189150275` Low clearance underpass (primary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w191926998` Low clearance — East Kingsbridge Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w191927000` Low clearance — East Kingsbridge Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w196248323` Low clearance — East Sky Harbor Boulevard → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w197953945` Low clearance — Center Garage Drive → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w198595470` Low clearance — Ed Koch Queensboro Bridge Lower Roadway (NY 25) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w198924626` Low clearance — Ed Koch Queensboro Bridge Lower Roadway (NY 25) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w198924627` Low clearance — Ed Koch Queensboro Bridge Lower Roadway (NY 25) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w200957801` Low clearance — 48th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w203665530` Low clearance — North Columbia Boulevard → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w207593660` Low clearance underpass (service) → kept in **aurora-co**, removed from denver-co
+- `[bridges] osm-w208793269` Low clearance — Avenue X → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w208795691` Low clearance — Stillwell Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w208795699` Low clearance — Stillwell Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w216933518` Low clearance — Roosevelt Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w216933519` Low clearance — 61st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w218965860` Low clearance — South Yosemite Street → kept in **aurora-co**, removed from denver-co
+- `[bridges] osm-w220536846` Low clearance — 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w220642952` Low clearance — Newtown Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w220691223` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w222719779` Low clearance — South Interstate Highway 35 Service Road → kept in **norman-ok**, removed from oklahoma-city-ok
+- `[bridges] osm-w223202928` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w223694269` Low clearance — Main Street (CR 56) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w223883745` Low clearance — River Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w223894159` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w223894160` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w223946301` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w224064175` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w224064177` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w224940696` Low clearance — Rahway Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w225509433` Low clearance — Hohokam Expressway (AZ 143) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w227074802` Low clearance — Jackie Robinson Parkway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w22920753` Low clearance — San Pablo Avenue → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w22927765` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w230625734` Low clearance — McDonald Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w23198680` Low clearance underpass (trunk link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w232292919` Low clearance underpass (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w23614535` Low clearance underpass (motorway link) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w23617600` Low clearance underpass (motorway link) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w23617922` Low clearance — North Lake View Road → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w23647674` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from mesa-az, scottsdale-az
+- `[bridges] osm-w23647683` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w23647827` Low clearance underpass (primary link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w23647835` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w23690942` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w23691200` Low clearance underpass (secondary link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w23691240` Low clearance underpass (secondary link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w23691266` Low clearance — East Cambridge Avenue → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w23874736` Low clearance — Dwight D. Eisenhower Highway (I 80) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w242520458` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w24276020` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w25482039` Low clearance — MA 3 → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w25579183` Low clearance — West Airport Freeway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w25580592` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w25622227` Low clearance — South Garage Drive → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w25967099` Low clearance — Broadway → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w261424135` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w262807652` Low clearance — US 1;US 9 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w262807660` Low clearance — University Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w263264144` Low clearance — Massachusetts Turnpike (I 90) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w265357870` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w26779600` Low clearance underpass (motorway link) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w268206245` Low clearance — Dr. Martin Luther King Jr. Boulevard → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w26924004` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w26950316` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w27209515` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w27239081` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w27274355` Low clearance — New Jersey Turnpike Local Roadway (I 95;NJTP) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w276050435` Low clearance — Prospect Place → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w276152020` Low clearance — 56th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w27630854` Low clearance — Bacon Street → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w27827484` Low clearance — South Walnut Street → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w27829387` Low clearance — North Oraton Parkway → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w28178232` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w28215049` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w28215182` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w28215196` Low clearance — Airport Freeway (TX 121;TX 183) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w28215291` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w282594320` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w282594322` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w28266533` Low clearance — I 820 → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w28383206` Low clearance — SH 183 TEXpress (TX 183 TEXpress) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w288724448` Low clearance — Wilmington Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w28931309` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w28931366` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w290451906` Low clearance underpass (service) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w291406523` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w29362585` Low clearance underpass (motorway link) → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w294598691` Low clearance — Frontage Road → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w296527234` Low clearance — Carson Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w30022340` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w30022356` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w30022360` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w30022672` Low clearance underpass (motorway link) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w30116970` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w30172688` Low clearance — South 42nd Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w307431164` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w308339409` Low clearance — Carroll Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w312161045` Low clearance — Arrivals → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w312161047` Low clearance — Arrivals → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w313311693` Low clearance underpass (service) → kept in **las-vegas-nv**, removed from henderson-nv
+- `[bridges] osm-w314021946` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w317400960` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w32490828` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w325755182` Low clearance — South 3rd Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w328015592` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w32922464` Low clearance — Ari Halbertam Memorial Ramp → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w32934362` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w32947289` Low clearance — Ed Koch Queensboro Bridge Lower Roadway (NY 25) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w32963302` Low clearance — FDR Drive (FDR) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w330741670` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w337489361` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w33783051` Low clearance — Paul Avenue → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w340006713` Low clearance — Branch Brook Park Drive → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w340029652` Low clearance — Southeast Columbia Shores Boulevard → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w341184586` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w344382339` Low clearance — I 820 TEXpress (I 820 TEXpress) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w345617055` Low clearance — East Edgar Road (US 1;US 9) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w34963604` Low clearance — Massachusetts Turnpike (I 90) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w35126659` Low clearance underpass (motorway link) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w351479502` Low clearance — Ralph Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w351652731` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w35379066` Low clearance — Riverside Freeway (CA 91) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w354610701` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w358227518` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w360639917` Low clearance — Goethals Bridge (I 278) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w360970679` Low clearance — NJ 17 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w361097107` Low clearance — NJ 17 → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w361097112` Low clearance — NJ 17 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w366977594` Low clearance underpass (secondary link) → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w368060722` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w368079995` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w374435110` Low clearance — 27th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w375313961` Low clearance — Special Surgery Drive → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w375744879` Low clearance — 4th Street → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w376626956` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w379498038` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w38071038` Low clearance — I 278 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w380734692` Low clearance — West Willow Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w38078909` Low clearance — Bayonne Bridge (NY 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w38078911` Low clearance — Bayonne Bridge (NY 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w381206112` Low clearance — East Los Coyotes Diagonal → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w38312431` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w38312495` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w38312633` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w38312684` Low clearance — Van Houten Avenue (CR 614) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w383390248` Low clearance — Airport Freeway TEXpress (TX 121 Express;TX 183 Express) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w384240591` Low clearance — 213th Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w384385252` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w387041465` Low clearance underpass (service) → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w38774197` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w388133478` Low clearance — Southwest Talbot Road → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w388798562` Low clearance underpass (service) → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w39076087` Low clearance underpass (secondary link) → kept in **dallas-tx**, removed from arlington-tx
+- `[bridges] osm-w391372634` Low clearance — Tempe Town Lake Parking Mill Ave Bridge → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w39172322` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w393311249` Low clearance — South Country Club Drive (AZ 87) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w395353759` Low clearance underpass (service) → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w395490719` Low clearance — South Mill Avenue → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w39701956` Low clearance — North State Highway 161 (TX 161) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w39749587` Low clearance — North State Highway 161 (TX 161) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w398235824` Low clearance — West Artesia Boulevard (CA 91) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w398364432` Low clearance — Long Beach Boulevard → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w39996078` Low clearance — NJ 19 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w400223627` Low clearance — West Katella Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w400836993` Low clearance — Rosecrans Avenue → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w40337615` Low clearance — Williamsburg Bridge → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w405011885` Low clearance — Beach Boulevard → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[bridges] osm-w405509690` Low clearance — Teaneck Road (CR 39) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w406482933` Low clearance — Southwest 104th Street → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w406921682` Low clearance underpass (motorway link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w408004928` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w408376856` Low clearance — Southeast Salmon Street → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w408592884` Low clearance — East Washington Street → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w411798759` Low clearance — Franklin Avenue (CR 645) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w415664767` Low clearance — Monmouth Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w417728884` Low clearance — West Grand Avenue → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w41826155` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w418739377` Low clearance — Northeast Highway 99 → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w41877950` Low clearance — Storrow Drive → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w419032811` Low clearance — East Berry Street → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w419040557` Low clearance — South Carrier Parkway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w419089647` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w419236433` Low clearance — Little Road → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w419271112` Low clearance — Brentwood Stair Road → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w419313209` Low clearance — South Carrier Parkway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w419315884` Low clearance — South Belt Line Road (FM 1382) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w420330713` Low clearance — Kings Highway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w420520886` Low clearance — Neptune Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w420566875` Low clearance — Ocean Parkway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w420604634` Low clearance — East Homestead Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w420811724` Low clearance — US 1;US 9 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w420896630` Low clearance — Jersey Avenue → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w421103113` Low clearance — Atlantic Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w421386374` Low clearance — South Ward Place → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w421586015` Low clearance underpass (secondary link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w421853581` Low clearance — 79th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w421886767` Low clearance — Hillside Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w422032463` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w422535061` Low clearance — Springdale Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w423683258` Low clearance — Staten Island Expressway (I 278) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w423707830` Low clearance — Dr. Martin Luther King Jr. Boulevard → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w423989109` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w424168473` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w42480738` Low clearance — George Washington Bridge Lower Level (I 95;US 1) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w42480747` Low clearance — George Washington Bridge Lower Level (I 95;US 1) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w42502902` Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w42508666` Low clearance — Christopher Columbus Highway (Local Roadway) (I 80) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w426491326` Low clearance — Hammond Pond Parkway → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w426517212` Low clearance — McLester Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w426680174` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w426724368` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w427814313` Low clearance — Washington Street → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w431329320` Low clearance underpass (tertiary) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w43149068` Low clearance — South Garage Drive → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w432550255` Low clearance — Brooklyn Bridge → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w436581449` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w436788202` Low clearance — East Washington Street → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w436788295` Low clearance — East Washington Street → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w436791474` Low clearance — North Goldwater Boulevard → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w436795277` Low clearance — East Washington Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w436928524` Low clearance — East Rio Salado Parkway → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w436932677` Low clearance — North Drinkwater Boulevard → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w436950569` Low clearance — South 7th Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w437313754` Low clearance — South 16th Street → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w437315429` Low clearance — North Alma School Road → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w437378041` Low clearance — North Country Club Drive (AZ 87) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w438205500` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w43981317` Low clearance — President George Bush Turnpike (PGBT) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w440405522` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w440861401` Low clearance — 48th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w44165029` Low clearance — Park Avenue Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w442935905` Low clearance underpass (service) → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w445427208` Low clearance underpass (primary link) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w44559429` Low clearance underpass (motorway link) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w454615351` Low clearance — North Garage Drive → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w454615353` Low clearance — North Garage Drive → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w455688835` Low clearance — FDR Drive (FDR) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w456580804` Low clearance — Central Avenue → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w457530226` Low clearance — Medford Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w46110588` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46121879` Low clearance underpass (trunk link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46154286` Low clearance — South Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46154738` Low clearance — Fulton Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46154741` Low clearance — Broadway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46177111` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46179210` Low clearance — Manhattan Bridge → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46201643` Low clearance — 1st Avenue Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46201652` Low clearance — Waterside Plaza → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46211822` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w464538099` Low clearance — Sheepshead Bay Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46591083` Low clearance — Fort Washington Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46613630` Low clearance — Hudson Terrace (CR 505) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46613696` Low clearance — 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46714317` Low clearance — 50th Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46735682` Low clearance — Roosevelt Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46777164` Low clearance — Atlantic Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46777175` Low clearance — Atlantic Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46781486` Low clearance — East New York Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46786492` Low clearance underpass (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46786498` Low clearance underpass (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46786502` Low clearance underpass (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46786503` Low clearance underpass (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46786508` Low clearance underpass (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46786512` Low clearance underpass (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46819899` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46819900` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46835350` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46835351` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46835358` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46865648` Low clearance — 86th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46865653` Low clearance — 86th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w46906327` Low clearance — Shore Parkway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w474788517` Low clearance — Jurupa Avenue → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w474788519` Low clearance — Jurupa Avenue → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w474799757` Low clearance — Valley Way (CA 81 Unco) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w474889129` Low clearance — University Avenue (CA 60 BUS;CA 81 Unco) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w474917903` Low clearance — South Waterman Avenue (US 99 Hist) → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w475154313` Low clearance — California Street → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w476013964` Low clearance — Embarcadero West → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w483865758` Low clearance — Fox Tower Parking → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w484874047` Low clearance — Staten Island Expressway (I 278) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w485193860` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w485271434` Low clearance — Commonwealth Avenue (MA 2) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w48780752` Low clearance — Ronald Reagan Memorial Highway (I 20) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w489082331` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w48941600` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w49200097` Low clearance — Murray Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w495735396` Low clearance — Northeast Loop (I 820) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w497256079` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497258674` Low clearance — Broadway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497258676` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497258677` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497263812` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497265537` Low clearance — Queens Boulevard → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497397707` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497401961` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w497750509` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w499578998` Low clearance — Northeast Loop (I 820) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w50074179` Low clearance — George Washington Bridge Lower Level (I 95;US 1;US 9) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w50074180` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w503268656` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w503404700` Low clearance — Airport Freeway (TX 183) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w50690291` Low clearance — Dwight D. Eisenhower Highway (I 80) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w508414398` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w510052808` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w511904389` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w51510995` Low clearance — Stockton Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w51653674` Low clearance underpass (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w51653691` Low clearance underpass (tertiary link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w516692961` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w516694364` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w522309852` Low clearance — Northeast 27th Street → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w52328300` Low clearance — Northeast Highway 99 → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w52739706` Low clearance — Long Beach Freeway (I 710) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w528041720` Low clearance — Superstition Freeway (US 60) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w528401595` Low clearance — Superstition Freeway (US 60) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w528410106` Low clearance — Superstition Freeway (US 60) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w528417963` Low clearance — Maricopa Freeway (I 10;US 60) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w530654768` Low clearance — Broadway → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w531897973` Low clearance — NJ 3 → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w533136618` Low clearance — Red Mountain Freeway → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w536526400` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w537944159` Low clearance — East Sky Harbor Circle South → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w538944477` Low clearance — East Sky Harbor Circle North → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w538944478` Low clearance — East Sky Harbor Circle North → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w54453559` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w545438320` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w545471538` Low clearance — 20th Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w545471778` Low clearance — 86th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w545471779` Low clearance — 86th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w545608623` Low clearance — McDonald Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w550911696` Low clearance — Van Sinderen Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w555123895` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w555320347` Low clearance underpass (service) → kept in **scottsdale-az**, removed from mesa-az
+- `[bridges] osm-w5574536` Low clearance underpass (motorway link) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w557535897` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w55770428` Low clearance — San Diego Freeway (I 405) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w55770429` Low clearance — San Diego Freeway (I 405) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w558351585` Low clearance underpass (secondary link) → kept in **dallas-tx**, removed from arlington-tx
+- `[bridges] osm-w55848070` Low clearance — Long Beach Freeway (I 710) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w55848071` Low clearance — Long Beach Freeway (I 710) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w560030950` Low clearance — Mansfield Highway (US 287 Bus) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w56053705` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w56053748` Low clearance — US 1;US 9 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w56053765` Low clearance underpass (tertiary link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w56053798` Low clearance — US 1 EXPR;US 9 EXPR → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w56054746` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w560717013` Low clearance — Handley Ederville Road → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w563587039` Low clearance — North Story Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w566881058` Low clearance underpass (service) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w5669226` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5669236` Low clearance — York Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5669420` Low clearance — Ari Halbertam Memorial Ramp → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5669581` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5669636` Low clearance — Centre Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5670226` Low clearance — West 133rd Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5671089` Low clearance — 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5671090` Low clearance — 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5671092` Low clearance — 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5671688` Low clearance — 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5671690` Low clearance — 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5671901` Low clearance — FDR Drive (FDR) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5672478` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5674037` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj, newark-nj
+- `[bridges] osm-w5676684` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5678001` Low clearance — Brighton Beach Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5679722` Low clearance — Woodside Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5681666` Low clearance — Avenue U → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w568378654` Low clearance — Terminal 4 North Arrivals → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w569613762` Low clearance — Northwest 7th Street → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w5696664` Low clearance — Prospect Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5698166` Low clearance — Westchester Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5707131` Low clearance — 43rd Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w570916980` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w570935877` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w5716159` Low clearance — Burgher Avenue → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w575450764` Low clearance — Central Avenue → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w578725783` Low clearance — Bixby Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w579670575` Low clearance — Johnston Avenue → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w579737142` Low clearance — South Essex Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w579899390` Low clearance — Marin Boulevard → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w581117964` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w581475798` Low clearance — River Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w581544452` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w581544460` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w582034698` Low clearance — Washington Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w582706057` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w583640586` Low clearance — Terrace Avenue (CR 55) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w583735190` Low clearance — Linden Boulevard → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w584203014` Low clearance — Goethals Bridge (I 278) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w584203015` Low clearance — Staten Island Expressway (I 278) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w585051154` Low clearance — William F. McClellan Highway (MA 1A) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w587079732` Low clearance — Fulton Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w590040254` Low clearance — Pacific Avenue → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w591217332` Low clearance — Reid Rotary (MA 2) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w591493245` Low clearance — Centre Street (MA 60) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w591497927` Low clearance — Crenshaw Boulevard → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w591686216` Low clearance — Will Rogers Expressway (I 44;US 62) → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w593167573` Low clearance — Helen Cole Memorial Highway (I 35;US 77) → kept in **norman-ok**, removed from oklahoma-city-ok
+- `[bridges] osm-w593167581` Low clearance — West Main Street → kept in **norman-ok**, removed from oklahoma-city-ok
+- `[bridges] osm-w593167583` Low clearance — Northwest 5th Street → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w593167586` Low clearance underpass (secondary) → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w593167593` Low clearance — North Interstate Highway 35 Frontage Road → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w593167595` Low clearance — Helen Cole Memorial Highway (I 35;US 77) → kept in **oklahoma-city-ok**, removed from norman-ok
+- `[bridges] osm-w59543697` Low clearance — Arrivals → kept in **vancouver-wa**, removed from portland-or
+- `[bridges] osm-w602247693` Low clearance — Ramey Avenue → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w60254480` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w60256694` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w60429496` Low clearance — US 1 Truck;US 9 Truck → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w605982686` Low clearance — West Southern Avenue → kept in **phoenix-az**, removed from mesa-az, scottsdale-az
+- `[bridges] osm-w605982688` Low clearance — West Southern Avenue → kept in **phoenix-az**, removed from mesa-az, scottsdale-az
+- `[bridges] osm-w60727778` Low clearance — I 278 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w60730780` Low clearance — East Edgar Road (US 1;US 9) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w60785882` Low clearance — Emmet Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w611302540` Low clearance — Market Street → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w61324828` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w61416545` Low clearance — Valley Road (CR 621) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w61425034` Low clearance — Passaic Avenue (CR 614) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w61461852` Low clearance — Boulevard (CR 57) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w61663249` Low clearance — NJ 17 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w61671800` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w619535758` Low clearance — Cortland Avenue → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w628572628` Low clearance — East 46th Avenue → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w628823596` Low clearance — North Brighton Boulevard (CO 265) → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w63500101` Low clearance — Rosecrans Avenue → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w636154178` Low clearance — Como Avenue → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[bridges] osm-w644974432` Low clearance — Bayonne Bridge (NJ 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w645332470` Low clearance — Bayonne Bridge (NJ 440) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w649344481` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w664204752` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w666628989` Low clearance — 48th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w668807084` Low clearance — Blanken Avenue → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w669765279` Low clearance — Tinton Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w678234027` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w681162234` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w68537821` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w688192464` Low clearance — Brooklyn Bridge Boulevard → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w697831405` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w697870186` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w698295020` Low clearance — River Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w7003542` Low clearance underpass (motorway link) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w706548258` Low clearance — Brannan Street → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w713812499` Low clearance underpass (service) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w7226252` Low clearance — Fairway Drive → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w727702633` Low clearance — East 45th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w731554888` Low clearance — Hudson Terrace (CR 505) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w733048878` Low clearance — Shell Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w734190676` Low clearance — 81st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w739111681` Low clearance — Coles Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w740194579` Low clearance — Broad Street (CR 509) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w741231458` Low clearance — New Point Road → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w749724080` Low clearance underpass (service) → kept in **portland-or**, removed from vancouver-wa
+- `[bridges] osm-w749923141` Low clearance — 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w750337513` Low clearance underpass (motorway link) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w750337515` Low clearance — Northeast Loop (I 820) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w750337516` Low clearance — Northeast Loop (I 820) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w754143478` Low clearance — Airport Freeway (TX 121;TX 183) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w754143480` Low clearance — Airport Freeway (TX 121;TX 183) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w754143481` Low clearance — Airport Freeway (TX 121) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w754143483` Low clearance — Airport Freeway (TX 121) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w754874163` Low clearance underpass (service) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w755781588` Low clearance — San Diego Freeway (I 405) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w755781590` Low clearance — Redondo Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w755781597` Low clearance — Lakewood Boulevard (CA 19) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w757114980` Low clearance — San Diego Freeway (I 405) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w757114984` Low clearance — San Diego Freeway (I 405) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w757114985` Low clearance underpass (motorway link) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w758464978` Low clearance underpass (service) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w760727187` Low clearance — 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w760727194` Low clearance — 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w760748052` Low clearance — 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w76137981` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w76137984` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w761404920` Low clearance — Superstition Freeway (US 60) → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w76142158` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w76142161` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w76142703` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w766245216` Low clearance — Southeast 19th Street → kept in **norman-ok**, removed from oklahoma-city-ok
+- `[bridges] osm-w769984639` Low clearance — 7th Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w771535118` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w771780941` Low clearance — Clark Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w771950341` Low clearance — Saint Marks Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w772266903` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w772801444` Low clearance — San Diego Freeway (I 405) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w773625503` Low clearance underpass (service) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w775528434` Low clearance — Belvidere Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w780559978` Low clearance — Carlson Boulevard → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w783773833` Low clearance — North Rancho Avenue → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w787455602` Low clearance underpass (service) → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[bridges] osm-w792680697` Low clearance — High Street → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w799225632` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w799514409` Low clearance — Kingsland Avenue → kept in **jersey-city-nj**, removed from new-york-ny
+- `[bridges] osm-w801411752` Low clearance — Robert F. Kennedy Bridge → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w801411754` Low clearance — Robert F. Kennedy Bridge → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w802024386` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8028082` Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w803871146` Low clearance — Frank E. Rodgers Boulevard South (CR 697) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w805206100` Low clearance — 48th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w806585607` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w80676430` Low clearance — I 93 → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w807640156` Low clearance — Storrow Drive → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w807640157` Low clearance — Storrow Drive → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w807640159` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w808614661` Low clearance — Robert F. Kennedy Bridge (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w80902384` Low clearance — West Shady Grove Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w80902388` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w8112944` Low clearance — Lemoine Avenue (NJ 67) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w816168038` Low clearance — 85th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w816258730` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w817406992` Low clearance — Storrow Drive (MA 28) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w818672452` Low clearance underpass (service) → kept in **scottsdale-az**, removed from phoenix-az
+- `[bridges] osm-w822706200` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w82329768` Low clearance — McGrath Highway (MA 28) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w825494452` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w827546771` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w827920434` Low clearance — Robinson Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w828315560` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w829097343` Low clearance — Riverside Avenue → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w832081424` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w833091399` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w834043278` Low clearance — East 110th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w834057749` Low clearance — Massachusetts Turnpike (I 90) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w834057750` Low clearance — Massachusetts Turnpike (I 90) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w835987886` Low clearance — Victoria Street North → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[bridges] osm-w836110387` Low clearance — Memorial Drive (MA 3) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w837681802` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w837727435` Low clearance — Legends Way → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w838051695` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w838931896` Low clearance underpass (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[bridges] osm-w839987355` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w840011312` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w841066744` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w842187124` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w842264987` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w844997182` Low clearance — Tom Landry Freeway (I 30) → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w84506071` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w845643895` Low clearance — Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w845944276` Low clearance — Foundry Street → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w847098102` Low clearance — Airport Freeway (TX 183) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w847549866` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w847549867` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w848053080` Low clearance underpass (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w85340903` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w856169234` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w858046927` Low clearance underpass (service) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w860505232` Low clearance — East 46th Avenue → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w860929810` Low clearance — East Osborn Road → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w8615882` Low clearance — Museum Way → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8615988` Low clearance underpass (service) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w8617276` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w862890596` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8637722` Low clearance — David G. Mugar Way (MA 28) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8637927` Low clearance — MA 3 → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8639334` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w8643900` Low clearance underpass (primary link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8644232` Low clearance underpass (motorway) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8644346` Low clearance — General Casimir Pulaski Skyway (I 93;US 1;MA 3) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8644849` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8644976` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8645212` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8646148` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w8646197` Low clearance — Soldiers Field Road → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w8646897` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8647116` Low clearance — Foundry Street → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8647721` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w86479795` Low clearance — Commonwealth Avenue (MA 2) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w86480022` Low clearance — Storrow Drive → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w86480024` Low clearance — Storrow Drive → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w86480331` Low clearance — Storrow Drive → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w86480892` Low clearance underpass (motorway link) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w8648601` Low clearance — Science Park → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8648658` Low clearance — Storrow Drive (MA 3;MA 28) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8649412` Low clearance — Huntington Avenue (MA 9) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8649719` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8649889` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8650944` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8651498` Low clearance underpass (motorway link) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w8652379` Low clearance — Sumner Tunnel (MA 1A) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w867645130` Low clearance underpass (service) → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[bridges] osm-w868219595` Low clearance — Passaic Street (CR 40;CR 67) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w876089648` Low clearance — Martin Street → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w876635071` Low clearance — Fellsway West (MA 28) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w880000450` Low clearance — Kings Highway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w880094864` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w887311738` Low clearance — Hicks Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w891253022` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w891253023` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w891253025` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w8915265` Low clearance underpass (primary link) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w8921938` Low clearance — Dwight D. Eisenhower Highway (I 80) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w8922463` Low clearance — Dartmouth Street → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w892657408` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w895126087` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w902895847` Low clearance underpass (service) → kept in **scottsdale-az**, removed from mesa-az
+- `[bridges] osm-w903111503` Low clearance — Myrtle Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9038897` Low clearance — I 93 → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w903948639` Low clearance — Goethals Bridge (I 278) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w908437524` Low clearance underpass (service) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[bridges] osm-w909831621` Low clearance — South McClintock Drive → kept in **mesa-az**, removed from scottsdale-az
+- `[bridges] osm-w912286526` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w917306822` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w917451687` Low clearance — Airport Freeway (TX 183) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w918595210` Low clearance — Tom Landry Freeway (I 30) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w918675694` Low clearance — Airport Freeway (TX 121;TX 183) → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w920898109` Low clearance — Airport Freeway (TX 183) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w922469295` Low clearance — Little Road → kept in **arlington-tx**, removed from fort-worth-tx
+- `[bridges] osm-w923304948` Low clearance underpass (motorway) → kept in **bridgeport-ct**, removed from new-haven-ct
+- `[bridges] osm-w923793043` Low clearance — Legends Way → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w931236412` Low clearance underpass (service) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w931354764` Low clearance — Northeast Expressway (US 1) → kept in **boston-ma**, removed from cambridge-ma
+- `[bridges] osm-w932324336` Low clearance — West Interstate 20 → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w934177827` Low clearance — West Airport Freeway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w934177828` Low clearance — West Airport Freeway → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w934935693` Low clearance — South Central Avenue → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w939734147` Low clearance — Midway Road → kept in **fort-worth-tx**, removed from arlington-tx
+- `[bridges] osm-w941814923` Low clearance underpass (service) → kept in **new-york-ny**, removed from newark-nj
+- `[bridges] osm-w942738986` Low clearance underpass (service) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[bridges] osm-w944234373` Low clearance — North Service Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w947065716` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w947065717` Low clearance — Jerome Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w952169504` Low clearance — Linden Boulevard (NY 27) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w953473221` Low clearance underpass (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[bridges] osm-w954563802` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w955609273` Low clearance — North Belt Line Road → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w9574596` Low clearance underpass (motorway link) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[bridges] osm-w958254532` Low clearance — Brooklyn Bridge Boulevard → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w960100552` Low clearance underpass (motorway link) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[bridges] osm-w961904274` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w962288326` Low clearance — I 278 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w962288327` Low clearance — I 278 → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w963888302` Low clearance underpass (service) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w963984247` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w964294640` Low clearance — FDR Drive → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w964592432` Low clearance — Brooklyn-Queens Expressway (I 278) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w964903137` Low clearance underpass (motorway link) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w966420802` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w968468988` Low clearance — Garden State Parkway (GSP) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w968478440` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w968690226` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w96991235` Low clearance — Wilbur Cross Parkway (CT 15) → kept in **new-haven-ct**, removed from bridgeport-ct
+- `[bridges] osm-w9702602` Low clearance — George Washington Bridge Upper Level (I 95;US 1;US 9) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9702612` Low clearance — New Jersey Turnpike Local Roadway (I 95;NJTP) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9702618` Low clearance — US 1;US 9;US 46 → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9702641` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9702654` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9702680` Low clearance underpass (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w971252513` Low clearance — East 9th Avenue → kept in **denver-co**, removed from aurora-co
+- `[bridges] osm-w97530620` Low clearance — Riverside Freeway (CA 91) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w97530623` Low clearance — Riverside Freeway (CA 91) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w97530625` Low clearance — Riverside Freeway (CA 91) → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[bridges] osm-w975552898` Low clearance — Artesia Freeway (CA 91) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[bridges] osm-w97639438` Low clearance underpass (motorway link) → kept in **cambridge-ma**, removed from boston-ma
+- `[bridges] osm-w976709391` Low clearance — Phillipsburg-Newark Expressway (I 78) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w985591895` Low clearance — 48th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w987714386` Low clearance — Essex Freeway (I 280) → kept in **newark-nj**, removed from new-york-ny
+- `[bridges] osm-w988500273` Low clearance — 31st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w990471777` Low clearance underpass (service) → kept in **las-vegas-nv**, removed from henderson-nv
+- `[bridges] osm-w992475416` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w9937808` Low clearance underpass (motorway link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w993809824` Low clearance — Gravesend Neck Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w993849022` Low clearance — NJ 21 → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[bridges] osm-w9945705` Low clearance underpass (secondary link) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w995605513` Low clearance — Jackson Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[bridges] osm-w9958085` Low clearance — Airport Freeway (TX 183) → kept in **arlington-tx**, removed from dallas-tx
+- `[bridges] osm-w998066425` Low clearance — East Los Coyotes Diagonal → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[garages] osm-n12481606864` Centerpark Century 21 Parking Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n12481802641` Centerpark Harlow Parking Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n13059951779` Gateway One Parking Garage → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-n2825591196` Parking Deck A → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n2825635898` Parking Deck D → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n5360019842` Maxwell Place Parking Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n6366630989` PMC → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-n9336138884` Gold Key Valet → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-n9654139251` ProPark → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n9655030679` LM Liberty Parking → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n9655144550` Cielo Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n9670265974` SP+ Parking → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-n9682801122` LAZ Parking → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-r19318635` PreFlight Airport Parking PHX → kept in **scottsdale-az**, removed from phoenix-az
+- `[garages] osm-r19932315` Oregon Parks and Recreation Department → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-r2095576` Station Place Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-r5381527` SmartPark → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-r6492098` P4 Garage Daily Parking → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-r6495807` Terminal C Parking → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w100227494` Chase Field Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w100227503` Right Field Parking Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w102116137` Parking Structure 3 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w1027654721` Beaverton Central District Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w109719588` Gateway/Northeast 99th Avenue Transit Center Park and Ride → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w109825441` Ace Parking → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w109835104` Arizona Center Parking → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w1106859587` Short Term Parking A → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w1126741890` Speedway → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w1135647438` City of San Bernardino → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w1135647445` City of San Bernardino → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w1135647446` City of San Bernardino → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w1135647448` City of San Bernardino → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w119010874` Long Term Parking Garage P2 → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-w119408657` North Parking Structure → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w1215525137` The Waterfront Vancouver Parking Center → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-w121782829` Parking Structure 2 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w122350607` Legacy Health System → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w1284213976` University of Minnesota → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w1287762665` Trailhead Street Parking → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w129338701` Northrop Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w1314562835` Lovejoy Medical Parking → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w1327767000` Mill Avenue Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w134180161` Pepper Place Garage → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w134185638` Sirrine Parking Garage → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w136144381` North Eustis Street Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w1363400563` 755 Prior Ave → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w136625489` Pomeroy Parking Garage → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w136625494` Centennial Garage → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w137283621` Mesa Financial Plaza → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w142429771` Red Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w142440431` Purple Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w142440523` Yellow Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w1437055754` City of Fontana → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w1490248910` Haven at Golf Creek → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w150740384` 4041 Central Plaza Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w152294655` PMC → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w152299860` PMC → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w152299863` PMC → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w152299869` Ace → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w154976508` Civic Center Library Public Parking Garage → kept in **scottsdale-az**, removed from mesa-az
+- `[garages] osm-w154976510` Center for The Arts Public Parking Garage → kept in **scottsdale-az**, removed from mesa-az
+- `[garages] osm-w157628483` Centerpoint → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w161917240` Terminal 3 Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w166904320` Pearl Auto Park → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w175944787` Terminal 4 Rooftop Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w182894040` Student Mall & Parking Deck → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w190379557` Parking Structure → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[garages] osm-w199128921` Brown Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w199128922` Blue Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w199128924` Green Garage → kept in **mesa-az**, removed from phoenix-az
+- `[garages] osm-w199128925` Purple Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w205590363` City Hall Public Parking Sctructure → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w211849523` Carousel Mall Parking Structure → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w232289079` Nationwide Car Rental → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w23514070` Sunset Transit Center → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w23514323` East Parking Structure → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w24108195` University Avenue Parking Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w24108200` Oak Street Parking Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w241842698` St. George Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w246719832` City Center Parking → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w251815082` Galleria Parking Garage → kept in **scottsdale-az**, removed from mesa-az
+- `[garages] osm-w257563765` Parking 2 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w259075840` Evans Garage → kept in **denver-co**, removed from aurora-co
+- `[garages] osm-w259599532` One Newark Center Garage → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w259651366` Parking Garage → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w27080292` Municipal Parking Garage B → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w27080295` Municipal Lot D → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w27080831` Midtown Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w27110661` South Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w27110669` North Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w27110670` West Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w272713890` Metropolis → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w278135380` Parking Deck # → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w278138632` Parking Deck C → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w278138643` Parking Deck B → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w279285018` IMT at City Park → kept in **denver-co**, removed from aurora-co
+- `[garages] osm-w283221422` Nolte Center Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w284697367` Armory Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w28740179` Packard South Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w28769223` Stadium Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w28822327` 10th St. Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w28878477` Rural Road Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w289784616` East River Road Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w29060634` Washington Avenue Parking Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w29120544` Church Street Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w293095993` Weisman Art Museum Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w293917644` Gold Garage → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w29736099` Tyler Street Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w297777595` Patient Parking Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w30024726` Garage A → kept in **scottsdale-az**, removed from phoenix-az
+- `[garages] osm-w30024785` Garage B → kept in **scottsdale-az**, removed from phoenix-az
+- `[garages] osm-w30169925` Terminal 2 Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w30263664` Short Term Parking Garage P1 → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-w303268434` parking structure → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[garages] osm-w30407351` Fulton Center Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w30420080` University Towers Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w311206933` Peterkort Centre Parking → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w315648359` Providence Health and Services → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w315648361` Providence Health and Services → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w31732616` Parking Structure 1 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w31742358` Crown Plaza Parking → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w32482524` SmartPark → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w32482536` SmartPark → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w325261960` Old Town Public Parking Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w325264379` Main Street Public Parking Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w325266674` 3rd Ave Public Parking Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w325835170` C → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w331072219` Newport River Market Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w331334437` Casey Eye Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w331334439` Doernbecher Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w331334449` Emma Jones Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w331334464` Kohler Pavillion Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w331334469` Physicians Pavillion Garage B → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w331780186` Auditorium Park → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w334729876` The Medical Dental Building → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w34814074` West Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w34814274` Garden Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w35209291` Mall of America → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w35218850` Patient & Visitor Parking Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w358481203` staff parking garage → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[garages] osm-w361360469` Metropolitan Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w361835582` Interstate Medical Office Parking Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w36735404` City Center Parking → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w367690595` Parking 1 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w367690959` Parking 4 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w368089894` Main Place Parking Garage → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-w369334300` City Center Parking → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w37057888` 21 Van Buren Parking → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w37057891` Taylor Street Structure → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w37057920` Jackson Street Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w37057931` Heritage Park Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w37057947` Chase Tower Parking → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w37057956` University Center Parking Garage → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w371785343` PMC → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w376320410` Park ‘n Go → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-w382988417` Broadway Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w383138102` Ash Street Parking Garage → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w388609672` Thomas Garage West → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w39153154` 4th Street Parking Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w39403097` Fred Meyer → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w39440638` Denver Botanic Gardens Parking Garage → kept in **denver-co**, removed from aurora-co
+- `[garages] osm-w39563066` U-Park → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w396328953` Sky Club Parking Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w397156466` Parking Structure → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[garages] osm-w40941295` Parking 3 → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w41424573` Gortner Avenue Parking Ramp → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w415227007` Riverfront Garage → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w415254561` Raymond Boulevard Garage → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w417990379` Alder Street Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w439939922` Parking Lot S → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[garages] osm-w441279921` parking structure → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[garages] osm-w441460169` Parking structure for Visitors, Employee, Volunteers → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[garages] osm-w441464328` AmeriFleet Transportation Suite 350 → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[garages] osm-w468546090` Patient Parking Structure → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w471611589` Public Parking → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[garages] osm-w487903311` American Can Company Complex → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w502786160` Loma Linda VA Employee Parking Garage → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w504281745` Hayden Ferry Lakeside Parking Garage → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w527697256` Science and Technology Parking Garage → kept in **newark-nj**, removed from jersey-city-nj
+- `[garages] osm-w52975536` SmartPark → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w542356469` East Deck → kept in **denver-co**, removed from aurora-co
+- `[garages] osm-w542356523` West Deck → kept in **denver-co**, removed from aurora-co
+- `[garages] osm-w57716471` Campus Drive Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w57736997` Sam Jackson Garage → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w61358808` West Parking Structure → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w61434829` Parking Lot R → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[garages] osm-w62146313` Court International → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w65015456` Apache Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w688021320` La Fontana Condominium → kept in **denver-co**, removed from aurora-co
+- `[garages] osm-w69201801` Quick-Ride Ramp → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[garages] osm-w70079205` Anderson Parking Facility → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w707819002` Lincoln Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w718295193` Hearne Way Parking Garage → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w721487098` Babbio Center Parking Garage → kept in **jersey-city-nj**, removed from newark-nj
+- `[garages] osm-w767990685` Underground at Ink Block Parking → kept in **boston-ma**, removed from cambridge-ma
+- `[garages] osm-w774896813` Maricopa County Community College District → kept in **phoenix-az**, removed from mesa-az, scottsdale-az
+- `[garages] osm-w79236555` Grand Place → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[garages] osm-w819666632` Apache Sands → kept in **mesa-az**, removed from scottsdale-az
+- `[garages] osm-w841479143` Greenway Trail Parking → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[garages] osm-w895126099` Park on Central Apartments → kept in **phoenix-az**, removed from scottsdale-az
+- `[garages] osm-w909831582` Novus Parking Structure → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[garages] osm-w913950658` City of Riverside → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[garages] osm-w913950665` City of Riverside → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[garages] osm-w924028735` Kaiser Permanente → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[garages] osm-w924028737` Fontana Medical Center → kept in **riverside-ca**, removed from san-bernardino-ca
+- `[garages] osm-w936229193` Target → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w936240564` Target → kept in **portland-or**, removed from vancouver-wa
+- `[garages] osm-w939131821` Long Term Parking Garage P3 → kept in **vancouver-wa**, removed from portland-or
+- `[garages] osm-w970443087` Airport Viewing Area → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[garages] osm-w977758301` City of Fontana → kept in **san-bernardino-ca**, removed from riverside-ca
+- `[garages] osm-w97898729` The Round Garage → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w1007118638` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w1016069078` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w1056307188` Tunnel (service) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[tunnels] osm-w1064721172` Shore Road Drive → kept in **new-york-ny**, removed from jersey-city-nj, newark-nj
+- `[tunnels] osm-w1071661972` Stetson Street → kept in **newark-nj**, removed from new-york-ny
+- `[tunnels] osm-w1071671866` Lincoln Avenue → kept in **newark-nj**, removed from new-york-ny
+- `[tunnels] osm-w1072153555` Tunnel (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w1089396407` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1091982444` Shore Road Drive → kept in **new-york-ny**, removed from jersey-city-nj, newark-nj
+- `[tunnels] osm-w109431221` Southeast Marine Park Way → kept in **vancouver-wa**, removed from portland-or
+- `[tunnels] osm-w1094580093` Delawanna Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1111706621` East 61st Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w1112261298` Tunnel (service) → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[tunnels] osm-w1116741096` Tunnel (service) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[tunnels] osm-w1120790404` Tunnel (service) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[tunnels] osm-w1120931121` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w11415208` Dwight D. Eisenhower Highway → kept in **san-francisco-ca**, removed from oakland-ca
+- `[tunnels] osm-w1154497226` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w1161048705` Tunnel (service) → kept in **aurora-co**, removed from denver-co
+- `[tunnels] osm-w11618689` Alling Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1164078459` Tunnel (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w1167470966` Tunnel (service) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w1168436817` Tunnel (service) → kept in **san-francisco-ca**, removed from oakland-ca
+- `[tunnels] osm-w11878036` Queens-Midtown Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w118869664` Northwest Cornell Road → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w1190857157` Tunnel (service) → kept in **newark-nj**, removed from new-york-ny
+- `[tunnels] osm-w1207417438` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w122625703` Brooklyn-Queens Expressway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w1227889334` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1229475082` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1229475083` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1229475094` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1235735864` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1235735869` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1255695324` Brooklyn-Queens Expressway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w1267756944` Livonia Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w1288199554` Tunnel (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w1292481749` Tunnel (service) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w132500883` Market Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1355503623` Tunnel (service) → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1360809612` Tunnel (service) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[tunnels] osm-w1364379977` Tunnel (service) → kept in **anaheim-ca**, removed from long-beach-ca, los-angeles-ca
+- `[tunnels] osm-w1367629072` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w1432098273` South Santa Fe Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w1453747772` Avenue P → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1453748693` Frank E. Rodgers Boulevard South → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1453748851` Bergen Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1453749052` Sussex Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w1453749255` Warren Street → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w161271953` Tunnel (service) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[tunnels] osm-w186821595` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w191927005` East Kingsbridge Road → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w214528355` Marin Boulevard → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[tunnels] osm-w22272045` Posey Tube → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w22927390` Holland Tunnel → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[tunnels] osm-w23048548` 1st Avenue Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w25966237` Webster Street Tube → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w274202070` Tunnel (service) → kept in **aurora-co**, removed from denver-co
+- `[tunnels] osm-w27420337` Dornan Drive → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w27479679` Northwest Cornell Road → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w320888292` Lincoln Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w32939511` FDR Drive → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w32959995` FDR Drive → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w365446756` North Brighton Boulevard → kept in **denver-co**, removed from aurora-co
+- `[tunnels] osm-w369463299` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w370517835` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w377808752` Dowd Avenue → kept in **newark-nj**, removed from jersey-city-nj, new-york-ny
+- `[tunnels] osm-w398835691` North Drinkwater Boulevard → kept in **scottsdale-az**, removed from mesa-az
+- `[tunnels] osm-w415882710` Holland Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w428818591` Tunnel (service) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[tunnels] osm-w437511471` US 22 → kept in **newark-nj**, removed from new-york-ny
+- `[tunnels] osm-w444428816` South Connection Road → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[tunnels] osm-w458777972` Reid Street → kept in **newark-nj**, removed from new-york-ny
+- `[tunnels] osm-w46137555` Sands Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w463302578` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w46613913` Holland Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w46780251` East New York Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w46786491` Tunnel (primary link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w46835359` Brooklyn-Queens Expressway → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w46841065` Tunnel (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w492214752` North Drinkwater Boulevard → kept in **scottsdale-az**, removed from mesa-az, phoenix-az
+- `[tunnels] osm-w506680905` West 29th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w507184846` Tunnel (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w52057118` West Carson Street → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w544254721` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w555176984` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w5669566` Lincoln Tunnel → kept in **jersey-city-nj**, removed from new-york-ny
+- `[tunnels] osm-w5681925` Brooklyn-Battery Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w568378658` Terminal 3 North → kept in **phoenix-az**, removed from scottsdale-az
+- `[tunnels] osm-w570334400` Tunnel (service) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w570940301` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w582034693` Washington Street → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w587950614` Tunnel (service) → kept in **durham-nc**, removed from raleigh-nc
+- `[tunnels] osm-w60325668` Lincoln Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w639853605` Tunnel (service) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w640139089` Tunnel (service) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w658499797` Tunnel (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w663697663` Tunnel (service) → kept in **oakland-ca**, removed from san-francisco-ca
+- `[tunnels] osm-w66399610` Tunnel (service) → kept in **anaheim-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w664451720` Tunnel (service) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[tunnels] osm-w668374521` Tunnel (service) → kept in **aurora-co**, removed from denver-co
+- `[tunnels] osm-w676710962` Tunnel (service) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[tunnels] osm-w706015228` Queens-Midtown Tunnel → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w710344534` Tunnel (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w710344536` Tunnel (motorway link) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w720665220` Tunnel (service) → kept in **aurora-co**, removed from denver-co
+- `[tunnels] osm-w726850087` Southeast 15th Avenue → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[tunnels] osm-w733999338` Tunnel (service) → kept in **henderson-nv**, removed from las-vegas-nv
+- `[tunnels] osm-w738598878` 3rd Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w757914574` South McHelen Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w758006808` Yukon Avenue → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w758827252` Tunnel (service) → kept in **vancouver-wa**, removed from portland-or
+- `[tunnels] osm-w760433117` 79th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w760433122` 79th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w760727183` 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w760727192` 97th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w760748048` 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w769425112` Tunnel (service) → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w772231811` 4th Place → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w772801470` East Wardlow Road → kept in **long-beach-ca**, removed from los-angeles-ca
+- `[tunnels] osm-w776163033` Tunnel (service) → kept in **minneapolis-mn**, removed from saint-paul-mn
+- `[tunnels] osm-w777391125` Grove Street → kept in **jersey-city-nj**, removed from new-york-ny, newark-nj
+- `[tunnels] osm-w793011022` North Broad Street → kept in **newark-nj**, removed from new-york-ny
+- `[tunnels] osm-w808652901` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w834043287` East 110th Street → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w860505230` East 46th Avenue → kept in **denver-co**, removed from aurora-co
+- `[tunnels] osm-w870550325` NewYork-Presbyterian Ambulance Entrance → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w891750772` Tunnel (service) → kept in **jersey-city-nj**, removed from new-york-ny
+- `[tunnels] osm-w8921175` Broadway → kept in **san-francisco-ca**, removed from oakland-ca
+- `[tunnels] osm-w892657409` Tunnel (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[tunnels] osm-w893124562` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w902168961` Amsterdam Avenue → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w903563550` Tunnel (service) → kept in **portland-or**, removed from vancouver-wa
+- `[tunnels] osm-w953473220` Tunnel (service) → kept in **phoenix-az**, removed from scottsdale-az
+- `[tunnels] osm-w964426084` Tunnel (service) → kept in **saint-paul-mn**, removed from minneapolis-mn
+- `[tunnels] osm-w975497844` Tunnel (service) → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w992603344` 65th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w992603346` 65th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w992603350` 65th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w992605605` 86th Street Transverse → kept in **new-york-ny**, removed from jersey-city-nj
+- `[tunnels] osm-w99962985` 38th Street → kept in **denver-co**, removed from aurora-co
+
+## garage_count corrections
+
+- amarillo-tx: 19 → 16
+- annapolis-md: 59 → 58
+- atlanta-ga: 60 → 52
+- aurora-co: 142 → 136
+- bangor-me: 6 → 4
+- baton-rouge-la: 31 → 27
+- billings-mt: 1 → 0
+- birmingham-al: 24 → 22
+- boston-ma: 99 → 41
+- brattleboro-vt: 19 → 0
+- cambridge-ma: 113 → 112
+- casper-wy: 3 → 2
+- cheyenne-wy: 33 → 26
+- coeur-dalene-id: 6 → 4
+- concord-nh: 7 → 1
+- dallas-tx: 91 → 81
+- davenport-ia: 6 → 2
+- denver-co: 130 → 87
+- dover-de: 1 → 0
+- duluth-mn: 2 → 1
+- flagstaff-az: 27 → 25
+- flint-mi: 4 → 2
+- henderson-nv: 24 → 22
+- houston-tx: 82 → 69
+- idaho-falls-id: 5 → 4
+- jackson-wy: 31 → 27
+- jersey-city-nj: 162 → 151
+- long-beach-ca: 140 → 64
+- los-angeles-ca: 427 → 417
+- lynchburg-va: 15 → 13
+- mcallen-tx: 10 → 9
+- mesa-az: 69 → 45
+- milwaukee-wi: 53 → 43
+- minneapolis-mn: 97 → 95
+- moab-ut: 40 → 37
+- montpelier-vt: 16 → 1
+- new-york-ny: 131 → 46
+- newark-nj: 77 → 52
+- oakland-ca: 149 → 37
+- philadelphia-pa: 58 → 38
+- phoenix-az: 108 → 84
+- pittsburgh-pa: 65 → 34
+- portland-or: 105 → 98
+- reading-pa: 8 → 1
+- riverside-ca: 26 → 16
+- rochester-mn: 56 → 55
+- saint-paul-mn: 73 → 49
+- salt-lake-ut: 104 → 25
+- san-bernardino-ca: 21 → 16
+- san-francisco-ca: 133 → 33
+- san-juan-pr: 199 → 195
+- savannah-ga: 27 → 25
+- scottsdale-az: 87 → 61
+- sheridan-wy: 12 → 4
+- stamford-ct: 13 → 3
+- tallahassee-fl: 6 → 3
+- tupelo-ms: 1 → 0
+- vancouver-wa: 81 → 24
+- wilmington-de: 86 → 78

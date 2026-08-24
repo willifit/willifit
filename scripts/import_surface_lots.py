@@ -29,6 +29,9 @@ What it does:
   Dedupe against existing entries by:
     - osm-w<way_id> / osm-n<node_id> ID match
     - any existing entry within 75m
+    - cross-city (shared with overpass_import): skip if the id already lives
+      in ANOTHER city's file, or if a different index.json city center is
+      nearer — adjacent-metro bboxes overlap and used to double-import
 
 Cost:
   Zero.  Overpass is free.  Script sleeps 2s between cities per Overpass
@@ -56,6 +59,10 @@ from urllib import request, parse, error
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
 CITIES_DIR = REPO_ROOT / "data" / "cities"
+
+# Cross-city dedupe helpers (same canonical-city rule as dedupe_cross_city.py)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from overpass_import import _belongs_elsewhere, _global_id_owner  # noqa: E402
 
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
@@ -387,6 +394,7 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
     skipped_filter = 0
     skipped_inst = 0
     skipped_dup = 0
+    skipped_other = 0
     for el in candidates:
         tags = el.get("tags", {}) or {}
         reason = qualifies(tags)
@@ -409,6 +417,13 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
         if entry["id"] in existing_ids:
             skipped_dup += 1
             continue
+        owner = _global_id_owner().get(entry["id"])
+        if owner is not None and owner != slug:
+            skipped_other += 1
+            continue
+        if _belongs_elsewhere(entry, slug):
+            skipped_other += 1
+            continue
         too_close = False
         for (elat, elng) in existing_coords:
             if haversine_m(entry["lat"], entry["lng"], elat, elng) < DEDUPE_METERS:
@@ -419,6 +434,7 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
             continue
         added.append(entry)
         existing_ids.add(entry["id"])
+        _global_id_owner()[entry["id"]] = slug
         existing_coords.append((entry["lat"], entry["lng"]))
 
     if added and not dry_run:
@@ -428,7 +444,8 @@ def process_city(slug: str, city_meta: dict, dry_run: bool = False) -> int:
     action = "would add" if dry_run else "added"
     print(
         f"[{slug}] {action}: {len(added)} surface lots "
-        f"(skipped: {skipped_filter} filter, {skipped_inst} institutional, {skipped_dup} dedup)"
+        f"(skipped: {skipped_filter} filter, {skipped_inst} institutional, "
+        f"{skipped_dup} dedup, {skipped_other} other-city)"
     )
     for entry in added[:6]:
         print(f"  + {entry['id']:<24} {entry['name']}")

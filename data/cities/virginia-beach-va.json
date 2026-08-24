@@ -703,17 +703,6 @@
       "source": "FHWA National Bridge Inventory"
     },
     {
-      "id": "nbi-51-000000000021797",
-      "name": "Low on-bridge clearance: CENTERVILLE TURNPK",
-      "addr": "CENTERVILLE TURNPK",
-      "lat": 36.72336,
-      "lng": -76.18634,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "FHWA NBI; on-bridge clearance; built 1955",
-      "source": "FHWA National Bridge Inventory"
-    },
-    {
       "id": "nbi-51-000000000026630",
       "name": "Low on-bridge clearance: ROUTE 13 SBL",
       "addr": "ROUTE 13 SBL",

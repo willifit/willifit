@@ -581,17 +581,6 @@
       "source": "Caltrans"
     },
     {
-      "id": "osm-w8921175",
-      "name": "Broadway",
-      "addr": "Broadway",
-      "lat": 37.79684,
-      "lng": -122.41457,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "layer -1; 2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w9898614",
       "name": "Caldecott Tunnel",
       "addr": "CA 24",
@@ -600,17 +589,6 @@
       "height_in": 174,
       "height_label": "14'6\"",
       "notes": "layer -1; 2 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w11415208",
-      "name": "Dwight D. Eisenhower Highway",
-      "addr": "I 80",
-      "lat": 37.80957,
-      "lng": -122.3657,
-      "height_in": 168,
-      "height_label": "14'0\"",
-      "notes": "layer -1; 5 lanes",
       "source": "OpenStreetMap"
     },
     {
@@ -788,17 +766,6 @@
       "height_label": "9'0\"",
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1168436817",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 37.76847,
-      "lng": -122.42038,
-      "height_in": 144,
-      "height_label": "12'0\"",
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
     }
   ],
   "bridges": [
@@ -937,28 +904,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w8915265",
-      "name": "Low clearance underpass (primary link)",
-      "addr": "",
-      "lat": 37.71964,
-      "lng": -122.39826,
-      "height_in": 184,
-      "height_label": "15'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w8921938",
-      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
-      "addr": "I 80",
-      "lat": 37.79714,
-      "lng": -122.37901,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance; Under: San Francisco\u2013Oakland Bay Bridge",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w9574596",
       "name": "Low clearance underpass (motorway link)",
       "addr": "",
@@ -1036,17 +981,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w23874736",
-      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
-      "addr": "I 80",
-      "lat": 37.80853,
-      "lng": -122.36681,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance; Under: San Francisco\u2013Oakland Bay Bridge",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w25967099",
       "name": "Low clearance \u2014 Broadway",
       "addr": "Broadway",
@@ -1054,39 +988,6 @@
       "lng": -122.27481,
       "height_in": 176,
       "height_label": "14'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w26779600",
-      "name": "Low clearance underpass (motorway link)",
-      "addr": "",
-      "lat": 37.77876,
-      "lng": -122.40024,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w27630854",
-      "name": "Low clearance \u2014 Bacon Street",
-      "addr": "Bacon Street",
-      "lat": 37.72781,
-      "lng": -122.40291,
-      "height_in": 180,
-      "height_label": "15'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w33783051",
-      "name": "Low clearance \u2014 Paul Avenue",
-      "addr": "Paul Avenue",
-      "lat": 37.72377,
-      "lng": -122.40143,
-      "height_in": 177,
-      "height_label": "14'9\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1099,17 +1000,6 @@
       "height_in": 180,
       "height_label": "15'0\"",
       "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w50690291",
-      "name": "Low clearance \u2014 Dwight D. Eisenhower Highway (I 80)",
-      "addr": "I 80",
-      "lat": 37.78625,
-      "lng": -122.39064,
-      "height_in": 197,
-      "height_label": "16'5\"",
-      "notes": "Underpass / low clearance; Under: San Francisco\u2013Oakland Bay Bridge",
       "source": "OpenStreetMap"
     },
     {
@@ -1153,17 +1043,6 @@
       "lng": -122.27608,
       "height_in": 181,
       "height_label": "15'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w107674371",
-      "name": "Low clearance \u2014 4th Street",
-      "addr": "4th Street",
-      "lat": 37.78059,
-      "lng": -122.39934,
-      "height_in": 150,
-      "height_label": "12'6\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -1344,17 +1223,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w375744879",
-      "name": "Low clearance \u2014 4th Street",
-      "addr": "4th Street",
-      "lat": 37.77996,
-      "lng": -122.39867,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w393890395",
       "name": "Low clearance \u2014 Broadway",
       "addr": "Broadway",
@@ -1498,17 +1366,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w619535758",
-      "name": "Low clearance \u2014 Cortland Avenue",
-      "addr": "Cortland Avenue",
-      "lat": 37.7396,
-      "lng": -122.40744,
-      "height_in": 169,
-      "height_label": "14'1\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w624357077",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -1528,28 +1385,6 @@
       "height_in": 197,
       "height_label": "16'5\"",
       "notes": "Underpass / low clearance; Under: San Francisco\u2013Oakland Bay Bridge",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w668807084",
-      "name": "Low clearance \u2014 Blanken Avenue",
-      "addr": "Blanken Avenue",
-      "lat": 37.71094,
-      "lng": -122.39557,
-      "height_in": 177,
-      "height_label": "14'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w706548258",
-      "name": "Low clearance \u2014 Brannan Street",
-      "addr": "Brannan Street",
-      "lat": 37.76989,
-      "lng": -122.40724,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
     {
@@ -1648,17 +1483,6 @@
       "lng": -122.21231,
       "height_in": 178,
       "height_label": "14'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w942738986",
-      "name": "Low clearance underpass (service)",
-      "addr": "",
-      "lat": 37.65643,
-      "lng": -122.4113,
-      "height_in": 98,
-      "height_label": "8'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

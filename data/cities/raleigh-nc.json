@@ -975,17 +975,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w587950614",
-      "name": "Tunnel (service)",
-      "addr": "",
-      "lat": 35.91207,
-      "lng": -78.78419,
-      "height_in": 84,
-      "height_label": "7'0\"",
-      "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w629117993",
       "name": "Tunnel (service)",
       "addr": "",

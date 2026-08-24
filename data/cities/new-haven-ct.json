@@ -486,17 +486,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w102022841",
-      "name": "Low clearance \u2014 I 95",
-      "addr": "I 95",
-      "lat": 41.22994,
-      "lng": -73.07273,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w110466901",
       "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
       "addr": "CT 15",
@@ -563,17 +552,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w175157552",
-      "name": "Low clearance \u2014 I 95",
-      "addr": "I 95",
-      "lat": 41.23162,
-      "lng": -73.07121,
-      "height_in": 166,
-      "height_label": "13'10\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w290763455",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -603,28 +581,6 @@
       "lng": -72.97688,
       "height_in": 164,
       "height_label": "13'8\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w792680697",
-      "name": "Low clearance \u2014 High Street",
-      "addr": "High Street",
-      "lat": 41.22226,
-      "lng": -73.0601,
-      "height_in": 141,
-      "height_label": "11'9\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w923304948",
-      "name": "Low clearance underpass (motorway)",
-      "addr": "",
-      "lat": 41.23512,
-      "lng": -73.07244,
-      "height_in": 161,
-      "height_label": "13'5\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -761,17 +717,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1063147849",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.25155,
-      "lng": -73.07516,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1063152997",
       "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
       "addr": "CT 15",
@@ -801,28 +746,6 @@
       "lng": -73.04812,
       "height_in": 96,
       "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1063158296",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.2522,
-      "lng": -73.07424,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1067593596",
-      "name": "Low clearance \u2014 I 95",
-      "addr": "I 95",
-      "lat": 41.22832,
-      "lng": -73.07438,
-      "height_in": 166,
-      "height_label": "13'10\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -959,28 +882,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1103110912",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.25291,
-      "lng": -73.0735,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1103115027",
-      "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
-      "addr": "CT 15",
-      "lat": 41.25641,
-      "lng": -73.06967,
-      "height_in": 96,
-      "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1103120999",
       "name": "Low clearance \u2014 Wilbur Cross Parkway (CT 15)",
       "addr": "CT 15",
@@ -999,50 +900,6 @@
       "lng": -73.03255,
       "height_in": 96,
       "height_label": "8'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1196915350",
-      "name": "Low clearance \u2014 Beardsley Avenue",
-      "addr": "Beardsley Avenue",
-      "lat": 41.21935,
-      "lng": -73.06502,
-      "height_in": 123,
-      "height_label": "10'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1196915554",
-      "name": "Low clearance \u2014 River Street",
-      "addr": "River Street",
-      "lat": 41.2233,
-      "lng": -73.05716,
-      "height_in": 150,
-      "height_label": "12'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1196915630",
-      "name": "Low clearance \u2014 Prospect Street",
-      "addr": "Prospect Street",
-      "lat": 41.22372,
-      "lng": -73.0554,
-      "height_in": 146,
-      "height_label": "12'2\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1196915709",
-      "name": "Low clearance \u2014 Gulf Street",
-      "addr": "Gulf Street",
-      "lat": 41.22401,
-      "lng": -73.04972,
-      "height_in": 146,
-      "height_label": "12'2\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },

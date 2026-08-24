@@ -654,21 +654,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w39440638",
-      "name": "Denver Botanic Gardens Parking Garage",
-      "addr": "",
-      "lat": 39.73165,
-      "lng": -104.95956,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "350 spaces; free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
       "id": "osm-w49952480",
       "name": "AdventHealth Porter Patient/Visitor Parking Garage",
       "addr": "",
@@ -984,21 +969,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w259075840",
-      "name": "Evans Garage",
-      "addr": "",
-      "lat": 39.67804,
-      "lng": -104.96406,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "425 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
       "id": "osm-w274713490",
       "name": "MHCD",
       "addr": "",
@@ -1027,21 +997,6 @@
       "structure_type": "structure",
       "sv_checked": "2026-07-31",
       "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w279285018",
-      "name": "IMT at City Park",
-      "addr": "",
-      "lat": 39.74232,
-      "lng": -104.95215,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
     },
     {
       "id": "osm-w282213145",
@@ -1358,36 +1313,6 @@
       "sv_status": "no-sign"
     },
     {
-      "id": "osm-w542356469",
-      "name": "East Deck",
-      "addr": "55 South Steele Street",
-      "lat": 39.71546,
-      "lng": -104.9514,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w542356523",
-      "name": "West Deck",
-      "addr": "",
-      "lat": 39.71628,
-      "lng": -104.95444,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-sign"
-    },
-    {
       "id": "osm-w546461138",
       "name": "Promenade Place Apartments",
       "addr": "5240 South Ulster Street",
@@ -1501,21 +1426,6 @@
       "height_label": null,
       "oversized": false,
       "notes": "600 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure",
-      "sv_checked": "2026-07-31",
-      "sv_status": "no-pano"
-    },
-    {
-      "id": "osm-w688021320",
-      "name": "La Fontana Condominium",
-      "addr": "4570 East Yale Avenue",
-      "lat": 39.66712,
-      "lng": -104.93553,
-      "height_in": null,
-      "height_label": null,
-      "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
       "sv_checked": "2026-07-31",
@@ -2036,17 +1946,6 @@
   ],
   "tunnels": [
     {
-      "id": "osm-w99962985",
-      "name": "38th Street",
-      "addr": "38th Street",
-      "lat": 39.77141,
-      "lng": -104.9734,
-      "height_in": 159,
-      "height_label": "13'3\"",
-      "notes": "layer -1; 1 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w274202070",
       "name": "Tunnel (service)",
       "addr": "",
@@ -2054,17 +1953,6 @@
       "lng": -104.91343,
       "height_in": 84,
       "height_label": "7'0\"",
-      "notes": "layer -1; 1 lanes",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w365446756",
-      "name": "North Brighton Boulevard",
-      "addr": "CO 265",
-      "lat": 39.79406,
-      "lng": -104.95643,
-      "height_in": 136,
-      "height_label": "11'4\"",
       "notes": "layer -1; 1 lanes",
       "source": "OpenStreetMap"
     },
@@ -2099,17 +1987,6 @@
       "height_in": 98,
       "height_label": "8'2\"",
       "notes": "layer -1",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w860505230",
-      "name": "East 46th Avenue",
-      "addr": "East 46th Avenue",
-      "lat": 39.78005,
-      "lng": -104.97503,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "3 lanes",
       "source": "OpenStreetMap"
     },
     {
@@ -2272,17 +2149,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w134992173",
-      "name": "Low clearance \u2014 North Marion Street",
-      "addr": "North Marion Street",
-      "lat": 39.78239,
-      "lng": -104.97141,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w207593660",
       "name": "Low clearance underpass (service)",
       "addr": "",
@@ -2305,17 +2171,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w427814313",
-      "name": "Low clearance \u2014 Washington Street",
-      "addr": "Washington Street",
-      "lat": 39.82055,
-      "lng": -104.97801,
-      "height_in": 185,
-      "height_label": "15'5\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w627662292",
       "name": "Low clearance \u2014 East 17th Place",
       "addr": "East 17th Place",
@@ -2323,28 +2178,6 @@
       "lng": -104.82962,
       "height_in": 198,
       "height_label": "16'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w628572628",
-      "name": "Low clearance \u2014 East 46th Avenue",
-      "addr": "East 46th Avenue",
-      "lat": 39.78005,
-      "lng": -104.9754,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w628823596",
-      "name": "Low clearance \u2014 Brighton Boulevard (CO 265)",
-      "addr": "CO 265",
-      "lat": 39.8065,
-      "lng": -104.94143,
-      "height_in": 108,
-      "height_label": "9'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2360,17 +2193,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w860505232",
-      "name": "Low clearance \u2014 East 46th Avenue",
-      "addr": "East 46th Avenue",
-      "lat": 39.78005,
-      "lng": -104.97429,
-      "height_in": 174,
-      "height_label": "14'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w938394861",
       "name": "Low clearance \u2014 North Potomac Street",
       "addr": "North Potomac Street",
@@ -2378,17 +2200,6 @@
       "lng": -104.82634,
       "height_in": 192,
       "height_label": "16'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w971252513",
-      "name": "Low clearance \u2014 East 9th Avenue",
-      "addr": "East 9th Avenue",
-      "lat": 39.73106,
-      "lng": -104.93429,
-      "height_in": 168,
-      "height_label": "14'0\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     },
@@ -2415,17 +2226,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1038618475",
-      "name": "Low clearance \u2014 Parking Garage Driveway",
-      "addr": "Parking Garage Driveway",
-      "lat": 39.67172,
-      "lng": -104.95871,
-      "height_in": 148,
-      "height_label": "12'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1233878666",
       "name": "Low clearance \u2014 Gateway Road",
       "addr": "Gateway Road",
@@ -2437,61 +2237,6 @@
       "source": "OpenStreetMap"
     },
     {
-      "id": "osm-w1268253348",
-      "name": "Low clearance \u2014 East 58th Avenue",
-      "addr": "East 58th Avenue",
-      "lat": 39.80228,
-      "lng": -104.9615,
-      "height_in": 171,
-      "height_label": "14'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1268253372",
-      "name": "Low clearance \u2014 North York Street",
-      "addr": "North York Street",
-      "lat": 39.80287,
-      "lng": -104.95928,
-      "height_in": 162,
-      "height_label": "13'6\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1286144679",
-      "name": "Low clearance \u2014 East 60th Avenue",
-      "addr": "East 60th Avenue",
-      "lat": 39.80569,
-      "lng": -104.94109,
-      "height_in": 108,
-      "height_label": "9'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1312132522",
-      "name": "Low clearance \u2014 North Bettie Cram Drive",
-      "addr": "North Bettie Cram Drive",
-      "lat": 39.7832,
-      "lng": -104.97271,
-      "height_in": 120,
-      "height_label": "10'0\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1329515292",
-      "name": "Low clearance \u2014 38th Street",
-      "addr": "38th Street",
-      "lat": 39.77156,
-      "lng": -104.97363,
-      "height_in": 159,
-      "height_label": "13'3\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
       "id": "osm-w1417532753",
       "name": "Low clearance \u2014 North Quebec Street",
       "addr": "North Quebec Street",
@@ -2499,17 +2244,6 @@
       "lng": -104.90285,
       "height_in": 196,
       "height_label": "16'4\"",
-      "notes": "Underpass / low clearance",
-      "source": "OpenStreetMap"
-    },
-    {
-      "id": "osm-w1417538046",
-      "name": "Low clearance \u2014 North Washington Street",
-      "addr": "North Washington Street",
-      "lat": 39.77681,
-      "lng": -104.97908,
-      "height_in": 167,
-      "height_label": "13'11\"",
       "notes": "Underpass / low clearance",
       "source": "OpenStreetMap"
     }

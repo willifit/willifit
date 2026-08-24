@@ -56,6 +56,12 @@ from urllib import request, error
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
 CITIES_DIR = REPO_ROOT / "data" / "cities"
+
+# Cross-city dedupe: bridges are assigned to the nearest LIVE city at import
+# time, so a city that goes live later can be assigned a bridge its neighbor
+# already holds. The global id map (shared with overpass_import) catches that.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from overpass_import import _global_id_owner  # noqa: E402
 NBI_CACHE = REPO_ROOT / "data" / "nbi_cache"
 
 # One-shot URL format. FHWA sometimes renames years — adjust if needed.
@@ -380,6 +386,11 @@ def merge_bridges(slug: str, bridges: list[dict], dry_run: bool) -> tuple[int, i
         if b["id"] in existing_ids:
             skipped += 1
             continue
+        # Cross-city: this bridge already lives in another city's file.
+        owner = _global_id_owner().get(b["id"])
+        if owner is not None and owner != slug:
+            skipped += 1
+            continue
         dupe = False
         for e in arr:
             if haversine_m(b["lat"], b["lng"], e["lat"], e["lng"]) < DEDUPE_M:
@@ -390,6 +401,7 @@ def merge_bridges(slug: str, bridges: list[dict], dry_run: bool) -> tuple[int, i
             continue
         arr.append(b)
         existing_ids.add(b["id"])
+        _global_id_owner()[b["id"]] = slug
         added += 1
 
     if not dry_run and added > 0:
