@@ -21,6 +21,12 @@ Pipeline per garage:
   6. If no pano finds a sign, the garage keeps height_in=null and
      structure_type is left unchanged.  Flagged for manual review in
      the summary.
+  7. Conflict-history guard: before writing, prior readings of the same
+     garage id in data/auto_verify.log are checked.  Any prior reading
+     >1" away blocks the write and logs CONFLICT-QUARANTINE (both
+     readings + pano/heading) for human adjudication — a self-consistent
+     misread passes the raw-text guard but rarely survives its own
+     history.  Disable with --no-history-guard.
 
 Output:
   Updates data/cities/<slug>.json in place with:
@@ -561,6 +567,75 @@ def _log(line):
         f.write(line + "\n")
 
 
+# ---------------------------------------------------------------------------
+# Conflict-history guard
+# ---------------------------------------------------------------------------
+# A self-consistent misread — the model transcribes the sign wrong AND states
+# the same wrong number — sails through _height_matches_raw, which only checks
+# that raw_text and height_in agree with EACH OTHER.  The 2026-08-24 sweep
+# showed the reliable tell lives in the run log instead: every high-confidence
+# write later found wrong had a DISAGREEING earlier reading (VERIFIED or
+# LOW-CONF with a different h) for the same garage id (3 of 6 such writes were
+# wrong: 19'0" vs actual 15'0" at osm-w248766712, 5'6" vs 6'6" at
+# osm-w30839085, 8'4" vs 6'4" at osm-w246719832), while writes with a clean
+# history sampled 6/6 correct.  So before writing, scan history; any prior
+# reading >1" away quarantines the entry for human adjudication (e.g. a
+# streetview_debug.py zoom pass) instead of writing it.
+
+_HISTORY_READING_RX = re.compile(
+    r"^(\d{4}-\d{2}-\d{2})\s+(\S+)\s+(\S+)\s+"
+    r"(?:(VERIFIED|LOW-CONF|CONFLICT-QUARANTINE)\s+h=(\d+)"
+    r"|(CHECK-\S+)\s+stored=\S+\s+ai=(\d+))"
+)
+
+
+def _load_height_history(log_path=None):
+    """Parse prior AI height readings out of the run log, keyed by garage id.
+
+    A "reading" is any line where the pipeline recorded a height the model
+    actually stated: VERIFIED / LOW-CONF / CONFLICT-QUARANTINE (h=N) and
+    --check reports (ai=N).  REJECT-* lines are excluded — their h failed the
+    digit-match guard, so it was never a reading.  Keyed by id alone, not
+    slug+id: the same OSM way can live in two city files (portland-or /
+    vancouver-wa) and those are readings of the same physical sign."""
+    path = Path(log_path) if log_path else LOG_PATH
+    history = {}
+    if not path.exists():
+        return history
+    with path.open() as f:
+        for line in f:
+            m = _HISTORY_READING_RX.match(line)
+            if not m:
+                continue
+            history.setdefault(m.group(3), []).append({
+                "date": m.group(1),
+                "slug": m.group(2),
+                "status": m.group(4) or m.group(6),
+                "h": int(m.group(5) or m.group(7)),
+            })
+    return history
+
+
+def _conflicting_priors(history, gid, new_height_in, tolerance_in=1):
+    """Return the prior readings of gid that disagree with new_height_in by
+    more than tolerance_in inches.  Empty list = history agrees, safe to
+    write.  1" of slack covers rounding (6'11.5" signs read as 83 vs 84),
+    not disagreement — every bad write in the sweep was off by 12"+."""
+    return [p for p in history.get(gid, [])
+            if abs(p["h"] - int(new_height_in)) > tolerance_in]
+
+
+def _note_reading(history, gid, slug, status, h):
+    """Record a reading made during THIS run, so later cities in the same run
+    (shared OSM ways) compare against it without re-reading the log file.
+    No-op when the guard is disabled (history is None)."""
+    if history is not None and gid:
+        history.setdefault(gid, []).append({
+            "date": date.today().isoformat(), "slug": slug,
+            "status": status, "h": int(h),
+        })
+
+
 # Sign text that proves the reading is NOT a vehicle-clearance sign — a
 # speed limit, weight limit, etc.  A height sign never contains these words.
 _NON_CLEARANCE_RX = re.compile(r"\b(mph|km/?h|speed|gvw|tons?|lbs?|kg)\b", re.I)
@@ -825,7 +900,7 @@ def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
                  detect_model=DEFAULT_DETECT_MODEL, read_model=DEFAULT_READ_MODEL,
                  single_model=None, thorough=False,
                  recheck_days=365, force_recheck=False,
-                 check_only=False, only_ids=None):
+                 check_only=False, only_ids=None, history=None):
     city_path = CITIES_DIR / f"{slug}.json"
     if not city_path.exists():
         return {"slug": slug, "error": "no city file", "cost": 0}
@@ -885,6 +960,7 @@ def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
     no_sign = 0
     no_pano = 0
     low_conf = 0
+    quarantined = 0
     stamped = 0
     cost_this_city = 0.0
     aborted_for_cost = False
@@ -952,6 +1028,7 @@ def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
                   f"confidence={conf} — below threshold ({min_conf}), NOT written")
             _log(f"{date.today()} {slug} {g.get('id')} LOW-CONF h={ai_height} conf={conf} "
                  f"raw={res['raw_text']!r} cost=${call_cost:.3f}")
+            _note_reading(history, g.get("id"), slug, "LOW-CONF", ai_height)
             continue
 
         # CHECK-MODE: compare AI reading to stored value and REPORT without
@@ -1003,6 +1080,31 @@ def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
             continue
 
         # NORMAL (write) mode
+        # Conflict-history guard: a disagreeing earlier reading of this same
+        # garage means at least one of the two reads is wrong — and 3 of 6
+        # such writes in the 2026-08-24 sweep were.  Park it for human
+        # adjudication (streetview_debug.py zoom pass) instead of writing.
+        if history is not None:
+            conflicts = _conflicting_priors(history, g.get("id"), ai_height)
+            if conflicts:
+                quarantined += 1
+                prior_desc = ",".join(f"{p['status']}:{p['h']}@{p['date']}:{p['slug']}"
+                                      for p in conflicts)
+                print(f"    → ⚠ CONFLICT: {ai_height}in ({inches_to_label(ai_height)}) "
+                      f"conf={conf} disagrees with prior reading(s) [{prior_desc}] "
+                      f"— QUARANTINED, not written")
+                _log(f"{date.today()} {slug} {g.get('id')} CONFLICT-QUARANTINE h={ai_height} "
+                     f"conf={conf} pano={res['pano_id']} heading={res.get('pano_heading','?')} "
+                     f"raw={res['raw_text']!r} priors=[{prior_desc}] cost=${call_cost:.3f}")
+                _note_reading(history, g.get("id"), slug, "CONFLICT-QUARANTINE", ai_height)
+                if not dry_run:
+                    # Stamp like no-sign so the next fill run doesn't re-spend
+                    # on a garage that's waiting on human eyes.
+                    g["sv_checked"] = date.today().isoformat()
+                    g["sv_status"] = "conflict-quarantine"
+                    stamped += 1
+                continue
+
         if not dry_run:
             g["height_in"] = ai_height
             g["height_label"] = inches_to_label(ai_height)
@@ -1033,6 +1135,7 @@ def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
              f"sections={len(ai_sections) if ai_sections else 1} "
              f"pano={res['pano_id']} heading={res.get('pano_heading','?')} "
              f"raw={res['raw_text']!r} cost=${call_cost:.3f}")
+        _note_reading(history, g.get("id"), slug, "VERIFIED", ai_height)
 
     # Persist — only in normal mode.  --check never writes, even on "new"
     # findings (those should be re-verified in a separate normal run).
@@ -1045,13 +1148,15 @@ def process_city(slug, max_cost_usd, min_conf, dry_run, running_total,
               f"no-sign={no_sign} no-pano={no_pano} low-conf={low_conf} "
               f"cost=${cost_this_city:.2f}")
     else:
-        print(f"[{slug}] done: verified={updated} no-sign={no_sign} no-pano={no_pano} "
+        print(f"[{slug}] done: verified={updated} quarantined={quarantined} "
+              f"no-sign={no_sign} no-pano={no_pano} "
               f"low-conf={low_conf} lots-skipped={skipped_lots} "
               f"already-scanned-skipped={skipped_checked} cost=${cost_this_city:.2f}")
 
     return {
         "slug": slug,
         "updated": updated,
+        "quarantined": quarantined,
         "skipped_checked": skipped_checked,
         "no_sign": no_sign,
         "no_pano": no_pano,
@@ -1092,6 +1197,11 @@ def main():
                     help="Skip garages scanned (no-sign/no-pano) within N days (default: 365)")
     ap.add_argument("--force-recheck", action="store_true",
                     help="Ignore sv_checked stamps and rescan everything selected")
+    ap.add_argument("--no-history-guard", action="store_true",
+                    help="Disable the conflict-history guard (writing is normally "
+                         "blocked when data/auto_verify.log holds a prior reading "
+                         "of the same garage id that differs by >1 inch — those "
+                         "get logged CONFLICT-QUARANTINE for human review).")
     ap.add_argument("--dry-run", action="store_true", help="Don't write to city files")
     ap.add_argument("--sleep", type=float, default=0.5,
                     help="Seconds between garages")
@@ -1130,8 +1240,12 @@ def main():
     single = args.model or (DEFAULT_MODEL if args.single_model else None)
     pipeline = (f"single-model={single}" if single
                 else f"tiered detect={args.detect_model} read={args.read_model}")
+    history = None if args.no_history_guard else _load_height_history()
+    guard = ("OFF (--no-history-guard)" if history is None
+             else f"on ({sum(len(v) for v in history.values())} prior readings, "
+                  f"{len(history)} ids)")
     print(f"auto_verify [{mode}]: {len(targets)} cities, cost cap ${args.max_cost:.2f}, "
-          f"confidence >={args.confidence}, {pipeline}")
+          f"confidence >={args.confidence}, {pipeline}, history-guard {guard}")
     print()
 
     summaries = []
@@ -1147,7 +1261,8 @@ def main():
                              recheck_days=args.recheck_days,
                              force_recheck=args.force_recheck,
                              check_only=args.check,
-                             only_ids=only_ids)
+                             only_ids=only_ids,
+                             history=history)
             summaries.append(r)
             running_total += r.get("cost", 0)
             if r.get("aborted"):
@@ -1161,6 +1276,7 @@ def main():
     print()
     print("=== GRAND SUMMARY ===")
     total_updated = sum(s.get("updated", 0) for s in summaries)
+    total_quarantined = sum(s.get("quarantined", 0) for s in summaries)
     total_no_sign = sum(s.get("no_sign", 0) for s in summaries)
     total_no_pano = sum(s.get("no_pano", 0) for s in summaries)
     total_low = sum(s.get("low_conf", 0) for s in summaries)
@@ -1174,6 +1290,9 @@ def main():
         print(f"MISMATCHES needing review: {len(all_mismatches)}")
     else:
         print(f"Verified (written):     {total_updated}")
+        print(f"Conflict-quarantined:   {total_quarantined}"
+              + ("  ← grep CONFLICT-QUARANTINE data/auto_verify.log to adjudicate"
+                 if total_quarantined else ""))
     print(f"No sign found:          {total_no_sign}")
     print(f"No pano within {MAX_PANO_DISTANCE_M:.0f}m:   {total_no_pano}")
     print(f"Low confidence:         {total_low}")
