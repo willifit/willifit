@@ -70,6 +70,28 @@
       "height_label": "12'6\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1919",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w178725565",
+      "name": "Low clearance \u2014 Moffit Gulch Road",
+      "addr": "Moffit Gulch Road",
+      "lat": 45.6536,
+      "lng": -110.94502,
+      "height_in": 159,
+      "height_label": "13'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1536531048",
+      "name": "Low clearance \u2014 Fort Ellis Road",
+      "addr": "Fort Ellis Road",
+      "lat": 45.6662,
+      "lng": -110.9804,
+      "height_in": 165,
+      "height_label": "13'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

@@ -38,6 +38,127 @@
       "height_label": "14'0\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1910",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w18243204",
+      "name": "Low clearance \u2014 Grand Avenue (MN 23)",
+      "addr": "MN 23",
+      "lat": 46.71206,
+      "lng": -92.20635,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w18248130",
+      "name": "Low clearance \u2014 Oliver Bridge (MN 39)",
+      "addr": "MN 39",
+      "lat": 46.65674,
+      "lng": -92.20215,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w18252437",
+      "name": "Low clearance \u2014 South 36th Avenue East",
+      "addr": "South 36th Avenue East",
+      "lat": 46.81991,
+      "lng": -92.05066,
+      "height_in": 129,
+      "height_label": "10'9\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w27829422",
+      "name": "Low clearance \u2014 Kirby Drive",
+      "addr": "Kirby Drive",
+      "lat": 46.81824,
+      "lng": -92.08599,
+      "height_in": 163,
+      "height_label": "13'7\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w131465755",
+      "name": "Low clearance \u2014 Oliver Bridge (WI 105)",
+      "addr": "WI 105",
+      "lat": 46.65679,
+      "lng": -92.20109,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w131465758",
+      "name": "Low clearance \u2014 State Highway 39 (MN 39)",
+      "addr": "MN 39",
+      "lat": 46.65661,
+      "lng": -92.20514,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1267531898",
+      "name": "Low clearance \u2014 6th Avenue East",
+      "addr": "6th Avenue East",
+      "lat": 46.71795,
+      "lng": -92.0702,
+      "height_in": 147,
+      "height_label": "12'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1267531980",
+      "name": "Low clearance \u2014 County Road Z (CTH Z)",
+      "addr": "CTH Z",
+      "lat": 46.64766,
+      "lng": -92.02578,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1267532076",
+      "name": "Low clearance \u2014 54th Avenue East",
+      "addr": "54th Avenue East",
+      "lat": 46.67074,
+      "lng": -92.00857,
+      "height_in": 144,
+      "height_label": "12'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1551396777",
+      "name": "Low clearance \u2014 Grand Avenue (MN 23)",
+      "addr": "MN 23",
+      "lat": 46.70204,
+      "lng": -92.21509,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    },
+    {
+      "id": "osm-w1551396778",
+      "name": "Low clearance \u2014 Grand Avenue (MN 23)",
+      "addr": "MN 23",
+      "lat": 46.70584,
+      "lng": -92.21275,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

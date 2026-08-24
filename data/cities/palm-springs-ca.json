@@ -71,6 +71,30 @@
       "sv_status": "no-sign"
     }
   ],
-  "tunnels": [],
-  "bridges": []
+  "tunnels": [
+    {
+      "id": "osm-w316892915",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 33.82392,
+      "lng": -116.5386,
+      "height_in": 168,
+      "height_label": "14'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "osm-w975113880",
+      "name": "Low clearance underpass (service)",
+      "addr": "",
+      "lat": 33.79306,
+      "lng": -116.4674,
+      "height_in": 123,
+      "height_label": "10'3\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
+    }
+  ]
 }

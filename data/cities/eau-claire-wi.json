@@ -62,6 +62,17 @@
       "height_label": "13'9\"",
       "notes": "FHWA NBI; on-bridge clearance; built 1934",
       "source": "FHWA National Bridge Inventory"
+    },
+    {
+      "id": "osm-w38375678",
+      "name": "Low clearance \u2014 I 94",
+      "addr": "I 94",
+      "lat": 44.76632,
+      "lng": -91.49268,
+      "height_in": 191,
+      "height_label": "15'11\"",
+      "notes": "Underpass / low clearance",
+      "source": "OpenStreetMap"
     }
   ]
 }

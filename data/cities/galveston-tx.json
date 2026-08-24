@@ -55,7 +55,19 @@
       "sv_status": "no-pano"
     }
   ],
-  "tunnels": [],
+  "tunnels": [
+    {
+      "id": "osm-w515539099",
+      "name": "Tunnel (service)",
+      "addr": "",
+      "lat": 29.2598,
+      "lng": -94.84019,
+      "height_in": 180,
+      "height_label": "15'0\"",
+      "notes": "Imported from OpenStreetMap.",
+      "source": "OpenStreetMap"
+    }
+  ],
   "bridges": [
     {
       "id": "nbi-48-120850AA0709001",
