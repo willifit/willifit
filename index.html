@@ -1008,7 +1008,7 @@
   .detail-name {
     font-size: 20px; font-weight: 700;
     letter-spacing: -0.02em;
-    margin-bottom: 2px; padding-right: 40px;
+    margin: 0 0 2px; padding-right: 40px;
   }
   .detail-address { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
   .detail-hero-display {
@@ -1093,7 +1093,7 @@
     margin-bottom: 8px; padding: 0 2px;
   }
   .detail-section-title {
-    font-size: 10px; color: var(--muted);
+    font-size: 10px; font-weight: 400; color: var(--muted);
     text-transform: uppercase; letter-spacing: 0.15em;
     font-family: var(--mono);
     margin: 16px 0 8px;
@@ -1972,7 +1972,7 @@
     border-bottom: 1px solid var(--border);
     display: flex; align-items: center; justify-content: space-between;
   }
-  .modal-title { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+  .modal-title { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
   .modal-close {
     background: transparent;
     border: 1px solid var(--border);
@@ -2028,10 +2028,10 @@
   }
   .city-search-wrap input:focus { border-color: var(--accent); }
   .city-section-title {
-    font-size: 10px; color: var(--muted);
+    font-size: 10px; font-weight: 400; color: var(--muted);
     text-transform: uppercase; letter-spacing: 0.15em;
     font-family: var(--mono);
-    padding: 14px 22px 8px;
+    margin: 0; padding: 14px 22px 8px;
     background: var(--panel);
   }
   .city-list { overflow-y: auto; flex: 1; }
@@ -2305,8 +2305,8 @@
         <span class="vh-unit">'</span>
         <input type="number" id="vhInches" min="0" max="11" value="" placeholder="–" aria-label="Vehicle height, inches">
         <span class="vh-unit">"</span>
-        <button class="vh-clear" id="vhClear" title="Clear vehicle height">×</button>
-        <button class="vh-preset-btn" id="vhPresetBtn" title="Pick a common vehicle type" aria-haspopup="true" aria-expanded="false">▾</button>
+        <button class="vh-clear" id="vhClear" title="Clear vehicle height" aria-label="Clear vehicle height">×</button>
+        <button class="vh-preset-btn" id="vhPresetBtn" title="Pick a common vehicle type" aria-label="Pick a common vehicle type" aria-expanded="false">▾</button>
       </div>
       <div class="vh-presets" id="vhPresets" hidden>
         <div class="vh-presets-title">Typical heights — always measure <b>your</b> rig (racks, AC &amp; lifts add inches)</div>
@@ -2353,7 +2353,7 @@
             <label for="search" class="sr-only">Search garage, casino, or address</label>
             <input type="text" id="search" placeholder="Search garage, casino, address..."
                    role="combobox" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false">
-            <button class="search-clear" id="searchClear" title="Clear">×</button>
+            <button class="search-clear" id="searchClear" title="Clear" aria-label="Clear search">×</button>
             <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
           </div>
           <!-- aria-expanded is the state; aria-controls points at the region
@@ -2504,7 +2504,7 @@
 <div class="modal-overlay" id="cityPicker">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cityPickerTitle">
     <div class="modal-header">
-      <div class="modal-title" id="cityPickerTitle">Choose a city</div>
+      <h2 class="modal-title" id="cityPickerTitle">Choose a city</h2>
       <button class="modal-close" id="modalClose" aria-label="Close">×</button>
     </div>
     <div class="tabs" role="tablist" aria-label="Choose city by">
@@ -2516,7 +2516,7 @@
       <div class="city-search-wrap" id="citySearchWrap">
         <label for="citySearchInput" class="sr-only">Search by city, state, or ZIP</label>
         <input type="text" id="citySearchInput" placeholder="City, state, or ZIP — e.g. Denver, Texas, 02139" inputmode="search" autocomplete="postal-code">
-        <button class="city-search-clear" id="citySearchClear" title="Clear">×</button>
+        <button class="city-search-clear" id="citySearchClear" title="Clear" aria-label="Clear city search">×</button>
       </div>
       <div class="city-list" id="citySearchResults"></div>
     </div>
@@ -2536,7 +2536,7 @@
 <div class="modal-overlay" id="newLocationModal">
   <div class="modal report-modal" role="dialog" aria-modal="true" aria-labelledby="newLocationModalTitle">
     <div class="modal-header">
-      <div class="modal-title" id="newLocationModalTitle">Add a missing location</div>
+      <h2 class="modal-title" id="newLocationModalTitle">Add a missing location</h2>
       <button class="modal-close" id="newLocationModalClose" aria-label="Close">×</button>
     </div>
     <form id="newLocationForm" class="report-form">
@@ -2616,7 +2616,7 @@
 <div class="modal-overlay" id="issueModal">
   <div class="modal report-modal" role="dialog" aria-modal="true" aria-labelledby="issueModalTitle">
     <div class="modal-header">
-      <div class="modal-title" id="issueModalTitle">Report an issue</div>
+      <h2 class="modal-title" id="issueModalTitle">Report an issue</h2>
       <button class="modal-close" id="issueModalClose" aria-label="Close">×</button>
     </div>
     <form id="issueForm" class="report-form">
@@ -2663,7 +2663,7 @@
 <div class="modal-overlay" id="reportModal">
   <div class="modal report-modal" role="dialog" aria-modal="true" aria-labelledby="reportModalTitle">
     <div class="modal-header">
-      <div class="modal-title" id="reportModalTitle">Report clearance</div>
+      <h2 class="modal-title" id="reportModalTitle">Report clearance</h2>
       <button class="modal-close" id="reportModalClose" aria-label="Close">×</button>
     </div>
     <form id="reportForm" class="report-form">
@@ -4003,7 +4003,7 @@ function renderSectionsList(g) {
       </div>`;
   }).join('');
   return `
-    <div class="detail-section-title">Posted Clearances By Lane</div>
+    <h3 class="detail-section-title">Posted Clearances By Lane</h3>
     <div class="sections-list">${rows}</div>
     <div class="sections-note">The strictest number above is shown in the main reading — use it if you're not sure which lane you'll enter.</div>
   `;
@@ -4063,7 +4063,7 @@ function renderDetail(g) {
     ? `<a class="ai-verified-badge" href="/how-ai-verification-works.html" target="_blank" rel="noopener" title="Posted clearance read by Claude Vision from Street View imagery — click for details" style="text-decoration:none; margin-left:8px; vertical-align:middle">AI-verified</a>`
     : '';
   body.innerHTML = `
-    <div class="detail-name">${escapeHTML(g.name || '')}${aiBadgeDetail}</div>
+    <h2 class="detail-name">${escapeHTML(g.name || '')}${aiBadgeDetail}</h2>
     <div class="detail-address">${escapeHTML(g.addr || '')}</div>
     <div class="detail-quick-acts">
       <button class="quick-act" id="detailFavBtn" aria-pressed="${favs.has(g.id)}">${favs.has(g.id) ? '★ Saved' : '☆ Save'}</button>
@@ -4112,10 +4112,10 @@ function renderDetail(g) {
         <div class="fact-value ${g.height_in!=null?'yes':''}">${g.height_in!=null?'Posted spec':'Needs check'}</div>
       </div>
     </div>
-    <div class="detail-section-title">Notes</div>
+    <h3 class="detail-section-title">Notes</h3>
     <div class="detail-notes">${escapeHTML(g.notes || 'No additional notes.')}</div>
     <div class="detail-source">Source: ${escapeHTML(g.source || 'Unknown')}${g.verified_on ? ` · Verified ${escapeHTML(formatVerifiedAgo(g.verified_on))}` : ''}</div>
-    <div class="detail-section-title">Entrance Verification</div>
+    <h3 class="detail-section-title">Entrance Verification</h3>
     <div class="image-gallery">
       <div class="image-thumb" role="button" tabindex="0" onclick="window.open('${svUrl}','_blank','noopener,noreferrer')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('${svUrl}','_blank','noopener,noreferrer')}">
         <div class="no-image">Click to open Google Street View — pan to entrance and check the sign yourself</div>
@@ -4515,15 +4515,15 @@ function renderSearchTab(query = '') {
   // ZIP path — US 5-digit ZIPs (and 9-digit ZIP+4 like 02139-1234).
   const zipMatch = q.match(/^(\d{5})(?:-?\d{4})?$/);
   if (zipMatch) {
-    container.innerHTML = `<div class="city-section-title">ZIP ${zipMatch[1]}</div><div class="empty"><span class="spinner"></span>Looking up location…</div>`;
+    container.innerHTML = `<h3 class="city-section-title">ZIP ${zipMatch[1]}</h3><div class="empty"><span class="spinner"></span>Looking up location…</div>`;
     geocodeZip(zipMatch[1]).then(hit => {
       if (renderId !== _searchTabRenderId) return;  // newer search took over
       if (!hit) {
-        container.innerHTML = `<div class="city-section-title">ZIP ${zipMatch[1]}</div><div class="empty">No US location found for that ZIP.</div>`;
+        container.innerHTML = `<h3 class="city-section-title">ZIP ${zipMatch[1]}</h3><div class="empty">No US location found for that ZIP.</div>`;
         return;
       }
       const near = _nearestLiveCity(hit.lat, hit.lng);
-      let html = `<div class="city-section-title">ZIP ${zipMatch[1]} — ${escapeHTML(hit.place || '')}${hit.state ? ', ' + escapeHTML(hit.state) : ''}</div>`;
+      let html = `<h3 class="city-section-title">ZIP ${zipMatch[1]} — ${escapeHTML(hit.place || '')}${hit.state ? ', ' + escapeHTML(hit.state) : ''}</h3>`;
       if (near) {
         const miles = (near.distKm * 0.621371).toFixed(0);
         const closeEnough = near.distKm <= 50;
@@ -4567,7 +4567,7 @@ function renderSearchTab(query = '') {
 
   let html = '';
   if (liveMatches.length) {
-    html += `<div class="city-section-title">Live — ${liveMatches.length} ${liveMatches.length===1?'city':'cities'}</div>`;
+    html += `<h3 class="city-section-title">Live — ${liveMatches.length} ${liveMatches.length===1?'city':'cities'}</h3>`;
     html += liveMatches.map(c => `
       <div class="city-row" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${escapeHTML(c.state)}, ${garageCountLabel(c.garage_count)}">
         <div><span class="name">${escapeHTML(c.name)}</span><span class="state">${escapeHTML(c.state)}</span></div>
@@ -4575,7 +4575,7 @@ function renderSearchTab(query = '') {
       </div>`).join('');
   }
   if (comingMatches.length) {
-    html += `<div class="city-section-title">Coming Soon — ${comingMatches.length}</div>`;
+    html += `<h3 class="city-section-title">Coming Soon — ${comingMatches.length}</h3>`;
     html += comingMatches.map(c => `
       <div class="city-row coming-soon" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${escapeHTML(c.state)}, coming soon">
         <div><span class="name">${escapeHTML(c.name)}</span><span class="state">${escapeHTML(c.state)}</span></div>
@@ -4587,16 +4587,16 @@ function renderSearchTab(query = '') {
     // (e.g. "325 N Maple Dr, Beverly Hills, CA 90210").  Only when it looks
     // address-like (has a number or comma) so we don't geocode every typo.
     if (q.length >= 5 && (/\d/.test(q) || q.includes(','))) {
-      container.innerHTML = `<div class="city-section-title">Address</div><div class="empty"><span class="spinner"></span>Looking up &ldquo;${escapeHTML(q)}&rdquo;&hellip;</div>`;
+      container.innerHTML = `<h3 class="city-section-title">Address</h3><div class="empty"><span class="spinner"></span>Looking up &ldquo;${escapeHTML(q)}&rdquo;&hellip;</div>`;
       geocodeAddress(q).then(hit => {
         if (renderId !== _searchTabRenderId) return;  // a newer search took over
         if (!hit) {
-          container.innerHTML = `<div class="city-section-title">Address</div><div class="empty">Couldn&rsquo;t find that address. Try including city + state, or a ZIP code.</div>`;
+          container.innerHTML = `<h3 class="city-section-title">Address</h3><div class="empty">Couldn&rsquo;t find that address. Try including city + state, or a ZIP code.</div>`;
           return;
         }
         const near = _nearestLiveCity(hit.lat, hit.lng);
         const short = escapeHTML(hit.label.split(',').slice(0, 3).join(',').trim());
-        let h = `<div class="city-section-title">${short}</div>`;
+        let h = `<h3 class="city-section-title">${short}</h3>`;
         if (near) {
           const miles = (near.distKm * 0.621371).toFixed(0);
           h += `<div class="city-row" data-slug="${escapeHTML(near.city.slug)}" data-lat="${hit.lat}" data-lng="${hit.lng}" data-label="${escapeHTML(hit.label)}" role="button" tabindex="0" aria-label="Zoom to this address near ${escapeHTML(near.city.name)}, ${escapeHTML(near.city.state)}, ${miles} miles away">

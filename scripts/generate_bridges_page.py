@@ -208,6 +208,8 @@ def main():
   td b {{ color: var(--bad); font-variant-numeric: tabular-nums; }}
   .src {{ font-size: 12.5px; color: var(--muted); }}
   .table-wrap {{ overflow-x: auto; }}
+  table caption {{ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+                   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }}
   footer {{ margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border);
            font-size: 12px; color: var(--muted); display: flex; justify-content: space-between;
            flex-wrap: wrap; gap: 12px; }}
@@ -247,6 +249,7 @@ def main():
   <h2>The 25 lowest posted clearances</h2>
   <div class="table-wrap" tabindex="0" role="region" aria-label="The 25 lowest posted clearances, scrollable table">
   <table>
+    <caption>The 25 lowest posted vertical clearances in the WillIFit database</caption>
     <thead><tr><th scope="col">#</th><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
     <tbody>
 {top_rows}
@@ -260,6 +263,7 @@ def main():
   <h2>The lowest bridge in every covered state</h2>
   <div class="table-wrap" tabindex="0" role="region" aria-label="The lowest bridge in every covered state, scrollable table">
   <table>
+    <caption>The lowest posted bridge clearance in each covered state</caption>
     <thead><tr><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
     <tbody>
 {state_rows}

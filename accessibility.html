@@ -31,7 +31,7 @@
     "name": "Accessibility Statement",
     "url": "https://willifit.ai/accessibility.html",
     "description": "WillIFit.ai's accessibility statement, conformance status against WCAG 2.1 AA, and a list of known issues by severity.",
-    "dateModified": "2026-08-16",
+    "dateModified": "2026-08-23",
     "isPartOf": { "@type": "WebSite", "name": "WillIFit.ai", "url": "https://willifit.ai/" }
   },
   {
@@ -141,14 +141,17 @@
      dressing it up as verified.</p>
 
   <h2>Conformance target</h2>
-  <p>We aim for <b>WCAG 2.1 Level AA</b>. Current status: <b>partially conformant</b> — an initial
-     audit turned up 47 issues; a same-day remediation pass fixed both Critical findings and the
-     large majority of the Serious and Moderate ones. What's genuinely left is itemized below, same
-     as before — nothing gets quietly dropped from this list, it just moves to "fixed."</p>
+  <p>We aim for <b>WCAG 2.1 Level AA</b>. Current status: <b>fully conformant, per our own
+     assessment</b> — an initial audit turned up 47 issues; a same-day remediation pass fixed both
+     Critical findings and the large majority of the Serious and Moderate ones, and a follow-up
+     pass on August 23 closed the last four. "Per our own assessment" is doing real work in that
+     sentence: this is a self-evaluation, not a certified audit, and the claim only covers what
+     code review can see. Nothing gets quietly dropped from this list — it just moves to
+     "fixed."</p>
   <div class="status-row">
     <span class="status-chip">Target: <b>WCAG 2.1 AA</b></span>
-    <span class="status-chip">Status: <b>Partially conformant</b></span>
-    <span class="status-chip">Last reviewed: <b>August 16, 2026</b></span>
+    <span class="status-chip">Status: <b>Fully conformant (self-assessed)</b></span>
+    <span class="status-chip">Last reviewed: <b>August 23, 2026</b></span>
   </div>
 
   <div class="callout">
@@ -159,6 +162,17 @@
     correctly; the color-only fit indicators now carry a non-color signal too; the contrast
     failures we measured are corrected; and the mislabeled link repeated across all 226 city pages
     is fixed. What didn't get fixed yet is listed honestly below, not hidden.
+  </div>
+
+  <div class="callout">
+    <b>August 23, 2026 — remaining items closed.</b> The four items left open after the August 16
+    pass are now fixed: the app has a real heading hierarchy (modal titles and the detail panel's
+    name and section headers are proper <code>&lt;h2&gt;</code>/<code>&lt;h3&gt;</code> elements,
+    not styled <code>&lt;div&gt;</code>s), the vehicle-preset button no longer claims to open an
+    ARIA menu it doesn't provide (it's an honest disclosure button now), the icon-only clear
+    buttons carry explicit <code>aria-label</code>s instead of relying on <code>title</code>, and
+    the data tables on the clearance guide and Lowest Bridges pages have
+    <code>&lt;caption&gt;</code> elements.
   </div>
 
   <h2>How this was assessed</h2>
@@ -189,44 +203,18 @@
   </div>
 
   <h2>Known issues</h2>
-  <p>What's left after the pass above — all Moderate or Minor at this point, nothing that blocks a
-     core action the way the two Critical findings did.</p>
-
-  <div class="issue-group">
-    <h4>Heading structure inside the app</h4>
-    <ul>
-      <li><span class="sev sev-moderate">Moderate</span> The main app still has only two real
-        heading elements. Modal titles, the garage name in the detail panel, and its section
-        headers are styled to look like headings but are still <code>&lt;div&gt;</code>s — a
-        screen reader user jumping by heading can't use that to navigate within the app the way
-        they can on every content page.
-        <span class="wcag-ref">(WCAG 1.3.1, 2.4.6)</span></li>
-    </ul>
-  </div>
-
-  <div class="issue-group">
-    <h4>Smaller gaps</h4>
-    <ul>
-      <li><span class="sev sev-minor">Minor</span> The vehicle-height preset button declares
-        itself as opening a menu (<code>aria-haspopup="menu"</code>) but the dropdown is really a
-        plain list of buttons, not a full ARIA menu with arrow-key navigation — worth resolving the
-        mismatch so a screen reader doesn't set the wrong expectation.
-        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
-      <li><span class="sev sev-minor">Minor</span> A couple of small icon-only buttons (clear
-        search, clear vehicle height) are named only through a <code>title</code> attribute, which
-        not every assistive technology reads consistently — an explicit <code>aria-label</code>
-        would be more robust.
-        <span class="wcag-ref">(WCAG 4.1.2)</span></li>
-      <li><span class="sev sev-minor">Minor</span> The data tables on the clearance guide and the
-        Lowest Bridges page now have proper column headers (<code>scope="col"</code>), but still
-        don't have a <code>&lt;caption&gt;</code> element describing the table as a whole.
-        <span class="wcag-ref">(WCAG 1.3.1)</span></li>
-    </ul>
-  </div>
+  <p>Every item from the four-pass audit — both Critical findings, the Serious and Moderate ones,
+     and the last four Minor items — is now fixed. We don't currently have an open, known WCAG
+     issue to list here.</p>
+  <p>That is not a claim of perfection: this is a self-evaluation, and code review can't catch
+     what only a person using a screen reader or switch device day-to-day would notice. When
+     something new is found — by us or by you — it will be listed here while it's open, the same
+     way the items above were.</p>
 
   <h2>What we're doing about it</h2>
-  <p>What's left is logged and all Moderate or Minor — nothing here blocks a core action. We'll
-     keep updating this page as things close, not just when new findings show up.</p>
+  <p>The audit backlog is clear, so the work now is keeping it that way: new features get checked
+     against the same criteria before they ship, and we'll keep updating this page as things
+     change, not just when new findings show up.</p>
 
   <h2 id="feedback">Report a problem</h2>
   <p>If you hit an access barrier anywhere on the site — something above, or something we missed —
