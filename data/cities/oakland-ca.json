@@ -811,7 +811,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Self-anchored suspension. High clearance.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-06-280164Y",

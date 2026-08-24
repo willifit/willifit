@@ -306,7 +306,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w264623867",
@@ -319,7 +321,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w286922594",
@@ -332,7 +336,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w310961011",
@@ -345,7 +351,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w334627323",
@@ -358,7 +366,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w347312256",
@@ -371,7 +381,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w351206457",
@@ -379,12 +391,16 @@
       "addr": "2522 Sun Bowl Drive",
       "lat": 31.77022,
       "lng": -106.50794,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 203,
+      "height_label": "16'11\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-24 from sign reading \"16 FT  11 IN\" (pano 59uCWykMK_iGn3L8LgOQ3Q, heading 26\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "59uCWykMK_iGn3L8LgOQ3Q",
+      "pano_heading": 26
     },
     {
       "id": "osm-w1182799069",
@@ -397,7 +413,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1182799074",
@@ -410,7 +428,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1308776962",
@@ -423,7 +443,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1498011929",
@@ -435,7 +457,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [

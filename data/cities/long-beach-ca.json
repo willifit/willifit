@@ -45,7 +45,8 @@
       "source": "aquariumofpacific.org",
       "entrance_lat": 33.7634728,
       "entrance_lng": -118.1967049,
-      "entrance_source": "OSM parking_entrance node 9969303012"
+      "entrance_source": "OSM parking_entrance node 9969303012",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-queen-mary",
@@ -60,7 +61,8 @@
       "source": "queenmary.com",
       "entrance_lat": 33.7508725,
       "entrance_lng": -118.1902288,
-      "entrance_source": "OSM parking_entrance node 12588637405"
+      "entrance_source": "OSM parking_entrance node 12588637405",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-shoreline-village",
@@ -72,7 +74,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Tourist shopping.",
-      "source": "shorelinevillage.com"
+      "source": "shorelinevillage.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-2nd-st-belmont",
@@ -84,7 +87,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping district street + city lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-grand-prix",
@@ -99,7 +103,8 @@
       "source": "gplb.com",
       "entrance_lat": 33.7650724,
       "entrance_lng": -118.1865748,
-      "entrance_source": "OSM parking_entrance node 7200208716"
+      "entrance_source": "OSM parking_entrance node 7200208716",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-lgb-airport",
@@ -132,7 +137,9 @@
       "entrance_lat": 33.8199568,
       "entrance_lng": -118.1514552,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lb-csulb",
@@ -144,7 +151,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "CSU Long Beach campus.",
-      "source": "csulb.edu"
+      "source": "csulb.edu",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lb-pine-ave",
@@ -172,7 +181,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Catalina Express boat terminal.",
-      "source": "catalinaexpress.com"
+      "source": "catalinaexpress.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-performing-arts-center",
@@ -187,7 +197,9 @@
       "source": "longbeachcc.com",
       "entrance_lat": 33.7650724,
       "entrance_lng": -118.1865748,
-      "entrance_source": "OSM parking_entrance node 7200208716"
+      "entrance_source": "OSM parking_entrance node 7200208716",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lb-blvd-cats",
@@ -202,7 +214,8 @@
       "source": "catalinaexpress.com",
       "entrance_lat": 33.7604436,
       "entrance_lng": -118.1966721,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-mola-museum",
@@ -214,7 +227,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Museum surface.",
-      "source": "molaa.org"
+      "source": "molaa.org",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lb-aquarium-pacific-adj",
@@ -226,7 +241,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Multiple harbor surface lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-shoreline-marina",
@@ -241,7 +257,8 @@
       "source": "longbeach.gov",
       "entrance_lat": 33.7567077,
       "entrance_lng": -118.1869611,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-naples-lots",
@@ -253,7 +270,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic canal community.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "lb-el-dorado-park",
@@ -281,7 +299,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Bluff Park adjacent. Surface.",
-      "source": "lbma.org"
+      "source": "lbma.org",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lb-earl-burns-miller",
@@ -293,7 +313,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Japanese garden on CSULB campus.",
-      "source": "csulb.edu/garden"
+      "source": "csulb.edu/garden",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lb-long-beach-airport-garage-b",
@@ -306,7 +328,9 @@
       "oversized": false,
       "notes": "Secondary airport garage.",
       "source": "lgb.org",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lb-shoreline-village-east",
@@ -321,7 +345,8 @@
       "source": "shorelinevillage.com",
       "entrance_lat": 33.7567077,
       "entrance_lng": -118.1869611,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w27208801",
@@ -377,14 +402,18 @@
       "addr": "",
       "lat": 33.7874,
       "lng": -118.10936,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "paid OSM-imported 17'11\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)",
+      "notes": "paid OSM-imported 17'11\" was building height, not clearance.\nVerified 2026-08-23 from sign reading \"CLEARANCE 8'-2\"\" (pano QKiMjce6e-M0NLEvMviDgA, heading 103\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification (was OSM building-height)",
       "entrance_lat": 33.7874436,
       "entrance_lng": -118.109829,
-      "entrance_source": "OSM parking_entrance node 6848933496"
+      "entrance_source": "OSM parking_entrance node 6848933496",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "QKiMjce6e-M0NLEvMviDgA",
+      "pano_heading": 103
     },
     {
       "id": "osm-w303268434",
@@ -399,7 +428,9 @@
       "source": "Needs verification (was OSM building-height)",
       "entrance_lat": 33.8071405,
       "entrance_lng": -118.1472228,
-      "entrance_source": "OSM parking_entrance node 9468701203"
+      "entrance_source": "OSM parking_entrance node 9468701203",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w351202573",
@@ -548,7 +579,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap. OSM-imported 19'11\" was building height, not clearance.",
-      "source": "Needs verification (was OSM building-height)"
+      "source": "Needs verification (was OSM building-height)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w441460169",
@@ -1114,7 +1147,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Suspension bridge to Terminal Island. Iconic green.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "lb-gerald-desmond",
@@ -1128,7 +1163,9 @@
       "source": "Caltrans",
       "entrance_lat": 33.7642611,
       "entrance_lng": -118.2221353,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "lb-queensway",
@@ -1142,7 +1179,9 @@
       "source": "Wikipedia",
       "entrance_lat": 33.7534434,
       "entrance_lng": -118.1911914,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-06-531619E",

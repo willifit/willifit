@@ -518,12 +518,16 @@
       "addr": "",
       "lat": 35.52569,
       "lng": -97.54275,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 79,
+      "height_label": "6'7\"",
       "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "free\nVerified 2026-08-24 from sign reading \"6'7\"\" (pano e0S0npLGFDNnjEC9wvNGZA, heading 40\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "e0S0npLGFDNnjEC9wvNGZA",
+      "pano_heading": 40
     },
     {
       "id": "osm-w184092978",

@@ -458,12 +458,16 @@
       "addr": "",
       "lat": 61.21574,
       "lng": -149.88491,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 87,
+      "height_label": "7'3\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-23 from sign reading \"Maximum Height 7'-3\"\" (pano _yY2EnuJm8xZhgSRTva15w, heading 342\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "_yY2EnuJm8xZhgSRTva15w",
+      "pano_heading": 342
     },
     {
       "id": "osm-n12109132285",
@@ -475,7 +479,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "free; open-air",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-n12141055600",
@@ -487,7 +492,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "free; open-air",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w28587665",
@@ -495,12 +501,16 @@
       "addr": "510 L Street",
       "lat": 61.21713,
       "lng": -149.90434,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 79,
+      "height_label": "6'7\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-23 from sign reading \"CLEARANCE 6'-7\"\" (pano lxZ7_ZEjQmguGxWVTRVcFg, heading 83\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "lxZ7_ZEjQmguGxWVTRVcFg",
+      "pano_heading": 83
     },
     {
       "id": "osm-w28610646",
@@ -513,7 +523,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w177334269",
@@ -526,7 +538,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w211221237",
@@ -539,7 +553,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w256073824",
@@ -551,7 +567,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w256073825",
@@ -563,7 +581,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w303774200",
@@ -576,7 +596,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w424845239",
@@ -589,7 +611,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w487850710",
@@ -603,7 +627,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://doa.alaska.gov/dgs/facilities"
+      "website": "http://doa.alaska.gov/dgs/facilities",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w553692968",
@@ -611,12 +637,16 @@
       "addr": "",
       "lat": 61.18143,
       "lng": -149.79793,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 82,
+      "height_label": "6'10\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-23 from sign reading \"6'-10\"\" (pano CYA4tiWNvutlan1m43rL_w, heading 193\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "CYA4tiWNvutlan1m43rL_w",
+      "pano_heading": 193
     },
     {
       "id": "osm-w762091673",
@@ -628,7 +658,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w887294666",
@@ -640,7 +672,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w949246213",
@@ -653,7 +687,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w955081373",
@@ -666,7 +702,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1158789582",
@@ -679,7 +717,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [
@@ -692,7 +732,9 @@
       "height_in": null,
       "height_label": "Shared rail/car",
       "notes": "Longest highway tunnel in North America. Alternating vehicle/rail directions. 2.5 miles. ~80mi SE of Anchorage.",
-      "source": "dot.alaska.gov"
+      "source": "dot.alaska.gov",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1096718386",
@@ -738,7 +780,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Palmer-Wasilla gateway bridge.",
-      "source": "dot.alaska.gov"
+      "source": "dot.alaska.gov",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-02-0645",

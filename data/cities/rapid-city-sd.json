@@ -124,7 +124,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [],

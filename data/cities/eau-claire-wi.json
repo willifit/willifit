@@ -36,7 +36,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

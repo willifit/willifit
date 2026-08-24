@@ -177,14 +177,18 @@
       "addr": "1101 Biscayne Blvd",
       "lat": 25.785,
       "lng": -80.1866,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 86,
+      "height_label": "7'2\"",
       "oversized": false,
-      "notes": "Museum garage.",
-      "source": "frostscience.org",
+      "notes": "Museum garage.\nVerified 2026-08-24 from sign reading \"CLEARANCE 7'2\"\" (pano 0BKq4V11V3LTzy54A7fmaA, heading 158\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: frostscience.org",
       "entrance_lat": 25.7858872,
       "entrance_lng": -80.1870239,
-      "entrance_source": "OSM parking_entrance node 4773377977"
+      "entrance_source": "OSM parking_entrance node 4773377977",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "0BKq4V11V3LTzy54A7fmaA",
+      "pano_heading": 158
     },
     {
       "id": "mia-perez-art",
@@ -192,14 +196,18 @@
       "addr": "1103 Biscayne Blvd",
       "lat": 25.7857,
       "lng": -80.1867,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 86,
+      "height_label": "7'2\"",
       "oversized": false,
-      "notes": "PAMM museum garage.",
-      "source": "pamm.org",
+      "notes": "PAMM museum garage.\nVerified 2026-08-24 from sign reading \"CLEARANCE 7'2\"\" (pano 0BKq4V11V3LTzy54A7fmaA, heading 158\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: pamm.org",
       "entrance_lat": 25.7858872,
       "entrance_lng": -80.1870239,
-      "entrance_source": "OSM parking_entrance node 4773377977"
+      "entrance_source": "OSM parking_entrance node 4773377977",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "0BKq4V11V3LTzy54A7fmaA",
+      "pano_heading": 158
     },
     {
       "id": "mia-dolphin-mall",
@@ -224,7 +232,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Upscale mega-mall.",
-      "source": "aventuramall.com"
+      "source": "aventuramall.com",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "mia-coconut-grove",
@@ -236,7 +246,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Shopping entertainment district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-wynwood",
@@ -274,7 +286,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Cruise terminal garage.",
-      "source": "portmiami.biz"
+      "source": "portmiami.biz",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "mia-cruise-port-surface",
@@ -298,15 +312,19 @@
       "addr": "4200 NW 21st St",
       "lat": 25.7958,
       "lng": -80.2793,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "Terminal-adjacent.",
-      "source": "miami-airport.com",
+      "notes": "Terminal-adjacent.\nVerified 2026-08-24 from sign reading \"CLEARANCE 8'-6\"\" (pano CJ_H_2ZcX-WybrpbDEvgCg, heading 95\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: miami-airport.com",
       "entrance_lat": 25.795745,
       "entrance_lng": -80.2779631,
       "entrance_source": "OSM parking_entrance node 10886016099",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "CJ_H_2ZcX-WybrpbDEvgCg",
+      "pano_heading": 95
     },
     {
       "id": "mia-airport-flamingo",
@@ -318,7 +336,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal-adjacent.",
-      "source": "miami-airport.com"
+      "source": "miami-airport.com",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "mia-fll-garage",
@@ -334,7 +354,9 @@
       "entrance_lat": 26.0708188,
       "entrance_lng": -80.1553066,
       "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
-      "wv_checked": "2026-07-03"
+      "wv_checked": "2026-07-03",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w617983502",
@@ -360,7 +382,9 @@
       "oversized": false,
       "notes": "286 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n6096702864",
@@ -373,7 +397,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n8075323052",
@@ -386,7 +412,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n8075340257",
@@ -412,7 +440,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n13426742738",
@@ -425,7 +455,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w22341477",
@@ -438,7 +470,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w22341479",
@@ -451,7 +485,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w108438831",
@@ -464,7 +500,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w117926314",
@@ -477,7 +515,9 @@
       "oversized": false,
       "notes": "paid; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w119558740",
@@ -490,7 +530,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w119558758",
@@ -503,7 +545,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w119558767",
@@ -516,7 +560,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w119562107",
@@ -529,7 +575,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w119564721",
@@ -542,7 +590,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w123899155",
@@ -555,7 +605,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w136979831",
@@ -568,7 +620,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w136979832",
@@ -581,7 +635,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w136979833",
@@ -594,7 +650,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w136979835",
@@ -607,7 +665,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w255202049",
@@ -620,7 +680,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w255394280",
@@ -633,7 +695,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w255402041",
@@ -646,7 +710,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w268564869",
@@ -659,7 +725,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w268564894",
@@ -672,7 +740,9 @@
       "oversized": false,
       "notes": "paid; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w277037896",
@@ -685,7 +755,9 @@
       "oversized": false,
       "notes": "550 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w278823380",
@@ -698,7 +770,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w294606172",
@@ -711,7 +785,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w294606221",
@@ -724,7 +800,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w294606291",
@@ -737,7 +815,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w296949745",
@@ -750,7 +830,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w297682281",
@@ -764,7 +846,9 @@
       "notes": "1460 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.miamibeachfl.gov/city-hall/parking/parking-garages-lot-locations/"
+      "website": "https://www.miamibeachfl.gov/city-hall/parking/parking-garages-lot-locations/",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w300211768",
@@ -777,7 +861,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w300220079",
@@ -790,7 +876,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w300221115",
@@ -803,7 +891,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w311357059",
@@ -816,7 +906,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w319274844",
@@ -829,7 +921,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w319424911",
@@ -843,7 +937,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.miamibeachfl.gov/city-hall/parking/parking-garages-lot-locations/"
+      "website": "https://www.miamibeachfl.gov/city-hall/parking/parking-garages-lot-locations/",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w319437953",
@@ -856,7 +952,9 @@
       "oversized": false,
       "notes": "paid; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w338109412",
@@ -869,7 +967,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w381111098",
@@ -882,7 +982,9 @@
       "oversized": false,
       "notes": "600 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w435530659",
@@ -895,7 +997,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w436038128",
@@ -908,7 +1012,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w436039919",
@@ -922,7 +1028,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.bayharborislands-fl.gov/177/Municipal-Lots---Parking"
+      "website": "https://www.bayharborislands-fl.gov/177/Municipal-Lots---Parking",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w436126218",
@@ -935,7 +1043,9 @@
       "oversized": false,
       "notes": "400 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w464464152",
@@ -948,7 +1058,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w467885101",
@@ -961,7 +1073,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w475940180",
@@ -969,12 +1083,16 @@
       "addr": "1691 North Lincoln Lane",
       "lat": 25.79136,
       "lng": -80.13826,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 146,
+      "height_label": "12'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-24 from sign reading \"CLEARANCE 12'2\"\" (pano TMkC4vJNpNTgjVhZLMsfvA, heading 358\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "TMkC4vJNpNTgjVhZLMsfvA",
+      "pano_heading": 358
     },
     {
       "id": "osm-w480955423",
@@ -987,7 +1105,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w480955443",
@@ -1000,7 +1120,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w550494716",
@@ -1008,12 +1130,16 @@
       "addr": "",
       "lat": 25.70254,
       "lng": -80.2945,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-24 from sign reading \"MAX CLEARANCE 7FT\" (pano rI-AcAfSYtTVLhS1K7_EEQ, heading 276\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "rI-AcAfSYtTVLhS1K7_EEQ",
+      "pano_heading": 276
     },
     {
       "id": "osm-w558297236",
@@ -1026,7 +1152,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w564987071",
@@ -1039,7 +1167,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w700376947",
@@ -1052,7 +1182,9 @@
       "oversized": false,
       "notes": "covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w708556100",
@@ -1065,7 +1197,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w946546591",
@@ -1078,7 +1212,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w946546592",
@@ -1091,7 +1227,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w946546593",
@@ -1104,7 +1242,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w952486630",
@@ -1117,7 +1257,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w992801051",
@@ -1130,7 +1272,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1302246409",
@@ -1143,7 +1287,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1305550977",
@@ -1156,7 +1302,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1315143087",
@@ -1169,7 +1317,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1334561031",
@@ -1182,7 +1332,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1429542196",
@@ -1195,7 +1347,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r5984014",
@@ -1208,7 +1362,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r6454898",
@@ -1221,7 +1377,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -1316,7 +1474,9 @@
       "source": "FDOT",
       "entrance_lat": 25.7887941,
       "entrance_lng": -80.1632752,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-julia-tuttle",
@@ -1330,7 +1490,9 @@
       "source": "FDOT",
       "entrance_lat": 25.8107408,
       "entrance_lng": -80.1671941,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "mia-rickenbacker",
@@ -1344,7 +1506,9 @@
       "source": "miamidade.gov",
       "entrance_lat": 25.7464414,
       "entrance_lng": -80.1825392,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-12-870019",

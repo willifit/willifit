@@ -578,7 +578,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n10656389358",
@@ -591,7 +593,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w48386247",
@@ -604,7 +608,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w166237906",
@@ -617,7 +623,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w166242995",
@@ -630,7 +638,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w178083545",
@@ -643,7 +653,9 @@
       "oversized": false,
       "notes": "718 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w189232608",
@@ -656,7 +668,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w193416989",
@@ -669,7 +683,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w193416994",
@@ -682,7 +698,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w194428967",
@@ -695,7 +713,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w205640236",
@@ -708,7 +728,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w227069735",
@@ -721,7 +743,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w402751182",
@@ -733,7 +757,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w437201112",
@@ -741,12 +767,16 @@
       "addr": "801 4th Street Northwest",
       "lat": 35.09265,
       "lng": -106.65048,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-24 from sign reading \"7'-0\"  CLEARANCE  7'-0\"\" (pano VeAFoVjMnVSlucT9J1pckg, heading 0\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "VeAFoVjMnVSlucT9J1pckg",
+      "pano_heading": 0
     },
     {
       "id": "osm-w978953106",
@@ -759,7 +789,9 @@
       "oversized": false,
       "notes": "free; hrs: PH,Mo-Su 00:00-24:00",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w987073984",
@@ -772,7 +804,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r7445984",
@@ -785,7 +819,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -844,7 +880,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Old Route 66 bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-35-000000000006225",

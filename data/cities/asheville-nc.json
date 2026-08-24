@@ -456,7 +456,9 @@
       "oversized": false,
       "notes": "262 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w202110619",
@@ -469,7 +471,9 @@
       "oversized": false,
       "notes": "232 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w689368010",
@@ -482,7 +486,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w827504557",
@@ -495,7 +501,9 @@
       "oversized": false,
       "notes": "664 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1258399745",
@@ -508,7 +516,9 @@
       "oversized": false,
       "notes": "1000 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1307284578",
@@ -532,7 +542,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [
@@ -569,7 +581,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Captain Jeff Bowen Bridge.",
-      "source": "NCDOT"
+      "source": "NCDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "ash-blue-ridge-parkway",
@@ -580,7 +594,9 @@
       "height_in": null,
       "height_label": "Varies",
       "notes": "Stone arch viaducts. Commercial truck prohibited on parkway.",
-      "source": "nps.gov/blri"
+      "source": "nps.gov/blri",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w198951958",

@@ -402,7 +402,9 @@
       "source": "Wikipedia",
       "entrance_lat": 32.0857571,
       "entrance_lng": -81.0997146,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "sav-lazaretto-creek",
@@ -416,7 +418,9 @@
       "source": "GDOT",
       "entrance_lat": 32.0233326,
       "entrance_lng": -80.8979045,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w9081841",

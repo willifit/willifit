@@ -165,7 +165,9 @@
       "oversized": false,
       "notes": "654 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

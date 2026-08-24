@@ -421,7 +421,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w465044747",
@@ -434,7 +436,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w968315673",
@@ -446,7 +448,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [
@@ -472,7 +476,9 @@
       "height_in": null,
       "height_label": "Over canyon",
       "notes": "One of world's tallest concrete arch bridges. Iconic.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mry-rocky-creek-bridge",
@@ -483,7 +489,9 @@
       "height_in": null,
       "height_label": "Over canyon",
       "notes": "Companion span just north of Bixby.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "mry-ca-1-big-sur-closures",
@@ -495,7 +503,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Check CHP for current Big Sur highway status. Frequent slides.",
-      "source": "Caltrans"
+      "source": "Caltrans",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-06-440152S",

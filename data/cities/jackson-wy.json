@@ -390,7 +390,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Main west route. Rebuilt 2013.",
-      "source": "WYDOT"
+      "source": "WYDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "jac-teton-pass",
@@ -401,7 +403,9 @@
       "height_in": null,
       "height_label": "8,431' summit",
       "notes": "Steep mountain pass (10% grades). Closed intermittently \u2014 landslide May 2024. Truck restrictions.",
-      "source": "WYDOT"
+      "source": "WYDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "jac-togwotee-pass",
@@ -412,7 +416,9 @@
       "height_in": null,
       "height_label": "9,658' summit",
       "notes": "Alternative route into Jackson Hole from east. Snowy.",
-      "source": "WYDOT"
+      "source": "WYDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-56-DEY",

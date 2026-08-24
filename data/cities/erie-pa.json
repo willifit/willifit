@@ -72,7 +72,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://erieparking.com/find-parking-locations/garages/"
+      "website": "https://erieparking.com/find-parking-locations/garages/",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w825450940",

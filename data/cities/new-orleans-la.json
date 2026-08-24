@@ -413,12 +413,16 @@
       "addr": "",
       "lat": 29.93849,
       "lng": -90.10486,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 79,
+      "height_label": "6'7\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-24 from sign reading \"CLEARANCE 6' 7\"\" (pano EiLf5gTa9nK1jtOzSOnIew, heading 242\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "EiLf5gTa9nK1jtOzSOnIew",
+      "pano_heading": 242
     },
     {
       "id": "osm-w328002211",

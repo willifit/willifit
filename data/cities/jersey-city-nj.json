@@ -552,7 +552,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2288235976",
@@ -565,7 +567,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n2443892144",
@@ -578,7 +582,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2443892145",
@@ -591,7 +597,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2443892152",
@@ -617,7 +625,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2583190826",
@@ -630,7 +640,9 @@
       "oversized": false,
       "notes": "166 spaces; paid; hrs: Mo-Fr 06:00-22:00",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2592264899",
@@ -643,7 +655,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2711639357",
@@ -657,7 +671,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/212-east-47th-street-nyc"
+      "website": "https://www.centerpark.nyc/212-east-47th-street-nyc",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2745482863",
@@ -671,7 +687,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://championparking.com/location/carousel-parking-corporation"
+      "website": "https://championparking.com/location/carousel-parking-corporation",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n2825591196",
@@ -684,7 +702,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n2825635898",
@@ -697,7 +717,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n3134690528",
@@ -710,7 +732,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3134691332",
@@ -723,7 +747,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3637147878",
@@ -736,7 +762,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3692082877",
@@ -749,7 +777,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3785163399",
@@ -762,7 +792,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3785196947",
@@ -775,7 +807,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n3803995665",
@@ -788,7 +822,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n3976829276",
@@ -801,7 +837,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n4389441148",
@@ -827,7 +865,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n4917687087",
@@ -840,7 +880,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n5360019842",
@@ -848,12 +890,16 @@
       "addr": "",
       "lat": 40.75041,
       "lng": -74.02505,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "free\nVerified 2026-08-23 from sign reading \"GARAGE MAX HEIGHT 8' 6\"\" (pano YBR-yVg-rtobN4oX4XiNFw, heading 108\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "YBR-yVg-rtobN4oX4XiNFw",
+      "pano_heading": 108
     },
     {
       "id": "osm-n5618091321",
@@ -866,7 +912,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n6001381447",
@@ -879,7 +927,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n6175551628",
@@ -892,7 +942,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n6478952552",
@@ -906,7 +958,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.mpsparking.com/"
+      "website": "https://www.mpsparking.com/",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n6779406772",
@@ -919,7 +973,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7041713701",
@@ -932,7 +988,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7630577012",
@@ -945,7 +1003,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7630577057",
@@ -958,7 +1018,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7653745283",
@@ -966,12 +1028,16 @@
       "addr": "",
       "lat": 40.74826,
       "lng": -73.99365,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 108,
+      "height_label": "9'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-23 from sign reading \"9'-0\"\" (pano V5WN8C2xL2SuXUEXvOrsYQ, heading 18\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "V5WN8C2xL2SuXUEXvOrsYQ",
+      "pano_heading": 18
     },
     {
       "id": "osm-n7659477362",
@@ -985,7 +1051,9 @@
       "notes": "118 spaces; paid; hrs: 06:00-22:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://iconparkingsystems.com/facility/aspen36"
+      "website": "https://iconparkingsystems.com/facility/aspen36",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7661292934",
@@ -999,7 +1067,9 @@
       "notes": "100 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://mtpparking.com"
+      "website": "https://mtpparking.com",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n9654139251",
@@ -1012,7 +1082,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9655030679",
@@ -1025,7 +1097,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9655144550",
@@ -1038,7 +1112,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9670265974",
@@ -1046,12 +1122,16 @@
       "addr": "",
       "lat": 40.71185,
       "lng": -74.03993,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-23 from sign reading \"CLEARANCE 6'8\"\" (pano m7H-ahiSIdinG3QDDgjCAg, heading 102\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "m7H-ahiSIdinG3QDDgjCAg",
+      "pano_heading": 102
     },
     {
       "id": "osm-n9682801122",
@@ -1064,7 +1144,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n11872523712",
@@ -1072,12 +1154,16 @@
       "addr": "",
       "lat": 40.75445,
       "lng": -73.98749,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 83,
+      "height_label": "6'11\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-23 from sign reading \"6'11\"\" (pano 1bG6CJnVq0Re8DuiqUQVAg, heading 333\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "1bG6CJnVq0Re8DuiqUQVAg",
+      "pano_heading": 333
     },
     {
       "id": "osm-n11945388419",
@@ -1090,7 +1176,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n11945388429",
@@ -1103,7 +1191,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n12384513430",
@@ -1117,7 +1207,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/4162-broadway-garage"
+      "website": "https://www.centerpark.nyc/4162-broadway-garage",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12390093030",
@@ -1131,7 +1223,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/168-east-66th-street"
+      "website": "https://centerparkus.com/location/168-east-66th-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12480886213",
@@ -1145,7 +1239,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/333-east-34th-street"
+      "website": "https://centerparkus.com/location/333-east-34th-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12480947603",
@@ -1153,13 +1249,17 @@
       "addr": "677 Washington Street",
       "lat": 40.73386,
       "lng": -74.00835,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid; hrs: Mo-Su 06:00-01:00",
-      "source": "OpenStreetMap",
+      "notes": "paid; hrs: Mo-Su 06:00-01:00\nVerified 2026-08-23 from sign reading \"Clearance 7'0\"\" (pano hOJ08TNI6egD4Nbj2kqHiA, heading 83\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/677-washington-street"
+      "website": "https://www.centerpark.nyc/677-washington-street",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "hOJ08TNI6egD4Nbj2kqHiA",
+      "pano_heading": 83
     },
     {
       "id": "osm-n12481069432",
@@ -1173,7 +1273,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/329-east-48th-street"
+      "website": "https://centerparkus.com/location/329-east-48th-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481069484",
@@ -1187,7 +1289,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/158-west-54th-street-garage-nyc"
+      "website": "https://www.centerpark.nyc/158-west-54th-street-garage-nyc",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481150380",
@@ -1201,7 +1305,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/105-west-58th-street"
+      "website": "https://centerparkus.com/location/105-west-58th-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481370496",
@@ -1215,7 +1321,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/222-east-58th-street-garage"
+      "website": "https://www.centerpark.nyc/222-east-58th-street-garage",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481606864",
@@ -1229,7 +1337,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/century-21-garage-bay-ridge"
+      "website": "https://www.centerpark.nyc/century-21-garage-bay-ridge",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481776377",
@@ -1271,7 +1381,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/36-east-39th-street-nyc"
+      "website": "https://www.centerpark.nyc/36-east-39th-street-nyc",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12500817269",
@@ -1279,13 +1391,17 @@
       "addr": "151 West 17th Street",
       "lat": 40.74037,
       "lng": -73.99766,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid; hrs: Mo-Su 06:00-00:00",
-      "source": "OpenStreetMap",
+      "notes": "paid; hrs: Mo-Su 06:00-00:00\nVerified 2026-08-23 from sign reading \"CLEARANCE 7'0\"\" (pano 8P1mgo_LidUf9kJMHiMzSA, heading 35\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/151-west-17th-street"
+      "website": "https://centerparkus.com/location/151-west-17th-street",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "8P1mgo_LidUf9kJMHiMzSA",
+      "pano_heading": 35
     },
     {
       "id": "osm-n12501153216",
@@ -1299,7 +1415,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/58-west-58th-street"
+      "website": "https://centerparkus.com/location/58-west-58th-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12501180446",
@@ -1313,7 +1431,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-24:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/270-west-60th-street-element-garage"
+      "website": "https://www.centerpark.nyc/270-west-60th-street-element-garage",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12501235180",
@@ -1327,7 +1447,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/204-west-102nd-street"
+      "website": "https://centerparkus.com/location/204-west-102nd-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12501285842",
@@ -1341,7 +1463,9 @@
       "notes": "hrs: Mo-Su 06:00-00:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://centerparkus.com/location/27-west-105th-street"
+      "website": "https://centerparkus.com/location/27-west-105th-street",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12501309674",
@@ -1355,7 +1479,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/304-west-144th-street-garage"
+      "website": "https://www.centerpark.nyc/304-west-144th-street-garage",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12703720822",
@@ -1369,7 +1495,9 @@
       "notes": "85 spaces; paid; covered; hrs: Mo-Su 06:00-01:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.cityparking.nyc/search?lat=40.7468058&lng=-73.9797483&search_text=132%20East%2035th%20Street%2C%20New%20York%2C%20NY%2C%20USA"
+      "website": "https://www.cityparking.nyc/search?lat=40.7468058&lng=-73.9797483&search_text=132%20East%2035th%20Street%2C%20New%20York%2C%20NY%2C%20USA",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n13059951779",
@@ -1382,7 +1510,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w27080292",
@@ -1395,7 +1525,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27080295",
@@ -1421,7 +1553,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27110661",
@@ -1434,7 +1568,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27110669",
@@ -1447,7 +1583,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27110670",
@@ -1460,7 +1598,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w108200129",
@@ -1474,7 +1614,9 @@
       "notes": "721 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.lincolncenterparking.org/"
+      "website": "https://www.lincolncenterparking.org/",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w182894040",
@@ -1487,7 +1629,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w185605923",
@@ -1513,7 +1657,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w232289079",
@@ -1526,7 +1672,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w241842698",
@@ -1539,7 +1687,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w248143116",
@@ -1552,7 +1702,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w248771386",
@@ -1565,7 +1717,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w249847632",
@@ -1578,7 +1732,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w250147626",
@@ -1592,7 +1748,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.kingscountyparking.org/"
+      "website": "https://www.kingscountyparking.org/",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w250172273",
@@ -1605,7 +1763,9 @@
       "oversized": false,
       "notes": "paid; hrs: Mo-Su 00:00-24:00",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w250266807",
@@ -1619,7 +1779,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www1.nyc.gov/html/dot/html/motorist/parkinglist.shtml#delancey"
+      "website": "https://www1.nyc.gov/html/dot/html/motorist/parkinglist.shtml#delancey",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w259492812",
@@ -1632,7 +1794,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w259599532",
@@ -1645,7 +1809,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w259651366",
@@ -1658,7 +1824,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w264678487",
@@ -1671,7 +1839,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w265302060",
@@ -1697,7 +1867,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w265943081",
@@ -1705,12 +1877,16 @@
       "addr": "154 East 53rd Street",
       "lat": 40.7578,
       "lng": -73.97022,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-23 from sign reading \"CLEARANCE 7'0\"\" (pano e6g4qMiM_q5Fbb3BZ4gy9Q, heading 153\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "e6g4qMiM_q5Fbb3BZ4gy9Q",
+      "pano_heading": 153
     },
     {
       "id": "osm-w266149315",
@@ -1737,7 +1913,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w266941952",
@@ -1750,7 +1928,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w270969973",
@@ -1763,7 +1943,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w271596035",
@@ -1790,7 +1972,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w275096245",
@@ -1803,7 +1987,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w275355497",
@@ -1816,7 +2002,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w275355509",
@@ -1829,7 +2017,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w276143887",
@@ -1843,7 +2033,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.nyc.gov/html/dot/html/motorist/parkinglist.shtml"
+      "website": "https://www.nyc.gov/html/dot/html/motorist/parkinglist.shtml",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w278053503",
@@ -1864,12 +2056,16 @@
       "addr": "23 Beekman Street",
       "lat": 40.71064,
       "lng": -74.00618,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 84,
+      "height_label": "7'0\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-23 from sign reading \"CLEARANCE 7'0\"\" (pano 35JP3tGB_OZwTesZz6gPtA, heading 290\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "35JP3tGB_OZwTesZz6gPtA",
+      "pano_heading": 290
     },
     {
       "id": "osm-w278135380",
@@ -1882,7 +2078,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w278138632",
@@ -1895,7 +2093,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w278138643",
@@ -1908,7 +2108,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w284868932",
@@ -1921,7 +2123,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w323057186",
@@ -1947,7 +2151,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w396328953",
@@ -1960,7 +2166,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w415227007",
@@ -1973,7 +2181,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w415254561",
@@ -1986,7 +2196,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w527697256",
@@ -1999,7 +2211,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w538082196",
@@ -2012,7 +2226,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w651661740",
@@ -2025,7 +2241,9 @@
       "oversized": false,
       "notes": "104 spaces; paid; covered; hrs: Mo-Sa 06:00-01:00; Su 07:00-01:00",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w688472258",
@@ -2039,7 +2257,9 @@
       "notes": "140 spaces; paid; covered; hrs: Mo-Su 06:00-01:00",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.ggmcparking.com/locations/alfred"
+      "website": "https://www.ggmcparking.com/locations/alfred",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w702692435",
@@ -2052,7 +2272,9 @@
       "oversized": false,
       "notes": "1000 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w707819002",
@@ -2065,7 +2287,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w721487098",
@@ -2078,7 +2302,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w741010877",
@@ -2091,7 +2317,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w834762092",
@@ -2105,7 +2333,9 @@
       "notes": "paid; hrs: Mo-Su 06:00-23:30",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.mpsparking.com/"
+      "website": "https://www.mpsparking.com/",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w904392449",
@@ -2118,7 +2348,9 @@
       "oversized": false,
       "notes": "8 spaces; covered",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1106859587",
@@ -2131,7 +2363,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1425483863",
@@ -2144,7 +2378,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r3357426",
@@ -2157,7 +2393,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r3663159",
@@ -2170,7 +2408,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r6492098",
@@ -2183,7 +2423,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r6495807",
@@ -2196,7 +2438,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r19530271",
@@ -2209,7 +2453,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -3074,7 +3320,9 @@
       "source": "panynj.gov",
       "entrance_lat": 40.639012,
       "entrance_lng": -74.1424672,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "jc-pulaski-skyway",
@@ -3113,7 +3361,9 @@
       "source": "panynj.gov",
       "entrance_lat": 40.8512955,
       "entrance_lng": -73.9514923,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-34-0253003",

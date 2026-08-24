@@ -562,7 +562,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w402406613",
@@ -576,7 +578,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.31ocean.com/"
+      "website": "https://www.31ocean.com/",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w445452177",
@@ -589,7 +593,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [
@@ -668,7 +674,9 @@
       "height_in": null,
       "height_label": "Over water + 2 tunnels",
       "notes": "17.6-mile bridge-tunnel. Combo \u2014 auto traffic crosses on bridges + dips into tunnels twice. Toll.",
-      "source": "cbbt.com"
+      "source": "cbbt.com",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "vb-lesner-bridge",
@@ -679,7 +687,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "New 2018 twin spans.",
-      "source": "vbgov.com"
+      "source": "vbgov.com",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-51-000000000012747",

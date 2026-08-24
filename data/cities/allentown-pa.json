@@ -133,12 +133,16 @@
       "addr": "559 Old York Road",
       "lat": 40.62196,
       "lng": -75.38307,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "133 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "133 spaces; paid\nVerified 2026-08-23 from sign reading \"6'8\" Clearance 6'8\"\" (pano 78HQiv4TXXkupGl_bz66nQ, heading 320\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "78HQiv4TXXkupGl_bz66nQ",
+      "pano_heading": 320
     },
     {
       "id": "osm-w53049262",

@@ -29,7 +29,8 @@
       "source": "mlb.com/brewers",
       "entrance_lat": 43.0269917,
       "entrance_lng": -87.970932,
-      "entrance_source": "OSM parking_entrance node 6842493935"
+      "entrance_source": "OSM parking_entrance node 6842493935",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-grand-avenue",
@@ -44,7 +45,9 @@
       "source": "Needs verification",
       "entrance_lat": 43.0378039,
       "entrance_lng": -87.9161807,
-      "entrance_source": "OSM parking_entrance node 5071986648"
+      "entrance_source": "OSM parking_entrance node 5071986648",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-wisconsin-ctr",
@@ -52,14 +55,18 @@
       "addr": "400 W Wisconsin Ave",
       "lat": 43.0386,
       "lng": -87.917,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 78,
+      "height_label": "6'6\"",
       "oversized": false,
-      "notes": "Convention center.",
-      "source": "wisconsincenterdistrict.com",
+      "notes": "Convention center.\nVerified 2026-08-23 from sign reading \"LOW CLEARANCE 6'-6\"\" (pano 7tn9a1rqD2tpfCywnKPQbQ, heading 71\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: wisconsincenterdistrict.com",
       "entrance_lat": 43.0379218,
       "entrance_lng": -87.9173764,
-      "entrance_source": "OSM parking_entrance node 3999827605"
+      "entrance_source": "OSM parking_entrance node 3999827605",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "7tn9a1rqD2tpfCywnKPQbQ",
+      "pano_heading": 71
     },
     {
       "id": "mke-downtown-transit",
@@ -74,7 +81,9 @@
       "source": "Needs verification",
       "entrance_lat": 43.0416993,
       "entrance_lng": -87.9104466,
-      "entrance_source": "OSM parking_entrance node 3971992781"
+      "entrance_source": "OSM parking_entrance node 3971992781",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-couture",
@@ -89,7 +98,9 @@
       "source": "Needs verification",
       "entrance_lat": 43.039552,
       "entrance_lng": -87.8992356,
-      "entrance_source": "OSM parking_entrance node 6580418276"
+      "entrance_source": "OSM parking_entrance node 6580418276",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-park-east",
@@ -119,7 +130,8 @@
       "source": "Needs verification",
       "entrance_lat": 43.0315758,
       "entrance_lng": -87.909035,
-      "entrance_source": "OSM parking_entrance node 5494517662"
+      "entrance_source": "OSM parking_entrance node 5494517662",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-riverwalk",
@@ -134,7 +146,8 @@
       "source": "Needs verification",
       "entrance_lat": 43.0417883,
       "entrance_lng": -87.9072229,
-      "entrance_source": "OSM parking_entrance node 5662023463"
+      "entrance_source": "OSM parking_entrance node 5662023463",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-public-market",
@@ -149,7 +162,8 @@
       "source": "milwaukeepublicmarket.org",
       "entrance_lat": 43.0341999,
       "entrance_lng": -87.907911,
-      "entrance_source": "OSM parking_entrance node 5567788463"
+      "entrance_source": "OSM parking_entrance node 5567788463",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-art-museum",
@@ -164,7 +178,9 @@
       "source": "mam.org",
       "entrance_lat": 43.039826,
       "entrance_lng": -87.898627,
-      "entrance_source": "OSM parking_entrance node 6577831711"
+      "entrance_source": "OSM parking_entrance node 6577831711",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-summerfest",
@@ -176,7 +192,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Massive festival grounds. Surface lots + RV.",
-      "source": "summerfest.com"
+      "source": "summerfest.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-zoo",
@@ -188,7 +205,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free surface lot.",
-      "source": "milwaukeezoo.org"
+      "source": "milwaukeezoo.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-harley-davidson",
@@ -200,7 +218,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "RV/motorcycle-friendly.",
-      "source": "harley-davidson.com"
+      "source": "harley-davidson.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-south-shore",
@@ -212,7 +231,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Lakefront park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-bayshore",
@@ -224,7 +244,8 @@
       "height_label": null,
       "oversized": false,
       "notes": "Open-air lifestyle center.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "mke-mayfair",
@@ -236,7 +257,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Suburban mall.",
-      "source": "simon.com"
+      "source": "simon.com",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-airport-daily",
@@ -597,7 +620,9 @@
       "height_in": null,
       "height_label": "N/A (infrastructure)",
       "notes": "Not accessible to vehicles. Listed for reference.",
-      "source": "MMSD"
+      "source": "MMSD",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     }
   ],
   "bridges": [
@@ -613,7 +638,9 @@
       "source": "WisDOT",
       "entrance_lat": 43.024856,
       "entrance_lng": -87.898717,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-kk-kilbourn",
@@ -624,7 +651,9 @@
       "height_in": null,
       "height_label": "Drawbridge",
       "notes": "Vertical-lift bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mke-marquette-interchange",

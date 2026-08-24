@@ -13,7 +13,9 @@
       "source": "prucenter.com",
       "entrance_lat": 40.7330414,
       "entrance_lng": -74.172624,
-      "entrance_source": "OSM parking_entrance node 10612803953"
+      "entrance_source": "OSM parking_entrance node 10612803953",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nwk-njpac",
@@ -37,14 +39,18 @@
       "addr": "1 Gateway Ctr",
       "lat": 40.7361,
       "lng": -74.168,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 100,
+      "height_label": "8'4\"",
       "oversized": false,
-      "notes": "Downtown office + rail station access.",
-      "source": "Needs verification",
+      "notes": "Downtown office + rail station access.\nVerified 2026-08-23 from sign reading \"CLEARANCE 8'-4\"\" (pano r2Nf1KOjLTIYEKIBN0AHWQ, heading 350\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: Needs verification",
       "entrance_lat": 40.7365962,
       "entrance_lng": -74.1693782,
-      "entrance_source": "OSM parking_entrance node 12483862405"
+      "entrance_source": "OSM parking_entrance node 12483862405",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "r2Nf1KOjLTIYEKIBN0AHWQ",
+      "pano_heading": 350
     },
     {
       "id": "nwk-penn-station-main",
@@ -71,7 +77,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "NJT Morris & Essex line station.",
-      "source": "njtransit.com"
+      "source": "njtransit.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-raymond-plaza",
@@ -98,7 +105,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Rutgers Newark visitor.",
-      "source": "parking.rutgers.edu"
+      "source": "parking.rutgers.edu",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nwk-njit-garage",
@@ -113,7 +122,9 @@
       "source": "njit.edu",
       "entrance_lat": 40.7424141,
       "entrance_lng": -74.1772859,
-      "entrance_source": "OSM parking_entrance node 2084111668"
+      "entrance_source": "OSM parking_entrance node 2084111668",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nwk-bears-stadium",
@@ -125,7 +136,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Former Newark Bears stadium.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-branch-brook-park",
@@ -137,7 +149,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Essex County Park. Famous cherry blossom festival.",
-      "source": "essexcountyparks.org"
+      "source": "essexcountyparks.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-symphony-hall",
@@ -149,7 +162,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Historic hall.",
-      "source": "newarksymphonyhall.org"
+      "source": "newarksymphonyhall.org",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nwk-newark-museum",
@@ -164,7 +179,9 @@
       "source": "newarkmuseumart.org",
       "entrance_lat": 40.7402895,
       "entrance_lng": -74.1709391,
-      "entrance_source": "OSM parking_entrance node 11738079727"
+      "entrance_source": "OSM parking_entrance node 11738079727",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nwk-ironbound",
@@ -176,7 +193,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Portuguese/Brazilian restaurant district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-riverfront-park",
@@ -188,7 +206,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Passaic River park.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-mpack-stadium",
@@ -200,7 +219,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Southward district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-ironside-newark",
@@ -227,7 +247,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal A daily.",
-      "source": "newarkairport.com"
+      "source": "newarkairport.com",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "ewr-p2-garage",
@@ -239,7 +261,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal B.",
-      "source": "newarkairport.com"
+      "source": "newarkairport.com",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "ewr-p3-garage",
@@ -251,7 +275,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Terminal C (United hub).",
-      "source": "newarkairport.com"
+      "source": "newarkairport.com",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "ewr-p4-daily",
@@ -274,7 +300,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Uncovered. Oversized OK. AirTrain.",
-      "source": "newarkairport.com"
+      "source": "newarkairport.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "nwk-weequahic-park",
@@ -289,7 +316,8 @@
       "source": "essexcountyparks.org",
       "entrance_lat": 40.7099235,
       "entrance_lng": -74.1942564,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w27080286",
@@ -373,7 +401,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n2825635898",
@@ -386,7 +416,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-n5360019842",
@@ -394,12 +426,16 @@
       "addr": "",
       "lat": 40.75041,
       "lng": -74.02505,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 102,
+      "height_label": "8'6\"",
       "oversized": false,
-      "notes": "free",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "free\nVerified 2026-08-23 from sign reading \"GARAGE MAX HEIGHT 8' 6\"\" (pano YBR-yVg-rtobN4oX4XiNFw, heading 108\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "YBR-yVg-rtobN4oX4XiNFw",
+      "pano_heading": 108
     },
     {
       "id": "osm-n9654139251",
@@ -412,7 +448,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9655030679",
@@ -425,7 +463,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9655144550",
@@ -438,7 +478,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n9670265974",
@@ -446,12 +488,16 @@
       "addr": "",
       "lat": 40.71185,
       "lng": -74.03993,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 80,
+      "height_label": "6'8\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-23 from sign reading \"CLEARANCE 6'8\"\" (pano m7H-ahiSIdinG3QDDgjCAg, heading 102\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "m7H-ahiSIdinG3QDDgjCAg",
+      "pano_heading": 102
     },
     {
       "id": "osm-n9682801122",
@@ -464,7 +510,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481606864",
@@ -478,7 +526,9 @@
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.centerpark.nyc/century-21-garage-bay-ridge"
+      "website": "https://www.centerpark.nyc/century-21-garage-bay-ridge",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n12481802641",
@@ -505,7 +555,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w27080292",
@@ -518,7 +570,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27080295",
@@ -531,7 +585,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w27080831",
@@ -544,7 +598,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27110661",
@@ -557,7 +613,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27110669",
@@ -570,7 +628,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27110670",
@@ -583,7 +643,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w182894040",
@@ -596,7 +658,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w208576079",
@@ -609,7 +673,7 @@
       "oversized": false,
       "notes": "595 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w232289079",
@@ -622,7 +686,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w232853476",
@@ -635,7 +701,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w233913197",
@@ -648,7 +716,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w255267686",
@@ -661,7 +731,7 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w259599532",
@@ -674,7 +744,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w259651366",
@@ -687,7 +759,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w272713890",
@@ -700,7 +774,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w278135380",
@@ -713,7 +789,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w278138632",
@@ -726,7 +804,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w278138643",
@@ -739,7 +819,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w312849085",
@@ -752,7 +834,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w331072219",
@@ -765,7 +849,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w396328953",
@@ -778,7 +864,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w403754097",
@@ -791,7 +879,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w415227007",
@@ -804,7 +894,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w415254561",
@@ -817,7 +909,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w527697256",
@@ -830,7 +924,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w544168893",
@@ -843,7 +939,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w544168896",
@@ -856,7 +954,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w623129648",
@@ -869,7 +969,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w707819002",
@@ -882,7 +984,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w721487098",
@@ -895,7 +999,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w736870041",
@@ -908,7 +1014,9 @@
       "oversized": false,
       "notes": "hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w753058121",
@@ -921,7 +1029,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1084094077",
@@ -934,7 +1044,7 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w1106859587",
@@ -947,7 +1057,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1153594083",
@@ -959,7 +1071,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1220425030",
@@ -972,7 +1086,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1280900636",
@@ -985,7 +1101,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r6492098",
@@ -998,7 +1116,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r6495807",
@@ -1011,7 +1131,9 @@
       "oversized": false,
       "notes": "paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -1422,7 +1544,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Cable-stayed 2017 bridge to Staten Island.",
-      "source": "panynj.gov"
+      "source": "panynj.gov",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "nwk-pulaski-skyway-east",
@@ -1436,7 +1560,9 @@
       "source": "NJDOT",
       "entrance_lat": 40.7423396,
       "entrance_lng": -74.1498551,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nwk-bridge-st-bridge",
@@ -1447,7 +1573,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Swing bridge. To Harrison.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-34-020031A",

@@ -52,7 +52,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "35 spaces; free",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [],

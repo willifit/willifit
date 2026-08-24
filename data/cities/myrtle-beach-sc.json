@@ -515,7 +515,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w619008342",
@@ -527,7 +529,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "16 spaces; paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w697471399",
@@ -540,7 +544,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w912434291",
@@ -553,7 +559,9 @@
       "oversized": false,
       "notes": "250 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [],
@@ -567,7 +575,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Multiple bridges over Intracoastal Waterway.",
-      "source": "SCDOT"
+      "source": "SCDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "mbs-waccamaw-bridge",
@@ -578,7 +588,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Main route from I-95.",
-      "source": "SCDOT"
+      "source": "SCDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-45-000000000000686",

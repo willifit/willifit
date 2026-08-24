@@ -456,7 +456,9 @@
       "source": "Wikipedia",
       "entrance_lat": 30.4398708,
       "entrance_lng": -91.2049866,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-huey-long",
@@ -470,7 +472,9 @@
       "source": "ladotd.la.gov",
       "entrance_lat": 30.4639946,
       "entrance_lng": -91.2035529,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "btr-i-10-atchafalaya-basin",
@@ -481,7 +485,9 @@
       "height_in": null,
       "height_label": "Over water/swamp",
       "notes": "18-mile elevated span \u2014 2nd longest bridge in US.",
-      "source": "ladotd.la.gov"
+      "source": "ladotd.la.gov",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-22-612404500712892",

@@ -81,7 +81,9 @@
       "source": "cityofmadison.com/parking",
       "entrance_lat": 43.0731453,
       "entrance_lng": -89.387635,
-      "entrance_source": "OSM parking_entrance node 13325010377"
+      "entrance_source": "OSM parking_entrance node 13325010377",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "mad-lot-60",

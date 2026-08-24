@@ -441,7 +441,9 @@
       "source": "Icon Parking",
       "entrance_lat": 40.7523037,
       "entrance_lng": -74.0017531,
-      "entrance_source": "OSM parking_entrance node 11327602968"
+      "entrance_source": "OSM parking_entrance node 11327602968",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "nyc-hy-jds-41st",

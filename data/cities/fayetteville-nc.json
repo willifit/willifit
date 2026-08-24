@@ -6,11 +6,15 @@
       "addr": "",
       "lat": 35.05245,
       "lng": -78.88034,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 98,
+      "height_label": "8'2\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-24 from sign reading \"CLEARANCE 8'-2\"\" (pano ay5srSwfpA2rn8Rph1BsOw, heading 46\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "ay5srSwfpA2rn8Rph1BsOw",
+      "pano_heading": 46
     }
   ],
   "tunnels": [

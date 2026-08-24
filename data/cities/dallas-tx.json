@@ -1478,7 +1478,9 @@
       "height_in": null,
       "height_label": "Pedestrian only",
       "notes": "Downtown Dallas has an underground pedestrian tunnel system connecting office buildings. Not for vehicles.",
-      "source": "Dallas Downtown"
+      "source": "Dallas Downtown",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w9938659",
@@ -2096,7 +2098,9 @@
       "height_in": null,
       "height_label": "Signature bridge",
       "notes": "Cable-stayed bridge. High clearance. Santiago Calatrava design.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "dal-i345-low",

@@ -390,7 +390,7 @@
       "oversized": false,
       "notes": "paid; open-air",
       "source": "OpenStreetMap",
-      "structure_type": "structure",
+      "structure_type": "surface_lot",
       "website": "https://www.thepermitstore.com/"
     }
   ],

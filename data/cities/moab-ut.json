@@ -515,7 +515,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "North entrance to Moab across Colorado.",
-      "source": "UDOT"
+      "source": "UDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "mab-i-70-colorado",
@@ -526,7 +528,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Interstate gateway to Moab. Also note Glenwood Canyon area further east.",
-      "source": "CDOT"
+      "source": "CDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "nbi-49-019003V",

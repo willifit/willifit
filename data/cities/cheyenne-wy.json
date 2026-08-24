@@ -422,7 +422,9 @@
       "height_in": null,
       "height_label": "Over creek",
       "notes": "Standard interstate bridge.",
-      "source": "WYDOT"
+      "source": "WYDOT",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "nbi-56-AAA",

@@ -501,7 +501,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -560,7 +562,9 @@
       "height_in": null,
       "height_label": "Varies",
       "notes": "Scenic parkway bridges. Commercial trucks restricted.",
-      "source": "nps.gov"
+      "source": "nps.gov",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "gat-traffic-light-3",

@@ -3181,11 +3181,15 @@
       "addr": "",
       "lat": 41.80518,
       "lng": -87.68387,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 144,
+      "height_label": "12'0\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-23 from sign reading \"12'0\"\" (pano FaU4QiBRSERc6W-HFd-3Hw, heading 208\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "FaU4QiBRSERc6W-HFd-3Hw",
+      "pano_heading": 208
     },
     {
       "id": "osm-w1458849607",

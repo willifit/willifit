@@ -382,7 +382,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-n7070705593",
@@ -395,7 +397,9 @@
       "oversized": false,
       "notes": "719 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w27285504",
@@ -408,7 +412,9 @@
       "oversized": false,
       "notes": "328 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w27287732",
@@ -422,7 +428,9 @@
       "notes": "paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.americantobaccohistoricdistrict.com/parking"
+      "website": "https://www.americantobaccohistoricdistrict.com/parking",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27331486",
@@ -435,7 +443,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w27473076",
@@ -449,7 +459,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.americantobaccohistoricdistrict.com/parking"
+      "website": "https://www.americantobaccohistoricdistrict.com/parking",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w28831217",
@@ -462,7 +474,9 @@
       "oversized": false,
       "notes": "658 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w99027988",
@@ -476,7 +490,9 @@
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "https://www.americantobaccohistoricdistrict.com/parking"
+      "website": "https://www.americantobaccohistoricdistrict.com/parking",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w324544662",
@@ -484,12 +500,16 @@
       "addr": "109 South Mangum Street",
       "lat": 35.99423,
       "lng": -78.90037,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 88,
+      "height_label": "7'4\"",
       "oversized": false,
-      "notes": "406 spaces; paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "406 spaces; paid\nVerified 2026-08-24 from sign reading \"7'-4\"\" (pano 0kgdLYQ_aAEvvUghwrw6bg, heading 340\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-24",
+      "sv_checked": "2026-08-24",
+      "pano_id": "0kgdLYQ_aAEvvUghwrw6bg",
+      "pano_heading": 340
     },
     {
       "id": "osm-w370989970",
@@ -502,7 +522,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w717384374",
@@ -515,7 +537,9 @@
       "oversized": false,
       "notes": "665 spaces; paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w916790435",
@@ -528,7 +552,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r5188879",
@@ -541,7 +567,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-pano"
     }
   ],
   "tunnels": [
@@ -614,7 +642,9 @@
       "source": "NCDOT",
       "entrance_lat": 36.0511727,
       "entrance_lng": -78.9025289,
-      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)"
+      "entrance_source": "Auto (nearest Street View pano within 300m, 2026-04-24)",
+      "sv_checked": "2026-08-24",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w16536521",

@@ -29,7 +29,9 @@
       "source": "rivercentre.org",
       "entrance_lat": 44.943623,
       "entrance_lng": -93.1024276,
-      "entrance_source": "OSM parking_entrance node 13753021107"
+      "entrance_source": "OSM parking_entrance node 13753021107",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-lowertown",
@@ -44,7 +46,8 @@
       "source": "Needs verification",
       "entrance_lat": 44.9504961,
       "entrance_lng": -93.0870722,
-      "entrance_source": "OSM parking_entrance node 3616447562"
+      "entrance_source": "OSM parking_entrance node 3616447562",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-union-depot",
@@ -52,14 +55,18 @@
       "addr": "214 E 4th St",
       "lat": 44.9486,
       "lng": -93.0877,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 91,
+      "height_label": "7'7\"",
       "oversized": false,
-      "notes": "Amtrak + light rail hub.",
-      "source": "uniondepot.org",
+      "notes": "Amtrak + light rail hub.\nVerified 2026-08-23 from sign reading \"CLEARANCE HEIGHT 7'-7\"\" (pano j98th8MNLiDdbX7epXtw1g, heading 65\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: uniondepot.org",
       "entrance_lat": 44.9473462,
       "entrance_lng": -93.0866518,
-      "entrance_source": "OSM parking_entrance node 2053875086"
+      "entrance_source": "OSM parking_entrance node 2053875086",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "j98th8MNLiDdbX7epXtw1g",
+      "pano_heading": 65
     },
     {
       "id": "stp-chs-field",
@@ -71,7 +78,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "St. Paul Saints ballpark.",
-      "source": "saintsbaseball.com"
+      "source": "saintsbaseball.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-allianz-field",
@@ -83,7 +91,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "MLS stadium. Midway area.",
-      "source": "mnufc.com"
+      "source": "mnufc.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-state-capitol",
@@ -95,7 +104,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Capitol Mall surface lots.",
-      "source": "mn.gov"
+      "source": "mn.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-ordway-ramp",
@@ -110,7 +120,9 @@
       "source": "stpaul.gov",
       "entrance_lat": 44.9438951,
       "entrance_lng": -93.0985227,
-      "entrance_source": "OSM parking_entrance node 13750502474"
+      "entrance_source": "OSM parking_entrance node 13750502474",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "stp-world-trade-center",
@@ -125,7 +137,9 @@
       "source": "Needs verification",
       "entrance_lat": 44.9471828,
       "entrance_lng": -93.0942862,
-      "entrance_source": "OSM parking_entrance node 13019702813"
+      "entrance_source": "OSM parking_entrance node 13019702813",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-science-museum",
@@ -153,7 +167,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Free zoo + conservatory. Surface lots.",
-      "source": "comozooconservatory.org"
+      "source": "comozooconservatory.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-grand-ave",
@@ -165,7 +180,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Shopping district street + lots.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-ua-midway",
@@ -177,7 +193,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Midway retail district.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-mosaic",
@@ -189,7 +207,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Mall of America overflow lot.",
-      "source": "mallofamerica.com"
+      "source": "mallofamerica.com",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-lone-oak-rosedale",
@@ -204,7 +223,9 @@
       "source": "rosedalecenter.com",
       "entrance_lat": 45.0119068,
       "entrance_lng": -93.1721977,
-      "entrance_source": "OSM parking_entrance node 9754433576"
+      "entrance_source": "OSM parking_entrance node 9754433576",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-minnesota-history-ctr",
@@ -216,7 +237,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Museum garage.",
-      "source": "mnhs.org"
+      "source": "mnhs.org",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-macalester-college",
@@ -228,7 +251,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Liberal arts college.",
-      "source": "macalester.edu"
+      "source": "macalester.edu",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-minnesota-state-fair",
@@ -240,7 +264,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "State Fair. Massive surface lots + RV camping.",
-      "source": "mnstatefair.org"
+      "source": "mnstatefair.org",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-summit-hill",
@@ -252,7 +277,9 @@
       "height_label": "No limit (uncovered)",
       "oversized": false,
       "notes": "Victorian mansions. Street parking.",
-      "source": "Needs verification"
+      "source": "Needs verification",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "stp-como-park-pavilion",
@@ -264,7 +291,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Pavilion + golf + paddle boats.",
-      "source": "stpaul.gov"
+      "source": "stpaul.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-harriet-island",
@@ -276,7 +304,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Mississippi riverfront.",
-      "source": "stpaul.gov"
+      "source": "stpaul.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "stp-indian-mounds",
@@ -288,7 +317,8 @@
       "height_label": "No limit (uncovered)",
       "oversized": true,
       "notes": "Historic Dakota burial mounds overlook.",
-      "source": "stpaul.gov"
+      "source": "stpaul.gov",
+      "structure_type": "surface_lot"
     },
     {
       "id": "osm-w142045375",
@@ -323,12 +353,16 @@
       "addr": "",
       "lat": 44.94817,
       "lng": -93.08351,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 90,
+      "height_label": "7'6\"",
       "oversized": false,
-      "notes": "paid",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "paid\nVerified 2026-08-23 from sign reading \"7FT 6IN\" (pano FgDLHQ-PE_GoNYrM1xUfKQ, heading 233\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "FgDLHQ-PE_GoNYrM1xUfKQ",
+      "pano_heading": 233
     },
     {
       "id": "osm-n2053875083",
@@ -336,12 +370,16 @@
       "addr": "",
       "lat": 44.94731,
       "lng": -93.08665,
-      "height_in": null,
-      "height_label": null,
+      "height_in": 91,
+      "height_label": "7'7\"",
       "oversized": false,
-      "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "notes": "Imported from OpenStreetMap.\nVerified 2026-08-23 from sign reading \"CLEARANCE HEIGHT 7-7\" (pano j98th8MNLiDdbX7epXtw1g, heading 83\u00b0, Claude confidence high)",
+      "source": "AI-verified (Street View + Claude Vision \u2014 auto-pano) \u2014 was: OpenStreetMap",
+      "structure_type": "structure",
+      "verified_on": "2026-08-23",
+      "sv_checked": "2026-08-23",
+      "pano_id": "j98th8MNLiDdbX7epXtw1g",
+      "pano_heading": 83
     },
     {
       "id": "osm-w24108195",
@@ -355,7 +393,9 @@
       "notes": "530 spaces; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www1.umn.edu/pts/park/facilities/univave.html"
+      "website": "http://www1.umn.edu/pts/park/facilities/univave.html",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w24108200",
@@ -369,7 +409,9 @@
       "notes": "2187 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www1.umn.edu/pts/park/facilities/oakstreet.html"
+      "website": "http://www1.umn.edu/pts/park/facilities/oakstreet.html",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w29060634",
@@ -383,7 +425,9 @@
       "notes": "1294 spaces; paid; hrs: 24/7",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www1.umn.edu/pts/park/facilities/washave.html"
+      "website": "http://www1.umn.edu/pts/park/facilities/washave.html",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w29120544",
@@ -410,7 +454,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w35218850",
@@ -423,7 +469,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w39153154",
@@ -437,7 +485,9 @@
       "notes": "1199 spaces; paid",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www1.umn.edu/pts/park/facilities/forthstramp.html"
+      "website": "http://www1.umn.edu/pts/park/facilities/forthstramp.html",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w41424573",
@@ -464,7 +514,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w62642514",
@@ -477,7 +529,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w69201801",
@@ -490,7 +544,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w70079205",
@@ -503,7 +559,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w79236555",
@@ -516,7 +574,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w85511252",
@@ -529,7 +589,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w85568575",
@@ -542,7 +604,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w92611077",
@@ -555,7 +619,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w99776972",
@@ -568,7 +634,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w129338701",
@@ -595,7 +663,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w137066769",
@@ -608,7 +678,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w141823087",
@@ -621,7 +693,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w141901302",
@@ -634,7 +708,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w141910388",
@@ -647,7 +723,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w142043095",
@@ -660,7 +738,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w142429771",
@@ -673,7 +753,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w142440431",
@@ -686,7 +768,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w142440523",
@@ -699,7 +783,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w164507329",
@@ -712,7 +798,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w199426380",
@@ -725,7 +813,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w199578895",
@@ -738,7 +828,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w199578898",
@@ -751,7 +843,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w199578901",
@@ -764,7 +858,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w265528959",
@@ -777,7 +873,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w283221422",
@@ -819,7 +917,9 @@
       "notes": "1919 spaces; paid; covered",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www1.umn.edu/pts/park/facilities/errramp.html"
+      "website": "http://www1.umn.edu/pts/park/facilities/errramp.html",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w293095993",
@@ -833,7 +933,9 @@
       "notes": "123 spaces",
       "source": "OpenStreetMap",
       "structure_type": "structure",
-      "website": "http://www1.umn.edu/pts/park/facilities/weisman.html"
+      "website": "http://www1.umn.edu/pts/park/facilities/weisman.html",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w293917644",
@@ -846,7 +948,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w330977904",
@@ -859,7 +963,9 @@
       "oversized": false,
       "notes": "20 spaces",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w436760759",
@@ -872,7 +978,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w579999362",
@@ -885,7 +993,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w970443087",
@@ -897,7 +1007,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1126741890",
@@ -909,7 +1021,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1284213976",
@@ -921,7 +1035,9 @@
       "height_label": null,
       "oversized": false,
       "notes": "paid",
-      "source": "OpenStreetMap"
+      "source": "OpenStreetMap",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "osm-w1363400563",
@@ -934,7 +1050,9 @@
       "oversized": false,
       "notes": "free",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w1369822774",
@@ -947,7 +1065,9 @@
       "oversized": false,
       "notes": "Imported from OpenStreetMap.",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-r20450165",
@@ -960,7 +1080,9 @@
       "oversized": false,
       "notes": "paid",
       "source": "OpenStreetMap",
-      "structure_type": "structure"
+      "structure_type": "structure",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     }
   ],
   "tunnels": [
@@ -1107,7 +1229,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Downtown St. Paul bridge to West Side.",
-      "source": "MnDOT"
+      "source": "MnDOT",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-smith-ave-high",
@@ -1118,7 +1242,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Dramatic high bridge.",
-      "source": "MnDOT"
+      "source": "MnDOT",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-sign"
     },
     {
       "id": "stp-robert-st",
@@ -1129,7 +1255,9 @@
       "height_in": null,
       "height_label": "Over water",
       "notes": "Historic 1926 arch bridge.",
-      "source": "Wikipedia"
+      "source": "Wikipedia",
+      "sv_checked": "2026-08-23",
+      "sv_status": "no-pano"
     },
     {
       "id": "osm-w18220305",
