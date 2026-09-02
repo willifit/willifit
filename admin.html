@@ -6,11 +6,21 @@
 <!-- Not indexed by search engines -- this is an admin-only page. -->
 <meta name="robots" content="noindex, nofollow">
 <!-- CSP: defense-in-depth.  This page renders attacker-submitted report text
-     (notes, names, contact) -- every field is escaped via escapeHtml(), and
-     this policy is the second line: even if an escape were ever missed, an
-     injected <script> or remote beacon has nowhere to run or phone home.
+     (notes, names, contact, lat/lng) -- every field is escaped via
+     escapeHtml() and numeric fields are additionally coerced server-side
+     (reports.js) and client-side before ever reaching a URL/attribute.
+     This policy is the real second line, not a decorative one: script-src
+     has NO 'unsafe-inline' -- it allow-lists only the exact inline <script>
+     block below by its SHA-256 hash, and there is no other script source
+     (no nonce, no wildcard). That means an injected <script> tag OR an
+     injected inline event-handler attribute (onerror=, onclick=, etc. --
+     the actual shape of the admin.html XSS payload this page defends
+     against) has nowhere to run: the browser refuses both. Confirmed by
+     tests/test_admin_render_escaping.mjs (escaping) and by loading an
+     injected payload in headless Chrome and observing the CSP violation
+     in the console (see project notes) rather than an alert().
      The page is fully self-contained: inline CSS/JS, one same-origin fetch. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-yIgfR6j8eyhQEbTbAgsq6XYJkn6C9Kg2W1iKih65A2U='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
 <title>Willifit Admin — Pending Reports</title>
 <style>
   :root {
@@ -36,7 +46,7 @@
     padding: 32px; border-radius: 6px; max-width: 420px;
     margin: 100px auto 0;
   }
-  .gate h2 { margin: 0 0 12px; font-size: 18px; }
+  .gate h1 { margin: 0 0 12px; font-size: 18px; }
   .gate input {
     width: 100%; padding: 10px 12px; margin: 12px 0;
     background: var(--bg); border: 1px solid var(--border);
@@ -138,13 +148,13 @@
 </style>
 </head>
 <body>
-<div class="page">
+<main class="page">
 
 <div id="gate" class="gate">
-  <h2>🔒 Admin access</h2>
+  <h1>🔒 Admin access</h1>
   <p class="muted">Enter the admin password to view pending clearance reports.</p>
   <input type="password" id="pw" placeholder="password" autocomplete="current-password">
-  <button onclick="unlock()">Unlock</button>
+  <button id="unlockBtn">Unlock</button>
   <p class="muted" style="font-size:11px;margin-top:20px">
     Set via <code>WILLIFIT_ADMIN_PASSWORD</code> env var in Netlify.
   </p>
@@ -157,7 +167,7 @@
   </header>
 
   <div class="toolbar">
-    <button onclick="loadReports()">Refresh</button>
+    <button id="refreshBtn">Refresh</button>
     <span class="stat" id="total">—</span>
     <span class="stat" id="newToday">—</span>
     <a href="/" class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block">← Back to site</a>
@@ -167,9 +177,17 @@
   <div id="reports"></div>
 </div>
 
-</div>
+</main>
 
 <script>
+// CAUTION: the CSP meta tag above allow-lists this script by the SHA-256
+// hash of its exact text content (between the opening and closing script tags). ANY
+// edit to this block -- even whitespace -- changes that hash and will make
+// the browser refuse to run the script at all (silent failure: the page
+// just won't work). After editing, recompute the hash and update the CSP
+// meta tag's script-src. tests/test_admin_csp_hash.mjs asserts the two
+// stay in sync so drift fails a test instead of silently breaking the
+// admin page in production.
 const PW_KEY = "willifit_admin_pw";
 
 function unlock() {
@@ -195,7 +213,7 @@ async function loadReports() {
       headers: { "x-willifit-admin": pw },
     });
   } catch (e) {
-    err.innerHTML = `<div class="err">Network error: ${e}</div>`;
+    err.innerHTML = `<div class="err">Network error: ${escapeHtml(String((e && e.message) || e))}</div>`;
     target.innerHTML = "";
     return;
   }
@@ -264,8 +282,9 @@ function renderReport(r) {
     ? `<div class="report-notes">${escapeHtml(r.notes)}</div>`
     : "";
   const contactBlock = r.contact
-    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="mailto:${escapeHtml(r.contact)}">${escapeHtml(r.contact)}</a></div>`
+    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="${escapeHtml('mailto:' + r.contact)}">${escapeHtml(r.contact)}</a></div>`
     : "";
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((r.garage_name||"") + " " + (r.garage_addr||"") + " " + (r.city_name||"") + " " + (r.city_state||""))}`;
 
   return `
     <div class="report">
@@ -305,16 +324,16 @@ function renderReport(r) {
       ${contactBlock}
 
       <div class="report-actions">
-        <button onclick="toggleTsv(this)">Copy bulk_update row</button>
-        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((r.garage_name||"") + " " + (r.garage_addr||"") + " " + (r.city_name||"") + " " + (r.city_state||""))}">
+        <button data-action="toggle-tsv">Copy bulk_update row</button>
+        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="${escapeHtml(mapsUrl)}">
           Verify in Google Maps ↗
         </a>
       </div>
-      <div class="tsv-preview" id="tsv-${r.id}">
+      <div class="tsv-preview" id="tsv-${escapeHtml(r.id)}">
         <div class="muted" style="font-size:10px;margin-bottom:4px">Copy this row into data/manual_updates.tsv (fill in the URL column):</div>
         ${escapeHtml(tsvRow)}
         <br><br>
-        <button data-tsv="${escapeHtml(tsvRow)}" onclick="copyTsv(this)">Copy to clipboard</button>
+        <button data-action="copy-tsv" data-tsv="${escapeHtml(tsvRow)}">Copy to clipboard</button>
       </div>
     </div>
   `;
@@ -326,9 +345,16 @@ function renderReport(r) {
 function renderNewLocation(r) {
   const when = r.created_at ? new Date(r.created_at).toLocaleString() : "unknown time";
   const heightLabel = inchesToLabel(r.reported_height_in);
-  const lat = r.location_lat || "";
-  const lng = r.location_lng || "";
-  const coords = (lat && lng) ? `${lat}, ${lng}` : "(not provided — admin will geocode)";
+  // location_lat/location_lng come from the public new-location-report form
+  // and are already coerced server-side (reports.js floatOrNull), but they
+  // are re-validated here too: these values get interpolated straight into
+  // a Google Maps URL used as an href, and this render function must never
+  // trust that the upstream coercion ran (cached data, a future code path
+  // that skips it, etc.) -- only a real finite number in range is ever
+  // allowed through, everything else becomes null.
+  const lat = floatOrNull(r.location_lat, 90);
+  const lng = floatOrNull(r.location_lng, 180);
+  const coords = (lat !== null && lng !== null) ? `${lat}, ${lng}` : "(not provided — admin will geocode)";
   const typeLabels = {
     "garage": "Parking garage (covered)",
     "surface_lot": "Surface lot (open-air)",
@@ -341,7 +367,7 @@ function renderNewLocation(r) {
     (r.location_name || "") + " " + (r.location_addr || "") + " " +
     (r.city_name || "") + " " + (r.city_state || "")
   );
-  const mapsPin = (lat && lng)
+  const mapsPin = (lat !== null && lng !== null)
     ? `https://www.google.com/maps/@${lat},${lng},19z`
     : `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
@@ -349,7 +375,7 @@ function renderNewLocation(r) {
     ? `<div class="report-notes">${escapeHtml(r.notes)}</div>`
     : "";
   const contactBlock = r.contact
-    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="mailto:${escapeHtml(r.contact)}">${escapeHtml(r.contact)}</a></div>`
+    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="${escapeHtml('mailto:' + r.contact)}">${escapeHtml(r.contact)}</a></div>`
     : "";
 
   return `
@@ -392,7 +418,7 @@ function renderNewLocation(r) {
       ${contactBlock}
 
       <div class="report-actions">
-        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="${mapsPin}">
+        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="${escapeHtml(mapsPin)}">
           Verify in Google Maps ↗
         </a>
       </div>
@@ -430,8 +456,9 @@ function renderIssue(r) {
     ? `<div class="report-notes">${escapeHtml(r.notes)}</div>`
     : "";
   const contactBlock = r.contact
-    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="mailto:${escapeHtml(r.contact)}">${escapeHtml(r.contact)}</a></div>`
+    ? `<div class="muted" style="font-size:12px;margin-top:4px">Contact: <a href="${escapeHtml('mailto:' + r.contact)}">${escapeHtml(r.contact)}</a></div>`
     : "";
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
   return `
     <div class="report" style="border-left: 3px solid var(--warn);">
@@ -454,7 +481,7 @@ function renderIssue(r) {
       ${contactBlock}
 
       <div class="report-actions">
-        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}">
+        <a class="btn-ghost" style="text-decoration:none;padding:6px 12px;border-radius:3px;display:inline-block" target="_blank" rel="noopener" href="${escapeHtml(mapsUrl)}">
           Verify in Google Maps ↗
         </a>
       </div>
@@ -478,6 +505,20 @@ async function copyTsv(btn) {
   } catch (e) {
     alert("Couldn't copy: " + e);
   }
+}
+
+// Mirrors reports.js's floatOrNull exactly (Number(), not parseFloat() --
+// a payload like `1"` followed by an injected img tag with an onerror handler must come out as null,
+// not as the number 1 with the rest silently dropped). Called again here
+// in renderNewLocation() even though reports.js already coerces these
+// fields server-side, because this render function must never assume the
+// upstream coercion ran.
+function floatOrNull(v, maxAbs) {
+  if (v === null || v === undefined || v === "") return null;
+  const n = Number(v);
+  if (!Number.isFinite(n)) return null;
+  if (typeof maxAbs === "number" && Math.abs(n) > maxAbs) return null;
+  return n;
 }
 
 function inchesToLabel(n) {
@@ -504,6 +545,21 @@ if (sessionStorage.getItem(PW_KEY)) {
 // Enter key in password field submits
 document.getElementById("pw").addEventListener("keydown", (e) => {
   if (e.key === "Enter") unlock();
+});
+
+// Static buttons -- wired here instead of inline onclick="" attributes so
+// the CSP above can drop 'unsafe-inline' from script-src entirely.
+document.getElementById("unlockBtn").addEventListener("click", unlock);
+document.getElementById("refreshBtn").addEventListener("click", loadReports);
+
+// Dynamically-rendered report buttons (toggle-tsv / copy-tsv) are created
+// fresh on every loadReports() call, so they're wired via one delegated
+// listener on their static container rather than re-attached per render.
+document.getElementById("reports").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-action]");
+  if (!btn) return;
+  if (btn.dataset.action === "toggle-tsv") toggleTsv(btn);
+  else if (btn.dataset.action === "copy-tsv") copyTsv(btn);
 });
 </script>
 </body>

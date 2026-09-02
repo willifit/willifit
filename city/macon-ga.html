@@ -56,6 +56,16 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
   }
+  /* Skip-link for keyboard users -- same visually-hidden-until-focused
+     pattern as the main SPA (index.html .skip-link). */
+  .skip-link {
+    position: absolute; top: -40px; left: 0;
+    background: var(--ok); color: #0a0f18;
+    padding: 8px 12px; z-index: 9999;
+    font-family: 'SF Mono', monospace; font-size: 12px;
+    text-decoration: none; font-weight: 700;
+  }
+  .skip-link:focus { top: 0; }
   a { color: var(--accent); text-decoration: none; }
   main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
   a:hover { text-decoration: underline; }
@@ -66,6 +76,12 @@
   header .crumb { color: var(--muted); }
   header .brand { font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
   header .brand .tld { color: var(--accent); }
+  /* Tap targets: WCAG 2.2 min 24x24, aim 44px on mobile.  Padding + flex
+     keeps the hit area generous without visually enlarging the small text. */
+  header a.brand, header a.crumb {
+    display: inline-flex; align-items: center;
+    min-height: 24px; padding: 6px 4px; margin: -6px -4px;
+  }
   h1 { font-size: 30px; letter-spacing: -0.02em; margin: 8px 0 12px; }
   h2 { font-size: 20px; letter-spacing: -0.01em;
         margin: 40px 0 16px; padding-bottom: 6px;
@@ -219,7 +235,8 @@
   .sponsor-title { font-weight: 700; font-size: 15px; color: var(--text); margin-bottom: 4px; }
   .sponsor-desc { font-size: 13px; color: var(--muted); line-height: 1.45; margin-bottom: 8px; }
   .sponsor-cta {
-    display: inline-block;
+    display: inline-flex; align-items: center;
+    min-height: 24px; padding: 4px 2px; margin: -4px -2px;
     color: var(--ok);
     font-family: 'SF Mono', monospace; font-size: 12px;
     text-transform: uppercase; letter-spacing: 0.08em;
@@ -231,9 +248,18 @@
     h1 { font-size: 24px; }
     .entry-head { flex-direction: column; gap: 4px; }
   }
+
+  /* Tap targets: 44px min height on small/mobile viewports (WCAG 2.2). */
+  @media (max-width: 600px) {
+    header a.brand, header a.crumb {
+      min-height: 44px; padding: 12px 4px; margin: -12px -4px;
+    }
+    .sponsor-cta { min-height: 44px; padding: 10px 2px; margin: -10px -2px; }
+  }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
   <header>
     <a href="/" class="brand">Will<span class="tld">I</span>Fit<span class="tld">.ai</span></a>
@@ -243,7 +269,7 @@
     <a href="/#macon-ga" class="crumb">Macon, GA</a>
   </header>
 
-  <main>
+  <main id="main">
   <span class="ai-pill imported">OpenStreetMap data</span>
   <h1>Parking clearance heights in Macon, Georgia</h1>
   <p class="lede">Clearance heights for 2 parking garages, 5 low-clearance bridges in Macon, Georgia. Enter your vehicle height on the interactive map to see what fits.</p>
@@ -299,15 +325,20 @@
   <footer>
     <div>© 2026 WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>
     <div>
-      <a href="/">Home</a> · <a href="/about.html">About</a> ·
+      <a href="/about.html">About</a> ·
       <a href="/accessibility.html">Accessibility</a> ·
-      <a href="/advertise.html">Advertise</a> ·
-      <a href="/how-ai-verification-works.html">AI verification</a> ·
+      <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
-      <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> ·
+      <a href="/advertise.html">Advertise</a> ·
+      <a href="/disclaimer.html">Disclaimer</a> ·
+      <a href="/terms.html">Terms</a> ·
+      <a href="/privacy.html">Privacy</a> ·
+      <a href="/dmca.html">DMCA</a> ·
       <a href="/cookies.html">Cookies</a> ·
-      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button>
+      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button> ·
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> ·
+      <a href="https://www.fhwa.dot.gov/bridge/nbi/" target="_blank" rel="noopener">FHWA NBI</a>
     </div>
   </footer>
 </div>

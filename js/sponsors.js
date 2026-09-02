@@ -127,16 +127,33 @@
     }
   }
 
+  // Resolve a sponsor-supplied URL to something safe to put in an href:
+  // only http:/https: survive (blocks javascript:, data:, vbscript:, etc);
+  // relative paths resolve against the current origin; anything else (or a
+  // parse failure) falls back to '#'. Also reports whether the resolved URL
+  // is cross-origin, so callers know to add target=_blank/rel.
+  function safeSponsorHref(url) {
+    try {
+      const u = new URL(url, location.origin);
+      if (u.protocol !== 'http:' && u.protocol !== 'https:') {
+        return { href: '#', external: false };
+      }
+      return { href: u.href, external: u.origin !== location.origin };
+    } catch (e) {
+      return { href: '#', external: false };
+    }
+  }
+
   function renderSponsor(slot, ctx, opts) {
     const s = pickSponsor(slot, ctx);
     if (!s) return '';
     recordAdEvent('impression', s.id, slot, ctx && ctx.city);
     const compact = opts && opts.compact;
     const isHouse = (s.id || '').startsWith('house-');
-    const isExternal = /^https?:\/\//.test(s.url);
-    const linkAttrs = isExternal
-      ? `href="${s.url}" target="_blank" rel="noopener sponsored"`
-      : `href="${s.url}"`;
+    const { href, external } = safeSponsorHref(s.url);
+    const linkAttrs = external
+      ? `href="${escapeHTML(href)}" target="_blank" rel="noopener noreferrer sponsored"`
+      : `href="${escapeHTML(href)}"`;
     return `
       <div class="sponsor-card ${compact ? 'compact' : ''} ${isHouse ? 'house' : ''}" data-slot="${slot}" data-id="${escapeHTML(s.id)}">
         <div class="sponsor-label">${escapeHTML(s.label || 'Sponsored')}</div>

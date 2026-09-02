@@ -62,6 +62,58 @@ def esc(s):
     return html.escape(str(s) if s is not None else "", quote=True)
 
 
+def plural_word(n, word, plural_form=None):
+    """'garage' -> 'garage' for n==1, 'garages' otherwise.  Used everywhere
+    a count precedes a noun so a city with exactly 1 of something doesn't
+    render '1 garages' / '1 have been AI-verified'."""
+    return word if n == 1 else (plural_form or word + "s")
+
+
+def cat_list(total, bridge_word="low bridge"):
+    """Grammatical category summary for the combined garage/tunnel/bridge
+    count used in the meta description and JSON-LD ItemList description.
+    Singular phrasing when the whole city only has one indexed location;
+    otherwise the original plural wording, unchanged (callers pass
+    bridge_word to match each call site's existing noun choice)."""
+    if total == 1:
+        return f"parking garage, tunnel, or {bridge_word}"
+    return f"parking garages, tunnels, and {bridge_word}s"
+
+
+def safe_jsonld(obj) -> str:
+    """Serialize to compact JSON, then neutralize characters that could
+    break out of the <script type="application/ld+json"> block a garage
+    name pulled from OSM contains something like '</script>'.  The escapes
+    are valid inside a JSON string and inert in HTML, so this round-trips
+    through json.loads() back to an identical object -- asserted below on
+    every call so a future edit that reorders things can't silently
+    reintroduce the injection."""
+    raw = json.dumps(obj, separators=(",", ":"))
+    escaped = raw.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    assert "<" not in escaped and ">" not in escaped, \
+        "JSON-LD escaping failed to remove angle brackets"
+    assert json.loads(escaped) == obj, \
+        "JSON-LD escaping altered the payload"
+    return escaped
+
+
+def build_title(name: str, state: str) -> str:
+    """<title> text with a length fallback.  Search engines truncate titles
+    past ~60 chars (measured on the rendered, entity-decoded text -- what
+    actually shows in a browser tab / SERP, not the raw HTML with '&amp;'),
+    and the full descriptive form exceeds that for most city names.  Falls
+    back to a shorter form, then drops the site suffix, rather than letting
+    Google truncate mid-word.  og:title / twitter:title keep the full form
+    unchanged -- only the <title> tag uses this."""
+    full = f"{name}, {state} Parking &amp; Bridge Clearance Heights | WillIFit.ai"
+    if len(html.unescape(full)) <= 60:
+        return full
+    short = f"{name}, {state} Clearance Heights | WillIFit.ai"
+    if len(short) <= 60:
+        return short
+    return f"{name}, {state} Clearance Heights"
+
+
 RV_NAME_RE = re.compile(r'\b(rv park|rv resort|caravan|kampground|koa)\b', re.IGNORECASE)
 
 MONTHS = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -242,7 +294,8 @@ def build_city_intro(name: str, state_full: str, facts: dict, ver: dict,
         bits.append(f"The lowest posted bridge clearance in the area is "
                     f"{esc(low_b.get('height_label') or '?')} at {esc((low_b.get('name') or 'an unnamed underpass')[:70])}.")
     if ver.get("ai"):
-        bits.append(f"{ver['ai']} of these clearances have been AI-verified directly against "
+        have_word = "has" if ver["ai"] == 1 else "have"
+        bits.append(f"{ver['ai']} of these clearances {have_word} been AI-verified directly against "
                     f"the posted sign in Google Street View.")
     if facts.get("oversized_count"):
         bits.append(f"{facts['oversized_count']} location{'s' if facts['oversized_count'] != 1 else ''} "
@@ -290,9 +343,11 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
         names = [g.get("name") or "Unnamed" for g in facts["oversized"][:3]]
         joined = ", ".join(names)
         more = f" and {facts['oversized_count'] - len(names)} more" if facts['oversized_count'] > len(names) else ""
+        fac_noun = "facility" if facts["oversized_count"] == 1 else "facilities"
+        fac_verb = "is" if facts["oversized_count"] == 1 else "are"
         faqs.append({
             "q": f"Which parking facilities in {name} accept RVs or oversized vehicles?",
-            "a": (f"{facts['oversized_count']} facilities in {name} are explicitly marked as "
+            "a": (f"{facts['oversized_count']} {fac_noun} in {name} {fac_verb} explicitly marked as "
                   f"oversized-vehicle-friendly: {joined}{more}. "
                   f"See the full list on the interactive map at willifit.ai/#{slug}."),
         })
@@ -308,9 +363,10 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
         rv_names = [g.get("name") or "Unnamed" for g in facts["rv_parks"][:3]]
         joined = ", ".join(rv_names)
         more = f" and {facts['rv_park_count'] - len(rv_names)} more" if facts['rv_park_count'] > len(rv_names) else ""
+        rv_word = "RV park is" if facts["rv_park_count"] == 1 else "RV parks are"
         faqs.append({
             "q": f"Are there RV parks in {name}?",
-            "a": (f"Yes. {facts['rv_park_count']} RV park(s) are indexed in {name}, "
+            "a": (f"Yes. {facts['rv_park_count']} {rv_word} indexed in {name}, "
                   f"including {joined}{more}. RV parks have no overhead clearance — any "
                   f"vehicle size fits."),
         })
@@ -569,7 +625,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": f"Parking clearance heights in {name}, {state_full}",
-        "description": f"{total} parking garages, tunnels, and low-clearance bridges "
+        "description": f"{total} {cat_list(total, 'low-clearance bridge')} "
                        f"with posted vehicle clearance heights in {name}, {state_full}.",
         "itemListElement": items,
         "numberOfItems": total,
@@ -600,7 +656,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
         })
     if faqs:
         blocks.append(faqs_to_jsonld(faqs))
-    return json.dumps(blocks, separators=(",", ":"))
+    return safe_jsonld(blocks)
 
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
@@ -611,7 +667,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta name="theme-color" content="#0e1116">
 <meta name="color-scheme" content="dark">
 
-<title>{title}</title>
+<title>{title_tag}</title>
 <meta name="description" content="{description}">
 <meta name="keywords" content="parking clearance {city}, {city} garage heights, low bridges {city}, RV parking {city}, truck clearance {city}, oversized vehicle parking">
 <meta name="robots" content="{robots}">
@@ -661,6 +717,16 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
   }}
+  /* Skip-link for keyboard users -- same visually-hidden-until-focused
+     pattern as the main SPA (index.html .skip-link). */
+  .skip-link {{
+    position: absolute; top: -40px; left: 0;
+    background: var(--ok); color: #0a0f18;
+    padding: 8px 12px; z-index: 9999;
+    font-family: 'SF Mono', monospace; font-size: 12px;
+    text-decoration: none; font-weight: 700;
+  }}
+  .skip-link:focus {{ top: 0; }}
   a {{ color: var(--accent); text-decoration: none; }}
   main a {{ text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }}
   a:hover {{ text-decoration: underline; }}
@@ -671,6 +737,12 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   header .crumb {{ color: var(--muted); }}
   header .brand {{ font-weight: 800; color: var(--text); letter-spacing: -0.01em; }}
   header .brand .tld {{ color: var(--accent); }}
+  /* Tap targets: WCAG 2.2 min 24x24, aim 44px on mobile.  Padding + flex
+     keeps the hit area generous without visually enlarging the small text. */
+  header a.brand, header a.crumb {{
+    display: inline-flex; align-items: center;
+    min-height: 24px; padding: 6px 4px; margin: -6px -4px;
+  }}
   h1 {{ font-size: 30px; letter-spacing: -0.02em; margin: 8px 0 12px; }}
   h2 {{ font-size: 20px; letter-spacing: -0.01em;
         margin: 40px 0 16px; padding-bottom: 6px;
@@ -824,7 +896,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   .sponsor-title {{ font-weight: 700; font-size: 15px; color: var(--text); margin-bottom: 4px; }}
   .sponsor-desc {{ font-size: 13px; color: var(--muted); line-height: 1.45; margin-bottom: 8px; }}
   .sponsor-cta {{
-    display: inline-block;
+    display: inline-flex; align-items: center;
+    min-height: 24px; padding: 4px 2px; margin: -4px -2px;
     color: var(--ok);
     font-family: 'SF Mono', monospace; font-size: 12px;
     text-transform: uppercase; letter-spacing: 0.08em;
@@ -836,9 +909,18 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     h1 {{ font-size: 24px; }}
     .entry-head {{ flex-direction: column; gap: 4px; }}
   }}
+
+  /* Tap targets: 44px min height on small/mobile viewports (WCAG 2.2). */
+  @media (max-width: 600px) {{
+    header a.brand, header a.crumb {{
+      min-height: 44px; padding: 12px 4px; margin: -12px -4px;
+    }}
+    .sponsor-cta {{ min-height: 44px; padding: 10px 2px; margin: -10px -2px; }}
+  }}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
   <header>
     <a href="/" class="brand">Will<span class="tld">I</span>Fit<span class="tld">.ai</span></a>
@@ -848,15 +930,15 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <a href="/#{slug}" class="crumb">{city}, {state}</a>
   </header>
 
-  <main>
+  <main id="main">
   {pill}
   <h1>Parking clearance heights in {city}, {state_full}</h1>
   <p class="lede">{lede}</p>
 
   <div class="stats">
-    <div class="stat"><b>{garage_count}</b> parking garages</div>
-    <div class="stat"><b>{tunnel_count}</b> tunnels</div>
-    <div class="stat"><b>{bridge_count}</b> low bridges</div>
+    <div class="stat"><b>{garage_count}</b> {garage_word}</div>
+    <div class="stat"><b>{tunnel_count}</b> {tunnel_word}</div>
+    <div class="stat"><b>{bridge_count}</b> {bridge_word}</div>
   </div>
 
   {intro}
@@ -899,15 +981,20 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <footer>
     <div>© {year} WillIFit.ai — clearance data for RVs, trucks &amp; oversized vehicles.</div>
     <div>
-      <a href="/">Home</a> · <a href="/about.html">About</a> ·
+      <a href="/about.html">About</a> ·
       <a href="/accessibility.html">Accessibility</a> ·
-      <a href="/advertise.html">Advertise</a> ·
-      <a href="/how-ai-verification-works.html">AI verification</a> ·
+      <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
-      <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> ·
+      <a href="/advertise.html">Advertise</a> ·
+      <a href="/disclaimer.html">Disclaimer</a> ·
+      <a href="/terms.html">Terms</a> ·
+      <a href="/privacy.html">Privacy</a> ·
+      <a href="/dmca.html">DMCA</a> ·
       <a href="/cookies.html">Cookies</a> ·
-      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button>
+      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button> ·
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> ·
+      <a href="https://www.fhwa.dot.gov/bridge/nbi/" target="_blank" rel="noopener">FHWA NBI</a>
     </div>
   </footer>
 </div>
@@ -964,13 +1051,15 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     nearby = compute_nearby_cities(city, all_cities or [city]) if all_cities else []
 
     # Build a short paragraph describing what's on the page, for meta + lede.
+    # plural_word keeps this from reading "1 parking garages" in cities with
+    # exactly one of a given type.
     parts = []
     if garages:
-        parts.append(f"{len(garages)} parking garages")
+        parts.append(f"{len(garages)} {plural_word(len(garages), 'parking garage')}")
     if tunnels:
-        parts.append(f"{len(tunnels)} tunnels")
+        parts.append(f"{len(tunnels)} {plural_word(len(tunnels), 'tunnel')}")
     if bridges:
-        parts.append(f"{len(bridges)} low-clearance bridges")
+        parts.append(f"{len(bridges)} {plural_word(len(bridges), 'low-clearance bridge')}")
     locations = ", ".join(parts) if parts else "parking garages, tunnels, and low bridges"
 
     # Verification-aware wording: "AI-verified" only when at least one entry
@@ -991,12 +1080,16 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         f"Enter your vehicle height on the interactive map to see what fits."
     )
     description = (
-        f"Vehicle clearance heights for {total} parking garages, tunnels, and low bridges "
+        f"Vehicle clearance heights for {total} {cat_list(total)} "
         f"in {name}, {state_full}. {data_claim}"
     )[:160]
     # Front-load the city name and keep ~60 chars so SERPs show the whole
-    # thing (the old form ran 77-93 chars and truncated mid-title).
+    # thing (the old form ran 77-93 chars and truncated mid-title).  og:title
+    # / twitter:title keep this full form; <title> uses title_tag below,
+    # which falls back to shorter forms past 60 chars (151/226 cities
+    # exceeded it with this one).
     title = f"{name}, {state} Parking &amp; Bridge Clearance Heights | WillIFit.ai"
+    title_tag = build_title(name, state)
 
     # Headline provenance pill: blue AI badge, green verified badge, or a muted
     # source label -- never a blanket 'AI-verified' on import-only data.
@@ -1017,6 +1110,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
 
     page = PAGE_TEMPLATE.format(
         title=title,
+        title_tag=title_tag,
         description=esc(description),
         robots=robots,
         canonical=f"{SITE}/city/{slug}",
@@ -1031,6 +1125,9 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         garage_count=len(garages),
         tunnel_count=len(tunnels),
         bridge_count=len(bridges),
+        garage_word=plural_word(len(garages), "parking garage"),
+        tunnel_word=plural_word(len(tunnels), "tunnel"),
+        bridge_word=plural_word(len(bridges), "low bridge"),
         garages_section=render_section("Parking garages", garages, "garage"),
         tunnels_section=render_section("Tunnels", tunnels, "tunnel"),
         bridges_section=render_section("Low-clearance bridges", bridges, "bridge"),

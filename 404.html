@@ -10,6 +10,7 @@
      robots meta below is belt-and-suspenders. -->
 <meta name="robots" content="noindex">
 <title>Page not found | WillIFit.ai</title>
+<meta name="description" content="This page doesn't exist or was moved. Find your city's clearance data on the WillIFit.ai map or browse all 226 covered cities.">
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
@@ -38,13 +39,26 @@
     margin: 0; background: var(--bg); color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6; min-height: 100vh;
-    display: flex; align-items: center; justify-content: center;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
     padding: 24px;
   }
   .card { max-width: 480px; text-align: center; }
-  .brand { font-weight: 800; font-size: 18px; letter-spacing: -0.01em;
+  .brand { display: inline-flex; align-items: center; min-height: 44px;
+           font-weight: 800; font-size: 18px; letter-spacing: -0.01em;
            color: var(--text); text-decoration: none; }
   .brand .tld { color: var(--accent); }
+  .skip-link {
+    position: absolute; top: -40px; left: 0;
+    background: #3ecf8e; color: #0a0f18;
+    padding: 8px 12px; z-index: 9999;
+    font-family: 'SF Mono', Menlo, monospace; font-size: 12px;
+    text-decoration: none; font-weight: 700;
+  }
+  .skip-link:focus { top: 0; }
+  footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border);
+           font-size: 12px; color: var(--muted); text-align: center; max-width: 640px; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
   .sign {
     display: inline-block; margin: 28px auto 20px;
     background: var(--warn); color: #1a1304;
@@ -57,7 +71,8 @@
   p { color: var(--muted); font-size: 15px; margin: 0 0 24px; }
   .links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
   .links a {
-    display: inline-block; padding: 9px 18px; border-radius: 6px;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; padding: 9px 18px; border-radius: 6px;
     font-size: 14px; font-weight: 600; text-decoration: none;
   }
   .links a.primary { background: var(--accent); color: #06121a; }
@@ -67,7 +82,8 @@
 </style>
 </head>
 <body>
-  <main class="card">
+<a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="card">
     <a href="/" class="brand">Will<span class="tld">I</span>Fit<span class="tld">.ai</span></a>
     <div class="sign" aria-hidden="true">CLEARANCE 4'0&quot;</div>
     <h1>404 — this page didn&rsquo;t clear</h1>
@@ -78,5 +94,21 @@
       <a class="ghost" href="/cities.html">Browse all 226 cities</a>
     </nav>
   </main>
+  <footer>
+    <a href="/about.html">About</a> ·
+    <a href="/accessibility.html">Accessibility</a> ·
+    <a href="/how-ai-verification-works.html">How AI verification works</a> ·
+    <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+    <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
+    <a href="/advertise.html">Advertise</a> ·
+    <a href="/disclaimer.html">Disclaimer</a> ·
+    <a href="/terms.html">Terms</a> ·
+    <a href="/privacy.html">Privacy</a> ·
+    <a href="/dmca.html">DMCA</a> ·
+    <a href="/cookies.html">Cookies</a> ·
+    <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button> ·
+    <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> ·
+    <a href="https://www.fhwa.dot.gov/bridge/nbi/" target="_blank" rel="noopener">FHWA NBI</a>
+  </footer>
 </body>
 </html>

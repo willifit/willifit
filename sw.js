@@ -44,7 +44,17 @@
 // only as an offline fallback).  The version bump is what purges any copy
 // that a v14 service worker already cache-first'ed during the window between
 // the HTML rollout and this file shipping.
-const CACHE_VERSION = "willifit-v15";
+//
+// v16 (W1 fix): SHELL_FILES was missing /vendor/leaflet/leaflet.js and
+// leaflet.css entirely -- a first-time visitor whose install precache ran
+// would have every same-origin asset EXCEPT the map library cached, so
+// going offline and reloading threw "L is not defined" and the whole app
+// failed to boot. Added Leaflet + the new Leaflet.markercluster vendor
+// files (U4) here. Version bumped so returning visitors' old v15 caches
+// (which never had these files and can't retroactively gain them) get
+// evicted in `activate` instead of serving a shell that's permanently
+// missing the map.
+const CACHE_VERSION = "willifit-v16";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
@@ -55,6 +65,19 @@ const SHELL_FILES = [
   "/manifest.webmanifest",
   "/data/index.json",
   "/data/sponsors.json",
+  // Precached here too (in addition to its own network-first fetch route
+  // below) purely to seed an offline fallback copy at install time -- a
+  // visitor whose very first visit is offline would otherwise have no
+  // cached copy at all, since networkFirst() only populates the cache
+  // after a successful online fetch. Runtime freshness is unaffected: the
+  // fetch handler's dedicated network-first route for this path still wins
+  // on every online load.
+  "/js/consent.js",
+  "/vendor/leaflet/leaflet.js",
+  "/vendor/leaflet/leaflet.css",
+  "/vendor/leaflet.markercluster/leaflet.markercluster.js",
+  "/vendor/leaflet.markercluster/MarkerCluster.css",
+  "/vendor/leaflet.markercluster/MarkerCluster.Default.css",
 ];
 
 // ---- install: precache the shell ----------------------------------------

@@ -118,7 +118,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <!-- Security: Content Security Policy. Whitelist matches known resource origins. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.basemaps.cartocdn.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.basemaps.cartocdn.com https://*.googleapis.com https://*.gstatic.com https://streetviewpixels-pa.googleapis.com https://*.ggpht.com https://*.googleusercontent.com https://server.arcgisonline.com; font-src 'self' data:; connect-src 'self' https://overpass-api.de https://*.overpass.kumi.systems https://maps.googleapis.com https://nominatim.openstreetmap.org https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self' https://maps.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <script src="/js/consent.js"></script>
@@ -136,6 +136,8 @@
 <!-- End Google tag -->
 
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="/vendor/leaflet.markercluster/MarkerCluster.css">
+<link rel="stylesheet" href="/vendor/leaflet.markercluster/MarkerCluster.Default.css">
 <style>
   :root {
     --bg: #0e1116;
@@ -172,6 +174,18 @@
     padding-top: env(safe-area-inset-top);
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
+  }
+  /* W2 fix: js/consent.js's cookie banner is position:fixed;bottom:0 and can
+     run 80-90px tall, which sits directly on top of this grid's bottom
+     28px footer row -- the footer's own "Cookie preferences" button became
+     unclickable while the banner showed. consent.js sets --wf-banner-h to
+     the banner's real rendered height and flags <html>.wf-banner-open while
+     it's visible; shrinking .app's height by that amount moves the footer
+     row's bottom edge up to meet the top of the banner instead of hiding
+     under it. */
+  html.wf-banner-open .app {
+    height: calc(100vh - var(--wf-banner-h, 0px));
+    height: calc(100dvh - var(--wf-banner-h, 0px));
   }
   /* Ensure tap targets on any interactive element are at least 44x44 (Apple HIG) */
   button, a.btn, .btn, [role="button"], input[type="checkbox"], input[type="radio"] {
@@ -223,6 +237,19 @@
   .site-footer .footer-links a { color: var(--muted); text-decoration: none; }
   .site-footer .footer-links a:hover { color: var(--text); text-decoration: underline; }
   .site-footer .footer-dot { color: var(--border); }
+  /* U13: "Cookie preferences" is the one interactive control in the footer
+     that's a <button> rather than a plain link, and it inherited nothing
+     but .site-footer's 11px font-size -- rendering at ~94x14px, well under
+     WCAG 2.2's 24px minimum target size. Padding brings the tap target to
+     spec without changing the visible link-styled text or the row's height
+     budget (the other footer links stay plain 11px text). */
+  .site-footer .wf-consent-btn {
+    display: inline-flex; align-items: center;
+    min-height: 24px; padding: 5px 2px;
+    background: none; border: none;
+    color: var(--muted); font: inherit; cursor: pointer;
+  }
+  .site-footer .wf-consent-btn:hover { color: var(--text); text-decoration: underline; }
   /* A `@media (max-width: 640px)` block used to sit here overriding .app's
      grid rows and the footer padding / legal type.  It was dead: the
      ≤900px block far below sets all three at equal specificity and wins
@@ -237,6 +264,15 @@
     border-bottom: 1px solid var(--border);
     display: flex; align-items: center;
     padding: 0 16px; gap: 20px;
+    /* U1 fix: .topbar has backdrop-filter nowhere, but .vh-presets (a child,
+       position:absolute, z-index:940) needs a stacking context to compete
+       in that's ABOVE Leaflet's panes (control pane z-index:1000 is the
+       highest Leaflet uses) or the dropdown renders under the map. Without
+       `position` here .vh-presets' z-index only ever competed within
+       whatever ancestor stacking context happened to exist, which lost to
+       #map's own. 1100 clears Leaflet's 1000 but stays under
+       .modal-overlay (2000) / .welcome-overlay (3000) so modals still win. */
+    position: relative; z-index: 1100;
   }
   .brand {
     font-weight: 700; font-size: 17px;
@@ -328,7 +364,14 @@
     padding: 3px 4px; border-radius: 3px;
     -moz-appearance: textfield;
   }
-  .vh-inputs input[type="number"]:focus { outline: none; border-color: var(--ok); }
+  /* U8 fix: this used to also set `outline: none`, which (being more
+     specific than the global `input:focus-visible` rule below) silently
+     killed the keyboard focus ring on #vhFeet/#vhInches. Border-color still
+     changes on any focus; the accent outline now comes back for keyboard
+     focus via that shared rule, matching every other input on the page
+     (.search-box input:focus / .city-search-wrap input:focus never touched
+     outline either). */
+  .vh-inputs input[type="number"]:focus { border-color: var(--ok); }
   .vh-inputs input::-webkit-outer-spin-button,
   .vh-inputs input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
   .vh-unit { font-family: var(--mono); color: var(--muted); font-size: 12px; }
@@ -382,6 +425,20 @@
     display: flex; flex-direction: column;
     overflow: hidden;
   }
+  /* U7/U5: the sponsor slot is the first element in .sidebar's DOM order
+     (it has to load before we know if a garage/oversized-filter context is
+     available to target it), which put a house ad above the filters and
+     every result on both desktop and mobile. Flex `order` repositions it
+     without touching markup or the sponsor-targeting JS. Desktop (U7): just
+     below the filter block. Mobile gets its own override further down
+     (U5): pushed to the very end, after the list, so at least one result
+     card is visible without scrolling past an ad first. */
+  .sidebar > #sidebarSponsor { order: 2; }
+  .sidebar > #filters { order: 1; }
+  .sidebar > .result-count { order: 3; }
+  .sidebar > .list-status { order: 4; }
+  .sidebar > #list { order: 5; }
+  .sidebar > .add-location-btn { order: 6; }
   .filters {
     padding: 14px 16px;
     border-bottom: 1px solid var(--border);
@@ -1367,11 +1424,23 @@
   }
   .directions-btn:hover { filter: brightness(1.1); }
   .directions-btn svg { flex-shrink: 0; }
+  .directions-alt-details {
+    margin: 2px 0;
+  }
+  .directions-alt-details summary {
+    cursor: pointer; text-align: center;
+    font-size: 10px; color: var(--muted);
+    font-family: var(--mono);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 4px 0;
+  }
+  .directions-alt-details summary:hover { color: var(--ok); }
   .directions-alt {
     display: flex; align-items: center; justify-content: center; gap: 6px;
     font-size: 10px; color: var(--muted);
     font-family: var(--mono);
     text-transform: uppercase; letter-spacing: 0.06em;
+    margin-top: 6px;
   }
   .directions-alt a { color: var(--muted); text-decoration: none; }
   .directions-alt a:hover { color: var(--ok); }
@@ -1404,7 +1473,22 @@
 
   /* Report clearance modal */
   .report-modal { max-width: 540px; }
-  .report-form { padding: 20px 24px 24px; }
+  /* U12 fix: .modal is a fixed-height flex column with overflow:hidden and
+     .report-form previously had no overflow/flex rules of its own -- on a
+     long form (new-location, with its coordinate row + fieldset + notes +
+     email) that meant content past the modal's box was just clipped, not
+     scrollable, and the submit button in .report-actions could be
+     completely unreachable rather than merely "needs scrolling". Making the
+     form itself the scrolling region (flex:1 + min-height:0 so it can
+     shrink below its content size + overflow-y:auto) gives .report-actions
+     a real sticky context below. */
+  .modal .report-form { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+  /* Bottom padding lives on .report-actions (below) instead of here, since
+     that's the element that's actually sticky/bottom-anchored now -- giving
+     both the form AND the sticky bar their own independent bottom padding
+     would either double it up or (if mismatched) let the sticky bar's edge
+     poke past the modal's own overflow:hidden box. */
+  .report-form { padding: 20px 24px 0; }
   .report-target {
     padding: 10px 12px; margin-bottom: 16px;
     background: var(--panel-2); border-left: 3px solid var(--ok);
@@ -1442,6 +1526,16 @@
   .report-actions {
     display: flex; justify-content: space-between; align-items: center;
     margin-top: 20px; gap: 10px; flex-wrap: wrap;
+    /* U12: stick to the bottom of the now-scrollable .report-form (see
+       above) so the submit button stays reachable/visible without having
+       to scroll all the way down, on the add-location modal in particular.
+       Carries the form's bottom padding itself (report-form's own bottom
+       padding was zeroed out) so bottom:0 lands exactly on the form's
+       content-box edge with no gap or overhang past the modal's
+       overflow:hidden box. */
+    position: sticky; bottom: 0;
+    background: var(--panel);
+    padding: 12px 0 24px;
   }
   .btn-primary, .btn-secondary {
     padding: 10px 18px; border: 1px solid; border-radius: 4px;
@@ -1692,6 +1786,12 @@
     }
     .filters { padding: 10px 12px; }
     .filter-label { font-size: 10px; }
+    /* U5: mobile sidebar order becomes search/filters -> result count ->
+       list, with the sponsor card pushed to the very end (past the whole
+       list and the add-location button) instead of sitting above every
+       result. Desktop keeps its own order (just below the filter block --
+       see the base .sidebar > #sidebarSponsor rule). */
+    .sidebar > #sidebarSponsor { order: 10; }
 
     /* COLLAPSIBLE FILTERS — why the filter stack folds away on a phone.
 
@@ -1737,6 +1837,21 @@
     .filter-bar .search-box { flex: 1 1 auto; min-width: 0; margin-bottom: 0; }
     .filter-toggle { display: inline-flex; }
     .filters.is-collapsed .filter-panel { display: none; }
+    /* U5: expanding the filter panel used to push the entire list (every
+       result) below the sidebar's visible scroll area -- capping its own
+       height and giving IT the scrollbar (instead of the whole sidebar)
+       keeps at least the top of the result list on screen at the same
+       time as the open filters. */
+    .filters:not(.is-collapsed) .filter-panel {
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+    /* Short phones (≤700px tall, e.g. 320×640): 40vh of filters plus the
+       map still pushed the first result under the fold. Tighter cap there;
+       the panel scrolls internally either way. */
+    @media (max-height: 700px) {
+      .filters:not(.is-collapsed) .filter-panel { max-height: 26vh; }
+    }
     /* The 12px the search box used to carry, moved to the bar, and only when
        there is something underneath it to be separated from. */
     .filters:not(.is-collapsed) .filter-bar { margin-bottom: 10px; }
@@ -1862,7 +1977,11 @@
     .modal-header { padding: 14px 18px; }
     .modal-close { width: 36px; height: 36px; }
     .report-modal { max-width: 100%; }
-    .report-form { padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); }
+    .report-form { padding: 14px 16px 0; }
+    /* Bottom padding (incl. safe-area) moves onto the sticky .report-actions
+       bar so it stays flush with the form's real bottom edge -- see the
+       U12 comment on .report-form / .report-actions above. */
+    .report-actions { padding: 12px 0 calc(14px + env(safe-area-inset-bottom)); }
 
     .search-area-btn, .search-area-clear {
       top: 12px; padding: 10px 14px; font-size: 13px; min-height: 40px;
@@ -1893,9 +2012,15 @@
     .detail-hero { height: 200px; }
     .modal-title { font-size: 15px; }
 
-    /* Legend can collapse or reposition — put it at top-left, very small */
+    /* Legend placement on phones. It used to sit top-LEFT, exactly where
+       Leaflet's zoom control lives, so the two overlapped. Top-right was
+       tried next, but at 375px the "Search this area" pill (top-centre)
+       runs into it. Bottom-right, lifted just above the attribution strip,
+       is the only corner nothing else uses: zoom is top-left, the layers
+       toggle is bottom-left, and on mobile the detail panel becomes a bottom
+       sheet whose close button moved with it. */
     .legend {
-      position: absolute; top: 8px; left: 8px; right: auto; bottom: auto;
+      position: absolute; top: auto; left: auto; right: 8px; bottom: 26px;
       max-width: 180px;
     }
 
@@ -1944,6 +2069,16 @@
   .report-btn.issue-variant { margin-top: 8px; }
   .report-btn.issue-variant:hover {
     background: var(--warn); border-color: var(--warn); color: #0a0f18;
+  }
+  /* Suggest-an-edit row: the two report buttons side by side instead of
+     stacked, since they now live under one "Suggest an edit" heading. */
+  .detail-edit-row {
+    display: flex; gap: 8px; margin-top: 18px;
+  }
+  .detail-edit-row .report-btn { margin-top: 0; flex: 1; }
+  .detail-edit-row .report-btn.issue-variant { margin-top: 0; }
+  @media (max-width: 480px) {
+    .detail-edit-row { flex-direction: column; }
   }
 
   /* CITY PICKER MODAL */
@@ -2237,6 +2372,16 @@
     .vh-presets button { padding: 12px; }
     .directions-alt a { display: inline-block; padding: 8px 4px; }
   }
+  /* U13 — WCAG 2.2 target size (24px min, 44px comfortable) on mobile only.
+     Desktop keeps its current (mouse-sized) dimensions; these are additive
+     min-height rules so existing padding/content still determines the
+     actual box unless it would fall short of 44px. */
+  @media (max-width: 900px) {
+    .vh-clear, .vh-preset-btn, #currentCityBtn, .filter-toggle,
+    .modal-close, .tab, #search, .search-area-btn {
+      min-height: 44px;
+    }
+  }
 
   /* 7 · Respect the user's motion & transparency settings */
   @media (prefers-reduced-motion: reduce) {
@@ -2269,7 +2414,6 @@
      no visible headline -- but every page needs a single H1 for crawlers
      to understand the primary topic.  .sr-only keeps it in the DOM for
      search engines + screen readers without affecting the layout. -->
-<h1 class="sr-only">WillIFit.ai — AI-verified parking garage, tunnel, and low-bridge clearance heights for RVs, trucks, and oversized vehicles across 226 US cities</h1>
 <a class="skip-link" href="#list">Skip to garage list</a>
 
 <div class="welcome-overlay" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeTitleA11y">
@@ -2332,6 +2476,9 @@
   </div>
 
   <div class="main" role="main">
+    <!-- Page heading lives INSIDE the main landmark: axe's `region` rule
+         flags any content outside a landmark, and this was the last one. -->
+    <h1 class="sr-only">WillIFit.ai — AI-verified parking garage, tunnel, and low-bridge clearance heights for RVs, trucks, and oversized vehicles across 226 US cities</h1>
     <aside class="sidebar">
       <div id="sidebarSponsor" class="sponsor-slot-sidebar"></div>
       <!-- The filter block is deliberately in two parts.  .filter-bar is the
@@ -2703,6 +2850,7 @@
 </div>
 
 <script src="/vendor/leaflet/leaflet.js"></script>
+<script src="/vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
 <script>
 /* ============================================================
    DATA ARCHITECTURE — fetched from /data
@@ -2727,6 +2875,18 @@
    Picker-map (city modal) always uses Leaflet regardless.
    ============================================================ */
 const MAP_PROVIDER = 'osm';
+// CARTO basemap key (C1). CARTO's free "voyager" raster tiles now require an
+// API key on the URL (?key=...) -- without one the tiles still load but come
+// back watermarked "API KEY REQUIRED". The free tier is non-commercial,
+// capped at 5M tile requests/mo (see https://carto.com/help). Leave this
+// blank until the account/key decision is made; the two tile-layer URLs
+// below only append ?key=... when it's non-empty, so the current
+// (unauthenticated, watermarked) behavior is unchanged until then.
+const CARTO_API_KEY = '';
+function cartoVoyagerUrl() {
+  const base = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png';
+  return CARTO_API_KEY ? `${base}?key=${encodeURIComponent(CARTO_API_KEY)}` : base;
+}
 // Google Maps API key — PUBLIC-BY-DESIGN.
 //
 // Maps JS / Street View keys are frontend credentials: the security model is
@@ -2738,6 +2898,7 @@ const MAP_PROVIDER = 'osm';
 // so even if someone copies it from the public repo, Google rejects their
 // requests.  If you fork this repo, replace this with your own restricted
 // key.  (GitHub's secret scanner flags this pattern; dismiss as "Won't fix".)
+// security-ok: public referrer-restricted Maps key
 const GOOGLE_MAPS_API_KEY = 'AIzaSyDmfAJewDevDtvH-3rWsHrT31UNB3awb8E';
 
 // Dark theme matching WillIFit UI — applied when MAP_PROVIDER === 'google'.
@@ -2845,6 +3006,15 @@ function recordAdEvent(kind, sponsorId, slot) {
     localStorage.setItem(key, JSON.stringify(log));
   } catch (e) {}
 }
+// Sponsor CTA clicks are tracked via delegation (not inline onclick) so the
+// interpolated id/slot never has to round-trip through an HTML attribute
+// that a handler-string escaper (which differs from the HTML escaper) would
+// need to get exactly right.
+document.addEventListener('click', (e) => {
+  const cta = e.target.closest && e.target.closest('.sponsor-cta[data-sponsor-click]');
+  if (!cta) return;
+  recordAdEvent('click', cta.dataset.sponsorClick, cta.dataset.sponsorSlot);
+});
 function renderHomeSponsor() {
   const el = document.getElementById('welcomeSponsor');
   if (!el) return;
@@ -2865,17 +3035,28 @@ function renderSponsor(slot, ctx, opts) {
   recordAdEvent('impression', s.id, slot);
   const compact = opts && opts.compact;
   const isHouse = (s.id || '').startsWith('house-');
+  // Only http:/https: URLs are allowed through -- a sponsor record is
+  // external data (data/sponsors.json), so a javascript:/data: URL there
+  // must not be able to execute. Relative paths resolve against our own
+  // origin; anything else (or a URL that fails to parse) falls back to '#'.
+  let safeHref = '#', isExternal = false;
+  try {
+    const u = new URL(s.url, location.origin);
+    if (u.protocol === 'http:' || u.protocol === 'https:') {
+      safeHref = u.href;
+      isExternal = u.origin !== location.origin;
+    }
+  } catch (e) { /* leave safeHref = '#' */ }
   // House ads are relative paths; real sponsors get target=_blank.
-  const isExternal = /^https?:\/\//.test(s.url);
   const linkAttrs = isExternal
-    ? `href="${s.url}" target="_blank" rel="noopener sponsored"`
-    : `href="${s.url}"`;
+    ? `href="${escapeHTML(safeHref)}" target="_blank" rel="noopener noreferrer sponsored"`
+    : `href="${escapeHTML(safeHref)}"`;
   return `
-    <div class="sponsor-card ${compact ? 'compact' : ''} ${isHouse ? 'house' : ''}" data-slot="${slot}" data-id="${s.id}">
+    <div class="sponsor-card ${compact ? 'compact' : ''} ${isHouse ? 'house' : ''}" data-slot="${slot}" data-id="${escapeHTML(s.id)}">
       <div class="sponsor-label">${escapeHTML(s.label || 'Sponsored')}</div>
       <div class="sponsor-title">${escapeHTML(s.title)}</div>
       ${compact ? '' : `<div class="sponsor-desc">${escapeHTML(s.desc)}</div>`}
-      <a class="sponsor-cta" ${linkAttrs} onclick="recordAdEvent('click','${escapeHTML(s.id)}','${escapeHTML(slot)}')">${escapeHTML(s.cta)}</a>
+      <a class="sponsor-cta" ${linkAttrs} data-sponsor-click="${escapeHTML(s.id)}" data-sponsor-slot="${escapeHTML(slot)}">${escapeHTML(s.cta)}</a>
     </div>`;
 }
 
@@ -2933,6 +3114,8 @@ const STATE_NAMES = {
   NY:'New York', MA:'Massachusetts', PA:'Pennsylvania', DC:'Washington, D.C.', MD:'Maryland',
   RI:'Rhode Island', CT:'Connecticut', ME:'Maine', VT:'Vermont',
   NJ:'New Jersey', WY:'Wyoming',
+  DE:'Delaware', MS:'Mississippi', MT:'Montana', ND:'North Dakota',
+  NH:'New Hampshire', PR:'Puerto Rico', SD:'South Dakota', WV:'West Virginia',
 };
 
 const state = {
@@ -3571,7 +3754,7 @@ function initMapOSM() {
   // weight for a materially faster LCP.  Garage names/heights live in our
   // DOM markers, not baked into the tile, so only the base-map street
   // labels soften slightly on retina — an easy trade for the load win.
-  const streetLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+  const streetLayer = L.tileLayer(cartoVoyagerUrl(), {
     maxZoom: 19,
     attribution: '© OpenStreetMap © CARTO | WillIFit beta',
   });
@@ -3604,16 +3787,31 @@ function initMapOSM() {
     try { localStorage.setItem('willifit_map_layer', key); } catch (_) {}
   });
 
-  state.markerLayer = L.layerGroup().addTo(state.map);
+  // U4: cluster garage/tunnel/bridge markers instead of dropping hundreds of
+  // individual pins on the map at city zoom. disableClusteringAtZoom matches
+  // the zoom selectGarage()/mapFlyTo() use when opening a location from the
+  // list (16), so opening a list item always lands on individual markers,
+  // never a still-clustered one.
+  state.markerLayer = L.markerClusterGroup({
+    disableClusteringAtZoom: 16,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    maxClusterRadius: 50,
+  }).addTo(state.map);
   state.map.on('moveend', onMapMoved);
   state.map.on('zoomend', onZoomChanged);
   state.cityDotLayer = L.layerGroup().addTo(state.map);
 }
 function renderMarkersOSM() {
+  // state.markerLayer is a MarkerClusterGroup (see initMapOSM) -- clear +
+  // bulk-addLayers below rather than adding one at a time, which would
+  // otherwise trigger a re-cluster after every single marker.
   state.markerLayer.clearLayers();
+  state._markersById = {};
   if (!state.cityData) return;
   if (!shouldShowGarages()) return; // hide garages at country-level zoom
   const items = getFiltered();
+  const newMarkers = [];
   items.forEach(g => {
     const cls = markerClass(g);
     // Surface lots / RV parks: show "✓" (verified, just no overhead).
@@ -3628,10 +3826,13 @@ function renderMarkersOSM() {
       iconSize: [34, 34],
       iconAnchor: [17, 34],
     });
-    const m = L.marker([g.lat, g.lng], { icon }).addTo(state.markerLayer);
+    const m = L.marker([g.lat, g.lng], { icon });
     m.on('click', () => selectGarage(g.id));
     m.bindPopup(`<strong>${escapeHTML(g.name)}</strong><br>${escapeHTML(g.height_label||'Unverified')} ${g.oversized?' · Oversized OK':''}`);
+    state._markersById[g.id] = m;
+    newMarkers.push(m);
   });
+  state.markerLayer.addLayers(newMarkers);
 }
 
 /* ---------- Google Maps ---------- */
@@ -4069,31 +4270,6 @@ function renderDetail(g) {
       <button class="quick-act" id="detailFavBtn" aria-pressed="${favs.has(g.id)}">${favs.has(g.id) ? '★ Saved' : '☆ Save'}</button>
       <button class="quick-act" id="detailShareBtn">Share link</button>
     </div>
-    <div class="directions-row">
-      <a class="directions-btn" href="${gmapsDir}" target="_blank" rel="noopener" aria-label="Get directions to ${escapeHTML(g.name)} via Google Maps">
-        <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zM14 14.5V12h-4v3H8v-4a1 1 0 011-1h5V7.5l3.5 3.5z"/></svg>
-        Directions
-      </a>
-      <div class="directions-alt">
-        <a href="${appleMapsDir}" target="_blank" rel="noopener" title="Open in Apple Maps">Apple Maps</a>
-        <span class="dir-sep">·</span>
-        <a href="${wazeDir}" target="_blank" rel="noopener" title="Open in Waze">Waze</a>
-        <span class="dir-sep">·</span>
-        <a href="${gmapsDir}" target="_blank" rel="noopener" title="Open in Google Maps">Google Maps</a>
-      </div>
-      <div class="directions-warning">
-        <b>⚠ Does your nav app know your vehicle height?</b>
-        These links pass the destination to your nav app — they don't pass your vehicle profile. Google Maps <em>can</em> route around clearance restrictions, but only if you've set a vehicle profile in the app's <b>Settings → Navigation → Vehicle</b>. Otherwise it routes the fastest way, which may go under low bridges.
-      </div>
-      <div class="directions-truck">
-        <span class="directions-hint-inline">Safer for oversized vehicles:</span>
-        <a href="${truckerPathUrl}" target="_blank" rel="noopener">Trucker Path</a>
-        <span class="dir-sep">·</span>
-        <a href="${copilotUrl}" target="_blank" rel="noopener">CoPilot Truck</a>
-      </div>
-    </div>
-    ${verdictBanner}
-    ${unverifiedBanner}
     <div class="detail-hero-display">
       <div class="height-display">
         <div class="label">${Array.isArray(g.sections) && g.sections.length ? 'Lowest Posted Clearance' : 'Max Clearance'}</div>
@@ -4101,6 +4277,8 @@ function renderDetail(g) {
         <div class="meta">${g.height_in ? (g.height_in|0) + ' inches' : 'Needs field verification'}</div>
       </div>
     </div>
+    ${verdictBanner}
+    ${unverifiedBanner}
     ${renderSectionsList(g)}
     <div class="detail-facts">
       <div class="fact">
@@ -4112,28 +4290,57 @@ function renderDetail(g) {
         <div class="fact-value ${g.height_in!=null?'yes':''}">${g.height_in!=null?'Posted spec':'Needs check'}</div>
       </div>
     </div>
+    <div class="directions-row">
+      <a class="directions-btn" href="${gmapsDir}" target="_blank" rel="noopener" aria-label="Get directions to ${escapeHTML(g.name)} via Google Maps">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zM14 14.5V12h-4v3H8v-4a1 1 0 011-1h5V7.5l3.5 3.5z"/></svg>
+        Directions
+      </a>
+      <details class="directions-alt-details">
+        <summary>Open in another app</summary>
+        <div class="directions-alt">
+          <a href="${appleMapsDir}" target="_blank" rel="noopener" title="Open in Apple Maps">Apple Maps</a>
+          <span class="dir-sep">·</span>
+          <a href="${wazeDir}" target="_blank" rel="noopener" title="Open in Waze">Waze</a>
+          <span class="dir-sep">·</span>
+          <a href="${gmapsDir}" target="_blank" rel="noopener" title="Open in Google Maps">Google Maps</a>
+        </div>
+        <div class="directions-truck">
+          <span class="directions-hint-inline">Safer for oversized vehicles:</span>
+          <a href="${truckerPathUrl}" target="_blank" rel="noopener">Trucker Path</a>
+          <span class="dir-sep">·</span>
+          <a href="${copilotUrl}" target="_blank" rel="noopener">CoPilot Truck</a>
+        </div>
+      </details>
+      <div class="directions-warning">
+        <b>⚠ Does your nav app know your vehicle height?</b>
+        These links pass the destination to your nav app — they don't pass your vehicle profile. Google Maps <em>can</em> route around clearance restrictions, but only if you've set a vehicle profile in the app's <b>Settings → Navigation → Vehicle</b>. Otherwise it routes the fastest way, which may go under low bridges.
+      </div>
+    </div>
     <h3 class="detail-section-title">Notes</h3>
     <div class="detail-notes">${escapeHTML(g.notes || 'No additional notes.')}</div>
     <div class="detail-source">Source: ${escapeHTML(g.source || 'Unknown')}${g.verified_on ? ` · Verified ${escapeHTML(formatVerifiedAgo(g.verified_on))}` : ''}</div>
     <h3 class="detail-section-title">Entrance Verification</h3>
     <div class="image-gallery">
-      <div class="image-thumb" role="button" tabindex="0" onclick="window.open('${svUrl}','_blank','noopener,noreferrer')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('${svUrl}','_blank','noopener,noreferrer')}">
+      <div class="image-thumb" role="button" tabindex="0" data-open-url="${escapeHTML(svUrl)}">
         <div class="no-image">Click to open Google Street View — pan to entrance and check the sign yourself</div>
         <div class="street-view-btn">Open Street View ↗</div>
       </div>
-      <div class="image-thumb" role="button" tabindex="0" onclick="window.open('https://www.google.com/maps/search/${encodeURIComponent(g.name+' '+g.addr)}','_blank','noopener,noreferrer')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://www.google.com/maps/search/${encodeURIComponent(g.name+' '+g.addr)}','_blank','noopener,noreferrer')}">
+      <div class="image-thumb" role="button" tabindex="0" data-open-url="${escapeHTML(`https://www.google.com/maps/search/${encodeURIComponent(g.name+' '+g.addr)}`)}">
         <div class="no-image">Click for Google Maps listing, reviews, photos</div>
         <div class="street-view-btn">Open Maps ↗</div>
       </div>
     </div>
-    <button class="report-btn" data-gid="${escapeHTML(g.id)}" id="detailReportBtn">
-      Report clearance for this location
-      <span class="subtitle">Quick form — help keep the data accurate</span>
-    </button>
-    <button class="report-btn issue-variant" data-gid="${escapeHTML(g.id)}" id="detailIssueBtn">
-      Report an issue with this location
-      <span class="subtitle">Closed, wrong pin, wrong address, duplicate, etc.</span>
-    </button>
+    <h3 class="detail-section-title">Suggest an edit</h3>
+    <div class="detail-edit-row">
+      <button class="report-btn" data-gid="${escapeHTML(g.id)}" id="detailReportBtn">
+        Report clearance
+        <span class="subtitle">Quick form — help keep the data accurate</span>
+      </button>
+      <button class="report-btn issue-variant" data-gid="${escapeHTML(g.id)}" id="detailIssueBtn">
+        Report an issue
+        <span class="subtitle">Closed, wrong pin, wrong address, duplicate, etc.</span>
+      </button>
+    </div>
     ${renderSponsor('detail', { city: state.city, garage: g, oversized_filter: state.oversizedOnly }) || ''}`;
   // renderDetail is also called to refresh an ALREADY-open panel's content
   // (e.g. re-rendering the fit verdict after a vehicle-height edit) -- only
@@ -4146,6 +4353,15 @@ function renderDetail(g) {
     panel.removeAttribute('inert');
     panel.focus();
   }
+  // Wire up the Street View / Maps thumbs safely (no inline onclick with
+  // interpolated URLs -- data-open-url + a delegated-per-render listener).
+  body.querySelectorAll('.image-thumb[data-open-url]').forEach((thumb) => {
+    const open = () => { const u = thumb.dataset.openUrl; if (u) window.open(u, '_blank', 'noopener,noreferrer'); };
+    thumb.addEventListener('click', open);
+    thumb.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+    });
+  });
   // Wire up the report buttons safely (no inline onclick with interpolated id)
   const reportBtn = document.getElementById('detailReportBtn');
   if (reportBtn) {
@@ -4237,7 +4453,13 @@ async function switchToCity(slug, center) {
         }),
         zIndexOffset: 1000,
       }).addTo(state.map);
-      if (center.label) state._searchMarker.bindPopup(center.label);
+      // Bind a text node, not a string -- Leaflet's bindPopup innerHTML's a
+      // string argument, and center.label round-trips through a data-label
+      // attribute (see _activateCityRow) whose entities the HTML parser has
+      // already decoded by the time we read it back, so a raw string here
+      // would be a stored-XSS sink for anything Nominatim returns as
+      // display_name. A DOM node bypasses the HTML parser entirely.
+      if (center.label) state._searchMarker.bindPopup(document.createTextNode(String(center.label)));
     }
   } else {
     mapFlyTo(meta.lat, meta.lng, meta.zoom);
@@ -4659,11 +4881,20 @@ function renderBrowseTab() {
 function initPickerMap() {
   if (state.pickerMap) { state.pickerMap.invalidateSize(); return; }
   state.pickerMap = L.map('pickerMap', { zoomControl: true }).setView([39.5, -98.5], 4);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+  L.tileLayer(cartoVoyagerUrl(), {
     maxZoom: 19,
     attribution: '© OpenStreetMap © CARTO',
   }).addTo(state.pickerMap);
-  CITY_INDEX.forEach(c => {
+  // U4: cluster city pins here too -- dense regions (e.g. NYC/Newark,
+  // LA/Long Beach/OC) stack multiple city markers close enough to overlap
+  // at the national zoom this map opens at.
+  const pickerCluster = L.markerClusterGroup({
+    disableClusteringAtZoom: 16,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    maxClusterRadius: 50,
+  }).addTo(state.pickerMap);
+  const pickerMarkers = CITY_INDEX.map(c => {
     const comingCls = c.status === 'coming' ? 'coming-soon' : '';
     const size = c.status === 'live' ? 40 : 28;
     const label = c.status === 'live' ? c.garage_count : '·';
@@ -4673,10 +4904,12 @@ function initPickerMap() {
       iconSize: [size, size],
       iconAnchor: [size/2, size/2],
     });
-    const m = L.marker([c.lat, c.lng], { icon }).addTo(state.pickerMap);
-    m.bindPopup(`<strong>${c.name}, ${c.state}</strong><br>${c.status === 'live' ? garageCountLabel(c.garage_count) : 'Coming soon'}`);
+    const m = L.marker([c.lat, c.lng], { icon });
+    m.bindPopup(`<strong>${escapeHTML(c.name)}, ${escapeHTML(c.state)}</strong><br>${c.status === 'live' ? garageCountLabel(c.garage_count) : 'Coming soon'}`);
     m.on('click', () => { if (c.status === 'live') switchToCity(c.slug); });
+    return m;
   });
+  pickerCluster.addLayers(pickerMarkers);
 }
 
 function findNearestLiveCity(lat, lng) {
@@ -5080,6 +5313,28 @@ document.getElementById('newLocationModal').addEventListener('click', (e) => {
 });
 document.getElementById('newLocationForm').addEventListener('submit', submitNewLocation);
 
+// U10: "No posted sign" / "No sign / open-air" had no change handler --
+// checking it should disable + clear the paired height fields (there's
+// nothing to post a sign height for), and re-enable them on uncheck.
+function _applyNoPostedState(noPostedEl, ftEl, inEl) {
+  if (!noPostedEl || !ftEl || !inEl) return;
+  if (noPostedEl.checked) {
+    ftEl.value = ''; inEl.value = '';
+    ftEl.disabled = true; inEl.disabled = true;
+  } else {
+    ftEl.disabled = false; inEl.disabled = false;
+  }
+}
+function _wireNoPostedCheckbox(checkboxId, ftId, inId) {
+  const cb = document.getElementById(checkboxId);
+  const ft = document.getElementById(ftId);
+  const inp = document.getElementById(inId);
+  if (!cb || !ft || !inp) return;
+  cb.addEventListener('change', () => _applyNoPostedState(cb, ft, inp));
+}
+_wireNoPostedCheckbox('rfNoPosted', 'rfHeightFt', 'rfHeightIn');
+_wireNoPostedCheckbox('nlNoPosted', 'nlHeightFt', 'nlHeightIn');
+
 // When the user picks "Surface lot (open-air)" as the type, auto-check
 // "Oversized: Yes" and "No sign / open-air" -- an open-air lot with no
 // overhead can't impose a clearance, and by definition accommodates
@@ -5090,6 +5345,9 @@ document.getElementById('nlType').addEventListener('change', (e) => {
     if (yes) yes.checked = true;
     const noPosted = document.getElementById('nlNoPosted');
     if (noPosted) noPosted.checked = true;
+    // Programmatic .checked = true doesn't fire 'change' -- apply the
+    // disable/clear side effect directly so the two stay in sync here too.
+    _applyNoPostedState(noPosted, document.getElementById('nlHeightFt'), document.getElementById('nlHeightIn'));
   }
 });
 
@@ -5129,6 +5387,20 @@ document.getElementById('citySearchInput').addEventListener('input', e => {
   // rebuilding the whole city list every keystroke (was the ~424ms INP source).
   clearTimeout(_citySearchDebounce);
   _citySearchDebounce = setTimeout(() => renderSearchTab(v), 120);
+});
+// U11: Enter in the city-picker search input selects the top result --
+// previously the only way to activate a result was a mouse click or
+// tabbing to the row, which is an unnecessary extra step for anyone who
+// just typed a specific city/ZIP and expects Enter to go there.
+document.getElementById('citySearchInput').addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter') return;
+  e.preventDefault();
+  // Flush the debounced render so results reflect what's currently typed
+  // instead of possibly-stale results from before the last keystroke.
+  clearTimeout(_citySearchDebounce);
+  renderSearchTab(e.target.value);
+  const first = document.getElementById('citySearchResults').querySelector('.city-row');
+  if (first) _activateCityRow(first);
 });
 // Row clicks via delegation on the persistent results container — avoids
 // re-attaching a listener to every .city-row on each render.

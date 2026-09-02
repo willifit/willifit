@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
-<title>About WillIFit.ai — Who Builds This & How the Data Works</title>
-<meta name="description" content="WillIFit.ai is built by a working production driver who got tired of guessing whether the truck would clear the garage. How we source, verify, and label 25,000+ clearance heights.">
+<title>About WillIFit.ai — Who Builds This &amp; How the Data Works</title>
+<meta name="description" content="Built by a production driver tired of guessing if the truck clears the garage. How WillIFit.ai sources, verifies, and labels 25,000+ clearance heights.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://willifit.ai/about.html">
 
@@ -73,8 +73,17 @@
      WCAG 1.4.1 against body text at this contrast (nav/footer links are
      positionally distinct, so they're excluded from this rule). */
   main a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }
-  .back { display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
+  .back { display: inline-block; margin-bottom: 16px; padding: 6px 0; font-size: 13px; color: var(--muted); }
+  @media (max-width: 600px) { .back { padding: 12px 0; } }
   .lede { font-size: 17px; color: var(--muted); margin: 0; }
+  .skip-link {
+    position: absolute; top: -40px; left: 0;
+    background: #3ecf8e; color: #0a0f18;
+    padding: 8px 12px; z-index: 9999;
+    font-family: 'SF Mono', Menlo, monospace; font-size: 12px;
+    text-decoration: none; font-weight: 700;
+  }
+  .skip-link:focus { top: 0; }
   ul { padding-left: 22px; }
   li { margin-bottom: 8px; }
   .provenance { display: grid; gap: 10px; margin: 18px 0; }
@@ -108,16 +117,19 @@
 <!-- End Google tag -->
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
-  <a href="/" class="back">← Back to WillIFit.ai</a>
+  <nav aria-label="Breadcrumb">
+    <a href="/" class="back">← Back to WillIFit.ai</a>
+  </nav>
   <header>
     <h1>About WillIFit.ai</h1>
     <p class="lede">Built by a driver who got tired of guessing — not by a data broker.</p>
   </header>
 
-  <main>
+  <main id="main">
   <h2>Why this exists</h2>
-  <p>WillIFit.ai is built and run by Dan, a film & video production professional who spends real
+  <p>WillIFit.ai is built and run by Dan, a film &amp; video production professional who spends real
      days driving tall vehicles — grip trucks, cube trucks, high-roof vans — into cities that were
      not designed for them. The site started as the tool he wished existed: type in your vehicle's
      height, see which garages, tunnels, and bridges actually clear it, <em>before</em> you're
@@ -159,7 +171,7 @@
      <a href="/parking-garage-clearance-heights.html">clearance heights guide</a>, or
      <a href="/">open the map</a> and put in your height.</p>
 
-  <h2>Corrections & contact</h2>
+  <h2>Corrections &amp; contact</h2>
   <p>Spot a wrong height, a closed garage, a misplaced pin? Open the location and hit
      <b>Report clearance</b> or <b>Report an issue</b> — reports are reviewed by a human.
      For sponsorships and everything else, see the <a href="/advertise.html">advertise page</a>.</p>
@@ -168,12 +180,20 @@
   <footer>
     <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>
     <div>
-      <a href="/">Home</a> · <a href="/cities.html">Cities</a> ·
+      <a href="/about.html">About</a> ·
+      <a href="/accessibility.html">Accessibility</a> ·
+      <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
-      <a href="/how-ai-verification-works.html">AI verification</a> ·
+      <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
+      <a href="/advertise.html">Advertise</a> ·
+      <a href="/disclaimer.html">Disclaimer</a> ·
+      <a href="/terms.html">Terms</a> ·
       <a href="/privacy.html">Privacy</a> ·
+      <a href="/dmca.html">DMCA</a> ·
       <a href="/cookies.html">Cookies</a> ·
-      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button>
+      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button> ·
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> ·
+      <a href="https://www.fhwa.dot.gov/bridge/nbi/" target="_blank" rel="noopener">FHWA NBI</a>
     </div>
   </footer>
 </div>

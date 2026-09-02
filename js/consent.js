@@ -628,6 +628,20 @@
 
     document.body.appendChild(bannerEl);
 
+    /* W2 fix: this banner is position:fixed;bottom:0, and the SPA's own
+       footer strip (index.html .site-footer, bottom of the .app grid) sits
+       in that same spot -- the banner was rendering on top of it, so the
+       footer's own "Cookie preferences" button couldn't be clicked while
+       the banner was showing. Publish the banner's real height as a CSS
+       var and flag <html> with a class so index.html can pad the footer
+       (or shift the app grid) clear of it. Read after appendChild so
+       offsetHeight reflects the actual laid-out height (copy can wrap to
+       2-3 lines depending on viewport width), not a guess. */
+    try {
+      document.documentElement.style.setProperty('--wf-banner-h', bannerEl.offsetHeight + 'px');
+      document.documentElement.classList.add('wf-banner-open');
+    } catch (e) { /* non-fatal: worst case the footer button hides behind the banner */ }
+
     bannerEl.addEventListener('click', function (e) {
       var action = actionFor(e.target, bannerEl);
       if (!action) return;
@@ -642,6 +656,10 @@
     if (!bannerEl) return;
     if (bannerEl.parentNode) bannerEl.parentNode.removeChild(bannerEl);
     bannerEl = null;
+    try {
+      document.documentElement.classList.remove('wf-banner-open');
+      document.documentElement.style.removeProperty('--wf-banner-h');
+    } catch (e) { /* non-fatal */ }
   }
 
   /* Walk up from the click target looking for a data-wf-c action, stopping at

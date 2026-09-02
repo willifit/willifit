@@ -15,7 +15,17 @@
 
 [build]
   publish = "."
-  command = "echo 'pure static — no build step'"
+  # Prunes non-site files out of the checkout before Netlify publishes it.
+  # This -- not the redirect rules below -- is the REAL control for keeping
+  # tooling/source off the live site. See the "Source / tooling hardening"
+  # comment block further down for why the redirects alone are not enough.
+  # Must never fail even if a path is already missing (rm -rf tolerates
+  # that; `find data ...` prints a harmless stderr warning if data/ itself
+  # is absent, but the trailing `echo pruned` still makes the command's
+  # own exit code 0) -- a broken prune must not be able to break the whole
+  # deploy. Netlify bundles netlify/functions/* AFTER this command runs, so
+  # netlify/ itself is deliberately not touched here.
+  command = "rm -rf scripts tests docs README.md .github .env.example; find data -maxdepth 1 \\( -name '*.csv' -o -name '*.log' -o -name '*.tsv.example' \\) -delete; echo pruned"
 
 # Netlify Functions directory (where admin-only endpoints live, like the
 # reports viewer used by /admin.html).  Functions need NETLIFY_FORMS_TOKEN,
@@ -28,15 +38,44 @@
 
 # -----------------------------------------------------------------------------
 # Source / tooling hardening.  `publish = "."` makes the whole repo root the web
-# root, so without these rules the deploy serves the Python build scripts
-# (/scripts/*.py) and the RAW function source (/netlify/functions/reports.js) as
-# static text.  The repo is public on GitHub, so this leaks no secret — but it
-# hands an attacker the admin auth mechanism and the exact rate-limit thresholds
-# on a plate, and it would become a real leak the day the repo goes private.
+# root, so without the [build] command's prune step above, the deploy would
+# serve the Python build/verify scripts, this repo's own tests, design docs,
+# and the RAW function source (/netlify/functions/reports.js) as static text.
+# The repo is public on GitHub, so this leaks no secret by itself — but it
+# hands an attacker the admin auth mechanism and the exact rate-limit
+# thresholds on a plate, and it would become a real leak the day the repo
+# goes private.
+#
+# THE REDIRECTS BELOW ARE BELT-AND-BRACES ONLY, NOT THE REAL CONTROL.  Two
+# reasons:
+#   1. Netlify redirect `from` matching is case-SENSITIVE, but the static
+#      file lookup underneath it is not (most hosts, including Netlify's
+#      CDN, resolve paths case-insensitively on typical filesystems). That
+#      means `/scripts/foo.py` is blocked but `/Scripts/foo.py` -- a trivial
+#      bypass -- serves the real file with a 200. A redirect rule can be
+#      made case-insensitive-safe only by enumerating every case variant,
+#      which isn't practical.
+#   2. Netlify's redirect matching only supports trailing "/*" splats, not
+#      arbitrary glob/extension patterns -- a rule like "/*.py" (matching
+#      any .py file at any depth by extension) is not real Netlify syntax
+#      and silently never matches anything. (A previous version of this
+#      file had exactly that dead rule; it has been removed.)
+# The actual fix for both problems is that the [build] command physically
+# deletes these files from the checkout before Netlify publishes it, so
+# there is nothing left to serve under any case variant or extension --
+# the redirects just add a second, cheap layer in case a future refactor
+# ever reintroduces one of these paths without updating the prune list.
+#
 # force=true is required because Netlify serves an existing file before any
 # non-forced redirect.  Note: the FUNCTION RUNTIME lives at /.netlify/* (leading
 # dot) and is unaffected — this only blocks the dotless static path /netlify/*.
 # Serving 404.html keeps these indistinguishable from any other missing path.
+#
+# Also note: never run `netlify deploy --prod` from a local working
+# directory for this site. A CLI deploy uploads whatever is sitting in your
+# working copy verbatim (including a local .env with real secrets) with no
+# build step in between. Only "build from git" deploys run the [build]
+# command above, which is what strips .env before anything is published.
 [[redirects]]
   from = "/scripts/*"
   to = "/404.html"
@@ -50,7 +89,7 @@
   force = true
 
 [[redirects]]
-  from = "/*.py"
+  from = "/tests/*"
   to = "/404.html"
   status = 404
   force = true

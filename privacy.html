@@ -5,7 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
 <title>Privacy Policy — Willifit</title>
-<meta name="description" content="How Willifit handles your data. Your city preference and vehicle height stay in your browser. We use Cloudflare Web Analytics (cookieless) and Google Analytics 4, which sets cookies. We do not sell personal data.">
+<meta name="description" content="How WillIFit handles your data: city and height stay in your browser. Cloudflare (cookieless) and Google Analytics 4 are used. We never sell personal data.">
+<meta property="og:title" content="Privacy Policy — WillIFit.ai">
+<meta property="og:description" content="What WillIFit.ai collects, how it's used, and your choices — including Cloudflare Web Analytics, Google Analytics 4, and how to opt out.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://willifit.ai/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://willifit.ai/privacy.html">
+<meta property="og:site_name" content="WillIFit.ai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy — WillIFit.ai">
+<meta name="twitter:description" content="What WillIFit.ai collects, how it's used, and your choices, including how to opt out of analytics.">
+<meta name="twitter:image" content="https://willifit.ai/og-image.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
   :root {
@@ -21,8 +34,17 @@
   h2 { margin-top: 32px; font-size: 18px; }
   a { color: var(--ok); }
   a:hover { color: var(--warn); }
-  .back { display: inline-block; margin-bottom: 8px; font-size: 13px; color: var(--muted); text-decoration: none; }
+  .back { display: inline-block; margin-bottom: 8px; padding: 6px 0; font-size: 13px; color: var(--muted); text-decoration: none; }
   .back:hover { color: var(--ok); }
+  @media (max-width: 600px) { .back { padding: 12px 0; } }
+  .skip-link {
+    position: absolute; top: -40px; left: 0;
+    background: #3ecf8e; color: #0a0f18;
+    padding: 8px 12px; z-index: 9999;
+    font-family: 'SF Mono', Menlo, monospace; font-size: 12px;
+    text-decoration: none; font-weight: 700;
+  }
+  .skip-link:focus { top: 0; }
   .muted { color: var(--muted); font-size: 13px; }
   ul { padding-left: 20px; }
   li { margin-bottom: 6px; }
@@ -64,14 +86,17 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
-  <a href="/" class="back">← Back to Willifit</a>
+  <nav aria-label="Breadcrumb">
+    <a href="/" class="back">← Back to WillIFit.ai</a>
+  </nav>
   <header>
     <h1>Privacy Policy</h1>
     <p class="muted">Last updated: <time datetime="2026-08-19">August 19, 2026</time></p>
   </header>
 
-  <main>
+  <main id="main">
 
   <p>This policy explains what data Willifit collects, how it's used, and your choices.</p>
 
@@ -208,7 +233,7 @@
   </main>
 
   <footer>
-    <p>Willifit · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/dmca.html">DMCA</a> · <a href="/cookies.html">Cookies</a> · <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button></p>
+    <p>Willifit · <a href="/about.html">About</a> · <a href="/accessibility.html">Accessibility</a> · <a href="/how-ai-verification-works.html">How AI verification works</a> · <a href="/parking-garage-clearance-heights.html">Clearance guide</a> · <a href="/lowest-bridges-in-america.html">Lowest bridges</a> · <a href="/advertise.html">Advertise</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/dmca.html">DMCA</a> · <a href="/cookies.html">Cookies</a> · <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> · <a href="https://www.fhwa.dot.gov/bridge/nbi/" target="_blank" rel="noopener">FHWA NBI</a></p>
   </footer>
 </div>
 </body>

@@ -36,6 +36,21 @@ def label(inches):
     return f"{ft}'{rem}\""
 
 
+def safe_jsonld(obj) -> str:
+    """Serialize to compact JSON, then neutralize characters that could
+    break out of the <script type="application/ld+json"> block (e.g. a
+    structure name pulled from OSM containing '</script>').  The escapes are
+    valid inside a JSON string and inert in HTML, so this still parses back
+    to an identical object -- asserted below on every call."""
+    raw = json.dumps(obj, separators=(",", ":"))
+    escaped = raw.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    assert "<" not in escaped and ">" not in escaped, \
+        "JSON-LD escaping failed to remove angle brackets"
+    assert json.loads(escaped) == obj, \
+        "JSON-LD escaping altered the payload"
+    return escaped
+
+
 def main():
     idx = json.loads((REPO / "data/index.json").read_text())
     live = {c["slug"]: c for c in idx if c.get("status") == "live"}
@@ -89,7 +104,7 @@ def main():
         row_html(by_state[st])
         for st in sorted(by_state, key=lambda s: by_state[s]["h"]))
 
-    jsonld = json.dumps([
+    jsonld = safe_jsonld([
         {
             "@context": "https://schema.org",
             "@type": "Article",
@@ -152,7 +167,7 @@ def main():
                 },
             ],
         },
-    ], separators=(",", ":"))
+    ])
 
     page = f"""<!DOCTYPE html>
 <html lang="en">
@@ -187,6 +202,16 @@ def main():
   body {{ margin: 0; background: var(--bg); color: var(--text);
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
          line-height: 1.65; }}
+  /* Skip-link for keyboard users -- same visually-hidden-until-focused
+     pattern as the main SPA (index.html .skip-link). */
+  .skip-link {{
+    position: absolute; top: -40px; left: 0;
+    background: var(--ok); color: #0a0f18;
+    padding: 8px 12px; z-index: 9999;
+    font-family: 'SF Mono', monospace; font-size: 12px;
+    text-decoration: none; font-weight: 700;
+  }}
+  .skip-link:focus {{ top: 0; }}
   .page {{ max-width: 820px; margin: 0 auto; padding: 40px 24px 80px; }}
   header {{ border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 26px; }}
   h1 {{ margin: 0 0 10px; font-size: 31px; letter-spacing: -0.02em; }}
@@ -194,7 +219,16 @@ def main():
   a {{ color: var(--accent); text-decoration: none; }}
   main a {{ text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(14,165,233,0.4); }}
   a:hover {{ text-decoration: underline; }}
-  .back {{ display: inline-block; margin-bottom: 16px; font-size: 13px; color: var(--muted); }}
+  /* Tap target: WCAG 2.2 min 24x24, aim 44px on mobile (matches the
+     header a.brand / a.crumb pattern in generate_city_pages.py). */
+  .back {{
+    display: inline-flex; align-items: center;
+    min-height: 24px; padding: 6px 4px; margin: -6px -4px 10px;
+    font-size: 13px; color: var(--muted);
+  }}
+  @media (max-width: 600px) {{
+    .back {{ min-height: 44px; padding: 12px 4px; margin: -12px -4px 10px; }}
+  }}
   .lede {{ font-size: 17px; color: var(--muted); margin: 0; }}
   .answer {{
     background: linear-gradient(135deg, rgba(245,166,35,0.14), rgba(245,166,35,0.04));
@@ -230,15 +264,16 @@ def main():
 <!-- End Google tag -->
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
-  <a href="/" class="back">← Back to WillIFit.ai</a>
+  <nav aria-label="Breadcrumb"><a href="/" class="back">← Back to WillIFit.ai</a></nav>
   <header>
     <h1>The Lowest Bridges in America</h1>
     <p class="lede">The lowest posted vehicle clearances we track across 226 US cities —
        computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {today}.</p>
   </header>
 
-  <main>
+  <main id="main">
   <div class="answer" id="lowest-answer">
     <b>The lowest posted drivable clearance in our database is {label(top[0]['h']) if top else '?'}</b> —
     {esc(top[0]['name']) if top else ''} in {esc(top[0]['city']) if top else ''}, {esc(top[0]['state']) if top else ''}.
@@ -290,12 +325,20 @@ def main():
   <footer>
     <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>
     <div>
-      <a href="/">Home</a> · <a href="/cities.html">Cities</a> ·
       <a href="/about.html">About</a> ·
+      <a href="/accessibility.html">Accessibility</a> ·
+      <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
+      <a href="/advertise.html">Advertise</a> ·
+      <a href="/disclaimer.html">Disclaimer</a> ·
+      <a href="/terms.html">Terms</a> ·
       <a href="/privacy.html">Privacy</a> ·
+      <a href="/dmca.html">DMCA</a> ·
       <a href="/cookies.html">Cookies</a> ·
-      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button>
+      <button type="button" data-wf-consent-open class="wf-consent-btn">Cookie preferences</button> ·
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> ·
+      <a href="https://www.fhwa.dot.gov/bridge/nbi/" target="_blank" rel="noopener">FHWA NBI</a>
     </div>
   </footer>
 </div>
