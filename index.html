@@ -3657,6 +3657,29 @@ function _gmCityDotIcon(count, isCurrent) {
   };
 }
 
+// MarkerClusterer's default renderer colours clusters blue → yellow → RED by
+// count. Red is reserved for "<7' (low)" in the legend, so a big downtown
+// cluster read as a hazard. Neutral slate discs, sized by count, instead.
+function _gmClusterRenderer() {
+  return {
+    render: ({ count, position }) => {
+      const size = count >= 100 ? 52 : count >= 20 ? 46 : 40;
+      const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${size}' height='${size}' viewBox='0 0 ${size} ${size}'>
+        <circle cx='${size/2}' cy='${size/2}' r='${size/2 - 2}' fill='#1d2433' fill-opacity='0.92' stroke='#8a95a6' stroke-width='2'/>
+        <text x='${size/2}' y='${size/2 + 4}' text-anchor='middle' fill='#e6eaf0' font-size='12' font-weight='700' font-family='Menlo,monospace'>${count}</text>
+      </svg>`;
+      return new google.maps.Marker({
+        position,
+        icon: { url: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg),
+                scaledSize: new google.maps.Size(size, size),
+                anchor: new google.maps.Point(size / 2, size / 2) },
+        title: `${count} locations — zoom in`,
+        zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
+      });
+    },
+  };
+}
+
 function renderCityDotsGoogle() {
   if (!state.map || !window.google) return;
   // Clear existing dots
@@ -3938,6 +3961,7 @@ function renderMarkersGoogle() {
     state._gmCluster = new window.markerClusterer.MarkerClusterer({
       map: state.map,
       markers: state._gmMarkers,
+      renderer: _gmClusterRenderer(),
     });
   } else {
     state._gmMarkers.forEach(m => m.setMap(state.map));
@@ -4999,7 +5023,7 @@ function initPickerMapGoogle() {
     return m;
   });
   if (window.markerClusterer && window.markerClusterer.MarkerClusterer) {
-    new window.markerClusterer.MarkerClusterer({ map: state.pickerMap, markers });
+    new window.markerClusterer.MarkerClusterer({ map: state.pickerMap, markers, renderer: _gmClusterRenderer() });
   } else {
     markers.forEach(m => m.setMap(state.pickerMap));
   }
