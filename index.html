@@ -2917,6 +2917,12 @@ const DARK_MAP_STYLE = [
   { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0f1724' }] },
   { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#4a5568' }] },
   { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#6a7585' }] },
+  // Google draws a pin + label for every cafe, hotel and shop at garage zoom.
+  // Those compete directly with the clearance markers (same size, brighter
+  // colours), so business POIs are off entirely and other POI icons are
+  // hidden; parks keep their geometry + label as landmarks.
+  { featureType: 'poi.business', stylers: [{ visibility: 'off' }] },
+  { featureType: 'poi', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
   { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#1a2a22' }] },
   { featureType: 'administrative', elementType: 'geometry', stylers: [{ color: '#2a3140' }] },
   { featureType: 'transit', elementType: 'geometry', stylers: [{ color: '#2a3140' }] },
