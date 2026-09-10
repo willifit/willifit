@@ -632,6 +632,9 @@ def _delete_stale_directories(processed_slugs: set) -> int:
     an orphaned directory of deleted-garage pages would sit there forever,
     still advertised by generate_sitemap.py."""
     stale_dirs = 0
+    if not processed_slugs and OUT_DIR.exists() and any(OUT_DIR.iterdir()):
+        print("Skipping stale sweep: no cities processed")
+        return stale_dirs
     if OUT_DIR.exists():
         for d in OUT_DIR.iterdir():
             if d.is_dir() and d.name not in processed_slugs:

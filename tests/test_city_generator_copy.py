@@ -163,6 +163,11 @@ class FaqTests(unittest.TestCase):
         self.assertNotIn("any vehicle size fits", rv["a"])
         self.assertIn("open-air", rv["a"])
 
+    def test_render_entry_with_null_notes_does_not_raise_and_contains_no_none(self):
+        li = gen.render_entry(garage("a", "Deck", 74, notes=None), "garage", "loc-a")
+        self.assertIsInstance(li, str)
+        self.assertNotIn("None", li)
+
 
 class PageTests(unittest.TestCase):
     def test_import_only_city_never_says_verified_in_title_description_or_lede(self):

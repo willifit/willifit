@@ -151,6 +151,24 @@ class GeneratorRunTests(unittest.TestCase):
         self.assertEqual(sorted(p.name for p in (tmp / "state").glob("*.html")), ["zz.html"])
         shutil.rmtree(tmp)
 
+    def test_main_skips_stale_sweep_when_no_cities_processed(self):
+        """If index.json has zero live cities (or none have data files),
+        codes is empty. The stale sweep must not delete all existing state
+        pages, so it skips and prints a warning."""
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "data/cities").mkdir(parents=True)
+        (tmp / "data/index.json").write_text(json.dumps([]))
+        (tmp / "state").mkdir(parents=True)
+        (tmp / "state/stale-code.html").write_text("stale")
+        old = (gsp.REPO_ROOT, gsp.INDEX_PATH, gsp.CITIES_DIR, gsp.OUT_DIR)
+        gsp.REPO_ROOT, gsp.INDEX_PATH, gsp.CITIES_DIR, gsp.OUT_DIR = tmp, tmp / "data/index.json", tmp / "data/cities", tmp / "state"
+        try:
+            gsp.main()
+        finally:
+            gsp.REPO_ROOT, gsp.INDEX_PATH, gsp.CITIES_DIR, gsp.OUT_DIR = old
+        self.assertTrue((tmp / "state/stale-code.html").exists())
+        shutil.rmtree(tmp)
+
 
 class WiringTests(unittest.TestCase):
     def test_netlify_rewrite_present(self):

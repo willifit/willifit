@@ -769,10 +769,13 @@ def main():
     # otherwise leave its old state/<xx>.html on disk forever, advertised by
     # generate_sitemap.py to an orphaned page.
     stale = 0
-    for f in OUT_DIR.glob("*.html"):
-        if f.name not in written:
-            f.unlink()
-            stale += 1
+    if not codes and any(OUT_DIR.glob("*.html")):
+        print("Skipping stale sweep: no cities processed")
+    else:
+        for f in OUT_DIR.glob("*.html"):
+            if f.name not in written:
+                f.unlink()
+                stale += 1
 
     print(f"Generated: {generated} (deleted {stale} stale)")
 

@@ -203,6 +203,25 @@ class GeneratorRunTests(unittest.TestCase):
         self.assertTrue((other_dir / "some-garage.html").exists())
         shutil.rmtree(tmp)
 
+    def test_main_skips_stale_sweep_when_no_cities_processed(self):
+        """If index.json has zero live cities (or none have data files),
+        processed_slugs is empty. The stale sweep must not delete all existing
+        pages, so it skips and prints a warning."""
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "data/cities").mkdir(parents=True)
+        (tmp / "data/index.json").write_text(json.dumps([]))
+        existing = tmp / "parking/some-city"
+        existing.mkdir(parents=True)
+        (existing / "some-garage.html").write_text("stale")
+        old = (glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR)
+        glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = tmp, tmp / "data/index.json", tmp / "data/cities", tmp / "parking"
+        try:
+            glp.main([])
+        finally:
+            glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = old
+        self.assertTrue((existing / "some-garage.html").exists())
+        shutil.rmtree(tmp)
+
     def test_main_completes_when_a_garage_has_no_coordinates(self):
         tmp = Path(tempfile.mkdtemp())
         (tmp / "data/cities").mkdir(parents=True)

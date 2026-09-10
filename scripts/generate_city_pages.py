@@ -618,7 +618,7 @@ def render_entry(e: dict, kind: str, anchor: str, path: str = None) -> str:
     height_str = esc(height_label or "Unverified")
     height_class = "height-verified" if height_in else "height-unverified"
     source = esc(e.get("source", ""))
-    notes = esc(e.get("notes", "")[:300])
+    notes = esc((e.get("notes") or "")[:300])
     oversized = e.get("oversized")
     vkind, von = entry_verification(e)
 
