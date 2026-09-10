@@ -85,6 +85,42 @@ class StatePageTests(unittest.TestCase):
         st = gsp.state_stats("XX", cities, data)
         self.assertEqual(st["lowest_garage"]["name"], "B")
 
+    def test_city_with_no_data_file_is_excluded_from_state_rollup(self):
+        cities = [
+            {"slug": "has-data-yy", "name": "HasData", "state": "YY", "lat": 0, "lng": 0, "status": "live"},
+            {"slug": "no-data-yy", "name": "NoData", "state": "YY", "lat": 0, "lng": 0, "status": "live"},
+        ]
+        data = {"has-data-yy": {"garages": [{"id": "a", "name": "A", "height_in": 90,
+                                             "source": "OpenStreetMap", "lat": 0, "lng": 0}],
+                                "tunnels": [], "bridges": []}}
+        wc.STATE_NAMES.setdefault("YY", "Testland Two")
+
+        st = gsp.state_stats("YY", cities, data)
+        self.assertEqual(st["n_cities"], 1)
+        self.assertEqual([c["slug"] for c in st["cities"]], ["has-data-yy"])
+
+        page = gsp.generate_state("YY", cities, data)
+        self.assertIn('href="/city/has-data-yy"', page)
+        self.assertNotIn("no-data-yy", page)
+        self.assertNotIn("NoData", page)
+
+        il = next(b for b in jsonld(page) if b["@type"] == "ItemList")
+        self.assertEqual(il["numberOfItems"], 1)
+        self.assertEqual([i["url"] for i in il["itemListElement"]],
+                         ["https://willifit.ai/city/has-data-yy"])
+
+        faq = next(b for b in jsonld(page) if b["@type"] == "FAQPage")
+        which = next(x for x in faq["mainEntity"] if x["name"].startswith("Which"))
+        self.assertNotIn("NoData", which["acceptedAnswer"]["text"])
+        self.assertIn("HasData", which["acceptedAnswer"]["text"])
+
+    def test_every_state_description_ends_with_period(self):
+        for code in CODES:
+            page = gsp.generate_state(code, LIVE, DATA)
+            desc = html_lib.unescape(re.search(r'name="description" content="([^"]*)"', page).group(1))
+            self.assertTrue(desc.endswith("."), (code, desc))
+            self.assertLessEqual(len(desc), 160, code)
+
 
 class WiringTests(unittest.TestCase):
     def test_netlify_rewrite_present(self):

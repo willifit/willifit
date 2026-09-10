@@ -32,7 +32,7 @@ from datetime import date
 from pathlib import Path
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
-                       fit_phrase, has_posted_height, clip, import_source_phrase)
+                       fit_phrase, has_posted_height, compose_description, import_source_phrase)
 from generate_city_pages import (assign_anchors, verification_summary, entry_verification,
                                  fmt_date, safe_jsonld, esc, cat_list, plural_word,
                                  render_faq_section, faqs_to_jsonld)
@@ -118,7 +118,13 @@ def state_stats(code: str, cities: list, data_by_slug: dict) -> dict:
     all read from -- so every number on the page and in its JSON-LD traces
     back to this one testable place."""
     state_full = STATE_NAMES.get(code, code)
-    state_cities = [c for c in cities if c.get("state") == code and c.get("status") == "live"]
+    # Cities with no data file 404 (generate_city_pages.generate_city returns
+    # None for them and main() skips writing that page) -- exclude them here,
+    # the one place every table row / ItemList item / FAQ mention / count on
+    # this page traces back to, same guard as compute_state_cities() in
+    # generate_city_pages.py.
+    state_cities = [c for c in cities if c.get("state") == code and c.get("status") == "live"
+                    and c["slug"] in data_by_slug]
 
     city_rows, all_entries = [], []
     lowest_bridges, lowest_garages, oversized = [], [], []
@@ -677,9 +683,9 @@ def _state_description(total: int, n: int, state_full: str, ver: dict, src_phras
         claim = f"{ver['verified']} verified against published sources."
     else:
         claim = f"Imported from {src_phrase}."
-    return clip(
-        f"Vehicle clearance heights for {total} parking garages, tunnels, and low bridges "
-        f"across {n} {plural_word(n, 'city', 'cities')} in {state_full}. {claim} Check before you drive.",
+    return compose_description(
+        [f"Vehicle clearance heights for {total} parking garages, tunnels, and low bridges "
+         f"across {n} {plural_word(n, 'city', 'cities')} in {state_full}.", claim, "Check before you drive."],
         160)
 
 

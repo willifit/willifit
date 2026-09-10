@@ -78,6 +78,10 @@ class FitPhraseTests(unittest.TestCase):
         self.assertFalse(wc.has_posted_height(garage("a", "Deck", 74, source="Needs verification (was OSM building-height)")))
         self.assertFalse(wc.has_posted_height(garage("a", "Deck", None)))
 
+    def test_compose_description(self):
+        self.assertEqual(wc.compose_description(["A b.", "C d.", "E f."], 9), "A b. C d.")
+        self.assertEqual(wc.compose_description(["A b.", "C d."], 3), "A")
+
 
 class FaqTests(unittest.TestCase):
     def faqs(self, garages):

@@ -34,7 +34,7 @@ from pathlib import Path
 from datetime import date
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
-                       fit_phrase, has_posted_height, slugify, clip, import_source_phrase)
+                       fit_phrase, has_posted_height, slugify, compose_description, import_source_phrase)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
@@ -1196,9 +1196,9 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         claim = f"{ver['verified']} verified against published sources."
     else:
         claim = f"Imported from {src_phrase}."
-    description = clip(
-        f"Clearance heights for {total} {cat_list(total)} in {name}, {state_full}. "
-        f"{claim} Check before you drive.", 160)
+    description = compose_description(
+        [f"Clearance heights for {total} {cat_list(total)} in {name}, {state_full}.",
+         claim, "Check before you drive."], 160)
     # Front-load the city name and keep ~60 chars so SERPs show the whole
     # thing (the old form ran 77-93 chars and truncated mid-title).  og:title
     # / twitter:title keep this full form; <title> uses title_tag below,

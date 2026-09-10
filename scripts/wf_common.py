@@ -100,6 +100,16 @@ def clip(text: str, limit: int) -> str:
     return cut.rstrip(" ,;:-")
 
 
+def compose_description(sentences, limit=160):
+    """Join whole sentences into a meta description that never ends
+    mid-sentence.  Drops trailing sentences (never the first) until what's
+    left fits `limit`, then clips at a word boundary as a last resort."""
+    parts = [s for s in sentences if s]
+    while len(" ".join(parts)) > limit and len(parts) > 1:
+        parts.pop()
+    return clip(" ".join(parts), limit)
+
+
 def import_source_phrase(has_osm: bool, has_nbi: bool) -> str:
     if has_osm and has_nbi:
         return "OpenStreetMap and the FHWA National Bridge Inventory"
