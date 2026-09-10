@@ -130,6 +130,12 @@
   to     = "/state/:code.html"
   status = 200
 
+# Per-garage pages: /parking/las-vegas-nv/aria-resort-and-casino -> the .html file.
+[[redirects]]
+  from   = "/parking/:city/:slug"
+  to     = "/parking/:city/:slug.html"
+  status = 200
+
 # -----------------------------------------------------------------------------
 # Security headers — set site-wide.  These match the CSP declared in the HTML
 # but also apply to .json endpoints, images, etc.

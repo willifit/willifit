@@ -591,14 +591,18 @@ def assign_anchors(entries: list) -> list[str]:
     return out
 
 
-def render_entry(e: dict, kind: str, anchor: str) -> str:
+def render_entry(e: dict, kind: str, anchor: str, path: str = None) -> str:
     """Render one garage/tunnel/bridge as an HTML <li>.
 
     Provenance is per-entry, not per-city: a single city page can mix an
     AI-verified garage (blue, links to the exact Street View we read the sign
     from), a human/web-verified entry (green, dated, links to its source), and
     raw OSM/NBI imports (plain 'Source:' line).  This is what lets the page
-    tell the truth instead of stamping every row 'AI-verified'."""
+    tell the truth instead of stamping every row 'AI-verified'.
+
+    `path` is the entry's own /parking/<city>/<slug> page (Task 3), when it
+    has one -- the name then links straight there instead of staying plain
+    text."""
     name = esc(e.get("name", "Unnamed"))
     addr = esc(e.get("addr", ""))
     height_label = e.get("height_label")
@@ -651,10 +655,12 @@ def render_entry(e: dict, kind: str, anchor: str) -> str:
     else:
         verify_html = f'<div class="entry-source">Source: {source}</div>'
 
+    name_html = f'<a href="{esc(path)}">{name}</a>' if path else name
+
     return (
         f'<li class="entry entry-{kind}" id="{esc(anchor)}">'
         f'<div class="entry-head">'
-        f'<h3 class="entry-name">{name}</h3>'
+        f'<h3 class="entry-name">{name_html}</h3>'
         f'<div class="entry-height {height_class}">{height_str}</div>'
         f'</div>'
         f'{addr_html}'
@@ -666,13 +672,17 @@ def render_entry(e: dict, kind: str, anchor: str) -> str:
 
 
 def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list, anchors: list,
-                 faqs: list = None, latest_verified: str = None) -> str:
+                 faqs: list = None, latest_verified: str = None, paths: list = None) -> str:
     """Build JSON-LD structured data for the city + entries.
     Gives Google enough detail to render rich snippets.
 
     `anchors` is the full, aligned list of per-entry fragment ids from
     `assign_anchors(garages + tunnels + bridges)` -- each ListItem's url
     deep-links straight to its <li> on the page instead of just the city.
+
+    `paths` (Task 3), when given, is the same-length aligned list of each
+    entry's own /parking/<city>/<slug> page or None -- a garage with a page
+    gets that as its ListItem url instead of the in-page anchor.
 
     `latest_verified` (max verified_on across the city's entries) becomes a
     WebPage.dateModified.  It's emitted ONLY when there's a real verification
@@ -690,7 +700,8 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list, anchor
     all_entries = ([(e, "ParkingFacility") for e in garages]
                    + [(e, "Place") for e in tunnels]
                    + [(e, "Bridge") for e in bridges])
-    for (e, kind), anchor in zip(all_entries, anchors):  # every entry -- no cap
+    paths = paths if paths is not None else [None] * len(all_entries)
+    for (e, kind), anchor, path in zip(all_entries, anchors, paths):  # every entry -- no cap
         address = {"@type": "PostalAddress"}
         if e.get("addr"):
             address["streetAddress"] = e["addr"]
@@ -703,7 +714,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list, anchor
             "item": {
                 "@type": kind,
                 "name": e.get("name", "Unnamed"),
-                "url": f"{SITE}/city/{slug}#{anchor}",
+                "url": f"{SITE}{path}" if path else f"{SITE}/city/{slug}#{anchor}",
                 "address": address,
                 "geo": {
                     "@type": "GeoCoordinates",
@@ -1118,10 +1129,11 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 """
 
 
-def render_section(title: str, entries: list, kind: str, anchors: list) -> str:
+def render_section(title: str, entries: list, kind: str, anchors: list, paths: list = None) -> str:
     if not entries:
         return f'<h2>{title} (0)</h2><div class="empty">None indexed in this city yet.</div>'
-    items_html = "\n".join(render_entry(e, kind, a) for e, a in zip(entries, anchors))
+    paths = paths if paths is not None else [None] * len(entries)
+    items_html = "\n".join(render_entry(e, kind, a, p) for e, a, p in zip(entries, anchors, paths))
     return f'<h2>{title} ({len(entries)})</h2><ul class="entries">{items_html}</ul>'
 
 
@@ -1146,6 +1158,14 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     # below so every <li> and its JSON-LD ListItem share the same anchor.
     all_entries = garages + tunnels + bridges
     anchors = assign_anchors(all_entries)
+
+    # Task 3: per-garage /parking/<city>/<slug> pages.  Imported inside this
+    # function, not at module level -- generate_location_pages imports
+    # assign_anchors etc. FROM this module, so a top-level import here would
+    # be circular.  Only garages get their own page; tunnels/bridges pad with
+    # None so build_jsonld's paths list stays aligned with all_entries.
+    from generate_location_pages import location_paths
+    garage_paths = location_paths(slug, garages)
 
     # Per-city verification rollup drives every truth-claim on the page: the
     # headline pill, the lede, the meta description, the 'how is this verified'
@@ -1246,7 +1266,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         tunnel_word=plural_word(len(tunnels), "tunnel"),
         bridge_word=plural_word(len(bridges), "low bridge"),
         garages_section=render_section("Parking garages", garages, "garage",
-                                       anchors[:len(garages)]),
+                                       anchors[:len(garages)], garage_paths),
         tunnels_section=render_section("Tunnels", tunnels, "tunnel",
                                        anchors[len(garages):len(garages) + len(tunnels)]),
         bridges_section=render_section("Low-clearance bridges", bridges, "bridge",
@@ -1257,7 +1277,8 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         state_cities=render_state_cities(state_full, state.lower(), state_cities_list),
         year=date.today().year,
         jsonld=build_jsonld(city, garages, tunnels, bridges, anchors, faqs=faqs,
-                            latest_verified=ver["latest"]),
+                            latest_verified=ver["latest"],
+                            paths=garage_paths + [None] * (len(tunnels) + len(bridges))),
     )
     return page
 

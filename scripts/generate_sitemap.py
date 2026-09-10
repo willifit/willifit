@@ -156,6 +156,17 @@ def main() -> None:
         ))
         included += 1
 
+    # Per-garage pages (Task 3): every physical parking/<city>/<slug>.html
+    # file, sorted by path for deterministic output.  These are written by
+    # generate_location_pages.py, which only emits eligible garages, so
+    # there is no noindex/skip logic to mirror here -- every file on disk
+    # under parking/ is meant to be indexed.
+    garage_files = sorted((REPO_ROOT / "parking").glob("*/*.html"))
+    for f in garage_files:
+        relpath = f.relative_to(REPO_ROOT).as_posix()
+        loc_path = relpath[:-len(".html")]
+        lines.append(url_block(loc_path, lastmod_for(relpath), "monthly", "0.6"))
+
     lines.append("</urlset>")
     OUT_PATH.write_text("\n".join(lines) + "\n")
 
@@ -165,7 +176,8 @@ def main() -> None:
     print(f"  cities included: {included}")
     print(f"  skipped (0 locations, noindex): {skipped_empty}")
     print(f"  skipped (no data file): {skipped_nodata}")
-    print(f"  total URLs: {len(STATIC_PAGES) + len(state_codes) + included}")
+    print(f"  garage pages: {len(garage_files)}")
+    print(f"  total URLs: {len(STATIC_PAGES) + len(state_codes) + included + len(garage_files)}")
 
 
 if __name__ == "__main__":
