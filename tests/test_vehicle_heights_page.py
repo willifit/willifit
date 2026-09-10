@@ -51,6 +51,10 @@ class VehicleHeightsPageTests(unittest.TestCase):
         self.assertIn('id="answer"', self.page)
         self.assertIn("Sources checked Sep 10, 2026", self.page)
 
+    def test_no_duplicate_ids(self):
+        ids = re.findall(r' id="([^"]+)"', self.page)
+        self.assertEqual(sorted(set(ids)), sorted(ids), "duplicate id attributes")
+
     def test_jsonld(self):
         blocks = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', self.page, re.S).group(1))
         self.assertEqual([b["@type"] for b in blocks], ["Article", "BreadcrumbList", "FAQPage"])
