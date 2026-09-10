@@ -1,6 +1,6 @@
 # WillIFit.ai
 
-> Vehicle-clearance heights for parking garages, tunnels, and low bridges across 226 US cities (23,472 locations: 8,258 parking garages, 1,717 tunnels, 13,497 low bridges). 512 garage clearances are AI-verified from Google Street View signage and 250 more are verified against published sources; the remaining 22,710 entries are imported from OpenStreetMap and the FHWA National Bridge Inventory and labeled as imported until verified.
+> Vehicle-clearance heights for parking garages, tunnels, and low bridges across 226 US cities (23,472 locations: 8,258 parking garages, 1,717 tunnels, 13,497 low bridges). 512 clearances are AI-verified from Google Street View signage and 250 more are verified against published sources; the remaining 22,710 entries are imported from OpenStreetMap and the FHWA National Bridge Inventory and labeled as imported until verified.
 
 WillIFit.ai combines OpenStreetMap parking data, the FHWA National Bridge Inventory, and Google Street View imagery read by Claude Vision to produce a cross-referenced, source-stamped clearance corpus. Verified readings record the verification method (AI from Street View + Claude Vision, or manual human override), the verification date, a confidence grade, and the Street View pano ID where the sign was read — so anyone can independently verify in Google Maps. Entries imported from OpenStreetMap or the FHWA NBI are labeled as imported until individually verified.
 
