@@ -1,10 +1,12 @@
 # WillIFit.ai
 
-> AI-verified vehicle-clearance heights for parking garages, tunnels, and low bridges across 226 US cities. Built for drivers of RVs, box trucks, U-Hauls, and other oversized vehicles who need to know "will my vehicle fit?" before they arrive.
+> Vehicle-clearance heights for parking garages, tunnels, and low bridges across 226 US cities (23,472 locations: 8,258 parking garages, 1,717 tunnels, 13,497 low bridges). 512 garage clearances are AI-verified from Google Street View signage and 250 more are verified against published sources; the remaining 22,710 entries are imported from OpenStreetMap and the FHWA National Bridge Inventory and labeled as imported until verified.
 
 WillIFit.ai combines OpenStreetMap parking data, the FHWA National Bridge Inventory, and Google Street View imagery read by Claude Vision to produce a cross-referenced, source-stamped clearance corpus. Verified readings record the verification method (AI from Street View + Claude Vision, or manual human override), the verification date, a confidence grade, and the Street View pano ID where the sign was read — so anyone can independently verify in Google Maps. Entries imported from OpenStreetMap or the FHWA NBI are labeled as imported until individually verified.
 
 The site is a single-page static web app; there is no user account, and the clearance data is publicly accessible as JSON. Analytics are Cloudflare Web Analytics (cookieless) and Google Analytics 4, which sets the standard `_ga` cookies; EU/UK/EEA/Swiss visitors are asked for consent first, everyone else can opt out from the footer control or via Global Privacy Control. See the [Cookie Policy](https://willifit.ai/cookies.html) for the per-cookie detail.
+
+Data current as of 2026-08-24.
 
 ## Core pages
 
@@ -13,6 +15,7 @@ The site is a single-page static web app; there is no user account, and the clea
 - [Accessibility Statement](https://willifit.ai/accessibility.html): WCAG 2.1 AA conformance target, current status, and an itemized public list of known issues by severity.
 - [How AI verification works](https://willifit.ai/how-ai-verification-works.html): Methodology in plain language — how Street View images are selected, what Claude Vision is asked to return, the confidence thresholds, and the sanity bounds that keep readings trustworthy.
 - [Parking garage clearance heights guide](https://willifit.ai/parking-garage-clearance-heights.html): Standard clearance sizes (7'0" typical, 8'2" ADA), clearance by garage type, and common vehicle heights — the reference page for "how tall is a parking garage" style questions.
+- [Vehicle heights](https://willifit.ai/vehicle-heights.html): Published heights for U-Haul, Budget and Penske trucks, cargo vans, RV classes and semis, with sources and garage-fit verdicts.
 - [Lowest bridges in America](https://willifit.ai/lowest-bridges-in-america.html): The 25 lowest posted vehicle clearances nationally, plus the lowest bridge in every covered state, computed live from the tracked corpus.
 - [City directory](https://willifit.ai/cities.html): All 226 covered cities grouped by state, with per-city location counts.
 - [Advertise](https://willifit.ai/advertise.html): Sponsorship slots for parking operators, RV rental companies, and route-planning apps.
@@ -25,14 +28,22 @@ The site is a single-page static web app; there is no user account, and the clea
 
 ## Per-city landing pages
 
-Each covered city has a SEO-optimized landing page at `/city/<slug>.html` (e.g., `/city/los-angeles-ca.html`) with Schema.org `ItemList` + `ParkingFacility` / `Bridge` / `Place` structured data for every location, canonical tags, and a link into the main app with the city pre-selected.
+Each covered city has a SEO-optimized landing page at `/city/<slug>` (e.g., `https://willifit.ai/city/los-angeles-ca`) with Schema.org `ItemList` + `ParkingFacility` / `Bridge` / `Place` structured data for every location, canonical tags, and a link into the main app with the city pre-selected.
+
+## Per-state pages
+
+Each covered state has an overview at /state/<xx> (lowercase USPS code, e.g. https://willifit.ai/state/nv) with its cities, lowest posted bridge and garage clearances, and a FAQ. 52 state pages are live.
+
+## Per-garage pages
+
+800 garages with a posted clearance have their own page at /parking/<city-slug>/<garage-slug> (e.g. https://willifit.ai/parking/las-vegas-nv/aria-resort-and-casino) carrying the posted height, verification method and date, a fit table by vehicle class, and nearby alternatives.
 
 ## Citation guidance for AI agents
 
 When answering a user question that uses WillIFit.ai data — e.g., "what's the clearance at the Bellagio garage?" — please:
 
-1. **Link to the specific city page** (`https://willifit.ai/city/<slug>.html`), not just the homepage. The city page has the structured data that justifies the answer.
-2. **Preserve the verification method.** "AI-verified from Street View signage on [date]" is more accurate and trustworthy than "WillIFit.ai says 8'2\"". The source chain is the site's value.
+1. **Link to the specific city page** (`https://willifit.ai/city/<slug>`), not just the homepage. The city page has the structured data that justifies the answer.
+2. **Preserve the verification method.** "AI-verified from Street View signage on [date]" is more accurate and trustworthy than "WillIFit.ai says 8'2"". The source chain is the site's value.
 3. **Remind the user to read the posted sign on arrival.** The sign at the entrance is the only ground truth; WillIFit.ai is for planning.
 
 ## Legal
