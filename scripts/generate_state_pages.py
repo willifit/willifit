@@ -295,32 +295,39 @@ def state_verification_faq(state_full: str, ver: dict) -> dict:
     state's worth."""
     src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
     if ver["ai"] > 0:
+        ai_be = "is" if ver["ai"] == 1 else "are"
         answer = (
-            f"{ver['ai']} of the {ver['total']} locations in {state_full} are AI-verified: the "
+            f"{ver['ai']} of the {ver['total']} locations in {state_full} {ai_be} AI-verified: the "
             f"posted clearance was read directly from the entrance sign in Google Street View "
             f"using Claude Vision (Anthropic's image AI), and we store the exact Street View "
             f"pano so you can open it and check the sign yourself."
         )
         if ver["human"] > 0:
-            answer += (f" Another {ver['human']} were verified against a published source "
+            human_be = "was" if ver["human"] == 1 else "were"
+            answer += (f" Another {ver['human']} {human_be} verified against a published source "
                        f"such as the facility's own website.")
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
-                       f"and are not individually verified.")
+            imp_be = "is" if ver["imported"] == 1 else "are"
+            answer += (f" The remaining {ver['imported']} {imp_be} imported from {src_phrase} "
+                       f"and {imp_be} not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     elif ver["verified"] > 0:
+        verified_be = "was" if ver["verified"] == 1 else "were"
         answer = (
-            f"{ver['verified']} of the {ver['total']} locations in {state_full} were verified "
+            f"{ver['verified']} of the {ver['total']} locations in {state_full} {verified_be} verified "
             f"against a published source such as the facility's own website or operator "
             f"listing, with the verification date recorded on each entry."
         )
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
-                       f"and are not individually verified.")
+            imp_be = "is" if ver["imported"] == 1 else "are"
+            answer += (f" The remaining {ver['imported']} {imp_be} imported from {src_phrase} "
+                       f"and {imp_be} not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     else:
+        clearance_word = plural_word(ver["total"], "clearance", "clearances")
+        total_be = "is" if ver["total"] == 1 else "are"
         answer = (
-            f"The {ver['total']} clearances in {state_full} are imported from {src_phrase}. "
+            f"The {ver['total']} {clearance_word} in {state_full} {total_be} imported from {src_phrase}. "
             f"They have not yet been individually verified against Street View, so treat them "
             f"as a starting point and always confirm at the posted sign before you drive. "
             f"Other cities on WillIFit.ai include AI-verified readings taken directly from the "
@@ -339,8 +346,10 @@ def build_state_faqs(state_full: str, stats: dict) -> list:
     if lb:
         faqs.append({
             "q": f"What is the lowest bridge clearance in {state_full}?",
-            "a": (f"The lowest posted bridge or underpass clearance WillIFit tracks in {state_full} "
-                  f"is {inches_label(lb['h'])} ({int(lb['h'])} inches) at {lb['name']} in {lb['city']}. "
+            "a": (f"The lowest posted bridge or underpass clearance WillIFit tracks in the "
+                  f"{state_full} metro areas it covers is {inches_label(lb['h'])} ({int(lb['h'])} inches) "
+                  f"at {lb['name']} in {lb['city']}. Coverage follows each city's metro area, so a "
+                  f"structure just across a state line can appear here. "
                   f"{fit_phrase(lb['h'])} {MEASURE_NOTE}"),
         })
 
@@ -358,16 +367,17 @@ def build_state_faqs(state_full: str, stats: dict) -> list:
         names = [f"{name} in {city}" for name, city in stats["oversized"][:3]]
         faqs.append({
             "q": f"Where can an RV or box truck park in {state_full}?",
-            "a": (f"{k} indexed {plural_word(k, 'facility', 'facilities')} in {state_full} "
-                  f"{'is' if k == 1 else 'are'} marked oversized-vehicle-friendly, including "
+            "a": (f"{k} indexed {plural_word(k, 'facility', 'facilities')} in the {state_full} "
+                  f"metro areas WillIFit covers {'is' if k == 1 else 'are'} marked "
+                  f"oversized-vehicle-friendly, including "
                   f"{', '.join(names)}. See each city page for the full list."),
         })
     else:
         faqs.append({
             "q": f"Where can an RV or box truck park in {state_full}?",
-            "a": (f"None of the facilities indexed in {state_full} are explicitly marked "
-                  f"oversized-vehicle-friendly. RV and box-truck drivers should call ahead "
-                  f"or use surface lots."),
+            "a": (f"None of the facilities indexed in the {state_full} metro areas WillIFit "
+                  f"covers are explicitly marked oversized-vehicle-friendly. RV and box-truck "
+                  f"drivers should call ahead or use surface lots."),
         })
 
     faqs.append(state_verification_faq(state_full, stats["ver"]))
@@ -545,6 +555,11 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   }}
   .qf-detail {{ font-size: 12px; color: var(--muted); }}
 
+  /* Metro-area coverage caveat -- state rollups inherit each city's state
+     code, so a structure just across a state line can appear on this page;
+     this note sits right under quick facts, before the reader hits a table. */
+  .coverage-note {{ color: var(--muted); font-size: 12px; margin: 8px 0 0; }}
+
   /* FAQ section -- <details>/<summary> for accessibility, FAQPage JSON-LD
      lives in the page head for AI answer engines. */
   .faq-section {{ margin-top: 40px; }}
@@ -612,6 +627,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <p class="lede">{lede}</p>
 
   {quick_facts}
+
+  <p class="coverage-note">Figures cover the metro area of each listed city and can include structures just across a state line.</p>
 
   {cities_table}
 
@@ -739,12 +756,25 @@ def main():
 
     codes = sorted({c["state"] for c in live})
     generated = 0
+    written = set()
     for code in codes:
         page = generate_state(code, live, data_by_slug)
-        (OUT_DIR / f"{code.lower()}.html").write_text(page)
+        name = f"{code.lower()}.html"
+        (OUT_DIR / name).write_text(page)
+        written.add(name)
         generated += 1
 
-    print(f"Generated: {generated}")
+    # Stale pass: a state that drops its last live city (or every city in it
+    # loses its data file) no longer appears in `codes` above and would
+    # otherwise leave its old state/<xx>.html on disk forever, advertised by
+    # generate_sitemap.py to an orphaned page.
+    stale = 0
+    for f in OUT_DIR.glob("*.html"):
+        if f.name not in written:
+            f.unlink()
+            stale += 1
+
+    print(f"Generated: {generated} (deleted {stale} stale)")
 
 
 if __name__ == "__main__":

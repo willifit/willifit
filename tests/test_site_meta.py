@@ -71,7 +71,7 @@ class RootPageMetaTests(unittest.TestCase):
         self.assertIn("not how tall or short the bridge itself is", s)
 
     def test_generated_descriptions_end_with_a_period(self):
-        for p in sorted((REPO / "city").glob("*.html")) + sorted((REPO / "state").glob("*.html")) + sorted((REPO / "parking").glob("*/*.html"))[:50]:
+        for p in sorted((REPO / "city").glob("*.html")) + sorted((REPO / "state").glob("*.html")) + sorted((REPO / "parking").glob("*/*.html")):
             d = html_lib.unescape(re.search(r'name="description" content="([^"]*)"', p.read_text()).group(1))
             self.assertTrue(d.endswith(".") and len(d) <= 160, (p, d))
 

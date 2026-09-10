@@ -34,7 +34,8 @@ from pathlib import Path
 from datetime import date
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
-                       fit_phrase, has_posted_height, slugify, compose_description, import_source_phrase)
+                       fit_phrase, has_posted_height, slugify, compose_description,
+                       import_source_phrase, is_http_url)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
@@ -191,7 +192,7 @@ def verification_origin(e: dict) -> str:
     `source_url` when present, else the 'was: X' origin when X is a real
     publisher (not a placeholder), else ''."""
     url = e.get("source_url") or ""
-    if url.startswith("http"):
+    if is_http_url(url):
         host = url.split("//", 1)[1].split("/", 1)[0]
         return host[4:] if host.startswith("www.") else host
     origin = origin_source(e.get("source") or "")
@@ -405,33 +406,40 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
 
     src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
     if ver["ai"] > 0:
+        ai_be = "is" if ver["ai"] == 1 else "are"
         answer = (
-            f"{ver['ai']} of the {ver['total']} locations on this page are AI-verified: the "
+            f"{ver['ai']} of the {ver['total']} locations on this page {ai_be} AI-verified: the "
             f"posted clearance was read directly from the entrance sign in Google Street View "
             f"using Claude Vision (Anthropic's image AI), and we store the exact Street View "
             f"pano so you can open it and check the sign yourself."
         )
         if ver["human"] > 0:
-            answer += (f" Another {ver['human']} were verified against a published source "
+            human_be = "was" if ver["human"] == 1 else "were"
+            answer += (f" Another {ver['human']} {human_be} verified against a published source "
                        f"such as the facility's own website.")
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
-                       f"and are not individually verified.")
+            imp_be = "is" if ver["imported"] == 1 else "are"
+            answer += (f" The remaining {ver['imported']} {imp_be} imported from {src_phrase} "
+                       f"and {imp_be} not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     elif ver["verified"] > 0:
+        verified_be = "was" if ver["verified"] == 1 else "were"
         answer = (
-            f"{ver['verified']} of the {ver['total']} locations on this page were verified "
+            f"{ver['verified']} of the {ver['total']} locations on this page {verified_be} verified "
             f"against a published source such as the facility's own website or operator "
             f"listing, with the verification date recorded on each entry."
         )
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
-                       f"and are not individually verified.")
+            imp_be = "is" if ver["imported"] == 1 else "are"
+            answer += (f" The remaining {ver['imported']} {imp_be} imported from {src_phrase} "
+                       f"and {imp_be} not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     else:
         # Import-only city: be honest -- no Street View / Vision pass here yet.
+        clearance_word = plural_word(ver["total"], "clearance", "clearances")
+        total_be = "is" if ver["total"] == 1 else "are"
         answer = (
-            f"The {ver['total']} clearances on this page are imported from {src_phrase}. "
+            f"The {ver['total']} {clearance_word} on this page {total_be} imported from {src_phrase}. "
             f"They have not yet been individually verified against Street View, so treat them "
             f"as a starting point and always confirm at the posted sign before you drive. "
             f"Other cities on WillIFit.ai include AI-verified readings taken directly from the "
@@ -610,7 +618,7 @@ def render_entry(e: dict, kind: str, anchor: str, path: str = None) -> str:
     height_str = esc(height_label or "Unverified")
     height_class = "height-verified" if height_in else "height-unverified"
     source = esc(e.get("source", ""))
-    notes = esc(e.get("notes", ""))[:300]
+    notes = esc(e.get("notes", "")[:300])
     oversized = e.get("oversized")
     vkind, von = entry_verification(e)
 

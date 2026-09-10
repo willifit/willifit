@@ -80,6 +80,7 @@ def main():
 
     today = date.today().isoformat()
     n_bridges = len(rows)
+    n_cities = len(live)
 
     def row_html(r, rank=None, state_col=False):
         rk = f"<td>{rank}</td>" if rank is not None else ""
@@ -134,7 +135,7 @@ def main():
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "The Lowest Bridges in America: Posted Clearances Under 14 Feet",
-            "description": f"The lowest posted bridge and underpass clearances across 226 US cities, computed from a corpus of {n_bridges:,} tracked low-clearance structures. National top 25 plus the lowest in every covered state.",
+            "description": f"The lowest posted bridge and underpass clearances across {n_cities} US cities, computed from a corpus of {n_bridges:,} tracked low-clearance structures. National top 25 plus the lowest in every covered state.",
             "image": f"{SITE}/og-image.png",
             "inLanguage": "en-US",
             "datePublished": "2026-07-06",
@@ -268,7 +269,7 @@ def main():
   <nav aria-label="Breadcrumb"><a href="/" class="back">← Back to WillIFit.ai</a></nav>
   <header>
     <h1>The Lowest Bridges in America</h1>
-    <p class="lede">The lowest posted vehicle clearances we track across 226 US cities —
+    <p class="lede">The lowest posted vehicle clearances we track across {n_cities} US cities —
        computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {today}.</p>
   </header>
 
@@ -311,7 +312,7 @@ def main():
 
   <h2>Methodology</h2>
   <p>WillIFit.ai tracks {n_bridges:,} low-clearance bridges, underpasses, and tunnels (posted between
-     6' and 14') across 226 US cities, sourced from the
+     6' and 14') across {n_cities} US cities, sourced from the
      <a href="https://www.fhwa.dot.gov/bridge/nbi.cfm" target="_blank" rel="noopener">FHWA National Bridge Inventory</a>,
      <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>, and our own
      <a href="/how-ai-verification-works.html">AI verification of posted signage</a> in Google Street View.
@@ -321,7 +322,7 @@ def main():
      <a href="/">Open the map</a> and report it.</p>
 
   <p>Planning a route in a tall vehicle? Check your height against every garage, tunnel, and bridge in
-     <a href="/cities.html">226 cities</a>, or read the
+     <a href="/cities.html">{n_cities} cities</a>, or read the
      <a href="/parking-garage-clearance-heights.html">parking garage clearance guide</a>.</p>
   </main>
 

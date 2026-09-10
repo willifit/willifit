@@ -97,13 +97,22 @@ class PageTests(unittest.TestCase):
         self.assertEqual(wp["dateModified"], "2026-08-01")
         page2 = self.render(garage("g", "Grand Garage", 144))
         faq2 = next(b for b in jsonld(page2) if b["@type"] == "FAQPage")
-        self.assertTrue(faq2["mainEntity"][0]["acceptedAnswer"]["text"].startswith("Yes. The posted clearance is 12'0\"."))
-        self.assertIn("All three sizes fit at 12'0\".", faq2["mainEntity"][0]["acceptedAnswer"]["text"])
+        uhaul2 = faq2["mainEntity"][0]["acceptedAnswer"]["text"]
+        self.assertTrue(uhaul2.startswith("Yes, for U-Haul. The posted clearance is 12'0\"."), uhaul2)
+        self.assertIn("All three sizes fit at 12'0\".", uhaul2)
+        self.assertIn("The fit table above uses 13'6\", the tallest published 26 ft rental truck "
+                      "(Penske); U-Haul's is 12'0\" and Budget's 13'0\".", uhaul2)
         self.assertIn("Both classes clear 12'0\" even with a rooftop air conditioner in most cases", faq2["mainEntity"][1]["acceptedAnswer"]["text"])
         page3 = self.render(garage("g", "Grand Garage", 134))
         faq3 = next(b for b in jsonld(page3) if b["@type"] == "FAQPage")
         self.assertIn("At 11'2\", the 10 ft and 15–20 ft trucks fit; the 26 ft truck does not.", faq3["mainEntity"][0]["acceptedAnswer"]["text"])
         self.assertIn("Both classes fit at their published heights, but a rooftop air conditioner or vent may not; measure first.", faq3["mainEntity"][1]["acceptedAnswer"]["text"])
+        page4 = self.render(garage("g", "Grand Garage", 162))
+        faq4 = next(b for b in jsonld(page4) if b["@type"] == "FAQPage")
+        uhaul4 = faq4["mainEntity"][0]["acceptedAnswer"]["text"]
+        self.assertTrue(uhaul4.startswith("Yes. The posted clearance is 13'6\"."), uhaul4)
+        self.assertIn("All three sizes fit at 13'6\".", uhaul4)
+        self.assertNotIn("The fit table above uses", uhaul4)   # at the table's own 26ft height: no gap to explain
 
     def test_nearby_section_excludes_self_and_compares_heights(self):
         me = garage("me", "Center Garage", 99)
@@ -146,6 +155,52 @@ class GeneratorRunTests(unittest.TestCase):
         finally:
             glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = old
         self.assertEqual(sorted(p.name for p in (tmp / "parking/test-xx").glob("*.html")), ["aria-resort-and-casino.html"])
+        shutil.rmtree(tmp)
+
+    def test_main_deletes_orphan_city_directory_when_unscoped(self):
+        """A city that drops out of live/index.json (or loses its data file)
+        is never visited by main()'s per-city loop, so without the
+        stale-directory pass its old parking/<slug>/ tree would sit there
+        forever.  A full, unscoped run must clean it up."""
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "data/cities").mkdir(parents=True)
+        (tmp / "data/index.json").write_text(json.dumps([CITY]))
+        (tmp / "data/cities/test-xx.json").write_text(json.dumps({
+            "garages": [garage("a", "Aria Resort & Casino", 99)], "tunnels": [], "bridges": []}))
+        orphan = tmp / "parking/orphan-city-zz"
+        orphan.mkdir(parents=True)
+        (orphan / "old-garage.html").write_text("stale")
+        old = (glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR)
+        glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = tmp, tmp / "data/index.json", tmp / "data/cities", tmp / "parking"
+        try:
+            glp.main([])
+        finally:
+            glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = old
+        self.assertFalse((tmp / "parking/orphan-city-zz").exists())
+        self.assertTrue((tmp / "parking/test-xx").exists())
+        shutil.rmtree(tmp)
+
+    def test_main_with_city_flag_does_not_delete_other_city_directories(self):
+        """--city intentionally only touches its own city's directory --
+        the stale-directory pass must not run and nuke every other city's
+        parking/ tree just because this invocation only regenerated one."""
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "data/cities").mkdir(parents=True)
+        other = {"slug": "other-yy", "name": "Otherville", "state": "NV",
+                 "lat": 36.1, "lng": -115.1, "status": "live"}
+        (tmp / "data/index.json").write_text(json.dumps([CITY, other]))
+        (tmp / "data/cities/test-xx.json").write_text(json.dumps({
+            "garages": [garage("a", "Aria Resort & Casino", 99)], "tunnels": [], "bridges": []}))
+        other_dir = tmp / "parking/other-yy"
+        other_dir.mkdir(parents=True)
+        (other_dir / "some-garage.html").write_text("kept")
+        old = (glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR)
+        glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = tmp, tmp / "data/index.json", tmp / "data/cities", tmp / "parking"
+        try:
+            glp.main(["--city", "test-xx"])   # other-yy has no data file loaded for this run
+        finally:
+            glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = old
+        self.assertTrue((other_dir / "some-garage.html").exists())
         shutil.rmtree(tmp)
 
     def test_main_completes_when_a_garage_has_no_coordinates(self):

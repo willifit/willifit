@@ -10,6 +10,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 PAGE = REPO / "vehicle-heights.html"
 
+sys.path.insert(0, str(REPO / "scripts"))
+
+import wf_common as wc              # noqa: E402
+
 EXACT = {  # row id -> inches (data-in)
     "uhaul-pickup": 84, "uhaul-cargo-van": 96, "uhaul-10ft": 108, "uhaul-15ft": 132, "uhaul-17ft": 132,
     "uhaul-20ft": 132, "uhaul-26ft": 144, "budget-cargo-van": 105, "budget-12ft": 108, "budget-16ft": 132,
@@ -25,6 +29,24 @@ UNPUBLISHED = {"penske-12ft", "penske-16ft", "penske-22ft", "penske-high-roof-va
 SOURCE_DOMAINS = {"uhaul-26ft": "uhaul.com", "budget-26ft": "budgettruck.com", "penske-26ft": "pensketruckrental.com",
                   "transit-high": "ford.com", "sprinter-high": "mbvans.com", "promaster-low": "cars.com",
                   "rv-class-c": "rvshare.com", "semi": "ops.fhwa.dot.gov", "enterprise-26ft": "enterprisetrucks.com"}
+
+# wf_common.VEHICLE_CLASSES display name -> the sourced rows on this page that
+# feed it.  Every class here must be >= the tallest (data-in, or data-in-max
+# for a range row) among its rows -- the guard test below is what would have
+# caught "a low-roof cargo van" being set to 84 when ProMaster is sourced at
+# 93.  The sedan and semi classes aren't sourced from a row on this page (the
+# semi figure is the explicit 13'6" design clearance) and are left out.
+CLASS_TO_ROWS = {
+    "a stock pickup or SUV": ["f150", "tahoe"],
+    "a low-roof cargo van": ["transit-low", "express-2500", "promaster-low"],
+    "a mid-roof cargo van": ["transit-medium", "sprinter-standard"],
+    "a high-roof Sprinter or Transit": ["transit-high", "sprinter-high"],
+    "a 10–12 ft rental truck": ["uhaul-10ft", "budget-12ft"],
+    "a 15–20 ft rental truck": ["uhaul-15ft", "uhaul-17ft", "uhaul-20ft", "budget-16ft"],
+    "a Class B camper van": ["rv-class-b"],
+    "a Class C RV": ["rv-class-c"],
+    "a 26 ft rental truck": ["uhaul-26ft", "budget-26ft", "penske-26ft"],
+}
 
 
 def rows(page):
@@ -102,6 +124,28 @@ class VehicleHeightsPageTests(unittest.TestCase):
         idx = (REPO / "index.html").read_text()
         self.assertIn('<a class="vh-presets-link" href="/vehicle-heights.html">', idx)
         self.assertIn("<loc>https://willifit.ai/vehicle-heights.html</loc>", (REPO / "sitemap.xml").read_text())
+
+
+class VehicleClassSourcingGuardTests(unittest.TestCase):
+    """Item 2 of the final-findings fix wave: VEHICLE_CLASSES must never
+    claim a class fits below the tallest vehicle this page actually sources
+    for it."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.rows = rows(PAGE.read_text())
+
+    def test_vehicle_classes_are_at_least_the_largest_sourced_figure(self):
+        heights = dict(wc.VEHICLE_CLASSES)
+        for cls_name, row_ids in CLASS_TO_ROWS.items():
+            sourced = []
+            for rid in row_ids:
+                r = self.rows[rid]
+                value = r["in"] or r["max"]
+                self.assertTrue(value, (cls_name, rid, "row has neither data-in nor data-in-max"))
+                sourced.append(int(value))
+            self.assertGreaterEqual(heights[cls_name], max(sourced),
+                                    (cls_name, "VEHICLE_CLASSES height", "largest sourced figure"))
 
 
 if __name__ == "__main__":

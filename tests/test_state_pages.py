@@ -2,7 +2,9 @@
 import html as html_lib
 import json
 import re
+import shutil
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -120,6 +122,34 @@ class StatePageTests(unittest.TestCase):
             desc = html_lib.unescape(re.search(r'name="description" content="([^"]*)"', page).group(1))
             self.assertTrue(desc.endswith("."), (code, desc))
             self.assertLessEqual(len(desc), 160, code)
+
+
+class GeneratorRunTests(unittest.TestCase):
+    def test_main_deletes_stale_state_file(self):
+        """generate_state_pages.main() previously had no stale pass: a state
+        that drops its last live city (or loses every city's data file) no
+        longer appears in `codes`, but its old state/<xx>.html stayed on
+        disk forever, advertised by generate_sitemap.py to an orphaned
+        page."""
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "data/cities").mkdir(parents=True)
+        city = {"slug": "t-xx", "name": "T", "state": "ZZ", "lat": 0, "lng": 0, "status": "live"}
+        (tmp / "data/index.json").write_text(json.dumps([city]))
+        (tmp / "data/cities/t-xx.json").write_text(json.dumps({
+            "garages": [{"id": "a", "name": "A", "height_in": 90, "source": "OpenStreetMap",
+                        "lat": 0, "lng": 0}],
+            "tunnels": [], "bridges": []}))
+        (tmp / "state").mkdir(parents=True)
+        (tmp / "state/stale-code.html").write_text("stale")
+        wc.STATE_NAMES.setdefault("ZZ", "Zedland")
+        old = (gsp.REPO_ROOT, gsp.INDEX_PATH, gsp.CITIES_DIR, gsp.OUT_DIR)
+        gsp.REPO_ROOT, gsp.INDEX_PATH, gsp.CITIES_DIR, gsp.OUT_DIR = tmp, tmp / "data/index.json", tmp / "data/cities", tmp / "state"
+        try:
+            gsp.main()
+        finally:
+            gsp.REPO_ROOT, gsp.INDEX_PATH, gsp.CITIES_DIR, gsp.OUT_DIR = old
+        self.assertEqual(sorted(p.name for p in (tmp / "state").glob("*.html")), ["zz.html"])
+        shutil.rmtree(tmp)
 
 
 class WiringTests(unittest.TestCase):

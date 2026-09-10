@@ -56,9 +56,9 @@ class FitPhraseTests(unittest.TestCase):
         self.assertEqual(wc.fit_phrase(74),
             "That clears a typical sedan (5'0\"), but not a stock pickup or SUV (6'6\") or anything taller.")
         self.assertEqual(wc.fit_phrase(99),
-            "That clears a low-roof cargo van (7'0\") and anything shorter, but not a mid-roof cargo van (8'4\") or anything taller.")
+            "That clears a low-roof cargo van (7'9\") and anything shorter, but not a mid-roof cargo van (8'4\") or anything taller.")
         self.assertEqual(wc.fit_phrase(110),
-            "That clears a 10–12 ft rental truck (9'0\") and anything shorter, but not a high-roof Sprinter or Transit (9'6\") or anything taller.")
+            "That clears a high-roof Sprinter or Transit (9'2\") and anything shorter, but not a 15–20 ft rental truck (11'0\") or anything taller.")
         self.assertEqual(wc.fit_phrase(155),
             "That clears a Class C RV (11'6\") and anything shorter, but not a 26 ft rental truck (13'6\") or anything taller.")
         self.assertEqual(wc.fit_phrase(162),
@@ -79,6 +79,14 @@ class FitPhraseTests(unittest.TestCase):
         self.assertTrue(wc.has_posted_height(garage("a", "Deck", 74)))
         self.assertFalse(wc.has_posted_height(garage("a", "Deck", 74, source="Needs verification (was OSM building-height)")))
         self.assertFalse(wc.has_posted_height(garage("a", "Deck", None)))
+
+    def test_is_http_url(self):
+        self.assertTrue(wc.is_http_url("https://example.com"))
+        self.assertTrue(wc.is_http_url("http://example.com/path"))
+        self.assertFalse(wc.is_http_url("example.com"))               # bare hostname
+        self.assertFalse(wc.is_http_url("http:example.com"))          # no "//" -- would IndexError on split
+        self.assertFalse(wc.is_http_url(None))
+        self.assertFalse(wc.is_http_url(""))
 
     def test_compose_description(self):
         self.assertEqual(wc.compose_description(["A b.", "C d.", "E f."], 9), "A b. C d.")

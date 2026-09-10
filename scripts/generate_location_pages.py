@@ -33,11 +33,12 @@ import argparse
 import html
 import json
 import re
+import shutil
 from datetime import date
 from pathlib import Path
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
-                       fit_phrase, has_posted_height, slugify, clip, compose_description)
+                       fit_phrase, has_posted_height, slugify, compose_description, is_http_url)
 from generate_city_pages import (assign_anchors, verification_sentence, entry_verification,
                                  streetview_url, safe_jsonld, esc, haversine_miles,
                                  render_faq_section, faqs_to_jsonld)
@@ -99,13 +100,15 @@ def build_title(name: str, label: str) -> tuple:
     """(<title> text, og:title text) -- og:title always uses the full
     descriptive form; <title> falls back through shorter forms until the
     DECODED (browser-rendered) length is <= 60 chars, same policy as
-    generate_city_pages.build_title."""
+    generate_city_pages.build_title.  Three tiers only: a clipped-name
+    tier used to exist here but clip(name, 40) can cut a name mid-parenthesis
+    ("BJCC (Birmingham-Jefferson Convention" with no closing paren), so past
+    tier 3 we just use tier 3 unclipped rather than produce a broken phrase."""
     esc_name, esc_label = esc(name), esc(label)
     forms = [
         f"{esc_name} Parking Clearance Height: {esc_label} | WillIFit.ai",
         f"{esc_name} Clearance: {esc_label} | WillIFit.ai",
         f"{esc_name} clearance: {esc_label}",
-        f"{esc(clip(name, 40))} clearance: {esc_label}",
     ]
     og_title = forms[0]
     for f in forms:
@@ -153,9 +156,10 @@ def render_details(e: dict) -> str:
     # garage this is called on, so a None here means eligible() was bypassed
     # and this should fail loudly rather than silently print 0.00000, 0.00000.
     lat, lng = e.get("lat"), e.get("lng")
-    # esc() first, then clip -- same order as generate_city_pages.render_entry's
-    # notes handling, so a 300-char cut lands on the same boundary either way.
-    notes = esc(e.get("notes") or "")[:300]
+    # Clip first, then esc() -- slicing an already-escaped string can cut an
+    # HTML entity like "&#x27;" in half.  Same order as
+    # generate_city_pages.render_entry's notes handling.
+    notes = esc((e.get("notes") or "")[:300])
     website = e.get("website") or ""
 
     items = []
@@ -167,7 +171,7 @@ def render_details(e: dict) -> str:
     items.append(f"<dt>Oversized vehicles</dt><dd>{oversized_txt}</dd>")
     if notes:
         items.append(f"<dt>Notes</dt><dd>{notes}</dd>")
-    if website.startswith("http"):
+    if is_http_url(website):
         host = website.split("//", 1)[1].split("/", 1)[0]
         items.append(f'<dt>Website</dt><dd><a href="{esc(website)}" rel="noopener" '
                      f'target="_blank">{esc(host)}</a></dd>')
@@ -239,9 +243,17 @@ def render_nearby_section(name: str, h: int, candidates: list, city_slug: str) -
 
 
 def _uhaul_faq(name: str, h: int, label: str) -> dict:
+    # fits26 uses U-Haul's own 26 ft truck height (12'0"); the fit table
+    # above judges the "26 ft rental truck" class by 13'6" (Penske, the
+    # tallest published figure -- see VEHICLE_CLASSES).  Those disagree for
+    # 144 <= h < 162, so that band gets a qualified "Yes, for U-Haul" plus a
+    # sentence explaining the gap, instead of an unqualified "Yes" that would
+    # contradict the fit table right above it.
     fits10, fits15, fits26 = h >= 108, h >= 132, h >= 144
+    fits_table26 = h >= 162
     if fits26:
-        verdict, sizes = "Yes", f"All three sizes fit at {label}."
+        verdict = "Yes" if fits_table26 else "Yes, for U-Haul"
+        sizes = f"All three sizes fit at {label}."
     elif fits15:
         verdict = "Only the smaller trucks"
         sizes = f"At {label}, the 10 ft and 15–20 ft trucks fit; the 26 ft truck does not."
@@ -253,6 +265,9 @@ def _uhaul_faq(name: str, h: int, label: str) -> dict:
              f"9'0\" for its 10 ft truck, 11'0\" for its 15, 17, and 20 ft trucks, and 12'0\" for "
              f"its 26 ft truck. {sizes} Budget and Penske publish different figures; see the "
              f"vehicle heights guide at willifit.ai/vehicle-heights.html.")
+    if fits26 and not fits_table26:
+        answer += (" The fit table above uses 13'6\", the tallest published 26 ft rental truck "
+                   "(Penske); U-Haul's is 12'0\" and Budget's 13'0\".")
     return {"q": f"Will a U-Haul fit at {name}?", "a": answer}
 
 
@@ -311,7 +326,7 @@ def build_location_jsonld(city: dict, garage: dict, canonical: str, label: str,
             "unitText": "inches",
         }],
     }
-    if garage.get("website"):
+    if is_http_url(garage.get("website")):
         facility["sameAs"] = [garage["website"]]
 
     breadcrumbs = {
@@ -610,6 +625,21 @@ def generate_location(city: dict, garage: dict, path: str, all_garages: list,
     )
 
 
+def _delete_stale_directories(processed_slugs: set) -> int:
+    """Remove parking/<slug>/ trees left behind for a city that dropped out
+    of this run (retired from index.json, or its data file went missing) --
+    the per-city loop in main() never visits that slug, so without this pass
+    an orphaned directory of deleted-garage pages would sit there forever,
+    still advertised by generate_sitemap.py."""
+    stale_dirs = 0
+    if OUT_DIR.exists():
+        for d in OUT_DIR.iterdir():
+            if d.is_dir() and d.name not in processed_slugs:
+                shutil.rmtree(d)
+                stale_dirs += 1
+    return stale_dirs
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Generate per-garage clearance pages.")
     parser.add_argument("--city", help="Only regenerate this city slug.")
@@ -626,11 +656,13 @@ def main(argv=None):
         live = [c for c in live if c["slug"] == args.city]
 
     total_pages = total_deleted = cities_touched = 0
+    processed_slugs = set()
 
     for city in live:
         data_path = CITIES_DIR / f"{city['slug']}.json"
         if not data_path.exists():
             continue
+        processed_slugs.add(city["slug"])
         data = json.loads(data_path.read_text())
         garages = data.get("garages") or []
         paths = location_paths(city["slug"], garages)
@@ -666,7 +698,14 @@ def main(argv=None):
         if n_written or n_deleted:
             cities_touched += 1
 
-    print(f"Generated: {total_pages} pages in {cities_touched} cities (deleted {total_deleted} stale)")
+    # Only safe on a full, non-dry-run sweep -- `--city` intentionally
+    # touches only that one city's own directory.
+    stale_dirs = 0
+    if not args.city and not args.dry_run:
+        stale_dirs = _delete_stale_directories(processed_slugs)
+
+    print(f"Generated: {total_pages} pages in {cities_touched} cities "
+          f"(deleted {total_deleted} stale files, {stale_dirs} stale directories)")
 
 
 if __name__ == "__main__":

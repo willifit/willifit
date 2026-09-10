@@ -106,7 +106,7 @@ Data current as of {st['latest_verified']}.
 - [Parking garage clearance heights guide](https://willifit.ai/parking-garage-clearance-heights.html): Standard clearance sizes (7'0" typical, 8'2" ADA), clearance by garage type, and common vehicle heights — the reference page for "how tall is a parking garage" style questions.
 - [Vehicle heights](https://willifit.ai/vehicle-heights.html): Published heights for U-Haul, Budget and Penske trucks, cargo vans, RV classes and semis, with sources and garage-fit verdicts.
 - [Lowest bridges in America](https://willifit.ai/lowest-bridges-in-america.html): The 25 lowest posted vehicle clearances nationally, plus the lowest bridge in every covered state, computed live from the tracked corpus.
-- [City directory](https://willifit.ai/cities.html): All 226 covered cities grouped by state, with per-city location counts.
+- [City directory](https://willifit.ai/cities.html): All {st['cities']} covered cities grouped by state, with per-city location counts.
 - [Advertise](https://willifit.ai/advertise.html): Sponsorship slots for parking operators, RV rental companies, and route-planning apps.
 
 ## Data
