@@ -293,6 +293,7 @@ def state_verification_faq(state_full: str, ver: dict) -> dict:
     build_faqs(), with 'on this page' replaced by 'in {State}' -- the
     state-wide rollup has no single page's worth of locations, it has a
     state's worth."""
+    src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
     if ver["ai"] > 0:
         answer = (
             f"{ver['ai']} of the {ver['total']} locations in {state_full} are AI-verified: the "
@@ -304,8 +305,8 @@ def state_verification_faq(state_full: str, ver: dict) -> dict:
             answer += (f" Another {ver['human']} were verified against a published source "
                        f"such as the facility's own website.")
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from OpenStreetMap and "
-                       f"the U.S. National Bridge Inventory and are not individually verified.")
+            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
+                       f"and are not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     elif ver["verified"] > 0:
         answer = (
@@ -314,11 +315,10 @@ def state_verification_faq(state_full: str, ver: dict) -> dict:
             f"listing, with the verification date recorded on each entry."
         )
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from OpenStreetMap and "
-                       f"the U.S. National Bridge Inventory and are not individually verified.")
+            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
+                       f"and are not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     else:
-        src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
         answer = (
             f"The {ver['total']} clearances in {state_full} are imported from {src_phrase}. "
             f"They have not yet been individually verified against Street View, so treat them "
@@ -556,6 +556,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     padding: 14px 16px; font-weight: 600; font-size: 15px; cursor: pointer;
     color: var(--text); list-style: none;
   }}
+  .faq-q h3 {{ display: inline; margin: 0; font-size: inherit; font-weight: inherit; letter-spacing: inherit; border: 0; padding: 0; }}
   .faq-q::-webkit-details-marker {{ display: none; }}
   .faq-q::before {{
     content: '+'; display: inline-block; width: 20px;
@@ -640,6 +641,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       <a href="/accessibility.html">Accessibility</a> ·
       <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/vehicle-heights.html">Vehicle heights</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
       <a href="/advertise.html">Advertise</a> ·
       <a href="/disclaimer.html">Disclaimer</a> ·
@@ -671,8 +673,10 @@ def _state_lede(total: int, n: int, state_full: str, ver: dict, src_phrase: str)
         prov.append(f"{ver['human']} verified against published sources")
     if ver["imported"]:
         prov.append(f"{ver['imported']} imported from {esc(src_phrase)}")
-    return (f'{total} {esc(cat_list(total, "low-clearance bridge"))} across {n} covered '
-            f'{esc(plural_word(n, "city", "cities"))} in {esc(state_full)}: {"; ".join(prov)}. '
+    base = (f'{total} {esc(cat_list(total, "low-clearance bridge"))} across {n} covered '
+            f'{esc(plural_word(n, "city", "cities"))} in {esc(state_full)}')
+    tail = f': {"; ".join(prov)}.' if prov else '.'
+    return (f'{base}{tail} '
             f'Pick a city below for its full list, or <a href="/">open the interactive map</a>.')
 
 

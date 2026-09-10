@@ -403,6 +403,7 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
                   f"ceiling; check each park's own length and height limits."),
         })
 
+    src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
     if ver["ai"] > 0:
         answer = (
             f"{ver['ai']} of the {ver['total']} locations on this page are AI-verified: the "
@@ -414,8 +415,8 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
             answer += (f" Another {ver['human']} were verified against a published source "
                        f"such as the facility's own website.")
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from OpenStreetMap and "
-                       f"the U.S. National Bridge Inventory and are not individually verified.")
+            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
+                       f"and are not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     elif ver["verified"] > 0:
         answer = (
@@ -424,12 +425,11 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
             f"listing, with the verification date recorded on each entry."
         )
         if ver["imported"] > 0:
-            answer += (f" The remaining {ver['imported']} are imported from OpenStreetMap and "
-                       f"the U.S. National Bridge Inventory and are not individually verified.")
+            answer += (f" The remaining {ver['imported']} are imported from {src_phrase} "
+                       f"and are not individually verified.")
         answer += " Always confirm at the posted sign before you drive."
     else:
         # Import-only city: be honest -- no Street View / Vision pass here yet.
-        src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
         answer = (
             f"The {ver['total']} clearances on this page are imported from {src_phrase}. "
             f"They have not yet been individually verified against Street View, so treat them "
@@ -452,7 +452,7 @@ def render_faq_section(faqs: list) -> str:
     for f in faqs:
         items.append(
             '<details class="faq-item">'
-            f'<summary class="faq-q">{esc(f["q"])}</summary>'
+            f'<summary class="faq-q"><h3>{esc(f["q"])}</h3></summary>'
             f'<div class="faq-a">{esc(f["a"])}</div>'
             '</details>'
         )
@@ -962,6 +962,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     padding: 14px 16px; font-weight: 600; font-size: 15px; cursor: pointer;
     color: var(--text); list-style: none;
   }}
+  .faq-q h3 {{ display: inline; margin: 0; font-size: inherit; font-weight: inherit; letter-spacing: inherit; border: 0; padding: 0; }}
   .faq-q::-webkit-details-marker {{ display: none; }}
   .faq-q::before {{
     content: '+'; display: inline-block; width: 20px;
@@ -1100,6 +1101,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       <a href="/accessibility.html">Accessibility</a> ·
       <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/vehicle-heights.html">Vehicle heights</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
       <a href="/advertise.html">Advertise</a> ·
       <a href="/disclaimer.html">Disclaimer</a> ·

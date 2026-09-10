@@ -6,12 +6,12 @@
 <meta name="theme-color" content="#0e1116">
 <meta name="color-scheme" content="dark">
 
-<!-- Resource hints: warm the Carto basemap tile origins (the map's first
-     paint) so LCP isn't gated on cold DNS/TLS.  Leaflet is self-hosted now.
-     Plain non-CORS subresources -> no crossorigin. -->
-<link rel="preconnect" href="https://a.basemaps.cartocdn.com">
-<link rel="preconnect" href="https://b.basemaps.cartocdn.com">
-<link rel="preconnect" href="https://c.basemaps.cartocdn.com">
+<!-- Resource hints: warm the Google Maps origins (the map's first paint,
+     and the Street View panel on a location's detail page) so LCP isn't
+     gated on cold DNS/TLS.  The CARTO basemap tiles are only used when
+     MAP_PROVIDER is 'osm' (not the default), so they get no preconnect. -->
+<link rel="preconnect" href="https://maps.googleapis.com">
+<link rel="preconnect" href="https://maps.gstatic.com">
 
 <title>RV &amp; Truck Clearance Heights, AI-Verified | WillIFit.ai</title>
 <meta name="description" content="Will your RV or truck fit? AI-verified clearance heights for parking garages, tunnels, and low bridges across 226 US cities — check before you drive.">
@@ -25,13 +25,13 @@
      bare-text.  Absolute URL + explicit width/height/type/alt gives the
      best cross-client rendering. -->
 <meta property="og:title" content="WillIFit.ai — AI-verified clearance for every oversized vehicle">
-<meta property="og:description" content="226 US cities. 25,000+ parking garages, tunnels, and low bridges — including clearances AI-verified from Street View signage. Enter your vehicle height, see what fits.">
+<meta property="og:description" content="226 US cities. 23,000+ parking garages, tunnels, and low bridges — including clearances AI-verified from Street View signage. Enter your vehicle height, see what fits.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://willifit.ai/og-image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="WillIFit.ai — AI-verified clearance heights for RVs, trucks, and oversized vehicles. 226 US cities, 25,000+ locations.">
+<meta property="og:image:alt" content="WillIFit.ai — AI-verified clearance heights for RVs, trucks, and oversized vehicles. 226 US cities, 23,000+ locations.">
 <meta property="og:url" content="https://willifit.ai/">
 <meta property="og:site_name" content="WillIFit.ai">
 <meta property="og:locale" content="en_US">
@@ -79,8 +79,7 @@
     "name": "WillIFit.ai",
     "url": "https://willifit.ai/",
     "logo": "https://willifit.ai/favicon.svg",
-    "description": "AI-verified clearance data for RVs, trucks, and oversized vehicles.",
-    "sameAs": []
+    "description": "AI-verified clearance data for RVs, trucks, and oversized vehicles."
   },
   {
     "@context": "https://schema.org",
@@ -88,6 +87,8 @@
     "name": "WillIFit.ai clearance-height corpus",
     "description": "Vehicle clearance heights for parking garages, tunnels, and low-clearance bridges across 226 US cities, aggregated from OpenStreetMap, the FHWA National Bridge Inventory, and AI readings of Google Street View signage. Verified entries record the posted clearance in inches, a confidence grade, the verification method (AI from Google Street View + Claude Vision, or manual human override), the verification date, and the exact Street View pano ID where the clearance sign was read.",
     "url": "https://willifit.ai/",
+    "identifier": "https://willifit.ai/data/index.json",
+    "temporalCoverage": "2026-04-18/..",
     "keywords": [
       "parking clearance",
       "bridge height",
@@ -101,6 +102,11 @@
     "license": "https://willifit.ai/terms.html",
     "isAccessibleForFree": true,
     "spatialCoverage": { "@type": "Place", "name": "United States" },
+    "variableMeasured": [
+      { "@type": "PropertyValue", "name": "Posted vehicle clearance height", "unitCode": "INH", "unitText": "inches" },
+      { "@type": "PropertyValue", "name": "Verification method", "description": "AI-verified from Street View signage, verified against a published source, or imported from OpenStreetMap or the FHWA National Bridge Inventory" },
+      { "@type": "PropertyValue", "name": "Verification date" }
+    ],
     "distribution": [
       {
         "@type": "DataDownload",
@@ -2464,11 +2470,12 @@
         <button type="button" data-in="84">Cargo van — low roof — 7'0"</button>
         <button type="button" data-in="90">Lifted truck + rack — 7'6"</button>
         <button type="button" data-in="100">Cargo van — mid roof — 8'4"</button>
+        <button type="button" data-in="108">Rental truck 10–12 ft (U-Haul 10', Budget 12') — 9'0"</button>
         <button type="button" data-in="114">High-roof Sprinter / Transit — 9'6"</button>
         <button type="button" data-in="116">Camper van (Class B) — 9'8"</button>
-        <button type="button" data-in="126">U-Haul / small box truck — 10'6"</button>
+        <button type="button" data-in="132">Rental truck 15–20 ft (U-Haul, Budget 16') — 11'0"</button>
         <button type="button" data-in="138">Class C RV — 11'6"</button>
-        <button type="button" data-in="150">Box / grip truck (15–26') — 12'6"</button>
+        <button type="button" data-in="162">Box / grip truck 26 ft — up to 13'6"</button>
         <button type="button" data-in="162">Semi / 13'6" trailer</button>
         <a class="vh-presets-link" href="/vehicle-heights.html">Published heights for U-Haul, Penske, vans &amp; RVs →</a>
       </div>
@@ -2630,6 +2637,8 @@
         <a href="/how-ai-verification-works.html" rel="noopener">How AI verification works</a>
         <span class="footer-dot">·</span>
         <a href="/parking-garage-clearance-heights.html" rel="noopener">Clearance guide</a>
+        <span class="footer-dot">·</span>
+        <a href="/vehicle-heights.html" rel="noopener">Vehicle heights</a>
         <span class="footer-dot">·</span>
         <a href="/lowest-bridges-in-america.html" rel="noopener">Lowest bridges</a>
         <span class="footer-dot">·</span>

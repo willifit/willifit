@@ -470,6 +470,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     padding: 14px 16px; font-weight: 600; font-size: 15px; cursor: pointer;
     color: var(--text); list-style: none;
   }}
+  .faq-q h3 {{ display: inline; margin: 0; font-size: inherit; font-weight: inherit; letter-spacing: inherit; border: 0; padding: 0; }}
   .faq-q::-webkit-details-marker {{ display: none; }}
   .faq-q::before {{
     content: '+'; display: inline-block; width: 20px;
@@ -547,6 +548,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       <a href="/accessibility.html">Accessibility</a> ·
       <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/vehicle-heights.html">Vehicle heights</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
       <a href="/advertise.html">Advertise</a> ·
       <a href="/disclaimer.html">Disclaimer</a> ·
@@ -612,7 +614,9 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Generate per-garage clearance pages.")
     parser.add_argument("--city", help="Only regenerate this city slug.")
     parser.add_argument("--verified-only", action="store_true",
-                        help="Skip entries that are still unverified bulk imports.")
+                        help="Skip entries that are still unverified bulk imports; pages already "
+                             "on disk for the garages this excludes are then deleted by the "
+                             "stale-file pass below, since they're no longer in keep_names.")
     parser.add_argument("--dry-run", action="store_true", help="Print counts; write nothing.")
     args = parser.parse_args(argv)
 
