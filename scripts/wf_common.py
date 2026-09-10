@@ -30,11 +30,12 @@ VEHICLE_CLASSES = [
     ("a stock pickup or SUV", 78),
     ("a low-roof cargo van", 84),
     ("a mid-roof cargo van", 100),
+    ("a 10–12 ft rental truck", 108),        # U-Haul 10' and Budget 12': 9'0" clearance height
     ("a high-roof Sprinter or Transit", 114),
     ("a Class B camper van", 116),
-    ("a U-Haul or small box truck", 126),
+    ("a 15–20 ft rental truck", 132),        # U-Haul 15'/17'/20' and Budget 16': 11'0"
     ("a Class C RV", 138),
-    ("a 15–26 ft box truck", 150),
+    ("a 26 ft rental truck", 162),           # U-Haul 12'0", Budget 13'0", Penske 13'6" -> largest
     ("a semi trailer", 162),
 ]
 

@@ -57,8 +57,10 @@ class FitPhraseTests(unittest.TestCase):
             "That clears a typical sedan (5'0\"), but not a stock pickup or SUV (6'6\") or anything taller.")
         self.assertEqual(wc.fit_phrase(99),
             "That clears a low-roof cargo van (7'0\") and anything shorter, but not a mid-roof cargo van (8'4\") or anything taller.")
+        self.assertEqual(wc.fit_phrase(110),
+            "That clears a 10–12 ft rental truck (9'0\") and anything shorter, but not a high-roof Sprinter or Transit (9'6\") or anything taller.")
         self.assertEqual(wc.fit_phrase(155),
-            "That clears a 15–26 ft box truck (12'6\") and anything shorter, but not a semi trailer (13'6\").")
+            "That clears a Class C RV (11'6\") and anything shorter, but not a 26 ft rental truck (13'6\") or anything taller.")
         self.assertEqual(wc.fit_phrase(162),
             "That clears every common vehicle class, including a 13'6\" semi trailer.")
         self.assertEqual(wc.fit_phrase(55),
@@ -117,6 +119,24 @@ class FaqTests(unittest.TestCase):
                          "The figure comes from MGM Resorts and has not been individually re-verified.")
         self.assertEqual(gen.verification_sentence(garage("e", "Deck E", 95, source="Needs verification")),
                          "This figure is unverified and may not reflect the posted sign.")
+        self.assertEqual(gen.verification_sentence(garage("f", "F", 90, source="Web-verified (medium confidence) - was: Needs verification",
+                                                          verified_on="2026-08-12", source_url="https://www.bransoncc.com/parking/")),
+                         "It was verified against bransoncc.com on Aug 12, 2026.")
+        self.assertEqual(gen.verification_sentence(garage("g", "G", 90, source="Manually verified from Google Street View — was: OpenStreetMap", verified_on="2026-04-22")),
+                         "It was verified by a person from Google Street View imagery on Apr 22, 2026.")
+        self.assertEqual(gen.verification_sentence(garage("h", "H", 90, source="Web-verified surface lot - was: Needs verification", verified_on="2026-08-12")),
+                         "It was verified against a published source on Aug 12, 2026.")
+        self.assertEqual(gen.verification_sentence(garage("i", "I", 90, source="Verified in person — was: vegasfoodandfun.com", verified_on="2026-05-01")),
+                         "It was verified in person on May 1, 2026.")
+        self.assertEqual(gen.verification_sentence(garage("j", "J", 90, source="OpenStreetMap", verified_on="2026-04-22")),
+                         "It was verified on Apr 22, 2026; source: OpenStreetMap.")
+        self.assertEqual(gen.verification_sentence(garage("k", "K", 90, source="User-observed (sign obscured)", verified_on="2026-04-22")),
+                         "It was reported by a user on Apr 22, 2026 and has not been independently verified.")
+        li = gen.render_entry(garage("h", "H", 90, source="Web-verified surface lot - was: Needs verification", verified_on="2026-08-12"), "garage", "loc-h")
+        self.assertNotIn("source:", li)
+        li = gen.render_entry(garage("f", "F", 90, source="Web-verified (medium confidence) - was: Needs verification",
+                                     verified_on="2026-08-12", source_url="https://www.bransoncc.com/parking/"), "garage", "loc-f")
+        self.assertIn('source: <a href="https://www.bransoncc.com/parking/" target="_blank" rel="noopener">bransoncc.com</a>', li)
 
     def test_needs_verification_heights_are_not_facts(self):
         facts, faqs = self.faqs([garage("a", "Deck", 74, source="Needs verification (was OSM building-height)"),

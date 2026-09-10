@@ -162,8 +162,19 @@ def verification_sentence(e: dict) -> str:
         return (f"It was AI-verified from Street View signage on {fmt_date(von)}."
                 if von else "It was AI-verified from Street View signage.")
     if kind == "human":
-        origin = origin_source(src) or "a published source"
-        return f"It was verified against {origin} on {fmt_date(von)}."
+        # The "was: X" suffix in these source strings is the PRIOR source the
+        # verification replaced, not what it was checked against -- so it is
+        # only usable as an origin when it names a real publisher.
+        if src.startswith("Manually verified from Google Street View"):
+            return f"It was verified by a person from Google Street View imagery on {fmt_date(von)}."
+        if src.startswith("Verified in person"):
+            return f"It was verified in person on {fmt_date(von)}."
+        if src.startswith("User-observed"):
+            return f"It was reported by a user on {fmt_date(von)} and has not been independently verified."
+        if src.startswith("Web-verified"):
+            origin = verification_origin(e)
+            return f"It was verified against {origin or 'a published source'} on {fmt_date(von)}."
+        return f"It was verified on {fmt_date(von)}; source: {src.strip() or 'unrecorded'}."
     if src.startswith("Needs verification"):
         return "This figure is unverified and may not reflect the posted sign."
     if "OpenStreetMap" in src:
@@ -173,6 +184,21 @@ def verification_sentence(e: dict) -> str:
     if src.strip():
         return f"The figure comes from {src.strip()} and has not been individually re-verified."
     return "This figure has no recorded source and has not been verified."
+
+
+def verification_origin(e: dict) -> str:
+    """Publisher a web-verified entry was checked against: the host of
+    `source_url` when present, else the 'was: X' origin when X is a real
+    publisher (not a placeholder), else ''."""
+    url = e.get("source_url") or ""
+    if url.startswith("http"):
+        host = url.split("//", 1)[1].split("/", 1)[0]
+        return host[4:] if host.startswith("www.") else host
+    origin = origin_source(e.get("source") or "")
+    if origin and origin.lower() not in ("needs verification", "openstreetmap") \
+            and origin != (e.get("source") or "").strip():
+        return origin
+    return ""
 
 
 def verification_summary(entries: list) -> dict:
@@ -567,7 +593,7 @@ def render_entry(e: dict, kind: str, anchor: str) -> str:
         )
     elif vkind == "human":
         date_txt = f"Verified on {esc(fmt_date(von))}" if von else "Verified"
-        origin = origin_source(e.get("source") or "")
+        origin = verification_origin(e)
         src_url = e.get("source_url")
         if origin and src_url:
             origin_html = (f' · source: <a href="{esc(src_url)}" target="_blank" '
