@@ -529,6 +529,51 @@ def render_nearby_cities(nearby: list) -> str:
     )
 
 
+def compute_state_cities(this_city: dict, all_cities: list) -> list:
+    """(city, total_locations) tuples for every OTHER live city in the same
+    state as this_city, sorted by name.  Complements the (much narrower,
+    distance-capped) 'Nearby cities' block above it -- a Las Vegas page
+    should link every other live Nevada city, not just the ones within 60
+    miles, so 'More cities in Nevada' covers the full state regardless of
+    geography."""
+    state = this_city.get("state")
+    out = []
+    for c in all_cities:
+        if c.get("slug") == this_city.get("slug"):
+            continue
+        if c.get("status") != "live" or c.get("state") != state:
+            continue
+        data_path = CITIES_DIR / f"{c['slug']}.json"
+        if not data_path.exists():
+            continue
+        data = json.loads(data_path.read_text())
+        total = (len(data.get("garages") or []) + len(data.get("tunnels") or [])
+                + len(data.get("bridges") or []))
+        out.append((c, total))
+    out.sort(key=lambda x: x[0]["name"])
+    return out
+
+
+def render_state_cities(state_full: str, state_lower: str, cities: list) -> str:
+    """'More cities in {State}' block, right after nearby-cities.  When this
+    city is the only one indexed in its state, the section still renders --
+    just the link to the state overview, no empty list."""
+    label = f"More cities in {esc(state_full)}"
+    link = f'<p><a href="/state/{state_lower}">All {esc(state_full)} clearance data →</a></p>'
+    if not cities:
+        return (f'<section class="state-cities" aria-label="{label}">'
+                f'<h2>{label}</h2>{link}</section>')
+    items = "".join(
+        f'<li><a href="/city/{c["slug"]}">{esc(c["name"])}</a>'
+        f' <span class="nc-dist">{total} locations</span></li>'
+        for c, total in cities
+    )
+    return (f'<section class="state-cities" aria-label="{label}">'
+            f'<h2>{label}</h2>'
+            f'<ul class="nc-list">{items}</ul>'
+            f'{link}</section>')
+
+
 def assign_anchors(entries: list) -> list[str]:
     """Stable, unique fragment ids (loc-<id>) for garages+tunnels+bridges in
     page order.  Duplicate ids get -2, -3 ... so the page never has two
@@ -691,7 +736,9 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list, anchor
              "item": f"{SITE}/"},
             {"@type": "ListItem", "position": 2, "name": "Cities",
              "item": f"{SITE}/cities.html"},
-            {"@type": "ListItem", "position": 3, "name": f"{name}, {state_full}",
+            {"@type": "ListItem", "position": 3, "name": state_full,
+             "item": f"{SITE}/state/{state.lower()}"},
+            {"@type": "ListItem", "position": 4, "name": f"{name}, {state_full}",
              "item": f"{SITE}/city/{city['slug']}"},
         ],
     }
@@ -978,6 +1025,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <span class="crumb">›</span>
     <a href="/cities.html" class="crumb">Cities</a>
     <span class="crumb">›</span>
+    <a href="/state/{state_lower}" class="crumb">{state_full}</a>
+    <span class="crumb">›</span>
     <a href="/#{slug}" class="crumb">{city}, {state}</a>
   </header>
 
@@ -1019,6 +1068,10 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <!-- Nearby-cities cross-link block.  Internal-link equity + helps
        users plan multi-city routes. -->
   {nearby_cities}
+
+  <!-- More-cities-in-state cross-link block.  Unlike nearby-cities (60 mi
+       radius cap), this links every other live city in the same state. -->
+  {state_cities}
 
   <div class="disclaimer">
     <b>⚠ Always verify at the sign.</b>
@@ -1106,6 +1159,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     facts = compute_quick_facts(garages, tunnels, bridges)
     faqs = build_faqs(city, facts, ver)
     nearby = compute_nearby_cities(city, all_cities or [city]) if all_cities else []
+    state_cities_list = compute_state_cities(city, all_cities or [])
 
     # Build a short paragraph describing what's on the page, for meta + lede.
     # plural_word keeps this from reading "1 parking garages" in cities with
@@ -1181,6 +1235,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         city=esc(name),
         state=esc(state),
         state_full=esc(state_full),
+        state_lower=state.lower(),
         pill=pill,
         lede=esc(lede),
         intro=build_city_intro(name, state_full, facts, ver, garages, tunnels, bridges),
@@ -1199,6 +1254,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         quick_facts=render_quick_facts(facts),
         faq_section=render_faq_section(faqs),
         nearby_cities=render_nearby_cities(nearby),
+        state_cities=render_state_cities(state_full, state.lower(), state_cities_list),
         year=date.today().year,
         jsonld=build_jsonld(city, garages, tunnels, bridges, anchors, faqs=faqs,
                             latest_verified=ver["latest"]),

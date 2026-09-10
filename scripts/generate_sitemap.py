@@ -123,6 +123,17 @@ def main() -> None:
     for loc_path, backing_file, changefreq, priority in STATIC_PAGES:
         lines.append(url_block(loc_path, lastmod_for(backing_file), changefreq, priority))
 
+    # State hub pages: one per state code with at least one live city that
+    # has >=1 indexed location -- mirrors the same "don't advertise a
+    # noindexed page" rule the per-city loop below applies.
+    state_codes = sorted({
+        city["state"] for city in live
+        if (city_total(city["slug"]) or 0) > 0
+    })
+    for code in state_codes:
+        xx = code.lower()
+        lines.append(url_block(f"state/{xx}", lastmod_for(f"state/{xx}.html"), "weekly", "0.7"))
+
     included = 0
     skipped_empty = 0
     skipped_nodata = 0
@@ -150,10 +161,11 @@ def main() -> None:
 
     print(f"Wrote {OUT_PATH}")
     print(f"  static pages: {len(STATIC_PAGES)}")
+    print(f"  state pages: {len(state_codes)}")
     print(f"  cities included: {included}")
     print(f"  skipped (0 locations, noindex): {skipped_empty}")
     print(f"  skipped (no data file): {skipped_nodata}")
-    print(f"  total URLs: {len(STATIC_PAGES) + included}")
+    print(f"  total URLs: {len(STATIC_PAGES) + len(state_codes) + included}")
 
 
 if __name__ == "__main__":

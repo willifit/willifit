@@ -1,0 +1,115 @@
+"""State hub pages (SEO/AEO plan, Task 2).  Run: python3 tests/test_state_pages.py -v"""
+import html as html_lib
+import json
+import re
+import sys
+import unittest
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "scripts"))
+
+import wf_common as wc                 # noqa: E402
+import generate_state_pages as gsp     # noqa: E402
+
+
+def load():
+    idx = json.loads((REPO / "data/index.json").read_text())
+    live = [c for c in idx if c.get("status") == "live"]
+    data = {c["slug"]: json.loads((REPO / "data/cities" / f"{c['slug']}.json").read_text())
+            for c in live if (REPO / "data/cities" / f"{c['slug']}.json").exists()}
+    return live, data
+
+
+LIVE, DATA = load()
+CODES = sorted({c["state"] for c in LIVE})
+
+
+def jsonld(page):
+    return json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S).group(1))
+
+
+class StatePageTests(unittest.TestCase):
+    def test_title_fallback(self):
+        self.assertEqual(gsp.build_title("Nevada"), "Nevada Parking Garage &amp; Low Bridge Clearances | WillIFit.ai")
+        self.assertEqual(gsp.build_title("District of Columbia"), "District of Columbia Clearance Heights | WillIFit.ai")
+        for code in CODES:
+            self.assertLessEqual(len(html_lib.unescape(gsp.build_title(wc.STATE_NAMES[code]))), 60, code)
+
+    def test_every_state_renders_with_correct_urls_and_structure(self):
+        for code in CODES:
+            page = gsp.generate_state(code, LIVE, DATA)
+            xx = code.lower()
+            self.assertIn(f'<link rel="canonical" href="https://willifit.ai/state/{xx}">', page)
+            self.assertIn(f'<meta property="og:url" content="https://willifit.ai/state/{xx}">', page)
+            self.assertEqual(page.count("<h1"), 1, code)
+            self.assertNotIn("/state/" + xx + ".html", page)
+            types = [b["@type"] for b in jsonld(page)]
+            self.assertEqual(types, ["CollectionPage", "BreadcrumbList", "ItemList", "FAQPage"], code)
+            for c in LIVE:
+                if c["state"] == code:
+                    self.assertIn(f'href="/city/{c["slug"]}"', page, (code, c["slug"]))
+
+    def test_head_never_claims_verification_the_data_lacks(self):
+        for code in CODES:
+            entries = [e for c in LIVE if c["state"] == code for k in ("garages", "tunnels", "bridges")
+                       for e in DATA.get(c["slug"], {}).get(k, [])]
+            ai = sum(1 for e in entries if "AI-verified" in (e.get("source") or ""))
+            page = gsp.generate_state(code, LIVE, DATA)
+            title = re.search(r"<title>(.*?)</title>", page).group(1)
+            desc = re.search(r'name="description" content="([^"]*)"', page).group(1)
+            lede = re.search(r'<p class="lede">(.*?)</p>', page, re.S).group(1)
+            if ai == 0:
+                for s in (title, desc, lede):
+                    self.assertNotIn("AI-verified", s, code)
+            else:
+                self.assertIn(f"{ai} AI-verified from Street View signage", lede, code)
+
+    def test_lowest_bridge_answer_matches_data(self):
+        for code in ("NV", "OH", "MA"):
+            entries = [e for c in LIVE if c["state"] == code for k in ("bridges", "tunnels")
+                       for e in DATA.get(c["slug"], {}).get(k, [])]
+            hs = [e["height_in"] for e in entries if isinstance(e.get("height_in"), (int, float)) and 72 <= e["height_in"] <= 168]
+            page = gsp.generate_state(code, LIVE, DATA)
+            faq = next(b for b in jsonld(page) if b["@type"] == "FAQPage")
+            q = next(x for x in faq["mainEntity"] if x["name"].startswith("What is the lowest bridge"))
+            self.assertIn(f"is {wc.inches_label(min(hs))} ({int(min(hs))} inches)", q["acceptedAnswer"]["text"])
+            self.assertIn(wc.MEASURE_NOTE, q["acceptedAnswer"]["text"])
+
+    def test_stats_use_posted_heights_only(self):
+        cities = [{"slug": "t-xx", "name": "T", "state": "XX", "lat": 0, "lng": 0, "status": "live"}]
+        data = {"t-xx": {"garages": [{"id": "a", "name": "A", "height_in": 70, "source": "Needs verification", "lat": 0, "lng": 0},
+                                     {"id": "b", "name": "B", "height_in": 90, "source": "OpenStreetMap", "lat": 0, "lng": 0}],
+                         "tunnels": [], "bridges": []}}
+        wc.STATE_NAMES.setdefault("XX", "Testland")
+        st = gsp.state_stats("XX", cities, data)
+        self.assertEqual(st["lowest_garage"]["name"], "B")
+
+
+class WiringTests(unittest.TestCase):
+    def test_netlify_rewrite_present(self):
+        toml = (REPO / "netlify.toml").read_text()
+        self.assertIn('from   = "/state/:code"', toml)
+        self.assertIn('to     = "/state/:code.html"', toml)
+
+    def test_generated_files_sitemap_cities_html_and_city_pages_link_states(self):
+        sitemap = (REPO / "sitemap.xml").read_text()
+        cities_html = (REPO / "cities.html").read_text()
+        for code in CODES:
+            xx = code.lower()
+            self.assertTrue((REPO / "state" / f"{xx}.html").exists(), xx)
+            self.assertIn(f"<loc>https://willifit.ai/state/{xx}</loc>", sitemap)
+            self.assertIn(f'<h2 id="{xx}"><a href="/state/{xx}">', cities_html)
+        lv = (REPO / "city/las-vegas-nv.html").read_text()
+        self.assertIn('<a href="/state/nv" class="crumb">Nevada</a>', lv)
+        self.assertIn("More cities in Nevada", lv)
+        bc = next(b for b in jsonld(lv) if b["@type"] == "BreadcrumbList")
+        self.assertEqual([i["item"] for i in bc["itemListElement"]],
+                         ["https://willifit.ai/", "https://willifit.ai/cities.html",
+                          "https://willifit.ai/state/nv", "https://willifit.ai/city/las-vegas-nv"])
+        bridges = (REPO / "lowest-bridges-in-america.html").read_text()
+        self.assertIn('<a href="/state/', bridges)
+
+
+if __name__ == "__main__":
+    unittest.main()

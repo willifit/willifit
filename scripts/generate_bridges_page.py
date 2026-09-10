@@ -10,23 +10,11 @@ import json
 from datetime import date
 from pathlib import Path
 
+from wf_common import STATE_NAMES
+
 REPO = Path(__file__).resolve().parent.parent
 SITE = "https://willifit.ai"
 OUT = REPO / "lowest-bridges-in-america.html"
-
-STATE_NAMES = {
-    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
-    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
-    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
-    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
-    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
-    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
-    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
-    "PA": "Pennsylvania", "PR": "Puerto Rico", "RI": "Rhode Island", "SC": "South Carolina",
-    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
-    "VA": "Virginia", "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
-}
 
 esc = lambda s: html.escape(str(s or ""), quote=True)
 
@@ -93,15 +81,18 @@ def main():
     today = date.today().isoformat()
     n_bridges = len(rows)
 
-    def row_html(r, rank=None):
+    def row_html(r, rank=None, state_col=False):
         rk = f"<td>{rank}</td>" if rank is not None else ""
-        return (f"<tr>{rk}<td><b>{label(r['h'])}</b></td>"
+        st_col = (f'<td><a href="/state/{r["state"].lower()}">'
+                  f'{esc(STATE_NAMES.get(r["state"], r["state"]))}</a></td>'
+                  if state_col else "")
+        return (f"<tr>{rk}{st_col}<td><b>{label(r['h'])}</b></td>"
                 f"<td>{esc(r['name'])}</td>"
                 f"<td><a href=\"/city/{esc(r['slug'])}\">{esc(r['city'])}, {esc(r['state'])}</a></td></tr>")
 
     top_rows = "\n".join(row_html(r, i + 1) for i, r in enumerate(top))
     state_rows = "\n".join(
-        row_html(by_state[st])
+        row_html(by_state[st], state_col=True)
         for st in sorted(by_state, key=lambda s: by_state[s]["h"]))
 
     jsonld = safe_jsonld([
@@ -299,7 +290,7 @@ def main():
   <div class="table-wrap" tabindex="0" role="region" aria-label="The lowest bridge in every covered state, scrollable table">
   <table>
     <caption>The lowest posted bridge clearance in each covered state</caption>
-    <thead><tr><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
+    <thead><tr><th scope="col">State</th><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
     <tbody>
 {state_rows}
     </tbody>

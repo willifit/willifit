@@ -124,6 +124,12 @@
   to     = "/city/:slug.html"
   status = 200
 
+# State overview pages: /state/nv -> /state/nv.html (same mechanism as /city/).
+[[redirects]]
+  from   = "/state/:code"
+  to     = "/state/:code.html"
+  status = 200
+
 # -----------------------------------------------------------------------------
 # Security headers — set site-wide.  These match the CSP declared in the HTML
 # but also apply to .json endpoints, images, etc.
