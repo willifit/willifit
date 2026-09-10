@@ -52,6 +52,7 @@ STATIC_PAGES = [
     ("",                              "index.html",                      "weekly",  "1.0"),
     ("how-ai-verification-works.html", "how-ai-verification-works.html", "monthly", "0.7"),
     ("parking-garage-clearance-heights.html", "parking-garage-clearance-heights.html", "monthly", "0.8"),
+    ("vehicle-heights.html", "vehicle-heights.html", "monthly", "0.8"),
     ("lowest-bridges-in-america.html", "lowest-bridges-in-america.html", "weekly",  "0.8"),
     ("about.html",                    "about.html",                      "monthly", "0.5"),
     ("accessibility.html",            "accessibility.html",              "monthly", "0.4"),
@@ -123,6 +124,17 @@ def main() -> None:
     for loc_path, backing_file, changefreq, priority in STATIC_PAGES:
         lines.append(url_block(loc_path, lastmod_for(backing_file), changefreq, priority))
 
+    # State hub pages: one per state code with at least one live city that
+    # has >=1 indexed location -- mirrors the same "don't advertise a
+    # noindexed page" rule the per-city loop below applies.
+    state_codes = sorted({
+        city["state"] for city in live
+        if (city_total(city["slug"]) or 0) > 0
+    })
+    for code in state_codes:
+        xx = code.lower()
+        lines.append(url_block(f"state/{xx}", lastmod_for(f"state/{xx}.html"), "weekly", "0.7"))
+
     included = 0
     skipped_empty = 0
     skipped_nodata = 0
@@ -145,15 +157,28 @@ def main() -> None:
         ))
         included += 1
 
+    # Per-garage pages (Task 3): every physical parking/<city>/<slug>.html
+    # file, sorted by path for deterministic output.  These are written by
+    # generate_location_pages.py, which only emits eligible garages, so
+    # there is no noindex/skip logic to mirror here -- every file on disk
+    # under parking/ is meant to be indexed.
+    garage_files = sorted((REPO_ROOT / "parking").glob("*/*.html"))
+    for f in garage_files:
+        relpath = f.relative_to(REPO_ROOT).as_posix()
+        loc_path = relpath[:-len(".html")]
+        lines.append(url_block(loc_path, lastmod_for(relpath), "monthly", "0.6"))
+
     lines.append("</urlset>")
     OUT_PATH.write_text("\n".join(lines) + "\n")
 
     print(f"Wrote {OUT_PATH}")
     print(f"  static pages: {len(STATIC_PAGES)}")
+    print(f"  state pages: {len(state_codes)}")
     print(f"  cities included: {included}")
     print(f"  skipped (0 locations, noindex): {skipped_empty}")
     print(f"  skipped (no data file): {skipped_nodata}")
-    print(f"  total URLs: {len(STATIC_PAGES) + included}")
+    print(f"  garage pages: {len(garage_files)}")
+    print(f"  total URLs: {len(STATIC_PAGES) + len(state_codes) + included + len(garage_files)}")
 
 
 if __name__ == "__main__":

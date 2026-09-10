@@ -10,23 +10,11 @@ import json
 from datetime import date
 from pathlib import Path
 
+from wf_common import STATE_NAMES
+
 REPO = Path(__file__).resolve().parent.parent
 SITE = "https://willifit.ai"
 OUT = REPO / "lowest-bridges-in-america.html"
-
-STATE_NAMES = {
-    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
-    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
-    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
-    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
-    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
-    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
-    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
-    "PA": "Pennsylvania", "PR": "Puerto Rico", "RI": "Rhode Island", "SC": "South Carolina",
-    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
-    "VA": "Virginia", "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
-}
 
 esc = lambda s: html.escape(str(s or ""), quote=True)
 
@@ -92,24 +80,62 @@ def main():
 
     today = date.today().isoformat()
     n_bridges = len(rows)
+    n_cities = len(live)
 
-    def row_html(r, rank=None):
+    def row_html(r, rank=None, state_col=False):
         rk = f"<td>{rank}</td>" if rank is not None else ""
-        return (f"<tr>{rk}<td><b>{label(r['h'])}</b></td>"
+        st_col = (f'<td><a href="/state/{r["state"].lower()}">'
+                  f'{esc(STATE_NAMES.get(r["state"], r["state"]))}</a></td>'
+                  if state_col else "")
+        return (f"<tr>{rk}{st_col}<td><b>{label(r['h'])}</b></td>"
                 f"<td>{esc(r['name'])}</td>"
                 f"<td><a href=\"/city/{esc(r['slug'])}\">{esc(r['city'])}, {esc(r['state'])}</a></td></tr>")
 
     top_rows = "\n".join(row_html(r, i + 1) for i, r in enumerate(top))
     state_rows = "\n".join(
-        row_html(by_state[st])
+        row_html(by_state[st], state_col=True)
         for st in sorted(by_state, key=lambda s: by_state[s]["h"]))
+
+    FAQS = [
+        {
+            "q": "What is the lowest bridge in America?",
+            "a": (
+                f"Among the {n_bridges:,} low-clearance bridges, underpasses, and tunnels tracked "
+                f"by WillIFit.ai, the lowest posted clearance is {label(top[0]['h']) if top else '?'} "
+                f"at {top[0]['name'] if top else '?'} in {top[0]['city'] if top else '?'}, "
+                f"{top[0]['state'] if top else '?'}. Posted clearances nationwide vary widely by "
+                "region and structure age; always trust the sign in front of you over any database."
+            ),
+        },
+        {
+            "q": "How many low-clearance bridges does WillIFit.ai track?",
+            "a": (
+                f"WillIFit.ai tracks {n_bridges:,} bridges, underpasses, and tunnels posted between "
+                f"6' and 14' across {len(by_state)} US states and territories, sourced from the FHWA "
+                "National Bridge Inventory, OpenStreetMap, and AI-verified readings of posted Street "
+                "View signage."
+            ),
+        },
+        {
+            "q": "What vehicles are at risk from low bridges?",
+            "a": (
+                "Any vehicle taller than about 11'6\" is at meaningful risk nationwide: standard box "
+                "trucks run 12'6\" to 13'6\", moving trucks and RVs commonly reach 13'6\", and even "
+                "high-roof cargo vans (roughly 9'6\") can strike older, lower urban underpasses. "
+                "Bridge strikes are almost always preventable by checking posted clearance before "
+                "routing a tall vehicle."
+            ),
+        },
+    ]
+
+    faq_section = "".join(f"<h3>{esc(f['q'])}</h3><p>{esc(f['a'])}</p>" for f in FAQS)
 
     jsonld = safe_jsonld([
         {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "The Lowest Bridges in America: Posted Clearances Under 14 Feet",
-            "description": f"The lowest posted bridge and underpass clearances across 226 US cities, computed from a corpus of {n_bridges:,} tracked low-clearance structures. National top 25 plus the lowest in every covered state.",
+            "description": f"The lowest posted bridge and underpass clearances across {n_cities} US cities, computed from a corpus of {n_bridges:,} tracked low-clearance structures. National top 25 plus the lowest in every covered state.",
             "image": f"{SITE}/og-image.png",
             "inLanguage": "en-US",
             "datePublished": "2026-07-06",
@@ -135,36 +161,10 @@ def main():
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "What is the lowest bridge in America?",
-                    "acceptedAnswer": {"@type": "Answer", "text": (
-                        f"Among the {n_bridges:,} low-clearance bridges, underpasses, and tunnels tracked "
-                        f"by WillIFit.ai, the lowest posted clearance is {label(top[0]['h']) if top else '?'} "
-                        f"at {top[0]['name'] if top else '?'} in {top[0]['city'] if top else '?'}, "
-                        f"{top[0]['state'] if top else '?'}. Posted clearances nationwide vary widely by "
-                        "region and structure age; always trust the sign in front of you over any database."
-                    )},
-                },
-                {
-                    "@type": "Question",
-                    "name": "How many low-clearance bridges does WillIFit.ai track?",
-                    "acceptedAnswer": {"@type": "Answer", "text": (
-                        f"WillIFit.ai tracks {n_bridges:,} bridges, underpasses, and tunnels posted between "
-                        f"6' and 14' across {len(by_state)} US states and territories, sourced from the FHWA "
-                        "National Bridge Inventory, OpenStreetMap, and AI-verified readings of posted Street "
-                        "View signage."
-                    )},
-                },
-                {
-                    "@type": "Question",
-                    "name": "What vehicles are at risk from low bridges?",
-                    "acceptedAnswer": {"@type": "Answer", "text": (
-                        "Any vehicle taller than about 11'6\" is at meaningful risk nationwide: standard box "
-                        "trucks run 12'6\" to 13'6\", moving trucks and RVs commonly reach 13'6\", and even "
-                        "high-roof cargo vans (roughly 9'6\") can strike older, lower urban underpasses. "
-                        "Bridge strikes are almost always preventable by checking posted clearance before "
-                        "routing a tall vehicle."
-                    )},
-                },
+                    "name": f["q"],
+                    "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
+                }
+                for f in FAQS
             ],
         },
     ])
@@ -175,8 +175,8 @@ def main():
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
-<title>The Lowest Bridges in America (Posted Clearances) | WillIFit.ai</title>
-<meta name="description" content="The 25 lowest posted bridge clearances in the US — down to {esc(label(top[0]['h']) if top else '?')} — plus the lowest bridge in every covered state. Computed from {n_bridges:,} tracked low-clearance structures.">
+<title>Lowest Bridges in America: Posted Clearances | WillIFit.ai</title>
+<meta name="description" content="{esc(f"The 25 lowest posted bridge clearances in the US plus the lowest bridge in every covered state, computed from {n_bridges:,} tracked low-clearance structures.")}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="{SITE}/lowest-bridges-in-america.html">
 <meta property="og:title" content="The Lowest Bridges in America — Posted Clearances">
@@ -269,7 +269,7 @@ def main():
   <nav aria-label="Breadcrumb"><a href="/" class="back">← Back to WillIFit.ai</a></nav>
   <header>
     <h1>The Lowest Bridges in America</h1>
-    <p class="lede">The lowest posted vehicle clearances we track across 226 US cities —
+    <p class="lede">The lowest posted vehicle clearances we track across {n_cities} US cities —
        computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {today}.</p>
   </header>
 
@@ -279,6 +279,7 @@ def main():
     {esc(top[0]['name']) if top else ''} in {esc(top[0]['city']) if top else ''}, {esc(top[0]['state']) if top else ''}.
     For context: a standard box truck is 12'6"–13'6" tall, a Class C RV about 10'–11'6", and a
     high-roof Sprinter about 9'6". Every bridge on this list can take the roof off something.
+    This ranks the lowest posted clearance for road vehicles under each structure, not how tall or short the bridge itself is.
   </div>
 
   <h2>The 25 lowest posted clearances</h2>
@@ -299,16 +300,19 @@ def main():
   <div class="table-wrap" tabindex="0" role="region" aria-label="The lowest bridge in every covered state, scrollable table">
   <table>
     <caption>The lowest posted bridge clearance in each covered state</caption>
-    <thead><tr><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
+    <thead><tr><th scope="col">State</th><th scope="col">Posted</th><th scope="col">Structure</th><th scope="col">City</th></tr></thead>
     <tbody>
 {state_rows}
     </tbody>
   </table>
   </div>
 
+  <h2 id="faq">Frequently asked questions</h2>
+  {faq_section}
+
   <h2>Methodology</h2>
   <p>WillIFit.ai tracks {n_bridges:,} low-clearance bridges, underpasses, and tunnels (posted between
-     6' and 14') across 226 US cities, sourced from the
+     6' and 14') across {n_cities} US cities, sourced from the
      <a href="https://www.fhwa.dot.gov/bridge/nbi.cfm" target="_blank" rel="noopener">FHWA National Bridge Inventory</a>,
      <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>, and our own
      <a href="/how-ai-verification-works.html">AI verification of posted signage</a> in Google Street View.
@@ -318,7 +322,7 @@ def main():
      <a href="/">Open the map</a> and report it.</p>
 
   <p>Planning a route in a tall vehicle? Check your height against every garage, tunnel, and bridge in
-     <a href="/cities.html">226 cities</a>, or read the
+     <a href="/cities.html">{n_cities} cities</a>, or read the
      <a href="/parking-garage-clearance-heights.html">parking garage clearance guide</a>.</p>
   </main>
 
@@ -329,6 +333,7 @@ def main():
       <a href="/accessibility.html">Accessibility</a> ·
       <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/vehicle-heights.html">Vehicle heights</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
       <a href="/advertise.html">Advertise</a> ·
       <a href="/disclaimer.html">Disclaimer</a> ·
