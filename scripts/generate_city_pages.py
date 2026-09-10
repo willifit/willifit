@@ -33,28 +33,15 @@ import re
 from pathlib import Path
 from datetime import date
 
+from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
+                       fit_phrase, has_posted_height, slugify, clip, import_source_phrase)
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
 CITIES_DIR = REPO_ROOT / "data" / "cities"
 OUT_DIR = REPO_ROOT / "city"
 
 SITE = "https://willifit.ai"
-
-STATE_NAMES = {
-    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
-    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
-    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
-    "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
-    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
-    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
-    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
-    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
-    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
-    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
-    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
-    "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia", "PR": "Puerto Rico",
-}
 
 
 def esc(s):
@@ -167,6 +154,27 @@ def entry_verification(e: dict) -> tuple:
     return "import", None
 
 
+def verification_sentence(e: dict) -> str:
+    """One true sentence about where this entry's number comes from."""
+    src = e.get("source") or ""
+    kind, von = entry_verification(e)
+    if kind == "ai":
+        return (f"It was AI-verified from Street View signage on {fmt_date(von)}."
+                if von else "It was AI-verified from Street View signage.")
+    if kind == "human":
+        origin = origin_source(src) or "a published source"
+        return f"It was verified against {origin} on {fmt_date(von)}."
+    if src.startswith("Needs verification"):
+        return "This figure is unverified and may not reflect the posted sign."
+    if "OpenStreetMap" in src:
+        return "It is imported from OpenStreetMap and not yet individually verified."
+    if "FHWA" in src or "National Bridge" in src:
+        return "It is imported from the FHWA National Bridge Inventory and not yet individually verified."
+    if src.strip():
+        return f"The figure comes from {src.strip()} and has not been individually re-verified."
+    return "This figure has no recorded source and has not been verified."
+
+
 def verification_summary(entries: list) -> dict:
     """City-level rollup that drives the page's headline pill, lede, meta
     description, the 'how is this verified' FAQ, and the JSON-LD
@@ -209,8 +217,7 @@ def compute_quick_facts(garages: list, tunnels: list, bridges: list) -> dict:
     the answer would be misleading (a "Low clearance underpass" tagged
     at 18'7" is not Vegas's tallest garage).  Tunnels + bridges still
     appear in their own page sections below."""
-    verified = [g for g in garages
-                if isinstance(g.get("height_in"), (int, float)) and g["height_in"] > 0]
+    verified = [g for g in garages if has_posted_height(g)]
     lowest = min(verified, key=lambda g: g["height_in"]) if verified else None
     highest = max(verified, key=lambda g: g["height_in"]) if verified else None
     oversized = [g for g in garages if g.get("oversized")]
@@ -224,6 +231,7 @@ def compute_quick_facts(garages: list, tunnels: list, bridges: list) -> dict:
         "oversized": oversized,
         "rv_parks": rv_parks,
         "verified_count": len(verified),
+        "posted_count": len(verified),
         "oversized_count": len(oversized),
         "rv_park_count": len(rv_parks),
     }
@@ -243,7 +251,7 @@ def render_quick_facts(facts: dict) -> str:
             f'<div class="qf-detail">{esc(e.get("name") or "")}</div>'
             '</div>'
         )
-    if facts["highest"]:
+    if facts["posted_count"] >= 2 and facts["highest"] is not facts["lowest"]:
         e = facts["highest"]
         cards.append(
             '<div class="qf-card">'
@@ -324,19 +332,17 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
         e = facts["lowest"]
         faqs.append({
             "q": f"What's the lowest-clearance parking garage in {name}, {state_full}?",
-            "a": (f"The lowest verified clearance in {name} is {e.get('height_label')} "
+            "a": (f"The lowest clearance on file for {name} garages is {e.get('height_label')} "
                   f"({int(e.get('height_in'))} inches) at {e.get('name')}. "
-                  f"Standard cars and small SUVs fit, but vans, RVs, and box trucks "
-                  f"should look elsewhere."),
+                  f"{verification_sentence(e)} {fit_phrase(e['height_in'])} {MEASURE_NOTE}"),
         })
-
-    if facts["highest"]:
+    if facts["posted_count"] >= 2 and facts["highest"] is not facts["lowest"]:
         e = facts["highest"]
         faqs.append({
-            "q": f"What's the highest-clearance parking option in {name}?",
-            "a": (f"{e.get('name')} has the tallest verified clearance in {name} at "
-                  f"{e.get('height_label')} ({int(e.get('height_in'))} inches), which "
-                  f"accommodates most box trucks and smaller RVs."),
+            "q": f"What's the highest-clearance parking garage in {name}?",
+            "a": (f"The highest clearance on file for {name} garages is {e.get('height_label')} "
+                  f"({int(e.get('height_in'))} inches) at {e.get('name')}. "
+                  f"{verification_sentence(e)} {fit_phrase(e['height_in'])} {MEASURE_NOTE}"),
         })
 
     if facts["oversized_count"] > 0:
@@ -367,8 +373,8 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
         faqs.append({
             "q": f"Are there RV parks in {name}?",
             "a": (f"Yes. {facts['rv_park_count']} {rv_word} indexed in {name}, "
-                  f"including {joined}{more}. RV parks have no overhead clearance — any "
-                  f"vehicle size fits."),
+                  f"including {joined}{more}. RV parks are open-air sites without a garage "
+                  f"ceiling; check each park's own length and height limits."),
         })
 
     if ver["ai"] > 0:
@@ -397,13 +403,7 @@ def build_faqs(city_meta: dict, facts: dict, ver: dict) -> list:
         answer += " Always confirm at the posted sign before you drive."
     else:
         # Import-only city: be honest -- no Street View / Vision pass here yet.
-        src_phrase = (
-            "OpenStreetMap and the U.S. National Bridge Inventory (FHWA)"
-            if ver["has_osm"] and ver["has_nbi"] else
-            "the U.S. National Bridge Inventory (FHWA)" if ver["has_nbi"] else
-            "OpenStreetMap" if ver["has_osm"] else
-            "public datasets"
-        )
+        src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
         answer = (
             f"The {ver['total']} clearances on this page are imported from {src_phrase}. "
             f"They have not yet been individually verified against Street View, so treat them "
@@ -503,7 +503,24 @@ def render_nearby_cities(nearby: list) -> str:
     )
 
 
-def render_entry(e: dict, kind: str) -> str:
+def assign_anchors(entries: list) -> list[str]:
+    """Stable, unique fragment ids (loc-<id>) for garages+tunnels+bridges in
+    page order.  Duplicate ids get -2, -3 ... so the page never has two
+    elements with the same id."""
+    used, out = set(), []
+    for e in entries:
+        base = slugify(str(e.get("id") or e.get("name") or "loc"), 60) or "loc"
+        anchor = f"loc-{base}"
+        n = 2
+        while anchor in used:
+            anchor = f"loc-{base}-{n}"
+            n += 1
+        used.add(anchor)
+        out.append(anchor)
+    return out
+
+
+def render_entry(e: dict, kind: str, anchor: str) -> str:
     """Render one garage/tunnel/bridge as an HTML <li>.
 
     Provenance is per-entry, not per-city: a single city page can mix an
@@ -564,7 +581,7 @@ def render_entry(e: dict, kind: str) -> str:
         verify_html = f'<div class="entry-source">Source: {source}</div>'
 
     return (
-        f'<li class="entry entry-{kind}">'
+        f'<li class="entry entry-{kind}" id="{esc(anchor)}">'
         f'<div class="entry-head">'
         f'<h3 class="entry-name">{name}</h3>'
         f'<div class="entry-height {height_class}">{height_str}</div>'
@@ -577,10 +594,14 @@ def render_entry(e: dict, kind: str) -> str:
     )
 
 
-def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
+def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list, anchors: list,
                  faqs: list = None, latest_verified: str = None) -> str:
     """Build JSON-LD structured data for the city + entries.
     Gives Google enough detail to render rich snippets.
+
+    `anchors` is the full, aligned list of per-entry fragment ids from
+    `assign_anchors(garages + tunnels + bridges)` -- each ListItem's url
+    deep-links straight to its <li> on the page instead of just the city.
 
     `latest_verified` (max verified_on across the city's entries) becomes a
     WebPage.dateModified.  It's emitted ONLY when there's a real verification
@@ -590,36 +611,40 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
     name = city["name"]
     state = city["state"]
     state_full = STATE_NAMES.get(state, state)
+    slug = city["slug"]
     total = len(garages) + len(tunnels) + len(bridges)
 
     items = []
     rank = 1
-    for src_list, kind in [(garages, "ParkingFacility"), (tunnels, "Place"), (bridges, "Bridge")]:
-        for e in src_list[:20]:  # cap at 20 per type to keep JSON-LD small
-            item = {
-                "@type": "ListItem",
-                "position": rank,
-                "item": {
-                    "@type": kind,
-                    "name": e.get("name", "Unnamed"),
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": e.get("addr", ""),
-                        "addressLocality": name,
-                        "addressRegion": state,
-                        "addressCountry": "US",
-                    },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": e.get("lat"),
-                        "longitude": e.get("lng"),
-                    },
+    all_entries = ([(e, "ParkingFacility") for e in garages]
+                   + [(e, "Place") for e in tunnels]
+                   + [(e, "Bridge") for e in bridges])
+    for (e, kind), anchor in zip(all_entries, anchors):  # every entry -- no cap
+        address = {"@type": "PostalAddress"}
+        if e.get("addr"):
+            address["streetAddress"] = e["addr"]
+        address["addressLocality"] = name
+        address["addressRegion"] = state
+        address["addressCountry"] = "US"
+        item = {
+            "@type": "ListItem",
+            "position": rank,
+            "item": {
+                "@type": kind,
+                "name": e.get("name", "Unnamed"),
+                "url": f"{SITE}/city/{slug}#{anchor}",
+                "address": address,
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": e.get("lat"),
+                    "longitude": e.get("lng"),
                 },
-            }
-            if e.get("height_label"):
-                item["item"]["description"] = f"Posted vehicle clearance: {e['height_label']}"
-            items.append(item)
-            rank += 1
+            },
+        }
+        if e.get("height_label"):
+            item["item"]["description"] = f"Posted vehicle clearance: {e['height_label']}"
+        items.append(item)
+        rank += 1
 
     item_list = {
         "@context": "https://schema.org",
@@ -628,7 +653,7 @@ def build_jsonld(city: dict, garages: list, tunnels: list, bridges: list,
         "description": f"{total} {cat_list(total, 'low-clearance bridge')} "
                        f"with posted vehicle clearance heights in {name}, {state_full}.",
         "itemListElement": items,
-        "numberOfItems": total,
+        "numberOfItems": len(items),
     }
     # BreadcrumbList — signals page hierarchy to Google (Home > Cities > <City>),
     # and is what earns the "> crumb > crumb" format in search results.
@@ -1014,10 +1039,10 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 """
 
 
-def render_section(title: str, entries: list, kind: str) -> str:
+def render_section(title: str, entries: list, kind: str, anchors: list) -> str:
     if not entries:
         return f'<h2>{title} (0)</h2><div class="empty">None indexed in this city yet.</div>'
-    items_html = "\n".join(render_entry(e, kind) for e in entries)
+    items_html = "\n".join(render_entry(e, kind, a) for e, a in zip(entries, anchors))
     return f'<h2>{title} ({len(entries)})</h2><ul class="entries">{items_html}</ul>'
 
 
@@ -1037,12 +1062,18 @@ def generate_city(city: dict, all_cities: list = None) -> str:
     bridges = data.get("bridges") or []
     total = len(garages) + len(tunnels) + len(bridges)
 
+    # Stable per-entry fragment ids, computed once in page order (garages,
+    # then tunnels, then bridges) and sliced for each render_section() call
+    # below so every <li> and its JSON-LD ListItem share the same anchor.
+    all_entries = garages + tunnels + bridges
+    anchors = assign_anchors(all_entries)
+
     # Per-city verification rollup drives every truth-claim on the page: the
     # headline pill, the lede, the meta description, the 'how is this verified'
     # FAQ, and the JSON-LD dateModified.  Without it the page stamped a blanket
     # 'AI-verified' even on import-only cities (e.g. Akron: all OSM/NBI, zero
     # Street-View reads).
-    ver = verification_summary(garages + tunnels + bridges)
+    ver = verification_summary(all_entries)
 
     # Quick-facts stat block + auto-generated FAQs feed both visible content
     # and the FAQPage JSON-LD (cited by ChatGPT / Perplexity / AI Overviews).
@@ -1062,27 +1093,32 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         parts.append(f"{len(bridges)} {plural_word(len(bridges), 'low-clearance bridge')}")
     locations = ", ".join(parts) if parts else "parking garages, tunnels, and low bridges"
 
-    # Verification-aware wording: "AI-verified" only when at least one entry
-    # really was, "Verified" when there are source-verified (but no AI) entries,
-    # and a neutral phrasing for import-only cities.
-    if ver["ai"] > 0:
-        clearance_adj = "AI-verified clearance heights"
-        data_claim = "AI-verified data for RVs, trucks, and oversized vehicles."
-    elif ver["verified"] > 0:
-        clearance_adj = "Verified clearance heights"
-        data_claim = "Verified data for RVs, trucks, and oversized vehicles."
+    # Per-entry-truthful lede + description: state exactly how many entries
+    # are AI-verified / source-verified / imported instead of one blanket
+    # adjective, so a page never claims "verified" for data that is only
+    # an unreviewed OSM/NBI import.
+    src_phrase = import_source_phrase(ver["has_osm"], ver["has_nbi"])
+    prov = []
+    if ver["ai"]:
+        prov.append(f"{ver['ai']} AI-verified from Street View signage")
+    if ver["human"]:
+        prov.append(f"{ver['human']} verified against published sources")
+    if ver["imported"]:
+        prov.append(f"{ver['imported']} imported from {src_phrase}")
+    lede = (f"{locations} in {name}, {state_full}: {'; '.join(prov)}. "
+            f"Enter your vehicle height on the interactive map to see what fits.")
+    if not prov:
+        lede = (f"No indexed locations in {name}, {state_full} yet. "
+                f"Enter your vehicle height on the interactive map to see what fits.")
+    if ver["ai"]:
+        claim = f"{ver['ai']} AI-verified from Street View signage."
+    elif ver["verified"]:
+        claim = f"{ver['verified']} verified against published sources."
     else:
-        clearance_adj = "Clearance heights"
-        data_claim = "Data for RVs, trucks, and oversized vehicles."
-
-    lede = (
-        f"{clearance_adj} for {locations} in {name}, {state_full}. "
-        f"Enter your vehicle height on the interactive map to see what fits."
-    )
-    description = (
-        f"Vehicle clearance heights for {total} {cat_list(total)} "
-        f"in {name}, {state_full}. {data_claim}"
-    )[:160]
+        claim = f"Imported from {src_phrase}."
+    description = clip(
+        f"Clearance heights for {total} {cat_list(total)} in {name}, {state_full}. "
+        f"{claim} Check before you drive.", 160)
     # Front-load the city name and keep ~60 chars so SERPs show the whole
     # thing (the old form ran 77-93 chars and truncated mid-title).  og:title
     # / twitter:title keep this full form; <title> uses title_tag below,
@@ -1128,14 +1164,17 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         garage_word=plural_word(len(garages), "parking garage"),
         tunnel_word=plural_word(len(tunnels), "tunnel"),
         bridge_word=plural_word(len(bridges), "low bridge"),
-        garages_section=render_section("Parking garages", garages, "garage"),
-        tunnels_section=render_section("Tunnels", tunnels, "tunnel"),
-        bridges_section=render_section("Low-clearance bridges", bridges, "bridge"),
+        garages_section=render_section("Parking garages", garages, "garage",
+                                       anchors[:len(garages)]),
+        tunnels_section=render_section("Tunnels", tunnels, "tunnel",
+                                       anchors[len(garages):len(garages) + len(tunnels)]),
+        bridges_section=render_section("Low-clearance bridges", bridges, "bridge",
+                                       anchors[len(garages) + len(tunnels):]),
         quick_facts=render_quick_facts(facts),
         faq_section=render_faq_section(faqs),
         nearby_cities=render_nearby_cities(nearby),
         year=date.today().year,
-        jsonld=build_jsonld(city, garages, tunnels, bridges, faqs=faqs,
+        jsonld=build_jsonld(city, garages, tunnels, bridges, anchors, faqs=faqs,
                             latest_verified=ver["latest"]),
     )
     return page

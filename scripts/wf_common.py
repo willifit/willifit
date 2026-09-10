@@ -1,0 +1,109 @@
+#!/usr/bin/env python3
+"""Shared helpers for the WillIFit page generators (city, state, parking,
+bridges, llms.txt).  One definition of the vehicle classes and the state
+names so every page tells the same story."""
+from __future__ import annotations
+
+import html
+import re
+import unicodedata
+
+STATE_NAMES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
+    "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia", "PR": "Puerto Rico",
+}
+
+# (display name, height in inches).  Order matters: ascending height.
+VEHICLE_CLASSES = [
+    ("a typical sedan", 60),
+    ("a stock pickup or SUV", 78),
+    ("a low-roof cargo van", 84),
+    ("a mid-roof cargo van", 100),
+    ("a high-roof Sprinter or Transit", 114),
+    ("a Class B camper van", 116),
+    ("a U-Haul or small box truck", 126),
+    ("a Class C RV", 138),
+    ("a 15–26 ft box truck", 150),
+    ("a semi trailer", 162),
+]
+
+MEASURE_NOTE = "Measure your own vehicle; racks, AC units, and lifts add inches."
+
+
+def esc(s) -> str:
+    return html.escape(str(s) if s is not None else "", quote=True)
+
+
+def inches_label(height_in) -> str:
+    h = int(round(float(height_in)))
+    return f"{h // 12}'{h % 12}\""
+
+
+def has_posted_height(e: dict) -> bool:
+    h = e.get("height_in")
+    src = e.get("source") or ""
+    return isinstance(h, (int, float)) and h > 0 and not src.startswith("Needs verification")
+
+
+def fit_phrase(height_in) -> str:
+    """One sentence that is true for every clearance value.  Never says a
+    class fits unless its height is <= the clearance."""
+    h = int(round(float(height_in)))
+    fits = [(n, need) for (n, need) in VEHICLE_CLASSES if need <= h]
+    blocks = [(n, need) for (n, need) in VEHICLE_CLASSES if need > h]
+    if not fits:
+        return ("That is below the 5'0\" of a typical sedan; treat it as "
+                "unsuitable for anything taller than a compact car.")
+    if not blocks:
+        return "That clears every common vehicle class, including a 13'6\" semi trailer."
+    top_name, top_h = fits[-1]
+    nxt_name, nxt_h = blocks[0]
+    shorter = " and anything shorter" if len(fits) > 1 else ""
+    taller = " or anything taller" if len(blocks) > 1 else ""
+    return (f"That clears {top_name} ({inches_label(top_h)}){shorter}, "
+            f"but not {nxt_name} ({inches_label(nxt_h)}){taller}.")
+
+
+def slugify(text: str, max_len: int = 60) -> str:
+    t = unicodedata.normalize("NFKD", str(text or "")).encode("ascii", "ignore").decode()
+    t = t.replace("&", " and ").lower()
+    t = re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+    t = t[:max_len].rstrip("-")
+    return t or "garage"
+
+
+def clip(text: str, limit: int) -> str:
+    """Cut at a word boundary so meta descriptions never end mid-word.
+
+    Only backs off to the previous space when the plain `text[:limit]` cut
+    actually lands inside a word (the character right after the cut is not
+    itself a space/end-of-string) -- otherwise a cut that already lands
+    exactly on a word boundary would still drop a whole trailing word for
+    no reason."""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    if text[limit] != " " and " " in cut:
+        cut = cut[:cut.rfind(" ")]
+    return cut.rstrip(" ,;:-")
+
+
+def import_source_phrase(has_osm: bool, has_nbi: bool) -> str:
+    if has_osm and has_nbi:
+        return "OpenStreetMap and the FHWA National Bridge Inventory"
+    if has_nbi:
+        return "the FHWA National Bridge Inventory"
+    if has_osm:
+        return "OpenStreetMap"
+    return "public datasets"
