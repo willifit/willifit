@@ -60,9 +60,16 @@ GENERIC_NAME_RE = re.compile(
 
 
 def eligible(e: dict) -> bool:
-    """A garage earns its own page iff it has a posted height AND a
-    meaningful name (not a generic placeholder like "Parking Deck")."""
+    """A garage earns its own page iff it has a posted height, numeric
+    coordinates, AND a meaningful name (not a generic placeholder like
+    "Parking Deck").  Coordinates are required because render_details,
+    render_links_row, and nearby() all assume a real lat/lng -- without
+    this check here, a future un-geocoded record would crash generation
+    for the whole city (nearby() feeds raw lat/lng into haversine_miles,
+    which raises TypeError on None)."""
     if not has_posted_height(e):
+        return False
+    if not isinstance(e.get("lat"), (int, float)) or not isinstance(e.get("lng"), (int, float)):
         return False
     name = (e.get("name") or "").strip()
     if not name:
@@ -142,7 +149,10 @@ def render_fit_table(h: int, label: str) -> str:
 
 def render_details(e: dict) -> str:
     addr = e.get("addr") or ""
-    lat, lng = e.get("lat") or 0, e.get("lng") or 0
+    # No "or 0" fallback: eligible() guarantees numeric lat/lng for every
+    # garage this is called on, so a None here means eligible() was bypassed
+    # and this should fail loudly rather than silently print 0.00000, 0.00000.
+    lat, lng = e.get("lat"), e.get("lng")
     # esc() first, then clip -- same order as generate_city_pages.render_entry's
     # notes handling, so a 300-char cut lands on the same boundary either way.
     notes = esc(e.get("notes") or "")[:300]
@@ -180,16 +190,24 @@ def render_links_row(e: dict, city: dict, anchor: str) -> str:
 
 
 def nearby(garage: dict, all_garages: list, all_paths: list, anchors: list) -> list:
-    """Up to 6 other garages with a posted height in the same city, nearest
-    first.  Prefers garages within 1.5 mi; if that yields fewer than 3,
-    falls back to the 6 nearest overall so a page in a sparse city still
-    gets a nearby section."""
+    """Up to 6 other garages with a posted height AND numeric coordinates in
+    the same city, nearest first.  Prefers garages within 1.5 mi; if that
+    yields fewer than 3, falls back to the 6 nearest overall so a page in a
+    sparse city still gets a nearby section.
+
+    Candidates come from `all_garages` (has_posted_height only, not full
+    eligible()), so a coordinate-less garage can still reach this loop --
+    skip it explicitly rather than handing None to haversine_miles, which
+    raises TypeError and would abort the whole run."""
     lat, lng = garage.get("lat"), garage.get("lng")
     cands = []
     for g, p, a in zip(all_garages, all_paths, anchors):
         if g is garage or not has_posted_height(g):
             continue
-        d = haversine_miles(lat, lng, g.get("lat"), g.get("lng"))
+        glat, glng = g.get("lat"), g.get("lng")
+        if not isinstance(glat, (int, float)) or not isinstance(glng, (int, float)):
+            continue
+        d = haversine_miles(lat, lng, glat, glng)
         cands.append({"garage": g, "path": p, "anchor": a, "dist": d})
     within = sorted((c for c in cands if c["dist"] <= 1.5), key=lambda c: c["dist"])
     chosen = within if len(within) >= 3 else sorted(cands, key=lambda c: c["dist"])

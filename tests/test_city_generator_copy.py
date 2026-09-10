@@ -71,6 +71,8 @@ class FitPhraseTests(unittest.TestCase):
         self.assertEqual(wc.inches_label(99.0), "8'3\"")
         self.assertEqual(wc.slugify("Aria Resort & Casino"), "aria-resort-and-casino")
         self.assertEqual(wc.slugify("Café Déck  #2"), "cafe-deck-2")
+        self.assertEqual(wc.slugify("Binion's Gambling Hall"), "binions-gambling-hall")
+        self.assertEqual(wc.slugify("St. Mary's Garage"), "st-marys-garage")
         self.assertEqual(wc.slugify("!!!"), "garage")
         self.assertEqual(wc.clip("alpha beta gamma", 10), "alpha beta")
         self.assertEqual(wc.clip("short", 10), "short")

@@ -79,6 +79,7 @@ def fit_phrase(height_in) -> str:
 def slugify(text: str, max_len: int = 60) -> str:
     t = unicodedata.normalize("NFKD", str(text or "")).encode("ascii", "ignore").decode()
     t = t.replace("&", " and ").lower()
+    t = re.sub(r"['’.]", "", t)          # Binion's -> binions, St. -> st (no dangling "-s")
     t = re.sub(r"[^a-z0-9]+", "-", t).strip("-")
     t = t[:max_len].rstrip("-")
     return t or "garage"

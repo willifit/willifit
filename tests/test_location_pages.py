@@ -38,6 +38,11 @@ class EligibilityAndSlugTests(unittest.TestCase):
         self.assertFalse(glp.eligible(garage("a", "Aria", None)))
         self.assertFalse(glp.eligible(garage("a", "Aria", 99, source="Needs verification")))
 
+    def test_eligible_requires_numeric_coordinates(self):
+        self.assertFalse(glp.eligible(garage("a", "Aria Resort & Casino", 99, lat=None)))
+        self.assertFalse(glp.eligible(garage("a", "Aria Resort & Casino", 99, lng=None)))
+        self.assertTrue(glp.eligible(garage("a", "Aria Resort & Casino", 99, lat=36.1, lng=-115.1)))
+
     def test_paths_are_deterministic_and_unique(self):
         gs = [garage("z", "Red Deck", 90), garage("b", "Aria Resort & Casino", 99),
               garage("a", "Red Deck", 80), garage("c", "Parking Deck", 70)]
@@ -110,6 +115,18 @@ class PageTests(unittest.TestCase):
         self.assertNotIn("<li><a href=\"/parking/test-xx/center-garage\">", page)
         self.assertIn('href="/parking/test-xx/next-door-garage"', page)
 
+    def test_nearby_ignores_candidates_without_coordinates(self):
+        me = garage("me", "Center Garage", 99)
+        no_coords = garage("nc", "No Coords Garage", 90, lat=None, lng=None)
+        near = garage("n1", "Next Door Garage", 110, lat=36.101, lng=-115.1)
+        gs = [me, no_coords, near]
+        paths = glp.location_paths(CITY["slug"], gs)
+        anchors = gen.assign_anchors(gs)
+        candidates = glp.nearby(me, gs, paths, anchors)   # must not raise TypeError
+        names = [c["garage"].get("name") for c in candidates]
+        self.assertNotIn("No Coords Garage", names)
+        self.assertIn("Next Door Garage", names)
+
 
 class GeneratorRunTests(unittest.TestCase):
     def test_main_writes_eligible_pages_and_deletes_stale_ones(self):
@@ -129,6 +146,24 @@ class GeneratorRunTests(unittest.TestCase):
         finally:
             glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = old
         self.assertEqual(sorted(p.name for p in (tmp / "parking/test-xx").glob("*.html")), ["aria-resort-and-casino.html"])
+        shutil.rmtree(tmp)
+
+    def test_main_completes_when_a_garage_has_no_coordinates(self):
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "data/cities").mkdir(parents=True)
+        (tmp / "data/index.json").write_text(json.dumps([CITY]))
+        (tmp / "data/cities/test-xx.json").write_text(json.dumps({
+            "garages": [garage("a", "Aria Resort & Casino", 99),
+                       garage("b", "No Coords Garage", 90, lat=None, lng=None)],
+            "tunnels": [], "bridges": []}))
+        old = (glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR)
+        glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = tmp, tmp / "data/index.json", tmp / "data/cities", tmp / "parking"
+        try:
+            glp.main([])   # must complete, not raise, despite the coord-less garage
+        finally:
+            glp.REPO_ROOT, glp.INDEX_PATH, glp.CITIES_DIR, glp.OUT_DIR = old
+        self.assertEqual(sorted(p.name for p in (tmp / "parking/test-xx").glob("*.html")),
+                         ["aria-resort-and-casino.html"])
         shutil.rmtree(tmp)
 
     def test_city_page_links_to_garage_page(self):
