@@ -52,6 +52,7 @@ STATIC_PAGES = [
     ("",                              "index.html",                      "weekly",  "1.0"),
     ("how-ai-verification-works.html", "how-ai-verification-works.html", "monthly", "0.7"),
     ("parking-garage-clearance-heights.html", "parking-garage-clearance-heights.html", "monthly", "0.8"),
+    ("vehicle-heights.html", "vehicle-heights.html", "monthly", "0.8"),
     ("lowest-bridges-in-america.html", "lowest-bridges-in-america.html", "weekly",  "0.8"),
     ("about.html",                    "about.html",                      "monthly", "0.5"),
     ("accessibility.html",            "accessibility.html",              "monthly", "0.4"),
