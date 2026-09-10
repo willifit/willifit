@@ -89,7 +89,7 @@ def render() -> str:
 
     return f"""# WillIFit.ai
 
-> Vehicle-clearance heights for parking garages, tunnels, and low bridges across {st['cities']} US cities ({st['total']:,} locations: {st['garages']:,} parking garages, {st['tunnels']:,} tunnels, {st['bridges']:,} low bridges). {st['ai']:,} garage clearances are AI-verified from Google Street View signage and {st['human']:,} more are verified against published sources; the remaining {st['imported']:,} entries are imported from OpenStreetMap and the FHWA National Bridge Inventory and labeled as imported until verified.
+> Vehicle-clearance heights for parking garages, tunnels, and low bridges across {st['cities']} US cities ({st['total']:,} locations: {st['garages']:,} parking garages, {st['tunnels']:,} tunnels, {st['bridges']:,} low bridges). {st['ai']:,} clearances are AI-verified from Google Street View signage and {st['human']:,} more are verified against published sources; the remaining {st['imported']:,} entries are imported from OpenStreetMap and the FHWA National Bridge Inventory and labeled as imported until verified.
 
 WillIFit.ai combines OpenStreetMap parking data, the FHWA National Bridge Inventory, and Google Street View imagery read by Claude Vision to produce a cross-referenced, source-stamped clearance corpus. Verified readings record the verification method (AI from Street View + Claude Vision, or manual human override), the verification date, a confidence grade, and the Street View pano ID where the sign was read — so anyone can independently verify in Google Maps. Entries imported from OpenStreetMap or the FHWA NBI are labeled as imported until individually verified.
 

@@ -15,7 +15,7 @@ class LlmsTxtTests(unittest.TestCase):
         st = gl.corpus_stats()
         text = gl.render()
         self.assertIn(f"across {st['cities']} US cities ({st['total']:,} locations", text)
-        self.assertIn(f"{st['ai']:,} garage clearances are AI-verified", text)
+        self.assertIn(f"{st['ai']:,} clearances are AI-verified", text)
         self.assertIn(f"{st['human']:,} more are verified against published sources", text)
         self.assertNotRegex(text, r"/city/[a-z0-9<>-]+\.html")
         for s in ("/state/<xx>", "https://willifit.ai/state/nv", "/parking/<city-slug>/<garage-slug>",

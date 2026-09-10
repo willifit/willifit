@@ -9,6 +9,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
 import generate_cities_page as gcp  # noqa: E402
+import generate_llms_txt as gl  # noqa: E402
 
 
 def live_cities_with_locations():
@@ -51,6 +52,20 @@ class CitiesPageTests(unittest.TestCase):
     def test_no_stale_corpus_size_claim(self):
         text = (REPO / "cities.html").read_text()
         self.assertNotIn("25,000", text)
+
+    def test_description_contains_true_location_count(self):
+        text = (REPO / "cities.html").read_text()
+        total = sum(t for _, t in live_cities_with_locations())
+        m = re.search(r'name="description" content="([^"]*)"', text)
+        self.assertIsNotNone(m)
+        self.assertIn(f"{total:,} locations", m.group(1))
+
+    def test_collection_page_datemodified_equals_corpus_latest_verified(self):
+        text = (REPO / "cities.html").read_text()
+        blocks = json.loads(re.search(
+            r'<script type="application/ld\+json">(.*?)</script>', text, re.S).group(1))
+        collection = next(b for b in blocks if b.get("@type") == "CollectionPage")
+        self.assertEqual(collection["dateModified"], gl.corpus_stats()["latest_verified"])
 
 
 if __name__ == "__main__":

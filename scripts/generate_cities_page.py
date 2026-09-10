@@ -23,6 +23,7 @@ from pathlib import Path
 
 from wf_common import STATE_NAMES, compose_description
 from generate_city_pages import esc, safe_jsonld
+from generate_llms_txt import corpus_stats
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
@@ -188,11 +189,11 @@ def render() -> str:
     else:
         states_stat = f'<b>{n_states}</b> states'
 
-    # Two sentences (not one 161-char run-on) so compose_description has a
-    # trailing clause it can drop instead of clipping mid-word once the
-    # corpus total reaches five digits (GC15: never end mid-sentence).
+    # Single sentence (154 chars at current corpus size); still passed through
+    # compose_description as a one-element list so a future overflow clips
+    # cleanly at a word boundary rather than mid-sentence (GC15).
     description = compose_description(
-        [f"All {n_cities} US cities with parking-garage, tunnel, and low-bridge clearance heights.",
+        [f"All {n_cities} US cities with parking, tunnel, and low-bridge clearance heights: "
          f"{total:,} locations for RV, truck, and oversized-vehicle drivers, grouped by state."], 160)
     og_description = (f"{n_cities} US cities, {total:,} parking/tunnel/bridge clearance "
                        f"heights — including AI-verified readings.")
@@ -200,6 +201,9 @@ def render() -> str:
     collection_description = (f"Parking clearance data for {n_cities} US cities — {total:,} "
                                f"garages, tunnels, and low-clearance bridges, including "
                                f"AI-verified readings.")
+    # Data-derived, not a build-date literal (GC13): the same latest_verified
+    # value generate_llms_txt reports as "Data current as of".
+    latest_verified = corpus_stats()["latest_verified"]
 
     jsonld = safe_jsonld([
         {
@@ -208,7 +212,7 @@ def render() -> str:
             "name": "WillIFit.ai — all covered US cities",
             "url": f"{SITE}/cities.html",
             "description": collection_description,
-            "dateModified": "2026-09-10",
+            "dateModified": latest_verified,
             "isPartOf": {"@type": "WebSite", "name": "WillIFit.ai", "url": f"{SITE}/"},
         },
         {
