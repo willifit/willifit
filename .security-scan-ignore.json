@@ -1,0 +1,10 @@
+{
+  "_what": "Paths the security scanner (scripts/scan.mjs in the security-review skill) treats as NOT SOURCE. This is a decision, not a suppression: the scan still reports everything it finds in these paths' neighbours, and declaring hand-written code here is itself a finding. Every entry needs a reason.",
+  "_why_this_file_is_here": "data/nbi_cache/ used to fall out of the scan by accident — one file (TX23.txt, 22MB) crossed the scanner's 20MB per-file cap, so the scan reported an honest blind spot, and the blind spot disabled the high-severity client.api-link check. An accidental size-based drop is indistinguishable from a file nobody looked at. Saying out loud what the directory holds fixes the cause instead of the symptom.",
+  "ignore": [
+    {
+      "path": "data/nbi_cache/",
+      "reason": "Generated FHWA National Bridge Inventory cache — 52 fixed-width/CSV state extracts, 244MB, re-downloadable with scripts/nbi_import.py --download-only --all-states. Gitignored, never deployed (netlify.toml prunes data/ at build), and contains no code, credentials or app logic — it is public federal bridge data keyed by structure number."
+    }
+  ]
+}
