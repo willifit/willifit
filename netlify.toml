@@ -25,7 +25,7 @@
   # own exit code 0) -- a broken prune must not be able to break the whole
   # deploy. Netlify bundles netlify/functions/* AFTER this command runs, so
   # netlify/ itself is deliberately not touched here.
-  command = "rm -rf scripts tests docs README.md .github .env.example; find data -maxdepth 1 \\( -name '*.csv' -o -name '*.log' -o -name '*.tsv.example' \\) -delete; echo pruned"
+  command = "rm -rf scripts tests docs README.md .github .env.example .security-scan-ignore.json; find data -maxdepth 1 \\( -name '*.csv' -o -name '*.log' -o -name '*.tsv.example' \\) -delete; echo pruned"
 
 # Netlify Functions directory (where admin-only endpoints live, like the
 # reports viewer used by /admin.html).  Functions need NETLIFY_FORMS_TOKEN,
