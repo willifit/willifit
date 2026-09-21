@@ -20,7 +20,7 @@
      injected payload in headless Chrome and observing the CSP violation
      in the console (see project notes) rather than an alert().
      The page is fully self-contained: inline CSS/JS, one same-origin fetch. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-+UsL9avNdEXV5lX2NGSZViJwFePMOAstkDBUmG/Bv5g='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-7/p7Yn373BgyOOQEkB6kLMmPopHnggLtgBM2NJ0inh0='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
 <title>Willifit Admin — Pending Reports</title>
 <style>
   :root {
@@ -139,6 +139,13 @@
     padding: 12px 16px; border-radius: 3px;
     font-size: 13px; margin: 16px 0;
   }
+  .warn {
+    background: rgba(245,166,35,0.12);
+    border: 1px solid rgba(245,166,35,0.35);
+    color: var(--warn);
+    padding: 12px 16px; border-radius: 3px;
+    font-size: 13px; margin: 16px 0;
+  }
   .empty {
     text-align: center; padding: 40px;
     color: var(--muted); font-size: 14px;
@@ -229,16 +236,38 @@ async function loadReports() {
 
   if (!res.ok) {
     const body = await res.text();
-    // res.status is always a numeric HTTP status code per the fetch spec and
-    // can't itself carry markup, but xss.innerhtml now checks every ${...}
-    // in this template on its own -- escape it too so the line reads (and
-    // scans) as fully-escaped, not "safe because the other field is".
-    err.innerHTML = `<div class="err">Error ${escapeHtml(String(res.status))}: ${escapeHtml(body)}</div>`;
+    // An expired/revoked NETLIFY_FORMS_TOKEN is a config problem with one
+    // specific fix, not a mystery upstream error. The function labels that
+    // case; show its explanation in full rather than a bare status code.
+    let parsed = null;
+    try { parsed = JSON.parse(body); } catch (e) { /* not JSON -- fall back to raw */ }
+    if (parsed && parsed.code === "netlify_token_rejected") {
+      err.innerHTML =
+        '<div class="err"><strong>Netlify token refused.</strong><br>' +
+        escapeHtml(String(parsed.error || "")) + "</div>";
+    } else {
+      // res.status is always a numeric HTTP status code per the fetch spec and
+      // can't itself carry markup, but xss.innerhtml now checks every ${...}
+      // in this template on its own -- escape it too so the line reads (and
+      // scans) as fully-escaped, not "safe because the other field is".
+      err.innerHTML = `<div class="err">Error ${escapeHtml(String(res.status))}: ${escapeHtml(body)}</div>`;
+    }
     target.innerHTML = "";
     return;
   }
 
   const data = await res.json();
+
+  // Advisory PAT-expiry warning (NETLIFY_FORMS_TOKEN_EXPIRES -- see the
+  // header comment in netlify/functions/reports.js). Null unless the token
+  // is inside its warning window, so this is silent in normal operation.
+  const tw = data.token_warning;
+  if (tw && tw.message) {
+    err.innerHTML =
+      '<div class="' + (tw.expired ? "err" : "warn") + '">' +
+      escapeHtml(String(tw.message)) + "</div>";
+  }
+
   const reports = data.reports || [];
   const newLocations = data.new_locations || [];
   const issues = data.issues || [];

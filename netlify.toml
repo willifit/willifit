@@ -30,7 +30,14 @@
 # Netlify Functions directory (where admin-only endpoints live, like the
 # reports viewer used by /admin.html).  Functions need NETLIFY_FORMS_TOKEN,
 # NETLIFY_SITE_ID, and WILLIFIT_ADMIN_PASSWORD set in the Netlify site
-# dashboard's Environment settings.
+# dashboard's Environment settings, plus the optional
+# NETLIFY_FORMS_TOKEN_EXPIRES.
+#
+# NETLIFY_FORMS_TOKEN is a Netlify Personal Access Token and it EXPIRES.  On
+# the day it lapses the admin queue goes blank (the site, deploys and form
+# COLLECTION are all unaffected -- nothing is lost).  Rotation steps, and the
+# expiry-warning banner driven by NETLIFY_FORMS_TOKEN_EXPIRES, are documented
+# in docs/netlify-token-rotation.md.
 [functions]
   directory = "netlify/functions"
 

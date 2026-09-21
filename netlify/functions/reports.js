@@ -19,11 +19,25 @@
  * Required environment variables (set in Netlify dashboard):
  *   - NETLIFY_FORMS_TOKEN        Personal Access Token from Netlify
  *                                (User Settings -> Applications ->
- *                                Personal Access Tokens -> New)
+ *                                Personal Access Tokens -> New).
+ *                                NOTE: Netlify PATs EXPIRE. When this one
+ *                                lapses every call below 401s and the queue
+ *                                goes dark until it is rotated. See
+ *                                docs/netlify-token-rotation.md.
  *   - NETLIFY_SITE_ID            The deploy ID of this site (visible
  *                                under Site configuration -> General ->
  *                                Site information -> Site ID)
  *   - WILLIFIT_ADMIN_PASSWORD    Any strong password you pick
+ *
+ * Optional:
+ *   - NETLIFY_FORMS_TOKEN_EXPIRES  ISO date (YYYY-MM-DD) the PAT above
+ *                                expires, copied from the Netlify UI at
+ *                                rotation time. Purely advisory -- there is
+ *                                no API that reports a token's own expiry --
+ *                                but it is what turns "the admin page broke
+ *                                and I don't know why" into a banner three
+ *                                weeks ahead. Unset = no warning, same
+ *                                behaviour as before.
  *
  * How Netlify Forms API works (for reference):
  *   GET /api/v1/sites/:site_id/forms              -- list forms
@@ -109,6 +123,7 @@ exports.handler = async (event) => {
 
   const token = process.env.NETLIFY_FORMS_TOKEN;
   const siteId = process.env.NETLIFY_SITE_ID;
+  const expiresIso = process.env.NETLIFY_FORMS_TOKEN_EXPIRES;
   if (!token || !siteId) {
     return {
       statusCode: 500, headers: cors,
@@ -125,6 +140,13 @@ exports.handler = async (event) => {
       { headers: { Authorization: `Bearer ${token}` } }
     );
     if (!formsRes.ok) {
+      if (isNetlifyAuthFailure(formsRes.status)) {
+        console.error("reports function: netlify rejected NETLIFY_FORMS_TOKEN", formsRes.status);
+        return {
+          statusCode: 502, headers: cors,
+          body: JSON.stringify(tokenRejectedBody(formsRes.status, expiresIso)),
+        };
+      }
       return {
         statusCode: 502, headers: cors,
         body: JSON.stringify({ error: "netlify forms list failed", status: formsRes.status }),
@@ -142,7 +164,11 @@ exports.handler = async (event) => {
         `https://api.netlify.com/api/v1/forms/${form.id}/submissions?per_page=200`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
-      if (!res.ok) throw new Error(`netlify submissions failed (${form.name}): ${res.status}`);
+      if (!res.ok) {
+        const e = new Error(`netlify submissions failed (${form.name}): ${res.status}`);
+        e.netlifyStatus = res.status;   // read by the catch below
+        throw e;
+      }
       return res.json();
     }
 
@@ -228,9 +254,17 @@ exports.handler = async (event) => {
         new_locations,
         issues,
         total: reports.length + new_locations.length + issues.length,
+        token_warning: tokenExpiryWarning(expiresIso, Date.now()),
       }),
     };
   } catch (err) {
+    if (isNetlifyAuthFailure(err && err.netlifyStatus)) {
+      console.error("reports function: netlify rejected NETLIFY_FORMS_TOKEN", err.netlifyStatus);
+      return {
+        statusCode: 502, headers: cors,
+        body: JSON.stringify(tokenRejectedBody(err.netlifyStatus, expiresIso)),
+      };
+    }
     console.error("reports function error:", err);
     return {
       statusCode: 500, headers: cors,
@@ -261,6 +295,85 @@ function floatOrNull(v, maxAbs) {
   if (!Number.isFinite(n)) return null;
   if (typeof maxAbs === "number" && Math.abs(n) > maxAbs) return null;
   return n;
+}
+
+/* ---------------------------------------------------------------------
+   NETLIFY_FORMS_TOKEN lifecycle.
+
+   The Netlify Personal Access Token this function authenticates with has a
+   hard expiry date chosen when it is created.  On the day it lapses, every
+   api.netlify.com call here starts returning 401 and the admin queue shows
+   nothing -- with no indication that a credential, rather than Netlify or
+   this code, is the problem.  That already cost one round of confusion; the
+   two helpers below make the failure legible from both directions.
+   ------------------------------------------------------------------ */
+
+// How far ahead of the recorded expiry the admin page starts nagging.
+// Deliberately longer than Netlify's own warning email (which lands in a
+// mailbox and is easy to lose) so the reminder appears in the place the
+// token is actually used.
+const TOKEN_WARN_DAYS = 21;
+
+// Advisory only: there is no Netlify endpoint that reports the expiry of
+// the token you are holding, so this reads a date the operator records by
+// hand in NETLIFY_FORMS_TOKEN_EXPIRES at rotation time.  Unset or
+// unparseable returns null -- a warning nobody can act on is worse than
+// none, because it teaches you to ignore the banner that matters.
+function tokenExpiryWarning(expiresIso, now) {
+  if (typeof expiresIso !== "string" || !expiresIso.trim()) return null;
+  const t = Date.parse(expiresIso);
+  if (!Number.isFinite(t)) return null;
+
+  const msLeft = t - now;
+  if (msLeft <= 0) {
+    const ago = Math.max(1, Math.ceil(-msLeft / 86400000));
+    return {
+      expired: true,
+      days: Math.floor(msLeft / 86400000),
+      message:
+        `NETLIFY_FORMS_TOKEN expired ${ago} day${ago === 1 ? "" : "s"} ago ` +
+        `(${expiresIso}). Rotate it now -- see docs/netlify-token-rotation.md.`,
+    };
+  }
+
+  const days = Math.floor(msLeft / 86400000);
+  if (days > TOKEN_WARN_DAYS) return null;
+  return {
+    expired: false,
+    days,
+    message:
+      `NETLIFY_FORMS_TOKEN expires in ${days} day${days === 1 ? "" : "s"} ` +
+      `(${expiresIso}). When it lapses this queue goes blank -- ` +
+      `rotate it first, see docs/netlify-token-rotation.md.`,
+  };
+}
+
+// 401/403 from api.netlify.com means the PAT itself was refused: expired,
+// revoked, or on an account that lost access to the site.  Every other
+// status is Netlify having a bad day and must NOT be dressed up as a token
+// problem -- sending the operator off to rotate a healthy credential is the
+// one action guaranteed not to fix an actual outage.
+function isNetlifyAuthFailure(status) {
+  return status === 401 || status === 403;
+}
+
+// The body returned when the token is refused.  Only ever reachable AFTER
+// the admin password check above, so naming the env vars here tells an
+// unauthenticated caller nothing.
+function tokenRejectedBody(status, expiresIso) {
+  const recorded = expiresIso ? ` Recorded expiry: ${expiresIso}.` : "";
+  return {
+    error:
+      `Netlify refused NETLIFY_FORMS_TOKEN (HTTP ${status}). The Personal ` +
+      `Access Token is expired, revoked, or no longer has access to this ` +
+      `site.${recorded} Fix: create a new PAT under User settings -> ` +
+      `Applications -> Personal access tokens, then update ` +
+      `NETLIFY_FORMS_TOKEN and NETLIFY_FORMS_TOKEN_EXPIRES under Site ` +
+      `configuration -> Environment variables and redeploy. Full steps: ` +
+      `docs/netlify-token-rotation.md.`,
+    code: "netlify_token_rejected",
+    status,
+  };
 }
 
 /* ---------------------------------------------------------------------
@@ -355,4 +468,7 @@ function constantTimeEqual(a, b) {
 
 // Exposed only for unit tests (tests/test_reports_coercion.mjs). Does not
 // change the Netlify handler export/contract above.
-exports._internal = { numOrNull, floatOrNull, clientIp, constantTimeEqual };
+exports._internal = {
+  numOrNull, floatOrNull, clientIp, constantTimeEqual,
+  tokenExpiryWarning, isNetlifyAuthFailure, tokenRejectedBody, TOKEN_WARN_DAYS,
+};
