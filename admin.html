@@ -20,7 +20,7 @@
      injected payload in headless Chrome and observing the CSP violation
      in the console (see project notes) rather than an alert().
      The page is fully self-contained: inline CSS/JS, one same-origin fetch. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-yIgfR6j8eyhQEbTbAgsq6XYJkn6C9Kg2W1iKih65A2U='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-+UsL9avNdEXV5lX2NGSZViJwFePMOAstkDBUmG/Bv5g='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'">
 <title>Willifit Admin — Pending Reports</title>
 <style>
   :root {
@@ -229,7 +229,11 @@ async function loadReports() {
 
   if (!res.ok) {
     const body = await res.text();
-    err.innerHTML = `<div class="err">Error ${res.status}: ${escapeHtml(body)}</div>`;
+    // res.status is always a numeric HTTP status code per the fetch spec and
+    // can't itself carry markup, but xss.innerhtml now checks every ${...}
+    // in this template on its own -- escape it too so the line reads (and
+    // scans) as fully-escaped, not "safe because the other field is".
+    err.innerHTML = `<div class="err">Error ${escapeHtml(String(res.status))}: ${escapeHtml(body)}</div>`;
     target.innerHTML = "";
     return;
   }

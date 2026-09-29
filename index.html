@@ -3186,6 +3186,20 @@ function escapeHTML(s) {
     .replace(/'/g, '&#39;');
 }
 
+// Coordinates going into a maps/directions href are never validated as
+// numbers before this point today -- g.lat/g.lng come straight from
+// data/cities/{slug}.json, which is populated by the OSM/NBI importers and
+// (eventually) accepted user reports. A non-finite value here must not be
+// able to inject markup or break out of the enclosing href="..." attribute;
+// coercing to a real finite number (or 0) makes that structurally
+// impossible, the same guarantee floatOrNull() gives admin.html's
+// renderNewLocation(). Mirrors normal numeric input exactly (Number(36.17)
+// === 36.17), so this changes nothing for real data.
+function safeCoord(n) {
+  const v = Number(n);
+  return Number.isFinite(v) ? v : 0;
+}
+
 function inchesToFeetStr(inches) {
   if (inches == null) return '—';
   const f = Math.floor(inches / 12);
@@ -4112,7 +4126,11 @@ async function loadDetailHero(hero, g) {
   };
   const showAerialFallback = (reason) => {
     if (myReq !== _heroReq) return;
-    const mapsLink = `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lng}`;
+    // g.lat/g.lng come from data/cities/{slug}.json (importer + eventually
+    // accepted user reports) -- coerce to a real finite number before this
+    // reaches an href="..." attribute, same guarantee floatOrNull() gives
+    // admin.html's equivalent Maps URL.
+    const mapsLink = `https://www.google.com/maps/search/?api=1&query=${safeCoord(g.lat)},${safeCoord(g.lng)}`;
     // Probe the static map URL with a Promise.  If Google's Static Maps
     // API returns a usable image, render the aerial card; if it 403s
     // (e.g. the Maps Static API isn't enabled on the GCloud project,
@@ -4120,14 +4138,14 @@ async function loadDetailHero(hero, g) {
     // the bare empty-state instead of showing an "AERIAL" badge over
     // a broken img.  Native <img> error events don't fire in time on
     // some browsers, so we preload via JS and gate the swap.
-    const url = staticMapUrl(g.lat, g.lng);
+    const url = staticMapUrl(safeCoord(g.lat), safeCoord(g.lng));
     const img = new Image();
     img.onload = () => {
       if (myReq !== _heroReq) return;
       hero.innerHTML = `
-        <a class="detail-hero-aerial" href="${mapsLink}" target="_blank" rel="noopener"
+        <a class="detail-hero-aerial" href="${escapeHTML(mapsLink)}" target="_blank" rel="noopener"
            aria-label="Aerial map of ${escapeHTML(g.name || 'this location')}, opens in Google Maps">
-          <img src="${url}" alt="Aerial map showing ${escapeHTML(g.name || 'this location')}">
+          <img src="${escapeHTML(url)}" alt="Aerial map showing ${escapeHTML(g.name || 'this location')}">
           <div class="detail-hero-aerial-overlay">
             <span class="detail-hero-aerial-badge">AERIAL</span>
             <span class="detail-hero-aerial-reason">${escapeHTML(reason || "Street View not available — satellite view shown.")}</span>
@@ -4147,13 +4165,13 @@ async function loadDetailHero(hero, g) {
   // never fires, but kept as a safety net.
   const showEmpty = (reason) => {
     if (myReq !== _heroReq) return;
-    const mapsLink = `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lng}`;
+    const mapsLink = `https://www.google.com/maps/search/?api=1&query=${safeCoord(g.lat)},${safeCoord(g.lng)}`;
     hero.innerHTML = `
       <div class="detail-hero-empty">
         <div class="detail-hero-empty-icon" aria-hidden="true">▢</div>
         <div class="detail-hero-empty-title">No imagery available</div>
-        <div class="detail-hero-empty-sub">${reason || "We couldn't load a preview for this entrance."}</div>
-        <a class="detail-hero-empty-link" href="${mapsLink}" target="_blank" rel="noopener">
+        <div class="detail-hero-empty-sub">${escapeHTML(reason || "We couldn't load a preview for this entrance.")}</div>
+        <a class="detail-hero-empty-link" href="${escapeHTML(mapsLink)}" target="_blank" rel="noopener">
           Open in Google Maps ↗
         </a>
       </div>`;
@@ -4300,16 +4318,21 @@ function renderDetail(g) {
   const body = document.getElementById('detailBody');
   const hero = document.getElementById('detailHero');
   const hc = heightClassForEntry(g);
-  const svUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${g.lat},${g.lng}&heading=0&pitch=0&fov=90`;
+  // g.lat/g.lng come from data/cities/{slug}.json (importer + eventually
+  // accepted user reports) and, unlike admin.html's report-review path,
+  // reach these href="..." attributes with no numeric validation at all --
+  // safeCoord() guarantees a real finite number (or 0) so a hostile value
+  // here can never break out of the attribute.
+  const svUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${safeCoord(g.lat)},${safeCoord(g.lng)}&heading=0&pitch=0&fov=90`;
   // Directions URLs — consumer nav apps.
   // IMPORTANT: none of these public URL APIs accept a clearance constraint.
   // For true clearance-aware routing a commercial driver should use a truck-nav
   // app where they've set their vehicle profile (see truck-nav links below).
-  const gmapsDir = `https://www.google.com/maps/dir/?api=1&destination=${g.lat},${g.lng}&destination_place_id=${encodeURIComponent(g.name)}`;
-  const appleMapsDir = `https://maps.apple.com/?daddr=${g.lat},${g.lng}&q=${encodeURIComponent(g.name)}`;
-  const wazeDir = `https://www.waze.com/ul?ll=${g.lat},${g.lng}&navigate=yes`;
+  const gmapsDir = `https://www.google.com/maps/dir/?api=1&destination=${safeCoord(g.lat)},${safeCoord(g.lng)}&destination_place_id=${encodeURIComponent(g.name)}`;
+  const appleMapsDir = `https://maps.apple.com/?daddr=${safeCoord(g.lat)},${safeCoord(g.lng)}&q=${encodeURIComponent(g.name)}`;
+  const wazeDir = `https://www.waze.com/ul?ll=${safeCoord(g.lat)},${safeCoord(g.lng)}&navigate=yes`;
   // Truck-nav apps (clearance-aware routing requires the vehicle profile set in their app)
-  const truckerPathUrl = `https://truckerpath.com/maps/?lat=${g.lat}&lng=${g.lng}`;
+  const truckerPathUrl = `https://truckerpath.com/maps/?lat=${safeCoord(g.lat)}&lng=${safeCoord(g.lng)}`;
   const copilotUrl = `https://www.copilotgps.com/en-us/truck/`;
   loadDetailHero(hero, g);
   // Data-freshness check — clearances can change with renovations.
@@ -4357,22 +4380,22 @@ function renderDetail(g) {
       </div>
     </div>
     <div class="directions-row">
-      <a class="directions-btn" href="${gmapsDir}" target="_blank" rel="noopener" aria-label="Get directions to ${escapeHTML(g.name)} via Google Maps">
+      <a class="directions-btn" href="${escapeHTML(gmapsDir)}" target="_blank" rel="noopener" aria-label="Get directions to ${escapeHTML(g.name)} via Google Maps">
         <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zM14 14.5V12h-4v3H8v-4a1 1 0 011-1h5V7.5l3.5 3.5z"/></svg>
         Directions
       </a>
       <details class="directions-alt-details">
         <summary>Open in another app</summary>
         <div class="directions-alt">
-          <a href="${appleMapsDir}" target="_blank" rel="noopener" title="Open in Apple Maps">Apple Maps</a>
+          <a href="${escapeHTML(appleMapsDir)}" target="_blank" rel="noopener" title="Open in Apple Maps">Apple Maps</a>
           <span class="dir-sep">·</span>
-          <a href="${wazeDir}" target="_blank" rel="noopener" title="Open in Waze">Waze</a>
+          <a href="${escapeHTML(wazeDir)}" target="_blank" rel="noopener" title="Open in Waze">Waze</a>
           <span class="dir-sep">·</span>
-          <a href="${gmapsDir}" target="_blank" rel="noopener" title="Open in Google Maps">Google Maps</a>
+          <a href="${escapeHTML(gmapsDir)}" target="_blank" rel="noopener" title="Open in Google Maps">Google Maps</a>
         </div>
         <div class="directions-truck">
           <span class="directions-hint-inline">Safer for oversized vehicles:</span>
-          <a href="${truckerPathUrl}" target="_blank" rel="noopener">Trucker Path</a>
+          <a href="${escapeHTML(truckerPathUrl)}" target="_blank" rel="noopener">Trucker Path</a>
           <span class="dir-sep">·</span>
           <a href="${copilotUrl}" target="_blank" rel="noopener">CoPilot Truck</a>
         </div>
@@ -4820,15 +4843,18 @@ function renderSearchTab(query = '') {
   // ZIP path — US 5-digit ZIPs (and 9-digit ZIP+4 like 02139-1234).
   const zipMatch = q.match(/^(\d{5})(?:-?\d{4})?$/);
   if (zipMatch) {
-    container.innerHTML = `<h3 class="city-section-title">ZIP ${zipMatch[1]}</h3><div class="empty"><span class="spinner"></span>Looking up location…</div>`;
+    // zipMatch[1] is provably digits-only (the ^(\d{5})(?:-?\d{4})?$ match
+    // above), so this can never carry markup -- escaped anyway so the line
+    // doesn't read as "one interpolation escaped, the other trusted by luck".
+    container.innerHTML = `<h3 class="city-section-title">ZIP ${escapeHTML(zipMatch[1])}</h3><div class="empty"><span class="spinner"></span>Looking up location…</div>`;
     geocodeZip(zipMatch[1]).then(hit => {
       if (renderId !== _searchTabRenderId) return;  // newer search took over
       if (!hit) {
-        container.innerHTML = `<h3 class="city-section-title">ZIP ${zipMatch[1]}</h3><div class="empty">No US location found for that ZIP.</div>`;
+        container.innerHTML = `<h3 class="city-section-title">ZIP ${escapeHTML(zipMatch[1])}</h3><div class="empty">No US location found for that ZIP.</div>`;
         return;
       }
       const near = _nearestLiveCity(hit.lat, hit.lng);
-      let html = `<h3 class="city-section-title">ZIP ${zipMatch[1]} — ${escapeHTML(hit.place || '')}${hit.state ? ', ' + escapeHTML(hit.state) : ''}</h3>`;
+      let html = `<h3 class="city-section-title">ZIP ${escapeHTML(zipMatch[1])} — ${escapeHTML(hit.place || '')}${hit.state ? ', ' + escapeHTML(hit.state) : ''}</h3>`;
       if (near) {
         const miles = (near.distKm * 0.621371).toFixed(0);
         const closeEnough = near.distKm <= 50;
@@ -4940,12 +4966,22 @@ function renderBrowseTab() {
     Object.keys(regions[region]).sort().forEach(stateCode => {
       const cities = regions[region][stateCode].sort((a,b) => a.name.localeCompare(b.name));
       html += `<div class="state-block">`;
-      html += `<div class="state-name">${STATE_NAMES[stateCode] || stateCode}</div>`;
+      // stateCode comes from data/index.json's city entries (garage/city
+      // data -- treated as attacker-influenced). STATE_NAMES is a fixed
+      // whitelist keyed by real US postal codes; an entry outside it falls
+      // through to the raw code, which must be escaped like any other
+      // untrusted field reaching this innerHTML sink.
+      html += `<div class="state-name">${escapeHTML(STATE_NAMES[stateCode] || stateCode)}</div>`;
       html += `<div class="state-cities">`;
       cities.forEach(c => {
         const soon = c.status === 'coming' ? 'coming-soon' : '';
         const cnt = c.status === 'live' ? `<span class="city-count">${garageCountLabel(c.garage_count)}</span>` : `<span class="city-count">soon</span>`;
-        html += `<div class="state-city ${soon}" data-slug="${c.slug}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${c.status === 'live' ? garageCountLabel(c.garage_count) : 'coming soon'}"><span>${c.name}</span>${cnt}</div>`;
+        // c.slug/c.name were unescaped here (unlike the identical row markup
+        // in renderSearchTab a few hundred lines up, which does escape
+        // them) -- a stored-XSS gap the mechanical scanner couldn't see
+        // because this sink is `container.innerHTML = html` on a bare
+        // variable, not a template literal with ${...} in it.
+        html += `<div class="state-city ${soon}" data-slug="${escapeHTML(c.slug)}" role="button" tabindex="0" aria-label="${escapeHTML(c.name)}, ${c.status === 'live' ? garageCountLabel(c.garage_count) : 'coming soon'}"><span>${escapeHTML(c.name)}</span>${cnt}</div>`;
       });
       html += `</div></div>`;
     });
@@ -5886,7 +5922,14 @@ async function submitReport(e) {
     const body = Object.entries(report).map(([k, v]) => `${k}: ${v}`).join('\n');
     const mailto = `mailto:${WILLIFIT_REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     status.className = 'report-status success';
-    status.innerHTML = `Saved locally &mdash; <a href="${mailto}" style="color:inherit;text-decoration:underline">send via email now</a> or Export to send later. Total pending: ${_reportQueueGet().length}. Every report is reviewed by a human before any data changes.`;
+    // mailto is built from encodeURIComponent(subject)/encodeURIComponent(body)
+    // (see above), which already stops attribute-breakout, but escapeHTML it
+    // too so the sink doesn't rely on a different escaper than every other
+    // field reaching innerHTML here -- and so an unescaped "&" in the query
+    // string round-trips through valid HTML instead of a bare ampersand in
+    // an attribute value. Queue length is always an array .length (a real
+    // number), escaped anyway for the same reason.
+    status.innerHTML = `Saved locally &mdash; <a href="${escapeHTML(mailto)}" style="color:inherit;text-decoration:underline">send via email now</a> or Export to send later. Total pending: ${escapeHTML(String(_reportQueueGet().length))}. Every report is reviewed by a human before any data changes.`;
   }
 }
 function exportReportQueue() {
@@ -6010,7 +6053,7 @@ async function submitIssue(e) {
     const body = Object.entries(submission).map(([k, v]) => `${k}: ${v}`).join('\n');
     const mailto = `mailto:${WILLIFIT_REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     status.className = 'report-status success';
-    status.innerHTML = `Saved locally &mdash; <a href="${mailto}" style="color:inherit;text-decoration:underline">send via email now</a> or we'll retry. Pending: ${_issueQueueGet().length}.`;
+    status.innerHTML = `Saved locally &mdash; <a href="${escapeHTML(mailto)}" style="color:inherit;text-decoration:underline">send via email now</a> or we'll retry. Pending: ${escapeHTML(String(_issueQueueGet().length))}.`;
   }
 }
 
@@ -6127,7 +6170,7 @@ async function submitNewLocation(e) {
     const body = Object.entries(submission).map(([k, v]) => `${k}: ${v}`).join('\n');
     const mailto = `mailto:${WILLIFIT_REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     status.className = 'report-status success';
-    status.innerHTML = `Saved locally &mdash; <a href="${mailto}" style="color:inherit;text-decoration:underline">send via email now</a> or we'll retry. Pending: ${_newLocationQueueGet().length}.`;
+    status.innerHTML = `Saved locally &mdash; <a href="${escapeHTML(mailto)}" style="color:inherit;text-decoration:underline">send via email now</a> or we'll retry. Pending: ${escapeHTML(String(_newLocationQueueGet().length))}.`;
   }
 }
 
