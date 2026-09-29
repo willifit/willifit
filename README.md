@@ -28,6 +28,13 @@ index.html                   single-page app (HTML + CSS + JS inline)
 disclaimer.html              safety / damage-liability disclaimer
 terms.html                   terms of service
 privacy.html                 privacy policy
+cities.html                  GENERATED: city directory by state
+lowest-bridges-in-america.html GENERATED: lowest posted bridge clearances
+sitemap.xml                  GENERATED: all indexable URLs
+llms.txt                     GENERATED: machine-readable summary for AI agents
+city/{slug}.html              GENERATED: one page per live city
+state/{xx}.html               GENERATED: one page per covered state
+parking/{city}/{slug}.html   GENERATED: one page per eligible garage
 data/
   index.json                 list of all cities (slug, name, lat/lng, counts)
   sponsors.json              geo-targeted sponsor/ad slots
@@ -35,9 +42,39 @@ data/
     {slug}.json              per-city data: garages[], tunnels[], bridges[]
   nbi_cache/                 downloaded FHWA NBI .txt files (built by import)
 scripts/
+  wf_common.py                shared helpers: esc/slugify/fit_phrase/vehicle classes
+  generate_city_pages.py      city/ pages + shared render_faq_section/safe_jsonld/esc
+  generate_state_pages.py     state/ hub pages
+  generate_location_pages.py  parking/ per-garage pages
+  generate_cities_page.py     cities.html
+  generate_bridges_page.py    lowest-bridges-in-america.html
+  generate_sitemap.py         sitemap.xml
+  generate_llms_txt.py        llms.txt
+  regen_all.sh                 regenerates every generated file, in order
   overpass_import.py         OpenStreetMap bulk import (garages/tunnels/bridges)
-  nbi_import.py              FHWA National Bridge Inventory import (bridges)
+  nbi_import.py               FHWA National Bridge Inventory import (bridges)
   streetview_verify.py       AI-vision clearance verifier (Street View + Claude)
+  indexnow.py                  pings IndexNow (Bing/Yandex) with sitemap URLs
+```
+
+## Regenerating pages
+
+`city/`, `state/`, `parking/`, `cities.html`, `lowest-bridges-in-america.html`,
+`sitemap.xml`, and `llms.txt` are all generated from `data/` -- never
+hand-edit a file under those paths or those four root files. Edit the
+generator in `scripts/` and re-run it instead.
+
+Regenerate everything, in dependency order, with:
+
+```bash
+bash scripts/regen_all.sh
+```
+
+After deploying, push the new/changed URLs to Bing, Yandex, and the other
+IndexNow-participating search engines:
+
+```bash
+python3 scripts/indexnow.py --sitemap
 ```
 
 ## Adding a new city manually

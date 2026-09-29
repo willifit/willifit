@@ -4,15 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
-<title>How AI verification works — Willifit.ai</title>
-<meta name="description" content="How Willifit.ai uses Claude Vision + Google Street View to read the posted clearance sign at every parking garage and low bridge we list.">
-<meta property="og:title" content="How AI verification works — Willifit.ai">
+<title>How AI Verification of Clearance Signs Works | WillIFit.ai</title>
+<meta name="description" content="How WillIFit.ai uses Claude Vision + Google Street View to read the posted clearance sign at every parking garage and low bridge we list.">
+<meta property="og:title" content="How AI verification works — WillIFit.ai">
 <meta property="og:description" content="We read the posted clearance sign from Street View imagery with Claude Vision. Here's exactly how, and what the safety rails are.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://willifit.ai/og-image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How AI verification works — WillIFit.ai">
+<meta name="twitter:description" content="We read the posted clearance sign from Street View imagery with Claude Vision. Here's exactly how, and what the safety rails are.">
+<meta name="twitter:image" content="https://willifit.ai/og-image.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://willifit.ai/how-ai-verification-works.html">
 
@@ -21,6 +25,28 @@
      when does it fail" category that ChatGPT / Claude / Perplexity users
      actually ask.  Answers are conservative and match the prose below. -->
 <script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How AI verification works",
+  "description": "How WillIFit.ai uses Claude Vision + Google Street View to read the posted clearance sign at every parking garage and low bridge we list.",
+  "image": "https://willifit.ai/og-image.png",
+  "inLanguage": "en-US",
+  "datePublished": "2026-04-18",
+  "dateModified": "2026-09-10",
+  "author": { "@type": "Organization", "name": "WillIFit.ai", "url": "https://willifit.ai/" },
+  "publisher": { "@type": "Organization", "name": "WillIFit.ai", "url": "https://willifit.ai/", "logo": { "@type": "ImageObject", "url": "https://willifit.ai/og-image.png" } },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://willifit.ai/how-ai-verification-works.html" }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://willifit.ai/" },
+    { "@type": "ListItem", "position": 2, "name": "How AI verification works", "item": "https://willifit.ai/how-ai-verification-works.html" }
+  ]
+},
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -67,6 +93,7 @@
     }
   ]
 }
+]
 </script>
 
 <style>
@@ -100,6 +127,7 @@
   }
   .skip-link:focus { top: 0; }
   .lede { font-size: 17px; color: var(--text); }
+  .meta-line { color: var(--muted); font-size: 13px; margin: -4px 0 16px; }
   .muted { color: var(--muted); font-size: 13px; }
   .ai-pill {
     display: inline-block; padding: 3px 10px; border-radius: 999px;
@@ -137,6 +165,9 @@
     border-radius: 6px; padding: 16px 18px; margin: 24px 0;
   }
   .safety strong { color: var(--warn); }
+
+  .faq h3 { font-size: 16px; margin: 22px 0 4px; color: var(--text); text-transform: none; letter-spacing: 0; }
+  .faq p { margin: 0 0 4px; color: var(--muted); }
 
   .pipeline {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
@@ -180,6 +211,7 @@
   <header>
     <span class="ai-pill">AI-verified</span>
     <h1 style="margin-top:12px">How AI verification works</h1>
+    <p class="meta-line">Updated Sep 10, 2026</p>
     <p class="lede muted">Every time you see an <span class="ai-pill" style="font-size:9px;padding:1px 6px">AI-verified</span> badge
        on a parking garage, tunnel, or bridge, it means Claude Vision read the posted clearance
        sign from Google Street View imagery. Here's exactly what that pipeline does — and where
@@ -323,6 +355,24 @@ Do NOT guess based on the structure type.</div>
         <code>scripts/streetview_verify.py</code> — open-source in our main repo.</li>
   </ul>
 
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <h3>How does AI-verified clearance work on WillIFit.ai?</h3>
+    <p>For each parking garage without a posted clearance in our database, we pull four Google Street View images (headings 0°, 90°, 180°, 270°) at the entrance coordinates and send them to Claude Vision. The model returns a structured reading — height in inches, confidence (low / medium / high), and the exact sign text — and we only commit the result when confidence is high and the reading falls within 4–20 ft.</p>
+
+    <h3>Is AI verification a substitute for reading the posted sign?</h3>
+    <p>No. The posted sign at the entrance is the only ground truth. AI verification gives drivers enough information to plan — knowing a garage posts 7'0" vs 12'6" before leaving the house — but every driver should still read the physical sign before entering.</p>
+
+    <h3>What happens when the AI is not confident?</h3>
+    <p>If Claude Vision returns confidence lower than 'high', the entry stays unverified and we do not write a height. Readings outside 4–20 ft are discarded as parse errors. Readings that differ from an existing non-AI value by more than 2 ft are flagged for human review rather than overwritten.</p>
+
+    <h3>What does the 'AI-verified' badge mean on a garage listing?</h3>
+    <p>The badge marks entries whose clearance height was read from a Google Street View image of the posted sign by Claude Vision, with high confidence. Every AI-verified entry records the verification date, the exact text of the sign, and the Street View pano ID — so users can independently verify in Google Maps.</p>
+
+    <h3>What personal data does WillIFit.ai collect during AI verification?</h3>
+    <p>None. The AI-verification pipeline runs offline against Google Street View imagery, independently of any user session. No driver location, vehicle information, or personal data is involved in producing a verified clearance reading.</p>
+  </div>
+
   <h2>Questions or corrections</h2>
   <p>Spot a bad AI-verification?
      <a href="/">Open the entry in the app</a> and click <b>Report clearance</b>.
@@ -330,12 +380,13 @@ Do NOT guess based on the structure type.</div>
   </main>
 
   <footer>
-    <div>© <span id="y"></span> Willifit.ai — clearance data for oversized vehicles.</div>
+    <div>© <span id="y"></span> WillIFit.ai — clearance data for oversized vehicles.</div>
     <div>
       <a href="/about.html">About</a> ·
       <a href="/accessibility.html">Accessibility</a> ·
       <a href="/how-ai-verification-works.html">How AI verification works</a> ·
       <a href="/parking-garage-clearance-heights.html">Clearance guide</a> ·
+      <a href="/vehicle-heights.html">Vehicle heights</a> ·
       <a href="/lowest-bridges-in-america.html">Lowest bridges</a> ·
       <a href="/advertise.html">Advertise</a> ·
       <a href="/disclaimer.html">Disclaimer</a> ·
