@@ -1,0 +1,51 @@
+{
+  "_note": "The ONLY place sponsor prices live. advertise.html's rate card and meta descriptions are generated from this file by scripts/generate_advertise_pricing.py; house ads in sponsors.json name a slot via price_slot and both renderers (index.html, js/sponsors.js) append that slot's floor at runtime. Change a price here, run scripts/regen_all.sh, done. 'key' matches the slot names in sponsors.json tier[] (radius is a detail-tier variant). Plain text, no HTML: the generator escapes. Prices are USD per 30-day cycle.",
+  "slots": [
+    {
+      "key": "home",
+      "name": "Home Hero",
+      "placement": "Welcome card (seen by every visitor on first load)",
+      "targeting": "Nationwide or a region",
+      "from": 400,
+      "to": 900
+    },
+    {
+      "key": "city_hero",
+      "name": "City Page",
+      "placement": "Top of that city's clearance page, above the garage list",
+      "targeting": "Single city",
+      "from": 75,
+      "to": 200
+    },
+    {
+      "key": "sidebar",
+      "name": "Sidebar — City",
+      "placement": "Pinned in the sidebar while browsing that city",
+      "targeting": "Single city",
+      "from": 75,
+      "to": 200
+    },
+    {
+      "key": "detail",
+      "name": "Detail Panel — City",
+      "placement": "Shown inside every garage/bridge detail view in that city",
+      "targeting": "Single city",
+      "from": 40,
+      "to": 120
+    },
+    {
+      "key": "radius",
+      "name": "Radius-targeted",
+      "placement": "Detail panel, shown within X km of your business coordinates",
+      "targeting": "5–50 km radius of a lat/lng",
+      "from": 50,
+      "to": 150
+    }
+  ],
+  "audience_uplift": {
+    "name": "Audience-targeted",
+    "placement": "Only served to users whose vehicle height matches your filter (e.g. RVs ≥ 11', commercial > 13'6\")",
+    "targeting": "Height-range filter",
+    "pct": 25
+  }
+}

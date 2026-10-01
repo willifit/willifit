@@ -37,7 +37,8 @@ state/{xx}.html               GENERATED: one page per covered state
 parking/{city}/{slug}.html   GENERATED: one page per eligible garage
 data/
   index.json                 list of all cities (slug, name, lat/lng, counts)
-  sponsors.json              geo-targeted sponsor/ad slots
+  sponsors.json              geo-targeted sponsor/ad slots (no prices: house ads name a price_slot)
+  pricing.json               THE sponsor rate card -- the only place a price lives
   cities/
     {slug}.json              per-city data: garages[], tunnels[], bridges[]
   nbi_cache/                 downloaded FHWA NBI .txt files (built by import)
@@ -48,6 +49,7 @@ scripts/
   generate_location_pages.py  parking/ per-garage pages
   generate_cities_page.py     cities.html
   generate_bridges_page.py    lowest-bridges-in-america.html
+  generate_advertise_pricing.py  advertise.html rate card + meta teaser, from data/pricing.json
   generate_sitemap.py         sitemap.xml
   generate_llms_txt.py        llms.txt
   regen_all.sh                 regenerates every generated file, in order
@@ -63,6 +65,13 @@ scripts/
 `sitemap.xml`, and `llms.txt` are all generated from `data/` -- never
 hand-edit a file under those paths or those four root files. Edit the
 generator in `scripts/` and re-run it instead.
+
+`advertise.html` is hand-written except its rate-card `<tbody>` (between the
+BEGIN/END markers) and the "from $N/mo" in its meta descriptions, which
+`generate_advertise_pricing.py` stamps from `data/pricing.json`. To change a
+sponsor price, edit `data/pricing.json` only -- house ads read it at runtime --
+then regenerate. `tests/test_advertise_pricing.py` and
+`tests/test_sponsor_pricing.mjs` fail on any hand-typed price.
 
 Regenerate everything, in dependency order, with:
 

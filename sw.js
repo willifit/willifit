@@ -54,7 +54,16 @@
 // (which never had these files and can't retroactively gain them) get
 // evicted in `activate` instead of serving a shell that's permanently
 // missing the map.
-const CACHE_VERSION = "willifit-v16";
+//
+// v17: sponsor prices.  House ads now quote their price from
+// /data/pricing.json (the rate card advertise.html is generated from) instead
+// of text typed into /data/sponsors.json.  Both files carry prices shown to
+// advertisers, so both move to network-first: under the cache-first
+// catch-all a returning visitor kept seeing the price from whatever day their
+// browser first cached sponsors.json, no matter what was deployed since.
+// Bumped so v16 caches (old sponsors.json, and a /js/sponsors.js that city
+// pages pulled through the cache-first catch-all) get evicted in `activate`.
+const CACHE_VERSION = "willifit-v17";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE  = `${CACHE_VERSION}-data`;
 
@@ -65,6 +74,7 @@ const SHELL_FILES = [
   "/manifest.webmanifest",
   "/data/index.json",
   "/data/sponsors.json",
+  "/data/pricing.json",
   // Precached here too (in addition to its own network-first fetch route
   // below) purely to seed an offline fallback copy at install time -- a
   // visitor whose very first visit is offline would otherwise have no
@@ -131,6 +141,12 @@ self.addEventListener("fetch", (event) => {
       event.respondWith(networkFirst(req, SHELL_CACHE));
       return;
     }
+    // Sponsor inventory + rate card → network-first, same reasoning: these
+    // carry prices, and a stale copy quotes an old one (see v17 note).
+    if (url.pathname === "/data/sponsors.json" || url.pathname === "/data/pricing.json") {
+      event.respondWith(networkFirst(req, SHELL_CACHE));
+      return;
+    }
     // HTML navigations → network-first (cache fallback for offline)
     const isHtml =
       req.mode === "navigate" ||
@@ -141,7 +157,7 @@ self.addEventListener("fetch", (event) => {
       return;
     }
     // Everything else same-origin (favicon, manifest, /data/index.json,
-    // /data/sponsors.json, etc.) → cache-first for speed
+    // /js/sponsors.js, etc.) → cache-first for speed
     event.respondWith(cacheFirst(req, SHELL_CACHE));
     return;
   }

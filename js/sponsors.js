@@ -23,7 +23,9 @@
   'use strict';
 
   const SPONSORS_URL = '/data/sponsors.json';
+  const PRICING_URL = '/data/pricing.json';
   let SPONSORS = [];
+  let PRICING = null;
   let _loadPromise = null;
 
   function escapeHTML(s) {
@@ -37,6 +39,10 @@
 
   function load() {
     if (_loadPromise) return _loadPromise;
+    // The rate card is optional: without it house ads render with no price.
+    const pricing = fetch(PRICING_URL)
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null);
     _loadPromise = fetch(SPONSORS_URL)
       .then((r) => (r.ok ? r.json() : []))
       .then((arr) => {
@@ -46,7 +52,13 @@
       .catch(() => {
         SPONSORS = [];
         return SPONSORS;
-      });
+      })
+      .then((arr) =>
+        pricing.then((p) => {
+          PRICING = p;
+          return arr;
+        })
+      );
     return _loadPromise;
   }
 
@@ -144,6 +156,18 @@
     }
   }
 
+  // House ads quote their slot's floor from /data/pricing.json -- the same
+  // file advertise.html's rate card is generated from -- so no price is ever
+  // typed into sponsors.json.  Keep in lockstep with priceSuffix() in
+  // index.html (tests/test_sponsor_pricing.mjs renders both).  No pricing
+  // loaded or an unknown slot means no price sentence, never a wrong one.
+  function priceSuffix(s, pricing) {
+    if (!s.price_slot || !pricing || !Array.isArray(pricing.slots)) return '';
+    const p = pricing.slots.find((x) => x.key === s.price_slot);
+    const from = p ? Number(p.from) : NaN;
+    return Number.isInteger(from) && from > 0 ? ' From $' + from + '/mo.' : '';
+  }
+
   function renderSponsor(slot, ctx, opts) {
     const s = pickSponsor(slot, ctx);
     if (!s) return '';
@@ -158,7 +182,7 @@
       <div class="sponsor-card ${compact ? 'compact' : ''} ${isHouse ? 'house' : ''}" data-slot="${slot}" data-id="${escapeHTML(s.id)}">
         <div class="sponsor-label">${escapeHTML(s.label || 'Sponsored')}</div>
         <div class="sponsor-title">${escapeHTML(s.title)}</div>
-        ${compact ? '' : `<div class="sponsor-desc">${escapeHTML(s.desc)}</div>`}
+        ${compact ? '' : `<div class="sponsor-desc">${escapeHTML(s.desc + priceSuffix(s, PRICING))}</div>`}
         <a class="sponsor-cta" ${linkAttrs} data-sponsor-click="${escapeHTML(s.id)}" data-sponsor-slot="${escapeHTML(slot)}">${escapeHTML(s.cta)}</a>
       </div>`;
   }

@@ -14,7 +14,8 @@
   {
     "id": "house-sidebar-city",
     "title": "Reach drivers in this city",
-    "desc": "Your ad sits at the top of the sidebar while drivers browse this city's garages. From $75/mo.",
+    "desc": "Your ad sits at the top of the sidebar while drivers browse this city's garages.",
+    "price_slot": "sidebar",
     "cta": "Advertise here →",
     "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=sidebar_city",
     "tier": ["sidebar"],
@@ -26,7 +27,8 @@
   {
     "id": "house-detail-local",
     "title": "Local RV park? Tow shop? Auto glass?",
-    "desc": "You're exactly who our drivers need. Radius-targeted sponsor slots from $50/mo.",
+    "desc": "You're exactly who our drivers need. Radius-targeted slots reach drivers near your business.",
+    "price_slot": "radius",
     "cta": "Claim a slot →",
     "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=detail_local",
     "tier": ["detail"],
@@ -50,7 +52,8 @@
   {
     "id": "house-city-hero",
     "title": "Advertise to drivers researching parking here",
-    "desc": "Your ad shows at the top of every visitor on this city's clearance page. Geo-targeted by city slug. From $50/mo.",
+    "desc": "Your ad shows at the top of this city's clearance page, for every visitor. Geo-targeted by city slug.",
+    "price_slot": "city_hero",
     "cta": "See rates →",
     "url": "/advertise.html?utm_source=willifit&utm_medium=house_ad&utm_campaign=city_hero",
     "tier": ["city_hero"],

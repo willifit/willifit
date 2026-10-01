@@ -8,5 +8,6 @@ python3 scripts/generate_location_pages.py
 python3 scripts/generate_state_pages.py
 python3 scripts/generate_cities_page.py
 python3 scripts/generate_bridges_page.py
+python3 scripts/generate_advertise_pricing.py
 python3 scripts/generate_sitemap.py
 python3 scripts/generate_llms_txt.py
