@@ -34,11 +34,11 @@ import html
 import json
 import re
 import shutil
-from datetime import date
 from pathlib import Path
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
-                       fit_phrase, has_posted_height, slugify, compose_description, is_http_url)
+                       fit_phrase, has_posted_height, slugify, compose_description, is_http_url,
+                       data_year)
 from generate_city_pages import (assign_anchors, verification_sentence, entry_verification,
                                  streetview_url, safe_jsonld, esc, haversine_miles,
                                  render_faq_section, faqs_to_jsonld)
@@ -621,7 +621,7 @@ def generate_location(city: dict, garage: dict, path: str, all_garages: list,
         nearby_section=render_nearby_section(name, h, candidates, city["slug"]),
         faq_section=render_faq_section(faqs),
         jsonld=build_location_jsonld(city, garage, canonical, label, h, faqs),
-        year=date.today().year,
+        year=data_year(),
     )
 
 

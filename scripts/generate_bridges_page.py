@@ -7,10 +7,9 @@ inspectable data.  Re-run after imports so the numbers track the corpus.
 """
 import html
 import json
-from datetime import date
 from pathlib import Path
 
-from wf_common import STATE_NAMES
+from wf_common import STATE_NAMES, data_date
 
 REPO = Path(__file__).resolve().parent.parent
 SITE = "https://willifit.ai"
@@ -39,13 +38,13 @@ def safe_jsonld(obj) -> str:
     return escaped
 
 
-def main():
-    idx = json.loads((REPO / "data/index.json").read_text())
+def render(repo: Path = REPO) -> tuple[str, str]:
+    idx = json.loads((repo / "data/index.json").read_text())
     live = {c["slug"]: c for c in idx if c.get("status") == "live"}
 
     rows = []
     for slug, meta in live.items():
-        p = REPO / "data/cities" / f"{slug}.json"
+        p = repo / "data/cities" / f"{slug}.json"
         if not p.exists():
             continue
         d = json.loads(p.read_text())
@@ -78,7 +77,7 @@ def main():
         if st not in by_state or r["h"] < by_state[st]["h"]:
             by_state[st] = r
 
-    today = date.today().isoformat()
+    updated = data_date(repo)
     n_bridges = len(rows)
     n_cities = len(live)
 
@@ -139,7 +138,7 @@ def main():
             "image": f"{SITE}/og-image.png",
             "inLanguage": "en-US",
             "datePublished": "2026-07-06",
-            "dateModified": today,
+            "dateModified": updated,
             "author": {"@type": "Organization", "name": "WillIFit.ai", "url": f"{SITE}/"},
             "publisher": {"@type": "Organization", "name": "WillIFit.ai", "url": f"{SITE}/",
                           "logo": {"@type": "ImageObject", "url": f"{SITE}/og-image.png"}},
@@ -270,7 +269,7 @@ def main():
   <header>
     <h1>The Lowest Bridges in America</h1>
     <p class="lede">The lowest posted vehicle clearances we track across {n_cities} US cities —
-       computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {today}.</p>
+       computed from {n_bridges:,} low-clearance bridges, underpasses, and tunnels, updated {updated}.</p>
   </header>
 
   <main id="main">
@@ -351,9 +350,15 @@ def main():
 </body>
 </html>
 """
+    summary = (f"top25 floor {label(top[0]['h']) if top else '?'}, "
+               f"{len(by_state)} states, {n_bridges:,} qualifying structures")
+    return page, summary
+
+
+def main():
+    page, summary = render()
     OUT.write_text(page)
-    print(f"Wrote {OUT.name}: top25 floor {label(top[0]['h']) if top else '?'}, "
-          f"{len(by_state)} states, {n_bridges:,} qualifying structures")
+    print(f"Wrote {OUT.name}: {summary}")
 
 
 if __name__ == "__main__":

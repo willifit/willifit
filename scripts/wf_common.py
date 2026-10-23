@@ -4,9 +4,15 @@ bridges, llms.txt).  One definition of the vehicle classes and the state
 names so every page tells the same story."""
 from __future__ import annotations
 
+import functools
 import html
 import re
+import subprocess
 import unicodedata
+from datetime import date
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent.parent
 
 STATE_NAMES = {
     "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
@@ -131,3 +137,45 @@ def import_source_phrase(has_osm: bool, has_nbi: bool) -> str:
     if has_osm:
         return "OpenStreetMap"
     return "public datasets"
+
+
+# Every file the generators read their numbers from.  Nothing else in data/
+# (sponsors, pricing, csv logs) feeds a generated page's content.
+CORPUS_PATHS = ("data/index.json", "data/cities")
+
+
+def data_date(repo: Path = REPO) -> str:
+    """The date (YYYY-MM-DD) the corpus last changed -- what a generated page
+    may honestly call "updated".  Never the build date: stamping today on
+    every regen makes a false freshness claim and, because the page then has
+    uncommitted edits, churns its sitemap.xml lastmod too.
+
+    Clean corpus: the newest commit touching CORPUS_PATHS.  Uncommitted or
+    untracked corpus edits: today, because the data is newer than any commit
+    (the same rule generate_sitemap.lastmod_for applies to pages).  Outside
+    a git checkout there is no honest answer, so this raises rather than
+    quietly falling back to today and reintroducing the churn."""
+    def git(*args):
+        try:
+            return subprocess.run(["git", *args], cwd=repo, capture_output=True,
+                                  text=True, check=True).stdout.strip()
+        except (subprocess.CalledProcessError, FileNotFoundError) as e:
+            detail = getattr(e, "stderr", "") or str(e)
+            raise RuntimeError(f"data_date: cannot read git history in {repo}: "
+                               f"{detail.strip()}") from e
+
+    if git("status", "--porcelain", "--", *CORPUS_PATHS):
+        return date.today().isoformat()
+    committed = git("log", "-1", "--format=%cs", "--", *CORPUS_PATHS)
+    if not committed:
+        raise RuntimeError(f"data_date: no commit touches {', '.join(CORPUS_PATHS)} in {repo}")
+    return committed
+
+
+@functools.cache
+def data_year() -> str:
+    """Year for the '© YYYY' page footers: the corpus's, not the clock's, so
+    1 January doesn't rewrite every generated page.  Cached because the
+    per-city/per-garage generators render ~1,000 pages per run and the corpus
+    can't change mid-run."""
+    return data_date()[:4]

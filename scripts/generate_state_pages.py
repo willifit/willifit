@@ -28,11 +28,11 @@ from __future__ import annotations
 
 import html
 import json
-from datetime import date
 from pathlib import Path
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
-                       fit_phrase, has_posted_height, compose_description, import_source_phrase)
+                       fit_phrase, has_posted_height, compose_description, import_source_phrase,
+                       data_year)
 from generate_city_pages import (assign_anchors, verification_summary, entry_verification,
                                  fmt_date, safe_jsonld, esc, cat_list, plural_word,
                                  render_faq_section, faqs_to_jsonld)
@@ -738,7 +738,7 @@ def generate_state(code: str, cities: list, data_by_slug: dict) -> str:
         lowest_garages_section=render_lowest_garages_section(state_full, stats["lowest_garages"]),
         faq_section=render_faq_section(faqs),
         related=RELATED_HTML,
-        year=date.today().year,
+        year=data_year(),
         jsonld=build_state_jsonld(state_full, canonical, description_raw, stats, faqs),
     )
 

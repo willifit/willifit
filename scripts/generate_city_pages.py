@@ -31,11 +31,10 @@ import math
 import os
 import re
 from pathlib import Path
-from datetime import date
 
 from wf_common import (STATE_NAMES, VEHICLE_CLASSES, MEASURE_NOTE, inches_label,
                        fit_phrase, has_posted_height, slugify, compose_description,
-                       import_source_phrase, is_http_url)
+                       import_source_phrase, is_http_url, data_year)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = REPO_ROOT / "data" / "index.json"
@@ -1285,7 +1284,7 @@ def generate_city(city: dict, all_cities: list = None) -> str:
         faq_section=render_faq_section(faqs),
         nearby_cities=render_nearby_cities(nearby),
         state_cities=render_state_cities(state_full, state.lower(), state_cities_list),
-        year=date.today().year,
+        year=data_year(),
         jsonld=build_jsonld(city, garages, tunnels, bridges, anchors, faqs=faqs,
                             latest_verified=ver["latest"],
                             paths=garage_paths + [None] * (len(tunnels) + len(bridges))),

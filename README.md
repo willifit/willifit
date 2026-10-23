@@ -43,7 +43,7 @@ data/
     {slug}.json              per-city data: garages[], tunnels[], bridges[]
   nbi_cache/                 downloaded FHWA NBI .txt files (built by import)
 scripts/
-  wf_common.py                shared helpers: esc/slugify/fit_phrase/vehicle classes
+  wf_common.py                shared helpers: esc/slugify/fit_phrase/vehicle classes/data_date
   generate_city_pages.py      city/ pages + shared render_faq_section/safe_jsonld/esc
   generate_state_pages.py     state/ hub pages
   generate_location_pages.py  parking/ per-garage pages
@@ -78,6 +78,14 @@ Regenerate everything, in dependency order, with:
 ```bash
 bash scripts/regen_all.sh
 ```
+
+No generator stamps the build date, so a regen with unchanged, committed data
+is byte-identical. The bridges page's "updated" / `dateModified` and the `©`
+year on city, state and parking pages come from `wf_common.data_date()`: the
+newest commit touching `data/index.json` or `data/cities/`, or today while
+those have uncommitted edits. Commit data changes together with the pages
+regenerated from them. Outside a git checkout the generators stop with an
+error rather than guess.
 
 After deploying, push the new/changed URLs to Bing, Yandex, and the other
 IndexNow-participating search engines:
